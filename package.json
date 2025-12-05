@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "deploy": "git add . && git commit -m \"wip\" && git push",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
