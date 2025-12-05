@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Header from "@/components/organisms/Header";
 import Navbar from "@/components/organisms/Navbar";
+import Footer from "@/components/organisms/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +26,11 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="layout">
           <Header></Header>
-            {children}
+          <div>
           <Navbar></Navbar>
+            {children}
+          </div>
+          <Footer></Footer>
         </div>
       </body>
     </html>
