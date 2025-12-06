@@ -10,3 +10,27 @@
 button.active svg {
   transform: scale(0.95);
 }
+
+.menuBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.menuBtn span {
+  background-color: #000;
+  width: 25px;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.active span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.active span:nth-child(2) {
+  opacity: 0;
+}
+.active span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}

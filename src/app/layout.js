@@ -59,11 +59,11 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.variable} ${bebas_Neue.variable}`}>
         <div className="layout">
           <header>
-            <Button></Button>
+            <Button icon="menu"></Button>
             <Link href="/">
             <span>DAILY BASIS ENGLISH COURSE</span>
             </Link>
-            <Button></Button>
+            <Button icon="dark"></Button>
           </header>
           <div className="content-wrapper">
             <nav className="line-break">
