@@ -2,7 +2,6 @@ import Link from "next/link";
 
 
 import styles from "./Navbar.module.css"
-import Card from "@/components/atoms/Card";
 
 const linkGroup = [
   {
@@ -43,8 +42,7 @@ const linkGroup = [
 
 export default function Navbar() {
   return (
-    <Card className={styles.nav}>
-      <nav className="line-break">
+      <nav className={`line-break ${styles.nav}`}>
         {linkGroup.map((group, groupIndex) => (
           <div key={groupIndex}>
             <span className={styles.title}>{group.title}</span>
@@ -58,6 +56,5 @@ export default function Navbar() {
           </div>
         ))}
       </nav>
-    </Card>
   )
 }

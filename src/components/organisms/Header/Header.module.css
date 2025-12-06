@@ -1,5 +1,7 @@
 .headerWrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }

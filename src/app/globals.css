@@ -11,7 +11,13 @@
   /* Spacing */
   --padding: 0.3125rem;
   --gap: 0.3125rem;
+
+  /* Border */
+  --border: 1px solid gray;
+  --border-radius: 5px
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -44,7 +50,7 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: var(--padding);
-
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,16 +61,25 @@ body {
   width: 100%;
   flex-grow: 1;
   position: relative;
+  height: 100%;
+  /* display: flex; */
 }
 
 main {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: var(--padding);
   height: 100%;
+  overflow-y: scroll;
+  margin-left: 155px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 .main-card {
-  margin-left: 160px;
   height: 100%;
+  overflow-y: scroll;
 }
 
 @media (prefers-color-scheme: dark) {

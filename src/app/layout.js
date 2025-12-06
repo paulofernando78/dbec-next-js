@@ -31,9 +31,7 @@ export default function RootLayout({ children }) {
           <Header></Header>
           <div className="content-wrapper">
             <Navbar></Navbar>
-            <Card className="main-card">
               <main>{children}</main>
-            </Card>
           </div>
           <Footer></Footer>
         </div>

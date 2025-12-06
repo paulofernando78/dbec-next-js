@@ -4,10 +4,10 @@ import Card from "@/components/atoms/Card";
 
 export default function Header() {
   return (
-      <Card className={styles.headerWrapper}>
+      <div className={styles.headerWrapper}>
         <Button></Button>
         <h1>DAILY BASIS ENGLISH COURSE</h1>
         <Button></Button>
-      </Card>
+      </div>
   )
 }
