@@ -1,0 +1,12 @@
+.button {
+  width: 30px;
+  height: 30px;
+}
+
+.button.active {
+  box-shadow: var(--neumorphism-active)
+}
+
+button.active svg {
+  transform: scale(0.95);
+}
