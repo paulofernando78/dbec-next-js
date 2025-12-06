@@ -1,5 +1,5 @@
 .nav {
-  width: max-content;
+  width: 180px;
   height: 100%;
   padding: var(--padding);
   font-family: var(--font-bebas);

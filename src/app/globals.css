@@ -62,24 +62,21 @@ body {
   flex-grow: 1;
   position: relative;
   height: 100%;
-  /* display: flex; */
+  display: flex;
+  gap: var(--gap);
 }
 
 main {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
+  width: 100%;
   padding: var(--padding);
   height: 100%;
   overflow-y: scroll;
-  margin-left: 155px;
+  /* margin-left: 155px; */
   border: var(--border);
   border-radius: var(--border-radius);
-}
-
-.main-card {
-  height: 100%;
-  overflow-y: scroll;
 }
 
 @media (prefers-color-scheme: dark) {
