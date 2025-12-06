@@ -1,0 +1,19 @@
+.nav {
+  position: absolute;
+  width: max-content;
+  padding: var(--padding);
+  font-family: var(--font-bebas);
+  font-size: 1.3rem;
+  height: 100%;
+}
+
+.navLinks {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
