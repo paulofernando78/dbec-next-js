@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
       <body className={`${montserrat.variable} ${bebas_Neue.variable}`}>
         <div className="layout">
           <header>
-            <Button icon="menu"></Button>
+            <Button icon="menu" id="btn-menu"></Button>
             <Link href="/">
             <span>DAILY BASIS ENGLISH COURSE</span>
             </Link>

@@ -4,7 +4,7 @@ import styles from "./Button.module.css"
 import { lightMode, darkMode } from "@/lib/svg-imports"
 import { useState } from "react"
 
-export default function Button({ icon, onClick }) {
+export default function Button({ id, icon, onClick }) {
 const [active, setActive] = useState(false);
 
 const icons = {
@@ -20,7 +20,7 @@ const selectedIcon = icons[icon]
 
   return (
     <>
-      <button className={styles.button} onClick={handleClick}>
+      <button id={id} className={styles.button} onClick={handleClick}>
       {icon === "menu" && (
         <div className={`${styles.menuBtn} ${active ? styles.active : ""}`}>
           <span></span>

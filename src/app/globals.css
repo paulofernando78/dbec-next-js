@@ -65,21 +65,24 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: var(--padding);
-  /* min-height: 36px; */
+  overflow: hidden;
+}
 
+#btn-menu {
+  transition: transform 0.5s ease;
 }
 
 .content-wrapper {
   width: 100%;
   flex-grow: 1;
   position: relative;
-
+  
   display: flex;
 }
 
 nav {
   position: absolute;
-
+  
   border: var(--border);
   border-radius: var(--border-radius);
   width: 125px;
@@ -139,8 +142,14 @@ footer {
   main {
     left: 0
   }
+
+  #btn-menu {
+    transform: translateX(0px);
+  }
 }
 
 @media (min-width: 700px) {
-  
+  #btn-menu {
+    transform: translateX(-41px);
+  }
 }
