@@ -20,7 +20,9 @@ const selectedIcon = icons[icon]
 
   return (
     <>
-      <button id={id} className={styles.button} onClick={handleClick}>
+      <button id={id}
+      className={`${styles.button} ${active ? styles.active : ""}`}
+      onClick={handleClick}>
       {icon === "menu" && (
         <div className={`${styles.menuBtn} ${active ? styles.active : ""}`}>
           <span></span>
