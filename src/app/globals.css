@@ -3,7 +3,7 @@
 @import "../css/colors.css";
 
 :root {
-  --background: #E8E8F3;
+  --background-color: #E8E8F3;
 
   /* Spacing */
   --padding: 0.3125rem;
@@ -16,9 +16,10 @@
 
   /* Neumorphism */
   --neumorphism:
-    -3px -3px 3px rgba(255, 255, 255, 1),
+    -2px -2px 3px rgba(255, 255, 255, 1),
     3px 3px 6px rgba(0, 0, 0, 0.15);
-  --neumorphism-active: inset -5px -5px 7px rgba(255, 255, 255, 1),
+  --neumorphism-active:
+    inset -3px -3px 7px rgba(255, 255, 255, 1),
     inset 5px 5px 7px rgba(0, 0, 0, 0.15);
 }
 
@@ -28,19 +29,13 @@
   --text-color: #fff;
   --menu-button: var(--slate-2);
   --icon-invert: 1;
+  --neumorphism:
+    -2px -2px 3px rgba(255, 255, 255, 1),
+    3px 3px 6px rgba(0, 0, 0, 0.15);
+  --neumorphism-active:
+    inset -3px -3px 7px rgba(255, 255, 255, 1),
+    inset 5px 5px 7px rgba(0, 0, 0, 0.15);
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-  }
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
 
 .line-break {
   display: flex;
@@ -99,7 +94,7 @@ header {
 nav {
   position: absolute;
   
-  background: var(--background);
+  background-color: var(--background-color);
   border: var(--border);
   border-radius: var(--border-radius);
   width: 125px;

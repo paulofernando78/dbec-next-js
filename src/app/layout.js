@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
 import { HeaderProvider } from "../context/headerContext";
+import { ThemeProvider } from "@/providers/ThemeProvider";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -23,20 +24,22 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.variable} ${bebas_Neue.variable}`}>
-        <div className="layout">
-          <HeaderProvider>
-            <Header></Header>
-            <div className="content-wrapper">
-              <NavBar></NavBar>
-              <main>{children}</main>
-            </div>
-          </HeaderProvider>
-          <footer>
-            <small>© Daily Basis Englih Course 2025</small>
-          </footer>
-        </div>
+        <ThemeProvider>
+          <div className="layout">
+            <HeaderProvider>
+              <Header></Header>
+              <div className="content-wrapper">
+                <NavBar></NavBar>
+                <main>{children}</main>
+              </div>
+            </HeaderProvider>
+            <footer>
+              <small>© Daily Basis Englih Course 2025</small>
+            </footer>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
