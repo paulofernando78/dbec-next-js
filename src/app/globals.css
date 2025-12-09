@@ -3,7 +3,9 @@
 @import "../css/colors.css";
 
 :root {
-  --background-color: #E8E8F3;
+  --background-color: var(--slate-1);
+  --text-color: var(--slate-9);
+  --icon-color: var(--gray-4);
 
   /* Spacing */
   --padding: 0.3125rem;
@@ -16,25 +18,26 @@
 
   /* Neumorphism */
   --neumorphism:
-    -2px -2px 3px rgba(255, 255, 255, 1),
-    3px 3px 6px rgba(0, 0, 0, 0.15);
+    -0.1rem -0.1rem 0.1rem #fff,
+    0.1rem 0.1rem 0.1rem var(--slate-2);
   --neumorphism-active:
-    inset -3px -3px 7px rgba(255, 255, 255, 1),
-    inset 5px 5px 7px rgba(0, 0, 0, 0.15);
+    inset -0.02rem -0.02rem 0.1rem var(--slate-2),
+    inset 0.1rem 0.1rem 0.2rem var(--slate-3);
 }
 
 /* Dark Mode */
 [data-theme="dark"] {
-  --background-color: #18191f;
-  --text-color: #fff;
-  --menu-button: var(--slate-2);
+  --background-color: var(--slate-9);
+  --text-color: var(--slate-1);
+  --icon-color: var(--slate-1);
+
   --icon-invert: 1;
   --neumorphism:
-    -2px -2px 3px rgba(255, 255, 255, 1),
-    3px 3px 6px rgba(0, 0, 0, 0.15);
+    -0.07rem -0.07rem 0.1rem var(--slate-7),
+    0.10rem 0.10rem 0.1rem var(--slate-10);
   --neumorphism-active:
-    inset -3px -3px 7px rgba(255, 255, 255, 1),
-    inset 5px 5px 7px rgba(0, 0, 0, 0.15);
+    inset 0.1rem 0.1rem 0.1rem var(--slate-10),
+    inset -0.01rem -0.01rem 0.2rem var(--slate-6);
 }
 
 .line-break {
@@ -49,8 +52,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -61,7 +64,7 @@ body {
   height: 100%;
   margin: 0 auto;
   padding: var(--padding);
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,13 +90,13 @@ header {
   width: 100%;
   flex-grow: 1;
   position: relative;
-  
+
   display: flex;
 }
 
 nav {
   position: absolute;
-  
+
   background-color: var(--background-color);
   border: var(--border);
   border-radius: var(--border-radius);
@@ -154,8 +157,8 @@ footer {
   nav {
     margin-left: -130px;
   }
-  
+
   main {
-    left: 0
+    left: 0;
   }
 }
