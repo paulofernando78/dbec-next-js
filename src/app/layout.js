@@ -2,6 +2,7 @@ import { Montserrat, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
+import { HeaderProvider } from "../context/headerContext";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -21,16 +22,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <body className={`${montserrat.variable} ${bebas_Neue.variable}`}>
         <div className="layout">
-          <Header></Header>
-          <div className="content-wrapper">
-            <NavBar></NavBar>
-            <main>{children}</main>
-          </div>
+          <HeaderProvider>
+            <Header></Header>
+            <div className="content-wrapper">
+              <NavBar></NavBar>
+              <main>{children}</main>
+            </div>
+          </HeaderProvider>
           <footer>
             <small>© Daily Basis Englih Course 2025</small>
           </footer>

@@ -1,42 +1,33 @@
 "use client"
 
 import styles from "./Button.module.css"
-import { lightMode, darkMode } from "@/lib/svg-imports"
-import { useState } from "react"
 
-export default function Button({ id, icon, onClick }) {
-const [active, setActive] = useState(false);
+export default function Button({ icon, onToggle, active }) {
 
-const icons = {
-  light: lightMode,
-  dark: darkMode
-}
+  
 
-function handleClick(e) {
-  setActive(!active);
-  if (onClick) onClick(e);
-}
-const selectedIcon = icons[icon]
-
-  return (
-    <>
-      <button id={id}
-      className={`${styles.button} ${active ? styles.active : ""}`}
-      onClick={handleClick}>
-      {icon === "menu" && (
-        <div className={`${styles.menuBtn} ${active ? styles.active : ""}`}>
+  if (icon === "menu") {
+    return (
+      <button
+      className={`${styles.button} ${!active ? styles.active : ""}`}
+      onClick={onToggle}
+      id={styles.btnMenu}>
+        <div className={`${styles.menuBtn} ${!active ? styles.active : ""}`}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-      )}
-
-      {icon && icon !== "menu" && (
-        <span dangerouslySetInnerHTML={{ __html: selectedIcon}}></span>
-      )}
-
-      {icon && null}
       </button>
-    </>
+    )
+  }
+
+  return (
+    <button
+    className={`${styles.button} ${!active ? styles.active : ""}`}
+    onClick={onToggle}>
+
+    {icon}
+    </button>
   )
+  
 }

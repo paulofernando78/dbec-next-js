@@ -1,4 +1,8 @@
+"use client"
+
+import { HeaderContext } from "@/context/headerContext";
 import Link from "next/link"
+import { useContext } from "react";
 
 const linkGroup = [
   {
@@ -33,9 +37,11 @@ const linkGroup = [
   // }
 ];
 
-export default function NavBar() {
+export default function NavBar({ }) {
+  const {showNavBar} = useContext(HeaderContext)
+
   return (
-    <nav className="line-break">
+    <nav className={`line-break ${showNavBar ? "show" : ""}`} >
       {linkGroup.map((group, groupIndex) => (
         <div key={groupIndex}>
           <span>{group.title}</span>
