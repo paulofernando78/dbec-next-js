@@ -7,24 +7,73 @@ import { useContext } from "react";
 const linkGroup = [
   {
     title: "Audiobook",
-    links: [{ href: "/audiobook/...", label: "..." }],
-  },
-  {
-    title: "Grammar",
     links: [
-      { href: "/grammar/verb-be", label: "Verb Be" },
-      { href: "/grammar/present-continuous", label: "Present Continuous" },
-      { href: "/grammar/simple-present", label: "Simple Present" },
-      { href: "/grammar/simple-past", label: "Simple Past" },
-      { href: "/grammar/simple-past", label: "Present Perfect" },
-      { href: "/grammar/simple-future", label: "Simple Future" },
-      { href: "/grammar/present-continuous", label: "Present Continuous" },
+      {
+        href: "/audiobook/brginner", label: "Beginner"
+      }
     ],
   },
   {
     title: "Pronunciation",
-    links: [{ href: "/pronunciation/letter-a", label: "Letter A" }],
+    links: [
+      {
+        href: "/pronunciation/letter-a", label: "Letter a"
+      },
+      {
+        href: "/pronunciation/letter-a", label: "Letters ee / ea vs. i"
+      }
+    ],
   },
+  {
+    title: "Grammar",
+    links: [
+      {
+        href: "/grammar/verb-be", label: "Verb Be"
+      },
+      {
+        href: "/grammar/simple-present", label: "Simple Present"
+      },
+      {
+        href: "/grammar/present-continuous", label: "Present Continuous"
+      },
+      {
+        href: "/grammar/simple-past", label: "Simple Past"
+      },
+      {
+        href: "/grammar/past-continuous", label: "Past Continuous"
+      },
+      {
+        href: "/grammar/present-perfect", label: "Present Perfect"
+      },
+      {
+        href: "/grammar/past-perfect", label: "Past Perfect"
+      },
+      {
+        href: "/grammar/simple-future", label: "Simple Future"
+      },
+      {
+        href: "/grammar/future-continuous", label: "Future Continuous"
+      },
+      {
+        href: "/grammar/future-perfect", label: "Future Perfect"
+      },
+    ],
+  },
+  {
+    title: "Vocabulary",
+    links: [
+      {
+        href: "/vocabulary/collocations", label: "collocations"
+      },
+      {
+        href: "/vocabulary/homophones", label: "homophones"
+      },
+      {
+        href: "/vocabulary/homohtaphs", label: "homohraphs"
+      }
+    ],
+  },
+  
   // {
   //   title: "Course",
   //   links: [
