@@ -22,10 +22,12 @@
 }
 
 .nav a:hover {
-  color: var(--red-5);
+  color: var(--slate-4);
+  transition: color 0.2s;
 }
 
 .navTitle {
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
 }

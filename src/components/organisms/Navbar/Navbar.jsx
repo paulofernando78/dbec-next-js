@@ -92,7 +92,7 @@ export default function NavBar({ }) {
   const {showNavBar} = useContext(HeaderContext)
 
   return (
-    <nav className={`line-break ${styles.nav} ${showNavBar ? "show" : ""}`} >
+    <nav className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`} >
       {linkGroup.map((group, groupIndex) => (
         <div key={groupIndex}>
           <span className={styles.navTitle}>{group.title}</span>
