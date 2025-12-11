@@ -1,4 +1,4 @@
-import { Montserrat, Bebas_Neue, Oswald } from "next/font/google";
+import { Montserrat, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
