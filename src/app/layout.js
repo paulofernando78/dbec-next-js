@@ -1,4 +1,4 @@
-import { Montserrat, Bebas_Neue } from "next/font/google";
+import { Montserrat, Bebas_Neue, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
@@ -11,8 +11,8 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
-const bebas_Neue = Bebas_Neue({
-  variable: "--font-bebas",
+const oswald = Oswald({
+  variable: "--font-oswald",
   weight: "400",
   subsets: ["latin"],
 });
@@ -25,8 +25,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${montserrat.variable} ${bebas_Neue.variable}`}>
-        <ThemeProvider>
+      <body className={`${montserrat.variable} ${oswald.variable}`}>
+        <ThemeProvider defaultTheme="light">
           <div className="layout">
             <HeaderProvider>
               <Header></Header>

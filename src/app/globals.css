@@ -97,15 +97,14 @@ header {
 
 nav {
   position: absolute;
-
-  background-color: var(--background-color);
-  border: var(--border);
-  border-radius: var(--border-radius);
   width: 125px;
   height: 100%;
   padding: var(--padding);
-  font-family: var(--font-bebas);
-  font-size: 1.5rem;
+  font-family: var(--font-oswald);
+  font-size: 1rem;
+  background-color: var(--background-color);
+  border: var(--border);
+  border-radius: var(--border-radius);
   overflow-y: auto;
   z-index: 1;
 
@@ -139,7 +138,7 @@ main {
 
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 0px 3px 3px 3px;
+  padding: 0 3px;
   height: 100%;
   overflow-y: auto;
 

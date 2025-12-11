@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 const linkGroup = [
   {
-    title: "Audiobook",
+    title: "Audiobooks",
     links: [
       {
         href: "/audiobook/brginner", label: "Beginner"
