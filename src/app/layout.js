@@ -4,6 +4,7 @@ import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
 import { HeaderProvider } from "../context/headerContext";
 import { ThemeProvider } from "@/providers/ThemeProvider";
+import Footer from "@/components/organisms/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -35,9 +36,7 @@ export default function RootLayout({ children }) {
                 <main>{children}</main>
               </div>
             </HeaderProvider>
-            <footer>
-              <small>© Daily Basis Englih Course 2025</small>
-            </footer>
+            <Footer></Footer>
           </div>
         </ThemeProvider>
       </body>
