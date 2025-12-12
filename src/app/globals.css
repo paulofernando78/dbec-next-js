@@ -43,6 +43,12 @@ html.dark {
   gap: 1rem;
 }
 
+.line-break-double {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 html,
 body {
   height: 100%;
