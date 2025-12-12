@@ -1,0 +1,773 @@
+/* [next]/internal/font/google/montserrat_a7501abd.module.css [app-client] (css) */
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../media/8298327da6d5bcce-s.fb2d5852.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../media/44fac91e6f2d2b1b-s.0a39a854.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../media/2b402d8aebffd579-s.ec7e94a5.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../media/a88409fdd7dc121c-s.62b55a98.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../media/e8f2fbee2754df70-s.p.9b7a96b4.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/8298327da6d5bcce-s.fb2d5852.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/44fac91e6f2d2b1b-s.0a39a854.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/2b402d8aebffd579-s.ec7e94a5.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/a88409fdd7dc121c-s.62b55a98.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/e8f2fbee2754df70-s.p.9b7a96b4.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../media/8298327da6d5bcce-s.fb2d5852.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../media/44fac91e6f2d2b1b-s.0a39a854.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../media/2b402d8aebffd579-s.ec7e94a5.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../media/a88409fdd7dc121c-s.62b55a98.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../media/e8f2fbee2754df70-s.p.9b7a96b4.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../media/8298327da6d5bcce-s.fb2d5852.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../media/44fac91e6f2d2b1b-s.0a39a854.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../media/2b402d8aebffd579-s.ec7e94a5.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../media/a88409fdd7dc121c-s.62b55a98.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../media/e8f2fbee2754df70-s.p.9b7a96b4.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/8298327da6d5bcce-s.fb2d5852.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/44fac91e6f2d2b1b-s.0a39a854.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/2b402d8aebffd579-s.ec7e94a5.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/a88409fdd7dc121c-s.62b55a98.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../media/e8f2fbee2754df70-s.p.9b7a96b4.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Montserrat Fallback;
+  src: local(Arial);
+  ascent-override: 85.79%;
+  descent-override: 22.25%;
+  line-gap-override: 0.0%;
+  size-adjust: 112.83%;
+}
+
+.montserrat_a7501abd-module__gSc95q__className {
+  font-family: Montserrat, Montserrat Fallback;
+  font-style: normal;
+}
+
+.montserrat_a7501abd-module__gSc95q__variable {
+  --font-montserrat: "Montserrat", "Montserrat Fallback";
+}
+
+/* [next]/internal/font/google/oswald_92c7ff.module.css [app-client] (css) */
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/684f6ffe594974da-s.b9f6f2e3.woff2") format("woff2");
+  unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/398e6c08124f4f40-s.2c5b25ff.woff2") format("woff2");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/7b323cd9b1b90354-s.440b7abc.woff2") format("woff2");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/a07adc4346f4b883-s.0e264654.woff2") format("woff2");
+  unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../media/4dc84c2908d13196-s.p.7e39395f.woff2") format("woff2");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Oswald Fallback;
+  src: local(Arial);
+  ascent-override: 146.51%;
+  descent-override: 35.49%;
+  line-gap-override: 0.0%;
+  size-adjust: 81.43%;
+}
+
+.oswald_92c7ff-module__RI6j3q__className {
+  font-family: Oswald, Oswald Fallback;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.oswald_92c7ff-module__RI6j3q__variable {
+  --font-oswald: "Oswald", "Oswald Fallback";
+}
+
+/* [project]/src/css/reset.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+img, picture, video, canvas {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+/* [project]/src/css/typography.css [app-client] (css) */
+
+
+/* [project]/src/css/colors.css [app-client] (css) */
+:root {
+  --slate-0: #f8fafc;
+  --slate-1: #f1f5f9;
+  --slate-2: #e2e8f0;
+  --slate-3: #cbd5e1;
+  --slate-4: #94a3b8;
+  --slate-5: #64748b;
+  --slate-6: #475569;
+  --slate-7: #334155;
+  --slate-8: #1e293b;
+  --slate-9: #0f172a;
+  --slate-10: #020617;
+  --gray-0: #f9fafb;
+  --gray-1: #f3f4f6;
+  --gray-2: #e5e7eb;
+  --gray-3: #d1d5db;
+  --gray-4: #9ca3af;
+  --gray-5: #6b7280;
+  --gray-6: #4b5563;
+  --gray-7: #374151;
+  --gray-8: #1f2937;
+  --gray-9: #111827;
+  --gray-10: #030712;
+  --neutral-0: #fafafa;
+  --neutral-1: #f5f5f5;
+  --neutral-2: #e5e5e5;
+  --neutral-3: #d4d4d8;
+  --neutral-4: #a3a3a3;
+  --neutral-5: #737373;
+  --neutral-6: #525252;
+  --neutral-7: #404040;
+  --neutral-8: #262626;
+  --neutral-9: #171717;
+  --neutral-10: #0a0a0a;
+  --red-0: #fef2f2;
+  --red-1: #fee2e2;
+  --red-2: #fecaca;
+  --red-3: #fca5a5;
+  --red-4: #f87171;
+  --red-5: #ef4444;
+  --red-6: #dc2626;
+  --red-7: #b91c1c;
+  --red-8: #991b1b;
+  --red-9: #7f1d1d;
+  --red-10: #450a0a;
+  --orange-0: #fff7ed;
+  --orange-1: #ffedd5;
+  --orange-2: #fed7aa;
+  --orange-3: #fdba74;
+  --orange-4: #fb923c;
+  --orange-5: #f97316;
+  --orange-6: #ea580c;
+  --orange-7: #c2410c;
+  --orange-8: #9a3412;
+  --orange-9: #7c2d12;
+  --orange-10: #431407;
+  --amber-0: #fffbeb;
+  --amber-1: #fef3c7;
+  --amber-2: #fde68a;
+  --amber-3: #fcd34d;
+  --amber-4: #fbbf24;
+  --amber-5: #f59e0b;
+  --amber-6: #d97706;
+  --amber-7: #b45309;
+  --amber-8: #92400e;
+  --amber-9: #78350f;
+  --amber-10: #451a03;
+  --yellow-0: #fefce8;
+  --yellow-1: #fef9c3;
+  --yellow-2: #fef08a;
+  --yellow-3: #fde047;
+  --yellow-4: #facc15;
+  --yellow-5: #eab308;
+  --yellow-6: #ca8a04;
+  --yellow-7: #a16207;
+  --yellow-8: #854d0e;
+  --yellow-9: #713f12;
+  --yellow0-10: #422006;
+  --lime-0: #f7fee7;
+  --lime-1: #ecfccb;
+  --lime-2: #d9f99d;
+  --lime-3: #bef264;
+  --lime-4: #a3e635;
+  --lime-5: #84cc16;
+  --lime-6: #65a30d;
+  --lime-7: #4d7c0f;
+  --lime-8: #3f6212;
+  --lime-9: #365314;
+  --lime-10: #1a2e05;
+  --green-1: #f0fdf4;
+  --green-2: #dcfce7;
+  --green-3: #bbf7d0;
+  --green-4: #86efac;
+  --green-5: #4ade80;
+  --green-6: #22c55e;
+  --green-7: #16a34a;
+  --green-8: #15803d;
+  --green-9: #166534;
+  --green-0: #14532d;
+  --green-10: #052e16;
+  --teal-0: #f0fdfa;
+  --teal-1: #ccfbf1;
+  --teal-2: #99f6e4;
+  --teal-3: #5eead4;
+  --teal-4: #2dd4bf;
+  --teal-5: #14b8a6;
+  --teal-6: #0d9488;
+  --teal-7: #0f766e;
+  --teal-8: #115e59;
+  --teal-9: #134e4a;
+  --teal-10: #042f2e;
+  --cyan-0: #ecfeff;
+  --cyan-1: #cffafe;
+  --cyan-2: #a5f3fc;
+  --cyan-3: #67e8f9;
+  --cyan-4: #22d3ee;
+  --cyan-5: #06b6d4;
+  --cyan-6: #0891b2;
+  --cyan-7: #0e7490;
+  --cyan-8: #155e75;
+  --cyan-9: #164e63;
+  --cyan-10: #083344;
+  --sky-0: #f0f9ff;
+  --sky-1: #e0f2fe;
+  --sky-2: #bae6fd;
+  --sky-3: #7dd3fc;
+  --sky-4: #38bdf8;
+  --sky-5: #0ea5e9;
+  --sky-6: #0284c7;
+  --sky-7: #0369a1;
+  --sky-8: #075985;
+  --sky-9: #0c4a6e;
+  --sky-10: #082f49;
+  --blue-0: #eff6ff;
+  --blue-1: #dbeafe;
+  --blue-2: #bfdbfe;
+  --blue-3: #93c5fd;
+  --blue-4: #60a5fa;
+  --blue-5: #3b82f6;
+  --blue-6: #2563eb;
+  --blue-7: #1d4ed8;
+  --blue-8: #1e40af;
+  --blue-9: #1e3a8a;
+  --blue-10: #172554;
+  --indigo-0: #eef2ff;
+  --indigo-1: #e0e7ff;
+  --indigo-2: #c7d2fe;
+  --indigo-3: #a5b4fc;
+  --indigo-4: #818cf8;
+  --indigo-5: #6366f1;
+  --indigo-6: #4f46e5;
+  --indigo-7: #4338ca;
+  --indigo-8: #3730a3;
+  --indigo-9: #312e81;
+  --indigo-10: #1e1b4b;
+  --violet-0: #f5f3ff;
+  --violet-1: #ede9fe;
+  --violet-2: #ddd6fe;
+  --violet-3: #c4b5fd;
+  --violet-4: #a78bfa;
+  --violet-5: #8b5cf6;
+  --violet-6: #7c3aed;
+  --violet-7: #6d28d9;
+  --violet-8: #5b21b6;
+  --violet-9: #4c1d95;
+  --violet-10: #2e1065;
+  --purple-0: #faf5ff;
+  --purple-1: #f3e8ff;
+  --purple-2: #e9d5ff;
+  --purple-3: #d8b4fe;
+  --purple-4: #c084fc;
+  --purple-5: #a855f7;
+  --purple-6: #9333ea;
+  --purple-7: #7e22ce;
+  --purple-8: #6b21a8;
+  --purple-9: #581c87;
+  --purple-10: #3b0764;
+  --fuchsia-0: #fdf4ff;
+  --fuchsia-1: #fae8ff;
+  --fuchsia-2: #f5d0fe;
+  --fuchsia-3: #f0abfc;
+  --fuchsia-4: #e879f9;
+  --fuchsia-5: #d946ef;
+  --fuchsia-6: #c026d3;
+  --fuchsia-7: #a21caf;
+  --fuchsia-8: #86198f;
+  --fuchsia-9: #701a75;
+  --fuchsia-10: #4a044e;
+  --pink-0: #fdf2f8;
+  --pink-1: #fce7f3;
+  --pink-2: #fbcfe8;
+  --pink-3: #f9a8d4;
+  --pink-4: #f472b6;
+  --pink-5: #ec4899;
+  --pink-6: #db2777;
+  --pink-7: #be185d;
+  --pink-8: #9d174d;
+  --pink-9: #831843;
+  --pink-10: #500724;
+}
+
+/* [project]/src/app/globals.css [app-client] (css) */
+:root {
+  --background-color: var(--slate-1);
+  --text-color: var(--slate-9);
+  --icon-color: var(--gray-4);
+  --padding: .3125rem;
+  --gap: .3125rem;
+  --border: 1px solid #cbcbcb;
+  --border-radius: 5px;
+  --box-shadow: 0 0 2px #00000057;
+  --neumorphism: -.1rem -.1rem .1rem #fff, inset .01rem .01rem .1rem var(--slate-2), .1rem .1rem .4rem var(--slate-3);
+  --neumorphism-active: inset -.02rem -.02rem .1rem var(--slate-2), inset .1rem .1rem .2rem var(--slate-3);
+}
+
+html.dark {
+  --background-color: var(--slate-9);
+  --text-color: var(--slate-1);
+  --icon-color: var(--slate-1);
+  --icon-invert: 1;
+  --neumorphism: -.07rem -.07rem .1rem var(--slate-7), .1rem .1rem .1rem var(--slate-10);
+  --neumorphism-active: inset .1rem .1rem .1rem var(--slate-10), inset -.03rem -.03rem .2rem var(--slate-6);
+}
+
+.line-break {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-montserrat);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout {
+  max-width: 900px;
+  height: 100dvh;
+  padding: var(--padding);
+  align-items: center;
+  gap: var(--gap);
+  flex-direction: column;
+  margin: 0 auto;
+  display: flex;
+}
+
+header {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 100%;
+  padding: var(--padding);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+#btn-menu {
+  transition: transform .5s;
+}
+
+.nav-main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+main {
+  will-change: margin-left;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  flex: 1;
+  padding: 0 6px;
+  transition: margin-left .5s;
+  overflow-y: auto;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    margin-left: -145px;
+  }
+
+  .nav.show, main {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    margin-left: 145px;
+  }
+}
+
+/* [project]/src/components/atoms/Button/Button.module.css [app-client] (css) */
+.Button-module__8C-t3q__button {
+  background-color: var(--background-color);
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  box-shadow: var(--neumorphism);
+  border: none;
+  border-radius: 20%;
+  place-items: center;
+  padding: 1px;
+  transition: all .1s ease-in;
+  display: grid;
+}
+
+.Button-module__8C-t3q__button.Button-module__8C-t3q__active {
+  box-shadow: var(--neumorphism-active);
+}
+
+button.Button-module__8C-t3q__active svg {
+  transform: scale(.95);
+}
+
+.Button-module__8C-t3q__menuBtn {
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  display: flex;
+}
+
+.Button-module__8C-t3q__menuBtn span {
+  background-color: var(--icon-color);
+  border-radius: 5px;
+  width: 20px;
+  height: 3px;
+  transition: all .3s;
+}
+
+.Button-module__8C-t3q__active span:first-child {
+  transform: translateY(6px)rotate(45deg);
+}
+
+.Button-module__8C-t3q__active span:nth-child(2) {
+  opacity: 0;
+}
+
+.Button-module__8C-t3q__active span:nth-child(3) {
+  transform: translateY(-6px)rotate(-45deg);
+}
+
+@media (max-width: 700px) {
+  #Button-module__8C-t3q__btnMenu {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 700px) {
+  #Button-module__8C-t3q__btnMenu {
+    transform: translateX(-41px);
+  }
+}
+
+/* [project]/src/components/organisms/Navbar/Navbar.module.css [app-client] (css) */
+.Navbar-module__OwHo2W__nav {
+  min-width: 140px;
+  height: 100%;
+  padding: var(--padding);
+  font-family: var(--font-oswald);
+  background-color: var(--background-color);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  z-index: 1;
+  will-change: margin-left;
+  font-size: 1rem;
+  transition: margin-left .5s;
+  position: absolute;
+  overflow-y: auto;
+}
+
+.Navbar-module__OwHo2W__nav a {
+  color: inherit;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.Navbar-module__OwHo2W__nav a:hover {
+  color: var(--slate-4);
+  transition: color .2s;
+}
+
+.Navbar-module__OwHo2W__navTitle {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .Navbar-module__OwHo2W__nav {
+    margin-left: -145px;
+  }
+
+  .Navbar-module__OwHo2W__nav.Navbar-module__OwHo2W__show {
+    margin-left: 0;
+  }
+}
+
+/* [project]/src/components/organisms/Footer/Footer.module.css [app-client] (css) */
+.Footer-module__N-jXLa__footer {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 100%;
+  padding: var(--padding);
+  text-align: center;
+}
+
+/*# sourceMappingURL=%5Broot-of-the-server%5D__3ad483a4._.css.map*/

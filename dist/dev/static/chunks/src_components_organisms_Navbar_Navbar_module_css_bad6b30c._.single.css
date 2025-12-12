@@ -1,0 +1,46 @@
+/* [project]/src/components/organisms/Navbar/Navbar.module.css [app-client] (css) */
+.Navbar-module__OwHo2W__nav {
+  min-width: 140px;
+  height: 100%;
+  padding: var(--padding);
+  font-family: var(--font-oswald);
+  background-color: var(--background-color);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  z-index: 1;
+  will-change: margin-left;
+  font-size: 1rem;
+  transition: margin-left .5s;
+  position: absolute;
+  overflow-y: auto;
+}
+
+.Navbar-module__OwHo2W__nav a {
+  color: inherit;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.Navbar-module__OwHo2W__nav a:hover {
+  color: var(--slate-4);
+  transition: color .2s;
+}
+
+.Navbar-module__OwHo2W__navTitle {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .Navbar-module__OwHo2W__nav {
+    margin-left: -145px;
+  }
+
+  .Navbar-module__OwHo2W__nav.Navbar-module__OwHo2W__show {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=src_components_organisms_Navbar_Navbar_module_css_bad6b30c._.single.css.map*/

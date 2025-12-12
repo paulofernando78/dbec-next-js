@@ -16,7 +16,6 @@ export const HeaderProvider = (props) => {
   };
 
   useEffect(() => {
-    console.log(isDesktop)
     if (isDesktop) {
       setShowNavBar(true); // open desktop
       setShowHam(true);

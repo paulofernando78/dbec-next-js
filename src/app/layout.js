@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
 import { HeaderProvider } from "../context/headerContext";
-import { ThemeProvider } from "@/providers/ThemeProvider";
+import { ThemeProvider } from "@/context/themeContext";
 import Footer from "@/components/organisms/Footer";
 
 const montserrat = Montserrat({
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.variable} ${oswald.variable}`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider>
           <div className="layout">
             <HeaderProvider>
               <Header></Header>

@@ -7,7 +7,7 @@ export default function Button({ icon, onToggle, active }) {
   if (icon === "menu") {
     return (
       <button
-      className={`${styles.button} ${!active ? styles.active : ""}`}
+      className={`${styles.button} ${active ? styles.active : ""}`}
       onClick={onToggle}
       id={styles.btnMenu}>
         <div className={`${styles.menuBtn} ${!active ? styles.active : ""}`}>
@@ -21,7 +21,7 @@ export default function Button({ icon, onToggle, active }) {
 
   return (
     <button
-    className={`${styles.button} ${!active ? styles.active : ""}`}
+    className={`${styles.button} ${active ? styles.active : ""}`}
     onClick={onToggle}>
 
     {icon}

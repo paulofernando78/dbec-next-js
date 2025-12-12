@@ -3,14 +3,14 @@
 import { HeaderContext } from "@/context/headerContext"
 import Button from "@/components/atoms/Button"
 import Link from "next/link"
-import { useTheme } from "next-themes";
-import { useState, useContext } from "react"
+import { useContext } from "react"
+import { ThemeContext } from "@/context/themeContext"
 import { DarkMode, LightMode } from "@/lib/svg-imports"
 
 export default function Header() {
-  const {showNavBar, showHam, handleClick} = useContext(HeaderContext)
-  const [darkIcon, setDarkIcon] = useState(true)
-  const { theme, setTheme } = useTheme();
+  const {showHam, handleClick} = useContext(HeaderContext)
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const isDarkMode = theme === "dark";
 
   return (
     <>
@@ -19,8 +19,10 @@ export default function Header() {
         <Link href="/">
         <span>DAILY BASIS ENGLISH COURSE</span>
         </Link>
-        <Button icon={darkIcon ? <DarkMode /> : <LightMode />}
-        active={darkIcon} onToggle={() => { setTheme(theme === "light" ? "dark" : "light"); setDarkIcon(!darkIcon) }} isActive={true}
+        <Button icon={isDarkMode ? <LightMode /> : <DarkMode />}
+        active={isDarkMode}
+        onToggle={toggleTheme}
+        isActive={true}
         ></Button>
       </header>
     </>

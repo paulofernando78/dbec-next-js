@@ -1,0 +1,101 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+:root {
+  --background-color: var(--slate-1);
+  --text-color: var(--slate-9);
+  --icon-color: var(--gray-4);
+  --padding: .3125rem;
+  --gap: .3125rem;
+  --border: 1px solid #cbcbcb;
+  --border-radius: 5px;
+  --box-shadow: 0 0 2px #00000057;
+  --neumorphism: -.1rem -.1rem .1rem #fff, inset .01rem .01rem .1rem var(--slate-2), .1rem .1rem .4rem var(--slate-3);
+  --neumorphism-active: inset -.02rem -.02rem .1rem var(--slate-2), inset .1rem .1rem .2rem var(--slate-3);
+}
+
+html.dark {
+  --background-color: var(--slate-9);
+  --text-color: var(--slate-1);
+  --icon-color: var(--slate-1);
+  --icon-invert: 1;
+  --neumorphism: -.07rem -.07rem .1rem var(--slate-7), .1rem .1rem .1rem var(--slate-10);
+  --neumorphism-active: inset .1rem .1rem .1rem var(--slate-10), inset -.03rem -.03rem .2rem var(--slate-6);
+}
+
+.line-break {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-montserrat);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout {
+  max-width: 900px;
+  height: 100dvh;
+  padding: var(--padding);
+  align-items: center;
+  gap: var(--gap);
+  flex-direction: column;
+  margin: 0 auto;
+  display: flex;
+}
+
+header {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  width: 100%;
+  padding: var(--padding);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+#btn-menu {
+  transition: transform .5s;
+}
+
+.nav-main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+main {
+  will-change: margin-left;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  flex: 1;
+  padding: 0 6px;
+  transition: margin-left .5s;
+  overflow-y: auto;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    margin-left: -145px;
+  }
+
+  .nav.show, main {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    margin-left: 145px;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_css_bad6b30c._.single.css.map*/
