@@ -5211,3 +5211,162 @@ It can also happen if the client has a browser extension installed which messes 
 [03:00:29.717] Server  LOG      ✓ Compiled in 8ms
 [03:00:39.847] Server  LOG      ✓ Compiled in 4ms
 [03:05:04.476] Server  LOG      ✓ Compiled in 115ms
+[13:42:42.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[13:46:30.803] Browser ERROR   ./src/app/page.js:6:7
+Parsing ecmascript source code failed
+  4 |       <h1>Home Page</h1>
+  5 |       <
+> 6 |       <p>
+    |       ^
+  7 |         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
+  8 |         quis quisquam ipsum qui, minus odio quam vero sunt harum cumque optio
+  9 |         pariatur sint, ducimus ullam delectus omnis aliquid possimus!
+
+Expression expected
+[13:48:25.006] Server  LOG      ✓ Compiled in 55ms
+[13:48:31.965] Server  LOG      ✓ Compiled in 23ms
+[13:48:36.224] Server  LOG      ✓ Compiled in 4ms
+[13:48:46.219] Server  LOG      ✓ Compiled in 4ms
+[13:49:01.848] Server  LOG      ✓ Compiled in 17ms
+[13:49:04.098] Server  LOG      ✓ Compiled in 19ms
+[13:49:15.333] Server  LOG      ✓ Compiled in 19ms
+[13:49:18.787] Server  LOG      ✓ Compiled in 7ms
+[13:49:38.081] Server  LOG      ✓ Compiled in 15ms
+[13:49:52.751] Server  LOG      ✓ Compiled in 24ms
+[13:49:59.121] Browser ERROR   The tag <%s> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. h
+[13:50:02.155] Server  LOG      ✓ Compiled in 13ms
+[13:50:14.541] Server  LOG      ✓ Compiled in 13ms
+[13:50:38.330] Server  LOG      ✓ Compiled in 17ms
+[13:50:58.417] Server  LOG      ✓ Compiled in 21ms
+[13:51:00.188] Server  LOG      ✓ Compiled in 6ms
+[13:51:02.404] Server  LOG      ✓ Compiled in 114ms
+[13:51:02.547] Browser ERROR   ./src/app/globals.css:102:16
+Parsing CSS source code failed
+  100 |   border: var(--border);
+  101 |   border-radius: var(--border-radius);
+> 102 |   padding: var();
+      |                ^
+  103 |   overflow-y: auto;
+  104 | }
+  105 |
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[13:51:06.489] Server  LOG      ✓ Compiled in 73ms
+[13:51:36.142] Server  LOG      ✓ Compiled in 13ms
+[13:51:37.975] Server  LOG      ✓ Compiled in 4ms
+[13:51:42.322] Server  LOG      ✓ Compiled in 16ms
+[13:52:39.861] Server  LOG      ✓ Compiled in 32ms
+[13:52:39.980] Browser ERROR   ./src/css/typography.css:47:7
+Parsing CSS source code failed
+  45 |   text-box: trim-both cap alphabetic;
+  46 |   padding-top: 0.14rem;
+> 47 |   line
+     |       ^
+  48 |   overflow-wrap: anywhere;
+  49 |   text-wrap: pretty;
+  50 | }
+
+Unexpected token Ident("overflow-wrap")
+
+Import trace:
+  Client Component Browser:
+    ./src/css/typography.css [Client Component Browser]
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[13:52:42.400] Server  LOG      ✓ Compiled in 38ms
+[13:52:44.499] Server  LOG      ✓ Compiled in 20ms
+[13:52:49.872] Server  LOG      ✓ Compiled in 4ms
+[13:52:55.302] Server  LOG      ✓ Compiled in 4ms
+[13:52:56.936] Server  LOG      ✓ Compiled in 19ms
+[13:53:00.459] Server  LOG      ✓ Compiled in 5ms
+[13:53:02.319] Server  LOG      ✓ Compiled in 14ms
+[13:53:23.417] Server  LOG      ✓ Compiled in 20ms
+[13:53:25.237] Server  LOG      ✓ Compiled in 4ms
+[13:57:07.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[13:57:54.928] Server  LOG      ✓ Compiled in 23ms
+[13:58:41.098] Server  LOG      ✓ Compiled in 35ms
+[13:58:41.204] Browser ERROR   ./src/css/typography.css:6:30
+Parsing CSS source code failed
+  4 | }
+  5 |
+> 6 | h1 {font-size: clamp(2.25rem;}
+    |                              ^
+  7 | h2 {
+  8 |   font-size: 2rem;
+  9 | }
+
+Unexpected token CloseCurlyBracket
+
+Import trace:
+  Client Component Browser:
+    ./src/css/typography.css [Client Component Browser]
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[13:58:43.126] Server  LOG      ✓ Compiled in 38ms
+[13:58:46.718] Server  LOG      ✓ Compiled in 18ms
+[13:58:48.334] Server  LOG      ✓ Compiled in 3ms
+[14:00:39.989] Server  LOG      ✓ Compiled in 16ms
+[14:02:59.687] Server  LOG      ✓ Compiled in 18ms
+[14:03:09.699] Server  LOG      ✓ Compiled in 14ms
+[14:03:21.094] Server  LOG      ✓ Compiled in 44ms
+[14:03:21.201] Browser ERROR   ./src/css/typography.css:23:12
+Parsing CSS source code failed
+  21 |
+  22 |
+> 23 | font-size: clamp(0.9rem, 1.5vw, 1.125rem);
+     |            ^
+  24 |
+  25 | h1,
+  26 | h2,
+
+Invalid token in pseudo element: WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/css/typography.css [Client Component Browser]
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[14:03:30.194] Browser ERROR   ./src/css/typography.css:40:12
+Parsing CSS source code failed
+  38 | }
+  39 |
+> 40 | font-size: clamp(0.9rem, 1.5vw, 1.125rem);
+     |            ^
+  41 |
+  42 | h1,
+  43 | h2,
+
+Invalid token in pseudo element: WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/css/typography.css [Client Component Browser]
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[14:03:32.979] Browser ERROR   ./src/css/typography.css:34:12
+Parsing CSS source code failed
+  32 | }
+  33 |
+> 34 | font-size: clamp(0.9rem, 1.5vw, 1.125rem);
+     |            ^
+  35 |
+  36 | h1,
+  37 | h2,
+
+Invalid token in pseudo element: WhiteSpace(" ")
+
+Import trace:
+  Client Component Browser:
+    ./src/css/typography.css [Client Component Browser]
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[14:03:54.751] Server  LOG      ✓ Compiled in 16ms
+[14:04:10.414] Server  LOG      ✓ Compiled in 19ms
+[14:07:12.893] Server  LOG      ✓ Compiled in 38ms
+[14:07:19.233] Server  LOG      ✓ Compiled in 5ms
+[14:07:23.026] Server  LOG      ✓ Compiled in 4ms
