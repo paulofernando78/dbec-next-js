@@ -38,10 +38,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6, p, span, li {
   text-box: trim-both cap alphabetic;
-  overflow-wrap: anywhere;
-  text-wrap: pretty;
   padding-top: .15rem;
   line-height: 1.3;
+}
+
+p {
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
 }
 
 /*# sourceMappingURL=src_css_typography_css_bad6b30c._.single.css.map*/

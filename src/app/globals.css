@@ -58,7 +58,6 @@ body {
 
 .layout {
   max-width: 900px;
-  height: 100dvh;
   margin: 0 auto;
   padding: var(--padding);
 
@@ -93,7 +92,7 @@ header {
 /* Nav */
 
 main {
-  flex: 1;
+  /* flex: 1; */
   transition: margin-left 0.5s ease;
   will-change: margin-left;
 

@@ -388,10 +388,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4, h5, h6, p, span, li {
   text-box: trim-both cap alphabetic;
-  overflow-wrap: anywhere;
-  text-wrap: pretty;
   padding-top: .15rem;
   line-height: 1.3;
+}
+
+p {
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
 }
 
 /* [project]/src/css/colors.css [app-client] (css) */
@@ -639,7 +642,6 @@ body {
 
 .layout {
   max-width: 900px;
-  height: 100dvh;
   padding: var(--padding);
   align-items: center;
   gap: var(--gap);
@@ -674,7 +676,6 @@ main {
   will-change: margin-left;
   border: var(--border);
   border-radius: var(--border-radius);
-  flex: 1;
   padding: 5px;
   transition: margin-left .5s;
   overflow-y: auto;

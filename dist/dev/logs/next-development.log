@@ -5370,3 +5370,248 @@ Import trace:
 [14:07:12.893] Server  LOG      ✓ Compiled in 38ms
 [14:07:19.233] Server  LOG      ✓ Compiled in 5ms
 [14:07:23.026] Server  LOG      ✓ Compiled in 4ms
+[14:11:46.775] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:18:39.887] Server  LOG      ✓ Compiled in 30ms
+[14:18:59.715] Server  LOG      ✓ Compiled in 26ms
+[14:19:05.065] Server  LOG      ✓ Compiled in 4ms
+[14:19:50.539] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:19:50.539] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="montserrat_a7501abd-module__gSc95q__variable oswald_92c7ff-module__RI6j3q__vari..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[14:19:52.986] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:19:57.548] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:19:58.646] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:20:01.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:31:22.019] Server  LOG      ✓ Compiled in 55ms
+[14:33:06.546] Server  LOG      ✓ Compiled in 19ms
+[14:33:11.029] Server  LOG      ✓ Compiled in 22ms
+[14:33:16.847] Server  LOG      ✓ Compiled in 14ms
+[14:33:26.559] Server  LOG      ✓ Compiled in 24ms
+[14:34:22.231] Server  LOG      ✓ Compiled in 12ms
+[14:36:17.071] Server  LOG      ✓ Compiled in 57ms
+[14:36:21.626] Server  LOG      ✓ Compiled in 24ms
+[14:40:43.217] Server  LOG      ✓ Compiled in 41ms
+[14:40:45.591] Server  LOG      ✓ Compiled in 5ms
+[14:40:47.314] Server  LOG      ✓ Compiled in 6ms
+[14:40:49.567] Server  LOG      ✓ Compiled in 5ms
+[14:41:28.358] Server  LOG      ✓ Compiled in 4ms
+[14:41:34.639] Server  LOG      ✓ Compiled in 5ms
+[14:41:36.410] Server  LOG      ✓ Compiled in 4ms
+[14:46:24.595] Server  LOG      ✓ Compiled in 79ms
+[14:48:17.198] Server  LOG      ✓ Compiled in 15ms
+[14:48:22.769] Server  LOG      ✓ Compiled in 70ms
+[14:48:22.918] Browser ERROR   ./src/css/typography.css:38:1
+Parsing CSS source code failed
+  36 |   line-height: 1.4;
+  37 |   overflow-wrap: anywhere;÷
+> 38 | }
+     | ^
+
+Unexpected end of input
+
+Import trace:
+  Client Component Browser:
+    ./src/css/typography.css [Client Component Browser]
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[14:48:23.869] Server  LOG      ✓ Compiled in 9ms
+[14:48:25.473] Server  LOG      ✓ Compiled in 22ms
+[14:48:27.158] Server  LOG      ✓ Compiled in 8ms
+[14:49:12.495] Server  LOG      ✓ Compiled in 32ms
+[14:49:12.620] Browser ERROR   ./src/css/typography.css:28:4
+Parsing CSS source code failed
+  26 | h4,
+  27 | h5,
+> 28 | h6,{
+     |    ^
+  29 |   text-wrap: pretty;
+  30 | }
+  31 |
+
+Invalid empty selector
+
+Import trace:
+  Client Component Browser:
+    ./src/css/typography.css [Client Component Browser]
+    ./src/app/globals.css [Client Component Browser]
+    ./src/app/layout.js [Server Component]
+[14:49:14.650] Server  LOG      ✓ Compiled in 33ms
+[14:49:40.827] Server  LOG      ✓ Compiled in 4ms
+[14:51:18.483] Server  LOG      ✓ Compiled in 97ms
+[14:56:19.717] Server  LOG      ✓ Compiled in 95ms
+[14:57:55.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:57:55.193] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="montserrat_a7501abd-module__gSc95q__variable oswald_92c7ff-module__RI6j3q__vari..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[14:57:57.763] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:58:03.554] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[14:59:04.262] Server  LOG      ✓ Compiled in 18ms
+[14:59:18.603] Server  LOG      ✓ Compiled in 14ms
+[14:59:20.758] Server  LOG      ✓ Compiled in 3ms
+[14:59:36.144] Server  LOG      ✓ Compiled in 17ms
+[14:59:41.253] Server  LOG      ✓ Compiled in 5ms
+[15:02:00.354] Server  LOG      ✓ Compiled in 52ms
+[15:02:02.374] Server  LOG      ✓ Compiled in 17ms
+[15:02:21.595] Server  LOG      ✓ Compiled in 20ms
+[15:02:23.076] Server  LOG      ✓ Compiled in 6ms
+[15:02:32.818] Server  LOG      ✓ Compiled in 16ms
+[15:02:36.108] Server  LOG      ✓ Compiled in 21ms
+[15:03:21.301] Server  LOG      ✓ Compiled in 17ms
+[15:03:35.009] Server  LOG      ✓ Compiled in 17ms
+[15:03:38.655] Server  LOG      ✓ Compiled in 4ms
+[15:03:57.848] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:03:58.003] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="montserrat_a7501abd-module__gSc95q__variable oswald_92c7ff-module__RI6j3q__vari..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[15:04:48.793] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[15:04:49.018] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="montserrat_a7501abd-module__gSc95q__variable oswald_92c7ff-module__RI6j3q__vari..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[15:04:54.911] Server  LOG      ✓ Compiled in 16ms
+[15:04:56.894] Server  LOG      ✓ Compiled in 6ms
+[15:05:00.134] Server  LOG      ✓ Compiled in 4ms
+[15:05:01.811] Server  LOG      ✓ Compiled in 8ms
+[15:05:12.332] Server  LOG      ✓ Compiled in 21ms
+[15:05:16.795] Server  LOG      ✓ Compiled in 5ms
+[15:05:18.794] Server  LOG      ✓ Compiled in 16ms
+[15:05:28.562] Server  LOG      ✓ Compiled in 18ms
+[15:06:27.220] Server  LOG      ✓ Compiled in 16ms
+[15:06:47.166] Server  LOG      ✓ Compiled in 17ms
+[15:06:53.200] Server  LOG      ✓ Compiled in 14ms
+[15:06:59.232] Server  LOG      ✓ Compiled in 12ms
+[15:07:05.598] Server  LOG      ✓ Compiled in 12ms
+[15:09:16.893] Server  LOG      ✓ Compiled in 27ms
+[15:09:52.607] Server  LOG      ✓ Compiled in 22ms
+[15:11:38.941] Server  LOG      ✓ Compiled in 16ms

@@ -41,7 +41,6 @@ body {
 
 .layout {
   max-width: 900px;
-  height: 100dvh;
   padding: var(--padding);
   align-items: center;
   gap: var(--gap);
@@ -76,7 +75,6 @@ main {
   will-change: margin-left;
   border: var(--border);
   border-radius: var(--border-radius);
-  flex: 1;
   padding: 5px;
   transition: margin-left .5s;
   overflow-y: auto;
