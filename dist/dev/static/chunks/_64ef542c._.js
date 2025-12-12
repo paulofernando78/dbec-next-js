@@ -200,16 +200,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2
 ;
 function Button(t0) {
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(14);
-    if ($[0] !== "e657de002104e17849248b88e3755c1f1c8c70406037a5162eb83416f7df3dfb") {
+    if ($[0] !== "3dd30ffcab4d7826f939a7cf9b1799a15492ef922c029182d0ee36e7c9cbc7ff") {
         for(let $i = 0; $i < 14; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "e657de002104e17849248b88e3755c1f1c8c70406037a5162eb83416f7df3dfb";
+        $[0] = "3dd30ffcab4d7826f939a7cf9b1799a15492ef922c029182d0ee36e7c9cbc7ff";
     }
     const { icon, onToggle, active } = t0;
     if (icon === "menu") {
         const t1 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].button} ${active ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : ""}`;
-        const t2 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menuBtn} ${!active ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : ""}`;
+        const t2 = `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].menuBtn} ${active ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : ""}`;
         let t3;
         let t4;
         let t5;
@@ -536,109 +536,109 @@ var _s = __turbopack_context__.k.signature();
 function Header() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(14);
-    if ($[0] !== "c055daf7164cb5b75a40116df889555f96b0fd1f44ca36dc2a69e9a4555dcc90") {
+    if ($[0] !== "d7cf77528c83f8edf0c154210f0dd96d9e8619de060691f3045478fc7307ced3") {
         for(let $i = 0; $i < 14; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c055daf7164cb5b75a40116df889555f96b0fd1f44ca36dc2a69e9a4555dcc90";
+        $[0] = "d7cf77528c83f8edf0c154210f0dd96d9e8619de060691f3045478fc7307ced3";
     }
     const { showHam, handleClick } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$headerContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HeaderContext"]);
     const { theme, toggleTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$themeContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ThemeContext"]);
     const isDarkMode = theme === "dark";
-    let t0;
-    if ($[1] !== handleClick || $[2] !== showHam) {
-        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+    const t0 = !showHam;
+    let t1;
+    if ($[1] !== handleClick || $[2] !== t0) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             icon: "menu",
-            active: showHam,
+            active: t0,
             onToggle: handleClick
         }, void 0, false, {
             fileName: "[project]/src/components/organisms/Header/Header.jsx",
-            lineNumber: 29,
+            lineNumber: 30,
             columnNumber: 10
         }, this);
         $[1] = handleClick;
-        $[2] = showHam;
-        $[3] = t0;
+        $[2] = t0;
+        $[3] = t1;
     } else {
-        t0 = $[3];
+        t1 = $[3];
     }
-    let t1;
+    let t2;
     if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
-        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
             href: "/",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 children: "DAILY BASIS ENGLISH COURSE"
             }, void 0, false, {
                 fileName: "[project]/src/components/organisms/Header/Header.jsx",
-                lineNumber: 38,
+                lineNumber: 39,
                 columnNumber: 25
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/organisms/Header/Header.jsx",
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 10
         }, this);
-        $[4] = t1;
+        $[4] = t2;
     } else {
-        t1 = $[4];
+        t2 = $[4];
     }
-    let t2;
+    let t3;
     if ($[5] !== isDarkMode) {
-        t2 = isDarkMode ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$svg$2d$imports$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LightMode"], {}, void 0, false, {
+        t3 = isDarkMode ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$svg$2d$imports$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["LightMode"], {}, void 0, false, {
             fileName: "[project]/src/components/organisms/Header/Header.jsx",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 23
         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$svg$2d$imports$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DarkMode"], {}, void 0, false, {
             fileName: "[project]/src/components/organisms/Header/Header.jsx",
-            lineNumber: 45,
+            lineNumber: 46,
             columnNumber: 39
         }, this);
         $[5] = isDarkMode;
-        $[6] = t2;
+        $[6] = t3;
     } else {
-        t2 = $[6];
+        t3 = $[6];
     }
-    let t3;
-    if ($[7] !== isDarkMode || $[8] !== t2 || $[9] !== toggleTheme) {
-        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            icon: t2,
+    let t4;
+    if ($[7] !== isDarkMode || $[8] !== t3 || $[9] !== toggleTheme) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$atoms$2f$Button$2f$Button$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            icon: t3,
             active: isDarkMode,
-            onToggle: toggleTheme,
-            isActive: true
+            onToggle: toggleTheme
         }, void 0, false, {
             fileName: "[project]/src/components/organisms/Header/Header.jsx",
-            lineNumber: 53,
+            lineNumber: 54,
             columnNumber: 10
         }, this);
         $[7] = isDarkMode;
-        $[8] = t2;
+        $[8] = t3;
         $[9] = toggleTheme;
-        $[10] = t3;
+        $[10] = t4;
     } else {
-        t3 = $[10];
+        t4 = $[10];
     }
-    let t4;
-    if ($[11] !== t0 || $[12] !== t3) {
-        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+    let t5;
+    if ($[11] !== t1 || $[12] !== t4) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
                 children: [
-                    t0,
                     t1,
-                    t3
+                    t2,
+                    t4
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/organisms/Header/Header.jsx",
-                lineNumber: 63,
+                lineNumber: 64,
                 columnNumber: 12
             }, this)
         }, void 0, false);
-        $[11] = t0;
-        $[12] = t3;
-        $[13] = t4;
+        $[11] = t1;
+        $[12] = t4;
+        $[13] = t5;
     } else {
-        t4 = $[13];
+        t5 = $[13];
     }
-    return t4;
+    return t5;
 }
 _s(Header, "hQG+cxEt/Aa5vUfe61KftO3y+n0=");
 _c = Header;

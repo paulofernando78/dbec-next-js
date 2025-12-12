@@ -5190,3 +5190,24 @@ It can also happen if the client has a browser extension installed which messes 
 [02:13:01.178] Server  LOG      ✓ Compiled in 66ms
 [02:13:03.589] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [02:13:04.284] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:26:57.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:26:59.883] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:55:21.271] Server  LOG      ✓ Compiled in 154ms
+[02:57:31.469] Server  LOG      ✓ Compiled in 47ms
+[02:58:53.371] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:58:56.666] Server  LOG      ✓ Compiled in 60ms
+[02:59:01.124] Server  LOG      ✓ Compiled in 67ms
+[02:59:04.517] Server  LOG      ✓ Compiled in 69ms
+[02:59:06.115] Server  LOG      ✓ Compiled in 35ms
+[02:59:09.571] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:59:17.819] Server  LOG      ✓ Compiled in 71ms
+[02:59:20.547] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:59:36.935] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:00:01.515] Server  LOG      ✓ Compiled in 37ms
+[03:00:05.989] Server  LOG      ✓ Compiled in 5ms
+[03:00:18.544] Server  LOG      ✓ Compiled in 17ms
+[03:00:25.795] Server  LOG      ✓ Compiled in 18ms
+[03:00:26.950] Server  LOG      ✓ Compiled in 8ms
+[03:00:29.717] Server  LOG      ✓ Compiled in 8ms
+[03:00:39.847] Server  LOG      ✓ Compiled in 4ms
+[03:05:04.476] Server  LOG      ✓ Compiled in 115ms

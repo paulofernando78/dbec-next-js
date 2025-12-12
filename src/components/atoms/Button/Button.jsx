@@ -10,7 +10,7 @@ export default function Button({ icon, onToggle, active }) {
       className={`${styles.button} ${active ? styles.active : ""}`}
       onClick={onToggle}
       id={styles.btnMenu}>
-        <div className={`${styles.menuBtn} ${!active ? styles.active : ""}`}>
+        <div className={`${styles.menuBtn} ${active ? styles.active : ""}`}>
           <span></span>
           <span></span>
           <span></span>

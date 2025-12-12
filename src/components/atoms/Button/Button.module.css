@@ -37,13 +37,13 @@ button.active svg {
   transition: 0.3s;
 }
 
-.active span:nth-child(1) {
+.menuBtn.active span:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
 }
-.active span:nth-child(2) {
+.menuBtn.active span:nth-child(2) {
   opacity: 0;
 }
-.active span:nth-child(3) {
+.menuBtn.active span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 

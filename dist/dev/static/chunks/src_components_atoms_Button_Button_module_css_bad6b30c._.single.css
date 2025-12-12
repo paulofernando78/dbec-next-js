@@ -37,15 +37,15 @@ button.Button-module__8C-t3q__active svg {
   transition: all .3s;
 }
 
-.Button-module__8C-t3q__active span:first-child {
+.Button-module__8C-t3q__menuBtn.Button-module__8C-t3q__active span:first-child {
   transform: translateY(6px)rotate(45deg);
 }
 
-.Button-module__8C-t3q__active span:nth-child(2) {
+.Button-module__8C-t3q__menuBtn.Button-module__8C-t3q__active span:nth-child(2) {
   opacity: 0;
 }
 
-.Button-module__8C-t3q__active span:nth-child(3) {
+.Button-module__8C-t3q__menuBtn.Button-module__8C-t3q__active span:nth-child(3) {
   transform: translateY(-6px)rotate(-45deg);
 }
 

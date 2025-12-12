@@ -15,14 +15,13 @@ export default function Header() {
   return (
     <>
       <header>
-        <Button icon="menu" active={showHam} onToggle= {handleClick}></Button>
+        <Button icon="menu" active={!showHam} onToggle= {handleClick}></Button>
         <Link href="/">
         <span>DAILY BASIS ENGLISH COURSE</span>
         </Link>
         <Button icon={isDarkMode ? <LightMode /> : <DarkMode />}
         active={isDarkMode}
         onToggle={toggleTheme}
-        isActive={true}
         ></Button>
       </header>
     </>
