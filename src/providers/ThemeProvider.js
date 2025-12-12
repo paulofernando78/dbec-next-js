@@ -5,9 +5,9 @@ import { ThemeProvider as NextThemeProvider } from "next-themes"
 export function ThemeProvider({ children }) {
   return (
 <NextThemeProvider
-  attribute="data-theme"
-  defaultTheme="system"
-  enable={true}
+  attribute="class"
+  defaultTheme="light"
+  enable={false}
 >
   {children}
 </NextThemeProvider>

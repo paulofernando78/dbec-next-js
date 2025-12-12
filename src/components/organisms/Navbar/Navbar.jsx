@@ -11,7 +11,7 @@ const linkGroup = [
     title: "Audiobooks",
     links: [
       {
-        href: "/audiobook/brginner", label: "Beginner"
+        href: "/audiobook/beginner", label: "Beginner"
       }
     ],
   },

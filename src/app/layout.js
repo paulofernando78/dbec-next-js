@@ -27,11 +27,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${montserrat.variable} ${oswald.variable}`}>
-        <ThemeProvider defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="light">
           <div className="layout">
             <HeaderProvider>
               <Header></Header>
-              <div className="content-wrapper">
+              <div className="nav-main">
                 <NavBar></NavBar>
                 <main>{children}</main>
               </div>
