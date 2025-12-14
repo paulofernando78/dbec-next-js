@@ -49,11 +49,6 @@ html.dark {
   gap: 2rem;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -64,12 +59,12 @@ body {
 
 .layout {
   max-width: 900px;
+  height: 100dvh;
   margin: 0 auto;
   padding: var(--padding);
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: var(--gap);
 }
 
@@ -90,6 +85,7 @@ header {
 
 .nav-main {
   flex: 1;
+  min-height: 0;
   display: flex;
   position: relative;
   width: 100%;
@@ -98,14 +94,15 @@ header {
 /* Nav */
 
 main {
-  /* flex: 1; */
-  transition: margin-left 0.5s ease;
-  will-change: margin-left;
+  overflow-y: auto;
 
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 5px;
-  overflow-y: auto;
+
+  
+  transition: margin-left 0.5s ease;
+  will-change: margin-left;
 }
 
 @media (max-width: 700px) {

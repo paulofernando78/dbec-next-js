@@ -33,10 +33,6 @@ html.dark {
   display: flex;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -47,8 +43,8 @@ body {
 
 .layout {
   max-width: 900px;
+  height: 100dvh;
   padding: var(--padding);
-  align-items: center;
   gap: var(--gap);
   flex-direction: column;
   margin: 0 auto;
@@ -73,14 +69,15 @@ header {
 .nav-main {
   flex: 1;
   width: 100%;
+  min-height: 0;
   display: flex;
   position: relative;
 }
 
 main {
-  will-change: margin-left;
   border: var(--border);
   border-radius: var(--border-radius);
+  will-change: margin-left;
   padding: 5px;
   transition: margin-left .5s;
   overflow-y: auto;

@@ -1,5 +1,5 @@
-export default function VerbE() {
+export default function VerbBe() {
   return (
-    <p>Teste</p>
+    <p>Verb be</p>
   )
 }
