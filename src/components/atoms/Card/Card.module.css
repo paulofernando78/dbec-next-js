@@ -1,5 +1,6 @@
 .card {
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px 6px;
+  text-box: trim-both cap alphabetic;
 }

@@ -8,7 +8,8 @@
   --icon-color: var(--gray-4);
 
   /* Spacing */
-  --padding: 0.3125rem;
+  --padding: 5px;
+  --padding-block: 0.4rem;
   --gap: 0.3125rem;
 
   /* Border */
@@ -52,7 +53,6 @@ html.dark {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: var(--font-montserrat);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -94,6 +94,7 @@ header {
 /* Nav */
 
 main {
+  width: 100vw;
   overflow-y: auto;
 
   border: var(--border);

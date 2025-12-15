@@ -1,0 +1,21 @@
+/* [project]/src/components/molecules/Whiteboard/Whiteboard.module.css [app-client] (css) */
+.Whiteboard-module__ItCqYW__frame {
+  border: 5px solid var(--slate-3);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  margin-bottom: 50px;
+}
+
+/* [project]/src/components/atoms/Ribbon/Ribbon.module.css [app-client] (css) */
+.Ribbon-module__i1x-YG__ribbon {
+  border-radius: var(--border-radius);
+  background-color: #000;
+  font-weight: bold;
+}
+
+.Ribbon-module__i1x-YG__label {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=src_components_97dc4428._.css.map*/

@@ -1,0 +1,14 @@
+/* [project]/src/components/atoms/Ribbon/Ribbon.module.css [app-client] (css) */
+.Ribbon-module__i1x-YG__ribbon {
+  border-radius: var(--border-radius);
+  text-box: trim-both cap alphabetic;
+  background-color: #000;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.Ribbon-module__i1x-YG__label {
+  color: #fff;
+}
+
+/*# sourceMappingURL=src_components_atoms_Ribbon_Ribbon_module_css_bad6b30c._.single.css.map*/

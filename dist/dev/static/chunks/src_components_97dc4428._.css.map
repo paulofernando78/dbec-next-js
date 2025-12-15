@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/components/molecules/Whiteboard/Whiteboard.module.css"],"sourcesContent":[".frame {\n  border: 5px solid var(--slate-3);\n  border-radius: var(--border-radius);\n  padding: var(--padding);\n  margin-bottom: 50px;\n}\n"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/components/atoms/Ribbon/Ribbon.module.css"],"sourcesContent":[".ribbon {\n  background-color: black;\n  /* padding: var(--padding); */\n  border-radius: var(--border-radius);\n  font-weight: bold;\n}\n\n.label {\n  color: white ;\n  font-size: 1.2rem;\n}"],"names":[],"mappings":"AAAA;;;;;;AAOA"}}]
+}

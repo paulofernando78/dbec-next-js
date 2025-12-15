@@ -1,0 +1,30 @@
+/* [project]/src/components/molecules/Whiteboard/Whiteboard.module.css [app-client] (css) */
+.Whiteboard-module__ItCqYW__frame {
+  border: 5px solid var(--slate-3);
+  border-radius: var(--border-radius);
+  margin-bottom: 50px;
+  padding: 8px 8px 8px 10px;
+}
+
+/* [project]/src/components/atoms/Ribbon/Ribbon.module.css [app-client] (css) */
+.Ribbon-module__i1x-YG__ribbon {
+  border-radius: var(--border-radius);
+  text-box: trim-both cap alphabetic;
+  background-color: #000;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.Ribbon-module__i1x-YG__label {
+  color: #fff;
+}
+
+/* [project]/src/components/atoms/Card/Card.module.css [app-client] (css) */
+.Card-module__OdKJNG__card {
+  text-box: trim-both cap alphabetic;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px 6px;
+}
+
+/*# sourceMappingURL=src_components_7dacaae9._.css.map*/

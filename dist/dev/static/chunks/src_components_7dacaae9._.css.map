@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/components/molecules/Whiteboard/Whiteboard.module.css"],"sourcesContent":[".frame {\n  border: 5px solid var(--slate-3);\n  border-radius: var(--border-radius);\n  padding: 8px 8px 8px 10px;\n  margin-bottom: 50px;\n}\n"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/components/atoms/Ribbon/Ribbon.module.css"],"sourcesContent":[".ribbon {\n  background-color: black;\n  padding: 8px;\n  border-radius: var(--border-radius);\n  font-weight: bold;\n  text-box: trim-both cap alphabetic;\n  \n}\n\n.label {\n  color: white;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;AASA"}},
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/components/atoms/Card/Card.module.css"],"sourcesContent":[".card {\n  border: 1px solid gray;\n  border-radius: 5px;\n  padding: 8px 6px;\n  text-box: trim-both cap alphabetic;\n}"],"names":[],"mappings":"AAAA"}}]
+}

@@ -3,7 +3,8 @@
   --background-color: var(--slate-1);
   --text-color: var(--slate-9);
   --icon-color: var(--gray-4);
-  --padding: .3125rem;
+  --padding: 5px;
+  --padding-block: .4rem;
   --gap: .3125rem;
   --border: 1px solid #cbcbcb;
   --border-radius: 5px;
@@ -36,7 +37,6 @@ html.dark {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: var(--font-montserrat);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -78,6 +78,7 @@ main {
   border: var(--border);
   border-radius: var(--border-radius);
   will-change: margin-left;
+  width: 100vw;
   padding: 5px;
   transition: margin-left .5s;
   overflow-y: auto;

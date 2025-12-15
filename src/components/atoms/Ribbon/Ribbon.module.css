@@ -1,0 +1,12 @@
+.ribbon {
+  background-color: black;
+  padding: 8px;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  text-box: trim-both cap alphabetic;
+  
+}
+
+.label {
+  color: white;
+}

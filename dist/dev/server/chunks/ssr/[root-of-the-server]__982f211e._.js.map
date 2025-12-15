@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/mdx-components.js"],"sourcesContent":["const components = {}\n \nexport function useMDXComponents() {\n  return components\n}"],"names":[],"mappings":";;;;AAAA,MAAM,aAAa,CAAC;AAEb,SAAS;IACd,OAAO;AACT"}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"file":"turbopack:///[project]/src/app/mock/page.mdx","sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/app/mock/page.mdx"],"sourcesContent":["\nimport Whiteboard from \"@/components/molecules/Whiteboard\";\n\n\n\n# Welcome to DAILY BASIS ENGLISH COURSE.\n\n"],"names":[],"mappings":";;;;;;;;;;;;;;;kBAKE"}}]
+}

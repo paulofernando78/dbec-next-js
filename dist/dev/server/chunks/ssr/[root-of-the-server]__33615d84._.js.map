@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"file":"turbopack:///[project]/src/app/mock/page.mdx","sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/app/mock/page.mdx"],"sourcesContent":["\"use client\"\n\nimport Whiteboard from \"@/components/molecules/Whiteboard\";\n\n# Welcome to DAILY BASIS ENGLISH COURSE.\n\n{/* <Whiteboard\n  title=\"Title\"\n  subtitle=\"Subtitle\"\n  description=\"Description\"\n/> */}\n\n"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;0BAAA;;;;;0BAIE"}}]
+}
