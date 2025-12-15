@@ -1,0 +1,37 @@
+/* [project]/src/components/molecules/Whiteboard/Paragraph/Paragraph.module.css [app-client] (css) */
+.Paragraph-module__lrSwcW__image {
+  border: 5px solid var(--slate-5);
+  border-radius: 5px;
+  max-width: 100%;
+  height: 200px;
+}
+
+.Paragraph-module__lrSwcW__withImage {
+  gap: 10px;
+  display: flex;
+}
+
+.Paragraph-module__lrSwcW__top {
+  flex-direction: column;
+}
+
+.Paragraph-module__lrSwcW__right {
+  flex-direction: row-reverse;
+}
+
+.Paragraph-module__lrSwcW__bottom {
+  flex-direction: column-reverse;
+}
+
+.Paragraph-module__lrSwcW__left {
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .Paragraph-module__lrSwcW__withImage {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=src_components_molecules_Whiteboard_Paragraph_Paragraph_module_b623f007.css.map*/

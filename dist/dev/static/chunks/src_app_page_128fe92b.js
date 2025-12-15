@@ -1,7 +1,9 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/src_components_atoms_Card_Card_module_4d3f4bc6.css"
+  "static/chunks/src_components_molecules_Whiteboard_f70d7f0c._.css",
+  "static/chunks/node_modules_next_a62874fb._.js",
+  "static/chunks/src_components_molecules_Whiteboard_Paragraph_3ae4067c._.js"
 ],
     source: "dynamic"
 });

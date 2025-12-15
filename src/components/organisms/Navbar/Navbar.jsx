@@ -11,7 +11,10 @@ const linkGroup = [
     title: "Audiobooks",
     links: [
       {
-        href: "/audiobook/beginner", label: "Beginner"
+        href: "/audiobook/beginner", label: "Starter"
+      },
+      {
+        href: "/audiobook/beginner", label: "..."
       }
     ],
   },
@@ -59,19 +62,22 @@ const linkGroup = [
       {
         href: "/grammar/future-perfect", label: "Future Perfect"
       },
+      {
+        href: "/grammar/future-perfect", label: "Conditionals"
+      }
     ],
   },
   {
     title: "Vocabulary",
     links: [
       {
-        href: "/vocabulary/collocations", label: "collocations"
+        href: "/vocabulary/collocations", label: "Collocations"
       },
       {
-        href: "/vocabulary/homophones", label: "homophones"
+        href: "/vocabulary/homophones", label: "Homophones"
       },
       {
-        href: "/vocabulary/homohtaphs", label: "homohraphs"
+        href: "/vocabulary/homohtaphs", label: "Homohraphs"
       }
     ],
   },

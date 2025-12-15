@@ -106,6 +106,18 @@ main {
   will-change: margin-left;
 }
 
+.bold {
+ font-weight: bold;
+}
+
+.italic {
+ font-style: italic;
+}
+
+.underlined {
+ text-decoration: underline ;
+}
+
 @media (max-width: 700px) {
   .nav {
     margin-left: -145px;

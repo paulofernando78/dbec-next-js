@@ -1,6 +1,6 @@
 .frame {
   border: 5px solid var(--slate-3);
   border-radius: var(--border-radius);
-  padding: 8px 8px 8px 10px;
-  margin-bottom: 50px;
+  padding: 8px 8px 7px 10px;
+  margin-bottom: 30px;
 }

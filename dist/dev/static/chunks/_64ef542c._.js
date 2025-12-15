@@ -424,7 +424,11 @@ __turbopack_context__.s([
     "DarkMode",
     ()=>DarkMode,
     "LightMode",
-    ()=>LightMode
+    ()=>LightMode,
+    "PlayAudio",
+    ()=>PlayAudio,
+    "StopAudio",
+    ()=>StopAudio
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
@@ -432,11 +436,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const LightMode = ()=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(2);
-    if ($[0] !== "028c66e27232b4ed60db4f1dec2869c21ea481b1a2b2cd07c565e9ced7d2bdf2") {
+    if ($[0] !== "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7") {
         for(let $i = 0; $i < 2; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "028c66e27232b4ed60db4f1dec2869c21ea481b1a2b2cd07c565e9ced7d2bdf2";
+        $[0] = "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -467,11 +471,11 @@ const LightMode = ()=>{
 _c = LightMode;
 const DarkMode = ()=>{
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(2);
-    if ($[0] !== "028c66e27232b4ed60db4f1dec2869c21ea481b1a2b2cd07c565e9ced7d2bdf2") {
+    if ($[0] !== "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7") {
         for(let $i = 0; $i < 2; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "028c66e27232b4ed60db4f1dec2869c21ea481b1a2b2cd07c565e9ced7d2bdf2";
+        $[0] = "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -500,9 +504,125 @@ const DarkMode = ()=>{
     return t0;
 };
 _c1 = DarkMode;
-var _c, _c1;
+const PlayAudio = (t0)=>{
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
+    if ($[0] !== "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7") {
+        for(let $i = 0; $i < 8; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+            d: "m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+        }, void 0, false, {
+            fileName: "[project]/src/lib/svg-imports.js",
+            lineNumber: 60,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    let t2;
+    if ($[5] !== className || $[6] !== props) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            height: "24px",
+            viewBox: "0 -960 960 960",
+            width: "24px",
+            fill: "#999999",
+            className: className,
+            ...props,
+            children: t1
+        }, void 0, false, {
+            fileName: "[project]/src/lib/svg-imports.js",
+            lineNumber: 67,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[5] = className;
+        $[6] = props;
+        $[7] = t2;
+    } else {
+        t2 = $[7];
+    }
+    return t2;
+};
+_c2 = PlayAudio;
+const StopAudio = (t0)=>{
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(8);
+    if ($[0] !== "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7") {
+        for(let $i = 0; $i < 8; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "875add8dce8489d0797cf35faa19c22f4d220af4c6c61d55f36ab0f1a645cfb7";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+            d: "M320-320h320v-320H320v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
+        }, void 0, false, {
+            fileName: "[project]/src/lib/svg-imports.js",
+            lineNumber: 100,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    let t2;
+    if ($[5] !== className || $[6] !== props) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            height: "24px",
+            viewBox: "0 -960 960 960",
+            width: "24px",
+            fill: "#999999",
+            className: className,
+            ...props,
+            children: t1
+        }, void 0, false, {
+            fileName: "[project]/src/lib/svg-imports.js",
+            lineNumber: 107,
+            columnNumber: 10
+        }, ("TURBOPACK compile-time value", void 0));
+        $[5] = className;
+        $[6] = props;
+        $[7] = t2;
+    } else {
+        t2 = $[7];
+    }
+    return t2;
+};
+_c3 = StopAudio;
+var _c, _c1, _c2, _c3;
 __turbopack_context__.k.register(_c, "LightMode");
 __turbopack_context__.k.register(_c1, "DarkMode");
+__turbopack_context__.k.register(_c2, "PlayAudio");
+__turbopack_context__.k.register(_c3, "StopAudio");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
@@ -683,7 +803,11 @@ const linkGroup = [
         links: [
             {
                 href: "/audiobook/beginner",
-                label: "Beginner"
+                label: "Starter"
+            },
+            {
+                href: "/audiobook/beginner",
+                label: "..."
             }
         ]
     },
@@ -742,6 +866,10 @@ const linkGroup = [
             {
                 href: "/grammar/future-perfect",
                 label: "Future Perfect"
+            },
+            {
+                href: "/grammar/future-perfect",
+                label: "Conditionals"
             }
         ]
     },
@@ -750,15 +878,15 @@ const linkGroup = [
         links: [
             {
                 href: "/vocabulary/collocations",
-                label: "collocations"
+                label: "Collocations"
             },
             {
                 href: "/vocabulary/homophones",
-                label: "homophones"
+                label: "Homophones"
             },
             {
                 href: "/vocabulary/homohtaphs",
-                label: "homohraphs"
+                label: "Homohraphs"
             }
         ]
     }
@@ -766,11 +894,11 @@ const linkGroup = [
 function NavBar(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "a20a7c21b8da0ede433132bde64b66511a6bd06f60cefa1e66eab4f033a277cc") {
+    if ($[0] !== "c918933fd4dca8815e10a697685909eaad3191d40de5d264641ad041cea8dcfe") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "a20a7c21b8da0ede433132bde64b66511a6bd06f60cefa1e66eab4f033a277cc";
+        $[0] = "c918933fd4dca8815e10a697685909eaad3191d40de5d264641ad041cea8dcfe";
     }
     const { showNavBar } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$headerContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HeaderContext"]);
     const t1 = `line-break ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$organisms$2f$Navbar$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].nav} ${showNavBar ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$organisms$2f$Navbar$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].show : ""}`;
@@ -788,7 +916,7 @@ function NavBar(t0) {
             children: t2
         }, void 0, false, {
             fileName: "[project]/src/components/organisms/Navbar/Navbar.jsx",
-            lineNumber: 102,
+            lineNumber: 108,
             columnNumber: 10
         }, this);
         $[2] = t1;
@@ -808,20 +936,20 @@ function _NavBarLinkGroupMap(group, groupIndex) {
                 children: group.title
             }, void 0, false, {
                 fileName: "[project]/src/components/organisms/Navbar/Navbar.jsx",
-                lineNumber: 111,
+                lineNumber: 117,
                 columnNumber: 32
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 children: group.links.map(_NavBarLinkGroupMapGroupLinksMap)
             }, void 0, false, {
                 fileName: "[project]/src/components/organisms/Navbar/Navbar.jsx",
-                lineNumber: 111,
+                lineNumber: 117,
                 columnNumber: 86
             }, this)
         ]
     }, groupIndex, true, {
         fileName: "[project]/src/components/organisms/Navbar/Navbar.jsx",
-        lineNumber: 111,
+        lineNumber: 117,
         columnNumber: 10
     }, this);
 }
@@ -831,7 +959,7 @@ function _NavBarLinkGroupMapGroupLinksMap(item, linkIndex) {
         children: item.label
     }, linkIndex, false, {
         fileName: "[project]/src/components/organisms/Navbar/Navbar.jsx",
-        lineNumber: 114,
+        lineNumber: 120,
         columnNumber: 10
     }, this);
 }
