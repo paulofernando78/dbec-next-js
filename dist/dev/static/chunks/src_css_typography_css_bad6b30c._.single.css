@@ -5,31 +5,31 @@ body {
 }
 
 h1 {
-  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-size: clamp(1.75rem, 1.6rem + .6vw, 2.25rem);
 }
 
 h2 {
-  font-size: clamp(1.4rem, 3.2vw, 1.8rem);
+  font-size: clamp(1.4rem, 1.3rem + .45vw, 1.8rem);
 }
 
 h3 {
-  font-size: clamp(1.12rem, 2.8vw, 1.44rem);
+  font-size: clamp(1.12rem, 1.05rem + .35vw, 1.44rem);
 }
 
 h4 {
-  font-size: clamp(.896rem, 2.4vw, 1.152rem);
+  font-size: clamp(.896rem, .85rem + .28vw, 1.152rem);
 }
 
 h5 {
-  font-size: clamp(.716rem, 2vw, .9216rem);
+  font-size: clamp(.716rem, .68rem + .22vw, .9216rem);
 }
 
 h6 {
-  font-size: clamp(.573rem, 1.8vw, .74rem);
+  font-size: clamp(.573rem, .55rem + .18vw, .74rem);
 }
 
 p, span, li {
-  font-size: clamp(.9rem, 1.5vw, 1.125rem);
+  font-size: clamp(.9rem, .85rem + .25vw, 1.125rem);
 }
 
 h1, h2, h3, h4, h5, h6 {
