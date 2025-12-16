@@ -27,16 +27,6 @@ li {
   font-size: clamp(0.9rem, calc(0.85rem + 0.25vw), 1.125rem);
 }
 
-h1:not(:first-child),
-h2:not(:first-child),
-h3:not(:first-child),
-h4:not(:first-child),
-h5:not(:first-child),
-h6:not(:first-child) {
-  margin-bottom: 0.5rem;
-  line-height: 1;
-}
-
 p {
   line-height: 1.4;
   overflow-wrap: anywhere;

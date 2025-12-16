@@ -382,11 +382,6 @@ p, span, li {
   font-size: clamp(.9rem, .85rem + .25vw, 1.125rem);
 }
 
-h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
-  margin-bottom: .5rem;
-  line-height: 1;
-}
-
 p {
   overflow-wrap: anywhere;
   text-wrap: pretty;

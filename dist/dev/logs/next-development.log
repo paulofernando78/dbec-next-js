@@ -2178,3 +2178,19 @@ It can also happen if the client has a browser extension installed which messes 
                   ...
 
 [01:08:12.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:09:32.731] Server  LOG      ✓ Compiled in 26ms
+[01:09:35.229] Server  LOG      ✓ Compiled in 9ms
+[01:09:39.357] Server  LOG      ✓ Compiled in 6ms
+[01:09:42.512] Server  LOG      ✓ Compiled in 8ms
+[01:10:12.799] Server  LOG      ✓ Compiled in 41ms
+[01:10:20.042] Server  LOG      ✓ Compiled in 9ms
+[01:10:30.583] Server  LOG      ✓ Compiled in 5ms
+[01:10:34.032] Server  LOG      ✓ Compiled in 3ms
+[01:10:49.728] Server  LOG      ✓ Compiled in 20ms
+[01:10:52.942] Server  LOG      ✓ Compiled in 24ms
+[01:11:01.296] Server  LOG      ✓ Compiled in 5ms
+[01:11:03.827] Server  LOG      ✓ Compiled in 2ms
+[01:11:05.622] Server  LOG      ✓ Compiled in 16ms
+[01:11:07.043] Server  LOG      ✓ Compiled in 5ms
+[01:11:18.541] Server  LOG      ✓ Compiled in 15ms
+[01:11:26.828] Server  LOG      ✓ Compiled in 7ms

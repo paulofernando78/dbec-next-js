@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/molecules/Whiteboard/Whiteboard.module.css"],"sourcesContent":[".frame {\n  border: 5px solid var(--slate-3);\n  border-radius: var(--border-radius);\n  padding: 8px 8px 7px 10px;\n  margin-bottom: 30px;\n}\n"],"names":[],"mappings":"AAAA"}}]
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/molecules/Whiteboard/Whiteboard.module.css"],"sourcesContent":[".frame {\n  border: 5px solid var(--slate-3);\n  border-radius: var(--border-radius);\n  padding: 4px 9px 6px 9px;\n  margin-bottom: 30px;\n}\n"],"names":[],"mappings":"AAAA"}}]
 }
