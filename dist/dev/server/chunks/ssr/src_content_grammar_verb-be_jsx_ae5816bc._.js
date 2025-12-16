@@ -1,0 +1,12 @@
+module.exports = [
+"[project]/src/content/grammar/verb-be.jsx [app-rsc] (ecmascript, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "server/chunks/ssr/src_db709c2c._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/src/content/grammar/verb-be.jsx [app-rsc] (ecmascript)");
+    });
+});
+}),
+];

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../src/app/students/selaa/page.jsx"],"sourcesContent":["export default function SELAA() {\n  return (\n    \n    <div>\n      <p>AAA</p>\n    </div>\n  )\n}"],"names":[],"mappings":"8LAAe,SAAS,IACtB,MAEE,CAAA,EAAA,EAAA,GAAA,EAAC,MAAA,UACC,CAAA,EAAA,EAAA,GAAA,EAAC,IAAA,UAAE,SAGT"}

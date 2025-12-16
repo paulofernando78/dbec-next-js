@@ -1,0 +1,9 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/grammar/[slug]/page": "/grammar/[slug]",
+  "/mock/page": "/mock",
+  "/page": "/",
+  "/students/selaa/lesson-1/page": "/students/selaa/lesson-1",
+  "/students/selaa/page": "/students/selaa"
+}

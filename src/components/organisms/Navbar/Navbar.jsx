@@ -77,7 +77,7 @@ const linkGroup = [
         href: "/vocabulary/homophones", label: "Homophones"
       },
       {
-        href: "/vocabulary/homohtaphs", label: "Homohraphs"
+        href: "/vocabulary/homographs", label: "Homographs"
       }
     ],
   },

@@ -382,7 +382,7 @@ p, span, li {
   font-size: clamp(.9rem, .85rem + .25vw, 1.125rem);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
   margin-bottom: .5rem;
   line-height: 1;
 }

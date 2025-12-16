@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/paulosilva/Desktop/Dev/dbec-next-js/src/app/grammar/%5Bslug%5D/page.jsx"],"sourcesContent":["import { notFound } from \"next/navigation\";\n\nexport default async function GrammarPage( {params} ) {\n  const { slug } = await params;\n\n  try {\n    const Content = (\n      await import(`@/content/grammar/${slug}.jsx`)\n    ).default;\n\n    return (\n      <section>\n        <Content />\n      </section>\n    )\n\n  } catch (error) {\n    notFound()\n  }\n}"],"names":[],"mappings":";;;;;AAAA;AAAA;;;AAEe,eAAe,YAAa,EAAC,MAAM,EAAC;IACjD,MAAM,EAAE,IAAI,EAAE,GAAG,MAAM;IAEvB,IAAI;QACF,MAAM,UAAU,CACd;;;;;kBAAa,CAAC,kBAAkB,EAAE,KAAK,IAAI,CAAC,CAC9C,EAAE,OAAO;QAET,qBACE,8OAAC;sBACC,cAAA,8OAAC;;;;;;;;;;IAIP,EAAE,OAAO,OAAO;QACd,IAAA,iMAAQ;IACV;AACF"}}]
+}

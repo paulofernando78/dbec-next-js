@@ -482,8 +482,8 @@ const linkGroup = [
                 label: "Homophones"
             },
             {
-                href: "/vocabulary/homohtaphs",
-                label: "Homohraphs"
+                href: "/vocabulary/homographs",
+                label: "Homographs"
             }
         ]
     }

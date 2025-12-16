@@ -1,7 +1,7 @@
 import Whiteboard from "@/components/molecules/Whiteboard";
 import Ribbon from "@/components/atoms/Ribbon";
 import Card from "@/components/atoms/Card";
-import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+import Paragraph from "@/components/molecules/Text";
 import AudioPlayer from "@/components/atoms/AudioPlayer/AudioPlayer";
 
 export default function Mock() {
@@ -19,7 +19,7 @@ export default function Mock() {
       <Ribbon label="CARD"/>
       <Card>Hi! Welcome to your student’s website. Here, you’ll find a lot of interesting materials. Please, use it wisely.</Card>
       <Ribbon label="PARAGRAPH"/>
-      <AudioPlayer src=""/>
+      <AudioPlayer audioSrc="/audio/audiobooks/starter/a-new-zealand-adventure/auckland.mp3"/>
       <Paragraph imgSrc="/img/paragraph-1.avif" imgAlt="Paragraph pic 1" imgPosition="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Paragraph>
       </div>
     </>

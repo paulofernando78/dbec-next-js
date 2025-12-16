@@ -27,6 +27,10 @@
   flex-direction: row;
 }
 
+.Paragraph-module__lrSwcW__PlayIcon {
+  transform: translate(-1px, -2px);
+}
+
 @media (max-width: 600px) {
   .Paragraph-module__lrSwcW__withImage {
     flex-direction: column;

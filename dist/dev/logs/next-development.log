@@ -1,150 +1,2180 @@
-[00:00:00.674] Server  LOG      ✓ Ready in 452ms
-[00:00:05.350] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:01:28.522] Server  LOG      ✓ Compiled in 179ms
-[00:01:33.281] Server  LOG      ✓ Compiled in 64ms
-[00:01:45.135] Server  LOG      ✓ Compiled in 101ms
-[00:02:02.519] Server  LOG      ✓ Compiled in 84ms
-[00:02:11.755] Server  LOG      ✓ Compiled in 64ms
-[00:02:14.373] Server  LOG      ✓ Compiled in 36ms
-[00:02:15.968] Server  LOG      ✓ Compiled in 137ms
-[00:02:25.807] Server  LOG      ✓ Compiled in 101ms
-[00:02:27.898] Server  LOG      ✓ Compiled in 57ms
-[00:02:29.061] Server  LOG      ✓ Compiled in 86ms
-[00:02:30.199] Server  LOG      ✓ Compiled in 43ms
-[00:03:54.243] Server  LOG      ✓ Compiled in 72ms
-[00:03:57.452] Server  LOG      ✓ Compiled in 36ms
-[00:04:01.753] Server  LOG      ✓ Compiled in 89ms
-[00:04:09.613] Server  LOG      ✓ Compiled in 103ms
-[00:04:12.114] Server  LOG      ✓ Compiled in 57ms
-[00:04:12.258] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx:48:11
+[00:00:00.748] Server  LOG      ✓ Ready in 528ms
+[00:12:40.922] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:59.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:59.735] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/audiobook..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="montserrat_a7501abd-module__gSc95q__variable oswald_92c7ff-module__RI6j3q__vari..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:44:01.222] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:03.254] Server  WARN    Error: Route "/grammar/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:44:23.030] Server  WARN    Error: Route "/grammar/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[00:45:35.056] Server  LOG      ✓ Compiled in 97ms
+[00:45:39.221] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:24.378] Server  LOG      ✓ Compiled in 93ms
+[00:56:26.777] Browser ERROR   ./src/content/grammar/verb-be.jsx:6:5
 Parsing ecmascript source code failed
-  46 |       <p>
-  47 |         {play
-> 48 |           playing ? (
-     |           ^^^^^^^
-  49 |             <StopAudio
-  50 |               className={styles.PlayIcon}
-  51 |               onClick={handleStop}/>
-
-Expected '</', got 'playing'
-
-Import trace:
-  Server Component:
-    ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx
-    ./src/app/page.js
-[00:04:13.279] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx:48:11
-Parsing ecmascript source code failed
-  46 |       <p>
-  47 |         {playAudio
-> 48 |           playing ? (
-     |           ^^^^^^^
-  49 |             <StopAudio
-  50 |               className={styles.PlayIcon}
-  51 |               onClick={handleStop}/>
-
-Expected '</', got 'playing'
-
-Import trace:
-  Server Component:
-    ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx
-    ./src/app/page.js
-[00:04:14.463] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx:48:11
-Parsing ecmascript source code failed
-  46 |       <p>
-  47 |         {playAudio 
-> 48 |           playing ? (
-     |           ^^^^^^^
-  49 |             <StopAudio
-  50 |               className={styles.PlayIcon}
-  51 |               onClick={handleStop}/>
-
-Expected '</', got 'playing'
-
-Import trace:
-  Server Component:
-    ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx
-    ./src/app/page.js
-[00:04:17.503] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx:48:11
-Parsing ecmascript source code failed
-  46 |       <p>
-  47 |         {playAudio && ()
-> 48 |           playing ? (
-     |           ^^^^^^^
-  49 |             <StopAudio
-  50 |               className={styles.PlayIcon}
-  51 |               onClick={handleStop}/>
-
-Expected '</', got 'playing'
-
-Import trace:
-  Server Component:
-    ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx
-    ./src/app/page.js
-[00:04:19.996] Server  LOG      ✓ Compiled in 17ms
-[00:04:20.099] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx:57:12
-Parsing ecmascript source code failed
-  55 |               onClick={handlePlay}
-  56 |             />
-> 57 |           )}
-     |            ^
-  58 |
-  59 |         {children}
-  60 |
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx
-    ./src/app/page.js
-[00:04:23.930] Server  LOG      ✓ Compiled in 89ms
-[00:04:29.321] Server  LOG      ✓ Compiled in 99ms
-[00:04:30.905] Server  LOG      ✓ Compiled in 85ms
-[00:24:01.407] Server  LOG      ✓ Compiled in 178ms
-[00:24:11.091] Server  LOG      ✓ Compiled in 97ms
-[00:24:26.001] Server  LOG      ✓ Compiled in 66ms
-[00:24:30.498] Server  LOG      ✓ Compiled in 38ms
-[00:24:31.869] Server  LOG      ✓ Compiled in 40ms
-[00:24:33.439] Server  LOG      ✓ Compiled in 40ms
-[00:24:33.504] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
-
-If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true on on true on
-[00:24:35.739] Server  LOG      ✓ Compiled in 51ms
-[00:24:35.806] Browser ERROR   Unknown event handler property `%s`. It will be ignored. onE
-[00:24:38.278] Server  LOG      ✓ Compiled in 34ms
-[00:24:38.387] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx:65:12
-Parsing ecmascript source code failed
-  63 |           <audio ref={audioRef} src={playAudio} preload="metadata"
-  64 |           onEnded={}
-> 65 |           />
-     |            ^
-  66 |
-  67 |         }
-  68 |       </p>
+  4 |   return (
+  5 |     <Whi
+> 6 |     <Paragraph> I<span className="bold">’m</span> Paulo. My name<span className="bold">’s</span> Paulo.</Paragraph>
+    |     ^
+  7 |   )
+  8 | }
 
 Expression expected
 
 Import trace:
   Server Component:
-    ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx
-    ./src/app/page.js
-[00:24:40.880] Server  LOG      ✓ Compiled in 23ms
-[00:24:40.983] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx:64:22
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:28.623] Browser ERROR   ./src/content/grammar/verb-be.jsx:7:5
 Parsing ecmascript source code failed
-  62 |         {playAudio &&
-  63 |           <audio ref={audioRef} src={playAudio} preload="metadata"
-> 64 |           onEnded={()}
-     |                      ^
-  65 |           />
-  66 |
-  67 |         }
+  5 |   return (
+  6 |     <Whiteboard
+> 7 |     <Paragraph> I<span className="bold">’m</span> Paulo. My name<span className="bold">’s</span> Paulo.</Paragraph>
+    |     ^
+  8 |   )
+  9 | }
 
-Expected '</', got '}'
+Expression expected
 
 Import trace:
   Server Component:
-    ./src/components/molecules/Whiteboard/Paragraph/Paragraph.jsx
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:30.078] Browser ERROR   ./src/content/grammar/verb-be.jsx:7:24
+Parsing ecmascript source code failed
+  5 |   return (
+  6 |     <Whiteboard />
+> 7 |     <Paragraph> I<span className="bold">’m</span> Paulo. My name<span className="bold">’s</span> Paulo.</Paragraph>
+    |                        ^^^^^^^^^
+  8 |   )
+  9 | }
+
+Expected ',', got 'className'
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:33.497] Browser ERROR   ./src/content/grammar/verb-be.jsx:9:24
+Parsing ecmascript source code failed
+   7 |     
+   8 |     />
+>  9 |     <Paragraph> I<span className="bold">’m</span> Paulo. My name<span className="bold">’s</span> Paulo.</Paragraph>
+     |                        ^^^^^^^^^
+  10 |   )
+  11 | }
+
+Expected ',', got 'className'
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:39.691] Server  LOG      ✓ Compiled in 82ms
+[00:56:40.057] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <h2> p 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="verb-be/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/grammar/v..." tree={[...]} params={{slug:"verb-be"}} ...>
+                      <SegmentViewNode type="page" pagePath="grammar/[s...">
+                        <SegmentTrieNode>
+                        <GrammarPage>
+                          <section>
+                            <VerbBe>
+>                             <p>
+                                <Whiteboard>
+                                  <div className="Whiteboard...">
+>                                   <h2>
+                                ...
+                      ...
+                    ...
+          ...
+    ...
+
+[00:56:40.057] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <h2>
+[00:56:40.057] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <div> p 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="verb-be/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/grammar/v..." tree={[...]} params={{slug:"verb-be"}} ...>
+                      <SegmentViewNode type="page" pagePath="grammar/[s...">
+                        <SegmentTrieNode>
+                        <GrammarPage>
+                          <section>
+                            <VerbBe>
+>                             <p>
+                                <Whiteboard>
+>                                 <div className="Whiteboard-module__ItCqYW__frame">
+                                ...
+                      ...
+                    ...
+          ...
+    ...
+
+[00:56:40.057] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <div>
+[00:56:40.057] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <p> p 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="verb-be/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/grammar/v..." tree={[...]} params={{slug:"verb-be"}} ...>
+                      <SegmentViewNode type="page" pagePath="grammar/[s...">
+                        <SegmentTrieNode>
+                        <GrammarPage>
+                          <section>
+                            <VerbBe>
+>                             <p>
+                                <div>
+                                <Paragraph>
+                                  <div className="">
+>                                   <p>
+                      ...
+                    ...
+          ...
+    ...
+
+[00:56:40.057] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <p>
+[00:56:41.709] Browser ERROR   ./src/content/grammar/verb-be.jsx:6:7
+Parsing ecmascript source code failed
+  4 | export default function VerbBe() {
+  5 |   return (
+> 6 |     <<>>>
+    |       ^^^
+  7 |       <Whiteboard
+  8 |       
+  9 |       />
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:43.815] Browser ERROR   ./src/content/grammar/verb-be.jsx:6:5
+Parsing ecmascript source code failed
+  4 | export default function VerbBe() {
+  5 |   return (
+> 6 |     </>>
+    |     ^
+  7 |       <Whiteboard
+  8 |       
+  9 |       />
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:43.815] Browser ERROR   ./src/content/grammar/verb-be.jsx:6:6
+Parsing ecmascript source code failed
+  4 | export default function VerbBe() {
+  5 |   return (
+> 6 |     </>>
+    |      ^^^
+  7 |       <Whiteboard
+  8 |       
+  9 |       />
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:46.784] Browser ERROR   ./src/content/grammar/verb-be.jsx:6:5
+Parsing ecmascript source code failed
+  4 | export default function VerbBe() {
+  5 |   return (
+> 6 |     </>
+    |     ^
+  7 |       <Whiteboard
+  8 |       
+  9 |       />
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:56:46.784] Browser ERROR   ./src/content/grammar/verb-be.jsx:6:6
+Parsing ecmascript source code failed
+  4 | export default function VerbBe() {
+  5 |   return (
+> 6 |     </>
+    |      ^^
+  7 |       <Whiteboard
+  8 |       
+  9 |       />
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:57:11.128] Browser ERROR   ./src/content/grammar/verb-be.jsx:10:8
+Parsing ecmascript source code failed
+   8 |         title="Grammar"
+   9 |         subtitle={}
+> 10 |       />
+     |        ^
+  11 |       <Paragraph> I<span className="bold">’m</span> Paulo. My name<span className="bold">’s</span> Paulo.</Paragraph>
+  12 |     </>
+  13 |   )
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:57:11.134] Browser ERROR   ./src/content/grammar/verb-be.jsx:12:6
+Parsing ecmascript source code failed
+  10 |       />
+  11 |       <Paragraph> I<span className="bold">’m</span> Paulo. My name<span className="bold">’s</span> Paulo.</Paragraph>
+> 12 |     </>
+     |      ^^
+  13 |   )
+  14 | }
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[00:57:13.828] Server  LOG      ✓ Compiled in 23ms
+[00:59:19.048] Server  LOG      ✓ Compiled in 21ms
+[01:00:23.524] Server  LOG      ✓ Compiled in 24ms
+[01:00:43.021] Browser ERROR   ./src/content/grammar/verb-be.jsx:14:5
+Parsing ecmascript source code failed
+  12 |       <Paragraph> I <span className="bold">am</span> the teacher. You are the student.</Paragraph>
+  13 |       <P
+> 14 |     </>
+     |     ^
+  15 |   )
+  16 | }
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[01:00:43.021] Browser ERROR   ./src/content/grammar/verb-be.jsx:14:6
+Parsing ecmascript source code failed
+  12 |       <Paragraph> I <span className="bold">am</span> the teacher. You are the student.</Paragraph>
+  13 |       <P
+> 14 |     </>
+     |      ^^
+  15 |   )
+  16 | }
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[01:00:44.318] Browser ERROR   ./src/content/grammar/verb-be.jsx:14:5
+Parsing ecmascript source code failed
+  12 |       <Paragraph> I <span className="bold">am</span> the teacher. You are the student.</Paragraph>
+  13 |       <Paragraph
+> 14 |     </>
+     |     ^
+  15 |   )
+  16 | }
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[01:00:44.318] Browser ERROR   ./src/content/grammar/verb-be.jsx:14:6
+Parsing ecmascript source code failed
+  12 |       <Paragraph> I <span className="bold">am</span> the teacher. You are the student.</Paragraph>
+  13 |       <Paragraph
+> 14 |     </>
+     |      ^^
+  15 |   )
+  16 | }
+
+Unterminated regexp literal
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+[01:00:48.606] Server  LOG      ✓ Compiled in 28ms
+[01:01:04.538] Server  LOG      ✓ Compiled in 57ms
+[01:02:24.534] Server  LOG      ✓ Compiled in 31ms
+[01:02:44.045] Server  LOG      ✓ Compiled in 26ms
+[01:02:51.455] Server  LOG      ✓ Compiled in 48ms
+[01:05:50.852] Server  ERROR    ⨯ ReferenceError: Text is not defined
+[01:05:51.193] Browser ERROR   uncaughtError: ReferenceError: Text is not defined
+[01:05:56.184] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:05:56.192] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:05:56.193] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:05:56.220] Server  LOG      ✓ Compiled in 90ms
+[01:05:56.440] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:05:59.839] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:05:59.840] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:05:59.845] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:05:59.849] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:05:59.967] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:20.013] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
     ./src/app/page.js
-[00:24:44.975] Server  LOG      ✓ Compiled in 72ms
-[00:24:47.518] Server  LOG      ✓ Compiled in 69ms
-[00:24:49.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.015] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.019] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.021] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.022] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.022] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.023] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.025] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.028] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.033] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:20.208] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/index.jsx:1:1
+Module not found: Can't resolve './Paragraph'
+> 1 | export { default } from "./Paragraph"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/index.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:20.208] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:21.669] Server  LOG      ✓ Compiled in 205ms
+[01:06:21.771] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:29.901] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.906] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.906] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.907] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.908] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.908] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.909] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.909] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.910] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.910] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.911] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.911] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.912] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.913] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.915] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.916] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.917] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.917] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.918] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:29.918] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:30.142] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:30.142] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:43.649] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.650] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.650] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.651] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.652] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.652] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.652] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.653] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.653] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.654] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.657] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.658] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.660] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.661] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.662] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.663] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.664] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.664] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.666] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.667] Server  ERROR    ⨯ ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:06:43.793] Browser ERROR   ./src/components/molecules/Whiteboard/Paragraph/Text.jsx:3:1
+Module not found: Can't resolve './Paragraph.module.css'
+  1 | "use client"
+  2 |
+> 3 | import styles from "./Paragraph.module.css"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+  5 | import Image from "next/image"
+  6 | import { useState, useRef } from "react"
+
+Import trace:
+  Server Component:
+    ./src/components/molecules/Whiteboard/Paragraph/Text.jsx
+    ./src/app/page.js
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:43.793] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:06:52.745] Server  LOG      ✓ Compiled in 170ms
+[01:06:52.847] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Text'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/Whiteboard/Text";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Text' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:23.303] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:23.310] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:23.311] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:23.312] Server  ERROR    ⨯ ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:23.450] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:27.760] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:45.035] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.037] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.082] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.088] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.089] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.089] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.090] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.093] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.095] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.096] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:45.258] Browser ERROR   ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Whiteboard/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Whiteboard/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Whiteboard/Paragraph' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:45.258] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:45.877] Server  LOG      ✓ Compiled in 158ms
+[01:07:45.979] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:54.209] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.245] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.281] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.285] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.304] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.315] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.322] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.324] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.336] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.337] Server  ERROR    ⨯ ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:07:54.411] Browser ERROR   ./src/app/page.js:2:1
+Module not found: Can't resolve '@/components/molecules/Paragraph'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Paragraph from "@/components/molecules/Paragraph";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function Home() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/Paragraph' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:54.411] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:07:55.064] Server  LOG      ✓ Compiled in 201ms
+[01:07:55.167] Browser ERROR   ./src/content/grammar/verb-be.jsx:2:1
+Module not found: Can't resolve '@/components/molecules/'
+  1 | import Whiteboard from "@/components/molecules/Whiteboard";
+> 2 | import Text from "@/components/molecules/";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export default function VerbBe() {
+  5 |   return (
+
+Import map: aliased to relative './src/components/molecules/' inside of [project]/
+
+Import trace:
+  Server Component:
+    ./src/content/grammar/verb-be.jsx
+    ./src/app/grammar/[slug]/page.jsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:08:01.722] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:08:01.733] Server  LOG      ✓ Compiled in 89ms
+[01:08:02.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:02.634] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/grammar/v..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="montserrat_a7501abd-module__gSc95q__variable oswald_92c7ff-module__RI6j3q__vari..."
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[01:08:12.157] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

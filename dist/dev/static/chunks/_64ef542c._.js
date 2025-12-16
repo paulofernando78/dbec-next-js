@@ -885,8 +885,8 @@ const linkGroup = [
                 label: "Homophones"
             },
             {
-                href: "/vocabulary/homohtaphs",
-                label: "Homohraphs"
+                href: "/vocabulary/homographs",
+                label: "Homographs"
             }
         ]
     }
@@ -894,11 +894,11 @@ const linkGroup = [
 function NavBar(t0) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "c918933fd4dca8815e10a697685909eaad3191d40de5d264641ad041cea8dcfe") {
+    if ($[0] !== "d4e48dd8f97729f9e7b087275e644a6553028243f45d1ca2dfdcf0962ec6c2be") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "c918933fd4dca8815e10a697685909eaad3191d40de5d264641ad041cea8dcfe";
+        $[0] = "d4e48dd8f97729f9e7b087275e644a6553028243f45d1ca2dfdcf0962ec6c2be";
     }
     const { showNavBar } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$context$2f$headerContext$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HeaderContext"]);
     const t1 = `line-break ${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$organisms$2f$Navbar$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].nav} ${showNavBar ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$organisms$2f$Navbar$2f$Navbar$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].show : ""}`;
