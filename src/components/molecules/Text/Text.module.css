@@ -28,7 +28,7 @@
 }
 
 .PlayIcon {
-  transform: translate(-1px, -2px);
+  transform: translate(-1px, -1px);
 }
 
 @media (max-width: 600px) {
