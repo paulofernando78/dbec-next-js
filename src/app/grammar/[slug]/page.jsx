@@ -18,3 +18,9 @@ export default async function GrammarPage( {params} ) {
     notFound()
   }
 }
+
+export function generateStaticParams() {
+  return [
+    { slug: "verb-be" }
+  ]
+}
