@@ -21,9 +21,9 @@ export default function VerbBe() {
         </div> 
         <div>
         <Text playAudio="">Profissão:</Text>
-        <Text playAudio=""><BulletPoint /> I’m a teacher.</Text>
-        <Text playAudio=""><BulletPoint /> He’s an enginner.</Text>
-        <Text playAudio=""><BulletPoint /> She’s a doctor.</Text>
+        <Text playAudio="/audio/grammar/verb-be/identidade/Im-a-teacher.mp3"><BulletPoint /> I’m a teacher. <span className="portuguese">Sou professor(a).</span></Text>
+        <Text playAudio="/audio/grammar/verb-be/identidade/hes-an-engineer.mp3"><BulletPoint /> He’s an enginner.</Text>
+        <Text playAudio="/audio/grammar/verb-be/identidade/shes-a-doctor.mp3"><BulletPoint /> She’s a doctor.</Text>
         </div>
         <div>
         <Text playAudio="">Estado / Condição:</Text>

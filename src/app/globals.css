@@ -117,13 +117,20 @@ main {
 .underlined {
  text-decoration: underline ;
 }
-.portuguese {
-  color: var(--gray-4)
-}
 
 .phonetics {
   font-family: 'Times New Roman', Times, serif;
   color: var(--blue-4);
+}
+
+.icon-position {
+  transform: translate(-2px, -1px);
+}
+
+.icon-position {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
 }
 
 @media (max-width: 700px) {

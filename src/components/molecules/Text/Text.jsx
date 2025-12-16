@@ -1,17 +1,20 @@
 "use client"
 
 import styles from "./Text.module.css"
-import { PlayAudio, StopAudio } from "@/lib/svg-imports"
+import { Correct, Incorrect, PlayAudio, StopAudio } from "@/lib/svg-imports"
 import Image from "next/image"
 import { useState, useRef } from "react"
 
-export default function Text( {
+export default function Text({
   playAudio,
   children,
   imgSrc,
   imgAlt,
-  imgPosition = "left"
-   }) {
+  imgPosition = "left",
+  correct,
+  incorrect,
+  lang
+}) {
   const hasImage = Boolean(imgSrc)
   const [playing, setPlaying] = useState(false)
   const audioRef = useRef(null)
@@ -43,19 +46,22 @@ export default function Text( {
         className={styles.image}
         />
         )}
-      <p>
+      <p lang={lang}>
         {playAudio && (
           playing ? (
             <StopAudio
-              className={styles.PlayIcon}
+              className="icon-position"
               onClick={handleStop}/>
           ) : (
             <PlayAudio
-              className={styles.PlayIcon}
+              className="icon-position"
               onClick={handlePlay}
             />
           )
         )}
+
+        {correct && <Correct className="icon-position"/>}
+        {incorrect && <Incorrect className="icon-position"/>}
 
         {children}
 
