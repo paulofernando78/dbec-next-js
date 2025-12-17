@@ -1,7 +1,7 @@
 "use client"
 
 import styles from "./Text.module.css"
-import { Correct, Incorrect, PlayAudio, StopAudio } from "@/lib/svg-imports"
+import { Correct, Exclamation, Incorrect, PlayAudio, StopAudio } from "@/lib/svg-imports"
 import Image from "next/image"
 import { useState, useRef } from "react"
 
@@ -10,6 +10,7 @@ export default function Text({
   imgAlt,
   imgPosition = "left",
   lang,
+  exclamation,
   correct,
   incorrect,
   playAudio,
@@ -49,6 +50,7 @@ export default function Text({
         )}
       <p lang={lang}>
 
+        {exclamation && <Exclamation />}
         {correct && <Correct className="icon-position"/>}
         {incorrect && <Incorrect className="icon-position"/>}
         

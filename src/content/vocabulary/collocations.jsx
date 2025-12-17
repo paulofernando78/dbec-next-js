@@ -1,6 +1,7 @@
+import Card from "@/components/atoms/Card";
+import List from "@/components/molecules/List";
 import Text from "@/components/molecules/Text";
 import Whiteboard from "@/components/molecules/Whiteboard";
-import { Correct, Incorrect } from "@/lib/svg-imports";
 
 export default function Collocations() {
   return (
@@ -10,6 +11,7 @@ export default function Collocations() {
         subtitle="Collocations"
       />
       <div className="line-break">
+  
         <Text bold>do / make</Text>
         <div>
           <Text lang="pt">Tenho que fazer minha lição (tarefa de casa).</Text>
@@ -39,7 +41,7 @@ export default function Collocations() {
           <Text correct playAudio="/audio/general/its-a-fast-car.mp3">It’s a fast car.</Text>
         </div>
         <div>
-          <Text lang="pt">Psso ter uma palavrinha com você?</Text>
+          <Text lang="pt">Posso ter uma palavrinha com você?</Text>
           <Text incorrect>Can I have a fast word with you?</Text>
           <Text correct playAudio="/audio/general/can-I-have-a-quick-word-with-you.mp3">Can I have a quick word with you?</Text>
         </div>
@@ -48,6 +50,17 @@ export default function Collocations() {
         <Text incorrect>He’s a quick runner.</Text>
         <Text correct playAudio="/audio/general/hes-a-fast-runner.mp3">He’s a fast runner.</Text>
         </div>
+        <Card>
+          <Text lang="pt" exclamation>Quick costuma enfatizar agilidade, reação, rapidez em pouco tempo:</Text>
+          <List
+          items = {[
+            "quick response",
+            "quick decision",
+            "quick movement",
+            "quick learner"
+          ]}
+          />
+        </Card>
       </div>
     </>
   )
