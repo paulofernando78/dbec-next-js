@@ -1,3 +1,5 @@
+const iconSize = "1.5rem";
+
 export const LightMode = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -13,9 +15,9 @@ export const LightMode = () => (
 export const Correct = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="1.5rem"
+    width={iconSize}
+    height={iconSize}
     viewBox="0 -960 960 960"
-    width="1.5rem"
     fill="var(--green-7)"
     className={className}
   >
@@ -35,12 +37,12 @@ export const DarkMode = () => (
   </svg>
 );
 
-export const Incorrect = ({ className}) => (
+export const Incorrect = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="1.5rem"
+    width={iconSize}
+    height={iconSize}
     viewBox="0 -960 960 960"
-    width="1.5rem"
     fill="var(--red-5)"
     className={className}
   >
@@ -51,9 +53,8 @@ export const Incorrect = ({ className}) => (
 export const PlayAudio = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="1.5rem"
+    width={iconSize}
     viewBox="0 -960 960 960"
-    width="1.5rem"
     fill="#999999"
     className={className}
     {...props}
@@ -65,9 +66,8 @@ export const PlayAudio = ({ className, ...props }) => (
 export const StopAudio = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="1.5rem"
+    height={iconSize}
     viewBox="0 -960 960 960"
-    width="1.5rem"
     fill="#999999"
     className={className}
     {...props}

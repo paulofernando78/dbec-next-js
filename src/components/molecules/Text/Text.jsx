@@ -6,14 +6,15 @@ import Image from "next/image"
 import { useState, useRef } from "react"
 
 export default function Text({
-  playAudio,
-  children,
   imgSrc,
   imgAlt,
   imgPosition = "left",
+  lang,
   correct,
   incorrect,
-  lang
+  playAudio,
+  bold,
+  children
 }) {
   const hasImage = Boolean(imgSrc)
   const [playing, setPlaying] = useState(false)
@@ -47,6 +48,10 @@ export default function Text({
         />
         )}
       <p lang={lang}>
+
+        {correct && <Correct className="icon-position"/>}
+        {incorrect && <Incorrect className="icon-position"/>}
+        
         {playAudio && (
           playing ? (
             <StopAudio
@@ -60,17 +65,16 @@ export default function Text({
           )
         )}
 
-        {correct && <Correct className="icon-position"/>}
-        {incorrect && <Incorrect className="icon-position"/>}
-
-        {children}
-
         {playAudio &&
           <audio ref={audioRef} src={playAudio} preload="metadata"
           onEnded={() => setPlaying(false)}
           />
-
+          
         }
+
+
+
+        {bold ? <strong className="bold">{children}</strong> : children}
       </p>
     </div>
   )
