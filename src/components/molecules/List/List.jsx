@@ -1,4 +1,4 @@
-export default function List({ items = [] }) {
+export const List = ({ items = [] }) => {
   return (
     <ul>
       {items.map((item, index) => (

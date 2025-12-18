@@ -1,7 +1,7 @@
-import Whiteboard from "@/components/molecules/Whiteboard";
-import Text from "@/components/molecules/Text";
-import Ribbon from "@/components/atoms/Ribbon";
-import BulletPoint from "@/components/atoms/BulletPoint";
+import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Text } from "@/components/molecules/Text";
+import { Ribbon } from "@/components/atoms/Ribbon";
+import { BulletPoint } from "@/components/atoms/BulletPoint";
 
 export default function VerbBe() {
   return (

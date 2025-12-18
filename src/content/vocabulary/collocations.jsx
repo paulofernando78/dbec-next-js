@@ -1,7 +1,7 @@
-import Card from "@/components/atoms/Card";
-import List from "@/components/molecules/List";
-import Text from "@/components/molecules/Text";
-import Whiteboard from "@/components/molecules/Whiteboard";
+import { Card } from "@/components/atoms/Card";
+import { List } from "@/components/molecules/List";
+import { Text } from "@/components/molecules/Text";
+import { Whiteboard } from "@/components/molecules/Whiteboard";
 
 export default function Collocations() {
   return (
