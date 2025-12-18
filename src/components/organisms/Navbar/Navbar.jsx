@@ -25,10 +25,10 @@ const linkGroup = [
         href: "/pronunciation/the-alphabet", label: "The Alphabet"
       },
       {
-        href: "/pronunciation/letter-a", label: "Phonetics"
+        href: "/pronunciation/letter-phonetics", label: "Phonetics"
       },
       {
-        href: "/pronunciation/letter-a", label: "Letter a vs. e(a)"
+        href: "/pronunciation/letters-a-e-ea", label: "Letters a vs. e(a)"
       },
       {
         href: "/pronunciation/letters-ee-ea-i", label: "Letters ee / ea vs. i"

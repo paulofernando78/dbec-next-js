@@ -1,9 +1,8 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
 import { Text } from "@/components/molecules/Text";
-import { WordSound } from "@/components/molecules/WordSound";
+import { Comparison } from "../../components/molecules/Comparison/Comparison";
 
-const wordSound = [
+const letterA = [
   {
     comparison: [
       {
@@ -142,7 +141,7 @@ export default function LetterA() {
         <Text bold playAudio="/audio/general/listen-to-the-difference.mp3">
           Listen to the difference.
         </Text>
-        <WordSound wordSound={wordSound} />
+        <Comparison groups={letterA} />
       </div>
     </>
   );

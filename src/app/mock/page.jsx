@@ -2,10 +2,10 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { Card } from "@/components/atoms/Card";
 import { Text } from "@/components/molecules/Text";
-import { WordSound } from "@/components/molecules/WordSound";
+import { Comparison } from "../../components/molecules/Comparison/Comparison";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer/AudioPlayer";
 
-const wordSound = [
+const words = [
  {
     comparison: [
       {
@@ -77,7 +77,7 @@ export default function Mock() {
           culpa qui officia deserunt mollit anim id est laborum.
         </Text>
         <Ribbon label="Word Sound" />
-        <WordSound wordSound={wordSound} />
+        <Comparison groups={words} />
       </div>
     </>
   );

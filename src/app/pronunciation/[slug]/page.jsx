@@ -21,6 +21,7 @@ export default async function PronunciationPage( {params} ) {
 
 export function generateStaticParams() {
   return [
+    { slug: "letters-a-e-ea" },
     { slug: "letters-ee-ea-i" }
   ]
 }
