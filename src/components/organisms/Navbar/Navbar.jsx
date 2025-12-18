@@ -11,10 +11,10 @@ const linkGroup = [
     title: "Audiobooks",
     links: [
       {
-        href: "/audiobook/beginner", label: "Starter"
+        href: "/audiobooks/starter", label: "Starter"
       },
       {
-        href: "/audiobook/beginner", label: "..."
+        href: "/audiobooks/beginner", label: "..."
       }
     ],
   },
@@ -25,7 +25,7 @@ const linkGroup = [
         href: "/pronunciation/the-alphabet", label: "The Alphabet"
       },
       {
-        href: "/pronunciation/letter-phonetics", label: "Phonetics"
+        href: "/pronunciation/phonetics", label: "Phonetics"
       },
       {
         href: "/pronunciation/letters-a-e-ea", label: "Letters a vs. e(a)"
@@ -69,7 +69,7 @@ const linkGroup = [
         href: "/grammar/future-perfect", label: "Future Perfect"
       },
       {
-        href: "/grammar/future-perfect", label: "Conditionals"
+        href: "/grammar/conditionals", label: "Conditionals"
       }
     ],
   },
@@ -83,10 +83,7 @@ const linkGroup = [
         href: "/vocabulary/collocations", label: "Collocations"
       },
       {
-        href: "/vocabulary/homophones", label: "Homophones"
-      },
-      {
-        href: "/vocabulary/homographs", label: "Homographs"
+        href: "/vocabulary/homonyns", label: "Homonyns"
       }
     ],
   },

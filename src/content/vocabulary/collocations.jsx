@@ -7,7 +7,7 @@ export default function Collocations() {
   return (
     <>
       <Whiteboard
-        title="VOCABULARY"
+        title="Vocabulary"
         subtitle="Collocations"
       />
       <div className="line-break">

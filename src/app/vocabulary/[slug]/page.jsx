@@ -1,6 +1,8 @@
+import fs from "fs"
+import path from "path";
 import { notFound } from "next/navigation";
 
-export default async function VocabularyPage( {params} ) {
+export default async function GrammarPage( {params} ) {
   const { slug } = await params;
 
   try {
@@ -20,7 +22,15 @@ export default async function VocabularyPage( {params} ) {
 }
 
 export function generateStaticParams() {
-  return [
-    { slug: "collocations" }
-  ]
+  const dir = path.join(
+    process.cwd(),
+    "src/content/vocabulary"
+  );
+
+  return fs
+    .readdirSync(dir)
+    .filter(file => file.endsWith(".jsx"))
+    .map(file => ({
+      slug: file.replace(".jsx", ""),
+    }));
 }

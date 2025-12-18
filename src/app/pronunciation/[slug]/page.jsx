@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import { notFound } from "next/navigation";
 
 export default async function PronunciationPage( {params} ) {
@@ -20,8 +22,15 @@ export default async function PronunciationPage( {params} ) {
 }
 
 export function generateStaticParams() {
-  return [
-    { slug: "letters-a-e-ea" },
-    { slug: "letters-ee-ea-i" }
-  ]
+  const dir = path.join(
+    process.cwd(),
+    "src/content/pronunciation"
+  );
+
+  return fs
+    .readdirSync(dir)
+    .filter(file => file.endsWith(".jsx"))
+    .map(file => ({
+      slug: file.replace(".jsx", ""),
+    }));
 }
