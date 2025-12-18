@@ -28,7 +28,7 @@ const linkGroup = [
         href: "/pronunciation/letter-a", label: "Phonetics"
       },
       {
-        href: "/pronunciation/letter-a", label: "Letter a"
+        href: "/pronunciation/letter-a", label: "Letter a vs. e(a)"
       },
       {
         href: "/pronunciation/letters-ee-ea-i", label: "Letters ee / ea vs. i"

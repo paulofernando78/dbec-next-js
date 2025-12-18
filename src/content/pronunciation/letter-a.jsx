@@ -137,7 +137,7 @@ const wordSound = [
 export default function LetterA() {
   return (
     <>
-      <Whiteboard title="Pronunciation" subtitle="Letter a" />
+      <Whiteboard title="Pronunciation" subtitle="Letters a / e(a)" />
       <div className="line-break">
         <Text bold playAudio="/audio/general/listen-to-the-difference.mp3">
           Listen to the difference.
