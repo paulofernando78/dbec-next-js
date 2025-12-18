@@ -1,7 +1,7 @@
 "use client"
 
 import { HeaderContext } from "@/context/headerContext"
-import Button from "@/components/atoms/Button"
+import { Button}  from "@/components/atoms/Button"
 import Link from "next/link"
 import { useContext } from "react"
 import { ThemeContext } from "@/context/themeContext"

@@ -1,6 +1,6 @@
 import styles from "./Whiteboard.module.css"
 
-export default function Whiteboard( { title, subtitle, description}) {
+export const Whiteboard = ( { title, subtitle, description}) => {
   return (
     <div className={styles.frame}>
       <h2>{title}</h2>

@@ -5,7 +5,7 @@ import { Correct, Exclamation, Incorrect, PlayAudio, StopAudio } from "@/lib/svg
 import Image from "next/image"
 import { useState, useRef } from "react"
 
-export default function Text({
+export const Text = ({
   imgSrc,
   imgAlt,
   imgPosition = "left",
@@ -16,7 +16,7 @@ export default function Text({
   playAudio,
   bold,
   children
-}) {
+}) => {
   const hasImage = Boolean(imgSrc)
   const [playing, setPlaying] = useState(false)
   const audioRef = useRef(null)

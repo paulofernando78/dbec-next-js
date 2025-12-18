@@ -2,7 +2,7 @@
 
 import styles from "./Button.module.css"
 
-export default function Button({ icon, onToggle, active }) {
+export const Button = ({ icon, onToggle, active }) => {
 
   if (icon === "menu") {
     return (

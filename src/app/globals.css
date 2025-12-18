@@ -122,9 +122,19 @@ main {
  text-decoration: underline ;
 }
 
+.flex {
+  width: max-content;
+  display: flex;
+  gap: 5px;
+}
+
 .phonetics {
   font-family: 'Times New Roman', Times, serif;
   color: var(--blue-4);
+}
+
+.portuguese {
+  color: var(--gray-4)
 }
 
 .icon-position {

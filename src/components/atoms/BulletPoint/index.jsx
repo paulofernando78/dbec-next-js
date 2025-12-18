@@ -1,1 +1,1 @@
-export { default } from "./BulletPoint"
+export { BulletPoint } from "./BulletPoint"

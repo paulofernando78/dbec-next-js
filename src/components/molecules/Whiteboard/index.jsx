@@ -1,1 +1,1 @@
-export { default } from "./Whiteboard"
+export { Whiteboard } from "./Whiteboard"

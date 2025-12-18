@@ -22,10 +22,16 @@ const linkGroup = [
     title: "Pronunciation",
     links: [
       {
+        href: "/pronunciation/the-alphabet", label: "The Alphabet"
+      },
+      {
+        href: "/pronunciation/letter-a", label: "Phonetics"
+      },
+      {
         href: "/pronunciation/letter-a", label: "Letter a"
       },
       {
-        href: "/pronunciation/letter-a", label: "Letters ee / ea vs. i"
+        href: "/pronunciation/letters-ee-ea-i", label: "Letters ee / ea vs. i"
       }
     ],
   },
@@ -81,6 +87,14 @@ const linkGroup = [
       },
       {
         href: "/vocabulary/homographs", label: "Homographs"
+      }
+    ],
+  },
+  {
+    title: "Games",
+    links: [
+      {
+        href: "/games/minecraft", label: "Minecraft"
       }
     ],
   },

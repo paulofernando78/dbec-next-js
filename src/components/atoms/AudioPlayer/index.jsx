@@ -1,1 +1,1 @@
-export { default } from "./AudioPlayer"
+export { AudioPlayer } from "./AudioPlayer"
