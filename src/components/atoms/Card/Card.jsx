@@ -1,9 +1,9 @@
 import style from "./Card.module.css"
 
-export const Card = ({children, className }) => {
+export const Card = ({children, className, bold }) => {
   return (
     <div className={`${style.card} ${className}`}>
-      <strong>{children}</strong>
+      {bold ? <strong>{children}</strong> : children}
     </div>
   )
 }

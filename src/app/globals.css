@@ -99,7 +99,7 @@ main {
 
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: 5px;
+  padding: 5px 5px 0px 5px;
 
   
   transition: margin-left 0.5s ease;
@@ -120,6 +120,10 @@ main {
 
 .underlined {
  text-decoration: underline ;
+}
+
+mark {
+  background-color: var(--yellow-3);
 }
 
 .flex {
