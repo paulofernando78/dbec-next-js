@@ -90,62 +90,40 @@ function renderUnderline(text, underlineWords = []) {
 
 const examples = [
   {
-    audio: "/audio/general/that-girl-is-beautiful.mp3",
-    enExample: "That girl is beautiful.",
-    underline: ["beautiful"],
-    ptExample: "Aquela menina é bonita.",
+    adjAudio: "/audio/general/that-girl-is-beautiful.mp3",
+    adjEnExample: "That girl is beautiful.",
+    adjUnderline: ["beautiful"],
+    adjPtExample: "Aquela menina é bonita.",
+    nounAudio: "/audio/general/shes-a-woman-of-great-beauty.mp3",
+    nounEnExample: "She's a woman of great beauty.",
+    nounUnderline: ["beauty"],
+    nounPtExample: "Ela é uma mulher de uma grande beleza.",
   },
+
   {
-    audio: "/audio/general/shes-a-woman-of-great-beauty.mp3",
-    enExample: "She's a woman of great beauty.",
-    underline: ["beauty"],
-    ptExample: "Ela é uma mulher de uma grande beleza.",
-  },
-  {
-    audio: "/audio/general/its-getting-dark-lets-go-home.mp3",
-    enExample: "It’s getting dark. Let's go home.",
-    underline: ["dark"],
-    ptExample: "Está ficando tarde. Vamos para casa.",
-  },
-  {
-    audio: "/audio/general/the-car-disappeared-into-the-darkness.mp3",
-    enExample: "The car disappeared into the darkness.",
-    underline: ["darkness"],
-    ptExample: "O carro desapareceu na escuridão. ",
-  },
-  {
-    audio: "/audio/general/the-sky-began-to-darken-as-the-storm-approached.mp3",
-    enExample: "The sky began to darken as the storm approached.",
-    underline: ["darken"],
-    ptExample:
+    adjAudio: "/audio/general/its-getting-dark-lets-go-home.mp3",
+    adjEnExample: "It’s getting dark. Let's go home.",
+    adjUnderline: ["dark"],
+    adjPtExample: "Está ficando tarde. Vamos para casa.",
+    nounAudio: "/audio/general/the-car-disappeared-into-the-darkness.mp3",
+    nounEnExample: "The car disappeared into the darkness.",
+    nounUnderline: ["darkness"],
+    nounPtExample: "O carro desapareceu na escuridão. ",
+    verbAudio: "/audio/general/the-sky-began-to-darken-as-the-storm-approached.mp3",
+    verbEnExample: "The sky began to darken as the storm approached.",
+    verbUnderline: ["darken"],
+    verbPtExample:
       "O céu começou a escurecer à medida que a tempestade se aproximava.",
   },
   {
-    audio: "/audio/general/.mp3",
-    enExample: "...",
-    ptExample: "...",
-  },
-  {
-    audio: "/audio/general/can-you-turn-off-the-lights-please.mp3",
-    enExample: "Can you turn off the lights, please?",
-    underline: ["lights"],
-    ptExample: "Você pode apagar as luzes, por favor?",
-  },
-  {
-    audio: "/audio/general/.mp3",
-    enExample: "The room will lighten in the morning.",
-    underline: ["lighten"],
-    ptExample: "O quarto será clareado pela manhã.",
-  },
-  {
-    audio: "/audio/general/.mp3",
-    enExample: "...",
-    ptExample: "...",
-  },
-  {
-    audio: "/audio/general/.mp3",
-    enExample: "...",
-    ptExample: "...",
+    nounAudio: "/audio/general/can-you-turn-off-the-lights-please.mp3",
+    nounEnExample: "Can you turn off the lights, please?",
+    nounUnderline: ["lights"],
+    nounPtExample: "Você pode apagar as luzes, por favor?",
+    verbAudio: "/audio/general/.mp3",
+    verbEnExample: "The room will lighten in the morning.",
+    verbUnderline: ["lighten"],
+    verbPtExample: "O quarto será clareado pela manhã.",
   },
   {
     audio: "/audio/general/this-tool-is-useless.mp3",
@@ -196,10 +174,20 @@ export default function WordFormation() {
           </Text>
           <div>
             {examples.map((item, index) => (
-              <Text key={index} playAudio={item.audio}>
-                {renderUnderline(item.enExample, item.underline)}
-                {" "}<Portuguese>{item.ptExample}</Portuguese>
-              </Text>
+              <div key={index}>
+                <Text playAudio={item.adjAudio}>
+                  {renderUnderline(item.adjEnExample, item.adjUnderline)}{" "}
+                  <Portuguese>{item.adjPtExample}</Portuguese>
+                </Text>
+                <Text playAudio={item.nounAudio}>
+                  {renderUnderline(item.nounEnExample, item.nounUnderline)}{" "}
+                  <Portuguese>{item.nounPtExample}</Portuguese>
+                </Text>
+                <Text playAudio={item.verbAudio}>
+                  {renderUnderline(item.verbEnExample, item.verbUnderline)}{" "}
+                  <Portuguese>{item.verbPtExample}</Portuguese>
+                </Text>
+              </div>
             ))}
           </div>
         </div>
