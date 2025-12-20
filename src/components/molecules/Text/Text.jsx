@@ -33,6 +33,10 @@ export const Text = ({
     setPlaying(false)
   }
 
+  function handleEnded() {
+    setPlaying(false)
+  }
+
   return (
     <div className={[
       hasImage && styles.withImage,
@@ -68,12 +72,10 @@ export const Text = ({
         )}
         {playAudio &&
           <audio ref={audioRef} src={playAudio} preload="metadata"
-          onEnded={() => setPlaying(false)}
+          onEnded={handleEnded}
           />
           
         }
-
-
 
         {bold ? <strong className="bold">{children}</strong> : children}
       </p>
