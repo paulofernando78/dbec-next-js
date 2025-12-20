@@ -1,0 +1,26 @@
+.scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 3px;
+  border-radius: var(--border-radius);
+}
+
+.header {
+  background-color: var(--slate-3);
+  border-radius: var(--border-radius);
+  padding: 3px 6px;
+}
+
+.row {
+  display: contents;
+  padding: 5px;
+}
+
+.row > * {
+  padding-inline: 5px;
+}
