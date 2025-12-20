@@ -11,13 +11,13 @@ export default function SELAAlessonOne() {
         title="Extras"
         subtitle="Vocabulary"
         book="Speak English like an American"
-        lesson="Lesson • ..."
+        lesson="Lesson 12 • Bob’s Big Cookie Order"
       />
       <div className="line-break">
+        <AudioPlayer src="/audio/vocabulary/selaa/lesson-12.mp3"/>
         <Card>
           ...
         </Card>
-        <AudioPlayer />
         <Text>
           <strong>...:</strong> ...
         </Text>

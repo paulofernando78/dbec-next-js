@@ -1,10 +1,14 @@
 .frame {
   border: 5px solid var(--slate-3);
   border-radius: var(--border-radius);
-  padding: 4px 9px 6px 9px;
+  padding: 2px 8px 4px 6px;
   margin-bottom: 30px;
 }
 
 .subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 2px;
+}
+
+.book {
+  margin-bottom: 2px;
 }

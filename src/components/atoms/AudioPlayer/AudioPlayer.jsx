@@ -1,7 +1,7 @@
 import styles from "./AudioPlayer.module.css"
 
-export const AudioPlayer = ({ audioSrc }) => {
+export const AudioPlayer = ({ src }) => {
   return (
-    <audio controls src={audioSrc} className={styles.audio}></audio>
+    <audio controls src={src} className={styles.audio}></audio>
   )
 }

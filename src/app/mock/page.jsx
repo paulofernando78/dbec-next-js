@@ -62,7 +62,7 @@ export default function Mock() {
         <Ribbon label="CARD" />
         <Card>Lorem ipsum dolor sit amet, consectetur...</Card>
         <Ribbon label="Text" />
-        <AudioPlayer audioSrc="/audio/audiobooks/starter/a-new-zealand-adventure/auckland.mp3" />
+        <AudioPlayer src="/audio/audiobooks/starter/a-new-zealand-adventure/auckland.mp3" />
         <Text
           imgSrc="/img/paragraph-1.avif"
           imgAlt="Text pic 1"

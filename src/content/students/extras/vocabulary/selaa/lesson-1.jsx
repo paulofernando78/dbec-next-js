@@ -11,15 +11,16 @@ export default function SELAAlessonOne() {
         title="Extras"
         subtitle="Vocabulary"
         book="Speak English like an American"
-        lesson="Lesson 1 Bob’s Day at Work"
+        lesson="Lesson 1 • Bob’s Day at Work"
       />
       <div className="line-break">
+        <AudioPlayer src="/audio/vocabulary/selaa/lesson-1.mp3"/>
+        <Text bold>Lesson 1 • Bob’s Day at Work</Text>
         <Card>
           Bob works as a manager in a furniture store. Peter, his boss, is not
           happy about sales. Bob’s new advertising campaign hasn’t helped. Peter
           decides to fire him.
         </Card>
-        <AudioPlayer />
         <Text>
           <strong>Peter:</strong> Bob, I hate to break the news, but our sales were down again last month.
         </Text>
