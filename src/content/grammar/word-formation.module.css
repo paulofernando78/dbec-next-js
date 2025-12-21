@@ -6,7 +6,7 @@
 .table {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  gap: 3px;
+  gap: 5px;
   border-radius: var(--border-radius);
 }
 
@@ -22,5 +22,10 @@
 }
 
 .row > * {
-  padding-inline: 5px;
+  padding: 4px 5px 3px 5px;
+  border-radius: var(--border-radius);
+}
+
+.row:nth-child(even) > * {
+  background-color: var(--slate-2);
 }
