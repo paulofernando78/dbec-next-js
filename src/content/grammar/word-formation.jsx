@@ -4,15 +4,36 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { DictionarySearch } from "../../components/molecules/DictionarySearch/DictionarySearch";
 import { Text } from "@/components/molecules/Text";
 import { Bold } from "@/components/atoms/Bold";
+import { RegisterTag } from "../../components/atoms/RegisterTag/RegisterTag";
 import { Portuguese } from "@/components/atoms/Portuguese";
 
 const words = [
-  // art
+  // ask
+  {
+    verbAudio: "...",
+    verbWord: "...",
+    verbRegisterTag: "...",
+    verbPtDefinition: "...",
+  
+    phrasalVerbAudio: "....mp3",
+    phrasalVerbWord: "...",
+    phrasalVerbRegisterTag: "...",
+    phrasalVerbPtDefinition: "...",
+  
+    nounAudio: "....mp3",
+    nounWord: "...",
+    nounRegisterTag: "...",
+    nounPtDefinition: "...",
+  
+    adjectiveAudio: "....mp3",
+    adjectiveWord: "...",
+    adjectiveRegisterTag: "...",
+    adjectivePtDefinition: "..."
+  },
   {
     verbAudio: "...",
     verbWord: "ask",
     verbPtDefinition: "perguntar",
-
     phrasalVerbAudio: "...",
     phrasalVerbWord: "ask out",
     phrasalVerbPtDefinition: "convidar para sair",
@@ -25,6 +46,7 @@ const words = [
     adjectiveWord: "...",
     adjectivePtDefinition: "...",
   },
+  // art
   {
     verbAudio: "",
     verbWord: "...",
@@ -103,6 +125,7 @@ const words = [
 
     nounAudio: "/audio/general/fastness.mp3",
     nounWord: "fastness",
+    nounRegisterTag: "formal",
     nounPtDefinition: "pressa, rapidez",
 
     adjectiveAudio: "/audio/general/fast.mp3",
@@ -236,7 +259,7 @@ function renderUnderline(text, underlineWords = []) {
   );
 }
 
-export default async function WordFormation() {
+export default function WordFormation() {
   return (
     <>
       <Whiteboard title="Grammar" subtitle="Word Formation" />
@@ -265,46 +288,58 @@ export default async function WordFormation() {
               <span>(-ed, ing, -ous, -ive, -ful, -less)</span>
             </Text>
 
+            {/* Rows */}
             {words.map((word, index) => (
               <div key={index} className={styles.row}>
                 {/* verb */}
                 <div>
-                  
-                    <Text playAudio={word.verbAudio} className={!word.verbAudio ? styles.hidden : undefined}>
-                      <Bold>{word.verbWord}</Bold>{" "}
-                      <Portuguese>{word.verbPtDefinition}</Portuguese>
-                    </Text>
-                  
+                  <Text
+                    playAudio={word.verbAudio}
+                    className={!word.verbAudio ? styles.hidden : undefined}>
+                    <Bold>{word.verbWord}</Bold>{" "}
+                    {word.verbRegisterTag && (
+                    <RegisterTag>{word.verbRegisterTag}</RegisterTag>
+                    )}{" "}
+                    <Portuguese>{word.verbPtDefinition}</Portuguese>
+                  </Text>
                 </div>
 
                 {/* phrasal verb */}
                 <div>
-                  
-                    <Text playAudio={word.phrasalVerbAudio} className={!word.phrasalVerbAudio ? styles.hidden : undefined}>
-                      <Bold>{word.phrasalVerbWord}</Bold>{" "}
-                      <Portuguese>{word.phrasalVerbPtDefinition}</Portuguese>
-                    </Text>
-
+                  <Text
+                    playAudio={word.phrasalVerbAudio}
+                    className={!word.phrasalVerbAudio ? styles.hidden : undefined}>
+                    <Bold>{word.phrasalVerbWord}</Bold>{" "}
+                    <Portuguese>{word.phrasalVerbPtDefinition}</Portuguese>
+                  </Text>
                 </div>
 
                 {/* noun */}
                 <div>
-                  
-                    <Text playAudio={word.nounAudio} className={!word.nounAudio ? styles.hidden : undefined}>
-                      <Bold>{word.nounWord}</Bold>{" "}
-                      <Portuguese>{word.nounPtDefinition}</Portuguese>
-                    </Text>
-                  
+                  <Text
+                    playAudio={word.nounAudio}
+                    className={!word.nounAudio ? styles.hidden : undefined}
+                  >
+                    <Bold>{word.nounWord}</Bold>{" "}
+                    {word.nounRegisterTag && (
+                    <RegisterTag>{word.nounRegisterTag}</RegisterTag>
+                    )}{" "}
+                    <Portuguese>{word.nounPtDefinition}</Portuguese>
+                  </Text>
                 </div>
 
                 {/* adjective */}
                 <div>
-                  
-                    <Text playAudio={word.adjectiveAudio} className={!word.adjectiveAudio ? styles.hidden : undefined}>
-                      <Bold>{word.adjectiveWord}</Bold>{" "}
-                      <Portuguese>{word.adjectivePtDefinition}</Portuguese>
-                    </Text>
-                  
+                  <Text
+                    playAudio={word.adjectiveAudio}
+                    className={!word.adjectiveAudio ? styles.hidden : undefined}
+                  >
+                    <Bold>{word.adjectiveWord}</Bold>{" "}
+                    {word.adjectiveRegisterTag && (
+                    <RegisterTag>{word.adjectiveRegisterTag}</RegisterTag>
+                    )}{" "}
+                    <Portuguese>{word.adjectivePtDefinition}</Portuguese>
+                  </Text>
                 </div>
               </div>
             ))}
