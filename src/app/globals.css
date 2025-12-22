@@ -58,7 +58,7 @@ body {
 }
 
 .layout {
-  max-width: 900px;
+  max-width: 1080px;
   height: 100dvh;
   margin: 0 auto;
   padding: var(--padding);
