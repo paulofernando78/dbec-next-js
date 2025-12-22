@@ -6,6 +6,7 @@ import Image from "next/image"
 import { useState, useRef } from "react"
 
 export const Text = ({
+  className,
   imgSrc,
   imgAlt,
   imgPosition = "left",
@@ -53,7 +54,7 @@ export const Text = ({
         className={styles.image}
         />
         )}
-      <p lang={lang}>
+      <p lang={lang} className={className}>
         {underConstruction && <UnderConstruction className="icon-position"/>}
         {exclamation && <Exclamation />}
         {correct && <Correct className="icon-position"/>}
