@@ -8,50 +8,24 @@ import { RegisterTag } from "../../components/atoms/RegisterTag/RegisterTag";
 import { Portuguese } from "@/components/atoms/Portuguese";
 
 const words = [
-  // ask
+  // answer
   {
-    verbAudio: "...",
-    verbWord: "...",
-    verbRegisterTag: "...",
-    verbPtDefinition: "...",
-  
-    phrasalVerbAudio: "....mp3",
-    phrasalVerbWord: "...",
-    phrasalVerbRegisterTag: "...",
-    phrasalVerbPtDefinition: "...",
-  
-    nounAudio: "....mp3",
-    nounWord: "...",
-    nounRegisterTag: "...",
-    nounPtDefinition: "...",
-  
-    adjectiveAudio: "....mp3",
-    adjectiveWord: "...",
-    adjectiveRegisterTag: "...",
-    adjectivePtDefinition: "..."
+    verbAudio: "/audio/general/.mp3",
+    verbWord: "answer - answered - answered",
+    verbPtDefinition: "responder",
   },
+  // ask
   {
     verbAudio: "...",
     verbWord: "ask",
     verbPtDefinition: "perguntar",
+
     phrasalVerbAudio: "...",
     phrasalVerbWord: "ask out",
     phrasalVerbPtDefinition: "convidar para sair",
-
-    nounAudio: "",
-    nounWord: "...",
-    nounPtDefinition: "...",
-
-    adjectiveAudio: "",
-    adjectiveWord: "...",
-    adjectivePtDefinition: "...",
   },
   // art
   {
-    verbAudio: "",
-    verbWord: "...",
-    verbPtDefinition: "...",
-
     nounAudio: "/audio/general/art.mp3",
     nounWord: "art",
     nounPtDefinition: "arte",
@@ -84,10 +58,6 @@ const words = [
     nounAudio: "/audio/general/beginning.mp3",
     nounWord: "beginning",
     nounPtDefinition: "começo, início",
-
-    adjectiveAudio: "",
-    adjectiveWord: "...",
-    adjectivePtDefinition: "...",
   },
   // beautify
   {
@@ -151,21 +121,9 @@ const words = [
     verbAudio: "/audio/general/lighten.mp3",
     verbWord: "lighten",
     verbPtDefinition: "clarear; tornar mais leve",
-
-    nounAudio: "",
-    nounWord: "",
-    nounPtDefinition: "",
-
-    adjectiveAudio: "",
-    adjectiveWord: "",
-    adjectivePtDefinition: "",
   },
   // purity
   {
-    verbAudio: "",
-    verbWord: "...",
-    verbPtDefinition: "...",
-
     nounAudio: "/audio/general/purity.mp3",
     nounWord: "purity",
     nounPtDefinition: "pureza",
