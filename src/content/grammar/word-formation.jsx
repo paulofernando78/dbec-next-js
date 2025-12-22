@@ -10,17 +10,17 @@ import { Portuguese } from "@/components/atoms/Portuguese";
 const words = [
   // answer
   {
-    verbAudio: "/audio/general/.mp3",
-    verbWord: "answer - answered - answered",
+    verbAudio: "/audio/general/answer.mp3",
+    verbWord: "answer",
     verbPtDefinition: "responder",
   },
   // ask
   {
-    verbAudio: "...",
+    verbAudio: "/audio/general/ask.mp3",
     verbWord: "ask",
     verbPtDefinition: "perguntar",
 
-    phrasalVerbAudio: "...",
+    phrasalVerbAudio: "/audio/general/ask out.mp3",
     phrasalVerbWord: "ask out",
     phrasalVerbPtDefinition: "convidar para sair",
   },
@@ -35,24 +35,10 @@ const words = [
     adjectivePtDefinition:
       "astuto; criativo, habilidoso / ingênuo / simples / natural",
   },
-  // create
-  {
-    verbAudio: "/audio/general/create.mp3",
-    verbWord: "create",
-    verbPtDefinition: "criar",
-
-    nounAudio: "/audio/general/creation.mp3",
-    nounWord: "creation",
-    nounPtDefinition: "criação",
-
-    adjectiveAudio: "/audio/general/creative.mp3",
-    adjectiveWord: "creative",
-    adjectivePtDefinition: "criativo",
-  },
   // begin-begun-began
   {
-    verbAudio: "/audio/general/begin-began-begun.mp3",
-    verbWord: "begin - began - begun",
+    verbAudio: "/audio/general/begin.mp3",
+    verbWord: "begin",
     verbPtDefinition: "começar, iniciar",
 
     nounAudio: "/audio/general/beginning.mp3",
@@ -72,6 +58,20 @@ const words = [
     adjectiveAudio: "/audio/general/beautiful.mp3",
     adjectiveWord: "beautiful",
     adjectivePtDefinition: "bonito(a)",
+  },
+  // create
+  {
+    verbAudio: "/audio/general/create.mp3",
+    verbWord: "create",
+    verbPtDefinition: "criar",
+
+    nounAudio: "/audio/general/creation.mp3",
+    nounWord: "creation",
+    nounPtDefinition: "criação",
+
+    adjectiveAudio: "/audio/general/creative.mp3",
+    adjectiveWord: "creative",
+    adjectivePtDefinition: "criativo",
   },
   // darken
   {
