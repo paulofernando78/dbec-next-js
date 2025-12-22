@@ -6,6 +6,7 @@ import { Portuguese } from "@/components/atoms/Portuguese";
 import styles from "./word-formation.module.css";
 
 const words = [
+  // art
   {
     verbAudio: "",
     verbWord: "...",
@@ -17,8 +18,10 @@ const words = [
 
     adjectiveAudio: "/audio/general/artful-artless.mp3",
     adjectiveWord: "artful / artless",
-    adjectivePtDefinition: "astuto; criativo, habilidoso / ingênuo / simples / natural",
+    adjectivePtDefinition:
+      "astuto; criativo, habilidoso / ingênuo / simples / natural",
   },
+  // create
   {
     verbAudio: "/audio/general/create.mp3",
     verbWord: "create",
@@ -32,8 +35,9 @@ const words = [
     adjectiveWord: "creative",
     adjectivePtDefinition: "criativo",
   },
+  // begin-begun-began
   {
-    verbAudio: "/audio/general/begin.mp3",
+    verbAudio: "/audio/general/begin-began-begun.mp3",
     verbWord: "begin - began - begun",
     verbPtDefinition: "começar, iniciar",
 
@@ -45,6 +49,7 @@ const words = [
     adjectiveWord: "...",
     adjectivePtDefinition: "...",
   },
+  // beautify
   {
     verbAudio: "/audio/general/beautify.mp3",
     verbWord: "beautify",
@@ -58,6 +63,7 @@ const words = [
     adjectiveWord: "beautiful",
     adjectivePtDefinition: "bonito(a)",
   },
+  // darken
   {
     verbAudio: "/audio/general/darken.mp3",
     verbWord: "darken",
@@ -71,81 +77,115 @@ const words = [
     adjectiveWord: "dark",
     adjectivePtDefinition: "escuro",
   },
+  // fasten
   {
-    verbAudio: "/audio/general/.mp3",
+    verbAudio: "/audio/general/fasten.mp3",
     verbWord: "fasten",
     verbPtDefinition: "prender, apertar",
 
-    nounAudio: "/audio/general/.mp3",
+    nounAudio: "/audio/general/fastness.mp3",
     nounWord: "fastness",
-    nounPtDefinition: "rapidez",
+    nounPtDefinition: "pressa, rapidez",
 
-    adjectiveAudio: "/audio/general/.mp3",
+    adjectiveAudio: "/audio/general/fast.mp3",
     adjectiveWord: "fast",
     adjectivePtDefinition: "rápido",
   },
   {
-    verbAudio: "/audio/general/.mp3",
-    verbWord: "lighten / light",
-    verbPtDefinition: "clarear / acender",
+    // light
+    verbAudio: "/audio/general/light.mp3",
+    verbWord: "light",
+    verbPtDefinition: "acender",
 
-    nounAudio: "/audio/general/.mp3",
+    nounAudio: "/audio/general/light.mp3",
     nounWord: "light",
     nounPtDefinition: "luz",
 
-    adjectiveAudio: "/audio/general/.mp3",
+    adjectiveAudio: "/audio/general/light.mp3",
     adjectiveWord: "light",
-    adjectivePtDefinition: "leve / claro",
+    adjectivePtDefinition: "leve; claro",
   },
+  // lighten
   {
-    verbAudio: "/audio/general/.mp3",
-    verbWord: "shorten",
+    verbAudio: "/audio/general/lighten.mp3",
+    verbWord: "lighten",
+    verbPtDefinition: "clarear; tornar mais leve",
+
+    nounAudio: "",
+    nounWord: "",
+    nounPtDefinition: "",
+
+    adjectiveAudio: "",
+    adjectiveWord: "",
+    adjectivePtDefinition: "",
+  },
+  // purity
+  {
+    verbAudio: "",
+    verbWord: "...",
     verbPtDefinition: "...",
 
-    nounAudio: "/audio/general/.mp3",
-    nounWord: "shortness",
-    nounPtDefinition: "...",
+    nounAudio: "/audio/general/purity.mp3",
+    nounWord: "purity",
+    nounPtDefinition: "pureza",
 
-    adjectiveAudio: "/audio/general/.mp3",
+    adjectiveAudio: "/audio/general/pure.mp3",
+  adjectiveWord: "pure",
+  adjectivePtDefinition: "puro(a)",
+  },
+  // shorten
+  {
+    verbAudio: "/audio/general/shorten.mp3",
+    verbWord: "shorten",
+    verbPtDefinition: "encurtar; reduzir",
+
+    nounAudio: "/audio/general/shortness.mp3",
+    nounWord: "shortness",
+    nounPtDefinition: "falta de; deficiência",
+
+    adjectiveAudio: "/audio/general/short.mp3",
     adjectiveWord: "short",
     adjectivePtDefinition: "curto",
   },
+  // soften
   {
-    verbAudio: "/audio/general/.mp3",
+    verbAudio: "/audio/general/soften.mp3",
     verbWord: "soften",
     verbPtDefinition: "amaciar",
 
-    nounAudio: "/audio/general/.mp3",
+    nounAudio: "/audio/general/softness.mp3",
     nounWord: "softness",
     nounPtDefinition: "maciez",
 
-    adjectiveAudio: "/audio/general/.mp3",
+    adjectiveAudio: "/audio/general/soft.mp3",
     adjectiveWord: "soft",
     adjectivePtDefinition: "macio",
   },
+  // teach
   {
-    verbAudio: "/audio/general/.mp3",
+    verbAudio: "/audio/general/teach.mp3",
     verbWord: "teach",
     verbPtDefinition: "ensinar",
 
-    nounAudio: "/audio/general/.mp3",
+    nounAudio: "/audio/general/teacher-teaching.mp3",
     nounWord: "teacher / teaching",
     nounPtDefinition: "professor / ensino",
 
-    adjectiveAudio: "/audio/general/.mp3",
+    adjectiveAudio: "/audio/general/teaching.mp3",
     adjectiveWord: "teaching",
     adjectivePtDefinition: "pedagógico",
   },
+  // use
   {
-    verbAudio: "/audio/general/.mp3",
+    verbAudio: "/audio/general/use-verb.mp3",
     verbWord: "use",
     verbPtDefinition: "usar",
 
-    nounAudio: "/audio/general/.mp3",
+    nounAudio: "/audio/general/use-noun.mp3",
     nounWord: "use",
     nounPtDefinition: "uso",
 
-    adjectiveAudio: "/audio/general/.mp3",
+    adjectiveAudio: "/audio/general/useful-useless.mp3",
     adjectiveWord: "useful / useless",
     adjectivePtDefinition: "útil / inútil",
   },
@@ -225,7 +265,9 @@ export default async function WordFormation() {
 
                 {/* Adjective */}
                 <div>
-                  <span className={!word.adjectiveAudio ? styles.hidden : undefined}>
+                  <span
+                    className={!word.adjectiveAudio ? styles.hidden : undefined}
+                  >
                     <Text playAudio={word.adjectiveAudio}>
                       <Bold>{word.adjectiveWord}</Bold>{" "}
                       <Portuguese>{word.adjectivePtDefinition}</Portuguese>
