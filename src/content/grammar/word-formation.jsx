@@ -13,9 +13,9 @@ const words = [
     verbWord: "ask",
     verbPtDefinition: "perguntar",
 
-    pharsalVerbAudio: "...",
-    pharsalVerbWord: "ask out",
-    pharsalVerbPtDefinition: "convidar para sair",
+    phrasalVerbAudio: "...",
+    phrasalVerbWord: "ask out",
+    phrasalVerbPtDefinition: "convidar para sair",
 
     nounAudio: "",
     nounWord: "...",
@@ -256,57 +256,55 @@ export default async function WordFormation() {
             </Text>
 
             <Text className={styles.header}>
-              <strong className="block">noun</strong>
+              <Bold className="block">noun</Bold>
               <span>( -ing, -ness, -ity, -hood)</span>
             </Text>
 
             <Text className={styles.header}>
-              <strong>adjective </strong>
-              <span>(-ed, ing, -ous, -ive, -full, -less)</span>
+              <Bold>adjective </Bold>
+              <span>(-ed, ing, -ous, -ive, -ful, -less)</span>
             </Text>
 
             {words.map((word, index) => (
               <div key={index} className={styles.row}>
                 {/* verb */}
                 <div>
-                  <span className={!word.verbAudio ? styles.hidden : undefined}>
-                    <Text playAudio={word.verbAudio}>
+                  
+                    <Text playAudio={word.verbAudio} className={!word.verbAudio ? styles.hidden : undefined}>
                       <Bold>{word.verbWord}</Bold>{" "}
                       <Portuguese>{word.verbPtDefinition}</Portuguese>
                     </Text>
-                  </span>
+                  
                 </div>
 
-                {/* pharasl verb */}
+                {/* phrasal verb */}
                 <div>
-                  <span className={!word.pharsalVerbAudio ? styles.hidden : undefined}>
-                    <Text playAudio={word.pharsalVerbAudio}>
-                      <Bold>{word.pharsalVerbWord}</Bold>{" "}
-                      <Portuguese>{word.pharsalVerbPtDefinition}</Portuguese>
+                  
+                    <Text playAudio={word.phrasalVerbAudio} className={!word.phrasalVerbAudio ? styles.hidden : undefined}>
+                      <Bold>{word.phrasalVerbWord}</Bold>{" "}
+                      <Portuguese>{word.phrasalVerbPtDefinition}</Portuguese>
                     </Text>
-                  </span>
+
                 </div>
 
                 {/* noun */}
                 <div>
-                  <span className={!word.nounAudio ? styles.hidden : undefined}>
-                    <Text playAudio={word.nounAudio}>
+                  
+                    <Text playAudio={word.nounAudio} className={!word.nounAudio ? styles.hidden : undefined}>
                       <Bold>{word.nounWord}</Bold>{" "}
                       <Portuguese>{word.nounPtDefinition}</Portuguese>
                     </Text>
-                  </span>
+                  
                 </div>
 
                 {/* adjective */}
                 <div>
-                  <span
-                    className={!word.adjectiveAudio ? styles.hidden : undefined}
-                  >
-                    <Text playAudio={word.adjectiveAudio}>
+                  
+                    <Text playAudio={word.adjectiveAudio} className={!word.adjectiveAudio ? styles.hidden : undefined}>
                       <Bold>{word.adjectiveWord}</Bold>{" "}
                       <Portuguese>{word.adjectivePtDefinition}</Portuguese>
                     </Text>
-                  </span>
+                  
                 </div>
               </div>
             ))}
