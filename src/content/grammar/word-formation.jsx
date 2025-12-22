@@ -35,6 +35,26 @@ const words = [
     adjectivePtDefinition:
       "astuto; criativo, habilidoso / ingênuo / simples / natural",
   },
+  // beat
+  {
+    verbAudio: "/audio/general/beat.mp3",
+    verbWord: "beat",
+    verbPtDefinition: "bater; derrotar",
+
+    phrasalVerbAudio: "/audio/general/beat-up.mp3",
+    phrasalVerbWord: "beat up",
+    phrasalVerbPtDefinition: "espancar",
+
+    nounAudio: "/audio/general/beat-noun.mp3",
+    nounWord: "beat",
+    nounRegisterTag: "informal",
+    nounPtDefinition: "ritmo; batida",
+
+    adjectiveAudio: "/audio/general/beaten.mp3",
+    adjectiveWord: "beaten",
+    adjectiveRegisterTag: "neutral",
+    adjectivePtDefinition: "derrotado; gasto",
+  },
   // begin-begun-began
   {
     verbAudio: "/audio/general/begin.mp3",
@@ -58,6 +78,63 @@ const words = [
     adjectiveAudio: "/audio/general/beautiful.mp3",
     adjectiveWord: "beautiful",
     adjectivePtDefinition: "bonito(a)",
+  },
+  // blow
+  {
+    verbAudio: "/audio/general/blow.mp3",
+    verbWord: "blow",
+    verbPtDefinition: "soprar; bater (vento)",
+
+    phrasalVerbAudio: "/audio/general/blow-up.mp3",
+    phrasalVerbWord: "blow up",
+    phrasalVerbPtDefinition: "explodir; perder a calma",
+
+    nounAudio: "/audio/general/blow-noun.mp3",
+    nounWord: "blow",
+    nounPtDefinition: "golpe; sopro; impacto",
+
+    adjectiveAudio: "/audio/general/blown.mp3",
+    adjectiveWord: "blown",
+    adjectivePtDefinition: "inchado; estourado",
+  },
+  // bore
+  {
+    verbAudio: "/audio/general/bore.mp3",
+    verbWord: "bore",
+    verbRegisterTag: "neutral",
+    verbPtDefinition: "entediar; furar; perfurar",
+
+    phrasalVerbAudio: "/audio/general/bore-into.mp3",
+    phrasalVerbWord: "bore into",
+    phrasalVerbPtDefinition: "criticar duramente; perfurar",
+
+    nounAudio: "/audio/general/bore-noun.mp3",
+    nounWord: "bore",
+    nounRegisterTag: "neutral",
+    nounPtDefinition: "tédio; pessoa chata",
+
+    adjectiveAudio: "/audio/general/boring-bored.mp3",
+    adjectiveWord: "boring / bored",
+    adjectiveRegisterTag: "neutral",
+    adjectivePtDefinition: "entediante / entediado",
+  },
+  // bore
+  {
+    verbAudio: "/audio/general/bore.mp3",
+    verbWord: "bore",
+    verbPtDefinition: "entediar; furar; perfurar",
+
+    phrasalVerbAudio: "/audio/general/bore-into.mp3",
+    phrasalVerbWord: "bore into",
+    phrasalVerbPtDefinition: "criticar duramente; perfurar",
+
+    nounAudio: "/audio/general/bore-noun.mp3",
+    nounWord: "bore",
+    nounPtDefinition: "tédio; pessoa chata",
+
+    adjectiveAudio: "/audio/general/boring-bored.mp3",
+    adjectiveWord: "boring / bored",
+    adjectivePtDefinition: "entediante / entediado",
   },
   // create
   {
@@ -228,7 +305,7 @@ export default function WordFormation() {
             {/* Headers */}
             <Text className={styles.header}>
               <Bold className="block bold">verb</Bold>
-              <span>(-en)</span>
+              <span>(-en, -ify)</span>
             </Text>
 
             <Text className={styles.header}>
@@ -253,10 +330,11 @@ export default function WordFormation() {
                 <div>
                   <Text
                     playAudio={word.verbAudio}
-                    className={!word.verbAudio ? styles.hidden : undefined}>
+                    className={!word.verbAudio ? styles.hidden : undefined}
+                  >
                     <Bold>{word.verbWord}</Bold>{" "}
                     {word.verbRegisterTag && (
-                    <RegisterTag>{word.verbRegisterTag}</RegisterTag>
+                      <RegisterTag>{word.verbRegisterTag}</RegisterTag>
                     )}{" "}
                     <Portuguese>{word.verbPtDefinition}</Portuguese>
                   </Text>
@@ -266,7 +344,10 @@ export default function WordFormation() {
                 <div>
                   <Text
                     playAudio={word.phrasalVerbAudio}
-                    className={!word.phrasalVerbAudio ? styles.hidden : undefined}>
+                    className={
+                      !word.phrasalVerbAudio ? styles.hidden : undefined
+                    }
+                  >
                     <Bold>{word.phrasalVerbWord}</Bold>{" "}
                     <Portuguese>{word.phrasalVerbPtDefinition}</Portuguese>
                   </Text>
@@ -280,7 +361,7 @@ export default function WordFormation() {
                   >
                     <Bold>{word.nounWord}</Bold>{" "}
                     {word.nounRegisterTag && (
-                    <RegisterTag>{word.nounRegisterTag}</RegisterTag>
+                      <RegisterTag>{word.nounRegisterTag}</RegisterTag>
                     )}{" "}
                     <Portuguese>{word.nounPtDefinition}</Portuguese>
                   </Text>
@@ -294,7 +375,7 @@ export default function WordFormation() {
                   >
                     <Bold>{word.adjectiveWord}</Bold>{" "}
                     {word.adjectiveRegisterTag && (
-                    <RegisterTag>{word.adjectiveRegisterTag}</RegisterTag>
+                      <RegisterTag>{word.adjectiveRegisterTag}</RegisterTag>
                     )}{" "}
                     <Portuguese>{word.adjectivePtDefinition}</Portuguese>
                   </Text>

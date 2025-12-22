@@ -15,6 +15,7 @@ export default function Expressions() {
           <Text>every other day - um dia sim um dia não</Text>
           <Text>anyway - enfim, de qualquer forma</Text>
           <Text>once and for all - de uma vez por todas</Text>
+          <Text>thank god - graça a deus</Text>
         </div>
       </div>
     </>
