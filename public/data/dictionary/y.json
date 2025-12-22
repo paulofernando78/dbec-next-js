@@ -1,0 +1,32 @@
+[
+  {
+    "definitions": [
+      {
+        "word": "yes man",
+        "phonetics": "ˈjɛs mæn",
+        "partOfSpeech": "noun",
+        "enDefinition": "a person who agrees with everything their superior says, often without questioning or thinking independently",
+        "ptDefinition": "pessoa que concorda com tudo que seu superior diz, geralmente sem questionar ou pensar de forma independente",
+        "examples": [
+          {
+            "enExample": "He's just a yes man who never challenges the boss's decisions.",
+            "ptExample": "Ele é apenas um puxa-saco que nunca questiona as decisões do chefe."
+          },
+          {
+            "enExample": "Don't be a yes man; share your own ideas and opinions.",
+            "ptExample": "Não seja um puxa-saco; compartilhe suas próprias ideias e opiniões."
+          }
+        ],
+        "synonyms": ["sycophant, follower, toady"],
+        "antonyms": ["rebel, critic, independent thinker"],
+        "seeAlso": "brown-noser, bootlicker, suck-up",
+        "notes": [
+          {
+            "enNote": "Often used in a negative sense to describe lack of independent judgment.",
+            "ptNote": "Frequentemente usado de forma negativa para descrever falta de julgamento independente."
+          }
+        ]
+      }
+    ]
+  }
+]

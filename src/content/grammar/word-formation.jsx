@@ -8,23 +8,45 @@ import styles from "./word-formation.module.css";
 
 const words = [
   {
-    verbAudio: "/audio/general/.mp3",
+    verbAudio: "",
+    verbWord: "...",
+    verbPtDefinition: "...",
+    verbExampleAudio: "...",
+    verbExample: "...",
+    verbExampleUnderline: ["..."],
+
+    nounAudio: "",
+    nounWord: "...",
+    nounPtDefinition: "...",
+    nounExampleAudio: "...",
+    nounExample: "...",
+    nounExampleUnderline: ["..."],
+
+    adjectiveAudio: "",
+    adjectiveWord: "...",
+    adjectivePtDefinition: "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "...",
+    adjectiveExampleUnderline: ["..."],
+  },
+  {
+    verbAudio: "",
     verbWord: "...",
     verbPtDefinition: "...",
     verbExampleAudio: "...",
     verbExample: "...",
 
-    nounAudio: "/audio/general/.mp3",
-    nounWord: "...",
+    nounAudio: "",
+    nounWord: "art",
     nounPtDefinition: "...",
     nounExampleAudio: "...",
     nounExample: "...",
-    
-    adjectiveAudio: "/audio/general/.mp3",
-    adjectiveWord: "...",
+
+    adjectiveAudio: "",
+    adjectiveWord: "artful / artless",
     adjectivePtDefinition: "...",
-    adjectiveExampleAudio : "...",
-    adjectiveExample : "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "...",
   },
   {
     verbAudio: "/audio/general/begin.mp3",
@@ -32,18 +54,21 @@ const words = [
     verbPtDefinition: "começar, iniciar",
     verbExampleAudio: "...",
     verbExample: "What time does the class begin?",
+    verbExampleUnderline: ["begin"],
 
     nounAudio: "/audio/general/beginning.mp3",
     nounWord: "beginning",
     nounPtDefinition: "começo, início",
     nounExampleAudio: "...",
     nounExample: "In the beginning I didn’t like it.",
-    
-    adjectiveAudio: "/audio/general/.mp3",
+    nounExampleUnderline: ["beginning"],
+
+    adjectiveAudio: "",
     adjectiveWord: "...",
     adjectivePtDefinition: "...",
-    adjectiveExampleAudio : "...",
-    adjectiveExample : "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "...",
+    adjetiveExampleUnderline: ["..."],
   },
   {
     verbAudio: "/audio/general/beautify.mp3",
@@ -54,299 +79,181 @@ const words = [
 
     nounAudio: "/audio/general/beauty.mp3",
     nounWord: "beauty",
-    nounPtDefinition: "...",
-    nounExampleAudio: "...",
-    nounExample: "...",
-    
+    nounPtDefinition: "beleza",
+    nounExampleAudio: "/audio/general/shes-a-woman-of-great-beauty",
+    nounExample: "She's a woman of great beauty. Ela é uma mulher de uma grande beleza.",
+
     adjectiveAudio: "/audio/general/beautiful.mp3",
     adjectiveWord: "beautiful",
     adjectivePtDefinition: "bonito(a)",
-    adjectiveExampleAudio : "...",
-    adjectiveExample : "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "That girl is beautiful. Aquela menina é bonita.",
   },
-{
-    verbAudio: "/audio/general/.mp3",
+  {
+    verbAudio: "/audio/general/darken.mp3",
     verbWord: "darken",
+    verbPtDefinition: "escurercer",
+    verbExampleAudio: "/audio/general/the-sky-began-to-darken-as-the-storm-approached.mp3",
+    verbExample: "The sky began to darken as the storm approached. O céu começou a escurecer à medida que a tempestade se aproximava.",
+
+    nounAudio: "/audio/general/darkness.mp3",
+    nounWord: "darkness",
+    nounPtDefinition: "escuridão",
+    nounExampleAudio: "...",
+    nounExample: "The car disappeared into the darkness. O carro desapareceu na escuridão.",
+
+    adjectiveAudio: "/audio/general/dark.mp3",
+    adjectiveWord: "dark",
+    adjectivePtDefinition: "escuro",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "It’s getting dark. Let's go home. Está ficando tarde. Vamos para casa.",
+  },
+  {
+    verbAudio: "",
+    verbWord: "fast / fasten",
     verbPtDefinition: "...",
     verbExampleAudio: "...",
     verbExample: "...",
 
-    nounAudio: "/audio/general/.mp3",
-    nounWord: "darkness",
+    nounAudio: "",
+    nounWord: "...",
     nounPtDefinition: "...",
     nounExampleAudio: "...",
     nounExample: "...",
-    
-    adjectiveAudio: "/audio/general/.mp3",
-    adjectiveWord: "dark",
+
+    adjectiveAudio: "",
+    adjectiveWord: "fast",
     adjectivePtDefinition: "...",
-    adjectiveExampleAudio : "...",
-    adjectiveExample : "...",
-  },
-
-
- 
-  {
-    audioAdjective: "/audio/general/dark.mp3",
-    adjective: "dark",
-    audioNoun: "/audio/general/darkness.mp3",
-    noun: "darkness",
-    audioVerb: "/audio/general/darken.mp3",
-    verb: "darken",
-
-    ptAdjective: "escuro; tarde (dia)",
-    ptNoun: "escuridão",
-    ptVerb: "escurecer",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "...",
   },
   {
-    audioAdjective: "/audio/general/fast.mp3",
-    adjective: "fast",
-    audioNoun: "/audio/general/.mp3",
-    noun: "...",
-    audioVerb: "/audio/general/.mp3",
-    verb: "fasten",
+    verbAudio: "",
+    verbWord: "lighten / light",
+    verbPtDefinition: "clarear / acender",
+    verbExampleAudio: "The room will lighten in the morning. O quarto irá clarear pela manhã.",
+    verbExample: "",
 
-    ptAdjective: "...",
-    ptNoun: "...",
-    ptVerb: "...",
+    nounAudio: "",
+    nounWord: "light",
+    nounPtDefinition: "luz",
+    nounExampleAudio: "...",
+    nounExample: "Can you turn off the lights, please? Você pode apagar as luzes, por favor?",
+
+    adjectiveAudio: "",
+    adjectiveWord: "light",
+    adjectivePtDefinition: "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "This package is light. Este pacote é leve.",
   },
   {
-    audioAdjective: "/audio/general/light.mp3",
-    adjective: "light",
-    audioNoun: "/audio/general/light.mp3",
-    noun: "light",
-    audioVerb: "/audio/general/lighten.mp3",
-    verb: "lighten",
+    verbAudio: "",
+    verbWord: "shorten",
+    verbPtDefinition: "...",
+    verbExampleAudio: "...",
+    verbExample: "...",
 
-    ptAdjective: "claro; leve",
-    ptNoun: "luz, iluminação",
-    ptVerb: "clarear (light / lit = acender)",
+    nounAudio: "",
+    nounWord: "shortness",
+    nounPtDefinition: "...",
+    nounExampleAudio: "...",
+    nounExample: "...",
+
+    adjectiveAudio: "",
+    adjectiveWord: "short",
+    adjectivePtDefinition: "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "...",
   },
   {
-    audioAdjective: "/audio/general/short.mp3",
-    adjective: "short",
-    audioNoun: "/audio/general/.mp3",
-    noun: "shortness",
-    audioVerb: "/audio/general/shorten.mp3",
-    verb: "shorten",
+    verbAudio: "",
+    verbWord: "soften",
+    verbPtDefinition: "...",
+    verbExampleAudio: "...",
+    verbExample: "...",
 
-    ptAdjective: "curto, breve",
-    ptNoun: "falta, deficiência",
-    ptVerb: "encurtar; abreviar",
+    nounAudio: "",
+    nounWord: "softness",
+    nounPtDefinition: "...",
+    nounExampleAudio: "...",
+    nounExample: "...",
+
+    adjectiveAudio: "",
+    adjectiveWord: "soft",
+    adjectivePtDefinition: "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "...",
   },
   {
-    audioAdjective: "/audio/general/soft.mp3",
-    adjective: "soft",
-    audioNoun: "/audio/general/softness.mp3",
-    noun: "softness",
-    audioVerb: "/audio/general/soften.mp3",
-    verb: "soften",
+    verbAudio: "",
+    verbWord: "teach",
+    verbPtDefinition: "...",
+    verbExampleAudio: "...",
+    verbExample: "...",
 
-    ptAdjective: "suave, macio",
-    ptNoun: "suavidade, maciez",
-    ptVerb: "amaciar, amolecer",
+    nounAudio: "",
+    nounWord: "teacher / teaching",
+    nounPtDefinition: "...",
+    nounExampleAudio: "...",
+    nounExample: "...",
+
+    adjectiveAudio: "",
+    adjectiveWord: "...",
+    adjectivePtDefinition: "...",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "...",
   },
   {
-    audioAdjective: "/audio/general/teach.mp3",
-    adjective: "-",
-    audioNoun: "/audio/general/.mp3",
-    noun: "teacher / teaching",
-    audioVerb: "/audio/general/.mp3",
-    verb: "teach",
+    verbAudio: "",
+    verbWord: "use /z/",
+    verbPtDefinition: "...",
+    verbExampleAudio: "...",
+    verbExample: "...",
 
-    ptAdjective: "...",
-    ptNoun: "...",
-    ptVerb: "...",
-  },
-  {
-    audioAdjective: "/audio/general/useful-useless.mp3",
-    adjective: "useful / useless",
-    audioNoun: "/audio/general/use1.mp3",
-    noun: "use",
-    audioVerb: "/audio/general/use2.mp3",
-    verb: "use",
+    nounAudio: "",
+    nounWord: "use /s/",
+    nounPtDefinition: "...",
+    nounExampleAudio: "...",
+    nounExample: "...",
 
-    ptAdjective: "útil / inútil",
-    ptNoun: "uso, utilidade, aplicação",
-    ptVerb: "usar, utilizar",
+    adjectiveAudio: "",
+    adjectiveWord: "useful / useless",
+    adjectivePtDefinition: "útil / inútil",
+    adjectiveExampleAudio: "...",
+    adjectiveExample: "This tool useful / useless.",
   },
 ];
 
-function renderUnderline(text, underlineWords = []) {
-  let parts = [text]; // Start with the entire text as a single block
+function escapeRegExp(word) {
+  return word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
 
-  // For each word that should be underlined
+function renderUnderline(text, underlineWords = []) {
+  if (!text) return "-";
+
+  let parts = [text];
+
   underlineWords.forEach((word) => {
-    // Split existing parts by the word, keeping React elements intact
-    parts = parts.flatMap(
-      (part) =>
-        typeof part === "string"
-          ? part.split(new RegExp(`(${word})`, "gi")) // Create an array splitting by the word
-          : part // If it's already a React element (like <mark>), leave it unchanged
+    const safeWord = escapeRegExp(word);
+    const regex = new RegExp(`(${safeWord})`, "gi");
+
+    parts = parts.flatMap((part) =>
+      typeof part === "string" ? part.split(regex) : part
     );
   });
 
-  // Transform the parts into JSX, underlining the corresponding words
   return parts.map((part, i) =>
-    underlineWords.some((w) => w.toLowerCase() === part?.toLowerCase()) ? (
-      <mark key={i}>{part}</mark> // Underline the word
+    underlineWords.some(
+      (w) => part?.toLowerCase() === w.toLowerCase()
+    ) ? (
+      <mark key={i}>{part}</mark>
     ) : (
-      part // Keep normal text
+      part
     )
   );
 }
 
-const examples = [
-  {
-    adjAudio: "/audio/general/.mp3",
-    adjEnExample: "...",
-    adjUnderline: ["..."],
-    adjPtExample: "...",
-
-    nounAudio: "/audio/general/....mp3",
-    nounEnExample: "...ness",
-    nounUnderline: ["...ness"],
-    nounPtExample: "...",
-
-    verbAudio:
-      "/audio/general/....mp3",
-    verbEnExample: "...en",
-    verbUnderline: ["...en"],
-    verbPtExample: "...",
-  },
-  {
-    nounAudio: "/audio/general/....mp3",
-    nounEnExample: "beginning",
-    nounUnderline: ["beginning"],
-    nounPtExample: "começo",
-
-    verbAudio: "/audio/general/....mp3",
-    verbEnExample: "begin",
-    verbUnderline: ["begin"],
-    verbPtExample: "começar",
-  },
-  {
-    adjAudio: "/audio/general/that-girl-is-beautiful.mp3",
-    adjEnExample: "That girl is beautiful.",
-    adjUnderline: ["beautiful"],
-    adjPtExample: "Aquela menina é bonita.",
-
-    nounAudio: "/audio/general/shes-a-woman-of-great-beauty.mp3",
-    nounEnExample: "She's a woman of great beauty.",
-    nounUnderline: ["beauty"],
-    nounPtExample: "Ela é uma mulher de uma grande beleza.",
-  },
-  {
-    adjAudio: "/audio/general/its-getting-dark-lets-go-home.mp3",
-    adjEnExample: "It’s getting dark. Let's go home.",
-    adjUnderline: ["dark"],
-    adjPtExample: "Está ficando tarde. Vamos para casa.",
-
-    nounAudio: "/audio/general/the-car-disappeared-into-the-darkness.mp3",
-    nounEnExample: "The car disappeared into the darkness.",
-    nounUnderline: ["darkness"],
-    nounPtExample: "O carro desapareceu na escuridão. ",
-
-    verbAudio:
-      "/audio/general/the-sky-began-to-darken-as-the-storm-approached.mp3",
-    verbEnExample: "The sky began to darken as the storm approached.",
-    verbUnderline: ["darken"],
-    verbPtExample:
-      "O céu começou a escurecer à medida que a tempestade se aproximava.",
-  },
-  {
-    adjAudio: "/audio/general/.mp3",
-    adjEnExample: "This package is light.",
-    adjUnderline: ["light"],
-    adjPtExample: "Este pacote é leve.",
-
-    nounAudio: "/audio/general/can-you-turn-off-the-lights-please.mp3",
-    nounEnExample: "Can you turn off the lights, please?",
-    nounUnderline: ["lights"],
-    nounPtExample: "Você pode apagar as luzes, por favor?",
-
-    verbAudio: "/audio/general/.mp3",
-    verbEnExample: "The room will lighten in the morning.",
-    verbUnderline: ["lighten"],
-    verbPtExample: "O quarto irá clarear pela manhã.",
-  },
-  {
-    adjAudio: "/audio/general/its-getting-dark-lets-go-home.mp3",
-    adjEnExample: "It’s getting dark. Let's go home.",
-    adjUnderline: ["dark"],
-    adjPtExample: "Está ficando tarde. Vamos para casa.",
-
-    nounAudio: "/audio/general/the-car-disappeared-into-the-darkness.mp3",
-    nounEnExample: "The car disappeared into the darkness.",
-    nounUnderline: ["darkness"],
-    nounPtExample: "O carro desapareceu na escuridão. ",
-
-    verbAudio:
-      "/audio/general/the-sky-began-to-darken-as-the-storm-approached.mp3",
-    verbEnExample: "The sky began to darken as the storm approached.",
-    verbUnderline: ["darken"],
-    verbPtExample: "O céu começou a escurecer à medida que a tempestade se aproximava.",
-  },
-  {
-    adjAudio: "/audio/general/.mp3",
-    adjEnExample: "short",
-    adjUnderline: ["short"],
-    adjPtExample: "...",
-
-    nounAudio: "/audio/general/....mp3",
-    nounEnExample: "shortness",
-    nounUnderline: ["shortness"],
-    nounPtExample: "...",
-
-    verbAudio:
-      "/audio/general/....mp3",
-    verbEnExample: "shorten",
-    verbUnderline: ["shorten"],
-    verbPtExample: "...",
-  },
-  {
-    adjAudio: "/audio/general/.mp3",
-    adjEnExample: "soft",
-    adjUnderline: ["soft"],
-    adjPtExample: "...",
-
-    nounAudio: "/audio/general/....mp3",
-    nounEnExample: "softness",
-    nounUnderline: ["softness"],
-    nounPtExample: "...",
-
-    verbAudio:
-      "/audio/general/....mp3",
-    verbEnExample: "soften",
-    verbUnderline: ["soften"],
-    verbPtExample: "...",
-  },
-  {
-    adjAudio: "/audio/general/this-tool-is-useless.mp3",
-    adjEnExample: "This tool is useless.",
-    adjUnderline: ["useless"],
-    adjPtExample: "...",
-  },
-  {
-    adjAudio: "/audio/general/.mp3",
-    adjEnExample: "...",
-    adjUnderline: ["..."],
-    adjPtExample: "...",
-
-    nounAudio: "/audio/general/....mp3",
-    nounEnExample: "...",
-    nounUnderline: ["..."],
-    nounPtExample: "...",
-
-    verbAudio:
-      "/audio/general/....mp3",
-    verbEnExample: "...",
-    verbUnderline: ["..."],
-    verbPtExample: "...",
-  },
-];
-
-export default function WordFormation() {
+export default async function WordFormation() {
   return (
     <>
       <Whiteboard title="Grammar" subtitle="Word Formation" />
@@ -367,62 +274,41 @@ export default function WordFormation() {
             {words.map((word, index) => (
               <div key={index} className={styles.row}>
                 {/* Verb */}
+
                 <div>
-                  <Text playAudio={word.verbAudio}>
-                    {word.verbWord} <Portuguese>{word.verbPtDefinition}</Portuguese>
-                  </Text>
-                  <Text playAudio={word.verbExampleAudio}><Bold>•</Bold>{" "}{word.verbExample}</Text>
+                    <Text playAudio={word.verbAudio}>
+                      <Bold>{word.verbWord}</Bold>{" "}
+                      <Portuguese>{word.verbPtDefinition}</Portuguese>
+                    </Text>
+                    <Text playAudio={word.verbExampleAudio}>
+                      <Bold>•</Bold> {renderUnderline(word.verbExample, word.verbExampleUnderline)}
+                    </Text>
                 </div>
-                
+
                 <div>
                   <Text playAudio={word.nounAudio}>
-                    {word.nounWord} <Portuguese>{word.nounPtDefinition}</Portuguese>
+                    <Bold>{word.nounWord}</Bold>{" "}
+                    <Portuguese>{word.nounPtDefinition}</Portuguese>
                   </Text>
-                  <Text playAudio={word.nounExampleAudio}><Bold>•</Bold>{" "}{word.nounExample}</Text>
+                  <Text playAudio={word.nounExampleAudio}>
+                    <Bold>•</Bold> {renderUnderline(word.nounExample, word.nounExampleUnderline)}
+                  </Text>
                 </div>
                 {/* Noun */}
-                
+
                 <div>
-                {/* Adjective */}
-                <Text playAudio={word.adjectiveAudio}>
-                  {word.adjectiveWord} <Portuguese>{word.adjectivePtDefinition}</Portuguese>
-                </Text>
-                <Text playAudio={word.adjectiveExampleAudio}><Bold>•</Bold>{" "}{word.adjectiveExample}</Text>
-                </div> 
+                  {/* Adjective */}
+                  <Text playAudio={word.adjectiveAudio}>
+                    <Bold>{word.adjectiveWord}</Bold>{" "}
+                    <Portuguese>{word.adjectivePtDefinition}</Portuguese>
+                  </Text>
+                  <Text playAudio={word.adjectiveExampleAudio}>
+                    <Bold>•</Bold> {renderUnderline(word.adjectiveExample, word.adjectiveExampleUnderline)}
+                  </Text>
+                </div>
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="line-break">
-          <Text>
-            <Card><strong>Examples</strong></Card>
-            
-          </Text>
-          {examples.map((item, index) => (
-            <div key={index}>
-              {item.adjEnExample && (
-                <Text playAudio={item.adjAudio}>
-                  {renderUnderline(item.adjEnExample, item.adjUnderline)}{" "}
-                  <Portuguese>{item.adjPtExample}</Portuguese>
-                </Text>
-              )}
-
-              {item.nounEnExample && (
-                <Text playAudio={item.nounAudio}>
-                  {renderUnderline(item.nounEnExample, item.nounUnderline)}{" "}
-                  <Portuguese>{item.nounPtExample}</Portuguese>
-                </Text>
-              )}
-
-              {item.verbEnExample && (
-                <Text playAudio={item.verbAudio}>
-                  {renderUnderline(item.verbEnExample, item.verbUnderline)}{" "}
-                  <Portuguese>{item.verbPtExample}</Portuguese>
-                </Text>
-              )}
-            </div>
-          ))}
         </div>
       </div>
     </>

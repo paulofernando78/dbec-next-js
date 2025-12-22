@@ -1,0 +1,57 @@
+[
+  {
+    "definitions": [
+      {
+        "word": "quest",
+        "phonetics": "/kwest/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a long search for something that is difficult to find, or an attempt to achieve something important",
+        "ptDefinition": "uma longa busca por algo difícil de encontrar, ou uma tentativa de alcançar algo importante",
+        "examples": [
+          {
+            "enExample": "The knight went on a quest to find the lost treasure.",
+            "ptExample": "O cavaleiro partiu em uma busca para encontrar o tesouro perdido."
+          },
+          {
+            "enExample": "Her quest for knowledge never ends.",
+            "ptExample": "Sua busca por conhecimento nunca acaba."
+          }
+        ],
+        "synonyms": ["search", "pursuit", "mission", "journey"],
+        "antonyms": ["idleness", "inaction"],
+        "seeAlso": ["adventure", "expedition"],
+        "notes": [
+          {
+            "enNote": "Often used in literature, fantasy, or gaming contexts to describe a heroic or challenging mission.",
+            "ptNote": "Frequentemente usado em literatura, fantasia ou jogos para descrever uma missão heroica ou desafiadora."
+          }
+        ]
+      },
+      {
+        "word": "out of the question",
+        "partOfSpeech": "idiom",
+        "enDefinition": "impossible; not to be considered; absolutely not",
+        "ptDefinition": "impossível; nem pensar; absolutamente não",
+        "examples": [
+          {
+            "enExample": "Buying a new car this year is out of the question - we can't afford it.",
+            "ptExample": "Comprar um carro novo este ano está fora de questão - não podemos pagar."
+          },
+          {
+            "enExample": "Working overtime is out of the question, I need to pick up my kids from school.",
+            "ptExample": "Fazer hora extra está fora de questão, preciso buscar meus filhos na escola."
+          }
+        ],
+        "synonyms": ["impossible", "unthinkable", "not possible"],
+        "antonyms": ["possible", "feasible", "doable"],
+        "seeAlso": ["no way", "impossible"],
+        "notes": [
+          {
+            "enNote": "Used to express that something is absolutely impossible or cannot be considered as an option.",
+            "ptNote": "Usado para expressar que algo é absolutamente impossível ou não pode ser considerado como uma opção."
+          }
+        ]
+      }
+    ]
+  }
+]
