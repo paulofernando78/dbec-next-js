@@ -1,12 +1,30 @@
+import styles from "./word-formation.module.css";
+
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { DictionarySearch } from "../../components/molecules/DictionarySearch/DictionarySearch";
 import { Text } from "@/components/molecules/Text";
 import { Bold } from "@/components/atoms/Bold";
 import { Portuguese } from "@/components/atoms/Portuguese";
 
-import styles from "./word-formation.module.css";
-
 const words = [
   // art
+  {
+    verbAudio: "...",
+    verbWord: "ask",
+    verbPtDefinition: "perguntar",
+
+    pharsalVerbAudio: "...",
+    pharsalVerbWord: "ask out",
+    pharsalVerbPtDefinition: "convidar para sair",
+
+    nounAudio: "",
+    nounWord: "...",
+    nounPtDefinition: "...",
+
+    adjectiveAudio: "",
+    adjectiveWord: "...",
+    adjectivePtDefinition: "...",
+  },
   {
     verbAudio: "",
     verbWord: "...",
@@ -130,8 +148,8 @@ const words = [
     nounPtDefinition: "pureza",
 
     adjectiveAudio: "/audio/general/pure.mp3",
-  adjectiveWord: "pure",
-  adjectivePtDefinition: "puro(a)",
+    adjectiveWord: "pure",
+    adjectivePtDefinition: "puro(a)",
   },
   // shorten
   {
@@ -223,12 +241,18 @@ export default async function WordFormation() {
     <>
       <Whiteboard title="Grammar" subtitle="Word Formation" />
       <div className="line-break">
+        <DictionarySearch />
         <div className={styles.scroll}>
           <div className={styles.table}>
             {/* Headers */}
             <Text className={styles.header}>
               <Bold className="block bold">verb</Bold>
               <span>(-en)</span>
+            </Text>
+
+            <Text className={styles.header}>
+              <Bold className="block bold">phrasal verb</Bold>
+              <span>(+ prepositions)</span>
             </Text>
 
             <Text className={styles.header}>
@@ -243,7 +267,7 @@ export default async function WordFormation() {
 
             {words.map((word, index) => (
               <div key={index} className={styles.row}>
-                {/* Verb */}
+                {/* verb */}
                 <div>
                   <span className={!word.verbAudio ? styles.hidden : undefined}>
                     <Text playAudio={word.verbAudio}>
@@ -253,6 +277,17 @@ export default async function WordFormation() {
                   </span>
                 </div>
 
+                {/* pharasl verb */}
+                <div>
+                  <span className={!word.pharsalVerbAudio ? styles.hidden : undefined}>
+                    <Text playAudio={word.pharsalVerbAudio}>
+                      <Bold>{word.pharsalVerbWord}</Bold>{" "}
+                      <Portuguese>{word.pharsalVerbPtDefinition}</Portuguese>
+                    </Text>
+                  </span>
+                </div>
+
+                {/* noun */}
                 <div>
                   <span className={!word.nounAudio ? styles.hidden : undefined}>
                     <Text playAudio={word.nounAudio}>
@@ -261,9 +296,8 @@ export default async function WordFormation() {
                     </Text>
                   </span>
                 </div>
-                {/* Noun */}
 
-                {/* Adjective */}
+                {/* adjective */}
                 <div>
                   <span
                     className={!word.adjectiveAudio ? styles.hidden : undefined}

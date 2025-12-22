@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 5px;
+}
+
+.input {
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
