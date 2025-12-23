@@ -884,12 +884,12 @@ const words = [
     verbPtDefinition: "amar; adorar",
 
     phrasalVerbs: [
-    {
-      audio: "/audio/general/love-up.mp3",
-      word: "love up",
-      ptDefinition: "mostrar carinho; abraçar",
-    }
-  ],
+      {
+        audio: "/audio/general/love-up.mp3",
+        word: "love up",
+        ptDefinition: "mostrar carinho; abraçar",
+      },
+    ],
 
     nounAudio: "/audio/general/love.mp3",
     nounWord: "love",
@@ -992,7 +992,7 @@ const words = [
         audio: "/audio/general/meet-with.mp3",
         word: "meet with",
         ptDefinition: "reunir-se com; encontrar-se com",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/meeting.mp3",
@@ -1012,6 +1012,47 @@ const words = [
         audio: "/audio/general/meet-halfway.mp3",
         word: "meet halfway",
         ptDefinition: "chegar a um acordo; ceder parcialmente",
+      },
+    ],
+  },
+  // have
+  {
+    verbAudio: "/audio/general/have.mp3",
+    verbWord: "have",
+    verbPtDefinition: "ter; possuir; comer, beber",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/have-on.mp3",
+        word: "have on",
+        ptDefinition: "estar vestindo; ter planejado",
+      },
+      {
+        audio: "/audio/general/have-over.mp3",
+        word: "have over",
+        ptDefinition: "receber em casa; convidar para visitar",
+      },
+      {
+        audio: "/audio/general/have-up.mp3",
+        word: "have up",
+        ptDefinition: "processar; convocar para explicação",
+      },
+    ],
+
+    nounAudio: "/audio/general/having-noun.mp3",
+    nounWord: "having",
+    nounPtDefinition: "posse; propriedade",
+
+    expressions: [
+      {
+        audio: "/audio/general/have-a-good-time.mp3",
+        word: "have a good time",
+        ptDefinition: "divertir-se; aproveitar",
+      },
+      {
+        audio: "/audio/general/have-a-look.mp3",
+        word: "have a look",
+        ptDefinition: "dar uma olhada; examinar",
       },
     ],
   },
