@@ -14,6 +14,12 @@ const words = [
     verbAudio: "/audio/general/answer.mp3",
     verbWord: "answer",
     verbPtDefinition: "responder",
+    verbExamples: [
+      {
+        example: "Please, answer my question.",
+        ptExample: "Por favor, responda a minha pergunta.",
+      },
+    ],
   },
   // ask
   {
@@ -23,17 +29,34 @@ const words = [
 
     phrasalVerbs: [
       {
-        audio: "/audio/general/ask out.mp3",
-        word: "ask out",
+        audio: "/audio/general/ask-out.mp3",
+        word: "ask (someone) out",
         ptDefinition: "convidar para sair",
+        examples: [
+      {
+        example: "Why don’t you ask her out?",
+        ptExample: "Por que você não a covida para sair?",
+      }
+    ],
       },
     ],
   },
   // art
   {
-    nounAudio: "/audio/general/art.mp3",
-    nounWord: "art",
-    nounPtDefinition: "arte",
+    nouns: [
+      {
+        audio: "/audio/general/art.mp3",
+        word: "art",
+        registerTag: "",
+        ptDefinition: "arte",
+        examples: [
+          {
+            example: "The gallery has an excellent collection of modern art.",
+            ptExample: "A galeria tem uma excelente coleção de arte moderna.",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -58,10 +81,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/beat-noun.mp3",
-    nounWord: "beat",
-    nounRegisterTag: "informal",
-    nounPtDefinition: "ritmo; batida",
+    nouns: [
+      {
+        audio: "/audio/general/beat-noun.mp3",
+        word: "beat",
+        ptDefinition: "ritmo; batida",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -77,9 +109,19 @@ const words = [
     verbWord: "begin",
     verbPtDefinition: "começar, iniciar",
 
-    nounAudio: "/audio/general/beginning.mp3",
-    nounWord: "beginning",
-    nounPtDefinition: "começo, início",
+    nouns: [
+      {
+        audio: "/audio/general/beginning.mp3",
+        word: "beginning",
+        ptDefinition: "começo, início",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // beautify
   {
@@ -87,9 +129,19 @@ const words = [
     verbWord: "beautify",
     verbPtDefinition: "embelezar",
 
-    nounAudio: "/audio/general/beauty.mp3",
-    nounWord: "beauty",
-    nounPtDefinition: "beleza",
+    nouns: [
+      {
+        audio: "/audio/general/beauty.mp3",
+        word: "beauty",
+        ptDefinition: "beleza",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -113,9 +165,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/blow-noun.mp3",
-    nounWord: "blow",
-    nounPtDefinition: "golpe; sopro; impacto",
+    nouns: [
+      {
+        audio: "/audio/general/blow-noun.mp3",
+        word: "blow",
+        ptDefinition: "golpe; sopro; impacto",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -139,10 +201,20 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/bore-noun.mp3",
-    nounWord: "bore",
-    nounRegisterTag: "formal",
-    nounPtDefinition: "tédio; pessoa chata",
+    nouns: [
+      {
+        audio: "/audio/general/bore-noun.mp3",
+        word: "bore",
+        registerTag: "formal",
+        ptDefinition: "tédio; pessoa chata",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -171,9 +243,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/break-noun.mp3",
-    nounWord: "break",
-    nounPtDefinition: "quebra; intervalo",
+    nouns: [
+      {
+        audio: "/audio/general/break-noun.mp3",
+        word: "break",
+        ptDefinition: "quebra; intervalo",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -216,9 +298,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/brush-noun.mp3",
-    nounWord: "brush",
-    nounPtDefinition: "escova; pincel",
+    nouns: [
+      {
+        audio: "/audio/general/brush-noun.mp3",
+        word: "brush",
+        ptDefinition: "escova; pincel",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // buy
   {
@@ -234,9 +326,20 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/buy-noun.mp3",
-    nounWord: "buy",
-    nounPtDefinition: "compra; bom negócio",
+    nouns: [
+      {
+        audio: "/audio/general/buy-noun.mp3",
+        word: "buy",
+        register: "",
+        ptDefinition: "compra; bom negócio",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // call
   {
@@ -252,9 +355,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/call-noun.mp3",
-    nounWord: "call",
-    nounPtDefinition: "ligação; chamada",
+    nouns: [
+      {
+        audio: "/audio/general/call-noun.mp3",
+        word: "call",
+        ptDefinition: "ligação; chamada",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // comfort
   {
@@ -262,15 +375,30 @@ const words = [
     verbWord: "comfort",
     verbPtDefinition: "confortar; consolar",
 
-    nounAudio: "/audio/general/comfort-noun.mp3",
-    nounWord: "comfort",
-    nounPtDefinition: "conforto; alívio",
+    nouns: [
+      {
+        audio: "/audio/general/comfort-noun.mp3",
+        word: "comfort",
+        ptDefinition: "conforto; alívio",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
         audio: "/audio/general/comfortable.mp3",
         word: "comfortable",
         ptDefinition: "confortável",
+      },
+      {
+        audio: "/audio/general/uncomfortable.mp3",
+        word: "comfortable",
+        ptDefinition: "desconfortável",
       },
       {
         audio: "/audio/general/comforting.mp3",
@@ -293,9 +421,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/cook-noun.mp3",
-    nounWord: "cook",
-    nounPtDefinition: "cozinheiro(a)",
+    nouns: [
+      {
+        audio: "/audio/general/cook-noun.mp3",
+        word: "cook",
+        ptDefinition: "cozinheiro(a)",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // create
   {
@@ -303,9 +441,19 @@ const words = [
     verbWord: "create",
     verbPtDefinition: "criar",
 
-    nounAudio: "/audio/general/creation.mp3",
-    nounWord: "creation",
-    nounPtDefinition: "criação",
+    nouns: [
+      {
+        audio: "/audio/general/creation.mp3",
+        word: "creation",
+        ptDefinition: "criação",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -329,9 +477,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/cry-noun.mp3",
-    nounWord: "cry",
-    nounPtDefinition: "choro; grito",
+    nouns: [
+      {
+        audio: "/audio/general/cry-noun.mp3",
+        word: "cry",
+        ptDefinition: "choro; grito",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // darken
   {
@@ -339,9 +497,19 @@ const words = [
     verbWord: "darken",
     verbPtDefinition: "escurecer",
 
-    nounAudio: "/audio/general/darkness.mp3",
-    nounWord: "darkness",
-    nounPtDefinition: "escuridão",
+    nouns: [
+      {
+        audio: "/audio/general/darkness.mp3",
+        word: "darkness",
+        ptDefinition: "escuridão",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
@@ -375,9 +543,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/dig-noun.mp3",
-    nounWord: "dig",
-    nounPtDefinition: "escavação; crítica (informal)",
+    nouns: [
+      {
+        audio: "/audio/general/dig-noun.mp3",
+        word: "dig",
+        ptDefinition: "escavação; crítica (informal)",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // do
   {
@@ -422,9 +600,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/drive-noun.mp3",
-    nounWord: "drive",
-    nounPtDefinition: "viagem de carro; impulso; motivação",
+    nouns: [
+      {
+        audio: "/audio/general/drive-noun.mp3",
+        word: "drive",
+        ptDefinition: "viagem de carro; impulso; motivação",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // drink
   {
@@ -440,9 +628,20 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/drink-noun.mp3",
-    nounWord: "drink",
-    nounPtDefinition: "bebida",
+    nouns: [
+      {
+        audio: "/audio/general/drink-noun.mp3",
+        word: "drink",
+        register: "",
+        ptDefinition: "bebida",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // drop
   {
@@ -463,9 +662,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/drop-noun.mp3",
-    nounWord: "drop",
-    nounPtDefinition: "gota; queda",
+    nouns: [
+      {
+        audio: "/audio/general/drop-noun.mp3",
+        word: "drop",
+        ptDefinition: "gota; queda",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
   },
   // dry
   {
@@ -481,15 +690,89 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/dryness.mp3",
-    nounWord: "dryness",
-    nounPtDefinition: "secura; aridez",
+    nouns: [
+      {
+        audio: "/audio/general/dryness.mp3",
+        word: "dryness",
+        ptDefinition: "secura; aridez",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+    ],
 
     adjectives: [
       {
         audio: "/audio/general/dry.mp3",
         word: "dry",
         ptDefinition: "seco(a)",
+      },
+    ],
+  },
+  // die
+  {
+    verbAudio: "/audio/general/die.mp3",
+    verbWord: "die",
+    verbPtDefinition: "morrer; falecer",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/die-out.mp3",
+        word: "die out",
+        ptDefinition: "desaparecer; extinguir-se",
+      },
+      {
+        audio: "/audio/general/die-off.mp3",
+        word: "die off",
+        ptDefinition: "morrer gradualmente; extinguir-se",
+      },
+    ],
+
+    nouns: [
+      {
+        audio: "/audio/general/death.mp3",
+        word: "death",
+        ptDefinition: "morte",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+      {
+        audio: "/audio/general/dying.mp3",
+        word: "dying",
+        ptDefinition: "ato the morrer",
+        examples: [
+          {
+            example: "",
+          },
+        ],
+      },
+    ],
+
+    adjectives: [
+      {
+        audio: "/audio/general/dead.mp3",
+        word: "dead",
+        ptDefinition: "morto; sem vida",
+      },
+      {
+        audio: "/audio/general/dying.mp3",
+        word: "dying",
+        ptDefinition: "Que está morrendo; em perigo de extinção",
+      },
+    ],
+
+    expressions: [
+      {
+        audio: "/audio/general/die-hard.mp3",
+        word: "die-hard",
+        ptDefinition: "firme; resistente; difícil de mudar (figurado)",
       },
     ],
   },
@@ -518,10 +801,20 @@ const words = [
     verbWord: "fasten",
     verbPtDefinition: "prender, apertar",
 
-    nounAudio: "/audio/general/fastness.mp3",
-    nounWord: "fastness",
-    nounRegisterTag: "formal",
-    nounPtDefinition: "pressa, rapidez",
+    nouns: [
+      {
+        audio: "/audio/general/fastness.mp3",
+        word: "fastness",
+        registerTag: "formal",
+        ptDefinition: "pressa, rapidez",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -543,9 +836,19 @@ const words = [
     verbWord: "focus (on something)",
     verbPtDefinition: "focar; concentrar-se",
 
-    nounAudio: "/audio/general/focus-noun.mp3",
-    nounWord: "focus",
-    nounPtDefinition: "foco; concentração",
+    nouns: [
+      {
+        audio: "/audio/general/focus-noun.mp3",
+        word: "focus",
+        ptDefinition: "foco; concentração",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -561,9 +864,19 @@ const words = [
     verbWord: "give",
     verbPtDefinition: "dar",
 
-    nounAudio: "/audio/general/giving.mp3",
-    nounWord: "giving",
-    nounPtDefinition: "ato de dar; doação",
+    nouns: [
+      {
+        audio: "/audio/general/giving.mp3",
+        word: "giving",
+        ptDefinition: "ato de dar; doação",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -604,9 +917,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/go-noun.mp3",
-    nounWord: "go",
-    nounPtDefinition: "tentativa; vez; energia (informal)",
+    nouns: [
+      {
+        audio: "/audio/general/go-noun.mp3",
+        word: "go",
+        ptDefinition: "tentativa; vez; energia (informal)",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
   },
   // hide
   {
@@ -627,9 +950,20 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/hide.mp3",
-    nounWord: "hide",
-    nounPtDefinition: "pele; couro (animal)",
+    nouns: [
+      {
+        audio: "/audio/general/hide.mp3",
+        word: "hide",
+        ptDefinition: "pele; couro (animal)",
+        examples: [
+          {
+            example: "cow hide",
+            ptExample: "pele de vaca",
+          },
+        ],
+      }
+    ],
+
   },
   // interest
   {
@@ -637,9 +971,19 @@ const words = [
     verbWord: "interest (in)",
     verbPtDefinition: "interessar",
 
-    nounAudio: "/audio/general/interest-noun.mp3",
-    nounWord: "interest",
-    nounPtDefinition: "interesse; juros",
+    nouns: [
+      {
+        audio: "/audio/general/interest-noun.mp3",
+        word: "interest",
+        ptDefinition: "interesse; juros",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -660,9 +1004,19 @@ const words = [
     verbWord: "invite",
     verbPtDefinition: "convidar",
 
-    nounAudio: "/audio/general/invitation.mp3",
-    nounWord: "invitation",
-    nounPtDefinition: "convite",
+    nouns: [
+      {
+        audio: "/audio/general/invitation.mp3",
+        word: "invitation",
+        ptDefinition: "convite",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -691,9 +1045,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/knowledge.mp3",
-    nounWord: "knowledge",
-    nounPtDefinition: "conhecimento",
+    nouns: [
+      {
+        audio: "/audio/general/knowledge.mp3",
+        word: "knowledge",
+        ptDefinition: "conhecimento",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -714,9 +1078,19 @@ const words = [
     verbWord: "knee",
     verbPtDefinition: "dar uma joelhada",
 
-    nounAudio: "/audio/general/knee.mp3",
-    nounWord: "knee",
-    nounPtDefinition: "joelho",
+    nouns: [
+      {
+        audio: "/audio/general/knee.mp3",
+        word: "knee",
+        ptDefinition: "joelho",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
   },
   // kneel
   {
@@ -759,9 +1133,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/laughter.mp3",
-    nounWord: "laughter",
-    nounPtDefinition: "risada; riso",
+    nouns: [
+      {
+        audio: "/audio/general/laughter.mp3",
+        word: "laughter",
+        ptDefinition: "risada; riso",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -800,10 +1184,6 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/letting-noun.mp3",
-    nounWord: "letting",
-    nounPtDefinition: "ato de permitir; aluguel (em contexto imobiliário)",
-
     adjectives: [
       {
         audio: "/audio/general/lettable.mp3",
@@ -832,9 +1212,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/like.mp3",
-    nounWord: "like",
-    nounPtDefinition: "gostar; preferência",
+    nouns: [
+      {
+        audio: "/audio/general/like.mp3",
+        word: "like",
+        ptDefinition: "gostar; preferência",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -859,9 +1249,19 @@ const words = [
     verbWord: "light",
     verbPtDefinition: "acender",
 
-    nounAudio: "/audio/general/light.mp3",
-    nounWord: "light",
-    nounPtDefinition: "luz",
+    nouns: [
+      {
+        audio: "/audio/general/light.mp3",
+        word: "light",
+        ptDefinition: "luz",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -891,9 +1291,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/love.mp3",
-    nounWord: "love",
-    nounPtDefinition: "amor; afeição",
+    nouns: [
+      {
+        audio: "/audio/general/love.mp3",
+        word: "love",
+        ptDefinition: "amor; afeição",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -950,10 +1360,20 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/make-noun.mp3",
-    nounWord: "make",
-    nounRegisterTag: "chiefly british",
-    nounPtDefinition: "modelo; marca (de carro ou produto)",
+    nouns: [
+      {
+        audio: "/audio/general/make-noun.mp3",
+        word: "make",
+        RegisterTag: "chiefly british",
+        ptDefinition: "modelo; marca (de carro ou produto)",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -995,9 +1415,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/meeting.mp3",
-    nounWord: "meeting",
-    nounPtDefinition: "reunião; encontro",
+    nouns: [
+      {
+        audio: "/audio/general/meeting.mp3",
+        word: "meeting",
+        ptDefinition: "reunião; encontro",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -1039,9 +1469,19 @@ const words = [
       },
     ],
 
-    nounAudio: "/audio/general/having-noun.mp3",
-    nounWord: "having",
-    nounPtDefinition: "posse; propriedade",
+    nouns: [
+      {
+        audio: "/audio/general/having.mp3",
+        word: "having",
+        ptDefinition: "posse; propriedade",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     expressions: [
       {
@@ -1056,11 +1496,270 @@ const words = [
       },
     ],
   },
+  // pay
+  {
+    verbAudio: "/audio/general/pay.mp3",
+    verbWord: "pay",
+    verbPtDefinition: "pagar; recompensar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/pay-back.mp3",
+        word: "pay back",
+        ptDefinition: "reembolsar; vingar-se",
+      },
+      {
+        audio: "/audio/general/pay-off.mp3",
+        word: "pay off",
+        ptDefinition: "quitar; compensar; dar certo",
+      },
+      {
+        audio: "/audio/general/pay-in.mp3",
+        word: "pay in",
+        ptDefinition: "depositar dinheiro",
+      },
+    ],
+
+    nouns: [
+      {
+        audio: "/audio/general/payment.mp3",
+        word: "payment",
+        ptDefinition: "pagamento; remuneração",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
+
+    adjectives: [
+      {
+        audio: "/audio/general/payable.mp3",
+        word: "payable",
+        ptDefinition: "pagável; a ser pago",
+      },
+      {
+        audio: "/audio/general/paid.mp3",
+        word: "paid",
+        ptDefinition: "pago; remunerado",
+      },
+    ],
+
+    expressions: [
+      {
+        audio: "/audio/general/pay-attention.mp3",
+        word: "pay attention",
+        ptDefinition: "prestar atenção",
+      },
+    ],
+  },
+  // practice
+  {
+    verbAudio: "/audio/general/practice.mp3",
+    verbWord: "practice",
+    verbPtDefinition: "praticar; treinar",
+
+    nouns: [
+      {
+        audio: "/audio/general/practice-noun.mp3",
+        word: "practice",
+        ptDefinition: "prática; exercício; clínica (profissional)",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
+
+    adjectives: [
+      {
+        audio: "/audio/general/practical.mp3",
+        word: "practical",
+        ptDefinition: "prático; útil",
+      },
+      {
+        audio: "/audio/general/practicable.mp3",
+        word: "practicable",
+        ptDefinition: "executável; viável",
+      },
+    ],
+
+    expressions: [
+      {
+        audio: "/audio/general/practice-makes-perfect.mp3",
+        word: "practice makes perfect",
+        ptDefinition: "a prática leva à perfeição",
+      },
+    ],
+  },
+  // read
+  {
+    verbAudio: "/audio/general/read.mp3",
+    verbWord: "read",
+    verbPtDefinition: "ler",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/read-aloud.mp3",
+        word: "read aloud",
+        ptDefinition: "ler em voz alta",
+      },
+      {
+        audio: "/audio/general/read-out.mp3",
+        word: "read out",
+        ptDefinition: "ler em voz alta; anunciar",
+      },
+      {
+        audio: "/audio/general/read-over.mp3",
+        word: "read over",
+        ptDefinition: "revisar; ler rapidamente",
+      },
+    ],
+
+    nouns: [
+      {
+        audio: "/audio/general/reading.mp3",
+        word: "reading",
+        ptDefinition: "leitura; interpretação",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
+
+    adjectives: [
+      {
+        audio: "/audio/general/readable.mp3",
+        word: "readable",
+        ptDefinition: "legível; compreensível",
+      },
+    ],
+
+    expressions: [
+      {
+        audio: "/audio/general/read-between-the-lines.mp3",
+        word: "read between the lines",
+        ptDefinition: "ler nas entrelinhas; entender o que não está explícito",
+      },
+    ],
+  },
+  // saw (to cut with a saw)
+  {
+    verbAudio: "/audio/general/saw.mp3",
+    verbWord: "saw",
+    verbPtDefinition: "serrar; cortar com serra",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/saw-off.mp3",
+        word: "saw off",
+        ptDefinition: "cortar algo completamente com serra",
+      },
+    ],
+
+    nouns: [
+      {
+        audio: "/audio/general/saw.mp3",
+        word: "saw",
+        ptDefinition: "serra; ferramenta para cortar madeira",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
+
+    adjectives: [
+      {
+        audio: "/audio/general/sawed-off.mp3",
+        word: "sawed-off",
+        ptDefinition: "cortado; reduzido (como em 'sawed-off shotgun')",
+      },
+    ],
+  },
+  // see
+  {
+    verbAudio: "/audio/general/see.mp3",
+    verbWord: "see",
+    verbPtDefinition: "ver; perceber; compreender",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/see-off.mp3",
+        word: "see off",
+        ptDefinition: "acompanhar alguém na partida; despedir-se",
+      },
+      {
+        audio: "/audio/general/see-through.mp3",
+        word: "see through",
+        ptDefinition: "ver através; perceber intenções",
+      },
+      {
+        audio: "/audio/general/see-to.mp3",
+        word: "see to",
+        ptDefinition: "cuidar de; providenciar",
+      },
+    ],
+
+    nouns: [
+      {
+        audio: "/audio/general/seeing.mp3",
+        word: "seeing",
+        ptDefinition: "visão; percepção",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
+
+    adjectives: [
+      {
+        audio: "/audio/general/seen.mp3",
+        word: "seen",
+        ptDefinition: "visto; percebido",
+      },
+    ],
+
+    expressions: [
+      {
+        audio: "/audio/general/see-eye-to-eye.mp3",
+        word: "see eye to eye",
+        ptDefinition: "concordar; ter a mesma opinião",
+      },
+      {
+        audio: "/audio/general/see-the-light.mp3",
+        word: "see the light",
+        ptDefinition: "perceber a verdade; entender algo",
+      },
+    ],
+  },
   // purity
   {
-    nounAudio: "/audio/general/purity.mp3",
-    nounWord: "purity",
-    nounPtDefinition: "pureza",
+    nouns: [
+      {
+        audio: "/audio/general/purity.mp3",
+        word: "purity",
+        ptDefinition: "pureza",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -1076,9 +1775,19 @@ const words = [
     verbWord: "shorten",
     verbPtDefinition: "encurtar; reduzir",
 
-    nounAudio: "/audio/general/shortness.mp3",
-    nounWord: "shortness",
-    nounPtDefinition: "falta de; deficiência",
+    nouns: [
+      {
+        audio: "/audio/general/shortness.mp3",
+        word: "shortness",
+        ptDefinition: "falta de; deficiência",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -1094,9 +1803,19 @@ const words = [
     verbWord: "soften",
     verbPtDefinition: "amaciar",
 
-    nounAudio: "/audio/general/softness.mp3",
-    nounWord: "softness",
-    nounPtDefinition: "maciez",
+    nouns: [
+      {
+        audio: "/audio/general/softness.mp3",
+        word: "softness",
+        ptDefinition: "maciez",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -1112,9 +1831,19 @@ const words = [
     verbWord: "teach",
     verbPtDefinition: "ensinar",
 
-    nounAudio: "/audio/general/teacher-teaching.mp3",
-    nounWord: "teacher / teaching",
-    nounPtDefinition: "professor / ensino",
+    nouns: [
+      {
+        audio: "/audio/general/teacher-teaching.mp3",
+        word: "teacher / teaching",
+        ptDefinition: "professor / ensino",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -1130,9 +1859,19 @@ const words = [
     verbWord: "use",
     verbPtDefinition: "usar",
 
-    nounAudio: "/audio/general/use-noun.mp3",
-    nounWord: "use",
-    nounPtDefinition: "uso",
+    nouns: [
+      {
+        audio: "/audio/general/use-noun.mp3",
+        word: "use",
+        ptDefinition: "uso",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      }
+    ],
 
     adjectives: [
       {
@@ -1212,66 +1951,101 @@ export default function WordFormation() {
               <div key={index} className={styles.row}>
                 {/* verb */}
                 <div>
-                  <Text
-                    playAudio={word.verbAudio}
-                    className={!word.verbAudio ? styles.hidden : undefined}
-                  >
-                    <Bold>{word.verbWord}</Bold>{" "}
-                    {word.verbRegisterTag && (
-                      <RegisterTag>{word.verbRegisterTag}</RegisterTag>
-                    )}{" "}
-                    <Portuguese>{word.verbPtDefinition}</Portuguese>
-                  </Text>
+                  <>
+                    <Text
+                      playAudio={word.verbAudio}
+                      className={!word.verbAudio ? styles.hidden : undefined}
+                    >
+                      <Bold>{word.verbWord}</Bold>{" "}
+                      {word.verbRegisterTag && (
+                        <RegisterTag>{word.verbRegisterTag}</RegisterTag>
+                      )}{" "}
+                      <Portuguese>{word.verbPtDefinition}</Portuguese>
+                    </Text>
+                    {word.verbExamples?.map((item, index) => (
+                      <Text key={index}>
+                        <Bold>•</Bold> {item.example}{" "}
+                        <Portuguese>{item.ptExample}</Portuguese>
+                      </Text>
+                    ))}
+                  </>
                 </div>
 
                 {/* phrasal verb */}
                 <div>
                   {word.phrasalVerbs?.map((item, index) => (
-                    <Text
-                      key={index}
-                      playAudio={item.audio}
-                      className={!item.audio ? styles.hidden : undefined}
-                    >
-                      <Bold>{item.word}</Bold>{" "}
-                      {item.registerTag && (
-                        <RegisterTag>{item.registerTag}</RegisterTag>
-                      )}{" "}
-                      <Portuguese>{item.ptDefinition}</Portuguese>
-                    </Text>
+                    <>
+                      <Text
+                        key={index}
+                        playAudio={item.audio}
+                        className={!item.audio ? styles.hidden : undefined}
+                      >
+                        <Bold>{item.word}</Bold>{" "}
+                        {item.registerTag && (
+                          <RegisterTag>{item.registerTag}</RegisterTag>
+                        )}{" "}
+                        <Portuguese>{item.ptDefinition}</Portuguese>
+                      </Text>
+                      {item.examples?.map((subItem, index) => (
+                        <Text key={index}>
+                          <Bold>•</Bold> {subItem.example}{" "}
+                          <Portuguese>{subItem.ptExample}</Portuguese>
+                        </Text>
+                      ))}
+                    </>
                   ))}
                 </div>
 
                 {/* noun */}
                 <div>
-                  <Text
-                    playAudio={word.nounAudio}
-                    className={!word.nounAudio ? styles.hidden : undefined}
-                  >
-                    <Bold>{word.nounWord}</Bold>{" "}
-                    {word.nounRegisterTag && (
-                      <RegisterTag>{word.nounRegisterTag}</RegisterTag>
-                    )}{" "}
-                    <Portuguese>{word.nounPtDefinition}</Portuguese>
-                  </Text>
+                  {word.nouns?.map((item, index) => (
+                    <>
+                      <Text
+                        key={index}
+                        playAudio={item.audio}
+                        className={!item.audio ? styles.hidden : undefined}
+                      >
+                        <Bold>{item.word}</Bold>{" "}
+                        {item.registerTag && (
+                          <RegisterTag>{item.registerTag}</RegisterTag>
+                        )}{" "}
+                        <Portuguese>{item.ptDefinition}</Portuguese>
+                      </Text>
+                      {item.examples?.map((subItem, index) => (
+                        <Text key={index}>
+                          <Bold>•</Bold> {subItem.example}{" "}
+                          <Portuguese>{subItem.ptExample}</Portuguese>
+                        </Text>
+                      ))}
+                    </>
+                  ))}
                 </div>
 
                 {/* adjective */}
                 <div>
                   {word.adjectives?.map((item, index) => (
-                    <Text
-                      key={index}
-                      playAudio={item.audio}
-                      className={!item.audio ? styles.hidden : undefined}
-                    >
-                      <Bold>{item.word}</Bold>{" "}
-                      {item.registerTag && (
-                        <RegisterTag>{item.registerTag}</RegisterTag>
-                      )}{" "}
-                      {item.degreeTag && (
-                        <DegreeTag>{item.degreeTag}</DegreeTag>
-                      )}{" "}
-                      <Portuguese>{item.ptDefinition}</Portuguese>
-                    </Text>
+                    <>
+                      <Text
+                        key={index}
+                        playAudio={item.audio}
+                        className={!item.audio ? styles.hidden : undefined}
+                      >
+                        <Bold>{item.word}</Bold>{" "}
+                        {item.registerTag && (
+                          <RegisterTag>{item.registerTag}</RegisterTag>
+                        )}{" "}
+                        {item.degreeTag && (
+                          <DegreeTag>{item.degreeTag}</DegreeTag>
+                        )}{" "}
+                        <Portuguese>{item.ptDefinition}</Portuguese>
+                      </Text>
+                      {item.examples?.map((subItem, index) => (
+                        <Text key={index}>
+                          <Bold>•</Bold> {subItem.example}{" "}
+                          <Portuguese>{subItem.ptExample}</Portuguese>
+                        </Text>
+                      ))}
+                    </>
                   ))}
                 </div>
 
