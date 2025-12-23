@@ -20,9 +20,13 @@ const words = [
     verbWord: "ask",
     verbPtDefinition: "perguntar",
 
-    phrasalVerbAudio: "/audio/general/ask out.mp3",
-    phrasalVerbWord: "ask out",
-    phrasalVerbPtDefinition: "convidar para sair",
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/ask out.mp3",
+        word: "ask out",
+        ptDefinition: "convidar para sair",
+      }
+    ]
   },
   // art
   {
@@ -41,9 +45,13 @@ const words = [
     verbWord: "beat",
     verbPtDefinition: "bater; derrotar",
 
-    phrasalVerbAudio: "/audio/general/beat-up.mp3",
-    phrasalVerbWord: "beat up",
-    phrasalVerbPtDefinition: "espancar",
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/beat-up.mp3",
+        word: "beat up",
+        ptDefinition: "espancar",
+      }
+    ],
 
     nounAudio: "/audio/general/beat-noun.mp3",
     nounWord: "beat",
@@ -85,9 +93,13 @@ const words = [
     verbWord: "blow",
     verbPtDefinition: "soprar; bater (vento)",
 
-    phrasalVerbAudio: "/audio/general/blow-up.mp3",
-    phrasalVerbWord: "blow up",
-    phrasalVerbPtDefinition: "explodir; perder a calma",
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/blow-up.mp3",
+        word: "blow up",
+        ptDefinition: "explodir; perder a calma",
+      }
+    ],
 
     nounAudio: "/audio/general/blow-noun.mp3",
     nounWord: "blow",
@@ -104,9 +116,13 @@ const words = [
     verbRegisterTag: "neutral",
     verbPtDefinition: "entediar; furar; perfurar",
 
-    phrasalVerbAudio: "/audio/general/bore-into.mp3",
-    phrasalVerbWord: "bore into",
-    phrasalVerbPtDefinition: "criticar duramente; perfurar",
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/bore-into.mp3",
+        word: "bore into",
+        ptDefinition: "criticar duramente; perfurar",
+      }
+    ],
 
     nounAudio: "/audio/general/bore-noun.mp3",
     nounWord: "bore",
@@ -124,9 +140,14 @@ const words = [
     verbWord: "bore",
     verbPtDefinition: "entediar; furar; perfurar",
 
-    phrasalVerbAudio: "/audio/general/bore-into.mp3",
-    phrasalVerbWord: "bore into",
-    phrasalVerbPtDefinition: "criticar duramente; perfurar",
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/bore-into.mp3",
+        word: "bore into",
+        ptDefinition: "criticar duramente; perfurar",
+      }
+    ],
+  
 
     nounAudio: "/audio/general/bore-noun.mp3",
     nounWord: "bore",
@@ -135,6 +156,120 @@ const words = [
     adjectiveAudio: "/audio/general/boring-bored.mp3",
     adjectiveWord: "boring / bored",
     adjectivePtDefinition: "entediante / entediado",
+  },
+  // break
+  {
+    verbAudio: "/audio/general/break.mp3",
+    verbWord: "break",
+    verbPtDefinition: "quebrar; interromper",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/break-down.mp3",
+        word: "break down",
+        ptDefinition: "quebrar; entrar em colapso",
+      }
+    ],
+
+    nounAudio: "/audio/general/break-noun.mp3",
+    nounWord: "break",
+    nounPtDefinition: "quebra; intervalo",
+
+    adjectiveAudio: "/audio/general/broken.mp3",
+    adjectiveWord: "broken",
+    adjectivePtDefinition: "quebrado; danificado",
+  },
+  // bring
+  {
+    verbAudio: "/audio/general/bring.mp3",
+    verbWord: "bring",
+    verbRegisterTag: "neutral",
+    verbPtDefinition: "trazer; levar consigo",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/bring-up.mp3",
+        word: "bring up",
+        ptDefinition: "mencionar; criar (filhos)",
+      }
+    ],
+  },
+  // brush
+  {
+    verbAudio: "/audio/general/brush.mp3",
+    verbWord: "brush",
+    verbPtDefinition: "escovar; passar o pincel",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/brush-off.mp3",
+        word: "brush off",
+        ptDefinition: "ignorar; dispensar",
+      },
+      {
+        audio: "/audio/general/brush-up.mp3",
+        word: "brush up",
+        ptDefinition: "revisar; aprimorar (conhecimento ou habilidade)",
+      }
+    ],
+
+    nounAudio: "/audio/general/brush-noun.mp3",
+    nounWord: "brush",
+    nounPtDefinition: "escova; pincel",
+  },
+  // buy
+  {
+    verbAudio: "/audio/general/buy.mp3",
+    verbWord: "buy",
+    verbPtDefinition: "comprar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/buy-in.mp3",
+        word: "buy in",
+        ptDefinition: "aceitar uma ideia; concordar",
+      }
+    ],
+
+    nounAudio: "/audio/general/buy-noun.mp3",
+    nounWord: "buy",
+    nounPtDefinition: "compra; bom negócio",
+  },
+  // call
+  {
+    verbAudio: "/audio/general/call.mp3",
+    verbWord: "call",
+    verbPtDefinition: "ligar; chamar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/call-off.mp3",
+        word: "call off",
+        ptDefinition: "cancelar",
+      }
+    ],
+
+    nounAudio: "/audio/general/call-noun.mp3",
+    nounWord: "call",
+    nounPtDefinition: "ligação; chamada",
+  },
+  // cook
+  {
+    verbAudio: "/audio/general/cook.mp3",
+    verbWord: "cook",
+    verbPtDefinition: "cozinhar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/cook-up.mp3",
+        word: "cook up",
+        ptDefinition: "inventar; preparar (um plano)",
+      }
+    ],
+
+    nounAudio: "/audio/general/cook-noun.mp3",
+    nounWord: "cook",
+    nounPtDefinition: "cozinheiro(a)",
   },
   // create
   {
@@ -300,6 +435,9 @@ export default function WordFormation() {
       <Whiteboard title="Grammar" subtitle="Word Formation" />
       <div className="line-break">
         <DictionarySearch />
+        <Text>
+          <Bold>Use this list as a reference.</Bold>
+        </Text>
         <div className={styles.scroll}>
           <div className={styles.table}>
             {/* Headers */}
@@ -342,15 +480,18 @@ export default function WordFormation() {
 
                 {/* phrasal verb */}
                 <div>
-                  <Text
-                    playAudio={word.phrasalVerbAudio}
+                  {word.phrasalVerbs?.map((item, index) => (
+                  <Text key={index}
+                    playAudio={item.audio}
                     className={
-                      !word.phrasalVerbAudio ? styles.hidden : undefined
+                      !item.audio ? styles.hidden : undefined
                     }
                   >
-                    <Bold>{word.phrasalVerbWord}</Bold>{" "}
-                    <Portuguese>{word.phrasalVerbPtDefinition}</Portuguese>
+                    <Bold>{item.word}</Bold>{" "}
+                    <Portuguese>{item.ptDefinition}</Portuguese>
                   </Text>
+
+                  ))}
                 </div>
 
                 {/* noun */}
