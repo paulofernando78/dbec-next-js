@@ -4,7 +4,8 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { DictionarySearch } from "../../components/molecules/DictionarySearch/DictionarySearch";
 import { Text } from "@/components/molecules/Text";
 import { Bold } from "@/components/atoms/Bold";
-import { RegisterTag } from "../../components/atoms/RegisterTag/RegisterTag";
+import { RegisterTag } from "@/components/atoms/RegisterTag";
+import { DegreeTag } from "@/components/atoms/DegreeTag"
 import { Portuguese } from "@/components/atoms/Portuguese";
 
 const words = [
@@ -25,8 +26,8 @@ const words = [
         audio: "/audio/general/ask out.mp3",
         word: "ask out",
         ptDefinition: "convidar para sair",
-      }
-    ]
+      },
+    ],
   },
   // art
   {
@@ -34,10 +35,14 @@ const words = [
     nounWord: "art",
     nounPtDefinition: "arte",
 
-    adjectiveAudio: "/audio/general/artful-artless.mp3",
-    adjectiveWord: "artful / artless",
-    adjectivePtDefinition:
-      "astuto; criativo, habilidoso / ingênuo / simples / natural",
+    adjectives: [
+      {
+        audio: "/audio/general/artful-artless.mp3",
+        word: "artful / artless",
+        ptDefinition:
+          "astuto; criativo, habilidoso / ingênuo / simples / natural",
+      }
+    ]
   },
   // beat
   {
@@ -50,7 +55,7 @@ const words = [
         audio: "/audio/general/beat-up.mp3",
         word: "beat up",
         ptDefinition: "espancar",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/beat-noun.mp3",
@@ -98,7 +103,7 @@ const words = [
         audio: "/audio/general/blow-up.mp3",
         word: "blow up",
         ptDefinition: "explodir; perder a calma",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/blow-noun.mp3",
@@ -121,7 +126,7 @@ const words = [
         audio: "/audio/general/bore-into.mp3",
         word: "bore into",
         ptDefinition: "criticar duramente; perfurar",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/bore-noun.mp3",
@@ -145,9 +150,8 @@ const words = [
         audio: "/audio/general/bore-into.mp3",
         word: "bore into",
         ptDefinition: "criticar duramente; perfurar",
-      }
+      },
     ],
-  
 
     nounAudio: "/audio/general/bore-noun.mp3",
     nounWord: "bore",
@@ -168,7 +172,7 @@ const words = [
         audio: "/audio/general/break-down.mp3",
         word: "break down",
         ptDefinition: "quebrar; entrar em colapso",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/break-noun.mp3",
@@ -191,7 +195,7 @@ const words = [
         audio: "/audio/general/bring-up.mp3",
         word: "bring up",
         ptDefinition: "mencionar; criar (filhos)",
-      }
+      },
     ],
   },
   // brush
@@ -210,7 +214,7 @@ const words = [
         audio: "/audio/general/brush-up.mp3",
         word: "brush up",
         ptDefinition: "revisar; aprimorar (conhecimento ou habilidade)",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/brush-noun.mp3",
@@ -228,7 +232,7 @@ const words = [
         audio: "/audio/general/buy-in.mp3",
         word: "buy in",
         ptDefinition: "aceitar uma ideia; concordar",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/buy-noun.mp3",
@@ -246,12 +250,33 @@ const words = [
         audio: "/audio/general/call-off.mp3",
         word: "call off",
         ptDefinition: "cancelar",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/call-noun.mp3",
     nounWord: "call",
     nounPtDefinition: "ligação; chamada",
+  },
+  // comfort
+  {
+    verbAudio: "/audio/general/.mp3",
+    verbWord: "...",
+    verbRegisterTag: "...",
+    verbPtDefinition: "...",
+
+    phrasalVerbAudio: "/audio/general/.mp3",
+    phrasalVerbWord: "...",
+    phrasalVerbPtDefinition: "...",
+
+    nounAudio: "/audio/general/.mp3",
+    nounWord: "...",
+    nounRegisterTag: "...",
+    nounPtDefinition: "...",
+
+    adjectiveAudio: "/audio/general/comfort.mp3",
+    adjectiveWord: "comfort",
+    adjectiveRegisterTag: "...",
+    adjectivePtDefinition: "...",
   },
   // cook
   {
@@ -264,7 +289,7 @@ const words = [
         audio: "/audio/general/cook-up.mp3",
         word: "cook up",
         ptDefinition: "inventar; preparar (um plano)",
-      }
+      },
     ],
 
     nounAudio: "/audio/general/cook-noun.mp3",
@@ -285,6 +310,24 @@ const words = [
     adjectiveWord: "creative",
     adjectivePtDefinition: "criativo",
   },
+  // cry
+  {
+    verbAudio: "/audio/general/cry.mp3",
+    verbWord: "cry",
+    verbPtDefinition: "chorar; gritar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/cry-out.mp3",
+        word: "cry out",
+        ptDefinition: "gritar; clamar",
+      },
+    ],
+
+    nounAudio: "/audio/general/cry-noun.mp3",
+    nounWord: "cry",
+    nounPtDefinition: "choro; grito",
+  },
   // darken
   {
     verbAudio: "/audio/general/darken.mp3",
@@ -299,6 +342,163 @@ const words = [
     adjectiveWord: "dark",
     adjectivePtDefinition: "escuro",
   },
+  // dig
+  {
+    verbAudio: "/audio/general/dig.mp3",
+    verbWord: "dig",
+    verbPtDefinition: "cavar; escavar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/dig-in.mp3",
+        word: "dig in",
+        ptDefinition: "estabelecer-se; começar a comer com vontade",
+      },
+      {
+        audio: "/audio/general/dig-into.mp3",
+        word: "dig into",
+        ptDefinition: "investigar",
+      },
+      {
+        audio: "/audio/general/dig-up.mp3",
+        word: "dig up",
+        ptDefinition: "desenterrar; descobrir (informação)",
+      },
+    ],
+
+    nounAudio: "/audio/general/dig-noun.mp3",
+    nounWord: "dig",
+    nounPtDefinition: "escavação; crítica (informal)",
+  },
+  // do
+  {
+    verbAudio: "/audio/general/do.mp3",
+    verbWord: "do",
+    verbPtDefinition: "fazer",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/do-up.mp3",
+        word: "do up",
+        ptDefinition: "reformar; fechar (roupa); decorar",
+      },
+      {
+        audio: "/audio/general/do-over.mp3",
+        word: "do over",
+        ptDefinition: "refazer",
+      },
+    ],
+  },
+  // drive
+  {
+    verbAudio: "/audio/general/drive.mp3",
+    verbWord: "drive",
+    verbPtDefinition: "dirigir; conduzir; impulsionar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/drive-away.mp3",
+        word: "drive away",
+        ptDefinition: "afastar",
+      },
+      {
+        audio: "/audio/general/drive-out.mp3",
+        word: "drive out",
+        ptDefinition: "expulsar; forçar a sair",
+      },
+      {
+        audio: "/audio/general/drive-through.mp3",
+        word: "drive through",
+        ptDefinition: "passar de carro; drive-thru",
+      },
+    ],
+
+    nounAudio: "/audio/general/drive-noun.mp3",
+    nounWord: "drive",
+    nounPtDefinition: "viagem de carro; impulso; motivação",
+  },
+  // drink
+  {
+    verbAudio: "/audio/general/drink.mp3",
+    verbWord: "drink",
+    verbPtDefinition: "beber",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/drink-up.mp3",
+        word: "drink up",
+        ptDefinition: "beber tudo; terminar a bebida",
+      },
+    ],
+
+    nounAudio: "/audio/general/drink-noun.mp3",
+    nounWord: "drink",
+    nounPtDefinition: "bebida",
+  },
+  // drop
+  {
+    verbAudio: "/audio/general/drop.mp3",
+    verbWord: "drop",
+    verbPtDefinition: "derrubar; deixar cair",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/drop-off.mp3",
+        word: "drop off",
+        ptDefinition: "deixar alguém em um lugar; diminuir (preço)",
+      },
+      {
+        audio: "/audio/general/drop-out.mp3",
+        word: "drop out",
+        ptDefinition: "abandonar; desistir",
+      },
+    ],
+
+    nounAudio: "/audio/general/drop-noun.mp3",
+    nounWord: "drop",
+    nounPtDefinition: "gota; queda",
+  },
+  // dry
+  {
+    verbAudio: "/audio/general/dry.mp3",
+    verbWord: "dry",
+    verbPtDefinition: "secar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/dry-up.mp3",
+        word: "dry up",
+        ptDefinition: "secar completamente; acabar",
+      },
+    ],
+
+    nounAudio: "/audio/general/dryness.mp3",
+    nounWord: "dryness",
+    nounPtDefinition: "secura; aridez",
+
+    adjectiveAudio: "/audio/general/dry.mp3",
+    adjectiveWord: "dry",
+    adjectivePtDefinition: "seco(a)",
+  },
+  // eat
+  {
+    verbAudio: "/audio/general/eat.mp3",
+    verbWord: "eat",
+    verbPtDefinition: "comer",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/eat-up.mp3",
+        word: "eat up",
+        ptDefinition: "comer tudo; devorar",
+      },
+      {
+        audio: "/audio/general/eat-out.mp3",
+        word: "eat out",
+        ptDefinition: "comer fora (em restaurante)",
+      },
+    ],
+  },
   // fasten
   {
     verbAudio: "/audio/general/fasten.mp3",
@@ -310,12 +510,22 @@ const words = [
     nounRegisterTag: "formal",
     nounPtDefinition: "pressa, rapidez",
 
-    adjectiveAudio: "/audio/general/fast.mp3",
-    adjectiveWord: "fast",
-    adjectivePtDefinition: "rápido",
+    adjetives: [
+      {
+        audio: "/audio/general/fast.mp3",
+        word: "fast",
+        ptDefinition: "rápido",
+      },
+      {
+        audio: "/audio/general/faster.mp3",
+        word: "faster",
+        degree: "comparativo",
+        ptDefinition: "mais rápido",
+      },
+    ],
   },
+  // light
   {
-    // light
     verbAudio: "/audio/general/light.mp3",
     verbWord: "light",
     verbPtDefinition: "acender",
@@ -481,16 +691,14 @@ export default function WordFormation() {
                 {/* phrasal verb */}
                 <div>
                   {word.phrasalVerbs?.map((item, index) => (
-                  <Text key={index}
-                    playAudio={item.audio}
-                    className={
-                      !item.audio ? styles.hidden : undefined
-                    }
-                  >
-                    <Bold>{item.word}</Bold>{" "}
-                    <Portuguese>{item.ptDefinition}</Portuguese>
-                  </Text>
-
+                    <Text
+                      key={index}
+                      playAudio={item.audio}
+                      className={!item.audio ? styles.hidden : undefined}
+                    >
+                      <Bold>{item.word}</Bold>{" "}
+                      <Portuguese>{item.ptDefinition}</Portuguese>
+                    </Text>
                   ))}
                 </div>
 
@@ -510,16 +718,16 @@ export default function WordFormation() {
 
                 {/* adjective */}
                 <div>
-                  <Text
-                    playAudio={word.adjectiveAudio}
-                    className={!word.adjectiveAudio ? styles.hidden : undefined}
-                  >
-                    <Bold>{word.adjectiveWord}</Bold>{" "}
-                    {word.adjectiveRegisterTag && (
-                      <RegisterTag>{word.adjectiveRegisterTag}</RegisterTag>
-                    )}{" "}
-                    <Portuguese>{word.adjectivePtDefinition}</Portuguese>
-                  </Text>
+                  {word.adjectives?.map((item, index) => (
+                    <Text key={index}
+                      playAudio={item.audio}
+                      className={!item.audio ? styles.hidden : undefined}
+                    >
+                      <Bold>{item.word}</Bold>{" "}
+                      {item.degree && <DegreeTag>{item.degree}</DegreeTag>}{" "}
+                      <Portuguese>{item.ptDefinition}</Portuguese>
+                    </Text>
+                  ))}
                 </div>
               </div>
             ))}

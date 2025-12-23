@@ -1,0 +1,1 @@
+export { RegisterTag } from "./RegisterTag"
