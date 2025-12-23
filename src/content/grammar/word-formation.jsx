@@ -884,12 +884,12 @@ const words = [
     verbPtDefinition: "amar; adorar",
 
     phrasalVerbs: [
-      {
-        audio: "/audio/general/love-for.mp3",
-        word: "love for",
-        ptDefinition: "ter amor ou afeição por",
-      },
-    ],
+    {
+      audio: "/audio/general/love-up.mp3",
+      word: "love up",
+      ptDefinition: "mostrar carinho; abraçar",
+    }
+  ],
 
     nounAudio: "/audio/general/love.mp3",
     nounWord: "love",
@@ -910,13 +910,12 @@ const words = [
         audio: "/audio/general/loving.mp3",
         word: "loving",
         ptDefinition: "amoroso; carinhoso",
-      }
-      ,
+      },
       {
         audio: "/audio/general/love-up.mp3",
         word: "loved-up",
         ptDefinition: "cheio(a) de carinho; afetuoso(a)",
-      }
+      },
     ],
 
     expressions: [
@@ -924,6 +923,95 @@ const words = [
         audio: "/audio/general/love-at-first-sight.mp3",
         word: "love at first sight",
         ptDefinition: "amor à primeira vista",
+      },
+    ],
+  },
+  // make
+  {
+    verbAudio: "/audio/general/make.mp3",
+    verbWord: "make",
+    verbPtDefinition: "fazer, criar; ganhar (dinheiro); totalizar",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/make-up.mp3",
+        word: "make up",
+        ptDefinition: "inventar; reconciliar-se; compensar",
+      },
+      {
+        audio: "/audio/general/make-out.mp3",
+        word: "make out",
+        ptDefinition: "entender; decifrar; beijar (informal)",
+      },
+      {
+        audio: "/audio/general/make-over.mp3",
+        word: "make over",
+        ptDefinition: "transformar; transferir (legalmente)",
+      },
+    ],
+
+    nounAudio: "/audio/general/make-noun.mp3",
+    nounWord: "make",
+    nounRegisterTag: "chiefly british",
+    nounPtDefinition: "modelo; marca (de carro ou produto)",
+
+    adjectives: [
+      {
+        audio: "/audio/general/made-up.mp3",
+        word: "made-up",
+        ptDefinition: "inventado; fictício",
+      },
+    ],
+
+    expressions: [
+      {
+        audio: "/audio/general/make-sense.mp3",
+        word: "make sense",
+        ptDefinition: "fazer sentido",
+      },
+      {
+        audio: "/audio/general/make-a-difference.mp3",
+        word: "make a difference",
+        ptDefinition: "fazer a diferença",
+      },
+    ],
+  },
+  // meet
+  {
+    verbAudio: "/audio/general/meet.mp3",
+    verbWord: "meet",
+    verbPtDefinition: "encontrar; conhecer",
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/meet-up.mp3",
+        word: "meet up",
+        ptDefinition: "encontrar-se; reunir-se",
+      },
+      {
+        audio: "/audio/general/meet-with.mp3",
+        word: "meet with",
+        ptDefinition: "reunir-se com; encontrar-se com",
+      }
+    ],
+
+    nounAudio: "/audio/general/meeting.mp3",
+    nounWord: "meeting",
+    nounPtDefinition: "reunião; encontro",
+
+    adjectives: [
+      {
+        audio: "/audio/general/meetable.mp3",
+        word: "meetable",
+        ptDefinition: "que pode ser encontrado; acessível",
+      },
+    ],
+
+    expressions: [
+      {
+        audio: "/audio/general/meet-halfway.mp3",
+        word: "meet halfway",
+        ptDefinition: "chegar a um acordo; ceder parcialmente",
       },
     ],
   },
