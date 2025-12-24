@@ -2768,9 +2768,20 @@ const words = [
 
     nouns: [
       {
-        audio: "/audio/general/teacher-teaching.mp3",
-        word: "teacher / teaching",
-        ptDefinition: "professor / ensino",
+        audio: "/audio/general/teacher.mp3",
+        word: "teacher",
+        ptDefinition: "professor",
+        examples: [
+          {
+            example: "",
+            ptExample: "",
+          },
+        ],
+      },
+      {
+        audio: "/audio/general/teaching.mp3",
+        word: "teaching",
+        ptDefinition: "ensino",
         examples: [
           {
             example: "",
@@ -2871,12 +2882,18 @@ export default function WordFormation() {
 
     let isDown = false;
     let startX = 0;
+    let startY = 0;
     let scrollLeft = 0;
+    let scrollTop = 0;
 
     const mouseDown = (e) => {
       isDown = true;
+
       startX = e.pageX - slider.offsetLeft;
+      startY = e.pageY - slider.offsetTop;
+      
       scrollLeft = slider.scrollLeft;
+      scrollTop = slider.scrollTop;
     };
 
     const mouseUp = () => {
@@ -2887,9 +2904,15 @@ export default function WordFormation() {
       if (!isDown) return;
 
       e.preventDefault();
+
       const x = e.pageX - slider.offsetLeft;
-      const walk = x - startX;
-      slider.scrollLeft = scrollLeft - walk;
+      const y = e.pageY - slider.offsetTop;
+      
+      const walkX = x - startX;
+      const walkY = y - startY;
+      
+      slider.scrollLeft = scrollLeft - walkX;
+      slider.scrollTop = scrollTop - walkY;
     };
 
     slider.addEventListener("mousedown", mouseDown);

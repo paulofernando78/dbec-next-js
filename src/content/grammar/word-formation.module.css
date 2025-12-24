@@ -1,8 +1,11 @@
 .scroll {
   overflow-x: auto;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  
   cursor: grab;
   user-select: none;
+
 }
 
 .scroll:active {
