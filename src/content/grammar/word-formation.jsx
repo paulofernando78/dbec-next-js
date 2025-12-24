@@ -245,7 +245,7 @@ const words = [
 
     nouns: [
       {
-        audio: "/audio/general/blow-noun.mp3",
+        audio: "/audio/general/blow.mp3",
         word: "blow",
         ptDefinition: "golpe; sopro; impacto",
         examples: [
@@ -299,7 +299,7 @@ const words = [
 
     nouns: [
       {
-        audio: "/audio/general/bore-noun.mp3",
+        audio: "/audio/general/bore.mp3",
         word: "bore",
         registerTag: "formal",
         ptDefinition: "tédio; pessoa chata",
