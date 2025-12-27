@@ -26,6 +26,10 @@ export const Radio = ({ exercises }) => {
     setChecked(true);
   };
 
+  const handleReset = () => {
+    
+  }
+
   return (
     <>
       <div className="line-break">
@@ -57,7 +61,7 @@ export const Radio = ({ exercises }) => {
         </span>
         <div className={styles.flex}>
           <Button icon={<Check />} onToggle={handleCheck} active={checked} />
-          <Button icon={<Redo />} />
+          <Button icon={<Redo />} onToggle={handleReset}/>
         </div>
       </div>
     </>
