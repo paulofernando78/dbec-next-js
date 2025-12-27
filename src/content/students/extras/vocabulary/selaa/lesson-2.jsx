@@ -1,7 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Bold } from "@/components/atoms/Bold";
 import { Italic } from "@/components/atoms/Italic";
+import { Mark } from "@/components/atoms/Mark";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Audio } from "@/components/atoms/Audio";
 import { Text } from "@/components/molecules/Text";
 
 
@@ -21,52 +23,52 @@ export default function SELAAlessonOne() {
           Bob tells his wife Susan that he lost his job. Susan suggests that he start his own business.
         </Italic>
         <Text>
-          <strong>Susan:</strong> <mark>What’s the matter</mark>, dear?
+          <Bold>Susan:</Bold> <Audio src="/audio/general/.mp3"/><Mark>What’s the matter</Mark>, dear?
         </Text>
         <Text>
-          <strong>Bob:</strong> Susan, I <mark>got canned</mark> today at work.
+          <Bold>Bob:</Bold> Susan, I <Audio src="/audio/general/.mp3"/><Mark>got canned</Mark> today at work.
         </Text>
         <Text>
-          <strong>Susan:</strong> But Bob, you were Peter’s <mark>right-hand man</mark>!
+          <Bold>Susan:</Bold> But Bob, you were Peter’s <Audio src="/audio/general/.mp3"/><Mark>right-hand man</Mark>!
         </Text>
         <Text>
-          <strong>Bob:</strong> Yes, and he <mark>stabbed me in the back</mark>.
+          <Bold>Bob:</Bold> Yes, and he <Audio src="/audio/general/.mp3"/><Mark>stabbed me in the back</Mark>.
         </Text>
         <Text>
-          <strong>Susan:</strong> Keep your <mark>chin up</mark>. Maybe he’ll <mark>change his mind</mark> and take you back.
+          <Bold>Susan:</Bold> Keep your <Audio src="/audio/general/.mp3"/><Mark>chin up</Mark>. Maybe he’ll <Audio src="/audio/general/.mp3"/><Mark>change his mind</Mark> and take you back.
         </Text>
         <Text>
-          <strong>Bob:</strong> <mark>When pigs fly</mark>! Once he <mark>makes up his mind</mark>, he never changes it. Besides, I told him off.
+          <Bold>Bob:</Bold> <Audio src="/audio/general/.mp3"/><Mark>When pigs fly</Mark>! Once he <Audio src="/audio/general/.mp3"/><Mark>makes up his mind</Mark>, he never changes it. Besides, I told him off.
         </Text>
         <Text>
-          <strong>Susan:</strong> <mark>Look on the bright side</mark>: you won’t have to <mark>set eyes on</mark> Peter ever again.
+          <Bold>Susan:</Bold> <Audio src="/audio/general/.mp3"/><Mark>Look on the bright side</Mark>: you won’t have to <Audio src="/audio/general/.mp3"/><Mark>set eyes on</Mark> Peter ever again.
         </Text>
         <Text>
-          <strong>Bob:</strong> <mark>Thank goodness</mark> for that!
+          <Bold>Bob:</Bold> <Audio src="/audio/general/.mp3"/><Mark>Thank goodness</Mark> for that!
         </Text>
         <Text>
-          <strong>Susan:</strong> Hang in there. I’m sure you won’t be <mark>out of work</mark> for long.
+          <Bold>Susan:</Bold> Hang in there. I’m sure you won’t be <Audio src="/audio/general/.mp3"/><Mark>out of work</Mark> for long.
         </Text>
         <Text>
-          <strong>Bob:</strong> In the meantime, we’ll have to <mark>live from hand to mouth</mark>.
+          <Bold>Bob:</Bold> In the meantime, we’ll have to <Audio src="/audio/general/.mp3"/><Mark>live from hand to mouth</Mark>.
         </Text>
         <Text>
-          <strong>Susan:</strong> Don’t get too <mark>stressed out</mark>, Bob. We’ll <mark>make ends meet</mark>.
+          <Bold>Susan:</Bold> Don’t get too <Audio src="/audio/general/.mp3"/><Mark>stressed out</Mark>, Bob. We’ll <Audio src="/audio/general/.mp3"/><Mark>make ends meet</Mark>.
         </Text>
         <Text>
-          <strong>Bob:</strong> I can always get a job at McDonald’s as a <mark>last resort</mark>.
+          <Bold>Bob:</Bold> I can always get a job at McDonald’s as a <Audio src="/audio/general/.mp3"/><Mark>last resort</Mark>.
         </Text>
         <Text>
-          <strong>Susan:</strong> I don’t think they’re hiring right now.
+          <Bold>Susan:</Bold> I don’t think they’re hiring right now.
         </Text>
         <Text>
-          <strong>Bob:</strong> <mark>If worse comes to worst</mark>, we can sell our home and move into a tent.
+          <Bold>Bob:</Bold> <Audio src="/audio/general/.mp3"/><Mark>If worse comes to worst</Mark>, we can sell our home and move into a tent.
         </Text>
         <Text>
-          <strong>Susan:</strong> Let’s <mark>think big</mark>! Maybe you can start your own business.
+          <Bold>Susan:</Bold> Let’s <Audio src="/audio/general/.mp3"/><Mark>think big</Mark>! Maybe you can start your own business.
         </Text>
         <Text>
-          <strong>Bob:</strong> <mark>Easier said than done</mark>!
+          <Bold>Bob:</Bold> <Audio src="/audio/general/.mp3"/><Mark>Easier said than done</Mark>!
         </Text>
         
       </div>

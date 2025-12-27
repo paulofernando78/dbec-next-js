@@ -1,6 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
+import { Bold } from "@/components/atoms/Bold";
+import { Italic } from "@/components/atoms/Italic";
+import { Mark } from "@/components/atoms/Mark";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Audio } from "@/components/atoms/Audio";
 import { Text } from "@/components/molecules/Text";
 
 
@@ -15,9 +18,9 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-14.mp3"/>
-        <Card>
+        <Italic>
           ...
-        </Card>
+        </Italic>
         <Text>
           <strong>...:</strong> ...
         </Text>

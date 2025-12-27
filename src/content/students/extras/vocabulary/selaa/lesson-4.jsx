@@ -1,6 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
+import { Bold } from "@/components/atoms/Bold";
+import { Italic } from "@/components/atoms/Italic";
+import { Mark } from "@/components/atoms/Mark";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Audio } from "@/components/atoms/Audio";
 import { Text } from "@/components/molecules/Text";
 
 
@@ -15,43 +18,43 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-4.mp3"/>
-        <Text bold>Lesson 4 • Nicole Day’s at School</Text>
-        <Card>
+        <Text><Bold>Lesson 4 • Nicole Day’s at School</Bold></Text>
+        <Italic>
           Nicole tells her mother Susan about her successful presentation at school. Her brother Ted overhears and interrupts the conversation.
-        </Card>
+        </Italic>
         <Text>
-          <strong>Susan:</strong> How was your day at school today, Nicole?
+          <Bold>Susan:</Bold> How was your day at school today, Nicole?
         </Text>
         <Text>
-          <strong>Nicole:</strong> It was great, Mom. I gave a presentation on Hillary Clinton in government class Afterwards, my teacher <mark>paid me a compliment</mark>.
+          <Bold>Nicole:</Bold> It was great, Mom. I gave a presentation on Hillary Clinton in government class Afterwards, my teacher <Audio src="/audio/general/.mp3"/><Mark>paid me a compliment</Mark>.
         </Text>
         <Text>
-          <strong>Susan:</strong> What did she say?
+          <Bold>Susan:</Bold> What did she say?
         </Text>
         <Text>
-          <strong>Nicole:</strong> She said my presentation was <mark>head and shoulders above</mark> the others.
+          <Bold>Nicole:</Bold> She said my presentation was <Audio src="/audio/general/.mp3"/><Mark>head and shoulders above</Mark> the others.
         </Text>
         <Text>
-          <strong>Susan:</strong> <mark>Way to go!</mark>
+          <Bold>Susan:</Bold> <Audio src="/audio/general/.mp3"/><Mark>Way to go!</Mark>
         </Text>
         <Text>
-          <strong>Nicole:</strong> She also said I should <mark>go into</mark> politics, just like Hillary.
+          <Bold>Nicole:</Bold> She also said I should <Audio src="/audio/general/.mp3"/><Mark>go into</Mark> politics, just like Hillary.
         </Text>
         <Text>
-          <strong>Ted:</strong> You’re so <mark>gung ho</mark> about school. It <mark>drives me crazy</mark>.
+          <Bold>Ted:</Bold> You’re so <Audio src="/audio/general/.mp3"/><Mark>gung ho</Mark> about school. It <Audio src="/audio/general/.mp3"/><Mark>drives me crazy</Mark>.
         </Text>
         <Text>
-          <strong>Nicole:</strong> Ted, don’t <mark>butt in</mark>! You’re just jealous.
+          <Bold>Nicole:</Bold> Ted, don’t <Audio src="/audio/general/.mp3"/><Mark>butt in</Mark>! You’re just jealous.
         </Text>
         <Text>
-          <strong>Ted:</strong> Right. You <mark>hit the nail on the head</mark>. I’m <mark>green with envy</mark>.
+          <Bold>Ted:</Bold> Right. You <Audio src="/audio/general/.mp3"/><Mark>hit the nail on the head</Mark>. I’m <Audio src="/audio/general/.mp3"/><Mark>green with envy</Mark>.
         </Text>
         <Text>
-          <strong>Nicole:</strong> Would you just <mark>shut up</mark>? You’re <mark>on thin ice with</mark> me
+          <Bold>Nicole:</Bold> Would you just shut up? You’re <Audio src="/audio/general/.mp3"/><Mark>on thin ice with</Mark> me
 right now.
         </Text>
         <Text>
-          <strong>Ted:</strong> Oh no! Look at me. I’m <mark>shaking in my shoes</mark>!
+          <Bold>Ted:</Bold> Oh no! Look at me. I’m <Audio src="/audio/general/.mp3"/><Mark>shaking in my shoes</Mark>!
         </Text>
       </div>
     </>

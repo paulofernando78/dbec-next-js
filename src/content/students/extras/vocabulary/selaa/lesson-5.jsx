@@ -1,6 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
+import { Bold } from "@/components/atoms/Bold";
+import { Italic } from "@/components/atoms/Italic";
+import { Mark } from "@/components/atoms/Mark";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Audio } from "@/components/atoms/Audio";
 import { Text } from "@/components/molecules/Text";
 
 export default function SELAAlessonOne() {
@@ -14,48 +17,54 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-5.mp3" />
-        <Card>
-          Susan decides to cheer up her husband. Bob loves her homemade cookies.
-          Nicole suggests she start a cookie business.
-        </Card>
+        <Italic>
+          Ted leaves to go visit his girlfriend Amber. Ted’s mother Susan says
+          she doesn’t really like Amber. She wishes him a good time anyway.
+        </Italic>
         <Text>
-          <strong>Susan:</strong> ...
+          <Bold>Ted:</Bold> See you later, Mom!
         </Text>
         <Text>
-          <strong>Bob:</strong> ...
+          <Bold>Susan:</Bold> Where are you going, Ted?
         </Text>
         <Text>
-          <strong>Susan:</strong> ...
+          <Bold>Ted:</Bold> I told Amber I’d <Audio src="/audio/general/.mp3" /><Mark>drop by</Mark>.
         </Text>
         <Text>
-          <strong>Bob:</strong> ...
+          <Bold>Susan:</Bold> What are you two going to do?
         </Text>
         <Text>
-          <strong>Susan:</strong> ...
+          <Bold>Ted:</Bold> Maybe go to the movies or to a party. Our plans are
+          still <Audio src="/audio/general/.mp3" /><Mark>up in the air</Mark>.
         </Text>
         <Text>
-          <strong>Bob:</strong> ...
+          <Bold>Susan:</Bold> Why don’t you invite her over here?
         </Text>
         <Text>
-          <strong>Nicole:</strong> ...
+          <Bold>Ted:</Bold> I don’t want to <Audio src="/audio/general/.mp3" /><Mark>hang around</Mark> here. Dad is really <Audio src="/audio/general/.mp3" /><Mark>down in the dumps</Mark>.
         </Text>
         <Text>
-          <strong>Susan:</strong> ...
+          <Bold>Susan:</Bold> Is Amber the girl with the nose ring and the
+          purple hair?
         </Text>
         <Text>
-          <strong>Nicole:</strong> ...
+          <Bold>Ted:</Bold> Yeah. I’m <Audio src="/audio/general/.mp3" /><Mark>crazy about</Mark> her!
         </Text>
         <Text>
-          <strong>Bob:</strong> ...
+          <Bold>Susan:</Bold> Don’t <Audio src="/audio/general/.mp3" /><Mark>take this the wrong way</Mark>, but she’s not
+          exactly my <Audio src="/audio/general/.mp3" /><Mark>cup of tea</Mark>.
         </Text>
         <Text>
-          <strong>Susan:</strong> ...
+          <Bold>Ted:</Bold> <Audio src="/audio/general/.mp3" /><Mark>Take it easy</Mark>, Mom. We’re not <Audio src="/audio/general/.mp3" /><Mark>about to</Mark> get married. We just enoy <Audio src="/audio/general/.mp3" /><Mark>hanging out</Mark> together.
         </Text>
         <Text>
-          <strong>Nicole:</strong> ...
+          <Bold>Susan:</Bold> I guess <Audio src="/audio/general/.mp3" /><Mark>there’s no accounting for taste</Mark>. <Audio src="/audio/general/.mp3" /><Mark>Have a good time</Mark>.
         </Text>
         <Text>
-          <strong>Susan:</strong> ...
+          <Bold>Ted:</Bold> Don’t worry. We’ll <Audio src="/audio/general/.mp3" /><Mark>have a blast</Mark>!
+        </Text>
+        <Text>
+          <Bold>Susan:</Bold> <Audio src="/audio/general/.mp3" />(<Mark>under her breath</Mark>) That’s what I’m afraid of!
         </Text>
       </div>
     </>

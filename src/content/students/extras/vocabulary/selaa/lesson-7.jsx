@@ -1,6 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
+import { Bold } from "@/components/atoms/Bold";
+import { Italic } from "@/components/atoms/Italic";
+import { Mark } from "@/components/atoms/Mark";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Audio } from "@/components/atoms/Audio";
 import { Text } from "@/components/molecules/Text";
 
 export default function SELAAlessonOne() {
@@ -15,56 +18,56 @@ export default function SELAAlessonOne() {
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-7.mp3" />
         <Text>Lesson 7 • Susan Hires Bob to Run Her Business</Text>
-        <Card>
+        <Italic>
           Susan stays up all night thinking about her cookie business. In the
           morning, she discusses it with Bob. Bob agrees to work for her.
-        </Card>
+        </Italic>
         <Text>
-          <strong>Bob:</strong> You’re up <mark>bright and early</mark> this
-          morning, Susan.
+          <Bold>Bob:</Bold> You’re up <Audio src="/audio/general/.mp3" />
+          <Mark>bright and early</Mark> this morning, Susan.
         </Text>
         <Text>
-          <strong>Susan:</strong> I <mark>didn’t sleep a wink</mark>. I was
-          awake all night thinking about the new business.
+          <Bold>Susan:</Bold> I <Audio src="/audio/general/.mp3" /><Mark>didn’t sleep a wink</Mark>. I was awake
+          all night thinking about the new business.
         </Text>
         <Text>
-          <strong>Bob:</strong> Running your own business is lots of work. Are
-          you prepared to <mark>work like a dog</mark>?
+          <Bold>Bob:</Bold> Running your own business is lots of work. Are you
+          prepared to <Audio src="/audio/general/.mp3" /><Mark>work like a dog</Mark>?
         </Text>
         <Text>
-          <strong>Susan:</strong> No. But I am prepared to hire you to run the
+          <Bold>Susan:</Bold> No. But I am prepared to hire you to run the
           business.
         </Text>
         <Text>
-          <strong>Bob:</strong> You want me to run a cookie business?{" "}
-          <mark>Fat chance!</mark>
+          <Bold>Bob:</Bold> You want me to run a cookie business?{" "}
+          <Audio src="/audio/general/.mp3" /><Mark>Fat chance!</Mark>
         </Text>
         <Text>
-          <strong>Susan:</strong> Why not?
+          <Bold>Susan:</Bold> Why not?
         </Text>
         <Text>
-          <strong>Bob:</strong> <mark>I don’t have a clue</mark> about making
+          <Bold>Bob:</Bold> <Audio src="/audio/general/.mp3" /><Mark>I don’t have a clue</Mark> about making
           cookies. I don’t even know how to turn the oven on!
         </Text>
         <Text>
-          <strong>Susan:</strong> I’ll give you a <mark>crash course</mark>.
+          <Bold>Susan:</Bold> I’ll give you a <Audio src="/audio/general/.mp3" /><Mark>crash course</Mark>.
         </Text>
         <Text>
-          <strong>Bob:</strong> Do I have to do the baking?
+          <Bold>Bob:</Bold> Do I have to do the baking?
         </Text>
         <Text>
-          <strong>Susan:</strong> No. You’ll just manage the business side.
+          <Bold>Susan:</Bold> No. You’ll just manage the business side.
         </Text>
         <Text>
-          <strong>Bob:</strong> <mark>Needless to say</mark>, I have{" "}
-          <mark>mixed feelings</mark> about working for you.
+          <Bold>Bob:</Bold> <Audio src="/audio/general/.mp3" /><Mark>Needless to say</Mark>, I have{" "}
+          <Audio src="/audio/general/.mp3" /><Mark>mixed feelings</Mark> about working for you.
         </Text>
         <Text>
-          <strong>Susan:</strong> I’ll be nice. I promise you’ll be a{" "}
-          <mark>happy camper</mark>.
+          <Bold>Susan:</Bold> I’ll be nice. I promise you’ll be a{" "}
+          <Audio src="/audio/general/.mp3" /><Mark>happy camper</Mark>.
         </Text>
         <Text>
-          <strong>Bob:</strong> Okay. <mark>Let’s give it a shot</mark>, boss!
+          <Bold>Bob:</Bold> Okay. <Audio src="/audio/general/.mp3" /><Mark>Let’s give it a shot</Mark>, boss!
         </Text>
       </div>
     </>
