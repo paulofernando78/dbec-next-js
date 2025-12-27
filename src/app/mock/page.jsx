@@ -5,6 +5,7 @@ import { Text } from "@/components/molecules/Text";
 import { Comparison } from "../../components/molecules/Comparison/Comparison";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer/AudioPlayer";
 import { Radio } from "@/components/molecules/Exercises/Radio";
+import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
 const words = [
   {
@@ -63,6 +64,16 @@ const radioExercises = {
   ],
 };
 
+const fillInExercises = {
+  instructions: "",
+  questions: [
+    {
+      text: "",
+      blank: ""
+    }
+  ]
+}
+
 export default function Mock() {
   return (
     <>
@@ -103,6 +114,7 @@ export default function Mock() {
         <Comparison groups={words} />
         <Ribbon label="Exercises" />
         <Radio exercises={radioExercises} />
+        <FillInTheBlanks />
       </div>
     </>
   );

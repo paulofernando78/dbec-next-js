@@ -43,38 +43,46 @@ export const Radio = ({ exercises }) => {
           <div key={qIndex}>
             <p className={styles.question}>{q.question}</p>
 
-            {q.options.map((opt, optIndex) => (
-              <label key={optIndex} className={styles.label}>
-                <input
-                  className={styles.input}
-                  type="radio"
-                  name={`radio-${qIndex}`}
-                  checked={selected[qIndex] === optIndex}
-                  disabled={checked}
-                  onChange={() =>
-                    setSelected((prev) => ({ ...prev, [qIndex]: optIndex }))
-                  }
-                />
+            {q.options.map((opt, optIndex) => {
+              const isActive = selected[qIndex] === optIndex;
+              const isChecked = checked;
+              const isDisabled = checked;
+              const isWrong = isChecked && isActive && !opt.isCorrect;
+              const isCorrect = isChecked && isActive && opt.isCorrect;
 
-                <span
-                  className={[
-                    styles.radio,
-                    selected[qIndex] === optIndex && styles.radioActive,
-                    checked &&
-                    selected[qIndex] === optIndex &&
-                    (opt.isCorrect ? styles.radioGreen : styles.radioRed),
-                    checked && styles.radioDisabled
-                  ]
-                  .filter(Boolean)
-                  .join(" ")}
-                >
-                  {selected[qIndex] === optIndex &&
-                    <span className={styles.radioInner} />}
-                </span>
+              return (
+                <label key={optIndex} className={styles.label}>
+                  <input
+                    className={styles.input}
+                    type="radio"
+                    name={`radio-${qIndex}`}
+                    checked={selected[qIndex] === optIndex}
+                    disabled={checked}
+                    onChange={() =>
+                      setSelected((prev) => ({ ...prev, [qIndex]: optIndex }))
+                    }
+                  />
 
-                {opt.option}
-              </label>
-            ))}
+                  <span
+                    className={[
+                      styles.radio,
+                      isActive && styles.radioActive,
+                      isCorrect && styles.radioGreen,
+                      isWrong && styles.radioRed,
+                      isDisabled && styles.radioDisabled,
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
+                  >
+                    {selected[qIndex] === optIndex && (
+                      <span className={styles.radioInner} />
+                    )}
+                  </span>
+
+                  {opt.option}
+                </label>
+              );
+            })}
           </div>
         ))}
         <span>
