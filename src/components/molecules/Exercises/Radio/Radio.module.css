@@ -1,8 +1,59 @@
 .question {
-  margin-bottom:1px;
+  margin-bottom: 1px;
 }
 
 .flex {
   display: flex;
   gap: 10px;
+}
+
+.label {
+  width: max-content;
+  display: flex;
+  gap: 5px;
+  margin: 7px 5px 0 0;
+}
+
+.input[type="radio"] {
+  display: none;
+}
+
+.radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: var(--neumorphism);
+
+  position: relative;
+  transition: box-shadow 5s ease;
+}
+
+.radioActive {
+  box-shadow: var(--neumorphism-active);
+}
+
+.radioDisabled {
+  pointer-events: none;
+  opacity: 0.5;
+  filter: grayscale(40%);
+  box-shadow: var(--neumorphism-soft);
+}
+
+.radioInner {
+  position: absolute;
+  inset: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--gray-4);
+}
+
+.radioGreen .radioInner {
+  background: var(--green-4);
+}
+
+.radioRed .radioInner {
+  background: var(--red-4);
 }

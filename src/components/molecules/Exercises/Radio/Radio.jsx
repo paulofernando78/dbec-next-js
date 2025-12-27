@@ -27,8 +27,10 @@ export const Radio = ({ exercises }) => {
   };
 
   const handleReset = () => {
-    
-  }
+    setSelected({});
+    setChecked(false);
+    setTotalScore(0);
+  };
 
   return (
     <>
@@ -42,15 +44,34 @@ export const Radio = ({ exercises }) => {
             <p className={styles.question}>{q.question}</p>
 
             {q.options.map((opt, optIndex) => (
-              <label key={optIndex} className="block">
+              <label key={optIndex} className={styles.label}>
                 <input
+                  className={styles.input}
                   type="radio"
                   name={`radio-${qIndex}`}
                   checked={selected[qIndex] === optIndex}
+                  disabled={checked}
                   onChange={() =>
                     setSelected((prev) => ({ ...prev, [qIndex]: optIndex }))
                   }
-                />{" "}
+                />
+
+                <span
+                  className={[
+                    styles.radio,
+                    selected[qIndex] === optIndex && styles.radioActive,
+                    checked &&
+                    selected[qIndex] === optIndex &&
+                    (opt.isCorrect ? styles.radioGreen : styles.radioRed),
+                    checked && styles.radioDisabled
+                  ]
+                  .filter(Boolean)
+                  .join(" ")}
+                >
+                  {selected[qIndex] === optIndex &&
+                    <span className={styles.radioInner} />}
+                </span>
+
                 {opt.option}
               </label>
             ))}
@@ -61,7 +82,7 @@ export const Radio = ({ exercises }) => {
         </span>
         <div className={styles.flex}>
           <Button icon={<Check />} onToggle={handleCheck} active={checked} />
-          <Button icon={<Redo />} onToggle={handleReset}/>
+          <Button icon={<Redo />} onToggle={handleReset} />
         </div>
       </div>
     </>

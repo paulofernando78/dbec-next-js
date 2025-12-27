@@ -23,6 +23,8 @@
     0.1rem 0.1rem 0.4rem var(--slate-3);
   --neumorphism-active: inset -0.02rem -0.02rem 0.1rem var(--slate-2),
     inset 0.1rem 0.1rem 0.2rem var(--slate-3);
+  --neumorphism-soft: 4px 4px 8px rgba(0, 0, 0, 0.15),
+    -4px -4px 8px rgba(255, 255, 255, 0.6);
 }
 
 /* Dark Mode */
@@ -101,7 +103,6 @@ main {
   border-radius: var(--border-radius);
   padding: 5px 5px 0px 5px;
 
-  
   transition: margin-left 0.5s ease;
   will-change: margin-left;
 }
@@ -115,15 +116,15 @@ main {
 }
 
 .bold {
- font-weight: bold;
+  font-weight: bold;
 }
 
 .italic {
- font-style: italic;
+  font-style: italic;
 }
 
 .underlined {
- text-decoration: underline ;
+  text-decoration: underline;
 }
 
 mark {
@@ -137,12 +138,12 @@ mark {
 }
 
 .phonetics {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: var(--blue-4);
 }
 
 .portuguese {
-  color: var(--gray-4)
+  color: var(--gray-4);
 }
 
 .icon-position {
