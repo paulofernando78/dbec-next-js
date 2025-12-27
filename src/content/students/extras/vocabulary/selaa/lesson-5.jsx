@@ -17,6 +17,9 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-5.mp3" />
+        <Text>
+          <Bold>Lesson 5 • Ted Goes Out for the Evening</Bold>
+        </Text>
         <Italic>
           Ted leaves to go visit his girlfriend Amber. Ted’s mother Susan says
           she doesn’t really like Amber. She wishes him a good time anyway.
