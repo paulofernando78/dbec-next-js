@@ -1,9 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
+import { Italic } from "@/components/atoms/Italic";
 import { Audio } from "@/components/atoms/Audio";
+import { Bold } from "@/components/atoms/Bold";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Text } from "@/components/molecules/Text";
-
 
 export default function SELAAlessonOne() {
   return (
@@ -16,12 +16,12 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-1.mp3"/>
-        <Text bold>Lesson 1 • Bob’s Day at Work</Text>
-        <Card>
+        <Text><Bold>Lesson 1 • Bob’s Day at Work</Bold></Text>
+        <Italic>
           Bob works as a manager in a furniture store. Peter, his boss, is not
           happy about sales. Bob’s new advertising campaign hasn’t helped. Peter
           decides to fire him.
-        </Card>
+        </Italic>
         <Text>
           <strong>Peter:</strong> Bob, I hate to break the news, but our sales were down again last month.
         </Text>

@@ -1,5 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
+import { Bold } from "@/components/atoms/Bold";
+import { Italic } from "@/components/atoms/Italic";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Text } from "@/components/molecules/Text";
 
@@ -15,10 +16,10 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-2.mp3"/>
-        <Text bold>Lesson 2 • Bob Returns Home with Bad News</Text>
-        <Card>
+        <Text><Bold>Lesson 2 • Bob Returns Home with Bad News</Bold></Text>
+        <Italic>
           Bob tells his wife Susan that he lost his job. Susan suggests that he start his own business.
-        </Card>
+        </Italic>
         <Text>
           <strong>Susan:</strong> <mark>What’s the matter</mark>, dear?
         </Text>

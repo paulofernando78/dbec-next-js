@@ -1,5 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Card } from "@/components/atoms/Card";
+import { Bold } from "@/components/atoms/Bold";
+import { Italic } from "@/components/atoms/Italic";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Text } from "@/components/molecules/Text";
 
@@ -15,10 +16,10 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-3.mp3"/>
-        <Text bold>Lesson 3 • Ted”s Day at School</Text>
-        <Card>
+        <Text><Bold>Lesson 3 • Ted”s Day at School</Bold></Text>
+        <Italic>
           Ted tells his parents he did poorly on his cheтistry test. They tell him he needs to get serious and study more.
-        </Card>
+        </Italic>
         <Text>
           <strong>Susan:</strong> How was your day at school today, Ted?
         </Text>

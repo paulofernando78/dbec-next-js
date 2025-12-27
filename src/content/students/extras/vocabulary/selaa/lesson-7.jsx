@@ -14,6 +14,7 @@ export default function SELAAlessonOne() {
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-7.mp3" />
+        <Text>Lesson 7 • Susan Hires Bob to Run Her Business</Text>
         <Card>
           Susan stays up all night thinking about her cookie business. In the
           morning, she discusses it with Bob. Bob agrees to work for her.
