@@ -4,9 +4,10 @@ import { Card } from "@/components/atoms/Card";
 import { Text } from "@/components/molecules/Text";
 import { Comparison } from "../../components/molecules/Comparison/Comparison";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer/AudioPlayer";
+import { Radio } from "@/components/molecules/Exercises/Radio";
 
 const words = [
- {
+  {
     comparison: [
       {
         playAudio: "/....mp3",
@@ -39,6 +40,28 @@ const words = [
     ],
   },
 ];
+
+const radioExercises = {
+  instruction: "Choose the best response.",
+  questions: [
+    {
+      question: "1. Question",
+      options: [
+        { option: "option 1", isCorrect: true },
+        { option: "option 2", isCorrect: false },
+        { option: "option 3", isCorrect: false },
+      ],
+    },
+    {
+      question: "2. Question",
+      options: [
+        { option: "option 1", isCorrect: true },
+        { option: "option 2", isCorrect: false },
+        { option: "option 3", isCorrect: false },
+      ],
+    },
+  ],
+};
 
 export default function Mock() {
   return (
@@ -78,6 +101,8 @@ export default function Mock() {
         </Text>
         <Ribbon label="Word Sound" />
         <Comparison groups={words} />
+        <Ribbon label="Exercises" />
+        <Radio exercises={radioExercises} />
       </div>
     </>
   );

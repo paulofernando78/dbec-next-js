@@ -8,7 +8,7 @@ export const Comparison = ({ groups = [] }) => {
           {item.comparison.map((subItem, index) => (
             <Text playAudio={subItem.playAudio} key={index}>
               {subItem.word} <span className="phonetics">{subItem.phonetics}</span>{" "}
-              <span class="portuguese">{subItem.translation}</span>
+              <span className="portuguese">{subItem.translation}</span>
             </Text>
           ))}
         </div>

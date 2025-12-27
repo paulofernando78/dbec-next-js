@@ -1,5 +1,29 @@
 const iconSize = "1.5rem";
 
+export const Check = ({}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24px"
+    height="24px"
+    viewBox="0 -960 960 960"
+    fill="#999999"
+  >
+    <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+  </svg>
+);
+
+export const Close = ({}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24px"
+    height="24px"
+    viewBox="0 -960 960 960"
+    fill="#999999"
+  >
+    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+  </svg>
+);
+
 export const Correct = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -90,6 +114,30 @@ export const PlayAudio = ({ className, ...props }) => (
   </svg>
 );
 
+export const Redo = ({}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20px"
+    height="20px"
+    viewBox="0 -960 960 960"
+    fill="#999999"
+  >
+    <path d="M480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440h80q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720h-6l62 62-56 58-160-160 160-160 56 58-62 62h6q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80Z" />
+  </svg>
+);
+
+export const Show = ({}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24px"
+    height="24px"
+    viewBox="0 -960 960 960"
+    fill="#999999"
+  >
+    <path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+  </svg>
+);
+
 export const StopAudio = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -106,9 +154,9 @@ export const StopAudio = ({ className, ...props }) => (
 export const UnderConstruction = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    width="24px"
     height="24px"
     viewBox="0 -960 960 960"
-    width="24px"
     fill="#999999"
     className={className}
     {...props}
