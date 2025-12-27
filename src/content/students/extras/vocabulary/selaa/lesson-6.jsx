@@ -11,7 +11,7 @@ export default function SELAAlessonOne() {
         title="Extras"
         subtitle="Vocabulary"
         book="Speak English like an American"
-        lesson="Lesson 6 • Sysan Stays Home and Bakes Cookies"
+        lesson="Lesson 6 • Susan Stays Home and Bakes Cookies"
       />
       <div className="line-break">
         <AudioPlayer src="/audio/vocabulary/selaa/lesson-6.mp3"/>

@@ -30,7 +30,7 @@ const links = [
   },
   {
     href: "/students/extras/vocabulary/selaa/lesson-6",
-    label: "Lesson 6 • ",
+    label: "Lesson 6 • Susan Stays Home and Bakes Cookies",
     words: "cheer someone up • give (someone) credit • give credit where credit is due • go into business • good thinking • have a heart of gold • Help yourself • (to be) in a bad mood • just what the doctor ordered • make a bundle • (to be) on edge • out of this world • pig out"
   },
   {
