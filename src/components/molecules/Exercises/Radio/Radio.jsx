@@ -2,12 +2,29 @@
 
 import styles from "./Radio.module.css";
 import { Button } from "@/components/atoms/Button";
-import { Check, Redo } from "@/lib/svg-imports"
+import { Check, Redo } from "@/lib/svg-imports";
 import { useState } from "react";
 
 export const Radio = ({ exercises }) => {
   const [selected, setSelected] = useState({});
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(false);
+  const [totalScore, setTotalScore] = useState(0);
+
+  const handleCheck = () => {
+    let score = 0;
+
+    exercises.questions.forEach((question, qIndex) => {
+      const selectedOptionIndex = selected[qIndex];
+      if (selectedOptionIndex === undefined) return;
+      const selectedOption = question.options[selectedOptionIndex];
+      if (selectedOption.isCorrect) {
+        score++;
+      }
+    });
+
+    setTotalScore(score);
+    setChecked(true);
+  };
 
   return (
     <>
@@ -35,15 +52,12 @@ export const Radio = ({ exercises }) => {
             ))}
           </div>
         ))}
+        <span>
+          Score: {totalScore} out of {exercises.questions.length}
+        </span>
         <div className={styles.flex}>
-          <Button
-          icon={<Check />}
-          onToggle={() => setChecked(true)}
-          active={checked}
-          />
-          <Button
-          icon={<Redo />}
-          />
+          <Button icon={<Check />} onToggle={handleCheck} active={checked} />
+          <Button icon={<Redo />} />
         </div>
       </div>
     </>
