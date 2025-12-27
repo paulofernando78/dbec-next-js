@@ -5,6 +5,8 @@ import { Mark } from "@/components/atoms/Mark";
 import { Audio } from "@/components/atoms/Audio";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Text } from "@/components/molecules/Text";
+import { Card } from "@/components/atoms/Card"
+import { Radio } from "@/components/molecules/Exercises/Radio/Radio";
 
 export default function SELAAlessonOne() {
   return (
@@ -113,6 +115,8 @@ export default function SELAAlessonOne() {
           <Audio src="/audio/general/lose-my-temper.mp3" />
           <Mark>lose my temper</Mark>!
         </Text>
+        <Card>Exercises</Card>
+        <Radio />
       </div>
     </>
   );
