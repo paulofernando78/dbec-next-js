@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export const Radio = ({ exercises }) => {
   const [selected, setSelected] = useState({});
+  const [checked, setChecked] = useState(false)
 
   return (
     <>
@@ -35,8 +36,14 @@ export const Radio = ({ exercises }) => {
           </div>
         ))}
         <div className={styles.flex}>
-          <Button icon={<Check />} />
-          <Button icon={<Redo />} />
+          <Button
+          icon={<Check />}
+          onToggle={() => setChecked(true)}
+          active={checked}
+          />
+          <Button
+          icon={<Redo />}
+          />
         </div>
       </div>
     </>
