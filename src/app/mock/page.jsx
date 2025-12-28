@@ -65,16 +65,16 @@ const radioExercises = {
 };
 
 const fillInTheBlanksExercises = {
-  instructions: "",
+  instructions: "1. Fill in the blanks with the correcBoldt answer.",
   texts: [
     {
-      text: "aaa",
-      blank: ""
+      text: "He",
+      blank: "lives"
     },
     {
-      text: "aaa",
-      blank: ""
-    }
+      text: "in the USA.",
+    },
+    
   ]
 }
 

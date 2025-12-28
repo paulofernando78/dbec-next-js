@@ -2,12 +2,6 @@
   margin-bottom: 1px;
 }
 
-.flex {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 5px;
-}
-
 .label {
   width: max-content;
   display: flex;

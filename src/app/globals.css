@@ -156,6 +156,12 @@ mark {
   line-height: 1;
 }
 
+.button-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 700px) {
   .nav {
     margin-left: -145px;
