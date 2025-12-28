@@ -2754,6 +2754,82 @@ const words = [
       },
     ],
   },
+  // speak
+  {
+    verbAudio: "/audio/general/speak.mp3",
+    verbWord: "speak",
+    verbPtDefinition: "falar",
+    verbExamples: [
+      {
+        example: "...",
+        ptExample: "...",
+      },
+    ],
+
+    phrasalVerbs: [
+      {
+        audio: "/audio/general/speak-up.mp3",
+        word: "speak up",
+        ptDefinition: "falar mais alto; expressar opinião",
+        examples: [
+          {
+            example: "...",
+            ptExample: "...",
+          },
+        ],
+      },
+      {
+        audio: "/audio/general/speak-out.mp3",
+        word: "speak out",
+        ptDefinition: "falar abertamente; protestar",
+        examples: [
+          {
+            example: "...",
+            ptExample: "...",
+          },
+        ],
+      },
+    ],
+
+    nouns: [
+      {
+        audio: "/audio/general/speaking.mp3",
+        word: "speaking",
+        ptDefinition: "fala; conversação",
+        examples: [
+          {
+            example: "...",
+            ptExample: "...",
+          },
+        ],
+      },
+      {
+        audio: "/audio/general/speaker.mp3",
+        word: "speaker",
+        ptDefinition: "orador; falante",
+        examples: [
+          {
+            example: "...",
+            ptExample: "...",
+          },
+        ],
+      },
+    ],
+
+    adjectives: [
+      {
+        audio: "/audio/general/spoken.mp3",
+        word: "spoken",
+        ptDefinition: "falado",
+        examples: [
+          {
+            example: "...",
+            ptExample: "...",
+          },
+        ],
+      },
+    ],
+  },
   // teach
   {
     verbAudio: "/audio/general/teach.mp3",

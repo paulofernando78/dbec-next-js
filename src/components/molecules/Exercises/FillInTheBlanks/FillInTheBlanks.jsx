@@ -11,8 +11,10 @@ export const FillInTheBlanks = ({ exercises }) => {
   const [answers, setAnswers] = useState({});
   const [results, setResults] = useState({});
   const [checked, setChecked] = useState(false);
+  const [totalScore, setTotalScore] = useState(0);
 
   const handleCheck = () => {
+    let score = 0;
     const newResults = {};
 
     exercises.forEach((e, eIndex) => {
@@ -22,13 +24,18 @@ export const FillInTheBlanks = ({ exercises }) => {
             const key = `${eIndex}-${bsIndex}-${bIndex}`;
             const user = answers[key]?.trim().toLowerCase();
             const correct = b.blank.trim().toLowerCase();
-            newResults[key] = user === correct;
+
+            const isCorrect = user === correct;
+            newResults[key] = isCorrect;
+
+            if (isCorrect) score += 1;
           }
         });
       });
     });
 
     setResults(newResults);
+    setTotalScore(score);
     setChecked(true);
   };
 
@@ -37,6 +44,15 @@ export const FillInTheBlanks = ({ exercises }) => {
     setResults({});
     setChecked(false);
   };
+
+  const totalBlanks = exercises.reduce((acc, e) => {
+    return (
+      acc +
+      e.blocks.reduce((bsAcc, bs) => {
+        return bsAcc + bs.block.filter((b) => b.blank).length;
+      }, 0)
+    );
+  }, 0);
 
   return (
     <>
@@ -57,8 +73,8 @@ export const FillInTheBlanks = ({ exercises }) => {
                   const key = `${eIndex}-${bsIndex}-${bIndex}`;
 
                   return (
-                    <span key={bIndex}>
-                      {b.text && <p className={styles.text}>{b.text}</p>}
+                    <div key={key} className={styles.inline}>
+                      {b.text && <span className={styles.text}>{b.text}</span>}
                       {b.blank && (
                         <input
                           type="text"
@@ -69,7 +85,6 @@ export const FillInTheBlanks = ({ exercises }) => {
                               [key]: e.target.value,
                             }))
                           }
-                          // disabled={checked}
                           className={[
                             styles.blank,
                             checked && results[key] === true && styles.correct,
@@ -79,9 +94,10 @@ export const FillInTheBlanks = ({ exercises }) => {
                           ]
                             .filter(Boolean)
                             .join(" ")}
+                          style={{ width: `${Math.max(b.blank.length, 2)}ch` }}
                         />
                       )}
-                    </span>
+                    </div>
                   );
                 })}
               </div>
@@ -89,7 +105,9 @@ export const FillInTheBlanks = ({ exercises }) => {
           </div>
         </React.Fragment>
       ))}
-
+      <span>
+        Score: {totalScore} out of {totalBlanks}
+      </span>
       <div className="button-wrapper">
         <Button icon={<Check />} onToggle={handleCheck} />
         <Button icon={<Redo />} onToggle={handleReset} />

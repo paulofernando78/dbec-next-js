@@ -82,6 +82,13 @@ const fillInTheBlanksExercises = [
           { text: "in the morning." }
         ],
       },
+      {
+        block: [
+          { text: "He" },
+          { blank: "walks" },
+          { text: "to school." }
+        ],
+      },
     ],
   },
   {

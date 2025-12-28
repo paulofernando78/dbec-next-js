@@ -12,12 +12,14 @@
 }
 
 .blank {
+  box-sizing: content-box;
   margin: 0 5px 2px 0;
-  padding: 2px 5px;
+  padding: 2px 4px;
   border: 1px solid var(--slate-3);
   border-radius: 5px;
   background-color: white;
   width: 50px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .blank:focus {
