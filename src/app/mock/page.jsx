@@ -64,11 +64,15 @@ const radioExercises = {
   ],
 };
 
-const fillInExercises = {
+const fillInTheBlanksExercises = {
   instructions: "",
-  questions: [
+  texts: [
     {
-      text: "",
+      text: "aaa",
+      blank: ""
+    },
+    {
+      text: "aaa",
       blank: ""
     }
   ]
@@ -114,7 +118,7 @@ export default function Mock() {
         <Comparison groups={words} />
         <Ribbon label="Exercises" />
         <Radio exercises={radioExercises} />
-        <FillInTheBlanks />
+        <FillInTheBlanks exercises={fillInTheBlanksExercises} />
       </div>
     </>
   );

@@ -1,8 +1,19 @@
-export const FillInTheBlanks = ({}) => {
+import styles from "./FillInTheBlanks.module.css";
+
+import React from "react";
+
+export const FillInTheBlanks = ({ exercises }) => {
   return (
     <>
-      <p>Test</p>
-      <input type="text" />
+      <p>{exercises.instructions}</p>
+      <div>
+        {exercises.texts.map((t, index) => (
+          <React.Fragment key={index}>
+            <p className={styles.text}>{t.text}</p>
+            <input type="text" className={styles.blank}/>
+          </React.Fragment>
+        ))}
+      </div>
     </>
   );
 };

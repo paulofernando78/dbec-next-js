@@ -46,7 +46,7 @@ export const Radio = ({ exercises }) => {
             {q.options.map((opt, optIndex) => {
               const isActive = selected[qIndex] === optIndex;
               const isChecked = checked;
-              const isDisabled = checked;
+              // const isDisabled = checked;
               const isWrong = isChecked && isActive && !opt.isCorrect;
               const isCorrect = isChecked && isActive && opt.isCorrect;
 
@@ -69,7 +69,7 @@ export const Radio = ({ exercises }) => {
                       isActive && styles.radioActive,
                       isCorrect && styles.radioGreen,
                       isWrong && styles.radioRed,
-                      isDisabled && styles.radioDisabled,
+                      // isDisabled && styles.radioDisabled,
                     ]
                       .filter(Boolean)
                       .join(" ")}

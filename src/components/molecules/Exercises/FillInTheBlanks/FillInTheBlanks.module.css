@@ -1,0 +1,10 @@
+.text {
+  display: inline-block;
+}
+
+.blank {
+  margin: 5px;
+  padding: 2px 5px;
+  border: 1px solid var(--slate-3);
+  border-radius: 5px;
+}
