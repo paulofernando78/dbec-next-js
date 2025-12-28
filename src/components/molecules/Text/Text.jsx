@@ -1,8 +1,9 @@
 "use client"
 
 import styles from "./Text.module.css"
-import {  UnderConstruction, Exclamation, Correct, Incorrect, PlayAudio, StopAudio } from "@/lib/svg-imports"
+import {  UnderConstruction, Exclamation, Correct, Incorrect } from "@/lib/svg-imports"
 import Image from "next/image"
+import { Audio } from "@/components/atoms/Audio"
 import { useState, useRef } from "react"
 
 export const Text = ({
@@ -59,24 +60,7 @@ export const Text = ({
         {exclamation && <Exclamation />}
         {correct && <Correct className="icon-position"/>}
         {incorrect && <Incorrect className="icon-position"/>}
-        {playAudio && (
-          playing ? (
-            <StopAudio
-              className="icon-position"
-              onClick={handleStop}/>
-          ) : (
-            <PlayAudio
-              className="icon-position"
-              onClick={handlePlay}
-            />
-          )
-        )}
-        {playAudio &&
-          <audio ref={audioRef} src={playAudio} preload="metadata"
-          onEnded={handleEnded}
-          />
-          
-        }
+        {playAudio && <Audio src={playAudio}/>}
 
         {bold ? <strong className="bold">{children}</strong> : children}
       </p>
