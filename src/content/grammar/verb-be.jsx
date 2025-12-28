@@ -9,7 +9,7 @@ import { List } from "@/components/molecules/List";
 
 const fillInTheBlanksExercises = [
   {
-    instructions: "1. Fill in the blanks.",
+    instructions: "1. Fill in the blanks with affirmative form.",
     blocks: [
       {
         block: [{ text: "I" }, { blank: "am" }],
@@ -66,7 +66,10 @@ export default function VerbBe() {
       <Whiteboard title="Grammar" subtitle="Verb Be" />
       <div className="line-break">
         <Ribbon label="INTRODUCTION" />
-        <div>
+       
+        <Ribbon label="PRESENTATION" />
+        <Ribbon label="Meaning" />
+         <div>
           <Text>Identidade:</Text>
           <Text playAudio="/audio/grammar/verb-be/identidade/im-paul.mp3">
             <BulletPoint /> I’m Paul.{" "}
@@ -102,8 +105,8 @@ export default function VerbBe() {
           <Text playAudio="/audio/general/shes-happy.mp3">
             <BulletPoint /> She’s happy.
           </Text>
-          <Text playAudio="">
-            <BulletPoint /> They’re ready to go.
+          <Text playAudio="/audio/general/shes-happy.mp3">
+            <BulletPoint /> This car is fast.
           </Text>
         </div>
         <div>
@@ -118,8 +121,6 @@ export default function VerbBe() {
             <BulletPoint /> Juan and Maria are mexican.
           </Text>
         </div>
-        <Ribbon label="PRESENTATION" />
-        <Ribbon label="Meaning" />
         <Ribbon label="Pronunciation" />
         <Ribbon label="Form" />
         <div className="flex-container">
