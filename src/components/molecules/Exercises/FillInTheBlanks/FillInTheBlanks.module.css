@@ -22,8 +22,6 @@
   background-color: white;
   width: 50px;
   font-family: 'Courier New', Courier, monospace;
-  position: relative;
-  top: 1px
 }
 
 .blank:focus {
