@@ -64,19 +64,55 @@ const radioExercises = {
   ],
 };
 
-const fillInTheBlanksExercises = {
-  instructions: "1. Fill in the blanks with the correcBoldt answer.",
-  texts: [
-    {
-      text: "He",
-      blank: "lives"
-    },
-    {
-      text: "in the USA.",
-    },
-    
-  ]
-}
+const fillInTheBlanksExercises = [
+  {
+    instructions: "1. Fill in the blanks with the correct answer.",
+    blocks: [
+      {
+        block: [
+          { text: "He" },
+          { blank: "is" },
+          { text: "a teacher." }
+        ],
+      },
+      {
+        block: [
+          { text: "He" },
+          { blank: "teaches" },
+          { text: "in the morning." }
+        ],
+      },
+    ],
+  },
+  {
+    instructions: "2. Fill in the blanks with the correct answer.",
+    blocks: [
+      {
+        block: [
+          {
+            text: "1. He",
+            blank: "lives",
+          },
+          {
+            text: "in the USA.",
+          },
+        ],
+        lineBreak: true
+      },
+      {
+        block: [
+          {
+            text: "2. They",
+            blank: "work",
+          },
+          {
+            text: "in an office.",
+          },
+        ],
+      },
+    ],
+  },
+];
 
 export default function Mock() {
   return (
