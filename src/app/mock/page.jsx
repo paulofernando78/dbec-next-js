@@ -187,62 +187,33 @@ export default function Mock() {
           }}
         />
         <FillInTheBlanks
-          exercises={[
-            {
-              instructions: "1. Fill in the blanks with the correct answer.",
-              blocks: [
-                {
-                  block: [
-                    { text: "He" },
-                    { blank: "is" },
-                    { text: "a teacher." },
-                  ],
-                },
-                {
-                  block: [
-                    { text: "He" },
-                    { blank: "teaches" },
-                    { text: "in the morning." },
-                  ],
-                },
-                {
-                  block: [
-                    { text: "He" },
-                    { blank: "walks" },
-                    { text: "to school." },
-                  ],
-                },
-              ],
-            },
-            {
-              instructions: "2. Fill in the blanks with the correct answer.",
-              blocks: [
-                {
-                  block: [
-                    {
-                      text: "1. He",
-                      blank: "lives",
-                    },
-                    {
-                      text: "in the USA.",
-                    },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    {
-                      text: "2. They",
-                      blank: "work",
-                    },
-                    {
-                      text: "in an office.",
-                    },
-                  ],
-                },
-              ],
-            },
-          ]}
+          exercises={{
+            instructions: "1. Fill in the blanks with the correct answer.",
+            blocks: [
+              {
+                block: [
+                  { text: "He" },
+                  { blank: "is" },
+                  { text: "a teacher." },
+                ],
+                lineBreak: true
+              },
+              {
+                block: [
+                  { text: "He" },
+                  { blank: "teaches" },
+                  { text: "in the morning." },
+                ],
+              },
+              {
+                block: [
+                  { text: "He" },
+                  { blank: "walks" },
+                  { text: "to school." },
+                ],
+              },
+            ],
+          }}
         />
       </div>
     </>

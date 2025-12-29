@@ -17,20 +17,18 @@ export const FillInTheBlanks = ({ exercises }) => {
     let score = 0;
     const newResults = {};
 
-    exercises.forEach((e, eIndex) => {
-      e.blocks.forEach((bs, bsIndex) => {
-        bs.block.forEach((b, bIndex) => {
-          if (b.blank) {
-            const key = `${eIndex}-${bsIndex}-${bIndex}`;
-            const user = answers[key]?.trim().toLowerCase();
-            const correct = b.blank.trim().toLowerCase();
+    exercises.blocks.forEach((bs, bsIndex) => {
+      bs.block.forEach((b, bIndex) => {
+        if (!b.blank) return;
 
-            const isCorrect = user === correct;
-            newResults[key] = isCorrect;
+        const key = `${bsIndex}-${bIndex}`;
+        const user = answers[key]?.trim().toLowerCase();
+        const correct = b.blank.trim().toLowerCase();
 
-            if (isCorrect) score += 1;
-          }
-        });
+        const isCorrect = user === correct;
+        newResults[key] = isCorrect;
+
+        if (isCorrect) score++;
       });
     });
 
@@ -45,73 +43,57 @@ export const FillInTheBlanks = ({ exercises }) => {
     setChecked(false);
   };
 
-  const totalBlanks = exercises.reduce((acc, e) => {
-    return (
-      acc +
-      e.blocks.reduce((bsAcc, bs) => {
-        return bsAcc + bs.block.filter((b) => b.blank).length;
-      }, 0)
-    );
+  const totalBlanks = exercises.blocks.reduce((acc, bs) => {
+    return acc + bs.block.filter((b) => b.blank).length;
   }, 0);
 
-  return (
-    <>
-      {exercises.map((e, eIndex) => (
-        <React.Fragment key={eIndex}>
-          {e.instructions && (
-            <p>
-              <Bold>{e.instructions}</Bold>
-            </p>
-          )}
-          <div>
-            {e.blocks.map((bs, bsIndex) => (
-              <div
-                key={bsIndex}
-                className={bs.lineBreak ? styles.block : styles.inline}
-              >
-                {bs.block.map((b, bIndex) => {
-                  const key = `${eIndex}-${bsIndex}-${bIndex}`;
+return (
+  <>
+    <p>
+      <Bold>{exercises.instructions}</Bold>
+    </p>
 
-                  return (
-                    <div key={key} className={styles.inline}>
-                      {b.text && <span className={styles.text}>{b.text}</span>}
-                      {b.blank && (
-                        <input
-                          type="text"
-                          value={answers[key] || ""}
-                          onChange={(e) =>
-                            setAnswers((prev) => ({
-                              ...prev,
-                              [key]: e.target.value,
-                            }))
-                          }
-                          className={[
-                            styles.blank,
-                            checked && results[key] === true && styles.correct,
-                            checked &&
-                              results[key] === false &&
-                              styles.incorrect,
-                          ]
-                            .filter(Boolean)
-                            .join(" ")}
-                          style={{ width: `${Math.max(b.blank.length, 2)}ch` }}
-                        />
-                      )}
-                    </div>
-                  );
-                })}
+    <div>
+      {exercises.blocks.map((bs, bsIndex) => (
+        <div
+          key={bsIndex}
+          className={bs.lineBreak ? styles.block : styles.inline}
+        >
+          {bs.block.map((b, bIndex) => {
+            const key = `${bsIndex}-${bIndex}`;
+
+            return (
+              <div key={key} className={styles.inline}>
+                {b.text && <span>{b.text}</span>}
+                {b.blank && (
+                  <input
+                    type="text"
+                    disabled={checked}
+                    value={answers[key] || ""}
+                    onChange={(e) =>
+                      setAnswers((prev) => ({
+                        ...prev,
+                        [key]: e.target.value,
+                      }))
+                    }
+                    className={styles.blank}
+                  />
+                )}
               </div>
-            ))}
-          </div>
-        </React.Fragment>
+            );
+          })}
+        </div>
       ))}
-      <span>
-        Score: {totalScore} out of {totalBlanks}
-      </span>
-      <div className="button-wrapper">
-        <Button icon={<Check />} onToggle={handleCheck} />
-        <Button icon={<Redo />} onToggle={handleReset} />
-      </div>
-    </>
-  );
+    </div>
+
+    <span>
+      Score: {totalScore} out of {totalBlanks}
+    </span>
+
+    <div className="button-wrapper">
+      <Button icon={<Check />} onToggle={handleCheck} />
+      <Button icon={<Redo />} onToggle={handleReset} />
+    </div>
+  </>
+);
 };
