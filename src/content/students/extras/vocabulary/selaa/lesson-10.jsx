@@ -1,13 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Bold } from "@/components/atoms/Bold";
-import { Italic } from "@/components/atoms/Italic";
-import { Mark } from "@/components/atoms/Mark";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { Audio } from "@/components/atoms/Audio";
-import { Text } from "@/components/molecules/Text";
+import { Dialogue } from "@/components/molecules/Dialogue";
+import { Radio } from "@/components/molecules/Exercises/Radio";
+import { Ribbon } from "@/components/atoms/Ribbon";
 
-
-export default function SELAAlessonOne() {
+export default function SELAAlessonTen() {
   return (
     <>
       <Whiteboard
@@ -17,14 +13,111 @@ export default function SELAAlessonOne() {
         lesson="Lesson 10 • Bob Visits the Village Market"
       />
       <div className="line-break">
-        <AudioPlayer src="/audio/vocabulary/selaa/lesson-10.mp3"/>
-        <Italic>
-          ...
-        </Italic>
-        <Text>
-          <Bold>...:</Bold> ...
-        </Text>
-        
+        <Dialogue
+          title="Lesson 10 • Bob Visits the Village Market"
+          audioPlayer="/audio/vocabulary/selaa/lesson-10.mp3"
+          lines={[
+            {
+              text: [
+                {
+                  type: "italic",
+                  text: "",
+                },
+              ],
+            },
+            {
+              speaker: "xxx:",
+              text: [
+                "",
+                {
+                  audio: "/audio/general/.mp3",
+                  text: "",
+                  type: "",
+                },
+                "",
+              ],
+            },
+          ]}
+        />
+        <Ribbon label="Exercises" />
+        <Radio
+          exercises={{
+            instruction: "Choose the best response.",
+            questions: [
+              {
+                question:
+                  "1. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "2. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "3. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+              {
+                question: "4. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "5. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "6. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "7. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "8. ",
+                options: [
+                  { option: "", isCorrect: true },
+                  { option: "", isCorrect: false },
+                  { option: "", isCorrect: false },
+                ],
+              },
+            ],
+          }}
+        />
       </div>
     </>
   );
