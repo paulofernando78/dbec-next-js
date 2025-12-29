@@ -1,5 +1,7 @@
+import { Bold } from "@/components/atoms/Bold"
+
 export const BulletPoint = () => {
   return (
-    <span className="bold">•</span>
+    <Bold><span>•</span></Bold>
   )
 }
