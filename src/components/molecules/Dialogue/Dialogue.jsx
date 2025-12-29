@@ -47,7 +47,8 @@ export const Dialogue = ({ title, imgs, audioPlayer, lines }) => {
     <div className="line-break">
       {title && <h4 className={styles.title}>{title}</h4>}
       <div className={styles.flexImg}>
-        {imgs.map(
+        {Array.isArray(imgs) &&
+        imgs.map(
           (i, iIndex) =>
             i.img && (
               <Image

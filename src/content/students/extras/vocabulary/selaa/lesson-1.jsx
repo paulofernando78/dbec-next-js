@@ -14,7 +14,7 @@ export default function SELAAlessonOne() {
       <div className="line-break">
         <Dialogue
           title="Lesson 1 • Bob’s Day at Work"
-          audio="/audio/vocabulary/selaa/lesson-1.mp3"
+          audioPlayer="/audio/vocabulary/selaa/lesson-1.mp3"
           lines={[
             {
               text: [
@@ -46,31 +46,98 @@ export default function SELAAlessonOne() {
             },
             {
               speaker: "Bob:",
-              text: "But everything in there costs an arm and a leg!",
+              text: [
+                "But everything in there ",
+                {
+                  audio: "/audio/general/costs-an-arm-and-a-leg.mp3",
+                  text: "costs an arm and a leg",
+                  type: "mark",
+                },
+                "!",
+              ],
             },
             {
               speaker: "Peter:",
-              text: "That’s true. They do charge top dollar",
+              text: [
+                "That’s true. They do charge ",
+                {
+                  audio: "/audio/general/top-dollar.mp3",
+                  text: "top dollar",
+                  type: "mark",
+                },
+                ".",
+              ],
             },
             {
               speaker: "Bob:",
-              text: "And their salespeople are very strange. They really give me the creeps",
+              text: [
+                "And their salespeople are very strange. They really ",
+                {
+                  audio: "/audio/general/give-me-the-creeps.mp3",
+                  text: "give me the creeps",
+                  type: "mark",
+                },
+                ".",
+              ],
             },
             {
               speaker: "Peter:",
-              text: "Well, they must be doing something right over there. Meanwhile, we’re about to belly-up.",
+              text: [
+                "Well, they must be doing something right over there. Meanwhile, we’re ",
+                {
+                  audio: "/audio/general/about-to.mp3",
+                  text: "about to",
+                  type: "mark",
+                },
+                " ",
+                {
+                  audio: "/audio/general/go-belly-up.mp3",
+                  text: "go-belly-up",
+                  type: "mark",
+                },
+                ".",
+              ],
             },
             {
               speaker: "Bob:",
-              text: "I’m sorry to hear that. I thought my new advertising campaign would save the day real flop",
+              text: [
+                "I’m sorry to hear that. I thought my new advertising campaign would ",
+                {
+                  audio: "/audio/general/save-the-day.mp3",
+                  text: "save the day",
+                  type: "mark",
+                },
+                ".",
+              ],
             },
             {
               speaker: "Peter:",
-              text: "Let’s face it your advertising campaign was a",
+              text: [
+                {
+                  audio: "/audio/general/lets-face-it.mp3",
+                  text: "Let’s face it",
+                  type: "mark",
+                },
+                ": your advertising campaign was a ",
+                {
+                  audio: "/audio/general/real-flop.mp3",
+                  text: "real flop",
+                  type: "mark",
+                },
+                ".",
+              ],
             },
             {
               speaker: "Bob:",
-              text: "Well then I’ll go back to the drawing board.",
+              text: [
+                "Well then I’ll ",
+                {
+                  audio: "/audio/general/go-back-to-the-drawing-board.mp3",
+                  text: "go back to the drawing board",
+                  type: "mark",
+                },
+                ".",
+              ],
             },
             {
               speaker: "Peter:",
@@ -78,27 +145,99 @@ export default function SELAAlessonOne() {
             },
             {
               speaker: "Bob:",
-              text: "What? You’re giving me the ax?",
+              text: [
+                "What? You’re ",
+                {
+                  audio: "/audio/general/giving-me-the-ax.mp3",
+                  text: "giving me the ax",
+                  type: "mark",
+                },
+                "?",
+              ],
             },
             {
               speaker: "Peter:",
-              text: "Yes. I’ve already found a new manager. She’s as sharp as a tack.",
+              text: [
+                "Yes. I’ve already found a new manager. She’s ",
+                {
+                  audio: "/audio/general/as-sharp-as-a-tack.mp3",
+                  text: "as sharp as a tack",
+                  type: "mark",
+                },
+                ".",
+              ],
             },
             {
               speaker: "Bob:",
-              text: "Can’t we even talk this over? After all, I’ve been working here for 10 years!",
+              text: [
+                "Can’t we even ",
+                {
+                  audio: "/audio/general/talk-this-over.mp3",
+                  text: "talk this over",
+                  type: "mark",
+                },
+                "? ",
+                {
+                  audio: "/audio/general/after-all.mp3",
+                  text: "After all",
+                  type: "mark",
+                },
+                ", I’ve been working here for 10 years!"
+              ],
             },
             {
               speaker: "Peter:",
-              text: "There’s no point in arguing, Bob. I’ve already made up my mind.",
+              text: [
+                "There’s ",
+                {
+                  audio: "/audio/general/no-point-in.mp3",
+                  text: "no point in",
+                  type: "mark",
+                },
+                " arguing, Bob. I’ve already ",
+                {
+                  audio: "/audio/general/made-up-my-mind.mp3",
+                  text: "made up my mind",
+                  type: "mark",
+                },
+                "."
+              ],
             },
             {
               speaker: "Bob:",
-              text: "Oh well, at least I won’t have to put up with your nonsense anymore! Good-bye to you and good-bye to this dead-end job",
+              text: [
+                "Oh well, ",
+                {
+                  audio: "/audio/general/at-least.mp3",
+                  text: "at least",
+                  type: "mark",
+                },
+                " I won’t have to ",
+                {
+                  audio: "/audio/general/put-up-with.mp3",
+                  text: "put up with",
+                  type: "mark",
+                },
+                " your nonsense anymore! Good-bye to you and good-bye to this ",
+                {
+                  audio: "/audio/general/dead-end-job.mp3",
+                  text: "dead-end job",
+                  type: "mark",
+                },
+                "."
+              ],
             },
             {
               speaker: "Peter:",
-              text: "Please leave before I lose my temper",
+              text: [
+                "Please leave before I ",
+                {
+                  audio: "/audio/general/lose-my-temper.mp3",
+                  text: "lose my temper",
+                  type: "mark",
+                },
+                "!",
+              ],
             },
           ]}
         />

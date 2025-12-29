@@ -8,41 +8,6 @@ import { AudioPlayer } from "@/components/atoms/AudioPlayer/AudioPlayer";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
-const words = [
-  {
-    comparison: [
-      {
-        playAudio: "/....mp3",
-        word: "Example 1",
-        phonetics: "/.../",
-        translation: "...",
-      },
-      {
-        playAudio: "/....mp3",
-        word: "Example 2",
-        phonetics: "/.../",
-        translation: "...",
-      },
-    ],
-  },
-  {
-    comparison: [
-      {
-        playAudio: "/....mp3",
-        word: "Example 1",
-        phonetics: "/.../",
-        translation: "...",
-      },
-      {
-        playAudio: "/....mp3",
-        word: "Example 2",
-        phonetics: "/.../",
-        translation: "...",
-      },
-    ],
-  },
-];
-
 export default function Mock() {
   return (
     <>
@@ -177,7 +142,26 @@ export default function Mock() {
           ]}
         />
         <Ribbon label="Word Sound" />
-        <Comparison groups={words} />
+        <Comparison
+          groups={[
+            {
+              comparison: [
+                {
+                  playAudio: "/....mp3",
+                  word: "Example 1",
+                  phonetics: "/.../",
+                  translation: "...",
+                },
+                {
+                  playAudio: "/....mp3",
+                  word: "Example 2",
+                  phonetics: "/.../",
+                  translation: "...",
+                },
+              ],
+            },
+          ]}
+        />
         <Ribbon label="Exercises" />
         <Radio
           exercises={{
