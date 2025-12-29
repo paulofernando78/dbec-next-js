@@ -1,6 +1,8 @@
 "use client";
 
 import styles from "./Radio.module.css";
+
+import { Bold } from "@/components/atoms/Bold";
 import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
 import { useState } from "react";
@@ -36,7 +38,7 @@ export const Radio = ({ exercises }) => {
     <>
       <div className="line-break">
         <p>
-          <strong>{exercises.instruction}</strong>
+          <Bold>{exercises.instruction}</Bold>
         </p>
 
         {exercises.questions.map((q, qIndex) => (

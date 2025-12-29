@@ -2,10 +2,10 @@
 
 import styles from "./FillInTheBlanks.module.css";
 
-import React, { useState } from "react";
 import { Bold } from "@/components/atoms/Bold";
 import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
+import React, { useState } from "react";
 
 export const FillInTheBlanks = ({ exercises }) => {
   const [answers, setAnswers] = useState({});

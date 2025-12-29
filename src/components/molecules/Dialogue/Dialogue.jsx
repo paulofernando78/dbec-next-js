@@ -14,6 +14,8 @@ function renderInline(text) {
     return text;
   }
 
+  if (!Array.isArray(text)) return null;
+
   return text.map((part, i) => {
     // "I" + ’m + " Paulo."
     if (typeof part === "string") return part;
@@ -21,23 +23,21 @@ function renderInline(text) {
     const content = (() => {
       switch (part.type) {
         case "bold":
-          return <Bold key={i}>{part.text}</Bold>;
+          return <Bold>{part.text}</Bold>;
         case "italic":
-          return <Italic key={i}>{part.text}</Italic>;
+          return <Italic>{part.text}</Italic>;
         case "mark":
-          return <Mark key={i}>{part.text}</Mark>;
+          return <Mark>{part.text}</Mark>;
         default:
           return null;
       }
     })();
 
     return (
-      <>
-        <span key={i}>
-          {part.audio && <Audio src={part.audio} />}
-          {content}
-        </span>
-      </>
+      <span key={i}>
+        {part.audio && <Audio src={part.audio} />}
+        {content}
+      </span>
     );
   });
 }

@@ -43,77 +43,6 @@ const words = [
   },
 ];
 
-const radioExercises = {
-  instruction: "Choose the best response.",
-  questions: [
-    {
-      question: "1. Question",
-      options: [
-        { option: "option 1", isCorrect: true },
-        { option: "option 2", isCorrect: false },
-        { option: "option 3", isCorrect: false },
-      ],
-    },
-    {
-      question: "2. Question",
-      options: [
-        { option: "option 1", isCorrect: true },
-        { option: "option 2", isCorrect: false },
-        { option: "option 3", isCorrect: false },
-      ],
-    },
-  ],
-};
-
-const fillInTheBlanksExercises = [
-  {
-    instructions: "1. Fill in the blanks with the correct answer.",
-    blocks: [
-      {
-        block: [{ text: "He" }, { blank: "is" }, { text: "a teacher." }],
-      },
-      {
-        block: [
-          { text: "He" },
-          { blank: "teaches" },
-          { text: "in the morning." },
-        ],
-      },
-      {
-        block: [{ text: "He" }, { blank: "walks" }, { text: "to school." }],
-      },
-    ],
-  },
-  {
-    instructions: "2. Fill in the blanks with the correct answer.",
-    blocks: [
-      {
-        block: [
-          {
-            text: "1. He",
-            blank: "lives",
-          },
-          {
-            text: "in the USA.",
-          },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "2. They",
-            blank: "work",
-          },
-          {
-            text: "in an office.",
-          },
-        ],
-      },
-    ],
-  },
-];
-
 export default function Mock() {
   return (
     <>
@@ -219,7 +148,7 @@ export default function Mock() {
                   alt: "",
                   width: 200,
                   height: 200,
-                }
+                },
               ],
             },
             {
@@ -250,8 +179,87 @@ export default function Mock() {
         <Ribbon label="Word Sound" />
         <Comparison groups={words} />
         <Ribbon label="Exercises" />
-        <Radio exercises={radioExercises} />
-        <FillInTheBlanks exercises={fillInTheBlanksExercises} />
+        <Radio
+          exercises={{
+            instruction: "Choose the best response.",
+            questions: [
+              {
+                question: "1. Question",
+                options: [
+                  { option: "option 1", isCorrect: true },
+                  { option: "option 2", isCorrect: false },
+                  { option: "option 3", isCorrect: false },
+                ],
+              },
+              {
+                question: "2. Question",
+                options: [
+                  { option: "option 1", isCorrect: true },
+                  { option: "option 2", isCorrect: false },
+                  { option: "option 3", isCorrect: false },
+                ],
+              },
+            ],
+          }}
+        />
+        <FillInTheBlanks
+          exercises={[
+            {
+              instructions: "1. Fill in the blanks with the correct answer.",
+              blocks: [
+                {
+                  block: [
+                    { text: "He" },
+                    { blank: "is" },
+                    { text: "a teacher." },
+                  ],
+                },
+                {
+                  block: [
+                    { text: "He" },
+                    { blank: "teaches" },
+                    { text: "in the morning." },
+                  ],
+                },
+                {
+                  block: [
+                    { text: "He" },
+                    { blank: "walks" },
+                    { text: "to school." },
+                  ],
+                },
+              ],
+            },
+            {
+              instructions: "2. Fill in the blanks with the correct answer.",
+              blocks: [
+                {
+                  block: [
+                    {
+                      text: "1. He",
+                      blank: "lives",
+                    },
+                    {
+                      text: "in the USA.",
+                    },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    {
+                      text: "2. They",
+                      blank: "work",
+                    },
+                    {
+                      text: "in an office.",
+                    },
+                  ],
+                },
+              ],
+            },
+          ]}
+        />
       </div>
     </>
   );
