@@ -70,25 +70,17 @@ const fillInTheBlanksExercises = [
     instructions: "1. Fill in the blanks with the correct answer.",
     blocks: [
       {
-        block: [
-          { text: "He" },
-          { blank: "is" },
-          { text: "a teacher." }
-        ],
+        block: [{ text: "He" }, { blank: "is" }, { text: "a teacher." }],
       },
       {
         block: [
           { text: "He" },
           { blank: "teaches" },
-          { text: "in the morning." }
+          { text: "in the morning." },
         ],
       },
       {
-        block: [
-          { text: "He" },
-          { blank: "walks" },
-          { text: "to school." }
-        ],
+        block: [{ text: "He" }, { blank: "walks" }, { text: "to school." }],
       },
     ],
   },
@@ -105,7 +97,7 @@ const fillInTheBlanksExercises = [
             text: "in the USA.",
           },
         ],
-        lineBreak: true
+        lineBreak: true,
       },
       {
         block: [
@@ -161,91 +153,97 @@ export default function Mock() {
         <Ribbon label="Dialogue" />
         <Dialogue
           title="Title"
-          audioSrc="/audio/vocabulary/selaa/lesson-1.mp3"
+          imgs={[
+            {
+              img: "/img/general/cat-1.jpg",
+              alt: "",
+              width: 200,
+              height: 200,
+            },
+            {
+              img: "/img/general/cat-2.jpg",
+              alt: "",
+              width: 200,
+              height: 200,
+            },
+            {
+              img: "/img/general/cat-3.jpg",
+              alt: "",
+              width: 200,
+              height: 200,
+            },
+          ]}
+          audioPlayer="/audio/vocabulary/selaa/lesson-1.mp3"
           lines={[
             {
+              speaker: "speaker:",
+              audio: "/audio/vocabulary/selaa/lesson-1.mp3",
               text: [
+                "test ",
+                {
+                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
+                  type: "bold",
+                  text: "test",
+                },
+                " test ",
+                {
+                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
+                  type: "italic",
+                  text: "test",
+                },
+                " test ",
+                {
+                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
+                  type: "mark",
+                  text: "test",
+                },
+                " test",
+              ],
+            },
+            {
+              imgs: [
+                {
+                  img: "/img/general/cat-1.jpg",
+                  alt: "",
+                  width: 200,
+                  height: 200,
+                },
+                {
+                  img: "/img/general/cat-2.jpg",
+                  alt: "",
+                  width: 200,
+                  height: 200,
+                },
+                {
+                  img: "/img/general/cat-3.jpg",
+                  alt: "",
+                  width: 200,
+                  height: 200,
+                }
+              ],
+            },
+            {
+              speaker: "speaker:",
+              audio: "/audio/vocabulary/selaa/lesson-1.mp3",
+              text: [
+                "test ",
+                {
+                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
+                  type: "bold",
+                  text: "test",
+                },
+                " test ",
                 {
                   type: "italic",
-                  text: "Bob works as a manager in a furniture store. Peter, his boss, is not happy about sales. Bob’s new advertising campaign hasn’t helped. Peter decides to fire him.",
+                  text: "test",
                 },
-              ],
-            },
-            {
-              speaker: "Peter:",
-              text: [
-                "Bob, I hate to break the news ",
+                " test ",
                 {
-                  audio: "/audio/general/break-the-news.mp3",
-                  text: "break the news",
                   type: "mark",
+                  text: "test",
                 },
-                ", but our sales were down again last month.",
+                " test",
               ],
-            },
-            {
-              speaker: "Bob:",
-              text: "Down again, Peter?",
-            },
-            {
-              speaker: "Peter:",
-              text: "Yeah. These days, everybody’s shopping at our competition, Honest Abe’s Furniture Store.",
-            },
-            {
-              speaker: "Bob:",
-              text: "But everything in there costs an arm and a leg!",
-            },
-            {
-              speaker: "Peter:",
-              text: "That’s true. They do charge top dollar",
-            },
-            {
-              speaker: "Bob:",
-              text: "And their salespeople are very strange. They really give me the creeps",
-            },
-            {
-              speaker: "Peter:",
-              text: "Well, they must be doing something right over there. Meanwhile, we’re about to belly-up.",
-            },
-            {
-              speaker: "Bob:",
-              text: "I’m sorry to hear that. I thought my new advertising campaign would save the day real flop",
-            },
-            {
-              speaker: "Peter:",
-              text: "Let’s face it your advertising campaign was a",
-            },
-            {
-              speaker: "Bob:",
-              text: "Well then I’ll go back to the drawing board.",
-            },
-            {
-              speaker: "Peter:",
-              text: "It’s too late for that. You’re fired!",
-            },
-            {
-              speaker: "Bob:",
-              text: "What? You’re giving me the ax?",
-            },
-            {
-              speaker: "Peter:",
-              text: "Yes. I’ve already found a new manager. She’s as sharp as a tack.",
-            },
-            {
-              speaker: "Bob:",
-              text: "Can’t we even talk this over? After all, I’ve been working here for 10 years!",
-            },
-            {
-              speaker: "Peter:",
-              text: "There’s no point in arguing, Bob. I’ve already made up my mind.",
-            },
-            {
-              speaker: "Bob:",
-              text: "Oh well, at least I won’t have to put up with your nonsense anymore! Good-bye to you and good-bye to this dead-end job",
-            },
-            {
-              speaker: "Peter:",
-              text: "Please leave before I lose my temper",
             },
           ]}
         />

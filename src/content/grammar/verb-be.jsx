@@ -453,7 +453,7 @@ export default function VerbBe() {
 
         <Dialogue
           title="Meeting someone"
-          image = {[
+          imgs = {[
             {
               img: "/img/general/two-people-talking.png",
               alt: "Two people talking",

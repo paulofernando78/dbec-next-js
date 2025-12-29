@@ -15,7 +15,7 @@ export const Text = ({
   exclamation,
   correct,
   incorrect,
-  playAudio,
+  audio,
   bold,
   children
 }) => {
@@ -42,7 +42,7 @@ export const Text = ({
         {exclamation && <Exclamation />}
         {correct && <Correct className="icon-position"/>}
         {incorrect && <Incorrect className="icon-position"/>}
-        {playAudio && <Audio src={playAudio}/>}
+        {audio && <Audio src={audio}/>}
 
         {bold ? <strong className="bold">{children}</strong> : children}
       </p>
