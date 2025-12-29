@@ -13,6 +13,10 @@ export const FillInTheBlanks = ({ exercises }) => {
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
 
+  if (!exercises || !exercises.blocks) {
+    return null;
+  }
+
   const handleCheck = () => {
     let score = 0;
     const newResults = {};
@@ -47,53 +51,61 @@ export const FillInTheBlanks = ({ exercises }) => {
     return acc + bs.block.filter((b) => b.blank).length;
   }, 0);
 
-return (
-  <>
-    <p>
-      <Bold>{exercises.instructions}</Bold>
-    </p>
+  return (
+    <>
+      <p>
+        <Bold>{exercises.instructions}</Bold>
+      </p>
 
-    <div>
-      {exercises.blocks.map((bs, bsIndex) => (
-        <div
-          key={bsIndex}
-          className={bs.lineBreak ? styles.block : styles.inline}
-        >
-          {bs.block.map((b, bIndex) => {
-            const key = `${bsIndex}-${bIndex}`;
+      <div>
+        {exercises.blocks.map((bs, bsIndex) => (
+          <div
+            key={bsIndex}
+            className={bs.lineBreak ? styles.block : styles.inline}
+          >
+            {bs.block.map((b, bIndex) => {
+              const key = `${bsIndex}-${bIndex}`;
 
-            return (
-              <div key={key} className={styles.inline}>
-                {b.text && <span>{b.text}</span>}
-                {b.blank && (
-                  <input
-                    type="text"
-                    disabled={checked}
-                    value={answers[key] || ""}
-                    onChange={(e) =>
-                      setAnswers((prev) => ({
-                        ...prev,
-                        [key]: e.target.value,
-                      }))
-                    }
-                    className={styles.blank}
-                  />
-                )}
-              </div>
-            );
-          })}
-        </div>
-      ))}
-    </div>
+              return (
+                <div key={key} className={styles.inline}>
+                  {b.text && <span>{b.text}</span>}
+                  {b.blank && (
+                    <input
+                      type="text"
+                      value={answers[key] || ""}
+                      onChange={(e) =>
+                        setAnswers((prev) => ({
+                          ...prev,
+                          [key]: e.target.value,
+                        }))
+                      }
+                      className={[
+                            styles.blank,
+                            checked && results[key] === true && styles.correct,
+                            checked &&
+                              results[key] === false &&
+                              styles.incorrect,
+                          ]
+                            .filter(Boolean)
+                            .join(" ")}
+                          style={{ width: `${Math.max(b.blank.length, 2)}ch` }}
+                    />
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
 
-    <span>
-      Score: {totalScore} out of {totalBlanks}
-    </span>
+      <span>
+        Score: {totalScore} out of {totalBlanks}
+      </span>
 
-    <div className="button-wrapper">
-      <Button icon={<Check />} onToggle={handleCheck} />
-      <Button icon={<Redo />} onToggle={handleReset} />
-    </div>
-  </>
-);
+      <div className="button-wrapper">
+        <Button icon={<Check />} onToggle={handleCheck} />
+        <Button icon={<Redo />} onToggle={handleReset} />
+      </div>
+    </>
+  );
 };
