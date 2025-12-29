@@ -82,9 +82,7 @@ export const FillInTheBlanks = ({ exercises }) => {
                       className={[
                             styles.blank,
                             checked && results[key] === true && styles.correct,
-                            checked &&
-                              results[key] === false &&
-                              styles.incorrect,
+                            checked && results[key] === false && styles.incorrect,
                           ]
                             .filter(Boolean)
                             .join(" ")}
