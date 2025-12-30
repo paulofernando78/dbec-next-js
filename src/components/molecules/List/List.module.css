@@ -1,0 +1,16 @@
+.bulleted {
+  padding-left: 1.5rem;
+}
+
+.bulleted li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.noBullet {
+  padding-left: 0;
+}
+
+.noBullet li {
+  list-style-type: none;
+}

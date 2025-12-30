@@ -28,7 +28,7 @@ export default function SELAAlessonOne() {
             {
               speaker: "Peter:",
               text: [
-                "Bob, I hate to",
+                "Bob, I hate to ",
                 {
                   audio: "/audio/general/break-the-news.mp3",
                   text: "break the news",

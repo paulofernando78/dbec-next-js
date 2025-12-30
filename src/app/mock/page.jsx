@@ -1,8 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { Card } from "@/components/atoms/Card";
-import { Paragraph } from "@/components/molecules/Paragraph";
 import { InlineText } from "@/components/molecules/InlineText";
+import { List } from "@/components/molecules/List";
+import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Comparison } from "../../components/molecules/Comparison/Comparison";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer/AudioPlayer";
@@ -21,14 +22,113 @@ export default function Mock() {
         <Ribbon label="INLINE TEXT" />
         <InlineText
           text={[
-              "I ",
-              {
-                audio: "/audio/general/about-to.mp3",
-                type: "bold",
-                text: "am"
-              },
-              " a teacher."
-            ]}
+            "I ",
+            {
+              audio: "/audio/general/am.mp3",
+              type: "bold",
+              text: "am",
+            },
+            " a teacher. I ",
+            {
+              audio: "/audio/general/work.mp3",
+              type: "bold",
+              text: "work",
+            },
+            " at a school.",
+          ]}
+        />
+        <Ribbon label="LIST" />
+        <List
+          bullet={false}
+          items={[
+            {
+              text: [
+                "List 1 ",
+                {
+                  audio: "/audio/general/about-to.mp3",
+                  type: "bold",
+                  text: "teste",
+                },
+                " teste",
+              ],
+            },
+            {
+              text: [
+                "List 2 ",
+                {
+                  audio: "/audio/general/about-to.mp3",
+                  type: "italic",
+                  text: "teste",
+                },
+                " teste",
+              ],
+            },
+            {
+              text: [
+                "List 3 ",
+                {
+                  audio: "/audio/general/about-to.mp3",
+                  type: "mark",
+                  text: "teste",
+                },
+                " teste",
+              ],
+            },
+          ]}
+        />
+        <List
+          bullet={false}
+          items={[
+            {
+              text: [
+                "...",
+                {
+                  audio: "/audio/general/....mp3",
+                  type: "bold",
+                  text: "...",
+                },
+                " ...",
+              ],
+            },
+          ]}
+        />
+        <InlineText text={["+ bullet"]} />
+        <List
+          items={[
+            {
+              text: [
+                "List 1 ",
+                {
+                  audio: "/audio/general/about-to.mp3",
+                  type: "bold",
+                  text: "teste",
+                },
+                " teste",
+              ],
+            },
+            {
+              text: [
+                "List 2 ",
+                {
+                  audio: "/audio/general/about-to.mp3",
+                  type: "italic",
+                  text: "teste",
+                },
+                " teste",
+              ],
+            },
+            {
+              text: [
+                "List 3 ",
+                {
+                  audio: "/audio/general/about-to.mp3",
+                  type: "mark",
+                  text: "teste",
+                },
+                " teste",
+              ],
+            },
+          ]}
         />
         <Ribbon label="CARD" />
         <Card>Lorem ipsum ...</Card>
@@ -41,11 +141,13 @@ export default function Mock() {
               alt: "",
               width: 200,
               height: 200,
+              audio: "/audio/general/",
               text: [
                 "This is ",
                 {
-                  type: "bold",
                   text: "important",
+                  type: "bold",
+                  audio: "/audio/general/",
                 },
                 " text.",
               ],
@@ -54,9 +156,40 @@ export default function Mock() {
               text: [
                 "Another paragraph with ",
                 {
-                  type: "mark",
                   text: "highlight",
+                  type: "mark",
+                  audio: "/audio/general/",
                 },
+              ],
+            },
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Tenho que fazer minha lição (tarefa de casa).",
+                  type: "translation",  
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: [
+                "I have to make my homework.",
+              ],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/i-have-to-do-my-homework.mp3",
+              text: [
+                "I have to do my homework.",
+                {
+                  text: "",
+                  type: "",
+                },
+                "",
               ],
             },
           ]}
