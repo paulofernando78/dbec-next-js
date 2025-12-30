@@ -7,7 +7,7 @@ import { Bold } from "@/components/atoms/Bold";
 import { Mark } from "@/components/atoms/Mark";
 import { Italic } from "@/components/atoms/Italic";
 
-function renderInline(text) {
+function renderInlineText(text) {
   if (!text) return null;
 
   if (typeof text === "string") {
@@ -84,7 +84,7 @@ export const Dialogue = ({ title, imgs, audioPlayer, lines }) => {
             <p>
               {line.audio && <Audio src={line.audio} />}
               {line.speaker && <Bold>{line.speaker} </Bold>}
-              {renderInline(line.text)}
+              {renderInlineText(line.text)}
             </p>
           </div>
         ))}

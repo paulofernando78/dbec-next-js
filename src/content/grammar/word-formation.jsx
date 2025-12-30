@@ -4,7 +4,6 @@ import styles from "./word-formation.module.css";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { DictionarySearch } from "../../components/molecules/DictionarySearch/DictionarySearch";
-import { Text } from "@/components/molecules/Text";
 import { Bold } from "@/components/atoms/Bold";
 import { RegisterTag } from "@/components/atoms/RegisterTag";
 import { DegreeTag } from "@/components/atoms/DegreeTag";
@@ -2923,33 +2922,6 @@ const words = [
   },
 ];
 
-function escapeRegExp(word) {
-  return word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
-function renderUnderline(text, underlineWords = []) {
-  if (!text) return "-";
-
-  let parts = [text];
-
-  underlineWords.forEach((word) => {
-    const safeWord = escapeRegExp(word);
-    const regex = new RegExp(`(${safeWord})`, "gi");
-
-    parts = parts.flatMap((part) =>
-      typeof part === "string" ? part.split(regex) : part
-    );
-  });
-
-  return parts.map((part, i) =>
-    underlineWords.some((w) => part?.toLowerCase() === w.toLowerCase()) ? (
-      <mark key={i}>{part}</mark>
-    ) : (
-      part
-    )
-  );
-}
-
 export default function WordFormation() {
   const scrollRef = useRef(null);
 
@@ -3010,35 +2982,35 @@ export default function WordFormation() {
       <Whiteboard title="Grammar" subtitle="Word Formation" />
       <div className="line-break">
         {/* <DictionarySearch /> */}
-        <Text>
+        <span>
           <Bold>Use this list as a reference.</Bold>
-        </Text>
+        </span>
         <div ref={scrollRef} className={styles.scroll}>
           <div className={styles.table}>
             {/* Headers */}
-            <Text className={styles.header}>
+            <span className={styles.header}>
               <Bold className="block bold">verb</Bold>
               <span>(-en, -ify)</span>
-            </Text>
+            </span>
 
-            <Text className={styles.header}>
+            <span className={styles.header}>
               <Bold className="block bold">phrasal verb</Bold>
               <span>(+ prepositions)</span>
-            </Text>
+            </span>
 
-            <Text className={styles.header}>
+            <span className={styles.header}>
               <Bold className="block">noun</Bold>
               <span>( -ing, -ness, -ment, -ity, -hood)</span>
-            </Text>
+            </span>
 
-            <Text className={styles.header}>
+            <span className={styles.header}>
               <Bold>adjective </Bold>
               <span>(-ed, ing, -ous, -ive, -able, -ful, -less)</span>
-            </Text>
+            </span>
 
-            <Text className={styles.header}>
+            <span className={styles.header}>
               <Bold>expressions </Bold>
-            </Text>
+            </span>
 
             {/* Rows */}
             {words.map((word, index) => (
@@ -3046,7 +3018,7 @@ export default function WordFormation() {
                 {/* verb */}
                 <div>
                   <>
-                    <Text
+                    <span
                       playAudio={word.verbAudio}
                       className={!word.verbAudio ? styles.hidden : undefined}
                     >
@@ -3055,12 +3027,12 @@ export default function WordFormation() {
                         <RegisterTag>{word.verbRegisterTag}</RegisterTag>
                       )}{" "}
                       <Portuguese>{word.verbPtDefinition}</Portuguese>
-                    </Text>
+                    </span>
                     {word.verbExamples?.map((item, index) => (
-                      <Text key={index}>
+                      <span key={index}>
                         <Bold>•</Bold> {item.example}{" "}
                         <Portuguese>{item.ptExample}</Portuguese>
-                      </Text>
+                      </span>
                     ))}
                   </>
                 </div>
@@ -3069,7 +3041,7 @@ export default function WordFormation() {
                 <div>
                   {word.phrasalVerbs?.map((item, index) => (
                     <>
-                      <Text
+                      <span
                         key={index}
                         playAudio={item.audio}
                         className={!item.audio ? styles.hidden : undefined}
@@ -3079,12 +3051,12 @@ export default function WordFormation() {
                           <RegisterTag>{item.registerTag}</RegisterTag>
                         )}{" "}
                         <Portuguese>{item.ptDefinition}</Portuguese>
-                      </Text>
+                      </span>
                       {item.examples?.map((subItem, index) => (
-                        <Text key={index}>
+                        <span key={index}>
                           <Bold>•</Bold> {subItem.example}{" "}
                           <Portuguese>{subItem.ptExample}</Portuguese>
-                        </Text>
+                        </span>
                       ))}
                     </>
                   ))}
@@ -3094,7 +3066,7 @@ export default function WordFormation() {
                 <div>
                   {word.nouns?.map((item, index) => (
                     <>
-                      <Text
+                      <span
                         key={index}
                         playAudio={item.audio}
                         className={!item.audio ? styles.hidden : undefined}
@@ -3104,12 +3076,12 @@ export default function WordFormation() {
                           <RegisterTag>{item.registerTag}</RegisterTag>
                         )}{" "}
                         <Portuguese>{item.ptDefinition}</Portuguese>
-                      </Text>
+                      </span>
                       {item.examples?.map((subItem, index) => (
-                        <Text key={index}>
+                        <span key={index}>
                           <Bold>•</Bold> {subItem.example}{" "}
                           <Portuguese>{subItem.ptExample}</Portuguese>
-                        </Text>
+                        </span>
                       ))}
                     </>
                   ))}
@@ -3119,7 +3091,7 @@ export default function WordFormation() {
                 <div>
                   {word.adjectives?.map((item, index) => (
                     <>
-                      <Text
+                      <span
                         key={index}
                         playAudio={item.audio}
                         className={!item.audio ? styles.hidden : undefined}
@@ -3132,12 +3104,12 @@ export default function WordFormation() {
                           <DegreeTag>{item.degreeTag}</DegreeTag>
                         )}{" "}
                         <Portuguese>{item.ptDefinition}</Portuguese>
-                      </Text>
+                      </span>
                       {item.examples?.map((subItem, index) => (
-                        <Text key={index}>
+                        <span key={index}>
                           <Bold>•</Bold> {subItem.example}{" "}
                           <Portuguese>{subItem.ptExample}</Portuguese>
-                        </Text>
+                        </span>
                       ))}
                     </>
                   ))}
@@ -3146,14 +3118,14 @@ export default function WordFormation() {
                 {/* expressions */}
                 <div>
                   {word.expressions?.map((item, index) => (
-                    <Text
+                    <span
                       key={index}
                       playAudio={item.audio}
                       className={!item.audio ? styles.hidden : undefined}
                     >
                       <Bold>{item.word}</Bold>{" "}
                       <Portuguese>{item.ptDefinition}</Portuguese>
-                    </Text>
+                    </span>
                   ))}
                 </div>
               </div>

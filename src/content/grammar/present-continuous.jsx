@@ -1,6 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Text } from "@/components/molecules/Text";
-import { Ribbon } from "@/components/atoms/Ribbon";
+
 
 export default function SimplePresent() {
   return (
@@ -9,7 +8,7 @@ export default function SimplePresent() {
       title="Grammar"
       subtitle="Present Continuous / Progressive" />
       <div className="line-break">
-        <Text underConstruction>Under Construction</Text>
+
       </div>
     </>
   );

@@ -28,7 +28,7 @@ export default function SELAAlessonOne() {
             {
               speaker: "Peter:",
               text: [
-                "Bob, I hate to break the news ",
+                "Bob, I hate to",
                 {
                   audio: "/audio/general/break-the-news.mp3",
                   text: "break the news",
@@ -183,7 +183,7 @@ export default function SELAAlessonOne() {
                   text: "After all",
                   type: "mark",
                 },
-                ", I’ve been working here for 10 years!"
+                ", I’ve been working here for 10 years!",
               ],
             },
             {
@@ -201,7 +201,7 @@ export default function SELAAlessonOne() {
                   text: "made up my mind",
                   type: "mark",
                 },
-                "."
+                ".",
               ],
             },
             {
@@ -225,7 +225,7 @@ export default function SELAAlessonOne() {
                   text: "dead-end job",
                   type: "mark",
                 },
-                "."
+                ".",
               ],
             },
             {
@@ -242,13 +242,14 @@ export default function SELAAlessonOne() {
             },
           ]}
         />
-        <Ribbon label="Exercises"/>
+        <Ribbon label="Exercises" />
         <Radio
-          exercises={{
+          data={{
             instruction: "Choose the best response.",
             questions: [
               {
-                question: "1. I can't believe you bought a couch at Honest Abe's. Everything in that store costs an arm and a _____ .",
+                question:
+                  "1. I can't believe you bought a couch at Honest Abe's. Everything in that store costs an arm and a _____ .",
                 options: [
                   { option: "foot", isCorrect: false },
                   { option: "leg", isCorrect: true },
@@ -256,7 +257,8 @@ export default function SELAAlessonOne() {
                 ],
               },
               {
-                question: "2. After Bob found out that his advertising campaign failed, he wanted to go back to the drawing _____ .",
+                question:
+                  "2. After Bob found out that his advertising campaign failed, he wanted to go back to the drawing _____ .",
                 options: [
                   { option: "board", isCorrect: true },
                   { option: "table", isCorrect: false },
@@ -264,7 +266,8 @@ export default function SELAAlessonOne() {
                 ],
               },
               {
-                question: "3. When somebody isn't listening to you, there's no _____ in trying to argue with them.",
+                question:
+                  "3. When somebody isn't listening to you, there's no _____ in trying to argue with them.",
                 options: [
                   { option: "edge", isCorrect: false },
                   { option: "tip", isCorrect: false },
@@ -280,7 +283,8 @@ export default function SELAAlessonOne() {
                 ],
               },
               {
-                question: "5. The salespeople at Honest Abe's always look angry and never speak to anybody. No wonder they _____ Bob the creeps.",
+                question:
+                  "5. The salespeople at Honest Abe's always look angry and never speak to anybody. No wonder they _____ Bob the creeps.",
                 options: [
                   { option: "take", isCorrect: false },
                   { option: "give", isCorrect: true },
@@ -288,7 +292,8 @@ export default function SELAAlessonOne() {
                 ],
               },
               {
-                question: "6. Bob got fired. He isn't looking forward to _____ the news to his family.",
+                question:
+                  "6. Bob got fired. He isn't looking forward to _____ the news to his family.",
                 options: [
                   { option: "breaking", isCorrect: true },
                   { option: "cracking", isCorrect: false },
@@ -296,7 +301,8 @@ export default function SELAAlessonOne() {
                 ],
               },
               {
-                question: "7. Bob thought his new advertisements would bring in lots of customers and save the _____ .",
+                question:
+                  "7. Bob thought his new advertisements would bring in lots of customers and save the _____ .",
                 options: [
                   { option: "morning", isCorrect: false },
                   { option: "night", isCorrect: false },
@@ -304,7 +310,8 @@ export default function SELAAlessonOne() {
                 ],
               },
               {
-                question: "8. Fortunately, Bob no longer has to put _____ with his stupid boss at the furniture store.",
+                question:
+                  "8. Fortunately, Bob no longer has to put _____ with his stupid boss at the furniture store.",
                 options: [
                   { option: "over", isCorrect: false },
                   { option: "in", isCorrect: false },

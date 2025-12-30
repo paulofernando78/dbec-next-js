@@ -1,7 +1,8 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { Card } from "@/components/atoms/Card";
-import { Text } from "@/components/molecules/Text";
+import { Paragraph } from "@/components/molecules/Paragraph";
+import { InlineText } from "@/components/molecules/InlineText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Comparison } from "../../components/molecules/Comparison/Comparison";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer/AudioPlayer";
@@ -17,34 +18,50 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
-        <Text>
-          <span className="red-5 bold italic underlined">Lorem</span> ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
-        </Text>
+        <Ribbon label="INLINE TEXT" />
+        <InlineText
+          text={[
+              "I ",
+              {
+                audio: "/audio/general/about-to.mp3",
+                type: "bold",
+                text: "am"
+              },
+              " a teacher."
+            ]}
+        />
         <Ribbon label="CARD" />
-        <Card>Lorem ipsum dolor sit amet, consectetur...</Card>
-        <Ribbon label="Text" />
+        <Card>Lorem ipsum ...</Card>
+        <Ribbon label="PARAGRAPH" />
         <AudioPlayer src="/audio/audiobooks/starter/a-new-zealand-adventure/auckland.mp3" />
-        <Text
-          imgSrc="/img/paragraph-1.avif"
-          imgAlt="Text pic 1"
-          imgPosition="left"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Text>
-        <Ribbon label="Dialogue" />
+        <Paragraph
+          paragraphs={[
+            {
+              img: "/img/general/cat-1.jpg",
+              alt: "",
+              width: 200,
+              height: 200,
+              text: [
+                "This is ",
+                {
+                  type: "bold",
+                  text: "important",
+                },
+                " text.",
+              ],
+            },
+            {
+              text: [
+                "Another paragraph with ",
+                {
+                  type: "mark",
+                  text: "highlight",
+                },
+              ],
+            },
+          ]}
+        />
+        <Ribbon label="DIALOGUE" />
         <Dialogue
           title="Title"
           imgs={[
@@ -143,7 +160,7 @@ export default function Mock() {
         />
         <Ribbon label="Word Sound" />
         <Comparison
-          groups={[
+          data={[
             {
               comparison: [
                 {
@@ -164,7 +181,7 @@ export default function Mock() {
         />
         <Ribbon label="Exercises" />
         <Radio
-          exercises={{
+          data={{
             instruction: "Choose the best response.",
             questions: [
               {
@@ -187,7 +204,7 @@ export default function Mock() {
           }}
         />
         <FillInTheBlanks
-          exercises={{
+          data={{
             instructions: "1. Fill in the blanks with the correct answer.",
             blocks: [
               {
@@ -196,7 +213,7 @@ export default function Mock() {
                   { blank: "is" },
                   { text: "a teacher." },
                 ],
-                lineBreak: true
+                lineBreak: true,
               },
               {
                 block: [

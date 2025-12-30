@@ -7,13 +7,13 @@ import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
 import React, { useState } from "react";
 
-export const FillInTheBlanks = ({ exercises }) => {
+export const FillInTheBlanks = ({ data }) => {
   const [answers, setAnswers] = useState({});
   const [results, setResults] = useState({});
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
 
-  if (!exercises || !exercises.blocks) {
+  if (!data || !data.blocks) {
     return null;
   }
 
@@ -21,7 +21,7 @@ export const FillInTheBlanks = ({ exercises }) => {
     let score = 0;
     const newResults = {};
 
-    exercises.blocks.forEach((bs, bsIndex) => {
+    data.blocks.forEach((bs, bsIndex) => {
       bs.block.forEach((b, bIndex) => {
         if (!b.blank) return;
 
@@ -47,18 +47,18 @@ export const FillInTheBlanks = ({ exercises }) => {
     setChecked(false);
   };
 
-  const totalBlanks = exercises.blocks.reduce((acc, bs) => {
+  const totalBlanks = data.blocks.reduce((acc, bs) => {
     return acc + bs.block.filter((b) => b.blank).length;
   }, 0);
 
   return (
     <>
       <p>
-        <Bold>{exercises.instructions}</Bold>
+        <Bold>{data.instructions}</Bold>
       </p>
 
       <div>
-        {exercises.blocks.map((bs, bsIndex) => (
+        {data.blocks.map((bs, bsIndex) => (
           <div
             key={bsIndex}
             className={bs.lineBreak ? styles.block : styles.inline}
