@@ -1,5 +1,3 @@
-import { BulletPoint } from "@/components/atoms/BulletPoint";
-import { Text }  from "@/components/molecules/Text";
 import { Whiteboard }from "@/components/molecules/Whiteboard";
 import { Comparison } from "../../components/molecules/Comparison/Comparison";
 
