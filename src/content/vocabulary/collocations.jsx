@@ -1,6 +1,7 @@
 import { Card } from "@/components/atoms/Card";
 import { InlineText } from "@/components/molecules/InlineText";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { List } from "@/components/molecules/List";
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 
 export default function Collocations() {
@@ -10,74 +11,203 @@ export default function Collocations() {
       <div className="line-break">
         <InlineText
           text={[
-            "",
             {
               text: "do / make",
               type: "bold",
               audio: "/audio/general/",
             },
-            "",
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Tenho que fazer minha lição (tarefa de casa).",
+                  type: "translation",
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: ["I have to make my homework."],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/i-have-to-do-my-homework.mp3",
+              text: ["I have to do my homework."],
+            },
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Tenho que fazer a minha cama.",
+                  type: "translation",
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: ["I have to do my bed."],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/.mp3",
+              text: ["I have to make my bed."],
+            },
+          ]}
+        />
+        <InlineText
+          text={[
+            {
+              text: "for / with",
+              type: "bold",
+              audio: "/audio/general/",
+            },
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Estou apaixonado por você.",
+                  type: "translation",
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: ["I’m in love for you."],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/.mp3",
+              text: ["I’m in love with you."],
+            },
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Estou preocupado com você.",
+                  type: "translation",
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: ["I’m worried with you."],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/.mp3",
+              text: ["I’m worried about you."],
+            },
+          ]}
+        />
+        <InlineText
+          text={[
+            {
+              text: "fast / quick",
+              type: "bold",
+              audio: "/audio/general/",
+            },
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Um carro rápido",
+                  type: "translation",
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: ["It’s a quick car."],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/.mp3",
+              text: ["It’s a fast car."],
+            },
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Posso ter uma palavrinha com você?",
+                  type: "translation",
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: ["Can I have a fast word with you?"],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/.mp3",
+              text: ["Can I have a quick word with you?"],
+            },
+          ]}
+        />
+        <Paragraph
+          paragraphs={[
+            {
+              text: [
+                {
+                  text: "Ele é um corredor rápido.",
+                  type: "translation",
+                },
+              ],
+            },
+            {
+              incorrect: true,
+              text: ["He’s a quick runner."],
+            },
+            {
+              correct: true,
+              audio: "/audio/general/.mp3",
+              text: ["He’s a fast runner."],
+            },
+          ]}
+        />
+        <InlineText
+          text={[
+            {
+              text: "Quick costuma enfatizar agilidade, reação, rapidez em pouco tempo:",
+              type: "translation",
+            },
           ]}
         />
 
-        
-        <div>
-          <Text lang="pt">Tenho que fazer a minha cama.</Text>
-          <Text incorrect>I have to do my bed.</Text>
-          <Text correct playAudio="/audio/general/i-have-to-make-my-bed.mp3">
-            I have to make my bed.
-          </Text>
-        </div>
-        <Text bold>for / with</Text>
-        <div>
-          <Text lang="pt">Estou apaixonado por você.</Text>
-          <Text incorrect>I’m in love for you.</Text>
-          <Text correct playAudio="/audio/general/im-in-love-with-you.mp3">
-            I’m in love with you.
-          </Text>
-        </div>
-        <div>
-          <Text lang="pt">Estou preocupado com você.</Text>
-          <Text incorrect>I’m worried with you.</Text>
-          <Text correct playAudio="/audio/general/im-worried-about-you.mp3">
-            I’m worried about you.
-          </Text>
-        </div>
-        <Text bold>fast / quick</Text>
-        <div>
-          <Text lang="pt">Um carro rápido</Text>
-          <Text incorrect>It’s a quick car.</Text>
-          <Text correct playAudio="/audio/general/its-a-fast-car.mp3">
-            It’s a fast car.
-          </Text>
-        </div>
-        <div>
-          <Text lang="pt">Posso ter uma palavrinha com você?</Text>
-          <Text incorrect>Can I have a fast word with you?</Text>
-          <Text
-            correct
-            playAudio="/audio/general/can-I-have-a-quick-word-with-you.mp3"
-          >
-            Can I have a quick word with you?
-          </Text>
-        </div>
-        <div>
-          <Text lang="pt">Ele é um corredor rápido.</Text>
-          <Text incorrect>He’s a quick runner.</Text>
-          <Text correct playAudio="/audio/general/hes-a-fast-runner.mp3">
-            He’s a fast runner.
-          </Text>
-        </div>
         <Card>
-          <Text lang="pt" exclamation>
-            Quick costuma enfatizar agilidade, reação, rapidez em pouco tempo:
-          </Text>
           <List
+            bullet={true}
             items={[
-              "quick response",
-              "quick decision",
-              "quick movement",
-              "quick learner",
+              {
+                text: ["quick response"],
+              },
+              {
+                text: ["quick decision"],
+              },
+              {
+                text: ["quick movement"],
+              },
+              {
+                text: ["quick learner"],
+              },
             ]}
           />
         </Card>

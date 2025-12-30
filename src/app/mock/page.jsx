@@ -185,11 +185,6 @@ export default function Mock() {
               audio: "/audio/general/i-have-to-do-my-homework.mp3",
               text: [
                 "I have to do my homework.",
-                {
-                  text: "",
-                  type: "",
-                },
-                "",
               ],
             },
           ]}
