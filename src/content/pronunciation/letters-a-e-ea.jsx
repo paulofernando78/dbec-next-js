@@ -1,5 +1,4 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Text } from "@/components/molecules/Text";
 import { Comparison } from "../../components/molecules/Comparison/Comparison";
 
 const letterA = [
@@ -140,9 +139,7 @@ export default function LetterA() {
       title="Pronunciation"
       subtitle="Letters a / e(a)" />
       <div className="line-break">
-        <Text bold playAudio="/audio/general/listen-to-the-difference.mp3">
-          Listen to the difference.
-        </Text>
+        
         <Comparison groups={letterA} />
       </div>
     </>
