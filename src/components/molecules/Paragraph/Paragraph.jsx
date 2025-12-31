@@ -1,46 +1,39 @@
 "use client";
 
 import styles from "./Paragraph.module.css";
-import { Correct, Incorrect } from "@/lib/svg-imports";
+
 import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { Audio } from "@/components/atoms/Audio";
 import { InlineText } from "@/components/molecules/InlineText";
 
-export const Paragraph = ({
-  imgSrc,
-  imgPosition = "left",
-  width,
-  height,
-  paragraphs,
-}) => {
-  const hasImage = Boolean(imgSrc);
-
+export const Paragraph = ({ paragraphs, audioPlayer }) => {
   return (
-    <div
-      className={[hasImage && styles.withImage, hasImage && styles[imgPosition]]
-        .filter(Boolean)
-        .join(" ")}
-    >
-      {hasImage && (
-        <Image
-          src={img}
-          alt={alt}
-          width={width || 200}
-          height={height || 200}
-          className={styles.image}
-        />
-      )}
+    <div className={styles.wrapper}>
+      <AudioPlayer src={audioPlayer}/>
       {paragraphs.map((p, pIndex) => (
-        <div key={pIndex}>
-          <p>
-            {p.correct && <Correct src={p.correct} className="icon-position" />}
-            {p.incorrect && (
-              <Incorrect src={p.incorrect} className="icon-position" />
+        <div key={pIndex} className={styles.paragraphBlock}>
+          <div
+            className={[
+              p.img && styles.withImage,
+              p.img && styles[p.imgPosition || "left"],
+            ]
+              .filter(Boolean)
+              .join(" ")}
+          >
+            {p.img && (
+              <Image
+                src={p.img}
+                alt={p.alt}
+                width={p.width || 200}
+                height={p.height || 200}
+                className="imgs"
+              />
             )}
-            {p.audio && <Audio src={p.audio} />}
-            <InlineText text={p.text} />
-          </p>
+
+            <p>
+              <InlineText text={p.text} />
+            </p>
+          </div>
         </div>
       ))}
     </div>

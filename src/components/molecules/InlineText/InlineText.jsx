@@ -5,6 +5,7 @@ import { Italic } from "@/components/atoms/Italic";
 import { Mark } from "@/components/atoms/Mark";
 import { Audio } from "@/components/atoms/Audio";
 import { Portuguese } from "@/components/atoms/Portuguese";
+import { Correct, Incorrect, Attention } from "@/lib/svg-imports";
 
 export const InlineText = ({ text }) => {
   if (!text) return null;
@@ -37,6 +38,9 @@ export const InlineText = ({ text }) => {
 
         return (
           <span key={i}>
+            {part.correct && <Correct src={part.correct} className="icon-position" />}
+            {part.incorrect && <Incorrect src={part.correct} className="icon-position" />}
+            {part.important && <Attention src={part.correct} className="icon-position" />}
             {part.audio && <Audio src={part.audio} />}
             {content}
           </span>

@@ -19,10 +19,17 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
+        <Ribbon label="AUDIO PLAYER" />
+        <AudioPlayer src="/audio/general/about-to.mp3" />
         <Ribbon label="INLINE TEXT" />
         <InlineText
           text={[
-            "I ",
+            {
+              audio: "/audio/general/am.mp3",
+              type: "bold",
+              text: "Hi",
+            },
+            ". ",
             {
               audio: "/audio/general/am.mp3",
               type: "bold",
@@ -34,7 +41,96 @@ export default function Mock() {
               type: "bold",
               text: "work",
             },
-            " at a school.",
+            " at a school. ",
+          ]}
+        />
+        <InlineText
+          text={[
+            {
+              correct: true,
+              type: "bold",
+              text: "Hi",
+            },
+            ". ",
+            {
+              incorrect: true,
+              type: "bold",
+              text: "Hy",
+            },
+            ". ",
+            {
+              important: true,
+              type: "bold",
+              text: "Attention",
+            },
+            ". ",
+          ]}
+        />
+         <Ribbon label="PARAGRAPH" />
+        <Paragraph
+            audioPlayer= "/audio/general/about-to.mp3"
+          paragraphs={[
+            {
+              img: "/img/general/cat-1.jpg",
+              alt: "a cat photo",
+              width: 200,
+              height: 200,
+              imgPosition: "left",
+              text: [
+                "This is ",
+                {
+                  text: "bold",
+                  type: "bold",
+                  audio: "/audio/general/",
+                },
+                " text. ",
+                "This is ",
+                {
+                  text: "mark",
+                  type: "mark",
+                  audio: "/audio/general/",
+                },
+                " text.",
+                "This is ",
+                {
+                  text: "italic",
+                  type: "italic",
+                  audio: "/audio/general/",
+                },
+                " text.",
+              ],
+            },
+{
+              img: "/img/general/cat-2.jpg",
+              alt: "a cat photo",
+              width: 200,
+              height: 200,
+              imgPosition: "right",
+              audioPlayer: "/audio/general/",
+              text: [
+                "This is ",
+                {
+                  text: "bold",
+                  type: "bold",
+                  audio: "/audio/general/",
+                },
+                " text. ",
+                "This is ",
+                {
+                  text: "mark",
+                  type: "mark",
+                  audio: "/audio/general/",
+                },
+                " text.",
+                "This is ",
+                {
+                  text: "italic",
+                  type: "italic",
+                  audio: "/audio/general/",
+                },
+                " text.",
+              ],
+            },
           ]}
         />
         <Ribbon label="LIST" />
@@ -72,22 +168,6 @@ export default function Mock() {
                   text: "teste",
                 },
                 " teste",
-              ],
-            },
-          ]}
-        />
-        <List
-          bullet={false}
-          items={[
-            {
-              text: [
-                "...",
-                {
-                  audio: "/audio/general/....mp3",
-                  type: "bold",
-                  text: "...",
-                },
-                " ...",
               ],
             },
           ]}
@@ -142,7 +222,7 @@ export default function Mock() {
                   text: "am",
                 },
                 " a teacher. I ",
-              ]
+              ],
             },
             {
               text: [
@@ -153,60 +233,7 @@ export default function Mock() {
                   text: "am",
                 },
                 " a teacher. I ",
-              ]
-            }
-          ]}
-        />
-        <Ribbon label="PARAGRAPH" />
-        <AudioPlayer src="/audio/audiobooks/starter/a-new-zealand-adventure/auckland.mp3" />
-        <Paragraph
-          paragraphs={[
-            {
-              img: "/img/general/cat-1.jpg",
-              alt: "",
-              width: 200,
-              height: 200,
-              audio: "/audio/general/",
-              text: [
-                "This is ",
-                {
-                  text: "important",
-                  type: "bold",
-                  audio: "/audio/general/",
-                },
-                " text.",
               ],
-            },
-            {
-              text: [
-                "Another paragraph with ",
-                {
-                  text: "highlight",
-                  type: "mark",
-                  audio: "/audio/general/",
-                },
-              ],
-            },
-          ]}
-        />
-        <Paragraph
-          paragraphs={[
-            {
-              text: [
-                {
-                  text: "Tenho que fazer minha lição (tarefa de casa).",
-                  type: "translation",
-                },
-              ],
-            },
-            {
-              incorrect: true,
-              text: ["I have to make my homework."],
-            },
-            {
-              correct: true,
-              audio: "/audio/general/i-have-to-do-my-homework.mp3",
-              text: ["I have to do my homework."],
             },
           ]}
         />
