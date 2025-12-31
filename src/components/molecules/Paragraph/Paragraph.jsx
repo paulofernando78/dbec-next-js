@@ -9,7 +9,7 @@ import { InlineText } from "@/components/molecules/InlineText";
 export const Paragraph = ({ paragraphs, audioPlayer }) => {
   return (
     <div className={styles.wrapper}>
-      <AudioPlayer src={audioPlayer}/>
+      {audioPlayer && <AudioPlayer src={audioPlayer}/>}
       {paragraphs.map((p, pIndex) => (
         <div key={pIndex} className={styles.paragraphBlock}>
           <div

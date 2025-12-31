@@ -12,9 +12,9 @@ export default function Collocations() {
         <InlineText
           text={[
             {
+              audio: "/audio/general/",
               text: "do / make",
               type: "bold",
-              audio: "/audio/general/",
             },
           ]}
         />
@@ -192,25 +192,22 @@ export default function Collocations() {
           ]}
         />
 
-        <Card>
-          <List
-            bullet={true}
-            items={[
-              {
-                text: ["quick response"],
-              },
-              {
-                text: ["quick decision"],
-              },
-              {
-                text: ["quick movement"],
-              },
-              {
-                text: ["quick learner"],
-              },
-            ]}
-          />
-        </Card>
+        <Card
+          texts={[
+            {
+              text: ["quick movement"],
+            },
+            {
+              text: ["quick decision"],
+            },
+            {
+              text: ["quick response"],
+            },
+            {
+              text: ["quick learner"],
+            },
+          ]}
+        />
       </div>
     </>
   );
