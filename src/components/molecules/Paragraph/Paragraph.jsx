@@ -8,10 +8,15 @@ import { InlineText } from "@/components/molecules/InlineText";
 
 export const Paragraph = ({ paragraphs, audioPlayer }) => {
   return (
-    <div className={styles.wrapper}>
-      {audioPlayer && <AudioPlayer src={audioPlayer}/>}
+    <div
+      className={styles.wrapper}
+    >
+      {audioPlayer && <AudioPlayer src={audioPlayer} />}
       {paragraphs.map((p, pIndex) => (
-        <div key={pIndex} className={styles.paragraphBlock}>
+        <div key={pIndex} className={[styles.paragraphBlock, p.lineBreak && styles.lineBreak]
+          .filter(Boolean)
+          .join(" ")
+        }>
           <div
             className={[
               p.img && styles.withImage,

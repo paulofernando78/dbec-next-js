@@ -71,11 +71,44 @@ export default function Mock() {
           audioPlayer="/audio/general/about-to.mp3"
           paragraphs={[
             {
+              lineBreak: true,
               img: "/img/general/cat-1.jpg",
               alt: "a cat photo",
               width: 200,
               height: 200,
+              imgPosition: "top",
+              text: [
+                "This is ",
+                {
+                  audio: "/audio/general/",
+                  text: "bold",
+                  type: "bold",
+                },
+                " text. ",
+                "This is ",
+                {
+                  audio: "/audio/general/",
+                  text: "mark",
+                  type: "mark",
+                },
+                " text.",
+                "This is ",
+                {
+                  audio: "/audio/general/",
+                  text: "italic",
+                  type: "italic",
+                },
+                " text.",
+              ],
+            },
+            {
+              lineBreak: true,
+              img: "/img/general/cat-2.jpg",
+              alt: "a cat photo",
+              width: 200,
+              height: 200,
               imgPosition: "left",
+              audioPlayer: "/audio/general/",
               text: [
                 "This is ",
                 {

@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.lineBreak {
+  margin-bottom: var(--line-break);
+}
+
 .paragraphBlock {
   width: 100%;
 }

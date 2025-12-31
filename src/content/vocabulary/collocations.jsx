@@ -12,13 +12,13 @@ export default function Collocations() {
         <InlineText
           text={[
             {
-              audio: "/audio/general/",
               text: "do / make",
               type: "bold",
             },
           ]}
         />
         <Paragraph
+          lineBreak={true}
           paragraphs={[
             {
               text: [
@@ -38,20 +38,15 @@ export default function Collocations() {
             },
             {
               correct: true,
-              audio: "/audio/general/i-have-to-do-my-homework.mp3",
               text: [
                 "",
                 {
-                  audio: "/audio/",
+                  audio: "/audio/general/i-have-to-do-my-homework.mp3",
                   correct: true,
                   text: "I have to do my homework.",
                 },
               ],
             },
-          ]}
-        />
-        <Paragraph
-          paragraphs={[
             {
               text: [
                 {
@@ -69,11 +64,11 @@ export default function Collocations() {
               ],
             },
             {
-              audio: "/audio/general/.mp3",
+              lineBreak: true,
               text: [
                 {
                   correct: true,
-                  audio: "/audio/general/",
+                  audio: "/audio/general/I-have-to-make-my-bed.mp3",
                   text: "I have to make my bed.",
                 },
               ],
@@ -82,14 +77,11 @@ export default function Collocations() {
         />
         <InlineText
           text={[
-            {
-              audio: "/audio/general/",
-              text: "for / with",
-              type: "bold",
-            },
+            { text: "for / with", type: "bold" }
           ]}
         />
         <Paragraph
+          lineBreak={true}
           paragraphs={[
             {
               text: [
@@ -116,10 +108,6 @@ export default function Collocations() {
                 },
               ],
             },
-          ]}
-        />
-        <Paragraph
-          paragraphs={[
             {
               text: [
                 {
@@ -137,6 +125,7 @@ export default function Collocations() {
               ],
             },
             {
+              lineBreak: true,
               text: [
                 {
                   correct: true,
@@ -149,14 +138,11 @@ export default function Collocations() {
         />
         <InlineText
           text={[
-            {
-              text: "fast / quick",
-              type: "bold",
-              audio: "/audio/general/",
-            },
+            { text: "fast / quick", type: "bold" }
           ]}
         />
         <Paragraph
+          lineBreak={true}
           paragraphs={[
             {
               text: [
@@ -183,10 +169,6 @@ export default function Collocations() {
                 },
               ],
             },
-          ]}
-        />
-        <Paragraph
-          paragraphs={[
             {
               text: [
                 {
@@ -204,19 +186,14 @@ export default function Collocations() {
               ],
             },
             {
-              audio: "/audio/general/.mp3",
               text: [
                 {
                   correct: true,
-                  audio: "/audio/general",
+                  audio: "/audio/general/Can-I-have-a-quick-word-with-you.mp3",
                   text: "Can I have a quick word with you?",
                 },
               ],
             },
-          ]}
-        />
-        <Paragraph
-          paragraphs={[
             {
               text: [
                 {
@@ -238,7 +215,7 @@ export default function Collocations() {
               text: [
                 {
                   correct: true,
-                  audio: "/audio/general",
+                  audio: "/audio/general/hes-a-fast-runner.mp3",
                   text: "He’s a fast runner.",
                 },
               ],
@@ -253,8 +230,8 @@ export default function Collocations() {
             },
           ]}
         />
-        <Card
-          texts={[
+        <List
+          items={[
             {
               text: ["quick movement"],
             },
