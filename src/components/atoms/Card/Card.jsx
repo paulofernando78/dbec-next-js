@@ -1,9 +1,15 @@
-import styles from "./Card.module.css"
+import styles from "./Card.module.css";
 
-export const Card = ({children, className, bold }) => {
+import { InlineText } from "@/components/molecules/InlineText";
+
+export const Card = ({ texts, className }) => {
   return (
     <div className={`${styles.card} ${className}`}>
-      {bold ? <strong>{children}</strong> : children}
+      {texts.map((t, index) => (
+        <p key={index}>
+          <InlineText text={t.text} />
+        </p>
+      ))}
     </div>
-  )
-}
+  );
+};

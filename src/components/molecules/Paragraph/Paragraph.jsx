@@ -1,10 +1,7 @@
 "use client";
 
 import styles from "./Paragraph.module.css";
-import {
-  Correct,
-  Incorrect,
-} from "@/lib/svg-imports";
+import { Correct, Incorrect } from "@/lib/svg-imports";
 import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Audio } from "@/components/atoms/Audio";
@@ -37,8 +34,10 @@ export const Paragraph = ({
       {paragraphs.map((p, pIndex) => (
         <div key={pIndex}>
           <p>
-            {p.correct && <Correct src={p.correct} className="icon-position"/>}
-            {p.incorrect && <Incorrect src={p.incorrect} className="icon-position"/>}
+            {p.correct && <Correct src={p.correct} className="icon-position" />}
+            {p.incorrect && (
+              <Incorrect src={p.incorrect} className="icon-position" />
+            )}
             {p.audio && <Audio src={p.audio} />}
             <InlineText text={p.text} />
           </p>

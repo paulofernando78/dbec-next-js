@@ -131,7 +131,32 @@ export default function Mock() {
           ]}
         />
         <Ribbon label="CARD" />
-        <Card>Lorem ipsum ...</Card>
+        <Card
+          texts={[
+            {
+              text: [
+                "I ",
+                {
+                  audio: "/audio/general/am.mp3",
+                  type: "bold",
+                  text: "am",
+                },
+                " a teacher. I ",
+              ]
+            },
+            {
+              text: [
+                "I ",
+                {
+                  audio: "/audio/general/am.mp3",
+                  type: "bold",
+                  text: "am",
+                },
+                " a teacher. I ",
+              ]
+            }
+          ]}
+        />
         <Ribbon label="PARAGRAPH" />
         <AudioPlayer src="/audio/audiobooks/starter/a-new-zealand-adventure/auckland.mp3" />
         <Paragraph
@@ -170,22 +195,18 @@ export default function Mock() {
               text: [
                 {
                   text: "Tenho que fazer minha lição (tarefa de casa).",
-                  type: "translation",  
+                  type: "translation",
                 },
               ],
             },
             {
               incorrect: true,
-              text: [
-                "I have to make my homework.",
-              ],
+              text: ["I have to make my homework."],
             },
             {
               correct: true,
               audio: "/audio/general/i-have-to-do-my-homework.mp3",
-              text: [
-                "I have to do my homework.",
-              ],
+              text: ["I have to do my homework."],
             },
           ]}
         />
