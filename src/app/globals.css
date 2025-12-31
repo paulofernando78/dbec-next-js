@@ -152,13 +152,7 @@ mark {
 }
 
 .icon-position {
-  transform: translate(-2px, -1px);
-}
-
-.icon-position {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 1;
+  transform: translate(-2px, -2px);
 }
 
 .button-wrapper {

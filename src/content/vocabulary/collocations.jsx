@@ -29,13 +29,24 @@ export default function Collocations() {
               ],
             },
             {
-              incorrect: true,
-              text: ["I have to make my homework."],
+              text: [
+                {
+                  incorrect: true,
+                  text: "I have to make my homework.",
+                },
+              ],
             },
             {
               correct: true,
               audio: "/audio/general/i-have-to-do-my-homework.mp3",
-              text: ["I have to do my homework."],
+              text: [
+                "",
+                {
+                  audio: "/audio/",
+                  correct: true,
+                  text: "I have to do my homework.",
+                },
+              ],
             },
           ]}
         />
@@ -50,22 +61,31 @@ export default function Collocations() {
               ],
             },
             {
-              incorrect: true,
-              text: ["I have to do my bed."],
+              text: [
+                {
+                  incorrect: true,
+                  text: "I have to do my bed.",
+                },
+              ],
             },
             {
-              correct: true,
               audio: "/audio/general/.mp3",
-              text: ["I have to make my bed."],
+              text: [
+                {
+                  correct: true,
+                  audio: "/audio/general/",
+                  text: "I have to make my bed.",
+                },
+              ],
             },
           ]}
         />
         <InlineText
           text={[
             {
+              audio: "/audio/general/",
               text: "for / with",
               type: "bold",
-              audio: "/audio/general/",
             },
           ]}
         />
@@ -80,13 +100,21 @@ export default function Collocations() {
               ],
             },
             {
-              incorrect: true,
-              text: ["I’m in love for you."],
+              text: [
+                {
+                  incorrect: true,
+                  text: "I’m in love for you.",
+                },
+              ],
             },
             {
-              correct: true,
-              audio: "/audio/general/.mp3",
-              text: ["I’m in love with you."],
+              text: [
+                {
+                  correct: true,
+                  audio: "/audio/general/.mp3",
+                  text: "I’m in love with you.",
+                },
+              ],
             },
           ]}
         />
@@ -101,13 +129,21 @@ export default function Collocations() {
               ],
             },
             {
-              incorrect: true,
-              text: ["I’m worried with you."],
+              text: [
+                {
+                  incorrect: true,
+                  text: "I’m worried with you.",
+                },
+              ],
             },
             {
-              correct: true,
-              audio: "/audio/general/.mp3",
-              text: ["I’m worried about you."],
+              text: [
+                {
+                  correct: true,
+                  audio: "/audio/general/.mp3",
+                  text: "I’m worried about you.",
+                },
+              ],
             },
           ]}
         />
@@ -131,13 +167,21 @@ export default function Collocations() {
               ],
             },
             {
-              incorrect: true,
-              text: ["It’s a quick car."],
+              text: [
+                {
+                  incorrect: true,
+                  text: "It’s a quick car.",
+                },
+              ],
             },
             {
-              correct: true,
-              audio: "/audio/general/.mp3",
-              text: ["It’s a fast car."],
+              text: [
+                {
+                  correct: true,
+                  audio: "/audio/general/.mp3",
+                  text: "It’s a fast car.",
+                },
+              ],
             },
           ]}
         />
@@ -152,13 +196,22 @@ export default function Collocations() {
               ],
             },
             {
-              incorrect: true,
-              text: ["Can I have a fast word with you?"],
+              text: [
+                {
+                  incorrect: true,
+                  text: "Can I have a fast word with you?",
+                },
+              ],
             },
             {
-              correct: true,
               audio: "/audio/general/.mp3",
-              text: ["Can I have a quick word with you?"],
+              text: [
+                {
+                  correct: true,
+                  audio: "/audio/general",
+                  text: "Can I have a quick word with you?",
+                },
+              ],
             },
           ]}
         />
@@ -173,13 +226,22 @@ export default function Collocations() {
               ],
             },
             {
-              incorrect: true,
-              text: ["He’s a quick runner."],
+              text: [
+                {
+                  incorrect: true,
+                  text: "He’s a quick runner.",
+                },
+              ],
             },
             {
-              correct: true,
               audio: "/audio/general/.mp3",
-              text: ["He’s a fast runner."],
+              text: [
+                {
+                  correct: true,
+                  audio: "/audio/general",
+                  text: "He’s a fast runner.",
+                },
+              ],
             },
           ]}
         />
@@ -191,7 +253,6 @@ export default function Collocations() {
             },
           ]}
         />
-
         <Card
           texts={[
             {
