@@ -31,12 +31,12 @@ export default function LetterA() {
           examples={[
             {
               audioPlayer: "/audio/general/bread-and-butter.mp3",
-              text: ["Bread ", { type: "bold", text: "and" }, " butter."],
+              text: ["Bread ", { type: "mark", text: "and" }, " butter."],
               portuguese: "Pão e manteiga.",
             },
             {
               audioPlayer: "/audio/general/this-is-the-end.mp3",
-              text: ["This is the ", { type: "bold", text: "end" }, "."],
+              text: ["This is the ", { type: "mark", text: "end" }, "."],
               portuguese: "Este é o fim.",
             },
           ]}
@@ -68,7 +68,7 @@ export default function LetterA() {
               text: [
                 "I had a ",
                 {
-                  type: "bold",
+                  type: "mark",
                   text: "bad",
                 },
                 " day.",
@@ -77,7 +77,7 @@ export default function LetterA() {
             },
             {
               audioPlayer: "/audio/general/she-went-to-bed-early.mp3",
-              text: ["She went to ", { type: "bold", text: "bed" }, " early."],
+              text: ["She went to ", { type: "mark", text: "bed" }, " early."],
               portuguese: "Ela foi para a cama cedo.",
             },
           ]}
@@ -108,14 +108,14 @@ export default function LetterA() {
               audioPlayer: "/audio/general/he-hit-the-ball-with-a-bat.mp3",
               text: [
                 "He hit the ball with a ",
-                { type: "bold", text: "bat" },
+                { type: "mark", text: "bat" },
                 ".",
               ],
               portuguese: "Ele acertou a bola com um bastão.",
             },
             {
               audioPlayer: "/audio/general/i-bet-you-were-right.mp3",
-              text: ["I ", { type: "bold", text: "bet" }, " you are right."],
+              text: ["I ", { type: "mark", text: "bet" }, " you are right."],
               portuguese: "Aposto que você está certo.",
             },
           ]}
@@ -145,12 +145,12 @@ export default function LetterA() {
           examples={[
             {
               audioPlayer: "/audio/general/my-dad-is-cool.mp3",
-              text: ["My ", { type: "bold", text: "dad" }, " is cool."],
+              text: ["My ", { type: "mark", text: "dad" }, " is cool."],
               portuguese: "Meu pai é gentil.",
             },
             {
               audioPlayer: "/audio/general/the-plant-is-dead.mp3",
-              text: ["The plant is ", { type: "bold", text: "dead" }, "."],
+              text: ["The plant is ", { type: "mark", text: "dead" }, "."],
               portuguese: "A planta está morta.",
             },
           ]}
@@ -180,12 +180,12 @@ export default function LetterA() {
           examples={[
             {
               audioPlayer: "/audio/general/john-had-a-good-time.mp3",
-              text: ["John ", { type: "bold", text: "had" }, " a good time."],
+              text: ["John ", { type: "mark", text: "had" }, " a good time."],
               portuguese: "John se divertiu.",
             },
             {
               audioPlayer: "/audio/general/he-hit-his-head.mp3",
-              text: ["He hit his ", { type: "bold", text: "head" }, "."],
+              text: ["He hit his ", { type: "mark", text: "head" }, "."],
               portuguese: "Ele bateu a cabeça.",
             },
           ]}
@@ -215,12 +215,12 @@ export default function LetterA() {
           examples={[
             {
               audioPlayer: "/audio/general/that-man-is-tall.mp3",
-              text: ["That ", { type: "bold", text: "man" }, " is tall."],
+              text: ["That ", { type: "mark", text: "man" }, " is tall."],
               portuguese: "O homem é alto.",
             },
             {
               audioPlayer: "/audio/general/the-men-are-here.mp3",
-              text: ["The ", { type: "bold", text: "men" }, " are here."],
+              text: ["The ", { type: "mark", text: "men" }, " are here."],
               portuguese: "Os homens estão aqui.",
             },
           ]}
@@ -252,14 +252,14 @@ export default function LetterA() {
               audioPlayer: "/audio/general/put-the-eggs-in-the-pan.mp3",
               text: [
                 "Put the eggs in the ",
-                { type: "bold", text: "pan" },
+                { type: "mark", text: "pan" },
                 ".",
               ],
               portuguese: "Coloque os ovos na panela.",
             },
             {
               audioPlayer: "/audio/general/i-wrote-with-a-pen.mp3",
-              text: ["I wrote with a ", { type: "bold", text: "pen" }, "."],
+              text: ["I wrote with a ", { type: "mark", text: "pen" }, "."],
               portuguese: "Eu escrevi com uma caneta.",
             },
           ]}
@@ -290,7 +290,7 @@ export default function LetterA() {
               audioPlayer: "/audio/general/she-got-a-tan-at-the-beach.mp3",
               text: [
                 "She got a ",
-                { type: "bold", text: "tan" },
+                { type: "mark", text: "tan" },
                 " at the beach.",
               ],
               portuguese: "Ela ficou bronzeada na praia.",
@@ -300,11 +300,11 @@ export default function LetterA() {
                 "/audio/general/i-got-ten-out-of-ten-on-the-test.mp3",
               text: [
                 "I got ",
-                { type: "bold",
+                { type: "mark",
                   text: "ten"
                 },
                 " out of ",
-                { type: "bold",
+                { type: "mark",
                   text: "ten"
                 },
                 " on the test."

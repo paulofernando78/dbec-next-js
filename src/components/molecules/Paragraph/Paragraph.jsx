@@ -36,6 +36,7 @@ export const Paragraph = ({ paragraphs, audioPlayer }) => {
             )}
             <p>
               <InlineText text={p.text} />
+              {/* <InlineText text={p.portuguese} /> */}
             </p>
           </div>
         </div>
