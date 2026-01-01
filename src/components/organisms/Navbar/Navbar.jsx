@@ -141,7 +141,7 @@ const linkGroup = [
 ];
 
 export default function NavBar({}) {
-  const { showNavBar } = useContext(HeaderContext);
+  const { showNavBar, closeNavBar } = useContext(HeaderContext);
 
   return (
     <nav
@@ -152,7 +152,7 @@ export default function NavBar({}) {
           <span className={styles.navTitle}>{group.title}</span>
           <div>
             {group.links.map((item, linkIndex) => (
-              <Link key={linkIndex} href={item.href}>
+              <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
                 {item.label}
               </Link>
             ))}

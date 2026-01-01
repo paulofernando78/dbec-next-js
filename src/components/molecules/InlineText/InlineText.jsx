@@ -45,7 +45,7 @@ export const InlineText = ({ text }) => {
             {part.incorrect && <Incorrect src={part.correct} className="icon-position"/>}
             {part.important && <Attention src={part.correct} className="icon-position"/>}
             {part.audio && <Audio src={part.audio} />}
-            <span >{content}</span>
+            {content}
           </span>
         );
       })}

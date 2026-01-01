@@ -15,6 +15,11 @@ export const HeaderProvider = (props) => {
     setShowHam(showNavBar);
   };
 
+  const closeNavBar = () => {
+    setShowNavBar(false)
+    setShowHam(true)
+  }
+
   useEffect(() => {
     if (isDesktop) {
       setShowNavBar(true); // open desktop
@@ -25,7 +30,7 @@ export const HeaderProvider = (props) => {
   }, [isDesktop]);
 
   return (
-    <HeaderContext.Provider value={{ showNavBar, showHam, handleClick }}>
+    <HeaderContext.Provider value={{ showNavBar, showHam, handleClick, closeNavBar }}>
       {props.children}
     </HeaderContext.Provider>
   );
