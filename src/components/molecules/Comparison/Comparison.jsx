@@ -1,15 +1,18 @@
+import { Audio } from "@/components/atoms/Audio";
+import { Phonetics } from "@/components/atoms/Phonetics";
+import { Portuguese } from "@/components/atoms/Portuguese";
 
-export const Comparison = ({ data = [] }) => {
+export const Comparison = ({ groups = [] }) => {
   return (
     <>
-      {Array.isArray(data) &&
-        data.map((item, index) => (
+      {Array.isArray(groups) &&
+        groups.map((item, index) => (
           <div key={index}>
-            {item.comparison.map((subItem, index) => (
+            {item.group.map((subItem, index) => (
               <p key={index}>
-                {subItem.word}{" "}
-                <span className="phonetics">{subItem.phonetics}</span>{" "}
-                <span className="portuguese">{subItem.translation}</span>
+                <Audio src={subItem.audio} />
+                {subItem.word} <Phonetics>{subItem.phonetics}</Phonetics>{" "}
+                <Portuguese>{subItem.portuguese}</Portuguese>
               </p>
             ))}
           </div>

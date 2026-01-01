@@ -1,1 +1,1 @@
-import { Phonetics } from "./Phonetics"
+export { Phonetics } from "./Phonetics"

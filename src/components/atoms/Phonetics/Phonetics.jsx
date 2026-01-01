@@ -1,5 +1,5 @@
-export const Phonetics = ({ phonetics }) => {
+export const Phonetics = ({ children }) => {
   return (
-    <span className="phonetics">{phonetics}</span>
+    <span className="phonetics">{children}</span>
   )
 }

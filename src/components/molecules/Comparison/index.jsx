@@ -1,1 +1,1 @@
-export { WordSound } from "./WordSound"
+export { Comparison } from "./Comparison"

@@ -369,9 +369,9 @@ export default function Mock() {
         />
         <Ribbon label="Word Sound" />
         <Comparison
-          data={[
+          groups={[
             {
-              comparison: [
+              group: [
                 {
                   playAudio: "/....mp3",
                   word: "Example 1",
