@@ -1,4 +1,3 @@
-import { Card } from "@/components/atoms/Card";
 import { InlineText } from "@/components/molecules/InlineText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { List } from "@/components/molecules/List";
