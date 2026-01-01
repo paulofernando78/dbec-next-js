@@ -3,21 +3,30 @@ import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
 
 export const Comparison = ({ groups = [] }) => {
-  if (!groups.length) return null;
+  if (!Array.isArray(groups) || !groups.length) return null;
+
   return (
     <>
-      {Array.isArray(groups) &&
-        groups.map((item, index) => (
+      {groups.map((item, index) => {
+        if (!Array.isArray(item.group)) return null;
+
+        return (
           <div key={index}>
-            {item.group.map((subItem, index) => (
-              <p key={index}>
-                <Audio src={subItem.audio} />
-                {subItem.word} <Phonetics>{subItem.phonetics}</Phonetics>{" "}
-                <Portuguese>{subItem.portuguese}</Portuguese>
+            {item.group.map((subItem, subIndex) => (
+              <p key={subIndex}>
+                {subItem.audio && <Audio src={subItem.audio} />}
+                {subItem.word}{" "}
+                {subItem.phonetics && (
+                  <Phonetics>{subItem.phonetics}</Phonetics>
+                )}{" "}
+                {subItem.portuguese && (
+                  <Portuguese>{subItem.portuguese}</Portuguese>
+                )}
               </p>
             ))}
           </div>
-        ))}
+        );
+      })}
     </>
   );
 };
