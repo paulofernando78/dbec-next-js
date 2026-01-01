@@ -103,7 +103,7 @@ export default function Collocations() {
               text: [
                 {
                   correct: true,
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/general/im-in-love-with-you.mp3",
                   text: "I’m in love with you.",
                 },
               ],
@@ -129,7 +129,7 @@ export default function Collocations() {
               text: [
                 {
                   correct: true,
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/general/im-worried-about-you.mp3",
                   text: "I’m worried about you.",
                 },
               ],

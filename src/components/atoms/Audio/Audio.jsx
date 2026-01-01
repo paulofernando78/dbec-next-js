@@ -25,19 +25,17 @@ export const Audio = ({ src }) => {
   return (
     <>
       {playing ? (
-        <StopAudio
-          onClick={handleStop}
-          className="icon-position"
-        />
+        <StopAudio onClick={handleStop} className="icon-position"/>
       ) : (
-        <PlayAudio
-          onClick={handlePlay}
-          className="icon-position" />
+        <PlayAudio onClick={handlePlay} className="icon-position"/>
       )}
 
-      <audio ref={audioRef} src={src}
-      preload="metadata"
-      onEnded={handleEnded} />
+      <audio
+        ref={audioRef}
+        src={src}
+        preload="metadata"
+        onEnded={handleEnded}
+      />
     </>
   );
 };

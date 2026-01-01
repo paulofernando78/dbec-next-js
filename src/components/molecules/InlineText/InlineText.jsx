@@ -1,5 +1,7 @@
 "use client";
 
+import styles from "./InlineText.module.css"
+
 import { Bold } from "@/components/atoms/Bold";
 import { Italic } from "@/components/atoms/Italic";
 import { Mark } from "@/components/atoms/Mark";
@@ -15,9 +17,10 @@ export const InlineText = ({ text }) => {
   if (!Array.isArray(text)) return null;
 
   return (
-    <span>
+    <span className={styles.text}>
       {text.map((part, i) => {
-        if (typeof part === "string") return part;
+        if (typeof part === "string")
+          return part
 
         let content = part.text;
 
@@ -38,11 +41,11 @@ export const InlineText = ({ text }) => {
 
         return (
           <span key={i}>
-            {part.correct && <Correct src={part.correct} className="icon-position" />}
-            {part.incorrect && <Incorrect src={part.correct} className="icon-position" />}
-            {part.important && <Attention src={part.correct} className="icon-position" />}
+            {part.correct && <Correct src={part.correct} className="icon-position"/>}
+            {part.incorrect && <Incorrect src={part.correct} className="icon-position"/>}
+            {part.important && <Attention src={part.correct} className="icon-position"/>}
             {part.audio && <Audio src={part.audio} />}
-            {content}
+            <span >{content}</span>
           </span>
         );
       })}

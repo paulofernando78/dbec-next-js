@@ -1,6 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Ribbon } from "@/components/atoms/Ribbon";
-import { Card } from "@/components/atoms/Card";
+import { Card } from "@/components/molecules/Card";
 import { InlineText } from "@/components/molecules/InlineText";
 import { List } from "@/components/molecules/List";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -29,7 +29,7 @@ export default function Mock() {
               text: "Hi",
               type: "bold",
             },
-            ". ",
+            ". I ",
             {
               audio: "/audio/general/am.mp3",
               text: "am",
@@ -41,7 +41,7 @@ export default function Mock() {
               text: "work",
               type: "bold",
             },
-            " at a school. ",
+            " at a school.",
           ]}
         />
         <InlineText
