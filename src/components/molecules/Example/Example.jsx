@@ -1,3 +1,5 @@
+import styles from "./Example.module.css"
+
 import { Paragraph } from "@/components/molecules/Paragraph";
 
 export const Example = ({ examples = [] }) => {
@@ -11,6 +13,7 @@ export const Example = ({ examples = [] }) => {
           portuguese: e.portuguese,
         }))}
       />
+      <hr className={styles.hr}/>
     </div>
   );
 };

@@ -30,18 +30,17 @@ export default function LetterA() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/and-example.mp3",
+              audioPlayer: "/audio/general/bread-and-butter.mp3",
               text: ["Bread ", { type: "bold", text: "and" }, " butter."],
               portuguese: "Pão e manteiga.",
             },
             {
-              audioPlayer: "/audio/general/end-example.mp3",
+              audioPlayer: "/audio/general/this-is-the-end.mp3",
               text: ["This is the ", { type: "bold", text: "end" }, "."],
               portuguese: "Este é o fim.",
             },
           ]}
         />
-        <hr />
         <Comparison
           groups={[
             {
@@ -106,12 +105,16 @@ export default function LetterA() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/bat-example.mp3",
-              text: ["He hit the ball with a ", { type: "bold", text: "bat" }, "."],
+              audioPlayer: "/audio/general/he-hit-the-ball-with-a-bat.mp3",
+              text: [
+                "He hit the ball with a ",
+                { type: "bold", text: "bat" },
+                ".",
+              ],
               portuguese: "Ele acertou a bola com um bastão.",
             },
             {
-              audioPlayer: "/audio/general/bet-example.mp3",
+              audioPlayer: "/audio/general/i-bet-you-were-right.mp3",
               text: ["I ", { type: "bold", text: "bet" }, " you are right."],
               portuguese: "Aposto que você está certo.",
             },
@@ -141,12 +144,12 @@ export default function LetterA() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/dad-example.mp3",
-              text: ["My ", { type: "bold", text: "dad" }, " is kind."],
+              audioPlayer: "/audio/general/my-dad-is-cool.mp3",
+              text: ["My ", { type: "bold", text: "dad" }, " is cool."],
               portuguese: "Meu pai é gentil.",
             },
             {
-              audioPlayer: "/audio/general/dead-example.mp3",
+              audioPlayer: "/audio/general/the-plant-is-dead.mp3",
               text: ["The plant is ", { type: "bold", text: "dead" }, "."],
               portuguese: "A planta está morta.",
             },
@@ -176,12 +179,12 @@ export default function LetterA() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/had-example.mp3",
-              text: ["She ", { type: "bold", text: "had" }, " a good time."],
-              portuguese: "Ela teve um bom momento.",
+              audioPlayer: "/audio/general/john-had-a-good-time.mp3",
+              text: ["John ", { type: "bold", text: "had" }, " a good time."],
+              portuguese: "John se divertiu.",
             },
             {
-              audioPlayer: "/audio/general/head-example.mp3",
+              audioPlayer: "/audio/general/he-hit-his-head.mp3",
               text: ["He hit his ", { type: "bold", text: "head" }, "."],
               portuguese: "Ele bateu a cabeça.",
             },
@@ -211,12 +214,12 @@ export default function LetterA() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/man-example.mp3",
-              text: ["The ", { type: "bold", text: "man" }, " is tall."],
+              audioPlayer: "/audio/general/that-man-is-tall.mp3",
+              text: ["That ", { type: "bold", text: "man" }, " is tall."],
               portuguese: "O homem é alto.",
             },
             {
-              audioPlayer: "/audio/general/men-example.mp3",
+              audioPlayer: "/audio/general/the-men-are-here.mp3",
               text: ["The ", { type: "bold", text: "men" }, " are here."],
               portuguese: "Os homens estão aqui.",
             },
@@ -246,12 +249,16 @@ export default function LetterA() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/pan-example.mp3",
-              text: ["Put the eggs in the ", { type: "bold", text: "pan" }, "."],
+              audioPlayer: "/audio/general/put-the-eggs-in-the-pan.mp3",
+              text: [
+                "Put the eggs in the ",
+                { type: "bold", text: "pan" },
+                ".",
+              ],
               portuguese: "Coloque os ovos na panela.",
             },
             {
-              audioPlayer: "/audio/general/pen-example.mp3",
+              audioPlayer: "/audio/general/i-wrote-with-a-pen.mp3",
               text: ["I wrote with a ", { type: "bold", text: "pen" }, "."],
               portuguese: "Eu escrevi com uma caneta.",
             },
@@ -280,14 +287,29 @@ export default function LetterA() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/tan-example.mp3",
-              text: ["She got a ", { type: "bold", text: "tan" }, " at the beach."],
+              audioPlayer: "/audio/general/she-got-a-tan-at-the-beach.mp3",
+              text: [
+                "She got a ",
+                { type: "bold", text: "tan" },
+                " at the beach.",
+              ],
               portuguese: "Ela ficou bronzeada na praia.",
             },
             {
-              audioPlayer: "/audio/general/ten-example.mp3",
-              text: ["I have ", { type: "bold", text: "ten" }, " apples."],
-              portuguese: "Eu tenho dez maçãs.",
+              audioPlayer:
+                "/audio/general/i-got-ten-out-of-ten-on-the-test.mp3",
+              text: [
+                "I got ",
+                { type: "bold",
+                  text: "ten"
+                },
+                " out of ",
+                { type: "bold",
+                  text: "ten"
+                },
+                " on the test."
+              ],
+              portuguese: "Eu tirei nota máxima na prova.",
             },
           ]}
         />
