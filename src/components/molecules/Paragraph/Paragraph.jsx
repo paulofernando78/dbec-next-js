@@ -11,12 +11,12 @@ export const Paragraph = ({ paragraphs, audioPlayer }) => {
     <div
       className={styles.wrapper}
     >
-      {audioPlayer && <AudioPlayer src={audioPlayer} />}
       {paragraphs.map((p, pIndex) => (
         <div key={pIndex} className={[styles.paragraphBlock, p.lineBreak && styles.lineBreak]
           .filter(Boolean)
           .join(" ")
         }>
+          {p.audioPlayer && <AudioPlayer src={p.audioPlayer} />}
           <div
             className={[
               p.img && styles.withImage,
@@ -34,7 +34,6 @@ export const Paragraph = ({ paragraphs, audioPlayer }) => {
                 className="imgs"
               />
             )}
-
             <p>
               <InlineText text={p.text} />
             </p>
