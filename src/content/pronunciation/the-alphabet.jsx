@@ -2,7 +2,7 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { TheAlphabet } from "@/components/organisms/TheAlphabet";
 import { InlineText } from "@/components/molecules/InlineText";
 import { List } from "@/components/molecules/List";
-import { Card } from "@/components/molecules/Card";
+import { Note } from "@/components/molecules/Note";
 
 export default function SimplePresent() {
   return (
@@ -12,8 +12,9 @@ export default function SimplePresent() {
         <InlineText
           text={[
             {
-              audio: "/audio/general/alphabet-26-letters.mp3",
+              audio: "/audio/alphabet/26-letters.mp3",
               text: "There are 26 letters in the english alphabet.",
+              type: "bold",
             },
           ]}
         />
@@ -21,48 +22,48 @@ export default function SimplePresent() {
         <InlineText
           text={[
             {
-              audio: "/audio/general/.mp3",
+              audio: "/audio/alphabet/answer-these-questions.mp3",
               text: "Answer these questions.",
-              type: "",
+              type: "bold",
             },
           ]}
         />
-        
+
         <List
-          bullet={true}
+          bullet={false}
           items={[
             {
               text: [
                 {
-                  "audio": "/audio/general/spell-first-name..mp3",
-                  "text": "How do you spell your first name?",
+                  audio: "/audio/alphabet/first-name.mp3",
+                  text: "How do you spell your first name?",
                 },
               ],
             },
             {
               text: [
                 {
-                  "audio": "/audio/general/spell-last-name.mp3",
-                  "text": "How do you spell your last name?",
+                  audio: "/audio/alphabet/last-name.mp3",
+                  text: "How do you spell your last name?",
                 },
               ],
             },
             {
               text: [
                 {
-                  "audio": "/audio/general/spell-email-address.mp3",
-                  "text": "How do you spell your email address?",
+                  audio: "/audio/alphabet/email-address.mp3",
+                  text: "How do you spell your email address?",
                 },
               ],
             },
           ]}
         />
-        <Card
-          texts={[
+        <Note
+          items={[
             {
               text: [
                 {
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/alphabet/letter-c.mp3",
                   text: "“C” has the same sound as the verb “see” and the noun “sea”",
                 },
               ],
@@ -70,7 +71,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/alphabet/letter-d.mp3",
                   text: "“D” is pronounced differently from letter “G”",
                 },
               ],
@@ -78,7 +79,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/alphabet/number-eight.mp3",
                   text: "Number “eight” is pronounced differently from letter “H”",
                 },
               ],
@@ -86,7 +87,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/alphabet/letter-t.mp3",
                   text: "“T” has the same sound as in “tea”",
                 },
               ],
@@ -94,7 +95,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/alphabet/letter-u.mp3",
                   text: "“U” has the same sound as in “you”",
                 },
               ],
@@ -102,13 +103,13 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/alphabet/letter-z.mp3",
                   text: "“Z” in British is pronounced “zed”",
                 },
               ],
             },
           ]}
-          />
+        />
       </div>
     </>
   );

@@ -1,0 +1,24 @@
+.note {
+  margin-bottom: var(--line-break);
+}
+
+.bg {
+  background-color: var(--yellow-1);
+}
+
+.bulleted {
+  padding-left: 1.5rem;
+}
+
+.bulleted li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.noBullet {
+  padding-left: 0;
+}
+
+.noBullet li {
+  list-style-type: none;
+}

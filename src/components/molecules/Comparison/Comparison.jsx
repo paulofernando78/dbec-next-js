@@ -11,7 +11,7 @@ export const Comparison = ({ groups = [] }) => {
         if (!Array.isArray(item.group)) return null;
 
         return (
-          <div key={index}>
+          <div key={index} class>
             {item.group.map((subItem, subIndex) => (
               <p key={subIndex}>
                 {subItem.audio && <Audio src={subItem.audio} />}

@@ -2,7 +2,7 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Comparison } from "@/components/molecules/Comparison/";
 import { Example } from "@/components/molecules/Example/";
 
-export default function LetterA() {
+export default function LetterAeEA() {
   return (
     <>
       <Whiteboard title="Pronunciation" subtitle="Letters a / e(a)" />

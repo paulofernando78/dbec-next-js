@@ -1,8 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Ribbon } from "@/components/atoms/Ribbon";
-import { Card } from "@/components/molecules/Card";
+// import { Card } from "@/components/molecules/Card";
 import { InlineText } from "@/components/molecules/InlineText";
 import { List } from "@/components/molecules/List";
+import { Note } from "@/components/molecules/Note";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Comparison } from "../../components/molecules/Comparison/Comparison";
@@ -19,9 +20,12 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
-        <Ribbon label="AUDIO PLAYER" />
+        {/* Audio Player */}
+        <Ribbon label="Audio Player" />
         <AudioPlayer src="/audio/general/about-to.mp3" />
-        <Ribbon label="INLINE TEXT" />
+
+        {/* Inline Text */}
+        <Ribbon label="Inline Text" />
         <InlineText
           text={[
             {
@@ -66,7 +70,9 @@ export default function Mock() {
             ". ",
           ]}
         />
-        <Ribbon label="PARAGRAPH" />
+
+        {/* Paragraph */}
+        <Ribbon label="Paragraph" />
         <Paragraph
           audioPlayer="/audio/general/about-to.mp3"
           paragraphs={[
@@ -166,7 +172,9 @@ export default function Mock() {
             },
           ]}
         />
-        <Ribbon label="LIST" />
+
+        {/* List */}
+        <Ribbon label="List" />
         <List
           bullet={false}
           items={[
@@ -243,33 +251,46 @@ export default function Mock() {
             },
           ]}
         />
-        <Ribbon label="CARD" />
-        <Card
-          texts={[
+
+        {/* Note */}
+        <Ribbon label="Note" />
+        <Note
+          items={[
             {
               text: [
-                "I ",
                 {
-                  audio: "/audio/general/am.mp3",
-                  text: "am",
-                  type: "bold",
+                  audio: "/audio/general/.mp3",
+                  text: "...",
                 },
-                " a teacher. I ",
               ],
             },
             {
               text: [
-                "I ",
                 {
-                  audio: "/audio/general/am.mp3",
-                  text: "am",
-                  type: "bold",
+                  audio: "/audio/general/.mp3",
+                  text: "...",
                 },
-                " a teacher. I ",
+              ],
+            },
+            {
+              text: [
+                {
+                  audio: "/audio/general/.mp3",
+                  text: "...",
+                },
+              ],
+            },
+            {
+              text: [
+                {
+                  audio: "/audio/general/.mp3",
+                  text: "...",
+                },
               ],
             },
           ]}
         />
+
         <Ribbon label="DIALOGUE" />
         <Dialogue
           title="Title"

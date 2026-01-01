@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import styles from "./Navbar.module.css"
+import styles from "./Navbar.module.css";
 
 import { HeaderContext } from "@/context/headerContext";
-import Link from "next/link"
+import Link from "next/link";
 import { useContext } from "react";
 
 const linkGroup = [
@@ -11,97 +11,123 @@ const linkGroup = [
     title: "Audiobooks",
     links: [
       {
-        href: "/audiobooks/starter", label: "Starter"
+        href: "/audiobooks/starter",
+        label: "Starter",
       },
       {
-        href: "/audiobooks/beginner", label: "..."
-      }
+        href: "/audiobooks/beginner",
+        label: "...",
+      },
     ],
   },
   {
     title: "Pronunciation",
     links: [
       {
-        href: "/pronunciation/the-alphabet", label: "The Alphabet"
+        href: "/pronunciation/the-alphabet",
+        label: "The Alphabet",
       },
       {
-        href: "/pronunciation/phonetics", label: "Phonetics"
+        href: "/pronunciation/phonetics",
+        label: "Phonetics",
       },
       {
-        href: "/pronunciation/letters-a-e-ea", label: "Letters a vs. e(a)"
+        href: "/pronunciation/letters-a-e-ea",
+        label: "Letters a vs. e(a)",
       },
       {
-        href: "/pronunciation/letters-ee-ea-i", label: "Letters ee / ea vs. i"
-      }
+        href: "/pronunciation/letters-ee-ea-i",
+        label: "Letters ee / ea vs. i",
+      },
+      {
+        href: "/pronunciation/letter-u",
+        label: "Letter u",
+      },
     ],
   },
   {
     title: "Grammar",
     links: [
       {
-        href: "/grammar/verb-be", label: "Verb Be"
+        href: "/grammar/verb-be",
+        label: "Verb Be",
       },
       {
-        href: "/grammar/simple-present", label: "Simple Present"
+        href: "/grammar/simple-present",
+        label: "Simple Present",
       },
       {
-        href: "/grammar/present-continuous", label: "Present Continuous"
+        href: "/grammar/present-continuous",
+        label: "Present Continuous",
       },
       {
-        href: "/grammar/simple-past", label: "Simple Past"
+        href: "/grammar/simple-past",
+        label: "Simple Past",
       },
       {
-        href: "/grammar/past-continuous", label: "Past Continuous"
+        href: "/grammar/past-continuous",
+        label: "Past Continuous",
       },
       {
-        href: "/grammar/present-perfect", label: "Present Perfect"
+        href: "/grammar/present-perfect",
+        label: "Present Perfect",
       },
       {
-        href: "/grammar/past-perfect", label: "Past Perfect"
+        href: "/grammar/past-perfect",
+        label: "Past Perfect",
       },
       {
-        href: "/grammar/simple-future", label: "Simple Future"
+        href: "/grammar/simple-future",
+        label: "Simple Future",
       },
       {
-        href: "/grammar/future-continuous", label: "Future Continuous"
+        href: "/grammar/future-continuous",
+        label: "Future Continuous",
       },
       {
-        href: "/grammar/future-perfect", label: "Future Perfect"
+        href: "/grammar/future-perfect",
+        label: "Future Perfect",
       },
       {
-        href: "/grammar/conditionals", label: "Conditionals"
+        href: "/grammar/conditionals",
+        label: "Conditionals",
       },
       {
-        href: "/grammar/word-formation", label: "Word Formation"
-      }
+        href: "/grammar/word-formation",
+        label: "Word Formation",
+      },
     ],
   },
   {
     title: "Vocabulary",
     links: [
       {
-        href: "/vocabulary/collocations", label: "Collocations"
+        href: "/vocabulary/collocations",
+        label: "Collocations",
       },
       {
-        href: "/vocabulary/expressions", label: "Expressions"
+        href: "/vocabulary/expressions",
+        label: "Expressions",
       },
       {
-        href: "/vocabulary/homonyns", label: "Homonyns"
+        href: "/vocabulary/homonyns",
+        label: "Homonyns",
       },
       {
-        href: "/vocabulary/for-to", label: "For vs. To"
-      }
+        href: "/vocabulary/for-to",
+        label: "For vs. To",
+      },
     ],
   },
-  {
-    title: "Games",
-    links: [
-      {
-        href: "/games/minecraft", label: "Minecraft"
-      }
-    ],
-  },
-  
+  // {
+  //   title: "Games",
+  //   links: [
+  //     {
+  //       href: "/games/minecraft", label: "Minecraft"
+  //     }
+  //   ],
+  // },
+
   // {
   //   title: "Course",
   //   links: [
@@ -114,11 +140,13 @@ const linkGroup = [
   // }
 ];
 
-export default function NavBar({ }) {
-  const {showNavBar} = useContext(HeaderContext)
+export default function NavBar({}) {
+  const { showNavBar } = useContext(HeaderContext);
 
   return (
-    <nav className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`} >
+    <nav
+      className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`}
+    >
       {linkGroup.map((group, groupIndex) => (
         <div key={groupIndex}>
           <span className={styles.navTitle}>{group.title}</span>
@@ -132,5 +160,5 @@ export default function NavBar({ }) {
         </div>
       ))}
     </nav>
-  )
+  );
 }
