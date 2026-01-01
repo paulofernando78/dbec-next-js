@@ -3,6 +3,7 @@ import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
 
 export const Comparison = ({ groups = [] }) => {
+  if (!groups.length) return null;
   return (
     <>
       {Array.isArray(groups) &&

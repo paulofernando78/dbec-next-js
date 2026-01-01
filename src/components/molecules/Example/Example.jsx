@@ -3,6 +3,8 @@ import styles from "./Example.module.css"
 import { Paragraph } from "@/components/molecules/Paragraph";
 
 export const Example = ({ examples = [] }) => {
+  if (!examples.length) return null;
+  
   return (
     <div>
       <Paragraph
