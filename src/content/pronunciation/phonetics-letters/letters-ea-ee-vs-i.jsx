@@ -319,12 +319,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/assets/audio/general/sleep-example.mp3",
+              audioPlayer: "/assets/audio/general/i-need-to-sleep.mp3",
               text: ["I need to ", { type: "mark", text: "sleep" }, "."],
               portuguese: "Eu preciso dormir.",
             },
             {
-              audioPlayer: "/assets/audio/general/slip-example.mp3",
+              audioPlayer: "/assets/audio/general/be-careful-not-to-slip.mp3",
               text: ["Be careful not to ", { type: "mark", text: "slip" }, "."],
               portuguese: "Cuidado para não escorregar.",
             },
@@ -355,12 +355,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/assets/audio/general/these-example.mp3",
+              audioPlayer: "/assets/audio/general/these-are-my-keys.mp3",
               text: ["", { type: "mark", text: "These" }, " are my keys."],
               portuguese: "Estas são minhas chaves.",
             },
             {
-              audioPlayer: "/assets/audio/general/this-example.mp3",
+              audioPlayer: "/assets/audio/general/this-is-my-house.mp3",
               text: ["", { type: "mark", text: "This" }, " is my house."],
               portuguese: "Esta é minha casa.",
             },
