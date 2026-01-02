@@ -12,13 +12,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/eat.mp3",
+                  audio: "/assets/audio/general/eat.mp3",
                   word: "eat",
                   phonetics: "/iːt/",
                   portuguese: "comer",
                 },
                 {
-                  audio: "/audio/general/it.mp3",
+                  audio: "/assets/audio/general/it.mp3",
                   word: "it",
                   phonetics: "/ɪt/",
                   portuguese: "isso / ele / ela (neutro)",
@@ -31,12 +31,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/eat-example.mp3",
-              text: ["I ", { type: "mark", text: "eat" }, " breakfast at home."],
-              portuguese: "Eu como café da manhã em casa.",
+              audioPlayer: "/assets/audio/general/i-dont-usually-eat-breakfast.mp3",
+              text: ["I dont’t usually ", { type: "mark", text: "eat" }, " breakfast."],
+              portuguese: "Normalmente eu não tomo café da manhã.",
             },
             {
-              audioPlayer: "/audio/general/it-example.mp3",
+              audioPlayer: "/assets/audio/general/it-is-very-cold-today.mp3",
               text: ["", { type: "mark", text: "It" }, " is very cold today."],
               portuguese: "Está muito frio hoje.",
             },
@@ -48,13 +48,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/feel.mp3",
+                  audio: "/assets/audio/general/feel.mp3",
                   word: "feel",
                   phonetics: "/fiːl/",
                   portuguese: "sentir",
                 },
                 {
-                  audio: "/audio/general/fill.mp3",
+                  audio: "/assets/audio/general/fill.mp3",
                   word: "fill",
                   phonetics: "/fɪl/",
                   portuguese: "encher",
@@ -67,12 +67,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/feel-example.mp3",
+              audioPlayer: "/assets/audio/general/i-feel-tired.mp3",
               text: ["I ", { type: "mark", text: "feel" }, " tired."],
               portuguese: "Eu me sinto cansado.",
             },
             {
-              audioPlayer: "/audio/general/fill-example.mp3",
+              audioPlayer: "/assets/audio/general/fill-the-glass-please.mp3",
               text: ["", { type: "mark", text: "Fill" }, " the glass, please."],
               portuguese: "Encha o copo, por favor.",
             },
@@ -84,13 +84,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/heel.mp3",
+                  audio: "/assets/audio/general/heel.mp3",
                   word: "heel",
                   phonetics: "/hiːl/",
                   portuguese: "calcanhar",
                 },
                 {
-                  audio: "/audio/general/hill.mp3",
+                  audio: "/assets/audio/general/hill.mp3",
                   word: "hill",
                   phonetics: "/hɪl/",
                   portuguese: "colina",
@@ -103,14 +103,14 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/heel-example.mp3",
+              audioPlayer: "/assets/audio/general/my-heel-hurts.mp3",
               text: ["My ", { type: "mark", text: "heel" }, " hurts."],
               portuguese: "Meu calcanhar dói.",
             },
             {
-              audioPlayer: "/audio/general/hill-example.mp3",
-              text: ["They climbed the ", { type: "mark", text: "hill" }, "."],
-              portuguese: "Eles subiram a colina.",
+              audioPlayer: "/assets/audio/general/lets-go-up-the-hill.mp3",
+              text: ["Let’s go up the ", { type: "mark", text: "hill" }, "."],
+              portuguese: "Vamos subir a colina.",
             },
           ]}
         />
@@ -120,13 +120,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/leave.mp3",
+                  audio: "/assets/audio/general/leave.mp3",
                   word: "leave",
                   phonetics: "/liːv/",
                   portuguese: "sair; deixar",
                 },
                 {
-                  audio: "/audio/general/live.mp3",
+                  audio: "/assets/audio/general/live1.mp3",
                   word: "live",
                   phonetics: "/lɪv/",
                   portuguese: "morar; viver",
@@ -139,12 +139,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/leave-example.mp3",
+              audioPlayer: "/assets/audio/general/i-want-to-leave-now.mp3",
               text: ["I want to ", { type: "mark", text: "leave" }, " now."],
               portuguese: "Eu quero sair agora.",
             },
             {
-              audioPlayer: "/audio/general/live-example.mp3",
+              audioPlayer: "/assets/audio/general/i-live-in-brazil.mp3",
               text: ["I ", { type: "mark", text: "live" }, " in Brazil."],
               portuguese: "Eu moro no Brasil.",
             },
@@ -156,13 +156,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/meat.mp3",
+                  audio: "/assets/audio/general/meat.mp3",
                   word: "meat",
                   phonetics: "/miːt/",
                   portuguese: "carne",
                 },
                 {
-                  audio: "/audio/general/mint.mp3",
+                  audio: "/assets/audio/general/mint.mp3",
                   word: "mint",
                   phonetics: "/mɪnt/",
                   portuguese: "hortelã",
@@ -175,12 +175,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/meat-example.mp3",
+              audioPlayer: "/assets/audio/general/i-dont-eat-meat.mp3",
               text: ["I don't eat ", { type: "mark", text: "meat" }, "."],
               portuguese: "Eu não como carne.",
             },
             {
-              audioPlayer: "/audio/general/mint-example.mp3",
+              audioPlayer: "/assets/audio/general/this-tea-has-mint-in-it.mp3",
               text: ["This tea has ", { type: "mark", text: "mint" }, " in it."],
               portuguese: "Este chá tem hortelã.",
             },
@@ -192,13 +192,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/reach.mp3",
+                  audio: "/assets/audio/general/reach.mp3",
                   word: "reach",
                   phonetics: "/riːtʃ/",
                   portuguese: "alcançar",
                 },
                 {
-                  audio: "/audio/general/rich.mp3",
+                  audio: "/assets/audio/general/rich.mp3",
                   word: "rich",
                   phonetics: "/rɪtʃ/",
                   portuguese: "rico",
@@ -211,12 +211,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/reach-example.mp3",
+              audioPlayer: "/assets/audio/general/i-cant-reach-the-shelf.mp3",
               text: ["I can't ", { type: "mark", text: "reach" }, " the shelf."],
               portuguese: "Eu não consigo alcançar a prateleira.",
             },
             {
-              audioPlayer: "/audio/general/rich-example.mp3",
+              audioPlayer: "/assets/audio/general/he-is-very-rich.mp3",
               text: ["He is very ", { type: "mark", text: "rich" }, "."],
               portuguese: "Ele é muito rico.",
             },
@@ -228,13 +228,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/seat.mp3",
+                  audio: "/assets/audio/general/seat.mp3",
                   word: "seat",
                   phonetics: "/siːt/",
                   portuguese: "assento",
                 },
                 {
-                  audio: "/audio/general/sit.mp3",
+                  audio: "/assets/audio/general/sit.mp3",
                   word: "sit",
                   phonetics: "/sɪt/",
                   portuguese: "sentar",
@@ -247,12 +247,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/seat-example.mp3",
+              audioPlayer: "/assets/audio/general/please-take-a-seat.mp3",
               text: ["Take a ", { type: "mark", text: "seat" }, ", please."],
               portuguese: "Sente-se, por favor.",
             },
             {
-              audioPlayer: "/audio/general/sit-example.mp3",
+              audioPlayer: "/assets/audio/general/please-sit-down.mp3",
               text: ["Please ", { type: "mark", text: "sit" }, " down."],
               portuguese: "Por favor, sente-se.",
             },
@@ -264,13 +264,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/sheep.mp3",
+                  audio: "/assets/audio/general/sheep.mp3",
                   word: "sheep",
                   phonetics: "/ʃiːp/",
                   portuguese: "ovelha",
                 },
                 {
-                  audio: "/audio/general/ship.mp3",
+                  audio: "/assets/audio/general/ship.mp3",
                   word: "ship",
                   phonetics: "/ʃɪp/",
                   portuguese: "navio",
@@ -283,14 +283,14 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/sheep-example.mp3",
+              audioPlayer: "/assets/audio/general/i-saw-a-sheep-on-the-farm.mp3",
               text: ["I saw a ", { type: "mark", text: "sheep" }, " on the farm."],
               portuguese: "Eu vi uma ovelha na fazenda.",
             },
             {
-              audioPlayer: "/audio/general/ship-example.mp3",
-              text: ["The ", { type: "mark", text: "ship" }, " arrived late."],
-              portuguese: "O navio chegou tarde.",
+              audioPlayer: "/assets/audio/general/this-ship-is-huge.mp3",
+              text: ["This ", { type: "mark", text: "ship" }, " arrived late."],
+              portuguese: "Este navio é enorme.",
             },
           ]}
         />
@@ -300,13 +300,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/sleep.mp3",
+                  audio: "/assets/audio/general/sleep.mp3",
                   word: "sleep",
                   phonetics: "/sliːp/",
                   portuguese: "dormir",
                 },
                 {
-                  audio: "/audio/general/slip.mp3",
+                  audio: "/assets/audio/general/slip.mp3",
                   word: "slip",
                   phonetics: "/slɪp/",
                   portuguese: "escorregar",
@@ -319,12 +319,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/sleep-example.mp3",
+              audioPlayer: "/assets/audio/general/sleep-example.mp3",
               text: ["I need to ", { type: "mark", text: "sleep" }, "."],
               portuguese: "Eu preciso dormir.",
             },
             {
-              audioPlayer: "/audio/general/slip-example.mp3",
+              audioPlayer: "/assets/audio/general/slip-example.mp3",
               text: ["Be careful not to ", { type: "mark", text: "slip" }, "."],
               portuguese: "Cuidado para não escorregar.",
             },
@@ -336,13 +336,13 @@ export default function LettersEEeaI() {
             {
               group: [
                 {
-                  audio: "/audio/general/these.mp3",
+                  audio: "/assets/audio/general/these.mp3",
                   word: "these",
                   phonetics: "/ðiːz/",
                   portuguese: "estes / estas",
                 },
                 {
-                  audio: "/audio/general/this.mp3",
+                  audio: "/assets/audio/general/this.mp3",
                   word: "this",
                   phonetics: "/ðɪs/",
                   portuguese: "este / esta",
@@ -355,12 +355,12 @@ export default function LettersEEeaI() {
         <Example
           examples={[
             {
-              audioPlayer: "/audio/general/these-example.mp3",
+              audioPlayer: "/assets/audio/general/these-example.mp3",
               text: ["", { type: "mark", text: "These" }, " are my keys."],
               portuguese: "Estas são minhas chaves.",
             },
             {
-              audioPlayer: "/audio/general/this-example.mp3",
+              audioPlayer: "/assets/audio/general/this-example.mp3",
               text: ["", { type: "mark", text: "This" }, " is my house."],
               portuguese: "Esta é minha casa.",
             },

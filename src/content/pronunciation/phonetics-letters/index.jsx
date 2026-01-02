@@ -12,7 +12,7 @@ export default function PhoneticsLetters() {
         <Paragraph
           paragraphs={[
             {
-              audio: "/assets//audio/general/",
+              audio: "/assets/audio/phonetics/check-out.mp3",
               text: ["Check out the phonetic sounds of American English."],
             },
           ]}
