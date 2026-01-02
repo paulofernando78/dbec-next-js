@@ -28,21 +28,25 @@ const linkGroup = [
         label: "The Alphabet",
       },
       {
-        href: "/pronunciation/phonetics",
-        label: "Phonetics",
+        href: "/pronunciation/letters",
+        label: "Letters + Phonetics",
       },
       {
-        href: "/pronunciation/letters-a-e-ea",
-        label: "Letters a vs. e(a)",
+        href: "/pronunciation/linked+sounds",
+        label: "Linked Sounds",
       },
-      {
-        href: "/pronunciation/letters-ee-ea-i",
-        label: "Letters ee / ea vs. i",
-      },
-      {
-        href: "/pronunciation/letter-u",
-        label: "Letter u",
-      },
+      // {
+      //   href: "/pronunciation/letters-a-e-ea",
+      //   label: "Letters a vs. e(a)",
+      // },
+      // {
+      //   href: "/pronunciation/letters-ee-ea-i",
+      //   label: "Letters ee / ea vs. i",
+      // },
+      // {
+      //   href: "/pronunciation/letter-u",
+      //   label: "Letter u",
+      // },
     ],
   },
   {
@@ -102,6 +106,10 @@ const linkGroup = [
     title: "Vocabulary",
     links: [
       {
+        href: "/vocabulary/for-to",
+        label: "For vs. To",
+      },
+      {
         href: "/vocabulary/collocations",
         label: "Collocations",
       },
@@ -112,10 +120,6 @@ const linkGroup = [
       {
         href: "/vocabulary/homonyns",
         label: "Homonyns",
-      },
-      {
-        href: "/vocabulary/for-to",
-        label: "For vs. To",
       },
     ],
   },

@@ -355,109 +355,6 @@ const emojis = [
   },
 ];
 
-const prompts = [
-  {
-    category: "Possible questions",
-    phrases: [
-      {
-        phrase: "How are you?",
-      },
-      {
-        phrase: "How are you doing?",
-      },
-      {
-        phrase: "How are you feeling today?",
-      },
-      {
-        phrase: "How's it going?",
-      },
-      {
-        phrase: "How's everything?",
-      },
-      {
-        phrase: "How are things with you?",
-      },
-    ],
-  },
-  {
-    category: "Possible responses",
-    phrases: [
-      {
-        phrase: "I'm doing well.",
-      },
-      {
-        phrase: "Great, how about you?",
-      },
-      {
-        phrase: "I'm feeling fantastic today.",
-      },
-      {
-        phrase: "Everything's going really well.",
-      },
-      {
-        phrase: "Things are wonderful, thanks for asking.",
-      },
-    ],
-  },
-  {
-    category: "Neutral responses",
-    phrases: [
-      {
-        phrase: "Not bad, how about you?",
-      },
-      {
-        phrase: "Doing okay, thanks for asking.",
-      },
-      {
-        phrase: "Everything's pretty normal.",
-      },
-      {
-        phrase: "Things are alright.",
-      },
-    ],
-  },
-  {
-    category: "Negative responses",
-    phrases: [
-      {
-        phrase: "I've been better.",
-      },
-      {
-        phrase: "Not so great, to be honest.",
-      },
-      {
-        phrase: "I'm feeling a bit off today.",
-      },
-      {
-        phrase: "Things have been a bit tough lately.",
-      },
-      {
-        phrase: "It's been a challenging day.",
-      },
-    ],
-  },
-  {
-    category: "Informal or Friendly responses",
-    phrases: [
-      {
-        phrase: "All good, you?",
-      },
-      {
-        phrase: "Can’t complain!",
-      },
-      {
-        phrase: "Same old, same old.",
-      },
-      {
-        phrase: "Just hanging in there.",
-      },
-      {
-        phrase: "Pretty chill, how about you?",
-      },
-    ],
-  },
-];
-
 export default function Home() {
   return (
     <div className="line-break-double">
@@ -507,25 +404,6 @@ export default function Home() {
                   ))}
               </div>
             ))}
-          </div>
-          <div className="line-break">
-            <AudioPlayer audioSrc="/how-you-feeling.mp3" />
-
-            <div className={styles["prompt-container"]}>
-              {prompts.map((prompt, promptIndex) => (
-                <div
-                  key={promptIndex}
-                  className={`line-break ${styles["prompt-inner-container"]}`}
-                >
-                  <p className="font-bold">{prompt.category}</p>
-                  <div>
-                    {prompt.phrases.map((phrase, phraseIndex) => (
-                      <p key={phraseIndex}>{phrase.phrase}</p>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </>
       </div>
