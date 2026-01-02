@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-  width: 90px;
+  width: 100px;
   padding: 5px 5px 3px 5px;
   display: flex;
   flex-direction: column;

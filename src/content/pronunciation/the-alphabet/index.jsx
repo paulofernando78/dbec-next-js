@@ -4,7 +4,7 @@ import { InlineText } from "@/components/molecules/InlineText";
 import { List } from "@/components/molecules/List";
 import { Note } from "@/components/molecules/Note";
 
-export default function SimplePresent() {
+export default function TheAlphabetPage() {
   return (
     <>
       <Whiteboard title="Pronunciation" subtitle="The Alphabet" />
@@ -12,7 +12,7 @@ export default function SimplePresent() {
         <InlineText
           text={[
             {
-              audio: "/audio/alphabet/26-letters.mp3",
+              audio: "/assets/audio/alphabet/26-letters.mp3",
               text: "There are 26 letters in the english alphabet.",
               type: "bold",
             },
@@ -22,7 +22,7 @@ export default function SimplePresent() {
         <InlineText
           text={[
             {
-              audio: "/audio/alphabet/answer-these-questions.mp3",
+              audio: "/assets/audio/alphabet/answer-these-questions.mp3",
               text: "Answer these questions.",
               type: "bold",
             },
@@ -35,7 +35,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/first-name.mp3",
+                  audio: "/assets/audio/alphabet/first-name.mp3",
                   text: "How do you spell your first name?",
                 },
               ],
@@ -43,7 +43,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/last-name.mp3",
+                  audio: "/assets/audio/alphabet/last-name.mp3",
                   text: "How do you spell your last name?",
                 },
               ],
@@ -51,7 +51,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/email-address.mp3",
+                  audio: "/assets/audio/alphabet/email-address.mp3",
                   text: "How do you spell your email address?",
                 },
               ],
@@ -63,7 +63,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/letter-c.mp3",
+                  audio: "/assets/audio/alphabet/letter-c.mp3",
                   text: "“C” has the same sound as the verb “see” and the noun “sea”",
                 },
               ],
@@ -71,7 +71,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/letter-d.mp3",
+                  audio: "/assets/audio/alphabet/letter-d.mp3",
                   text: "“D” is pronounced differently from letter “G”",
                 },
               ],
@@ -79,7 +79,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/number-eight.mp3",
+                  audio: "/assets/audio/alphabet/number-eight.mp3",
                   text: "Number “eight” is pronounced differently from letter “H”",
                 },
               ],
@@ -87,7 +87,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/letter-t.mp3",
+                  audio: "/assets/audio/alphabet/letter-t.mp3",
                   text: "“T” has the same sound as in “tea”",
                 },
               ],
@@ -95,7 +95,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/letter-u.mp3",
+                  audio: "/assets/audio/alphabet/letter-u.mp3",
                   text: "“U” has the same sound as in “you”",
                 },
               ],
@@ -103,7 +103,7 @@ export default function SimplePresent() {
             {
               text: [
                 {
-                  audio: "/audio/alphabet/letter-z.mp3",
+                  audio: "/assets/audio/alphabet/letter-z.mp3",
                   text: "“Z” in British is pronounced “zed”",
                 },
               ],

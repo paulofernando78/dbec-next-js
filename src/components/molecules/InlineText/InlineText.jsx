@@ -41,15 +41,9 @@ export const InlineText = ({ text, audio }) => {
 
         return (
           <span key={i}>
-            {part.correct && (
-              <Correct src={part.correct} className="icon-position" />
-            )}
-            {part.incorrect && (
-              <Incorrect src={part.correct} className="icon-position" />
-            )}
-            {part.important && (
-              <Attention src={part.correct} className="icon-position" />
-            )}
+            {part.correct && <Correct className="icon-position" />}
+            {part.incorrect && <Incorrect className="icon-position" />}
+            {part.important && <Attention className="icon-position" />}
             {part.audio && <Audio src={part.audio} />}
             {content}
           </span>

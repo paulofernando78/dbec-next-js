@@ -250,7 +250,7 @@ const emojis = [
     alt: '"frustrated" emoji',
     words: [
       {
-        audio: "/assets/audio/general/frustated.mp3",
+        audio: "/assets/audio/general/frustrated.mp3",
         word: "frustrated",
       },
       {

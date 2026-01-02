@@ -1,0 +1,9 @@
+.linkHeight {
+  line-height: var(--line-height);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: var(--line-break);
+}

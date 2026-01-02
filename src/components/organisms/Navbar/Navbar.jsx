@@ -6,7 +6,7 @@ import { HeaderContext } from "@/context/headerContext";
 import Link from "next/link";
 import { useContext } from "react";
 
-const linkGroup = [
+const links = [
   {
     title: "Audiobooks",
     links: [
@@ -28,25 +28,13 @@ const linkGroup = [
         label: "The Alphabet",
       },
       {
-        href: "/pronunciation/letters",
+        href: "/pronunciation/phonetics-letters",
         label: "Letters + Phonetics",
       },
       {
-        href: "/pronunciation/linked+sounds",
+        href: "/pronunciation/linked-sounds",
         label: "Linked Sounds",
       },
-      // {
-      //   href: "/pronunciation/letters-a-e-ea",
-      //   label: "Letters a vs. e(a)",
-      // },
-      // {
-      //   href: "/pronunciation/letters-ee-ea-i",
-      //   label: "Letters ee / ea vs. i",
-      // },
-      // {
-      //   href: "/pronunciation/letter-u",
-      //   label: "Letter u",
-      // },
     ],
   },
   {
@@ -144,14 +132,14 @@ const linkGroup = [
   // }
 ];
 
-export default function NavBar({}) {
+export default function NavBar() {
   const { showNavBar, closeNavBar } = useContext(HeaderContext);
 
   return (
     <nav
       className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`}
     >
-      {linkGroup.map((group, groupIndex) => (
+      {links.map((group, groupIndex) => (
         <div key={groupIndex}>
           <span className={styles.navTitle}>{group.title}</span>
           <div>
