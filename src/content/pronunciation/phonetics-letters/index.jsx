@@ -12,8 +12,8 @@ export default function PhoneticsLetters() {
         <Paragraph
           paragraphs={[
             {
-              audio: "/audio/general/",
-              text: ["Phonetics sounds of American English."],
+              audio: "/assets//audio/general/",
+              text: ["Check out the phonetic sounds of American English."],
             },
           ]}
         />
@@ -25,21 +25,26 @@ export default function PhoneticsLetters() {
             {
               title: "Sounds by letters",
               links: [
+                // {
+                //   href: "/pronunciation/phonetics-letters/letter-a",
+                //   label: "Letter \"a\" ",
+                //   phonetics: "/æ/, /ɑː/, /ə/, /eɪ/"
+                // },
                 {
-                  href: "/pronunciation/letter-a",
-                  label: "Letter \"a\" ",
-                  phonetics: "/æ/, /ɑː/, /ə/, /eɪ/"
-                },
-                {
-                  href: "/pronunciation/letters-a-vs-ea",
+                  href: "/pronunciation/phonetics-letters/letters-a-vs-ea",
                   label: 'Letters "a vs. e(a)"',
                   phonetics: "/æ/ vs. /e/"
                 },
                 {
-                  href: "/pronunciation/letters-a-vs-ea",
-                  label: 'Letter "u"',
-                  phonetics: "/uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/"
+                  href: "/pronunciation/phonetics-letters/letters-ea-ee-vs-i",
+                  label: 'Letters "ea, ee vs. i"',
+                  phonetics: "/iː/ vs /ɪ/"
                 },
+                // {
+                //   href: "/pronunciation/phonetics-letters/letteru",
+                //   label: 'Letter "u"',
+                //   phonetics: "/uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/"
+                // },
               ],
             },
           ]}
