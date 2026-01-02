@@ -22,7 +22,7 @@ export default function TheAlphabetPage() {
         <InlineText
           text={[
             {
-              audio: "/assets/audio/alphabet/answer-these-questions.mp3",
+              audio: "/assets/audio/general/answer-these-questions.mp3",
               text: "Answer these questions.",
               type: "bold",
             },
@@ -64,7 +64,7 @@ export default function TheAlphabetPage() {
               text: [
                 {
                   audio: "/assets/audio/alphabet/letter-c.mp3",
-                  text: "“C” has the same sound as the verb “see” and the noun “sea”",
+                  text: "“C” has the same sound as the verb “see” and the noun “sea.”",
                 },
               ],
             },
@@ -72,7 +72,7 @@ export default function TheAlphabetPage() {
               text: [
                 {
                   audio: "/assets/audio/alphabet/letter-d.mp3",
-                  text: "“D” is pronounced differently from letter “G”",
+                  text: "“D” is pronounced differently from letter “G.”",
                 },
               ],
             },
@@ -80,7 +80,7 @@ export default function TheAlphabetPage() {
               text: [
                 {
                   audio: "/assets/audio/alphabet/number-eight.mp3",
-                  text: "Number “eight” is pronounced differently from letter “H”",
+                  text: "Number “eight” is pronounced differently from letter “H.”",
                 },
               ],
             },
@@ -88,7 +88,7 @@ export default function TheAlphabetPage() {
               text: [
                 {
                   audio: "/assets/audio/alphabet/letter-t.mp3",
-                  text: "“T” has the same sound as in “tea”",
+                  text: "“T” has the same sound as in “tea.”",
                 },
               ],
             },
@@ -96,7 +96,7 @@ export default function TheAlphabetPage() {
               text: [
                 {
                   audio: "/assets/audio/alphabet/letter-u.mp3",
-                  text: "“U” has the same sound as in “you”",
+                  text: "“U” has the same sound as in “you.”",
                 },
               ],
             },
@@ -104,7 +104,7 @@ export default function TheAlphabetPage() {
               text: [
                 {
                   audio: "/assets/audio/alphabet/letter-z.mp3",
-                  text: "“Z” in British is pronounced “zed”",
+                  text: "“Z” in British is pronounced “zed.”",
                 },
               ],
             },
