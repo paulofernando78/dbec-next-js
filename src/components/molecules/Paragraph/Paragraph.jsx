@@ -6,7 +6,7 @@ import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { InlineText } from "@/components/molecules/InlineText";
 
-export const Paragraph = ({ paragraphs, audioPlayer }) => {
+export const Paragraph = ({ paragraphs }) => {
   return (
     <div
       className={styles.wrapper}
@@ -35,7 +35,7 @@ export const Paragraph = ({ paragraphs, audioPlayer }) => {
               />
             )}
             <p>
-              <InlineText text={p.text} />
+              <InlineText audio={p.audio} text={p.text} />
               {/* <InlineText text={p.portuguese} /> */}
             </p>
           </div>

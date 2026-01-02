@@ -28,6 +28,34 @@ export default function Mock() {
         <Ribbon label="Inline Text" />
         <InlineText
           text={[
+            "... ",
+            {
+              correct: true,
+              audio: "/audio/",
+              text: "...",
+              type: "bold",
+            },
+            " ... ",
+            " ... ",
+            {
+              incorrect: true,
+              audio: "/audio/",
+              text: "...",
+              type: "italic",
+            },
+            " ...",
+            " ... ",
+            {
+              important: true,
+              audio: "/audio/",
+              text: "...",
+              type: "mark",
+            },
+            " ...",
+          ]}
+        />
+        <InlineText
+          text={[
             {
               audio: "/audio/general/am.mp3",
               text: "Hi",
@@ -46,28 +74,6 @@ export default function Mock() {
               type: "bold",
             },
             " at a school.",
-          ]}
-        />
-        <InlineText
-          text={[
-            {
-              correct: true,
-              text: "Hi",
-              type: "bold",
-            },
-            ". ",
-            {
-              incorrect: true,
-              text: "Hy",
-              type: "bold",
-            },
-            ". ",
-            {
-              important: true,
-              text: "Attention",
-              type: "bold",
-            },
-            ". ",
           ]}
         />
 

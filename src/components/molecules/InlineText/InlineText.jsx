@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./InlineText.module.css"
+import styles from "./InlineText.module.css";
 
 import { Bold } from "@/components/atoms/Bold";
 import { Italic } from "@/components/atoms/Italic";
@@ -9,7 +9,7 @@ import { Audio } from "@/components/atoms/Audio";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import { Correct, Incorrect, Attention } from "@/lib/svg-imports";
 
-export const InlineText = ({ text }) => {
+export const InlineText = ({ text, audio }) => {
   if (!text) return null;
 
   if (typeof text === "string") return text;
@@ -18,9 +18,9 @@ export const InlineText = ({ text }) => {
 
   return (
     <span className={styles.text}>
+      <span>{audio && <Audio src={audio} />}</span>
       {text.map((part, i) => {
-        if (typeof part === "string")
-          return part
+        if (typeof part === "string") return part;
 
         let content = part.text;
 
@@ -41,9 +41,15 @@ export const InlineText = ({ text }) => {
 
         return (
           <span key={i}>
-            {part.correct && <Correct src={part.correct} className="icon-position"/>}
-            {part.incorrect && <Incorrect src={part.correct} className="icon-position"/>}
-            {part.important && <Attention src={part.correct} className="icon-position"/>}
+            {part.correct && (
+              <Correct src={part.correct} className="icon-position" />
+            )}
+            {part.incorrect && (
+              <Incorrect src={part.correct} className="icon-position" />
+            )}
+            {part.important && (
+              <Attention src={part.correct} className="icon-position" />
+            )}
             {part.audio && <Audio src={part.audio} />}
             {content}
           </span>
