@@ -23,7 +23,7 @@ export default function LikedSounds() {
         <Paragraph
           paragraphs={[
             {
-              audio: "/assets/audio/phonetics/w.mp3",
+              audio: "/assets/audio/pronunciation/phonetics/consonants/w.mp3",
               phonetics: "/w/",
             },
             {
@@ -54,15 +54,7 @@ export default function LikedSounds() {
               portuguese: "Faça novamente.",
             },
             {
-              audio:"/assets/audio/phonetics/w.mp3",
-              text: [
-                "g",
-                {
-                  part: "o o",
-                  type: "underline",
-                },
-                "n. ",
-              ],
+              audio: "/assets/audio/pronunciation/phonetics/consonants/j.mp3",
               phonetics: "/j/",
             },
             {
