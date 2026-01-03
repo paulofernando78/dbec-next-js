@@ -1,5 +1,3 @@
-export const Mark = ({ children, className = "" }) => {
-  return (
-    <mark className={className}>{children}</mark>
-  )
-}
+export const Mark = ({ children }) => {
+  return <mark>{children}</mark>;
+};

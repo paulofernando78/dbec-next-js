@@ -80,10 +80,10 @@ export default function Mock() {
         {/* Paragraph */}
         <Ribbon label="Paragraph" />
         <Paragraph
-          audioPlayer="/audio/general/about-to.mp3"
           paragraphs={[
             {
               lineBreak: true,
+              audioPlayer:"/audio/general/about-to.mp3",
               img: "/img/general/cat-1.jpg",
               alt: "a cat photo",
               width: 200,

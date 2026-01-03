@@ -1,5 +1,3 @@
-export const Italic = ({ children, className = "" }) => {
-  return (
-    <em className={className}>{children}</em>
-  )
-}
+export const Italic = ({ children }) => {
+  return <em>{children}</em>;
+};

@@ -13,7 +13,12 @@ export default function PhoneticsLetters() {
           paragraphs={[
             {
               audio: "/assets/audio/phonetics/check-out.mp3",
-              text: ["Check out the phonetic sounds of American English."],
+              text: [
+                {
+                  text: "Check out the phonetic sounds of American English.",
+                  type: "bold"
+                },
+              ],
             },
           ]}
         />
@@ -33,12 +38,12 @@ export default function PhoneticsLetters() {
                 {
                   href: "/pronunciation/phonetics-letters/letters-a-vs-ea",
                   label: 'Letters "a vs. e(a)"',
-                  phonetics: "/æ/ vs. /e/"
+                  phonetics: "/æ/ vs. /e/",
                 },
                 {
                   href: "/pronunciation/phonetics-letters/letters-ea-ee-vs-i",
                   label: 'Letters "ea, ee vs. i"',
-                  phonetics: "/iː/ vs /ɪ/"
+                  phonetics: "/iː/ vs /ɪ/",
                 },
                 // {
                 //   href: "/pronunciation/phonetics-letters/letteru",

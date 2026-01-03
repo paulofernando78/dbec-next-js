@@ -1,5 +1,3 @@
-export const Bold = ({ children, className = "" }) => {
-  return (
-    <strong className={className}>{children}</strong>
-  )
-}
+export const Bold = ({ children }) => {
+  return <strong>{children}</strong>;
+};
