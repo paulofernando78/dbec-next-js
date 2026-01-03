@@ -9,14 +9,14 @@ import { InlineText } from "@/components/molecules/InlineText";
 
 export const Paragraph = ({ paragraphs }) => {
   return (
-    <div
-      className={styles.wrapper}
-    >
+    <div className={styles.wrapper}>
       {paragraphs.map((p, pIndex) => (
-        <div key={pIndex} className={[styles.paragraphBlock, p.lineBreak && styles.lineBreak]
-          .filter(Boolean)
-          .join(" ")
-        }>
+        <div
+          key={pIndex}
+          className={[styles.paragraphBlock, p.lineBreak && styles.lineBreak]
+            .filter(Boolean)
+            .join(" ")}
+        >
           {p.audioPlayer && <AudioPlayer src={p.audioPlayer} />}
           <div
             className={[
@@ -36,7 +36,15 @@ export const Paragraph = ({ paragraphs }) => {
               />
             )}
             <p>
-              <InlineText audio={p.audio} text={p.text} phonetics={p.phonetics} portuguese={p.portuguese}/>
+              <InlineText
+                important={p.important}
+                correct={p.correct}
+                incorrect={p.incorrect}
+                audio={p.audio}
+                text={p.text}
+                phonetics={p.phonetics}
+                portuguese={p.portuguese}
+              />
             </p>
           </div>
         </div>

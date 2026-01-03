@@ -7,11 +7,21 @@ import { Bold } from "@/components/atoms/Bold";
 export const Note = ({ items = [], bullet = true }) => {
   return (
     <Card className={styles.bg}>
-      <span className={styles.note}><Bold>Note</Bold></span>
+      <span className={styles.note}>
+        <Bold>Note</Bold>
+      </span>
       <ul className={bullet ? styles.bulleted : styles.noBullet}>
         {items.map((item, index) => (
           <li key={index}>
-            <InlineText text={item.text} />
+            <InlineText
+              important={item.important}
+              correct={item.correct}
+              incorrect={item.incorrect}
+              audio={item.audio}
+              text={item.text}
+              phonetics={item.phonetics}
+              portuguese={item.portuguese}
+            />
           </li>
         ))}
       </ul>

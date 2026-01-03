@@ -1,7 +1,15 @@
 .container {
-
+  display: block;
 }
 
-.wrapper {
-  
+.symbol {
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--blue-5);
+}
+
+.description {
+  text-align: center;
 }

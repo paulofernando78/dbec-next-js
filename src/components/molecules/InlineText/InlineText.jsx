@@ -62,7 +62,7 @@ export const InlineText = ({
         <Phonetics>
           <span>{phonetics}</span>
         </Phonetics>
-      )}
+      )}{" "}
       {portuguese && (
         <Portuguese>
           <span>{portuguese}</span>

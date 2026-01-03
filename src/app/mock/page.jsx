@@ -30,7 +30,7 @@ export default function Mock() {
           important={true}
           correct={true}
           incorrect={true}
-          audio="/audio/"   
+          audio="/audio/"
           text={[
             "start ",
             {
@@ -69,9 +69,16 @@ export default function Mock() {
               width: 200,
               height: 200,
               imgPosition: "top",
+              important: true,
+              correct: true,
+              incorrect: true,
+              audio: "/audio/",
               text: [
                 "This is ",
                 {
+                  important: true,
+                  correct: true,
+                  incorrect: true,
                   audio: "/audio/general/",
                   part: "bold",
                   type: "bold",
@@ -89,72 +96,11 @@ export default function Mock() {
                   audio: "/audio/general/",
                   part: "italic",
                   type: "italic",
-                },
-                " text.",
-              ],
-            },
-            {
-              lineBreak: true,
-              img: "/img/general/cat-2.jpg",
-              alt: "a cat photo",
-              width: 200,
-              height: 200,
-              imgPosition: "left",
-              audioPlayer: "/audio/general/",
-              text: [
-                "This is ",
-                {
-                  audio: "/audio/general/",
-                  part: "bold",
-                  type: "bold",
-                },
-                " part. ",
-                "This is ",
-                {
-                  audio: "/audio/general/",
-                  part: "mark",
-                  type: "mark",
-                },
-                " part.",
-                "This is ",
-                {
-                  audio: "/audio/general/",
-                  part: "italic",
-                  type: "italic",
-                },
-                " text.",
-              ],
-            },
-            {
-              img: "/img/general/cat-2.jpg",
-              alt: "a cat photo",
-              width: 200,
-              height: 200,
-              imgPosition: "right",
-              audioPlayer: "/audio/general/",
-              text: [
-                "This is ",
-                {
-                  audio: "/audio/general/",
-                  part: "bold",
-                  type: "bold",
                 },
                 " text. ",
-                "This is ",
-                {
-                  audio: "/audio/general/",
-                  part: "mark",
-                  type: "mark",
-                },
-                " text.",
-                "This is ",
-                {
-                  audio: "/audio/general/",
-                  part: "italic",
-                  type: "italic",
-                },
-                " text.",
               ],
+              phonetics: "phonetics",
+              portuguese: "portuguese",
             },
           ]}
         />
@@ -165,37 +111,34 @@ export default function Mock() {
           bullet={false}
           items={[
             {
+              important: true,
+              correct: true,
+              incorrect: true,
+              audio: "/audio/",
               text: [
                 "start ",
                 {
-                  audio: "/audio/general/about-to.mp3",
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
                   part: "bold",
                   type: "bold",
                 },
-                " end",
-              ],
-            },
-            {
-              text: [
-                "start ",
+                " ",
                 {
-                  audio: "/audio/general/about-to.mp3",
                   part: "italic",
                   type: "italic",
                 },
-                " end",
-              ],
-            },
-            {
-              text: [
-                "start ",
+                " ",
                 {
-                  audio: "/audio/general/about-to.mp3",
                   part: "mark",
                   type: "mark",
                 },
-                " end",
+                " end ",
               ],
+              phonetics: "phonetics",
+              portuguese: "portuguese",
             },
           ]}
         />
@@ -203,37 +146,34 @@ export default function Mock() {
         <List
           items={[
             {
+              important: true,
+              correct: true,
+              incorrect: true,
+              audio: "/audio/",
               text: [
                 "start ",
                 {
-                  audio: "/audio/general/about-to.mp3",
-                  part: "teste",
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
+                  part: "bold",
                   type: "bold",
                 },
-                " end",
-              ],
-            },
-            {
-              text: [
-                "start ",
+                " ",
                 {
-                  audio: "/audio/general/about-to.mp3",
-                  part: "teste",
+                  part: "italic",
                   type: "italic",
                 },
-                " end",
-              ],
-            },
-            {
-              text: [
-                "start ",
+                " ",
                 {
-                  audio: "/audio/general/about-to.mp3",
-                  part: "teste",
+                  part: "mark",
                   type: "mark",
                 },
-                " end",
+                " end ",
               ],
+              phonetics: "phonetics",
+              portuguese: "portuguese",
             },
           ]}
         />
@@ -243,36 +183,34 @@ export default function Mock() {
         <Note
           items={[
             {
+              important: true,
+              correct: true,
+              incorrect: true,
+              audio: "/audio/general/about-to.mp3",
               text: [
+                "start ",
                 {
-                  audio: "/audio/general/.mp3",
-                  part: "...",
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
+                  part: "bold",
+                  type: "bold",
                 },
-              ],
-            },
-            {
-              text: [
+                " ",
                 {
-                  audio: "/audio/general/.mp3",
-                  part: "...",
+                  part: "italic",
+                  type: "italic",
                 },
-              ],
-            },
-            {
-              text: [
+                " ",
                 {
-                  audio: "/audio/general/.mp3",
-                  part: "...",
+                  part: "mark",
+                  type: "mark",
                 },
+                " end ",
               ],
-            },
-            {
-              text: [
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "...",
-                },
-              ],
+              phonetics: "phonetics",
+              portuguese: "portuguese",
             },
           ]}
         />

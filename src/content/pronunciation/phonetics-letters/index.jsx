@@ -1,15 +1,50 @@
 import styles from "./phonetics.module.css";
 
+import React from "react";
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Links } from "@/components/molecules/Links";
 import { Audio } from "@/components/atoms/Audio";
 
-sounds = [
+const vowels = [
   {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
+    symbol: "/æ/",
+    description: "short",
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
+    symbol: "/e/",
+    description: "short",
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/eɪ.mp3",
+    symbol: "/eɪ/",
+    description: "short",
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
+    symbol: "/iː/",
+    description: "long",
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
+    symbol: "/ɔ/",
+    description: "long",
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/oʊ.mp3",
+    symbol: "/oʊ/",
+    description: "long",
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ə-unstressed.mp3",
+    symbol: "/ə/",
+    description: "schwa (unstressed)",
+  },
+];
 
-  }
-]
+
 
 export default function PhoneticsLetters() {
   return (
@@ -29,20 +64,10 @@ export default function PhoneticsLetters() {
             },
           ]}
         />
-        <div className={styles.container}>
-          {sounds.map((p, i) => (
-            <div key={i} className={styles.wrapper}>
-              <>
-                <span className="phonetics">{p.phonetics}</span>
-                <Audio src={a.audio} />
-              </>
-            </div>
-          ))}
-        </div>
+        <h3>Sounds by letters</h3>
         <Links
           links={[
             {
-              title: "Sounds by letters",
               links: [
                 // {
                 //   href: "/pronunciation/phonetics-letters/letter-a",

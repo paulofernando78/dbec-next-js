@@ -1,13 +1,20 @@
-import styles from "./List.module.css"
+import styles from "./List.module.css";
 
-import { InlineText} from "@/components/molecules/InlineText"
+import { InlineText } from "@/components/molecules/InlineText";
 
 export const List = ({ items = [], bullet = true }) => {
   return (
     <ul className={bullet ? styles.bulleted : styles.noBullet}>
       {items.map((item, index) => (
         <li key={index}>
-          <InlineText text={item.text}/>
+          <InlineText
+            important={item.important}
+            correct={item.correct}
+            incorrect={item.incorrect}
+            text={item.text}
+            phonetics={item.phonetics}
+            portuguese={item.portuguese}
+          />
         </li>
       ))}
     </ul>
