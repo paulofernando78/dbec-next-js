@@ -19,7 +19,7 @@ export default function LikedSounds() {
             },
           ]}
         />
-        <h3>Vowel + Vowel</h3>
+        <h3 className="h3">Vowel + Vowel</h3>
         <Paragraph
           paragraphs={[
             {
@@ -84,7 +84,7 @@ export default function LikedSounds() {
             },
           ]}
         />
-        <h3>Consonant + Vowel</h3>
+        <h3 className="h3">Consonant + Vowel</h3>
         <Paragraph
           paragraphs={[
             {
@@ -176,7 +176,7 @@ export default function LikedSounds() {
           ]}
         />
 
-        <h3>d + y</h3>
+        <h3 className="h3">d + y</h3>
         {/* d + y */}
         <Paragraph
           paragraphs={[
@@ -211,7 +211,7 @@ export default function LikedSounds() {
           ]}
         />
 
-        <h3>t + y</h3>
+        <h3 className="h3">t + y</h3>
         {/* t + y */}
         <Paragraph
           paragraphs={[

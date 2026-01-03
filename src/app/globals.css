@@ -169,6 +169,10 @@ mark {
   border-radius: var(--border-radius);
 }
 
+.h3 {
+  font-size: 1rem;
+}
+
 @media (max-width: 700px) {
   .nav {
     margin-left: -145px;
