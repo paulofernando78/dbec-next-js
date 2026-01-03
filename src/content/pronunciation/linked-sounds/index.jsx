@@ -181,6 +181,10 @@ export default function LikedSounds() {
         <Paragraph
           paragraphs={[
             {
+              audio: "/assets/audio/pronunciation/phonetics/consonants/dʒ.mp3",
+              phonetics: "/dʒ/",
+            },
+            {
               audio: "/assets/audio/general/did-you-like-it.mp3",
               text: [
                 "Di",
@@ -188,19 +192,19 @@ export default function LikedSounds() {
                   part: "d y",
                   type: "underline",
                 },
-                "ou like it?",
+                "ou like it? ",
               ],
               portuguese: "Você gostou?",
             },
             {
-              audio: "/assets/audio/general/did-you.mp3",
+              audio: "/assets/audio/general/would-you-like-it.mp3",
               text: [
                 "Woul",
                 {
                   part: "d y",
                   type: "underline",
                 },
-                "ou like it?",
+                "ou like it? ",
               ],
               portuguese: "Você gostaria?",
             },
@@ -211,6 +215,10 @@ export default function LikedSounds() {
         {/* t + y */}
         <Paragraph
           paragraphs={[
+            {
+              audio: "/assets/audio/pronunciation/phonetics/consonants/tʃ.mp3",
+              phonetics: "/tʃ/",
+            },
             {
               audio: "/assets/audio/general/dont-you-like-it.mp3",
               text: [
@@ -224,7 +232,7 @@ export default function LikedSounds() {
               portuguese: "Você não gosta?",
             },
             {
-              audio: "/assets/audio/general/didnt-you like it.mp3",
+              audio: "/assets/audio/general/didnt-you-like-it.mp3",
               text: [
                 "Didn’",
                 {
