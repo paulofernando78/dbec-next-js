@@ -20,37 +20,35 @@ export const InlineText = ({
   phonetics,
   portuguese,
 }) => {
-
   return (
     <span className={styles.text}>
       {important && <Attention className="icon-position" />}
       {correct && <Correct className="icon-position" />}
       {incorrect && <Incorrect className="icon-position" />}
       <span>{audio && <Audio src={audio} />}</span>
-      
+
       {Array.isArray(text) &&
-      text.map((part, i) => {
-        if (typeof part === "string") return part;
+        text.map((part, i) => {
+          if (typeof part === "string") return part;
 
-        let content = part.part;
+          let content = part.part;
 
-        switch (part.type) {
-          case "bold":
-            content = <Bold>{part.part}</Bold>;
-            break;
-          case "italic":
-            content = <Italic>{part.part}</Italic>;
-            break;
-          case "mark":
-            content = <Mark>{part.part}</Mark>;
-            break;
-          case "underline":
-            content = <Underline>{part.part}</Underline>;
-            break;
-        }
+          switch (part.type) {
+            case "bold":
+              content = <Bold>{part.part}</Bold>;
+              break;
+            case "italic":
+              content = <Italic>{part.part}</Italic>;
+              break;
+            case "mark":
+              content = <Mark>{part.part}</Mark>;
+              break;
+            case "underline":
+              content = <Underline>{part.part}</Underline>;
+              break;
+          }
 
-        return (
-          <>
+          return (
             <span key={i}>
               {part.important && <Attention className="icon-position" />}
               {part.correct && <Correct className="icon-position" />}
@@ -58,11 +56,18 @@ export const InlineText = ({
               {part.audio && <Audio src={part.audio} />}
               {content && content}
             </span>
-          </>
-        );
-      })}
-      {phonetics && <Phonetics><span>{phonetics}</span></Phonetics>}
-      {portuguese && <Portuguese><span>{portuguese}</span></Portuguese>}
+          );
+        })}
+      {phonetics && (
+        <Phonetics>
+          <span>{phonetics}</span>
+        </Phonetics>
+      )}
+      {portuguese && (
+        <Portuguese>
+          <span>{portuguese}</span>
+        </Portuguese>
+      )}
     </span>
   );
 };
