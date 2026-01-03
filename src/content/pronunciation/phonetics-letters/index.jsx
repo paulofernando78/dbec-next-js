@@ -1,8 +1,15 @@
-// import styles from "./"
+import styles from "./phonetics.module.css";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Links } from "@/components/molecules/Links";
+import { Audio } from "@/components/atoms/Audio";
+
+sounds = [
+  {
+
+  }
+]
 
 export default function PhoneticsLetters() {
   return (
@@ -15,15 +22,22 @@ export default function PhoneticsLetters() {
               audio: "/assets/audio/phonetics/check-out.mp3",
               text: [
                 {
-                  text: "Check out the phonetic sounds of American English.",
-                  type: "bold"
+                  part: "Check out the phonetic sounds of American English.",
+                  type: "bold",
                 },
               ],
             },
           ]}
         />
-        <div>
-          <div></div>
+        <div className={styles.container}>
+          {sounds.map((p, i) => (
+            <div key={i} className={styles.wrapper}>
+              <>
+                <span className="phonetics">{p.phonetics}</span>
+                <Audio src={a.audio} />
+              </>
+            </div>
+          ))}
         </div>
         <Links
           links={[
