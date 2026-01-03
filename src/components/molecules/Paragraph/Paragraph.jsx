@@ -4,6 +4,7 @@ import styles from "./Paragraph.module.css";
 
 import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Audio } from "@/components/atoms/Audio";
 import { InlineText } from "@/components/molecules/InlineText";
 
 export const Paragraph = ({ paragraphs }) => {
@@ -35,8 +36,7 @@ export const Paragraph = ({ paragraphs }) => {
               />
             )}
             <p>
-              <InlineText audio={p.audio} text={p.text} />
-              {/* <InlineText text={p.portuguese} /> */}
+              <InlineText audio={p.audio} text={p.text} phonetics={p.phonetics} portuguese={p.portuguese}/>
             </p>
           </div>
         </div>

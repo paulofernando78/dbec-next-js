@@ -12,29 +12,99 @@ export default function LikedSounds() {
               audio: "/assets/audio/pronunciation/linked-sounds/check-out.mp3",
               text: [
                 {
-                  text: "Check out a couple of linked sounds.",
+                  part: "Check out a couple of linked sounds.",
                   type: "bold",
                 },
               ],
             },
           ]}
         />
+        <h3>Vowel + Vowel</h3>
         <Paragraph
           paragraphs={[
             {
-              lineBreak: true,
-              text: ["Consonant + Vowel"],
+              audio: "/assets/audio/phonetics/w.mp3",
+              phonetics: "/w/",
             },
+            {
+              audio: "/assets/audio/general/go-on.mp3",
+              text: [
+                "g",
+                {
+                  part: "o o",
+                  type: "underline",
+                },
+                "n. ",
+              ],
+              phonetics: "/w/",
+              portuguese: "Vá em frente.",
+            },
+            {
+              lineBreak: true,
+              audio: "/assets/audio/general/do-it-again.mp3",
+              text: [
+                "D",
+                {
+                  part: "o i",
+                  type: "underline",
+                },
+                "t again. ",
+              ],
+              phonetics: "/w/",
+              portuguese: "Faça novamente.",
+            },
+            {
+              audio:"/assets/audio/phonetics/w.mp3",
+              text: [
+                "g",
+                {
+                  part: "o o",
+                  type: "underline",
+                },
+                "n. ",
+              ],
+              phonetics: "/j/",
+            },
+            {
+              audio: "/assets/audio/general/i-agree-with-you-on-this-issue.mp3",
+              text: [
+                {
+                  part: "I a",
+                  type: "underline",
+                },
+                "gree with you on this issue. ",
+              ],
+              phonetics: "/j/",
+              portuguese: "Eu concord",
+            },
+            {
+              audio: "/assets/audio/general/she-asked-me-a-question.mp3",
+              text: [
+                "Sh",
+                {
+                  part: "e a",
+                  type: "underline",
+                },
+                "sked me a question. ",
+              ],
+              phonetics: "/j/",
+              portuguese: "Ela me fez uma pergunta.",
+            },
+          ]}
+        />
+        <h3>Consonant + Vowel</h3>
+        <Paragraph
+          paragraphs={[
             {
               audio: "/assets/audio/general/he-works-in-an-office.mp3",
               text: [
                 "He work",
                 {
-                  text: "s i",
+                  part: "s i",
                   type: "underline",
                 },
                 {
-                  text: "n an o",
+                  part: "n an o",
                   type: "underline",
                 },
                 "ffice.",
@@ -46,12 +116,12 @@ export default function LikedSounds() {
               text: [
                 "Ta",
                 {
-                  text: "ke a",
+                  part: "ke a",
                   type: "underline",
                 },
                 " loo",
                 {
-                  text: "k a",
+                  part: "k a",
                   type: "underline",
                 },
                 "t it.",
@@ -63,7 +133,7 @@ export default function LikedSounds() {
               text: [
                 "tur",
                 {
-                  text: "n o",
+                  part: "n o",
                   type: "underline",
                 },
                 "ff the lights.",
@@ -75,7 +145,7 @@ export default function LikedSounds() {
               text: [
                 "I lik",
                 {
-                  text: "e i",
+                  part: "e i",
                   type: "underline",
                 },
                 "t a lot.",
@@ -87,12 +157,12 @@ export default function LikedSounds() {
               text: [
                 "I’",
                 {
-                  text: "m o",
+                  part: "m o",
                   type: "underline",
                 },
                 "u",
                 {
-                  text: "t o",
+                  part: "t o",
                   type: "underline",
                 },
                 "f time.",
@@ -100,73 +170,78 @@ export default function LikedSounds() {
               portuguese: "",
             },
             {
-              lineBreak: true,
               audio: "/assets/audio/general/pick-it-up.mp3",
               text: [
                 "Pic",
                 {
-                  text: "k i",
+                  part: "k i",
                   type: "underline",
                 },
-                "t up."
+                "t up.",
               ],
               portuguese: "Pegue.",
             },
+          ]}
+        />
+
+        <h3>d + y</h3>
+        {/* d + y */}
+        <Paragraph
+          paragraphs={[
             {
-              lineBreak: true,
+              audio: "/assets/audio/general/did-you-like-it.mp3",
               text: [
+                "Di",
                 {
-                  text: "t + y",
-                  type: "bold",
-                },
-              ],
-            },
-            {
-              audio: "/assets/audio/general/dont-you-like-it.mp3",
-              text: [
-                "don’",
-                {
-                  text: "t y",
+                  part: "d y",
                   type: "underline",
                 },
-                "ou like it?"
+                "ou like it?",
               ],
               portuguese: "Você gostou?",
             },
             {
-              lineBreak: true,
-              audio: "/assets/audio/general/didnt-you like it.mp3",
-              text: [
-                "didn’",
-                {
-                  text: "t y",
-                  type: "underline",
-                },
-                "ou like it?"
-              ],
-              portuguese: "Você não gostou?",
-            },
-            {
-              lineBreak: true,
-              text: [
-                {
-                  text: "d + y",
-                  type: "bold",
-                },
-              ],
-            },
-            {
-              lineBreak: true,
               audio: "/assets/audio/general/did-you.mp3",
               text: [
-                "di",
+                "Woul",
                 {
-                  text: "d y",
+                  part: "d y",
                   type: "underline",
                 },
-                "ou... ?"
+                "ou like it?",
               ],
-              portuguese: "Pegue.",
+              portuguese: "Você gostaria?",
+            },
+          ]}
+        />
+
+        <h3>t + y</h3>
+        {/* t + y */}
+        <Paragraph
+          paragraphs={[
+            {
+              audio: "/assets/audio/general/dont-you-like-it.mp3",
+              text: [
+                "Don’",
+                {
+                  part: "t y",
+                  type: "underline",
+                },
+                "ou like it?",
+              ],
+              portuguese: "Você não gosta?",
+            },
+            {
+              audio: "/assets/audio/general/didnt-you like it.mp3",
+              text: [
+                "Didn’",
+                {
+                  part: "t y",
+                  type: "underline",
+                },
+                "ou like it?",
+              ],
+              portuguese: "Você não gostou?",
             },
           ]}
         />

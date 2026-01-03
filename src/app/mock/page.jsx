@@ -27,54 +27,34 @@ export default function Mock() {
         {/* Inline Text */}
         <Ribbon label="Inline Text" />
         <InlineText
+          important={true}
+          correct={true}
+          incorrect={true}
+          audio="/audio/"   
           text={[
-            "... ",
-            {
-              correct: true,
-              audio: "/audio/",
-              text: "...",
-              type: "bold",
-            },
-            " ... ",
-            " ... ",
-            {
-              incorrect: true,
-              audio: "/audio/",
-              text: "...",
-              type: "italic",
-            },
-            " ...",
-            " ... ",
+            "start ",
             {
               important: true,
+              correct: true,
+              incorrect: true,
               audio: "/audio/",
-              text: "...",
+              part: "bold",
+              type: "bold",
+            },
+            " ",
+            {
+              part: "italic",
+              type: "italic",
+            },
+            " ",
+            {
+              part: "mark",
               type: "mark",
             },
-            " ...",
+            " end ",
           ]}
-        />
-        <InlineText
-          text={[
-            {
-              audio: "/audio/general/am.mp3",
-              text: "Hi",
-              type: "bold",
-            },
-            ". I ",
-            {
-              audio: "/audio/general/am.mp3",
-              text: "am",
-              type: "bold",
-            },
-            " a teacher. I ",
-            {
-              audio: "/audio/general/work.mp3",
-              text: "work",
-              type: "bold",
-            },
-            " at a school.",
-          ]}
+          phonetics="phonetics"
+          portuguese="portuguese"
         />
 
         {/* Paragraph */}
@@ -83,7 +63,7 @@ export default function Mock() {
           paragraphs={[
             {
               lineBreak: true,
-              audioPlayer:"/audio/general/about-to.mp3",
+              audioPlayer: "/audio/general/about-to.mp3",
               img: "/img/general/cat-1.jpg",
               alt: "a cat photo",
               width: 200,
@@ -93,21 +73,21 @@ export default function Mock() {
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "bold",
+                  part: "bold",
                   type: "bold",
                 },
-                " text. ",
+                " part. ",
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "mark",
+                  part: "mark",
                   type: "mark",
                 },
-                " text.",
+                " part.",
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "italic",
+                  part: "italic",
                   type: "italic",
                 },
                 " text.",
@@ -125,21 +105,21 @@ export default function Mock() {
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "bold",
+                  part: "bold",
                   type: "bold",
                 },
-                " text. ",
+                " part. ",
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "mark",
+                  part: "mark",
                   type: "mark",
                 },
-                " text.",
+                " part.",
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "italic",
+                  part: "italic",
                   type: "italic",
                 },
                 " text.",
@@ -156,21 +136,21 @@ export default function Mock() {
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "bold",
+                  part: "bold",
                   type: "bold",
                 },
                 " text. ",
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "mark",
+                  part: "mark",
                   type: "mark",
                 },
                 " text.",
                 "This is ",
                 {
                   audio: "/audio/general/",
-                  text: "italic",
+                  part: "italic",
                   type: "italic",
                 },
                 " text.",
@@ -186,35 +166,35 @@ export default function Mock() {
           items={[
             {
               text: [
-                "List 1 ",
+                "start ",
                 {
                   audio: "/audio/general/about-to.mp3",
-                  text: "teste",
+                  part: "bold",
                   type: "bold",
                 },
-                " teste",
+                " end",
               ],
             },
             {
               text: [
-                "List 2 ",
+                "start ",
                 {
                   audio: "/audio/general/about-to.mp3",
-                  text: "teste",
+                  part: "italic",
                   type: "italic",
                 },
-                " teste",
+                " end",
               ],
             },
             {
               text: [
-                "List 3 ",
+                "start ",
                 {
                   audio: "/audio/general/about-to.mp3",
-                  text: "teste",
+                  part: "mark",
                   type: "mark",
                 },
-                " teste",
+                " end",
               ],
             },
           ]}
@@ -224,35 +204,35 @@ export default function Mock() {
           items={[
             {
               text: [
-                "List 1 ",
+                "start ",
                 {
                   audio: "/audio/general/about-to.mp3",
-                  text: "teste",
+                  part: "teste",
                   type: "bold",
                 },
-                " teste",
+                " end",
               ],
             },
             {
               text: [
-                "List 2 ",
+                "start ",
                 {
                   audio: "/audio/general/about-to.mp3",
-                  text: "teste",
+                  part: "teste",
                   type: "italic",
                 },
-                " teste",
+                " end",
               ],
             },
             {
               text: [
-                "List 3 ",
+                "start ",
                 {
                   audio: "/audio/general/about-to.mp3",
-                  text: "teste",
+                  part: "teste",
                   type: "mark",
                 },
-                " teste",
+                " end",
               ],
             },
           ]}
@@ -266,7 +246,7 @@ export default function Mock() {
               text: [
                 {
                   audio: "/audio/general/.mp3",
-                  text: "...",
+                  part: "...",
                 },
               ],
             },
@@ -274,7 +254,7 @@ export default function Mock() {
               text: [
                 {
                   audio: "/audio/general/.mp3",
-                  text: "...",
+                  part: "...",
                 },
               ],
             },
@@ -282,7 +262,7 @@ export default function Mock() {
               text: [
                 {
                   audio: "/audio/general/.mp3",
-                  text: "...",
+                  part: "...",
                 },
               ],
             },
@@ -290,7 +270,7 @@ export default function Mock() {
               text: [
                 {
                   audio: "/audio/general/.mp3",
-                  text: "...",
+                  part: "...",
                 },
               ],
             },
@@ -329,19 +309,19 @@ export default function Mock() {
                 "test ",
                 {
                   audio: "/audio/vocabulary/selaa/lesson-1.mp3",
-                  text: "test",
+                  part: "bold",
                   type: "bold",
                 },
                 " test ",
                 {
                   audio: "/audio/vocabulary/selaa/lesson-1.mp3",
-                  text: "test",
+                  part: "italic",
                   type: "italic",
                 },
                 " test ",
                 {
                   audio: "/audio/vocabulary/selaa/lesson-1.mp3",
-                  text: "test",
+                  part: "mark",
                   type: "mark",
                 },
                 " test",
@@ -376,17 +356,17 @@ export default function Mock() {
                 "test ",
                 {
                   audio: "/audio/vocabulary/selaa/lesson-1.mp3",
-                  text: "test",
+                  part: "test",
                   type: "bold",
                 },
                 " test ",
                 {
-                  text: "test",
+                  part: "test",
                   type: "italic",
                 },
                 " test ",
                 {
-                  text: "test",
+                  part: "test",
                   type: "mark",
                 },
                 " test",
@@ -400,13 +380,13 @@ export default function Mock() {
             {
               group: [
                 {
-                  playAudio: "/....mp3",
+                  audio: "/audio/.mp3",
                   word: "Example 1",
                   phonetics: "/.../",
                   translation: "...",
                 },
                 {
-                  playAudio: "/....mp3",
+                  audio: "/audio/.mp3",
                   word: "Example 2",
                   phonetics: "/.../",
                   translation: "...",
