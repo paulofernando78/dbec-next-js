@@ -4,48 +4,47 @@ import styles from "./Paragraph.module.css";
 
 import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { Audio } from "@/components/atoms/Audio";
 import { InlineText } from "@/components/molecules/InlineText";
 
-export const Paragraph = ({ paragraphs }) => {
+export const Paragraph = ({ blocks }) => {
   return (
     <div className={styles.wrapper}>
-      {paragraphs.map((p, pIndex) => (
-        <div
-          key={pIndex}
-          className={[styles.paragraphBlock, p.lineBreak && styles.lineBreak]
-            .filter(Boolean)
-            .join(" ")}
-        >
-          {p.audioPlayer && <AudioPlayer src={p.audioPlayer} />}
+      {blocks.map((block, blockIndex) => (
+        <div key={blockIndex}>
+          {block.audioblocklayer && <AudioPlayer src={block.audioPlayer} />}
           <div
             className={[
-              p.img && styles.withImage,
-              p.img && styles[p.imgPosition || "left"],
+              block.img && styles.withImage,
+              block.img && styles[block.imgPosition || "left"],
             ]
               .filter(Boolean)
               .join(" ")}
           >
-            {p.img && (
+            {block.img && (
               <Image
-                src={p.img}
-                alt={p.alt}
-                width={p.width || 200}
-                height={p.height || 200}
+                src={block.img}
+                alt={block.alt}
+                width={block.width || 200}
+                height={block.height || 200}
                 className="imgs"
               />
             )}
-            <p>
-              <InlineText
-                important={p.important}
-                correct={p.correct}
-                incorrect={p.incorrect}
-                audio={p.audio}
-                text={p.text}
-                phonetics={p.phonetics}
-                portuguese={p.portuguese}
-              />
-            </p>
+            <div className={styles.paragraphBlock}>
+              {block.items.map((item, itemIndex) => (
+                <p
+                  key={itemIndex}
+                  className={item.lineBreak ? "line-break-item" : undefined}
+                >
+                  {(item.text || item.phonetics || item.portuguese) && (
+                    <InlineText
+                      text={item.text}
+                      phonetics={item.phonetics}
+                      portuguese={item.portuguese}
+                    />
+                  )}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       ))}

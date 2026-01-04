@@ -14,10 +14,6 @@ export const Note = ({ items = [], bullet = true }) => {
         {items.map((item, index) => (
           <li key={index}>
             <InlineText
-              important={item.important}
-              correct={item.correct}
-              incorrect={item.incorrect}
-              audio={item.audio}
               text={item.text}
               phonetics={item.phonetics}
               portuguese={item.portuguese}

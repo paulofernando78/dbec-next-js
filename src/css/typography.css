@@ -33,10 +33,7 @@ p {
   text-wrap: pretty;
 }
 
-p:lang(pt) {
-  color: var(--gray-4)
-}
-
 span {
+  line-height: 1.4;
   display: inline-block;
 }

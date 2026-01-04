@@ -27,12 +27,16 @@ export default function Mock() {
         {/* Inline Text */}
         <Ribbon label="Inline Text" />
         <InlineText
-          important={true}
-          correct={true}
-          incorrect={true}
-          audio="/audio/"
           text={[
-            "start ",
+            "normal ",
+            {
+              important: true,
+              correct: true,
+              incorrect: true,
+              audio: "/audio/",
+              part: "normal",
+            },
+            " ",
             {
               important: true,
               correct: true,
@@ -60,7 +64,7 @@ export default function Mock() {
         {/* Paragraph */}
         <Ribbon label="Paragraph" />
         <Paragraph
-          paragraphs={[
+          blocks={[
             {
               lineBreak: true,
               audioPlayer: "/audio/general/about-to.mp3",
@@ -69,36 +73,73 @@ export default function Mock() {
               width: 200,
               height: 200,
               imgPosition: "top",
-              important: true,
-              correct: true,
-              incorrect: true,
-              audio: "/audio/",
-              text: [
-                "This is ",
+              items: [
                 {
-                  important: true,
-                  correct: true,
-                  incorrect: true,
-                  audio: "/audio/general/",
-                  part: "bold",
-                  type: "bold",
+                  text: [
+                    "normal ",
+                    {
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " end ",
+                  ],
                 },
-                " part. ",
-                "This is ",
                 {
-                  audio: "/audio/general/",
-                  part: "mark",
-                  type: "mark",
+                  text: [
+                    "normal ",
+                    {
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " end ",
+                  ],
                 },
-                " part.",
-                "This is ",
-                {
-                  audio: "/audio/general/",
-                  part: "italic",
-                  type: "italic",
-                },
-                " text. ",
               ],
+
               phonetics: "phonetics",
               portuguese: "portuguese",
             },
@@ -111,12 +152,16 @@ export default function Mock() {
           bullet={false}
           items={[
             {
-              important: true,
-              correct: true,
-              incorrect: true,
-              audio: "/audio/",
               text: [
-                "start ",
+                "normal ",
+                {
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
+                  part: "normal",
+                },
+                " ",
                 {
                   important: true,
                   correct: true,
@@ -146,12 +191,16 @@ export default function Mock() {
         <List
           items={[
             {
-              important: true,
-              correct: true,
-              incorrect: true,
-              audio: "/audio/",
               text: [
-                "start ",
+                "normal ",
+                {
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
+                  part: "normal",
+                },
+                " ",
                 {
                   important: true,
                   correct: true,
@@ -183,12 +232,16 @@ export default function Mock() {
         <Note
           items={[
             {
-              important: true,
-              correct: true,
-              incorrect: true,
-              audio: "/audio/general/about-to.mp3",
               text: [
-                "start ",
+                "normal ",
+                {
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
+                  part: "normal",
+                },
+                " ",
                 {
                   important: true,
                   correct: true,
@@ -217,7 +270,6 @@ export default function Mock() {
 
         <Ribbon label="DIALOGUE" />
         <Dialogue
-          title="Title"
           imgs={[
             {
               img: "/img/general/cat-1.jpg",
@@ -244,70 +296,34 @@ export default function Mock() {
               speaker: "speaker:",
               audio: "/audio/vocabulary/selaa/lesson-1.mp3",
               text: [
-                "test ",
+                "normal ",
                 {
-                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
+                  part: "normal",
+                },
+                " ",
+                {
+                  important: true,
+                  correct: true,
+                  incorrect: true,
+                  audio: "/audio/",
                   part: "bold",
                   type: "bold",
                 },
-                " test ",
+                " ",
                 {
-                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
                   part: "italic",
                   type: "italic",
                 },
-                " test ",
+                " ",
                 {
-                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
                   part: "mark",
                   type: "mark",
                 },
-                " test",
-              ],
-            },
-            {
-              imgs: [
-                {
-                  img: "/img/general/cat-1.jpg",
-                  alt: "",
-                  width: 200,
-                  height: 200,
-                },
-                {
-                  img: "/img/general/cat-2.jpg",
-                  alt: "",
-                  width: 200,
-                  height: 200,
-                },
-                {
-                  img: "/img/general/cat-3.jpg",
-                  alt: "",
-                  width: 200,
-                  height: 200,
-                },
-              ],
-            },
-            {
-              speaker: "speaker:",
-              audio: "/audio/vocabulary/selaa/lesson-1.mp3",
-              text: [
-                "test ",
-                {
-                  audio: "/audio/vocabulary/selaa/lesson-1.mp3",
-                  part: "test",
-                  type: "bold",
-                },
-                " test ",
-                {
-                  part: "test",
-                  type: "italic",
-                },
-                " test ",
-                {
-                  part: "test",
-                  type: "mark",
-                },
-                " test",
+                " end ",
               ],
             },
           ]}

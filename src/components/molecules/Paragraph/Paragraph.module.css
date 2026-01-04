@@ -4,17 +4,13 @@
   flex-direction: column;
 }
 
-.lineBreak {
-  margin-bottom: var(--line-break);
+.withImage {
+  display: flex;
+  gap: 10px;
 }
 
 .paragraphBlock {
   width: 100%;
-}
-
-.withImage {
-  display: flex;
-  gap: 10px;
 }
 
 .left {
@@ -27,15 +23,21 @@
 
 .top {
   flex-direction: column;
+  align-items: center;
 }
+
+.top p
+ {
+  width: 100%;
+ }
 
 .bottom {
   flex-direction: column-reverse;
+  align-items: center;
 }
 
-.withImage p {
-  margin: 0;
-  flex: 1;
+.bottom p {
+  width: 100%;
 }
 
 @media (max-width: 600px) {

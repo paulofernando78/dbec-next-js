@@ -3,14 +3,14 @@ import styles from "./Checking.module.css";
 import { Bold } from "@/components/atoms/Bold";
 import { BulletPoint } from "@/components/atoms/BulletPoint";
 
-export const Checking = ({ type, data }) => {
+export const Checking = ({ type, ccq }) => {
   return (
     <div>
       <div className={styles.header}>
         <Bold>{type}</Bold>
       </div>
       <div className={`${styles.card} line-break`}>
-        {data.map((d, dIndex) => (
+        {ccq.map((d, dIndex) => (
           <div key={dIndex}>
             {d.block.map((b, bIndex) => (
               <div key={bIndex} >

@@ -1,5 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Ribbon } from "@/components/atoms/Ribbon";
+import Image from "next/image";
+import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
 import { BulletPoint } from "@/components/atoms/BulletPoint";
@@ -16,51 +18,99 @@ export default function VerbBe() {
       <Whiteboard title="Grammar" subtitle="Verb Be" />
       <div className="line-break">
         <Ribbon label="INTRODUCTION" />
-
-        <Ribbon label="PRESENTATION" />
-
-        <Dialogue
-          title="Meeting someone"
-          imgs={[
+        <Paragraph
+          blocks={[
             {
-              img: "/img/general/two-people-talking.png",
-              alt: "Two people talking",
-              width: 450,
-              height: 300,
+              img: "/assets/img/general/two-people-talking.png",
+              imgPosition: "left",
+              alt: "Two people talking.",
+              width: 350,
+              height: 250,
+              items: [
+                {
+                  text: [
+                    {
+                      audio: "/assets/audio/general/answer-these-questions.mp3",
+                      part: "Answer these questions.",
+                      type: "bold",
+                    },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  text: ["Where are Kate and Mike? "],
+                },
+                {
+                  text: ["Are they students?"],
+                },
+              ],
             },
           ]}
-          audioSrc="/audio/general/i-am.mp3"
+        />
+        <Ribbon label="PRESENTATION" />
+        <Dialogue
+          audioPlayer="/assets/audio/general/i-am.mp3"
           lines={[
             {
-              speaker: "Anna",
+              speaker: "Anna:",
               text: [
                 "Hi, I",
                 {
                   type: "mark",
-                  text: "’m",
+                  part: "’m",
                 },
                 " Anna.",
               ],
             },
             {
-              speaker: "Scott",
-              text: "Hello, I’m Scott.",
+              speaker: "Scott:",
+              text: [
+                "Hello, I",
+                {
+                  type: "mark",
+                  part: "’m",
+                },
+                " Scott.",
+              ],
             },
             {
-              speaker: "Anna",
-              text: "I’m a student.",
+              speaker: "Anna:",
+              text: [
+                "I ",
+                {
+                  type: "mark",
+                  part: "’m",
+                },
+                " a student.",
+              ],
             },
             {
-              speaker: "Scott",
-              text: "I’m the teacher.",
+              speaker: "Scott;",
+              text: "",
+              text: [
+                "I ",
+                {
+                  type: "mark",
+                  part: "’m",
+                },
+                " the teacher.",
+              ],
             },
             {
-              speaker: "Scott",
-              text: "Nice to meet you.",
+              speaker: "Scott:",
+              text: "",
+              text: ["Nice to meet you."],
             },
             {
-              speaker: "Anna",
-              text: "Nice to meet you, too.",
+              speaker: "Anna:",
+              text: [
+                "Nice to meet you, too.",
+                {
+                  type: "mark",
+                  part: "",
+                },
+                "",
+              ],
             },
           ]}
         />
@@ -70,31 +120,28 @@ export default function VerbBe() {
         {/* Identity */}
         <div>
           <p>
-            /audio/general/identity.mp3
-            Identity <Portuguese>Identidade</Portuguese>:
+            /audio/general/identity.mp3 Identity{" "}
+            <Portuguese>Identidade</Portuguese>:
           </p>
           <p>
             /audio/general/im-paul.mp3
-            <BulletPoint /> I’m Paul.{" "}
-            Sou o Paulo.
+            <BulletPoint /> I’m Paul. Sou o Paulo.
           </p>
           <p>
             /audio/general/hes-my-brother.mp3
-            <BulletPoint /> He’s my brother.{" "}
-            Ele é o meu irmão.
+            <BulletPoint /> He’s my brother. Ele é o meu irmão.
           </p>
           <p>
             /audio/general/theyre-my-friends.mp3
-            <BulletPoint /> They are my friends.{" "}
-            Eles são meus amigos.
+            <BulletPoint /> They are my friends. Eles são meus amigos.
           </p>
         </div>
 
         {/* Job */}
         <div>
           <p>
-            /audio/general/job.mp3
-            Job <Portuguese>Profissão / Função</Portuguese>:
+            /audio/general/job.mp3 Job{" "}
+            <Portuguese>Profissão / Função</Portuguese>:
           </p>
           <p>
             /audio/general//Im-a-teacher.mp3
@@ -114,8 +161,8 @@ export default function VerbBe() {
         {/* State */}
         <div>
           <p>
-            /audio/general/state.mp3
-            State <Portuguese>Estado / Condição</Portuguese>:
+            /audio/general/state.mp3 State{" "}
+            <Portuguese>Estado / Condição</Portuguese>:
           </p>
           <p>
             /audio/general/im-tired.mp3
@@ -132,8 +179,8 @@ export default function VerbBe() {
         </div>
         <div>
           <p>
-            /audio/general/nationality.mp3
-            Nationality <Portuguese>Nacionalidade</Portuguese>:
+            /audio/general/nationality.mp3 Nationality{" "}
+            <Portuguese>Nacionalidade</Portuguese>:
           </p>
           <p>
             /audio/general/nationality.mp3
@@ -151,7 +198,7 @@ export default function VerbBe() {
 
         <Checking
           type="CCQ"
-          data={[
+          ccq={[
             {
               block: [
                 {
@@ -203,7 +250,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/i-am.mp3",
+                      audio: "/assets/audio/general/i-am.mp3",
                     },
                     {
                       text: "I",
@@ -216,7 +263,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/you-are.mp3",
+                      audio: "/assets/audio/general/you-are.mp3",
                     },
                     {
                       text: "you",
@@ -229,7 +276,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/he-is.mp3",
+                      audio: "/assets/audio/general/he-is.mp3",
                     },
                     {
                       text: "he",
@@ -242,7 +289,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/she-is.mp3",
+                      audio: "/assets/audio/general/she-is.mp3",
                     },
                     {
                       text: "she",
@@ -255,7 +302,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/it-is.mp3",
+                      audio: "/assets/audio/general/it-is.mp3",
                     },
                     {
                       text: "it",
@@ -268,7 +315,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/we-are.mp3",
+                      audio: "/assets/audio/general/we-are.mp3",
                     },
                     {
                       text: "we",
@@ -281,7 +328,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/you-are.mp3",
+                      audio: "/assets/audio/general/you-are.mp3",
                     },
                     {
                       text: "you",
@@ -294,7 +341,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/they-are.mp3",
+                      audio: "/assets/audio/general/they-are.mp3",
                     },
                     {
                       text: "they",
@@ -314,7 +361,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/i-am-not.mp3",
+                      audio: "/assets/audio/general/i-am-not.mp3",
                     },
                     {
                       text: "I",
@@ -327,7 +374,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/you-are-not.mp3",
+                      audio: "/assets/audio/general/you-are-not.mp3",
                     },
                     {
                       text: "you",
@@ -340,7 +387,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/he-is-not.mp3",
+                      audio: "/assets/audio/general/he-is-not.mp3",
                     },
                     {
                       text: "he",
@@ -353,7 +400,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/she-is-not.mp3",
+                      audio: "/assets/audio/general/she-is-not.mp3",
                     },
                     {
                       text: "she",
@@ -366,7 +413,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/it-is-not.mp3",
+                      audio: "/assets/audio/general/it-is-not.mp3",
                     },
                     {
                       text: "it",
@@ -379,7 +426,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/we-are-not.mp3",
+                      audio: "/assets/audio/general/we-are-not.mp3",
                     },
                     {
                       text: "we",
@@ -392,7 +439,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/you-are-not.mp3",
+                      audio: "/assets/audio/general/you-are-not.mp3",
                     },
                     {
                       text: "you",
@@ -405,7 +452,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/they-are-not.mp3",
+                      audio: "/assets/audio/general/they-are-not.mp3",
                     },
                     {
                       text: "they",
@@ -425,7 +472,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/am-i.mp3",
+                      audio: "/assets/audio/general/am-i.mp3",
                     },
                     {
                       bold: "am",
@@ -438,7 +485,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/are-you.mp3",
+                      audio: "/assets/audio/general/are-you.mp3",
                     },
                     {
                       bold: "are",
@@ -451,7 +498,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/is-he.mp3",
+                      audio: "/assets/audio/general/is-he.mp3",
                     },
                     {
                       bold: "is",
@@ -464,7 +511,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/is-she.mp3",
+                      audio: "/assets/audio/general/is-she.mp3",
                     },
                     {
                       bold: "is",
@@ -477,7 +524,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/is-it.mp3",
+                      audio: "/assets/audio/general/is-it.mp3",
                     },
                     {
                       bold: "is",
@@ -490,7 +537,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/are-we.mp3",
+                      audio: "/assets/audio/general/are-we.mp3",
                     },
                     {
                       bold: "are",
@@ -503,7 +550,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/are-you.mp3",
+                      audio: "/assets/audio/general/are-you.mp3",
                     },
                     {
                       bold: "are",
@@ -516,7 +563,7 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/audio/general/are-they.mp3",
+                      audio: "/assets/audio/general/are-they.mp3",
                     },
                     {
                       bold: "are",
@@ -659,8 +706,37 @@ export default function VerbBe() {
         />
 
         <Ribbon label="PRODUCTION" />
-        <p bold>Say 3 sentences about you.</p>
-        <List items={["Name", "Job", "Nationality"]} />
+        <Paragraph
+          blocks={[
+            {
+              items: [
+                {
+                  text: [
+                    {
+                      audio: "/assets/audio/general/talk-about-yourself.mp3",
+                      part: "Talk about yourself.",
+                      type: "",
+                    },
+                  ],
+                },
+              ],
+            },
+          ]}
+        />
+        <List
+          bullet={true}
+          items={[
+            {
+              text: ["Name "],
+            },
+            {
+              text: ["Job "],
+            },
+            {
+              text: ["Nationality "],
+            },
+          ]}
+        />
       </div>
     </>
   );

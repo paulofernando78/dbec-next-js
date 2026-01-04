@@ -11,22 +11,9 @@ import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import { Correct, Incorrect, Attention } from "@/lib/svg-imports";
 
-export const InlineText = ({
-  important,
-  correct,
-  incorrect,
-  audio,
-  text,
-  phonetics,
-  portuguese,
-}) => {
+export const InlineText = ({ text, phonetics, portuguese }) => {
   return (
     <span className={styles.text}>
-      {important && <Attention className="icon-position" />}
-      {correct && <Correct className="icon-position" />}
-      {incorrect && <Incorrect className="icon-position" />}
-      <span>{audio && <Audio src={audio} />}</span>
-
       {Array.isArray(text) &&
         text.map((part, i) => {
           if (typeof part === "string") return part;
