@@ -1,50 +1,232 @@
 import styles from "./phonetics.module.css";
 
-import React from "react";
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Links } from "@/components/molecules/Links";
 import { Audio } from "@/components/atoms/Audio";
+import { BulletPoint } from "@/components/atoms/BulletPoint";
 
 const vowels = [
   {
     audio: "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
     symbol: "/æ/",
     description: "short",
+    examples: ["cat", "man"],
   },
   {
     audio: "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
     symbol: "/e/",
     description: "short",
+    examples: ["bed", "red"],
   },
   {
-    audio: "/assets/audio/pronunciation/phonetics/vowels/eɪ.mp3",
-    symbol: "/eɪ/",
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
+    symbol: "/ɪ/",
     description: "short",
+    examples: ["sit", "hit"],
   },
   {
     audio: "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
     symbol: "/iː/",
     description: "long",
+    examples: ["see", "tree"],
   },
   {
     audio: "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
     symbol: "/ɔ/",
     description: "long",
+    examples: ["law", "saw"],
   },
   {
     audio: "/assets/audio/pronunciation/phonetics/vowels/oʊ.mp3",
     symbol: "/oʊ/",
     description: "long",
+    examples: ["go", "no"],
   },
   {
     audio: "/assets/audio/pronunciation/phonetics/vowels/ə-unstressed.mp3",
     symbol: "/ə/",
     description: "schwa (unstressed)",
+    examples: ["about", "sofa"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ʌ-stressed.mp3",
+    symbol: "/ʌ/",
+    description: "short",
+    examples: ["cup", "sun"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+    symbol: "/ɑː/",
+    description: "long",
+    examples: ["car", "father"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ɒ.mp3",
+    symbol: "/ɒ/",
+    description: "short (British)",
+    examples: ["hot", "lot"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ɔː.mp3",
+    symbol: "/ɔː/",
+    description: "long",
+    examples: ["thought", "law"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
+    symbol: "/ʊ/",
+    description: "short",
+    examples: ["book", "good"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
+    symbol: "/uː/",
+    description: "long",
+    examples: ["food", "blue"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/vowels/ɜ.mp3",
+    symbol: "/ɜː/",
+    description: "long",
+    examples: ["word", "learn"],
   },
 ];
 
-
+const consonants = [
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/p.mp3",
+    symbol: "/p/",
+    description: "voiceless plosive",
+    examples: ["pen", "happy"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/b.mp3",
+    symbol: "/b/",
+    description: "voiced plosive",
+    examples: ["book", "cab"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/t.mp3",
+    symbol: "/t/",
+    description: "voiceless plosive",
+    examples: ["ten", "better"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/d.mp3",
+    symbol: "/d/",
+    description: "voiced plosive",
+    examples: ["dog", "ladder"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/k.mp3",
+    symbol: "/k/",
+    description: "voiceless plosive",
+    examples: ["cat", "back"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/g.mp3",
+    symbol: "/g/",
+    description: "voiced plosive",
+    examples: ["go", "bag"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/f.mp3",
+    symbol: "/f/",
+    description: "voiceless fricative",
+    examples: ["fish", "coffee"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/v.mp3",
+    symbol: "/v/",
+    description: "voiced fricative",
+    examples: ["very", "over"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/θ.mp3",
+    symbol: "/θ/",
+    description: "voiceless dental fricative",
+    examples: ["think", "bath"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/ð.mp3",
+    symbol: "/ð/",
+    description: "voiced dental fricative",
+    examples: ["this", "mother"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/s.mp3",
+    symbol: "/s/",
+    description: "voiceless fricative",
+    examples: ["see", "city"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/z.mp3",
+    symbol: "/z/",
+    description: "voiced fricative",
+    examples: ["zoo", "music"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3",
+    symbol: "/ʃ/",
+    description: "voiceless fricative",
+    examples: ["she", "nation"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/ʒ.mp3",
+    symbol: "/ʒ/",
+    description: "voiced fricative",
+    examples: ["vision", "measure"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/h.mp3",
+    symbol: "/h/",
+    description: "voiceless glottal fricative",
+    examples: ["hat", "head"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/m.mp3",
+    symbol: "/m/",
+    description: "nasal",
+    examples: ["man", "summer"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/n.mp3",
+    symbol: "/n/",
+    description: "nasal",
+    examples: ["no", "dinner"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3",
+    symbol: "/ŋ/",
+    description: "nasal",
+    examples: ["sing", "long"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/l.mp3",
+    symbol: "/l/",
+    description: "lateral approximant",
+    examples: ["love", "feel"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/r.mp3",
+    symbol: "/r/",
+    description: "approximant",
+    examples: ["red", "carry"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/j.mp3",
+    symbol: "/j/",
+    description: "approximant",
+    examples: ["yes", "use"],
+  },
+  {
+    audio: "/assets/audio/pronunciation/phonetics/consonants/w.mp3",
+    symbol: "/w/",
+    description: "approximant",
+    examples: ["we", "quick"],
+  },
+];
 
 export default function PhoneticsLetters() {
   return (
@@ -59,7 +241,7 @@ export default function PhoneticsLetters() {
                   audio: "/assets/audio/phonetics/check-out.mp3",
                   text: [
                     {
-                      part: "Check out the phonetic sounds of American English.",
+                      part: "Check out the phonetic sounds of American and British English.",
                       type: "bold",
                     },
                   ],
@@ -68,25 +250,50 @@ export default function PhoneticsLetters() {
             },
           ]}
         />
-        <div className={styles.container}>
+
+        <h3>Vowels sounds</h3>
+        <div>
           {vowels.map((vowel, index) => (
             <div key={index} className={styles.wrapper}>
-              <span className={styles.symbol}>{vowel.symbol}</span>
               {vowel.audio && <Audio src={vowel.audio} />}
-              <span className={styles.description}>{vowel.description}</span>
+              <span className={styles.symbol}>{vowel.symbol}</span>{" "}
+              <span className={styles.description}>({vowel.description})</span>
+              {" "}<BulletPoint></BulletPoint>{" "}
+              {vowel.examples && (
+                <span className={styles.examples}>
+                  {vowel.examples.join(", ")}
+                </span>
+              )}
             </div>
           ))}
         </div>
+
+        <h3>Consonant sounds</h3>
+
+        <div>
+          {consonants.map((consonant, index) => (
+            <div key={index} className={styles.wrapper}>
+              {consonant.audio && <Audio src={consonant.audio} />}
+              <span className={styles.symbol}>{consonant.symbol}</span>{" "}
+              <span className={styles.description}>
+                ({consonant.description})
+              </span>
+              {" "}<BulletPoint></BulletPoint>{" "}
+
+              {consonant.examples && (
+                <span className={styles.examples}>
+                  {consonant.examples.join(", ")}
+                </span>
+              )}
+            </div>
+          ))}
+        </div>
+
         <h3>Sounds by letters</h3>
         <Links
           links={[
             {
               links: [
-                // {
-                //   href: "/pronunciation/phonetics-letters/letter-a",
-                //   label: "Letter \"a\" ",
-                //   phonetics: "/æ/, /ɑː/, /ə/, /eɪ/"
-                // },
                 {
                   href: "/pronunciation/phonetics-letters/letters-a-vs-ea",
                   label: 'Letters "a vs. e(a)"',
@@ -97,11 +304,6 @@ export default function PhoneticsLetters() {
                   label: 'Letters "ea, ee vs. i"',
                   phonetics: "/iː/ vs /ɪ/",
                 },
-                // {
-                //   href: "/pronunciation/phonetics-letters/letteru",
-                //   label: 'Letter "u"',
-                //   phonetics: "/uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/"
-                // },
               ],
             },
           ]}
