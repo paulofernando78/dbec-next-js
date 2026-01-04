@@ -10,8 +10,8 @@ export const Paragraph = ({ blocks }) => {
   return (
     <div className={styles.wrapper}>
       {blocks.map((block, blockIndex) => (
-        <div key={blockIndex}>
-          {block.audioblocklayer && <AudioPlayer src={block.audioPlayer} />}
+        <section key={blockIndex}>
+          {block.audioPlayer && <AudioPlayer src={block.audioPlayer} />}
           <div
             className={[
               block.img && styles.withImage,
@@ -35,6 +35,7 @@ export const Paragraph = ({ blocks }) => {
                   key={itemIndex}
                   className={item.lineBreak ? "line-break-item" : undefined}
                 >
+                  {item.audioPlayer && <AudioPlayer src={item.audioPlayer} />}
                   {(item.text || item.phonetics || item.portuguese) && (
                     <InlineText
                       text={item.text}
@@ -46,7 +47,7 @@ export const Paragraph = ({ blocks }) => {
               ))}
             </div>
           </div>
-        </div>
+        </section>
       ))}
     </div>
   );

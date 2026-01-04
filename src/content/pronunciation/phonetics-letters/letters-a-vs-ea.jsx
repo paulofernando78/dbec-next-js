@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Card } from "@/components/atoms/Card";
 import { Comparison } from "@/components/molecules/Comparison/";
 import { Example } from "@/components/molecules/Example/";
 
@@ -7,40 +8,43 @@ export default function LetterAeEA() {
     <>
       <Whiteboard title="Pronunciation" subtitle="Letters a / e(a)" />
       <div className="line-break">
-        <Comparison
-          groups={[
-            {
-              group: [
-                {
-                  audio: "/assets/audio/general/and.mp3",
-                  word: "and",
-                  phonetics: "/ænd/",
-                  portuguese: "e",
-                },
-                {
-                  audio: "/assets/audio/general/end.mp3",
-                  word: "end",
-                  phonetics: "/end/",
-                  portuguese: "fim",
-                },
-              ],
-            },
-          ]}
-        />
-        <Example
-          examples={[
-            {
-              audioPlayer: "/assets/audio/general/bread-and-butter.mp3",
-              text: ["Bread ", { type: "mark", text: "and" }, " butter."],
-              portuguese: "Pão e manteiga.",
-            },
-            {
-              audioPlayer: "/assets/audio/general/this-is-the-end.mp3",
-              text: ["This is the ", { type: "mark", text: "end" }, "."],
-              portuguese: "Este é o fim.",
-            },
-          ]}
-        />
+        <Card className="line-break">
+          <Comparison
+            groups={[
+              {
+                group: [
+                  {
+                    audio: "/assets/audio/general/and.mp3",
+                    word: "and",
+                    phonetics: "/ænd/",
+                    portuguese: "e",
+                  },
+                  {
+                    audio: "/assets/audio/general/end.mp3",
+                    word: "end",
+                    phonetics: "/end/",
+                    portuguese: "fim",
+                  },
+                ],
+              },
+            ]}
+          />
+          <Example
+            examples={[
+              {
+                audioPlayer: "/assets/audio/general/bread-and-butter.mp3",
+                text: ["Bread ", { type: "mark", text: "and" }, " butter."],
+                portuguese: "Pão e manteiga.",
+              },
+              {
+                audioPlayer: "/assets/audio/general/this-is-the-end.mp3",
+                text: ["This is the ", { type: "mark", text: "end" }, "."],
+                portuguese: "Este é o fim.",
+              },
+            ]}
+          />
+        </Card>
+
         <Comparison
           groups={[
             {
@@ -105,7 +109,8 @@ export default function LetterAeEA() {
         <Example
           examples={[
             {
-              audioPlayer: "/assets/audio/general/he-hit-the-ball-with-a-bat.mp3",
+              audioPlayer:
+                "/assets/audio/general/he-hit-the-ball-with-a-bat.mp3",
               text: [
                 "He hit the ball with a ",
                 { type: "mark", text: "bat" },
@@ -287,7 +292,8 @@ export default function LetterAeEA() {
         <Example
           examples={[
             {
-              audioPlayer: "/assets/audio/general/she-got-a-tan-at-the-beach.mp3",
+              audioPlayer:
+                "/assets/audio/general/she-got-a-tan-at-the-beach.mp3",
               text: [
                 "She got a ",
                 { type: "mark", text: "tan" },
