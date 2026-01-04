@@ -6,12 +6,13 @@ import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { InlineText } from "@/components/molecules/InlineText";
 
-export const Paragraph = ({ blocks }) => {
+export const Paragraph = ({ blocks = [] }) => {
   return (
     <div className={styles.wrapper}>
       {blocks.map((block, blockIndex) => (
         <section key={blockIndex}>
           {block.audioPlayer && <AudioPlayer src={block.audioPlayer} />}
+
           <div
             className={[
               block.img && styles.withImage,
@@ -29,13 +30,17 @@ export const Paragraph = ({ blocks }) => {
                 className="imgs"
               />
             )}
+
             <div className={styles.paragraphBlock}>
-              {block.items.map((item, itemIndex) => (
+              {(block.items || []).map((item, itemIndex) => (
                 <p
                   key={itemIndex}
                   className={item.lineBreak ? "line-break-item" : undefined}
                 >
-                  {item.audioPlayer && <AudioPlayer src={item.audioPlayer} />}
+                  {item.audioPlayer && (
+                    <AudioPlayer src={item.audioPlayer} />
+                  )}
+
                   {(item.text || item.phonetics || item.portuguese) && (
                     <InlineText
                       text={item.text}

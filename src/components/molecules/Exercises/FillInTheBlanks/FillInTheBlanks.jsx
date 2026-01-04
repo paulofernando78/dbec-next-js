@@ -16,13 +16,14 @@ export const FillInTheBlanks = ({ data }) => {
   if (!data || !data.blocks) {
     return null;
   }
+  const blocks = Array.isArray(data.blocks) ? data.blocks : [];
 
   const handleCheck = () => {
     let score = 0;
     const newResults = {};
 
-    data.blocks.forEach((bs, bsIndex) => {
-      bs.block.forEach((b, bIndex) => {
+    blocks.forEach((bs, bsIndex) => {
+      (bs.block || []).forEach((b, bIndex) => {
         if (!b.blank) return;
 
         const key = `${bsIndex}-${bIndex}`;
@@ -47,8 +48,8 @@ export const FillInTheBlanks = ({ data }) => {
     setChecked(false);
   };
 
-  const totalBlanks = data.blocks.reduce((acc, bs) => {
-    return acc + bs.block.filter((b) => b.blank).length;
+  const totalBlanks = blocks.reduce((acc, bs) => {
+    return acc + (bs.block || []).filter((b) => b.blank).length;
   }, 0);
 
   return (
@@ -58,12 +59,12 @@ export const FillInTheBlanks = ({ data }) => {
       </p>
 
       <div>
-        {data.blocks.map((bs, bsIndex) => (
+        {blocks.map((bs, bsIndex) => (
           <div
             key={bsIndex}
             className={bs.lineBreak ? styles.block : styles.inline}
           >
-            {bs.block.map((b, bIndex) => {
+            {(bs.block || []).map((b, bIndex) => {
               const key = `${bsIndex}-${bIndex}`;
 
               return (

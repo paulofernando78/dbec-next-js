@@ -17,15 +17,24 @@ export const Column = ({ data = [] }) => {
             label={c.column}
             className={styles.column}
           />
-          {c.blocks.map((bs, bsIndex) => (
+
+          {(c.blocks || []).map((bs, bsIndex) => (
             <div key={bsIndex}>
-              {bs.block.map((b, bIndex) => (
-              <React.Fragment key={bIndex}>
-                {b.audio && <Audio src={b.audio}/>}
-                <span>{b.text}</span>
-                {b.bold && (<span><Bold>{b.bold}</Bold></span>)}
-                {b.mark && (<span><Mark>{b.mark}</Mark></span>)}{" "}
-              </React.Fragment>
+              {(bs.block || []).map((b, bIndex) => (
+                <React.Fragment key={bIndex}>
+                  {b.audio && <Audio src={b.audio} />}
+                  <span>{b.text}</span>
+                  {b.bold && (
+                    <span>
+                      <Bold>{b.bold}</Bold>
+                    </span>
+                  )}
+                  {b.mark && (
+                    <span>
+                      <Mark>{b.mark}</Mark>
+                    </span>
+                  )}{" "}
+                </React.Fragment>
               ))}
             </div>
           ))}

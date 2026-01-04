@@ -7,15 +7,16 @@ import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
 import { useState } from "react";
 
-export const Radio = ({ data }) => {
+export const Radio = ({ data = {} }) => {
   const [selected, setSelected] = useState({});
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
 
+  const questions = Array.isArray(data.questions) ? data.questions : [];
+
   const handleCheck = () => {
     let score = 0;
-
-    data.questions.forEach((question, qIndex) => {
+    questions.forEach((question, qIndex) => {
       const selectedOptionIndex = selected[qIndex];
       if (selectedOptionIndex === undefined) return;
       const selectedOption = question.options[selectedOptionIndex];
@@ -40,8 +41,7 @@ export const Radio = ({ data }) => {
         <p>
           <Bold>{data.instruction}</Bold>
         </p>
-
-        {data.questions.map((q, qIndex) => (
+        {questions.map((q, qIndex) => (
           <div key={qIndex}>
             <p className={styles.question}>{q.question}</p>
 
@@ -88,7 +88,7 @@ export const Radio = ({ data }) => {
           </div>
         ))}
         <span>
-          Score: {totalScore} out of {data.questions.length}
+          Score: {totalScore} out of {questions.length}
         </span>
         <div className="button-wrapper">
           <Button icon={<Check />} onToggle={handleCheck} active={checked} />

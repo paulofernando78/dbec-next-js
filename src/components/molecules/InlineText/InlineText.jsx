@@ -11,40 +11,40 @@ import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import { Correct, Incorrect, Attention } from "@/lib/svg-imports";
 
-export const InlineText = ({ text, phonetics, portuguese }) => {
+export const InlineText = ({ text = [], phonetics, portuguese }) => {
   return (
     <span className={styles.text}>
-      {Array.isArray(text) &&
-        text.map((part, i) => {
-          if (typeof part === "string") return part;
+      {text.map((part, i) => {
+        if (typeof part === "string") return part;
 
-          let content = part.part;
+        let content = part.part;
 
-          switch (part.type) {
-            case "bold":
-              content = <Bold>{part.part}</Bold>;
-              break;
-            case "italic":
-              content = <Italic>{part.part}</Italic>;
-              break;
-            case "mark":
-              content = <Mark>{part.part}</Mark>;
-              break;
-            case "underline":
-              content = <Underline>{part.part}</Underline>;
-              break;
-          }
+        switch (part.type) {
+          case "bold":
+            content = <Bold>{part.part}</Bold>;
+            break;
+          case "italic":
+            content = <Italic>{part.part}</Italic>;
+            break;
+          case "mark":
+            content = <Mark>{part.part}</Mark>;
+            break;
+          case "underline":
+            content = <Underline>{part.part}</Underline>;
+            break;
+        }
 
-          return (
-            <span key={i}>
-              {part.important && <Attention className="icon-position" />}
-              {part.correct && <Correct className="icon-position" />}
-              {part.incorrect && <Incorrect className="icon-position" />}
-              {part.audio && <Audio src={part.audio} />}
-              {content && content}
-            </span>
-          );
-        })}
+        return (
+          <span key={i}>
+            {part.important && <Attention className="icon-position" />}
+            {part.correct && <Correct className="icon-position" />}
+            {part.incorrect && <Incorrect className="icon-position" />}
+            {part.audio && <Audio src={part.audio} />}
+            {content}
+          </span>
+        );
+      })}
+
       {phonetics && (
         <Phonetics>
           <span>{phonetics}</span>

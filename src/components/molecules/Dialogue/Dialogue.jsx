@@ -6,10 +6,10 @@ import { Audio } from "@/components/atoms/Audio";
 import { Bold } from "@/components/atoms/Bold";
 import { InlineText } from "@/components/molecules/InlineText";
 
-export const Dialogue = ({ imgs, audioPlayer, lines }) => {
+export const Dialogue = ({ imgs = [], audioPlayer, lines = [] }) => {
   return (
     <div className="line-break">
-      {Array.isArray(imgs) && (
+      {imgs.length > 0 && (
         <div className={styles.flexImg}>
           {imgs.map(
             (i, iIndex) =>
@@ -28,6 +28,7 @@ export const Dialogue = ({ imgs, audioPlayer, lines }) => {
       )}
 
       {audioPlayer && <AudioPlayer src={audioPlayer} />}
+
       {lines.map((line, index) => (
         <p key={index} className={styles.lines}>
           {line.speaker && <Bold>{line.speaker} </Bold>}

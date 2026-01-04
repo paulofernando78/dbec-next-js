@@ -7,15 +7,14 @@ export const Comparison = ({ groups = [] }) => {
 
   return (
     <>
-      {groups.map((item, index) => {
-        if (!Array.isArray(item.group)) return null;
-
-        return (
+      {groups
+        .filter((item) => Array.isArray(item.group) && item.group.length)
+        .map((item, index) => (
           <div key={index}>
             {item.group.map((subItem, subIndex) => (
               <p key={subIndex}>
                 {subItem.audio && <Audio src={subItem.audio} />}
-                {subItem.word}{" "}
+                {subItem.word && <span>{subItem.word} </span>}
                 {subItem.phonetics && (
                   <Phonetics>{subItem.phonetics}</Phonetics>
                 )}{" "}
@@ -25,8 +24,7 @@ export const Comparison = ({ groups = [] }) => {
               </p>
             ))}
           </div>
-        );
-      })}
+        ))}
     </>
   );
 };
