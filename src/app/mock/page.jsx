@@ -56,6 +56,36 @@ export default function Mock() {
               type: "mark",
             },
             " end ",
+            {
+              part: "mark",
+              type: "mark",
+            },
+            " end ",
+            {
+              part: "mark",
+              type: "mark",
+            },
+            " end ",
+            {
+              part: "mark",
+              type: "mark",
+            },
+            " end ",
+            {
+              part: "mark",
+              type: "mark",
+            },
+            " end ",
+            {
+              part: "mark",
+              type: "bold",
+            },
+            " end ",
+            {
+              part: "mark",
+              type: "bold",
+            },
+            " end ",
           ]}
           phonetics="phonetics"
           portuguese="portuguese"

@@ -15,13 +15,13 @@ export default function SELAAlessonOne() {
       <div className="line-break">
         <Dialogue
           title="Lesson 1 • Bob’s Day at Work"
-          audioPlayer="/audio/vocabulary/selaa/lesson-1.mp3"
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-1.mp3"
           lines={[
             {
               text: [
                 {
                   type: "italic",
-                  text: "Bob works as a manager in a furniture store. Peter, his boss, is not happy about sales. Bob’s new advertising campaign hasn’t helped. Peter decides to fire him.",
+                  part: "Bob works as a manager in a furniture store. Peter, his boss, is not happy about sales. Bob’s new advertising campaign hasn’t helped. Peter decides to fire him.",
                 },
               ],
             },
@@ -31,7 +31,7 @@ export default function SELAAlessonOne() {
                 "Bob, I hate to ",
                 {
                   audio: "/audio/general/break-the-news.mp3",
-                  text: "break the news",
+                  part: "break the news",
                   type: "mark",
                 },
                 ", but our sales were down again last month.",
@@ -39,11 +39,11 @@ export default function SELAAlessonOne() {
             },
             {
               speaker: "Bob:",
-              text: "Down again, Peter?",
+              text: ["Down again, Peter?"],
             },
             {
               speaker: "Peter:",
-              text: "Yeah. These days, everybody’s shopping at our competition, Honest Abe’s Furniture Store.",
+              text: ["Yeah. These days, everybody’s shopping at our competition, Honest Abe’s Furniture Store."],
             },
             {
               speaker: "Bob:",
@@ -51,7 +51,7 @@ export default function SELAAlessonOne() {
                 "But everything in there ",
                 {
                   audio: "/audio/general/costs-an-arm-and-a-leg.mp3",
-                  text: "costs an arm and a leg",
+                  part: "costs an arm and a leg",
                   type: "mark",
                 },
                 "!",
@@ -63,7 +63,7 @@ export default function SELAAlessonOne() {
                 "That’s true. They do charge ",
                 {
                   audio: "/audio/general/top-dollar.mp3",
-                  text: "top dollar",
+                  part: "top dollar",
                   type: "mark",
                 },
                 ".",
@@ -75,7 +75,7 @@ export default function SELAAlessonOne() {
                 "And their salespeople are very strange. They really ",
                 {
                   audio: "/audio/general/give-me-the-creeps.mp3",
-                  text: "give me the creeps",
+                  part: "give me the creeps",
                   type: "mark",
                 },
                 ".",
@@ -87,13 +87,13 @@ export default function SELAAlessonOne() {
                 "Well, they must be doing something right over there. Meanwhile, we’re ",
                 {
                   audio: "/audio/general/about-to.mp3",
-                  text: "about to",
+                  part: "about to",
                   type: "mark",
                 },
                 " ",
                 {
                   audio: "/audio/general/go-belly-up.mp3",
-                  text: "go-belly-up",
+                  part: "go-belly-up",
                   type: "mark",
                 },
                 ".",
@@ -105,7 +105,7 @@ export default function SELAAlessonOne() {
                 "I’m sorry to hear that. I thought my new advertising campaign would ",
                 {
                   audio: "/audio/general/save-the-day.mp3",
-                  text: "save the day",
+                  part: "save the day",
                   type: "mark",
                 },
                 ".",
@@ -116,13 +116,13 @@ export default function SELAAlessonOne() {
               text: [
                 {
                   audio: "/audio/general/lets-face-it.mp3",
-                  text: "Let’s face it",
+                  part: "Let’s face it",
                   type: "mark",
                 },
                 ": your advertising campaign was a ",
                 {
                   audio: "/audio/general/real-flop.mp3",
-                  text: "real flop",
+                  part: "real flop",
                   type: "mark",
                 },
                 ".",
@@ -134,7 +134,7 @@ export default function SELAAlessonOne() {
                 "Well then I’ll ",
                 {
                   audio: "/audio/general/go-back-to-the-drawing-board.mp3",
-                  text: "go back to the drawing board",
+                  part: "go back to the drawing board",
                   type: "mark",
                 },
                 ".",
@@ -142,7 +142,7 @@ export default function SELAAlessonOne() {
             },
             {
               speaker: "Peter:",
-              text: "It’s too late for that. You’re fired!",
+              text: ["It’s too late for that. You’re fired!"],
             },
             {
               speaker: "Bob:",
@@ -150,7 +150,7 @@ export default function SELAAlessonOne() {
                 "What? You’re ",
                 {
                   audio: "/audio/general/giving-me-the-ax.mp3",
-                  text: "giving me the ax",
+                  part: "giving me the ax",
                   type: "mark",
                 },
                 "?",
@@ -162,7 +162,7 @@ export default function SELAAlessonOne() {
                 "Yes. I’ve already found a new manager. She’s ",
                 {
                   audio: "/audio/general/as-sharp-as-a-tack.mp3",
-                  text: "as sharp as a tack",
+                  part: "as sharp as a tack",
                   type: "mark",
                 },
                 ".",
@@ -174,13 +174,13 @@ export default function SELAAlessonOne() {
                 "Can’t we even ",
                 {
                   audio: "/audio/general/talk-this-over.mp3",
-                  text: "talk this over",
+                  part: "talk this over",
                   type: "mark",
                 },
                 "? ",
                 {
                   audio: "/audio/general/after-all.mp3",
-                  text: "After all",
+                  part: "After all",
                   type: "mark",
                 },
                 ", I’ve been working here for 10 years!",
@@ -192,13 +192,13 @@ export default function SELAAlessonOne() {
                 "There’s ",
                 {
                   audio: "/audio/general/no-point-in.mp3",
-                  text: "no point in",
+                  part: "no point in",
                   type: "mark",
                 },
                 " arguing, Bob. I’ve already ",
                 {
                   audio: "/audio/general/made-up-my-mind.mp3",
-                  text: "made up my mind",
+                  part: "made up my mind",
                   type: "mark",
                 },
                 ".",
@@ -210,19 +210,19 @@ export default function SELAAlessonOne() {
                 "Oh well, ",
                 {
                   audio: "/audio/general/at-least.mp3",
-                  text: "at least",
+                  part: "at least",
                   type: "mark",
                 },
                 " I won’t have to ",
                 {
                   audio: "/audio/general/put-up-with.mp3",
-                  text: "put up with",
+                  part: "put up with",
                   type: "mark",
                 },
                 " your nonsense anymore! Good-bye to you and good-bye to this ",
                 {
                   audio: "/audio/general/dead-end-job.mp3",
-                  text: "dead-end job",
+                  part: "dead-end job",
                   type: "mark",
                 },
                 ".",
@@ -234,7 +234,7 @@ export default function SELAAlessonOne() {
                 "Please leave before I ",
                 {
                   audio: "/audio/general/lose-my-temper.mp3",
-                  text: "lose my temper",
+                  part: "lose my temper",
                   type: "mark",
                 },
                 "!",

@@ -28,19 +28,17 @@ export const Dialogue = ({ imgs, audioPlayer, lines }) => {
       )}
 
       {audioPlayer && <AudioPlayer src={audioPlayer} />}
-      <div className={`${styles.lines} line-break`}>
+      <div className={styles.lines}>
         {lines.map((line, index) => (
-          <div key={index}>
-            <p>
-              {line.audio && <Audio src={line.audio} />}
-              {line.speaker && <Bold>{line.speaker} </Bold>}
-              <InlineText
-                text={line.text}
-                phonetics={line.phonetics}
-                portuguese={line.portuguese}
-              />
-            </p>
-          </div>
+          <p key={index}>
+            {line.audio && <Audio src={line.audio} />}
+            {line.speaker && <Bold>{line.speaker} </Bold>}
+            <InlineText
+              text={line.text}
+              phonetics={line.phonetics}
+              portuguese={line.portuguese}
+            />
+          </p>
         ))}
       </div>
     </div>

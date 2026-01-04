@@ -76,7 +76,7 @@ export default function VerbBe() {
             {
               speaker: "Anna:",
               text: [
-                "I ",
+                "I",
                 {
                   type: "mark",
                   part: "’m",
@@ -85,10 +85,10 @@ export default function VerbBe() {
               ],
             },
             {
-              speaker: "Scott;",
+              speaker: "Scott:",
               text: "",
               text: [
-                "I ",
+                "I",
                 {
                   type: "mark",
                   part: "’m",
