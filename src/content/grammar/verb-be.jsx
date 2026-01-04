@@ -21,7 +21,7 @@ export default function VerbBe() {
         <Paragraph
           blocks={[
             {
-              img: "/assets/img/general/two-people-talking.png",
+              img: "/assets/img/general/two-people-talking-school.png",
               imgPosition: "left",
               alt: "Two people talking.",
               width: 350,
