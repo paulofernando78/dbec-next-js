@@ -52,13 +52,17 @@ export default function PhoneticsLetters() {
       <Whiteboard title="Pronunciation" subtitle="Phonetics + Letters" />
       <div className="line-break">
         <Paragraph
-          paragraphs={[
+          blocks={[
             {
-              audio: "/assets/audio/phonetics/check-out.mp3",
-              text: [
+              items: [
                 {
-                  part: "Check out the phonetic sounds of American English.",
-                  type: "bold",
+                  audio: "/assets/audio/phonetics/check-out.mp3",
+                  text: [
+                    {
+                      part: "Check out the phonetic sounds of American English.",
+                      type: "bold",
+                    },
+                  ],
                 },
               ],
             },
