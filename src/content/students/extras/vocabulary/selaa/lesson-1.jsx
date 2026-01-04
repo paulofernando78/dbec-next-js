@@ -15,7 +15,7 @@ export default function SELAAlessonOne() {
       <div className="line-break">
         <Dialogue
           title="Lesson 1 • Bob’s Day at Work"
-          audioPlayer="/assets/audio/vocabulary/selaa/lesson-1.mp3"
+          audioPlayer="/assets/audio//vocabulary/selaa/lesson-1.mp3"
           lines={[
             {
               text: [
@@ -30,7 +30,7 @@ export default function SELAAlessonOne() {
               text: [
                 "Bob, I hate to ",
                 {
-                  audio: "/audio/general/break-the-news.mp3",
+                  audio: "/assets/audio//general/break-the-news.mp3",
                   part: "break the news",
                   type: "mark",
                 },
@@ -50,7 +50,7 @@ export default function SELAAlessonOne() {
               text: [
                 "But everything in there ",
                 {
-                  audio: "/audio/general/costs-an-arm-and-a-leg.mp3",
+                  audio: "/assets/audio//general/costs-an-arm-and-a-leg.mp3",
                   part: "costs an arm and a leg",
                   type: "mark",
                 },
@@ -62,7 +62,7 @@ export default function SELAAlessonOne() {
               text: [
                 "That’s true. They do charge ",
                 {
-                  audio: "/audio/general/top-dollar.mp3",
+                  audio: "/assets/audio//general/top-dollar.mp3",
                   part: "top dollar",
                   type: "mark",
                 },
@@ -74,7 +74,7 @@ export default function SELAAlessonOne() {
               text: [
                 "And their salespeople are very strange. They really ",
                 {
-                  audio: "/audio/general/give-me-the-creeps.mp3",
+                  audio: "/assets/audio//general/give-me-the-creeps.mp3",
                   part: "give me the creeps",
                   type: "mark",
                 },
@@ -86,13 +86,13 @@ export default function SELAAlessonOne() {
               text: [
                 "Well, they must be doing something right over there. Meanwhile, we’re ",
                 {
-                  audio: "/audio/general/about-to.mp3",
+                  audio: "/assets/audio//general/about-to.mp3",
                   part: "about to",
                   type: "mark",
                 },
                 " ",
                 {
-                  audio: "/audio/general/go-belly-up.mp3",
+                  audio: "/assets/audio//general/go-belly-up.mp3",
                   part: "go-belly-up",
                   type: "mark",
                 },
@@ -104,7 +104,7 @@ export default function SELAAlessonOne() {
               text: [
                 "I’m sorry to hear that. I thought my new advertising campaign would ",
                 {
-                  audio: "/audio/general/save-the-day.mp3",
+                  audio: "/assets/audio//general/save-the-day.mp3",
                   part: "save the day",
                   type: "mark",
                 },
@@ -115,13 +115,13 @@ export default function SELAAlessonOne() {
               speaker: "Peter:",
               text: [
                 {
-                  audio: "/audio/general/lets-face-it.mp3",
+                  audio: "/assets/audio//general/lets-face-it.mp3",
                   part: "Let’s face it",
                   type: "mark",
                 },
                 ": your advertising campaign was a ",
                 {
-                  audio: "/audio/general/real-flop.mp3",
+                  audio: "/assets/audio//general/real-flop.mp3",
                   part: "real flop",
                   type: "mark",
                 },
@@ -133,7 +133,7 @@ export default function SELAAlessonOne() {
               text: [
                 "Well then I’ll ",
                 {
-                  audio: "/audio/general/go-back-to-the-drawing-board.mp3",
+                  audio: "/assets/audio//general/go-back-to-the-drawing-board.mp3",
                   part: "go back to the drawing board",
                   type: "mark",
                 },
@@ -149,7 +149,7 @@ export default function SELAAlessonOne() {
               text: [
                 "What? You’re ",
                 {
-                  audio: "/audio/general/giving-me-the-ax.mp3",
+                  audio: "/assets/audio//general/giving-me-the-ax.mp3",
                   part: "giving me the ax",
                   type: "mark",
                 },
@@ -161,7 +161,7 @@ export default function SELAAlessonOne() {
               text: [
                 "Yes. I’ve already found a new manager. She’s ",
                 {
-                  audio: "/audio/general/as-sharp-as-a-tack.mp3",
+                  audio: "/assets/audio//general/as-sharp-as-a-tack.mp3",
                   part: "as sharp as a tack",
                   type: "mark",
                 },
@@ -173,13 +173,13 @@ export default function SELAAlessonOne() {
               text: [
                 "Can’t we even ",
                 {
-                  audio: "/audio/general/talk-this-over.mp3",
+                  audio: "/assets/audio//general/talk-this-over.mp3",
                   part: "talk this over",
                   type: "mark",
                 },
                 "? ",
                 {
-                  audio: "/audio/general/after-all.mp3",
+                  audio: "/assets/audio//general/after-all.mp3",
                   part: "After all",
                   type: "mark",
                 },
@@ -191,13 +191,13 @@ export default function SELAAlessonOne() {
               text: [
                 "There’s ",
                 {
-                  audio: "/audio/general/no-point-in.mp3",
+                  audio: "/assets/audio//general/no-point-in.mp3",
                   part: "no point in",
                   type: "mark",
                 },
                 " arguing, Bob. I’ve already ",
                 {
-                  audio: "/audio/general/made-up-my-mind.mp3",
+                  audio: "/assets/audio//general/made-up-my-mind.mp3",
                   part: "made up my mind",
                   type: "mark",
                 },
@@ -209,19 +209,19 @@ export default function SELAAlessonOne() {
               text: [
                 "Oh well, ",
                 {
-                  audio: "/audio/general/at-least.mp3",
+                  audio: "/assets/audio//general/at-least.mp3",
                   part: "at least",
                   type: "mark",
                 },
                 " I won’t have to ",
                 {
-                  audio: "/audio/general/put-up-with.mp3",
+                  audio: "/assets/audio//general/put-up-with.mp3",
                   part: "put up with",
                   type: "mark",
                 },
                 " your nonsense anymore! Good-bye to you and good-bye to this ",
                 {
-                  audio: "/audio/general/dead-end-job.mp3",
+                  audio: "/assets/audio//general/dead-end-job.mp3",
                   part: "dead-end job",
                   type: "mark",
                 },
@@ -233,7 +233,7 @@ export default function SELAAlessonOne() {
               text: [
                 "Please leave before I ",
                 {
-                  audio: "/audio/general/lose-my-temper.mp3",
+                  audio: "/assets/audio//general/lose-my-temper.mp3",
                   part: "lose my temper",
                   type: "mark",
                 },
