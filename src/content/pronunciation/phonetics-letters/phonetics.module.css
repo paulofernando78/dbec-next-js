@@ -1,5 +1,18 @@
 .container {
-  display: block;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wrapper {
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 
 .symbol {
@@ -11,5 +24,6 @@
 }
 
 .description {
+  font-size: 0.9rem;
   text-align: center;
 }

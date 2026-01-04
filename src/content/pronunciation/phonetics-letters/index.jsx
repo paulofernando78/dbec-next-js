@@ -68,6 +68,15 @@ export default function PhoneticsLetters() {
             },
           ]}
         />
+        <div className={styles.container}>
+          {vowels.map((vowel, index) => (
+            <div key={index} className={styles.wrapper}>
+              <span className={styles.symbol}>{vowel.symbol}</span>
+              {vowel.audio && <Audio src={vowel.audio} />}
+              <span className={styles.description}>{vowel.description}</span>
+            </div>
+          ))}
+        </div>
         <h3>Sounds by letters</h3>
         <Links
           links={[
