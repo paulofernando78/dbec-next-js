@@ -41,7 +41,7 @@ const phonetics = [
               "/assets/audio/pronunciation/phonetics/vowels/ə-unstressed.mp3",
             symbol: "/ə/",
             description: "schwa [unstressed]",
-            examples: ["around", "about", "sofa"],
+            examples: ["around", "about", "sofa", "the"],
           },
           {
             audio:
@@ -67,7 +67,6 @@ const phonetics = [
             symbol: "/uː/",
             description: "long",
             examples: ["blue", "food", "student"],
-            lineBreak: true,
           },
           {
             subSection: [
@@ -84,7 +83,7 @@ const phonetics = [
                     audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
                     symbol: "/ɔː/",
                     description: "long",
-                    examples: ["car", "father", "thought", "law"],
+                    examples: ["father", "thought", "law"],
                     lineBreak: true,
                   },
                   {
@@ -104,13 +103,13 @@ const phonetics = [
                     audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
                     symbol: "/ɑː/",
                     description: "long",
-                    examples: ["hot", "lot"],
+                    examples: ["frog", "hot", "lot", "rob"],
                   },
                   {
                     audio: "/assets/audio/pronunciation/phonetics/vowels/ɒ.mp3",
                     symbol: "/ɒ/",
                     description: "short",
-                    examples: ["hot", "lot"],
+                    examples: ["frog", "hot", "lot", "rob"],
                   },
                 ],
               },
@@ -124,50 +123,75 @@ const phonetics = [
           {
             audio: "/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3",
             symbol: "/eɪ/",
-            description: "diphthong",
             examples: ["day", "say", "make"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3",
             symbol: "/aɪ/",
-            description: "diphthong",
             examples: ["my", "time", "buy"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/diphthongs/ɔɪ.mp3",
             symbol: "/ɔɪ/",
-            description: "diphthong",
             examples: ["boy", "toy", "choice"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/diphthongs/aʊ.mp3",
             symbol: "/aʊ/",
-            description: "diphthong",
             examples: ["now", "out", "house"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3",
             symbol: "/oʊ/",
-            description: "diphthong",
             examples: ["go", "home", "no"],
           },
           {
-            audio: "/assets/audio/pronunciation/phonetics/diphthongs/ɪə.mp3",
-            symbol: "/ɪə/",
-            description: "diphthong (British)",
-            examples: ["near", "here", "fear"],
-          },
-          {
-            audio: "/assets/audio/pronunciation/phonetics/diphthongs/eə.mp3",
-            symbol: "/eə/",
-            description: "diphthong (British)",
-            examples: ["hair", "care", "there"],
-          },
-          {
-            audio: "/assets/audio/pronunciation/phonetics/diphthongs/ʊə.mp3",
-            symbol: "/ʊə/",
-            description: "diphthong (British)",
-            examples: ["tour", "pure", "cure"],
+            subSection: [
+              {
+                subTitle: "American vs. British",
+                sounds: [
+                  {
+                    audio: "/assets/audio/pronunciation/phonetics/ɪə.mp3",
+                    symbol: "/ɪə/",
+                    examples: ["near", "here", "fear"],
+                    examples: [""],
+                  },
+                  {
+                    audio:
+                      "/assets/audio/pronunciation/phonetics/diphthongs/ɪə.mp3",
+                    symbol: "/ɪə/",
+                    examples: ["near", "here", "fear"],
+                    lineBreak: true,
+                  },
+                  {
+                    audio: "/assets/audio/pronunciation/phonetics/eə.mp3",
+                    symbol: "",
+                    description: "",
+                    examples: [""],
+                  },
+                  {
+                    audio:
+                      "/assets/audio/pronunciation/phonetics/diphthongs/eə.mp3",
+                    symbol: "/eə/",
+                    examples: ["hair", "care", "there"],
+                    lineBreak: true,
+                  },
+                  {
+                    audio: "/assets/audio/pronunciation/phonetics/ʊə.mp3",
+                    symbol: "",
+                    description: "",
+                    examples: [""],
+                  },
+                  {
+                    audio:
+                      "/assets/audio/pronunciation/phonetics/diphthongs/ʊə.mp3",
+                    symbol: "/ʊə/",
+                    examples: ["tour", "pure", "cure"],
+                    lineBreak: true,
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
@@ -178,13 +202,13 @@ const phonetics = [
             audio: "/assets/audio/pronunciation/phonetics/consonants/p.mp3",
             symbol: "/p/",
             description: "voiceless plosive",
-            examples: ["pen", "happy"],
+            examples: ["pen", "happy", "map"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/consonants/b.mp3",
             symbol: "/b/",
             description: "voiced plosive",
-            examples: ["book", "cab"],
+            examples: ["book", "cab", "table"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/consonants/t.mp3",
@@ -306,6 +330,28 @@ const phonetics = [
             description: "approximant",
             examples: ["we", "quick"],
           },
+          {
+            subSection: [
+              {
+                subTitle: "American vs. British",
+                sounds: [
+                  {
+                    audio: "/assets/audio/pronunciation/phonetics/.mp3",
+                    symbol: "",
+                    description: "",
+                    examples: [""],
+                  },
+                  {
+                    audio: "/assets/audio/pronunciation/phonetics/.mp3",
+                    symbol: "",
+                    description: "",
+                    examples: [""],
+                    lineBreak: true,
+                  },
+                ],
+              },
+            ],
+          },
         ],
       },
     ],
@@ -355,14 +401,9 @@ export default function PhoneticsLetters() {
                     >
                       {item.audio && <Audio src={item.audio} />}
                       <span className={styles.symbol}>{item.symbol}</span>{" "}
-                      <span className={styles.description}>
-                        ({item.description})
-                      </span>{" "}
+                      {item.description && <span className={styles.description}>({item.description})</span>}{" "}
                       <BulletPoint />{" "}
-                      {item.examples && (
-                        <span className={styles.examples}>
-                          {item.examples.join(", ")}
-                        </span>
+                      {item.examples && (<span className={styles.examples}>{item.examples.join(", ")}</span>
                       )}
                     </div>
                   )}
@@ -385,9 +426,9 @@ export default function PhoneticsLetters() {
                               <span className={styles.symbol}>
                                 {sound.symbol}
                               </span>{" "}
-                              <span className={styles.description}>
+                              {sound.description && <span className={styles.description}>
                                 ({sound.description})
-                              </span>{" "}
+                              </span>}{" "}
                               <BulletPoint />{" "}
                               {sound.examples && (
                                 <span className={styles.examples}>
