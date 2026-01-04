@@ -16,63 +16,57 @@ const phonetics = [
             audio: "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
             symbol: "/æ/",
             description: "short",
-            examples: ["cat", "man"],
+            examples: ["cat", "fat", "man"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
             symbol: "/e/",
             description: "short",
-            examples: ["bed", "red"],
+            examples: ["bed", "head", "red"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
             symbol: "/ɪ/",
             description: "short",
-            examples: ["sit", "hit"],
+            examples: ["it", "sit", "hit"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
             symbol: "/iː/",
             description: "long",
-            examples: ["see", "tree"],
+            examples: ["eat", "see", "tree"],
           },
           {
             audio:
               "/assets/audio/pronunciation/phonetics/vowels/ə-unstressed.mp3",
             symbol: "/ə/",
-            description: "schwa (unstressed)",
-            examples: ["about", "sofa"],
+            description: "schwa [unstressed]",
+            examples: ["around", "about", "sofa"],
           },
           {
             audio:
               "/assets/audio/pronunciation/phonetics/vowels/ʌ-stressed.mp3",
             symbol: "/ʌ/",
             description: "short",
-            examples: ["cup", "sun"],
+            examples: ["but", "cup", "sun"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
             symbol: "/ɑː/",
             description: "long",
-            examples: ["car", "father"],
-          },
-          {
-            audio: "/assets/audio/pronunciation/phonetics/vowels/ɔː.mp3",
-            symbol: "/ɔː/",
-            description: "long",
-            examples: ["thought", "law"],
+            examples: ["car", "father", "law", "thought"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
             symbol: "/ʊ/",
             description: "short",
-            examples: ["book", "good"],
+            examples: ["book", "good", "would"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
             symbol: "/uː/",
             description: "long",
-            examples: ["food", "blue"],
+            examples: ["blue", "food", "student"],
             lineBreak: true,
           },
           {
@@ -80,6 +74,19 @@ const phonetics = [
               {
                 subTitle: "American vs. British",
                 sounds: [
+                  {
+                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                    symbol: "/ɑː/",
+                    description: "long",
+                    examples: ["thought", "law"],
+                  },
+                  {
+                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                    symbol: "/ɔː/",
+                    description: "long",
+                    examples: ["car", "father", "thought", "law"],
+                    lineBreak: true,
+                  },
                   {
                     audio: "/assets/audio/pronunciation/phonetics/vowels/ɜ.mp3",
                     symbol: "/ɝː/",
