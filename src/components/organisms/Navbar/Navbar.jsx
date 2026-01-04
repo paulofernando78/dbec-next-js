@@ -29,7 +29,7 @@ const links = [
       },
       {
         href: "/pronunciation/phonetics-letters",
-        label: "Letters + Phonetics",
+        label: "Phonetics + Letters",
       },
       {
         href: "/pronunciation/linked-sounds",
