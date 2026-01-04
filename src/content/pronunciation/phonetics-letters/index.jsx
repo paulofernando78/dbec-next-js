@@ -87,7 +87,7 @@ const phonetics = [
                           "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
                         symbol: "/ɔː/",
                         description: "long",
-                        examples: ["father", "thought", "law"],
+                        examples: ["thought", "law"],
                       },
                     ],
                   },
