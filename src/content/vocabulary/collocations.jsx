@@ -18,204 +18,208 @@ export default function Collocations() {
         />
         <Paragraph
           lineBreak={true}
-          paragraphs={[
+          blocks={[
             {
-              text: [
+              items: [
                 {
-                  text: "Tenho que fazer minha lição (tarefa de casa).",
-                  type: "translation",
+                  text: [
+                    {
+                      part: "Tenho que fazer minha lição (tarefa de casa).",
+                      type: "translation",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              text: [
                 {
-                  incorrect: true,
-                  text: "I have to make my homework.",
+                  text: [
+                    {
+                      incorrect: true,
+                      part: "I have to make my homework.",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              correct: true,
-              text: [
-                "",
-                {
-                  audio: "/audio/general/i-have-to-do-my-homework.mp3",
-                  correct: true,
-                  text: "I have to do my homework.",
-                },
-              ],
-            },
-            {
-              text: [
-                {
-                  text: "Tenho que fazer a minha cama.",
-                  type: "translation",
-                },
-              ],
-            },
-            {
-              text: [
-                {
-                  incorrect: true,
-                  text: "I have to do my bed.",
-                },
-              ],
-            },
-            {
-              lineBreak: true,
-              text: [
                 {
                   correct: true,
-                  audio: "/audio/general/I-have-to-make-my-bed.mp3",
-                  text: "I have to make my bed.",
+                  text: [
+                    "",
+                    {
+                      audio: "/audio/general/i-have-to-do-my-homework.mp3",
+                      correct: true,
+                      part: "I have to do my homework.",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      part: "Tenho que fazer a minha cama.",
+                      type: "translation",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      incorrect: true,
+                      part: "I have to do my bed.",
+                    },
+                  ],
+                },
+                {
+                  lineBreak: true,
+                  text: [
+                    {
+                      correct: true,
+                      audio: "/audio/general/I-have-to-make-my-bed.mp3",
+                      part: "I have to make my bed.",
+                    },
+                  ],
                 },
               ],
             },
           ]}
         />
-        <InlineText
-          text={[
-            { text: "for / with", type: "bold" }
-          ]}
-        />
+        <InlineText text={[{ text: "for / with", type: "bold" }]} />
         <Paragraph
           lineBreak={true}
-          paragraphs={[
+          blocks={[
             {
-              text: [
+              items: [
                 {
-                  text: "Estou apaixonado por você.",
-                  type: "translation",
+                  text: [
+                    {
+                      part: "Estou apaixonado por você.",
+                      type: "translation",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              text: [
                 {
-                  incorrect: true,
-                  text: "I’m in love for you.",
+                  text: [
+                    {
+                      incorrect: true,
+                      part: "I’m in love for you.",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              text: [
                 {
-                  correct: true,
-                  audio: "/audio/general/im-in-love-with-you.mp3",
-                  text: "I’m in love with you.",
+                  text: [
+                    {
+                      correct: true,
+                      audio: "/audio/general/im-in-love-with-you.mp3",
+                      part: "I’m in love with you.",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              text: [
                 {
-                  text: "Estou preocupado com você.",
-                  type: "translation",
+                  text: [
+                    {
+                      part: "Estou preocupado com você.",
+                      type: "translation",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              text: [
                 {
-                  incorrect: true,
-                  text: "I’m worried with you.",
+                  text: [
+                    {
+                      incorrect: true,
+                      part: "I’m worried with you.",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              lineBreak: true,
-              text: [
                 {
-                  correct: true,
-                  audio: "/audio/general/im-worried-about-you.mp3",
-                  text: "I’m worried about you.",
+                  lineBreak: true,
+                  text: [
+                    {
+                      correct: true,
+                      audio: "/audio/general/im-worried-about-you.mp3",
+                      part: "I’m worried about you.",
+                    },
+                  ],
                 },
               ],
             },
           ]}
         />
-        <InlineText
-          text={[
-            { text: "fast / quick", type: "bold" }
-          ]}
-        />
+        <InlineText text={[{ text: "fast / quick", type: "bold" }]} />
         <Paragraph
           lineBreak={true}
-          paragraphs={[
+          blocks={[
             {
-              text: [
+              items: [
                 {
-                  text: "Um carro rápido",
-                  type: "translation",
+                  text: [
+                    {
+                      part: "Um carro rápido",
+                      type: "translation",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              text: [
                 {
-                  incorrect: true,
-                  text: "It’s a quick car.",
+                  text: [
+                    {
+                      incorrect: true,
+                      part: "It’s a quick car.",
+                    },
+                  ],
                 },
-              ],
-            },
-            {
-              text: [
                 {
-                  correct: true,
+                  text: [
+                    {
+                      correct: true,
+                      audio: "/audio/general/.mp3",
+                      part: "It’s a fast car.",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      part: "Posso ter uma palavrinha com você?",
+                      type: "translation",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      incorrect: true,
+                      part: "Can I have a fast word with you?",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      correct: true,
+                      audio: "/audio/general/Can-I-have-a-quick-word-with-you.mp3",
+                      part: "Can I have a quick word with you?",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      part: "Ele é um corredor rápido.",
+                      type: "translation",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      incorrect: true,
+                      part: "He’s a quick runner.",
+                    },
+                  ],
+                },
+                {
                   audio: "/audio/general/.mp3",
-                  text: "It’s a fast car.",
-                },
-              ],
-            },
-            {
-              text: [
-                {
-                  text: "Posso ter uma palavrinha com você?",
-                  type: "translation",
-                },
-              ],
-            },
-            {
-              text: [
-                {
-                  incorrect: true,
-                  text: "Can I have a fast word with you?",
-                },
-              ],
-            },
-            {
-              text: [
-                {
-                  correct: true,
-                  audio: "/audio/general/Can-I-have-a-quick-word-with-you.mp3",
-                  text: "Can I have a quick word with you?",
-                },
-              ],
-            },
-            {
-              text: [
-                {
-                  text: "Ele é um corredor rápido.",
-                  type: "translation",
-                },
-              ],
-            },
-            {
-              text: [
-                {
-                  incorrect: true,
-                  text: "He’s a quick runner.",
-                },
-              ],
-            },
-            {
-              audio: "/audio/general/.mp3",
-              text: [
-                {
-                  correct: true,
-                  audio: "/audio/general/hes-a-fast-runner.mp3",
-                  text: "He’s a fast runner.",
+                  text: [
+                    {
+                      correct: true,
+                      audio: "/audio/general/hes-a-fast-runner.mp3",
+                      part: "He’s a fast runner.",
+                    },
+                  ],
                 },
               ],
             },
@@ -224,7 +228,7 @@ export default function Collocations() {
         <InlineText
           text={[
             {
-              text: "Quick costuma enfatizar agilidade, reação, rapidez em pouco tempo:",
+              part: "Quick costuma enfatizar agilidade, reação, rapidez em pouco tempo:",
               type: "translation",
             },
           ]}
