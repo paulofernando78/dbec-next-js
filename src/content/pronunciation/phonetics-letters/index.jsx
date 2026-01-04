@@ -69,47 +69,63 @@ const phonetics = [
             examples: ["blue", "food", "student"],
           },
           {
-            subSection: [
+            soundGroup: [
               {
-                subTitle: "American vs. British",
+                title: "American vs. British",
                 sounds: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                    symbol: "/ɑː/",
-                    description: "long",
-                    examples: ["thought", "law"],
+                    group: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                        symbol: "/ɑː/",
+                        description: "long",
+                        examples: ["thought", "law"],
+                      },
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                        symbol: "/ɔː/",
+                        description: "long",
+                        examples: ["father", "thought", "law"],
+                      },
+                    ],
                   },
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                    symbol: "/ɔː/",
-                    description: "long",
-                    examples: ["father", "thought", "law"],
-                    lineBreak: true,
+                    group: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɜ.mp3",
+                        symbol: "/ɝː/",
+                        description: "long",
+                        examples: ["bird, word", "learn"],
+                      },
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɜ.mp3",
+                        symbol: "/ɜː/",
+                        description: "long",
+                        examples: ["bird, word", "learn"],
+                      },
+                    ],
                   },
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɜ.mp3",
-                    symbol: "/ɝː/",
-                    description: "long",
-                    examples: ["bird, word", "learn"],
-                  },
-                  {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɜ.mp3",
-                    symbol: "/ɜː/",
-                    description: "long",
-                    examples: ["bird, word", "learn"],
-                    lineBreak: true,
-                  },
-                  {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                    symbol: "/ɑː/",
-                    description: "long",
-                    examples: ["frog", "hot", "lot", "rob"],
-                  },
-                  {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɒ.mp3",
-                    symbol: "/ɒ/",
-                    description: "short",
-                    examples: ["frog", "hot", "lot", "rob"],
+                    group: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                        symbol: "/ɑː/",
+                        description: "long",
+                        examples: ["frog", "hot", "lot", "rob"],
+                      },
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɒ.mp3",
+                        symbol: "/ɒ/",
+                        description: "short",
+                        examples: ["frog", "hot", "lot", "rob"],
+                      },
+                    ],
                   },
                 ],
               },
@@ -146,48 +162,57 @@ const phonetics = [
             examples: ["go", "home", "no"],
           },
           {
-            subSection: [
+            soundGroup: [
               {
-                subTitle: "American vs. British",
+                title: "American vs. British",
                 sounds: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/ɪə.mp3",
-                    symbol: "/ɪə/",
-                    examples: ["near", "here", "fear"],
-                    examples: [""],
+                    group: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/diphthongs/ɪr.mp3",
+                        symbol: "/ɪr/",
+                        examples: ["near", "here", "fear"],
+                      },
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/diphthongs/ɪə.mp3",
+                        symbol: "/ɪə/",
+                        examples: ["near", "here", "fear"],
+                      },
+                    ],
                   },
                   {
-                    audio:
-                      "/assets/audio/pronunciation/phonetics/diphthongs/ɪə.mp3",
-                    symbol: "/ɪə/",
-                    examples: ["near", "here", "fear"],
-                    lineBreak: true,
+                    group: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/diphthongs/er.mp3",
+                        symbol: "/er/",
+                        examples: ["hair", "care", "there"],
+                      },
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/diphthongs/eə.mp3",
+                        symbol: "/eə/",
+                        examples: ["hair", "care", "there"],
+                      },
+                    ],
                   },
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/eə.mp3",
-                    symbol: "",
-                    description: "",
-                    examples: [""],
-                  },
-                  {
-                    audio:
-                      "/assets/audio/pronunciation/phonetics/diphthongs/eə.mp3",
-                    symbol: "/eə/",
-                    examples: ["hair", "care", "there"],
-                    lineBreak: true,
-                  },
-                  {
-                    audio: "/assets/audio/pronunciation/phonetics/ʊə.mp3",
-                    symbol: "",
-                    description: "",
-                    examples: [""],
-                  },
-                  {
-                    audio:
-                      "/assets/audio/pronunciation/phonetics/diphthongs/ʊə.mp3",
-                    symbol: "/ʊə/",
-                    examples: ["tour", "pure", "cure"],
-                    lineBreak: true,
+                    group: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/diphthongs/ʊr.mp3",
+                        symbol: "/ʊr/",
+                        examples: ["tour", "pure", "cure"],
+                      },
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/diphthongs/ʊə.mp3",
+                        symbol: "/ʊə/",
+                        examples: ["tour", "pure", "cure"],
+                      },
+                    ],
                   },
                 ],
               },
@@ -346,7 +371,6 @@ const phonetics = [
                     symbol: "",
                     description: "",
                     examples: [""],
-                    lineBreak: true,
                   },
                 ],
               },
@@ -386,58 +410,58 @@ export default function PhoneticsLetters() {
         />
 
         {phonetics[0].sections.map((section, sectionIndex) => (
-          <div key={sectionIndex}>
+          <div key={sectionIndex} className="line-break">
             <h3>{section.title}</h3>
-
             <div>
               {section.sounds.map((item, index) => (
-                <div key={index}>
-                  {/* CASE 1 — normal sound */}
-                  {!item.subSection && (
-                    <div
-                      className={`${styles.wrapper} ${
-                        item.lineBreak ? "line-break-item" : ""
-                      }`}
-                    >
-                      {item.audio && <Audio src={item.audio} />}
-                      <span className={styles.symbol}>{item.symbol}</span>{" "}
-                      {item.description && <span className={styles.description}>({item.description})</span>}{" "}
-                      <BulletPoint />{" "}
-                      {item.examples && (<span className={styles.examples}>{item.examples.join(", ")}</span>
-                      )}
-                    </div>
-                  )}
+                <div key={index} className="line-break">
+                  {/* 🔹 SOM NORMAL */}
 
-                  {/* CASE 2 — subsection */}
-                  {item.subSection &&
-                    item.subSection.map((sub, subIndex) => (
-                      <div key={subIndex} className="line-break">
-                        <h4>{sub.subTitle}</h4>
+                  <div>
+                    {item.audio && <Audio src={item.audio} />}
+                    <span className={styles.symbol}>{item.symbol}</span>{" "}
+                    {item.description && (
+                      <span className={styles.description}>
+                        ({item.description})
+                      </span>
+                    )}{" "}
+                    {item.examples && (
+                      <span className={styles.examples}>
+                        <BulletPoint />{" "}
+                        {item.examples.join(", ")}
+                      </span>
+                    )}
+                  </div>
 
-                        <div style={{ marginBottom: "5px" }}>
-                          {sub.sounds.map((sound, soundIndex) => (
-                            <div
-                              key={soundIndex}
-                              className={`${styles.wrapper} ${
-                                sound.lineBreak ? "line-break-item" : ""
-                              }`}
-                            >
-                              {sound.audio && <Audio src={sound.audio} />}
-                              <span className={styles.symbol}>
-                                {sound.symbol}
-                              </span>{" "}
-                              {sound.description && <span className={styles.description}>
-                                ({sound.description})
-                              </span>}{" "}
-                              <BulletPoint />{" "}
-                              {sound.examples && (
-                                <span className={styles.examples}>
-                                  {sound.examples.join(", ")}
-                                </span>
-                              )}
-                            </div>
-                          ))}
-                        </div>
+                  {/* 🔹 SOUND GROUP (American vs. British) */}
+                  {item.soundGroup &&
+                    item.soundGroup.map((groupBlock, groupIndex) => (
+                      <div key={groupIndex} className="line-break">
+                        <h4>{groupBlock.title}</h4>
+
+                        {groupBlock.sounds.map((pair, pairIndex) => (
+                          <div key={pairIndex}>
+                            {pair.group.map((sound, soundIndex) => (
+                              <div key={soundIndex}>
+                                {sound.audio && <Audio src={sound.audio} />}
+                                <span className={styles.symbol}>
+                                  {sound.symbol}
+                                </span>{" "}
+                                {sound.description && (
+                                  <span className={styles.description}>
+                                    ({sound.description})
+                                  </span>
+                                )}{" "}
+                                <BulletPoint />{" "}
+                                {sound.examples && (
+                                  <span className={styles.examples}>
+                                    {sound.examples.join(", ")}
+                                  </span>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        ))}
                       </div>
                     ))}
                 </div>
@@ -453,12 +477,17 @@ export default function PhoneticsLetters() {
               links: [
                 {
                   href: "/pronunciation/phonetics-letters/letters-a-vs-ea",
-                  label: 'Letters "a vs. e(a)"',
+                  label: 'Letters "a" vs. "e(a)": ',
                   phonetics: "/æ/ vs. /e/",
                 },
+                // {
+                //   href: "/pronunciation/phonetics-letters/letters-ea-ee-vs-i",
+                //   label: 'Letters "e", "ea", "ee", "ei", "ey", "i", "ie", "y", "eo": ',
+                //   phonetics: "/iː/",
+                // },
                 {
                   href: "/pronunciation/phonetics-letters/letters-ea-ee-vs-i",
-                  label: 'Letters "ea, ee vs. i"',
+                  label: 'Letters "ea", "ee" vs. "i": ',
                   phonetics: "/iː/ vs /ɪ/",
                 },
               ],

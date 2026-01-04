@@ -19,7 +19,7 @@ export const Links = ({ links = [] }) => {
                 >
                   {item.label}
                   <span>
-                  (phonetics: <Phonetics>{item.phonetics}</Phonetics>)
+                  <Phonetics>{item.phonetics}</Phonetics>
                   </span>
                 </Link>
               </div>
