@@ -16,6 +16,7 @@ const phonetics = [
             audio: "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
             symbol: "/æ/",
             description: "short",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/æ-example.mp3",
             examples: ["cat", "fat", "man"],
           },
           {
@@ -54,7 +55,7 @@ const phonetics = [
             audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
             symbol: "/ɑː/",
             description: "long",
-            examples: ["car", "father", "law", "thought"],
+            examples: ["father", "law", "thought"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
@@ -73,6 +74,24 @@ const phonetics = [
               {
                 title: "American vs. British",
                 sounds: [
+                  {
+                    group: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                        symbol: "/æ/",
+                        description: "short",
+                        examples: ["ask", "dance", "fast"],
+                      },
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                        symbol: "/ɑː/",
+                        description: "long",
+                        examples: ["ask", "dance", "fast"],
+                      },
+                    ],
+                  },
                   {
                     group: [
                       {
@@ -427,7 +446,7 @@ export default function PhoneticsLetters() {
                     )}{" "}
                     {item.examples && (
                       <span className={styles.examples}>
-                        <BulletPoint />{" "}
+                        <Audio src={item.exampleAudio} />{" "}
                         {item.examples.join(", ")}
                       </span>
                     )}
@@ -470,11 +489,16 @@ export default function PhoneticsLetters() {
           </div>
         ))}
 
-        <h3>Sounds by letters</h3>
+        <h3>Sounds by letters (Graphemes)</h3>
         <Links
           links={[
             {
               links: [
+                // {
+                //   href: "/pronunciation/phonetics-letters/letters-ea-ee-vs-i",
+                //   label: 'Letters "a": ',
+                //   phonetics: "/iː/",
+                // },
                 {
                   href: "/pronunciation/phonetics-letters/letters-a-vs-ea",
                   label: 'Letters "a" vs. "e(a)": ',
@@ -482,7 +506,7 @@ export default function PhoneticsLetters() {
                 },
                 // {
                 //   href: "/pronunciation/phonetics-letters/letters-ea-ee-vs-i",
-                //   label: 'Letters "e", "ea", "ee", "ei", "ey", "i", "ie", "y", "eo": ',
+                //   label: 'Letters "e", "ea", "ee", "ei", "eo", "ey", "i", "ie", "y": ',
                 //   phonetics: "/iː/",
                 // },
                 {
