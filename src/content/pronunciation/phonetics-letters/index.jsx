@@ -89,7 +89,7 @@ const phonetics = [
                           "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
                         symbol: "/æ/",
                         description: "short",
-                        exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/group-æ-us-example.mp3",
+                        exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/us-vs.uk/æ-us-example.mp3",
                         examples: ["ask", "dance", "fast"],
                       },
                       {
@@ -97,7 +97,7 @@ const phonetics = [
                           "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
                         symbol: "/ɑː/",
                         description: "long",
-                        exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/group-ɑ-uk-example.mp3",
+                        exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/us-vs.uk/ɑ-uk-example.mp3",
                         examples: ["ask", "dance", "fast"],
                       },
                     ],
