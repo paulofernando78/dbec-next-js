@@ -23,18 +23,21 @@ const phonetics = [
             audio: "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
             symbol: "/e/",
             description: "short",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/e-example.mp3",
             examples: ["bed", "head", "red"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
             symbol: "/ɪ/",
             description: "short",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/.mp3",
             examples: ["it", "sit", "hit"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
             symbol: "/iː/",
             description: "long",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/.mp3",
             examples: ["eat", "see", "tree"],
           },
           {
@@ -42,6 +45,7 @@ const phonetics = [
               "/assets/audio/pronunciation/phonetics/vowels/ə-unstressed.mp3",
             symbol: "/ə/",
             description: "schwa [unstressed]",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/.mp3",
             examples: ["around", "about", "sofa", "the"],
           },
           {
@@ -49,24 +53,28 @@ const phonetics = [
               "/assets/audio/pronunciation/phonetics/vowels/ʌ-stressed.mp3",
             symbol: "/ʌ/",
             description: "short",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/.mp3",
             examples: ["but", "cup", "sun"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
             symbol: "/ɑː/",
             description: "long",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/.mp3",
             examples: ["father", "law", "thought"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
             symbol: "/ʊ/",
             description: "short",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/.mp3",
             examples: ["book", "good", "would"],
           },
           {
             audio: "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
             symbol: "/uː/",
             description: "long",
+            exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/.mp3",
             examples: ["blue", "food", "student"],
           },
           {
@@ -78,9 +86,10 @@ const phonetics = [
                     group: [
                       {
                         audio:
-                          "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                          "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
                         symbol: "/æ/",
                         description: "short",
+                        exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/group-æ-us-example.mp3",
                         examples: ["ask", "dance", "fast"],
                       },
                       {
@@ -88,6 +97,7 @@ const phonetics = [
                           "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
                         symbol: "/ɑː/",
                         description: "long",
+                        exampleAudio: "/assets/audio/pronunciation/phonetics/vowels/group-ɑ-uk-example.mp3",
                         examples: ["ask", "dance", "fast"],
                       },
                     ],
@@ -446,7 +456,7 @@ export default function PhoneticsLetters() {
                     )}{" "}
                     {item.examples && (
                       <span className={styles.examples}>
-                        <Audio src={item.exampleAudio} />{" "}
+                        <Audio src={item.exampleAudio} />
                         {item.examples.join(", ")}
                       </span>
                     )}
@@ -471,7 +481,7 @@ export default function PhoneticsLetters() {
                                     ({sound.description})
                                   </span>
                                 )}{" "}
-                                <BulletPoint />{" "}
+                                <Audio src={sound.exampleAudio} />
                                 {sound.examples && (
                                   <span className={styles.examples}>
                                     {sound.examples.join(", ")}
