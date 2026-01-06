@@ -9,9 +9,15 @@ import { Mark } from "@/components/atoms/Mark";
 import { Underline } from "@/components/atoms/Underline";
 import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
-import { Correct, Incorrect, Attention } from "@/lib/svg-imports";
+import {
+  Correct,
+  Incorrect,
+  Attention,
+  USflag,
+  UKflag,
+} from "@/lib/svg-imports";
 
-export const InlineText = ({ text = [], phonetics, portuguese }) => {
+export const InlineText = ({ text = [] }) => {
   return (
     <span className={styles.text}>
       {text.map((part, i) => {
@@ -32,10 +38,17 @@ export const InlineText = ({ text = [], phonetics, portuguese }) => {
           case "underline":
             content = <Underline>{part.part}</Underline>;
             break;
+          case "phonetics":
+            content = <Phonetics>{part.part}</Phonetics>;
+            break;
+          case "portuguese":
+            content = <Portuguese>{part.part}</Portuguese>;
         }
 
         return (
           <span key={i}>
+            {part.usFlag && <USflag className="icon-position" />}
+            {part.ukFlag && <UKflag className="icon-position" />}
             {part.important && <Attention className="icon-position" />}
             {part.correct && <Correct className="icon-position" />}
             {part.incorrect && <Incorrect className="icon-position" />}
@@ -44,17 +57,6 @@ export const InlineText = ({ text = [], phonetics, portuguese }) => {
           </span>
         );
       })}
-
-      {phonetics && (
-        <Phonetics>
-          <span>{phonetics}</span>
-        </Phonetics>
-      )}{" "}
-      {portuguese && (
-        <Portuguese>
-          <span>{portuguese}</span>
-        </Portuguese>
-      )}
     </span>
   );
 };

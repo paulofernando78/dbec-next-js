@@ -30,6 +30,8 @@ export default function Mock() {
           text={[
             "normal ",
             {
+              usFlag: true,
+              ukFlag: true,
               important: true,
               correct: true,
               incorrect: true,
@@ -38,6 +40,8 @@ export default function Mock() {
             },
             " ",
             {
+              usFlag: true,
+              ukFlag: true,
               important: true,
               correct: true,
               incorrect: true,
@@ -55,40 +59,23 @@ export default function Mock() {
               part: "mark",
               type: "mark",
             },
-            " end ",
+            " ",
             {
-              part: "mark",
-              type: "mark",
+              part: "phonetics",
+              type: "phonetics",
             },
-            " end ",
+            " ",
             {
-              part: "mark",
-              type: "mark",
+              part: "portuguese",
+              type: "portuguese",
             },
-            " end ",
+            " ",
             {
-              part: "mark",
-              type: "mark",
-            },
-            " end ",
-            {
-              part: "mark",
-              type: "mark",
-            },
-            " end ",
-            {
-              part: "mark",
-              type: "bold",
-            },
-            " end ",
-            {
-              part: "mark",
-              type: "bold",
+              part: "underline",
+              type: "underline",
             },
             " end ",
           ]}
-          phonetics="phonetics"
-          portuguese="portuguese"
         />
 
         {/* Paragraph */}
@@ -108,6 +95,8 @@ export default function Mock() {
                   text: [
                     "normal ",
                     {
+                      usFlag: true,
+                      ukFlag: true,
                       important: true,
                       correct: true,
                       incorrect: true,
@@ -116,6 +105,8 @@ export default function Mock() {
                     },
                     " ",
                     {
+                      usFlag: true,
+                      ukFlag: true,
                       important: true,
                       correct: true,
                       incorrect: true,
@@ -133,13 +124,24 @@ export default function Mock() {
                       part: "mark",
                       type: "mark",
                     },
-                    " end ",
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
                   ],
                 },
                 {
                   text: [
                     "normal ",
                     {
+                      usFlag: true,
+                      ukFlag: true,
                       important: true,
                       correct: true,
                       incorrect: true,
@@ -148,6 +150,8 @@ export default function Mock() {
                     },
                     " ",
                     {
+                      usFlag: true,
+                      ukFlag: true,
                       important: true,
                       correct: true,
                       incorrect: true,
@@ -165,13 +169,19 @@ export default function Mock() {
                       part: "mark",
                       type: "mark",
                     },
-                    " end ",
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
                   ],
                 },
               ],
-
-              phonetics: "phonetics",
-              portuguese: "portuguese",
             },
           ]}
         />
@@ -185,6 +195,8 @@ export default function Mock() {
               text: [
                 "normal ",
                 {
+                  usFlag: true,
+                  ukFlag: true,
                   important: true,
                   correct: true,
                   incorrect: true,

@@ -104,13 +104,17 @@ header {
 main {
   width: 100%;
   overflow-y: auto;
-
+  
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 5px 5px 0px 5px;
-
+  
   transition: margin-left 0.5s ease;
   will-change: margin-left;
+}
+
+.h3 {
+  font-size: 1rem;
 }
 
 .block {
@@ -135,6 +139,8 @@ main {
 
 mark {
   background-color: var(--yellow-3);
+  display: inline-block;
+  padding-inline: 0.25rem;
 }
 
 .flex {
@@ -150,7 +156,7 @@ mark {
 
 .phonetics {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--blue-5);
 }
 
@@ -158,9 +164,6 @@ mark {
   color: var(--gray-4);
 }
 
-.icon-position {
-  transform: translate(-2px, -2px);
-}
 
 .button-wrapper {
   display: flex;
@@ -173,9 +176,18 @@ mark {
   border-radius: var(--border-radius);
 }
 
-.h3 {
-  font-size: 1rem;
+.icon-position {
+  transform: translate(-2px, -2px);
+  display: inline-block;
 }
+
+.flag-icon {
+  width: 23px;
+  height: 23px;
+  transform: translateY(5px);
+  margin-right: 6px;
+}
+
 
 @media (max-width: 700px) {
   .nav {

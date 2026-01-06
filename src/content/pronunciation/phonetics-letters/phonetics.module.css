@@ -8,3 +8,10 @@
   font-weight: bold;
   color: var(--blue-5);
 }
+
+.flag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  transform: translateY(-1px);
+}

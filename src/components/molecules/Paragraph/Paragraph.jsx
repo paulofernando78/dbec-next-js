@@ -37,16 +37,10 @@ export const Paragraph = ({ blocks = [] }) => {
                   key={itemIndex}
                   className={item.lineBreak ? "line-break-item" : undefined}
                 >
-                  {item.audioPlayer && (
-                    <AudioPlayer src={item.audioPlayer} />
-                  )}
+                  {item.audioPlayer && <AudioPlayer src={item.audioPlayer} />}
 
-                  {(item.text || item.phonetics || item.portuguese) && (
-                    <InlineText
-                      text={item.text}
-                      phonetics={item.phonetics}
-                      portuguese={item.portuguese}
-                    />
+                  {item.text && (
+                    <InlineText text={item.text} />
                   )}
                 </p>
               ))}

@@ -15,8 +15,6 @@ export const Note = ({ items = [], bullet = true }) => {
           <li key={index}>
             <InlineText
               text={item.text}
-              phonetics={item.phonetics}
-              portuguese={item.portuguese}
             />
           </li>
         ))}
