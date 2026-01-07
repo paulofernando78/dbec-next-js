@@ -165,23 +165,23 @@ export default function PhoneticsLetters() {
               lineBreak: true,
             },
 
-            // ə
+            // ə-ʌ
             {
               text: [
                 {
                   important: true,
                 },
-                "Americans don't distinguish the ",
+                "In Americann English, ",
                 {
                   part: "/ə/",
                   type: "phonetics",
                 },
                 " and ",
                 {
-                  part: "/ʌ/",
+                  part: "/ʌ/ ",
                   type: "phonetics",
                 },
-                ".",
+                "are not distinguished, but they are in British English.",
               ],
             },
             {
@@ -227,7 +227,7 @@ export default function PhoneticsLetters() {
             {
               text: [
                 {
-                  audio: "/assets/audio/pronunciation/phonetics/vowels/ʌ.mp3",
+                  audio: "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
                   part: "/ʌ/",
                   type: "phonetics",
                 },
@@ -264,7 +264,7 @@ export default function PhoneticsLetters() {
               text: [
                 {
                   ukFlag: true,
-                  audio: "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
+                  audio: "/assets/audio/pronunciation/phonetics/vowels/ʌ.mp3",
                   part: "/ʌ/",
                   type: "phonetics",
                 },
@@ -279,15 +279,15 @@ export default function PhoneticsLetters() {
                 },
                 " ",
                 {
-                  audio: "/assets/audio/general/but.mp3",
+                  audio: "/assets/audio/general/but-uk.mp3",
                 },
                 "but ",
                 {
-                  audio: "/assets/audio/general/son-sun.mp3",
+                  audio: "/assets/audio/general/son-sun-uk.mp3",
                 },
                 "son / sun ",
                 {
-                  audio: "/assets/audio/general/under.mp3",
+                  audio: "/assets/audio/general/under-uk.mp3",
                 },
                 "under",
               ],
