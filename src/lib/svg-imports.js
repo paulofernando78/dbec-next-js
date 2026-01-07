@@ -183,5 +183,5 @@ export const UKflag = ({ className }) => (
 )
 
 export const USflag = ( { className }) => (
-  <img src="/assets/img/flags/us.svg" alt="US Flag icon" style={{width: "23px", height: "23px"}} className={`flag-icon ${className}`}/>
+  <img src="/assets/img/flags/us.svg" alt="US Flag icon" className={`flag-icon ${className}`}/>
 )
