@@ -340,7 +340,33 @@ export default function PhoneticsLetters() {
               lineBreak: true,
             },
 
-            // ɔ
+            // ɑː
+            {
+              text: [
+                {
+                  audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                  part: "/ɑː/",
+                  type: "phonetics",
+                },
+                " ",
+                {
+                  part: "(long)",
+                },
+                " ",
+                {
+                  part: "•",
+                  type: "bold",
+                },
+                " ",
+                {
+                  audio: "/assets/audio/general/father.mp3",
+                },
+                "father ",
+              ],
+              lineBreak: true,
+            },
+
+            // ɔː
             {
               text: [
                 {
@@ -407,32 +433,8 @@ export default function PhoneticsLetters() {
                   part: ")",
                 },
               ],
-              lineBreak: true,
             },
-            // ɑ
-            {
-              text: [
-                {
-                  audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                  part: "/ɑː/",
-                  type: "phonetics",
-                },
-                " ",
-                {
-                  part: "(long)",
-                },
-                " ",
-                {
-                  part: "•",
-                  type: "bold",
-                },
-                " ",
-                {
-                  audio: "/assets/audio/general/father.mp3",
-                },
-                "father ",
-              ],
-            },
+
             // UK ɒ
             {
               text: [
