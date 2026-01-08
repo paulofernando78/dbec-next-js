@@ -413,18 +413,29 @@ export default function PhoneticsLetters() {
                 },
                 "hot ",
                 {
-                  audio: "/assets/audio/general/lot.mp3",
+                  audio: "/assets/audio/general/job.mp3",
                 },
-                "lot ",
-                {
-                  audio: "/assets/audio/general/rob.mp3",
-                },
-                "rob",
-                " ",
+                "job ",
                 {
                   audio: "/assets/audio/general/law.mp3",
                 },
                 "law ",
+                {
+                  audio: "/assets/audio/general/lot.mp3",
+                },
+                "lot ",
+                {
+                  audio: "/assets/audio/general/not.mp3",
+                },
+                "not ",
+                {
+                  audio: "/assets/audio/general/rob.mp3",
+                },
+                "rob ",
+                {
+                  audio: "/assets/audio/general/rock.mp3",
+                },
+                "rock ",
                 {
                   audio: "/assets/audio/general/raw.mp3",
                 },
