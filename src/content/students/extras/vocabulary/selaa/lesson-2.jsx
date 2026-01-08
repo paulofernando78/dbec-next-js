@@ -31,9 +31,9 @@ export default function SELAAlessonTwo() {
                 {
                   audio: "/audio/general/right-hand-man.mp3",
                   part: "What’s the matter",
-                  type: "mark"
+                  type: "mark",
                 },
-                ", dear?"
+                ", dear?",
               ],
             },
             {
@@ -228,70 +228,77 @@ export default function SELAAlessonTwo() {
         <Ribbon label="Exercises" />
         <Radio
           exercise={{
-            instruction: "Choose the best response.",
+            instruction: "Fill in the blank with the missing word.",
             questions: [
               {
-                question: "1. ",
+                question: "1) What’s the ____? You look upset.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "situation", isCorrect: false },
+                  { option: "issue", isCorrect: false },
+                  { option: "matter", isCorrect: true },
                 ],
               },
               {
-                question: "2. ",
+                question:
+                  "2) I know I can trust you. You would never stab me in the ____.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "leg", isCorrect: false },
+                  { option: "back", isCorrect: true },
+                  { option: "arm", isCorrect: false },
                 ],
               },
               {
-                question: "3. ",
+                question:
+                  "3) If Bob and Susan run out of money, they can always borrow money from Susan’s sister as a ____ resort.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "final", isCorrect: false },
+                  { option: "first", isCorrect: false },
+                  { option: "last", isCorrect: true },
                 ],
               },
               {
-                question: "4. ",
+                question:
+                  "4) You look really stressed ____. Why don’t you sit down, relax, and have a cup of tea?",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "about", isCorrect: false },
+                  { option: "in", isCorrect: false },
+                  { option: "out", isCorrect: true },
                 ],
               },
               {
-                question: "5. ",
+                question:
+                  "5) Bob, everything will be fine. You just need to keep your chin ____ and remember that tomorrow is another day.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "up", isCorrect: true },
+                  { option: "down", isCorrect: false },
+                  { option: "above", isCorrect: false },
                 ],
               },
               {
-                question: "6. ",
+                question:
+                  "6) I just can’t make up my ____ whether to order chicken or fish.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "head", isCorrect: false },
+                  { option: "brain", isCorrect: false },
+                  { option: "mind", isCorrect: true },
                 ],
               },
               {
-                question: "7. ",
+                question:
+                  "7) Nicole accidentally stepped on Ted’s guitar. Ted got really angry and told her ____.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "off", isCorrect: true },
+                  { option: "out", isCorrect: false },
+                  { option: "away", isCorrect: false },
                 ],
               },
               {
-                question: "8. ",
+                question:
+                  "8) Your husband left you for his psychologist? Hang ____ there! I’m sure he’ll realize she’s crazy and then come back to you.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "up", isCorrect: false },
+                  { option: "in", isCorrect: true },
+                  { option: "out", isCorrect: false },
                 ],
               },
             ],

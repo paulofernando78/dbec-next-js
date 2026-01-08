@@ -1,5 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard"
 import {  Lesson } from "@/lib/svg-imports"
+import {  Bold } from "@/components/atoms/Bold"
 import Link from "next/link"
 
 const links = [
@@ -90,7 +91,8 @@ export default function SELAA() {
       <div className="line-break">
         {links.map((item, index) => (
           <div key={index}>
-            <Lesson className="icon-position" /><Link href={item.href}><strong>{item.label}</strong></Link>
+            <Lesson className="icon-position" /><Link href={item.href}>
+            <Bold>{item.label}</Bold></Link>{" "}
             <span>{item.words}</span>
           </div>
         ))}
