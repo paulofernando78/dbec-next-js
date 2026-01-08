@@ -2,6 +2,7 @@ import styles from "./phonetics.module.css";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { Ribbon } from "@/components/atoms/Ribbon";
 import { List } from "@/components/molecules/List";
 import { Links } from "@/components/molecules/Links";
 
@@ -10,6 +11,9 @@ export default function PhoneticsLetters() {
     <>
       <Whiteboard title="Pronunciation" subtitle="Phonetics + Letters" />
       <div className="line-break">
+
+
+
         <Paragraph
           blocks={[
             {
@@ -28,7 +32,7 @@ export default function PhoneticsLetters() {
           ]}
         />
 
-        <h3>Vowels</h3>
+        <Ribbon label="Vowels" />
         <List
           bullet={false}
           items={[
@@ -51,6 +55,10 @@ export default function PhoneticsLetters() {
                 },
                 " ",
                 {
+                  audio: "/assets/audio/general/answer.mp3",
+                },
+                "answer ",
+                {
                   audio: "/assets/audio/general/ask.mp3",
                 },
                 "ask ",
@@ -58,6 +66,10 @@ export default function PhoneticsLetters() {
                   audio: "/assets/audio/general/cat.mp3",
                 },
                 "cat ",
+                {
+                  audio: "/assets/audio/general/cant.mp3",
+                },
+                "can’t ",
                 {
                   audio: "/assets/audio/general/dance.mp3",
                 },
@@ -96,9 +108,17 @@ export default function PhoneticsLetters() {
                 },
                 " ",
                 {
+                  audio: "/assets/audio/general/answer-uk.mp3",
+                },
+                "answer ",
+                {
                   audio: "/assets/audio/general/ask-uk.mp3",
                 },
                 "ask ",
+                {
+                  audio: "/assets/audio/general/cant-uk.mp3",
+                },
+                "can’t ",
                 {
                   audio: "/assets/audio/general/dance-uk.mp3",
                 },
@@ -374,10 +394,6 @@ export default function PhoneticsLetters() {
                   audio: "/assets/audio/general/spa.mp3",
                 },
                 "spa ",
-                {
-                  audio: "/assets/audio/general/top.mp3",
-                },
-                "top ",
               ],
               lineBreak: true,
             },
@@ -440,6 +456,10 @@ export default function PhoneticsLetters() {
                   audio: "/assets/audio/general/raw.mp3",
                 },
                 "raw ",
+                {
+                  audio: "/assets/audio/general/top.mp3",
+                },
+                "top ",
                 {
                   audio: "/assets/audio/general/thought.mp3",
                 },
@@ -576,7 +596,8 @@ export default function PhoneticsLetters() {
           ]}
         />
 
-        <h3>Diphthongs</h3>
+        <Ribbon label="Diphthongs" />
+
         <List
           bullet={false}
           items={[
@@ -691,13 +712,11 @@ export default function PhoneticsLetters() {
                 },
                 "toy",
               ],
-              lineBreak: true,
             },
             // oʊ
             {
               text: [
                 {
-                  usFlag: true,
                   audio: "/assets/audio/pronunciation/phonetics/vowels/oʊ.mp3",
                   part: "/oʊ/",
                   type: "phonetics",
@@ -755,7 +774,7 @@ export default function PhoneticsLetters() {
           ]}
         />
 
-        <h3>Rhotic (Vowels + R)</h3>
+        <Ribbon label="Rhotic (Vowels + R)" />
         <List
           bullet={false}
           items={[
@@ -763,7 +782,6 @@ export default function PhoneticsLetters() {
             {
               text: [
                 {
-                  usFlag: true,
                   part: "/ɑːr/",
                   type: "phonetics",
                 },
@@ -824,11 +842,11 @@ export default function PhoneticsLetters() {
               ],
               lineBreak: true,
             },
+
             // ɑɪr
             {
               text: [
                 {
-                  usFlag: true,
                   part: "/ɑɪr/",
                   type: "phonetics",
                 },
@@ -894,7 +912,6 @@ export default function PhoneticsLetters() {
             {
               text: [
                 {
-                  usFlag: true,
                   part: "/er/",
                   type: "phonetics",
                 },
@@ -955,13 +972,13 @@ export default function PhoneticsLetters() {
               ],
               lineBreak: true,
             },
+
             // ɪr
 
             // ɝ
             {
               text: [
                 {
-                  usFlag: true,
                   part: "/ɝː/",
                   type: "phonetics",
                 },
@@ -1043,7 +1060,6 @@ export default function PhoneticsLetters() {
             {
               text: [
                 {
-                  usFlag: true,
                   part: "/ɔːr/",
                   type: "phonetics",
                 },
@@ -1106,7 +1122,7 @@ export default function PhoneticsLetters() {
           ]}
         />
 
-        <h3>Consonants</h3>
+        <Ribbon label="Consonants" />
         <List
           bullet={false}
           items={[
@@ -1642,7 +1658,7 @@ export default function PhoneticsLetters() {
           ]}
         />
 
-        <h3>Sounds by letters (Graphemes)</h3>
+        <Ribbon label="Sounds by letters (Graphemes)" />
         <Links
           links={[
             {

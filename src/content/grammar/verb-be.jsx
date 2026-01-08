@@ -1,14 +1,11 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Ribbon } from "@/components/atoms/Ribbon";
-import Image from "next/image";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { InlineText } from "@/components/molecules/InlineText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
-import { BulletPoint } from "@/components/atoms/BulletPoint";
-import { Portuguese } from "@/components/atoms/Portuguese";
 import { Column } from "@/components/molecules/Column";
 import { List } from "@/components/molecules/List";
-
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
@@ -17,7 +14,7 @@ export default function VerbBe() {
     <>
       <Whiteboard title="Grammar" subtitle="Verb Be" />
       <div className="line-break">
-        <Ribbon label="INTRODUCTION" />
+        <Ribbon label="Introduction" />
         <Paragraph
           blocks={[
             {
@@ -47,7 +44,8 @@ export default function VerbBe() {
             },
           ]}
         />
-        <Ribbon label="PRESENTATION" />
+
+        <Ribbon label="Presentation" />
         <Dialogue
           audioPlayer="/assets/audio/general/i-am.mp3"
           lines={[
@@ -115,85 +113,205 @@ export default function VerbBe() {
           ]}
         />
 
-        <Ribbon label="Meaning" />
+        <Ribbon label="Meaning" bgColor="var(--gray-4)" />
 
         {/* Identity */}
         <div>
           <p>
-            /audio/general/identity.mp3 Identity{" "}
-            <Portuguese>Identidade</Portuguese>:
+            <InlineText
+              text={[
+                {
+                  audio: "/assets/audio/general/identity.mp3",
+                  part: "Identity",
+                  type: "bold",
+                },
+                " ",
+                { part: "Identidade", type: "portuguese" },
+                ":",
+              ]}
+            />
           </p>
-          <p>
-            /audio/general/im-paul.mp3
-            <BulletPoint /> I’m Paul. Sou o Paulo.
-          </p>
-          <p>
-            /audio/general/hes-my-brother.mp3
-            <BulletPoint /> He’s my brother. Ele é o meu irmão.
-          </p>
-          <p>
-            /audio/general/theyre-my-friends.mp3
-            <BulletPoint /> They are my friends. Eles são meus amigos.
-          </p>
+
+          <List
+            bullet={false}
+            items={[
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/im-paul.mp3",
+                    part: "I’m Paul.",
+                  },
+                  " ",
+                  { part: "Sou o Paulo.", type: "portuguese" },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/hes-my-brother.mp3",
+                    part: "He’s my brother.",
+                  },
+                  " ",
+                  { part: "Ele é o meu irmão.", type: "portuguese" },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/theyre-my-friends.mp3",
+                    part: "They are my friends.",
+                  },
+                  " ",
+                  { part: "Eles são meus amigos.", type: "portuguese" },
+                ],
+              },
+            ]}
+          />
         </div>
 
         {/* Job */}
         <div>
           <p>
-            /audio/general/job.mp3 Job{" "}
-            <Portuguese>Profissão / Função</Portuguese>:
+            <InlineText
+              text={[
+                {
+                  audio: "/assets/audio/general/job.mp3",
+                  part: "Job",
+                  type: "bold",
+                },
+                " ",
+                { part: "Profissão / Função", type: "portuguese" },
+                ":",
+              ]}
+            />
           </p>
-          <p>
-            /audio/general//Im-a-teacher.mp3
-            <BulletPoint /> I’m a teacher.{" "}
-            <span className="portuguese">Sou professor(a).</span>
-          </p>
-          <p>
-            /audio/general/hes-an-engineer.mp3
-            <BulletPoint /> He’s an enginner.
-          </p>
-          <p>
-            /audio/general/shes-a-doctor.mp3
-            <BulletPoint /> She’s a doctor.
-          </p>
+
+          <List
+            bullet={false}
+            items={[
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/Im-a-teacher.mp3",
+                    part: "I’m a teacher.",
+                  },
+                  " ",
+                  { part: "Sou professor(a).", type: "portuguese" },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/hes-an-engineer.mp3",
+                    part: "He’s an engineer.",
+                  },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/shes-a-doctor.mp3",
+                    part: "She’s a doctor.",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
 
         {/* State */}
         <div>
-          <p>
-            /audio/general/state.mp3 State{" "}
-            <Portuguese>Estado / Condição</Portuguese>:
-          </p>
-          <p>
-            /audio/general/im-tired.mp3
-            <BulletPoint /> I’m tired.
-          </p>
-          <p>
-            /audio/general/shes-happy.mp3
-            <BulletPoint /> She’s happy.
-          </p>
-          <p>
-            /audio/general/shes-happy.mp3
-            <BulletPoint /> This car is fast.
-          </p>
+          <InlineText
+            text={[
+              {
+                audio: "/assets/audio/general/state.mp3",
+                part: "State / Condition / Description",
+                type: "bold",
+              },
+              " ",
+              { part: "Estado / Condição / Descrição", type: "portuguese" },
+              ":",
+            ]}
+          />
+
+          <List
+            bullet={false}
+            items={[
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/im-tired.mp3",
+                    part: "I’m tired.",
+                  },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/shes-happy.mp3",
+                    part: "She’s happy.",
+                  },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/shes-happy.mp3",
+                    part: "This car is fast.",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
+
+        {/* Nationality */}
         <div>
           <p>
-            /audio/general/nationality.mp3 Nationality{" "}
-            <Portuguese>Nacionalidade</Portuguese>:
+            <InlineText
+              text={[
+                {
+                  audio: "/assets/audio/general/nationality.mp3",
+                  part: "Nationality",
+                  type: "bold",
+                },
+                " ",
+                { part: "Nacionalidade", type: "portuguese" },
+                ":",
+              ]}
+            />
           </p>
-          <p>
-            /audio/general/nationality.mp3
-            <BulletPoint /> Mike is American. He’s from the United States.
-          </p>
-          <p>
-            /audio/general/George-is-british.mp3
-            <BulletPoint /> George is British. He’s from England.
-          </p>
-          <p>
-            /audio/general/juan-and-maria-are-mexican.mp3
-            <BulletPoint /> Juan and Maria are Mexican. They’re from Mexico.
-          </p>
+
+          <List
+            bullet={false}
+            items={[
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/nationality.mp3",
+                    part: "Mike is American. He’s from the United States.",
+                  },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio: "/assets/audio/general/George-is-british.mp3",
+                    part: "George is British. He’s from England.",
+                  },
+                ],
+              },
+              {
+                text: [
+                  {
+                    audio:
+                      "/assets/audio/general/juan-and-maria-are-mexican.mp3",
+                    part: "Juan and Maria are Mexican. They’re from Mexico.",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
 
         <Checking
@@ -239,7 +357,7 @@ export default function VerbBe() {
           ]}
         />
 
-        <Ribbon label="Pronunciation + Form" />
+        <Ribbon label="Pronunciation + Form" bgColor="var(--gray-4)" />
         <Column
           data={[
             // Affirmative
@@ -578,7 +696,7 @@ export default function VerbBe() {
           ]}
         />
 
-        <Ribbon label="PRACTICE" />
+        <Ribbon label="Practice" />
         <FillInTheBlanks
           data={{
             instructions: "1. Fill in the blanks with affirmative form.",
@@ -705,7 +823,7 @@ export default function VerbBe() {
           }}
         />
 
-        <Ribbon label="PRODUCTION" />
+        <Ribbon label="Production" />
         <Paragraph
           blocks={[
             {
