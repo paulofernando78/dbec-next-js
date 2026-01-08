@@ -359,9 +359,25 @@ export default function PhoneticsLetters() {
                 },
                 " ",
                 {
+                  audio: "/assets/audio/general/calm.mp3",
+                },
+                "calm ",
+                {
                   audio: "/assets/audio/general/father.mp3",
                 },
                 "father ",
+                {
+                  audio: "/assets/audio/general/palm.mp3",
+                },
+                "palm ",
+                {
+                  audio: "/assets/audio/general/spa.mp3",
+                },
+                "spa ",
+                {
+                  audio: "/assets/audio/general/top.mp3",
+                },
+                "top ",
               ],
               lineBreak: true,
             },
