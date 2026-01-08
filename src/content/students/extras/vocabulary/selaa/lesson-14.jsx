@@ -15,13 +15,13 @@ export default function SELAAlessonFourteen() {
       <div className="line-break">
         <Dialogue
           title="Lesson 14 • Amber and Ted Heat Up the Kitchen"
-          audioPlayer="/audio/vocabulary/selaa/lesson-14.mp3"
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-7.mp3"
           lines={[
             {
               text: [
                 {
+                  part: "",
                   type: "italic",
-                  text: "",
                 },
               ],
             },
@@ -31,7 +31,7 @@ export default function SELAAlessonFourteen() {
                 "",
                 {
                   audio: "/audio/general/.mp3",
-                  text: "",
+                  part: "",
                   type: "",
                 },
                 "",
@@ -41,7 +41,7 @@ export default function SELAAlessonFourteen() {
         />
         <Ribbon label="Exercises" />
         <Radio
-          data={{
+          exercise={{
             instruction: "Choose the best response.",
             questions: [
               {

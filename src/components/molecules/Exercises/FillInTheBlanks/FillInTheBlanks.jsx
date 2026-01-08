@@ -7,16 +7,16 @@ import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
 import React, { useState } from "react";
 
-export const FillInTheBlanks = ({ data }) => {
+export const FillInTheBlanks = ({ exercise }) => {
   const [answers, setAnswers] = useState({});
   const [results, setResults] = useState({});
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
 
-  if (!data || !data.blocks) {
+  if (!exercise || !exercise.blocks) {
     return null;
   }
-  const blocks = Array.isArray(data.blocks) ? data.blocks : [];
+  const blocks = Array.isArray(exercise.blocks) ? exercise.blocks : [];
 
   const handleCheck = () => {
     let score = 0;
@@ -55,7 +55,7 @@ export const FillInTheBlanks = ({ data }) => {
   return (
     <>
       <p>
-        <Bold>{data.instructions}</Bold>
+        <Bold>{exercise.instructions}</Bold>
       </p>
 
       <div>

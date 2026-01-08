@@ -359,7 +359,7 @@ export default function VerbBe() {
 
         <Ribbon label="Pronunciation + Form" bgColor="var(--gray-4)" />
         <Column
-          data={[
+          cols={[
             // Affirmative
             {
               bgColor: "var(--green-4)",
@@ -368,109 +368,149 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/i-am.mp3",
+                      text: [
+                        {
+                          part: "subject + verb",
+                          type: "italic"
+                        },
+                      ],
                     },
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
                     {
-                      text: "I",
-                    },
-                    {
-                      bold: "am",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/i-am.mp3",
+                          part: "I ",
+                        },
+                        {
+                          part: "am ",
+                          type: "bold",
+                        },
+                        {
+                          part: "(eu) sou, estou",
+                          type: "portuguese",
+                        },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/you-are.mp3",
-                    },
-                    {
-                      text: "you",
-                    },
-                    {
-                      bold: "are",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/he-is.mp3",
-                    },
-                    {
-                      text: "he",
-                    },
-                    {
-                      bold: "is",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/you-are.mp3",
+                          part: "you ",
+                        },
+                        { part: "are ", type: "bold" },
+                        { part: "você é, está", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/she-is.mp3",
-                    },
-                    {
-                      text: "she",
-                    },
-                    {
-                      bold: "is",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/it-is.mp3",
-                    },
-                    {
-                      text: "it",
-                    },
-                    {
-                      bold: "is",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/he-is.mp3",
+                          part: "he ",
+                        },
+                        { part: "is ", type: "bold" },
+                        { part: "ele é, está", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/we-are.mp3",
-                    },
-                    {
-                      text: "we",
-                    },
-                    {
-                      bold: "are",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/you-are.mp3",
-                    },
-                    {
-                      text: "you",
-                    },
-                    {
-                      bold: "are",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/she-is.mp3",
+                          part: "she ",
+                        },
+                        { part: "is ", type: "bold" },
+                        { part: "ela é, está", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/they-are.mp3",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/it-is.mp3",
+                          part: "it ",
+                        },
+                        { part: "is ", type: "bold" },
+                        { part: "(neutro) é, está", type: "portuguese" },
+                      ],
                     },
+                  ],
+                },
+                {
+                  block: [
                     {
-                      text: "they",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/we-are.mp3",
+                          part: "we ",
+                        },
+                        { part: "are ", type: "bold" },
+                        { part: "nós somos, estamos", type: "portuguese" },
+                      ],
                     },
+                  ],
+                },
+                {
+                  block: [
                     {
-                      bold: "are",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/you-are.mp3",
+                          part: "you ",
+                        },
+                        { part: "are ", type: "bold" },
+                        { part: "vocês são, estão", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/they-are.mp3",
+                          part: "they ",
+                        },
+                        { part: "are ", type: "bold" },
+                        { part: "eles/elas são, estão", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          important: true,
+                          part: "they = plural de \"he/he/it\" ",
+                        },
+                      ],
                     },
                   ],
                 },
               ],
             },
+
             // Negative
             {
               bgColor: "var(--red-4)",
@@ -479,109 +519,143 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/i-am-not.mp3",
+                      text: [
+                        {
+                          part: "subject + not + verb",
+                          type: "italic"
+                        },
+                      ],
                     },
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
                     {
-                      text: "I",
-                    },
-                    {
-                      bold: "am not",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/i-am-not.mp3",
+                          part: "I ",
+                        },
+                        { part: "am not ", type: "bold" },
+                        { part: "(eu) não sou, estou", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/you-are-not.mp3",
-                    },
-                    {
-                      text: "you",
-                    },
-                    {
-                      bold: "are not",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/he-is-not.mp3",
-                    },
-                    {
-                      text: "he",
-                    },
-                    {
-                      bold: "is not",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/you-are-not.mp3",
+                          part: "you ",
+                        },
+                        { part: "are not ", type: "bold" },
+                        {
+                          part: "você não é, está",
+                          type: "portuguese",
+                        },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/she-is-not.mp3",
-                    },
-                    {
-                      text: "she",
-                    },
-                    {
-                      bold: "is not",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/it-is-not.mp3",
-                    },
-                    {
-                      text: "it",
-                    },
-                    {
-                      bold: "is not",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/he-is-not.mp3",
+                          part: "he ",
+                        },
+                        { part: "is not ", type: "bold" },
+                        { part: "ele não é, está", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/we-are-not.mp3",
-                    },
-                    {
-                      text: "we",
-                    },
-                    {
-                      bold: "are not",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/you-are-not.mp3",
-                    },
-                    {
-                      text: "you",
-                    },
-                    {
-                      bold: "are not",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/she-is-not.mp3",
+                          part: "she ",
+                        },
+                        { part: "is not ", type: "bold" },
+                        { part: "ela não é, está", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/they-are-not.mp3",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/it-is-not.mp3",
+                          part: "it ",
+                        },
+                        { part: "(neutro) is not ", type: "bold" },
+                        { part: "não é, está", type: "portuguese" },
+                      ],
                     },
+                  ],
+                },
+                {
+                  block: [
                     {
-                      text: "they",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/we-are-not.mp3",
+                          part: "we ",
+                        },
+                        { part: "are not ", type: "bold" },
+                        {
+                          part: "nós não somos, estamos",
+                          type: "portuguese",
+                        },
+                      ],
                     },
+                  ],
+                },
+                {
+                  block: [
                     {
-                      bold: "are not",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/you-are-not.mp3",
+                          part: "you ",
+                        },
+                        { part: "are not ", type: "bold" },
+                        {
+                          part: "vocês não estão, são",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/they-are-not.mp3",
+                          part: "they ",
+                        },
+                        { part: "are not ", type: "bold" },
+                        {
+                          part: "eles/elas não estão, são",
+                          type: "portuguese",
+                        },
+                      ],
                     },
                   ],
                 },
               ],
             },
+
             // Interrogative
             {
               bgColor: "var(--yellow-4)",
@@ -590,104 +664,286 @@ export default function VerbBe() {
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/am-i.mp3",
+                      text: [
+                        {
+                          part: "verb + subject",
+                          type: "italic"
+                        },
+                      ],
                     },
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
                     {
-                      bold: "am",
-                    },
-                    {
-                      text: "I?",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/am-i.mp3",
+                          part: "am",
+                          type: "bold",
+                        },
+                        " I? ",
+                        { part: "(eu) sou, estou?", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/are-you.mp3",
-                    },
-                    {
-                      bold: "are",
-                    },
-                    {
-                      text: "you?",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/is-he.mp3",
-                    },
-                    {
-                      bold: "is",
-                    },
-                    {
-                      text: "he?",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/are-you.mp3",
+                          part: "are",
+                          type: "bold",
+                        },
+                        " you? ",
+                        { part: "você é, está?", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/is-she.mp3",
-                    },
-                    {
-                      bold: "is",
-                    },
-                    {
-                      text: "she?",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/is-it.mp3",
-                    },
-                    {
-                      bold: "is",
-                    },
-                    {
-                      text: "it?",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/is-he.mp3",
+                          part: "is",
+                          type: "bold",
+                        },
+                        " he? ",
+                        { part: "ele é, está?", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/are-we.mp3",
-                    },
-                    {
-                      bold: "are",
-                    },
-                    {
-                      text: "we?",
-                    },
-                  ],
-                },
-                {
-                  block: [
-                    {
-                      audio: "/assets/audio/general/are-you.mp3",
-                    },
-                    {
-                      bold: "are",
-                    },
-                    {
-                      text: "you?",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/is-she.mp3",
+                          part: "is",
+                          type: "bold",
+                        },
+                        " she? ",
+                        { part: "ela é, está?", type: "portuguese" },
+                      ],
                     },
                   ],
                 },
                 {
                   block: [
                     {
-                      audio: "/assets/audio/general/are-they.mp3",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/is-it.mp3",
+                          part: "is",
+                          type: "bold",
+                        },
+                        " it? ",
+                        { part: "(neutro) é, está?", type: "portuguese" },
+                      ],
                     },
+                  ],
+                },
+                {
+                  block: [
                     {
-                      bold: "are",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/are-we.mp3",
+                          part: "are",
+                          type: "bold",
+                        },
+                        " we? ",
+                        { part: "nós somos, estamos?", type: "portuguese" },
+                      ],
                     },
+                  ],
+                },
+                {
+                  block: [
                     {
-                      text: "they?",
+                      text: [
+                        {
+                          audio: "/assets/audio/general/are-you.mp3",
+                          part: "are",
+                          type: "bold",
+                        },
+                        " you? ",
+                        { part: "vocês são, estão?", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/are-they.mp3",
+                          part: "are",
+                          type: "bold",
+                        },
+                        " they? ",
+                        { part: "vocês são, estão?", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+
+            // Interrogative Negative (Int. Neg.)
+            {
+              bgColor: "var(--blue-4)",
+              column: "Interrogative Negative",
+              blocks: [
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          part: "verb + not + subject",
+                          type: "italic"
+                        },
+                      ],
+                    },
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/arent-i.mp3",
+                          part: "aren’t",
+                          type: "bold",
+                        },
+                        " I? ",
+                        { part: "(eu) não sou, estou?", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/arent-you.mp3",
+                          part: "aren’t",
+                          type: "bold",
+                        },
+                        " you? ",
+                        {
+                          part: "você não é, está?",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/isnt-he.mp3",
+                          part: "isn’t",
+                          type: "bold",
+                        },
+                        " he? ",
+                        { part: "ele não é, está?", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/isnt-she.mp3",
+                          part: "isn’t",
+                          type: "bold",
+                        },
+                        " she? ",
+                        { part: "ela não é, está?", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/isnt-it.mp3",
+                          part: "isn’t",
+                          type: "bold",
+                        },
+                        " it? ",
+                        { part: "(neutro) não é, está?", type: "portuguese" },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/arent-we.mp3",
+                          part: "aren’t",
+                          type: "bold",
+                        },
+                        " we? ",
+                        {
+                          part: "nós não somos, estamos?",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/arent-you.mp3",
+                          part: "aren’t",
+                          type: "bold",
+                        },
+                        " you? ",
+                        {
+                          part: "vocês não são, estão?",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  block: [
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/general/arent-they.mp3",
+                          part: "aren’t",
+                          type: "bold",
+                        },
+                        " they? ",
+                        {
+                          part: "eles/elas não são, estão?",
+                          type: "portuguese",
+                        },
+                      ],
                     },
                   ],
                 },
@@ -698,7 +954,7 @@ export default function VerbBe() {
 
         <Ribbon label="Practice" />
         <FillInTheBlanks
-          data={{
+          exercise={{
             instructions: "1. Fill in the blanks with affirmative form.",
             blocks: [
               {
@@ -735,8 +991,9 @@ export default function VerbBe() {
             ],
           }}
         />
+        
         <Radio
-          data={{
+          exercise={{
             instruction: "Choose the correct form of the verb be.",
             questions: [
               {

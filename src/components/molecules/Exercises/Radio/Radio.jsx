@@ -7,12 +7,12 @@ import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
 import { useState } from "react";
 
-export const Radio = ({ data = {} }) => {
+export const Radio = ({ exercise = {} }) => {
   const [selected, setSelected] = useState({});
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
 
-  const questions = Array.isArray(data.questions) ? data.questions : [];
+  const questions = Array.isArray(exercise.questions) ? exercise.questions : [];
 
   const handleCheck = () => {
     let score = 0;
@@ -39,7 +39,7 @@ export const Radio = ({ data = {} }) => {
     <>
       <div className="line-break">
         <p>
-          <Bold>{data.instruction}</Bold>
+          <Bold>{exercise.instruction}</Bold>
         </p>
         {questions.map((q, qIndex) => (
           <div key={qIndex}>

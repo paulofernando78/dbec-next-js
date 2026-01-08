@@ -95,7 +95,7 @@ export default function SimplePresent() {
           ]}
         />
 
-        <Ribbon label="Pronuncition + Form" bgColor="var(--gray-4)" />
+        <Ribbon label="Pronunciation + Form" bgColor="var(--gray-4)" />
 
         <Ribbon label="Practice" />
         <FillInTheBlanks

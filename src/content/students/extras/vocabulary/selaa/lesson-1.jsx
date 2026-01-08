@@ -244,7 +244,7 @@ export default function SELAAlessonOne() {
         />
         <Ribbon label="Exercises" />
         <Radio
-          data={{
+          exercise={{
             instruction: "Choose the best response.",
             questions: [
               {

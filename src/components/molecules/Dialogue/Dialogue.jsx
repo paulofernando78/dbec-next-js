@@ -2,11 +2,10 @@ import styles from "./Dialogue.module.css";
 
 import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { Audio } from "@/components/atoms/Audio";
 import { Bold } from "@/components/atoms/Bold";
 import { InlineText } from "@/components/molecules/InlineText";
 
-export const Dialogue = ({ imgs = [], audioPlayer, lines = [] }) => {
+export const Dialogue = ({ imgs = [], audioPlayer, title, lines = [] }) => {
   return (
     <div className="line-break">
       {imgs.length > 0 && (
@@ -28,6 +27,7 @@ export const Dialogue = ({ imgs = [], audioPlayer, lines = [] }) => {
       )}
 
       {audioPlayer && <AudioPlayer src={audioPlayer} />}
+      {title && <p><Bold>{title}</Bold></p>}
 
       {lines.map((line, index) => (
         <p key={index} className={styles.lines}>

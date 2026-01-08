@@ -10,18 +10,18 @@ export default function SELAAlessonNine() {
         title="Extras"
         subtitle="Vocabulary"
         book="Speak English like an American"
-        lesson="Lesson 9 • Nicole For President!."
+        lesson="Lesson 9 • Nicole For President!"
       />
       <div className="line-break">
         <Dialogue
-          title="Lesson 9 • Nicole For President!."
-          audioPlayer="/audio/vocabulary/selaa/lesson-9.mp3"
+          title="Lesson 9 • Nicole For President!"
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-7.mp3"
           lines={[
             {
               text: [
                 {
+                  part: "",
                   type: "italic",
-                  text: "",
                 },
               ],
             },
@@ -31,7 +31,7 @@ export default function SELAAlessonNine() {
                 "",
                 {
                   audio: "/audio/general/.mp3",
-                  text: "",
+                  part: "",
                   type: "",
                 },
                 "",
@@ -41,7 +41,7 @@ export default function SELAAlessonNine() {
         />
         <Ribbon label="Exercises" />
         <Radio
-          data={{
+          exercise={{
             instruction: "Choose the best response.",
             questions: [
               {

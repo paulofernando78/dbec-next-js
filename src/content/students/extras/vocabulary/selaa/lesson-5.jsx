@@ -14,39 +14,188 @@ export default function SELAAlessonFive() {
       />
       <div className="line-break">
         <Dialogue
-          title="Lesson 5 • "
-          audioPlayer="/audio/vocabulary/selaa/lesson-5.mp3"
+          title="Lesson 5 • Ted Goes Out for the Evening."
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-5.mp3"
           lines={[
+
             {
               text: [
                 {
+                  part: "Ted leaves to go visit his girlfriend Amber. Ted's mother Susan says she doesn't really like Amber. She wishes him a good time anyway.",
                   type: "italic",
-                  text: "",
                 },
               ],
             },
             {
-              speaker: "xxx:",
+              speaker: "Ted:",
               text: [
-                "",
+                "See you later, Mom!",
+              ],
+            },
+            {
+              speaker: "Susan:",
+              text: [
+                "Where are you going, Ted?",
+              ],
+            },
+            {
+              speaker: "Ted:",
+              text: [
+                "I told Amber I'd ",
                 {
-                  audio: "/audio/general/.mp3",
-                  text: "",
-                  type: "",
+                  audio: "/assets/audio/general/drop-by.mp3",
+                  part: "drop by",
+                  type: "mark",
                 },
-                "",
+                ".",
+              ],
+            },
+            {
+              speaker: "Susan:",
+              text: [
+                "hat are you two going to do?",
+              ],
+            },
+            {
+              speaker: "Ted:",
+              text: [
+                "Maybe go to the movies or to a party. Our plans are still ",
+                {
+                  audio: "/assets/audio/general/up-in-the-air.mp3",
+                  part: "up in the air",
+                  type: "mark",
+                },
+                ".",
+              ],
+            },
+            {
+              speaker: "Susan:",
+              text: [
+                "Why don't you invite her over here?",
+              ],
+            },
+            {
+              speaker: "Ted:",
+              text: [
+                "I don't want to ",
+                {
+                  audio: "/assets/audio/general/hang-around.mp3",
+                  part: "hang around",
+                  type: "mark",
+                },
+                " here. Dad is really ",
+                {
+                  audio: "/assets/audio/general/down-in-the-dumps.mp3",
+                  part: "down in the dumps",
+                  type: "mark",
+                },
+                ".",
+              ],
+            },
+            {
+              speaker: "Susan:",
+              text: [
+                "Is Amber the girl with the nose ring and the purple hair?",
+              ],
+            },
+            {
+              speaker: "Ted:",
+              text: [
+                "Yeah. I'm ",
+                {
+                  audio: "/assets/audio/general/crazy-about.mp3",
+                  part: "crazy about",
+                  type: "mark",
+                },
+                " her!",
+              ],
+            },
+            {
+              speaker: "Susan:",
+              text: [
+                "Don't ",
+                {
+                  audio: "/assets/audio/general/take-this-the-wrong-way.mp3",
+                  part: "take this the wrong way",
+                  type: "mark",
+                },
+                ", but she's not exactly my ",
+                {
+                  audio: "/assets/audio/general/cup-of-tea.mp3",
+                  part: "cup of tea",
+                  type: "mark",
+                },
+                ".",
+              ],
+            },
+            {
+              speaker: "Ted:",
+              text: [
+                {
+                  audio: "/assets/audio/general/take-it-easy.mp3",
+                  part: "Take it easy",
+                  type: "mark",
+                },
+                ", Mom. We're not ",
+                {
+                  audio: "/assets/audio/general/about-to.mp3",
+                  part: "about to",
+                  type: "mark",
+                },
+                " get married. We just enoy ",
+                {
+                  audio: "/assets/audio/general/hanging-out.mp3",
+                  part: "hanging out",
+                  type: "mark",
+                },
+                " together.",
+              ],
+            },
+            {
+              speaker: "Susan:",
+              text: [
+                "I guess ",
+                {
+                  audio: "/assets/audio/general/no-accounting-for-taste.mp3",
+                  part: "there’s no accounting for taste",
+                  type: "mark",
+                },
+                ". Have a good time.",
+              ],
+            },
+            {
+              speaker: "Ted:",
+              text: [
+                "Don't worry. We'll ",
+                {
+                  audio: "/assets/audio/general/have-a-blast.mp3",
+                  part: "have a blast",
+                  type: "mark",
+                },
+                "!",
+              ],
+            },
+            {
+              speaker: "Susan:",
+              text: [
+                "(",
+                {
+                  audio: "/assets/audio/general/under-her-breath.mp3",
+                  part: "under her breath",
+                  type: "mark",
+                },
+                ") That's what I'm afraid of!",
               ],
             },
           ]}
         />
         <Ribbon label="Exercises" />
         <Radio
-          data={{
+          exercise={{
             instruction: "Choose the best response.",
             questions: [
               {
-                question:
-                  "1. ",
+                question: "1. ",
                 options: [
                   { option: "", isCorrect: true },
                   { option: "", isCorrect: false },
@@ -54,8 +203,7 @@ export default function SELAAlessonFive() {
                 ],
               },
               {
-                question:
-                  "2. ",
+                question: "2. ",
                 options: [
                   { option: "", isCorrect: true },
                   { option: "", isCorrect: false },
@@ -63,8 +211,7 @@ export default function SELAAlessonFive() {
                 ],
               },
               {
-                question:
-                  "3. ",
+                question: "3. ",
                 options: [
                   { option: "", isCorrect: true },
                   { option: "", isCorrect: false },
@@ -80,8 +227,7 @@ export default function SELAAlessonFive() {
                 ],
               },
               {
-                question:
-                  "5. ",
+                question: "5. ",
                 options: [
                   { option: "", isCorrect: true },
                   { option: "", isCorrect: false },
@@ -89,8 +235,7 @@ export default function SELAAlessonFive() {
                 ],
               },
               {
-                question:
-                  "6. ",
+                question: "6. ",
                 options: [
                   { option: "", isCorrect: true },
                   { option: "", isCorrect: false },
@@ -98,8 +243,7 @@ export default function SELAAlessonFive() {
                 ],
               },
               {
-                question:
-                  "7. ",
+                question: "7. ",
                 options: [
                   { option: "", isCorrect: true },
                   { option: "", isCorrect: false },
@@ -107,8 +251,7 @@ export default function SELAAlessonFive() {
                 ],
               },
               {
-                question:
-                  "8. ",
+                question: "8. ",
                 options: [
                   { option: "", isCorrect: true },
                   { option: "", isCorrect: false },

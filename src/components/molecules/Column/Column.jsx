@@ -2,14 +2,12 @@ import styles from "./Column.module.css";
 
 import React from "react";
 import { Ribbon } from "@/components/atoms/Ribbon";
-import { Audio } from "@/components/atoms/Audio";
-import { Bold } from "@/components/atoms/Bold";
-import { Mark } from "@/components/atoms/Mark";
+import { InlineText } from "@/components/molecules/InlineText";
 
-export const Column = ({ data = [] }) => {
+export const Column = ({ cols = [] }) => {
   return (
     <div className={styles.wrapper}>
-      {data.map((c, cIndex) => (
+      {cols.map((c, cIndex) => (
         <div key={cIndex}>
           <Ribbon
             bgColor={c.bgColor}
@@ -19,21 +17,10 @@ export const Column = ({ data = [] }) => {
           />
 
           {(c.blocks || []).map((bs, bsIndex) => (
-            <div key={bsIndex}>
+            <div key={bsIndex} className={bs.lineBreak ? "line-break-item" : undefined}>
               {(bs.block || []).map((b, bIndex) => (
                 <React.Fragment key={bIndex}>
-                  {b.audio && <Audio src={b.audio} />}
-                  <span>{b.text}</span>
-                  {b.bold && (
-                    <span>
-                      <Bold>{b.bold}</Bold>
-                    </span>
-                  )}
-                  {b.mark && (
-                    <span>
-                      <Mark>{b.mark}</Mark>
-                    </span>
-                  )}{" "}
+                  <InlineText text={b.text} />
                 </React.Fragment>
               ))}
             </div>
