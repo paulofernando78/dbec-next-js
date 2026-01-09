@@ -2,6 +2,39 @@
   {
     "definitions": [
       {
+        "word": "What's the matter?",
+        "partOfSpeech": "expression",
+        "enDefinition": "used to ask someone what is wrong, what problem they have, or why they seem upset or unwell",
+        "ptDefinition": "usado para perguntar o que há de errado com alguém, qual é o problema ou por que a pessoa parece chateada ou passando mal",
+        "examples": [
+          {
+            "enExample": "You look worried. What's the matter?",
+            "ptExample": "Você parece preocupado. O que houve?"
+          },
+          {
+            "enExample": "What's the matter with him? He seems very quiet today.",
+            "ptExample": "O que há de errado com ele? Ele parece muito quieto hoje."
+          }
+        ],
+        "synonyms": [
+          "What's wrong?",
+          "What's the problem?",
+          "Is something wrong?"
+        ],
+        "antonyms": [],
+        "seeAlso": [
+          "What's going on?",
+          "What's bothering you?",
+          "What's the trouble?"
+        ],
+        "notes": [
+          {
+            "enNote": "Very common in everyday English. Often followed by 'with + person' (e.g. 'What's the matter with you?').",
+            "ptNote": "Muito comum no inglês do dia a dia. Frequentemente seguido de 'with + pessoa' (ex.: 'What's the matter with you?')."
+          }
+        ]
+      },
+      {
         "word": "make up one’s mind",
         "partOfSpeech": "idiom",
         "enDefinition": "to decide something after considering different possibilities; to come to a conclusion or choice",

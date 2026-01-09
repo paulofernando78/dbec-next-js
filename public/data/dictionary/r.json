@@ -2,6 +2,36 @@
   {
     "definitions": [
       {
+        "word": "right-hand man",
+        "partOfSpeech": "expression",
+        "enDefinition": "a trusted assistant or deputy who supports a leader and helps manage important tasks or responsibilities",
+        "ptDefinition": "assistente ou braço direito de alguém; pessoa de extrema confiança que ajuda a administrar tarefas importantes",
+        "examples": [
+          {
+            "enExample": "She is the CEO’s right-hand man and handles most strategic decisions.",
+            "ptExample": "Ela é a braço direito do CEO e cuida da maioria das decisões estratégicas."
+          },
+          {
+            "enExample": "For years, he served as the president’s right-hand man.",
+            "ptExample": "Por anos, ele atuou como o braço direito do presidente."
+          }
+        ],
+        "synonyms": [
+          "trusted assistant",
+          "right-hand person",
+          "deputy",
+          "lieutenant"
+        ],
+        "antonyms": ["rival", "opponent", "outsider"],
+        "seeAlso": ["second-in-command", "go-to person", "lieutenant"],
+        "notes": [
+          {
+            "enNote": "Although the expression uses the word 'man', it is commonly used for people of any gender. In more neutral contexts, 'right-hand person' may be preferred.",
+            "ptNote": "Embora a expressão use a palavra 'man', ela é comumente usada para pessoas de qualquer gênero. Em contextos mais neutros, pode-se usar 'right-hand person'."
+          }
+        ]
+      },
+      {
         "word": "(real) flop",
         "partOfSpeech": "idiom / informal noun phrase",
         "enDefinition": "something that fails completely or is very unsuccessful",
