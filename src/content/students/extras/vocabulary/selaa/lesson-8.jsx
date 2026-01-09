@@ -39,21 +39,15 @@ export default function SELAAlessonEight() {
             },
             {
               speaker: "Ted:",
-              text: [
-                "I've got great news, Mom.",
-              ],
+              text: ["I've got great news, Mom."],
             },
             {
               speaker: "Susan:",
-              text: [
-                "What is it?",
-              ],
+              text: ["What is it?"],
             },
             {
               speaker: "Ted:",
-              text: [
-                "Amber and I are going to start a rock band!",
-              ],
+              text: ["Amber and I are going to start a rock band!"],
             },
             {
               speaker: "Susan:",
@@ -116,22 +110,19 @@ export default function SELAAlessonEight() {
             },
             {
               speaker: "Ted:",
-              text: [
-                "I promise I'll pay you back.",
-              ],
+              text: ["I promise I'll pay you back."],
             },
             {
               speaker: "Susan:",
-              text: [
-                "How?",
-              ],
+              text: ["How?"],
             },
             {
               speaker: "Ted:",
               text: [
                 "We're going to ",
                 {
-                  audio: "/assets/audio/general/take-the-music-world-by-storm.mp3",
+                  audio:
+                    "/assets/audio/general/take-the-music-world-by-storm.mp3",
                   part: "take the music world by storm",
                   type: "mark",
                 },
@@ -182,15 +173,11 @@ export default function SELAAlessonEight() {
             },
             {
               speaker: "Ted:",
-              text: [
-                "How?",
-              ],
+              text: ["How?"],
             },
             {
               speaker: "Susan:",
-              text: [
-                "You can bake cookies.",
-              ],
+              text: ["You can bake cookies."],
             },
             {
               speaker: "Ted:",
@@ -213,73 +200,95 @@ export default function SELAAlessonEight() {
             questions: [
               {
                 question:
-                  "1. ",
+                  "1. I'm in good spirits today because I got a promotion at work.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "happy", isCorrect: true },
+                  { option: "drunk", isCorrect: false },
+                  { option: "tired", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "2. ",
+                  "2. Renting an apartment on Park Avenue in Manhattan is difficult, unless you're made of money.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "wealthy", isCorrect: true },
+                  { option: "strange", isCorrect: false },
+                  { option: "famous", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "3. ",
+                  "3. My friend's daughter paints beautiful pictures. In a few years, she'll take the art world by storm.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
-                ],
-              },
-              {
-                question: "4. ",
-                options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
-                ],
-              },
-              {
-                question:
-                  "5. ",
-                options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "something bad will happen and she'll lose her job",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "she'll draw an excellent painting of a storm",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "she'll become a very successful artist",
+                    isCorrect: true,
+                  },
                 ],
               },
               {
                 question:
-                  "6. ",
+                  "4. Susan thinks that Ted's plan to become a famous rock star is a pipe dream.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "something that is not likely to happen",
+                    isCorrect: true,
+                  },
+                  { option: "Ted's biggest hope", isCorrect: false },
+                  { option: "something very realistic", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "7. ",
+                  "5. If you're looking for a new suit, you shouldn't have a problem. Clothing shops in this town are a dime a dozen.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "hard to find", isCorrect: false },
+                  { option: "everywhere", isCorrect: true },
+                  { option: "lousy", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "8. ",
+                  "6. Ted performed at his high school dance. He knew he'd made a splash when all the girls started singing along.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "done something wrong", isCorrect: false },
+                  {
+                    option: "made a very positive impression",
+                    isCorrect: true,
+                  },
+                  { option: "created waves", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "7. Being a wise guy can be fun, but it might not make you popular with your teachers.",
+                options: [
+                  { option: "a very intelligent person", isCorrect: false },
+                  {
+                    option: "an obnoxious person who makes sarcastic comments",
+                    isCorrect: true,
+                  },
+                  {
+                    option: "a person whom everybody admires",
+                    isCorrect: false,
+                  },
+                ],
+              },
+              {
+                question:
+                  "8. Nicole wants to attend Yale, but her parents don't want to shell out $100,000 for the tuition.",
+                options: [
+                  { option: "waste", isCorrect: false },
+                  { option: "save", isCorrect: false },
+                  { option: "pay", isCorrect: true },
                 ],
               },
             ],

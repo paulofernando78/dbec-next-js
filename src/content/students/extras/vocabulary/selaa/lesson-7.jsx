@@ -63,9 +63,7 @@ export default function SELAAlessonSeven() {
             },
             {
               speaker: "Susan:",
-              text: [
-                "No. But I am prepared to hire you to run the business.",
-              ],
+              text: ["No. But I am prepared to hire you to run the business."],
             },
             {
               speaker: "Bob:",
@@ -81,9 +79,7 @@ export default function SELAAlessonSeven() {
             },
             {
               speaker: "Susan:",
-              text: [
-                "Why not?",
-              ],
+              text: ["Why not?"],
             },
             {
               speaker: "Bob:",
@@ -111,15 +107,11 @@ export default function SELAAlessonSeven() {
             },
             {
               speaker: "Bob:",
-              text: [
-                "Do I have to do the baking?",
-              ],
+              text: ["Do I have to do the baking?"],
             },
             {
               speaker: "Susan:",
-              text: [
-                "No. You'll just manage the business side.",
-              ],
+              text: ["No. You'll just manage the business side."],
             },
             {
               speaker: "Bob:",
@@ -171,73 +163,74 @@ export default function SELAAlessonSeven() {
             questions: [
               {
                 question:
-                  "1. ",
+                  "1. Bob was surprised to see his wife up ____ and early in the morning.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "light", isCorrect: false },
+                  { option: "bright", isCorrect: true },
+                  { option: "ready", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "2. ",
+                  "2. Last week I worked 80 hours. I really worked like a ____.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "dog", isCorrect: true },
+                  { option: "cat", isCorrect: false },
+                  { option: "squirrel", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "3. ",
+                  "3. Bob had never baked anything before in his life. He didn’t even have a ____ about how to turn the oven on.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
-                ],
-              },
-              {
-                question: "4. ",
-                options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "hint", isCorrect: false },
+                  { option: "suggestion", isCorrect: false },
+                  { option: "clue", isCorrect: true },
                 ],
               },
               {
                 question:
-                  "5. ",
+                  "4. If you need to learn something quickly, you’d better take a ____ course.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "crash", isCorrect: true },
+                  { option: "fast", isCorrect: false },
+                  { option: "beginner’s", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "6. ",
+                  "5. Bob wasn’t sure he wanted to work for his wife. He had ____ feelings.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "nervous", isCorrect: false },
+                  { option: "mixed", isCorrect: true },
+                  { option: "confused", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "7. ",
+                  "6. Jennifer’s boss is lousy and her salary is low. She’s not a happy ____.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "scout", isCorrect: false },
+                  { option: "tourist", isCorrect: false },
+                  { option: "camper", isCorrect: true },
                 ],
               },
               {
                 question:
-                  "8. ",
+                  "7. Bob decided to work for Susan. He figured he’d give it a ____.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "shot", isCorrect: true },
+                  { option: "pop", isCorrect: false },
+                  { option: "choice", isCorrect: false },
+                ],
+              },
+              {
+                question:
+                  "8. Nicole was up all night finishing her Spanish homework. She didn’t sleep a ____.",
+                options: [
+                  { option: "drink", isCorrect: false },
+                  { option: "blink", isCorrect: false },
+                  { option: "wink", isCorrect: true },
                 ],
               },
             ],

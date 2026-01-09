@@ -228,7 +228,7 @@ export default function SELAAlessonTwo() {
         <Ribbon label="Exercises" />
         <Radio
           exercise={{
-            instruction: "Fill in the blank with the missing word.",
+            instruction: "Choose the best response.",
             questions: [
               {
                 question: "1) What’s the ____? You look upset.",

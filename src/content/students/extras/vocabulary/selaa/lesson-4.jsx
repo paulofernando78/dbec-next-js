@@ -27,9 +27,7 @@ export default function SELAAlessonFour() {
             },
             {
               speaker: "Susan:",
-              text: [
-                "How was your day at school today, Nicole?",
-              ],
+              text: ["How was your day at school today, Nicole?"],
             },
             {
               speaker: "Nicole:",
@@ -45,9 +43,7 @@ export default function SELAAlessonFour() {
             },
             {
               speaker: "Susan:",
-              text: [
-                "What did she say?",
-              ],
+              text: ["What did she say?"],
             },
             {
               speaker: "Nicole:",
@@ -155,7 +151,6 @@ export default function SELAAlessonFour() {
                 "!",
               ],
             },
-            
           ]}
         />
         <Ribbon label="Exercises" />
@@ -165,73 +160,74 @@ export default function SELAAlessonFour() {
             questions: [
               {
                 question:
-                  "1. ",
+                  "1. Nicole is in a good mood because her teacher ___ her a compliment.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "told", isCorrect: false },
+                  { option: "paid", isCorrect: true },
+                  { option: "provided", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "2. ",
+                  "2. Nicole’s teacher told her she was ___ and shoulders above her classmates.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "elbow", isCorrect: false },
+                  { option: "neck", isCorrect: false },
+                  { option: "head", isCorrect: true },
                 ],
               },
               {
                 question:
-                  "3. ",
+                  "3. When my friend Chad told me he’d just won the lottery, I was ___ with envy.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
-                ],
-              },
-              {
-                question: "4. ",
-                options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "blue", isCorrect: false },
+                  { option: "green", isCorrect: true },
+                  { option: "red", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "5. ",
+                  '4. When you do something well, your boss might tell you, "Way ___!"',
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "to come", isCorrect: false },
+                  { option: "to go", isCorrect: true },
+                  { option: "to act", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "6. ",
+                  "5. When the robbers entered my house, I was in the kitchen shaking in my ___.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "slippers", isCorrect: false },
+                  { option: "pajamas", isCorrect: false },
+                  { option: "shoes", isCorrect: true },
                 ],
               },
               {
                 question:
-                  "7. ",
+                  "6. If somebody is bothering you, you can tell them they’re driving you ___.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "crazy", isCorrect: true },
+                  { option: "angry", isCorrect: false },
+                  { option: "unhappy", isCorrect: false },
                 ],
               },
               {
                 question:
-                  "8. ",
+                  "7. If you like power, you might consider going ___ politics.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "above", isCorrect: false },
+                  { option: "towards", isCorrect: false },
+                  { option: "into", isCorrect: true },
+                ],
+              },
+              {
+                question:
+                  '8. "You’ve been yelling and screaming for the past two hours. Could you just shut ___ already?"',
+                options: [
+                  { option: "up", isCorrect: true },
+                  { option: "in", isCorrect: false },
+                  { option: "off", isCorrect: false },
                 ],
               },
             ],

@@ -17,7 +17,6 @@ export default function SELAAlessonFive() {
           title="Lesson 5 • Ted Goes Out for the Evening."
           audioPlayer="/assets/audio/vocabulary/selaa/lesson-5.mp3"
           lines={[
-
             {
               text: [
                 {
@@ -28,15 +27,11 @@ export default function SELAAlessonFive() {
             },
             {
               speaker: "Ted:",
-              text: [
-                "See you later, Mom!",
-              ],
+              text: ["See you later, Mom!"],
             },
             {
               speaker: "Susan:",
-              text: [
-                "Where are you going, Ted?",
-              ],
+              text: ["Where are you going, Ted?"],
             },
             {
               speaker: "Ted:",
@@ -52,9 +47,7 @@ export default function SELAAlessonFive() {
             },
             {
               speaker: "Susan:",
-              text: [
-                "hat are you two going to do?",
-              ],
+              text: ["hat are you two going to do?"],
             },
             {
               speaker: "Ted:",
@@ -70,9 +63,7 @@ export default function SELAAlessonFive() {
             },
             {
               speaker: "Susan:",
-              text: [
-                "Why don't you invite her over here?",
-              ],
+              text: ["Why don't you invite her over here?"],
             },
             {
               speaker: "Ted:",
@@ -195,67 +186,75 @@ export default function SELAAlessonFive() {
             instruction: "Choose the best response.",
             questions: [
               {
-                question: "1. ",
+                question:
+                  "1. Bob was fired. It’s not surprising that he’s down ___ the dumps.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "at", isCorrect: false },
+                  { option: "in", isCorrect: true },
+                  { option: "with", isCorrect: false },
                 ],
               },
               {
-                question: "2. ",
+                question:
+                  "2. Ted thinks Amber is wonderful. He’s just crazy ___ her.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "about", isCorrect: true },
+                  { option: "around", isCorrect: false },
+                  { option: "into", isCorrect: false },
                 ],
               },
               {
-                question: "3. ",
+                question:
+                  "3. “Don’t ___ this the wrong way, but I really don’t like your girlfriend,” said Susan to Ted.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "understand", isCorrect: false },
+                  { option: "put", isCorrect: false },
+                  { option: "take", isCorrect: true },
                 ],
               },
               {
-                question: "4. ",
+                question:
+                  "4. Ted likes to hang ___ with Amber. She’s fun to be with.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "on", isCorrect: false },
+                  { option: "out", isCorrect: true },
+                  { option: "in", isCorrect: false },
                 ],
               },
               {
-                question: "5. ",
+                question:
+                  "5. Ted decided to go over to Amber’s house. He’d promised her he’d drop ___.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "by", isCorrect: true },
+                  { option: "around", isCorrect: false },
+                  { option: "near", isCorrect: false },
                 ],
               },
               {
-                question: "6. ",
+                question:
+                  "6. Bob and Susan don’t know where they’ll go on vacation. Their travel plans are still up ___ the air.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "around", isCorrect: false },
+                  { option: "in", isCorrect: true },
+                  { option: "above", isCorrect: false },
                 ],
               },
               {
-                question: "7. ",
+                question:
+                  "7. Judy muttered something nasty ___ her breath, but I couldn’t quite hear it.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "about", isCorrect: false },
+                  { option: "under", isCorrect: true },
+                  { option: "below", isCorrect: false },
                 ],
               },
               {
-                question: "8. ",
+                question:
+                  "8. Why are you hanging ___ the house on such a beautiful day? You should be outside enjoying the weather.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "inside", isCorrect: false },
+                  { option: "from", isCorrect: false },
+                  { option: "around", isCorrect: true },
                 ],
               },
             ],

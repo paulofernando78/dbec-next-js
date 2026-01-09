@@ -179,71 +179,78 @@ export default function SELAAlessonSix() {
         />
         <Ribbon label="Exercises" />
         <Radio
-          exercise={{ 
-            instruction: "Choose the best response.",
+          exercise={{
+            instruction:
+              "Choose the best response.",
             questions: [
               {
-                question: "1. ",
+                question:
+                  "1. Thanks for baking cookies for me. You’ve got a heart of gold.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "You’re a very nice person.", isCorrect: true },
+                  { option: "You’re a reliable person.", isCorrect: false },
+                  {
+                    option: "You’re very generous with your money.",
+                    isCorrect: false,
+                  },
                 ],
               },
               {
-                question: "2. ",
+                question:
+                  "2. I baked these cookies for you. Why don’t you pig out?",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "Please take just one cookie.", isCorrect: false },
+                  {
+                    option: "Take as many cookies as you like.",
+                    isCorrect: true,
+                  },
+                  {
+                    option: "Why don’t you ever eat my cookies?",
+                    isCorrect: false,
+                  },
                 ],
               },
               {
-                question: "3. ",
+                question:
+                  "3. I know you’ll like my cookies since you’ve got a sweet tooth.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "Your teeth are hurting.", isCorrect: false },
+                  { option: "You don’t like sweet things.", isCorrect: false },
+                  { option: "You like sweet things.", isCorrect: true },
                 ],
               },
               {
-                question: "4. ",
+                question: "4. You should go into business selling cookies.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "You should go to the store and buy some cookies.",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "You should try to get a job baking cookies.",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "You should start a company that sells cookies.",
+                    isCorrect: true,
+                  },
                 ],
               },
               {
-                question: "5. ",
+                question: "5. I baked these cookies. Help yourself!",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "Let me get you one!", isCorrect: false },
+                  { option: "Take some!", isCorrect: true },
+                  { option: "You need to get some help!", isCorrect: false },
                 ],
               },
               {
-                question: "6. ",
+                question:
+                  "6. If you went into business selling these delicious cookies, you’d make a bundle.",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
-                ],
-              },
-              {
-                question: "7. ",
-                options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
-                ],
-              },
-              {
-                question: "8. ",
-                options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "You’d make many cookies.", isCorrect: false },
+                  { option: "You’d make a lot of money.", isCorrect: true },
+                  { option: "You’d make a few dollars.", isCorrect: false },
                 ],
               },
             ],

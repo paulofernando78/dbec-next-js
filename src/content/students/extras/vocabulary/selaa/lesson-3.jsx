@@ -27,9 +27,7 @@ export default function SELAAlessonThree() {
             },
             {
               speaker: "Susan:",
-              text: [
-                "How was your day at school today, Ted?",
-              ],
+              text: ["How was your day at school today, Ted?"],
             },
             {
               speaker: "Ted:",
@@ -165,67 +163,145 @@ export default function SELAAlessonThree() {
             instruction: "Choose the best response.",
             questions: [
               {
-                question: "1. ",
+                question:
+                  '1. Bob: "Susan, I can’t get my old job back. It’s a lost cause."',
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "“Lost? Maybe I can help you find it.”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“Yes, I know it’s not a good cause.”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“I understand. You’ll find something else.”",
+                    isCorrect: true,
+                  },
                 ],
               },
               {
-                question: "2. ",
+                question:
+                  "2. Susan: “How could Peter fire you? Were you slacking off?”",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  { option: "“No. I was working very hard!”", isCorrect: true },
+                  {
+                    option: "“No. I talked on the phone to friends all day.”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“Yes. I was working very hard!”",
+                    isCorrect: false,
+                  },
                 ],
               },
               {
-                question: "3. ",
+                question:
+                  "3. Ted: “It’s getting late. I’d better start hitting the books.”",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option:
+                      "“Yes, that’s a good idea. Spend some time studying.”",
+                    isCorrect: true,
+                  },
+                  {
+                    option: "“Hit the books? Why don’t you read them instead?”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“Why don’t you study instead?”",
+                    isCorrect: false,
+                  },
                 ],
               },
               {
-                question: "4. ",
+                question:
+                  "4. Peter: “I don’t give a hoot how long you’ve been working here.”",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "“I wouldn’t give you a hoot either.”",
+                    isCorrect: false,
+                  },
+                  {
+                    option:
+                      "“I guess our years together aren’t important to you.”",
+                    isCorrect: true,
+                  },
+                  { option: "“Yes, it was a long time.”", isCorrect: false },
                 ],
               },
               {
-                question: "5. ",
+                question:
+                  "5. Bob: “Susan, the truth is that I couldn’t stand Peter.”",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "“I know. Peter really liked you too.”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“I liked him too. He was a nice guy.”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“I didn’t like him either. He was a jerk.”",
+                    isCorrect: true,
+                  },
                 ],
               },
               {
-                question: "6. ",
+                question: "6. Susan: “Nicole, do you ever cut class?”",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "“No. I’ve never missed a single class.”",
+                    isCorrect: true,
+                  },
+                  {
+                    option:
+                      "“Yes. I had to leave my math class early yesterday.”",
+                    isCorrect: false,
+                  },
+                  {
+                    option:
+                      "“No. Sometimes I go to the mall during class time.”",
+                    isCorrect: false,
+                  },
                 ],
               },
               {
-                question: "7. ",
+                question:
+                  "7. Bob: “This book on computers is way over my head.”",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option:
+                      "“Over your head? It should be in front of your face!”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“Why don’t you start with an easier book?”",
+                    isCorrect: true,
+                  },
+                  {
+                    option: "“Here, try this book. It’s more difficult.”",
+                    isCorrect: false,
+                  },
                 ],
               },
               {
-                question: "8. ",
+                question:
+                  "8. Nicole: “I’ve got my heart set on going to the school picnic.”",
                 options: [
-                  { option: "", isCorrect: true },
-                  { option: "", isCorrect: false },
-                  { option: "", isCorrect: false },
+                  {
+                    option: "“Okay. You should definitely go.”",
+                    isCorrect: true,
+                  },
+                  {
+                    option: "“Really? Why don’t you want to go?”",
+                    isCorrect: false,
+                  },
+                  {
+                    option: "“I understand. Picnics can be boring.”",
+                    isCorrect: false,
+                  },
                 ],
               },
             ],
