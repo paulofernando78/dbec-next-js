@@ -1,14 +1,59 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 5px;
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 5px;
+  background-color: var(--slate-2);
+  margin-bottom: 5px;
 }
 
 .input {
   width: 100%;
   border: var(--border);
   border-radius: var(--border-radius);
+  padding: 5px 5px 4px 6px;
+}
+
+.results {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 5px;
+  height: 400px;
+  overflow: scroll;
+}
+
+.wordCard {
+  background-color: var(--slate-2);
+  margin-bottom: var(--line-break);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding-inline: 5px;
+}
+
+.word, .partOfSpeech, .phonetics, .enDefinition, .synomyms, .antonyms, .enNote  {
+  margin-right: var(--margin-right);
+}
+
+.partOfSpeech, .phonetics, .notes, .synomyms, .antonyms, .seeAlso {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.word {
+  margin-right: var(--margin-right);
+  font-weight: bold;
+}
+
+.phonetics {
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--blue-6);
+}
+
+.enExample {
+  margin-inline: var(--margin-inline);
+}
+
+.seeAlso {
+  font-family: 'Times New Roman', Times, serif;
 }

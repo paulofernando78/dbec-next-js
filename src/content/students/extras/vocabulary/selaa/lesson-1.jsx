@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { DictionarySearch } from "@/components/molecules/DictionarySearch";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { Ribbon } from "@/components/atoms/Ribbon";
@@ -13,6 +14,9 @@ export default function SELAAlessonOne() {
         lesson="Lesson 1 • Bob’s Day at Work"
       />
       <div className="line-break">
+        <div className="dictionary-area">
+          <DictionarySearch />
+        </div>
         <Dialogue
           title="Lesson 1 • Bob’s Day at Work"
           audioPlayer="/assets/audio//vocabulary/selaa/lesson-1.mp3"
@@ -43,7 +47,9 @@ export default function SELAAlessonOne() {
             },
             {
               speaker: "Peter:",
-              text: ["Yeah. These days, everybody’s shopping at our competition, Honest Abe’s Furniture Store."],
+              text: [
+                "Yeah. These days, everybody’s shopping at our competition, Honest Abe’s Furniture Store.",
+              ],
             },
             {
               speaker: "Bob:",
@@ -133,7 +139,8 @@ export default function SELAAlessonOne() {
               text: [
                 "Well then I’ll ",
                 {
-                  audio: "/assets/audio//general/go-back-to-the-drawing-board.mp3",
+                  audio:
+                    "/assets/audio//general/go-back-to-the-drawing-board.mp3",
                   part: "go back to the drawing board",
                   type: "mark",
                 },
