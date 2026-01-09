@@ -1,6 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard"
-import {  Lesson } from "@/lib/svg-imports"
-import {  Bold } from "@/components/atoms/Bold"
+import { Lesson } from "@/lib/svg-imports"
+import { Bold } from "@/components/atoms/Bold"
 import Link from "next/link"
 
 const links = [

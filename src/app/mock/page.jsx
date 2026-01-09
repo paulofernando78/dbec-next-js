@@ -1,6 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Links } from "@/components/molecules/Links";
 import { Ribbon } from "@/components/atoms/Ribbon";
-// import { Card } from "@/components/molecules/Card";
 import { InlineText } from "@/components/molecules/InlineText";
 import { List } from "@/components/molecules/List";
 import { Note } from "@/components/molecules/Note";
@@ -20,6 +20,21 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
+        <Ribbon label="Links" />
+        <Links
+          groups={[
+            {
+              items: [
+                {
+                  href: "/",
+                  label: '... ',
+                  phonetics: "...",
+                }
+              ],
+            },
+          ]}
+        />
+
         {/* Audio Player */}
         <Ribbon label="Audio Player" />
         <AudioPlayer src="/audio/general/about-to.mp3" />

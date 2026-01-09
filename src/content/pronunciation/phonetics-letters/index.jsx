@@ -1660,9 +1660,9 @@ export default function PhoneticsLetters() {
 
         <Ribbon label="Sounds by letters (Graphemes)" />
         <Links
-          links={[
+          groups={[
             {
-              links: [
+              items: [
                 // {
                 //   href: "/pronunciation/phonetics-letters/letters-ea-ee-vs-i",
                 //   label: 'Letters "a": ',
