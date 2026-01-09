@@ -362,29 +362,41 @@ export default function Home() {
       <div className="line-break">
         <>
           <Paragraph
-            paragraphs={[
+            blocks={[
               {
-                audio: "/assets/audio/home/welcome.mp3",
-                text: [
-                  "Hey there! Welcome to ",
+                items: [
                   {
-                    text: "DAILY BASIS ENGLISH COURSE",
-                    type: "bold",
+                    audioPlayer: "/assets/audio/home/welcome.mp3",
+                    text: [
+                      "Hey there! Welcome to ",
+                      {
+                        part: "DAILY BASIS ENGLISH COURSE",
+                        type: "bold",
+                      },
+                      " website. Here, you’ll find a lot of interesting materials. Please, use it wisely. ",
+                    ],
+                    lineBreak: true,
                   },
-                  " website. Here, you’ll find a lot of interesting materials. Please, use it wisely. ",
-                ],
-                lineBreak: true,
-              },
-              {
-                audio: "/assets/audio/home/below.mp3",
-                text: [
-                  "Below, you can listen to some adjectives that describe how you’re feeling.",
                 ],
               },
               {
-                audio: "/assets/audio/home/feeling.mp3",
-                text: ["How are you feeling today?"],
-                lineBreak: true,
+                audioPlayer: "/assets/audio/home/below.mp3",
+                items: [
+                  {
+                    text: [
+                      "Below, you can listen to some adjectives that describe how you’re feeling.",
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/home/feeling.mp3",
+                        part: "How are you feeling today?",
+                      },
+                    ],
+                  },
+                ],
               },
             ]}
           />

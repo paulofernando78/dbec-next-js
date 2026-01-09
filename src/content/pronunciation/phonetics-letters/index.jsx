@@ -11,9 +11,6 @@ export default function PhoneticsLetters() {
     <>
       <Whiteboard title="Pronunciation" subtitle="Phonetics + Letters" />
       <div className="line-break">
-
-
-
         <Paragraph
           blocks={[
             {
