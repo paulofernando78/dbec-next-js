@@ -17,6 +17,7 @@
 }
 
 .results {
+  height: 300px;
   background-color: var(--slate-1);
   border-radius: var(--border-radius);
   overflow: scroll;
