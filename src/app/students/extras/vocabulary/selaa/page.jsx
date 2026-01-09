@@ -1,3 +1,5 @@
+import styles from "./selaa.module.css"
+
 import { Whiteboard } from "@/components/molecules/Whiteboard"
 import { Lesson } from "@/lib/svg-imports"
 import { Bold } from "@/components/atoms/Bold"
@@ -92,8 +94,8 @@ export default function SELAA() {
         {links.map((item, index) => (
           <div key={index}>
             <Lesson className="icon-position" /><Link href={item.href}>
-            <Bold>{item.label}</Bold></Link>{" "}
-            <span>{item.words}</span>
+            <Bold><span>{item.label}</span></Bold></Link>{" "}
+            <span className={styles.words}>{item.words}</span>
           </div>
         ))}
       </div>
