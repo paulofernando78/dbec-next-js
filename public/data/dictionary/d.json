@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "a dime a dozen",
+        "partOfSpeech": "idiom",
+        "enDefinition": "very common and easy to find; not rare or special",
+        "ptDefinition": "muito comum; fácil de encontrar; sem nada de especial",
+        "examples": [
+          {
+            "enExample": "Good ideas are a dime a dozen, but great execution is rare.",
+            "ptExample": "Boas ideias são muito comuns, mas uma boa execução é rara."
+          },
+          {
+            "enExample": "Cheap smartphones are a dime a dozen these days.",
+            "ptExample": "Celulares baratos são muito comuns hoje em dia."
+          }
+        ],
+        "synonyms": ["very common", "ten a penny", "commonplace"],
+        "antonyms": ["rare", "hard to find", "unique"],
+        "seeAlso": ["nothing special", "run-of-the-mill", "common as dirt"],
+        "notes": [
+          {
+            "enNote": "Originally refers to something so cheap and common that it costs only a dime for a dozen. Widely used in American English.",
+            "ptNote": "Originalmente refere-se a algo tão barato e comum que custa apenas uma moeda (dime) por uma dúzia. Muito usada no inglês americano."
+          }
+        ]
+      },
+      {
         "word": "dawdle",
         "phonetics": "/ˈdɔːdl/",
         "partOfSpeech": "verb",
