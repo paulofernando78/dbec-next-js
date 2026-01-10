@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "hard times",
+        "partOfSpeech": "idiom",
+        "enDefinition": "a period of difficulty, especially involving lack of money, problems, or suffering",
+        "ptDefinition": "período difícil; fase de dificuldades, especialmente financeiras ou pessoais",
+        "examples": [
+          {
+            "enExample": "Many families are going through hard times because of the economic crisis.",
+            "ptExample": "Muitas famílias estão passando por tempos difíceis por causa da crise econômica."
+          },
+          {
+            "enExample": "She supported her friends during their hard times.",
+            "ptExample": "Ela apoiou seus amigos durante seus momentos difíceis."
+          }
+        ],
+        "synonyms": ["difficult times", "tough times", "rough times"],
+        "antonyms": ["good times", "prosperity", "easy times"],
+        "seeAlso": ["tough times", "hardship", "financial difficulty"],
+        "notes": [
+          {
+            "enNote": "Often used to describe financial or emotional difficulty affecting individuals or society.",
+            "ptNote": "Frequentemente usado para descrever dificuldades financeiras ou emocionais que afetam pessoas ou a sociedade."
+          }
+        ]
+      },
+      {
         "word": "hoot",
         "phonetics": "/huːt/",
         "partOfSpeech": "noun / verb",

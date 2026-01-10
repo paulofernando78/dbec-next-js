@@ -2,6 +2,72 @@
   {
     "definitions": [
       {
+        "word": "(that’s / those are) the breaks",
+        "partOfSpeech": "idiom (informal)",
+        "enDefinition": "used to say that something bad or disappointing has happened and must be accepted because it cannot be changed",
+        "ptDefinition": "é a vida; são as regras do jogo; usado para dizer que algo ruim aconteceu e precisa ser aceito",
+        "examples": [
+          {
+            "enExample": "We didn’t get the contract, but that’s the breaks.",
+            "ptExample": "Não conseguimos o contrato, mas é a vida."
+          },
+          {
+            "enExample": "Sometimes you win, sometimes you lose — those are the breaks.",
+            "ptExample": "Às vezes você ganha, às vezes perde — são as regras do jogo."
+          }
+        ],
+        "synonyms": ["that’s life", "it can’t be helped", "such is life"],
+        "antonyms": [
+          "that’s unfair",
+          "something can be done",
+          "there’s a solution"
+        ],
+        "seeAlso": ["that’s life", "when pigs fly", "it is what it is"],
+        "notes": [
+          {
+            "enNote": "Often used to express resignation or acceptance, sometimes with a tone of mild disappointment.",
+            "ptNote": "Frequentemente usado para expressar resignação ou aceitação, às vezes com um tom leve de frustração."
+          }
+        ]
+      },
+      {
+        "word": "take (something) by storm",
+        "partOfSpeech": "expression",
+        "enDefinition": "to become extremely popular, successful, or influential very quickly",
+        "ptDefinition": "alcançar enorme popularidade ou sucesso muito rapidamente; causar grande impacto de forma repentina",
+        "examples": [
+          {
+            "enExample": "The app took the internet by storm within weeks.",
+            "ptExample": "O aplicativo tomou a internet de assalto em poucas semanas."
+          },
+          {
+            "enExample": "The young singer took the music world by storm.",
+            "ptExample": "A jovem cantora conquistou o mundo da música rapidamente."
+          },
+          {
+            "enExample": "The movie took audiences by storm when it was released.",
+            "ptExample": "O filme conquistou o público rapidamente quando foi lançado."
+          }
+        ],
+        "synonyms": [
+          "become an overnight sensation",
+          "explode in popularity",
+          "rise to fame quickly"
+        ],
+        "antonyms": [
+          "go unnoticed",
+          "fail to gain attention",
+          "fade into obscurity"
+        ],
+        "seeAlso": ["overnight success", "hit the big time", "make waves"],
+        "notes": [
+          {
+            "enNote": "The object between parentheses changes depending on the context (e.g. 'the world', 'the internet', 'the music scene').",
+            "ptNote": "O elemento entre parênteses varia conforme o contexto (ex.: 'the world', 'the internet', 'the music scene')."
+          }
+        ]
+      },
+      {
         "word": "tell someone off",
         "phonetics": " (US) /tɛl ˈsʌmwən ɔːf/ , (UK) /tɛl ˈsʌmwən ɒf/",
         "partOfSpeech": "phrasal verb",
@@ -9,16 +75,16 @@
         "ptDefinition": "repreender alguém com raiva por fazer algo errado ou inapropriado; dar uma bronca",
         "examples": [
           {
-        "enExample": "The teacher told him off for talking during the exam.",
-        "ptExample": "O professor o repreendeu por falar durante a prova."
+            "enExample": "The teacher told him off for talking during the exam.",
+            "ptExample": "O professor o repreendeu por falar durante a prova."
           },
           {
-        "enExample": "She told him off for being late to the meeting again.",
-        "ptExample": "Ela o mandou uma bronca por chegar atrasado à reunião novamente."
+            "enExample": "She told him off for being late to the meeting again.",
+            "ptExample": "Ela o mandou uma bronca por chegar atrasado à reunião novamente."
           },
           {
-        "enExample": "I was told off by my manager after the client complained.",
-        "ptExample": "Fui repreendido pelo meu gerente depois que o cliente reclamou."
+            "enExample": "I was told off by my manager after the client complained.",
+            "ptExample": "Fui repreendido pelo meu gerente depois que o cliente reclamou."
           }
         ],
         "synonyms": ["scold", "reprimand", "berate", "chew out"],
@@ -26,8 +92,8 @@
         "seeAlso": ["reprimand", "scold", "chew out", "tell off for"],
         "notes": [
           {
-        "enNote": "Informal expression commonly used in spoken English; more frequent in British English than formal alternatives like 'reprimand'.",
-        "ptNote": "Expressão informal, comum na fala; mais frequente no inglês britânico do que termos formais como 'reprimand'."
+            "enNote": "Informal expression commonly used in spoken English; more frequent in British English than formal alternatives like 'reprimand'.",
+            "ptNote": "Expressão informal, comum na fala; mais frequente no inglês britânico do que termos formais como 'reprimand'."
           }
         ]
       },

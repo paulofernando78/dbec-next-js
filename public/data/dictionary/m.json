@@ -2,6 +2,56 @@
   {
     "definitions": [
       {
+        "word": "make a splash",
+        "partOfSpeech": "idiom",
+        "enDefinition": "to attract a lot of attention or create a strong impression, especially when something is new or first introduced",
+        "ptDefinition": "chamar muita atenção; causar grande impacto ou impressão, especialmente ao ser lançado ou apresentado",
+        "examples": [
+          {
+            "enExample": "The new startup made a splash at the tech conference.",
+            "ptExample": "A nova startup causou grande impacto na conferência de tecnologia."
+          },
+          {
+            "enExample": "Her debut novel made a big splash in the literary world.",
+            "ptExample": "O romance de estreia dela chamou muita atenção no mundo literário."
+          }
+        ],
+        "synonyms": ["cause a sensation", "create a buzz", "make waves"],
+        "antonyms": ["go unnoticed", "pass unnoticed", "fly under the radar"],
+        "seeAlso": ["make waves", "take (something) by storm", "cause a stir"],
+        "notes": [
+          {
+            "enNote": "Often used in media, marketing, and entertainment to describe a successful or attention-grabbing launch.",
+            "ptNote": "Frequentemente usado em mídia, marketing e entretenimento para descrever um lançamento bem-sucedido ou chamativo."
+          }
+        ]
+      },
+      {
+        "word": "made of money",
+        "partOfSpeech": "idiom",
+        "enDefinition": "used to say that someone has a lot of money or can easily afford to spend money",
+        "ptDefinition": "usado para dizer que alguém tem muito dinheiro ou pode gastar dinheiro com facilidade",
+        "examples": [
+          {
+            "enExample": "I can’t just buy a new phone — I’m not made of money.",
+            "ptExample": "Não posso simplesmente comprar um celular novo — eu não sou feito de dinheiro."
+          },
+          {
+            "enExample": "Do you think I’m made of money?",
+            "ptExample": "Você acha que eu sou rico?"
+          }
+        ],
+        "synonyms": ["be rich", "have plenty of money", "have money to burn"],
+        "antonyms": ["be broke", "be short of money", "be on a tight budget"],
+        "seeAlso": ["money to burn", "tight budget", "shell out"],
+        "notes": [
+          {
+            "enNote": "Very often used in the negative form ('not made of money') to express frustration about spending.",
+            "ptNote": "Muito frequentemente usado na forma negativa ('not made of money') para expressar frustração com gastos."
+          }
+        ]
+      },
+      {
         "word": "What's the matter?",
         "partOfSpeech": "expression",
         "enDefinition": "used to ask someone what is wrong, what problem they have, or why they seem upset or unwell",

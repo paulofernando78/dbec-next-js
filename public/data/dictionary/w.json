@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "wise guy",
+        "partOfSpeech": "noun (informal)",
+        "enDefinition": "a person who acts as if they know everything, often in an annoying, sarcastic, or disrespectful way",
+        "ptDefinition": "sabichão; pessoa que se acha esperta demais, geralmente de forma irritante ou sarcástica",
+        "examples": [
+          {
+            "enExample": "Don’t be a wise guy — just answer the question.",
+            "ptExample": "Não seja sabichão — apenas responda à pergunta."
+          },
+          {
+            "enExample": "He made a wise guy comment during the meeting.",
+            "ptExample": "Ele fez um comentário sarcástico durante a reunião."
+          }
+        ],
+        "synonyms": ["smart-aleck", "know-it-all", "smartass"],
+        "antonyms": ["humble person", "respectful person"],
+        "seeAlso": ["smart-aleck", "know-it-all", "sarcastic"],
+        "notes": [
+          {
+            "enNote": "Usually used negatively to criticize someone who is sarcastic or shows off their knowledge.",
+            "ptNote": "Normalmente usado de forma negativa para criticar alguém que é sarcástico ou gosta de se mostrar esperto."
+          }
+        ]
+      },
+      {
         "word": "When pigs fly!",
         "partOfSpeech": "idiom",
         "enDefinition": "used to say that something will never happen or is extremely unlikely",

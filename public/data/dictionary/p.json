@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "pipe dream",
+        "partOfSpeech": "expression",
+        "enDefinition": "an idea or plan that is very unlikely to happen or be achieved",
+        "ptDefinition": "sonho impossível; plano ou ideia pouco realista ou improvável de acontecer",
+        "examples": [
+          {
+            "enExample": "Becoming a millionaire overnight is just a pipe dream.",
+            "ptExample": "Virar milionário da noite para o dia é só um sonho impossível."
+          },
+          {
+            "enExample": "Without funding, the project remains a pipe dream.",
+            "ptExample": "Sem financiamento, o projeto continua sendo apenas um sonho distante."
+          }
+        ],
+        "synonyms": ["fantasy", "wishful thinking", "unrealistic plan"],
+        "antonyms": ["realistic goal", "practical plan", "achievable idea"],
+        "seeAlso": ["wishful thinking", "when pigs fly", "pie in the sky"],
+        "notes": [
+          {
+            "enNote": "Often used to criticize ideas that sound attractive but lack realism or practicality.",
+            "ptNote": "Frequentemente usado para criticar ideias que parecem atraentes, mas não têm realismo ou viabilidade."
+          }
+        ]
+      },
+      {
         "word": "perk",
         "phonetics": "US /pɝːk/, UK /pɜːk/",
         "partOfSpeech": "noun",
@@ -9,12 +34,12 @@
         "ptDefinition": "um benefício ou vantagem oferecido como parte de um pacote de emprego ou associação",
         "examples": [
           {
-        "enExample": "One of the perks of working here is the free coffee in the break room.",
-        "ptExample": "Um dos benefícios de trabalhar aqui é o café gratuito na sala de descanso."
+            "enExample": "One of the perks of working here is the free coffee in the break room.",
+            "ptExample": "Um dos benefícios de trabalhar aqui é o café gratuito na sala de descanso."
           },
           {
-        "enExample": "Health insurance is a common perk offered by companies.",
-        "ptExample": "Seguro de saúde é um benefício comum oferecido pelas empresas."
+            "enExample": "Health insurance is a common perk offered by companies.",
+            "ptExample": "Seguro de saúde é um benefício comum oferecido pelas empresas."
           }
         ],
         "synonyms": ["benefit", "advantage", "privilege"],
@@ -22,8 +47,8 @@
         "seeAlso": ["benefit", "bonus", "incentive"],
         "notes": [
           {
-        "enNote": "Perks are often used as incentives to attract and retain employees.",
-        "ptNote": "Benefícios são frequentemente usados como incentivos para atrair e reter funcionários."
+            "enNote": "Perks are often used as incentives to attract and retain employees.",
+            "ptNote": "Benefícios são frequentemente usados como incentivos para atrair e reter funcionários."
           }
         ]
       },
