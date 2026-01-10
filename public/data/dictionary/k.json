@@ -2,6 +2,40 @@
   {
     "definitions": [
       {
+        "word": "keep one’s chin up",
+        "partOfSpeech": "idiom",
+        "enDefinition": "to remain positive, confident, or cheerful in a difficult or disappointing situation",
+        "ptDefinition": "manter o ânimo; permanecer positivo ou confiante em uma situação difícil ou decepcionante",
+        "examples": [
+          {
+            "enExample": "Keep your chin up — things will get better soon.",
+            "ptExample": "Mantenha o ânimo — as coisas vão melhorar em breve."
+          },
+          {
+            "enExample": "She kept her chin up despite all the criticism.",
+            "ptExample": "Ela manteve a cabeça erguida apesar de todas as críticas."
+          },
+          {
+            "enExample": "He’s trying to keep his chin up after losing his job.",
+            "ptExample": "Ele está tentando manter o ânimo depois de perder o emprego."
+          }
+        ],
+        "synonyms": [
+          "stay positive",
+          "keep your head up",
+          "stay strong",
+          "remain hopeful"
+        ],
+        "antonyms": ["give up", "lose hope", "feel discouraged"],
+        "seeAlso": ["chin up", "stay positive", "look on the bright side"],
+        "notes": [
+          {
+            "enNote": "Often used as encouragement. It is very common in spoken English and informal writing.",
+            "ptNote": "Frequentemente usado como encorajamento. É muito comum no inglês falado e na escrita informal."
+          }
+        ]
+      },
+      {
         "word": "knife",
         "phonetics": "/naɪf/",
         "partOfSpeech": "noun",
@@ -9,20 +43,20 @@
         "ptDefinition": "uma ferramenta ou arma com uma lâmina afiada usada para cortar",
         "examples": [
           {
-        "enExample": "He used a knife to cut the vegetables.",
-        "ptExample": "Ele usou uma faca para cortar os legumes."
+            "enExample": "He used a knife to cut the vegetables.",
+            "ptExample": "Ele usou uma faca para cortar os legumes."
           },
           {
-        "enExample": "Carrying a knife without reason can be illegal.",
-        "ptExample": "Carregar uma faca sem motivo pode ser ilegal."
+            "enExample": "Carrying a knife without reason can be illegal.",
+            "ptExample": "Carregar uma faca sem motivo pode ser ilegal."
           }
         ],
         "synonyms": ["blade", "cutter", "dagger"],
         "seeAlso": ["scissors", "blade", "dagger"],
         "notes": [
           {
-        "enNote": "The plural of 'knife' is 'knives'.",
-        "ptNote": "O plural de 'knife' é 'knives'."
+            "enNote": "The plural of 'knife' is 'knives'.",
+            "ptNote": "O plural de 'knife' é 'knives'."
           }
         ]
       },
@@ -34,12 +68,12 @@
         "ptDefinition": "um pequeno pedaço de metal usado para abrir ou trancar algo; algo importante ou crucial",
         "examples": [
           {
-        "enExample": "She lost the key to her apartment.",
-        "ptExample": "Ela perdeu a chave do apartamento."
+            "enExample": "She lost the key to her apartment.",
+            "ptExample": "Ela perdeu a chave do apartamento."
           },
           {
-        "enExample": "Communication is key to a successful relationship.",
-        "ptExample": "A comunicação é fundamental para um relacionamento bem-sucedido."
+            "enExample": "Communication is key to a successful relationship.",
+            "ptExample": "A comunicação é fundamental para um relacionamento bem-sucedido."
           }
         ],
         "synonyms": ["crucial", "essential", "important", "lock opener"],
@@ -47,8 +81,8 @@
         "seeAlso": ["lock", "crucial", "essential", "password"],
         "notes": [
           {
-        "enNote": "‘Key’ can refer to both a physical object and something of great importance.",
-        "ptNote": "‘Key’ pode se referir tanto a um objeto físico quanto a algo de grande importância."
+            "enNote": "‘Key’ can refer to both a physical object and something of great importance.",
+            "ptNote": "‘Key’ pode se referir tanto a um objeto físico quanto a algo de grande importância."
           }
         ]
       },
@@ -60,12 +94,12 @@
         "ptDefinition": "um governante masculino de um país, especialmente aquele que herda a posição por nascimento",
         "examples": [
           {
-        "enExample": "The king addressed his subjects from the palace balcony.",
-        "ptExample": "O rei falou aos seus súditos da varanda do palácio."
+            "enExample": "The king addressed his subjects from the palace balcony.",
+            "ptExample": "O rei falou aos seus súditos da varanda do palácio."
           },
           {
-        "enExample": "He was crowned king after his father's death.",
-        "ptExample": "Ele foi coroado rei após a morte de seu pai."
+            "enExample": "He was crowned king after his father's death.",
+            "ptExample": "Ele foi coroado rei após a morte de seu pai."
           }
         ],
         "synonyms": ["monarch", "sovereign", "ruler"],
@@ -73,8 +107,8 @@
         "seeAlso": ["queen", "monarchy", "emperor"],
         "notes": [
           {
-        "enNote": "In chess, the king is the most important piece but the weakest in terms of movement.",
-        "ptNote": "No xadrez, o rei é a peça mais importante, mas a mais fraca em termos de movimento."
+            "enNote": "In chess, the king is the most important piece but the weakest in terms of movement.",
+            "ptNote": "No xadrez, o rei é a peça mais importante, mas a mais fraca em termos de movimento."
           }
         ]
       },

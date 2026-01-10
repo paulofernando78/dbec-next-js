@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "When pigs fly!",
+        "partOfSpeech": "idiom",
+        "enDefinition": "used to say that something will never happen or is extremely unlikely",
+        "ptDefinition": "usado para dizer que algo nunca vai acontecer ou é extremamente improvável",
+        "examples": [
+          {
+            "enExample": "He says he’ll apologize — yeah, when pigs fly!",
+            "ptExample": "Ele diz que vai pedir desculpas — sei, só quando porcos voarem!"
+          },
+          {
+            "enExample": "You think she’ll agree to that? When pigs fly!",
+            "ptExample": "Você acha que ela vai concordar com isso? Nunca!"
+          }
+        ],
+        "synonyms": ["never", "no chance", "not in a million years"],
+        "antonyms": ["definitely", "for sure", "certainly"],
+        "seeAlso": ["not a chance", "over my dead body", "in your dreams"],
+        "notes": [
+          {
+            "enNote": "Very informal and often humorous. Common in spoken English to express strong disbelief.",
+            "ptNote": "Muito informal e geralmente humorístico. Usado no inglês falado para expressar forte descrença."
+          }
+        ]
+      },
+      {
         "word": "waive",
         "phonetics": "/weɪv/",
         "partOfSpeech": "verb",

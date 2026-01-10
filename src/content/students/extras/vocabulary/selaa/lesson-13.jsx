@@ -15,7 +15,7 @@ export default function SELAAlessonThirteen() {
       <div className="line-break">
         <Dialogue
           title="Lesson 13 • Amber Comes Over to Bake Cookies"
-          audioPlayer="/assets/audio/vocabulary/selaa/lesson-7.mp3"
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-13.mp3"
           lines={[
             {
               text: [

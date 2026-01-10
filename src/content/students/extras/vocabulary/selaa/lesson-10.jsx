@@ -15,7 +15,7 @@ export default function SELAAlessonTen() {
       <div className="line-break">
         <Dialogue
           title="Lesson 10 • Bob Visits the Village Market"
-          audioPlayer="/assets/audio/vocabulary/selaa/lesson-7.mp3"
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-10.mp3"
           lines={[
             {
               text: [

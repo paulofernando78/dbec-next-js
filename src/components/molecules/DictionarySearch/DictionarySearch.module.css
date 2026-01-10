@@ -20,7 +20,7 @@
   height: 300px;
   background-color: var(--slate-1);
   border-radius: var(--border-radius);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .wordCard {
@@ -31,7 +31,7 @@
   padding-inline: 5px;
 }
 
-.word, .partOfSpeech, .phonetics, .enDefinition, .synomyms, .antonyms, .enNote  {
+.word, .partOfSpeech, .enDefinition, .synomyms, .antonyms, .enNote  {
   margin-right: var(--margin-right);
 }
 
@@ -40,7 +40,6 @@
 }
 
 .word {
-  margin-right: var(--margin-right);
   font-weight: bold;
 }
 

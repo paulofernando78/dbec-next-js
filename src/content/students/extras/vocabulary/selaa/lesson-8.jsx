@@ -15,7 +15,7 @@ export default function SELAAlessonEight() {
       <div className="line-break">
         <Dialogue
           title="Lesson 8 • Ted Forms a Rock Band"
-          audioPlayer="/assets/audio/vocabulary/selaa/lesson-7.mp3"
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-8.mp3"
           lines={[
             {
               text: [

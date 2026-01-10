@@ -37,13 +37,25 @@ export const DictionarySearch = () => {
     });
   }, []);
 
+  const normalize = (str = "") =>
+    str
+      .toLowerCase()
+      .replace(/[’']/g, "'")
+      .replace(/[^a-z0-9\s']/g, "")
+      .trim();
+
   const searchedWord =
     query.trim() === ""
       ? []
-      : definitions.filter(
-          (item) =>
-            item.word && item.word.toLowerCase().includes(query.toLowerCase())
-        );
+      : definitions.filter((item) => {
+          if (!item.word) return false;
+
+          const queryTokens = normalize(query).split(/\s+/);
+          const wordTokens = normalize(item.word).split(/\s+/);
+
+          // every token typed by the user must exist as a whole token
+          return queryTokens.every((qt) => wordTokens.includes(qt));
+        });
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
@@ -72,7 +84,7 @@ export const DictionarySearch = () => {
             <div key={index} className={`${styles.wordCard} line-break`}>
               <div>
                 <div>
-                  <span className={styles.word}>{item.word} </span>
+                  <span className={styles.word}>{item.word}</span>
                   <span className={styles.partOfSpeech}>
                     {item.partOfSpeech}
                   </span>
