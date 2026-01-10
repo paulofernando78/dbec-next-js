@@ -2,6 +2,32 @@
   {
     "definitions": [
       {
+        "word": "obnoxious",
+        "phonetics": "/əbˈnɑːk.ʃəs/ (US), /əbˈnɒk.ʃəs/ (UK)",
+        "partOfSpeech": "adjective",
+        "enDefinition": "extremely unpleasant, annoying, or offensive in behavior",
+        "ptDefinition": "extremamente desagradável, irritante ou ofensivo no comportamento",
+        "examples": [
+          {
+            "enExample": "He was so obnoxious during the meeting that everyone felt uncomfortable.",
+            "ptExample": "Ele foi tão desagradável durante a reunião que todos ficaram desconfortáveis."
+          },
+          {
+            "enExample": "The obnoxious noise kept us awake all night.",
+            "ptExample": "O barulho irritante nos manteve acordados a noite toda."
+          }
+        ],
+        "synonyms": ["annoying", "offensive", "irritating", "unpleasant"],
+        "antonyms": ["pleasant", "agreeable", "likeable"],
+        "seeAlso": ["annoying", "irritating", "rude"],
+        "notes": [
+          {
+            "enNote": "Often used to describe people, behavior, or sounds that strongly annoy others.",
+            "ptNote": "Frequentemente usado para descrever pessoas, comportamentos ou sons que incomodam intensamente."
+          }
+        ]
+      },
+      {
         "word": "over one’s head",
         "partOfSpeech": "idiom",
         "enDefinition": "too difficult for someone to understand; beyond someone’s ability or comprehension.",

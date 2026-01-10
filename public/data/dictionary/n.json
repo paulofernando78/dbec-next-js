@@ -2,6 +2,58 @@
   {
     "definitions": [
       {
+        "word": "novelty",
+        "phonetics": "/ˈnɑː.vəl.ti/ (US), /ˈnɒv.əl.ti/ (UK)",
+        "partOfSpeech": "noun",
+        "enDefinition": "something new, unusual, or interesting, especially something that attracts attention for being different",
+        "ptDefinition": "novidade; algo novo, incomum ou interessante, especialmente por chamar atenção por ser diferente",
+        "examples": [
+          {
+            "enExample": "The novelty of the new phone wore off after a few weeks.",
+            "ptExample": "A novidade do novo celular perdeu a graça depois de algumas semanas."
+          },
+          {
+            "enExample": "At first, working from home was a novelty.",
+            "ptExample": "No começo, trabalhar de casa era uma novidade."
+          }
+        ],
+        "synonyms": ["newness", "originality", "curiosity"],
+        "antonyms": ["familiarity", "routine", "monotony"],
+        "seeAlso": ["novel", "innovation", "fad"],
+        "notes": [
+          {
+            "enNote": "Often used to describe something that is exciting at first but may lose its appeal over time.",
+            "ptNote": "Frequentemente usado para descrever algo que empolga no início, mas pode perder o encanto com o tempo."
+          }
+        ]
+      },
+      {
+        "word": "novel",
+        "phonetics": "/ˈnɑː.vəl/ (US), /ˈnɒv.əl/ (UK)",
+        "partOfSpeech": "noun",
+        "enDefinition": "a long written story, usually involving imaginary characters and events, in the form of a book",
+        "ptDefinition": "romance; obra literária longa, geralmente fictícia, apresentada em forma de livro",
+        "examples": [
+          {
+            "enExample": "She is writing a novel based on her childhood.",
+            "ptExample": "Ela está escrevendo um romance baseado na infância dela."
+          },
+          {
+            "enExample": "This novel became a bestseller worldwide.",
+            "ptExample": "Esse romance se tornou um best-seller mundial."
+          }
+        ],
+        "synonyms": ["book", "fiction", "story"],
+        "antonyms": ["nonfiction", "textbook"],
+        "seeAlso": ["short story", "novella", "fiction"],
+        "notes": [
+          {
+            "enNote": "A novel is usually longer and more complex than a short story or a novella.",
+            "ptNote": "Um romance geralmente é mais longo e mais complexo do que um conto ou uma novela curta."
+          }
+        ]
+      },
+      {
         "word": "there’s no point in",
         "partOfSpeech": "phrase / expression",
         "enDefinition": "used to say that something is not useful, effective, or worth doing because it will not change the situation or achieve anything",
