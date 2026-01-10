@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "good spirits",
+        "partOfSpeech": "noun phrase",
+        "enDefinition": "a cheerful, positive, or happy emotional state",
+        "ptDefinition": "bom humor; estado emocional positivo ou alegre",
+        "examples": [
+          {
+            "enExample": "She was in good spirits despite the bad news.",
+            "ptExample": "Ela estava de bom humor apesar das más notícias."
+          },
+          {
+            "enExample": "The team returned home in good spirits after the victory.",
+            "ptExample": "O time voltou para casa animado depois da vitória."
+          }
+        ],
+        "synonyms": ["good mood", "high spirits", "cheerfulness"],
+        "antonyms": ["bad mood", "low spirits", "discouragement"],
+        "seeAlso": ["high spirits", "keep one’s chin up"],
+        "notes": [
+          {
+            "enNote": "Most commonly used with the preposition 'in' (e.g. 'in good spirits').",
+            "ptNote": "Usado mais frequentemente com a preposição 'in' (ex.: 'in good spirits')."
+          }
+        ]
+      },
+      {
         "word": "get real!",
         "partOfSpeech": "idiom",
         "enDefinition": "used to tell someone to stop being unrealistic, naive, or overly idealistic; to face reality or be more practical.",

@@ -2,27 +2,60 @@
   {
     "definitions": [
       {
+        "word": "beat around the bush",
+        "partOfSpeech": "idiom",
+        "enDefinition": "to avoid talking about what is important or getting to the main point, often intentionally",
+        "ptDefinition": "enrolar; evitar falar diretamente sobre o assunto principal",
+        "examples": [
+          {
+            "enExample": "Stop beating around the bush and tell me what you really want.",
+            "ptExample": "Pare de enrolar e me diga o que você realmente quer."
+          },
+          {
+            "enExample": "He didn’t beat around the bush — he told her the truth immediately.",
+            "ptExample": "Ele não enrolou — disse a verdade imediatamente."
+          }
+        ],
+        "synonyms": ["avoid the point", "be evasive", "hem and haw"],
+        "antonyms": [
+          "get straight to the point",
+          "be direct",
+          "come right out and say it"
+        ],
+        "seeAlso": ["get to the point", "come straight out", "speak plainly"],
+        "notes": [
+          {
+            "enNote": "Often used in negative or imperative forms (e.g. 'don’t beat around the bush').",
+            "ptNote": "Frequentemente usado na forma negativa ou imperativa (ex.: 'don’t beat around the bush')."
+          }
+        ]
+      },
+      {
         "word": "look on the bright side",
         "partOfSpeech": "idiom",
         "enDefinition": "to try to see the positive aspects of a situation; to focus on good things rather than bad ones",
         "ptDefinition": "tentar ver os aspectos positivos de uma situação; focar nas coisas boas em vez das ruins",
         "examples": [
           {
-        "enExample": "I know you lost your job, but look on the bright side – you'll have more time for your family.",
-        "ptExample": "Sei que você perdeu seu emprego, mas veja o lado positivo – você terá mais tempo para sua família."
+            "enExample": "I know you lost your job, but look on the bright side – you'll have more time for your family.",
+            "ptExample": "Sei que você perdeu seu emprego, mas veja o lado positivo – você terá mais tempo para sua família."
           },
           {
-        "enExample": "The project failed, but we can look on the bright side and learn from our mistakes.",
-        "ptExample": "O projeto falhou, mas podemos ver o lado positivo e aprender com nossos erros."
+            "enExample": "The project failed, but we can look on the bright side and learn from our mistakes.",
+            "ptExample": "O projeto falhou, mas podemos ver o lado positivo e aprender com nossos erros."
           }
         ],
-        "synonyms": ["see the silver lining", "accentuate the positive", "focus on the good"],
+        "synonyms": [
+          "see the silver lining",
+          "accentuate the positive",
+          "focus on the good"
+        ],
         "antonyms": ["dwell on negatives", "be pessimistic"],
         "seeAlso": ["silver lining", "optimism", "glass half full"],
         "notes": [
           {
-        "enNote": "Often used to encourage someone to maintain a positive perspective during difficult times.",
-        "ptNote": "Frequentemente usado para encorajar alguém a manter uma perspectiva positiva durante tempos difíceis."
+            "enNote": "Often used to encourage someone to maintain a positive perspective during difficult times.",
+            "ptNote": "Frequentemente usado para encorajar alguém a manter uma perspectiva positiva durante tempos difíceis."
           }
         ]
       },

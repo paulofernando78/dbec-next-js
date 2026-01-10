@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { DictionarySearch } from "@/components/molecules/DictionarySearch";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { Ribbon } from "@/components/atoms/Ribbon";
@@ -13,6 +14,9 @@ export default function SELAAlessonSeven() {
         lesson="Lesson 7 • Susan Hires Bob to Run Her Business"
       />
       <div className="line-break">
+        <div className="dictionary-area">
+          <DictionarySearch />
+        </div>
         <Dialogue
           title="Lesson 7 • Susan Hires Bob to Run Her Business"
           audioPlayer="/assets/audio/vocabulary/selaa/lesson-7.mp3"

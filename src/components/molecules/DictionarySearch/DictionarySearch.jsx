@@ -91,12 +91,16 @@ export const DictionarySearch = () => {
                   <span className={styles.phonetics}>{item.phonetics}</span>
                 </div>
                 <div>
-                  {item.enDefinition && <span className={styles.enDefinition}>
-                    {item.enDefinition}
-                  </span>}
-                  {item.ptDefinition && <span className={styles.enDefinition}>
-                    <Portuguese>{item.ptDefinition}</Portuguese>
-                  </span>}
+                  {item.enDefinition && (
+                    <span className={styles.enDefinition}>
+                      {item.enDefinition}
+                    </span>
+                  )}
+                  {item.ptDefinition && (
+                    <span className={styles.enDefinition}>
+                      <Portuguese>{item.ptDefinition}</Portuguese>
+                    </span>
+                  )}
                 </div>
               </div>
               <div>
@@ -112,37 +116,52 @@ export const DictionarySearch = () => {
                   </div>
                 ))}
               </div>
-              {item.synomyms && (
-                <span>
-                  <span className={styles.synomyms}>synomyms:</span>
-                  {item.synomyms}
-                </span>
-              )}
-              {item.antonyms && (
-                <span>
-                  <span className={styles.antonyms}>antonyms:</span>
-                  {item.antonyms}
-                </span>
-              )}
-              {item.seeAlso && (
-                <span>
-                  <span className={styles.seeAlso}>see also:</span>
-                  {item.seeAlso}
-                </span>
-              )}
-              {item.enNotes &&
               <div>
-                <span className={styles.notes}>notes:</span>
-                {item.notes?.map((note, index) => (
-                  <span key={index}>
-                    <span className={styles.enNote}> {note.enNote}</span>
+                {item.synonyms && (
+                  <div>
+                    <span className={styles.synomyms}>synonyms:</span>
                     <span>
-                      <Portuguese>{note.ptNote}</Portuguese>
+                      {Array.isArray(item.synonyms)
+                        ? item.synonyms.join(", ")
+                        : item.synonyms}
                     </span>
-                  </span>
-                ))}
+                  </div>
+                )}
+                {item.antonyms && (
+                  <div>
+                    <span className={styles.antonyms}>antonyms:</span>
+                    <span>
+                      {Array.isArray(item.antonyms)
+                        ? item.antonyms.join(", ")
+                        : item.antonyms}
+                    </span>
+                  </div>
+                )}
+                {item.seeAlso && (
+                  <div>
+                    <span className={styles.seeAlso}>see also:</span>
+                    <span>
+                      {Array.isArray(item.seeAlso)
+                        ? item.seeAlso.join(", ")
+                        : item.seeAlso}
+                    </span>
+                  </div>
+                )}
               </div>
-              }
+
+              {item.notes && (
+                <div>
+                  <span className={styles.notes}>notes:</span>
+                  {item.notes.map((note, index) => (
+                    <span key={index}>
+                      <span className={styles.enNote}> {note.enNote}</span>
+                      <span>
+                        <Portuguese>{note.ptNote}</Portuguese>
+                      </span>
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

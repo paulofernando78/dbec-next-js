@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { DictionarySearch } from "@/components/molecules/DictionarySearch";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { Ribbon } from "@/components/atoms/Ribbon";
@@ -13,6 +14,9 @@ export default function SELAAlessonEight() {
         lesson="Lesson 8 • Ted Forms a Rock Band"
       />
       <div className="line-break">
+        <div className="dictionary-area">
+          <DictionarySearch />
+        </div>
         <Dialogue
           title="Lesson 8 • Ted Forms a Rock Band"
           audioPlayer="/assets/audio/vocabulary/selaa/lesson-8.mp3"
@@ -51,14 +55,7 @@ export default function SELAAlessonEight() {
             },
             {
               speaker: "Susan:",
-              text: [
-                {
-                  audio: "/assets/audio/general/good-for-you.mp3",
-                  part: "Good for you",
-                  type: "mark",
-                },
-                "!",
-              ],
+              text: ["Good for you!"],
             },
             {
               speaker: "Ted:",
@@ -182,7 +179,7 @@ export default function SELAAlessonEight() {
             {
               speaker: "Ted:",
               text: [
-                "I bet Mrs. Clapton never made Eric** bake cookies, but I guess ",
+                "I bet Mrs. Clapton never made Eric bake cookies, but I guess ",
                 {
                   audio: "/assets/audio/general/those-are-the-breaks.mp3",
                   part: "those are the breaks",
