@@ -29,6 +29,7 @@
   border: var(--border);
   border-radius: var(--border-radius);
   padding-inline: 5px;
+  color: black
 }
 
 .word,
