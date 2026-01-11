@@ -27,9 +27,9 @@ export default function Mock() {
               items: [
                 {
                   href: "/",
-                  label: '... ',
+                  label: "... ",
                   phonetics: "...",
-                }
+                },
               ],
             },
           ]}
@@ -98,14 +98,41 @@ export default function Mock() {
         <Paragraph
           blocks={[
             {
-              lineBreak: true,
-              audioPlayer: "/audio/general/about-to.mp3",
-              img: "/img/general/cat-1.jpg",
-              alt: "a cat photo",
-              width: 200,
-              height: 200,
+              audioPlayer: "/assets/audio/general/about-to.mp3",
               imgPosition: "top",
-              items: [
+              imgs: [
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+              ],
+              lines: [
                 {
                   text: [
                     "normal ",
@@ -150,6 +177,7 @@ export default function Mock() {
                       type: "portuguese",
                     },
                   ],
+                  lineBreak: true,
                 },
                 {
                   text: [

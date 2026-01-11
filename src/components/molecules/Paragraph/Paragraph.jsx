@@ -11,40 +11,42 @@ export const Paragraph = ({ blocks = [] }) => {
     <div className={styles.wrapper}>
       {blocks.map((block, blockIndex) => (
         <section key={blockIndex}>
-          {block.audioPlayer && <AudioPlayer src={block.audioPlayer} />}
 
-          <div
-            className={[
-              block.img && styles.withImage,
-              block.img && styles[block.imgPosition || "left"],
-            ]
+          <div>
+            {block.imgs && (
+              <div
+              className={[
+                block.imgs && styles.withImage,
+                block.imgs && styles[block.imgPosition || "left"],
+              ]
               .filter(Boolean)
               .join(" ")}
-          >
-            {block.img && (
-              <Image
-                src={block.img}
-                alt={block.alt}
-                width={block.width || 200}
-                height={block.height || 200}
-                className="imgs"
-              />
+              >
+                {block.audioPlayer && <AudioPlayer src={block.audioPlayer} />}
+                <div className={styles.withImage}>
+                  {block.imgs.map((img, index) => (
+                    <Image
+                      key={index}
+                      src={img.img}
+                      alt={img.alt}
+                      width={img.width || 200}
+                      height={img.height || 200}
+                      className="imgs"
+                    />
+                  ))}
+                </div>
+                <div className={styles.paragraphBlock}>
+                  {(block.lines || []).map((line, lineIndex) => (
+                    <p
+                      key={lineIndex}
+                      className={line.lineBreak ? "line-break-item" : undefined}
+                    >
+                      {line.text && <InlineText text={line.text} />}
+                    </p>
+                  ))}
+                </div>
+              </div>
             )}
-
-            <div className={styles.paragraphBlock}>
-              {(block.items || []).map((item, itemIndex) => (
-                <p
-                  key={itemIndex}
-                  className={item.lineBreak ? "line-break-item" : undefined}
-                >
-                  {item.audioPlayer && <AudioPlayer src={item.audioPlayer} />}
-
-                  {item.text && (
-                    <InlineText text={item.text} />
-                  )}
-                </p>
-              ))}
-            </div>
           </div>
         </section>
       ))}

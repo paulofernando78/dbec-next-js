@@ -18,12 +18,12 @@ export default function SimplePresent() {
         <Paragraph
           blocks={[
             {
-              img: "/assets/img/general/.png",
-              imgPosition: "left",
+              img: "/assets/img/general/girl-wake-up.png",
+              imgPosition: "top",
               alt: "Two people talking.",
               width: 350,
               height: 250,
-              items: [
+              lines: [
                 {
                   text: [
                     {
@@ -35,10 +35,13 @@ export default function SimplePresent() {
                   lineBreak: true,
                 },
                 {
-                  text: ["... "],
+                  text: ["What time do you wake up on the week? "],
                 },
                 {
-                  text: ["..."],
+                  text: ["Do you study? What do you study? What do you study?"],
+                },
+                {
+                  text: ["Do you work? What do you do? Where do you work?"],
                 },
               ],
             },
@@ -46,24 +49,49 @@ export default function SimplePresent() {
         />
 
         <Ribbon label="Presentaion" />
+
         <Dialogue
-          audioPlayer="/assets/audio/general/i-am.mp3"
+          audioPlayer="/assets/audio/general/daily-routine-dialogue.mp3"
           lines={[
             {
-              speaker: "speaker:",
-              text: [
-                "... ",
-                {
-                  type: "mark",
-                  part: "...",
-                },
-                " ...",
-              ],
+              speaker: "A:",
+              text: ["Hi! What do you do every day?"],
+            },
+            {
+              speaker: "B:",
+              text: ["I work from home."],
+            },
+            {
+              speaker: "A:",
+              text: ["Do you start work early?"],
+            },
+            {
+              speaker: "B:",
+              text: ["Yes, I start at 8 a.m."],
+            },
+            {
+              speaker: "A:",
+              text: ["Do you use your phone a lot?"],
+            },
+            {
+              speaker: "B:",
+              text: ["Yes, I check my phone in the morning."],
             },
           ]}
         />
 
         <Ribbon label="Meaning" bgColor="var(--gray-4)" />
+
+        <Paragraph
+          blocks={[
+            {
+              text: ["When to use the Simple Present."], lineBreak: true
+            },
+            {
+              text: ["When to use the Simple Present."],
+            },
+          ]}
+        />
 
         <Checking
           type="CCQ"
@@ -71,10 +99,13 @@ export default function SimplePresent() {
             {
               block: [
                 {
-                  example: "...",
+                  example: "I work from home?",
                   questions: [
                     {
-                      question: "???",
+                      question: "Is this about my routine?",
+                    },
+                    {
+                      question: "Is this happening now??",
                     },
                   ],
                 },
@@ -99,18 +130,18 @@ export default function SimplePresent() {
 
         <Ribbon label="Practice" />
         <FillInTheBlanks
-          data={{
+          exercise={{
             instructions: "1. Fill in the blanks with affirmative form.",
             blocks: [
               {
                 block: [{ text: "I" }, { blank: "am" }],
                 lineBreak: true,
-              }
+              },
             ],
           }}
         />
         <Radio
-          data={{
+          exercise={{
             instruction: "Choose the correct form of the verb be.",
             questions: [
               {
@@ -120,12 +151,24 @@ export default function SimplePresent() {
                   { option: "...", isCorrect: false },
                   { option: "...", isCorrect: false },
                 ],
-              }
+              },
             ],
           }}
         />
 
         <Ribbon label="Production" />
+        <InlineText
+          audio="/assets/audio/"
+          text={[
+            "Talk about your daily routine. ",
+            {
+              correct: true,
+              audio: "/assets/audio/",
+              text: "...",
+              type: "bold",
+            },
+          ]}
+        />
       </div>
     </>
   );
