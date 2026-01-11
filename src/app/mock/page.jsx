@@ -1,13 +1,13 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Ribbon } from "@/components/atoms/Ribbon";
+import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer/AudioPlayer";
+import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { InlineText } from "@/components/molecules/InlineText";
 import { List } from "@/components/molecules/List";
 import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
-import { Comparison } from "../../components/molecules/Comparison/Comparison";
+import { Comparison } from "../../components/molecules/Comparison/";
 import { Note } from "@/components/molecules/Note";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
@@ -21,28 +21,30 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
-        <section className="line-break">
-          <Ribbon label="Links" />
-          <Links
-            groups={[
-              {
-                items: [
-                  {
-                    href: "/",
-                    label: "... ",
-                    phonetics: "...",
-                  },
-                ],
-              },
-            ]}
-          />
-        </section>
+        <Section label="introduction" heading={4}>
+          <section className="line-break">
+            {/* <Ribbon label="Links" /> */}
+            <Links
+              groups={[
+                {
+                  items: [
+                    {
+                      href: "/",
+                      label: "... ",
+                      phonetics: "...",
+                    },
+                  ],
+                },
+              ]}
+            />
+          </section>
+        </Section>
 
-        <Ribbon label="Audio Player" />
+        {/* <Ribbon label="Audio Player" /> */}
         <AudioPlayer src="/assets/audio/general/about-to.mp3" />
 
         <section className="line-break">
-          <Ribbon label="Inline Text" />
+          {/* <Ribbon label="Inline Text" /> */}
           <InlineText
             text={[
               "normal ",
@@ -97,7 +99,7 @@ export default function Mock() {
         </section>
 
         <section className="line-break">
-          <Ribbon label="List" />
+          {/* <Ribbon label="List" /> */}
           <List
             bullet={false}
             items={[
@@ -182,7 +184,7 @@ export default function Mock() {
         </section>
 
         <section className="line-break">
-          <Ribbon label="CardText" />
+          {/* <Ribbon label="CardText" /> */}
           <CardText
             blocks={[
               {
@@ -277,7 +279,7 @@ export default function Mock() {
         </section>
 
         <section className="line-break">
-          <Ribbon label="Paragraph" />
+          {/* <Ribbon label="Paragraph" /> */}
           <Paragraph
             blocks={[
               // img top
@@ -826,7 +828,7 @@ export default function Mock() {
         </section>
 
         <section className="line-break">
-          <Ribbon label="Note" />
+          {/* <Ribbon label="Note" /> */}
           <Note
             items={[
               {
@@ -868,7 +870,7 @@ export default function Mock() {
         </section>
 
         <section className="line-break">
-          <Ribbon label="DIALOGUE" />
+          {/* <Ribbon label="DIALOGUE" /> */}
           <Dialogue
             imgs={[
               {
@@ -931,7 +933,7 @@ export default function Mock() {
         </section>
 
         <section className="line-break">
-          <Ribbon label="Word Sound" />
+          {/* <Ribbon label="Word Sound" /> */}
           <Comparison
             groups={[
               {
@@ -955,7 +957,7 @@ export default function Mock() {
         </section>
 
         <section className="line-break">
-          <Ribbon label="Exercises" />
+          {/* <Ribbon label="Exercises" /> */}
           <Radio
             exercise={{
               instruction: "Choose the best response.",
