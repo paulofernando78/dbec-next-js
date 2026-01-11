@@ -37,7 +37,7 @@ export default function Mock() {
 
         {/* Audio Player */}
         <Ribbon label="Audio Player" />
-        <AudioPlayer src="/audio/general/about-to.mp3" />
+        <AudioPlayer src="/assets/audio/general/about-to.mp3" />
 
         {/* Inline Text */}
         <Ribbon label="Inline Text" />
@@ -97,6 +97,430 @@ export default function Mock() {
         <Ribbon label="Paragraph" />
         <Paragraph
           blocks={[
+            // img top
+            {
+              audioPlayer: "/assets/audio/general/about-to.mp3",
+              imgPosition: "top",
+              imgs: [
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+              ],
+              lines: [
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+              ],
+            },
+            // img right
+            {
+              audioPlayer: "/assets/audio/general/about-to.mp3",
+              imgPosition: "right",
+              imgs: [
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+              ],
+              lines: [
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+              ],
+            },
+            // img bottom
+            {
+              audioPlayer: "/assets/audio/general/about-to.mp3",
+              imgPosition: "bottom",
+              imgs: [
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+              ],
+              lines: [
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              audioPlayer: "/assets/audio/general/about-to.mp3",
+              imgPosition: "left",
+              imgs: [
+                {
+                  img: "/assets/img/general/cat-1.jpg",
+                  alt: "a cat photo",
+                  width: 200,
+                  height: 200,
+                },
+              ],
+              lines: [
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  text: [
+                    "normal ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "normal",
+                    },
+                    " ",
+                    {
+                      usFlag: true,
+                      ukFlag: true,
+                      important: true,
+                      correct: true,
+                      incorrect: true,
+                      audio: "/audio/",
+                      part: "bold",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "italic",
+                      type: "italic",
+                    },
+                    " ",
+                    {
+                      part: "mark",
+                      type: "mark",
+                    },
+                    " ",
+                    {
+                      part: "phonetics",
+                      type: "phonetics",
+                    },
+                    " ",
+                    {
+                      part: "portuguese",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+              ],
+            },
+            // img left
             {
               audioPlayer: "/assets/audio/general/about-to.mp3",
               imgPosition: "top",

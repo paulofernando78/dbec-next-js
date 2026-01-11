@@ -14,173 +14,235 @@ export default function SimplePresent() {
     <>
       <Whiteboard title="Grammar" subtitle="Simple Present" />
       <div className="line-break">
-        <Ribbon label="Introduction" />
-        <Paragraph
-          blocks={[
-            {
-              imgs: [
-                {
-                  img: "/assets/img/general/girl-wake-up.png",
-                  alt: "a girl waking up",
-
-                },
-                {
-                  img: "/assets/img/general/man-study.png",
-                  alt: "a man studying",
-
-                },
-                {
-                  img: "/assets/img/general/woman-work.png",
-                  alt: "a man working",
-
-                },
-              ],
-              lines: [
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/answer-these-questions.mp3",
-                      part: "Answer these questions.",
-                      type: "bold",
-                    },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  text: ["What time do you wake up on the week? "],
-                },
-                {
-                  text: ["Do you study? What do you study? where do you study?"],
-                },
-                {
-                  text: ["Do you work? What do you do? Where do you work?"],
-                },
-              ],
-            }
-          ]}
-        />
-
-        <Ribbon label="Presentaion" />
-
-        <Dialogue
-          audioPlayer="/assets/audio/general/daily-routine-dialogue.mp3"
-          lines={[
-            {
-              speaker: "A:",
-              text: ["Hi! What do you do every day?"],
-            },
-            {
-              speaker: "B:",
-              text: ["I work from home."],
-            },
-            {
-              speaker: "A:",
-              text: ["Do you start work early?"],
-            },
-            {
-              speaker: "B:",
-              text: ["Yes, I start at 8 a.m."],
-            },
-            {
-              speaker: "A:",
-              text: ["Do you use your phone a lot?"],
-            },
-            {
-              speaker: "B:",
-              text: ["Yes, I check my phone in the morning."],
-            },
-          ]}
-        />
-
-        <Ribbon label="Meaning" bgColor="var(--gray-4)" />
-
-        <Paragraph
-          blocks={[
-            {
-              text: ["When to use the Simple Present."], lineBreak: true
-            },
-            {
-              text: ["When to use the Simple Present."],
-            },
-          ]}
-        />
-
-        <Checking
-          type="CCQ"
-          ccq={[
-            {
-              block: [
-                {
-                  example: "I work from home?",
-                  questions: [
-                    {
-                      question: "Is this about my routine?",
-                    },
-                    {
-                      question: "Is this happening now??",
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              block: [
-                {
-                  example: "...",
-                  questions: [
-                    {
-                      question: "???",
-                    },
-                  ],
-                },
-              ],
-            },
-          ]}
-        />
-
-        <Ribbon label="Pronunciation + Form" bgColor="var(--gray-4)" />
-
-        <Ribbon label="Practice" />
-        <FillInTheBlanks
-          exercise={{
-            instructions: "1. Fill in the blanks with affirmative form.",
-            blocks: [
+        <section className="line-break">
+          <Ribbon label="Introduction" />
+          <Paragraph
+            blocks={[
               {
-                block: [{ text: "I" }, { blank: "am" }],
-                lineBreak: true,
-              },
-            ],
-          }}
-        />
-        <Radio
-          exercise={{
-            instruction: "Choose the correct form of the verb be.",
-            questions: [
-              {
-                question: "1. ...",
-                options: [
-                  { option: "...", isCorrect: true },
-                  { option: "...", isCorrect: false },
-                  { option: "...", isCorrect: false },
+                audioPlayer:
+                  "/assets/audio/general/listen-to-these-sentences.mp3",
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Listen to these sentences.",
+                        type: "bold",
+                      },
+                    ],
+                  },
                 ],
               },
-            ],
-          }}
-        />
+              {
+                imgPosition: "top",
+                imgs: [
+                  {
+                    img: "/assets/img/general/girl-wake-up.png",
+                    alt: "a girl waking up",
+                  },
+                  {
+                    img: "/assets/img/general/man-study.png",
+                    alt: "a man studying",
+                  },
+                  {
+                    img: "/assets/img/general/woman-work.png",
+                    alt: "a man working",
+                  },
+                ],
+              },
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/i-usually-wake-up-at-seven.mp3",
+                        part: "I usually wake up at 7 a.m.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/john-works-from-home.mp3",
+                        part: "John works from home.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/kate-studie-programming.mp3",
+                        part: "Kate studies finance.",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/Now-answer-these-questions.mp3",
+                        part: "Now answer these questions.",
+                        type: "bold",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: ["What time do you wake up on weekdays? "],
+                  },
+                  {
+                    text: [
+                      "Do you study? What do you study? Where do you study?",
+                    ],
+                  },
+                  {
+                    text: ["Do you work? What do you do? Where do you work?"],
+                  },
+                ],
+              },
+            ]}
+          />
+        </section>
 
-        <Ribbon label="Production" />
-        <InlineText
-          audio="/assets/audio/"
-          text={[
-            "Talk about your daily routine. ",
-            {
-              correct: true,
-              audio: "/assets/audio/",
-              text: "...",
-              type: "bold",
-            },
-          ]}
-        />
+        <section className="line-break">
+          <Ribbon label="Presentation" />
+          <Dialogue
+            audioPlayer="/assets/audio/general/daily-routine-dialogue.mp3"
+            lines={[
+              {
+                speaker: "A:",
+                text: ["Hi! What do you do every day?"],
+              },
+              {
+                speaker: "B:",
+                text: ["I work from home."],
+              },
+              {
+                speaker: "A:",
+                text: ["Do you start work early?"],
+              },
+              {
+                speaker: "B:",
+                text: ["Yes, I start at 8 a.m."],
+              },
+              {
+                speaker: "A:",
+                text: ["Do you use your phone a lot?"],
+              },
+              {
+                speaker: "B:",
+                text: ["Yes, I check my phone in the morning."],
+              },
+            ]}
+          />
+        </section>
+
+        <section className="line-break">
+          <Ribbon label="Meaning" bgColor="var(--gray-4)" />
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      "Look at the dialogue again. These sentences talk about things that happen every day.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+          <Checking
+            type="CCQ"
+            ccq={[
+              {
+                block: [
+                  {
+                    example: "I get at 7 a.m. every morning.",
+                    questions: [
+                      {
+                        question: "Is this something I do every day?",
+                      },
+                      {
+                        question: "Is it happnening now?",
+                      },
+                      {
+                        question: "Is it a routine/habit?",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                block: [
+                  {
+                    example: "...",
+                    questions: [
+                      {
+                        question: "???",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </section>
+
+        <section>
+          <Ribbon label="Pronunciation + Form" bgColor="var(--gray-4)" />
+        </section>
+
+        <section className="line-break">
+          <Ribbon label="Practice" />
+          <FillInTheBlanks
+            exercise={{
+              instructions: "1. Fill in the blanks with affirmative form.",
+              blocks: [
+                {
+                  block: [{ text: "I" }, { blank: "am" }],
+                  lineBreak: true,
+                },
+              ],
+            }}
+          />
+          <Radio
+            exercise={{
+              instruction: "Choose the correct form of the verb be.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
+        </section>
+
+        <section className="line-break">
+          <Ribbon label="Production" />
+          <InlineText
+            audio="/assets/audio/"
+            text={[
+              "Talk about your daily routine. ",
+              {
+                correct: true,
+                audio: "/assets/audio/",
+                text: "...",
+                type: "bold",
+              },
+            ]}
+          />
+        </section>
       </div>
     </>
   );

@@ -2,13 +2,20 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  gap: 0.9rem;
 }
 
 .withImage {
   display: flex;
+  gap: 1rem;
+}
+
+.imgsWrapper {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+  flex-shrink: 0;
 }
 
 .left {

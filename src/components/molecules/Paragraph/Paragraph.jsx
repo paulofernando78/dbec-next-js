@@ -10,18 +10,18 @@ export const Paragraph = ({ blocks = [] }) => {
   return (
     <div className={styles.wrapper}>
       {blocks.map((block, blockIndex) => (
-        <section key={blockIndex} className="line-break-item">
-          {block.imgs && (
-            <div
-              className={[
-                block.imgs && styles.withImage,
-                block.imgs && styles[block.imgPosition || "left"],
-              ]
-                .filter(Boolean)
-                .join(" ")}
-            >
-              {block.audioPlayer && <AudioPlayer src={block.audioPlayer} />}
-              <div className={styles.withImage}>
+        <div key={blockIndex} className="line-break">
+          {block.audioPlayer && <AudioPlayer src={block.audioPlayer} className="line-break-item"/>}
+          <div
+            className={[
+              block.imgs && styles.withImage,
+              block.imgs && styles[block.imgPosition || "left"],
+            ]
+              .filter(Boolean)
+              .join(" ")}
+          >
+            {block.imgs && (
+              <div className={styles.imgsWrapper}>
                 {block.imgs.map((img, index) => (
                   <Image
                     key={index}
@@ -29,23 +29,25 @@ export const Paragraph = ({ blocks = [] }) => {
                     alt={img.alt}
                     width={img.width || 250}
                     height={img.height || 250}
-                    className="imgs"
+                    className={`${styles.img} imgs`}
                   />
                 ))}
               </div>
+            )}
+            {block.lines && (
               <div className={styles.paragraphBlock}>
                 {(block.lines || []).map((line, lineIndex) => (
                   <p
                     key={lineIndex}
                     className={line.lineBreak ? styles.pLineBreak : undefined}
                   >
-                    {line.text && <InlineText text={line.text} />}
+                    <InlineText text={line.text} />
                   </p>
                 ))}
               </div>
-            </div>
-          )}
-        </section>
+            )}
+          </div>
+        </div>
       ))}
     </div>
   );
