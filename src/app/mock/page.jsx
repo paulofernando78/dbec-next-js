@@ -119,18 +119,6 @@ export default function Mock() {
                   width: 200,
                   height: 200,
                 },
-                {
-                  img: "/assets/img/general/cat-1.jpg",
-                  alt: "a cat photo",
-                  width: 200,
-                  height: 200,
-                },
-                {
-                  img: "/assets/img/general/cat-1.jpg",
-                  alt: "a cat photo",
-                  width: 200,
-                  height: 200,
-                },
               ],
               lines: [
                 {

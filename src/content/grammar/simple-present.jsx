@@ -18,11 +18,23 @@ export default function SimplePresent() {
         <Paragraph
           blocks={[
             {
-              img: "/assets/img/general/girl-wake-up.png",
-              imgPosition: "top",
-              alt: "Two people talking.",
-              width: 350,
-              height: 250,
+              imgs: [
+                {
+                  img: "/assets/img/general/girl-wake-up.png",
+                  alt: "a girl waking up",
+
+                },
+                {
+                  img: "/assets/img/general/man-study.png",
+                  alt: "a man studying",
+
+                },
+                {
+                  img: "/assets/img/general/woman-work.png",
+                  alt: "a man working",
+
+                },
+              ],
               lines: [
                 {
                   text: [
@@ -38,13 +50,13 @@ export default function SimplePresent() {
                   text: ["What time do you wake up on the week? "],
                 },
                 {
-                  text: ["Do you study? What do you study? What do you study?"],
+                  text: ["Do you study? What do you study? where do you study?"],
                 },
                 {
                   text: ["Do you work? What do you do? Where do you work?"],
                 },
               ],
-            },
+            }
           ]}
         />
 
