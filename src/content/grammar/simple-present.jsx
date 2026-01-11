@@ -39,17 +39,7 @@ export default function SimplePresent() {
                     img: "/assets/img/general/girl-wake-up.png",
                     alt: "a girl waking up",
                   },
-                  {
-                    img: "/assets/img/general/man-study.png",
-                    alt: "a man studying",
-                  },
-                  {
-                    img: "/assets/img/general/woman-work.png",
-                    alt: "a man working",
-                  },
                 ],
-              },
-              {
                 lines: [
                   {
                     text: [
@@ -60,14 +50,37 @@ export default function SimplePresent() {
                       },
                     ],
                   },
+                ],
+              },
+              {
+                imgPosition: "top",
+                imgs: [
+                  {
+                    img: "/assets/img/general/man-study.png",
+                    alt: "a man studying",
+                  },
+                ],
+                lines: [
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/john-works-from-home.mp3",
-                        part: "John works from home.",
+                        audio:
+                          "/assets/audio/general/i-usually-wake-up-at-seven.mp3",
+                        part: "I usually wake up at 7 a.m.",
                       },
                     ],
                   },
+                ],
+              },
+              {
+                imgPosition: "top",
+                imgs: [
+                  {
+                    img: "/assets/img/general/woman-work.png",
+                    alt: "a man working",
+                  },
+                ],
+                lines: [
                   {
                     text: [
                       {

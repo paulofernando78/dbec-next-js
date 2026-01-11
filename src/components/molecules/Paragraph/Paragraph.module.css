@@ -5,6 +5,11 @@
   gap: 0.9rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .withImage {
   display: flex;
   gap: 1rem;
