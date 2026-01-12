@@ -2,7 +2,6 @@ import styles from "./page.module.css";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Paragraph } from "@/components/molecules/Paragraph";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Audio } from "@/components/atoms/Audio";
 import Image from "next/image";
 
@@ -364,9 +363,9 @@ export default function Home() {
           <Paragraph
             blocks={[
               {
-                items: [
+                audioPlayer: "/assets/audio/home/welcome.mp3",
+                lines: [
                   {
-                    audioPlayer: "/assets/audio/home/welcome.mp3",
                     text: [
                       "Hey there! Welcome to ",
                       {
@@ -381,7 +380,7 @@ export default function Home() {
               },
               {
                 audioPlayer: "/assets/audio/home/below.mp3",
-                items: [
+                lines: [
                   {
                     text: [
                       "Below, you can listen to some adjectives that describe how you’re feeling.",
