@@ -1,0 +1,1 @@
+export { VerbConjugation } from "./VerbConjugation"

@@ -118,7 +118,7 @@ main {
 .dictionary-area {
   position: sticky;
   top: 0px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .h3 {

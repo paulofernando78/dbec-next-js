@@ -6,6 +6,7 @@ import { InlineText } from "@/components/molecules/InlineText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
 import { Column } from "@/components/molecules/Column";
+import { VerbConjugation } from "@/components/molecules/VerbConjugation";
 import { List } from "@/components/molecules/List";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
@@ -227,7 +228,8 @@ export default function VerbBe() {
             <InlineText
               text={[
                 {
-                  audio: "/assets/audio/general/state-condition-description.mp3",
+                  audio:
+                    "/assets/audio/general/state-condition-description.mp3",
                   part: "State / Condition / Description",
                   type: "bold",
                 },
@@ -955,6 +957,10 @@ export default function VerbBe() {
               },
             ]}
           />
+        </Section>
+
+        <Section label="Meaning" heading={4}>
+          <VerbConjugation />
         </Section>
 
         <Section label="Practice" heading={3}>
