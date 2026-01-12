@@ -1,5 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { DictionarySearch } from "@/components/molecules/DictionarySearch";
+import { Dictionary } from "@/components/molecules/Dictionary";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { Ribbon } from "@/components/atoms/Ribbon";
@@ -15,7 +15,7 @@ export default function SELAAlessonThree() {
       />
       <div className="line-break">
         <div className="dictionary-area">
-          <DictionarySearch />
+          <Dictionary />
         </div>
         <Dialogue
           title="Lesson 3 • Ted's Day at School"

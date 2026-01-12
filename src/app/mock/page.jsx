@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Dictionary } from "@/components/molecules/Dictionary";
 import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
@@ -22,25 +23,25 @@ export default function Mock() {
       />
       <div className="line-break">
 
-        <Section label="introduction" heading={3}>
-      
-        </Section>
+        <div className="dictionary-area">
+          <Dictionary />
+        </div>
 
-        <Section label="introduction" heading={3}>
-            {/* <Ribbon label="Links" /> */}
-            <Links
-              groups={[
-                {
-                  items: [
-                    {
-                      href: "/",
-                      label: "... ",
-                      phonetics: "...",
-                    },
-                  ],
-                },
-              ]}
-            />
+        <Section label="Links" heading={3}>
+          {/* <Ribbon label="Links" /> */}
+          <Links
+            groups={[
+              {
+                items: [
+                  {
+                    href: "/",
+                    label: "... ",
+                    phonetics: "...",
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <AudioPlayer src="/assets/audio/general/about-to.mp3" />

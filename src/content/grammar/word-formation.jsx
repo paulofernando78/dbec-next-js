@@ -3,7 +3,7 @@
 import styles from "./word-formation.module.css";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { DictionarySearch } from "../../components/molecules/DictionarySearch/DictionarySearch";
+import { Dictionary } from "../../components/molecules/Dictionary";
 import { Bold } from "@/components/atoms/Bold";
 import { RegisterTag } from "@/components/atoms/RegisterTag";
 import { DegreeTag } from "@/components/atoms/DegreeTag";
@@ -2939,7 +2939,7 @@ export default function WordFormation() {
 
       startX = e.pageX - slider.offsetLeft;
       startY = e.pageY - slider.offsetTop;
-      
+
       scrollLeft = slider.scrollLeft;
       scrollTop = slider.scrollTop;
     };
@@ -2955,10 +2955,10 @@ export default function WordFormation() {
 
       const x = e.pageX - slider.offsetLeft;
       const y = e.pageY - slider.offsetTop;
-      
+
       const walkX = x - startX;
       const walkY = y - startY;
-      
+
       slider.scrollLeft = scrollLeft - walkX;
       slider.scrollTop = scrollTop - walkY;
     };
@@ -2981,7 +2981,9 @@ export default function WordFormation() {
     <>
       <Whiteboard title="Grammar" subtitle="Word Formation" />
       <div className="line-break">
-        {/* <DictionarySearch /> */}
+        <div className="dictionary-area">
+          <Dictionary />
+        </div>
         <span>
           <Bold>Use this list as a reference.</Bold>
         </span>

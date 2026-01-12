@@ -1,3 +1,14 @@
+.title {
+  font-weight: bold;
+}
+
+.key {
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: 1.5px;
+}
+
 .wrapper {
   display: flex;
   justify-content: space-between;
@@ -23,13 +34,14 @@
   overflow-y: scroll;
 }
 
-.wordCard {
+.wordCard,
+.emptyState {
   background-color: var(--slate-2);
   margin-bottom: var(--line-break);
   border: var(--border);
   border-radius: var(--border-radius);
-  padding-inline: 5px;
-  color: black
+  padding: 5px 5px 3px 8px;
+  color: black;
 }
 
 .word,
@@ -63,12 +75,6 @@
 .enExample {
   margin-inline: var(--margin-inline);
 }
-
-/* .synomyms,
-.antonyms,
-.seeAlso {
-  display: block
-} */
 
 .seeAlso {
   font-family: "Times New Roman", Times, serif;
