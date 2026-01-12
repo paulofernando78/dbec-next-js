@@ -48,15 +48,31 @@ export const Dictionary = () => {
   const searchedWord =
     query.trim() === ""
       ? []
-      : definitions.filter((item) => {
-          if (!item.word) return false;
+      : definitions
+          .filter((item) => {
+            if (!item.word) return false;
 
-          const queryTokens = normalize(query).split(/\s+/);
-          const wordTokens = normalize(item.word).split(/\s+/);
+            const q = normalize(query);
+            const queryTokens = q.split(/\s+/);
+            const wordTokens = normalize(item.word).split(/\s+/);
 
-          // every token typed by the user must exist as a whole token
-          return queryTokens.every((qt) => wordTokens.includes(qt));
-        });
+            return queryTokens.every((qt) => wordTokens.includes(qt));
+          })
+          .sort((a, b) => {
+            const q = normalize(query);
+            const wa = normalize(a.word);
+            const wb = normalize(b.word);
+
+            // exact match first
+            if (wa === q && wb !== q) return -1;
+            if (wb === q && wa !== q) return 1;
+
+            // startsWith next
+            if (wa.startsWith(q) && !wb.startsWith(q)) return -1;
+            if (wb.startsWith(q) && !wa.startsWith(q)) return 1;
+
+            return 0;
+          });
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {

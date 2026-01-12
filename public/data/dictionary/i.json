@@ -2,6 +2,36 @@
   {
     "definitions": [
       {
+        "word": "it",
+        "phonetics": "/ɪt/",
+        "partOfSpeech": "pronoun",
+        "enDefinition": "used to refer to a thing, animal, situation, or idea already mentioned or easily identified",
+        "ptDefinition": "usado para se referir a uma coisa, animal, situação ou ideia já mencionada ou facilmente identificada",
+        "examples": [
+          {
+            "enExample": "I bought a new phone. It is very fast.",
+            "ptExample": "Eu comprei um celular novo. Ele é muito rápido."
+          },
+          {
+            "enExample": "Where is my bag? It is on the table.",
+            "ptExample": "Onde está minha bolsa? Ela está na mesa."
+          }
+        ],
+        "synonyms": "",
+        "antonyms": "",
+        "seeAlso": "this, that, he, she, they",
+        "notes": [
+          {
+            "enNote": "It is often used for objects, animals, and situations, and also as a subject in expressions about time, weather, and distance.",
+            "ptNote": "It é frequentemente usado para objetos, animais e situações, e também como sujeito em expressões sobre tempo, clima e distância."
+          },
+          {
+            "enNote": "In sentences like 'It is raining', 'it' does not refer to a specific thing.",
+            "ptNote": "Em frases como 'It is raining', o 'it' não se refere a algo específico."
+          }
+        ]
+      },
+      {
         "word": "India",
         "phonetics": "/ˈɪn.di.ə/",
         "partOfSpeech": "proper noun",
@@ -9,20 +39,20 @@
         "ptDefinition": "um país no sul da Ásia, conhecido por sua cultura, línguas e história diversas; o sétimo maior país em área e a democracia mais populosa do mundo",
         "examples": [
           {
-        "enExample": "India is famous for the Taj Mahal and its rich traditions.",
-        "ptExample": "A Índia é famosa pelo Taj Mahal e suas ricas tradições."
+            "enExample": "India is famous for the Taj Mahal and its rich traditions.",
+            "ptExample": "A Índia é famosa pelo Taj Mahal e suas ricas tradições."
           },
           {
-        "enExample": "She traveled to India to learn about its cuisine.",
-        "ptExample": "Ela viajou para a Índia para conhecer sua culinária."
+            "enExample": "She traveled to India to learn about its cuisine.",
+            "ptExample": "Ela viajou para a Índia para conhecer sua culinária."
           }
         ],
         "synonyms": ["Republic of India", "Bharat"],
         "seeAlso": "Indian, South Asia, New Delhi",
         "notes": [
           {
-        "enNote": "India is the birthplace of major religions such as Hinduism, Buddhism, Jainism, and Sikhism.",
-        "ptNote": "A Índia é o berço de grandes religiões como hinduísmo, budismo, jainismo e sikhismo."
+            "enNote": "India is the birthplace of major religions such as Hinduism, Buddhism, Jainism, and Sikhism.",
+            "ptNote": "A Índia é o berço de grandes religiões como hinduísmo, budismo, jainismo e sikhismo."
           }
         ]
       },
