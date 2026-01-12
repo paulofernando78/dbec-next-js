@@ -21,8 +21,12 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
-        <Section label="introduction" heading={4}>
-          <section className="line-break">
+
+        <Section label="introduction" heading={3}>
+      
+        </Section>
+
+        <Section label="introduction" heading={3}>
             {/* <Ribbon label="Links" /> */}
             <Links
               groups={[
@@ -37,14 +41,11 @@ export default function Mock() {
                 },
               ]}
             />
-          </section>
         </Section>
 
-        {/* <Ribbon label="Audio Player" /> */}
         <AudioPlayer src="/assets/audio/general/about-to.mp3" />
 
-        <section className="line-break">
-          {/* <Ribbon label="Inline Text" /> */}
+        <Section label="InlineText" heading={3}>
           <InlineText
             text={[
               "normal ",
@@ -96,10 +97,9 @@ export default function Mock() {
               " end ",
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          {/* <Ribbon label="List" /> */}
+        <Section label="List" heading={3}>
           <List
             bullet={false}
             items={[
@@ -181,10 +181,9 @@ export default function Mock() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          {/* <Ribbon label="CardText" /> */}
+        <Section label="CardText" heading={3}>
           <CardText
             blocks={[
               {
@@ -276,10 +275,9 @@ export default function Mock() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          {/* <Ribbon label="Paragraph" /> */}
+        <Section label="Paragraph" heading={3}>
           <Paragraph
             blocks={[
               // img top
@@ -600,6 +598,7 @@ export default function Mock() {
                   },
                 ],
               },
+              // img left
               {
                 audioPlayer: "/assets/audio/general/about-to.mp3",
                 imgPosition: "left",
@@ -705,7 +704,7 @@ export default function Mock() {
                   },
                 ],
               },
-              // img left
+              // img top array
               {
                 audioPlayer: "/assets/audio/general/about-to.mp3",
                 imgPosition: "top",
@@ -825,10 +824,9 @@ export default function Mock() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          {/* <Ribbon label="Note" /> */}
+        <Section label="Note" heading={3}>
           <Note
             items={[
               {
@@ -867,10 +865,9 @@ export default function Mock() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          {/* <Ribbon label="DIALOGUE" /> */}
+        <Section label="Dialogue" heading={3}>
           <Dialogue
             imgs={[
               {
@@ -930,10 +927,9 @@ export default function Mock() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          {/* <Ribbon label="Word Sound" /> */}
+        <Section label="Comparison" heading={3}>
           <Comparison
             groups={[
               {
@@ -954,10 +950,9 @@ export default function Mock() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          {/* <Ribbon label="Exercises" /> */}
+        <Section label="Radio" heading={3}>
           <Radio
             exercise={{
               instruction: "Choose the best response.",
@@ -981,9 +976,10 @@ export default function Mock() {
               ],
             }}
           />
-        </section>
+        </Section>
+        <section className="line-break"></section>
 
-        <section className="line-break">
+        <Section label="FillInTheBlanks" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions: "1. Fill in the blanks with the correct answer.",
@@ -1013,7 +1009,7 @@ export default function Mock() {
               ],
             }}
           />
-        </section>
+        </Section>
       </div>
     </>
   );

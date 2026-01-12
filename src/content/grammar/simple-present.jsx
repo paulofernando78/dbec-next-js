@@ -1,7 +1,8 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Ribbon } from "@/components/atoms/Ribbon";
-import { Paragraph } from "@/components/molecules/Paragraph";
+import { Section } from "@/components/molecules/Section";
 import { InlineText } from "@/components/molecules/InlineText";
+import { Paragraph } from "@/components/molecules/Paragraph";
+import { CardText } from "@/components/molecules/CardText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
 import { Column } from "@/components/molecules/Column";
@@ -14,8 +15,7 @@ export default function SimplePresent() {
     <>
       <Whiteboard title="Grammar" subtitle="Simple Present" />
       <div className="line-break">
-        <section className="line-break">
-          <Ribbon label="Introduction" />
+        <Section label="Introduction" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -32,8 +32,11 @@ export default function SimplePresent() {
                   },
                 ],
               },
+            ]}
+          />
+          <CardText
+            blocks={[
               {
-                imgPosition: "top",
                 imgs: [
                   {
                     img: "/assets/img/general/girl-wake-up.png",
@@ -45,15 +48,14 @@ export default function SimplePresent() {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/i-usually-wake-up-at-seven.mp3",
-                        part: "I usually wake up at 7 a.m.",
+                          "/assets/audio/general/i-wake-up-at-seven-am.mp3",
                       },
+                      "I usually wake up at 7 a.m. ",
                     ],
                   },
                 ],
               },
               {
-                imgPosition: "top",
                 imgs: [
                   {
                     img: "/assets/img/general/man-study.png",
@@ -65,19 +67,18 @@ export default function SimplePresent() {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/i-usually-wake-up-at-seven.mp3",
-                        part: "I usually wake up at 7 a.m.",
+                          "/assets/audio/general/john-studies-in-the-evening.mp3",
+                        part: "John studies in the evening.",
                       },
                     ],
                   },
                 ],
               },
               {
-                imgPosition: "top",
                 imgs: [
                   {
-                    img: "/assets/img/general/woman-work.png",
-                    alt: "a man working",
+                    img: "/assets/img/general/woman-work-finance.png",
+                    alt: "a woman working in finance",
                   },
                 ],
                 lines: [
@@ -85,20 +86,24 @@ export default function SimplePresent() {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/kate-studie-programming.mp3",
-                        part: "Kate studies finance.",
+                          "/assets/audio/general/kate-works-from-home-she-works-in-finance.mp3",
+                        part: "Kate works from home. She works in finance.",
                       },
                     ],
                   },
                 ],
               },
+            ]}
+          />
+          <Paragraph
+            blocks={[
               {
+                audioPlayer:
+                  "/assets/audio/general/now-answer-these-questions.mp3",
                 lines: [
                   {
                     text: [
                       {
-                        audio:
-                          "/assets/audio/general/Now-answer-these-questions.mp3",
                         part: "Now answer these questions.",
                         type: "bold",
                       },
@@ -120,10 +125,9 @@ export default function SimplePresent() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          <Ribbon label="Presentation" />
+        <Section label="Presentation" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/general/daily-routine-dialogue.mp3"
             lines={[
@@ -153,10 +157,9 @@ export default function SimplePresent() {
               },
             ]}
           />
-        </section>
+        </Section>
 
-        <section className="line-break">
-          <Ribbon label="Meaning" bgColor="var(--gray-4)" />
+        <Section label="Meaning" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -170,92 +173,87 @@ export default function SimplePresent() {
               },
             ]}
           />
-          <Checking
-            type="CCQ"
-            ccq={[
-              {
-                block: [
-                  {
-                    example: "I get at 7 a.m. every morning.",
-                    questions: [
-                      {
-                        question: "Is this something I do every day?",
-                      },
-                      {
-                        question: "Is it happnening now?",
-                      },
-                      {
-                        question: "Is it a routine/habit?",
-                      },
-                    ],
-                  },
-                ],
-              },
-              {
-                block: [
-                  {
-                    example: "...",
-                    questions: [
-                      {
-                        question: "???",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </section>
+        </Section>
 
-        <section>
-          <Ribbon label="Pronunciation + Form" bgColor="var(--gray-4)" />
-        </section>
-
-        <section className="line-break">
-          <Ribbon label="Practice" />
-          <FillInTheBlanks
-            exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
-              blocks: [
+        <Checking
+          type="CCQ"
+          ccq={[
+            {
+              block: [
                 {
-                  block: [{ text: "I" }, { blank: "am" }],
-                  lineBreak: true,
-                },
-              ],
-            }}
-          />
-          <Radio
-            exercise={{
-              instruction: "Choose the correct form of the verb be.",
-              questions: [
-                {
-                  question: "1. ...",
-                  options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                  example: "I get at 7 a.m. every morning.",
+                  questions: [
+                    {
+                      question: "Is this something I do every day?",
+                    },
+                    {
+                      question: "Is it happnening now?",
+                    },
+                    {
+                      question: "Is it a routine/habit?",
+                    },
                   ],
                 },
               ],
-            }}
-          />
-        </section>
+            },
+            {
+              block: [
+                {
+                  example: "...",
+                  questions: [
+                    {
+                      question: "???",
+                    },
+                  ],
+                },
+              ],
+            },
+          ]}
+        />
 
-        <section className="line-break">
-          <Ribbon label="Production" />
-          <InlineText
-            audio="/assets/audio/"
-            text={[
-              "Talk about your daily routine. ",
+        <Section label="Pronunciation + Form" heading={3}></Section>
+
+        <Section label="Practice" heading={3}></Section>
+        <FillInTheBlanks
+          exercise={{
+            instructions: "1. Fill in the blanks with affirmative form.",
+            blocks: [
               {
-                correct: true,
-                audio: "/assets/audio/",
-                text: "...",
-                type: "bold",
+                block: [{ text: "I" }, { blank: "am" }],
+                lineBreak: true,
               },
-            ]}
-          />
-        </section>
+            ],
+          }}
+        />
+        <Radio
+          exercise={{
+            instruction: "Choose the correct form of the verb be.",
+            questions: [
+              {
+                question: "1. ...",
+                options: [
+                  { option: "...", isCorrect: true },
+                  { option: "...", isCorrect: false },
+                  { option: "...", isCorrect: false },
+                ],
+              },
+            ],
+          }}
+        />
+
+        <Section label="Production" heading={3}></Section>
+        <InlineText
+          audio="/assets/audio/"
+          text={[
+            "Talk about your daily routine. ",
+            {
+              correct: true,
+              audio: "/assets/audio/",
+              text: "...",
+              type: "bold",
+            },
+          ]}
+        />
       </div>
     </>
   );

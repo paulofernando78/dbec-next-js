@@ -5,7 +5,7 @@ export const Section = ({ label, heading = 2, children }) => {
 
   return (
     <section className="line-break">
-      <Ribbon label={label}>
+      <Ribbon>
         <HeadingTag>{label}</HeadingTag>
       </Ribbon>
       {children}

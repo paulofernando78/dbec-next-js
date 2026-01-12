@@ -9,31 +9,29 @@ export const CardText = ({ blocks = [] }) => {
   return (
     <div className={styles.wrapper}>
       {blocks.map((block, blockIndex) => (
-        <div key={blockIndex}>
-          <div className={`${styles.card} line-break`}>
-            <div className={styles.imgsWrapper}>
-              {block.imgs.map((img, index) => (
-                <Image
-                  key={index}
-                  src={img.img}
-                  alt={img.alt}
-                  width={img.width || 250}
-                  height={img.height || 250}
-                  className={`${styles.img} imgs`}
-                />
+        <div key={blockIndex} className={`${styles.card} line-break`}>
+          <div>
+            {block.imgs.map((img, index) => (
+              <Image
+                key={index}
+                src={img.img}
+                alt={img.alt}
+                width={img.width || 250}
+                height={img.height || 250}
+                className="imgs"
+              />
+            ))}
+          </div>
+
+          {block.lines && (
+            <div>
+              {(block.lines || []).map((line, lineIndex) => (
+                <p key={lineIndex}>
+                  <InlineText text={line.text} />
+                </p>
               ))}
             </div>
-
-            {block.lines && (
-              <div>
-                {(block.lines || []).map((line, lineIndex) => (
-                  <p key={lineIndex}>
-                    <InlineText text={line.text} />
-                  </p>
-                ))}
-              </div>
-            )}
-          </div>
+          )}
         </div>
       ))}
     </div>
