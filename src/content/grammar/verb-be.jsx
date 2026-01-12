@@ -1,12 +1,10 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Section } from "@/components/molecules/Section";
-import { Ribbon } from "@/components/atoms/Ribbon";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { InlineText } from "@/components/molecules/InlineText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
 import { Column } from "@/components/molecules/Column";
-import { VerbConjugation } from "@/components/molecules/VerbConjugation";
 import { List } from "@/components/molecules/List";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
@@ -55,7 +53,7 @@ export default function VerbBe() {
 
         <Section label="Presentation" heading={3}>
           <Dialogue
-            audioPlayer="/assets/audio/general/i-am.mp3"
+            audioPlayer="/assets/audio/general/.mp3"
             lines={[
               {
                 speaker: "Anna:",
@@ -961,10 +959,6 @@ export default function VerbBe() {
               },
             ]}
           />
-        </Section>
-
-        <Section label="Meaning" heading={4}>
-          <VerbConjugation />
         </Section>
 
         <Section label="Practice" heading={3}>

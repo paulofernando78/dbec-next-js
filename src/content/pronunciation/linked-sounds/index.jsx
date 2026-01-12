@@ -9,9 +9,10 @@ export default function LikedSounds() {
         <Paragraph
           blocks={[
             {
-              items: [
+              audioPlayer:
+                "/assets/audio/pronunciation/linked-sounds/check-out.mp3",
+              lines: [
                 {
-                  audio: "/assets/audio/pronunciation/linked-sounds/check-out.mp3",
                   text: [
                     {
                       part: "Check out a couple of linked sounds.",
@@ -27,66 +28,112 @@ export default function LikedSounds() {
         <Paragraph
           blocks={[
             {
-              items: [
+              lines: [
                 {
-                  audio: "/assets/audio/pronunciation/phonetics/consonants/w.mp3",
-                  phonetics: "/w/",
+                  text: [
+                    {
+                      audio:
+                        "/assets/audio/pronunciation/phonetics/consonants/w.mp3",
+                    },
+                    {
+                      part: "/w/ ",
+                      type: "phonetics",
+                    },
+                  ],
                 },
                 {
-                  audio: "/assets/audio/general/go-on.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/go-on.mp3",
+                    },
                     "g",
                     {
                       part: "o o",
                       type: "underline",
                     },
                     "n. ",
+                    {
+                      part: "Vá em frente.",
+                      type: "portuguese",
+                    },
                   ],
-                  phonetics: "/w/",
-                  portuguese: "Vá em frente.",
                 },
                 {
-                  lineBreak: true,
-                  audio: "/assets/audio/general/do-it-again.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/do-it-again.mp3",
+                    },
                     "D",
                     {
                       part: "o i",
                       type: "underline",
                     },
                     "t again. ",
+                    {
+                      part: "/w/",
+                      type: "phonetics",
+                    },
+                    {
+                      part: "Faça novamente.",
+                      type: "portuguese",
+                    },
                   ],
-                  phonetics: "/w/",
-                  portuguese: "Faça novamente.",
+                  lineBreak: true
                 },
                 {
-                  audio: "/assets/audio/pronunciation/phonetics/consonants/j.mp3",
-                  phonetics: "/j/",
-                },
-                {
-                  audio: "/assets/audio/general/i-agree-with-you-on-this-issue.mp3",
                   text: [
+                    {
+                      audio:
+                        "/assets/audio/pronunciation/phonetics/consonants/j.mp3",
+                    },
+                    {
+                      part: "/j/",
+                      type: "phonetics",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      audio:
+                        "/assets/audio/general/i-agree-with-you-on-this-issue.mp3",
+                    },
                     {
                       part: "I a",
                       type: "underline",
                     },
                     "gree with you on this issue. ",
+                    {
+                      part: "/j/",
+                      type: "phonetics",
+                    },
+                    {
+                      part: "Eu concord",
+                      type: "portuguese",
+                    },
                   ],
-                  phonetics: "/j/",
-                  portuguese: "Eu concord",
                 },
                 {
-                  audio: "/assets/audio/general/she-asked-me-a-question.mp3",
                   text: [
+                    {
+                      audio:
+                        "/assets/audio/general/she-asked-me-a-question.mp3",
+                    },
                     "Sh",
                     {
                       part: "e a",
                       type: "underline",
                     },
                     "sked me a question. ",
+                    {
+                      part: "/j/",
+                      type: "phonetics",
+                    },
+                    {
+                      part: "Ela me fez uma pergunta.",
+                      type: "portuguese",
+                    },
                   ],
-                  phonetics: "/j/",
-                  portuguese: "Ela me fez uma pergunta.",
                 },
               ],
             },
@@ -96,10 +143,12 @@ export default function LikedSounds() {
         <Paragraph
           blocks={[
             {
-              items: [
+              lines: [
                 {
-                  audio: "/assets/audio/general/he-works-in-an-office.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/he-works-in-an-office.mp3",
+                    },
                     "He work",
                     {
                       part: "s i",
@@ -110,12 +159,17 @@ export default function LikedSounds() {
                       type: "underline",
                     },
                     "ffice.",
+                    {
+                      part: "Ele trabalha no escritório.",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Ele trabalha no escritório.",
                 },
                 {
-                  audio: "/assets/audio/general/take-a-look-at-it.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/take-a-look-at-it.mp3",
+                    },
                     "Ta",
                     {
                       part: "ke a",
@@ -127,36 +181,51 @@ export default function LikedSounds() {
                       type: "underline",
                     },
                     "t it.",
+                    {
+                      part: "Dá uma olha.",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Dá uma olha.",
                 },
                 {
-                  audio: "/assets/audio/general/turn-off-the-lights.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/turn-off-the-lights.mp3",
+                    },
                     "tur",
                     {
                       part: "n o",
                       type: "underline",
                     },
                     "ff the lights.",
+                    {
+                      part: "Apague as luzes.",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Apague as luzes.",
                 },
                 {
-                  audio: "/assets/audio/general/i-like-it-a-lot.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/i-like-it-a-lot.mp3",
+                    },
                     "I lik",
                     {
                       part: "e i",
                       type: "underline",
                     },
                     "t a lot.",
+                    {
+                      part: "Gosto bastante.",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Gosto bastante.",
                 },
                 {
-                  audio: "/assets/audio/general/im-out-of-time.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/im-out-of-time.mp3",
+                    },
                     "I’",
                     {
                       part: "m o",
@@ -169,19 +238,23 @@ export default function LikedSounds() {
                     },
                     "f time.",
                   ],
-                  portuguese: "",
                 },
                 {
-                  audio: "/assets/audio/general/pick-it-up.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/pick-it-up.mp3",
+                    },
                     "Pic",
                     {
                       part: "k i",
                       type: "underline",
                     },
                     "t up.",
+                    {
+                      part: "Pegue.",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Pegue.",
                 },
               ],
             },
@@ -193,34 +266,52 @@ export default function LikedSounds() {
         <Paragraph
           blocks={[
             {
-              items: [
+              lines: [
                 {
-                  audio: "/assets/audio/pronunciation/phonetics/consonants/dʒ.mp3",
-                  phonetics: "/dʒ/",
+                  text: [
+                    {
+                      audio:
+                        "/assets/audio/pronunciation/phonetics/consonants/dʒ.mp3",
+                    },
+                    {
+                      part: "/dʒ/",
+                      type: "phonetics",
+                    },
+                  ],
                 },
                 {
-                  audio: "/assets/audio/general/did-you-like-it.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/did-you-like-it.mp3",
+                    },
                     "Di",
                     {
                       part: "d y",
                       type: "underline",
                     },
                     "ou like it? ",
+                    {
+                      part: "Você gostou?",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Você gostou?",
                 },
                 {
-                  audio: "/assets/audio/general/would-you-like-it.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/would-you-like-it.mp3",
+                    },
                     "Woul",
                     {
                       part: "d y",
                       type: "underline",
                     },
                     "ou like it? ",
+                    {
+                      part: "Você gostaria?",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Você gostaria?",
                 },
               ],
             },
@@ -232,34 +323,52 @@ export default function LikedSounds() {
         <Paragraph
           blocks={[
             {
-              items: [
+              lines: [
                 {
-                  audio: "/assets/audio/pronunciation/phonetics/consonants/tʃ.mp3",
-                  phonetics: "/tʃ/",
+                  text: [
+                    {
+                      audio:
+                        "/assets/audio/pronunciation/phonetics/consonants/tʃ.mp3",
+                    },
+                    {
+                      part: "/tʃ/",
+                      type: "phonetics",
+                    },
+                  ],
                 },
                 {
-                  audio: "/assets/audio/general/dont-you-like-it.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/dont-you-like-it.mp3",
+                    },
                     "Don’",
                     {
                       part: "t y",
                       type: "underline",
                     },
                     "ou like it?",
+                    {
+                      part: "Você não gosta?",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Você não gosta?",
                 },
                 {
-                  audio: "/assets/audio/general/didnt-you-like-it.mp3",
                   text: [
+                    {
+                      audio: "/assets/audio/general/didnt-you-like-it.mp3",
+                    },
                     "Didn’",
                     {
                       part: "t y",
                       type: "underline",
                     },
                     "ou like it?",
+                    {
+                      part: "Você não gostou?",
+                      type: "portuguese",
+                    },
                   ],
-                  portuguese: "Você não gostou?",
                 },
               ],
             },

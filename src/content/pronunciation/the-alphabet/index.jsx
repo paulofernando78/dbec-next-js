@@ -12,7 +12,7 @@ export default function TheAlphabetPage() {
         <InlineText
           text={[
             {
-              audio: "/assets/audio/alphabet/26-letters.mp3",
+              audio: "/assets/audio/pronunciation/the-alphabet/26-letters.mp3",
               part: "There are 26 letters in the english alphabet.",
               type: "bold",
             },
@@ -35,7 +35,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/first-name.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/first-name.mp3",
                   part: "How do you spell your first name?",
                 },
               ],
@@ -43,7 +43,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/last-name.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/last-name.mp3",
                   part: "How do you spell your last name?",
                 },
               ],
@@ -51,7 +51,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/email-address.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/email-address.mp3",
                   part: "How do you spell your email address?",
                 },
               ],
@@ -63,7 +63,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/letter-c.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/letter-c.mp3",
                   part: "“C” has the same sound as the verb “see” and the noun “sea.”",
                 },
               ],
@@ -71,7 +71,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/letter-d.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/letter-d.mp3",
                   part: "“D” is pronounced differently from letter “G.”",
                 },
               ],
@@ -79,7 +79,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/number-eight.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/number-eight.mp3",
                   part: "Number “eight” is pronounced differently from letter “H.”",
                 },
               ],
@@ -87,7 +87,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/letter-t.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/letter-t.mp3",
                   part: "“T” has the same sound as in “tea.”",
                 },
               ],
@@ -95,7 +95,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/letter-u.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/letter-u.mp3",
                   part: "“U” has the same sound as in “you.”",
                 },
               ],
@@ -103,7 +103,7 @@ export default function TheAlphabetPage() {
             {
               text: [
                 {
-                  audio: "/assets/audio/alphabet/letter-z.mp3",
+                  audio: "/assets/audio/pronunciation/the-alphabet/letter-z.mp3",
                   part: "“Z” in British is pronounced “zed.”",
                 },
               ],

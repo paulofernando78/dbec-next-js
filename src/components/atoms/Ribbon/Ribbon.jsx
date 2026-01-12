@@ -1,9 +1,10 @@
 import style from "./Ribbon.module.css";
 
 export const Ribbon = ({
-  className,
+  label,
   bgColor,
   textColor = "#ffffff",
+  className,
   children,
 }) => {
   return (
@@ -11,7 +12,7 @@ export const Ribbon = ({
       className={`${style.ribbon} ${className}`}
       style={{ backgroundColor: bgColor, color: textColor }}
     >
-      {children}
+      {children ?? label}
     </div>
   );
 };
