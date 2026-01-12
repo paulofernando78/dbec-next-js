@@ -1,10 +1,10 @@
 import { Montserrat, Oswald } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/organisms/Header";
+import Header from "@/components/organisms/Header/Header";
 import NavBar from "@/components/organisms/NavBar/NavBar";
 import { HeaderProvider } from "../context/headerContext";
 import { ThemeProvider } from "@/context/themeContext";
-import Footer from "@/components/organisms/Footer";
+import Footer from "@/components/organisms/Footer/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
