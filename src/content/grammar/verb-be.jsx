@@ -20,12 +20,16 @@ export default function VerbBe() {
           <Paragraph
             blocks={[
               {
-                img: "/assets/img/general/two-people-talking-school.png",
                 imgPosition: "left",
-                alt: "Two people talking.",
-                width: 350,
-                height: 250,
-                items: [
+                imgs: [
+                  {
+                    img: "/assets/img/general/two-people-talking-school.png",
+                    alt: "Two people talking.",
+                    width: 350,
+                    height: 250,
+                  },
+                ],
+                lines: [
                   {
                     text: [
                       {
