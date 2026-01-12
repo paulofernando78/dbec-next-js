@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./NavBar.module.css";
+import styles from "./Navbar.module.css";
 
 import { HeaderContext } from "@/context/headerContext";
 import Link from "next/link";
