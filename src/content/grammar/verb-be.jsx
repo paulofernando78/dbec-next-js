@@ -828,7 +828,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/arent-i.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-i.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -843,7 +843,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/arent-you.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-you.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -861,7 +861,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/isnt-he.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-he.mp3",
                             part: "isn’t",
                             type: "bold",
                           },
@@ -876,7 +876,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/isnt-she.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-she.mp3",
                             part: "isn’t",
                             type: "bold",
                           },
@@ -891,7 +891,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/isnt-it.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-it.mp3",
                             part: "isn’t",
                             type: "bold",
                           },
@@ -906,7 +906,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/arent-we.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-we.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -924,7 +924,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/arent-you.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-you.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -942,7 +942,7 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/general/arent-they.mp3",
+                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-they.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
