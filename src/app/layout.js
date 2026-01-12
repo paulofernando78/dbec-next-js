@@ -1,7 +1,7 @@
 import { Montserrat, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/organisms/Header";
-import NavBar from "@/components/organisms/NavBar";
+import NavBar from "@/components/organisms/NavBar/NavBar";
 import { HeaderProvider } from "../context/headerContext";
 import { ThemeProvider } from "@/context/themeContext";
 import Footer from "@/components/organisms/Footer";
