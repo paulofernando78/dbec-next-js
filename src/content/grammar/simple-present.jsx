@@ -133,27 +133,51 @@ export default function SimplePresent() {
             lines={[
               {
                 speaker: "A:",
-                text: ["Hi! What do you do every day?"],
+                text: ["Hey there! How’s it going?"],
               },
               {
                 speaker: "B:",
-                text: ["I work from home."],
+                text: ["Pretty good. How about you?"],
               },
               {
                 speaker: "A:",
-                text: ["Do you start work early?"],
+                text: ["Can't complain. So, what do you do?"],
               },
               {
                 speaker: "B:",
-                text: ["Yes, I start at 8 a.m."],
+                text: ["I work at a tech company."],
               },
               {
                 speaker: "A:",
-                text: ["Do you use your phone a lot?"],
+                text: ["Oh, nice. What do you do there?"],
               },
               {
                 speaker: "B:",
-                text: ["Yes, I check my phone in the morning."],
+                text: ["I design software."],
+              },
+              {
+                speaker: "A:",
+                text: ["Do you like your job?"],
+              },
+              {
+                speaker: "B:",
+                text: ["Yeah, I enjoy it."],
+              },
+              {
+                speaker: "A:",
+                text: ["Do you have to wake up early?"],
+              },
+              {
+                speaker: "B:",
+                text: ["Kinda. I usually wake up at 7:30."],
+              },
+              {
+                speaker: "A:",
+                text: ["Oh right. I gotta go. Later."],
+              },
+              {
+                speaker: "B:",
+                text: ["Seeya."],
               },
             ]}
           />
@@ -166,7 +190,43 @@ export default function SimplePresent() {
                 lines: [
                   {
                     text: [
-                      "Look at the dialogue again. These sentences talk about things that happen every day.",
+                      "Look at the dialogue again. These sentences talk about things that happen every day or regularly.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+
+          <Checking
+            type="CCQ"
+            ccq={[
+              {
+                block: [
+                  {
+                    example: "I get up at 7 a.m. every morning.",
+                    questions: [
+                      {
+                        question: "Is this something I do every day?",
+                      },
+                      {
+                        question: "Is it happnening now?",
+                      },
+                      {
+                        question: "Is it a routine/habit?",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                block: [
+                  {
+                    example: "...",
+                    questions: [
+                      {
+                        question: "???",
+                      },
                     ],
                   },
                 ],
@@ -175,85 +235,52 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Checking
-          type="CCQ"
-          ccq={[
-            {
-              block: [
-                {
-                  example: "I get at 7 a.m. every morning.",
-                  questions: [
-                    {
-                      question: "Is this something I do every day?",
-                    },
-                    {
-                      question: "Is it happnening now?",
-                    },
-                    {
-                      question: "Is it a routine/habit?",
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              block: [
-                {
-                  example: "...",
-                  questions: [
-                    {
-                      question: "???",
-                    },
-                  ],
-                },
-              ],
-            },
-          ]}
-        />
-
         <Section label="Pronunciation + Form" heading={3}></Section>
 
-        <Section label="Practice" heading={3}></Section>
-        <FillInTheBlanks
-          exercise={{
-            instructions: "1. Fill in the blanks with affirmative form.",
-            blocks: [
-              {
-                block: [{ text: "I" }, { blank: "am" }],
-                lineBreak: true,
-              },
-            ],
-          }}
-        />
-        <Radio
-          exercise={{
-            instruction: "Choose the correct form of the verb be.",
-            questions: [
-              {
-                question: "1. ...",
-                options: [
-                  { option: "...", isCorrect: true },
-                  { option: "...", isCorrect: false },
-                  { option: "...", isCorrect: false },
-                ],
-              },
-            ],
-          }}
-        />
+        <Section label="Practice" heading={3}>
+          <FillInTheBlanks
+            exercise={{
+              instructions: "1. Fill in the blanks with affirmative form.",
+              blocks: [
+                {
+                  block: [{ text: "I" }, { blank: "am" }],
+                  lineBreak: true,
+                },
+              ],
+            }}
+          />
 
-        <Section label="Production" heading={3}></Section>
-        <InlineText
-          audio="/assets/audio/"
-          text={[
-            "Talk about your daily routine. ",
-            {
-              correct: true,
-              audio: "/assets/audio/",
-              text: "...",
-              type: "bold",
-            },
-          ]}
-        />
+          <Radio
+            exercise={{
+              instruction: "Choose the correct form of the verb be.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
+        </Section>
+
+        <Section label="Production" heading={3}>
+          <InlineText
+            audio="/assets/audio/"
+            text={[
+              "Talk about your daily routine. ",
+              {
+                correct: true,
+                audio: "/assets/audio/",
+                text: "...",
+                type: "bold",
+              },
+            ]}
+          />
+        </Section>
       </div>
     </>
   );

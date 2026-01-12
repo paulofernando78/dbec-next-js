@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Section } from "@/components/molecules/Section";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { InlineText } from "@/components/molecules/InlineText";
@@ -14,37 +15,38 @@ export default function VerbBe() {
     <>
       <Whiteboard title="Grammar" subtitle="Verb Be" />
       <div className="line-break">
-        <Ribbon label="Introduction" />
-        <Paragraph
-          blocks={[
-            {
-              img: "/assets/img/general/two-people-talking-school.png",
-              imgPosition: "left",
-              alt: "Two people talking.",
-              width: 350,
-              height: 250,
-              items: [
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/answer-these-questions.mp3",
-                      part: "Answer these questions.",
-                      type: "bold",
-                    },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  text: ["Where are Kate and Mike? "],
-                },
-                {
-                  text: ["Are they students?"],
-                },
-              ],
-            },
-          ]}
-        />
-        
+        <Section label="Introduction" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                img: "/assets/img/general/two-people-talking-school.png",
+                imgPosition: "left",
+                alt: "Two people talking.",
+                width: 350,
+                height: 250,
+                items: [
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/answer-these-questions.mp3",
+                        part: "Answer these questions.",
+                        type: "bold",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: ["Where are Kate and Mike? "],
+                  },
+                  {
+                    text: ["Are they students?"],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
 
         <Ribbon label="Presentation" />
         <Dialogue
@@ -372,12 +374,12 @@ export default function VerbBe() {
                       text: [
                         {
                           part: "subject + verb",
-                          type: "italic"
+                          type: "italic",
                         },
                       ],
                     },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
@@ -503,7 +505,7 @@ export default function VerbBe() {
                       text: [
                         {
                           important: true,
-                          part: "they = plural de \"he/he/it\" ",
+                          part: 'they = plural de "he/he/it" ',
                         },
                       ],
                     },
@@ -523,12 +525,12 @@ export default function VerbBe() {
                       text: [
                         {
                           part: "subject + not + verb",
-                          type: "italic"
+                          type: "italic",
                         },
                       ],
                     },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
@@ -668,12 +670,12 @@ export default function VerbBe() {
                       text: [
                         {
                           part: "verb + subject",
-                          type: "italic"
+                          type: "italic",
                         },
                       ],
                     },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
@@ -809,12 +811,12 @@ export default function VerbBe() {
                       text: [
                         {
                           part: "verb + not + subject",
-                          type: "italic"
+                          type: "italic",
                         },
                       ],
                     },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
@@ -992,7 +994,7 @@ export default function VerbBe() {
             ],
           }}
         />
-        
+
         <Radio
           exercise={{
             instruction: "Choose the correct form of the verb be.",
