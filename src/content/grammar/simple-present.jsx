@@ -237,8 +237,8 @@ export default function SimplePresent() {
 
         <Section label="Pronunciation + Form" heading={3}>
           <Column
-          length="4"
-          width="300"
+            length="4"
+            width="300"
             cols={[
               // Affirmative
               {
@@ -263,7 +263,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-work.mp3",
                             part: "I ",
                           },
                           {
@@ -283,7 +284,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-do.mp3",
                             part: "I ",
                           },
                           {
@@ -303,7 +305,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-study.mp3",
                             part: "I ",
                           },
                           {
@@ -317,7 +320,7 @@ export default function SimplePresent() {
                         ],
                       },
                     ],
-                    lineBreak: true
+                    lineBreak: true,
                   },
                   // you
                   {
@@ -325,7 +328,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study.mp3",
                             part: "you ",
                           },
                           { part: "study ", type: "bold" },
@@ -339,7 +343,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-do.mp3",
                             part: "you ",
                           },
                           { part: "do ", type: "bold" },
@@ -353,7 +358,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study.mp3",
                             part: "you ",
                           },
                           { part: "study ", type: "bold" },
@@ -369,7 +375,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-works.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-works.mp3",
                             part: "he ",
                           },
                           { part: "works ", type: "bold" },
@@ -383,7 +390,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-does.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-does.mp3",
                             part: "he ",
                           },
                           { part: "does ", type: "bold" },
@@ -397,7 +405,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-studies.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-studies.mp3",
                             part: "he ",
                           },
                           { part: "studies ", type: "bold" },
@@ -413,7 +422,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-studies.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-studies.mp3",
                             part: "she ",
                           },
                           { part: "studies ", type: "bold" },
@@ -427,7 +437,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-does.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-does.mp3",
                             part: "she ",
                           },
                           { part: "does ", type: "bold" },
@@ -441,7 +452,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-studies.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-studies.mp3",
                             part: "she ",
                           },
                           { part: "studies ", type: "bold" },
@@ -457,7 +469,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-works.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-works.mp3",
                             part: "it ",
                           },
                           { part: "works ", type: "bold" },
@@ -471,7 +484,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-does.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-does.mp3",
                             part: "it ",
                           },
                           { part: "does ", type: "bold" },
@@ -485,7 +499,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-studies.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-studies.mp3",
                             part: "it ",
                           },
                           { part: "studies ", type: "bold" },
@@ -501,7 +516,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-work.mp3",
                             part: "we ",
                           },
                           { part: "work ", type: "bold" },
@@ -515,7 +531,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-do.mp3",
                             part: "we ",
                           },
                           { part: "do ", type: "bold" },
@@ -529,7 +546,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-study.mp3",
                             part: "we ",
                           },
                           { part: "study ", type: "bold" },
@@ -545,7 +563,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-work.mp3",
                             part: "you ",
                           },
                           { part: "work ", type: "bold" },
@@ -559,7 +578,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-do-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-do-plural.mp3",
                             part: "you ",
                           },
                           { part: "do ", type: "bold" },
@@ -573,7 +593,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study-plural.mp3",
                             part: "you ",
                           },
                           { part: "study ", type: "bold" },
@@ -589,7 +610,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-work.mp3",
                             part: "they ",
                           },
                           { part: "work ", type: "bold" },
@@ -603,7 +625,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-do.mp3",
                             part: "they ",
                           },
                           { part: "do ", type: "bold" },
@@ -617,7 +640,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-study.mp3",
                             part: "they ",
                           },
                           { part: "study ", type: "bold" },
@@ -665,7 +689,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/i-do-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/i-do-not-work.mp3",
                             part: "I ",
                           },
                           { part: "do not work ", type: "bold" },
@@ -679,7 +704,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/i-do-not-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/i-do-not-do.mp3",
                             part: "I ",
                           },
                           { part: "do not do ", type: "bold" },
@@ -694,7 +720,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/i-do-not-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/i-do-not-study.mp3",
                             part: "I ",
                           },
                           { part: "do not study ", type: "bold" },
@@ -709,7 +736,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-work.mp3",
                             part: "you ",
                           },
                           { part: "do not work ", type: "bold" },
@@ -723,7 +751,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-do.mp3",
                             part: "you ",
                           },
                           { part: "do not do ", type: "bold" },
@@ -737,7 +766,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-study.mp3",
                             part: "you ",
                           },
                           { part: "do not study ", type: "bold" },
@@ -752,7 +782,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/he-does-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/he-does-not-work.mp3",
                             part: "he ",
                           },
                           { part: "does not work ", type: "bold" },
@@ -766,7 +797,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/he-does-not-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/he-does-not-do.mp3",
                             part: "he ",
                           },
                           { part: "does not do ", type: "bold" },
@@ -780,7 +812,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/he-does-not-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/he-does-not-study.mp3",
                             part: "he ",
                           },
                           { part: "does not study ", type: "bold" },
@@ -795,7 +828,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/she-does-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/she-does-not-work.mp3",
                             part: "she ",
                           },
                           { part: "does not work ", type: "bold" },
@@ -809,7 +843,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/she-does-not-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/she-does-not-do.mp3",
                             part: "she ",
                           },
                           { part: "does not do ", type: "bold" },
@@ -823,7 +858,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/she-does-not-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/she-does-not-study.mp3",
                             part: "she ",
                           },
                           { part: "does not study ", type: "bold" },
@@ -838,7 +874,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/it-does-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/it-does-not-work.mp3",
                             part: "it ",
                           },
                           { part: "does not work ", type: "bold" },
@@ -852,7 +889,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/it-does-not-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/it-does-not-do.mp3",
                             part: "it ",
                           },
                           { part: "does not do ", type: "bold" },
@@ -866,7 +904,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/it-does-not-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/it-does-not-study.mp3",
                             part: "it ",
                           },
                           { part: "does not study ", type: "bold" },
@@ -881,7 +920,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/we-do-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/we-do-not-work.mp3",
                             part: "we ",
                           },
                           { part: "do not work ", type: "bold" },
@@ -895,7 +935,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/we-do-not-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/we-do-not-do.mp3",
                             part: "we ",
                           },
                           { part: "do not do ", type: "bold" },
@@ -909,7 +950,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/we-do-not-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/we-do-not-study.mp3",
                             part: "we ",
                           },
                           { part: "do not study ", type: "bold" },
@@ -924,7 +966,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-work.mp3",
                             part: "you ",
                           },
                           { part: "do not work ", type: "bold" },
@@ -938,7 +981,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-do-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-do-plural.mp3",
                             part: "you ",
                           },
                           { part: "do not do ", type: "bold" },
@@ -952,7 +996,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-study-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/you-do-not-study-plural.mp3",
                             part: "you ",
                           },
                           { part: "do not study ", type: "bold" },
@@ -967,11 +1012,15 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/they-do-not-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/they-do-not-work.mp3",
                             part: "they ",
                           },
                           { part: "do not work ", type: "bold" },
-                          { part: "eles/elas não trabalham", type: "portuguese" },
+                          {
+                            part: "eles/elas não trabalham",
+                            type: "portuguese",
+                          },
                         ],
                       },
                     ],
@@ -981,7 +1030,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/they-do-not-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/they-do-not-do.mp3",
                             part: "they ",
                           },
                           { part: "do not do ", type: "bold" },
@@ -995,7 +1045,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/negative/they-do-not-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/negative/they-do-not-study.mp3",
                             part: "they ",
                           },
                           { part: "do not study ", type: "bold" },
@@ -1031,7 +1082,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-i-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-i-work.mp3",
                             part: "Do I work?",
                             type: "bold",
                           },
@@ -1046,7 +1098,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-i-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-i-do.mp3",
                             part: "Do I do?",
                             type: "bold",
                           },
@@ -1062,7 +1115,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-i-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-i-study.mp3",
                             part: "Do I study?",
                             type: "bold",
                           },
@@ -1078,7 +1132,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-work.mp3",
                             part: "Do you work?",
                             type: "bold",
                           },
@@ -1093,7 +1148,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-do.mp3",
                             part: "Do you do?",
                             type: "bold",
                           },
@@ -1108,7 +1164,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-study.mp3",
                             part: "Do you study?",
                             type: "bold",
                           },
@@ -1124,7 +1181,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-he-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-he-work.mp3",
                             part: "Does he work?",
                             type: "bold",
                           },
@@ -1139,7 +1197,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-he-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-he-do.mp3",
                             part: "Does he do?",
                             type: "bold",
                           },
@@ -1154,7 +1213,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-he-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-he-study.mp3",
                             part: "Does he study?",
                             type: "bold",
                           },
@@ -1170,7 +1230,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-she-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-she-work.mp3",
                             part: "Does she work?",
                             type: "bold",
                           },
@@ -1185,7 +1246,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-she-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-she-do.mp3",
                             part: "Does she do?",
                             type: "bold",
                           },
@@ -1200,7 +1262,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-she-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-she-study.mp3",
                             part: "Does she study?",
                             type: "bold",
                           },
@@ -1216,7 +1279,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-it-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-it-work.mp3",
                             part: "Does it work?",
                             type: "bold",
                           },
@@ -1231,7 +1295,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-it-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-it-do.mp3",
                             part: "Does it do?",
                             type: "bold",
                           },
@@ -1246,7 +1311,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-it-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/does-it-study.mp3",
                             part: "Does it study?",
                             type: "bold",
                           },
@@ -1262,7 +1328,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-we-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-we-work.mp3",
                             part: "Do we work?",
                             type: "bold",
                           },
@@ -1277,7 +1344,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-we-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-we-do.mp3",
                             part: "Do we do?",
                             type: "bold",
                           },
@@ -1292,7 +1360,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-we-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-we-study.mp3",
                             part: "Do we study?",
                             type: "bold",
                           },
@@ -1308,7 +1377,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-work.mp3",
                             part: "Do you work?",
                             type: "bold",
                           },
@@ -1323,7 +1393,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-do-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-do-plural.mp3",
                             part: "Do you do?",
                             type: "bold",
                           },
@@ -1338,7 +1409,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-study-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-you-study-plural.mp3",
                             part: "Do you study?",
                             type: "bold",
                           },
@@ -1354,7 +1426,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-they-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-they-work.mp3",
                             part: "Do they work?",
                             type: "bold",
                           },
@@ -1369,7 +1442,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-they-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-they-do.mp3",
                             part: "Do they do?",
                             type: "bold",
                           },
@@ -1384,7 +1458,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-they-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/interrogative/do-they-study.mp3",
                             part: "Do they study?",
                             type: "bold",
                           },
@@ -1421,7 +1496,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-i-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-i-work.mp3",
                             part: "Don’t I work?",
                             type: "bold",
                           },
@@ -1436,7 +1512,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-i-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-i-do.mp3",
                             part: "Don’t I do?",
                             type: "bold",
                           },
@@ -1452,7 +1529,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-i-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-i-study.mp3",
                             part: "Don’t I study?",
                             type: "bold",
                           },
@@ -1468,7 +1546,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-work.mp3",
                             part: "Don’t you work?",
                             type: "bold",
                           },
@@ -1483,7 +1562,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-do.mp3",
                             part: "Don’t you do?",
                             type: "bold",
                           },
@@ -1498,7 +1578,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-study.mp3",
                             part: "Don’t you study?",
                             type: "bold",
                           },
@@ -1514,7 +1595,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-he-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-he-work.mp3",
                             part: "Doesn’t he work?",
                             type: "bold",
                           },
@@ -1529,7 +1611,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-he-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-he-do.mp3",
                             part: "Doesn’t he do?",
                             type: "bold",
                           },
@@ -1544,7 +1627,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-he-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-he-study.mp3",
                             part: "Doesn’t he study?",
                             type: "bold",
                           },
@@ -1560,7 +1644,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-she-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-she-work.mp3",
                             part: "Doesn’t she work?",
                             type: "bold",
                           },
@@ -1575,7 +1660,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-she-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-she-do.mp3",
                             part: "Doesn’t she do?",
                             type: "bold",
                           },
@@ -1590,7 +1676,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-she-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-she-study.mp3",
                             part: "Doesn’t she study?",
                             type: "bold",
                           },
@@ -1606,12 +1693,16 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-it-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-it-work.mp3",
                             part: "Doesn’t it work?",
                             type: "bold",
                           },
                           " ",
-                          { part: "(neutro) não funciona?", type: "portuguese" },
+                          {
+                            part: "(neutro) não funciona?",
+                            type: "portuguese",
+                          },
                         ],
                       },
                     ],
@@ -1621,7 +1712,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-it-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-it-do.mp3",
                             part: "Doesn’t it do?",
                             type: "bold",
                           },
@@ -1636,7 +1728,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-it-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/doesnt-it-study.mp3",
                             part: "Doesn’t it study?",
                             type: "bold",
                           },
@@ -1652,7 +1745,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-we-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-we-work.mp3",
                             part: "Don’t we work?",
                             type: "bold",
                           },
@@ -1667,7 +1761,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-we-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-we-do.mp3",
                             part: "Don’t we do?",
                             type: "bold",
                           },
@@ -1682,7 +1777,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-we-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-we-study.mp3",
                             part: "Don’t we study?",
                             type: "bold",
                           },
@@ -1698,7 +1794,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-work.mp3",
                             part: "Don’t you work?",
                             type: "bold",
                           },
@@ -1713,7 +1810,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-do-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-do-plural.mp3",
                             part: "Don’t you do?",
                             type: "bold",
                           },
@@ -1728,7 +1826,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-study-plural.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-you-study-plural.mp3",
                             part: "Don’t you study?",
                             type: "bold",
                           },
@@ -1744,12 +1843,16 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-they-work.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-they-work.mp3",
                             part: "Don’t they work?",
                             type: "bold",
                           },
                           " ",
-                          { part: "eles/elas não trabalham?", type: "portuguese" },
+                          {
+                            part: "eles/elas não trabalham?",
+                            type: "portuguese",
+                          },
                         ],
                       },
                     ],
@@ -1759,7 +1862,8 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-they-do.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-they-do.mp3",
                             part: "Don’t they do?",
                             type: "bold",
                           },
@@ -1774,12 +1878,16 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-they-study.mp3",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/int-neg/dont-they-study.mp3",
                             part: "Don’t they study?",
                             type: "bold",
                           },
                           " ",
-                          { part: "eles/elas não estudam?", type: "portuguese" },
+                          {
+                            part: "eles/elas não estudam?",
+                            type: "portuguese",
+                          },
                         ],
                       },
                     ],

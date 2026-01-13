@@ -1,19 +1,28 @@
+"use client";
+
 import styles from "./Column.module.css";
 
-import React from "react";
+import { useRef } from "react";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { InlineText } from "@/components/molecules/InlineText";
+import { useDragScroll } from "@/hooks/useDragScroll";
 
-export const Column = ({ cols = [], length, width = 250 }) => {
+export const Column = ({ cols = [], maxCols, width = 250 }) => {
+  const visibleCols = maxCols ? cols.slice(0, maxCols) : cols;
+  const scrollRef = useRef(null);
+  useDragScroll(scrollRef);
+
   return (
     <>
-      <div className={styles.container}>
+      <div>
         <div
-        className={styles.wrapper}
-        style={{
-          gridTemplateColumns: `repeat(${length}, ${width}px)`
-        }}>
-          {cols.map((c, cIndex) => (
+          ref={scrollRef}
+          className={styles.wrapper}
+          style={{
+            gridTemplateColumns: `repeat(${visibleCols.length}, ${width}px)`,
+          }}
+        >
+          {visibleCols.map((c, cIndex) => (
             <div key={cIndex}>
               <Ribbon
                 bgColor={c.bgColor}
@@ -28,9 +37,7 @@ export const Column = ({ cols = [], length, width = 250 }) => {
                   className={bs.lineBreak ? "line-break-item" : undefined}
                 >
                   {(bs.block || []).map((b, bIndex) => (
-                    <React.Fragment key={bIndex}>
-                      <InlineText text={b.text} />
-                    </React.Fragment>
+                    <InlineText key={bIndex} text={b.text} />
                   ))}
                 </div>
               ))}

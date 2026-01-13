@@ -367,6 +367,7 @@ export default function VerbBe() {
 
         <Section label="Pronunciation + Form" heading={4}>
           <Column
+            width="300"
             cols={[
               // Affirmative
               {
@@ -391,7 +392,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/i-am.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/i-am.mp3",
                             part: "I ",
                           },
                           {
@@ -411,7 +413,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
                             part: "you ",
                           },
                           { part: "are ", type: "bold" },
@@ -425,7 +428,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/he-is.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/he-is.mp3",
                             part: "he ",
                           },
                           { part: "is ", type: "bold" },
@@ -439,7 +443,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/she-is.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/she-is.mp3",
                             part: "she ",
                           },
                           { part: "is ", type: "bold" },
@@ -453,7 +458,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/it-is.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/it-is.mp3",
                             part: "it ",
                           },
                           { part: "is ", type: "bold" },
@@ -467,7 +473,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/we-are.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/we-are.mp3",
                             part: "we ",
                           },
                           { part: "are ", type: "bold" },
@@ -481,7 +488,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
                             part: "you ",
                           },
                           { part: "are ", type: "bold" },
@@ -495,7 +503,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/affirmative/they-are.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/they-are.mp3",
                             part: "they ",
                           },
                           { part: "are ", type: "bold" },
@@ -542,7 +551,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/i-am-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/i-am-not.mp3",
                             part: "I ",
                           },
                           { part: "am not ", type: "bold" },
@@ -556,7 +566,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not.mp3",
                             part: "you ",
                           },
                           { part: "are not ", type: "bold" },
@@ -573,7 +584,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/he-is-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/he-is-not.mp3",
                             part: "he ",
                           },
                           { part: "is not ", type: "bold" },
@@ -587,7 +599,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/she-is-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-is-not.mp3",
                             part: "she ",
                           },
                           { part: "is not ", type: "bold" },
@@ -601,10 +614,11 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/it-is-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/it-is-not.mp3",
                             part: "it ",
                           },
-                          { part: "(neutro) is not ", type: "bold" },
+                          { part: "is not ", type: "bold" },
                           { part: "não é, está", type: "portuguese" },
                         ],
                       },
@@ -615,7 +629,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/we-are-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/we-are-not.mp3",
                             part: "we ",
                           },
                           { part: "are not ", type: "bold" },
@@ -632,7 +647,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not.mp3",
                             part: "you ",
                           },
                           { part: "are not ", type: "bold" },
@@ -649,7 +665,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/negative/they-are-not.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-are-not.mp3",
                             part: "they ",
                           },
                           { part: "are not ", type: "bold" },
@@ -687,7 +704,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/am-i.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/am-i.mp3",
                             part: "am",
                             type: "bold",
                           },
@@ -702,7 +720,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-you.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-you.mp3",
                             part: "are",
                             type: "bold",
                           },
@@ -717,7 +736,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/is-he.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/is-he.mp3",
                             part: "is",
                             type: "bold",
                           },
@@ -732,7 +752,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/is-she.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/is-she.mp3",
                             part: "is",
                             type: "bold",
                           },
@@ -747,7 +768,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/is-it.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/is-it.mp3",
                             part: "is",
                             type: "bold",
                           },
@@ -762,7 +784,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-we.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-we.mp3",
                             part: "are",
                             type: "bold",
                           },
@@ -777,7 +800,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-you.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-you.mp3",
                             part: "are",
                             type: "bold",
                           },
@@ -792,7 +816,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-they.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/interrogative/are-they.mp3",
                             part: "are",
                             type: "bold",
                           },
@@ -828,7 +853,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-i.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-i.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -843,7 +869,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-you.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-you.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -861,7 +888,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-he.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-he.mp3",
                             part: "isn’t",
                             type: "bold",
                           },
@@ -876,7 +904,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-she.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-she.mp3",
                             part: "isn’t",
                             type: "bold",
                           },
@@ -891,7 +920,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-it.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/isnt-it.mp3",
                             part: "isn’t",
                             type: "bold",
                           },
@@ -906,7 +936,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-we.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-we.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -924,7 +955,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-you.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-you.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
@@ -942,7 +974,8 @@ export default function VerbBe() {
                       {
                         text: [
                           {
-                            audio: "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-they.mp3",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/int-neg/arent-they.mp3",
                             part: "aren’t",
                             type: "bold",
                           },
