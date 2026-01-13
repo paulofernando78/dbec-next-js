@@ -4,11 +4,15 @@ import React from "react";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { InlineText } from "@/components/molecules/InlineText";
 
-export const Column = ({ cols = [] }) => {
+export const Column = ({ cols = [], length, width = 250 }) => {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.wrapper}>
+        <div
+        className={styles.wrapper}
+        style={{
+          gridTemplateColumns: `repeat(${length}, ${width}px)`
+        }}>
           {cols.map((c, cIndex) => (
             <div key={cIndex}>
               <Ribbon
