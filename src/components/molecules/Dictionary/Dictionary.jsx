@@ -86,28 +86,30 @@ export const Dictionary = () => {
 
   return (
     <>
-      <div className="flex">
-        <DictionaryBook />
-        <span className={styles.title}> Dictionary</span>
+      <div className={styles.container}>
+        <div className="flex">
+          <DictionaryBook />
+          <span className={styles.title}> Dictionary</span>
+        </div>
+        <div className={styles.wrapper}>
+          <input
+            type="text"
+            placeholder="Search word"
+            className={styles.input}
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={handleKeyDown}
+          />
+          <Button icon={<Search />} onClick={() => setOpen(true)}></Button>
+          <Button icon={<Close />} onClick={() => setOpen(false)}></Button>
+        </div>
+        <p className="flex">
+          <Keyboard />
+          <span className={styles.key}>
+            press &apos;enter&apos; to open · &apos;esc&apos; to close
+          </span>
+        </p>
       </div>
-      <div className={styles.wrapper}>
-        <input
-          type="text"
-          placeholder="Search word"
-          className={styles.input}
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={handleKeyDown}
-        />
-        <Button icon={<Search />} onClick={() => setOpen(true)}></Button>
-        <Button icon={<Close />} onClick={() => setOpen(false)}></Button>
-      </div>
-      <p className="flex">
-        <Keyboard />
-        <span className={styles.key}>
-          press &apos;enter&apos; to open · &apos;esc&apos; to close
-        </span>
-      </p>
 
       {open && (
         <div className={styles.results}>
