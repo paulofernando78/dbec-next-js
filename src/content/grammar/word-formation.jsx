@@ -2,14 +2,15 @@
 
 import styles from "./word-formation.module.css";
 
+import { useRef } from "react";
+import { useDragScroll } from "@/hooks/useDragScroll";
+
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "../../components/molecules/Dictionary";
 import { Bold } from "@/components/atoms/Bold";
 import { RegisterTag } from "@/components/atoms/RegisterTag";
 import { DegreeTag } from "@/components/atoms/DegreeTag";
 import { Portuguese } from "@/components/atoms/Portuguese";
-
-import { useEffect, useRef } from "react";
 
 const words = [
   // answer
@@ -2923,7 +2924,8 @@ const words = [
 ];
 
 export default function WordFormation() {
-  
+  const scrollRef = useRef(null);
+  useDragScroll(scrollRef);
 
   return (
     <>
