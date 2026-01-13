@@ -87,14 +87,14 @@ export const Dictionary = () => {
   return (
     <>
       <div className={styles.container}>
-        <div className="flex">
+        {/* <div className="flex">
           <DictionaryBook />
           <span className={styles.title}> Dictionary</span>
-        </div>
+        </div> */}
         <div className={styles.wrapper}>
           <input
             type="text"
-            placeholder="Search word"
+            placeholder="Dictionary"
             className={styles.input}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -103,7 +103,7 @@ export const Dictionary = () => {
           <Button icon={<Search />} onClick={() => setOpen(true)}></Button>
           <Button icon={<Close />} onClick={() => setOpen(false)}></Button>
         </div>
-        <p className="flex">
+        <p className={styles.keyWrapper}>
           <Keyboard />
           <span className={styles.key}>
             press &apos;enter&apos; to open · &apos;esc&apos; to close
