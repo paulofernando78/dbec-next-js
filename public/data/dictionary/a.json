@@ -873,6 +873,14 @@
         "ptDefinition": "dizer algo com o objetivo de obter uma resposta ou informação",
         "examples": [
           {
+            "enExample": "Ask me anything.",
+            "ptExample": "Me pergunte qualquer coisa."
+          },
+          {
+            "enExample": "Can I ask you a question?",
+            "ptExample": "Posso te fazer uma pergunta."
+          },
+          {
             "enExample": "She asked me if I wanted some coffee.",
             "ptExample": "Ela me perguntou se eu queria um pouco de café."
           },

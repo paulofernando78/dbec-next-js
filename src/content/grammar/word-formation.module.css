@@ -30,6 +30,11 @@
   padding: 3px 6px;
 }
 
+.header span {
+  display: inline-block;
+  margin-right: 5px;
+}
+
 .row {
   display: contents;
   padding: 5px;
