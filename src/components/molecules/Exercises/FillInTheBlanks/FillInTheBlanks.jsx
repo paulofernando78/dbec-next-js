@@ -73,6 +73,7 @@ export const FillInTheBlanks = ({ exercise }) => {
                   {b.blank && (
                     <input
                       type="text"
+                      placeholder={b.placeholder}
                       value={answers[key] || ""}
                       onChange={(e) =>
                         setAnswers((prev) => ({

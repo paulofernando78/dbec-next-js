@@ -8,7 +8,8 @@ import { List } from "@/components/molecules/List";
 import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
-import { Comparison } from "../../components/molecules/Comparison/";
+import { Comparison } from "@/components/molecules/Comparison/";
+import { Column } from "@/components/molecules/Column/";
 import { Note } from "@/components/molecules/Note";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
@@ -22,7 +23,6 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
-
         <div className="dictionary-area">
           <Dictionary />
         </div>
@@ -953,6 +953,97 @@ export default function Mock() {
           />
         </Section>
 
+        <Section label="Column" heading={3}>
+          <Column
+            width="300"
+            cols={[
+              // Column 1
+              {
+                bgColor: "var(--green-6)",
+                textColor: "white",
+                column: "Column 1",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            usFlag: true,
+                            ukFlag: true,
+                            important: true,
+                            correct: true,
+                            incorrect: true,
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                ],
+              },
+
+              // Column 2
+              {
+                bgColor: "var(--red-4)",
+                textColor: "white",
+                column: "Column 2",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            usFlag: true,
+                            ukFlag: true,
+                            important: true,
+                            correct: true,
+                            incorrect: true,
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                ],
+              },
+
+              // Column 3
+              {
+                bgColor: "var(--yellow-4)",
+                textColor: "white",
+                column: "Column 3",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            usFlag: true,
+                            ukFlag: true,
+                            important: true,
+                            correct: true,
+                            incorrect: true,
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
         <Section label="Radio" heading={3}>
           <Radio
             exercise={{
@@ -978,7 +1069,6 @@ export default function Mock() {
             }}
           />
         </Section>
-        <section className="line-break"></section>
 
         <Section label="FillInTheBlanks" heading={3}>
           <FillInTheBlanks
