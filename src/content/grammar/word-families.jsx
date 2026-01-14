@@ -1691,6 +1691,9 @@ export default function WordFamilies() {
         <span>
           <Bold>Use this list as a reference.</Bold>
         </span>
+        <span className="">
+          * possible suffixes
+        </span>
         <div ref={scrollRef} className={styles.scroll}>
           <div className={styles.table}>
             {/* HEADERS */}
@@ -1698,7 +1701,7 @@ export default function WordFamilies() {
             {/* VERB */}
             <span className={styles.header}>
               <Bold>VERB</Bold>
-              <span>-en, -ify</span>
+              <span>* -en, -ify</span>
             </span>
 
             {/* PHRASAL VERB */}
@@ -1710,13 +1713,13 @@ export default function WordFamilies() {
             {/* NOUN */}
             <span className={styles.header}>
               <Bold>NOUN</Bold>
-              <span>-ing, -ness, -ment, -ity, -hood</span>
+              <span>* -ing, -ness, -ment, -ity, -hood</span>
             </span>
 
             {/* ADJECTIVE */}
             <span className={styles.header}>
               <Bold>ADJECTIVE </Bold>
-              <span>-ed, ing, -ous, -ive, -able, -ful, -less</span>
+              <span>* -ed, ing, -ous, -ive, -able, -ful, -less</span>
             </span>
 
             {/* EXPRESSIONS */}
@@ -1735,42 +1738,68 @@ export default function WordFamilies() {
                       {word.verb.audio && <Audio src={word.verb.audio} />}
                       <Bold>{word.verb.word}</Bold>{" "}
                       <Phonetics>{word.verb.phonetics}</Phonetics>{" "}
-                      <span className={styles.partOfSpeech}>{word.verb.partOfSpeech}</span>{" "}
-                      {word.verb.registerTag && (<RegisterTag>{word.verb.registerTag}</RegisterTag>)}{" "}
-                      <Portuguese className={styles.ptDefinition}>{word.verb.ptDefinition}</Portuguese>
-
+                      <span className={styles.partOfSpeech}>
+                        {word.verb.partOfSpeech}
+                      </span>{" "}
+                      {word.verb.registerTag && (
+                        <RegisterTag>{word.verb.registerTag}</RegisterTag>
+                      )}{" "}
+                      <Portuguese className={styles.ptDefinition}>
+                        {word.verb.ptDefinition}
+                      </Portuguese>
                       {/* CONJUGATION */}
                       {word.conjugation && (
                         <div className={styles.conjugation}>
-
                           {/* Third Person */}
                           <div>
-                            {word.conjugation.thirdPersonAudio && (<Audio src={word.conjugation.thirdPersonAudio} />)}
+                            {word.conjugation.thirdPersonAudio && (
+                              <Audio src={word.conjugation.thirdPersonAudio} />
+                            )}
                             <Bold>{word.conjugation.thirdPerson}</Bold>{" "}
-                            <Phonetics>{word.conjugation.thirdPersonPhonetics}</Phonetics>{" "}
-                            <span className={styles.partOfSpeech}>third person</span>
+                            <Phonetics>
+                              {word.conjugation.thirdPersonPhonetics}
+                            </Phonetics>{" "}
+                            <span className={styles.partOfSpeech}>
+                              third person
+                            </span>
                           </div>
 
                           <div>
-                            {word.conjugation.pastAudio && (<Audio src={word.conjugation.pastAudio} />)}
+                            {word.conjugation.pastAudio && (
+                              <Audio src={word.conjugation.pastAudio} />
+                            )}
                             <Bold>{word.conjugation.past}</Bold>{" "}
-                            <Phonetics>{word.conjugation.pastPhonetics}</Phonetics>{" "}
+                            <Phonetics>
+                              {word.conjugation.pastPhonetics}
+                            </Phonetics>{" "}
                             <span className={styles.partOfSpeech}>past</span>
                           </div>
 
                           {/* Participle */}
                           <div>
-                            {word.conjugation.participleAudio && <Audio src={word.conjugation.participleAudio} />}
+                            {word.conjugation.participleAudio && (
+                              <Audio src={word.conjugation.participleAudio} />
+                            )}
                             <Bold>{word.conjugation.participle}</Bold>{" "}
-                            <span><Phonetics>{word.conjugation.participlePhonetics}{" "}</Phonetics></span>
-                            <span className={styles.partOfSpeech}>past participle</span>
+                            <span>
+                              <Phonetics>
+                                {word.conjugation.participlePhonetics}{" "}
+                              </Phonetics>
+                            </span>
+                            <span className={styles.partOfSpeech}>
+                              past participle
+                            </span>
                           </div>
 
                           {/* Progressive */}
                           <div>
-                            {word.conjugation.progressiveAudio && <Audio src={word.conjugation.progressiveAudio} />}
+                            {word.conjugation.progressiveAudio && (
+                              <Audio src={word.conjugation.progressiveAudio} />
+                            )}
                             <Bold>{word.conjugation.progressive}</Bold>{" "}
-                            <span className={styles.partOfSpeech}>progressive</span>
+                            <span className={styles.partOfSpeech}>
+                              progressive
+                            </span>
                           </div>
                         </div>
                       )}

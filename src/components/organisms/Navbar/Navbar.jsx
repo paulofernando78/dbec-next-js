@@ -94,6 +94,10 @@ const links = [
     title: "Vocabulary",
     links: [
       {
+        href: "/vocabulary/numbers",
+        label: "Numbers",
+      },
+      {
         href: "/vocabulary/for-to",
         label: "For vs. To",
       },

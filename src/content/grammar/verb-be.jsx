@@ -29,6 +29,13 @@ export default function VerbBe() {
                 ],
                 lines: [
                   {
+                    text: ["Anna and scoot are at school. "],
+                  },
+                  {
+                    text: ["They're students. "],
+                    lineBreak: true,
+                  },
+                  {
                     text: [
                       {
                         audio:
@@ -40,7 +47,7 @@ export default function VerbBe() {
                     lineBreak: true,
                   },
                   {
-                    text: ["Where are Kate and Mike? "],
+                    text: ["Where are Anna and Scott? "],
                   },
                   {
                     text: ["Are they students?"],
@@ -92,12 +99,7 @@ export default function VerbBe() {
                 speaker: "Scott:",
                 text: "",
                 text: [
-                  "I",
-                  {
-                    type: "mark",
-                    part: "’m",
-                  },
-                  " the teacher.",
+                  "Me too. It's my first day here.",
                 ],
               },
               {
