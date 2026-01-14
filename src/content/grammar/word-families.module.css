@@ -18,7 +18,7 @@
 
 .table {
   display: grid;
-  grid-template-columns: repeat(5, 310px);
+  grid-template-columns: repeat(5, 290px);
   gap: 5px;
   border-radius: var(--border-radius);
 }

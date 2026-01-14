@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./word-formation.module.css";
+import styles from "./word-families.module.css";
 
 import { useRef } from "react";
 import { useDragScroll } from "@/hooks/useDragScroll";
@@ -16,16 +16,26 @@ import { Portuguese } from "@/components/atoms/Portuguese";
 const words = [
   // answer
   {
-    verbAudio: "/assets/audio/general/answer.mp3",
-    verbWord: "answer",
-    verbPtDefinition: "responder",
+    verb: {
+      audio: "/assets/audio/general/answer.mp3",
+      word: "answer",
+      ptDefinition: "responder",
+    },
+    conjugation: {
+      past: "answered",
+      pastPhonetics: "/d/",
+      pastParticiple: "answered",
+      pastParticiplePhonetics: "/d/",
+      presentParticple: "answering",
+    },
   },
   // ask
   {
-    verbAudio: "/assets/audio/general/ask.mp3",
-    verbWord: "ask",
-    verbPtDefinition: "perguntar",
-
+    verb: {
+      audio: "/assets/audio/general/ask.mp3",
+      word: "ask",
+      ptDefinition: "perguntar",
+    },
     phrasalVerbs: [
       {
         audio: "/assets/audio/general/ask-out.mp3",
@@ -60,10 +70,11 @@ const words = [
   },
   // beat
   {
-    verbAudio: "",
-    verbWord: "beat",
-    verbPtDefinition: "bater; derrotar",
-
+    verb: {
+      audio: "",
+      word: "beat",
+      ptDefinition: "bater; derrotar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -71,7 +82,6 @@ const words = [
         ptDefinition: "espancar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -79,7 +89,6 @@ const words = [
         ptDefinition: "ritmo; batida",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -97,10 +106,11 @@ const words = [
   },
   // begin
   {
-    verbAudio: "",
-    verbWord: "begin",
-    verbPtDefinition: "começar, iniciar",
-
+    verb: {
+      audio: "",
+      word: "begin",
+      ptDefinition: "começar, iniciar",
+    },
     nouns: [
       {
         audio: "",
@@ -111,10 +121,11 @@ const words = [
   },
   // beautify
   {
-    verbAudio: "",
-    verbWord: "beautify",
-    verbPtDefinition: "embelezar",
-
+    verb: {
+      audio: "",
+      word: "beautify",
+      ptDefinition: "embelezar",
+    },
     nouns: [
       {
         audio: "",
@@ -122,7 +133,6 @@ const words = [
         ptDefinition: "beleza",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -133,10 +143,11 @@ const words = [
   },
   // blow
   {
-    verbAudio: "",
-    verbWord: "blow",
-    verbPtDefinition: "soprar; bater (vento)",
-
+    verb: {
+      audio: "",
+      word: "blow",
+      ptDefinition: "soprar; bater (vento)",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -144,7 +155,6 @@ const words = [
         ptDefinition: "explodir; perder a calma",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -152,7 +162,6 @@ const words = [
         ptDefinition: "golpe; sopro; impacto",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -163,10 +172,11 @@ const words = [
   },
   // bore
   {
-    verbAudio: "",
-    verbWord: "bore",
-    verbPtDefinition: "entediar",
-
+    verb: {
+      audio: "",
+      word: "bore",
+      ptDefinition: "entediar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -174,7 +184,6 @@ const words = [
         ptDefinition: "criticar duramente; perfurar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -183,7 +192,6 @@ const words = [
         ptDefinition: "tédio; pessoa chata",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -199,10 +207,11 @@ const words = [
   },
   // break
   {
-    verbAudio: "",
-    verbWord: "break",
-    verbPtDefinition: "quebrar; interromper",
-
+    verb: {
+      audio: "",
+      word: "break",
+      ptDefinition: "quebrar; interromper",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -210,7 +219,6 @@ const words = [
         ptDefinition: "quebrar; entrar em colapso",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -218,7 +226,6 @@ const words = [
         ptDefinition: "quebra; intervalo",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -229,10 +236,11 @@ const words = [
   },
   // bring
   {
-    verbAudio: "",
-    verbWord: "bring",
-    verbPtDefinition: "trazer; levar consigo",
-
+    verb: {
+      audio: "",
+      word: "bring",
+      ptDefinition: "trazer; levar consigo",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -243,10 +251,11 @@ const words = [
   },
   // brush
   {
-    verbAudio: "",
-    verbWord: "brush",
-    verbPtDefinition: "escovar; passar o pincel",
-
+    verb: {
+      audio: "",
+      word: "brush",
+      ptDefinition: "escovar; passar o pincel",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -259,7 +268,6 @@ const words = [
         ptDefinition: "revisar; aprimorar (conhecimento ou habilidade)",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -270,10 +278,11 @@ const words = [
   },
   // buy
   {
-    verbAudio: "",
-    verbWord: "buy",
-    verbPtDefinition: "comprar",
-
+    verb: {
+      audio: "",
+      word: "buy",
+      ptDefinition: "comprar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -281,7 +290,6 @@ const words = [
         ptDefinition: "aceitar uma ideia; concordar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -293,10 +301,11 @@ const words = [
   },
   // call
   {
-    verbAudio: "",
-    verbWord: "call",
-    verbPtDefinition: "ligar; chamar",
-
+    verb: {
+      audio: "",
+      word: "call",
+      ptDefinition: "ligar; chamar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -304,7 +313,6 @@ const words = [
         ptDefinition: "cancelar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -315,10 +323,11 @@ const words = [
   },
   // comfort
   {
-    verbAudio: "",
-    verbWord: "comfort",
-    verbPtDefinition: "confortar; consolar",
-
+    verb: {
+      audio: "",
+      word: "comfort",
+      ptDefinition: "confortar; consolar",
+    },
     nouns: [
       {
         audio: "",
@@ -326,7 +335,6 @@ const words = [
         ptDefinition: "conforto; alívio",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -347,10 +355,11 @@ const words = [
   },
   // cook
   {
-    verbAudio: "",
-    verbWord: "cook",
-    verbPtDefinition: "cozinhar",
-
+    verb: {
+      audio: "",
+      word: "cook",
+      ptDefinition: "cozinhar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -358,7 +367,6 @@ const words = [
         ptDefinition: "inventar; preparar (um plano)",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -369,10 +377,11 @@ const words = [
   },
   // create
   {
-    verbAudio: "",
-    verbWord: "create",
-    verbPtDefinition: "criar",
-
+    verb: {
+      audio: "",
+      word: "create",
+      ptDefinition: "criar",
+    },
     nouns: [
       {
         audio: "",
@@ -380,7 +389,6 @@ const words = [
         ptDefinition: "criação",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -391,10 +399,11 @@ const words = [
   },
   // cry
   {
-    verbAudio: "",
-    verbWord: "cry",
-    verbPtDefinition: "chorar; gritar",
-
+    verb: {
+      audio: "",
+      word: "cry",
+      ptDefinition: "chorar; gritar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -402,7 +411,6 @@ const words = [
         ptDefinition: "gritar; clamar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -413,10 +421,11 @@ const words = [
   },
   // darken
   {
-    verbAudio: "",
-    verbWord: "darken",
-    verbPtDefinition: "escurecer",
-
+    verb: {
+      audio: "",
+      word: "darken",
+      ptDefinition: "escurecer",
+    },
     nouns: [
       {
         audio: "",
@@ -424,7 +433,6 @@ const words = [
         ptDefinition: "escuridão",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -435,10 +443,11 @@ const words = [
   },
   // dig
   {
-    verbAudio: "",
-    verbWord: "dig",
-    verbPtDefinition: "cavar; escavar",
-
+    verb: {
+      audio: "",
+      word: "dig",
+      ptDefinition: "cavar; escavar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -456,7 +465,6 @@ const words = [
         ptDefinition: "desenterrar; descobrir (informação)",
       },
     ],
-
     nouns: [
       {
         audio: "/audio/general/dig-noun.mp3",
@@ -467,10 +475,11 @@ const words = [
   },
   // do
   {
-    verbAudio: "",
-    verbWord: "do",
-    verbPtDefinition: "fazer",
-
+    verb: {
+      audio: "",
+      word: "do",
+      ptDefinition: "fazer",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -486,10 +495,11 @@ const words = [
   },
   // drive
   {
-    verbAudio: "",
-    verbWord: "drive",
-    verbPtDefinition: "dirigir; conduzir; impulsionar",
-
+    verb: {
+      audio: "",
+      word: "drive",
+      ptDefinition: "dirigir; conduzir; impulsionar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -507,7 +517,6 @@ const words = [
         ptDefinition: "passar de carro; drive-thru",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -518,10 +527,11 @@ const words = [
   },
   // drink
   {
-    verbAudio: "",
-    verbWord: "drink",
-    verbPtDefinition: "beber",
-
+    verb: {
+      audio: "",
+      word: "drink",
+      ptDefinition: "beber",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -529,7 +539,6 @@ const words = [
         ptDefinition: "beber tudo; terminar a bebida",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -541,10 +550,11 @@ const words = [
   },
   // drop
   {
-    verbAudio: "",
-    verbWord: "drop",
-    verbPtDefinition: "derrubar; deixar cair",
-
+    verb: {
+      audio: "",
+      word: "drop",
+      ptDefinition: "derrubar; deixar cair",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -557,7 +567,6 @@ const words = [
         ptDefinition: "abandonar; desistir",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -568,10 +577,11 @@ const words = [
   },
   // dry
   {
-    verbAudio: "",
-    verbWord: "dry",
-    verbPtDefinition: "secar",
-
+    verb: {
+      audio: "",
+      word: "dry",
+      ptDefinition: "secar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -579,7 +589,6 @@ const words = [
         ptDefinition: "secar completamente; acabar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -587,7 +596,6 @@ const words = [
         ptDefinition: "secura; aridez",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -598,10 +606,11 @@ const words = [
   },
   // die
   {
-    verbAudio: "",
-    verbWord: "die",
-    verbPtDefinition: "morrer; falecer",
-
+    verb: {
+      audio: "",
+      word: "die",
+      ptDefinition: "morrer; falecer",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -614,7 +623,6 @@ const words = [
         ptDefinition: "morrer gradualmente; extinguir-se",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -627,7 +635,6 @@ const words = [
         ptDefinition: "ato the morrer",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -640,7 +647,6 @@ const words = [
         ptDefinition: "Que está morrendo; em perigo de extinção",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -651,10 +657,11 @@ const words = [
   },
   // eat
   {
-    verbAudio: "",
-    verbWord: "eat",
-    verbPtDefinition: "comer",
-
+    verb: {
+      audio: "",
+      word: "eat",
+      ptDefinition: "comer",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -670,10 +677,11 @@ const words = [
   },
   // fasten
   {
-    verbAudio: "",
-    verbWord: "fasten",
-    verbPtDefinition: "prender, apertar",
-
+    verb: {
+      audio: "",
+      word: "fasten",
+      ptDefinition: "prender, apertar",
+    },
     nouns: [
       {
         audio: "",
@@ -682,7 +690,6 @@ const words = [
         ptDefinition: "pressa, rapidez",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -699,10 +706,11 @@ const words = [
   },
   // focus
   {
-    verbAudio: "",
-    verbWord: "focus (on something)",
-    verbPtDefinition: "focar; concentrar-se",
-
+    verb: {
+      audio: "",
+      word: "focus (on something)",
+      ptDefinition: "focar; concentrar-se",
+    },
     nouns: [
       {
         audio: "",
@@ -710,7 +718,6 @@ const words = [
         ptDefinition: "foco; concentração",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -721,10 +728,11 @@ const words = [
   },
   // give
   {
-    verbAudio: "",
-    verbWord: "give",
-    verbPtDefinition: "dar",
-
+    verb: {
+      audio: "",
+      word: "give",
+      ptDefinition: "dar",
+    },
     nouns: [
       {
         audio: "",
@@ -732,7 +740,6 @@ const words = [
         ptDefinition: "ato de dar; doação",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -743,10 +750,11 @@ const words = [
   },
   // go
   {
-    verbAudio: "",
-    verbWord: "go",
-    verbPtDefinition: "ir; passar (tempo)",
-
+    verb: {
+      audio: "",
+      word: "go",
+      ptDefinition: "ir; passar (tempo)",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -771,7 +779,6 @@ const words = [
         ptDefinition: "fazer assim, ser assim",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -782,10 +789,11 @@ const words = [
   },
   // hide
   {
-    verbAudio: "",
-    verbWord: "hide",
-    verbPtDefinition: "esconder; ocultar",
-
+    verb: {
+      audio: "",
+      word: "hide",
+      ptDefinition: "esconder; ocultar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -798,7 +806,6 @@ const words = [
         ptDefinition: "ficar escondido",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -809,10 +816,11 @@ const words = [
   },
   // interest
   {
-    verbAudio: "",
-    verbWord: "interest (in)",
-    verbPtDefinition: "interessar",
-
+    verb: {
+      audio: "",
+      word: "interest (in)",
+      ptDefinition: "interessar",
+    },
     nouns: [
       {
         audio: "",
@@ -820,7 +828,6 @@ const words = [
         ptDefinition: "interesse; juros",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -836,10 +843,11 @@ const words = [
   },
   // invite
   {
-    verbAudio: "",
-    verbWord: "invite",
-    verbPtDefinition: "convidar",
-
+    verb: {
+      audio: "",
+      word: "invite",
+      ptDefinition: "convidar",
+    },
     nouns: [
       {
         audio: "",
@@ -847,7 +855,6 @@ const words = [
         ptDefinition: "convite",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -858,10 +865,11 @@ const words = [
   },
   // know
   {
-    verbAudio: "",
-    verbWord: "know",
-    verbPtDefinition: "saber; conhecer",
-
+    verb: {
+      audio: "",
+      word: "know",
+      ptDefinition: "saber; conhecer",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -874,7 +882,6 @@ const words = [
         ptDefinition: "ter conhecimento de; já ter ouvido falar de",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -882,7 +889,6 @@ const words = [
         ptDefinition: "conhecimento",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -898,10 +904,11 @@ const words = [
   },
   // knee
   {
-    verbAudio: "",
-    verbWord: "knee",
-    verbPtDefinition: "dar uma joelhada",
-
+    verb: {
+      audio: "",
+      word: "knee",
+      ptDefinition: "dar uma joelhada",
+    },
     nouns: [
       {
         audio: "",
@@ -912,10 +919,11 @@ const words = [
   },
   // kneel
   {
-    verbAudio: "",
-    verbWord: "kneel",
-    verbPtDefinition: "ajoelhar-se",
-
+    verb: {
+      audio: "",
+      word: "kneel",
+      ptDefinition: "ajoelhar-se",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -923,7 +931,6 @@ const words = [
         ptDefinition: "ajoelhar-se",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -934,10 +941,11 @@ const words = [
   },
   // laugh
   {
-    verbAudio: "",
-    verbWord: "laugh",
-    verbPtDefinition: "rir",
-
+    verb: {
+      audio: "",
+      word: "laugh",
+      ptDefinition: "rir",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -950,7 +958,6 @@ const words = [
         ptDefinition: "tentar ignorar com humor",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -958,7 +965,6 @@ const words = [
         ptDefinition: "risada; riso",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -974,10 +980,11 @@ const words = [
   },
   // let
   {
-    verbAudio: "",
-    verbWord: "let",
-    verbPtDefinition: "deixar; permitir",
-
+    verb: {
+      audio: "",
+      word: "let",
+      ptDefinition: "deixar; permitir",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -995,7 +1002,6 @@ const words = [
         ptDefinition: "liberar; deixar sair",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1007,12 +1013,13 @@ const words = [
   },
   // like
   {
-    verbAudio: "",
-    verbWord: "like",
-    verbPtDefinition: "gostar; apreciar",
-    enNotes: "Do not confuse with like = 'como'.",
-    ptNotes: "Não confundir com like = 'como'.",
-
+    verb: {
+      audio: "",
+      word: "like",
+      ptDefinition: "gostar; apreciar",
+      enNotes: "Do not confuse with like = 'como'.",
+      ptNotes: "Não confundir com like = 'como'.",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1025,7 +1032,6 @@ const words = [
         ptDefinition: "curtir por causa de (informal, online)",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1033,21 +1039,11 @@ const words = [
         ptDefinition: "gostar; preferência",
       },
     ],
-
     adjectives: [
       {
         audio: "",
         word: "likable",
         ptDefinition: "simpático; agradável",
-      },
-    ],
-
-    expressions: [
-      {
-        audio: "",
-        word: "like",
-        ptDefinition: "como; do tipo de",
-        registerTag: "informal",
       },
     ],
   },
@@ -1076,10 +1072,11 @@ const words = [
   },
   // light
   {
-    verbAudio: "",
-    verbWord: "light",
-    verbPtDefinition: "acender",
-
+    verb: {
+      audio: "",
+      word: "light",
+      ptDefinition: "acender",
+    },
     nouns: [
       {
         audio: "",
@@ -1087,7 +1084,6 @@ const words = [
         ptDefinition: "luz",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1098,16 +1094,19 @@ const words = [
   },
   // lighten
   {
-    verbAudio: "",
-    verbWord: "lighten",
-    verbPtDefinition: "clarear; tornar mais leve",
+    verb: {
+      audio: "",
+      word: "lighten",
+      ptDefinition: "clarear; tornar mais leve",
+    },
   },
   // love
   {
-    verbAudio: "",
-    verbWord: "love",
-    verbPtDefinition: "amar; adorar",
-
+    verb: {
+      audio: "",
+      word: "love",
+      ptDefinition: "amar; adorar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1115,7 +1114,6 @@ const words = [
         ptDefinition: "mostrar carinho; abraçar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1123,7 +1121,6 @@ const words = [
         ptDefinition: "amor; afeição",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1146,7 +1143,6 @@ const words = [
         ptDefinition: "cheio(a) de carinho; afetuoso(a)",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1157,10 +1153,11 @@ const words = [
   },
   // make
   {
-    verbAudio: "",
-    verbWord: "make",
-    verbPtDefinition: "fazer, criar; ganhar (dinheiro); totalizar",
-
+    verb: {
+      audio: "",
+      word: "make",
+      ptDefinition: "fazer, criar; ganhar (dinheiro); totalizar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1178,7 +1175,6 @@ const words = [
         ptDefinition: "transformar; transferir (legalmente)",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1187,7 +1183,6 @@ const words = [
         ptDefinition: "modelo; marca (de carro ou produto)",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1195,7 +1190,6 @@ const words = [
         ptDefinition: "inventado; fictício",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1211,10 +1205,11 @@ const words = [
   },
   // meet
   {
-    verbAudio: "",
-    verbWord: "meet",
-    verbPtDefinition: "encontrar; conhecer",
-
+    verb: {
+      audio: "",
+      word: "meet",
+      ptDefinition: "encontrar; conhecer",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1227,7 +1222,6 @@ const words = [
         ptDefinition: "reunir-se com; encontrar-se com",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1235,7 +1229,6 @@ const words = [
         ptDefinition: "reunião; encontro",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1243,7 +1236,6 @@ const words = [
         ptDefinition: "que pode ser encontrado; acessível",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1254,10 +1246,11 @@ const words = [
   },
   // have
   {
-    verbAudio: "",
-    verbWord: "have",
-    verbPtDefinition: "ter; possuir; comer, beber",
-
+    verb: {
+      audio: "",
+      word: "have",
+      ptDefinition: "ter; possuir; comer, beber",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1275,7 +1268,6 @@ const words = [
         ptDefinition: "processar; convocar para explicação",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1283,7 +1275,6 @@ const words = [
         ptDefinition: "posse; propriedade",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1299,10 +1290,11 @@ const words = [
   },
   // pay
   {
-    verbAudio: "",
-    verbWord: "pay",
-    verbPtDefinition: "pagar; recompensar",
-
+    verb: {
+      audio: "",
+      word: "pay",
+      ptDefinition: "pagar; recompensar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1320,7 +1312,6 @@ const words = [
         ptDefinition: "depositar dinheiro",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1328,7 +1319,6 @@ const words = [
         ptDefinition: "pagamento; remuneração",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1341,7 +1331,6 @@ const words = [
         ptDefinition: "pago; remunerado",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1352,10 +1341,11 @@ const words = [
   },
   // practice
   {
-    verbAudio: "",
-    verbWord: "practice",
-    verbPtDefinition: "praticar; treinar",
-
+    verb: {
+      audio: "",
+      word: "practice",
+      ptDefinition: "praticar; treinar",
+    },
     nouns: [
       {
         audio: "",
@@ -1363,7 +1353,6 @@ const words = [
         ptDefinition: "prática; exercício; clínica (profissional)",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1376,7 +1365,6 @@ const words = [
         ptDefinition: "executável; viável",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1387,10 +1375,11 @@ const words = [
   },
   // read
   {
-    verbAudio: "",
-    verbWord: "read",
-    verbPtDefinition: "ler",
-
+    verb: {
+      audio: "",
+      word: "read",
+      ptDefinition: "ler",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1408,7 +1397,6 @@ const words = [
         ptDefinition: "revisar; ler rapidamente",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1416,7 +1404,6 @@ const words = [
         ptDefinition: "leitura; interpretação",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1424,7 +1411,6 @@ const words = [
         ptDefinition: "legível; compreensível",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1435,10 +1421,11 @@ const words = [
   },
   // saw (to cut with a saw)
   {
-    verbAudio: "",
-    verbWord: "saw",
-    verbPtDefinition: "serrar; cortar com serra",
-
+    verb: {
+      audio: "",
+      word: "saw",
+      ptDefinition: "serrar; cortar com serra",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1446,7 +1433,6 @@ const words = [
         ptDefinition: "cortar algo completamente com serra",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1454,7 +1440,6 @@ const words = [
         ptDefinition: "serra; ferramenta para cortar madeira",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1465,10 +1450,11 @@ const words = [
   },
   // see
   {
-    verbAudio: "",
-    verbWord: "see",
-    verbPtDefinition: "ver; perceber; compreender",
-
+    verb: {
+      audio: "",
+      word: "see",
+      ptDefinition: "ver; perceber; compreender",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1486,7 +1472,6 @@ const words = [
         ptDefinition: "cuidar de; providenciar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1494,7 +1479,6 @@ const words = [
         ptDefinition: "visão; percepção",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1502,7 +1486,6 @@ const words = [
         ptDefinition: "visto; percebido",
       },
     ],
-
     expressions: [
       {
         audio: "",
@@ -1536,10 +1519,11 @@ const words = [
   },
   // shorten
   {
-    verbAudio: "",
-    verbWord: "shorten",
-    verbPtDefinition: "encurtar; reduzir",
-
+    verb: {
+      audio: "",
+      word: "shorten",
+      ptDefinition: "encurtar; reduzir",
+    },
     nouns: [
       {
         audio: "",
@@ -1547,7 +1531,6 @@ const words = [
         ptDefinition: "falta de; deficiência",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1558,10 +1541,11 @@ const words = [
   },
   // soften
   {
-    verbAudio: "",
-    verbWord: "soften",
-    verbPtDefinition: "amaciar",
-
+    verb: {
+      audio: "",
+      word: "soften",
+      ptDefinition: "amaciar",
+    },
     nouns: [
       {
         audio: "",
@@ -1569,7 +1553,6 @@ const words = [
         ptDefinition: "maciez",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1580,10 +1563,11 @@ const words = [
   },
   // speak
   {
-    verbAudio: "",
-    verbWord: "speak",
-    verbPtDefinition: "falar",
-
+    verb: {
+      audio: "",
+      word: "speak",
+      ptDefinition: "falar",
+    },
     phrasalVerbs: [
       {
         audio: "",
@@ -1596,7 +1580,6 @@ const words = [
         ptDefinition: "falar abertamente; protestar",
       },
     ],
-
     nouns: [
       {
         audio: "",
@@ -1609,7 +1592,6 @@ const words = [
         ptDefinition: "orador; falante",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1620,10 +1602,11 @@ const words = [
   },
   // teach
   {
-    verbAudio: "",
-    verbWord: "teach",
-    verbPtDefinition: "ensinar",
-
+    verb: {
+      audio: "",
+      word: "teach",
+      ptDefinition: "ensinar",
+    },
     nouns: [
       {
         audio: "",
@@ -1636,7 +1619,6 @@ const words = [
         ptDefinition: "ensino",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1647,10 +1629,11 @@ const words = [
   },
   // use
   {
-    verbAudio: "",
-    verbWord: "use",
-    verbPtDefinition: "usar",
-
+    verb: {
+      audio: "",
+      word: "use",
+      ptDefinition: "usar",
+    },
     nouns: [
       {
         audio: "",
@@ -1658,7 +1641,6 @@ const words = [
         ptDefinition: "uso",
       },
     ],
-
     adjectives: [
       {
         audio: "",
@@ -1675,7 +1657,17 @@ export default function WordFamilies() {
 
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Word Families" />
+      <Whiteboard
+        title="Grammar"
+        subtitle="Word Families"
+        descriptions={[
+          "Verb ",
+          "Phrasal Verb",
+          "Noun",
+          "Adjective",
+          "Expressions",
+        ]}
+      />
       <div className="line-break">
         <div className="dictionary-area">
           <Dictionary />
@@ -1722,28 +1714,50 @@ export default function WordFamilies() {
               <div key={index} className={styles.row}>
                 {/* VERB */}
                 <div>
-                  {word.verbAudio && <Audio src={word.verbAudio} />}
-                  <Bold>{word.verbWord}</Bold>{" "}
-                  {word.verbRegisterTag && (
-                    <RegisterTag>{word.verbRegisterTag}</RegisterTag>
+                  {word.verb && (
+                    <>
+                      {word.verb.audio && <Audio src={word.verb.audio} />}
+                      <Bold>{word.verb.word}</Bold>{" "}
+                      {word.verb.registerTag && (
+                        <RegisterTag>{word.verb.registerTag}</RegisterTag>
+                      )}
+                      <Portuguese>{word.verb.ptDefinition}</Portuguese>
+                      {(word.verb.enNotes || word.verb.ptNotes) && (
+                        <span className={styles.notes}>
+                          <Bold>Notes:</Bold>{" "}
+                          {word.verb.enNotes && (
+                            <span>{word.verb.enNotes}</span>
+                          )}
+                          {word.verb.ptNotes && (
+                            <Portuguese className={styles.ptNotes}>
+                              {word.verb.ptNotes}
+                            </Portuguese>
+                          )}
+                        </span>
+                      )}
+                      {word.conjugation && (
+                        <div className={styles.conjugation}>
+                          <div>
+                            <Bold>Past:</Bold> {word.conjugation.past}{" "}
+                            <span>{word.conjugation.pastPhonetics}</span>
+                          </div>
+
+                          <div>
+                            <Bold>Past participle:</Bold>{" "}
+                            {word.conjugation.pastParticiple}{" "}
+                            <span>
+                              {word.conjugation.pastParticiplePhonetics}
+                            </span>
+                          </div>
+
+                          <div>
+                            <Bold>Progressive:</Bold>{" "}
+                            {word.conjugation.presentParticple}
+                          </div>
+                        </div>
+                      )}
+                    </>
                   )}
-                  <Portuguese>{word.verbPtDefinition}</Portuguese>
-                  <div>
-                    {(word.enNotes || word.ptNotes) && (
-                      <span className={styles.notes}>
-                        <Bold>Notes:</Bold>{" "}
-                        {word.enNotes &&
-                        <span>{word.enNotes}</span>
-                        }
-                        {word.enNotes && word.ptNotes && " "}
-                        {word.ptNotes && (
-                          
-                            <Portuguese className={styles.ptNotes}>{word.ptNotes}</Portuguese>
-                          
-                        )}
-                      </span>
-                    )}
-                  </div>
                 </div>
 
                 {/* PHRASAL VERB */}

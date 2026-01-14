@@ -5,6 +5,10 @@
   margin-bottom: 30px;
 }
 
+.frame span {
+  display: block;
+}
+
 .subtitle {
   margin-bottom: 2px;
 }
