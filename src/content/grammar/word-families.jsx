@@ -25,18 +25,25 @@ const words = [
       ptDefinition: "responder",
     },
     conjugation: {
-      thirdPersonAudio: "/assets/audio/general/answer.mp3",
+      thirdPersonAudio: "/assets/audio/general/answers.mp3",
       thirdPerson: "answers",
       thirdPersonPhonetics: "/z/",
-      pastAudio: "/assets/audio/general/answer.mp3",
+      pastAudio: "/assets/audio/general/answered.mp3",
       past: "answered",
       pastPhonetics: "/d/",
-      participleAudio: "/assets/audio/general/answer.mp3",
+      participleAudio: "/assets/audio/general/answered.mp3",
       participle: "answered",
       participlePhonetics: "/d/",
-      progressiveAudio: "/assets/audio/general/answer.mp3",
+      progressiveAudio: "/assets/audio/general/answering.mp3",
       progressive: "answering",
     },
+    nouns: [
+      {
+        audio: "/assets/audio/general/answer.mp3",
+        word: "answer",
+        ptDefinition: "resposta",
+      },
+    ],
   },
   // ask
   {
