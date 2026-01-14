@@ -9,6 +9,7 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "../../components/molecules/Dictionary";
 import { Audio } from "@/components/atoms/Audio";
 import { Bold } from "@/components/atoms/Bold";
+import { Phonetics } from "@/components/atoms/Phonetics";
 import { RegisterTag } from "@/components/atoms/RegisterTag";
 import { DegreeTag } from "@/components/atoms/DegreeTag";
 import { Portuguese } from "@/components/atoms/Portuguese";
@@ -19,6 +20,7 @@ const words = [
     verb: {
       audio: "/assets/audio/general/answer.mp3",
       word: "answer",
+      phonetics: "/ˈæn.sɚ/",
       ptDefinition: "responder",
     },
     conjugation: {
@@ -1718,6 +1720,7 @@ export default function WordFamilies() {
                     <>
                       {word.verb.audio && <Audio src={word.verb.audio} />}
                       <Bold>{word.verb.word}</Bold>{" "}
+                      <Phonetics>{word.verb.phonetics}</Phonetics>{" "}
                       {word.verb.registerTag && (
                         <RegisterTag>{word.verb.registerTag}</RegisterTag>
                       )}
@@ -1738,21 +1741,26 @@ export default function WordFamilies() {
                       {word.conjugation && (
                         <div className={styles.conjugation}>
                           <div>
-                            <Bold>Past:</Bold> {word.conjugation.past}{" "}
-                            <span>{word.conjugation.pastPhonetics}</span>
+                            <Bold>{word.conjugation.past}</Bold>{" "}
+                            <Phonetics>
+                              {word.conjugation.pastPhonetics}
+                            </Phonetics>{" "}
+                            Past
                           </div>
 
                           <div>
-                            <Bold>Past participle:</Bold>{" "}
-                            {word.conjugation.pastParticiple}{" "}
+                            <Bold>{word.conjugation.pastParticiple}</Bold>{" "}
                             <span>
-                              {word.conjugation.pastParticiplePhonetics}
+                              <Phonetics>
+                                {word.conjugation.pastParticiplePhonetics}{" "}
+                              </Phonetics>
+                              Past participle
                             </span>
                           </div>
 
                           <div>
-                            <Bold>Progressive:</Bold>{" "}
-                            {word.conjugation.presentParticple}
+                            <Bold>{word.conjugation.presentParticple}</Bold>{" "}
+                            Progressive
                           </div>
                         </div>
                       )}
