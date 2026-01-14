@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function Numbers() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Numbers" />
+      <Whiteboard title="Vocabulary" subtitle="Numbers" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
