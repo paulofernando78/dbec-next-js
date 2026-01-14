@@ -1010,15 +1010,17 @@ const words = [
     verbAudio: "",
     verbWord: "like",
     verbPtDefinition: "gostar; apreciar",
+    enNotes: "Do not confuse with like = 'como'.",
+    ptNotes: "Não confundir com like = 'como'.",
 
     phrasalVerbs: [
       {
-        audio: "/audio/general/like-up.mp3",
+        audio: "",
         word: "like up",
         ptDefinition: "demonstrar aprovação; curtir",
       },
       {
-        audio: "/audio/general/like-for.mp3",
+        audio: "",
         word: "like for",
         ptDefinition: "curtir por causa de (informal, online)",
       },
@@ -1042,7 +1044,7 @@ const words = [
 
     expressions: [
       {
-        audio: "/audio/general/like.mp3",
+        audio: "",
         word: "like",
         ptDefinition: "como; do tipo de",
         registerTag: "informal",
@@ -1069,15 +1071,6 @@ const words = [
         audio: "",
         word: "unlikely",
         ptDefinition: "improvável",
-      },
-    ],
-
-    expressions: [
-      {
-        audio: "/audio/general/like.mp3",
-        word: "like",
-        ptDefinition: "como; do tipo de",
-        registerTag: "informal",
       },
     ],
   },
@@ -1359,13 +1352,13 @@ const words = [
   },
   // practice
   {
-    verbAudio: "/audio/general/practice.mp3",
+    verbAudio: "",
     verbWord: "practice",
     verbPtDefinition: "praticar; treinar",
 
     nouns: [
       {
-        audio: "/audio/general/practice-noun.mp3",
+        audio: "",
         word: "practice",
         ptDefinition: "prática; exercício; clínica (profissional)",
       },
@@ -1373,12 +1366,12 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/practical.mp3",
+        audio: "",
         word: "practical",
         ptDefinition: "prático; útil",
       },
       {
-        audio: "/audio/general/practicable.mp3",
+        audio: "",
         word: "practicable",
         ptDefinition: "executável; viável",
       },
@@ -1386,7 +1379,7 @@ const words = [
 
     expressions: [
       {
-        audio: "/audio/general/practice-makes-perfect.mp3",
+        audio: "",
         word: "practice makes perfect",
         ptDefinition: "a prática leva à perfeição",
       },
@@ -1394,23 +1387,23 @@ const words = [
   },
   // read
   {
-    verbAudio: "/audio/general/read.mp3",
+    verbAudio: "",
     verbWord: "read",
     verbPtDefinition: "ler",
 
     phrasalVerbs: [
       {
-        audio: "/audio/general/read-aloud.mp3",
+        audio: "",
         word: "read aloud",
         ptDefinition: "ler em voz alta",
       },
       {
-        audio: "/audio/general/read-out.mp3",
+        audio: "",
         word: "read out",
         ptDefinition: "ler em voz alta; anunciar",
       },
       {
-        audio: "/audio/general/read-over.mp3",
+        audio: "",
         word: "read over",
         ptDefinition: "revisar; ler rapidamente",
       },
@@ -1418,7 +1411,7 @@ const words = [
 
     nouns: [
       {
-        audio: "/audio/general/reading.mp3",
+        audio: "",
         word: "reading",
         ptDefinition: "leitura; interpretação",
       },
@@ -1426,7 +1419,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/readable.mp3",
+        audio: "",
         word: "readable",
         ptDefinition: "legível; compreensível",
       },
@@ -1434,7 +1427,7 @@ const words = [
 
     expressions: [
       {
-        audio: "/audio/general/read-between-the-lines.mp3",
+        audio: "",
         word: "read between the lines",
         ptDefinition: "ler nas entrelinhas; entender o que não está explícito",
       },
@@ -1442,13 +1435,13 @@ const words = [
   },
   // saw (to cut with a saw)
   {
-    verbAudio: "/audio/general/saw.mp3",
+    verbAudio: "",
     verbWord: "saw",
     verbPtDefinition: "serrar; cortar com serra",
 
     phrasalVerbs: [
       {
-        audio: "/audio/general/saw-off.mp3",
+        audio: "",
         word: "saw off",
         ptDefinition: "cortar algo completamente com serra",
       },
@@ -1456,7 +1449,7 @@ const words = [
 
     nouns: [
       {
-        audio: "/audio/general/saw.mp3",
+        audio: "",
         word: "saw",
         ptDefinition: "serra; ferramenta para cortar madeira",
       },
@@ -1464,7 +1457,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/sawed-off.mp3",
+        audio: "",
         word: "sawed-off",
         ptDefinition: "cortado; reduzido",
       },
@@ -1472,23 +1465,23 @@ const words = [
   },
   // see
   {
-    verbAudio: "/audio/general/see.mp3",
+    verbAudio: "",
     verbWord: "see",
     verbPtDefinition: "ver; perceber; compreender",
 
     phrasalVerbs: [
       {
-        audio: "/audio/general/see-off.mp3",
+        audio: "",
         word: "see off",
         ptDefinition: "acompanhar alguém na partida; despedir-se",
       },
       {
-        audio: "/audio/general/see-through.mp3",
+        audio: "",
         word: "see through",
         ptDefinition: "ver através; perceber intenções",
       },
       {
-        audio: "/audio/general/see-to.mp3",
+        audio: "",
         word: "see to",
         ptDefinition: "cuidar de; providenciar",
       },
@@ -1496,7 +1489,7 @@ const words = [
 
     nouns: [
       {
-        audio: "/audio/general/seeing.mp3",
+        audio: "",
         word: "seeing",
         ptDefinition: "visão; percepção",
       },
@@ -1504,7 +1497,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/seen.mp3",
+        audio: "",
         word: "seen",
         ptDefinition: "visto; percebido",
       },
@@ -1512,12 +1505,12 @@ const words = [
 
     expressions: [
       {
-        audio: "/audio/general/see-eye-to-eye.mp3",
+        audio: "",
         word: "see eye to eye",
         ptDefinition: "concordar; ter a mesma opinião",
       },
       {
-        audio: "/audio/general/see-the-light.mp3",
+        audio: "",
         word: "see the light",
         ptDefinition: "perceber a verdade; entender algo",
       },
@@ -1527,7 +1520,7 @@ const words = [
   {
     nouns: [
       {
-        audio: "/audio/general/purity.mp3",
+        audio: "",
         word: "purity",
         ptDefinition: "pureza",
       },
@@ -1535,7 +1528,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/pure.mp3",
+        audio: "",
         word: "pure",
         ptDefinition: "puro(a)",
       },
@@ -1543,13 +1536,13 @@ const words = [
   },
   // shorten
   {
-    verbAudio: "/audio/general/shorten.mp3",
+    verbAudio: "",
     verbWord: "shorten",
     verbPtDefinition: "encurtar; reduzir",
 
     nouns: [
       {
-        audio: "/audio/general/shortness.mp3",
+        audio: "",
         word: "shortness",
         ptDefinition: "falta de; deficiência",
       },
@@ -1557,7 +1550,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/short.mp3",
+        audio: "",
         word: "short",
         ptDefinition: "curto",
       },
@@ -1565,13 +1558,13 @@ const words = [
   },
   // soften
   {
-    verbAudio: "/audio/general/soften.mp3",
+    verbAudio: "",
     verbWord: "soften",
     verbPtDefinition: "amaciar",
 
     nouns: [
       {
-        audio: "/audio/general/softness.mp3",
+        audio: "",
         word: "softness",
         ptDefinition: "maciez",
       },
@@ -1579,7 +1572,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/soft.mp3",
+        audio: "",
         word: "soft",
         ptDefinition: "macio",
       },
@@ -1587,18 +1580,18 @@ const words = [
   },
   // speak
   {
-    verbAudio: "/audio/general/speak.mp3",
+    verbAudio: "",
     verbWord: "speak",
     verbPtDefinition: "falar",
 
     phrasalVerbs: [
       {
-        audio: "/audio/general/speak-up.mp3",
+        audio: "",
         word: "speak up",
         ptDefinition: "falar mais alto; expressar opinião",
       },
       {
-        audio: "/audio/general/speak-out.mp3",
+        audio: "",
         word: "speak out",
         ptDefinition: "falar abertamente; protestar",
       },
@@ -1606,12 +1599,12 @@ const words = [
 
     nouns: [
       {
-        audio: "/audio/general/speaking.mp3",
+        audio: "",
         word: "speaking",
         ptDefinition: "fala; conversação",
       },
       {
-        audio: "/audio/general/speaker.mp3",
+        audio: "",
         word: "speaker",
         ptDefinition: "orador; falante",
       },
@@ -1619,7 +1612,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/spoken.mp3",
+        audio: "",
         word: "spoken",
         ptDefinition: "falado",
       },
@@ -1627,18 +1620,18 @@ const words = [
   },
   // teach
   {
-    verbAudio: "/audio/general/teach.mp3",
+    verbAudio: "",
     verbWord: "teach",
     verbPtDefinition: "ensinar",
 
     nouns: [
       {
-        audio: "/audio/general/teacher.mp3",
+        audio: "",
         word: "teacher",
         ptDefinition: "professor",
       },
       {
-        audio: "/audio/general/teaching.mp3",
+        audio: "",
         word: "teaching",
         ptDefinition: "ensino",
       },
@@ -1646,7 +1639,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/teaching.mp3",
+        audio: "",
         word: "teaching",
         ptDefinition: "pedagógico",
       },
@@ -1654,13 +1647,13 @@ const words = [
   },
   // use
   {
-    verbAudio: "/audio/general/use-verb.mp3",
+    verbAudio: "",
     verbWord: "use",
     verbPtDefinition: "usar",
 
     nouns: [
       {
-        audio: "/audio/general/use-noun.mp3",
+        audio: "",
         word: "use",
         ptDefinition: "uso",
       },
@@ -1668,7 +1661,7 @@ const words = [
 
     adjectives: [
       {
-        audio: "/audio/general/useful-useless.mp3",
+        audio: "",
         word: "useful / useless",
         ptDefinition: "útil / inútil",
       },
@@ -1735,6 +1728,22 @@ export default function WordFamilies() {
                     <RegisterTag>{word.verbRegisterTag}</RegisterTag>
                   )}
                   <Portuguese>{word.verbPtDefinition}</Portuguese>
+                  <div>
+                    {(word.enNotes || word.ptNotes) && (
+                      <span className={styles.notes}>
+                        <Bold>Notes:</Bold>{" "}
+                        {word.enNotes &&
+                        <span>{word.enNotes}</span>
+                        }
+                        {word.enNotes && word.ptNotes && " "}
+                        {word.ptNotes && (
+                          
+                            <Portuguese className={styles.ptNotes}>{word.ptNotes}</Portuguese>
+                          
+                        )}
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 {/* PHRASAL VERB */}
@@ -1785,13 +1794,11 @@ export default function WordFamilies() {
                 {/* EXPRESSIONS */}
                 <div>
                   {word.expressions?.map((item, index) => (
-                    <span key={index}>
-                      <span>
-                        {item.audio && <Audio src={item.audio} />}
-                        <Bold>{item.word}</Bold>{" "}
-                      </span>
+                    <div key={index}>
+                      {item.audio && <Audio src={item.audio} />}
+                      <Bold>{item.word}</Bold>{" "}
                       <Portuguese>{item.ptDefinition}</Portuguese>
-                    </span>
+                    </div>
                   ))}
                 </div>
               </div>

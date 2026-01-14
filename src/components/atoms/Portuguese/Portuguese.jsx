@@ -1,5 +1,3 @@
-export const Portuguese = ({ children }) => {
-  return (
-    <span className='portuguese'>{children}</span>
-  )
-}
+export const Portuguese = ({ children, className = "" }) => {
+  return <span className={`portuguese ${className}`.trim()}>{children}</span>;
+};

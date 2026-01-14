@@ -48,6 +48,11 @@
   background-color: var(--slate-2);
 }
 
-.hidden {
-  visibility: hidden;
+.notes, .notes span {
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.ptNotes {
+  display: block;
 }
