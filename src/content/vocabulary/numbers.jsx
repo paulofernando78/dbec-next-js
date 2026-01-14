@@ -1497,7 +1497,7 @@ export default function Numbers() {
                 text: ["When is your birthday?"],
               },
               {
-                text: ["How old is someone in your family?"],
+                text: ["How old is your (dad, mom, brother, sister, etc.)?"],
               },
             ]}
           />
