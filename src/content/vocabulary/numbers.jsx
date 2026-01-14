@@ -96,45 +96,96 @@ export default function Numbers() {
 
         <Section label="Presentation" heading={3}>
           <Dialogue
-            audioPlayer="/assets/audio/general/.mp3"
+            audioPlayer="/assets/audio/vocabulary/numbers/presenttion-dialogue.mp3"
             lines={[
               {
-                speaker: "A:",
+                speaker: "Scott:",
+                text: ["Surprise!"],
+              },
+              {
+                speaker: "Anna:",
+                text: ["Oh! Thank you so much!"],
+              },
+              {
+                speaker: "Scott:",
                 text: [
-                  "... ",
+                  "Today is your birthday. It’s ",
                   {
+                    part: "on the 3rd (third)",
                     type: "mark",
-                    part: "...",
                   },
-                  " ...",
+                  ", right?",
                 ],
               },
               {
-                speaker: "B:",
+                speaker: "Anna:",
+                text: ["Yes, that’s right."],
+              },
+              {
+                speaker: "Scott:",
+                text: ["How old are you now?"],
+              },
+              {
+                speaker: "Anna:",
                 text: [
-                  "... ",
+                  "I'm ",
                   {
+                    part: "29 (twenty-nine)",
                     type: "mark",
-                    part: "...",
                   },
-                  " ...",
+                  ".",
                 ],
+              },
+              {
+                speaker: "Scott:",
+                text: ["Great! Let's sing Happy birthday, then."],
               },
             ]}
           />
         </Section>
 
         <Section label="Meaning" heading={4}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      "We use cardinal numbers to talk about quantity, age, and numbers in general.",
+                    ],
+                  },
+                  {
+                    text: [
+                      "We use ordinal numbers to talk about order, position, and dates.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
           <Checking
             type="CCQ"
             ccq={[
               {
                 block: [
                   {
-                    example: "...",
+                    example: "Anna is 29. Her birthday is on the 3rd.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is 29 a cardinal or an ordinal number?",
+                        answer: "Cardinal",
+                      },
+                      {
+                        question: "Does 29 tell us age or order?",
+                        answer: "Age",
+                      },
+                      {
+                        question: "Is 3rd a cardinal or an ordinal number?",
+                        answer: "Ordinal",
+                      },
+                      {
+                        question: "Does 3rd tell us age or date?",
+                        answer: "Date",
                       },
                     ],
                   },
@@ -155,105 +206,287 @@ export default function Numbers() {
                 column: "Cardinal",
                 blocks: [
                   {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/one.mp3", part: "1 one" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/two.mp3", part: "2 two" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/three.mp3", part: "3 three" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/four.mp3", part: "4 four" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/five.mp3", part: "5 five" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/six.mp3", part: "6 six" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/seven.mp3", part: "7 seven" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/eight.mp3", part: "8 eight" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/nine.mp3", part: "9 nine" }] }],
-                  },
-                  {
-                    block: [{ text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/ten.mp3", part: "10 ten" }] }],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/eleven.mp3", part: "11 eleven" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/twelve.mp3", part: "12 twelve" }] },
-                    ],
-                  },
-                  {
                     block: [
                       {
-                        text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/thirteen.mp3", part: "13 thirteen" }],
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/one.mp3",
+                            part: "1 one",
+                          },
+                        ],
                       },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/fourteen.mp3", part: "14 fourteen" }],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/fifteen.mp3", part: "15 fifteen" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/sixteen.mp3", part: "16 sixteen" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/seventeen.mp3", part: "17 seventeen" }],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/eighteen.mp3", part: "18 eighteen" }],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/nineteen.mp3", part: "19 nineteen" }],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/twenty1.mp3", part: "20 twenty" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/twenty2.mp3", part: "20 twenty *" }] },
                     ],
                   },
                   {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-one.mp3", part: "21 twenty-one" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/two.mp3",
+                            part: "2 two",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/three.mp3",
+                            part: "3 three",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/four.mp3",
+                            part: "4 four",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/five.mp3",
+                            part: "5 five",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/six.mp3",
+                            part: "6 six",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/seven.mp3",
+                            part: "7 seven",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/eight.mp3",
+                            part: "8 eight",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/nine.mp3",
+                            part: "9 nine",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/ten.mp3",
+                            part: "10 ten",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/eleven.mp3",
+                            part: "11 eleven",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twelve.mp3",
+                            part: "12 twelve",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/thirteen.mp3",
+                            part: "13 thirteen",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/fourteen.mp3",
+                            part: "14 fourteen",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/fifteen.mp3",
+                            part: "15 fifteen",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/sixteen.mp3",
+                            part: "16 sixteen",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/seventeen.mp3",
+                            part: "17 seventeen",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/eighteen.mp3",
+                            part: "18 eighteen",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/nineteen.mp3",
+                            part: "19 nineteen",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty1.mp3",
+                            part: "20 twenty",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty2.mp3",
+                            part: "20 twenty *",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-one.mp3",
+                            part: "21 twenty-one",
+                          },
                           " ",
                         ],
                       },
@@ -263,7 +496,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-two.mp3", part: "22 twenty-two" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-two.mp3",
+                            part: "22 twenty-two",
+                          },
                           " ",
                         ],
                       },
@@ -273,7 +510,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-three.mp3", part: "23 twenty-three" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-three.mp3",
+                            part: "23 twenty-three",
+                          },
                           " ",
                         ],
                       },
@@ -283,7 +524,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-four.mp3", part: "24 twenty-four" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-four.mp3",
+                            part: "24 twenty-four",
+                          },
                           " ",
                         ],
                       },
@@ -293,7 +538,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-five.mp3", part: "25 twenty-five" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-five.mp3",
+                            part: "25 twenty-five",
+                          },
                           " ",
                         ],
                       },
@@ -303,7 +552,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-six.mp3", part: "26 twenty-six" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-six.mp3",
+                            part: "26 twenty-six",
+                          },
                           " ",
                         ],
                       },
@@ -313,7 +566,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-seven.mp3", part: "27 twenty-seven" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-seven.mp3",
+                            part: "27 twenty-seven",
+                          },
                           " ",
                         ],
                       },
@@ -323,7 +580,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-eight.mp3", part: "28 twenty-eight" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-eight.mp3",
+                            part: "28 twenty-eight",
+                          },
                           " ",
                         ],
                       },
@@ -333,7 +594,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/twenty-nine.mp3", part: "29 twenty-nine" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/twenty-nine.mp3",
+                            part: "29 twenty-nine",
+                          },
                           " ",
                         ],
                       },
@@ -341,14 +606,26 @@ export default function Numbers() {
                   },
                   {
                     block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/cardinal/thirty.mp3", part: "30 thirty" }] },
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/thirty.mp3",
+                            part: "30 thirty",
+                          },
+                        ],
+                      },
                     ],
                   },
                   {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/cardinal/thirty-one.mp3", part: "31 thirty-one" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/cardinal/thirty-one.mp3",
+                            part: "31 thirty-one",
+                          },
                           " ",
                         ],
                       },
@@ -365,79 +642,13 @@ export default function Numbers() {
                 blocks: [
                   {
                     block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/first.mp3", part: "1st first" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/second.mp3", part: "2nd second" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/third.mp3", part: "3rd third" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/fourth.mp3", part: "4th fourth" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/fifth.mp3", part: "5th fifth" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/sixth.mp3", part: "6th sixth" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/seventh.mp3", part: "7th seventh" }],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/eighth.mp3", part: "8th eighth" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/ninth.mp3", part: "9th ninth" }] },
-                    ],
-                  },
-                  {
-                    block: [
-                      { text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/tenth.mp3", part: "10th tenth" }] },
-                    ],
-                  },
-                  {
-                    block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/eleventh.mp3", part: "11th eleventh" },
-                          " ",
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [{ audio: "/assets/audio/vocabulary/numbers/ordinal/twelfth.mp3", part: "12th twelfth" }],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/thirteenth.mp3", part: "13th thirteenth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/first.mp3",
+                            part: "1st first",
+                          },
                         ],
                       },
                     ],
@@ -446,8 +657,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/fourteenth.mp3", part: "14th fourteenth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/second.mp3",
+                            part: "2nd second",
+                          },
                         ],
                       },
                     ],
@@ -456,8 +670,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/fifteenth.mp3", part: "15th fifteenth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/third.mp3",
+                            part: "3rd third",
+                          },
                         ],
                       },
                     ],
@@ -466,8 +683,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/sixteenth.mp3", part: "16th sixteenth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/fourth.mp3",
+                            part: "4th fourth",
+                          },
                         ],
                       },
                     ],
@@ -476,8 +696,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/seventeenth.mp3", part: "17th seventeenth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/fifth.mp3",
+                            part: "5th fifth",
+                          },
                         ],
                       },
                     ],
@@ -486,8 +709,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/eighteenth.mp3", part: "18th eighteenth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/sixth.mp3",
+                            part: "6th sixth",
+                          },
                         ],
                       },
                     ],
@@ -496,8 +722,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/nineteenth.mp3", part: "19th nineteenth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/seventh.mp3",
+                            part: "7th seventh",
+                          },
                         ],
                       },
                     ],
@@ -506,8 +735,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twentieth.mp3", part: "20th twentieth" },
-                          " ",
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/eighth.mp3",
+                            part: "8th eighth",
+                          },
                         ],
                       },
                     ],
@@ -516,7 +748,37 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-first.mp3", part: "21st twenty-first" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/ninth.mp3",
+                            part: "9th ninth",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/tenth.mp3",
+                            part: "10th tenth",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/eleventh.mp3",
+                            part: "11th eleventh",
+                          },
                           " ",
                         ],
                       },
@@ -526,7 +788,24 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-second.mp3", part: "22nd twenty-second" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twelfth.mp3",
+                            part: "12th twelfth",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/thirteenth.mp3",
+                            part: "13th thirteenth",
+                          },
                           " ",
                         ],
                       },
@@ -536,7 +815,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-third.mp3", part: "23rd twenty-third" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/fourteenth.mp3",
+                            part: "14th fourteenth",
+                          },
                           " ",
                         ],
                       },
@@ -546,7 +829,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-fourth.mp3", part: "24th twenty-fourth" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/fifteenth.mp3",
+                            part: "15th fifteenth",
+                          },
                           " ",
                         ],
                       },
@@ -556,7 +843,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-fifth.mp3", part: "25th twenty-fifth" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/sixteenth.mp3",
+                            part: "16th sixteenth",
+                          },
                           " ",
                         ],
                       },
@@ -566,7 +857,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-sixth.mp3", part: "26th twenty-sixth" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/seventeenth.mp3",
+                            part: "17th seventeenth",
+                          },
                           " ",
                         ],
                       },
@@ -576,7 +871,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-seventh.mp3", part: "27th twenty-seventh" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/eighteenth.mp3",
+                            part: "18th eighteenth",
+                          },
                           " ",
                         ],
                       },
@@ -586,7 +885,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-eighth.mp3", part: "28th twenty-eighth" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/nineteenth.mp3",
+                            part: "19th nineteenth",
+                          },
                           " ",
                         ],
                       },
@@ -596,7 +899,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/twenty-ninth.mp3", part: "29th twenty-ninth" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twentieth.mp3",
+                            part: "20th twentieth",
+                          },
                           " ",
                         ],
                       },
@@ -606,7 +913,11 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/thirtieth.mp3", part: "30th thirtieth" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-first.mp3",
+                            part: "21st twenty-first",
+                          },
                           " ",
                         ],
                       },
@@ -616,7 +927,137 @@ export default function Numbers() {
                     block: [
                       {
                         text: [
-                          { audio: "/assets/audio/vocabulary/numbers/ordinal/thirty-first.mp3", part: "31st thirty-first" },
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-second.mp3",
+                            part: "22nd twenty-second",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-third.mp3",
+                            part: "23rd twenty-third",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-fourth.mp3",
+                            part: "24th twenty-fourth",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-fifth.mp3",
+                            part: "25th twenty-fifth",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-sixth.mp3",
+                            part: "26th twenty-sixth",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-seventh.mp3",
+                            part: "27th twenty-seventh",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-eighth.mp3",
+                            part: "28th twenty-eighth",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/twenty-ninth.mp3",
+                            part: "29th twenty-ninth",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/thirtieth.mp3",
+                            part: "30th thirtieth",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/vocabulary/numbers/ordinal/thirty-first.mp3",
+                            part: "31st thirty-first",
+                          },
                           " ",
                         ],
                       },
@@ -1034,11 +1475,13 @@ export default function Numbers() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about you.",
                         type: "bold",
                       },
                     ],
+                  },
+                  {
+                    text: ["Use numbers to answer the questions."],
                   },
                 ],
               },
@@ -1048,7 +1491,13 @@ export default function Numbers() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["How old are you?"],
+              },
+              {
+                text: ["When is your birthday?"],
+              },
+              {
+                text: ["How old is someone in your family?"],
               },
             ]}
           />
