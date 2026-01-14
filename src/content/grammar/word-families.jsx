@@ -1725,19 +1725,6 @@ export default function WordFamilies() {
                         <RegisterTag>{word.verb.registerTag}</RegisterTag>
                       )}
                       <Portuguese>{word.verb.ptDefinition}</Portuguese>
-                      {(word.verb.enNotes || word.verb.ptNotes) && (
-                        <span className={styles.notes}>
-                          <Bold>Notes:</Bold>{" "}
-                          {word.verb.enNotes && (
-                            <span>{word.verb.enNotes}</span>
-                          )}
-                          {word.verb.ptNotes && (
-                            <Portuguese className={styles.ptNotes}>
-                              {word.verb.ptNotes}
-                            </Portuguese>
-                          )}
-                        </span>
-                      )}
                       {word.conjugation && (
                         <div className={styles.conjugation}>
                           <div>
@@ -1764,6 +1751,21 @@ export default function WordFamilies() {
                           </div>
                         </div>
                       )}
+                      <div>
+                        {(word.verb.enNotes || word.verb.ptNotes) && (
+                          <span className={styles.notes}>
+                            <Bold>Notes:</Bold>{" "}
+                            {word.verb.enNotes && (
+                              <span>{word.verb.enNotes}</span>
+                            )}
+                            {word.verb.ptNotes && (
+                              <Portuguese className={styles.ptNotes}>
+                                {word.verb.ptNotes}
+                              </Portuguese>
+                            )}
+                          </span>
+                        )}
+                      </div>
                     </>
                   )}
                 </div>
