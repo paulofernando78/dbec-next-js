@@ -85,6 +85,10 @@
   color: var(--blue-6);
 }
 
+.ptDefinition, .ptExample {
+  display: block;
+}
+
 .enExample {
   margin-inline: var(--margin-inline);
 }

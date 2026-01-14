@@ -85,8 +85,8 @@ const links = [
         label: "Conditionals",
       },
       {
-        href: "/grammar/word-formation",
-        label: "Word Formation",
+        href: "/grammar/word-families",
+        label: "Word Families",
       },
     ],
   },

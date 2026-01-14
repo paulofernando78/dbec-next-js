@@ -131,7 +131,7 @@ export const Dictionary = () => {
                       </span>
                     )}
                     {item.ptDefinition && (
-                      <span className={styles.enDefinition}>
+                      <span className={styles.ptDefinition}>
                         <Portuguese>{item.ptDefinition}</Portuguese>
                       </span>
                     )}
