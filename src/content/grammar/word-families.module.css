@@ -3,11 +3,11 @@
   overflow-x: auto;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  
+
   border: var(--border);
   border-radius: 7px;
   padding: 3px;
-  
+
   cursor: grab;
   user-select: none;
 }
@@ -18,7 +18,7 @@
 
 .table {
   display: grid;
-  grid-template-columns: repeat(5, 290px);
+  grid-template-columns: repeat(5, 310px);
   gap: 5px;
   border-radius: var(--border-radius);
 }
@@ -48,9 +48,16 @@
   background-color: var(--slate-2);
 }
 
-.notes, .notes span {
+.partOfSpeech {
+  font-size: 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.notes,
+.notes span {
   font-size: 1rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .ptNotes {

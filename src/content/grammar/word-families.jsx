@@ -20,15 +20,22 @@ const words = [
     verb: {
       audio: "/assets/audio/general/answer.mp3",
       word: "answer",
+      partOfSpeech: "regular",
       phonetics: "/ˈæn.sɚ/",
       ptDefinition: "responder",
     },
     conjugation: {
+      thirdPersonAudio: "/assets/audio/general/answer.mp3",
+      thirdPerson: "answers",
+      thirdPersonPhonetics: "/z/",
+      pastAudio: "/assets/audio/general/answer.mp3",
       past: "answered",
       pastPhonetics: "/d/",
-      pastParticiple: "answered",
-      pastParticiplePhonetics: "/d/",
-      presentParticple: "answering",
+      participleAudio: "/assets/audio/general/answer.mp3",
+      participle: "answered",
+      participlePhonetics: "/d/",
+      progressiveAudio: "/assets/audio/general/answer.mp3",
+      progressive: "answering",
     },
   },
   // ask
@@ -1714,40 +1721,49 @@ export default function WordFamilies() {
 
             {words.map((word, index) => (
               <div key={index} className={styles.row}>
-                {/* VERB */}
                 <div>
+                  {/* VERB */}
                   {word.verb && (
                     <>
                       {word.verb.audio && <Audio src={word.verb.audio} />}
                       <Bold>{word.verb.word}</Bold>{" "}
                       <Phonetics>{word.verb.phonetics}</Phonetics>{" "}
-                      {word.verb.registerTag && (
-                        <RegisterTag>{word.verb.registerTag}</RegisterTag>
-                      )}
-                      <Portuguese>{word.verb.ptDefinition}</Portuguese>
+                      <span className={styles.partOfSpeech}>{word.verb.partOfSpeech}</span>{" "}
+                      {word.verb.registerTag && (<RegisterTag>{word.verb.registerTag}</RegisterTag>)}{" "}
+                      <Portuguese className={styles.ptDefinition}>{word.verb.ptDefinition}</Portuguese>
+
+                      {/* CONJUGATION */}
                       {word.conjugation && (
                         <div className={styles.conjugation}>
+
+                          {/* Third Person */}
                           <div>
+                            {word.conjugation.thirdPersonAudio && (<Audio src={word.conjugation.thirdPersonAudio} />)}
+                            <Bold>{word.conjugation.thirdPerson}</Bold>{" "}
+                            <Phonetics>{word.conjugation.thirdPersonPhonetics}</Phonetics>{" "}
+                            <span className={styles.partOfSpeech}>third person</span>
+                          </div>
+
+                          <div>
+                            {word.conjugation.pastAudio && (<Audio src={word.conjugation.pastAudio} />)}
                             <Bold>{word.conjugation.past}</Bold>{" "}
-                            <Phonetics>
-                              {word.conjugation.pastPhonetics}
-                            </Phonetics>{" "}
-                            Past
+                            <Phonetics>{word.conjugation.pastPhonetics}</Phonetics>{" "}
+                            <span className={styles.partOfSpeech}>past</span>
                           </div>
 
+                          {/* Participle */}
                           <div>
-                            <Bold>{word.conjugation.pastParticiple}</Bold>{" "}
-                            <span>
-                              <Phonetics>
-                                {word.conjugation.pastParticiplePhonetics}{" "}
-                              </Phonetics>
-                              Past participle
-                            </span>
+                            {word.conjugation.participleAudio && <Audio src={word.conjugation.participleAudio} />}
+                            <Bold>{word.conjugation.participle}</Bold>{" "}
+                            <span><Phonetics>{word.conjugation.participlePhonetics}{" "}</Phonetics></span>
+                            <span className={styles.partOfSpeech}>past participle</span>
                           </div>
 
+                          {/* Progressive */}
                           <div>
-                            <Bold>{word.conjugation.presentParticple}</Bold>{" "}
-                            Progressive
+                            {word.conjugation.progressiveAudio && <Audio src={word.conjugation.progressiveAudio} />}
+                            <Bold>{word.conjugation.progressive}</Bold>{" "}
+                            <span className={styles.partOfSpeech}>progressive</span>
                           </div>
                         </div>
                       )}
