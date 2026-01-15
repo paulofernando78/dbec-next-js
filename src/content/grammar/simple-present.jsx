@@ -107,7 +107,8 @@ export default function SimplePresent() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/grammar/simple-present/introduction/eric-doesnt-wake-up-very-early.mp3",
+                        audio:
+                          "/assets/audio/grammar/simple-present/introduction/eric-doesnt-wake-up-very-early.mp3",
                         part: "Eric doesn’t wake up very early. He usually wakes up at 10.",
                       },
                     ],
@@ -126,7 +127,8 @@ export default function SimplePresent() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/grammar/simple-present/introduction/eric-takes-online-classes.mp3",
+                        audio:
+                          "/assets/audio/grammar/simple-present/introduction/eric-takes-online-classes.mp3",
                         part: "Eric takes online classes. He studies from home.",
                       },
                     ],
@@ -145,14 +147,14 @@ export default function SimplePresent() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/grammar/simple-present/introduction/sometimes-eric-watches-movies-in-the-evening.mp3",
+                        audio:
+                          "/assets/audio/grammar/simple-present/introduction/sometimes-eric-watches-movies-in-the-evening.mp3",
                         part: "Sometimes Eric watches movies in the evening.",
                       },
                     ],
                   },
                 ],
               },
-              
             ]}
           />
           <Paragraph
@@ -197,7 +199,9 @@ export default function SimplePresent() {
               },
               {
                 speaker: "Eric:",
-                text: ["I'm okay, just a little tired. I usually watch movies in the evening, but I have to wake up early during the week, you know."],
+                text: [
+                  "I'm okay, just a little tired. I usually watch movies in the evening, but I have to wake up early during the week, you know.",
+                ],
               },
               {
                 speaker: "Laura:",
@@ -205,7 +209,9 @@ export default function SimplePresent() {
               },
               {
                 speaker: "Eric:",
-                text: ["I study programming. I have online classes, so I study from home."],
+                text: [
+                  "I study programming. I have online classes, so I study from home.",
+                ],
               },
               {
                 speaker: "Laura:",
@@ -213,15 +219,21 @@ export default function SimplePresent() {
               },
               {
                 speaker: "Eric:",
-                text: ["Yeah, I like it a lot. What about you? Do you work or study?"],
+                text: [
+                  "Yeah, I like it a lot. What about you? Do you work or study?",
+                ],
               },
               {
                 speaker: "Laura:",
-                text: ["Actually, I do. I work in finance. I usually wake up at 7 and start work at 9."],
+                text: [
+                  "Actually, I do. I work in finance. I usually wake up at 7 and start work at 9.",
+                ],
               },
               {
                 speaker: "Eric:",
-                text: ["Wow, that's early! Do you usually eat anything before bed?"],
+                text: [
+                  "Wow, that's early! Do you usually eat anything before bed?",
+                ],
               },
               {
                 speaker: "Laura:",
@@ -246,8 +258,44 @@ export default function SimplePresent() {
                 lines: [
                   {
                     text: [
-                      "Look at the dialogue again. These sentences talk about things that happen every day or regularly.",
+                      "We use the simple present to talk about routines and things that are usually true.",
                     ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        part: "daily routines:",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: ["I wake up in the morning."],
+                  },
+                  {
+                    text: ["I eat breakfast and go to school or work."],
+                  },
+                  {
+                    text: ["I go to bed at night."],
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        part: "things that are usually true:",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: ["She works in an office."],
+                  },
+                  {
+                    text: ["They study from home."],
+                  },
+                  {
+                    text: ["He watches movies in the evening."],
                   },
                 ],
               },
@@ -260,16 +308,19 @@ export default function SimplePresent() {
               {
                 block: [
                   {
-                    example: "I get up at 7 a.m. every morning.",
+                    example: "I wake up at 7 every day.",
                     questions: [
                       {
-                        question: "Is this something I do every day?",
+                        question: "Is this about the past?",
+                        answer: "No",
                       },
                       {
-                        question: "Is it happening now?",
+                        question: "Is this about now or in general?",
+                        answer: "In general",
                       },
                       {
-                        question: "Is it a routine/habit?",
+                        question: "Is this a routine?",
+                        answer: "Yes",
                       },
                     ],
                   },
@@ -278,10 +329,15 @@ export default function SimplePresent() {
               {
                 block: [
                   {
-                    example: "Kate works in finance.",
+                    example: "She works in an office.",
                     questions: [
                       {
-                        question: "Is this always true for Kate?",
+                        question: "Is this true only today?",
+                        answer: "No",
+                      },
+                      {
+                        question: "Is this usually true?",
+                        answer: "Yes",
                       },
                     ],
                   },
