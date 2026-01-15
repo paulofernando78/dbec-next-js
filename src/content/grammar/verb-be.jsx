@@ -98,9 +98,7 @@ export default function VerbBe() {
               {
                 speaker: "Scott:",
                 text: "",
-                text: [
-                  "Me too. It's my first day here.",
-                ],
+                text: ["Me too. It's my first day here."],
               },
               {
                 speaker: "Scott:",
@@ -123,205 +121,187 @@ export default function VerbBe() {
         </Section>
 
         <Section label="Meaning" heading={4}>
-          {/* Identity */}
-          <div>
-            <p>
-              <InlineText
-                text={[
+          {/* Identify */}
+          <Paragraph
+            blocks={[
+              {
+                lines: [
                   {
-                    audio: "/assets/audio/general/identity.mp3",
-                    part: "Identity",
-                    type: "bold",
+                    text: [
+                      {
+                        part: "We use verb to be to talk about:",
+                        type: "bold",
+                      },
+                    ],
+                    lineBreak: true,
                   },
-                  " ",
-                  { part: "Identidade", type: "portuguese" },
-                  ":",
-                ]}
-              />
-            </p>
-
-            <List
-              bullet={false}
-              items={[
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/im-paul.mp3",
-                      part: "I’m Paul.",
-                    },
-                    " ",
-                    { part: "Sou o Paulo.", type: "portuguese" },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/hes-my-brother.mp3",
-                      part: "He’s my brother.",
-                    },
-                    " ",
-                    { part: "Ele é o meu irmão.", type: "portuguese" },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/theyre-my-friends.mp3",
-                      part: "They are my friends.",
-                    },
-                    " ",
-                    { part: "Eles são meus amigos.", type: "portuguese" },
-                  ],
-                },
-              ]}
-            />
-          </div>
-
-          {/* Job */}
-          <div>
-            <p>
-              <InlineText
-                text={[
                   {
-                    audio: "/assets/audio/general/job.mp3",
-                    part: "Job",
-                    type: "bold",
+                    text: [
+                      {
+                        audio: "/assets/audio/general/identity.mp3",
+                        part: "Identity",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "Identidade",
+                        type: "portuguese",
+                      },
+                      ":",
+                    ],
                   },
-                  " ",
-                  { part: "Profissão / Função", type: "portuguese" },
-                  ":",
-                ]}
-              />
-            </p>
-
-            <List
-              bullet={false}
-              items={[
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/Im-a-teacher.mp3",
-                      part: "I’m a teacher.",
-                    },
-                    " ",
-                    { part: "Sou professor(a).", type: "portuguese" },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/hes-an-engineer.mp3",
-                      part: "He’s an engineer.",
-                    },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/shes-a-doctor.mp3",
-                      part: "She’s a doctor.",
-                    },
-                  ],
-                },
-              ]}
-            />
-          </div>
-
-          {/* State */}
-          <div>
-            <InlineText
-              text={[
-                {
-                  audio:
-                    "/assets/audio/general/state-condition-description.mp3",
-                  part: "State / Condition / Description",
-                  type: "bold",
-                },
-                " ",
-                { part: "Estado / Condição / Descrição", type: "portuguese" },
-                ":",
-              ]}
-            />
-
-            <List
-              bullet={false}
-              items={[
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/im-tired.mp3",
-                      part: "I’m tired.",
-                    },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/shes-happy.mp3",
-                      part: "She’s happy.",
-                    },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/this-car-is-fast.mp3",
-                      part: "This car is fast.",
-                    },
-                  ],
-                },
-              ]}
-            />
-          </div>
-
-          {/* Nationality */}
-          <div>
-            <p>
-              <InlineText
-                text={[
                   {
-                    audio: "/assets/audio/general/nationality.mp3",
-                    part: "Nationality",
-                    type: "bold",
+                    text: [
+                      {
+                        audio: "/assets/audio/general/im-paul.mp3",
+                        part: "I’m Paul.",
+                      },
+                      " ",
+                      { part: "Sou o Paulo.", type: "portuguese" },
+                    ],
                   },
-                  " ",
-                  { part: "Nacionalidade", type: "portuguese" },
-                  ":",
-                ]}
-              />
-            </p>
-
-            <List
-              bullet={false}
-              items={[
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/mike-is-american.mp3",
-                      part: "Mike is American. He’s from the United States.",
-                    },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/general/George-is-british.mp3",
-                      part: "George is British. He’s from England.",
-                    },
-                  ],
-                },
-                {
-                  text: [
-                    {
-                      audio:
-                        "/assets/audio/general/juan-and-maria-are-mexican.mp3",
-                      part: "Juan and Maria are Mexican. They’re from Mexico.",
-                    },
-                  ],
-                },
-              ]}
-            />
-          </div>
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/hes-my-brother.mp3",
+                        part: "He’s my brother.",
+                      },
+                      " ",
+                      { part: "Ele é o meu irmão.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/theyre-my-friends.mp3",
+                        part: "They are my friends.",
+                      },
+                      " ",
+                      { part: "Eles são meus amigos.", type: "portuguese" },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/job.mp3",
+                        part: "Job",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "Profissão / Função", type: "portuguese" },
+                      ":",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/Im-a-teacher.mp3",
+                        part: "I’m a teacher.",
+                      },
+                      " ",
+                      { part: "Sou professor(a).", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/hes-an-engineer.mp3",
+                        part: "He’s an engineer.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/shes-a-doctor.mp3",
+                        part: "She’s a doctor.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/state-condition-description.mp3",
+                        part: "State / Condition / Description",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "Estado / Condição / Descrição",
+                        type: "portuguese",
+                      },
+                      ":",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/im-tired.mp3",
+                        part: "I’m tired.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/shes-happy.mp3",
+                        part: "She’s happy.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/this-car-is-fast.mp3",
+                        part: "This car is fast.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/nationality.mp3",
+                        part: "Nationality",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "Nacionalidade", type: "portuguese" },
+                      ":",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/mike-is-american.mp3",
+                        part: "Mike is American. He’s from the United States.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/George-is-british.mp3",
+                        part: "George is British. He’s from England.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/juan-and-maria-are-mexican.mp3",
+                        part: "Juan and Maria are Mexican. They’re from Mexico.",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
 
           <Checking
             type="CCQ"
