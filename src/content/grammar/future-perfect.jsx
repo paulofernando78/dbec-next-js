@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function FuturePerfect() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Future Perfect" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
@@ -38,7 +38,7 @@ export default function FuturePerfect() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["By tomorrow morning, Anna will have finished her homework."],
                   },
                 ],
               },
@@ -53,23 +53,17 @@ export default function FuturePerfect() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "Will you have finished your homework ",
+                  { type: "mark", part: "by tomorrow morning" },
+                  "?",
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "Yes, I ",
+                  { type: "mark", part: "will have finished" },
+                  " it.",
                 ],
               },
             ]}
@@ -83,10 +77,19 @@ export default function FuturePerfect() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "I will have finished my homework by tomorrow morning.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is this about the present?",
+                        answer: "No",
+                      },
+                      {
+                        question: "Is this about the future?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Is the action finished before that time?",
+                        answer: "Yes",
                       },
                     ],
                   },
@@ -97,25 +100,47 @@ export default function FuturePerfect() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Form: will have + past participle",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I will have finished. / She will have arrived.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the future perfect form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "By tomorrow morning, I" },
+                    { blank: "will have finished" },
+                    { text: "my homework." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "By 8 p.m., she" },
+                    { blank: "will have arrived" },
+                    { text: "home." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +150,22 @@ export default function FuturePerfect() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. By tomorrow, I ____ my project.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "will have finished", isCorrect: true },
+                    { option: "will finish", isCorrect: false },
+                    { option: "am finishing", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. By next week, they ____ the exam.",
+                  options: [
+                    { option: "will have taken", isCorrect: true },
+                    { option: "will take", isCorrect: false },
+                    { option: "are taking", isCorrect: false },
                   ],
                 },
               ],
@@ -148,8 +181,7 @@ export default function FuturePerfect() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about the future.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +194,13 @@ export default function FuturePerfect() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["What will you have finished by tomorrow?"],
+              },
+              {
+                text: ["What will you have done by the end of this week?"],
+              },
+              {
+                text: ["What will your family have done by next year?"],
               },
             ]}
           />

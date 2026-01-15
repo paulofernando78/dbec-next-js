@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function PastPerfect() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Past Perfect" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
@@ -38,7 +38,7 @@ export default function PastPerfect() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["Anna was tired because she had studied all night."],
                   },
                 ],
               },
@@ -53,23 +53,17 @@ export default function PastPerfect() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "Why ",
+                  { type: "mark", part: "was Anna tired" },
+                  "?",
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "Because she ",
+                  { type: "mark", part: "had studied" },
+                  " all night.",
                 ],
               },
             ]}
@@ -83,10 +77,19 @@ export default function PastPerfect() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "She was tired because she had studied all night.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Are we talking about two actions in the past?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Did studying happen before she was tired?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Is the earlier action finished?",
+                        answer: "Yes",
                       },
                     ],
                   },
@@ -97,25 +100,47 @@ export default function PastPerfect() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Form: had + past participle",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "She had studied. / They had finished.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the past perfect form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "She was tired because she" },
+                    { blank: "had studied" },
+                    { text: "all night." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "They missed the bus because they" },
+                    { blank: "had left" },
+                    { text: "home late." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +150,22 @@ export default function PastPerfect() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. She was tired because she ____ all night.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "had studied", isCorrect: true },
+                    { option: "studied", isCorrect: false },
+                    { option: "was studying", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. They missed the train because they ____ late.",
+                  options: [
+                    { option: "had arrived", isCorrect: true },
+                    { option: "arrived", isCorrect: false },
+                    { option: "were arriving", isCorrect: false },
                   ],
                 },
               ],
@@ -148,8 +181,7 @@ export default function PastPerfect() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about the past.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +194,13 @@ export default function PastPerfect() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["Why were you tired yesterday?"],
+              },
+              {
+                text: ["What had you done before you came here?"],
+              },
+              {
+                text: ["What had your family done before dinner?"],
               },
             ]}
           />

@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function PresentPerfect() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Present Perfect" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
@@ -38,7 +38,7 @@ export default function PresentPerfect() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["Anna has finished her homework. She is ready to relax."],
                   },
                 ],
               },
@@ -53,23 +53,17 @@ export default function PresentPerfect() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "Have you ",
+                  { type: "mark", part: "finished" },
+                  " your homework?"
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "Yes, I ",
+                  { type: "mark", part: "have finished" },
+                  " it."
                 ],
               },
             ]}
@@ -83,10 +77,19 @@ export default function PresentPerfect() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "I have finished my homework.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is this about the past?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Is the result important now?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Do we say exactly when it happened?",
+                        answer: "No",
                       },
                     ],
                   },
@@ -97,25 +100,47 @@ export default function PresentPerfect() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Form: have / has + past participle",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I have finished. / She has arrived.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the present perfect form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "I" },
+                    { blank: "have finished" },
+                    { text: "my homework." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "She" },
+                    { blank: "has arrived" },
+                    { text: "home." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +150,22 @@ export default function PresentPerfect() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. I ____ my homework.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "have finished", isCorrect: true },
+                    { option: "finished", isCorrect: false },
+                    { option: "am finishing", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. She ____ home.",
+                  options: [
+                    { option: "has arrived", isCorrect: true },
+                    { option: "arrived", isCorrect: false },
+                    { option: "is arriving", isCorrect: false },
                   ],
                 },
               ],
@@ -148,8 +181,7 @@ export default function PresentPerfect() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about your life.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +194,13 @@ export default function PresentPerfect() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["What have you finished today?"],
+              },
+              {
+                text: ["What places have you visited?"],
+              },
+              {
+                text: ["What has your teacher done today?"],
               },
             ]}
           />

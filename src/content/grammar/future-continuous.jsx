@@ -38,7 +38,7 @@ export default function FutureContinuous() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["Tomorrow afternoon, Anna will be studying at home."],
                   },
                 ],
               },
@@ -53,23 +53,17 @@ export default function FutureContinuous() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "What ",
+                  { type: "mark", part: "will you be doing" },
+                  " tomorrow afternoon?"
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "I ",
+                  { type: "mark", part: "will be studying" },
+                  " at home."
                 ],
               },
             ]}
@@ -83,10 +77,19 @@ export default function FutureContinuous() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "I will be studying at home tomorrow afternoon.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is this about the present?",
+                        answer: "No",
+                      },
+                      {
+                        question: "Is this about the future?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Is the action in progress at that time?",
+                        answer: "Yes",
                       },
                     ],
                   },
@@ -97,25 +100,47 @@ export default function FutureContinuous() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Form: will + be + verb-ing",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I will be studying. / She will be working.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the future continuous form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "Tomorrow at 8 p.m., I" },
+                    { blank: "will be studying" },
+                    { text: "." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "This time tomorrow, she" },
+                    { blank: "will be working" },
+                    { text: "." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +150,22 @@ export default function FutureContinuous() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. This time tomorrow, I ____ dinner.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "will be cooking", isCorrect: true },
+                    { option: "cook", isCorrect: false },
+                    { option: "will cook", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. At 9 a.m. tomorrow, they ____ class.",
+                  options: [
+                    { option: "will be having", isCorrect: true },
+                    { option: "have", isCorrect: false },
+                    { option: "will have", isCorrect: false },
                   ],
                 },
               ],
@@ -148,8 +181,7 @@ export default function FutureContinuous() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about tomorrow.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +194,13 @@ export default function FutureContinuous() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["What will you be doing tomorrow afternoon?"],
+              },
+              {
+                text: ["What will you be doing this time tomorrow?"],
+              },
+              {
+                text: ["What will your family be doing tomorrow evening?"],
               },
             ]}
           />

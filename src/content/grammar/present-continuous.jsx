@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function PresebtContinuous() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Present Continuous" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
@@ -38,7 +38,7 @@ export default function PresebtContinuous() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["Anna is in the classroom now. She is answering questions."],
                   },
                 ],
               },
@@ -53,23 +53,17 @@ export default function PresebtContinuous() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "What ",
+                  { type: "mark", part: "are you doing" },
+                  " now?"
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "I ",
+                  { type: "mark", part: "am answering" },
+                  " questions."
                 ],
               },
             ]}
@@ -83,10 +77,15 @@ export default function PresebtContinuous() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "I am answering questions now.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is this happening now?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Is this about the past?",
+                        answer: "No",
                       },
                     ],
                   },
@@ -97,25 +96,47 @@ export default function PresebtContinuous() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Form: am / is / are + verb-ing",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I am studying. / She is answering.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the present continuous form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "I" },
+                    { blank: "am studying" },
+                    { text: "English now." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "She" },
+                    { blank: "is answering" },
+                    { text: "the questions." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +146,22 @@ export default function PresebtContinuous() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. Right now, I ____ English.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "am studying", isCorrect: true },
+                    { option: "study", isCorrect: false },
+                    { option: "studied", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. At the moment, she ____ the test.",
+                  options: [
+                    { option: "is answering", isCorrect: true },
+                    { option: "answers", isCorrect: false },
+                    { option: "answered", isCorrect: false },
                   ],
                 },
               ],
@@ -148,8 +177,7 @@ export default function PresebtContinuous() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about what is happening now.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +190,13 @@ export default function PresebtContinuous() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["What are you doing now?"],
+              },
+              {
+                text: ["What is your teacher doing now?"],
+              },
+              {
+                text: ["What are your classmates doing?"],
               },
             ]}
           />

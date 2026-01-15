@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function SimpleFuture() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Simple Future (will)" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
@@ -38,7 +38,7 @@ export default function SimpleFuture() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["Tomorrow is a school day. Anna will go to school."],
                   },
                 ],
               },
@@ -53,23 +53,17 @@ export default function SimpleFuture() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "What ",
+                  { type: "mark", part: "will you do" },
+                  " tomorrow?",
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "I ",
+                  { type: "mark", part: "will go" },
+                  " to school.",
                 ],
               },
             ]}
@@ -83,10 +77,19 @@ export default function SimpleFuture() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "I will go to school tomorrow.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is this about the present?",
+                        answer: "No",
+                      },
+                      {
+                        question: "Is this about the future?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Is tomorrow finished?",
+                        answer: "No",
                       },
                     ],
                   },
@@ -97,25 +100,47 @@ export default function SimpleFuture() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Form: will + base verb",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I will study. / She will go to school.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the simple future form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "Tomorrow, I" },
+                    { blank: "will study" },
+                    { text: "English." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "She" },
+                    { blank: "will go" },
+                    { text: "to school." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +150,22 @@ export default function SimpleFuture() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. Tomorrow, I ____ English.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "will study", isCorrect: true },
+                    { option: "study", isCorrect: false },
+                    { option: "am studying", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. She ____ to school tomorrow.",
+                  options: [
+                    { option: "will go", isCorrect: true },
+                    { option: "goes", isCorrect: false },
+                    { option: "went", isCorrect: false },
                   ],
                 },
               ],
@@ -149,7 +182,7 @@ export default function SimpleFuture() {
                     text: [
                       {
                         audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about tomorrow.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +195,13 @@ export default function SimpleFuture() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["What will you do tomorrow?"],
+              },
+              {
+                text: ["What will you study next?"],
+              },
+              {
+                text: ["What will your family do tomorrow?"],
               },
             ]}
           />

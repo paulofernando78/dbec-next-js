@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function PastContinuous() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Past Continuous" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
@@ -38,7 +38,7 @@ export default function PastContinuous() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["Yesterday at 8 p.m., Anna was studying at home."],
                   },
                 ],
               },
@@ -53,23 +53,17 @@ export default function PastContinuous() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "What ",
+                  { type: "mark", part: "were you doing" },
+                  " yesterday at 8 p.m.?"
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "I ",
+                  { type: "mark", part: "was studying" },
+                  " at home."
                 ],
               },
             ]}
@@ -83,10 +77,19 @@ export default function PastContinuous() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "I was studying at 8 p.m. yesterday.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is this about the present?",
+                        answer: "No",
+                      },
+                      {
+                        question: "Is this about the past?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Was the action in progress at that time?",
+                        answer: "Yes",
                       },
                     ],
                   },
@@ -97,25 +100,47 @@ export default function PastContinuous() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Form: was / were + verb-ing",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I was studying. / They were playing.",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the past continuous form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "Yesterday at 9 p.m., I" },
+                    { blank: "was studying" },
+                    { text: "." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "At that time, they" },
+                    { blank: "were watching" },
+                    { text: "TV." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +150,22 @@ export default function PastContinuous() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. At 7 p.m. yesterday, she ____ dinner.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "was cooking", isCorrect: true },
+                    { option: "cooked", isCorrect: false },
+                    { option: "is cooking", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. At that time, they ____ football.",
+                  options: [
+                    { option: "were playing", isCorrect: true },
+                    { option: "played", isCorrect: false },
+                    { option: "are playing", isCorrect: false },
                   ],
                 },
               ],
@@ -148,8 +181,7 @@ export default function PastContinuous() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about yesterday.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +194,13 @@ export default function PastContinuous() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["What were you doing yesterday at 8 p.m.?"],
+              },
+              {
+                text: ["What was your family doing at that time?"],
+              },
+              {
+                text: ["What were your friends doing last night?"],
               },
             ]}
           />

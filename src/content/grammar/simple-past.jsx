@@ -38,7 +38,7 @@ export default function SimplePast() {
                     lineBreak: true,
                   },
                   {
-                    text: ["... "],
+                    text: ["Yesterday was a school day. Anna was at school."],
                   },
                 ],
               },
@@ -53,23 +53,33 @@ export default function SimplePast() {
               {
                 speaker: "A:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "Where ",
+                  { type: "mark", part: "were you yesterday" },
+                  "?",
                 ],
               },
               {
                 speaker: "B:",
                 text: [
-                  "... ",
-                  {
-                    type: "mark",
-                    part: "...",
-                  },
-                  " ...",
+                  "I ",
+                  { type: "mark", part: "was at school" },
+                  ".",
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "What did you do after class?",
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "I ",
+                  { type: "mark", part: "studied" },
+                  " and ",
+                  { type: "mark", part: "played" },
+                  ".",
                 ],
               },
             ]}
@@ -83,10 +93,19 @@ export default function SimplePast() {
               {
                 block: [
                   {
-                    example: "...",
+                    example: "I was at school yesterday.",
                     questions: [
                       {
-                        question: "Question",
+                        question: "Is this about the present?",
+                        answer: "No",
+                      },
+                      {
+                        question: "Is this about the past?",
+                        answer: "Yes",
+                      },
+                      {
+                        question: "Is yesterday finished?",
+                        answer: "Yes",
                       },
                     ],
                   },
@@ -97,25 +116,68 @@ export default function SimplePast() {
         </Section>
 
         <Section label="Pronunciation + Form" heading={4}>
-        
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "Affirmative: subject + past simple",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I was at school. / I studied English.",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "Regular verbs: verb + -ed",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "study → studied | play → played",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "Fill in the blanks with the past simple form.",
               blocks: [
                 {
                   block: [
-                    {
-                      text: "...",
-                    },
-                    {
-                      blank: "am",
-                    },
-                    {
-                      text: "...",
-                    },
+                    { text: "I" },
+                    { blank: "was" },
+                    { text: "at school yesterday." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "She" },
+                    { blank: "studied" },
+                    { text: "English last night." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "They" },
+                    { blank: "played" },
+                    { text: "football after class." },
                   ],
                   lineBreak: true,
                 },
@@ -125,14 +187,22 @@ export default function SimplePast() {
 
           <Radio
             exercise={{
-              instruction: "...",
+              instruction: "Choose the correct answer.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. Yesterday, I ____ at home.",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "was", isCorrect: true },
+                    { option: "am", isCorrect: false },
+                    { option: "will be", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. She ____ English last night.",
+                  options: [
+                    { option: "studied", isCorrect: true },
+                    { option: "studies", isCorrect: false },
+                    { option: "will study", isCorrect: false },
                   ],
                 },
               ],
@@ -148,8 +218,7 @@ export default function SimplePast() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "...",
+                        part: "Now talk about yesterday.",
                         type: "bold",
                       },
                     ],
@@ -162,7 +231,13 @@ export default function SimplePast() {
             bullet={true}
             items={[
               {
-                text: ["..."],
+                text: ["Where were you yesterday?"],
+              },
+              {
+                text: ["What did you do after class?"],
+              },
+              {
+                text: ["Did you study or relax?"],
               },
             ]}
           />
