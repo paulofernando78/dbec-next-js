@@ -2,6 +2,32 @@
   {
     "definitions": [
       {
+        "word": "umpteenth",
+        "phonetics": "/ˈʌmptiːnθ/",
+        "partOfSpeech": "adjective",
+        "enDefinition": "used to refer to something that has happened many times, usually in an annoying or exaggerated way",
+        "ptDefinition": "usado para se referir a algo que aconteceu muitas vezes, geralmente de forma exagerada ou irritante",
+        "examples": [
+          {
+            "enExample": "This is the umpteenth time I’ve explained it.",
+            "ptExample": "Esta é a enésima vez que eu explico isso."
+          },
+          {
+            "enExample": "He asked the same question for the umpteenth time.",
+            "ptExample": "Ele fez a mesma pergunta pela enésima vez."
+          }
+        ],
+        "synonyms": "countless, innumerable",
+        "antonyms": "first, last",
+        "seeAlso": "nth",
+        "notes": [
+          {
+            "enNote": "Informal and often used to show annoyance or exaggeration.",
+            "ptNote": "Informal e geralmente usado para expressar irritação ou exagero."
+          }
+        ]
+      },
+      {
         "word": "un-PC",
         "phonetics": "/ˌʌnˌpiːˈsiː/",
         "partOfSpeech": "adjective",

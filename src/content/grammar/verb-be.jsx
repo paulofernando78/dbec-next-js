@@ -1,7 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
-import { InlineText } from "@/components/molecules/InlineText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
 import { Column } from "@/components/molecules/Column";
@@ -29,10 +28,40 @@ export default function VerbBe() {
                 ],
                 lines: [
                   {
-                    text: ["Anna and scoot are at school. "],
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentence.mp3",
+                        part: "Look at the picture and listen to the sentences.",
+                        type: "bold",
+                      },
+                    ],
+                    lineBreak: true,
                   },
                   {
-                    text: ["They're students. "],
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/verb-be/introduction/laura-and-eric-are-at-school.mp3",
+                        part: "Laura and Eric are at school.",
+                      }
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/verb-be/introduction/theyre-students.mp3",
+                        part: "They’re students.",
+                      }
+                      
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/verb-be/introduction/theyre-classmates.mp3",
+                        part: "They’re classmates.",
+                      }
+                    ],
                     lineBreak: true,
                   },
                   {
@@ -47,7 +76,7 @@ export default function VerbBe() {
                     lineBreak: true,
                   },
                   {
-                    text: ["Where are Anna and Scott? "],
+                    text: ["Where are Laura and Eric? "],
                   },
                   {
                     text: ["Are they students?"],
@@ -59,61 +88,102 @@ export default function VerbBe() {
         </Section>
 
         <Section label="Presentation" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      "",
+                      {
+                        audio: "/assets/audio/general/listen-to-the-dialogue.mp3",
+                        part: "Listen to the dialogue.",
+                        type: "bold",
+                      },
+                      "",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
           <Dialogue
-            audioPlayer="/assets/audio/general/.mp3"
+            audioPlayer="/assets/audio/grammar/verb-be/presentation/dialogue.mp3"
             lines={[
               {
-                speaker: "Anna:",
+                speaker: "Laura:",
                 text: [
                   "Hi, I",
                   {
                     type: "mark",
                     part: "’m",
                   },
-                  " Anna.",
+                  " Laura.",
                 ],
               },
               {
-                speaker: "Scott:",
+                speaker: "Eric:",
                 text: [
                   "Hello, I",
                   {
                     type: "mark",
                     part: "’m",
                   },
-                  " Scott.",
+                  " Eric.",
                 ],
               },
               {
-                speaker: "Anna:",
+                speaker: "Laura:",
+                text: ["Nice to meet you, Eric."],
+              },
+              {
+                speaker: "Eric:",
+                text: "",
                 text: [
-                  "I",
+                  "Nice to meet you, too. ",
                   {
+                    part: "Are",
                     type: "mark",
-                    part: "’m",
                   },
-                  " a student.",
+                  " you the teacher?",
                 ],
               },
               {
-                speaker: "Scott:",
-                text: "",
-                text: ["Me too. It's my first day here."],
-              },
-              {
-                speaker: "Scott:",
-                text: "",
-                text: ["Nice to meet you."],
-              },
-              {
-                speaker: "Anna:",
+                speaker: "Laura:",
                 text: [
-                  "Nice to meet you, too.",
+                  "No, I",
+                  {
+                    part: "’m not",
+                    type: "mark",
+                  },
+                  ". Her name ",
+                  {
+                    part: "is",
+                    type: "mark",
+                  },
+                  " Mrs. Smith.",
+                ],
+              },
+              {
+                speaker: "Eric:",
+                text: [
+                  "Is ",
                   {
                     type: "mark",
-                    part: "",
+                    part: "she",
                   },
-                  "",
+                  " at school?",
+                ],
+              },
+              {
+                speaker: "Laura:",
+                text: [
+                  "Yes, she ",
+                  {
+                    part: "is",
+                    type: "mark",
+                  },
+                  " in the classrom right now. Let's go!",
                 ],
               },
             ]}
@@ -383,7 +453,16 @@ export default function VerbBe() {
                             type: "bold",
                           },
                           {
-                            part: "(eu) sou, estou",
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/i-am.mp3",
+                            part: "I",
+                          },
+                          {
+                            part: "’m",
+                            type: "bold",
+                          },
+                          {
+                            part: " (eu) sou, estou",
                             type: "portuguese",
                           },
                         ],
@@ -400,6 +479,12 @@ export default function VerbBe() {
                             part: "you ",
                           },
                           { part: "are ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
+                            part: "you",
+                          },
+                          { part: "’re ", type: "bold" },
                           { part: "você é, está", type: "portuguese" },
                         ],
                       },
@@ -415,6 +500,12 @@ export default function VerbBe() {
                             part: "he ",
                           },
                           { part: "is ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/he-is.mp3",
+                            part: "he",
+                          },
+                          { part: "’s ", type: "bold" },
                           { part: "ele é, está", type: "portuguese" },
                         ],
                       },
@@ -430,6 +521,12 @@ export default function VerbBe() {
                             part: "she ",
                           },
                           { part: "is ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/she-is.mp3",
+                            part: "she",
+                          },
+                          { part: "’s ", type: "bold" },
                           { part: "ela é, está", type: "portuguese" },
                         ],
                       },
@@ -445,6 +542,12 @@ export default function VerbBe() {
                             part: "it ",
                           },
                           { part: "is ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/it-is.mp3",
+                            part: "it",
+                          },
+                          { part: "’s ", type: "bold" },
                           { part: "(neutro) é, está", type: "portuguese" },
                         ],
                       },
@@ -460,6 +563,12 @@ export default function VerbBe() {
                             part: "we ",
                           },
                           { part: "are ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/we-are.mp3",
+                            part: "we ",
+                          },
+                          { part: "’re ", type: "bold" },
                           { part: "nós somos, estamos", type: "portuguese" },
                         ],
                       },
@@ -475,6 +584,12 @@ export default function VerbBe() {
                             part: "you ",
                           },
                           { part: "are ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
+                            part: "you ",
+                          },
+                          { part: "’re ", type: "bold" },
                           { part: "vocês são, estão", type: "portuguese" },
                         ],
                       },
@@ -490,6 +605,12 @@ export default function VerbBe() {
                             part: "they ",
                           },
                           { part: "are ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/they-are.mp3",
+                            part: "they ",
+                          },
+                          { part: "’re ", type: "bold" },
                           { part: "eles/elas são, estão", type: "portuguese" },
                         ],
                       },
@@ -979,38 +1100,54 @@ export default function VerbBe() {
         <Section label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with affirmative form.",
+              instructions: "1. Fill in the blanks with the correct form of the verb be.",
               blocks: [
                 {
-                  block: [{ text: "I" }, { blank: "am" }],
+                  block: [
+                    { text: "I" },
+                    { blank: ["am", "'m", "’m"] },
+                    { text: "a student." },
+                  ],
                   lineBreak: true,
                 },
                 {
-                  block: [{ text: "you" }, { blank: "are" }],
+                  block: [
+                    { text: "She" },
+                    { blank: ["is", "'s", "’s"] },
+                    { text: "my teacher." },
+                  ],
                   lineBreak: true,
                 },
                 {
-                  block: [{ text: "he" }, { blank: "is" }],
+                  block: [
+                    { text: "They" },
+                    { blank: ["are", "'re", "’re"] },
+                    { text: "at school." },
+                  ],
                   lineBreak: true,
                 },
                 {
-                  block: [{ text: "she" }, { blank: "is" }],
+                  block: [
+                    { text: "We" },
+                    { blank: ["are", "'re", "’re"] },
+                    { text: "friends." },
+                  ],
                   lineBreak: true,
                 },
                 {
-                  block: [{ text: "it" }, { blank: "is" }],
+                  block: [
+                    { text: "It" },
+                    { blank: ["is", "'s", "’s"] },
+                    { text: "cold today." },
+                  ],
                   lineBreak: true,
                 },
                 {
-                  block: [{ text: "we" }, { blank: "are" }],
-                  lineBreak: true,
-                },
-                {
-                  block: [{ text: "you" }, { blank: "are" }],
-                  lineBreak: true,
-                },
-                {
-                  block: [{ text: "they" }, { blank: "are" }],
+                  block: [
+                    { text: "He" },
+                    { blank: ["is", "'s", "’s"] },
+                    { text: "from Brazil." },
+                  ],
                 },
               ],
             }}

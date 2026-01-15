@@ -13,6 +13,7 @@ export default function Numbers() {
     <>
       <Whiteboard title="Vocabulary" subtitle="Numbers" />
       <div className="line-break">
+
         <Section label="Introduction" heading={3}>
           <Paragraph
             blocks={[
@@ -31,7 +32,7 @@ export default function Numbers() {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentence.mp3",
                         part: "Look at the picture and listen to the sentences.",
                         type: "bold",
                       },
@@ -42,7 +43,7 @@ export default function Numbers() {
                     text: [
                       {
                         audio:
-                          "public/assets/audio/general/students-are-having-a-party-at-school.mp3",
+                          "/assets/audio/vocabulary/numbers/introduction/students-are-having-a-party-at-school.mp3",
                       },
                       "Students are having a party at school.",
                     ],
@@ -50,17 +51,17 @@ export default function Numbers() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/vocabulary/numbers/introduction/its-lauras-birthday.mp3",
                       },
-                      "It's Anna’s birthday.",
+                      "It's Laura’s birthday.",
                     ],
                   },
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/vocabulary/numbers/introduction/her-birthday-is-on-the-third.mp3",
                       },
-                      "Her birthday is on the 7th (seventh).",
+                      "Her birthday is on the 3rd (third).",
                     ],
                     lineBreak: true,
                   },
@@ -71,6 +72,7 @@ export default function Numbers() {
 
           <Radio
             exercise={{
+              audio: "/assets/audio/general/now-answer-the-questions.mp3",
               instruction: "Now answer the questions.",
               questions: [
                 {
@@ -99,15 +101,15 @@ export default function Numbers() {
             audioPlayer="/assets/audio/vocabulary/numbers/presenttion-dialogue.mp3"
             lines={[
               {
-                speaker: "Scott:",
+                speaker: "Eric:",
                 text: ["Surprise!"],
               },
               {
-                speaker: "Anna:",
+                speaker: "Laura:",
                 text: ["Oh! Thank you so much!"],
               },
               {
-                speaker: "Scott:",
+                speaker: "Eric:",
                 text: [
                   "Today is your birthday. It’s ",
                   {
@@ -118,15 +120,15 @@ export default function Numbers() {
                 ],
               },
               {
-                speaker: "Anna:",
+                speaker: "Laura:",
                 text: ["Yes, that’s right."],
               },
               {
-                speaker: "Scott:",
+                speaker: "Eric:",
                 text: ["How old are you now?"],
               },
               {
-                speaker: "Anna:",
+                speaker: "Laura:",
                 text: [
                   "I'm ",
                   {
@@ -137,7 +139,7 @@ export default function Numbers() {
                 ],
               },
               {
-                speaker: "Scott:",
+                speaker: "Eric:",
                 text: ["Great! Let's sing Happy birthday, then."],
               },
             ]}

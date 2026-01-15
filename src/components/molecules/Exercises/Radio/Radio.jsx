@@ -3,6 +3,7 @@
 import styles from "./Radio.module.css";
 
 import { Bold } from "@/components/atoms/Bold";
+import { Audio } from "@/components/atoms/Audio";
 import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
 import { useState } from "react";
@@ -39,6 +40,7 @@ export const Radio = ({ exercise = {} }) => {
     <>
       <div className="line-break">
         <p>
+          <Audio src={exercise.audio} />
           <Bold>{exercise.instruction}</Bold>
         </p>
         {questions.map((q, qIndex) => (

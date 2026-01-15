@@ -5,7 +5,7 @@ import styles from "./FillInTheBlanks.module.css";
 import { Bold } from "@/components/atoms/Bold";
 import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const FillInTheBlanks = ({ exercise }) => {
   const [answers, setAnswers] = useState({});
@@ -27,10 +27,14 @@ export const FillInTheBlanks = ({ exercise }) => {
         if (!b.blank) return;
 
         const key = `${bsIndex}-${bIndex}`;
-        const user = answers[key]?.trim().toLowerCase();
-        const correct = b.blank.trim().toLowerCase();
 
-        const isCorrect = user === correct;
+        const user = answers[key]?.trim().toLowerCase();
+
+        const correctAnswers = Array.isArray(b.blank)
+        ? b.blank.map(a => a.toLowerCase())
+        : [b.blank.toLowerCase()]
+        
+        const isCorrect = correctAnswers.includes(user);
         newResults[key] = isCorrect;
 
         if (isCorrect) score++;
@@ -82,13 +86,13 @@ export const FillInTheBlanks = ({ exercise }) => {
                         }))
                       }
                       className={[
-                            styles.blank,
-                            checked && results[key] === true && styles.correct,
-                            checked && results[key] === false && styles.incorrect,
-                          ]
-                            .filter(Boolean)
-                            .join(" ")}
-                          style={{ width: `${Math.max(b.blank.length, 2)}ch` }}
+                        styles.blank,
+                        checked && results[key] === true && styles.correct,
+                        checked && results[key] === false && styles.incorrect,
+                      ]
+                        .filter(Boolean)
+                        .join(" ")}
+                      style={{ width: `${Math.max(b.blank.length, 2)}ch` }}
                     />
                   )}
                 </div>

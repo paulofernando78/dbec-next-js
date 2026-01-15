@@ -2,6 +2,32 @@
   {
     "definitions": [
       {
+        "word": "qualm",
+        "phonetics": "/kwɑːm/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a sudden feeling of doubt, worry, or uneasiness",
+        "ptDefinition": "um sentimento repentino de dúvida, preocupação ou desconforto",
+        "examples": [
+          {
+            "enExample": "She had no qualms about telling the truth.",
+            "ptExample": "Ela não teve nenhuma dúvida em dizer a verdade."
+          },
+          {
+            "enExample": "He felt a qualm of guilt after the argument.",
+            "ptExample": "Ele sentiu um momento de culpa após a discussão."
+          }
+        ],
+        "synonyms": "misgiving, doubt, uneasiness",
+        "antonyms": "confidence, certainty",
+        "seeAlso": "misgiving",
+        "notes": [
+          {
+            "enNote": "Commonly used in the expression 'have no qualms about'.",
+            "ptNote": "Usado com frequência na expressão 'have no qualms about' (não ter nenhuma dúvida ou receio)."
+          }
+        ]
+      },
+      {
         "word": "quest",
         "phonetics": "/kwest/",
         "partOfSpeech": "noun",
