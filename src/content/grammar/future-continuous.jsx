@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function FutureContinuous() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Future Continuous" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph

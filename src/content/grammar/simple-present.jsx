@@ -6,7 +6,6 @@ import { CardText } from "@/components/molecules/CardText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
 import { Column } from "@/components/molecules/Column";
-import { List } from "@/components/molecules/List";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
@@ -19,13 +18,13 @@ export default function SimplePresent() {
           <Paragraph
             blocks={[
               {
-                audioPlayer:
-                  "/assets/audio/general/listen-to-these-sentences.mp3",
                 lines: [
                   {
                     text: [
                       {
-                        part: "Listen to these sentences.",
+                        audio:
+                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+                        part: "Look at the pictures and listen to the sentences.",
                         type: "bold",
                       },
                     ],
@@ -36,11 +35,12 @@ export default function SimplePresent() {
           />
           <CardText
             blocks={[
+              // Laura usually wakes up at 7 a.m.
               {
                 imgs: [
                   {
-                    img: "/assets/img/general/girl-wake-up.png",
-                    alt: "a girl waking up",
+                    img: "/assets/img/general/woman-wake-up-seven.png",
+                    alt: "a woman waking up",
                   },
                 ],
                 lines: [
@@ -48,18 +48,19 @@ export default function SimplePresent() {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/i-wake-up-at-seven-am.mp3",
+                          "/assets/audio/grammar/simple-present/introduction/laura-wakes-up-at-seven.mp3",
                       },
-                      "I usually wake up at 7 a.m. ",
+                      "Laura usually wakes up at 7 a.m.",
                     ],
                   },
                 ],
               },
+              // Laura works in an office during the week.
               {
                 imgs: [
                   {
-                    img: "/assets/img/general/man-study.png",
-                    alt: "a man studying",
+                    img: "/assets/img/general/woman-work-office.png",
+                    alt: "a woman working in an office",
                   },
                 ],
                 lines: [
@@ -67,18 +68,19 @@ export default function SimplePresent() {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/john-studies-in-the-evening.mp3",
-                        part: "John studies in the evening.",
+                          "/assets/audio/grammar/simple-present/introduction/laura-works-in-an-office-during-the-week.mp3",
                       },
+                      "Laura works in an office during the week.",
                     ],
                   },
                 ],
               },
+              // Laura has dinner around 10 p.m. before bed.
               {
                 imgs: [
                   {
-                    img: "/assets/img/general/woman-work-finance.png",
-                    alt: "a woman working in finance",
+                    img: "/assets/img/general/woman-eat-dinner.png",
+                    alt: "a woman having dinner",
                   },
                 ],
                 lines: [
@@ -86,24 +88,82 @@ export default function SimplePresent() {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/kate-works-from-home-she-works-in-finance.mp3",
-                        part: "Kate works from home. She works in finance.",
+                          "/assets/audio/grammar/simple-present/introduction/laura-has-dinner-around-ten-before-bed.mp3",
+                      },
+                      "Laura has dinner around 10 p.m. before bed.",
+                    ],
+                  },
+                ],
+              },
+              // Eric doesn’t have to wake up very early. He usually wakes up at 10 a.m.
+              {
+                imgs: [
+                  {
+                    img: "/assets/img/general/man-wake-up-ten.png",
+                    alt: "a man waking up",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/simple-present/introduction/eric-doesnt-wake-up-very-early.mp3",
+                        part: "Eric doesn’t wake up very early. He usually wakes up at 10.",
                       },
                     ],
                   },
                 ],
               },
+              // Eric has online classes. He studies from home.
+              {
+                imgs: [
+                  {
+                    img: "/assets/img/general/man-study-home.png",
+                    alt: "a man studying from home",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/simple-present/introduction/eric-takes-online-classes.mp3",
+                        part: "Eric takes online classes. He studies from home.",
+                      },
+                    ],
+                  },
+                ],
+              },
+              // Eric watches movies in the evening before bed.
+              {
+                imgs: [
+                  {
+                    img: "/assets/img/general/man-watch-tv-evening.png",
+                    alt: "a man watching tv",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/simple-present/introduction/sometimes-eric-watches-movies-in-the-evening.mp3",
+                        part: "Sometimes Eric watches movies in the evening.",
+                      },
+                    ],
+                  },
+                ],
+              },
+              
             ]}
           />
           <Paragraph
             blocks={[
               {
-                audioPlayer:
-                  "/assets/audio/general/now-answer-these-questions.mp3",
                 lines: [
                   {
                     text: [
                       {
+                        audio:
+                          "/assets/audio/general/now-answer-these-questions.mp3",
                         part: "Now answer these questions.",
                         type: "bold",
                       },
@@ -129,55 +189,51 @@ export default function SimplePresent() {
 
         <Section label="Presentation" heading={3}>
           <Dialogue
-            audioPlayer="/assets/audio/general/daily-routine-dialogue.mp3"
+            audioPlayer="/assets/audio/grammar/simple-present/presentation/dialogue.mp3"
             lines={[
               {
-                speaker: "A:",
-                text: ["Hey there! How’s it going?"],
+                speaker: "Laura:",
+                text: ["Hey, Eric! How are you?"],
               },
               {
-                speaker: "B:",
-                text: ["Pretty good. How about you?"],
+                speaker: "Eric:",
+                text: ["I'm okay, just a little tired. I usually watch movies in the evening, but I have to wake up early during the week, you know."],
               },
               {
-                speaker: "A:",
-                text: ["Can't complain. So, what do you do?"],
+                speaker: "Laura:",
+                text: ["Oh, I see. What do you do during the day?"],
               },
               {
-                speaker: "B:",
-                text: ["I work at a tech company."],
+                speaker: "Eric:",
+                text: ["I study programming. I have online classes, so I study from home."],
               },
               {
-                speaker: "A:",
-                text: ["Oh, nice. What do you do there?"],
+                speaker: "Laura:",
+                text: ["Awesome! Do you like it?"],
               },
               {
-                speaker: "B:",
-                text: ["I design software."],
+                speaker: "Eric:",
+                text: ["Yeah, I like it a lot. What about you? Do you work or study?"],
               },
               {
-                speaker: "A:",
-                text: ["Do you like your job?"],
+                speaker: "Laura:",
+                text: ["Actually, I do. I work in finance. I usually wake up at 7 and start work at 9."],
               },
               {
-                speaker: "B:",
-                text: ["Yeah, I enjoy it."],
+                speaker: "Eric:",
+                text: ["Wow, that's early! Do you usually eat anything before bed?"],
               },
               {
-                speaker: "A:",
-                text: ["Do you have to wake up early?"],
+                speaker: "Laura:",
+                text: ["Yes. I usually have dinner around 10."],
               },
               {
-                speaker: "B:",
-                text: ["Kinda. I usually wake up at 7:30."],
+                speaker: "Eric:",
+                text: ["Sounds like a busy day! See you later."],
               },
               {
-                speaker: "A:",
-                text: ["Oh right. I gotta go. Later."],
-              },
-              {
-                speaker: "B:",
-                text: ["Seeya."],
+                speaker: "Laura:",
+                text: ["See you!"],
               },
             ]}
           />

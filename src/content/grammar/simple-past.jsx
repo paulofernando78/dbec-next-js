@@ -10,7 +10,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function SimplePast() {
   return (
     <>
-      <Whiteboard title="Grammar" subtitle="Verb Be" />
+      <Whiteboard title="Grammar" subtitle="Simple Past" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
           <Paragraph
