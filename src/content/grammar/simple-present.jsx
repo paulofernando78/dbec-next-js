@@ -778,6 +778,285 @@ export default function SimplePresent() {
                 ],
               },
 
+              // Affirmative (Emphatic Use)
+              {
+                bgColor: "var(--green-5)",
+                column: "Affirmative (Emphatic Use)",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            part: "subject + do/does + verb",
+                            type: "italic",
+                          },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+
+                  // I
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/i-do-work.mp3",
+                            part: "I ",
+                          },
+                          { part: "do work ", type: "bold" },
+                          { part: "eu realmente trabalho", type: "portuguese" },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/i-do-study.mp3",
+                            part: "I ",
+                          },
+                          { part: "do study ", type: "bold" },
+                          { part: "eu realmente estudo", type: "portuguese" },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+
+                  // you
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/you-do-work.mp3",
+                            part: "you ",
+                          },
+                          { part: "do work ", type: "bold" },
+                          {
+                            part: "você realmente trabalha",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/you-do-study.mp3",
+                            part: "you ",
+                          },
+                          { part: "do study ", type: "bold" },
+                          { part: "você realmente estuda", type: "portuguese" },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+
+                  // he
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/he-does-work.mp3",
+                            part: "he ",
+                          },
+                          { part: "does work ", type: "bold" },
+                          {
+                            part: "ele realmente trabalha",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/he-does-study.mp3",
+                            part: "he ",
+                          },
+                          { part: "does study ", type: "bold" },
+                          { part: "ele realmente estuda", type: "portuguese" },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+
+                  // she
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/she-does-work.mp3",
+                            part: "she ",
+                          },
+                          { part: "does work ", type: "bold" },
+                          {
+                            part: "ela realmente trabalha",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/she-does-study.mp3",
+                            part: "she ",
+                          },
+                          { part: "does study ", type: "bold" },
+                          { part: "ela realmente estuda", type: "portuguese" },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+
+                  // it
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/it-does-work.mp3",
+                            part: "it ",
+                          },
+                          { part: "does work ", type: "bold" },
+                          {
+                            part: "(neutro) realmente funciona",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/it-does-study.mp3",
+                            part: "it ",
+                          },
+                          { part: "does study ", type: "bold" },
+                          {
+                            part: "(neutro) realmente estuda",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+
+                  // we
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/we-do-work.mp3",
+                            part: "we ",
+                          },
+                          { part: "do work ", type: "bold" },
+                          {
+                            part: "nós realmente trabalhamos",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/we-do-study.mp3",
+                            part: "we ",
+                          },
+                          { part: "do study ", type: "bold" },
+                          {
+                            part: "nós realmente estudamos",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+
+                  // they
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/they-do-work.mp3",
+                            part: "they ",
+                          },
+                          { part: "do work ", type: "bold" },
+                          {
+                            part: "eles/elas realmente trabalham",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/they-do-study.mp3",
+                            part: "they ",
+                          },
+                          { part: "do study ", type: "bold" },
+                          {
+                            part: "eles/elas realmente estudam",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                ],
+              },
+
               // Negative
               {
                 bgColor: "var(--red-5)",

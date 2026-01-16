@@ -454,7 +454,7 @@ export default function VerbBe() {
                           },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/i-am.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/im.mp3",
                             part: "I",
                           },
                           {
@@ -481,7 +481,7 @@ export default function VerbBe() {
                           { part: "are ", type: "bold" },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/youre.mp3",
                             part: "you",
                           },
                           { part: "’re ", type: "bold" },
@@ -502,7 +502,7 @@ export default function VerbBe() {
                           { part: "is ", type: "bold" },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/he-is.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/hes.mp3",
                             part: "he",
                           },
                           { part: "’s ", type: "bold" },
@@ -523,7 +523,7 @@ export default function VerbBe() {
                           { part: "is ", type: "bold" },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/she-is.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/shes.mp3",
                             part: "she",
                           },
                           { part: "’s ", type: "bold" },
@@ -544,7 +544,7 @@ export default function VerbBe() {
                           { part: "is ", type: "bold" },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/it-is.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/its.mp3",
                             part: "it",
                           },
                           { part: "’s ", type: "bold" },
@@ -565,7 +565,7 @@ export default function VerbBe() {
                           { part: "are ", type: "bold" },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/we-are.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/were.mp3",
                             part: "we ",
                           },
                           { part: "’re ", type: "bold" },
@@ -586,7 +586,7 @@ export default function VerbBe() {
                           { part: "are ", type: "bold" },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/you-are.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/youre.mp3",
                             part: "you ",
                           },
                           { part: "’re ", type: "bold" },
@@ -607,7 +607,7 @@ export default function VerbBe() {
                           { part: "are ", type: "bold" },
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/they-are.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/affirmative/theyre.mp3",
                             part: "they ",
                           },
                           { part: "’re ", type: "bold" },
