@@ -1,5 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Section } from "@/components/molecules/Section";
+import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
@@ -13,32 +14,39 @@ export default function FuturePerfect() {
       <Whiteboard title="Grammar" subtitle="Future Perfect" />
       <div className="line-break">
         <Section label="Introduction" heading={3}>
-          <Paragraph
+          <CardText
             blocks={[
               {
-                imgPosition: "left",
                 imgs: [
                   {
-                    img: "/assets/img/general/.png",
-                    alt: "T.",
-                    width: 350,
-                    height: 250,
+                    img: "/assets/img/general/woman-work-office.png",
+                    alt: "",
+                    width: 300,
+                    height: 300,
                   },
                 ],
                 lines: [
                   {
                     text: [
-                      {
-                        audio:
-                          "/assets/audio/general/answer-these-questions.mp3",
-                        part: "Answer these questions.",
-                        type: "bold",
-                      },
+                      "Laura is working on her report. By tomorrow morning, Anna will have finished her report.",
                     ],
-                    lineBreak: true,
                   },
+                ],
+              },
+              {
+                imgs: [
                   {
-                    text: ["By tomorrow morning, Anna will have finished her homework."],
+                    img: "/assets/img/general/woman-work-hand-over-report.png",
+                    alt: "",
+                    width: 300,
+                    height: 300,
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      "the report is ready. She is handing it over to her boss. ",
+                    ],
                   },
                 ],
               },
@@ -77,7 +85,8 @@ export default function FuturePerfect() {
               {
                 block: [
                   {
-                    example: "I will have finished my homework by tomorrow morning.",
+                    example:
+                      "I will have finished my homework by tomorrow morning.",
                     questions: [
                       {
                         question: "Is this about the present?",
@@ -113,9 +122,7 @@ export default function FuturePerfect() {
                     ],
                   },
                   {
-                    text: [
-                      "I will have finished. / She will have arrived.",
-                    ],
+                    text: ["I will have finished. / She will have arrived."],
                   },
                 ],
               },
