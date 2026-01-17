@@ -226,6 +226,25 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // I have online classes in the morning.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-have-online-classes-in-the-morning.mp3",
+                      },
+                      "I ha",
+                      {
+                        part: "ve o",
+                        type: "underline",
+                      },
+                      "nline classes in the morning.",
+                      {
+                        part: " “Eu tenho aulas online pela manhã.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
                   // Turn off the lights.
                   {
                     text: [
@@ -245,7 +264,6 @@ export default function LikedSounds() {
                       },
                     ],
                   },
-                  
                   // I’m out of time.
                   {
                     text: [

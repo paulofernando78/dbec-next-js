@@ -98,10 +98,6 @@ const links = [
         label: "Numbers",
       },
       {
-        href: "/vocabulary/for-to",
-        label: "For vs. To",
-      },
-      {
         href: "/vocabulary/collocations",
         label: "Collocations",
       },
@@ -112,6 +108,10 @@ const links = [
       {
         href: "/vocabulary/homonyns",
         label: "Homonyns",
+      },
+      {
+        href: "/vocabulary/which-one",
+        label: "Which one?",
       },
     ],
   },
