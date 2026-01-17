@@ -31,6 +31,7 @@ export default function LikedSounds() {
             blocks={[
               {
                 lines: [
+                  // /w/
                   {
                     text: [
                       {
@@ -43,12 +44,13 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Go on.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/go-on.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/vowel-vowel/w/go-on.mp3",
                       },
-                      "g",
+                      "G",
                       {
                         part: "o o",
                         type: "underline",
@@ -60,10 +62,11 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Do it again.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/do-it-again.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/vowel-vowel/w/do-it-again.mp3",
                       },
                       "D",
                       {
@@ -78,6 +81,7 @@ export default function LikedSounds() {
                     ],
                     lineBreak: true,
                   },
+                  // /j/
                   {
                     text: [
                       {
@@ -90,11 +94,12 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // I agree with you on this issue.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/i-agree-with-you-on-this-issue.mp3",
+                          "/assets/audio/pronunciation/linked-sounds/vowel-vowel/j/i-agree-with-you-on-this-issue.mp3",
                       },
                       {
                         part: "I a",
@@ -107,6 +112,7 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // She asked me a question.
                   {
                     text: [
                       {
@@ -136,11 +142,12 @@ export default function LikedSounds() {
             blocks={[
               {
                 lines: [
+                  // He works in an office.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/he-works-in-an-office.mp3",
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/he-works-in-an-office.mp3",
                       },
                       "He work",
                       {
@@ -158,10 +165,11 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Take a look at it.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/take-a-look-at-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/take-a-look-at-it.mp3",
                       },
                       "Ta",
                       {
@@ -175,32 +183,34 @@ export default function LikedSounds() {
                       },
                       "t it.",
                       {
-                        part: "Dá uma olha.",
+                        part: " Dá uma olha.",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // Turn off the lights.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/turn-off-the-lights.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/turn-off-the-lights.mp3",
                       },
-                      "tur",
+                      "Tur",
                       {
                         part: "n o",
                         type: "underline",
                       },
                       "ff the lights.",
                       {
-                        part: "Apague as luzes.",
+                        part: " Apague as luzes.",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // I like it a lot.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/i-like-it-a-lot.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-like-it-a-lot.mp3",
                       },
                       "I lik",
                       {
@@ -209,15 +219,16 @@ export default function LikedSounds() {
                       },
                       "t a lot.",
                       {
-                        part: "Gosto bastante.",
+                        part: " Gosto bastante.",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // I’m out of time.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/im-out-of-time.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/im-out-of-time.mp3",
                       },
                       "I’",
                       {
@@ -230,12 +241,17 @@ export default function LikedSounds() {
                         type: "underline",
                       },
                       "f time.",
+                      {
+                        part: " Estou sem tempo.",
+                        type: "portuguese",
+                      },
                     ],
                   },
+                  // Pick it up.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/pick-it-up.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/pick-it-up.mp3",
                       },
                       "Pic",
                       {
@@ -244,7 +260,7 @@ export default function LikedSounds() {
                       },
                       "t up.",
                       {
-                        part: "Pegue.",
+                        part: " Pegue.",
                         type: "portuguese",
                       },
                     ],
@@ -260,6 +276,7 @@ export default function LikedSounds() {
             blocks={[
               {
                 lines: [
+                  // /dʒ/
                   {
                     text: [
                       {
@@ -272,10 +289,11 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Did you like it?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/did-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/did-you-like-it.mp3",
                       },
                       "Di",
                       {
@@ -289,10 +307,11 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Did you eat?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/did-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/did-you-eat.mp3",
                       },
                       "Di",
                       {
@@ -306,26 +325,28 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Do you know what I mean?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/would-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/do-you-know-what-i-mean.mp3",
                       },
                       {
-                        part: "Do y",
+                        part: "D(o) y",
                         type: "underline",
                       },
                       "ou know what I mean? ",
                       {
-                        part: "...",
+                        part: "Você me entende?",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // Would you like it?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/would-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/would-you-like-it.mp3",
                       },
                       "Woul",
                       {
@@ -350,6 +371,7 @@ export default function LikedSounds() {
             blocks={[
               {
                 lines: [
+                  // /tʃ/
                   {
                     text: [
                       {
@@ -362,10 +384,11 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Don’t you like it?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/dont-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/t-y/dont-you-like-it.mp3",
                       },
                       "Don’",
                       {
@@ -379,10 +402,11 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // Didn’t you like it?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/didnt-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/t-y/didnt-you-like-it.mp3",
                       },
                       "Didn’",
                       {
@@ -401,11 +425,13 @@ export default function LikedSounds() {
             ]}
           />
         </Section>
+
         <Section label="s + y" heading={3}>
           <Paragraph
             blocks={[
               {
                 lines: [
+                  // /ʒ/
                   {
                     text: [
                       {
@@ -418,44 +444,47 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // This year I wanna study Spanish.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/dont-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/s-y/this-year-i-wanna-learn-spanish.mp3",
                       },
                       "Thi",
                       {
                         part: "s y",
                         type: "underline",
                       },
-                      "ear... ",
+                      "ear I wanna learn Spanish.",
                       {
-                        part: "Este ano...",
+                        part: "Este ano eu quero aprender espanhol.",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // How’s your family?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/dont-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/s-y/hows-your-family.mp3",
                       },
                       "How’",
                       {
                         part: "s y",
                         type: "underline",
                       },
-                      "our family doing? ",
+                      "our family? ",
                       {
                         part: "Como está a sua familia?",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // Where’s your phone?
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/dont-you-like-it.mp3",
+                        audio: "/assets/audio/pronunciation/linked-sounds/s-y/wheres-your-phone.mp3",
                       },
                       "Where i",
                       {
