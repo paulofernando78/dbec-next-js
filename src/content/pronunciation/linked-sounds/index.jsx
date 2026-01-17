@@ -48,7 +48,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/vowel-vowel/w/go-on.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/vowel-vowel/w/go-on.mp3",
                       },
                       "G",
                       {
@@ -66,7 +67,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/vowel-vowel/w/do-it-again.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/vowel-vowel/w/do-it-again.mp3",
                       },
                       "D",
                       {
@@ -142,25 +144,22 @@ export default function LikedSounds() {
             blocks={[
               {
                 lines: [
-                  // He works in an office.
+                  
+                  // Pick it up.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/he-works-in-an-office.mp3",
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/pick-it-up.mp3",
                       },
-                      "He work",
+                      "Pi",
                       {
-                        part: "s i",
+                        part: "ck it u",
                         type: "underline",
                       },
+                      "(p).",
                       {
-                        part: "n an o",
-                        type: "underline",
-                      },
-                      "ffice. ",
-                      {
-                        part: "Ele trabalha no escritório.",
+                        part: " Pegue.",
                         type: "portuguese",
                       },
                     ],
@@ -169,19 +168,58 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/take-a-look-at-it.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/take-a-look-at-it.mp3",
                       },
                       "Ta",
                       {
-                        part: "ke a",
+                        part: "k(e) a",
                         type: "underline",
                       },
                       " loo",
                       {
-                        part: "k a",
+                        part: "k at i",
                         type: "underline",
                       },
-                      "t it.",
+                      "(t).",
+                      {
+                        part: " Dá uma olha.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // I like it a lot.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-like-it-a-lot.mp3",
+                      },
+                      "I lik",
+                      {
+                        part: "e it a",
+                        type: "underline",
+                      },
+                      " lo(t).",
+                      {
+                        part: " Gosto bastante.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // Have a seat, please.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/have-a-seat-please.mp3",
+                      },
+                      "Ha",
+                      {
+                        part: "ve a",
+                        type: "underline",
+                      },
+                      "  sea(t), please.",
                       {
                         part: " Dá uma olha.",
                         type: "portuguese",
@@ -192,7 +230,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/turn-off-the-lights.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/turn-off-the-lights.mp3",
                       },
                       "Tur",
                       {
@@ -206,29 +245,13 @@ export default function LikedSounds() {
                       },
                     ],
                   },
-                  // I like it a lot.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-like-it-a-lot.mp3",
-                      },
-                      "I lik",
-                      {
-                        part: "e i",
-                        type: "underline",
-                      },
-                      "t a lot.",
-                      {
-                        part: " Gosto bastante.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
+                  
                   // I’m out of time.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/im-out-of-time.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/im-out-of-time.mp3",
                       },
                       "I’",
                       {
@@ -247,24 +270,49 @@ export default function LikedSounds() {
                       },
                     ],
                   },
-                  // Pick it up.
+                  // He works in an office.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/consonant-vowel/pick-it-up.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/he-works-in-an-office.mp3",
                       },
-                      "Pic",
+                      "He work",
                       {
-                        part: "k i",
+                        part: "s i",
                         type: "underline",
                       },
-                      "t up.",
                       {
-                        part: " Pegue.",
+                        part: "n an o",
+                        type: "underline",
+                      },
+                      "ffic(e). ",
+                      {
+                        part: "Ele trabalha no escritório.",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // In the end, it doesn’t even matter.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/in-the-end-it-doesnt-even-matter.mp3",
+                      },
+                      "In the en(d), (i)t does",
+                      {
+                        part: "n’t",
+                        type: "underline",
+                      },
+                      " even matter.",
+                      {
+                        part: " ...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  
                 ],
               },
             ]}
@@ -293,7 +341,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/did-you-like-it.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/d-y/did-you-like-it.mp3",
                       },
                       "Di",
                       {
@@ -311,7 +360,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/did-you-eat.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/d-y/did-you-eat.mp3",
                       },
                       "Di",
                       {
@@ -329,7 +379,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/do-you-know-what-i-mean.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/d-y/do-you-know-what-i-mean.mp3",
                       },
                       {
                         part: "D(o) y",
@@ -346,7 +397,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/d-y/would-you-like-it.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/d-y/would-you-like-it.mp3",
                       },
                       "Woul",
                       {
@@ -388,7 +440,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/t-y/dont-you-like-it.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/t-y/dont-you-like-it.mp3",
                       },
                       "Don’",
                       {
@@ -406,7 +459,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/t-y/didnt-you-like-it.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/t-y/didnt-you-like-it.mp3",
                       },
                       "Didn’",
                       {
@@ -448,7 +502,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/s-y/this-year-i-wanna-learn-spanish.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/s-y/this-year-i-wanna-learn-spanish.mp3",
                       },
                       "Thi",
                       {
@@ -466,7 +521,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/s-y/hows-your-family.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/s-y/hows-your-family.mp3",
                       },
                       "How’",
                       {
@@ -484,7 +540,8 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/pronunciation/linked-sounds/s-y/wheres-your-phone.mp3",
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/s-y/wheres-your-phone.mp3",
                       },
                       "Where i",
                       {
@@ -497,7 +554,7 @@ export default function LikedSounds() {
                         type: "portuguese",
                       },
                     ],
-                  }
+                  },
                 ],
               },
             ]}
