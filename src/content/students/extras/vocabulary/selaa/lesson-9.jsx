@@ -34,10 +34,10 @@ export default function SELAAlessonNine() {
               text: [
                 "I've decided to run for student body president! If I'm going to become a senator one day, I should get some ",
                 {
-                  part: "<>experience under my belt<",
-                  type: "",
+                  part: "experience under my belt",
+                  type: "mark",
                 },
-                "now.",
+                " now.",
               ],
             },
             {

@@ -2,6 +2,32 @@
   {
     "definitions": [
       {
+        "word": "by far",
+        "phonetics": "/baɪ fɑːr/",
+        "partOfSpeech": "adverbial phrase",
+        "enDefinition": "by a large amount or to a great degree; used to emphasize that something is much more than others",
+        "ptDefinition": "de longe; em grande medida; usado para enfatizar que algo é muito mais do que os outros",
+        "examples": [
+          {
+            "enExample": "She is by far the best student in the class.",
+            "ptExample": "Ela é de longe a melhor aluna da turma."
+          },
+          {
+            "enExample": "This is by far the most difficult test I’ve ever taken.",
+            "ptExample": "Este é de longe o teste mais difícil que eu já fiz."
+          }
+        ],
+        "synonyms": ["by a long way", "easily", "far and away"],
+        "antonyms": ["slightly", "barely", "just"],
+        "seeAlso": ["far and away", "much", "to a great extent"],
+        "notes": [
+          {
+            "enNote": "Commonly used before superlatives or with expressions like 'the best', 'the most', or 'the worst' to add strong emphasis.",
+            "ptNote": "Usado com frequência antes de superlativos ou expressões como 'the best', 'the most' ou 'the worst' para dar forte ênfase."
+          }
+        ]
+      },
+      {
         "word": "beat around the bush",
         "partOfSpeech": "idiom",
         "enDefinition": "to avoid talking about what is important or getting to the main point, often intentionally",
