@@ -28,7 +28,18 @@ export default function FuturePerfect() {
                 lines: [
                   {
                     text: [
-                      "Laura is working on her report. By tomorrow morning, Anna will have finished her report.",
+                      {
+                        audio: "/",
+                        part: "Laura is working on her report. By tomorrow morning, She will have finished it.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "Laura está trabalhando no relatório dela. Amanhã de manhã, ela já terá terminado.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -45,7 +56,18 @@ export default function FuturePerfect() {
                 lines: [
                   {
                     text: [
-                      "the report is ready. She is handing it over to her boss. ",
+                      {
+                        audio: "/",
+                        part: "The report is ready. She is handing it over to her boss."
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "O relatório está pronto. Ela está entregando para o seu chefe dela.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
