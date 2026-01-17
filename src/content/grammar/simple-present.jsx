@@ -237,7 +237,7 @@ export default function SimplePresent() {
               },
               {
                 speaker: "Laura:",
-                text: ["Yes. I usually have dinner around 10."],
+                text: ["I usually have dinner around 10."],
               },
               {
                 speaker: "Eric:",
@@ -258,44 +258,97 @@ export default function SimplePresent() {
                 lines: [
                   {
                     text: [
-                      "We use the simple present to talk about routines and things that are usually true.",
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/use.mp3",
+                        part: "We use the simple present to talk about:",
+                      },
                     ],
                     lineBreak: true,
                   },
                   {
                     text: [
                       {
-                        part: "daily routines:",
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/daily-routines.mp3",
+                        part: "daily routines",
                         type: "bold",
                       },
                     ],
                   },
                   {
-                    text: ["I wake up in the morning."],
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/i-usually-wake-up-at-seven.mp3",
+                        part: "I usually wake up at 7.",
+                      },
+                    ],
                   },
                   {
-                    text: ["I eat breakfast and go to school or work."],
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/i-go-for-walks-in-the-morning.mp3",
+                        part: "I go for a walk in the morning.",
+                      },
+                    ],
                   },
                   {
-                    text: ["I go to bed at night."],
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/after-i-have-breakfast-i-go-to-work.mp3",
+                        part: "After I eat breakfast and go to work.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/sometimes-i-go-to-bed-at-night.mp3",
+                        part: "Sometimes I go to bed around 9.",
+                      },
+                    ],
                     lineBreak: true,
                   },
                   {
                     text: [
                       {
-                        part: "things that are usually true:",
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/things-that-are-usually-true.mp3",
+                        part: "things that are usually true",
                         type: "bold",
                       },
                     ],
                   },
                   {
-                    text: ["She works in an office."],
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/she-works-in-an-office.mp3",
+                        part: "She works in an office.",
+                      },
+                    ],
                   },
                   {
-                    text: ["They study from home."],
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/i-work-from-home.mp3",
+                        part: "I work from home.",
+                      },
+                    ],
                   },
                   {
-                    text: ["He watches movies in the evening."],
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/he-watches-movies-in-the-evening.mp3",
+                        part: "He watches movies in the evening.",
+                      },
+                    ],
                   },
                 ],
               },
@@ -370,22 +423,19 @@ export default function SimplePresent() {
                     ],
                     lineBreak: true,
                   },
+                  // I work / do / study
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-work.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-work-do-study.mp3",
                             part: "I ",
                           },
                           {
-                            part: "work ",
+                            part: "work / do / study",
                             type: "bold",
-                          },
-                          {
-                            part: "eu trabalho",
-                            type: "portuguese",
                           },
                         ],
                       },
@@ -396,37 +446,7 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-do.mp3",
-                            part: "I ",
-                          },
-                          {
-                            part: "do ",
-                            type: "bold",
-                          },
-                          {
-                            part: "eu faço",
-                            type: "portuguese",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/i-study.mp3",
-                            part: "I ",
-                          },
-                          {
-                            part: "study ",
-                            type: "bold",
-                          },
-                          {
-                            part: "eu estudo",
+                            part: "eu trabalho / faço / estudo",
                             type: "portuguese",
                           },
                         ],
@@ -434,18 +454,17 @@ export default function SimplePresent() {
                     ],
                     lineBreak: true,
                   },
-                  // you
+                  // you work / do / study
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-work-do-study.mp3",
                             part: "you ",
                           },
-                          { part: "study ", type: "bold" },
-                          { part: "você estuda", type: "portuguese" },
+                          { part: "work / do / study ", type: "bold" },
                         ],
                       },
                     ],
@@ -453,93 +472,29 @@ export default function SimplePresent() {
                   {
                     block: [
                       {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-do.mp3",
-                            part: "you ",
-                          },
-                          { part: "do ", type: "bold" },
-                          { part: "você faz", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study.mp3",
-                            part: "you ",
-                          },
-                          { part: "study ", type: "bold" },
-                          { part: "você estuda", type: "portuguese" },
-                        ],
+                        text: [{ part: "você trabalha", type: "portuguese" }],
                       },
                     ],
                     lineBreak: true,
                   },
-                  // he
+                  // he works / does / studies
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-works.mp3",
-                            part: "he ",
-                          },
-                          { part: "works ", type: "bold" },
-                          { part: "ele trabalha", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-does.mp3",
-                            part: "he ",
-                          },
-                          { part: "does ", type: "bold" },
-                          { part: "ele faz", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-studies.mp3",
-                            part: "he ",
-                          },
-                          { part: "studies ", type: "bold" },
-                          { part: "ele estuda", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  // she
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-studies.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/he-works-does-studies.mp3",
                             part: "she ",
                           },
-                          { part: "studies ", type: "bold" },
-                          { part: "ela estuda", type: "portuguese" },
+                          { part: "work", type: "bold" },
+                          { part: "s", type: "mark" },
+                          { part: " / ", type: "bold" },
+                          { part: "do", type: "bold" },
+                          { part: "es", type: "mark" },
+                          { part: " / ", type: "bold" },
+                          { part: "stud", type: "bold" },
+                          { part: "ies", type: "mark" },
                         ],
                       },
                     ],
@@ -549,12 +504,32 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
+                            part: " ele trabalha / faz / estuda",
+                            type: "portuguese",
+                          },
+                        ],
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  // she works / does / studies
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-does.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-works-does-studies.mp3",
                             part: "she ",
                           },
-                          { part: "does ", type: "bold" },
-                          { part: "ela faz", type: "portuguese" },
+                          { part: "work", type: "bold" },
+                          { part: "s", type: "mark" },
+                          { part: " / ", type: "bold" },
+                          { part: "do", type: "bold" },
+                          { part: "es", type: "mark" },
+                          { part: " / ", type: "bold" },
+                          { part: "stud", type: "bold" },
+                          { part: "ies", type: "mark" },
                         ],
                       },
                     ],
@@ -564,29 +539,29 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/she-studies.mp3",
-                            part: "she ",
+                            part: " ela trabalha / faz / estuda",
+                            type: "portuguese",
                           },
-                          { part: "studies ", type: "bold" },
-                          { part: "ela estuda", type: "portuguese" },
                         ],
                       },
                     ],
                     lineBreak: true,
                   },
-                  // it
+                  // it works / does
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-works.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-works-does.mp3",
                             part: "it ",
                           },
-                          { part: "works ", type: "bold" },
-                          { part: "(neutro) funciona", type: "portuguese" },
+                          { part: "work", type: "bold" },
+                          { part: "s", type: "mark" },
+                          { part: " / ", type: "bold" },
+                          { part: "do", type: "bold" },
+                          { part: "es", type: "mark" },
                         ],
                       },
                     ],
@@ -596,44 +571,25 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-does.mp3",
-                            part: "it ",
+                            part: " (algo) funciona / faz",
+                            type: "portuguese",
                           },
-                          { part: "does ", type: "bold" },
-                          { part: "(neutro) faz", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/it-studies.mp3",
-                            part: "it ",
-                          },
-                          { part: "studies ", type: "bold" },
-                          { part: "(neutro) estuda", type: "portuguese" },
                         ],
                       },
                     ],
                     lineBreak: true,
                   },
-                  // we
+                  // we work / do / study
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-work.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-work-do-study.mp3",
                             part: "we ",
                           },
-                          { part: "work ", type: "bold" },
-                          { part: "nós trabalhamos", type: "portuguese" },
+                          { part: "work / do / study ", type: "bold" },
                         ],
                       },
                     ],
@@ -643,44 +599,25 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-do.mp3",
-                            part: "we ",
+                            part: "nóes trabalhamos / fazemos / estudamos",
+                            type: "portuguese",
                           },
-                          { part: "do ", type: "bold" },
-                          { part: "nós fazemos", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/we-study.mp3",
-                            part: "we ",
-                          },
-                          { part: "study ", type: "bold" },
-                          { part: "nós estudamos", type: "portuguese" },
                         ],
                       },
                     ],
                     lineBreak: true,
                   },
-                  // you (plural)
+                  // you work / do / study
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-work.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-work-do-study.mp3",
                             part: "you ",
                           },
-                          { part: "work ", type: "bold" },
-                          { part: "vocês trabalham", type: "portuguese" },
+                          { part: "work / do / study ", type: "bold" },
                         ],
                       },
                     ],
@@ -690,44 +627,28 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-do-plural.mp3",
-                            part: "you ",
+                            part: "vocês trabalham / fazem / estudam",
+                            type: "portuguese",
                           },
-                          { part: "do ", type: "bold" },
-                          { part: "vocês fazem", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/you-study-plural.mp3",
-                            part: "you ",
-                          },
-                          { part: "study ", type: "bold" },
-                          { part: "vocês estudam", type: "portuguese" },
                         ],
                       },
                     ],
                     lineBreak: true,
                   },
-                  // they
+                  // they work / do / study
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-work.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-work-do-study.mp3",
                             part: "they ",
                           },
-                          { part: "work ", type: "bold" },
-                          { part: "eles/elas trabalham", type: "portuguese" },
+                          {
+                            part: "work / do / study",
+                            type: "bold",
+                          },
                         ],
                       },
                     ],
@@ -737,43 +658,13 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-do.mp3",
-                            part: "they ",
+                            part: "eles trabalham / fazem / estudamos",
+                            type: "portuguese",
                           },
-                          { part: "do ", type: "bold" },
-                          { part: "eles/elas fazem", type: "portuguese" },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/affirmative/they-study.mp3",
-                            part: "they ",
-                          },
-                          { part: "study ", type: "bold" },
-                          { part: "eles/elas estudam", type: "portuguese" },
                         ],
                       },
                     ],
                     lineBreak: true,
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            important: true,
-                            part: 'they = plural de "he/he/it" ',
-                          },
-                        ],
-                      },
-                    ],
                   },
                 ],
               },
@@ -788,7 +679,7 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            part: "subject + do/does + verb",
+                            part: "subject + auxiliry + verb",
                             type: "italic",
                           },
                         ],
@@ -797,18 +688,19 @@ export default function SimplePresent() {
                     lineBreak: true,
                   },
 
-                  // I
+                  // I do work / study
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/i-do-work.mp3",
+                              "/assets/audio/grammar/simple-present/pronunciation/affirmative(emphatic-use)/i-do-work.mp3",
                             part: "I ",
                           },
-                          { part: "do work ", type: "bold" },
-                          { part: "eu realmente trabalho", type: "portuguese" },
+                          { part: "do", type: "mark" },
+                          { part: " " },
+                          { part: "work / study", type: "bold" },
                         ],
                       },
                     ],
@@ -818,16 +710,12 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            audio:
-                              "/assets/audio/grammar/simple-present/pronunciation/emphatic/i-do-study.mp3",
-                            part: "I ",
+                            part: " eu realmente trabalho",
+                            type: "portuguese",
                           },
-                          { part: "do study ", type: "bold" },
-                          { part: "eu realmente estudo", type: "portuguese" },
                         ],
                       },
-                    ],
-                    lineBreak: true,
+                    ], lineBreak: true,
                   },
 
                   // you
@@ -840,7 +728,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/you-do-work.mp3",
                             part: "you ",
                           },
-                          { part: "do work ", type: "bold" },
+                          { part: "do", type: "mark" },
+                          " ",
+                          { part: "work", type: "bold" },
+                          " ",
                           {
                             part: "você realmente trabalha",
                             type: "portuguese",
@@ -858,7 +749,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/you-do-study.mp3",
                             part: "you ",
                           },
-                          { part: "do study ", type: "bold" },
+                          { part: "do", type: "mark" },
+                          " ",
+                          { part: "study", type: "bold" },
+                          " ",
                           { part: "você realmente estuda", type: "portuguese" },
                         ],
                       },
@@ -876,7 +770,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/he-does-work.mp3",
                             part: "he ",
                           },
-                          { part: "does work ", type: "bold" },
+                          { part: "does", type: "mark" },
+                          " ",
+                          { part: "work", type: "bold" },
+                          " ",
                           {
                             part: "ele realmente trabalha",
                             type: "portuguese",
@@ -894,7 +791,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/he-does-study.mp3",
                             part: "he ",
                           },
-                          { part: "does study ", type: "bold" },
+                          { part: "does", type: "mark" },
+                          " ",
+                          { part: "study", type: "bold" },
+                          " ",
                           { part: "ele realmente estuda", type: "portuguese" },
                         ],
                       },
@@ -912,7 +812,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/she-does-work.mp3",
                             part: "she ",
                           },
-                          { part: "does work ", type: "bold" },
+                          { part: "does", type: "mark" },
+                          " ",
+                          { part: "work", type: "bold" },
+                          " ",
                           {
                             part: "ela realmente trabalha",
                             type: "portuguese",
@@ -930,7 +833,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/she-does-study.mp3",
                             part: "she ",
                           },
-                          { part: "does study ", type: "bold" },
+                          { part: "does", type: "mark" },
+                          " ",
+                          { part: "study", type: "bold" },
+                          " ",
                           { part: "ela realmente estuda", type: "portuguese" },
                         ],
                       },
@@ -948,7 +854,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/it-does-work.mp3",
                             part: "it ",
                           },
-                          { part: "does work ", type: "bold" },
+                          { part: "does", type: "mark" },
+                          " ",
+                          { part: "work", type: "bold" },
+                          " ",
                           {
                             part: "(neutro) realmente funciona",
                             type: "portuguese",
@@ -966,7 +875,10 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/emphatic/it-does-study.mp3",
                             part: "it ",
                           },
-                          { part: "does study ", type: "bold" },
+                          { part: "does", type: "mark" },
+                          " ",
+                          { part: "study", type: "bold" },
+                          " ",
                           {
                             part: "(neutro) realmente estuda",
                             type: "portuguese",
@@ -1067,7 +979,7 @@ export default function SimplePresent() {
                       {
                         text: [
                           {
-                            part: "subject + do/does not + verb",
+                            part: "subject + auxiliry not + verb",
                             type: "italic",
                           },
                         ],
@@ -1075,6 +987,7 @@ export default function SimplePresent() {
                     ],
                     lineBreak: true,
                   },
+                  // I do not work
                   {
                     block: [
                       {
@@ -1084,12 +997,15 @@ export default function SimplePresent() {
                               "/assets/audio/grammar/simple-present/pronunciation/negative/i-do-not-work.mp3",
                             part: "I ",
                           },
-                          { part: "do not work ", type: "bold" },
+                          { part: "do not ", type: "mark" },
+                          " ",
+                          { part: "work ", type: "bold" },
                           { part: "eu não trabalho", type: "portuguese" },
                         ],
                       },
                     ],
                   },
+                  // I do not do
                   {
                     block: [
                       {
@@ -1104,8 +1020,8 @@ export default function SimplePresent() {
                         ],
                       },
                     ],
-                    lineBreak: true,
                   },
+                  // I do not study
                   {
                     block: [
                       {
@@ -1122,6 +1038,7 @@ export default function SimplePresent() {
                     ],
                     lineBreak: true,
                   },
+                  // you do not work
                   {
                     block: [
                       {
