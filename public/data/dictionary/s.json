@@ -2,6 +2,41 @@
   {
     "definitions": [
       {
+        "word": "you scratch my back and I'll scratch yours",
+        "phonetics": "/juː skrætʃ maɪ bæk ænd aɪl skrætʃ jʊrz/",
+        "partOfSpeech": "idiom",
+        "enDefinition": "used to say that you will help someone if they help you in return; a mutual exchange of favors",
+        "ptDefinition": "usado para dizer que você ajudará alguém se essa pessoa ajudar você em troca; uma troca mútua de favores",
+        "examples": [
+          {
+            "enExample": "He agreed to help me with the project — you scratch my back and I'll scratch yours.",
+            "ptExample": "Ele concordou em me ajudar com o projeto — você me ajuda que eu te ajudo."
+          },
+          {
+            "enExample": "In politics, it's often a case of you scratch my back and I'll scratch yours.",
+            "ptExample": "Na política, muitas vezes é um caso de troca de favores."
+          }
+        ],
+        "synonyms": [
+          "quid pro quo",
+          "give and take",
+          "mutual favor",
+          "you help me, I help you"
+        ],
+        "antonyms": [
+          "do something for nothing",
+          "selfless act",
+          "no strings attached"
+        ],
+        "seeAlso": ["quid pro quo", "tit for tat", "return the favor"],
+        "notes": [
+          {
+            "enNote": "Often used informally and can sometimes carry a slightly negative or cynical tone, especially in politics or business.",
+            "ptNote": "Usada de forma informal e às vezes com um tom levemente negativo ou cínico, especialmente em contextos políticos ou de negócios."
+          }
+        ]
+      },
+      {
         "word": "stammer",
         "phonetics": "/ˈstæmər/",
         "partOfSpeech": "verb, noun",

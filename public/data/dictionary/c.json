@@ -2,6 +2,37 @@
   {
     "definitions": [
       {
+        "word": "cold shoulder",
+        "phonetics": "/ˌkoʊld ˈʃoʊldər/",
+        "partOfSpeech": "idiom / noun phrase",
+        "enDefinition": "to deliberately ignore someone or treat them in an unfriendly or distant way",
+        "ptDefinition": "ignorar alguém de propósito ou tratar a pessoa de maneira fria e distante",
+        "examples": [
+          {
+            "enExample": "She gave him the cold shoulder after their argument.",
+            "ptExample": "Ela deu um gelo nele depois da discussão."
+          },
+          {
+            "enExample": "He felt like he was getting the cold shoulder from his coworkers.",
+            "ptExample": "Ele sentiu que estava sendo ignorado pelos colegas de trabalho."
+          }
+        ],
+        "synonyms": [
+          "ignore",
+          "snub",
+          "give someone the cold shoulder",
+          "shun"
+        ],
+        "antonyms": ["welcome", "embrace", "be friendly to", "accept"],
+        "seeAlso": ["brush off", "snub", "give someone the cold shoulder"],
+        "notes": [
+          {
+            "enNote": "Commonly used in informal contexts to describe social rejection or emotional distance.",
+            "ptNote": "Usado comumente em contextos informais para descrever rejeição social ou distanciamento emocional."
+          }
+        ]
+      },
+      {
         "word": "change one’s mind",
         "partOfSpeech": "idiom",
         "enDefinition": "to change a decision, opinion, or intention after thinking again or because of new information",

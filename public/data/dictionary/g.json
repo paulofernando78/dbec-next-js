@@ -2,6 +2,54 @@
   {
     "definitions": [
       {
+        "word": "goody-goody",
+        "phonetics": "/ˈɡʊd.i ˈɡʊd.iz/",
+        "partOfSpeech": "plural noun (informal)",
+        "enDefinition": "people who behave in an overly good, obedient, or morally upright way, often seen as annoying or self-righteous by others",
+        "ptDefinition": "pessoas certinhas ou moralistas demais, que seguem regras de forma exagerada e podem ser vistas como irritantes ou presunçosas",
+        "examples": [
+          {
+            "enExample": "He thinks everyone in that club is a bunch of goody-goodies who never break the rules.",
+            "ptExample": "Ele acha que todo mundo naquele clube é um bando de certinhos que nunca quebram as regras."
+          },
+          {
+            "enExample": "She doesn’t like being around goody-goodies who judge others all the time.",
+            "ptExample": "Ela não gosta de ficar perto de pessoas certinhas que julgam os outros o tempo todo."
+          }
+        ],
+        "synonyms": ["do-gooders", "goody-two-shoes", "saints", "moralists"],
+        "antonyms": ["rebels", "rule-breakers", "troublemakers"],
+        "seeAlso": ["goody-two-shoes", "brown-nosers", "self-righteous"],
+        "notes": [
+          {
+            "enNote": "This term is informal and often slightly negative or sarcastic. It is usually used to criticize people who act morally superior.",
+            "ptNote": "Este termo é informal e geralmente tem um tom levemente negativo ou sarcástico. Costuma ser usado para criticar pessoas que agem como se fossem moralmente superiores."
+          }
+        ]
+      },
+      {
+        "word": "goody-goodies",
+        "phonetics": "",
+        "partOfSpeech": "",
+        "enDefinition": "",
+        "ptDefinition": "",
+        "examples": [
+          {
+            "enExample": "",
+            "ptExample": ""
+          }
+        ],
+        "synonyms": "",
+        "antonyms": "",
+        "seeAlso": "",
+        "notes": [
+          {
+            "enNote": "",
+            "ptNote": ""
+          }
+        ]
+      },
+      {
         "word": "good spirits",
         "partOfSpeech": "noun phrase",
         "enDefinition": "a cheerful, positive, or happy emotional state",
