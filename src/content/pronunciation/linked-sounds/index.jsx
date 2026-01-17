@@ -131,7 +131,7 @@ export default function LikedSounds() {
           />
         </Section>
 
-        <Section label="Consonant + Vverbowel" heading={3}>
+        <Section label="Consonant + Vowel" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -292,6 +292,39 @@ export default function LikedSounds() {
                   {
                     text: [
                       {
+                        audio: "/assets/audio/general/did-you-like-it.mp3",
+                      },
+                      "Di",
+                      {
+                        part: "d y",
+                        type: "underline",
+                      },
+                      "ou eat? ",
+                      {
+                        part: "Você gostou?",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/would-you-like-it.mp3",
+                      },
+                      {
+                        part: "Do y",
+                        type: "underline",
+                      },
+                      "ou know what I mean? ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
                         audio: "/assets/audio/general/would-you-like-it.mp3",
                       },
                       "Woul",
@@ -363,6 +396,79 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                ],
+              },
+            ]}
+          />
+        </Section>
+        <Section label="s + y" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics/consonants/ʒ.mp3",
+                      },
+                      {
+                        part: "/ʒ/",
+                        type: "phonetics",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/dont-you-like-it.mp3",
+                      },
+                      "Thi",
+                      {
+                        part: "s y",
+                        type: "underline",
+                      },
+                      "ear... ",
+                      {
+                        part: "Este ano...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/dont-you-like-it.mp3",
+                      },
+                      "How’",
+                      {
+                        part: "s y",
+                        type: "underline",
+                      },
+                      "our family doing? ",
+                      {
+                        part: "Como está a sua familia?",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/dont-you-like-it.mp3",
+                      },
+                      "Where i",
+                      {
+                        part: "s y",
+                        type: "underline",
+                      },
+                      "our phone?? ",
+                      {
+                        part: "Onde está o seu telefone?",
+                        type: "portuguese",
+                      },
+                    ],
+                  }
                 ],
               },
             ]}
