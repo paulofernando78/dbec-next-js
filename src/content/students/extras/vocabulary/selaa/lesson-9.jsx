@@ -34,7 +34,6 @@ export default function SELAAlessonNine() {
               text: [
                 "I've decided to run for student body president! If I'm going to become a senator one day, I should get some ",
                 {
-                  audio: "/audio/general/.mp3",
                   part: "<>experience under my belt<",
                   type: "",
                 },
@@ -44,49 +43,35 @@ export default function SELAAlessonNine() {
             {
               speaker: "Ted:",
               text: [
-                "Andrea Jenkins is also running. She'll give you a <mark>run for your money</mark>!",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "She'll give you a ",
+                { part: "run for your money", type: "mark" },
+                "!"
               ],
             },
             {
               speaker: "Nicole:",
               text: [
-                "Andrea Jenkins is an idiot. I'm <mark>by far</mark> the better candidate.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "I'm ",
+                { part: "by far", type: "mark" },
+                " the better candidate."
               ],
             },
             {
               speaker: "Ted:",
               text: [
-                "Don't be so <mark>full of yourself</mark>! I might vote for Andrea.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "Don't be so ",
+                { part: "full of yourself", type: "mark" },
+                "! I might vote for Andrea."
               ],
             },
             {
               speaker: "Nicole:",
               text: [
-                "Stop <mark>kidding around</mark>. Let's <mark>get down to business</mark>. I need your help.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "Stop ",
+                { part: "kidding around", type: "mark" },
+                ". Let's ",
+                { part: "get down to business", type: "mark" },
+                ". I need your help."
               ],
             },
             {
@@ -94,7 +79,6 @@ export default function SELAAlessonNine() {
               text: [
                 "You want me to help yoи?",
                 {
-                  audio: "/audio/general/.mp3",
                   part: "",
                   type: "",
                 },
@@ -104,25 +88,19 @@ export default function SELAAlessonNine() {
             {
               speaker: "Nicole:",
               text: [
-                "Yes. I need you to <mark>talk your friends into</mark> voting for me.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "I need you to ",
+                { part: "talk your friends into", type: "mark" },
+                " voting for me."
               ],
             },
             {
               speaker: "Ted:",
               text: [
-                "But you never <mark>give my friends the time of day</mark>. All you give them is the <mark>cold shoulder</mark>.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "But you never ",
+                { part: "give my friends the time of day", type: "mark" },
+                ". All you give them is the ",
+                { part: "cold shoulder", type: "mark" },
+                "."
               ],
             },
             {
@@ -130,7 +108,6 @@ export default function SELAAlessonNine() {
               text: [
                 "That's because they've got blue hair and nose rings!",
                 {
-                  audio: "/audio/general/.mp3",
                   part: "",
                   type: "",
                 },
@@ -140,49 +117,35 @@ export default function SELAAlessonNine() {
             {
               speaker: "Ted:",
               text: [
-                "They're better than your friends - a bunch of <mark>goody-goodies</mark> and <mark>brown-nosers</mark>!",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "They're better than your friends - a bunch of ",
+                { part: "goody-goodies", type: "mark" },
+                " and ",
+                { part: "brown-nosers", type: "mark" },
+                "!"
               ],
             },
             {
               speaker: "Nicole:",
               text: [
-                "<mark>That's beside the point</mark>. Let's talk about your friends and their votes.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                { part: "That's beside the point", type: "mark" },
+                ". Let's talk about your friends and their votes."
               ],
             },
             {
               speaker: "Ted:",
               text: [
-                "Okay. <mark>You scratch my back and I'll scratch yours</mark>. If you do my chemistry homework, I'll help you get the votes.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                { part: "You scratch my back and I'll scratch yours", type: "mark" },
+                ". If you do my chemistry homework, I'll help you get the votes."
               ],
             },
             {
               speaker: "Nicole:",
               text: [
-                "I'm not <mark>crazy about</mark> that idea. But, okay, it's a deal. I hope I can <mark>count on you</mark>.",
-                {
-                  audio: "/audio/general/.mp3",
-                  part: "",
-                  type: "",
-                },
-                "",
+                "I'm not ",
+                { part: "crazy about", type: "mark" },
+                " that idea. But, okay, it's a deal. I hope I can ",
+                { part: "count on you", type: "mark" },
+                "."
               ],
             }
           ]}
