@@ -43,7 +43,9 @@ export default function SELAAlessonNine() {
             {
               speaker: "Ted:",
               text: [
-                "She'll give you a ",
+                "She'll ",
+                { part: "give", type: "mark" },
+                " you a ",
                 { part: "run for your money", type: "mark" },
                 "!"
               ],
@@ -77,7 +79,7 @@ export default function SELAAlessonNine() {
             {
               speaker: "Ted:",
               text: [
-                "You want me to help yoи?",
+                "You want me to help you?",
                 {
                   part: "",
                   type: "",
