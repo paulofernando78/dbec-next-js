@@ -10,12 +10,12 @@ export default function LikedSounds() {
         <Paragraph
           blocks={[
             {
-              audioPlayer:
-                "/assets/audio/pronunciation/linked-sounds/check-out.mp3",
               lines: [
                 {
                   text: [
                     {
+                      audio:
+                        "/assets/audio/pronunciation/linked-sounds/check-out.mp3",
                       part: "Check out a couple of linked sounds.",
                       type: "bold",
                     },
