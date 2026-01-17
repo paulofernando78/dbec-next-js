@@ -2,6 +2,32 @@
   {
     "definitions": [
       {
+        "word": "full of oneself",
+        "phonetics": "/fʊl əv wʌnˈsɛlf/",
+        "partOfSpeech": "adjective phrase",
+        "enDefinition": "having an excessively high opinion of yourself; overly confident or self-important",
+        "ptDefinition": "ter uma opinião exageradamente alta de si mesmo; ser convencido ou se achar importante demais",
+        "examples": [
+          {
+            "enExample": "Ever since he got the promotion, he’s been full of himself.",
+            "ptExample": "Desde que foi promovido, ele tem se achado demais."
+          },
+          {
+            "enExample": "She sounded full of herself when she talked about her achievements.",
+            "ptExample": "Ela soou convencida quando falou sobre suas conquistas."
+          }
+        ],
+        "synonyms": ["conceited", "self-important", "arrogant", "egotistical"],
+        "antonyms": ["humble", "modest", "down-to-earth"],
+        "seeAlso": ["big-headed", "ego", "self-centered"],
+        "notes": [
+          {
+            "enNote": "Commonly used in informal contexts to criticize someone for being overly proud or self-absorbed.",
+            "ptNote": "Usado comumente em contextos informais para criticar alguém por ser orgulhoso ou egocêntrico demais."
+          }
+        ]
+      },
+      {
         "word": "forgo",
         "phonetics": "US /fɔːrˈɡoʊ/, UK /fɔːˈɡəʊ/",
         "partOfSpeech": "verb",

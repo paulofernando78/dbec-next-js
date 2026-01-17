@@ -2,8 +2,38 @@
   {
     "definitions": [
       {
+        "word": "give someone the time of day",
+        "phonetics": "/ɡɪv ˈsʌmˌwʌn ðə taɪm əv deɪ/",
+        "partOfSpeech": "idiom",
+        "enDefinition": "to pay attention to someone or treat them as worthy of notice or respect, especially by talking to them",
+        "ptDefinition": "dar atenção a alguém ou tratar a pessoa como digna de consideração, especialmente ao falar com ela",
+        "examples": [
+          {
+            "enExample": "She was so angry that she wouldn’t even give him the time of day.",
+            "ptExample": "Ela estava tão brava que nem deu atenção a ele."
+          },
+          {
+            "enExample": "He’s famous now, but he still gives everyone the time of day.",
+            "ptExample": "Ele é famoso agora, mas ainda dá atenção a todo mundo."
+          }
+        ],
+        "synonyms": [
+          "pay attention to",
+          "acknowledge",
+          "notice",
+          "give someone a hearing"
+        ],
+        "antonyms": ["ignore", "snub", "brush off"],
+        "seeAlso": ["cold shoulder", "brush off", "acknowledge"],
+        "notes": [
+          {
+            "enNote": "Often used in negative form (e.g. 'won’t give him the time of day') to emphasize deliberate ignoring.",
+            "ptNote": "Frequentemente usado na forma negativa (ex.: 'won’t give him the time of day') para enfatizar que alguém está ignorando de propósito."
+          }
+        ]
+      },
+      {
         "word": "goody-goody",
-        "phonetics": "/ˈɡʊd.i ˈɡʊd.iz/",
         "partOfSpeech": "plural noun (informal)",
         "enDefinition": "people who behave in an overly good, obedient, or morally upright way, often seen as annoying or self-righteous by others",
         "ptDefinition": "pessoas certinhas ou moralistas demais, que seguem regras de forma exagerada e podem ser vistas como irritantes ou presunçosas",
