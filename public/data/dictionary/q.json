@@ -2,6 +2,40 @@
   {
     "definitions": [
       {
+        "word": "quid pro quo",
+        "partOfSpeech": "idiom",
+        "enDefinition": "a favor or advantage given in return for something; a mutual exchange, especially one that is expected or implied",
+        "ptDefinition": "favor ou vantagem dada em troca de outra coisa; uma troca mútua, especialmente quando é esperada ou implícita",
+        "examples": [
+          {
+            "enExample": "The deal was a simple quid pro quo: I help you with the report, and you cover my shift.",
+            "ptExample": "O acordo foi uma troca simples: eu te ajudo com o relatório e você cobre meu turno."
+          },
+          {
+            "enExample": "There was no quid pro quo involved in the decision.",
+            "ptExample": "Não houve troca de favores envolvida na decisão."
+          }
+        ],
+        "synonyms": [
+          "exchange",
+          "trade-off",
+          "mutual favor",
+          "you scratch my back and I'll scratch yours"
+        ],
+        "antonyms": ["selfless act", "charity", "no strings attached"],
+        "seeAlso": [
+          "you scratch my back and I'll scratch yours",
+          "give and take",
+          "tit for tat"
+        ],
+        "notes": [
+          {
+            "enNote": "Originally a Latin phrase meaning 'something for something'. Often used in legal, political, and business contexts.",
+            "ptNote": "Expressão em latim que significa 'algo por algo'. Usada com frequência em contextos jurídicos, políticos e de negócios."
+          }
+        ]
+      },
+      {
         "word": "qualm",
         "phonetics": "/kwɑːm/",
         "partOfSpeech": "noun",
