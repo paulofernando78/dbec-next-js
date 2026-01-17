@@ -660,13 +660,15 @@ export default function VerbBe() {
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/i-am-not1.mp3",
+                            part: "I ",
                           },
+                          { part: "am not ", type: "bold" },
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/i-am-not2.mp3",
                             part: "I ",
                           },
-                          { part: "am not ", type: "bold" },
+                          { part: "am no(t) ", type: "bold" },
                         ],
                       },
                     ],
@@ -678,13 +680,15 @@ export default function VerbBe() {
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/im-not1.mp3",
+                            part: "I’",
                           },
+                          { part: "m not ", type: "bold" },
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/im-not2.mp3",
                             part: "I’",
                           },
-                          { part: "m not ", type: "bold" },
+                          { part: "m no(t) ", type: "bold" },
                         ],
                       },
                     ],
@@ -705,37 +709,43 @@ export default function VerbBe() {
                       {
                         text: [
                           {
+                            part: "you ",
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not1.mp3",
                           },
+                          { part: "are not ", type: "bold" },
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not2.mp3",
                             part: "you ",
                           },
-                          { part: "are not ", type: "bold" },
+                          { part: "are no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // you're not
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not1.mp3",
-                          },
-                          {
-                            audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not2.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/youre-not1.mp3",
                             part: "you",
                           },
                           { part: "’re not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/youre-not2.mp3",
+                            part: "you",
+                          },
+                          { part: "’re no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // you aren't
                   {
                     block: [
                       {
@@ -745,8 +755,6 @@ export default function VerbBe() {
                               "/assets/audio/grammar/verb-be/pronunciation/negative/you-arent1.mp3",
                           },
                           {
-                            audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-arent2.mp3",
                             part: "you ",
                           },
                           { part: "aren’t ", type: "bold" },
@@ -775,35 +783,41 @@ export default function VerbBe() {
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/he-is-not1.mp3",
+                            part: "he ",
                           },
+                          { part: "is not ", type: "bold" },
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/he-is-not2.mp3",
                             part: "he ",
                           },
-                          { part: "is not ", type: "bold" },
+                          { part: "is no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // he's not
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/he-is-not1.mp3",
-                          },
-                          {
-                            audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/he-is-not2.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/hes-not1.mp3",
                             part: "he",
                           },
                           { part: "’s not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/hes-not2.mp3",
+                            part: "he",
+                          },
+                          { part: "’s no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // he isn't
                   {
                     block: [
                       {
@@ -811,13 +825,15 @@ export default function VerbBe() {
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/he-isnt1.mp3",
+                            part: "he ",
                           },
+                          { part: "isn’t ", type: "bold" },
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/he-isnt2.mp3",
                             part: "he ",
                           },
-                          { part: "isn’t ", type: "bold" },
+                          { part: "isn’(t) ", type: "bold" },
                         ],
                       },
                     ],
@@ -837,38 +853,58 @@ export default function VerbBe() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-is-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-is-not1.mp3",
                             part: "she ",
                           },
                           { part: "is not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-is-not2.mp3",
+                            part: "she ",
+                          },
+                          { part: "is no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // she's not
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-is-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/shes-not1.mp3",
                             part: "she",
                           },
                           { part: "’s not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/shes-not2.mp3",
+                            part: "she",
+                          },
+                          { part: "’s no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // she isn't
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-is-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-isnt1.mp3",
                             part: "she ",
                           },
                           { part: "isn’t ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/she-isnt2.mp3",
+                            part: "she ",
+                          },
+                          { part: "isn’(t) ", type: "bold" },
                         ],
                       },
                     ],
@@ -888,38 +924,58 @@ export default function VerbBe() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/it-is-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/it-is-not1.mp3",
                             part: "it ",
                           },
                           { part: "is not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/it-is-not2.mp3",
+                            part: "it ",
+                          },
+                          { part: "is no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // it's not
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/its-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/its-not1.mp3",
                             part: "it",
                           },
                           { part: "’s not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/its-not2.mp3",
+                            part: "it",
+                          },
+                          { part: "’s no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // it isn't
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/it-isnt.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/it-isnt1.mp3",
                             part: "it ",
                           },
                           { part: "isn’t ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/it-isnt2.mp3",
+                            part: "it ",
+                          },
+                          { part: "isn’(t) ", type: "bold" },
                         ],
                       },
                     ],
@@ -939,38 +995,52 @@ export default function VerbBe() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/we-are-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/we-are-not1.mp3",
                             part: "we ",
                           },
                           { part: "are not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/we-are-not2.mp3",
+                            part: "we ",
+                          },
+                          { part: "are no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // we're not
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/we-are-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/were-not1.mp3",
                             part: "we",
                           },
                           { part: "’re not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/were-not2.mp3",
+                            part: "we",
+                          },
+                          { part: "’re no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // we aren't
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/we-are-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/we-arent.mp3",
                             part: "we ",
                           },
-                          { part: "are not ", type: "bold" },
+                          { part: "aren’t ", type: "bold" },
                         ],
                       },
                     ],
@@ -994,37 +1064,43 @@ export default function VerbBe() {
                       {
                         text: [
                           {
+                            part: "you ",
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not1.mp3",
                           },
+                          { part: "are not ", type: "bold" },
                           {
                             audio:
                               "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not2.mp3",
                             part: "you ",
                           },
-                          { part: "are not ", type: "bold" },
+                          { part: "are no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // you're not
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not1.mp3",
-                          },
-                          {
-                            audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-are-not2.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/youre-not1.mp3",
                             part: "you",
                           },
                           { part: "’re not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/youre-not2.mp3",
+                            part: "you",
+                          },
+                          { part: "’re no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // you aren't
                   {
                     block: [
                       {
@@ -1034,8 +1110,6 @@ export default function VerbBe() {
                               "/assets/audio/grammar/verb-be/pronunciation/negative/you-arent1.mp3",
                           },
                           {
-                            audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/you-arent2.mp3",
                             part: "you ",
                           },
                           { part: "aren’t ", type: "bold" },
@@ -1063,35 +1137,55 @@ export default function VerbBe() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-are-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-are-not1.mp3",
                             part: "they ",
                           },
                           { part: "are not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-are-not2.mp3",
+                            part: "they ",
+                          },
+                          { part: "are no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // they're not
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-are-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/theyre-not1.mp3",
                             part: "they ",
                           },
                           { part: "’re not ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/theyre-not2.mp3",
+                            part: "they ",
+                          },
+                          { part: "’re no(t) ", type: "bold" },
                         ],
                       },
                     ],
                   },
+                  // they aren't
                   {
                     block: [
                       {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-are-not.mp3",
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-arent1.mp3",
+                            part: "they ",
+                          },
+                          { part: "aren’t ", type: "bold" },
+                          {
+                            audio:
+                              "/assets/audio/grammar/verb-be/pronunciation/negative/they-arent2.mp3",
                             part: "they ",
                           },
                           { part: "aren’t ", type: "bold" },
