@@ -158,7 +158,7 @@ export default function LikedSounds() {
                       },
                       "  sea(t), please.",
                       {
-                        part: " Dá uma olha.",
+                        part: " Sente-se, por favor.",
                         type: "portuguese",
                       },
                     ],
@@ -182,7 +182,7 @@ export default function LikedSounds() {
                       },
                       "(t).",
                       {
-                        part: " Dá uma olha.",
+                        part: " Dê uma olhada.",
                         type: "portuguese",
                       },
                     ],
@@ -201,7 +201,26 @@ export default function LikedSounds() {
                       },
                       "asy task.",
                       {
-                        part: " É um tarefa fácil.",
+                        part: " É uma tarefa fácil.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // You have an incredible memory.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/you-have-an-incredible-memory.mp3",
+                      },
+                      "You ha",
+                      {
+                        part: "v(e) an i",
+                        type: "underline",
+                      },
+                      "ncredible memory.",
+                      {
+                        part: " Você tem uma memória incrível.",
                         type: "portuguese",
                       },
                     ],
@@ -225,7 +244,7 @@ export default function LikedSounds() {
                       },
                       "n the morning.",
                       {
-                        part: " “Eu tenho aulas online pela manhã.",
+                        part: " Eu tenho aulas online pela manhã.",
                         type: "portuguese",
                       },
                     ],
@@ -412,7 +431,7 @@ export default function LikedSounds() {
                       },
                       "ou eat? ",
                       {
-                        part: "Você gostou?",
+                        part: "Você comeu?",
                         type: "portuguese",
                       },
                     ],
@@ -573,7 +592,7 @@ export default function LikedSounds() {
                       },
                       "our family? ",
                       {
-                        part: "Como está a sua familia?",
+                        part: "Como está a sua família?",
                         type: "portuguese",
                       },
                     ],
@@ -592,7 +611,7 @@ export default function LikedSounds() {
                       },
                       "our phone?? ",
                       {
-                        part: "Onde está o seu telefone?",
+                        part: "Cadê o seu telefone?",
                         type: "portuguese",
                       },
                     ],
