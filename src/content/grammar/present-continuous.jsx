@@ -48,7 +48,7 @@ export default function PresebtContinuous() {
               {
                 imgs: [
                   {
-                    img: "/assets/img/grammar/present-continuous/introduction/mr-smith-teaching.png",
+                    img: "/assets/img/grammar/present-continuous/introduction/mr-smith-is-teaching.png",
                     alt: "a teacher speaking in front of the students",
                   },
                 ],
@@ -66,7 +66,7 @@ export default function PresebtContinuous() {
               {
                 imgs: [
                   {
-                    img: "/assets/img/grammar/present-continuous/introduction/students-are-writing.png",
+                    img: "/assets/img/grammar/present-continuous/introduction/students-are-looking.png",
                     alt: "students are writting",
                   },
                 ],
@@ -76,7 +76,43 @@ export default function PresebtContinuous() {
                       {
                         audio: "/assets/audio/",
                       },
-                      "Students are writing.",
+                      "Students are looking at pictures in a book.",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "/assets/img/grammar/present-continuous/introduction/book-beach.png",
+                    alt: "people on the beach",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "People are wearing swimsuits. Some are swimming.",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "/assets/img/grammar/present-continuous/introduction/book-snow.png",
+                    alt: "people on the snow",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "People are wearing warm clothes. It is snowing.",
                     ],
                   },
                 ],
@@ -106,7 +142,7 @@ export default function PresebtContinuous() {
               instruction: "Answer the questions.",
               questions: [
                 {
-                  question: "1. Mr. Smith is...",
+                  question: "1. Mr. Smith is _____ .",
                   options: [
                     { option: "listening.", isCorrect: false },
                     { option: "teaching.", isCorrect: true },
@@ -114,19 +150,19 @@ export default function PresebtContinuous() {
                   ],
                 },
                 {
-                  question: "2. Students are...",
+                  question: "2. Students are _____ .",
                   options: [
-                    { option: "learning", isCorrect: false },
-                    { option: "teaching", isCorrect: true },
-                    { option: "sleeping", isCorrect: false },
+                    { option: "writing", isCorrect: false },
+                    { option: "teaching", isCorrect: false },
+                    { option: "looking at pictures", isCorrect: true },
                   ],
                 },
                 {
-                  question: "3. ...",
+                  question: "3. Students are _____ .",
                   options: [
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
+                    { option: "listening", isCorrect: false },
+                    { option: "speaking", isCorrect: true },
+                    { option: "writing", isCorrect: false },
                   ],
                 },
               ],
@@ -148,9 +184,10 @@ export default function PresebtContinuous() {
                     lineBreak: true,
                   },
                   {
-                    text: [
-                      "...",
-                    ],
+                    text: ["What are you doing now?"],
+                  },
+                  {
+                    text: ["What is your (someone) doing now?"],
                   },
                 ],
               },
@@ -158,24 +195,68 @@ export default function PresebtContinuous() {
           />
         </Section>
 
-        <Section lid="presentation" abel="Presentation" heading={3}>
+        <Section id="presentation" label="Presentation" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/general/.mp3"
             lines={[
               {
-                speaker: "A:",
+                speaker: "Mr.Smith:",
                 text: [
-                  "What ",
-                  { type: "mark", part: "are you doing" },
-                  " now?",
+                  "Good evening everyone. How are you doing? Ready for today’s class?",
                 ],
               },
               {
-                speaker: "B:",
+                speaker: "Eric:",
+                text: ["Yes, we are."],
+              },
+              {
+                speaker: "Laura:",
+                text: ["Hey Eric. How’s it going?"],
+              },
+              {
+                speaker: "Eric:",
+                text: ["Pretty good. How about you?"],
+              },
+              {
+                speaker: "",
                 text: [
-                  "I ",
-                  { type: "mark", part: "am answering" },
-                  " questions.",
+                  {
+                    part: "Mr. Smith continues speaking...",
+                    type: "italic",
+                  },
+                ],
+              },
+              {
+                speaker: "Mr.Smith:",
+                text: [
+                  "Please, open your book on page 12. What can you see on picure 1?",
+                ],
+              },
+              {
+                speaker: "Laura:",
+                text: [
+                  "On Picture 1, people are wearing swimsuit because the’re on the beach. Some people are swimming in the sea.",
+                ],
+              },
+              {
+                speaker: "Mr.Smith:",
+                text: ["How about picture 2?"],
+              },
+              {
+                speaker: "Eric:",
+                text: ["On picture 2, people are wearing clothes for cold because it‘s winter, and because it’s snowing."],
+              },
+              {
+                speaker: "Eric:",
+                text: ["Now stand up and talk to your partner and tell him what you’re wearing."],
+              },
+              {
+                speaker: "",
+                text: [
+                  {
+                    part: "Mr. Smith continues teaching...",
+                    type: "italic",
+                  },
                 ],
               },
             ]}
@@ -207,7 +288,11 @@ export default function PresebtContinuous() {
           />
         </Section>
 
-        <Section id="pronunciation-form" label="Pronunciation + Form" heading={4}>
+        <Section
+          id="pronunciation-form"
+          label="Pronunciation + Form"
+          heading={4}
+        >
           <Paragraph
             blocks={[
               {

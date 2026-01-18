@@ -136,6 +136,31 @@ export default function VerbBe() {
               ],
             }}
           />
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/answer-these-questions.mp3",
+                        part: "Answer these questions.",
+                        type: "bold",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: ["Where are you?"],
+                  },
+                  {
+                    text: ["What is your (someone)? At home? At work? At school?"],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section id="presentation" label="Presentation" heading={3}>
