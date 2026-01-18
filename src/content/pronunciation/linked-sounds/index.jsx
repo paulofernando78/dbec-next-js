@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Content } from "@/components/molecules/Content";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
@@ -7,6 +8,16 @@ export default function LikedSounds() {
     <>
       <Whiteboard title="Pronunciation" subtitle="Linked Sounds" />
       <div className="line-break">
+        <Content
+          items={[
+            { href: "vowel-vowel", label: "Vowel + Vowel" },
+            { href: "consonant-vowel", label: "Consonant + Vowel" },
+            { href: "d-y", label: "d + y" },
+            { href: "t-y", label: "t + y" },
+            { href: "s-y", label: "s + y" },
+          ]}
+        />
+
         <Paragraph
           blocks={[
             {
@@ -26,7 +37,7 @@ export default function LikedSounds() {
           ]}
         />
 
-        <Section label="Vowel + Vowel" heading={3}>
+        <Section id="vowel-vowel" label="Vowel + Vowel" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -139,7 +150,7 @@ export default function LikedSounds() {
           />
         </Section>
 
-        <Section label="Consonant + Vowel" heading={3}>
+        <Section id="consonant-vowel" label="Consonant + Vowel" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -380,7 +391,7 @@ export default function LikedSounds() {
           />
         </Section>
 
-        <Section label="d + y" heading={3}>
+        <Section id="d-y" label="d + y" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -479,7 +490,7 @@ export default function LikedSounds() {
           />
         </Section>
 
-        <Section label="t + y" heading={3}>
+        <Section id="t-y" label="t + y" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -541,7 +552,7 @@ export default function LikedSounds() {
           />
         </Section>
 
-        <Section label="s + y" heading={3}>
+        <Section id="s-y" label="s + y" heading={3}>
           <Paragraph
             blocks={[
               {

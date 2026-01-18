@@ -44,6 +44,10 @@ html.dark {
     inset -0.03rem -0.03rem 0.2rem var(--slate-6);
 }
 
+main {
+  scroll-behavior: smooth;
+}
+
 .line-break {
   display: flex;
   flex-direction: column;
