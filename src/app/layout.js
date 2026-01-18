@@ -1,9 +1,12 @@
+import styles from "./layout.module.css"
+
 import { Montserrat, Oswald } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/context/themeContext";
+import { HeaderProvider } from "../context/headerContext";
 import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
-import { HeaderProvider } from "../context/headerContext";
-import { ThemeProvider } from "@/context/themeContext";
+import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import Footer from "@/components/organisms/Footer";
 
 const montserrat = Montserrat({
@@ -33,7 +36,12 @@ export default function RootLayout({ children }) {
               <Header></Header>
               <div className="nav-main">
                 <NavBar></NavBar>
-                <main>{children}</main>
+                <main className={styles.main}>
+                  {children}
+                  <div className={styles.scrollToTopWrapper}>
+                    <ScrollToTop />
+                  </div>
+                </main>
               </div>
             </HeaderProvider>
             <Footer></Footer>

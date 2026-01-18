@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { InlineText } from "@/components/molecules/InlineText";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -14,7 +15,17 @@ export default function SimplePresent() {
     <>
       <Whiteboard title="Grammar" subtitle="Simple Present" />
       <div className="line-break">
-        <Section label="Introduction" heading={3}>
+        <Contents
+          items={[
+            { href: "introduction", label: "Introduction" },
+            { href: "presentation", label: "Presentation" },
+            { href: "meaning", label: "Meaning" },
+            { href: "pronunciation-form", label: "Pronunciation + Form" },
+            { href: "practice", label: "Practice" },
+            { href: "production", label: "Production" },
+          ]}
+        />
+        <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -189,7 +200,7 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Section label="Presentation" heading={3}>
+        <Section id="presentation" label="Presentation" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/grammar/simple-present/presentation/dialogue.mp3"
             lines={[
@@ -251,7 +262,7 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Section label="Meaning" heading={3}>
+        <Section id="meaning" label="Meaning" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -400,7 +411,7 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Section label="Pronunciation + Form" heading={3}>
+        <Section id="pronunciation-form" label="Pronunciation + Form" heading={3}>
           <Column
             length="4"
             width="300"
@@ -2207,7 +2218,7 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Section label="Practice" heading={3}>
+        <Section id="practice" label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions:
@@ -2282,7 +2293,7 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Section label="Production" heading={3}>
+        <Section id="production" label="Production" heading={3}>
           <InlineText
             audio="/assets/audio/"
             text={["Talk about your daily routine."]}

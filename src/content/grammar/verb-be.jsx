@@ -21,7 +21,7 @@ export default function VerbBe() {
             { href: "meaning", label: "Meaning" },
             { href: "pronunciation-form", label: "Pronunciation + Form" },
             { href: "practice", label: "Practice" },
-            { href: "prodution", label: "Production" },
+            { href: "production", label: "Production" },
           ]}
         />
         <Section id="introduction" label="Introduction" heading={3}>

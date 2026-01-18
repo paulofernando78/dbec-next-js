@@ -1,5 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
@@ -27,26 +28,28 @@ export default function Mock() {
           <Dictionary />
         </div>
 
-        <Section label="Links" heading={3}>
-          {/* <Ribbon label="Links" /> */}
-          <Links
-            groups={[
-              {
-                items: [
-                  {
-                    href: "/",
-                    label: "... ",
-                    phonetics: "...",
-                  },
-                ],
-              },
-            ]}
-          />
+        <Contents
+          items={[
+            { href: "audio-player", label: "Audio Player" },
+            { href: "inline-text", label: "InlineText" },
+            { href: "list", label: "List" },
+            { href: "card-text", label: "CardText" },
+            { href: "paragraph", label: "Paragraph" },
+            { href: "note", label: "Note" },
+            { href: "dialogue", label: "Dialogue" },
+            { href: "comparison", label: "Comparison" },
+            { href: "column", label: "Column" },
+            { href: "links", label: "Links" },
+            { href: "radio", label: "Radio" },
+            { href: "fill", label: "Fill In the Blanks" },
+          ]}
+        />
+
+        <Section id="audio-player" label="Audio Player" heading={3}>
+          <AudioPlayer src="/assets/audio/general/about-to.mp3" />
         </Section>
 
-        <AudioPlayer src="/assets/audio/general/about-to.mp3" />
-
-        <Section label="InlineText" heading={3}>
+        <Section id="inline-text" label="InlineText" heading={3}>
           <InlineText
             text={[
               "normal ",
@@ -100,7 +103,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="List" heading={3}>
+        <Section id="List" label="List" heading={3}>
           <List
             bullet={false}
             items={[
@@ -184,7 +187,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="CardText" heading={3}>
+        <Section id="card-text" label="CardText" heading={3}>
           <CardText
             blocks={[
               {
@@ -278,7 +281,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="Paragraph" heading={3}>
+        <Section id="paragraph" label="Paragraph" heading={3}>
           <Paragraph
             blocks={[
               // img top
@@ -827,7 +830,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="Note" heading={3}>
+        <Section id="note" label="Note" heading={3}>
           <Note
             items={[
               {
@@ -868,7 +871,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="Dialogue" heading={3}>
+        <Section id="dialogue" label="Dialogue" heading={3}>
           <Dialogue
             imgs={[
               {
@@ -930,7 +933,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="Comparison" heading={3}>
+        <Section id="comparison" label="Comparison" heading={3}>
           <Comparison
             groups={[
               {
@@ -953,7 +956,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="Column" heading={3}>
+        <Section id="column" label="Column" heading={3}>
           <Column
             width="300"
             cols={[
@@ -1044,7 +1047,24 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="Radio" heading={3}>
+        <Section id="links" label="Links" heading={3}>
+          {/* <Ribbon label="Links" /> */}
+          <Links
+            groups={[
+              {
+                items: [
+                  {
+                    href: "/",
+                    label: "... ",
+                    phonetics: "...",
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="radio" label="Radio" heading={3}>
           <Radio
             exercise={{
               instruction: "Choose the best response.",
@@ -1070,7 +1090,7 @@ export default function Mock() {
           />
         </Section>
 
-        <Section label="FillInTheBlanks" heading={3}>
+        <Section id="fill" label="FillInTheBlanks" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions: "1. Fill in the blanks with the correct answer.",
