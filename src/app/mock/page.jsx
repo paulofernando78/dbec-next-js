@@ -1077,14 +1077,6 @@ export default function Mock() {
                     { option: "option 3", isCorrect: false },
                   ],
                 },
-                {
-                  question: "2. Question",
-                  options: [
-                    { option: "option 1", isCorrect: true },
-                    { option: "option 2", isCorrect: false },
-                    { option: "option 3", isCorrect: false },
-                  ],
-                },
               ],
             }}
           />

@@ -57,7 +57,8 @@ export default function VerbBe() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/grammar/verb-be/introduction/this-is-an-english-school.mp3",
+                        audio:
+                          "/assets/audio/grammar/verb-be/introduction/this-is-an-english-school.mp3",
                       },
                       "This is an English school.",
                     ],
@@ -75,7 +76,8 @@ export default function VerbBe() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/grammar/verb-be/introduction/laura-and-eric-are-students.mp3",
+                        audio:
+                          "/assets/audio/grammar/verb-be/introduction/laura-and-eric-are-students.mp3",
                       },
                       "Laura and Eric are students. They are in the classroom. They’re classmates.",
                     ],
@@ -93,7 +95,8 @@ export default function VerbBe() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/grammar/verb-be/introduction/mr-smith-is-the-teacher.mp3",
+                        audio:
+                          "/assets/audio/grammar/verb-be/introduction/mr-smith-is-the-teacher.mp3",
                       },
                       "Mr. Smith is the teacher. ",
                     ],
@@ -102,70 +105,36 @@ export default function VerbBe() {
               },
             ]}
           />
-
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentence.mp3",
-                        part: "Look at the picture and listen to the sentences.",
-                        type: "bold",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/grammar/verb-be/introduction/laura-and-eric-are-at-school.mp3",
-                        part: "Laura and Eric are at school.",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/grammar/verb-be/introduction/theyre-students.mp3",
-                        part: "They’re students.",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/grammar/verb-be/introduction/theyre-classmates.mp3",
-                        part: "They’re classmates.",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/answer-these-questions.mp3",
-                        part: "Answer these questions.",
-                        type: "bold",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: ["Where are Laura and Eric? "],
-                  },
-                  {
-                    text: ["Are they students?"],
-                  },
-                ],
-              },
-            ]}
+          <Radio
+            exercise={{
+              instruction: "Answer the questions.",
+              questions: [
+                {
+                  question: "1. Laura and Eric are in...",
+                  options: [
+                    { option: "a Spanish school.", isCorrect: false },
+                    { option: "the supermarket.", isCorrect: false },
+                    { option: "an English school.", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "2. Laura and Eric are...",
+                  options: [
+                    { option: "brother and sister.", isCorrect: false },
+                    { option: "classmates.", isCorrect: true },
+                    { option: "teachers.", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. Mr. Smith is...",
+                  options: [
+                    { option: "a man.", isCorrect: true },
+                    { option: "a child.", isCorrect: false },
+                    { option: "woman.", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
           />
         </Section>
 

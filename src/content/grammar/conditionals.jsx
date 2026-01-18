@@ -101,6 +101,37 @@ export default function Conditionals() {
               },
             ]}
           />
+          <Radio
+            exercise={{
+              instruction: "Answer the questions.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "2. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
           <Paragraph
             blocks={[
               {
@@ -118,7 +149,7 @@ export default function Conditionals() {
                   },
                   {
                     text: [
-                      "Conditionals help us talk about real and imaginary situations.",
+                      "...",
                     ],
                   },
                 ],

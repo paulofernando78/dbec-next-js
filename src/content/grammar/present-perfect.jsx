@@ -101,6 +101,37 @@ export default function PresentPerfect() {
               },
             ]}
           />
+          <Radio
+            exercise={{
+              instruction: "Answer the questions.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "2. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
           <Paragraph
             blocks={[
               {
@@ -118,7 +149,7 @@ export default function PresentPerfect() {
                   },
                   {
                     text: [
-                      "Anna has finished her homework. She is ready to relax.",
+                      "...",
                     ],
                   },
                 ],

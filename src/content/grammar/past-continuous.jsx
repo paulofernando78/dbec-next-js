@@ -101,6 +101,37 @@ export default function PastContinuous() {
               },
             ]}
           />
+          <Radio
+            exercise={{
+              instruction: "Answer the questions.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "2. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
           <Paragraph
             blocks={[
               {
@@ -117,7 +148,7 @@ export default function PastContinuous() {
                     lineBreak: true,
                   },
                   {
-                    text: ["Yesterday at 8 p.m., Anna was studying at home."],
+                    text: ["..."],
                   },
                 ],
               },
@@ -178,7 +209,11 @@ export default function PastContinuous() {
           />
         </Section>
 
-        <Section id="pronunciation-form" label="Pronunciation + Form" heading={4}>
+        <Section
+          id="pronunciation-form"
+          label="Pronunciation + Form"
+          heading={4}
+        >
           <Paragraph
             blocks={[
               {

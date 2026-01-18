@@ -46,11 +46,17 @@ export default function FuturePerfect() {
           <CardText
             blocks={[
               {
+                imgs: [
+                  {
+                    img: "/assets/img/grammar/future-perfect/laura-working-on-her-report.png",
+                    alt: "a woman working on a report in the evening",
+                  },
+                ],
                 lines: [
                   {
                     text: [
                       {
-                        audio: "/",
+                        audio: "/assets/audio/grammar/future-perferct/laura-is-working-on-her-report.mp3",
                         part: "Laura is working on her report. By tomorrow morning, She will have finished it.",
                       },
                     ],
@@ -78,7 +84,7 @@ export default function FuturePerfect() {
                   {
                     text: [
                       {
-                        audio: "/",
+                        audio: "/assets/audio/grammar/future-perferct/report-is-ready.mp3",
                         part: "The report is ready. She is handing it over to her boss.",
                       },
                     ],
@@ -89,6 +95,61 @@ export default function FuturePerfect() {
                         part: "O relatório está pronto. Ela está entregando para o seu chefe dela.",
                         type: "portuguese",
                       },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+          <Radio
+            exercise={{
+              instruction: "Answer the questions.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "2. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/answer-these-questions.mp3",
+                        part: "Answer these questions.",
+                        type: "bold",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      "...",
                     ],
                   },
                 ],

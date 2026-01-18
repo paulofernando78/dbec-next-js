@@ -101,6 +101,37 @@ export default function SimplePast() {
               },
             ]}
           />
+          <Radio
+            exercise={{
+              instruction: "Answer the questions.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "2. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
           <Paragraph
             blocks={[
               {
@@ -117,7 +148,9 @@ export default function SimplePast() {
                     lineBreak: true,
                   },
                   {
-                    text: ["Yesterday was a school day. Anna was at school."],
+                    text: [
+                      "...",
+                    ],
                   },
                 ],
               },

@@ -101,28 +101,61 @@ export default function PastPerfect() {
               },
             ]}
           />
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/answer-these-questions.mp3",
-                        part: "Answer these questions.",
-                        type: "bold",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: ["Anna was tired because she had studied all night."],
-                  },
-                ],
-              },
-            ]}
+          <Radio
+            exercise={{
+              instruction: "Answer the questions.",
+              questions: [
+                {
+                  question: "1. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "2. ...",
+                  options: [
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. ...",
+                  options: [
+                    { option: "...", isCorrect: true },
+                    { option: "...", isCorrect: false },
+                    { option: "...", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
           />
+          <Paragraph
+                      blocks={[
+                        {
+                          lines: [
+                            {
+                              text: [
+                                {
+                                  audio:
+                                    "/assets/audio/general/answer-these-questions.mp3",
+                                  part: "Answer these questions.",
+                                  type: "bold",
+                                },
+                              ],
+                              lineBreak: true,
+                            },
+                            {
+                              text: [
+                                "...",
+                              ],
+                            },
+                          ],
+                        },
+                      ]}
+                    />
         </Section>
 
         <Section id="presentation" label="Presentation" heading={3}>
