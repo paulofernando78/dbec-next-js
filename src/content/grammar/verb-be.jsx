@@ -49,17 +49,17 @@ export default function VerbBe() {
               {
                 imgs: [
                   {
-                    img: "",
-                    alt: "",
+                    img: "/assets/img/grammar/verb-to-be/english-school.png",
+                    alt: "an english school",
                   },
                 ],
                 lines: [
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/grammar/verb-be/introduction/this-is-an-english-school.mp3",
                       },
-                      "normal ",
+                      "This is an English school.",
                     ],
                   },
                 ],
@@ -67,7 +67,7 @@ export default function VerbBe() {
               {
                 imgs: [
                   {
-                    img: "/assets/img/grammar/verb-to-be/laura-eric-clssroom.png",
+                    img: "/assets/img/grammar/verb-to-be/students-classroom.png",
                     alt: "two people in a classroom",
                   },
                 ],
@@ -75,9 +75,9 @@ export default function VerbBe() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/grammar/verb-be/introduction/laura-and-eric-are-students.mp3",
                       },
-                      "normal ",
+                      "Laura and Eric are students. They are in the classroom. They’re classmates.",
                     ],
                   },
                 ],
@@ -85,17 +85,17 @@ export default function VerbBe() {
               {
                 imgs: [
                   {
-                    img: "",
-                    alt: "",
+                    img: "/assets/img/grammar/verb-to-be/teacher.png",
+                    alt: "a teacher in front of the board",
                   },
                 ],
                 lines: [
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/grammar/verb-be/introduction/mr-smith-is-the-teacher.mp3",
                       },
-                      "normal ",
+                      "Mr. Smith is the teacher. ",
                     ],
                   },
                 ],

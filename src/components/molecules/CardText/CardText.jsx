@@ -9,7 +9,7 @@ export const CardText = ({ blocks = [], width }) => {
   return (
     <div className={styles.wrapper}>
       {blocks.map((block, blockIndex) => (
-        <div key={blockIndex} className={`${styles.card} line-break`} style={{ width: block.width || 300}}>
+        <div key={blockIndex} className={`${styles.card} line-break`} style={{ width: block.width || 299}}>
           <div>
             {block.imgs.map((img, index) => (
               <Image

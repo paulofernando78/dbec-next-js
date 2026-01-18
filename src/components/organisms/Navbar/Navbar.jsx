@@ -84,10 +84,6 @@ const links = [
         href: "/grammar/conditionals",
         label: "Conditionals",
       },
-      {
-        href: "/grammar/word-families",
-        label: "Word Families",
-      },
     ],
   },
   {
@@ -112,6 +108,10 @@ const links = [
       {
         href: "/vocabulary/which-one",
         label: "Which one?",
+      },
+      {
+        href: "/grammar/word-families",
+        label: "Word Families",
       },
     ],
   },
