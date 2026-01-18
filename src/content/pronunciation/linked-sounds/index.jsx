@@ -1,5 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Content } from "@/components/molecules/Content";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
@@ -8,16 +8,6 @@ export default function LikedSounds() {
     <>
       <Whiteboard title="Pronunciation" subtitle="Linked Sounds" />
       <div className="line-break">
-        <Content
-          items={[
-            { href: "vowel-vowel", label: "Vowel + Vowel" },
-            { href: "consonant-vowel", label: "Consonant + Vowel" },
-            { href: "d-y", label: "d + y" },
-            { href: "t-y", label: "t + y" },
-            { href: "s-y", label: "s + y" },
-          ]}
-        />
-
         <Paragraph
           blocks={[
             {
@@ -34,6 +24,15 @@ export default function LikedSounds() {
                 },
               ],
             },
+          ]}
+        />
+        <Contents
+          items={[
+            { href: "vowel-vowel", label: "Vowel + Vowel" },
+            { href: "consonant-vowel", label: "Consonant + Vowel" },
+            { href: "d-y", label: "d + y" },
+            { href: "t-y", label: "t + y" },
+            { href: "s-y", label: "s + y" },
           ]}
         />
 

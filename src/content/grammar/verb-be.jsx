@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
@@ -13,7 +14,17 @@ export default function VerbBe() {
     <>
       <Whiteboard title="Grammar" subtitle="Verb Be" />
       <div className="line-break">
-        <Section label="Introduction" heading={3}>
+        <Contents
+          items={[
+            { href: "introduction", label: "Introduction" },
+            { href: "presentation", label: "Presentation" },
+            { href: "meaning", label: "Meaning" },
+            { href: "pronunciation-form", label: "Pronunciation + Form" },
+            { href: "practice", label: "Practice" },
+            { href: "prodution", label: "Production" },
+          ]}
+        />
+        <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -89,7 +100,7 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section label="Presentation" heading={3}>
+        <Section id="presentation" label="Presentation" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -193,7 +204,7 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section label="Meaning" heading={4}>
+        <Section id="meaning" label="Meaning" heading={4}>
           {/* Identify */}
           <Paragraph
             blocks={[
@@ -420,7 +431,7 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section label="Pronunciation + Form" heading={4}>
+        <Section id="pronunciation-form" label="Pronunciation + Form" heading={4}>
           <Column
             width="300"
             cols={[
@@ -1521,7 +1532,7 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section label="Practice" heading={3}>
+        <Section lid="practice" abel="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions:
@@ -1667,7 +1678,7 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section label="Production" heading={3}>
+        <Section id="prodution" label="Production" heading={3}>
           <Paragraph
             blocks={[
               {

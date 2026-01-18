@@ -161,6 +161,13 @@ mark {
   gap: 5px;
 }
 
+.flex-align {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
 .flex-container {
   display: flex;
   gap: 10px;
