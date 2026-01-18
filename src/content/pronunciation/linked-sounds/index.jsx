@@ -144,22 +144,21 @@ export default function LikedSounds() {
             blocks={[
               {
                 lines: [
-                  
-                  // Pick it up.
+                  // Have a seat, please.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/pick-it-up.mp3",
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/have-a-seat-please.mp3",
                       },
-                      "Pi",
+                      "Ha",
                       {
-                        part: "ck it u",
+                        part: "v(e) a",
                         type: "underline",
                       },
-                      "(p).",
+                      "  sea(t), please.",
                       {
-                        part: " Pegue.",
+                        part: " Dá uma olha.",
                         type: "portuguese",
                       },
                     ],
@@ -188,6 +187,49 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // It’s an easy task.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/its-an-easy-task.mp3",
+                      },
+                      "It’",
+                      {
+                        part: "s an e",
+                        type: "underline",
+                      },
+                      "asy task.",
+                      {
+                        part: " É um tarefa fácil.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // I have online classes in the morning.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-have-online-classes-in-the-morning.mp3",
+                      },
+                      "I ha",
+                      {
+                        part: "ve o",
+                        type: "underline",
+                      },
+                      "nline class",
+                      {
+                        part: "es i",
+                        type: "underline",
+                      },
+                      "n the morning.",
+                      {
+                        part: " “Eu tenho aulas online pela manhã.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
                   // I like it a lot.
                   {
                     text: [
@@ -207,59 +249,21 @@ export default function LikedSounds() {
                       },
                     ],
                   },
-                  // Have a seat, please.
+                  // Pick it up.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/have-a-seat-please.mp3",
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/pick-it-up.mp3",
                       },
-                      "Ha",
+                      "Pi",
                       {
-                        part: "ve a",
+                        part: "ck it u",
                         type: "underline",
                       },
-                      "  sea(t), please.",
+                      "(p).",
                       {
-                        part: " Dá uma olha.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // I have online classes in the morning.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-have-online-classes-in-the-morning.mp3",
-                      },
-                      "I ha",
-                      {
-                        part: "ve o",
-                        type: "underline",
-                      },
-                      "nline classes in the morning.",
-                      {
-                        part: " “Eu tenho aulas online pela manhã.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // Turn off the lights.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/turn-off-the-lights.mp3",
-                      },
-                      "Tur",
-                      {
-                        part: "n o",
-                        type: "underline",
-                      },
-                      "ff the lights.",
-                      {
-                        part: " Apague as luzes.",
+                        part: " Pegue.",
                         type: "portuguese",
                       },
                     ],
@@ -288,6 +292,27 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+
+                  // Turn off the lights.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/turn-off-the-lights.mp3",
+                      },
+                      "Tur",
+                      {
+                        part: "n o",
+                        type: "underline",
+                      },
+                      "ff the lights.",
+                      {
+                        part: " Apague as luzes.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+
                   // He works in an office.
                   {
                     text: [
@@ -330,7 +355,6 @@ export default function LikedSounds() {
                       },
                     ],
                   },
-                  
                 ],
               },
             ]}
