@@ -24,7 +24,7 @@ export default function PresebtContinuous() {
             { href: "production", label: "Production" },
           ]}
         />
-        <Section id="ntroduction" label="Introduction" heading={3}>
+        <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -48,8 +48,8 @@ export default function PresebtContinuous() {
               {
                 imgs: [
                   {
-                    img: "",
-                    alt: "",
+                    img: "/assets/img/grammar/present-continuous/introduction/mr-smith-teaching.png",
+                    alt: "a teacher speaking in front of the students",
                   },
                 ],
                 lines: [
@@ -58,7 +58,7 @@ export default function PresebtContinuous() {
                       {
                         audio: "/assets/audio/",
                       },
-                      "normal ",
+                      "Mr. Smith is teaching.",
                     ],
                   },
                 ],
@@ -66,8 +66,8 @@ export default function PresebtContinuous() {
               {
                 imgs: [
                   {
-                    img: "",
-                    alt: "",
+                    img: "/assets/img/grammar/present-continuous/introduction/students-are-writing.png",
+                    alt: "students are writting",
                   },
                 ],
                 lines: [
@@ -76,7 +76,7 @@ export default function PresebtContinuous() {
                       {
                         audio: "/assets/audio/",
                       },
-                      "normal ",
+                      "Students are writing.",
                     ],
                   },
                 ],
@@ -84,8 +84,8 @@ export default function PresebtContinuous() {
               {
                 imgs: [
                   {
-                    img: "",
-                    alt: "",
+                    img: "/assets/img/grammar/present-continuous/introduction/students-are-speaking.png",
+                    alt: "students are speaking in the classroom",
                   },
                 ],
                 lines: [
@@ -94,7 +94,7 @@ export default function PresebtContinuous() {
                       {
                         audio: "/assets/audio/",
                       },
-                      "normal ",
+                      "Students are speaking to one another.",
                     ],
                   },
                 ],
@@ -106,19 +106,19 @@ export default function PresebtContinuous() {
               instruction: "Answer the questions.",
               questions: [
                 {
-                  question: "1. ...",
+                  question: "1. Mr. Smith is...",
                   options: [
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: true },
+                    { option: "listening.", isCorrect: false },
+                    { option: "teaching.", isCorrect: true },
+                    { option: "writing.", isCorrect: false },
                   ],
                 },
                 {
-                  question: "2. ...",
+                  question: "2. Students are...",
                   options: [
-                    { option: "...", isCorrect: false },
-                    { option: "...", isCorrect: true },
-                    { option: "...", isCorrect: false },
+                    { option: "learning", isCorrect: false },
+                    { option: "teaching", isCorrect: true },
+                    { option: "sleeping", isCorrect: false },
                   ],
                 },
                 {
