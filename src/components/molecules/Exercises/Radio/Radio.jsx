@@ -40,7 +40,7 @@ export const Radio = ({ exercise = {} }) => {
     <>
       <div className="line-break">
         <p>
-          <Audio src={exercise.audio} />
+          {exercise.audio && <Audio src={exercise.audio} />}
           <Bold>{exercise.instruction}</Bold>
         </p>
         {questions.map((q, qIndex) => (
