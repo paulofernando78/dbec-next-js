@@ -1,5 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
+import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
@@ -12,19 +14,96 @@ export default function Conditionals() {
     <>
       <Whiteboard title="Grammar" subtitle="Conditionals" />
       <div className="line-break">
-        <Section label="Introduction" heading={3}>
+        <Contents
+          items={[
+            { href: "introduction", label: "Introduction" },
+            { href: "presentation", label: "Presentation" },
+            { href: "meaning", label: "Meaning" },
+            { href: "pronunciation-form", label: "Pronunciation + Form" },
+            { href: "practice", label: "Practice" },
+            { href: "production", label: "Production" },
+          ]}
+        />
+        <Section id="" label="Introduction" heading={3}>
           <Paragraph
             blocks={[
               {
-                imgPosition: "left",
-                imgs: [
+                lines: [
                   {
-                    img: "/assets/img/general/.png",
-                    alt: "T.",
-                    width: 350,
-                    height: 250,
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+                        part: "Look at the pictures and listen to the sentences.",
+                        type: "bold",
+                      },
+                    ],
                   },
                 ],
+              },
+            ]}
+          />
+          <CardText
+            blocks={[
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+          <Paragraph
+            blocks={[
+              {
                 lines: [
                   {
                     text: [
@@ -38,7 +117,9 @@ export default function Conditionals() {
                     lineBreak: true,
                   },
                   {
-                    text: ["Conditionals help us talk about real and imaginary situations."],
+                    text: [
+                      "Conditionals help us talk about real and imaginary situations.",
+                    ],
                   },
                 ],
               },
@@ -46,7 +127,7 @@ export default function Conditionals() {
           />
         </Section>
 
-        <Section label="Zero Conditional" heading={3}>
+        <Section id="" label="Zero Conditional" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/general/.mp3"
             lines={[
@@ -60,17 +141,13 @@ export default function Conditionals() {
               },
               {
                 speaker: "B:",
-                text: [
-                  "I ",
-                  { type: "mark", part: "stay at home" },
-                  ".",
-                ],
+                text: ["I ", { type: "mark", part: "stay at home" }, "."],
               },
             ]}
           />
         </Section>
 
-        <Section label="Meaning" heading={4}>
+        <Section id="" label="Meaning" heading={4}>
           <Checking
             type="CCQ"
             ccq={[
@@ -99,7 +176,7 @@ export default function Conditionals() {
           />
         </Section>
 
-        <Section label="Form" heading={4}>
+        <Section id="" label="Form" heading={4}>
           <Paragraph
             blocks={[
               {
@@ -113,9 +190,7 @@ export default function Conditionals() {
                     ],
                   },
                   {
-                    text: [
-                      "If it rains, I stay at home.",
-                    ],
+                    text: ["If it rains, I stay at home."],
                   },
                 ],
               },
@@ -123,7 +198,7 @@ export default function Conditionals() {
           />
         </Section>
 
-        <Section label="First Conditional" heading={3}>
+        <Section id="" label="First Conditional" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/general/.mp3"
             lines={[
@@ -137,17 +212,13 @@ export default function Conditionals() {
               },
               {
                 speaker: "B:",
-                text: [
-                  "I ",
-                  { type: "mark", part: "will stay at home" },
-                  ".",
-                ],
+                text: ["I ", { type: "mark", part: "will stay at home" }, "."],
               },
             ]}
           />
         </Section>
 
-        <Section label="Meaning" heading={4}>
+        <Section id="" label="Meaning" heading={4}>
           <Checking
             type="CCQ"
             ccq={[
@@ -176,7 +247,7 @@ export default function Conditionals() {
           />
         </Section>
 
-        <Section label="Form" heading={4}>
+        <Section id="" label="Form" heading={4}>
           <Paragraph
             blocks={[
               {
@@ -190,9 +261,7 @@ export default function Conditionals() {
                     ],
                   },
                   {
-                    text: [
-                      "If it rains tomorrow, I will stay at home.",
-                    ],
+                    text: ["If it rains tomorrow, I will stay at home."],
                   },
                 ],
               },
@@ -200,7 +269,7 @@ export default function Conditionals() {
           />
         </Section>
 
-        <Section label="Second Conditional" heading={3}>
+        <Section id="" label="Second Conditional" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/general/.mp3"
             lines={[
@@ -224,7 +293,7 @@ export default function Conditionals() {
           />
         </Section>
 
-        <Section label="Meaning" heading={4}>
+        <Section id="" label="Meaning" heading={4}>
           <Checking
             type="CCQ"
             ccq={[
@@ -253,7 +322,7 @@ export default function Conditionals() {
           />
         </Section>
 
-        <Section label="Form" heading={4}>
+        <Section id="" label="Form" heading={4}>
           <Paragraph
             blocks={[
               {
@@ -267,9 +336,7 @@ export default function Conditionals() {
                     ],
                   },
                   {
-                    text: [
-                      "If I won the lottery, I would travel the world.",
-                    ],
+                    text: ["If I won the lottery, I would travel the world."],
                   },
                 ],
               },
@@ -344,9 +411,7 @@ export default function Conditionals() {
                     ],
                   },
                   {
-                    text: [
-                      "If I had studied, I would have passed the exam.",
-                    ],
+                    text: ["If I had studied, I would have passed the exam."],
                   },
                 ],
               },

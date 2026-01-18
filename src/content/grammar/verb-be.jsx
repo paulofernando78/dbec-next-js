@@ -1,6 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
+import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
@@ -28,15 +29,83 @@ export default function VerbBe() {
           <Paragraph
             blocks={[
               {
-                imgPosition: "left",
-                imgs: [
+                lines: [
                   {
-                    img: "/assets/img/general/two-people-talking-school.png",
-                    alt: "Two people talking.",
-                    width: 350,
-                    height: 250,
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+                        part: "Look at the pictures and listen to the sentences.",
+                        type: "bold",
+                      },
+                    ],
                   },
                 ],
+              },
+            ]}
+          />
+          <CardText
+            blocks={[
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "/assets/img/grammar/verb-to-be/laura-eric-clssroom.png",
+                    alt: "two people in a classroom",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+
+          <Paragraph
+            blocks={[
+              {
                 lines: [
                   {
                     text: [
@@ -431,7 +500,11 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section id="pronunciation-form" label="Pronunciation + Form" heading={4}>
+        <Section
+          id="pronunciation-form"
+          label="Pronunciation + Form"
+          heading={4}
+        >
           <Column
             width="300"
             cols={[
@@ -1532,7 +1605,7 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section lid="practice" abel="Practice" heading={3}>
+        <Section id="practice" label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions:
@@ -1678,7 +1751,7 @@ export default function VerbBe() {
           />
         </Section>
 
-        <Section id="prodution" label="Production" heading={3}>
+        <Section id="production" label="Production" heading={3}>
           <Paragraph
             blocks={[
               {

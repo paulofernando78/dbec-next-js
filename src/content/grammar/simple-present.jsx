@@ -411,7 +411,11 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Section id="pronunciation-form" label="Pronunciation + Form" heading={3}>
+        <Section
+          id="pronunciation-form"
+          label="Pronunciation + Form"
+          heading={3}
+        >
           <Column
             length="4"
             width="300"
@@ -726,7 +730,8 @@ export default function SimplePresent() {
                           },
                         ],
                       },
-                    ], lineBreak: true,
+                    ],
+                    lineBreak: true,
                   },
 
                   // you

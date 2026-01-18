@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -13,18 +14,38 @@ export default function FuturePerfect() {
     <>
       <Whiteboard title="Grammar" subtitle="Future Perfect" />
       <div className="line-break">
-        <Section label="Introduction" heading={3}>
+        <Contents
+          items={[
+            { href: "introduction", label: "Introduction" },
+            { href: "presentation", label: "Presentation" },
+            { href: "meaning", label: "Meaning" },
+            { href: "pronunciation-form", label: "Pronunciation + Form" },
+            { href: "practice", label: "Practice" },
+            { href: "production", label: "Production" },
+          ]}
+        />
+        <Section id="introduction" label="Introduction" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+                        part: "Look at the pictures and listen to the sentences.",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
           <CardText
             blocks={[
               {
-                imgs: [
-                  {
-                    img: "/assets/img/general/woman-work-office.png",
-                    alt: "",
-                    width: 300,
-                    height: 300,
-                  },
-                ],
                 lines: [
                   {
                     text: [
@@ -58,7 +79,7 @@ export default function FuturePerfect() {
                     text: [
                       {
                         audio: "/",
-                        part: "The report is ready. She is handing it over to her boss."
+                        part: "The report is ready. She is handing it over to her boss.",
                       },
                     ],
                   },
@@ -76,7 +97,7 @@ export default function FuturePerfect() {
           />
         </Section>
 
-        <Section label="Presentation" heading={3}>
+        <Section id="presentation" label="Presentation" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/general/.mp3"
             lines={[
@@ -100,7 +121,7 @@ export default function FuturePerfect() {
           />
         </Section>
 
-        <Section label="Meaning" heading={4}>
+        <Section id="meaning" label="Meaning" heading={4}>
           <Checking
             type="CCQ"
             ccq={[
@@ -130,7 +151,7 @@ export default function FuturePerfect() {
           />
         </Section>
 
-        <Section label="Pronunciation + Form" heading={4}>
+        <Section id="pronunciation-form" label="Pronunciation + Form" heading={4}>
           <Paragraph
             blocks={[
               {
@@ -152,7 +173,7 @@ export default function FuturePerfect() {
           />
         </Section>
 
-        <Section label="Practice" heading={3}>
+        <Section id="practice" label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions: "Fill in the blanks with the future perfect form.",
@@ -202,7 +223,7 @@ export default function FuturePerfect() {
           />
         </Section>
 
-        <Section label="Production" heading={3}>
+        <Section id="production" label="Production" heading={3}>
           <Paragraph
             blocks={[
               {

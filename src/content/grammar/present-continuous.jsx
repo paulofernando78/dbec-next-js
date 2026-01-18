@@ -1,5 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
+import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
@@ -12,19 +14,96 @@ export default function PresebtContinuous() {
     <>
       <Whiteboard title="Grammar" subtitle="Present Continuous" />
       <div className="line-break">
-        <Section label="Introduction" heading={3}>
+        <Contents
+          items={[
+            { href: "introduction", label: "Introduction" },
+            { href: "presentation", label: "Presentation" },
+            { href: "meaning", label: "Meaning" },
+            { href: "pronunciation-form", label: "Pronunciation + Form" },
+            { href: "practice", label: "Practice" },
+            { href: "production", label: "Production" },
+          ]}
+        />
+        <Section id="ntroduction" label="Introduction" heading={3}>
           <Paragraph
             blocks={[
               {
-                imgPosition: "left",
-                imgs: [
+                lines: [
                   {
-                    img: "/assets/img/general/.png",
-                    alt: "T.",
-                    width: 350,
-                    height: 250,
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+                        part: "Look at the pictures and listen to the sentences.",
+                        type: "bold",
+                      },
+                    ],
                   },
                 ],
+              },
+            ]}
+          />
+          <CardText
+            blocks={[
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+              {
+                imgs: [
+                  {
+                    img: "",
+                    alt: "",
+                  },
+                ],
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                      },
+                      "normal ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+          <Paragraph
+            blocks={[
+              {
                 lines: [
                   {
                     text: [
@@ -38,7 +117,9 @@ export default function PresebtContinuous() {
                     lineBreak: true,
                   },
                   {
-                    text: ["Anna is in the classroom now. She is answering questions."],
+                    text: [
+                      "Anna is in the classroom now. She is answering questions.",
+                    ],
                   },
                 ],
               },
@@ -46,7 +127,7 @@ export default function PresebtContinuous() {
           />
         </Section>
 
-        <Section label="Presentation" heading={3}>
+        <Section lid="presentation" abel="Presentation" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/general/.mp3"
             lines={[
@@ -55,7 +136,7 @@ export default function PresebtContinuous() {
                 text: [
                   "What ",
                   { type: "mark", part: "are you doing" },
-                  " now?"
+                  " now?",
                 ],
               },
               {
@@ -63,14 +144,14 @@ export default function PresebtContinuous() {
                 text: [
                   "I ",
                   { type: "mark", part: "am answering" },
-                  " questions."
+                  " questions.",
                 ],
               },
             ]}
           />
         </Section>
 
-        <Section label="Meaning" heading={4}>
+        <Section id="meaning" label="Meaning" heading={4}>
           <Checking
             type="CCQ"
             ccq={[
@@ -95,7 +176,7 @@ export default function PresebtContinuous() {
           />
         </Section>
 
-        <Section label="Pronunciation + Form" heading={4}>
+        <Section id="pronunciation-form" label="Pronunciation + Form" heading={4}>
           <Paragraph
             blocks={[
               {
@@ -109,9 +190,7 @@ export default function PresebtContinuous() {
                     ],
                   },
                   {
-                    text: [
-                      "I am studying. / She is answering.",
-                    ],
+                    text: ["I am studying. / She is answering."],
                   },
                 ],
               },
@@ -119,10 +198,11 @@ export default function PresebtContinuous() {
           />
         </Section>
 
-        <Section label="Practice" heading={3}>
+        <Section id="practice" label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
-              instructions: "Fill in the blanks with the present continuous form.",
+              instructions:
+                "Fill in the blanks with the present continuous form.",
               blocks: [
                 {
                   block: [
@@ -169,7 +249,7 @@ export default function PresebtContinuous() {
           />
         </Section>
 
-        <Section label="Production" heading={3}>
+        <Section id="production" label="Production" heading={3}>
           <Paragraph
             blocks={[
               {
