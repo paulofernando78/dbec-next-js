@@ -279,7 +279,7 @@ export default function SimplePresent() {
           />
         </Section>
 
-        <Section id="meaning" label="Meaning" heading={3}>
+        <Section id="meaning" label="Meaning" heading={4}>
           <Paragraph
             blocks={[
               {
@@ -431,10 +431,9 @@ export default function SimplePresent() {
         <Section
           id="pronunciation-form"
           label="Pronunciation + Form"
-          heading={3}
+          heading={4}
         >
           <Column
-            length="4"
             width="310"
             cols={[
               // Affirmative
@@ -1319,9 +1318,7 @@ export default function SimplePresent() {
                   {
                     block: [
                       {
-                        text: [
-                          "..."
-                        ],
+                        text: ["..."],
                       },
                     ],
                   },
@@ -1544,9 +1541,7 @@ export default function SimplePresent() {
                   {
                     block: [
                       {
-                        text: [
-                          "..."
-                        ],
+                        text: ["..."],
                       },
                     ],
                   },
@@ -1747,18 +1742,192 @@ export default function SimplePresent() {
               },
             ]}
           />
+
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "Now take a look at -s for he / she / it.",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+
+          <Column
+            width="200"
+            cols={[
+              // Column 1
+              {
+                bgColor: "var(--gray-4)",
+                textColor: "white",
+                column: "-s",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "work",
+                          },
+                          " ➜ ",
+                          {
+                            part: "work",
+                          },
+                          {
+                            part: "s",
+                            type: "mark"
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+
+              // Column 2
+              {
+                bgColor: "var(--gray-5)",
+                textColor: "white",
+                column: "-es",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+
+              // Column 3
+              {
+                bgColor: "var(--gray-6)",
+                textColor: "white",
+                column: "-ies",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/",
+                            part: "normal",
+                          },
+                          " ",
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
         </Section>
 
         <Section id="practice" label="Practice" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions:
-                "1. Complete the sentences with the correct form of the verb in brackets.",
+                "1. Complete the sentences. Use the correct form of the verb in brackets. (Focus on he / she / it and -s)",
               blocks: [
                 {
                   block: [
-                    { text: "I usually (wake up)" },
-                    { blank: "wake up" },
+                    { text: "Laura usually (wake up)" },
+                    { blank: "wakes up" },
                     { text: " at 7 a.m." },
                   ],
                   lineBreak: true,
@@ -1767,15 +1936,23 @@ export default function SimplePresent() {
                   block: [
                     { text: "She (work)" },
                     { blank: "works" },
-                    { text: " in finance." },
+                    { text: " in an office." },
                   ],
                   lineBreak: true,
                 },
                 {
                   block: [
-                    { text: "He (study)" },
+                    { text: "Eric (study)" },
                     { blank: "studies" },
-                    { text: " software." },
+                    { text: " from home." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "He (watch)" },
+                    { blank: "watches" },
+                    { text: " movies in the evening." },
                   ],
                   lineBreak: true,
                 },
@@ -1783,7 +1960,7 @@ export default function SimplePresent() {
                   block: [
                     { text: "They (work)" },
                     { blank: "work" },
-                    { text: " from home." },
+                    { text: " during the week." },
                   ],
                   lineBreak: true,
                 },
@@ -1793,30 +1970,48 @@ export default function SimplePresent() {
 
           <Radio
             exercise={{
-              instruction: "2. Choose the correct answer.",
+              instruction:
+                "2. Choose the correct answer. (Pay attention to he / she / it and do / does)",
               questions: [
                 {
-                  question: "Kate ___ from home.",
+                  question: "1. Laura ___ in an office.",
                   options: [
                     { option: "work", isCorrect: false },
                     { option: "works", isCorrect: true },
-                    { option: "working", isCorrect: false },
+                    { option: "is working", isCorrect: false },
                   ],
                 },
                 {
-                  question: "John ___ in the evening.",
+                  question: "2. Eric usually ___ at 10 a.m.",
                   options: [
-                    { option: "study", isCorrect: false },
-                    { option: "studies", isCorrect: true },
-                    { option: "is study", isCorrect: false },
+                    { option: "wake up", isCorrect: false },
+                    { option: "wakes up", isCorrect: true },
+                    { option: "is waking up", isCorrect: false },
                   ],
                 },
                 {
-                  question: "They ___ at a tech company.",
+                  question: "3. ___ Eric study from home?",
                   options: [
-                    { option: "works", isCorrect: false },
-                    { option: "work", isCorrect: true },
-                    { option: "are work", isCorrect: false },
+                    { option: "Do", isCorrect: false },
+                    { option: "Does", isCorrect: true },
+                    { option: "Is", isCorrect: false },
+                  ],
+                },
+                {
+                  question:
+                    "4. She ___ watch movies in the morning. (negative)",
+                  options: [
+                    { option: "doesn't", isCorrect: true },
+                    { option: "don't", isCorrect: false },
+                    { option: "isn't", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "5. They ___ work on weekends.",
+                  options: [
+                    { option: "doesn't", isCorrect: false },
+                    { option: "don't", isCorrect: true },
+                    { option: "aren't", isCorrect: false },
                   ],
                 },
               ],

@@ -14,37 +14,37 @@ export const Column = ({ cols = [], maxCols, width = 250 }) => {
 
   return (
     <>
-      <div>
-        <div
-          ref={scrollRef}
-          className={styles.wrapper}
-          style={{
-            gridTemplateColumns: `repeat(${visibleCols.length}, ${width}px)`,
-          }}
-        >
-          {visibleCols.map((c, cIndex) => (
-            <div key={cIndex}>
-              <Ribbon
-                bgColor={c.bgColor}
-                textColor={c.textColor}
-                label={c.column}
-                className={styles.column}
-              />
-
-              {(c.blocks || []).map((bs, bsIndex) => (
-                <div
-                  key={bsIndex}
-                  className={bs.lineBreak ? "line-break-item" : undefined}
-                >
-                  {(bs.block || []).map((b, bIndex) => (
-                    <InlineText key={bIndex} text={b.text} />
-                  ))}
-                </div>
-              ))}
-            </div>
-          ))}
+        <div>
+          <div
+            ref={scrollRef}
+            className={styles.wrapper}
+            style={{
+              gridTemplateColumns: `repeat(${visibleCols.length}, ${width}px)`,
+            }}
+          >
+            {visibleCols.map((c, cIndex) => (
+              <div key={cIndex}>
+                <Ribbon
+                  bgColor={c.bgColor}
+                  textColor={c.textColor}
+                  label={c.column}
+                  className={styles.column}
+                />
+  
+                {(c.blocks || []).map((bs, bsIndex) => (
+                  <div
+                    key={bsIndex}
+                    className={bs.lineBreak ? "line-break-item" : undefined}
+                  >
+                    {(bs.block || []).map((b, bIndex) => (
+                      <InlineText key={bIndex} text={b.text} />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
     </>
   );
 };
