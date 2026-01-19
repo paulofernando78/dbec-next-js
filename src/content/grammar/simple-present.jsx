@@ -3,6 +3,8 @@ import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { InlineText } from "@/components/molecules/InlineText";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { Note } from "@/components/molecules/Note";
+import { List } from "@/components/molecules/List";
 import { CardText } from "@/components/molecules/CardText";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
@@ -284,6 +286,7 @@ export default function SimplePresent() {
             blocks={[
               {
                 lines: [
+                  // We use the simple present to talk about:
                   {
                     text: [
                       {
@@ -295,12 +298,13 @@ export default function SimplePresent() {
                     ],
                     lineBreak: true,
                   },
+                  // daily routines / regular activities
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/grammar/simple-present/meaning/daily-routines.mp3",
-                        part: "daily routines",
+                          "/assets/audio/grammar/simple-present/meaning/daily-routines/daily-routines.mp3",
+                        part: "daily routines and regular activities",
                         type: "bold",
                       },
                     ],
@@ -308,74 +312,229 @@ export default function SimplePresent() {
                   {
                     text: [
                       {
-                        audio:
-                          "/assets/audio/grammar/simple-present/meaning/i-usually-wake-up-at-seven.mp3",
-                        part: "I usually wake up at 7.",
+                        part: "rotinas diárias e atividades regulares",
+                        type: "portuguese",
                       },
                     ],
                   },
+                  // I wake up at 7.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/grammar/simple-present/meaning/i-go-for-walks-in-the-morning.mp3",
-                        part: "I go for a walk in the morning.",
+                          "/assets/audio/grammar/simple-present/meaning/daily-routines/i-wake-up-at-seven.mp3",
+                        part: "I wake up at 7. ",
+                      },
+                      {
+                        part: "Eu geralmente acordo às 7.",
+                        type: "portuguese",
                       },
                     ],
                   },
+                  // I go for a walk in the morning.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/grammar/simple-present/meaning/after-i-have-breakfast-i-go-to-work.mp3",
-                        part: "After I eat breakfast and go to work.",
+                          "/assets/audio/grammar/simple-present/meaning/daily-routines/i-go-for-walks-in-the-morning.mp3",
+                        part: "I go for a walk in the morning. ",
+                      },
+                      {
+                        part: "Eu dou uma caminhada de manhã.",
+                        type: "portuguese",
                       },
                     ],
                   },
+                  // After I eat breakfast and go to work.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/grammar/simple-present/meaning/sometimes-i-go-to-bed-at-night.mp3",
-                        part: "Sometimes I go to bed around 9.",
+                          "/assets/audio/grammar/simple-present/meaning/daily-routines/after-i-have-breakfast-i-go-to-work.mp3",
+                        part: "After I eat breakfast, I go to work. ",
+                      },
+                      {
+                        part: "Depois que eu tomo café da manhã, eu vou para o trabalho.",
+                        type: "portuguese",
                       },
                     ],
-                    lineBreak: true,
                   },
+                  // Sometimes I go to bed around 9.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/grammar/simple-present/meaning/things-that-are-usually-true.mp3",
-                        part: "things that are usually true",
-                        type: "bold",
+                          "/assets/audio/grammar/simple-present/meaning/daily-routines/sometimes-i-go-to-bed-at-night.mp3",
+                        part: "Sometimes I go to bed around 9. ",
                       },
-                    ],
-                  },
-                  {
-                    text: [
                       {
-                        audio:
-                          "/assets/audio/grammar/simple-present/meaning/she-works-in-an-office.mp3",
-                        part: "She works in an office.",
+                        part: "Às vezes eu vou para a cama por volta das 9.",
+                        type: "portuguese",
                       },
                     ],
                   },
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/grammar/simple-present/meaning/i-work-from-home.mp3",
-                        part: "I work from home.",
-                      },
-                    ],
-                  },
+                  // He watches movies in the evening.
                   {
                     text: [
                       {
                         audio:
                           "/assets/audio/grammar/simple-present/meaning/he-watches-movies-in-the-evening.mp3",
-                        part: "He watches movies in the evening.",
+                        part: "He watches movies in the evening. ",
+                      },
+                      {
+                        part: "Ele assiste a filmes à noite.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // things that are generally true
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/things-that-are-usually-true.mp3",
+                        part: "things that are generally true",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "coisas que geralmente são verdade",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+
+                  // She works in an office.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/she-works-in-an-office.mp3",
+                        part: "She works in an office. ",
+                      },
+                      {
+                        part: "Ela trabalha em um escritório.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // I work from home.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/i-work-from-home.mp3",
+                        part: "I work from home. ",
+                      },
+                      {
+                        part: "Eu trabalho de casa.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // general facts (always true)
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/general-facts/general-facts-always-true.mp3",
+                        part: "general facts (always true)",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "fatos gerais (sempre verdadeiros)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // The earth goes around the sun.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/general-facts/the-earth-goes-around-the-sun.mp3",
+                        part: "The earth goes around the sun. ",
+                      },
+                      {
+                        part: "A Terra gira em torno do sol.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // The sun rises in the east.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/general-facts/the-sun-rises-in-the-east.mp3",
+                        part: "The sun rises in the east. ",
+                      },
+                      {
+                        part: "O sol nasce no leste.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // fixed schedules and timetables
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/fixed-schedules-and-timetables/fixed-schedules-and-timetables.mp3",
+                        part: "fixed schedules and timetables",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "horários fixos e cronogramas",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // The train leaves at six a.m.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/fixed-schedules-and-timetables/the-train-leaves-at-six-am.mp3",
+                        part: "The train leaves at 6 a.m. ",
+                      },
+                      {
+                        part: "O trem sai às 6 da manhã.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // Classes start at nine a.m.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/fixed-schedules-and-timetables/classes-start-at-nine-am.mp3",
+                        part: "Classes start at 9 a.m. ",
+                      },
+                      {
+                        part: "As aulas começam às 9 da manhã.",
+                        type: "portuguese",
                       },
                     ],
                   },
@@ -383,7 +542,6 @@ export default function SimplePresent() {
               },
             ]}
           />
-
           <Checking
             type="CCQ"
             ccq={[
@@ -393,16 +551,13 @@ export default function SimplePresent() {
                     example: "I wake up at 7 every day.",
                     questions: [
                       {
-                        question: "Is this about the past?",
-                        answer: "No",
+                        question: "Is this about now (this exact moment)?",
                       },
                       {
-                        question: "Is this about now or in general?",
-                        answer: "In general",
+                        question: "Does this happen regularly?",
                       },
                       {
-                        question: "Is this a routine?",
-                        answer: "Yes",
+                        question: "Is this a daily routine?",
                       },
                     ],
                   },
@@ -414,12 +569,29 @@ export default function SimplePresent() {
                     example: "She works in an office.",
                     questions: [
                       {
-                        question: "Is this true only today?",
-                        answer: "No",
+                        question: "Is this only true today?",
                       },
                       {
                         question: "Is this usually true?",
-                        answer: "Yes",
+                      },
+                      {
+                        question: "Is this about her job in general?",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                block: [
+                  {
+                    example: "They study from home.",
+                    questions: [
+                      {
+                        question:
+                          "Are we talking about this moment or in general?",
+                      },
+                      {
+                        question: "Is this a regular situation?",
                       },
                     ],
                   },
@@ -427,6 +599,126 @@ export default function SimplePresent() {
               },
             ]}
           />
+          <Section
+            id="adverbs-frequency"
+            label="Adverbs of Frequency"
+            heading={5}
+          >
+            <Paragraph
+              blocks={[
+                {
+                  lines: [
+                    {
+                      text: [
+                        {
+                          part: "We often use adverbs of frequency with the simple present:",
+                          type: "bold",
+                        },
+                      ],
+                    },
+                    {
+                      text: [
+                        {
+                          part: "Nós часто usamos advérbios de frequência com o simple present:",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ]}
+            />
+
+            <List
+              bullet={false}
+              items={[
+                {
+                  text: [
+                    {
+                      audio: "/audio/general/....mp3",
+                      part: "always (100%)",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "sempre",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      audio: "/audio/general/....mp3",
+                      part: "usually",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "gereamente, normalemente, de costume",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      audio: "/audio/general/....mp3",
+                      part: "often",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "com frequência",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      audio: "/audio/general/....mp3",
+                      part: "sometimes",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "ás vezes",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      audio: "/audio/general/....mp3",
+                      part: "rarely",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "raramente",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+                {
+                  text: [
+                    {
+                      audio: "/audio/general/....mp3",
+                      part: "never",
+                      type: "bold",
+                    },
+                    " ",
+                    {
+                      part: "nunca",
+                      type: "portuguese",
+                    },
+                  ],
+                },
+              ]}
+            />
+          </Section>
         </Section>
 
         <Section
@@ -434,6 +726,38 @@ export default function SimplePresent() {
           label="Pronunciation + Form"
           heading={4}
         >
+          <Note
+            bullet={false}
+            lines={[
+              {
+                text: [
+                  {
+                    part: "O verbo to do significa fazer. No entanto, no Simple Present ele é usado como verbo auxiliar que complementa a formação das frases negativas e interrogativas.",
+                    type: "portuguese",
+                  },
+                ],
+              },
+            ]}
+          />
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      "The verb 'to do' means 'to make' or 'to perform'. However, in the simple present it is used as an auxiliary verb to help form negative and interrogative sentences.",
+                      " ",
+                      {
+                        part: "",
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+
           {/* Conjugation */}
           <Column
             width="310"

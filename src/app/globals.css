@@ -196,7 +196,7 @@ mark {
 }
 
 .icon-position {
-  transform: translate(-2px, -2px);
+  transform: translate(-2px, -1px);
   display: inline-block;
 }
 

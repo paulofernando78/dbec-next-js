@@ -1,4 +1,5 @@
 .note {
+  display: block;
   margin-bottom: var(--line-break);
 }
 

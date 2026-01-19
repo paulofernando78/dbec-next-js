@@ -832,7 +832,7 @@ export default function Mock() {
 
         <Section id="note" label="Note" heading={3}>
           <Note
-            items={[
+            lines={[
               {
                 text: [
                   "normal ",

@@ -4,17 +4,17 @@ import { InlineText } from "@/components/molecules/InlineText";
 import { Card } from "@/components/atoms/Card";
 import { Bold } from "@/components/atoms/Bold";
 
-export const Note = ({ items = [], bullet = true }) => {
+export const Note = ({ lines = [] }) => {
   return (
     <Card className={styles.bg}>
       <span className={styles.note}>
         <Bold>Note</Bold>
       </span>
-      <ul className={bullet ? styles.bulleted : styles.noBullet}>
-        {items.map((item, index) => (
+      <ul>
+        {lines.map((line, index) => (
           <li key={index}>
             <InlineText
-              text={item.text}
+              text={line.text}
             />
           </li>
         ))}
