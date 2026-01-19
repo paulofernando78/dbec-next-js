@@ -334,7 +334,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/affirmative/i-am-working-doing-studying.mp3",
+                              "",
                             part: "I’m ",
                           },
                           {
@@ -366,7 +366,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/affirmative/youre-working-doing-studying.mp3",
+                              "",
                             part: "you’re ",
                           },
                           {
@@ -398,7 +398,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/affirmative/hes-working-doing-studying.mp3",
+                              "",
                             part: "he’s ",
                           },
                           {
@@ -430,7 +430,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/affirmative/shes-working-doing-studying.mp3",
+                              "",
                             part: "she’s ",
                           },
                           {
@@ -462,7 +462,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/affirmative/its-working-doing.mp3",
+                              "",
                             part: "it’s ",
                           },
                           {
@@ -493,7 +493,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/affirmative/were-working-doing-studying.mp3",
+                              "",
                             part: "we’re ",
                           },
                           {
@@ -524,7 +524,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/affirmative/theyre-working-doing-studying.mp3",
+                              "",
                             part: "they’re ",
                           },
                           {
@@ -577,7 +577,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/negative/im-not-working-doing-studying.mp3",
+                              "",
                             part: "I’m not ",
                           },
                           {
@@ -609,7 +609,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/negative/you-arent-working-doing-studying.mp3",
+                              "",
                             part: "you aren’t ",
                           },
                           {
@@ -641,7 +641,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/negative/he-isnt-working-doing-studying.mp3",
+                              "",
                             part: "he isn’t ",
                           },
                           {
@@ -673,7 +673,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/negative/she-isnt-working-doing-studying.mp3",
+                              "",
                             part: "she isn’t ",
                           },
                           {
@@ -705,7 +705,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/negative/it-isnt-working-doing.mp3",
+                              "",
                             part: "it isn’t ",
                           },
                           {
@@ -737,7 +737,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/negative/we-arent-working-doing-studying.mp3",
+                              "",
                             part: "we aren’t ",
                           },
                           {
@@ -769,7 +769,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/negative/they-arent-working-doing-studying.mp3",
+                              "",
                             part: "they aren’t ",
                           },
                           {
@@ -822,7 +822,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/am-i-working-doing-studying.mp3",
+                              "",
                             part: "Am I ",
                           },
                           {
@@ -854,7 +854,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/are-you-working-doing-studying.mp3",
+                              "",
                             part: "Are you ",
                           },
                           {
@@ -886,7 +886,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/is-he-working-doing-studying.mp3",
+                              "",
                             part: "Is he ",
                           },
                           {
@@ -918,7 +918,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/is-she-working-doing-studying.mp3",
+                              "",
                             part: "Is she ",
                           },
                           {
@@ -950,7 +950,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/is-it-working-doing.mp3",
+                              "",
                             part: "Is it ",
                           },
                           {
@@ -982,7 +982,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/are-we-working-doing-studying.mp3",
+                              "",
                             part: "Are we ",
                           },
                           {
@@ -1014,7 +1014,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/are-they-working-doing-studying.mp3",
+                              "",
                             part: "Are they ",
                           },
                           {
@@ -1067,7 +1067,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/arent-i-working-doing-studying.mp3",
+                              "",
                             part: "Aren’t I ",
                           },
                           {
@@ -1099,7 +1099,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/arent-you-working-doing-studying.mp3",
+                              "",
                             part: "Aren’t you ",
                           },
                           {
@@ -1131,7 +1131,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/isnt-he-working-doing-studying.mp3",
+                              "",
                             part: "Isn’t he ",
                           },
                           {
@@ -1163,7 +1163,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/isnt-she-working-doing-studying.mp3",
+                              "",
                             part: "Isn’t she ",
                           },
                           {
@@ -1195,7 +1195,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/isnt-it-working-doing.mp3",
+                              "",
                             part: "Isn’t it ",
                           },
                           {
@@ -1227,7 +1227,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/arent-we-working-doing-studying.mp3",
+                              "",
                             part: "Aren’t we ",
                           },
                           {
@@ -1259,7 +1259,7 @@ export default function PresentContinuous() {
                         text: [
                           {
                             audio:
-                              "/assets/audio/grammar/present-continuous/pronunciation/interrogative/arent-they-working-doing-studying.mp3",
+                              "",
                             part: "Aren’t they ",
                           },
                           {
