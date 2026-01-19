@@ -600,7 +600,7 @@ export default function SimplePresent() {
             ]}
           />
           <Section
-            id="adverbs-frequency"
+            // id="adverbs-frequency"
             label="Adverbs of Frequency"
             heading={5}
           >
@@ -611,7 +611,7 @@ export default function SimplePresent() {
                     {
                       text: [
                         {
-                          part: "We often use adverbs of frequency with the simple present:",
+                          part: "We use adverbs of frequency with the simple present:",
                           type: "bold",
                         },
                       ],
@@ -619,7 +619,7 @@ export default function SimplePresent() {
                     {
                       text: [
                         {
-                          part: "Nós часто usamos advérbios de frequência com o simple present:",
+                          part: "Usamos advérbios de frequência com o simple present:",
                           type: "portuguese",
                         },
                       ],
@@ -635,7 +635,8 @@ export default function SimplePresent() {
                 {
                   text: [
                     {
-                      audio: "/audio/general/....mp3",
+                      audio:
+                        "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/always.mp3",
                       part: "always (100%)",
                       type: "bold",
                     },
@@ -649,7 +650,8 @@ export default function SimplePresent() {
                 {
                   text: [
                     {
-                      audio: "/audio/general/....mp3",
+                      audio:
+                        "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/usually.mp3",
                       part: "usually",
                       type: "bold",
                     },
@@ -663,7 +665,8 @@ export default function SimplePresent() {
                 {
                   text: [
                     {
-                      audio: "/audio/general/....mp3",
+                      audio:
+                        "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/often.mp3",
                       part: "often",
                       type: "bold",
                     },
@@ -677,7 +680,8 @@ export default function SimplePresent() {
                 {
                   text: [
                     {
-                      audio: "/audio/general/....mp3",
+                      audio:
+                        "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/sometimes.mp3",
                       part: "sometimes",
                       type: "bold",
                     },
@@ -691,7 +695,8 @@ export default function SimplePresent() {
                 {
                   text: [
                     {
-                      audio: "/audio/general/....mp3",
+                      audio:
+                        "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/rarely.mp3",
                       part: "rarely",
                       type: "bold",
                     },
@@ -705,14 +710,130 @@ export default function SimplePresent() {
                 {
                   text: [
                     {
-                      audio: "/audio/general/....mp3",
-                      part: "never",
+                      audio:
+                        "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/never.mp3",
+                      part: "never (0%)",
                       type: "bold",
                     },
                     " ",
                     {
                       part: "nunca",
                       type: "portuguese",
+                    },
+                  ],
+                },
+              ]}
+            />
+
+            <Paragraph
+              blocks={[
+                {
+                  lines: [
+                    {
+                      text: [{ part: "Examples:", type: "bold" }],
+                    },
+                    { lineBreak: true },
+
+                    // always
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/examples/i-always-drive-to-work.mp3",
+                        },
+                        "I ",
+                        {
+                          part: "always",
+                          type: "bold",
+                        },
+                        " drive to work. ",
+                        {
+                          part: "Sempre vou de carro para o trabalho",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+
+                    // usually
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/examples/she-usually-wakes-at-at-seven.mp3",
+                        },
+                        "She ",
+                        {
+                          part: "usually",
+                          type: "bold",
+                        },
+                        " wakes up at 7. ",
+                        {
+                          part: "Ela geralmente acorda às 7.",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+
+                    // often
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/examples/they-often-study-from-home.mp3",
+                        },
+                        "They ",
+                        { part: "often", type: "bold" },
+                        " study from home. ",
+                        {
+                          part: "Eles estudam em casa com frequência.",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+
+                    // sometimes
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/examples/i-sometimes-watch-movies-in-the-evening.mp3",
+                        },
+                        "I ",
+                        { part: "sometimes", type: "bold" },
+                        " watch movies in the evening.",
+                        {
+                          part: " Eu às vezes assisto a filmes à noite.",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+
+                    // rarely
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/examples/he-rarely-eats-fast-food.mp3",
+                        },
+                        "He ",
+                        { part: "rarely", type: "bold" },
+                        " eats fast food.",
+                        {
+                          part: " Ele raramente come fast food.",
+                          type: "portuguese",
+                        },
+                      ],
+                    },
+
+                    // never
+                    {
+                      text: [
+                        {
+                          audio: "/assets/audio/grammar/simple-present/meaning/adverbs-of-frequency/examples/we-never-go-to-bed-late-during-the-week.mp3",
+                        },
+                        "We ",
+                        { part: "never", type: "bold" },
+                        " go to bed late during the week.",
+                        {
+                          part: " Nós nunca vamos dormir tarde durante a semana.",
+                          type: "portuguese",
+                        },
+                      ],
                     },
                   ],
                 },
@@ -734,24 +855,6 @@ export default function SimplePresent() {
                   {
                     part: "O verbo to do significa fazer. No entanto, no Simple Present ele é usado como verbo auxiliar que complementa a formação das frases negativas e interrogativas.",
                     type: "portuguese",
-                  },
-                ],
-              },
-            ]}
-          />
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      "The verb 'to do' means 'to make' or 'to perform'. However, in the simple present it is used as an auxiliary verb to help form negative and interrogative sentences.",
-                      " ",
-                      {
-                        part: "",
-                      },
-                      " ",
-                    ],
                   },
                 ],
               },
