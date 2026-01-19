@@ -290,6 +290,7 @@ export default function SimplePresent() {
                         audio:
                           "/assets/audio/grammar/simple-present/meaning/use.mp3",
                         part: "We use the simple present to talk about:",
+                        type: "bold",
                       },
                     ],
                     lineBreak: true,
@@ -433,6 +434,7 @@ export default function SimplePresent() {
           label="Pronunciation + Form"
           heading={4}
         >
+          {/* Conjugation */}
           <Column
             width="310"
             cols={[
@@ -1751,7 +1753,7 @@ export default function SimplePresent() {
                     text: [
                       {
                         audio: "/assets/audio/",
-                        part: "Now take a look at -s for he / she / it.",
+                        part: "Now take a look at how we add -s for he / she / it in the simple present.",
                         type: "bold",
                       },
                     ],
@@ -1761,6 +1763,7 @@ export default function SimplePresent() {
             ]}
           />
 
+          {/* -s, -es, -ies endings */}
           <Column
             width="200"
             cols={[
@@ -1770,12 +1773,83 @@ export default function SimplePresent() {
                 textColor: "white",
                 column: "-s",
                 blocks: [
+                  // eat
                   {
                     block: [
                       {
                         text: [
                           {
-                            audio: "/assets/audio/",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/s/eat-eats.mp3",
+                            part: "eat",
+                          },
+                          " ➜ ",
+                          { part: "eat" },
+                          { part: "s", type: "mark" },
+                        ],
+                      },
+                    ],
+                  },
+                  // live
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/s/live-lives.mp3",
+                            part: "eat",
+                            part: "live",
+                          },
+                          " ➜ ",
+                          { part: "live" },
+                          { part: "s", type: "mark" },
+                        ],
+                      },
+                    ],
+                  },
+                  // play
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/s/play-plays.mp3",
+                            part: "play",
+                          },
+                          " ➜ ",
+                          { part: "play" },
+                          { part: "s", type: "mark" },
+                        ],
+                      },
+                    ],
+                  },
+                  // read
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/s/read-reads.mp3",
+                            part: "read",
+                          },
+                          " ➜ ",
+                          { part: "read" },
+                          { part: "s", type: "mark" },
+                        ],
+                      },
+                    ],
+                  },
+                  // work
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/s/work-works.mp3",
                             part: "work",
                           },
                           " ➜ ",
@@ -1784,34 +1858,25 @@ export default function SimplePresent() {
                           },
                           {
                             part: "s",
-                            type: "mark"
+                            type: "mark",
                           },
                         ],
                       },
                     ],
                   },
+                  // write
                   {
                     block: [
                       {
                         text: [
                           {
-                            audio: "/assets/audio/",
-                            part: "normal",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/s/write-writes.mp3",
+                            part: "write",
                           },
-                          " ",
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/",
-                            part: "normal",
-                          },
-                          " ",
+                          " ➜ ",
+                          { part: "write" },
+                          { part: "s", type: "mark" },
                         ],
                       },
                     ],
@@ -1825,41 +1890,92 @@ export default function SimplePresent() {
                 textColor: "white",
                 column: "-es",
                 blocks: [
+                  // do
                   {
                     block: [
                       {
                         text: [
                           {
-                            audio: "/assets/audio/",
-                            part: "normal",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/es/do-does.mp3",
+                            part: "do",
                           },
-                          " ",
+                          " ➜ ",
+                          {
+                            part: "do",
+                          },
+                          {
+                            part: "es",
+                            type: "mark",
+                          },
                         ],
                       },
                     ],
                   },
+                  // fix
                   {
                     block: [
                       {
                         text: [
                           {
-                            audio: "/assets/audio/",
-                            part: "normal",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/es/fix-fixes.mp3",
+                            part: "fix",
                           },
-                          " ",
+                          " ➜ ",
+                          { part: "fix" },
+                          { part: "es", type: "mark" },
                         ],
                       },
                     ],
                   },
+                  // go
                   {
                     block: [
                       {
                         text: [
                           {
-                            audio: "/assets/audio/",
-                            part: "normal",
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/es/go-goes.mp3",
+                            part: "go",
                           },
-                          " ",
+                          " ➜ ",
+                          { part: "go" },
+                          { part: "es", type: "mark" },
+                        ],
+                      },
+                    ],
+                  },
+                  // wash
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/es/wash-washes.mp3",
+                            part: "wash",
+                          },
+                          " ➜ ",
+                          { part: "wash" },
+                          { part: "es", type: "mark" },
+                        ],
+                      },
+                    ],
+                  },
+                  // watch
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/grammar/simple-present/pronunciation/s-endings/es/watch-watches.mp3",
+                            part: "watch",
+                          },
+                          " ➜ ",
+                          { part: "watch" },
+                          { part: "es", type: "mark" },
                         ],
                       },
                     ],
@@ -1873,41 +1989,62 @@ export default function SimplePresent() {
                 textColor: "white",
                 column: "-ies",
                 blocks: [
+                  // carry
                   {
                     block: [
                       {
                         text: [
-                          {
-                            audio: "/assets/audio/",
-                            part: "normal",
-                          },
-                          " ",
+                          { audio: "/assets/audio/", part: "carry" },
+                          " ➜ ",
+                          { part: "carr" },
+                          { part: "ies", type: "mark" },
                         ],
                       },
                     ],
                   },
+                  // cry
                   {
                     block: [
                       {
                         text: [
-                          {
-                            audio: "/assets/audio/",
-                            part: "normal",
-                          },
-                          " ",
+                          { audio: "/assets/audio/", part: "cry" },
+                          " ➜ ",
+                          { part: "cr" },
+                          { part: "ies", type: "mark" },
                         ],
                       },
                     ],
                   },
+                  // study
                   {
                     block: [
                       {
                         text: [
                           {
                             audio: "/assets/audio/",
-                            part: "normal",
+                            part: "study",
                           },
-                          " ",
+                          " ➜ ",
+                          {
+                            part: "stud",
+                          },
+                          {
+                            part: "ies",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // try
+                  {
+                    block: [
+                      {
+                        text: [
+                          { audio: "/assets/audio/", part: "try" },
+                          " ➜ ",
+                          { part: "tr" },
+                          { part: "ies", type: "mark" },
                         ],
                       },
                     ],
@@ -1919,55 +2056,6 @@ export default function SimplePresent() {
         </Section>
 
         <Section id="practice" label="Practice" heading={3}>
-          <FillInTheBlanks
-            exercise={{
-              instructions:
-                "1. Complete the sentences. Use the correct form of the verb in brackets. (Focus on he / she / it and -s)",
-              blocks: [
-                {
-                  block: [
-                    { text: "Laura usually (wake up)" },
-                    { blank: "wakes up" },
-                    { text: " at 7 a.m." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "She (work)" },
-                    { blank: "works" },
-                    { text: " in an office." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "Eric (study)" },
-                    { blank: "studies" },
-                    { text: " from home." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "He (watch)" },
-                    { blank: "watches" },
-                    { text: " movies in the evening." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "They (work)" },
-                    { blank: "work" },
-                    { text: " during the week." },
-                  ],
-                  lineBreak: true,
-                },
-              ],
-            }}
-          />
-
           <Radio
             exercise={{
               instruction:
@@ -2013,6 +2101,55 @@ export default function SimplePresent() {
                     { option: "don't", isCorrect: true },
                     { option: "aren't", isCorrect: false },
                   ],
+                },
+              ],
+            }}
+          />
+
+          <FillInTheBlanks
+            exercise={{
+              instructions:
+                "1. Complete the sentences. Use the correct form of the verb in brackets. (Focus on he / she / it and -s)",
+              blocks: [
+                {
+                  block: [
+                    { text: "Laura usually (wake up)" },
+                    { blank: "wakes up" },
+                    { text: " at 7 a.m." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "She (work)" },
+                    { blank: "works" },
+                    { text: " in an office." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "Eric (study)" },
+                    { blank: "studies" },
+                    { text: " from home." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "He (watch)" },
+                    { blank: "watches" },
+                    { text: " movies in the evening." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "They (work)" },
+                    { blank: "work" },
+                    { text: " during the week." },
+                  ],
+                  lineBreak: true,
                 },
               ],
             }}
