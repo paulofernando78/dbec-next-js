@@ -93,7 +93,7 @@ export const Radio = ({ exercise = {} }) => {
           Score: {totalScore} out of {questions.length}
         </span>
         <div className="button-wrapper">
-          <Button icon={<Check />} onToggle={handleCheck} active={checked} />
+          <Button icon={<Check />} onToggle={handleCheck} />
           <Button icon={<Redo />} onToggle={handleReset} />
         </div>
       </div>

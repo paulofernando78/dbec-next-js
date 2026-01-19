@@ -1,15 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import styles from "./Button.module.css";
 
-export const Button = ({
-  icon,
-  onClick,
-  onToggle,
-  active,
-  ...props
-}) => {
-  const handleClick = onClick || onToggle
+export const Button = ({ icon, onClick, onToggle, active, ...props }) => {
+  const [pressed, setPressed] = useState(false);
+  const handleClick = onClick || onToggle;
 
   if (icon === "menu") {
     return (
@@ -29,7 +25,10 @@ export const Button = ({
 
   return (
     <button
-      className={`${styles.button} ${active ? styles.active : ""}`}
+      className={`${styles.button} ${active || pressed ? styles.active : ""}`}
+      onMouseDown={() => setPressed(true)}
+      onMouseUp={() => setPressed(false)}
+      
       onClick={handleClick}
       {...props}
     >

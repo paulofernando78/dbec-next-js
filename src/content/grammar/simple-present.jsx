@@ -2059,47 +2059,86 @@ export default function SimplePresent() {
           <Radio
             exercise={{
               instruction:
-                "2. Choose the correct answer. (Pay attention to he / she / it and do / does)",
+                "Choose the correct answer. (Mix of he / she / it and I / you / we / they forms)",
               questions: [
                 {
-                  question: "1. Laura ___ in an office.",
+                  question: "1. Laura usually ___ dinner at 10 p.m.",
+                  options: [
+                    { option: "eat", isCorrect: false },
+                    { option: "eats", isCorrect: true },
+                    { option: "eating", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. They ___ movies in the evening.",
+                  options: [
+                    { option: "watches", isCorrect: false },
+                    { option: "watch", isCorrect: true },
+                    { option: "watching", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. Eric ___ from home.",
+                  options: [
+                    { option: "study", isCorrect: false },
+                    { option: "studies", isCorrect: true },
+                    { option: "studying", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "4. We ___ to work at 9 a.m.",
+                  options: [
+                    { option: "go", isCorrect: true },
+                    { option: "goes", isCorrect: false },
+                    { option: "going", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "5. She ___ online classes.",
+                  options: [
+                    { option: "take", isCorrect: false },
+                    { option: "takes", isCorrect: true },
+                    { option: "taking", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "6. I usually ___ breakfast at home.",
+                  options: [
+                    { option: "eat", isCorrect: true },
+                    { option: "eats", isCorrect: false },
+                    { option: "eating", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "7. The app ___ very well on my phone.",
                   options: [
                     { option: "work", isCorrect: false },
                     { option: "works", isCorrect: true },
-                    { option: "is working", isCorrect: false },
+                    { option: "working", isCorrect: false },
                   ],
                 },
                 {
-                  question: "2. Eric usually ___ at 10 a.m.",
+                  question: "8. You ___ your homework in the evening.",
                   options: [
-                    { option: "wake up", isCorrect: false },
-                    { option: "wakes up", isCorrect: true },
-                    { option: "is waking up", isCorrect: false },
+                    { option: "do", isCorrect: true },
+                    { option: "does", isCorrect: false },
+                    { option: "doing", isCorrect: false },
                   ],
                 },
                 {
-                  question: "3. ___ Eric study from home?",
+                  question: "9. He ___ his bag to school.",
                   options: [
-                    { option: "Do", isCorrect: false },
-                    { option: "Does", isCorrect: true },
-                    { option: "Is", isCorrect: false },
+                    { option: "carry", isCorrect: false },
+                    { option: "carries", isCorrect: true },
+                    { option: "carrying", isCorrect: false },
                   ],
                 },
                 {
-                  question:
-                    "4. She ___ watch movies in the morning. (negative)",
+                  question: "10. They ___ games after class.",
                   options: [
-                    { option: "doesn't", isCorrect: true },
-                    { option: "don't", isCorrect: false },
-                    { option: "isn't", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "5. They ___ work on weekends.",
-                  options: [
-                    { option: "doesn't", isCorrect: false },
-                    { option: "don't", isCorrect: true },
-                    { option: "aren't", isCorrect: false },
+                    { option: "plays", isCorrect: false },
+                    { option: "play", isCorrect: true },
+                    { option: "playing", isCorrect: false },
                   ],
                 },
               ],
@@ -2109,27 +2148,27 @@ export default function SimplePresent() {
           <FillInTheBlanks
             exercise={{
               instructions:
-                "1. Complete the sentences. Use the correct form of the verb in brackets. (Focus on he / she / it and -s)",
+                "Complete the sentences. Use the correct form of the verb in brackets. (Mix -s, -es, -ies, and base form)",
               blocks: [
                 {
                   block: [
-                    { text: "Laura usually (wake up)" },
-                    { blank: "wakes up" },
-                    { text: " at 7 a.m." },
+                    { text: "1. Laura usually (eat)" },
+                    { blank: "eats" },
+                    { text: " dinner at home." },
                   ],
                   lineBreak: true,
                 },
                 {
                   block: [
-                    { text: "She (work)" },
-                    { blank: "works" },
-                    { text: " in an office." },
+                    { text: "2. They (watch)" },
+                    { blank: "watch" },
+                    { text: " movies on weekends." },
                   ],
                   lineBreak: true,
                 },
                 {
                   block: [
-                    { text: "Eric (study)" },
+                    { text: "3. Eric (study)" },
                     { blank: "studies" },
                     { text: " from home." },
                   ],
@@ -2137,17 +2176,57 @@ export default function SimplePresent() {
                 },
                 {
                   block: [
-                    { text: "He (watch)" },
-                    { blank: "watches" },
-                    { text: " movies in the evening." },
+                    { text: "4. We (go)" },
+                    { blank: "go" },
+                    { text: " to work at 9 a.m." },
                   ],
                   lineBreak: true,
                 },
                 {
                   block: [
-                    { text: "They (work)" },
-                    { blank: "work" },
-                    { text: " during the week." },
+                    { text: "5. She (do)" },
+                    { blank: "does" },
+                    { text: " her homework in the evening." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "6. I (play)" },
+                    { blank: "play" },
+                    { text: " games after class." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "7. The app (work)" },
+                    { blank: "works" },
+                    { text: " very well on my phone." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "8. You (carry)" },
+                    { blank: "carry" },
+                    { text: " your bag to school." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "9. He (try)" },
+                    { blank: "tries" },
+                    { text: " new activities every week." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "10. They (fix)" },
+                    { blank: "fix" },
+                    { text: " the problem quickly." },
                   ],
                   lineBreak: true,
                 },
