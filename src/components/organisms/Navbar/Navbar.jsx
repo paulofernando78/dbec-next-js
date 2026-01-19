@@ -8,6 +8,14 @@ import { useContext } from "react";
 
 const links = [
   {
+    links: [
+      {
+        href: "/",
+        label: "Home",
+      },
+    ],
+  },
+  {
     title: "Pronunciation",
     links: [
       {
