@@ -59,7 +59,7 @@ export default function TheAlphabetPage() {
           ]}
         />
         <Note
-          items={[
+          lines={[
             {
               text: [
                 {
