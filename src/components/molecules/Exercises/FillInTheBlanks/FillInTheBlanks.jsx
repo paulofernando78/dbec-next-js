@@ -31,9 +31,9 @@ export const FillInTheBlanks = ({ exercise }) => {
         const user = answers[key]?.trim().toLowerCase();
 
         const correctAnswers = Array.isArray(b.blank)
-        ? b.blank.map(a => a.toLowerCase())
-        : [b.blank.toLowerCase()]
-        
+          ? b.blank.map((a) => a.toLowerCase())
+          : [b.blank.toLowerCase()];
+
         const isCorrect = correctAnswers.includes(user);
         newResults[key] = isCorrect;
 
@@ -71,6 +71,12 @@ export const FillInTheBlanks = ({ exercise }) => {
             {(bs.block || []).map((b, bIndex) => {
               const key = `${bsIndex}-${bIndex}`;
 
+              const maxLength = b.blank
+                ? Array.isArray(b.blank)
+                  ? Math.max(...b.blank.map((a) => a.length))
+                  : b.blank.length
+                  : 2
+
               return (
                 <div key={key} className={styles.inline}>
                   {b.text && <span>{b.text}</span>}
@@ -92,7 +98,7 @@ export const FillInTheBlanks = ({ exercise }) => {
                       ]
                         .filter(Boolean)
                         .join(" ")}
-                      style={{ width: `${Math.max(b.blank.length, 2)}ch` }}
+                      style={{ width: `${Math.max(maxLength, 2)}ch` }}
                     />
                   )}
                 </div>

@@ -277,6 +277,140 @@ export default function PresentContinuous() {
         </Section>
 
         <Section id="meaning" label="Meaning" heading={4}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // We use the present continuous to talk about:
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/grammar/simple-present/meaning/.mp3",
+                        part: "We use the present continuous to talk about:",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // Things happening now (at the moment)
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/present-continuous/.mp3",
+                        part: "Things happening now (at the moment)",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "coisas que estão acontecendo agora (neste momento)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // ....
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/present-continuous/meaning/im-studying-english-right-now.mp3",
+                        part: "I’m studying English right now. ",
+                      },
+                      {
+                        part: "Eu estou estudando inglês agora.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/present-continuous/meaning/they-are-waiting-for-the-bus.mp3",
+                        part: "They are waiting for the bus. ",
+                      },
+                      {
+                        part: "Eles estão esperando o ônibus.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // Temporary situations
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/present-continuous/.mp3",
+                        part: "Temporary situations",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "situações temporárias (por um período, não para sempre)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // ....
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/present-continuous/meaning/shes-working-from-home-this-week.mp3",
+                        part: "She’s working from home this week. ",
+                      },
+                      {
+                        part: "Ela está trabalhando de casa esta semana.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // Trends and changing situations
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/present-continuous/.mp3",
+                        part: "Trends and changing situations",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "tendências e situações em mudança",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // More people are using online classes.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/grammar/present-continuous/meaning/more-people-are-using-online-classes.mp3",
+                        part: "More people are using online classes. ",
+                      },
+                      {
+                        part: "Mais pessoas estão usando aulas online.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+
           <Checking
             type="CCQ"
             ccq={[
@@ -286,10 +420,7 @@ export default function PresentContinuous() {
                     example: "I’m doing my homework.",
                     questions: [
                       {
-                        question: "Is this happening now?",
-                      },
-                      {
-                        question: "Is this about every day or just now?",
+                        question: "Is this about every day or happening now?",
                       },
                     ],
                   },
@@ -333,8 +464,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "I’m ",
                           },
                           {
@@ -365,8 +495,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "you’re ",
                           },
                           {
@@ -397,8 +526,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "he’s ",
                           },
                           {
@@ -429,8 +557,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "she’s ",
                           },
                           {
@@ -461,8 +588,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "it’s ",
                           },
                           {
@@ -492,8 +618,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "we’re ",
                           },
                           {
@@ -523,8 +648,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "they’re ",
                           },
                           {
@@ -576,8 +700,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "I’m not ",
                           },
                           {
@@ -608,8 +731,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "you aren’t ",
                           },
                           {
@@ -640,8 +762,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "he isn’t ",
                           },
                           {
@@ -672,8 +793,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "she isn’t ",
                           },
                           {
@@ -704,8 +824,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "it isn’t ",
                           },
                           {
@@ -736,8 +855,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "we aren’t ",
                           },
                           {
@@ -768,8 +886,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "they aren’t ",
                           },
                           {
@@ -821,8 +938,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Am I ",
                           },
                           {
@@ -853,8 +969,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Are you ",
                           },
                           {
@@ -885,8 +1000,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Is he ",
                           },
                           {
@@ -917,8 +1031,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Is she ",
                           },
                           {
@@ -949,8 +1062,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Is it ",
                           },
                           {
@@ -981,8 +1093,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Are we ",
                           },
                           {
@@ -1013,8 +1124,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Are they ",
                           },
                           {
@@ -1066,8 +1176,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Aren’t I ",
                           },
                           {
@@ -1098,8 +1207,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Aren’t you ",
                           },
                           {
@@ -1130,8 +1238,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Isn’t he ",
                           },
                           {
@@ -1162,8 +1269,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Isn’t she ",
                           },
                           {
@@ -1194,8 +1300,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Isn’t it ",
                           },
                           {
@@ -1226,8 +1331,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Aren’t we ",
                           },
                           {
@@ -1258,8 +1362,7 @@ export default function PresentContinuous() {
                       {
                         text: [
                           {
-                            audio:
-                              "",
+                            audio: "",
                             part: "Aren’t they ",
                           },
                           {
@@ -1290,31 +1393,6 @@ export default function PresentContinuous() {
         </Section>
 
         <Section id="practice" label="Practice" heading={3}>
-          <FillInTheBlanks
-            exercise={{
-              instructions:
-                "Fill in the blanks with the present continuous form.",
-              blocks: [
-                {
-                  block: [
-                    { text: "I" },
-                    { blank: "am studying" },
-                    { text: "English now." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "She" },
-                    { blank: "is answering" },
-                    { text: "the questions." },
-                  ],
-                  lineBreak: true,
-                },
-              ],
-            }}
-          />
-
           <Radio
             exercise={{
               instruction: "Choose the correct answer.",
@@ -1322,18 +1400,161 @@ export default function PresentContinuous() {
                 {
                   question: "1. Right now, I ____ English.",
                   options: [
+                    { option: "are studying", isCorrect: false },
                     { option: "am studying", isCorrect: true },
-                    { option: "study", isCorrect: false },
-                    { option: "studied", isCorrect: false },
                   ],
                 },
                 {
                   question: "2. At the moment, she ____ the test.",
                   options: [
                     { option: "is answering", isCorrect: true },
-                    { option: "answers", isCorrect: false },
-                    { option: "answered", isCorrect: false },
+                    { option: "are answering", isCorrect: false },
                   ],
+                },
+                {
+                  question: "3. Look! They ____ outside.",
+                  options: [
+                    { option: "is playing", isCorrect: false },
+                    { option: "are playing", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "4. Listen! The baby ____.",
+                  options: [
+                    { option: "is crying", isCorrect: true },
+                    { option: "are crying", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "5. We ____ dinner right now.",
+                  options: [
+                    { option: "are having", isCorrect: true },
+                    { option: "is having", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "6. He ____ on the phone at the moment.",
+                  options: [
+                    { option: "are talking", isCorrect: false },
+                    { option: "is talking", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "7. I ____ to music now.",
+                  options: [
+                    { option: "am listening", isCorrect: true },
+                    { option: "are listening", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "8. She ____ a message right now.",
+                  options: [
+                    { option: "are writing", isCorrect: false },
+                    { option: "is writing", isCorrect: true },
+                  ],
+                },
+                {
+                  question: "9. They ____ for the bus at the moment.",
+                  options: [
+                    { option: "are waiting", isCorrect: true },
+                    { option: "is waiting", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "10. The teacher ____ on the board now.",
+                  options: [
+                    { option: "are writing", isCorrect: false },
+                    { option: "is writing", isCorrect: true },
+                  ],
+                },
+              ],
+            }}
+          />
+          <FillInTheBlanks
+            exercise={{
+              instructions:
+                "Fill in the blanks with verb be + present continuous form.",
+              blocks: [
+                {
+                  block: [
+                    { text: "1. I" },
+                    { blank: ["am studying", "'m studying", "’m studying"] },
+                    { text: "(study) English right now." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "2. She" },
+                    { blank: ["is answering", "'s answering", "’s answering"] },
+                    { text: "the questions." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "3. They" },
+                    { blank: ["are playing", "'re playing", "’re playing"] },
+                    { text: "outside." },
+                  ],
+                  lineBreak: true,
+                },
+
+                {
+                  block: [
+                    { text: "4. The baby" },
+                    { blank: ["is crying", "'s crying", "’s crying"] },
+                    { text: "." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "5. We" },
+                    { blank: ["are having", "'re having", "’re having"] },
+                    { text: "dinner now." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "6. He" },
+                    { blank: ["is taking", "'s taking", "’s taking"] },
+                    { text: "on the phone." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "7. I" },
+                    { blank: ["am listening", "'m listening", "’m listening"] },
+                    { text: "to music." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "8. She" },
+                    { blank: ["is writing", "'s writing", "’s writing"] },
+                    { text: "a message." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "9. They" },
+                    { blank: ["are waiting", "'re waiting", "’re waiting"] },
+                    { text: "for the bus." },
+                  ],
+                  lineBreak: true,
+                },
+                {
+                  block: [
+                    { text: "10. The teacher" },
+                    { blank: ["is writing", "'s writing", "’s writing"] },
+                    { text: "on the board." },
+                  ],
+                  lineBreak: true,
                 },
               ],
             }}
