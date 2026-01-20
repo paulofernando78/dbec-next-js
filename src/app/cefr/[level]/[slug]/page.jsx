@@ -1,11 +1,8 @@
-import fs from "fs";
+import fs from "fs"
 import path from "path";
 import { notFound } from "next/navigation";
 
-// Route pattern: /cefr/[level]/[slug]
-// Example: /cefr/a1/verb-be  -> src/content/cefr/a1/verb-be.jsx
-
-export default async function GrammarPage({ params }) {
+export default async function CEFR( {params} ) {
   const { level, slug } = await params;
 
   try {
@@ -17,38 +14,23 @@ export default async function GrammarPage({ params }) {
       <section>
         <Content />
       </section>
-    );
+    )
+
   } catch (error) {
-    notFound();
+    notFound()
   }
 }
 
 export function generateStaticParams() {
-  const baseDir = path.join(
+  const dir = path.join(
     process.cwd(),
     "src/content/cefr"
   );
 
-  const levels = fs
-    .readdirSync(baseDir)
-    .filter((name) =>
-      fs.statSync(path.join(baseDir, name)).isDirectory()
-    );
-
-  const params = [];
-
-  levels.forEach((level) => {
-    const levelDir = path.join(baseDir, level);
-
-    fs.readdirSync(levelDir)
-      .filter((file) => file.endsWith(".jsx"))
-      .forEach((file) => {
-        params.push({
-          level,
-          slug: file.replace(".jsx", ""),
-        });
-      });
-  });
-
-  return params;
+  return fs
+    .readdirSync(dir)
+    .filter(file => file.endsWith(".jsx"))
+    .map(file => ({
+      slug: file.replace(".jsx", ""),
+    }));
 }
