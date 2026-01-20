@@ -87,7 +87,7 @@ export default function Numbers() {
                   question: "2. Who’s birthday is it?",
                   options: [
                     { option: "It's the teacher’s.", isCorrect: false },
-                    { option: "It's Laura's", isCorrect: true },
+                    { option: "It's Laura's.", isCorrect: true },
                     { option: "It’s Scott.", isCorrect: false },
                   ],
                 },
@@ -1368,12 +1368,12 @@ export default function Numbers() {
                   options: [
                     { option: "twenty-three", isCorrect: false },
                     { option: "twenty-third", isCorrect: true },
-                    { option: "twenty-third", isCorrect: false },
+                    { option: "twenty-thirdy", isCorrect: false },
                   ],
                 },
                 {
                   question:
-                    "2. Anna’s birthday is on the 9th. How do we say 9th?",
+                    "2. Eric’s birthday is on the 9th. How do we say 9th?",
                   options: [
                     { option: "nineth", isCorrect: false },
                     { option: "nine", isCorrect: false },
@@ -1481,10 +1481,7 @@ export default function Numbers() {
                         type: "bold",
                       },
                     ],
-                  },
-                  {
-                    text: ["Use numbers to answer the questions."],
-                  },
+                  }
                 ],
               },
             ]}
@@ -1495,11 +1492,11 @@ export default function Numbers() {
               {
                 text: ["How old are you?"],
               },
-              {
-                text: ["When is your birthday?"],
+                            {
+                text: ["How old is your (dad, mom, brother, sister, etc.)?"],
               },
               {
-                text: ["How old is your (dad, mom, brother, sister, etc.)?"],
+                text: ["When is your birthday?"],
               },
             ]}
           />
