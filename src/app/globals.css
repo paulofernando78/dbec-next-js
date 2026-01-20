@@ -15,6 +15,7 @@
   --padding: 5px;
   --padding-block: 0.4rem;
   --gap: 0.3125rem;
+  --nav-width: 140px;
 
   /* Border */
   --border: 1px solid var(--gray-3);
@@ -46,6 +47,7 @@ html.dark {
 
 main {
   scroll-behavior: smooth;
+  
 }
 
 .line-break {
@@ -209,7 +211,7 @@ mark {
 
 @media (max-width: 700px) {
   .nav {
-    margin-left: -145px;
+    margin-left: var(--nav-width);
   }
 
   .nav.show {

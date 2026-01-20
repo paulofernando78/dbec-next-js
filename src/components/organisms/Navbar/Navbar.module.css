@@ -1,6 +1,6 @@
 .nav {
+  width: var(--nav-width);
   position: absolute;
-  min-width: 140px;
   height: 100%;
 
   padding: var(--padding);
