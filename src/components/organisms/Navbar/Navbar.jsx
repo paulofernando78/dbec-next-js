@@ -41,24 +41,14 @@ const links = [
       },
       {
         href: "/cefr/a1/simple-present",
-        label: "Simple Present",
+        label: "Simple Present (Daily Routines)",
       },
-      {
-        href: "/grammar/present-continuous",
-        label: "Present Continuous",
-      },
-      {
-        href: "/grammar/simple-past",
-        label: "Simple Past",
-      },
+      
       {
         href: "/grammar/past-continuous",
         label: "Past Continuous",
       },
-      {
-        href: "/grammar/present-perfect",
-        label: "Present Perfect",
-      },
+
       {
         href: "/grammar/past-perfect",
         label: "Past Perfect",
@@ -71,14 +61,6 @@ const links = [
         href: "/grammar/future-continuous",
         label: "Future Continuous",
       },
-      {
-        href: "/grammar/future-perfect",
-        label: "Future Perfect",
-      },
-      {
-        href: "/grammar/conditionals",
-        label: "Conditionals",
-      },
     ],
   },
   // A2 (Elementary)
@@ -86,8 +68,16 @@ const links = [
     title: "A2 Elementary",
     links: [
       {
-        href: "/a2/...",
-        label: "...",
+        href: "/grammar/simple-present-vs-present-continuous",
+        label: "Simple Present vs Present Continuous",
+      },
+      {
+        href: "/grammar/simple-past",
+        label: "Simple Past",
+      },
+      {
+        href: "/grammar/present-perfect",
+        label: "Present Perfect",
       },
     ],
   },
@@ -96,18 +86,22 @@ const links = [
     title: "B1 Intermediate",
     links: [
       {
-        href: "/b1/...",
-        label: "...",
+        href: "/cefr/b1/conditionals",
+        label: "First Conditional",
       },
     ],
   },
   // B2 (Upper-Intermediate)
   {
-    title: "B2+",
+    title: "B2 Upper-Intermediate",
     links: [
       {
-        href: "/b2/...",
-        label: "...",
+        href: "/cefr/b2/modals",
+        label: "Modals",
+      },
+      {
+        href: "/cefr/b2/future-perfect",
+        label: "Future Perfect",
       },
     ],
   },

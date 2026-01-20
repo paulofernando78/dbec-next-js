@@ -37,18 +37,56 @@ export default function WhatsCEFR() {
                   {
                     lineBreak: true,
                   },
-                  // CEFR stand for...
                   {
                     text: [
                       {
-                        part: "CEFR",
-                        type: "bold",
+                        part: "The CEFR is an international standard for describing language ability. It provides a clear, shared framework to assess and compare learners’ skills in listening, reading, speaking, and writing across different languages, countries, and educational systems.",
                       },
-                      " stands for...",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "O CEFR é um padrão internacional para descrever a proficiência em línguas. Ele fornece um quadro comum para avaliar e comparar as habilidades de ouvir, ler, falar e escrever em diferentes idiomas, países e sistemas educacionais.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
                     lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        part: "The framework is divided into six levels: A1, A2, B1, B2, C1, and C2. These levels describe what learners can do at each stage, from basic communication to full professional and academic proficiency.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "O quadro é dividido em seis níveis: A1, A2, B1, B2, C1 e C2. Esses níveis descrevem o que o aluno é capaz de fazer em cada etapa, desde a comunicação básica até a proficiência acadêmica e profissional.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        part: "The CEFR is widely used by universities, employers, and examination boards such as Cambridge English to design courses, set learning objectives, and report language proficiency in a transparent and comparable way.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "O CEFR é amplamente utilizado por universidades, empregadores e instituições de exame, como a Cambridge English, para planejar cursos, definir objetivos de aprendizagem e relatar a proficiência linguística de forma clara e comparável.",
+                        type: "portuguese",
+                      },
+                    ],
                   },
                 ],
               },

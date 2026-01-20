@@ -3,7 +3,7 @@
   position: absolute;
   height: 100%;
 
-  padding: var(--padding);
+  padding: 0 5px 5px 5px;
   font-family: var(--font-oswald);
   font-size: 1rem;
   background-color: var(--background-color);
@@ -35,7 +35,7 @@
 
 @media (max-width: 700px) {
   .nav {
-    margin-left: -145px;
+    margin-left: -195px;
   }
 
   .nav.show {
