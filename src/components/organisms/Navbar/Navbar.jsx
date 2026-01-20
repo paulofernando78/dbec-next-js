@@ -28,38 +28,32 @@ const links = [
     title: "A1 Beginner",
     links: [
       {
-        href: "/pronunciation/the-alphabet",
-        label: "The Alphabet",
+        href: "/cefr/a1/verb-be-present",
+        label: "Verb Be (Present) + Articles",
       },
       {
-        href: "/cefr/a1/verb-be",
-        label: "Verb Be",
+        href: "/cefr/a1/subject-object-pronouns",
+        label: "Possessives adjectives",
       },
       {
-        href: "/cefr/a1/possessives",
-        label: "Possessives",
+        href: "/cefr/a1/possessive-adjectives",
+        label: "Possessives adjectives",
       },
       {
         href: "/cefr/a1/simple-present",
         label: "Simple Present (Daily Routines)",
       },
-      
       {
-        href: "/grammar/past-continuous",
-        label: "Past Continuous",
-      },
-
-      {
-        href: "/grammar/past-perfect",
-        label: "Past Perfect",
+        href: "/cefr/a1/there-to-be-present",
+        label: "There to Be (Present)",
       },
       {
-        href: "/grammar/simple-future",
-        label: "Simple Future",
+        href: "/cefr/a1/prepositions-of-place",
+        label: "Prepositions of Place",
       },
       {
-        href: "/grammar/future-continuous",
-        label: "Future Continuous",
+        href: "/cefr/a1/prepositions-of-time",
+        label: "Prepositions of Time",
       },
     ],
   },
@@ -68,16 +62,52 @@ const links = [
     title: "A2 Elementary",
     links: [
       {
-        href: "/grammar/simple-present-vs-present-continuous",
+        href: "/cefr/a2/verb-be-past",
+        label: "Verb Be (Past)",
+      },
+      {
+        href: "/cefr/a2/simple-present-vs-present-continuous",
         label: "Simple Present vs Present Continuous",
       },
       {
-        href: "/grammar/simple-past",
+        href: "/cefr/a2/can-ability",
+        label: "Can (Ability)",
+      },
+      {
+        href: "/cefr/a2/simple-past",
         label: "Simple Past",
       },
       {
-        href: "/grammar/present-perfect",
+        href: "/cefr/a2/simple-past",
+        label: "Adjectives (Compartive)",
+      },
+      {
+        href: "/cefr/a2/past-continuous",
+        label: "Past Continuous",
+      },
+      {
+        href: "/cefr/a2/present-perfect",
         label: "Present Perfect",
+      },
+      {
+        href: "/cefr/a2/simple-future",
+        label: "Simple Future (will / Going to)",
+      },
+      {
+        href: "/cefr/a2/future-continuous",
+        label: "Future Continuous",
+      },
+      {
+        href: "/cefr/a2/zero-first-conditional",
+        label: "Zero / First Conditional",
+      },
+      {
+        href: "/cefr/a2/tag-questions",
+        label: "Tag Questions",
+      },
+      {
+        href: "/cefr/a2/phrasal-verbs",
+        label: "Phrasal Verbs",
       },
     ],
   },
@@ -86,8 +116,12 @@ const links = [
     title: "B1 Intermediate",
     links: [
       {
-        href: "/cefr/b1/conditionals",
-        label: "First Conditional",
+        href: "/cefr/b1/second-third-conditionals",
+        label: "Second / Third Conditional",
+      },
+      {
+        href: "/cefr/b1//past-perfect",
+        label: "Past Perfect",
       },
     ],
   },
@@ -96,42 +130,24 @@ const links = [
     title: "B2 Upper-Intermediate",
     links: [
       {
+        href: "/cefr/b2/adjetives-ed-ing",
+        label: "Adjectives (-ed / -ing)",
+      },
+      {
+        href: "/cefr/b2/adjetives-ed-ing",
+        label: "Nouns (-ing)",
+      },
+      {
         href: "/cefr/b2/modals",
-        label: "Modals",
+        label: "Modals (may, might, etc.)",
+      },
+      {
+        href: "/cefr/b2/reported-speech",
+        label: "Reported Speech",
       },
       {
         href: "/cefr/b2/future-perfect",
         label: "Future Perfect",
-      },
-    ],
-  },
-  // Vocabulary
-  {
-    title: "Vocabulary",
-    links: [
-      {
-        href: "/vocabulary/numbers",
-        label: "Numbers",
-      },
-      {
-        href: "/vocabulary/collocations",
-        label: "Collocations",
-      },
-      {
-        href: "/vocabulary/expressions",
-        label: "Expressions",
-      },
-      {
-        href: "/vocabulary/homonyns",
-        label: "Homonyns",
-      },
-      {
-        href: "/vocabulary/which-one",
-        label: "Which one?",
-      },
-      {
-        href: "/grammar/word-families",
-        label: "Word Families",
       },
     ],
   },
@@ -149,30 +165,64 @@ const links = [
       },
     ],
   },
-  // audiobooks
+  // Reference
   {
-    title: "Audiobooks",
+    title: "Reference",
     links: [
       {
-        href: "/audiobooks/starter",
-        label: "Starter",
+        href: "/cefr/a1/the-alphabet",
+        label: "The Alphabet",
       },
       {
-        href: "/audiobooks/beginner",
-        label: "...",
+        href: "/reference/numbers",
+        label: "Numbers",
+      },
+      {
+        href: "/reference/collocations",
+        label: "Collocations",
+      },
+      {
+        href: "/reference/expressions",
+        label: "Expressions",
+      },
+      {
+        href: "/reference/homonyns",
+        label: "Homonyns",
+      },
+      {
+        href: "/reference/which-one",
+        label: "Which one?",
+      },
+      {
+        href: "/reference/word-families",
+        label: "Word Families",
       },
     ],
   },
-  // Games
-  {
-    title: "Games",
-    links: [
-      {
-        href: "/games/minecraft",
-        label: "Minecraft",
-      },
-    ],
-  },
+  // // audiobooks
+  // {
+  //   title: "Audiobooks",
+  //   links: [
+  //     {
+  //       href: "/audiobooks/starter",
+  //       label: "Starter",
+  //     },
+  //     {
+  //       href: "/audiobooks/beginner",
+  //       label: "...",
+  //     },
+  //   ],
+  // },
+  // // Games
+  // {
+  //   title: "Games",
+  //   links: [
+  //     {
+  //       href: "/games/minecraft",
+  //       label: "Minecraft",
+  //     },
+  //   ],
+  // },
 ];
 
 export default function NavBar() {
@@ -183,7 +233,7 @@ export default function NavBar() {
       className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`}
     >
       {links.map((group, groupIndex) => (
-        <div key={groupIndex}>
+        <div key={groupIndex} >
           <span className={styles.navTitle}>{group.title}</span>
           {group.links && (
             <div>

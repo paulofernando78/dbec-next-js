@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 // Example: /cefr/a1/verb-be  -> src/content/cefr/a1/verb-be.jsx
 
 export default async function GrammarPage({ params }) {
-  const { level, slug } = params;
+  const { level, slug } = await params;
 
   try {
     const Content = (

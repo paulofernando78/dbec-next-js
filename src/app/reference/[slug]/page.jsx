@@ -2,12 +2,12 @@ import fs from "fs"
 import path from "path";
 import { notFound } from "next/navigation";
 
-export default async function GrammarPage( {params} ) {
+export default async function Reference( {params} ) {
   const { slug } = await params;
 
   try {
     const Content = (
-      await import(`@/content/vocabulary/${slug}.jsx`)
+      await import(`@/content/reference/${slug}.jsx`)
     ).default;
 
     return (
@@ -24,7 +24,7 @@ export default async function GrammarPage( {params} ) {
 export function generateStaticParams() {
   const dir = path.join(
     process.cwd(),
-    "src/content/vocabulary"
+    "src/content/reference"
   );
 
   return fs
