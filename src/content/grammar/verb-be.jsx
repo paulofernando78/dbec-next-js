@@ -143,8 +143,7 @@ export default function VerbBe() {
                   {
                     text: [
                       {
-                        audio:
-                          "/assets/audio/general/answer-these-questions.mp3",
+                        audio: "/assets/audio/general/answer-the-question.mp3",
                         part: "Answer these questions.",
                         type: "bold",
                       },
@@ -154,10 +153,21 @@ export default function VerbBe() {
                   {
                     text: ["Where are you?"],
                   },
-                  {
-                    text: ["What is your (someone)? At home? At work? At school?"],
-                  },
                 ],
+              },
+            ]}
+          />
+          <List
+            bullet={true}
+            items={[
+              {
+                text: ["at school? "],
+              },
+              {
+                text: ["at home? "],
+              },
+              {
+                text: ["at work? "],
               },
             ]}
           />
@@ -187,6 +197,7 @@ export default function VerbBe() {
           <Dialogue
             audioPlayer="/assets/audio/grammar/verb-be/presentation/dialogue.mp3"
             lines={[
+              // Laura: Hi, I’m Laura.
               {
                 speaker: "Laura:",
                 text: [
@@ -198,6 +209,7 @@ export default function VerbBe() {
                   " Laura.",
                 ],
               },
+              // Eric: Hello, I’m Eric.
               {
                 speaker: "Eric:",
                 text: [
@@ -209,10 +221,12 @@ export default function VerbBe() {
                   " Eric.",
                 ],
               },
+              // Laura: Nice to meet you, Eric.
               {
                 speaker: "Laura:",
                 text: ["Nice to meet you, Eric."],
               },
+              // Eric: Nice to meet you, too. Are you the teacher?
               {
                 speaker: "Eric:",
                 text: "",
@@ -225,6 +239,7 @@ export default function VerbBe() {
                   " you the teacher?",
                 ],
               },
+              // Laura: No, I’m not.
               {
                 speaker: "Laura:",
                 text: [
@@ -241,6 +256,7 @@ export default function VerbBe() {
                   " Mrs. Smith.",
                 ],
               },
+              // Eric: Is she at school?
               {
                 speaker: "Eric:",
                 text: [
@@ -252,6 +268,7 @@ export default function VerbBe() {
                   " at school?",
                 ],
               },
+              // Laura: Yes, she is in the classrom right now. Let's go!
               {
                 speaker: "Laura:",
                 text: [
@@ -268,7 +285,6 @@ export default function VerbBe() {
         </Section>
 
         <Section id="meaning" label="Meaning" heading={4}>
-          {/* Identify */}
           <Paragraph
             blocks={[
               {
@@ -276,16 +292,20 @@ export default function VerbBe() {
                   {
                     text: [
                       {
+                        audio: "/assets/audio/grammar/verb-be/meaning/use.mp3",
                         part: "We use verb to be to talk about:",
                         type: "bold",
                       },
                     ],
                     lineBreak: true,
                   },
+
+                  // • Identiy
                   {
                     text: [
                       {
                         audio: "/assets/audio/general/identity.mp3",
+                        bullet: true,
                         part: "Identity",
                         type: "bold",
                       },
@@ -297,6 +317,7 @@ export default function VerbBe() {
                       ":",
                     ],
                   },
+                  // I’m Paul.
                   {
                     text: [
                       {
@@ -307,6 +328,7 @@ export default function VerbBe() {
                       { part: "Sou o Paulo.", type: "portuguese" },
                     ],
                   },
+                  // He’s my brother.
                   {
                     text: [
                       {
@@ -317,6 +339,7 @@ export default function VerbBe() {
                       { part: "Ele é o meu irmão.", type: "portuguese" },
                     ],
                   },
+                  // They are my friends.
                   {
                     text: [
                       {
@@ -328,10 +351,13 @@ export default function VerbBe() {
                     ],
                     lineBreak: true,
                   },
+
+                  // • Job
                   {
                     text: [
                       {
                         audio: "/assets/audio/general/job.mp3",
+                        bullet: true,
                         part: "Job",
                         type: "bold",
                       },
@@ -340,6 +366,7 @@ export default function VerbBe() {
                       ":",
                     ],
                   },
+                  // I’m a teacher.
                   {
                     text: [
                       {
@@ -350,6 +377,7 @@ export default function VerbBe() {
                       { part: "Sou professor(a).", type: "portuguese" },
                     ],
                   },
+                  // He’s an engineer.
                   {
                     text: [
                       {
@@ -358,6 +386,7 @@ export default function VerbBe() {
                       },
                     ],
                   },
+                  // She’s a doctor.
                   {
                     text: [
                       {
@@ -367,11 +396,14 @@ export default function VerbBe() {
                     ],
                     lineBreak: true,
                   },
+
+                  // • State / Condition / Description
                   {
                     text: [
                       {
                         audio:
                           "/assets/audio/general/state-condition-description.mp3",
+                        bullet: true,
                         part: "State / Condition / Description",
                         type: "bold",
                       },
@@ -383,6 +415,7 @@ export default function VerbBe() {
                       ":",
                     ],
                   },
+                  // I’m tired.
                   {
                     text: [
                       {
@@ -391,6 +424,7 @@ export default function VerbBe() {
                       },
                     ],
                   },
+                  // She’s happy.
                   {
                     text: [
                       {
@@ -399,6 +433,7 @@ export default function VerbBe() {
                       },
                     ],
                   },
+                  // This car is fast.
                   {
                     text: [
                       {
@@ -408,10 +443,13 @@ export default function VerbBe() {
                     ],
                     lineBreak: true,
                   },
+
+                  // • Nationality
                   {
                     text: [
                       {
                         audio: "/assets/audio/general/nationality.mp3",
+                        bullet: true,
                         part: "Nationality",
                         type: "bold",
                       },
@@ -420,6 +458,7 @@ export default function VerbBe() {
                       ":",
                     ],
                   },
+                  // Mike is American. He’s from the United States.
                   {
                     text: [
                       {
@@ -428,6 +467,7 @@ export default function VerbBe() {
                       },
                     ],
                   },
+                  // George is British. He’s from England.
                   {
                     text: [
                       {
@@ -436,6 +476,7 @@ export default function VerbBe() {
                       },
                     ],
                   },
+                  // Juan and Maria are Mexican. They’re from Mexico.
                   {
                     text: [
                       {
@@ -469,7 +510,7 @@ export default function VerbBe() {
                     questions: [
                       {
                         question:
-                          "Is Paul talking about who he is or what he does?",
+                          "Is it talking about who he is or what he does?",
                       },
                     ],
                   },

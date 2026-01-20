@@ -53,6 +53,7 @@ export const InlineText = ({ text = [] }) => {
             {part.correct && <Correct className="icon-position" />}
             {part.incorrect && <Incorrect className="icon-position" />}
             {part.audio && <Audio src={part.audio} />}
+            {part.bullet && <Bold>•{" "}</Bold>}
             {content}
           </span>
         );

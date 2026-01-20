@@ -13,34 +13,34 @@ const links = [
         href: "/",
         label: "Home",
       },
+      {
+        href: "/cefr",
+        label: "What's CEFR?",
+      },
     ],
   },
+  // CEFR
   {
-    title: "Pronunciation",
+    title: "CEFR",
+  },
+  // A1 Beginner
+  {
+    title: "A1 Beginner",
     links: [
       {
         href: "/pronunciation/the-alphabet",
         label: "The Alphabet",
       },
       {
-        href: "/pronunciation/phonetics-letters",
-        label: "Phonetics + Letters",
-      },
-      {
-        href: "/pronunciation/linked-sounds",
-        label: "Linked Sounds",
-      },
-    ],
-  },
-  {
-    title: "Grammar",
-    links: [
-      {
-        href: "/grammar/verb-be",
+        href: "/cefr/a1/verb-be",
         label: "Verb Be",
       },
       {
-        href: "/grammar/simple-present",
+        href: "/cefr/a1/possessives",
+        label: "Possessives",
+      },
+      {
+        href: "/cefr/a1/simple-present",
         label: "Simple Present",
       },
       {
@@ -81,6 +81,37 @@ const links = [
       },
     ],
   },
+  // A2 (Elementary)
+  {
+    title: "A2 Elementary",
+    links: [
+      {
+        href: "/a2/...",
+        label: "...",
+      },
+    ],
+  },
+  // B1 (Intermediate)
+  {
+    title: "B1 Intermediate",
+    links: [
+      {
+        href: "/b1/...",
+        label: "...",
+      },
+    ],
+  },
+  // B2 (Upper-Intermediate)
+  {
+    title: "B2+",
+    links: [
+      {
+        href: "/b2/...",
+        label: "...",
+      },
+    ],
+  },
+  // Vocabulary
   {
     title: "Vocabulary",
     links: [
@@ -110,38 +141,44 @@ const links = [
       },
     ],
   },
-  // {
-  //   title: "Audiobooks",
-  //   links: [
-  //     {
-  //       href: "/audiobooks/starter",
-  //       label: "Starter",
-  //     },
-  //     {
-  //       href: "/audiobooks/beginner",
-  //       label: "...",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Games",
-  //   links: [
-  //     {
-  //       href: "/games/minecraft", label: "Minecraft"
-  //     }
-  //   ],
-  // },
-
-  // {
-  //   title: "Course",
-  //   links: [
-  //     { href: "/course/beginner", label: "Beginner" },
-  //     { href: "/course/elementary", label: "Elementary" },
-  //     { href: "/course/intermediate", label: "Pre-Int..." },
-  //     { href: "/course/Intermediate", label: "Intermediate" },
-  //     { href: "/course/advanced", label: "Advanced" },
-  //   ],
-  // }
+  // Pronunciation
+  {
+    title: "Pronunciation",
+    links: [
+      {
+        href: "/pronunciation/phonetics-letters",
+        label: "Phonetics + Letters",
+      },
+      {
+        href: "/pronunciation/linked-sounds",
+        label: "Linked Sounds",
+      },
+    ],
+  },
+  // audiobooks
+  {
+    title: "Audiobooks",
+    links: [
+      {
+        href: "/audiobooks/starter",
+        label: "Starter",
+      },
+      {
+        href: "/audiobooks/beginner",
+        label: "...",
+      },
+    ],
+  },
+  // Games
+  {
+    title: "Games",
+    links: [
+      {
+        href: "/games/minecraft",
+        label: "Minecraft",
+      },
+    ],
+  },
 ];
 
 export default function NavBar() {
@@ -154,13 +191,15 @@ export default function NavBar() {
       {links.map((group, groupIndex) => (
         <div key={groupIndex}>
           <span className={styles.navTitle}>{group.title}</span>
-          <div>
-            {group.links.map((item, linkIndex) => (
-              <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
-                {item.label}
-              </Link>
-            ))}
-          </div>
+          {group.links && (
+            <div>
+              {group.links.map((item, linkIndex) => (
+                <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       ))}
     </nav>
