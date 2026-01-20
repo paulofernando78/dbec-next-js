@@ -21,7 +21,7 @@ export default function Numbers() {
                 imgPosition: "left",
                 imgs: [
                   {
-                    img: "/assets/img/general/woman-man-birthday-school.png",
+                    img: "/assets/img/vocabulary/numbers/Lauras-birthday.png",
                     alt: "students celebrating a birthday in a classroom",
                     width: 350,
                     height: 250,
@@ -87,7 +87,7 @@ export default function Numbers() {
                   question: "2. Who’s birthday is it?",
                   options: [
                     { option: "It's the teacher’s.", isCorrect: false },
-                    { option: "It's Ana's", isCorrect: true },
+                    { option: "It's Laura's", isCorrect: true },
                     { option: "It’s Scott.", isCorrect: false },
                   ],
                 },
