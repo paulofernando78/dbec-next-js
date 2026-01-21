@@ -26,19 +26,19 @@ export default function Dentistry() {
             },
             {
               href: "pain-and-symptons",
-              label: "Pain & Symptomsk"
+              label: "Pain & Symptomsk",
             },
             {
               href: "common-procedures",
-              label: "Common Procedures"
+              label: "Common Procedures",
             },
             {
               href: "parts-of-the-mouth",
-              label: "Parts of the Mouth"
+              label: "Parts of the Mouth",
             },
             {
               href: "care-and-routine",
-              label: "Care & Routines"
+              label: "Care & Routines",
             },
           ]}
         />
@@ -184,6 +184,112 @@ export default function Dentistry() {
             ]}
           />
         </Section>
+        <Section id="parts-of-the-mouth" label="Parts of the Mouth" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "tooth / teeth", type: "bold" },
+                      " ",
+                      { part: "dente / dentes", type: "portuguese" },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "She brushes her teeth twice a day.",
+                      },
+                      {
+                        part: " Ela escova os dentes duas vezes por dia.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "gum / gums", type: "bold" },
+                      " ",
+                      { part: "gengiva / gengivas", type: "portuguese" },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "My gums feel sore today.",
+                      },
+                      {
+                        part: " Minhas gengivas estão doloridas hoje.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "jaw", type: "bold" },
+                      " ",
+                      { part: "maxilar", type: "portuguese" },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "My jaw feels sore when I open my mouth.",
+                      },
+                      {
+                        part: " Meu maxilar fica dolorido quando abro a boca.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "tongue", type: "bold" },
+                      " ",
+                      { part: "língua", type: "portuguese" },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "Stick out your tongue, please.",
+                      },
+                      {
+                        part: " Mostre a língua, por favor.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "palate", type: "bold" },
+                      " ",
+                      { part: "céu da boca", type: "portuguese" },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "The roof of my mouth hurts.",
+                      },
+                      {
+                        part: " O céu da minha boca dói.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "molar / incisor / canine", type: "bold" },
+                      " ",
+                      { part: "molar / incisivo / canino", type: "portuguese" },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "The dentist checked my molar and my canine.",
+                      },
+                      {
+                        part: " O dentista examinou meu molar e meu canino.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
         <Section id="pain-and-symptons" label="Pain & Symptoms" heading={3}>
           <Paragraph
             blocks={[
@@ -201,6 +307,41 @@ export default function Dentistry() {
                       },
                       {
                         part: " Minhas gengivas estão sangrando quando escovo os dentes.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "crooked tooth", type: "bold" },
+                      " ",
+                      { part: "dente torto", type: "portuguese" },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "I have a crooked tooth in the front.",
+                      },
+                      {
+                        part: " Eu tenho um dente torto na frente.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "crookedness", type: "bold" },
+                      " ",
+                      {
+                        part: "tortuosidade / desalinhamento",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "The dentist explained the crookedness of my teeth.",
+                      },
+                      {
+                        part: " O dentista explicou o desalinhamento dos meus dentes.",
                         type: "portuguese",
                       },
                     ],
@@ -306,11 +447,7 @@ export default function Dentistry() {
             ]}
           />
         </Section>
-        <Section
-          id="common-procedures"
-          label="Common Procedures"
-          heading={3}
-        >
+        <Section id="common-procedures" label="Common Procedures" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -505,121 +642,7 @@ export default function Dentistry() {
             ]}
           />
         </Section>
-        <Section
-          id="parts-of-the-mouth"
-          label="Parts of the Mouth"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "tooth / teeth", type: "bold" },
-                      " ",
-                      { part: "dente / dentes", type: "portuguese" },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "She brushes her teeth twice a day.",
-                      },
-                      {
-                        part: " Ela escova os dentes duas vezes por dia.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "gum / gums", type: "bold" },
-                      " ",
-                      { part: "gengiva / gengivas", type: "portuguese" },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "My gums feel sore today.",
-                      },
-                      {
-                        part: " Minhas gengivas estão doloridas hoje.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "jaw", type: "bold" },
-                      " ",
-                      { part: "maxilar", type: "portuguese" },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "My jaw feels sore when I open my mouth.",
-                      },
-                      {
-                        part: " Meu maxilar fica dolorido quando abro a boca.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "tongue", type: "bold" },
-                      " ",
-                      { part: "língua", type: "portuguese" },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "Stick out your tongue, please.",
-                      },
-                      {
-                        part: " Mostre a língua, por favor.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "palate", type: "bold" },
-                      " ",
-                      { part: "céu da boca", type: "portuguese" },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "The roof of my mouth hurts.",
-                      },
-                      {
-                        part: " O céu da minha boca dói.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "molar / incisor / canine", type: "bold" },
-                      " ",
-                      { part: "molar / incisivo / canino", type: "portuguese" },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "The dentist checked my molar and my canine.",
-                      },
-                      {
-                        part: " O dentista examinou meu molar e meu canino.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-        <Section
-          id="care-and-routine"
-          label="Care & Daily Routine"
-          heading={3}
-        >
+        <Section id="care-and-routine" label="Care & Daily Routine" heading={3}>
           <Paragraph
             blocks={[
               {
