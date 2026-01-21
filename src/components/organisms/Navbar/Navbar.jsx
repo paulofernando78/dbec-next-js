@@ -28,24 +28,20 @@ const links = [
     title: "A1 Beginner",
     links: [
       {
-        href: "/cefr/a1/verb-be-present",
-        label: "Verb Be (Present) + Articles",
+        href: "/cefr/a1/introductions",
+        label: "Introductions",
       },
       {
-        href: "/cefr/a1/subject-object-pronouns",
-        label: "Possessives adjectives",
+        href: "/cefr/a1/personal-information",
+        label: "Personal Information",
       },
       {
-        href: "/cefr/a1/possessive-adjectives",
-        label: "Possessives adjectives",
+        href: "/cefr/a1/daily-routines",
+        label: "Daily Routines",
       },
       {
-        href: "/cefr/a1/simple-present",
-        label: "Simple Present (Daily Routines)",
-      },
-      {
-        href: "/cefr/a1/there-to-be-present",
-        label: "There to Be (Present)",
+        href: "/cefr/a1/places-objects",
+        label: "Places & Objects",
       },
       {
         href: "/cefr/a1/prepositions-of-place",
@@ -130,14 +126,6 @@ const links = [
     title: "B2 Upper-Intermediate",
     links: [
       {
-        href: "/cefr/b2/adjetives-ed-ing",
-        label: "Adjectives (-ed / -ing)",
-      },
-      {
-        href: "/cefr/b2/adjetives-ed-ing",
-        label: "Nouns (-ing)",
-      },
-      {
         href: "/cefr/b2/modals",
         label: "Modals (may, might, etc.)",
       },
@@ -178,8 +166,44 @@ const links = [
         label: "Numbers",
       },
       {
+        href: "/reference/pronouns",
+        label: "Pronouns",
+      },
+      {
+        href: "/reference/adjectives",
+        label: "Adjectives",
+      },
+      {
+        href: "/reference/adjectives",
+        label: "Nouns",
+      },
+      {
+        href: "/reference/adverbs",
+        label: "Adverbs",
+      },
+      {
+        href: "/reference/all-verb-tenses",
+        label: "All Verb Tenses",
+      },
+      {
+        href: "/reference/modals",
+        label: "Modal Verbs",
+      },
+      {
+        href: "/reference/phrasal-verbs",
+        label: "Phrasal Verbs",
+      },
+      {
+        href: "/reference/reported-speech",
+        label: "Reported Speech",
+      },
+      {
         href: "/reference/collocations",
         label: "Collocations",
+      },
+      {
+        href: "/reference/to-for",
+        label: "To vs. For",
       },
       {
         href: "/reference/expressions",
