@@ -19,10 +19,6 @@ const links = [
       },
     ],
   },
-  // CEFR
-  {
-    title: "CEFR",
-  },
   // A1 Beginner
   {
     title: "A1 Beginner",
@@ -43,14 +39,6 @@ const links = [
         href: "/cefr/a1/places-objects",
         label: "Places & Objects",
       },
-      {
-        href: "/cefr/a1/prepositions-of-place",
-        label: "Prepositions of Place",
-      },
-      {
-        href: "/cefr/a1/prepositions-of-time",
-        label: "Prepositions of Time",
-      },
     ],
   },
   // A2 (Elementary)
@@ -58,52 +46,8 @@ const links = [
     title: "A2 Elementary",
     links: [
       {
-        href: "/cefr/a2/verb-be-past",
-        label: "Verb Be (Past)",
-      },
-      {
-        href: "/cefr/a2/simple-present-vs-present-continuous",
-        label: "Simple Present vs Present Continuous",
-      },
-      {
-        href: "/cefr/a2/can-ability",
-        label: "Can (Ability)",
-      },
-      {
-        href: "/cefr/a2/simple-past",
-        label: "Simple Past",
-      },
-      {
-        href: "/cefr/a2/simple-past",
-        label: "Adjectives (Compartive)",
-      },
-      {
-        href: "/cefr/a2/past-continuous",
-        label: "Past Continuous",
-      },
-      {
-        href: "/cefr/a2/present-perfect",
-        label: "Present Perfect",
-      },
-      {
-        href: "/cefr/a2/simple-future",
-        label: "Simple Future (will / Going to)",
-      },
-      {
-        href: "/cefr/a2/future-continuous",
-        label: "Future Continuous",
-      },
-      {
-        href: "/cefr/a2/zero-first-conditional",
-        label: "Zero / First Conditional",
-      },
-      {
-        href: "/cefr/a2/tag-questions",
-        label: "Tag Questions",
-      },
-      {
-        href: "/cefr/a2/phrasal-verbs",
-        label: "Phrasal Verbs",
+        href: "/cefr/a2/",
+        label: "...",
       },
     ],
   },
@@ -112,12 +56,8 @@ const links = [
     title: "B1 Intermediate",
     links: [
       {
-        href: "/cefr/b1/second-third-conditionals",
-        label: "Second / Third Conditional",
-      },
-      {
-        href: "/cefr/b1//past-perfect",
-        label: "Past Perfect",
+        href: "/cefr/b1/...",
+        label: "...",
       },
     ],
   },
@@ -127,21 +67,13 @@ const links = [
     links: [
       {
         href: "/cefr/b2/modals",
-        label: "Modals (may, might, etc.)",
-      },
-      {
-        href: "/cefr/b2/reported-speech",
-        label: "Reported Speech",
-      },
-      {
-        href: "/cefr/b2/future-perfect",
-        label: "Future Perfect",
+        label: "...",
       },
     ],
   },
-  // Pronunciation
+  // PRONUNCIATION
   {
-    title: "Pronunciation",
+    title: "PRONUNCIATION",
     links: [
       {
         href: "/pronunciation/phonetics-letters",
@@ -153,17 +85,47 @@ const links = [
       },
     ],
   },
-  // Reference
+  // VOCABULARY
   {
-    title: "Reference",
+    title: "EXTRAS",
     links: [
       {
-        href: "/cefr/a1/the-alphabet",
+        href: "/vocabulary/dentistry",
+        label: "Dentistry",
+      },
+      {
+        href: "/vocabulary/cooking",
+        label: "Cooking",
+      },
+      {
+        href: "/vocabulary/medicine",
+        label: "Medicine",
+      },
+      {
+        href: "/vocabulary/programming",
+        label: "Programming",
+      },
+      {
+        href: "/vocabulary/travel",
+        label: "Travel",
+      },
+    ],
+  },
+  // REFERENCE
+  {
+    title: "REFERENCE",
+    links: [
+      {
+        href: "/reference/the-alphabet",
         label: "The Alphabet",
       },
       {
         href: "/reference/numbers",
         label: "Numbers",
+      },
+      {
+        href: "/reference/articles",
+        label: "Articles",
       },
       {
         href: "/reference/pronouns",
@@ -186,12 +148,32 @@ const links = [
         label: "All Verb Tenses",
       },
       {
-        href: "/reference/modals",
-        label: "Modal Verbs",
+        href: "/reference/infinitive-ing",
+        label: "Infinitive vs. -ing",
+      },
+      {
+        href: "/reference/prepositions",
+        label: "Prepositions",
       },
       {
         href: "/reference/phrasal-verbs",
         label: "Phrasal Verbs",
+      },
+      {
+        href: "/reference/tag-questions",
+        label: "Tag Questions",
+      },
+      {
+        href: "/reference/passive Voice",
+        label: "Passive Voice",
+      },
+      {
+        href: "/reference/modals",
+        label: "Modal Verbs",
+      },
+      {
+        href: "/reference/conditionals",
+        label: "Conditionals",
       },
       {
         href: "/reference/reported-speech",
@@ -206,12 +188,12 @@ const links = [
         label: "To vs. For",
       },
       {
-        href: "/reference/expressions",
-        label: "Expressions",
-      },
-      {
         href: "/reference/homonyns",
         label: "Homonyns",
+      },
+      {
+        href: "/reference/expressions",
+        label: "Expressions",
       },
       {
         href: "/reference/which-one",
@@ -257,7 +239,7 @@ export default function NavBar() {
       className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`}
     >
       {links.map((group, groupIndex) => (
-        <div key={groupIndex} >
+        <div key={groupIndex}>
           <span className={styles.navTitle}>{group.title}</span>
           {group.links && (
             <div>
