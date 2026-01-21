@@ -87,7 +87,7 @@ const links = [
   },
   // VOCABULARY
   {
-    title: "EXTRAS",
+    title: "VOCABULARY",
     links: [
       {
         href: "/vocabulary/dentistry",
@@ -96,6 +96,10 @@ const links = [
       {
         href: "/vocabulary/cooking",
         label: "Cooking",
+      },
+      {
+        href: "/vocabulary/law",
+        label: "Law",
       },
       {
         href: "/vocabulary/medicine",

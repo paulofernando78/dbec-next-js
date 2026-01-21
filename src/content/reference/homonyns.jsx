@@ -9,22 +9,6 @@ export default function Homonyns() {
       <Whiteboard title="Vocabulary" subtitle="Homonyns" />
       <div className="line-break">
         <InlineText text={["Under Construction "]} />
-        <Contents
-          items={[
-            { href: "introduction", label: "Introduction" },
-            { href: "presentation", label: "Presentation" },
-            { href: "meaning", label: "Meaning" },
-            { href: "pronunciation-form", label: "Pronunciation + Form" },
-            { href: "practice", label: "Practice" },
-            { href: "production", label: "Production" },
-          ]}
-        />
-        <Section id="Introduction" label="Introduction" heading={3}></Section>
-        <Section id="Presentation" label="Presentation" heading={3}></Section>
-        <Section id="Meaning" label="Meaning" heading={3}></Section>
-        <Section id="Pronunciation-form" label="Pronunciation + Form" heading={3}></Section>
-        <Section id="Practice" label="Practice" heading={3}></Section>
-        <Section id="Production" label="Production" heading={3}></Section>
       </div>
     </>
   );
