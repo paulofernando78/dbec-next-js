@@ -89,6 +89,11 @@ const links = [
         href: "/pronunciation/linked-sounds",
         label: "Linked Sounds",
       },
+      // Sites
+      {
+        href: "/pronunciation/sites",
+        label: "Sites",
+      },
     ],
   },
   // VOCABULARY

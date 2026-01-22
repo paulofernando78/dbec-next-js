@@ -7,6 +7,7 @@ import { Bold } from "@/components/atoms/Bold";
 import { Italic } from "@/components/atoms/Italic";
 import { Mark } from "@/components/atoms/Mark";
 import { Underline } from "@/components/atoms/Underline";
+import { PartOfSpeech } from "@/components/atoms/PartOfSpeech";
 import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import {
@@ -38,11 +39,15 @@ export const InlineText = ({ text = [] }) => {
           case "underline":
             content = <Underline>{part.part}</Underline>;
             break;
+          case "partOfSpeech":
+            content = <PartOfSpeech>{part.part}</PartOfSpeech>;
+            break;
           case "phonetics":
             content = <Phonetics>{part.part}</Phonetics>;
             break;
           case "portuguese":
             content = <Portuguese>{part.part}</Portuguese>;
+            break;
         }
 
         return (
@@ -53,7 +58,7 @@ export const InlineText = ({ text = [] }) => {
             {part.correct && <Correct className="icon-position" />}
             {part.incorrect && <Incorrect className="icon-position" />}
             {part.audio && <Audio src={part.audio} />}
-            {part.bullet && <Bold>•{" "}</Bold>}
+            {part.bullet && <Bold>• </Bold>}
             {content}
           </span>
         );
