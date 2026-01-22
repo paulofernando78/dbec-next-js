@@ -7,7 +7,7 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 export default function Collocations() {
   return (
     <>
-      <Whiteboard title="Vocabulary" subtitle="Collocations" />
+      <Whiteboard title="Reference" subtitle="Collocations" />
       <div className="line-break">
         <Section label="have / take classes" heading={3}>
           <Paragraph
@@ -28,7 +28,7 @@ export default function Collocations() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/have-classes-1.mp3",
+                        audio: "/assets/audio/reference/have-take/i-have-classes-in-the-morning.mp3",
                       },
                       "I have classes in the morning.",
                     ],
@@ -36,7 +36,7 @@ export default function Collocations() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/have-classes-2.mp3",
+                        audio: "/assets/audio/reference/have-take/she-has-english-classes-twice-a-week..mp3",
                       },
                       "She has English classes twice a week.",
                     ],
