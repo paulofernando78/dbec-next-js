@@ -6,6 +6,7 @@
   --background-color: var(--slate-1);
   --text-color: var(--slate-9);
   --icon-color: var(--gray-4);
+  --dictionary-bg: var(--slate-1);
 
   /* Spacing */
   --line-break: 1rem;
@@ -38,6 +39,8 @@ html.dark {
   --background-color: var(--slate-9);
   --text-color: var(--slate-1);
   --icon-color: var(--slate-1);
+  --dictionary-bg: var(--slate-9);
+
 
   --icon-invert: 1;
   --neumorphism:

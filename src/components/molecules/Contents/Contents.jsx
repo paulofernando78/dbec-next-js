@@ -14,8 +14,8 @@ export const Contents = ({ items = [] }) => {
         <ul>
           {items.map((item, index) => (
             <div key={index} className="flex-align">
-              <ContentLink />
-              <li>
+              <li className>
+                <ContentLink/>
                 <a href={`#${item.href}`}>{item.label}</a>
               </li>
             </div>

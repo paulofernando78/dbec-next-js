@@ -23,20 +23,20 @@ const links = [
   {
     title: "A1 Beginner",
     links: [
-      // Introdutions
+      // Greetings, Introdutions
       {
         href: "/cefr/a1/introductions",
         label: "Introductions",
       },
-      // Personal Information
+      // Talk about yourself (Personal Information)
       {
         href: "/cefr/a1/personal-information",
-        label: "Personal Information",
+        label: "Talk about yourself (Personal Information)",
       },
       // Daily Routines
       {
         href: "/cefr/a1/daily-routines",
-        label: "Daily Routines",
+        label: "Talk about you free time",
       },
       // Places & Objects
       {
@@ -49,9 +49,35 @@ const links = [
   {
     title: "A2 Elementary",
     links: [
+      // Talk about likes and dislikes
       {
         href: "/cefr/a2/",
-        label: "...",
+        label: "Talk about likes and dislikes",
+      },
+      // Talk about the past
+      {
+        href: "/cefr/a2/",
+        label: "Talk about the past",
+      },
+      // Talk about plans
+      {
+        href: "/cefr/a2/",
+        label: "Talk about plans",
+      },
+      // Talk about foods
+      {
+        href: "/cefr/a2/",
+        label: "Talk about foods",
+      },
+      // Talk about your home
+      {
+        href: "/cefr/a2/",
+        label: "Talk about your home",
+      },
+      // Give advice
+      {
+        href: "/cefr/a2/",
+        label: "Give advice",
       },
     ],
   },
@@ -59,9 +85,20 @@ const links = [
   {
     title: "B1 Intermediate",
     links: [
+      // Describe the past/tell a story
       {
         href: "/cefr/b1/...",
-        label: "...",
+        label: "Describe the past/tell a story",
+      },
+      // Talk about learning preferences
+      {
+        href: "/cefr/b1/...",
+        label: "Talk about learning preferences",
+      },
+      // Speculate about the future
+      {
+        href: "/cefr/b1/...",
+        label: "Speculate about the future",
       },
     ],
   },
@@ -69,6 +106,14 @@ const links = [
   {
     title: "B2 Upper-Intermediate",
     links: [
+      {
+        href: "/cefr/b2/modals",
+        label: "...",
+      },
+      {
+        href: "/cefr/b2/modals",
+        label: "...",
+      },
       {
         href: "/cefr/b2/modals",
         label: "...",
