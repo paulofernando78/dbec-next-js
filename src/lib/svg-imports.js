@@ -148,15 +148,15 @@ export const Keyboard = () => (
   </svg>
 );
 
-export const Lesson = (props) => (
+export const Lesson = ({className, ...props}) => (
   <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    width={iconSize}
-    height={iconSize}
-    viewBox="0 -960 960 960"
-    fill="#999999"
-    className={className}
+  xmlns="http://www.w3.org/2000/svg"
+  width={iconSize}
+  height={iconSize}
+  viewBox="0 -960 960 960"
+  fill="#999999"
+  className={className}
+  {...props}
   >
     <path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
   </svg>
@@ -176,12 +176,12 @@ export const LightMode = () => (
 
 export const PauseAudio = (props) => (
   <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    height="24px"
-    viewBox="0 -960 960 960"
-    width="24px"
-    fill="#999999"
+  xmlns="http://www.w3.org/2000/svg"
+  height="24px"
+  viewBox="0 -960 960 960"
+  width="24px"
+  fill="#999999"
+  {...props}
   >
     <path d="M360-320h80v-320h-80v320Zm160 0h80v-320h-80v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
@@ -189,11 +189,11 @@ export const PauseAudio = (props) => (
 
 export const PlayAudio = (props) => (
   <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    width={iconSize}
-    viewBox="0 -960 960 960"
-    fill="#999999"
+  xmlns="http://www.w3.org/2000/svg"
+  width={iconSize}
+  viewBox="0 -960 960 960"
+  fill="#999999"
+  {...props}
   >
     <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
@@ -250,11 +250,11 @@ export const Show = () => (
 
 export const StopAudio = (props) => (
   <svg
-    {...props}
-    xmlns="http://www.w3.org/2000/svg"
-    height={iconSize}
-    viewBox="0 -960 960 960"
-    fill="#999999"
+  xmlns="http://www.w3.org/2000/svg"
+  height={iconSize}
+  viewBox="0 -960 960 960"
+  fill="#999999"
+  {...props}
   >
     <path d="M320-320h320v-320H320v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
