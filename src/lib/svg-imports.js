@@ -123,6 +123,19 @@ export const Incorrect = ({ className }) => (
   </svg>
 );
 
+export const LinkIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#999999"
+    className={className}
+  >
+    <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
+  </svg>
+);
+
 export const Keyboard = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +148,7 @@ export const Keyboard = () => (
   </svg>
 );
 
-export const Lesson = ({ className, ...props }) => (
+export const Lesson = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={iconSize}
@@ -143,7 +156,6 @@ export const Lesson = ({ className, ...props }) => (
     viewBox="0 -960 960 960"
     fill="#999999"
     className={className}
-    {...props}
   >
     <path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
   </svg>
@@ -161,7 +173,7 @@ export const LightMode = () => (
   </svg>
 );
 
-export const PauseAudio = ({ className, ...props }) => (
+export const PauseAudio = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height="24px"
@@ -169,20 +181,18 @@ export const PauseAudio = ({ className, ...props }) => (
     width="24px"
     fill="#999999"
     className={className}
-    {...props}
   >
     <path d="M360-320h80v-320h-80v320Zm160 0h80v-320h-80v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
 );
 
-export const PlayAudio = ({ className, ...props }) => (
+export const PlayAudio = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={iconSize}
     viewBox="0 -960 960 960"
     fill="#999999"
     className={className}
-    {...props}
   >
     <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
@@ -237,20 +247,19 @@ export const Show = () => (
   </svg>
 );
 
-export const StopAudio = ({ className, ...props }) => (
+export const StopAudio = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={iconSize}
     viewBox="0 -960 960 960"
     fill="#999999"
     className={className}
-    {...props}
   >
     <path d="M320-320h320v-320H320v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
 );
 
-export const UnderConstruction = ({ className, ...props }) => (
+export const UnderConstruction = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24px"
@@ -258,7 +267,6 @@ export const UnderConstruction = ({ className, ...props }) => (
     viewBox="0 -960 960 960"
     fill="#999999"
     className={className}
-    {...props}
   >
     <path d="m620-284 56-56q6-6 6-14t-6-14L540-505q4-11 6-22t2-25q0-57-40.5-97.5T410-690q-17 0-34 4.5T343-673l94 94-56 56-94-94q-8 16-12.5 33t-4.5 34q0 57 40.5 97.5T408-412q13 0 24.5-2t22.5-6l137 136q6 6 14 6t14-6ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>

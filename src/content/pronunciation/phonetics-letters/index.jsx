@@ -1,7 +1,9 @@
 import styles from "./phonetics.module.css";
 
-import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Section } from "@/components/molecules/Section";
+import { InlineText } from "@/components/molecules/InlineText";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { List } from "@/components/molecules/List";
 import { Links } from "@/components/molecules/Links";
@@ -11,24 +13,16 @@ export default function PhoneticsLetters() {
     <>
       <Whiteboard title="Pronunciation" subtitle="Phonetics + Letters" />
       <div className="line-break">
-        <Paragraph
-          blocks={[
+        <InlineText
+          text={[
             {
-              items: [
-                {
-                  audio: "/assets/audio/phonetics/check-out.mp3",
-                  text: [
-                    {
-                      part: "Check out the phonetic sounds of American English plus British variants.",
-                      type: "bold",
-                    },
-                  ],
-                },
-              ],
+              audio: "/assets/audio/phonetics/check-out.mp3",
+              part: "Check out the phonetic sounds of American English plus British variants.",
+              type: "bold",
             },
           ]}
         />
-
+        <Section id="Vowels" label="Vowels" heading={3}></Section>
         <Ribbon label="Vowels" />
         <List
           bullet={false}

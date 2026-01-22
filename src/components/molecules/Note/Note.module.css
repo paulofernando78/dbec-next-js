@@ -1,10 +1,15 @@
 .note {
   display: block;
   margin-bottom: var(--line-break);
+  color: black
 }
 
 .bg {
   background-color: var(--yellow-1);
+}
+
+.bg ul {
+  color: black
 }
 
 .bulleted {

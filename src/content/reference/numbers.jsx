@@ -8,6 +8,11 @@ import { List } from "@/components/molecules/List";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
+export const metadata = {
+  title: "Numbers in English – Cardinal and Ordinal",
+  description: "Learn cardinal and ordinal numbers in English with examples, dialogue, and practice exercises.",
+};
+
 export default function Numbers() {
   return (
     <>

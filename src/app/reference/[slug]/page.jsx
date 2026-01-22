@@ -10,6 +10,8 @@ export default async function Reference( {params} ) {
       await import(`@/content/reference/${slug}.jsx`)
     ).default;
 
+    
+
     return (
       <section>
         <Content />

@@ -23,18 +23,22 @@ const links = [
   {
     title: "A1 Beginner",
     links: [
+      // Introdutions
       {
         href: "/cefr/a1/introductions",
         label: "Introductions",
       },
+      // Personal Information
       {
         href: "/cefr/a1/personal-information",
         label: "Personal Information",
       },
+      // Daily Routines
       {
         href: "/cefr/a1/daily-routines",
         label: "Daily Routines",
       },
+      // Places & Objects
       {
         href: "/cefr/a1/places-objects",
         label: "Places & Objects",
@@ -75,10 +79,12 @@ const links = [
   {
     title: "PRONUNCIATION",
     links: [
+      // Phonetics + Letters
       {
         href: "/pronunciation/phonetics-letters",
         label: "Phonetics + Letters",
       },
+      // Linked Sounds
       {
         href: "/pronunciation/linked-sounds",
         label: "Linked Sounds",
@@ -89,26 +95,32 @@ const links = [
   {
     title: "VOCABULARY",
     links: [
+      // Dentistry
       {
         href: "/vocabulary/dentistry",
         label: "Dentistry",
       },
+      // Cooking
       {
         href: "/vocabulary/cooking",
         label: "Cooking",
       },
+      // Law
       {
         href: "/vocabulary/law",
         label: "Law",
       },
+      // Medicine
       {
         href: "/vocabulary/medicine",
         label: "Medicine",
       },
+      // Programming
       {
         href: "/vocabulary/programming",
         label: "Programming",
       },
+      // Travel
       {
         href: "/vocabulary/travel",
         label: "Travel",
@@ -119,90 +131,112 @@ const links = [
   {
     title: "REFERENCE",
     links: [
+      // The Alphabet
       {
         href: "/reference/the-alphabet",
         label: "The Alphabet",
       },
+      // Numbers
       {
         href: "/reference/numbers",
         label: "Numbers",
       },
+      // Articles
       {
         href: "/reference/articles",
         label: "Articles",
       },
+      // Pronouns
       {
         href: "/reference/pronouns",
         label: "Pronouns",
       },
+      // Adjectives
       {
         href: "/reference/adjectives",
         label: "Adjectives",
       },
+      // Nouns
       {
         href: "/reference/adjectives",
         label: "Nouns",
       },
+      // Adverbs
       {
         href: "/reference/adverbs",
         label: "Adverbs",
       },
+      // All Verb Tenses
       {
         href: "/reference/all-verb-tenses",
         label: "All Verb Tenses",
       },
+      // Infinitive vs. -ing
       {
         href: "/reference/infinitive-ing",
         label: "Infinitive vs. -ing",
       },
+      // Prepositions
       {
         href: "/reference/prepositions",
         label: "Prepositions",
       },
+      // Phrasal Verbs
       {
         href: "/reference/phrasal-verbs",
         label: "Phrasal Verbs",
       },
+      // Tag Questions
       {
         href: "/reference/tag-questions",
         label: "Tag Questions",
       },
+      // Passive Voice
       {
         href: "/reference/passive Voice",
         label: "Passive Voice",
       },
+      // Modal Verbs
       {
         href: "/reference/modals",
         label: "Modal Verbs",
       },
+      // Conditonals
       {
         href: "/reference/conditionals",
         label: "Conditionals",
       },
+      // Reported Speech
       {
         href: "/reference/reported-speech",
         label: "Reported Speech",
       },
+      // Collocations
       {
         href: "/reference/collocations",
         label: "Collocations",
       },
+      // To vs. For
       {
         href: "/reference/to-for",
         label: "To vs. For",
       },
+      // Homonyns
       {
         href: "/reference/homonyns",
         label: "Homonyns",
       },
+      // Expressions
       {
         href: "/reference/expressions",
         label: "Expressions",
       },
+      // Which one?
       {
         href: "/reference/which-one",
         label: "Which one?",
       },
+      // Word Families
       {
         href: "/reference/word-families",
         label: "Word Families",
