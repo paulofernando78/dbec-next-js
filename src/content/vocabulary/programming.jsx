@@ -4,7 +4,7 @@ import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
-export default function Blank() {
+export default function Programming() {
   return (
     <>
       <Whiteboard title="Vocabulary" subtitle="Programming" />

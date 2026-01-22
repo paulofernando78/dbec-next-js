@@ -4,12 +4,12 @@ import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
-export default function Blank() {
+export default function Medicine() {
   return (
     <>
       <Whiteboard title="Vocabulary" subtitle="Medicine & Healthcare" />
       <div className="line-break">
-        <InlineText text={[{ part: "Common medical and healthcare vocabulary", type: "bold" }]} />
+        <InlineText text={[{ part: "Common medical and healthcare vocabulary.", type: "bold" }]} />
         <Contents
           items={[
             { href: "#medical-professionals", label: "Medical Professionals" },
