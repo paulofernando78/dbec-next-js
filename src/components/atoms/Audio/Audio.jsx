@@ -84,6 +84,7 @@ export const Audio = ({ src }) => {
         preload="metadata"
         onEnded={handleEnded}
         onPause={handlePause}
+        onError={() => console.log("❌ Audio failed to load:", src)}
       />
     </>
   );
