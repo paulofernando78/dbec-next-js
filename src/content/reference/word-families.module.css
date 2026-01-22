@@ -28,6 +28,7 @@
   background-color: var(--slate-3);
   border-radius: var(--border-radius);
   padding: 3px 6px;
+  color: black
 }
 
 .header span {
@@ -40,13 +41,14 @@
 }
 
 .row > * {
+  border: var(--border);
   padding: 4px 5px 3px 5px;
   border-radius: var(--border-radius);
 }
 
-.row:nth-child(even) > * {
+/* .row:nth-child(even) > * {
   background-color: var(--slate-2);
-}
+} */
 
 .partOfSpeech {
   font-size: 1.1rem;
