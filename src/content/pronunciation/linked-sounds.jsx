@@ -321,7 +321,6 @@ export default function LikedSounds() {
                       },
                     ],
                   },
-
                   // Turn off the lights.
                   {
                     text: [
@@ -379,7 +378,26 @@ export default function LikedSounds() {
                       },
                       " even matter.",
                       {
-                        part: " ...",
+                        part: " No final, isso nem importa.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // Embark on an extraordinary journey.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/embark-on-an-extraordinary-journey.mp3",
+                      },
+                      "Embar",
+                      {
+                        part: "k on an e",
+                        type: "underline",
+                      },
+                      "xtraordinary journey.",
+                      {
+                        part: " Embarque em uma jornada extraordinária.",
                         type: "portuguese",
                       },
                     ],
@@ -507,6 +525,26 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // What's your name?
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/t-y/whats-your-name.mp3",
+                      },
+                      "Wha",
+                      {
+                        part: "t’(s) y",
+                        type: "underline",
+                      },
+                      "our name?",
+                      " ",
+                      {
+                        part: "Qual é o seu nome?",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
                   // Don’t you like it?
                   {
                     text: [
@@ -520,6 +558,7 @@ export default function LikedSounds() {
                         type: "underline",
                       },
                       "ou like it?",
+                      " ",
                       {
                         part: "Você não gosta?",
                         type: "portuguese",
@@ -539,6 +578,7 @@ export default function LikedSounds() {
                         type: "underline",
                       },
                       "ou like it?",
+                      " ",
                       {
                         part: "Você não gostou?",
                         type: "portuguese",

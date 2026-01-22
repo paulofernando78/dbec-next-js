@@ -14,8 +14,8 @@ export const Contents = ({ items = [] }) => {
         <ul>
           {items.map((item, index) => (
             <div key={index} className="flex-align">
-              <li className>
-                <ContentLink/>
+              <li className={item.lineBreak ? "line-break-item" : ""}>
+                <ContentLink className="icon-position"/>
                 <a href={`#${item.href}`}>{item.label}</a>
               </li>
             </div>

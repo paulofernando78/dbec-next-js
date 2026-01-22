@@ -49,7 +49,7 @@ export const Close = () => (
   </svg>
 );
 
-export const Content = ({}) => (
+export const Content = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24px"
@@ -61,13 +61,14 @@ export const Content = ({}) => (
   </svg>
 );
 
-export const ContentLink = ({}) => (
+export const ContentLink = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24px"
     height="24px"
     viewBox="0 -960 960 960"
     fill="#999999"
+    {... props}
   >
     <path d="M400-280h160v-80H400v80Zm0-160h280v-80H400v80ZM280-600h400v-80H280v80Zm200 120ZM265-80q-79 0-134.5-55.5T75-270q0-57 29.5-102t77.5-68H80v-80h240v240h-80v-97q-37 8-61 38t-24 69q0 46 32.5 78t77.5 32v80Zm135-40v-80h360v-560H200v160h-80v-160q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H400Z" />
   </svg>

@@ -16,158 +16,185 @@ export default function PhoneticsLetters() {
       <div className="line-break">
         <Contents
           items={[
+            // Vowels
             { href: "vowels", label: "Vowels" },
+            // Diphthongs
             { href: "diphthongs", label: "Diphthongs" },
+            // Consonants
             { href: "consonants", label: "Consonants" },
+            // Rhotic Vowes R
             {
               href: "rhotic-vowels-r",
               label: "Rhotic (Vowels + R)",
               phonetics: "/i/",
+              lineBreak: true,
             },
-            {
-              lineBreak: true
-            },
+            // Letter 'a'
             {
               href: "letter-a",
               label: "Letters 'a' (phonetics: /æ/, /ɑː/, /ə/, /eɪ/)",
             },
+            // Letter 'ai'
             {
               href: "letter-ai",
               label: "Letter 'ai' (phonetics: /e/)",
             },
+            // Letter 'au'
             {
               href: "",
               label: "Letter 'au' (phonetics: /ɑː/)",
             },
+            // Letter 'aw'
             {
               href: "",
               label: "Letter 'aw' (phonetics: /ɑː/)",
             },
+            // Letter 'awe'
             {
               href: "",
               label: "Letter 'awe' (phonetics: /ɑː/)",
+              lineBreak: true,
             },
-            {
-              lineBreak: true
-            },
+            // Letter 'e'
             {
               href: "letter e",
               label:
                 "Letters 'e', 'ea', 'ee', 'ei', 'eo', 'ey', 'i', 'ie', 'y' (phonetics: /iː/)",
             },
+            // Letter 'e'
             {
-              href: "letter e",
+              href: "letter-e-silent",
               label: "Letters 'e' silent",
             },
+            // Letter 'ea'
             {
               href: "",
               label: "Letter 'ea' (phonetics: /iː/)",
             },
+            // Letter 'eau'
             {
               href: "",
-              label: "Letter 'eau' (phonetics: /oʊ/)",
+              label: "Letters 'eau' (phonetics: /oʊ/)",
             },
+            // Letters 'ee'
             {
               href: "",
-              label: "Letter 'ee' (phonetics: /iː/)",
+              label: "Letters 'ee' (phonetics: /iː/)",
             },
+            // Letters 'ei'
             {
               href: "",
-              label: "Letter 'ei' (phonetics: /eɪ/)",
+              label: "Letters 'ei' (phonetics: /eɪ/)",
             },
+            // Letters 'eɪ'
             {
               href: "",
               label: "Letter 'et' (phonetics: /eɪ/)",
             },
+            // Letters 'ey'
             {
               href: "",
               label: "Letter 'ey' (phonetics: /i/, /eɪ/)",
             },
+            // Letters 'a' vs. 'e(a)'
             {
               href: "letters-a-e",
               label: "Letters 'a' vs. 'e(a)' (phonetics: /æ/ vs. /e/",
+              lineBreak: true,
             },
-            {
-              lineBreak: true
-            },
+            // Letter 'i'
             {
               href: "",
               label: "Letter 'i' (phonetics: /i/, /ɪ/, /ə/, /aɪ/, /ɑː/)",
             },
+            // Letters 'ea', 'ee'. vs. 'i'
             {
               href: "letters-ea-ee-i",
               label: "Letters 'ea', 'ee' vs. 'i' (phonetics: /iː/ vs. /ɪ/)",
             },
+            // Letter 'ie'
             {
               href: "",
               label: "Letters 'ie' (phonetics: /i/, /aɪ/)",
+              lineBreak: true
+            },
+            // Letters 'ng'
+            {
+              href: "",
+              label: "Letters 'ng' (phonetics: /ŋ/)",
+            },
+            // Letters 'sh'
+            {
+              href: "",
+              label: "Letters 'sh' (phonetics: /ʃ/)",
+            },
+            // Letters '(t)ch'
+            {
+              href: "",
+              label: "Letters '(t)ch' (phonetics: /tʃ/, /ʃ/, /k/)",
+            },
+            // Letters 'sh' vs. 'ch'
+            {
+              href: "",
+              label: "Letters 'sh' vs. 'ch' (phonetics: /ʃ/ vs. /tʃ/)",
+              lineBreak: true,
+            },
+            // Letter 'o'
+            {
+              href: "",
+              label: "Letter 'o' (phonetics: /ɑː/, /ɔː/, /oʊ/)",
+            },
+            // Letters 'oa'
+            {
+              href: "",
+              label: "Letters 'oa' (phonetics: /ɔː/, /oʊ/)",
+            },
+            // Letters 'oo'
+            {
+              href: "",
+              label: "Letters 'oo' (phonetics: /ʌ/, /ʊ/, /uː/)",
+            },
+            // Letters 'ous'
+            {
+              href: "",
+              label: "Letters 'ous' (phonetics: /əs/)",
+            },
+            // Letters 'ow'
+            {
+              href: "",
+              label: "Letters 'ow' (phonetics: /oʊ/, /aʊ/)",
+              lineBreak: true,
+            },
+            // Letter 't'
+            {
+              href: "",
+              label: "Letter 't' (phonetics: /t/)",
+              lineBreak: true,
+            },
+            // Letter 'u'
+            {
+              href: "",
+              label: "Letter 'u' (phonetics: /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/)",
+            },
+            // Letters 'ui'
+            {
+              href: "",
+              label: "Letters 'ui' (phonetics: /ɪ/, /aɪ/)",
             },
             {
               href: "",
-              label: "",
+              label: "Letters 'us' (phonetics: /əs/)",
             },
+            // "Letters 'oo' vs. 'u'
             {
               href: "",
-              label: "",
+              label: "Letters 'oo' vs. 'u' (phonetics: /uː/ vs /ʊ/)",
             },
+            // Letter 'y'
             {
               href: "",
-              label: "",
+              label: "Letter 'y' (phonetics: /i/, /j/, /aɪ/)",
             },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-            {
-              href: "",
-              label: "",
-            },
-
-            ,
           ]}
         />
         <InlineText
@@ -1799,6 +1826,7 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
+        {/* Letters 'a' /æ/ vs. 'e' /e/ */}
         <Section
           id="letters-a-e"
           label="Letters 'a' /æ/ vs. 'e' /e/"
@@ -2142,6 +2170,7 @@ export default function PhoneticsLetters() {
             />
           </Card>
         </Section>
+        {/* Letters 'ea', 'ee' /iː/ vs. 'i' /ɪ/ */}
         <Section
           id="letters-ea-ee-i"
           label="Letters 'ea', 'ee' /iː/ vs. 'i' /ɪ/"

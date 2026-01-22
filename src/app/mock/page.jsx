@@ -1059,7 +1059,7 @@ export default function Mock() {
                     phonetics: "...",
                   },
                 ],
-              },
+              }
             ]}
           />
         </Section>
