@@ -10,14 +10,16 @@ export default function WhichOne() {
       <div className="line-break">
         <Contents
           items={[
-            { href: "#say-speak-tell", label: "say / speak / tell" },
-            {
-              href: "#stationary-stationery",
-              label: "stationary vs stationery",
-            },
-            { href: "#affect-effect", label: "affect vs effect" },
-            { href: "#lend-borrow", label: "lend vs borrow" },
-            { href: "#lose-loose", label: "lose vs loose" },
+            { href: "say-speak-tell", label: "say / speak / tell" },
+            { href: "stationary-stationery", label: "stationary vs stationery" },
+            { href: "affect-effect", label: "affect vs effect" },
+            { href: "lend-borrow", label: "lend vs borrow" },
+            { href: "lose-loose", label: "lose vs loose" },
+            { href: "make-do", label: "make / do" },
+            { href: "listen-hear", label: "listen / hear" },
+            { href: "bring-take", label: "bring / take" },
+            { href: "look-see-watch", label: "look / see / watch" },
+            { href: "change-swap-shift", label: "change / swap / shift / switch" },
           ]}
         />
         <Section id="say-speak-tell" label="say / speak / tell" heading={3}>
@@ -158,39 +160,23 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "stationary", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: not moving / fixed in one place"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/stationary-1.mp3" },
-                      "The car remained stationary at the traffic light.",
+                      { part: "stationary:", type: "bold" },
+                      " not moving / fixed in one place",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "O carro permaneceu parado no semáforo.",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/stationary-2.mp3" },
-                      "The bike stayed stationary during the repair.",
+                      { bullet: true, part: "The car remained stationary at the traffic light." },
+                      " ",
+                      { part: "O carro permaneceu parado no semáforo.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "A bicicleta ficou parada durante o conserto.",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "The bike stayed stationary during the repair." },
+                      " ",
+                      { part: "A bicicleta ficou parada durante o conserto.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -199,39 +185,23 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "stationery", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: paper, pens, and office or school supplies"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/stationery-1.mp3" },
-                      "She bought some stationery for the office.",
+                      { part: "stationery:", type: "bold" },
+                      " paper, pens, and office or school supplies",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Ela comprou alguns materiais de papelaria para o escritório.",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/stationery-2.mp3" },
-                      "The store sells school stationery.",
+                      { bullet: true, part: "She bought some stationery for the office." },
+                      " ",
+                      { part: "Ela comprou alguns materiais de papelaria para o escritório.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "A loja vende papelaria escolar.",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "The store sells school stationery." },
+                      " ",
+                      { part: "A loja vende papelaria escolar.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -246,39 +216,23 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "affect", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: verb — to influence or change something"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/affect-1.mp3" },
-                      "Lack of sleep can affect your performance.",
+                      { part: "affect:", type: "bold" },
+                      " verb — to influence or change something",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "A falta de sono pode afetar seu desempenho.",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/affect-2.mp3" },
-                      "This decision will affect the whole team.",
+                      { bullet: true, part: "Lack of sleep can affect your performance." },
+                      " ",
+                      { part: "A falta de sono pode afetar seu desempenho.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Essa decisão vai afetar toda a equipe.",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "This decision will affect the whole team." },
+                      " ",
+                      { part: "Essa decisão vai afetar toda a equipe.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -287,39 +241,23 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "effect", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: noun — the result of a change or action"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/effect-1.mp3" },
-                      "The new policy had a positive effect.",
+                      { part: "effect:", type: "bold" },
+                      " noun — the result of a change or action",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "A nova política teve um efeito positivo.",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/effect-2.mp3" },
-                      "What is the effect of this medicine?",
+                      { bullet: true, part: "The new policy had a positive effect." },
+                      " ",
+                      { part: "A nova política teve um efeito positivo.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Qual é o efeito deste remédio?",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "What is the effect of this medicine?" },
+                      " ",
+                      { part: "Qual é o efeito deste remédio?", type: "portuguese" },
                     ],
                   },
                 ],
@@ -334,39 +272,23 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "lend", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: give something temporarily to someone"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/lend-1.mp3" },
-                      "Can you lend me your pen?",
+                      { part: "lend:", type: "bold" },
+                      " give something temporarily to someone",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Você pode me emprestar sua caneta?",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/lend-2.mp3" },
-                      "She lent her book to a friend.",
+                      { bullet: true, part: "Can you lend me your pen?" },
+                      " ",
+                      { part: "Você pode me emprestar sua caneta?", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Ela emprestou o livro para um amigo.",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "She lent her book to a friend." },
+                      " ",
+                      { part: "Ela emprestou o livro para um amigo.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -375,39 +297,23 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "borrow", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: receive something temporarily from someone"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/borrow-1.mp3" },
-                      "Can I borrow your pen?",
+                      { part: "borrow:", type: "bold" },
+                      " receive something temporarily from someone",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Posso pegar sua caneta emprestada?",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/borrow-2.mp3" },
-                      "He borrowed some money from his brother.",
+                      { bullet: true, part: "Can I borrow your pen?" },
+                      " ",
+                      { part: "Posso pegar sua caneta emprestada?", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Ele pegou dinheiro emprestado do irmão.",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "He borrowed some money from his brother." },
+                      " ",
+                      { part: "Ele pegou dinheiro emprestado do irmão.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -422,39 +328,23 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "lose", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: verb — to misplace or fail to keep or win"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/lose-1.mp3" },
-                      "Don’t lose your keys.",
+                      { part: "lose:", type: "bold" },
+                      " verb — to misplace or fail to keep or win",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Não perca suas chaves.",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/lose-2.mp3" },
-                      "They might lose the game.",
+                      { bullet: true, part: "Don’t lose your keys." },
+                      " ",
+                      { part: "Não perca suas chaves.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Eles podem perder o jogo.",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "They might lose the game." },
+                      " ",
+                      { part: "Eles podem perder o jogo.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -463,39 +353,383 @@ export default function WhichOne() {
               {
                 lines: [
                   {
-                    text: [{ part: "loose", type: "bold" }],
-                  },
-                  {
-                    text: ["Focus: adjective — not tight or firmly fixed"],
-                    lineBreak: true,
-                  },
-                  {
                     text: [
-                      { audio: "/assets/audio/general/loose-1.mp3" },
-                      "This shirt is too loose.",
+                      { part: "loose:", type: "bold" },
+                      " adjective — not tight or firmly fixed",
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "Essa camisa está muito larga.",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { audio: "/assets/audio/general/loose-2.mp3" },
-                      "The screw is loose.",
+                      { bullet: true, part: "This shirt is too loose." },
+                      " ",
+                      { part: "Essa camisa está muito larga.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      {
-                        part: "O parafuso está solto.",
-                        type: "portuguese",
-                      },
+                      { bullet: true, part: "The screw is loose." },
+                      " ",
+                      { part: "O parafuso está solto.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="make-do" label="make / do" heading={3}>
+          <Paragraph
+            blocks={[
+              // make
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "make:", type: "bold" },
+                      " create or produce something (result)",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "She made a cake for her birthday." },
+                      " ",
+                      { part: "Ela fez um bolo para o aniversário dela.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Let’s make a decision." },
+                      " ",
+                      { part: "Vamos tomar uma decisão.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // do
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "do:", type: "bold" },
+                      " perform an activity or task",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I do my homework every evening." },
+                      " ",
+                      { part: "Eu faço minha lição de casa toda noite.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "She is doing the dishes." },
+                      " ",
+                      { part: "Ela está lavando a louça.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="listen-hear" label="listen / hear" heading={3}>
+          <Paragraph
+            blocks={[
+              // listen
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "listen:", type: "bold" },
+                      " pay attention to a sound (intentional)",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Please listen to the teacher." },
+                      " ",
+                      { part: "Por favor, escute o professor.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I like to listen to music while studying." },
+                      " ",
+                      { part: "Eu gosto de ouvir música enquanto estudo.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // hear
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "hear:", type: "bold" },
+                      " receive a sound (not intentional)",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I can hear a strange noise." },
+                      " ",
+                      { part: "Eu consigo ouvir um barulho estranho.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Did you hear what she said?" },
+                      " ",
+                      { part: "Você ouviu o que ela disse?", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="bring-take" label="bring / take" heading={3}>
+          <Paragraph
+            blocks={[
+              // bring
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "bring:", type: "bold" },
+                      " move something to where the speaker is",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Please bring your book to class." },
+                      " ",
+                      { part: "Por favor, traga seu livro para a aula.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "She brought a gift for me." },
+                      " ",
+                      { part: "Ela trouxe um presente para mim.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // take
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "take:", type: "bold" },
+                      " move something away from the speaker",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Please take this form to the office." },
+                      " ",
+                      { part: "Por favor, leve este formulário para o escritório.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "He took his bag and left." },
+                      " ",
+                      { part: "Ele pegou a bolsa dele e saiu.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="look-see-watch" label="look / see / watch" heading={3}>
+          <Paragraph
+            blocks={[
+              // look
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "look:", type: "bold" },
+                      " direct your eyes to something (intentional)",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Look at the board, please." },
+                      " ",
+                      { part: "Olhe para o quadro, por favor.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "She looked out the window." },
+                      " ",
+                      { part: "Ela olhou pela janela.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // see
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "see:", type: "bold" },
+                      " notice something with your eyes (not intentional)",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I can see a bird in the tree." },
+                      " ",
+                      { part: "Eu consigo ver um pássaro na árvore.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Did you see my message?" },
+                      " ",
+                      { part: "Você viu minha mensagem?", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // watch
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "watch:", type: "bold" },
+                      " look at something for a period of time",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "We watched a movie last night." },
+                      " ",
+                      { part: "Nós assistimos a um filme ontem à noite.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "He watches TV after work." },
+                      " ",
+                      { part: "Ele assiste TV depois do trabalho.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="change-swap-shift" label="change / swap / shift / switch" heading={3}>
+          <Paragraph
+            blocks={[
+              // change
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "change:", type: "bold" },
+                      " make something different in general",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I want to change my job." },
+                      " ",
+                      { part: "Eu quero mudar de emprego.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "She changed her mind about the trip." },
+                      " ",
+                      { part: "Ela mudou de ideia sobre a viagem.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // swap
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "swap:", type: "bold" },
+                      " exchange one thing for another",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "Let’s swap seats." },
+                      " ",
+                      { part: "Vamos trocar de lugar.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "They swapped phone numbers." },
+                      " ",
+                      { part: "Eles trocaram números de telefone.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // shift
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "shift:", type: "bold" },
+                      " move or change position slightly or gradually",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "The focus of the meeting shifted to budget issues." },
+                      " ",
+                      { part: "O foco da reunião mudou para questões de orçamento.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "He shifted in his chair to get comfortable." },
+                      " ",
+                      { part: "Ele se mexeu na cadeira para ficar confortável.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+              // switch
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "switch:", type: "bold" },
+                      " change from one thing to another, often quickly or completely",
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I switched my phone to silent mode." },
+                      " ",
+                      { part: "Eu coloquei meu celular no modo silencioso.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "She switched seats with her friend." },
+                      " ",
+                      { part: "Ela trocou de lugar com a amiga.", type: "portuguese" },
                     ],
                   },
                 ],
