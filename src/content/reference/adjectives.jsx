@@ -596,6 +596,30 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // He is faster than me.
+                  {
+                    text: [
+                      { bullet: true },
+                      "He is faster than me.",
+                      " ",
+                      {
+                        part: "Ele é mais rápido do que eu.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This is the quicker way to get there.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the quicker way to get there.",
+                      " ",
+                      {
+                        part: "Este é o jeito mais rápido de chegar lá.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
                   {
                     lineBreak: true,
                   },
@@ -651,10 +675,10 @@ export default function Adjectives() {
                   {
                     text: [
                       { bullet: true },
-                      "nicer than",
+                      "This park is nicer than the one near my house.",
                       " ",
                       {
-                        part: "...",
+                        part: "Este parque é mais legal / mais agradável do que o perto da minha casa.",
                         type: "portuguese",
                       },
                     ],
@@ -663,10 +687,10 @@ export default function Adjectives() {
                   {
                     text: [
                       { bullet: true },
-                      "safer than",
+                      "This neighborhood is safer than the city center.",
                       " ",
                       {
-                        part: "...",
+                        part: "Este bairro é mais seguro do que o centro da cidade.",
                         type: "portuguese",
                       },
                     ],
