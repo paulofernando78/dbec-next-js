@@ -15,6 +15,7 @@ export default function Adjectives() {
             { href: "comparative", label: "Comparatives" },
             { href: "ing-ed", label: "Superlatives" },
             { href: "ing-ed", label: "-ing vs. -ed" },
+            { href: "descriptive", label: "Descriptive" },
             { href: "compound", label: "Compound" },
           ]}
         />
@@ -184,61 +185,88 @@ export default function Adjectives() {
                     text: [
                       { part: "Adjectives ending in -ing", type: "bold" },
                       " ",
-                      {
-                        part: "describe the cause of a feeling or what makes something interesting, boring, exciting, etc.",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "They describe the thing, situation, or person that creates the feeling.",
-                      },
+                      "describe the ",
+                      { part: "cause", type: "mark" },
+                      " of a feeling or what makes something interesting, boring, exciting, etc.",
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+                  // The movie is interesting.
+                  {
                     text: [
-                      { part: "The movie is interesting.", type: "bold" },
-                      " ",
+                      {
+                        bullet: true,
+                        part: "The movie is interest",
+                        type: "bold",
+                      },
+                      {
+                        part: "ing",
+                        type: "mark",
+                      },
+                      ". ",
                       { part: "O filme é interessante.", type: "portuguese" },
                     ],
                   },
+                  // The class was boring.
                   {
                     text: [
-                      { part: "The class was boring.", type: "bold" },
-                      " ",
+                      {
+                        bullet: true,
+                        part: "The class was bor",
+                        type: "bold",
+                      },
+                      {
+                        part: "ing",
+                        type: "mark",
+                      },
+                      ". ",
                       { part: "A aula foi entediante.", type: "portuguese" },
                     ],
+                  },
+                  {
                     lineBreak: true,
                   },
                   // Adjectives ending in -ed
                   {
                     text: [
                       { part: "Adjectives ending in -ed", type: "bold" },
-                      " ",
+                      " describe how a person",
                       {
-                        part: "describe how a person feels as a result of something.",
-                        type: "portuguese",
+                        part: "feels",
+                        type: "mark",
                       },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "They describe the feeling, not the cause.",
-                      },
+                      " as a result of something.",
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+                  // I am interested in the movie.
+                  {
                     text: [
-                      { part: "I am interested in the movie.", type: "bold" },
-                      " ",
+                      { bullet: true, part: "I am interest", type: "bold" },
+                      {
+                        part: "ed",
+                        type: "mark",
+                      },
+                      " in the movie. ",
                       {
                         part: "Eu estou interessado no filme.",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // She was bored during the class.
                   {
                     text: [
-                      { part: "She was bored during the class.", type: "bold" },
+                      { bullet: true, part: "She was bor", type: "bold" },
+                      {
+                        part: "ed",
+                        type: "mark",
+                      },
+                      " during the class. ",
                       " ",
                       {
                         part: "Ela estava entediada durante a aula.",
@@ -246,15 +274,96 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // They are excited about the trip.
                   {
                     text: [
                       {
-                        part: "They are excited about the trip.",
+                        bullet: true,
+                        part: "They are excit",
+                        type: "bold",
+                      },
+                      {
+                        part: "ed",
+                        type: "mark",
+                      },
+                      " about the trip. ",
+                      " ",
+                      {
+                        part: "Eles estão animados com a viagem.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section
+          id="descriptive"
+          label="-ing (Descriptive / Participial)"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "-ing as a descriptive / participial adjective",
                         type: "bold",
                       },
                       " ",
                       {
-                        part: "Eles estão animados com a viagem.",
+                        part: "is used to describe a state, characteristic, or type of thing, not a feeling or its cause.",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        bullet: true,
+                        part: "It answers: What kind of thing is it?",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "living organisms", type: "bold" },
+                      " ",
+                      { part: "organismos vivos", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "a sleeping baby", type: "bold" },
+                      " ",
+                      { part: "um bebê dormindo", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "boiling water", type: "bold" },
+                      " ",
+                      { part: "água fervendo", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "flying saucer", type: "bold" },
+                      " ",
+                      { part: "disco voador", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "Note:",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "Here, -ing words describe the thing itself or form part of its name, not emotions or feelings.",
                         type: "portuguese",
                       },
                     ],
