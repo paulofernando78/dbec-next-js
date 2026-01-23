@@ -36,11 +36,157 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
-                  {
-                    text: ["These are irregular."],
-                  },
+                  // Irregular
                   {
                     text: [
+                      {
+                        important: true,
+                      },
+                      "Irregular.",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // good
+                  {
+                    text: [
+                      {
+                        part: "good",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "bom",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "better",
+                        type: "bold",
+                      },
+
+                      " ",
+                      {
+                        part: "melhor",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // bad
+                  {
+                    text: [
+                      {
+                        part: "bad",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "ruim, péssimo",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "worse",
+                        type: "bold",
+                      },
+
+                      " ",
+                      {
+                        part: "pior",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // little
+                  {
+                    text: [
+                      {
+                        part: "little",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "pouco",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "less",
+                        type: "bold",
+                      },
+
+                      " ",
+                      {
+                        part: "menos",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // much
+                  {
+                    text: [
+                      {
+                        part: "much",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "muito",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "more",
+                        type: "bold",
+                      },
+
+                      " ",
+                      {
+                        part: "mais",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // far
+                  {
+                    text: [
+                      {
+                        part: "far",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "longe, distante",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "farther / further",
+                        type: "bold",
+                      },
+
+                      " ",
+                      {
+                        part: "mais longe, distante",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // This book is better than that one.
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
                       "This book is better than that one.",
                       " ",
                       {
@@ -52,12 +198,12 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
-                  // Short adjectives usually add -er.
+                  // To make comparative forms with one-syllable adjectives, we usually add -er.
                   {
                     text: [
                       {
                         important: true,
-                        part: "Short adjectives usually add -er.",
+                        part: "To make comparative forms with one-syllable adjectives, we usually add -er.",
                       },
                       " ",
                       {
@@ -69,22 +215,21 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
-
-                  // big
+                  // clean
                   {
                     text: [
                       {
-                        part: "big",
+                        part: "clean",
                         type: "bold",
                       },
                       " ",
                       {
-                        part: "grande",
+                        part: "limpo",
                         type: "portuguese",
                       },
                       " ➜ ",
                       {
-                        part: "bigg",
+                        part: "clean",
                         type: "bold",
                       },
                       {
@@ -93,7 +238,94 @@ export default function Adjectives() {
                       },
                       " ",
                       {
-                        part: "maior",
+                        part: "mais limpo",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // old
+                  {
+                    text: [
+                      {
+                        part: "old",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "velho",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "old",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais velho",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // rich
+                  {
+                    text: [
+                      {
+                        part: "rich",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "rico",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "rich",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais rico",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // slow
+                  {
+                    text: [
+                      {
+                        part: "slow",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "devagar",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "slow",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais devagar",
                         type: "portuguese",
                       },
                       " ",
@@ -123,6 +355,35 @@ export default function Adjectives() {
                       " ",
                       {
                         part: "menor",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // smart
+                  {
+                    text: [
+                      {
+                        part: "smart",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "inteligente",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "smarter",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais inteligente",
                         type: "portuguese",
                       },
                       " ",
@@ -160,48 +421,374 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
+                  // This room is cleaner than the kitchen.
                   {
                     text: [
                       { bullet: true },
-                      "This house is bigger than that one.",
+                      "This room is cleaner than the kitchen.",
                       " ",
-                      { part: "Esta casa é maior que aquela.", type: "portuguese" },
+                      {
+                        part: "Este quarto está mais limpo do que a cozinha.",
+                        type: "portuguese",
+                      },
                     ],
                   },
+                  // My phone is older than yours.
+                  {
+                    text: [
+                      { bullet: true },
+                      "My phone is older than yours.",
+                      " ",
+                      {
+                        part: "Meu celular é mais velho (mais antigo) do que o seu.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // He is richer than his cousin.
+                  {
+                    text: [
+                      { bullet: true },
+                      "He is richer than his cousin.",
+                      " ",
+                      {
+                        part: "Ele é mais rico que o primo dele.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This internet connection is slower than yesterday.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This internet connection is slower than yesterday.",
+                      " ",
+                      {
+                        part: "Esta conexão de internet está mais lenta do que ontem.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // My bag is smaller than yours.
                   {
                     text: [
                       { bullet: true },
                       "My bag is smaller than yours.",
                       " ",
-                      { part: "Minha bolsa é menor que a sua.", type: "portuguese" },
+                      {
+                        part: "Minha bolsa é menor que a sua.",
+                        type: "portuguese",
+                      },
                     ],
                   },
+                  // She is smarter than her classmates.
+                  {
+                    text: [
+                      { bullet: true },
+                      "She is smarter than her classmates.",
+                      " ",
+                      {
+                        part: "Ela é mais inteligente do que os colegas de classe.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // She is taller than her brother.
                   {
                     text: [
                       { bullet: true },
                       "She is taller than her brother.",
                       " ",
-                      { part: "Ela é mais alta que o irmão dela.", type: "portuguese" },
+                      {
+                        part: "Ela é mais alta que o irmão dela.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
                     lineBreak: true,
                   },
-                  // Long adjectives use more.
+                  // If an adjective ends in -e, we add -r:
                   {
                     text: [
                       {
                         important: true,
                       },
-                      "Long adjectives use more.",
+                      "If an adjective ends in -e, we add -r.",
                       " ",
                       {
-                        part: "Adjetivos longos usam more.",
+                        part: "Se um adjetivo termina em -e, adicionamos apenas -r.",
                         type: "portuguese",
                       },
                     ],
                   },
-                  // beaitiful
+                  {
+                    lineBreak: true,
+                  },
+                  // nice
+                  {
+                    text: [
+                      { part: "nice", type: "bold" },
+                      " ",
+                      { part: "legal / agradável", type: "portuguese" },
+                      " ➜ ",
+                      { part: "nic", type: "bold" },
+                      { part: "er", type: "mark" },
+                      " ",
+                      { part: "mais legal / agradável", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  // safe
+                  {
+                    text: [
+                      { part: "safe", type: "bold" },
+                      " ",
+                      { part: "seguro", type: "portuguese" },
+                      " ➜ ",
+                      { part: "saf", type: "bold" },
+                      { part: "er", type: "mark" },
+                      " ",
+                      { part: "mais seguro", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // nice
+                  {
+                    text: [
+                      { bullet: true },
+                      "nicer than",
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // safe
+                  {
+                    text: [
+                      { bullet: true },
+                      "safer than",
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // If an adjective ends in a vowel and a consonant, we usually double the consonant:
+                  {
+                    text: [
+                      {
+                        important: true,
+                      },
+                      "If an adjective ends in a vowel and a consonant, we usually double the consonant:",
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // big
+                  {
+                    text: [
+                      {
+                        part: "big",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "grande",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "bigg",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "maior",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // hot
+                  {
+                    text: [
+                      { part: "hot", type: "bold" },
+                      " ",
+                      { part: "quente", type: "portuguese" },
+                      " ➜ ",
+                      { part: "hott", type: "bold" },
+                      { part: "er", type: "mark" },
+                      " ",
+                      { part: "mais quente", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // This house is bigger than that one.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This house is bigger than that one.",
+                      " ",
+                      {
+                        part: "Esta casa é maior que aquela.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This coffee is hotter than the tea.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This coffee is hotter than the tea.",
+                      " ",
+                      {
+                        part: "Este café está mais quente do que o chá.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // If a two-syllable adjective ends in a consonant and -y, we change -y to -i and add -er.
+                  {
+                    text: [
+                      {
+                        important: true,
+                      },
+                      "If a two-syllable adjective ends in a consonant and -y, we change -y to -i and add -er",
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // busy
+                  {
+                    text: [
+                      { part: "busy", type: "bold" },
+                      " ",
+                      { part: "ocupado(a)", type: "portuguese" },
+                      " ➜ ",
+                      { part: "bus", type: "bold" },
+                      { part: "ier", type: "mark" },
+                      " ",
+                      { part: "mais ocupado(a)", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  // easy
+                  {
+                    text: [
+                      { part: "easy", type: "bold" },
+                      " ",
+                      { part: "fácil", type: "portuguese" },
+                      " ➜ ",
+                      { part: "eas", type: "bold" },
+                      { part: "ier", type: "mark" },
+                      " ",
+                      { part: "mais fácil", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  // happy
+                  {
+                    text: [
+                      { part: "happy", type: "bold" },
+                      " ",
+                      { part: "feliz", type: "portuguese" },
+                      " ➜ ",
+                      { part: "happ", type: "bold" },
+                      { part: "ier", type: "mark" },
+                      " ",
+                      { part: "mais feliz", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "I am busier this week than last week.",
+                      " ",
+                      {
+                        part: "Estou mais ocupado(a) esta semana do que na semana passada.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This test is easier than the previous one.",
+                      " ",
+                      {
+                        part: "Este teste é mais fácil do que o anterior.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "She feels happier at her new job than at the old one.",
+                      " ",
+                      {
+                        part: "Ela se sente mais feliz no novo trabalho do que no antigo.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // If adjectives with three or more syllables form the comparative by putting more in front of the adjective.
+                  {
+                    text: [
+                      {
+                        important: true,
+                      },
+                      "Adjectives with three or more syllables form the comparative by putting more in front of the adjective.",
+                      " ",
+                      {
+                        part: "Adjetivos com três ou mais sílabas formam o comparativo colocando more (mais) antes do adjetivo.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // beautiful
                   {
                     text: [
                       {
@@ -215,6 +802,11 @@ export default function Adjectives() {
                       },
                       " ➜ ",
                       {
+                        part: "more",
+                        type: "mark",
+                      },
+                      " ",
+                      {
                         part: "more beautiful",
                         type: "bold",
                       },
@@ -226,6 +818,7 @@ export default function Adjectives() {
                       " ",
                     ],
                   },
+                  // dangerous
                   {
                     text: [
                       {
@@ -239,7 +832,12 @@ export default function Adjectives() {
                       },
                       " ➜ ",
                       {
-                        part: "more dangerous",
+                        part: "more",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "dangerous",
                         type: "bold",
                       },
                       " ",
@@ -250,6 +848,7 @@ export default function Adjectives() {
                       " ",
                     ],
                   },
+                  // expensive
                   {
                     text: [
                       {
@@ -263,7 +862,12 @@ export default function Adjectives() {
                       },
                       " ➜ ",
                       {
-                        part: "more expensive",
+                        part: "more",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "expensive",
                         type: "bold",
                       },
                       " ",
@@ -274,23 +878,91 @@ export default function Adjectives() {
                       " ",
                     ],
                   },
+                  // important
+                  {
+                    text: [
+                      {
+                        part: "important",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "importante",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "more",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "important",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "mais importante",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // stressful
+                  {
+                    text: [
+                      {
+                        part: "stressful",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "estressante",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "more",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "stressful",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "mais estressante",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
                   {
                     lineBreak: true,
                   },
-                  {
-                    text: [
-                      { bullet: true },
-                      "This movie is more interesting than the last one.",
-                      " ",
-                      { part: "Este filme é mais interessante que o último.", type: "portuguese" },
-                    ],
-                  },
+                  // Living in the city is more expensive than living in the countryside.
                   {
                     text: [
                       { bullet: true },
                       "Living in the city is more expensive than living in the countryside.",
                       " ",
-                      { part: "Morar na cidade é mais caro do que morar no campo.", type: "portuguese" },
+                      {
+                        part: "Morar na cidade é mais caro do que morar no campo.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This movie is more interesting than the last one.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This movie is more interesting than the last one.",
+                      " ",
+                      {
+                        part: "Este filme é mais interessante que o último.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
