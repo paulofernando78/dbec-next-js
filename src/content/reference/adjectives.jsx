@@ -25,26 +25,39 @@ export default function Adjectives() {
             blocks={[
               {
                 lines: [
+                  // Comparative adjectives
                   {
                     text: [
                       { part: "Comparative adjectives", type: "bold" },
                       " ",
-                      {
-                        part: "are used to compare two people, things, or situations.",
-                        type: "portuguese",
-                      },
+                      "are used to compare two people, things, or situations.",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: ["These are irregular."],
+                  },
+                  {
+                    text: [
+                      "This book is better than that one.",
                       " ",
                       {
-                        bullet: true,
-                        part: "They show how one thing is different from another.",
+                        part: "Este livro é melhor que aquele.",
+                        type: "portuguese",
                       },
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+                  // Short adjectives usually add -er.
+                  {
                     text: [
                       {
+                        important: true,
                         part: "Short adjectives usually add -er.",
-                        type: "bold",
                       },
                       " ",
                       {
@@ -54,15 +67,133 @@ export default function Adjectives() {
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+
+                  // big
+                  {
                     text: [
-                      { part: "tall → taller", type: "bold" },
+                      {
+                        part: "big",
+                        type: "bold",
+                      },
                       " ",
-                      { part: "alto → mais alto", type: "portuguese" },
+                      {
+                        part: "grande",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "bigg",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "maior",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // small
+                  {
+                    text: [
+                      {
+                        part: "small",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "pequeno",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "small",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "menor",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // tall
+                  {
+                    text: [
+                      {
+                        part: "tall",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "alto",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "tall",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais alto",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This house is bigger than that one.",
+                      " ",
+                      { part: "Esta casa é maior que aquela.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      { part: "Long adjectives use more.", type: "bold" },
+                      { bullet: true },
+                      "My bag is smaller than yours.",
+                      " ",
+                      { part: "Minha bolsa é menor que a sua.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "She is taller than her brother.",
+                      " ",
+                      { part: "Ela é mais alta que o irmão dela.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // Long adjectives use more.
+                  {
+                    text: [
+                      {
+                        important: true,
+                      },
+                      "Long adjectives use more.",
                       " ",
                       {
                         part: "Adjetivos longos usam more.",
@@ -70,24 +201,96 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // beaitiful
                   {
                     text: [
-                      { part: "beautiful → more beautiful", type: "bold" },
+                      {
+                        part: "beautiful",
+                        type: "bold",
+                      },
                       " ",
-                      { part: "bonito → mais bonito", type: "portuguese" },
+                      {
+                        part: "bonito(a)",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "more beautiful",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "mais bonito(a)",
+                        type: "portuguese",
+                      },
+                      " ",
                     ],
                   },
                   {
                     text: [
                       {
-                        part: "This book is better than that one.",
+                        part: "dangerous",
                         type: "bold",
                       },
                       " ",
                       {
-                        part: "Este livro é melhor que aquele.",
+                        part: "perigoso(a)",
                         type: "portuguese",
                       },
+                      " ➜ ",
+                      {
+                        part: "more dangerous",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "mais perigoso(a)",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "expensive",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "caro",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "more expensive",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "mais caro",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This movie is more interesting than the last one.",
+                      " ",
+                      { part: "Este filme é mais interessante que o último.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "Living in the city is more expensive than living in the countryside.",
+                      " ",
+                      { part: "Morar na cidade é mais caro do que morar no campo.", type: "portuguese" },
                     ],
                   },
                 ],
