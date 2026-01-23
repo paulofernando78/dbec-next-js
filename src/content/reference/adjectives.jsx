@@ -244,6 +244,64 @@ export default function Adjectives() {
                       " ",
                     ],
                   },
+                  // fat
+                  {
+                    text: [
+                      {
+                        part: "fast",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "rápido",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "fast",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais rápido",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // fat
+                  {
+                    text: [
+                      {
+                        part: "fat",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "gordo",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "fatt",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais gordo",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
                   // old
                   {
                     text: [
@@ -268,6 +326,35 @@ export default function Adjectives() {
                       " ",
                       {
                         part: "mais velho",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  // quick
+                  {
+                    text: [
+                      {
+                        part: "quick",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "rápido",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "quick",
+                        type: "bold",
+                      },
+                      {
+                        part: "er",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "mais rápido",
                         type: "portuguese",
                       },
                       " ",
@@ -425,8 +512,12 @@ export default function Adjectives() {
                   {
                     text: [
                       { bullet: true },
-                      "This room is cleaner than the kitchen.",
-                      " ",
+                      "This room is ",
+                      {
+                        part: "cleaner than",
+                        type: "mark"
+                      },
+                      "  the kitchen.",
                       {
                         part: "Este quarto está mais limpo do que a cozinha.",
                         type: "portuguese",
