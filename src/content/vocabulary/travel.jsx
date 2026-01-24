@@ -7,7 +7,7 @@ import { Paragraph } from "@/components/molecules/Paragraph";
 export default function Travel() {
   return (
     <>
-      <Whiteboard title="Vocabulary" subtitle="blank" />
+      <Whiteboard title="Vocabulary" subtitle="Travel" />
       <div className="line-break">
         <InlineText text={[{ part: "Common vocabulary for travel.", type: "bold" }]} />
         <Contents

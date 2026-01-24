@@ -179,6 +179,46 @@ export default function Adjectives() {
                     ],
                   },
                   {
+                    lineBreak: true
+                  },
+                  // This book is better than that one.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This book is better than that one.",
+                      " ",
+                      { part: "Este livro é melhor que aquele.", type: "portuguese" },
+                    ],
+                  },
+                  // Today is worse than yesterday.
+                  {
+                    text: [
+                      { bullet: true },
+                      "Today is worse than yesterday.",
+                      " ",
+                      { part: "Hoje está pior do que ontem.", type: "portuguese" },
+                    ],
+                  },
+                  // I have less time this week than last week.
+                  {
+                    text: [
+                      { bullet: true },
+                      "I have less time this week than last week.",
+                      " ",
+                      { part: "Eu tenho menos tempo esta semana do que na semana passada.", type: "portuguese" },
+                    ],
+                  },
+                  
+                  // My house is farther from school than yours.
+                  {
+                    text: [
+                      { bullet: true },
+                      "My house is farther from school than yours.",
+                      " ",
+                      { part: "Minha casa fica mais longe da escola do que a sua.", type: "portuguese" },
+                    ],
+                  },
+                  {
                     lineBreak: true,
                   },
                   // This book is better than that one.
@@ -608,8 +648,8 @@ export default function Adjectives() {
                       },
                     ],
                   },
-                  // This is the quicker way to get there.
                   {
+                    // This is the quicker way to get there.
                     text: [
                       { bullet: true },
                       "This is the quicker way to get there.",
@@ -622,8 +662,8 @@ export default function Adjectives() {
                   },
                   {
                     lineBreak: true,
+                    // If an adjective ends in -e, we add -r:
                   },
-                  // If an adjective ends in -e, we add -r:
                   {
                     text: [
                       {
@@ -993,6 +1033,36 @@ export default function Adjectives() {
                       " ",
                     ],
                   },
+                  // experience
+                  {
+                    text: [
+                      {
+                        part: "experience",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "caro",
+                        type: "portuguese",
+                      },
+                      " ➜ ",
+                      {
+                        part: "more",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "experience",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "mais experiência",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
                   // important
                   {
                     text: [
@@ -1068,6 +1138,15 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // She has more experience than her colleague.
+                  {
+                    text: [
+                      { bullet: true },
+                      "She has more experience than her colleague.",
+                      " ",
+                      { part: "Ela tem mais experiência do que o colega dela.", type: "portuguese" },
+                    ],
+                  },
                   // This movie is more interesting than the last one.
                   {
                     text: [
@@ -1076,6 +1155,54 @@ export default function Adjectives() {
                       " ",
                       {
                         part: "Este filme é mais interessante que o último.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This place is more beautiful than the last one.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This place is more beautiful than the last one.",
+                      " ",
+                      {
+                        part: "Este lugar é mais bonito(a) do que o anterior.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This road is more dangerous at night.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This road is more dangerous at night.",
+                      " ",
+                      {
+                        part: "Esta estrada é mais perigosa à noite.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This decision is more important than the last one.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This decision is more important than the last one.",
+                      " ",
+                      {
+                        part: "Esta decisão é mais importante do que a anterior.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // This job is more stressful than my old one.
+                  {
+                    text: [
+                      { bullet: true },
+                      "This job is more stressful than my old one.",
+                      " ",
+                      {
+                        part: "Este trabalho é mais estressante do que o meu antigo.",
                         type: "portuguese",
                       },
                     ],

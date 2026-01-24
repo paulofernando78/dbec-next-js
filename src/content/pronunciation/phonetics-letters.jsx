@@ -200,7 +200,7 @@ export default function PhoneticsLetters() {
         <InlineText
           text={[
             {
-              audio: "/assets/audio/phonetics/check-out.mp3",
+              audio: "/assets/audio/phonetics-letters/check-out.mp3",
               part: "Check out the phonetic sounds of American English plus British variants.",
               type: "bold",
             },
@@ -213,8 +213,9 @@ export default function PhoneticsLetters() {
               // æ
               {
                 text: [
+                  // /æ/
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/æ.mp3",
                     part: "/æ/",
                     type: "phonetics",
                   },
@@ -229,35 +230,35 @@ export default function PhoneticsLetters() {
                   },
                   " ",
                   {
-                    audio: "/assets/audio/general/answer.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/answer.mp3",
                   },
                   "answer ",
                   {
-                    audio: "/assets/audio/general/ask.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ask.mp3",
                   },
                   "ask ",
                   {
-                    audio: "/assets/audio/general/cat.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/cat.mp3",
                   },
                   "cat ",
                   {
-                    audio: "/assets/audio/general/cant.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/cant.mp3",
                   },
                   "can’t ",
                   {
-                    audio: "/assets/audio/general/dance.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/dance.mp3",
                   },
                   "dance ",
                   {
-                    audio: "/assets/audio/general/fat.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/fat.mp3",
                   },
                   "fat ",
                   {
-                    audio: "/assets/audio/general/fast.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/fast.mp3",
                   },
                   "fast ",
                   {
-                    audio: "/assets/audio/general/man.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/man.mp3",
                   },
                   "man",
                 ],
@@ -267,7 +268,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     ukFlag: true,
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                     part: "/ɑː/",
                     type: "phonetics",
                   },
@@ -282,23 +283,23 @@ export default function PhoneticsLetters() {
                   },
                   " ",
                   {
-                    audio: "/assets/audio/general/answer-uk.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/answer-uk.mp3",
                   },
                   "answer ",
                   {
-                    audio: "/assets/audio/general/ask-uk.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/ask-uk.mp3",
                   },
                   "ask ",
                   {
-                    audio: "/assets/audio/general/cant-uk.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/cant-uk.mp3",
                   },
                   "can’t ",
                   {
-                    audio: "/assets/audio/general/dance-uk.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/dance-uk.mp3",
                   },
                   "dance ",
                   {
-                    audio: "/assets/audio/general/fast-uk.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/fast-uk.mp3",
                   },
                   "fast",
                 ],
@@ -308,7 +309,7 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/e.mp3",
                     part: "/e/",
                     type: "phonetics",
                   },
@@ -340,7 +341,7 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɪ.mp3",
                     part: "/ɪ/",
                     type: "phonetics",
                   },
@@ -372,7 +373,7 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/i.mp3",
                     part: "/iː/",
                     type: "phonetics",
                   },
@@ -406,7 +407,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ə-ʌ.mp3",
                     part: "/ə/",
                     type: "phonetics",
                   },
@@ -447,7 +448,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ə-ʌ.mp3",
                     part: "/ʌ/",
                     type: "phonetics",
                   },
@@ -502,7 +503,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     ukFlag: true,
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ʌ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ʌ.mp3",
                     part: "/ʌ/",
                     type: "phonetics",
                   },
@@ -535,7 +536,7 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                     part: "/ɑː/",
                     type: "phonetics",
                   },
@@ -572,7 +573,7 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɔ.mp3",
                     part: "/ɔː/",
                     type: "phonetics",
                   },
@@ -656,7 +657,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     ukFlag: true,
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ɒ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɒ.mp3",
                     part: "/ɒ/ ",
                     type: "phonetics",
                   },
@@ -696,7 +697,7 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ʊ.mp3",
                     part: "/ʊ/",
                     type: "phonetics",
                   },
@@ -732,7 +733,7 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
+                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/u.mp3",
                     part: "/uː/",
                     type: "phonetics",
                   },
@@ -772,7 +773,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/aɪ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/aɪ.mp3",
                     part: "/aɪ/",
                     type: "phonetics",
                   },
@@ -801,7 +802,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/aʊ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/aʊ.mp3",
                     part: "/aʊ/",
                     type: "phonetics",
                   },
@@ -830,7 +831,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/eɪ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/eɪ.mp3",
                     part: "/eɪ/",
                     type: "phonetics",
                   },
@@ -859,7 +860,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/ɔɪ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ɔɪ.mp3",
                     part: "/ɔɪ/",
                     type: "phonetics",
                   },
@@ -888,7 +889,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/oʊ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/oʊ.mp3",
                     part: "/oʊ/",
                     type: "phonetics",
                   },
@@ -919,7 +920,7 @@ export default function PhoneticsLetters() {
                   {
                     ukFlag: true,
                     audio:
-                      "/assets/audio/pronunciation/phonetics/vowels/əʊ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/əʊ.mp3",
                     part: "/əʊ/",
                     type: "phonetics",
                   },
@@ -956,7 +957,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/p.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/p.mp3",
                     part: "/p/",
                     type: "phonetics",
                   },
@@ -980,7 +981,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/b.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/b.mp3",
                     part: "/b/",
                     type: "phonetics",
                   },
@@ -1004,7 +1005,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/d.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/d.mp3",
                     part: "/d/",
                     type: "phonetics",
                   },
@@ -1028,7 +1029,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/k.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/k.mp3",
                     part: "/k/",
                     type: "phonetics",
                   },
@@ -1052,7 +1053,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/g.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/g.mp3",
                     part: "/g/",
                     type: "phonetics",
                   },
@@ -1076,7 +1077,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/f.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/f.mp3",
                     part: "/f/",
                     type: "phonetics",
                   },
@@ -1100,7 +1101,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/v.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/v.mp3",
                     part: "/v/",
                     type: "phonetics",
                   },
@@ -1124,7 +1125,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/θ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/θ.mp3",
                     part: "/θ/",
                     type: "phonetics",
                   },
@@ -1148,7 +1149,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/ð.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/ð.mp3",
                     part: "/ð/",
                     type: "phonetics",
                   },
@@ -1172,7 +1173,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/s.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/s.mp3",
                     part: "/s/",
                     type: "phonetics",
                   },
@@ -1196,7 +1197,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/z.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/z.mp3",
                     part: "/z/",
                     type: "phonetics",
                   },
@@ -1220,7 +1221,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/ʃ.mp3",
                     part: "/ʃ/",
                     type: "phonetics",
                   },
@@ -1244,7 +1245,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/ʒ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/ʒ.mp3",
                     part: "/ʒ/",
                     type: "phonetics",
                   },
@@ -1268,7 +1269,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/h.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/h.mp3",
                     part: "/h/",
                     type: "phonetics",
                   },
@@ -1292,7 +1293,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/m.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/m.mp3",
                     part: "/m/",
                     type: "phonetics",
                   },
@@ -1316,7 +1317,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/n.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/n.mp3",
                     part: "/n/",
                     type: "phonetics",
                   },
@@ -1340,7 +1341,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
                     part: "/ŋ/",
                     type: "phonetics",
                   },
@@ -1364,7 +1365,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/l.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/l.mp3",
                     part: "/l/",
                     type: "phonetics",
                   },
@@ -1388,7 +1389,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/r.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/r.mp3",
                     part: "/r/",
                     type: "phonetics",
                   },
@@ -1412,7 +1413,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/t.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/t.mp3",
                     part: "/t/",
                     type: "phonetics",
                   },
@@ -1436,7 +1437,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/j.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/j.mp3",
                     part: "/j/",
                     type: "phonetics",
                   },
@@ -1462,7 +1463,7 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     audio:
-                      "/assets/audio/pronunciation/phonetics/consonants/w.mp3",
+                      "/assets/audio/pronunciation/phonetics-letters/consonants/w.mp3",
                     part: "/w/",
                     type: "phonetics",
                   },

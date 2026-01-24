@@ -259,6 +259,26 @@ export default function LikedSounds() {
                       },
                     ],
                   },
+                  // I have online classes in the morning.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/.mp3",
+                      },
+                      "I’m having online class right now. Call me later.",
+                    ],
+                  },
+                  // You have to get used to it.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/.mp3",
+                      },
+                      "You have to get used to i(t).",
+                    ],
+                  },
                   // I like it a lot.
                   {
                     text: [
@@ -371,7 +391,7 @@ export default function LikedSounds() {
                         audio:
                           "/assets/audio/pronunciation/linked-sounds/consonant-vowel/in-the-end-it-doesnt-even-matter.mp3",
                       },
-                      "In the en(d), (i)t does",
+                      "In the en(d), i(t) does",
                       {
                         part: "n’t",
                         type: "underline",
@@ -438,7 +458,7 @@ export default function LikedSounds() {
                         part: "d y",
                         type: "underline",
                       },
-                      "ou like it? ",
+                      "ou like i(t)? ",
                       {
                         part: "Você gostou?",
                         type: "portuguese",
@@ -457,7 +477,7 @@ export default function LikedSounds() {
                         part: "d y",
                         type: "underline",
                       },
-                      "ou eat? ",
+                      "ou ea(t)? ",
                       {
                         part: "Você comeu?",
                         type: "portuguese",
@@ -494,7 +514,7 @@ export default function LikedSounds() {
                         part: "d y",
                         type: "underline",
                       },
-                      "ou like it? ",
+                      "ou like i(t)? ",
                       {
                         part: "Você gostaria?",
                         type: "portuguese",
