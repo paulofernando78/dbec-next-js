@@ -14,10 +14,12 @@ export default function WhatsCEFR() {
         <Contents
           items={[
             { href: "cefr", label: "What’s CEFR?" },
-            { href: "a1-beginner", label: "A1 Beginner" },
-            { href: "a2-elementary", label: "A2 Elementary" },
-            { href: "b1-intermediate", label: "B1 Intermediate" },
-            { href: "b2-plus", label: "B2+" },
+            { href: "a1-beginner", label: "A1 – Beginner" },
+            { href: "a2-elementary", label: "A2 – Elementary" },
+            { href: "b1-intermediate", label: "B1 – Intermediate" },
+            { href: "b2-upper-intermediate", label: "B2 – Upper-Intermediate" },
+            { href: "c1-advanced", label: "C1 – Advanced" },
+            { href: "c2-proficiency", label: "C2 – Proficiency" },
           ]}
         />
         <Section id="cefr" label="CEFR" heading={3}>
@@ -25,11 +27,28 @@ export default function WhatsCEFR() {
             blocks={[
               {
                 lines: [
-                  // What's CEFR?
                   {
                     text: [
                       {
-                        part: "What's does CEFR mean?",
+                        part: "This page can be used as a speaking placement guide or as a classroom practice reference for teachers and students.",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "Esta página pode ser usada como guia de nivelamento oral ou como referência de prática em sala para professores e alunos.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        part: "What does CEFR mean?",
                         type: "bold",
                       },
                     ],
@@ -111,6 +130,22 @@ export default function WhatsCEFR() {
                       },
                     ],
                   },
+                  { lineBreak: true },
+                  {
+                    text: [
+                      { part: "Questions", type: "bold" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  { text: [{ bullet: true, part: "Hello. How are you?" }] },
+                  { text: [{ bullet: true, part: "What's your name?" }] },
+                  { text: [{ bullet: true, part: "Where are you from?" }] },
+                  { text: [{ bullet: true, part: "Do you study English?" }] },
+                  { text: [{ bullet: true, part: "What is your favorite subject?" }] },
+                  { text: [{ bullet: true, part: "Do you have a job?" }] },
+                  { text: [{ bullet: true, part: "What do you do in your free time?" }] },
+                  { text: [{ bullet: true, part: "Do you like sports?" }] },
+                  { text: [{ bullet: true, part: "Do you play sports?" }] },
                 ],
               },
             ]}
@@ -134,6 +169,22 @@ export default function WhatsCEFR() {
                       },
                     ],
                   },
+                  { lineBreak: true },
+                  {
+                    text: [
+                      { part: "Questions", type: "bold" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  { text: [{ bullet: true, part: "Do you like movies?" }] },
+                  { text: [{ bullet: true, part: "What's your favorite movie?" }] },
+                  { text: [{ bullet: true, part: "What kinds of movies do you like?" }] },
+                  { text: [{ bullet: true, part: "Where did you grow up?" }] },
+                  { text: [{ bullet: true, part: "What did you do yesterday?" }] },
+                  { text: [{ bullet: true, part: "Did you study English in elementary school?" }] },
+                  { text: [{ bullet: true, part: "What was your favorite class?" }] },
+                  { text: [{ bullet: true, part: "What are you doing later today?" }] },
+                  { text: [{ bullet: true, part: "Are you doing anything tonight?" }] },
                 ],
               },
             ]}
@@ -157,12 +208,30 @@ export default function WhatsCEFR() {
                       },
                     ],
                   },
+                  { lineBreak: true },
+                  {
+                    text: [
+                      { part: "Questions", type: "bold" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  { text: [{ bullet: true, part: "Have you ever eaten unusual foods?" }] },
+                  { text: [{ bullet: true, part: "Where did you eat it?" }] },
+                  { text: [{ bullet: true, part: "How did you like it?" }] },
+                  { text: [{ bullet: true, part: "Would you try it again? Why or why not?" }] },
+                  { text: [{ bullet: true, part: "Do you live in a house or an apartment?" }] },
+                  { text: [{ bullet: true, part: "What is it like?" }] },
+                  { text: [{ bullet: true, part: "Compare your home with someone else’s home." }] },
                 ],
               },
             ]}
           />
         </Section>
-        <Section id="b2-plus" label="B2+" heading={3}>
+        <Section
+          id="b2-upper-intermediate"
+          label="B2 Upper-Intermediate"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
@@ -180,6 +249,103 @@ export default function WhatsCEFR() {
                       },
                     ],
                   },
+                  { lineBreak: true },
+                  {
+                    text: [
+                      { part: "Questions", type: "bold" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  { text: [{ bullet: true, part: "Describe a difficult event in your life:" }] },
+                  { text: [{ bullet: true, part: "– What happened?" }] },
+                  { text: [{ bullet: true, part: "– What were you doing at the time?" }] },
+                  { text: [{ bullet: true, part: "If you could study anything you wanted, what would you study?" }] },
+                  { text: [{ bullet: true, part: "Do you prefer studying during the day or at night?" }] },
+                  { text: [{ bullet: true, part: "Would you prefer an art class or a photography class?" }] },
+                  { text: [{ bullet: true, part: "Give two reasons for your choice." }] },
+                  { text: [{ bullet: true, part: "What will you be doing one year from now?" }] },
+                  { text: [{ bullet: true, part: "How do you think it will be different then?" }] },
+                  { text: [{ bullet: true, part: "Will you have finished your studies?" }] },
+                ],
+              },
+            ]}
+          />
+        </Section>
+        <Section id="c1-advanced" label="C1 Advanced" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      "At C1, learners can understand demanding, longer texts, recognize implicit meaning, and express themselves fluently without much obvious searching for expressions.",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "No nível C1, os alunos conseguem compreender textos longos e exigentes, reconhecer significados implícitos e se expressar com fluência, sem precisar procurar palavras com frequência.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+                  {
+                    text: [
+                      { part: "Questions", type: "bold" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  { text: [{ bullet: true, part: "Compare your life today with your life a few years ago." }] },
+                  { text: [{ bullet: true, part: "How has it changed?" }] },
+                  { text: [{ bullet: true, part: "What is the biggest problem in the world today?" }] },
+                  { text: [{ bullet: true, part: "Why is that the most important problem?" }] },
+                  { text: [{ bullet: true, part: "If you were responsible, how would you fix it?" }] },
+                  { text: [{ bullet: true, part: "What arguments might someone disagree with, and how would you respond?" }] },
+                  { text: [{ bullet: true, part: "What does it mean to be polite in your culture?" }] },
+                  { text: [{ bullet: true, part: "Give examples of polite and impolite behavior." }] },
+                  { text: [{ bullet: true, part: "Are you superstitious?" }] },
+                  { text: [{ bullet: true, part: "Do you believe that certain things cause good or bad luck? Why or why not?" }] },
+                  { text: [{ bullet: true, part: "What things do people avoid doing because of their beliefs?" }] },
+                  { text: [{ bullet: true, part: "What have you been told about your childhood?" }] },
+                  { text: [{ bullet: true, part: "Were you raised by relatives other than your parents?" }] },
+                  { text: [{ bullet: true, part: "Were you encouraged to be independent?" }] },
+                ],
+              },
+            ]}
+          />
+        </Section>
+        <Section id="c2-proficiency" label="C2 Proficiency" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      "At C2, learners can understand virtually everything heard or read with ease. They can summarize information from different spoken and written sources, reconstruct arguments, and express themselves spontaneously, very fluently, and precisely, even in complex academic or professional contexts.",
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        part: "No nível C2, os alunos conseguem compreender praticamente tudo o que ouvem ou leem com facilidade. Eles podem resumir informações de diferentes fontes faladas e escritas, reconstruir argumentos e se expressar de forma espontânea, muito fluente e precisa, mesmo em contextos acadêmicos ou profissionais complexos.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+                  {
+                    text: [
+                      { part: "Questions", type: "bold" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  { text: [{ bullet: true, part: "To what extent do you think technology has improved the quality of human relationships?" }] },
+                  { text: [{ bullet: true, part: "How would you balance economic growth and environmental protection in public policy?" }] },
+                  { text: [{ bullet: true, part: "Can cultural traditions slow down social progress? Why or why not?" }] },
+                  { text: [{ bullet: true, part: "Describe a complex problem in your field and propose a realistic solution." }] },
+                  { text: [{ bullet: true, part: "Summarize two opposing viewpoints on this issue and state your own position." }] },
+                  { text: [{ bullet: true, part: "How do media and misinformation influence public opinion in modern societies?" }] },
                 ],
               },
             ]}
