@@ -7,6 +7,7 @@ import { Card } from "@/components/atoms/Card";
 import { Comparison } from "@/components/molecules/Comparison/";
 import { Example } from "@/components/molecules/Example/";
 import { InlineText } from "@/components/molecules/InlineText";
+import { Paragraph } from "@/components/molecules/Paragraph";
 import { List } from "@/components/molecules/List";
 
 export default function PhoneticsLetters() {
@@ -27,6 +28,8 @@ export default function PhoneticsLetters() {
               href: "rhotic-vowels-r",
               label: "Rhotic (Vowels + R)",
               phonetics: "/i/",
+            },
+            {
               lineBreak: true,
             },
             // Letter 'a'
@@ -53,6 +56,8 @@ export default function PhoneticsLetters() {
             {
               href: "",
               label: "Letter 'awe' (phonetics: /ɑː/)",
+            },
+            {
               lineBreak: true,
             },
             // Letter 'e'
@@ -100,6 +105,8 @@ export default function PhoneticsLetters() {
             {
               href: "letters-a-e",
               label: "Letters 'a' vs. 'e(a)' (phonetics: /æ/ vs. /e/",
+            },
+            {
               lineBreak: true,
             },
             // Letter 'i'
@@ -116,7 +123,9 @@ export default function PhoneticsLetters() {
             {
               href: "",
               label: "Letters 'ie' (phonetics: /i/, /aɪ/)",
-              lineBreak: true
+            },
+            {
+              lineBreak: true,
             },
             // Letters 'ng'
             {
@@ -137,6 +146,8 @@ export default function PhoneticsLetters() {
             {
               href: "",
               label: "Letters 'sh' vs. 'ch' (phonetics: /ʃ/ vs. /tʃ/)",
+            },
+            {
               lineBreak: true,
             },
             // Letter 'o'
@@ -163,12 +174,26 @@ export default function PhoneticsLetters() {
             {
               href: "",
               label: "Letters 'ow' (phonetics: /oʊ/, /aʊ/)",
+            },
+            {
               lineBreak: true,
             },
             // Letter 't'
             {
               href: "",
               label: "Letter 't' (phonetics: /t/)",
+            },
+            // Silent 't'
+            {
+              href: "silent-t",
+              label: "Silent 't'",
+            },
+            // Flap 't'
+            {
+              href: "flap-t",
+              label: "Flap 't'",
+            },
+            {
               lineBreak: true,
             },
             // Letter 'u'
@@ -215,7 +240,8 @@ export default function PhoneticsLetters() {
                 text: [
                   // /æ/
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/æ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/æ.mp3",
                     part: "/æ/",
                     type: "phonetics",
                   },
@@ -230,35 +256,43 @@ export default function PhoneticsLetters() {
                   },
                   " ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/answer.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/answer.mp3",
                   },
                   "answer ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ask.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ask.mp3",
                   },
                   "ask ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/cat.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/cat.mp3",
                   },
                   "cat ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/cant.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/cant.mp3",
                   },
                   "can’t ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/dance.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/dance.mp3",
                   },
                   "dance ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/fat.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/fat.mp3",
                   },
                   "fat ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/fast.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/fast.mp3",
                   },
                   "fast ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/man.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/man.mp3",
                   },
                   "man",
                 ],
@@ -268,7 +302,8 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     ukFlag: true,
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                     part: "/ɑː/",
                     type: "phonetics",
                   },
@@ -283,23 +318,28 @@ export default function PhoneticsLetters() {
                   },
                   " ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/answer-uk.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/answer-uk.mp3",
                   },
                   "answer ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/ask-uk.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/ask-uk.mp3",
                   },
                   "ask ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/cant-uk.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/cant-uk.mp3",
                   },
                   "can’t ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/dance-uk.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/dance-uk.mp3",
                   },
                   "dance ",
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/fast-uk.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/æ/ɑ/fast-uk.mp3",
                   },
                   "fast",
                 ],
@@ -309,7 +349,8 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/e.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/e.mp3",
                     part: "/e/",
                     type: "phonetics",
                   },
@@ -341,7 +382,8 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɪ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ɪ.mp3",
                     part: "/ɪ/",
                     type: "phonetics",
                   },
@@ -373,7 +415,8 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/i.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/i.mp3",
                     part: "/iː/",
                     type: "phonetics",
                   },
@@ -503,7 +546,8 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     ukFlag: true,
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ʌ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ʌ.mp3",
                     part: "/ʌ/",
                     type: "phonetics",
                   },
@@ -536,7 +580,8 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                     part: "/ɑː/",
                     type: "phonetics",
                   },
@@ -573,7 +618,8 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɔ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ɔ.mp3",
                     part: "/ɔː/",
                     type: "phonetics",
                   },
@@ -657,7 +703,8 @@ export default function PhoneticsLetters() {
                 text: [
                   {
                     ukFlag: true,
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɒ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ɒ.mp3",
                     part: "/ɒ/ ",
                     type: "phonetics",
                   },
@@ -697,7 +744,8 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ʊ.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/ʊ.mp3",
                     part: "/ʊ/",
                     type: "phonetics",
                   },
@@ -733,7 +781,8 @@ export default function PhoneticsLetters() {
               {
                 text: [
                   {
-                    audio: "/assets/audio/pronunciation/phonetics-letters/vowels/u.mp3",
+                    audio:
+                      "/assets/audio/pronunciation/phonetics-letters/vowels/u.mp3",
                     part: "/uː/",
                     type: "phonetics",
                   },
@@ -2607,6 +2656,280 @@ export default function PhoneticsLetters() {
               ]}
             />
           </Card>
+        </Section>
+        <Section id="silent-t" label="Silent 't'" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // center
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "cen(t)er",
+                      },
+                      " ",
+                      {
+                        part: "centro",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // dentist
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "den(t)ist",
+                      },
+                      " ",
+                      {
+                        part: "dentista",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // indentify
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "inden(t)ify",
+                      },
+                      " ",
+                      {
+                        part: "identificar",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // indentity
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "inden(t)ity",
+                      },
+                      " ",
+                      {
+                        part: "identidade",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // international
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "in(t)ernational",
+                      },
+                      " ",
+                      {
+                        part: "internacional",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // international
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "in(t)ervention",
+                      },
+                      " ",
+                      {
+                        part: "intervenção",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // inturrupt
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "in(t)errupt",
+                      },
+                      " ",
+                      {
+                        part: "???",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+        <Section id="flap-t" label="Flap 't'" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "bo",
+                      },
+                      {
+                        part: "tt",
+                        type: "mark"
+                      },
+                      {
+                        part: "om",
+                      },
+                      " ",
+                      {
+                        part: "/ˈbɑː.t̬əm/",
+                        type: "phonetics"
+                      },
+                      " ",
+                      {
+                        part: "fundo, parte de baixo; bunda",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // butter
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "bu",
+                      },
+                      {
+                        part: "tt",
+                        type: "mark"
+                      },
+                      {
+                        part: "er",
+                      },
+                      " ",
+                      {
+                        part: "/ˈbʌt̬.ɚ/",
+                        type: "phonetics"
+                      },
+                      " ",
+                      {
+                        part: "manteiga",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // party
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "par",
+                      },
+                      {
+                        part: "t",
+                        type: "mark"
+                      },
+                      {
+                        part: "y",
+                      },
+                      " ",
+                      {
+                        part: "/ˈpɑːr.t̬i/",
+                        type: "phonetics"
+                      },
+                      " ",
+                      {
+                        part: "festa, ???",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // photo
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "pho",
+                      },
+                      {
+                        part: "t",
+                        type: "mark"
+                      },
+                      {
+                        part: "o",
+                      },
+                      " ",
+                      {
+                        part: "/ˈfoʊ.t̬oʊ/",
+                        type: "phonetics"
+                      },
+                      " ",
+                      {
+                        part: "foto",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // latter
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "la",
+                      },
+                      {
+                        part: "t",
+                        type: "mark"
+                      },
+                      {
+                        part: "er",
+                      },
+                      " ",
+                      {
+                        part: "/ˈleɪ.t̬ɚ/",
+                        type: "phonetics"
+                      },
+                      " ",
+                      {
+                        part: "mais tarde (tempo)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // water
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/",
+                        part: "wa",
+                      },
+                      {
+                        part: "t",
+                        type: "mark"
+                      },
+                      {
+                        part: "er",
+                      },
+                      " ",
+                      {
+                        part: "/ˈwɔː.t̬ər/",
+                        type: "phonetics"
+                      },
+                      " ",
+                      {
+                        part: "água",
+                        type: "portuguese",
+                      },
+                    ],
+                  }
+                ],
+              },
+            ]}
+          />
         </Section>
       </div>
     </>
