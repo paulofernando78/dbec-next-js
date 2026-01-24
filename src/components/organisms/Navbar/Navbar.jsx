@@ -221,6 +221,11 @@ const links = [
         href: "/reference/all-verb-tenses",
         label: "All Verb Tenses",
       },
+      // False Cognates
+      {
+        href: "/reference/false-cognates",
+        label: "False Cognates",
+      },
       // Infinitive vs. -ing
       {
         href: "/reference/infinitive-ing",

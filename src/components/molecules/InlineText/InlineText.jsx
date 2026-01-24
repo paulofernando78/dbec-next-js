@@ -10,6 +10,7 @@ import { Underline } from "@/components/atoms/Underline";
 import { PartOfSpeech } from "@/components/atoms/PartOfSpeech";
 import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
+import { PortugueseBold } from "@/components/atoms/PortugueseBold";
 import {
   Correct,
   Incorrect,
@@ -47,6 +48,9 @@ export const InlineText = ({ text = [] }) => {
             break;
           case "portuguese":
             content = <Portuguese>{part.part}</Portuguese>;
+            break;
+          case "portuguese-bold":
+            content = <PortugueseBold>{part.part}</PortugueseBold>;
             break;
         }
 
