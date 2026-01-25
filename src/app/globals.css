@@ -163,6 +163,10 @@ mark {
   padding-inline: 0.1rem;
 }
 
+.hr {
+  margin: 1rem 2px;
+}
+
 .flex {
   width: max-content;
   display: flex;

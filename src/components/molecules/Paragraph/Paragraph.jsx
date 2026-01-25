@@ -11,7 +11,9 @@ export const Paragraph = ({ blocks = [] }) => {
     <div className={styles.wrapper}>
       {blocks.map((block, blockIndex) => (
         <div key={blockIndex} className="line-break">
-          {block.audioPlayer && <AudioPlayer src={block.audioPlayer} className="line-break-item"/>}
+          {block.audioPlayer && (
+            <AudioPlayer src={block.audioPlayer} className="line-break-item" />
+          )}
           <div
             className={[
               block.imgs && styles.withImage,
@@ -37,12 +39,15 @@ export const Paragraph = ({ blocks = [] }) => {
             {block.lines && (
               <div className={styles.paragraphBlock}>
                 {(block.lines || []).map((line, lineIndex) => (
-                  <p
-                    key={lineIndex}
-                    className={line.lineBreak ? styles.pLineBreak : undefined}
-                  >
-                    <InlineText text={line.text} />
-                  </p>
+                  <>
+                    <p
+                      key={lineIndex}
+                      className={line.lineBreak ? styles.pLineBreak : undefined}
+                    >
+                      <InlineText text={line.text} />
+                    </p>
+                    {line.hr && <hr className="hr"/>}
+                  </>
                 ))}
               </div>
             )}
