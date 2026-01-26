@@ -11,6 +11,7 @@ import { PartOfSpeech } from "@/components/atoms/PartOfSpeech";
 import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import { PortugueseBold } from "@/components/atoms/PortugueseBold";
+import { Connector } from "@/components/atoms/Connector";
 import {
   Correct,
   Incorrect,
@@ -51,6 +52,9 @@ export const InlineText = ({ text = [] }) => {
             break;
           case "portuguese-bold":
             content = <PortugueseBold>{part.part}</PortugueseBold>;
+            break;
+            case "connector":
+            content = <Connector>{part.part}</Connector>;
             break;
         }
 

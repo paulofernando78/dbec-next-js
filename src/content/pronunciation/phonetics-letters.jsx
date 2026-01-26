@@ -258,50 +258,42 @@ export default function PhoneticsLetters() {
                       " ",
                       // answer
                       {
-                        audio:
-                          "/assets/audio/general/answer.mp3",
+                        audio: "/assets/audio/general/answer.mp3",
                       },
                       "answer ",
                       // ask
                       {
-                        audio:
-                          "/assets/audio/general/ask.mp3",
+                        audio: "/assets/audio/general/ask.mp3",
                       },
                       "ask ",
                       // cat
                       {
-                        audio:
-                          "/assets/audio/general/cat.mp3",
+                        audio: "/assets/audio/general/cat.mp3",
                       },
                       "cat ",
                       // cant
                       {
-                        audio:
-                          "/assets/audio/general/cant.mp3",
+                        audio: "/assets/audio/general/cant.mp3",
                       },
                       "can’t ",
                       // dance
                       {
-                        audio:
-                          "/assets/audio/general/dance.mp3",
+                        audio: "/assets/audio/general/dance.mp3",
                       },
                       "dance ",
                       // fat
                       {
-                        audio:
-                          "/assets/audio/general/fat.mp3",
+                        audio: "/assets/audio/general/fat.mp3",
                       },
                       "fat ",
                       // fast
                       {
-                        audio:
-                          "/assets/audio/general/fast.mp3",
+                        audio: "/assets/audio/general/fast.mp3",
                       },
                       "fast ",
                       // man
                       {
-                        audio:
-                          "/assets/audio/general/man.mp3",
+                        audio: "/assets/audio/general/man.mp3",
                       },
                       "man",
                     ],
@@ -2154,7 +2146,17 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/center.mp3",
+                        part: "center",
+                      },
+                      " ",
+                      {
+                        part: "or",
+                        type: "connector",
+                      },
+                      " ",
+                      {
+                        audio: "/assets/audio/general/cen(t)er.mp3",
                         part: "cen(t)er",
                       },
                       " ",
@@ -2168,7 +2170,17 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/dentist.mp3",
+                        part: "dentist",
+                      },
+                      " ",
+                      {
+                        part: "or",
+                        type: "connector",
+                      },
+                      " ",
+                      {
+                        audio: "/assets/audio/general/den(t)ist.mp3",
                         part: "den(t)ist",
                       },
                       " ",
@@ -2182,8 +2194,18 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
-                        part: "inden(t)ify",
+                        audio: "/assets/audio/general/identify.mp3",
+                        part: "identify",
+                      },
+                      " ",
+                      {
+                        part: "or",
+                        type: "connector",
+                      },
+                      " ",
+                      {
+                        audio: "/assets/audio/general/iden(t)ify.mp3",
+                        part: "iden(t)ify",
                       },
                       " ",
                       {
@@ -2192,12 +2214,22 @@ export default function PhoneticsLetters() {
                       },
                     ],
                   },
-                  // indentity
+                  // identity
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
-                        part: "inden(t)ity",
+                        audio: "/assets/audio/general/identity.mp3",
+                        part: "identity",
+                      },
+                      " ",
+                      {
+                        part: "or",
+                        type: "connector",
+                      },
+                      " ",
+                      {
+                        audio: "/assets/audio/general/iden(t)ity.mp3",
+                        part: "iden(t)ity",
                       },
                       " ",
                       {
@@ -2210,8 +2242,18 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/in(t)ernational.mp3",
                         part: "in(t)ernational",
+                      },
+                      " ",
+                      {
+                        part: "or",
+                        type: "connector",
+                      },
+                      " ",
+                      {
+                        audio: "/assets/audio/general/international.mp3",
+                        part: "international",
                       },
                       " ",
                       {
@@ -2224,8 +2266,18 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/in(t)ervention.mp3",
                         part: "in(t)ervention",
+                      },
+                      " ",
+                      {
+                        part: "or",
+                        type: "connector",
+                      },
+                      " ",
+                      {
+                        audio: "/assets/audio/general/intervention.mp3",
+                        part: "intervention",
                       },
                       " ",
                       {
@@ -2234,16 +2286,26 @@ export default function PhoneticsLetters() {
                       },
                     ],
                   },
-                  // inturrupt
+                  // interrupt
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/interrupt.mp3",
                         part: "in(t)errupt",
                       },
                       " ",
                       {
-                        part: "???",
+                        part: "or",
+                        type: "connector",
+                      },
+                      " ",
+                      {
+                        audio: "/assets/audio/general/in(t)errupt.mp3",
+                        part: "interrupt",
+                      },
+                      " ",
+                      {
+                        part: "interromper",
                         type: "portuguese",
                       },
                     ],
