@@ -67,6 +67,7 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
+                  // In English, there are three main forms: a, an, and the.
                   {
                     text: [
                       {
@@ -83,24 +84,21 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
+                  // a book
                   {
-                    text: [
-                      { part: "a book", type: "bold" },
-                      " ",
-                      { part: "um livro", type: "portuguese" },
-                    ],
+                    text: ["a book ", { part: "um livro", type: "portuguese" }],
                   },
+                  // an apple
                   {
                     text: [
-                      { part: "an apple", type: "bold" },
-                      " ",
+                      "an apple ",
                       { part: "uma maçã", type: "portuguese" },
                     ],
                   },
+                  // the teacher
                   {
                     text: [
-                      { part: "the teacher", type: "bold" },
-                      " ",
+                      "the teacher ",
                       {
                         part: "o professor / a professora",
                         type: "portuguese",
@@ -111,6 +109,10 @@ export default function Articles() {
                     lineBreak: true,
                   },
                   {
+                    lineBreak: true,
+                  },
+                  // I have a book.
+                  {
                     text: [
                       { bullet: true },
                       "I have a book.",
@@ -118,6 +120,7 @@ export default function Articles() {
                       { part: "Eu tenho um livro.", type: "portuguese" },
                     ],
                   },
+                  // She eats an apple every day.
                   {
                     text: [
                       { bullet: true },
@@ -129,6 +132,7 @@ export default function Articles() {
                       },
                     ],
                   },
+                  // The teacher is in the classroom.
                   {
                     text: [
                       { bullet: true },
@@ -151,6 +155,7 @@ export default function Articles() {
             blocks={[
               {
                 lines: [
+                  // A and An are used when we talk about something for the first time or something general.
                   {
                     text: [
                       { part: "A and An", type: "bold" },
@@ -166,13 +171,22 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
+                  // Use 'a' before words that start with a consonant sound.
                   {
                     text: [
                       {
+                        attention: true,
+                      },
+                      {
                         important: true,
-                        part: "Use 'a' before words that start with a consonant sound. Use 'an' before words that start with a vowel sound.",
+                        part: "Use ",
                       },
                       " ",
+                      {
+                        part: "'a'",
+                        type: "mark",
+                      },
+                      " before words that start with a consonant sound. ",
                       {
                         part: "Use 'a' antes de som de consoante e 'an' antes de som de vogal.",
                         type: "portuguese",
@@ -182,40 +196,94 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
+                  // a dog
                   {
                     text: [
-                      { part: "a dog", type: "bold" },
-                      " ",
+                      "a dog ",
                       { part: "um cachorro", type: "portuguese" },
                     ],
                   },
+                  // a person
                   {
                     text: [
-                      { part: "a university", type: "bold" },
-                      " ",
-                      {
-                        part: "uma universidade (som de 'you')",
-                        type: "portuguese",
-                      },
+                      "a person ",
+                      { part: "uma pessoa", type: "portuguese" },
                     ],
                   },
+                  // a table
                   {
                     text: [
-                      { part: "an orange", type: "bold" },
-                      " ",
-                      { part: "uma laranja", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "an hour", type: "bold" },
-                      " ",
-                      { part: "uma hora (h muda)", type: "portuguese" },
+                      "a table ",
+                      { part: "uma mesa", type: "portuguese" },
                     ],
                   },
                   {
                     lineBreak: true,
                   },
+                  {
+                    text: [
+                      {
+                        attention: true,
+                      },
+                      "The letter 'u' can have the phonetic symbol ",
+                      {
+                        part: "/j/",
+                        type: "phonetics",
+                      },
+                      ", which means it starts with a consonant sound, not a vowel sound.",
+                      " ",
+                      {
+                        part: "A letra 'u' pode ter o símbolo fonético",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        part: "/j/",
+                        type: "phonetics",
+                      },
+                      {
+                        part: ", o que significa que começa com som de consoante, e não de vogal.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // a unicorn
+                  {
+                    text: [
+                      "a unicorn ",
+                      {
+                        part: "/ˈjuː.nɪ.kɔːrn/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "uma universidade",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // a university
+                  {
+                    text: [
+                      "a university ",
+                      {
+                        part: "/ˌjuː.nəˈvɝː.sə.t̬i/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "uma universidade",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // • I see a dog in the park.
                   {
                     text: [
                       { bullet: true },
@@ -228,9 +296,96 @@ export default function Articles() {
                     ],
                   },
                   {
+                    hr: true,
+                  },
+                  // Use 'an' before words that start with a vowel sound.
+                  {
+                    text: [
+                      {
+                        attention: true,
+                      },
+                      {
+                        part: "Use",
+                      },
+                      " ",
+                      {
+                        part: "'an'",
+                        type: "mark",
+                      },
+                      " before words that start with a vowel sound. ",
+                      {
+                        part: "Use 'a' antes de som de consoante e 'an' antes de som de vogal.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // an orange
+                  {
+                    text: [
+                      "an orange ",
+                      { part: "uma laranja", type: "portuguese" },
+                    ],
+                  },
+                  // an hour
+                  {
+                    text: [
+                      "an hour ",
+                      { part: "uma hora (h muda)", type: "portuguese" },
+                    ],
+                  },
+                  // an umbrella
+                  {
+                    text: [
+                      "an umbrella ",
+                      { part: "um guarda-chuva", type: "portuguese" },
+                    ],
+                  },
+                  // an idea
+                  {
+                    text: [
+                      "an idea ",
+                      { part: "uma ideia", type: "portuguese" },
+                    ],
+                  },
+                  // an email
+                  {
+                    text: [
+                      "an email ",
+                      { part: "um e-mail", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // • He forgot an umbrella at home.
+                  {
                     text: [
                       { bullet: true },
-                      "She wants an orange.",
+                      "He forgot an umbrella at home.",
+                      " ",
+                      {
+                        part: "Ele esqueceu um guarda-chuva em casa.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // • She sent me an email.
+                  {
+                    text: [
+                      { bullet: true },
+                      "She sent me an email.",
+                      " ",
+                      { part: "Ela me enviou um e-mail.", type: "portuguese" },
+                    ],
+                  },
+                  // • He wants an orange. Ela quer uma laranja.
+                  {
+                    text: [
+                      { bullet: true },
+                      "He wants an orange.",
                       " ",
                       { part: "Ela quer uma laranja.", type: "portuguese" },
                     ],
@@ -264,6 +419,9 @@ export default function Articles() {
                   {
                     text: [
                       {
+                        attention: true,
+                      },
+                      {
                         important: true,
                         part: "Use 'the' when there is only one, or when it is clear which one you mean.",
                       },
@@ -278,16 +436,11 @@ export default function Articles() {
                     lineBreak: true,
                   },
                   {
-                    text: [
-                      { part: "the sun", type: "bold" },
-                      " ",
-                      { part: "o sol", type: "portuguese" },
-                    ],
+                    text: ["the sun ", { part: "o sol", type: "portuguese" }],
                   },
                   {
                     text: [
-                      { part: "the door", type: "bold" },
-                      " ",
+                      "the door ",
                       {
                         part: "a porta (a porta específica)",
                         type: "portuguese",
@@ -345,7 +498,9 @@ export default function Articles() {
                   {
                     text: [
                       {
-                        important: true,
+                        attention: true,
+                      },
+                      {
                         part: "We often use no article with plural nouns and uncountable nouns when talking in general.",
                       },
                       " ",
@@ -360,20 +515,21 @@ export default function Articles() {
                   },
                   {
                     text: [
-                      { part: "Dogs are friendly.", type: "bold" },
-                      " ",
+                      {
+                        bullet: true,
+                      },
+                      "Dogs are friendly. ",
                       { part: "Cachorros são amigáveis.", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      { part: "Water is important.", type: "bold" },
-                      " ",
+                      {
+                        bullet: true,
+                      },
+                      "Water is important. ",
                       { part: "Água é importante.", type: "portuguese" },
                     ],
-                  },
-                  {
-                    lineBreak: true,
                   },
                   {
                     text: [
@@ -451,48 +607,49 @@ export default function Articles() {
 
           <FillInTheBlanks
             exercise={{
-              instructions: "2. Fill in the blanks with the correct article (a, an, the, or -).",
+              instructions:
+                "2. Fill in the blanks with the correct article (a, an, the, or -).",
               blocks: [
                 {
                   block: [
                     { text: "1. She has " },
                     { blank: "a" },
-                    { text: " dog." }
+                    { text: " dog." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "2. I need " },
                     { blank: "an" },
-                    { text: " answer." }
+                    { text: " answer." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "3. Please close " },
                     { blank: "the" },
-                    { text: " door." }
+                    { text: " door." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "4. We like " },
                     { blank: "-" },
-                    { text: " water." }
+                    { text: " water." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "5. He lives near " },
                     { blank: "the" },
-                    { text: " school." }
-                  ]
-                }
-              ]
+                    { text: " school." },
+                  ],
+                },
+              ],
             }}
           />
         </Section>
