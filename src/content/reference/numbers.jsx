@@ -7,6 +7,7 @@ import { Column } from "@/components/molecules/Column";
 import { List } from "@/components/molecules/List";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
+import { Contents } from "@/components/molecules/Contents";
 
 export const metadata = {
   title: "Numbers in English – Cardinal and Ordinal",
@@ -19,7 +20,18 @@ export default function Numbers() {
       <Whiteboard title="Vocabulary" subtitle="Numbers" />
       <div className="line-break">
 
-        <Section label="Introduction" heading={3}>
+        <Contents
+          items={[
+            { href: "introduction", label: "Introduction" },
+            { href: "presentation", label: "Presentation" },
+            { href: "meaning", label: "Meaning" },
+            { href: "column", label: "Numbers Table" },
+            { href: "exercises", label: "Exercises" },
+            { href: "production", label: "Production" },
+          ]}
+        />
+
+        <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph
             blocks={[
               {
@@ -101,7 +113,7 @@ export default function Numbers() {
           />
         </Section>
 
-        <Section label="Presentation" heading={3}>
+        <Section id="presentation" label="Presentation" heading={3}>
           <Dialogue
             audioPlayer="/assets/audio/vocabulary/numbers/presenttion-dialogue.mp3"
             lines={[
@@ -151,7 +163,7 @@ export default function Numbers() {
           />
         </Section>
 
-        <Section label="Meaning" heading={4}>
+        <Section id="meaning" label="Meaning" heading={4}>
           <Paragraph
             blocks={[
               {
@@ -202,7 +214,7 @@ export default function Numbers() {
           />
         </Section>
 
-        <Section label="Column" heading={3}>
+        <Section id="column" label="Column" heading={3}>
           <Column
             width="210"
             cols={[
@@ -1076,7 +1088,7 @@ export default function Numbers() {
           />
         </Section>
 
-        <Section label="Practice" heading={3}>
+        <Section id="exercises" label="exercises" heading={3}>
           <FillInTheBlanks
             exercise={{
               instructions: "1. Fill in the blanks with affirmative form.",
@@ -1474,7 +1486,7 @@ export default function Numbers() {
           />
         </Section>
 
-        <Section label="Production" heading={3}>
+        <Section id="production" label="Production" heading={3}>
           <Paragraph
             blocks={[
               {
