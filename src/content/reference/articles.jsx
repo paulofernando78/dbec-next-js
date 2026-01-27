@@ -24,6 +24,7 @@ export default function Articles() {
             blocks={[
               {
                 lines: [
+                  // Articles are words that come before a noun. They help us know if we are talking about something general or specific.
                   {
                     text: [
                       { part: "Articles", type: "bold" },
@@ -76,9 +77,6 @@ export default function Articles() {
                         type: "portuguese",
                       },
                     ],
-                  },
-                  {
-                    lineBreak: true,
                   },
                   {
                     lineBreak: true,
@@ -161,7 +159,7 @@ export default function Articles() {
                       "  words that start with ",
                       {
                         part: "a consonant sound",
-                        type: "mark"
+                        type: "mark",
                       },
                       ". ",
                       {
@@ -293,7 +291,7 @@ export default function Articles() {
                       "  words that start with ",
                       {
                         part: "a vowel sound",
-                        type: "mark"
+                        type: "mark",
                       },
                       ". ",
                       {
@@ -384,6 +382,7 @@ export default function Articles() {
             blocks={[
               {
                 lines: [
+                  //The is used when both the speaker and the listener know what we are talking about.
                   {
                     text: [
                       { part: "The", type: "bold" },
@@ -399,6 +398,7 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
+                  // Use 'the' when there is only one, or when it is clear which one you mean.
                   {
                     text: [
                       {
@@ -418,21 +418,31 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
-                  {
-                    text: ["the sun ", { part: "o sol", type: "portuguese" }],
-                  },
+                  // I missed the bus this morning.
                   {
                     text: [
-                      "the door ",
+                      { bullet: true },
+                      "I missed the bus this morning.",
+                      " ",
                       {
-                        part: "a porta (a porta específica)",
+                        part: "Eu perdi o ônibus esta manhã.",
                         type: "portuguese",
                       },
                     ],
                   },
+                  // The sun is very bright today.
                   {
-                    lineBreak: true,
+                    text: [
+                      { bullet: true },
+                      "The sun is very bright today.",
+                      " ",
+                      {
+                        part: "O sol está muito forte hoje.",
+                        type: "portuguese",
+                      },
+                    ],
                   },
+                  // Please close the door.
                   {
                     text: [
                       { bullet: true },
@@ -442,12 +452,206 @@ export default function Articles() {
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+                  // The' can be pronounced in two different ways:
+                  {
                     text: [
-                      { bullet: true },
-                      "The sun is very bright today.",
+                      {
+                        attention: true,
+                      },
+                      {
+                        part: "'The' can be pronounced in two different ways:",
+                      },
                       " ",
                       {
-                        part: "O sol está muito forte hoje.",
+                        part: "“The” pode ser pronunciado de duas formas diferentes.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // It sounds /ðiː/ when followed by a vowel sound.
+                  {
+                    text: [
+                      "It sounds ",
+                      {
+                        audio: "/assets/audio/general/the1.mp3",
+                      },
+                      {
+                        part: "/ðiː/",
+                        type: "phonetics",
+                      },
+                      " when followed by a ",
+                      {
+                        part: "vowel sound",
+                        type: "mark",
+                      },
+                      ". ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // the address
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-address.mp3",
+                      },
+                      "the address ",
+                      { part: "o endereço", type: "portuguese" },
+                    ],
+                  },
+                  // the airport
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-airport.mp3",
+                      },
+                      "the airport ",
+                      { part: "o aeroporto", type: "portuguese" },
+                    ],
+                  },
+                  // the apple
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-apple.mp3",
+                      },
+                      "the apple ",
+                      { part: "a maçã", type: "portuguese" },
+                    ],
+                  },
+                  // the elevator
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-elevator.mp3",
+                      },
+                      "the elevator ",
+                      { part: "o elevador", type: "portuguese" },
+                    ],
+                  },
+                  // the email
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-email.mp3",
+                      },
+                      "the email ",
+                      { part: "o e-mail", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-internet1.mp3",
+                      },
+                      "the internet ",
+                      { part: "a internet", type: "portuguese" },
+                    ],
+                  },
+                  // the office
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-office.mp3",
+                      },
+                      "the office ",
+                      { part: "o escritório", type: "portuguese" },
+                    ],
+                  },
+                  // the internet
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "The office is open.",
+                      " ",
+                      { part: "O escritório está aberto.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "Check the email, please.",
+                      " ",
+                      {
+                        part: "Verifique o e-mail, por favor.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "The address is wrong.",
+                      " ",
+                      { part: "O endereço está errado.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // It sounds /ðə/ when followed by a consonant sound.
+                  {
+                    text: [
+                      "It sounds ",
+                      {
+                        audio: "/assets/audio/general/the2.mp3",
+                      },
+                      {
+                        part: "/ðə/",
+                        type: "phonetics",
+                      },
+                      " when followed by a ",
+                      {
+                        part: "consonant sound",
+                        type: "mark",
+                      },
+                      ". ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // the bus
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-bus.mp3",
+                      },
+                      "the bus ",
+                      {
+                        part: "o ônibus",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // the sun
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-sun.mp3",
+                      },
+                      "the sun ",
+                      { part: "o sol", type: "portuguese" },
+                    ],
+                  },
+                  // the door
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-door.mp3",
+                      },
+                      "the door ",
+                      {
+                        part: "a porta",
                         type: "portuguese",
                       },
                     ],
@@ -490,12 +694,12 @@ export default function Articles() {
                       },
                       {
                         part: "plural nouns",
-                        type: "mark"
+                        type: "mark",
                       },
                       " and ",
                       {
                         part: "uncountable nouns",
-                        type: "mark"
+                        type: "mark",
                       },
                       "  when talking in general. ",
                       {
@@ -507,7 +711,7 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
-                  // • Dogs are friendly. 
+                  // • Dogs are friendly.
                   {
                     text: [
                       { bullet: true },
@@ -559,7 +763,7 @@ export default function Articles() {
                       " ",
                       {
                         part: "most country names, languages, meals, sports, and academic subjects",
-                        type: "mark"
+                        type: "mark",
                       },
                       ". ",
                       {
@@ -593,7 +797,10 @@ export default function Articles() {
                       { bullet: true },
                       "We had breakfast at home.",
                       " ",
-                      { part: "Nós tomamos café da manhã em casa.", type: "portuguese" },
+                      {
+                        part: "Nós tomamos café da manhã em casa.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   // She plays soccer on weekends.
@@ -602,7 +809,10 @@ export default function Articles() {
                       { bullet: true },
                       "She plays soccer on weekends.",
                       " ",
-                      { part: "Ela joga futebol nos fins de semana.", type: "portuguese" },
+                      {
+                        part: "Ela joga futebol nos fins de semana.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   // I study math and history.
@@ -611,7 +821,10 @@ export default function Articles() {
                       { bullet: true },
                       "I study math and history.",
                       " ",
-                      { part: "Eu estudo matemática e história.", type: "portuguese" },
+                      {
+                        part: "Eu estudo matemática e história.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -629,7 +842,7 @@ export default function Articles() {
                       " ",
                       {
                         part: "streets, parks, lakes, and mountains, and with institutions",
-                        type: "mark"
+                        type: "mark",
                       },
                       "  in a general sense (school, bed, hospital, prison, church, university). ",
                       {
@@ -647,7 +860,10 @@ export default function Articles() {
                       { bullet: true },
                       "They live on Main Street.",
                       " ",
-                      { part: "Eles moram na Rua Principal.", type: "portuguese" },
+                      {
+                        part: "Eles moram na Rua Principal.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   // He goes to school every day.
@@ -656,7 +872,10 @@ export default function Articles() {
                       { bullet: true },
                       "He goes to school every day.",
                       " ",
-                      { part: "Ele vai para a escola todos os dias.", type: "portuguese" },
+                      {
+                        part: "Ele vai para a escola todos os dias.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   // He is in bed.
