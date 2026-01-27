@@ -11,6 +11,7 @@ export default function Adjectives() {
       <div className="line-break">
         <Contents
           items={[
+            { href: "basic", label: "Basic Adjectives" },
             { href: "comparative", label: "Comparatives" },
             { href: "ing-ed", label: "Superlatives" },
             { href: "ing-ed", label: "-ing vs. -ed" },
@@ -18,6 +19,135 @@ export default function Adjectives() {
             { href: "compound", label: "Compound" },
           ]}
         />
+        
+        <Section id="basic" label="Basic Adjectives" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "Basic adjectives", type: "bold" },
+                      " ",
+                      "are used to describe people, things, places, and situations. They answer the question:",
+                      " ",
+                      { part: "What is it like?", type: "mark" },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        attention: true,
+                        part: "Adjectives usually come before a noun or after the verb 'to be'.",
+                      },
+                      " ",
+                      {
+                        part: "Adjetivos geralmente vêm antes do substantivo ou depois do verbo 'to be'.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { part: "a big house", type: "bold" },
+                      " ",
+                      { part: "uma casa grande", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "a happy child", type: "bold" },
+                      " ",
+                      { part: "uma criança feliz", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "the blue sky", type: "bold" },
+                      " ",
+                      { part: "o céu azul", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "The house is big.",
+                      " ",
+                      {
+                        part: "A casa é grande.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "She is happy.",
+                      " ",
+                      {
+                        part: "Ela está feliz.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "The sky is blue.",
+                      " ",
+                      {
+                        part: "O céu está azul.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  {
+                    text: [
+                      {
+                        important: true,
+                        part: "Adjectives do not change for plural or gender in English.",
+                      },
+                      " ",
+                      {
+                        part: "Os adjetivos não mudam no plural ou no gênero em inglês.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { part: "two small cars", type: "bold" },
+                      " ",
+                      { part: "dois carros pequenos", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "three old houses", type: "bold" },
+                      " ",
+                      { part: "três casas velhas", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
 
         <Section id="comparative" label="Comparatives" heading={3}>
           <Paragraph
@@ -1875,6 +2005,22 @@ export default function Adjectives() {
                         part: "Eles estão animados com a viagem.",
                         type: "portuguese",
                       },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "The food is disgust", type: "bold" },
+                      { part: "ing", type: "mark" },
+                      ". ",
+                      { part: "A comida é nojenta.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I am disgust", type: "bold" },
+                      { part: "ed", type: "mark" },
+                      ". ",
+                      { part: "Eu estou enojado(a).", type: "portuguese" },
                     ],
                   },
                 ],
