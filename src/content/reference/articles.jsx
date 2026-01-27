@@ -2,8 +2,8 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
-import { Radio } from "@/components/molecules/exercises/Radio";
-import { FillInTheBlanks } from "@/components/molecules/exercises/FillInTheBlanks";
+import { Radio } from "@/components/molecules/Exercises/Radio";
+import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
 export default function Articles() {
   return (
