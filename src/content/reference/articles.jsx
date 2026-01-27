@@ -403,30 +403,96 @@ export default function Articles() {
         <Section id="exercises" label="Exercises" heading={3}>
           <Radio
             exercise={{
-              instruction: "Answer the questions. / Choose the best response.",
+              instruction: "1. Choose the correct article.",
               questions: [
                 {
-                  question: "1. Question",
+                  question: "1. I have ___ apple in my bag.",
                   options: [
-                    { option: "option 1", isCorrect: true },
-                    { option: "option 2", isCorrect: false },
-                    { option: "option 3", isCorrect: false },
+                    { option: "an", isCorrect: true },
+                    { option: "a", isCorrect: false },
+                    { option: "the", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. She is ___ teacher at my school.",
+                  options: [
+                    { option: "a", isCorrect: true },
+                    { option: "an", isCorrect: false },
+                    { option: "the", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. ___ sun is very bright today.",
+                  options: [
+                    { option: "The", isCorrect: true },
+                    { option: "A", isCorrect: false },
+                    { option: "An", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "4. I like ___ music.",
+                  options: [
+                    { option: "—", isCorrect: true },
+                    { option: "a", isCorrect: false },
+                    { option: "the", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "5. He bought ___ umbrella.",
+                  options: [
+                    { option: "an", isCorrect: true },
+                    { option: "a", isCorrect: false },
+                    { option: "the", isCorrect: false },
                   ],
                 },
               ],
             }}
           />
+
           <FillInTheBlanks
             exercise={{
-              instructions: "1. Fill in the blanks with the correct answer.",
+              instructions: "2. Fill in the blanks with the correct article (a, an, the, or -).",
               blocks: [
                 {
-                  block: [{ text: "..." }, { blank: "..." }, { text: "..." }],
+                  block: [
+                    { text: "1. She has " },
+                    { blank: "a" },
+                    { text: " dog." }
+                  ],
+                  lineBreak: true
                 },
                 {
-                  lineBreak: true,
+                  block: [
+                    { text: "2. I need " },
+                    { blank: "an" },
+                    { text: " answer." }
+                  ],
+                  lineBreak: true
                 },
-              ],
+                {
+                  block: [
+                    { text: "3. Please close " },
+                    { blank: "the" },
+                    { text: " door." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "4. We like " },
+                    { blank: "-" },
+                    { text: " water." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "5. He lives near " },
+                    { blank: "the" },
+                    { text: " school." }
+                  ]
+                }
+              ]
             }}
           />
         </Section>
