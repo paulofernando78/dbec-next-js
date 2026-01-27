@@ -9,7 +9,6 @@ export default function Adjectives() {
     <>
       <Whiteboard title="Reference" subtitle="Adjectives" />
       <div className="line-break">
-        <InlineText text={[{ part: "List of adjectives.", type: "bold" }]} />
         <Contents
           items={[
             { href: "comparative", label: "Comparatives" },
@@ -25,7 +24,7 @@ export default function Adjectives() {
             blocks={[
               {
                 lines: [
-                  // Comparative adjectives
+                  // Comparative adjectives are used to compare two people, things, or situations.
                   {
                     text: [
                       { part: "Comparative adjectives", type: "bold" },
@@ -45,6 +44,7 @@ export default function Adjectives() {
                       "Irregular.",
                     ],
                   },
+                  // lineBreak
                   {
                     lineBreak: true,
                   },
@@ -179,7 +179,7 @@ export default function Adjectives() {
                     ],
                   },
                   {
-                    lineBreak: true
+                    lineBreak: true,
                   },
                   // This book is better than that one.
                   {
@@ -187,7 +187,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This book is better than that one.",
                       " ",
-                      { part: "Este livro é melhor que aquele.", type: "portuguese" },
+                      {
+                        part: "Este livro é melhor que aquele.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   // Today is worse than yesterday.
@@ -196,7 +199,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "Today is worse than yesterday.",
                       " ",
-                      { part: "Hoje está pior do que ontem.", type: "portuguese" },
+                      {
+                        part: "Hoje está pior do que ontem.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   // I have less time this week than last week.
@@ -205,21 +211,23 @@ export default function Adjectives() {
                       { bullet: true },
                       "I have less time this week than last week.",
                       " ",
-                      { part: "Eu tenho menos tempo esta semana do que na semana passada.", type: "portuguese" },
+                      {
+                        part: "Eu tenho menos tempo esta semana do que na semana passada.",
+                        type: "portuguese",
+                      },
                     ],
                   },
-                  
                   // My house is farther from school than yours.
                   {
                     text: [
                       { bullet: true },
                       "My house is farther from school than yours.",
                       " ",
-                      { part: "Minha casa fica mais longe da escola do que a sua.", type: "portuguese" },
+                      {
+                        part: "Minha casa fica mais longe da escola do que a sua.",
+                        type: "portuguese",
+                      },
                     ],
-                  },
-                  {
-                    lineBreak: true,
                   },
                   // This book is better than that one.
                   {
@@ -236,7 +244,7 @@ export default function Adjectives() {
                     ],
                   },
                   {
-                    lineBreak: true,
+                    hr: true,
                   },
                   // To make comparative forms with one-syllable adjectives, we usually add -er.
                   {
@@ -501,7 +509,7 @@ export default function Adjectives() {
                       },
                       " ➜ ",
                       {
-                        part: "smarter",
+                        part: "smart",
                         type: "bold",
                       },
                       {
@@ -552,14 +560,9 @@ export default function Adjectives() {
                   {
                     text: [
                       { bullet: true },
-                      "This room is ",
+                      "This room is cleaner than the kitchen.",
                       {
-                        part: "cleaner than",
-                        type: "mark"
-                      },
-                      "  the kitchen.",
-                      {
-                        part: "Este quarto está mais limpo do que a cozinha.",
+                        part: " Este quarto está mais limpo do que a cozinha.",
                         type: "portuguese",
                       },
                     ],
@@ -648,8 +651,8 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // This is the quicker way to get there.
                   {
-                    // This is the quicker way to get there.
                     text: [
                       { bullet: true },
                       "This is the quicker way to get there.",
@@ -661,9 +664,9 @@ export default function Adjectives() {
                     ],
                   },
                   {
-                    lineBreak: true,
-                    // If an adjective ends in -e, we add -r:
+                    hr: true,
                   },
+                  // If an adjective ends in -e, we add -r:
                   {
                     text: [
                       {
@@ -736,7 +739,7 @@ export default function Adjectives() {
                     ],
                   },
                   {
-                    lineBreak: true,
+                    hr: true,
                   },
                   // If an adjective ends in a vowel and a consonant, we usually double the consonant:
                   {
@@ -826,7 +829,7 @@ export default function Adjectives() {
                     ],
                   },
                   {
-                    lineBreak: true,
+                    hr: true,
                   },
                   // If a two-syllable adjective ends in a consonant and -y, we change -y to -i and add -er.
                   {
@@ -890,6 +893,7 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
+                  // I am busier this week than last week.
                   {
                     text: [
                       { bullet: true },
@@ -901,6 +905,7 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // his test is easier than the previous one.
                   {
                     text: [
                       { bullet: true },
@@ -912,6 +917,7 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // She feels happier at her new job than at the old one.
                   {
                     text: [
                       { bullet: true },
@@ -924,14 +930,11 @@ export default function Adjectives() {
                     ],
                   },
                   {
-                    lineBreak: true,
+                    hr: true,
                   },
                   // If adjectives with three or more syllables form the comparative by putting more in front of the adjective.
                   {
                     text: [
-                      {
-                        important: true,
-                      },
                       "Adjectives with three or more syllables form the comparative by putting more in front of the adjective.",
                       " ",
                       {
@@ -1144,7 +1147,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "She has more experience than her colleague.",
                       " ",
-                      { part: "Ela tem mais experiência do que o colega dela.", type: "portuguese" },
+                      {
+                        part: "Ela tem mais experiência do que o colega dela.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   // This movie is more interesting than the last one.
@@ -1222,68 +1228,528 @@ export default function Adjectives() {
                     text: [
                       { part: "Superlative adjectives", type: "bold" },
                       " ",
-                      {
-                        part: "are used to show the highest or lowest degree in a group of three or more.",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        bullet: true,
-                        part: "They show who or what stands out in a group.",
-                      },
+                      "are used to show the highest or lowest degree in a group of three or more people, things, or situations.",
                     ],
+                  },
+                  {
+                    lineBreak: true,
                   },
                   {
                     text: [
                       {
-                        part: "Short adjectives usually add -est.",
-                        type: "bold",
+                        important: true,
+                      },
+                      "Irregular.",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { part: "good", type: "bold" },
+                      " ",
+                      { part: "bom", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the best", type: "bold" },
+                      " ",
+                      { part: "o melhor", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "bad", type: "bold" },
+                      " ",
+                      { part: "ruim, péssimo", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the worst", type: "bold" },
+                      " ",
+                      { part: "o pior", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "little", type: "bold" },
+                      " ",
+                      { part: "pouco", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the least", type: "bold" },
+                      " ",
+                      { part: "o menos", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "much / many", type: "bold" },
+                      " ",
+                      { part: "muito(s)", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the most", type: "bold" },
+                      " ",
+                      { part: "o mais", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "far", type: "bold" },
+                      " ",
+                      { part: "longe, distante", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the farthest / the furthest", type: "bold" },
+                      " ",
+                      { part: "o mais distante", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the best day of my life.",
+                      " ",
+                      { part: "Este é o melhor dia da minha vida.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the worst movie I have ever seen.",
+                      " ",
+                      { part: "Este é o pior filme que eu já vi.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "She has the least free time in the group.",
+                      " ",
+                      { part: "Ela tem menos tempo livre no grupo.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the farthest house from the school.",
+                      " ",
+                      { part: "Esta é a casa mais distante da escola.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  {
+                    text: [
+                      {
+                        important: true,
+                        part: "To make superlative forms with one-syllable adjectives, we usually add -est and use 'the'.",
                       },
                       " ",
                       {
-                        part: "Adjetivos curtos geralmente recebem -est.",
+                        part: "Adjetivos curtos geralmente recebem -est e usamos 'the'.",
                         type: "portuguese",
                       },
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+                  {
                     text: [
-                      { part: "tall → tallest", type: "bold" },
+                      { part: "clean", type: "bold" },
                       " ",
-                      { part: "alto → o mais alto", type: "portuguese" },
+                      { part: "limpo", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the clean", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais limpo", type: "portuguese" },
+                      " ",
                     ],
                   },
                   {
                     text: [
-                      { part: "Long adjectives use most.", type: "bold" },
+                      { part: "fast", type: "bold" },
+                      " ",
+                      { part: "rápido", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the fast", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais rápido", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "fat", type: "bold" },
+                      " ",
+                      { part: "gordo", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the fatt", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais gordo", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "old", type: "bold" },
+                      " ",
+                      { part: "velho", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the old", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais velho / o mais antigo", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the cleanest room in the house.",
+                      " ",
+                      { part: "Este é o quarto mais limpo da casa.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "He is the fastest runner on the team.",
+                      " ",
+                      { part: "Ele é o corredor mais rápido do time.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "She is the oldest student in the class.",
+                      " ",
+                      { part: "Ela é a aluna mais velha da turma.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  {
+                    text: [
+                      {
+                        important: true,
+                      },
+                      "If an adjective ends in -e, we add only -st.",
                       " ",
                       {
-                        part: "Adjetivos longos usam most.",
+                        part: "Se um adjetivo termina em -e, adicionamos apenas -st.",
                         type: "portuguese",
                       },
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+                  {
                     text: [
-                      { part: "interesting → most interesting", type: "bold" },
+                      { part: "nice", type: "bold" },
+                      " ",
+                      { part: "legal / agradável", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the nice", type: "bold" },
+                      { part: "st", type: "mark" },
+                      " ",
+                      { part: "o mais legal / agradável", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "safe", type: "bold" },
+                      " ",
+                      { part: "seguro", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the safe", type: "bold" },
+                      { part: "st", type: "mark" },
+                      " ",
+                      { part: "o mais seguro", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the nicest park in the city.",
+                      " ",
+                      { part: "Este é o parque mais legal da cidade.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the safest neighborhood in the area.",
+                      " ",
+                      { part: "Este é o bairro mais seguro da região.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  {
+                    text: [
+                      {
+                        important: true,
+                      },
+                      "If an adjective ends in a vowel and a consonant, we usually double the consonant and add -est.",
                       " ",
                       {
-                        part: "interessante → o mais interessante",
+                        part: "...",
                         type: "portuguese",
                       },
                     ],
                   },
                   {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { part: "big", type: "bold" },
+                      " ",
+                      { part: "grande", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the bigg", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o maior", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "hot", type: "bold" },
+                      " ",
+                      { part: "quente", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the hott", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais quente", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the biggest house on the street.",
+                      " ",
+                      { part: "Esta é a maior casa da rua.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the hottest day of the year.",
+                      " ",
+                      { part: "Este é o dia mais quente do ano.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  {
                     text: [
                       {
-                        part: "She is the best student in the class.",
-                        type: "bold",
+                        important: true,
                       },
+                      "If a two-syllable adjective ends in a consonant and -y, we change -y to -i and add -est.",
                       " ",
                       {
-                        part: "Ela é a melhor aluna da turma.",
+                        part: "...",
                         type: "portuguese",
                       },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { part: "busy", type: "bold" },
+                      " ",
+                      { part: "ocupado(a)", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the busi", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais ocupado(a)", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "easy", type: "bold" },
+                      " ",
+                      { part: "fácil", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the easi", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais fácil", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "happy", type: "bold" },
+                      " ",
+                      { part: "feliz", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the happi", type: "bold" },
+                      { part: "est", type: "mark" },
+                      " ",
+                      { part: "o mais feliz", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "She is the busiest person in the office.",
+                      " ",
+                      { part: "Ela é a pessoa mais ocupada do escritório.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the easiest test in the course.",
+                      " ",
+                      { part: "Este é o teste mais fácil do curso.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "He is the happiest child in the family.",
+                      " ",
+                      { part: "Ele é a criança mais feliz da família.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  {
+                    text: [
+                      "Adjectives with three or more syllables form the superlative by putting ",
+                      { part: "most", type: "mark" },
+                      " before the adjective.",
+                      " ",
+                      {
+                        part: "Adjetivos com três ou mais sílabas formam o superlativo colocando most (o mais) antes do adjetivo.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { part: "beautiful", type: "bold" },
+                      " ",
+                      { part: "bonito(a)", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the most", type: "mark" },
+                      " ",
+                      { part: "beautiful", type: "bold" },
+                      " ",
+                      { part: "o mais bonito(a)", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "dangerous", type: "bold" },
+                      " ",
+                      { part: "perigoso(a)", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the most", type: "mark" },
+                      " ",
+                      { part: "dangerous", type: "bold" },
+                      " ",
+                      { part: "o mais perigoso(a)", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "important", type: "bold" },
+                      " ",
+                      { part: "importante", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the most", type: "mark" },
+                      " ",
+                      { part: "important", type: "bold" },
+                      " ",
+                      { part: "o mais importante", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "stressful", type: "bold" },
+                      " ",
+                      { part: "estressante", type: "portuguese" },
+                      " ➜ ",
+                      { part: "the most", type: "mark" },
+                      " ",
+                      { part: "stressful", type: "bold" },
+                      " ",
+                      { part: "o mais estressante", type: "portuguese" },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the most beautiful place I know.",
+                      " ",
+                      { part: "Este é o lugar mais bonito que eu conheço.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is the most important decision of my life.",
+                      " ",
+                      { part: "Esta é a decisão mais importante da minha vida.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This job is the most stressful one in the company.",
+                      " ",
+                      { part: "Este trabalho é o mais estressante da empresa.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -1297,7 +1763,7 @@ export default function Adjectives() {
             blocks={[
               {
                 lines: [
-                  // Adjectives ending in -ing
+                  // Adjectives ending in -ing describe the cause of a feeling or what makes something interesting, boring, exciting, etc.
                   {
                     text: [
                       { part: "Adjectives ending in -ing", type: "bold" },
@@ -1343,13 +1809,13 @@ export default function Adjectives() {
                     ],
                   },
                   {
-                    lineBreak: true,
+                    hr: true,
                   },
-                  // Adjectives ending in -ed
+                  // Adjectives ending in -ed describe how a personfeels as a result of something.
                   {
                     text: [
                       { part: "Adjectives ending in -ed", type: "bold" },
-                      " describe how a person",
+                      " describe how a person ",
                       {
                         part: "feels",
                         type: "mark",
@@ -1438,11 +1904,21 @@ export default function Adjectives() {
                         type: "portuguese",
                       },
                       " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
                       {
-                        bullet: true,
+                        attention: true,
                         part: "It answers: What kind of thing is it?",
                       },
                     ],
+                  },
+                  {
+                    lineBreak: true,
                   },
                   {
                     text: [
@@ -1472,19 +1948,6 @@ export default function Adjectives() {
                       { part: "disco voador", type: "portuguese" },
                     ],
                   },
-                  {
-                    text: [
-                      {
-                        part: "Note:",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "Here, -ing words describe the thing itself or form part of its name, not emotions or feelings.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
                 ],
               },
             ]}
@@ -1496,21 +1959,31 @@ export default function Adjectives() {
             blocks={[
               {
                 lines: [
+                  // Compound adjectives are made of two or more words that work together as one adjective.
                   {
                     text: [
                       { part: "Compound adjectives", type: "bold" },
-                      " ",
+                      " are made of two or more words that work together as one adjective.",
+                    ],
+                  },
+                  // lineBreak
+                  {
+                    lineBreak: true,
+                  },
+                  // They are often connected with a hyphen.
+                  {
+                    text: [
                       {
-                        part: "are made of two or more words that work together as one adjective.",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        bullet: true,
+                        attention: true,
                         part: "They are often connected with a hyphen.",
                       },
                     ],
                   },
+                  // lineBreak
+                  {
+                    lineBreak: true,
+                  },
+                  // a well-known actor
                   {
                     text: [
                       { part: "a well-known actor", type: "bold" },
@@ -1518,6 +1991,7 @@ export default function Adjectives() {
                       { part: "um ator conhecido", type: "portuguese" },
                     ],
                   },
+                  // a full-time job
                   {
                     text: [
                       { part: "a full-time job", type: "bold" },
@@ -1528,6 +2002,7 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // a five-minute break
                   {
                     text: [
                       { part: "a five-minute break", type: "bold" },
@@ -1538,6 +2013,7 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // a high-quality product
                   {
                     text: [
                       { part: "a high-quality product", type: "bold" },
