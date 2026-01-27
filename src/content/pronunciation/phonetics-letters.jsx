@@ -38,7 +38,7 @@ export default function PhoneticsLetters() {
             },
             // Letter 'ai'
             {
-              href: "letter-ai",
+              href: "letters-ai",
               label: ["Letter 'ai:'  ", { part: "/e/", type: "phonetics" }],
             },
             // Letter 'au'
@@ -46,15 +46,10 @@ export default function PhoneticsLetters() {
               href: "",
               label: ["Letter 'au':  ", { part: "/ɑː/", type: "phonetics" }],
             },
-            // Letter 'aw'
+            // Letter 'aw / awe'
             {
               href: "",
-              label: ["Letter 'aw':  ", { part: "/ɑː/", type: "phonetics" }],
-            },
-            // Letter 'awe'
-            {
-              href: "",
-              label: ["Letter 'awe':  ", { part: "/ɑː/", type: "phonetics" }],
+              label: ["Letter 'aw / awe':  ", { part: "/ɑː/", type: "phonetics" }],
             },
             {
               lineBreak: true,
@@ -1507,6 +1502,397 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
+
+        {/* Letter 'a' */}
+        <Section id="letter-a" label="Letter 'a'" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letters 'ai' */}
+        <Section id="letters-ai" label="Letters 'ai'" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letters-au" label="Letters 'au'" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letters-aw-awe" label="Letters 'aw / awe'" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter '...' */}
+        <Section id="letter-" label="Letter " heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bottom-us.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
         {/* Letters 'a' /æ/ vs. 'e' /e/ */}
         <Section
           id="letters-a-e"
@@ -1990,6 +2376,7 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
+
         {/* Letters 'ea', 'ee' /iː/ vs. 'i' /ɪ/ */}
         <Section
           id="letters-ea-ee-i"
@@ -2245,8 +2632,13 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
+
         {/* Letter 't'silent in /nt/ */}
-        <Section id="letter-t-silent" label="Letter 't' Silent in /nt/" heading={3}>
+        <Section
+          id="letter-t-silent"
+          label="Letter 't' Silent in /nt/"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
@@ -2424,6 +2816,7 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
+
         {/* Letter 't' Flap */}
         <Section id="letter-t-flap" label="Letter 't' Flap" heading={3}>
           <Paragraph
