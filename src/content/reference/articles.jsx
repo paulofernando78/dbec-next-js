@@ -570,15 +570,22 @@ export default function Articles() {
                   },
                   {
                     text: [
-                      { bullet: true },
+                      {
+                        audio: "/assets/audio/general/the-office-is-open.mp3",
+                        bullet: true,
+                      },
                       "The office is open.",
                       " ",
                       { part: "O escritório está aberto.", type: "portuguese" },
                     ],
                   },
+                  // Check the email, please.
                   {
                     text: [
-                      { bullet: true },
+                      {
+                        audio: "/assets/audio/general/check-the-email-please.mp3",
+                        bullet: true,
+                      },
                       "Check the email, please.",
                       " ",
                       {
@@ -587,9 +594,13 @@ export default function Articles() {
                       },
                     ],
                   },
+                  // The address is wrong.
                   {
                     text: [
-                      { bullet: true },
+                      {
+                        audio: "/assets/audio/general/the-address-is-wrong.mp3",
+                        bullet: true,
+                      },
                       "The address is wrong.",
                       " ",
                       { part: "O endereço está errado.", type: "portuguese" },

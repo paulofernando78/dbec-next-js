@@ -3,6 +3,8 @@ import { InlineText } from "@/components/molecules/InlineText";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { Radio } from "@/components/molecules/exercises/Radio";
+import { FillInTheBlanks } from "@/components/molecules/exercises/FillInTheBlanks";
 
 export default function Adjectives() {
   return (
@@ -16,7 +18,8 @@ export default function Adjectives() {
             { href: "descriptive", label: "-ing (Descriptive / Participial)" },
             { href: "compound", label: "Compound" },
             { href: "comparative", label: "Comparatives" },
-            { href: "superltives", label: "Superlatives" },
+            { href: "superlatives", label: "Superlatives" },
+            { href: "exercises", label: "Exercises" },
           ]}
         />
 
@@ -2271,6 +2274,183 @@ export default function Adjectives() {
                 ],
               },
             ]}
+          />
+        </Section>
+
+        <Section id="exercises" label="Exercises" heading={3}>
+          <Radio
+            exercise={{
+              instruction: "1. Choose the correct adjective or form.",
+              questions: [
+                {
+                  question: "1. This movie is very ___.",
+                  options: [
+                    { option: "interesting", isCorrect: true },
+                    { option: "interested", isCorrect: false },
+                    { option: "interest", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "2. I am ___ in learning English.",
+                  options: [
+                    { option: "interested", isCorrect: true },
+                    { option: "interesting", isCorrect: false },
+                    { option: "interest", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "3. My house is ___ than yours.",
+                  options: [
+                    { option: "bigger", isCorrect: true },
+                    { option: "biggest", isCorrect: false },
+                    { option: "more big", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "4. This is the ___ restaurant in the city.",
+                  options: [
+                    { option: "best", isCorrect: true },
+                    { option: "better", isCorrect: false },
+                    { option: "most good", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "5. She looks ___ today.",
+                  options: [
+                    { option: "happy", isCorrect: true },
+                    { option: "happier", isCorrect: false },
+                    { option: "happiest", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "6. This exercise is ___ than the last one.",
+                  options: [
+                    { option: "easier", isCorrect: true },
+                    { option: "easy", isCorrect: false },
+                    { option: "easiest", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "7. That was the ___ day of my life.",
+                  options: [
+                    { option: "worst", isCorrect: true },
+                    { option: "worse", isCorrect: false },
+                    { option: "bad", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "8. The class was so ___.",
+                  options: [
+                    { option: "boring", isCorrect: true },
+                    { option: "bored", isCorrect: false },
+                    { option: "bore", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "9. He is ___ than his brother.",
+                  options: [
+                    { option: "taller", isCorrect: true },
+                    { option: "tallest", isCorrect: false },
+                    { option: "more tall", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "10. This is the ___ solution for the problem.",
+                  options: [
+                    { option: "most important", isCorrect: true },
+                    { option: "more important", isCorrect: false },
+                    { option: "importantest", isCorrect: false },
+                  ],
+                },
+              ],
+            }}
+          />
+
+          <FillInTheBlanks
+            exercise={{
+              instructions: "2. Fill in the blanks with the correct adjective form.",
+              blocks: [
+                {
+                  block: [
+                    { text: "1. This book is " },
+                    { blank: "better" },
+                    { text: " (good) than the last one." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "2. She is the " },
+                    { blank: "happiest" },
+                    { text: " (happy) student in the class." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "3. The movie was very " },
+                    { blank: "exciting" },
+                    { text: "(excite)." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "4. I am " },
+                    { blank: "tired" },
+                    { text: " (tire) today." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "5. My house is " },
+                    { blank: "bigger" },
+                    { text: " (big) than yours." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "6. This is the " },
+                    { blank: "most expensive" },
+                    { text: " (expensive) phone in the store." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "7. The lesson was " },
+                    { blank: "boring" },
+                    { text: " (bore) for many students." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "8. He is the " },
+                    { blank: "fastest" },
+                    { text: " (fast) runner on the team." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "9. This test is " },
+                    { blank: "easier" },
+                    { text: " (easy) than the previous one." }
+                  ],
+                  lineBreak: true
+                },
+                {
+                  block: [
+                    { text: "10. She felt very " },
+                    { blank: "interested" },
+                    { text: " (interest) in the topic." }
+                  ]
+                }
+              ]
+            }}
           />
         </Section>
       </div>
