@@ -151,14 +151,19 @@ export default function Articles() {
                       },
                       {
                         important: true,
-                        part: "Use ",
+                        part: "Use 'a'",
                       },
                       " ",
                       {
-                        part: "'a'",
+                        part: "before",
                         type: "mark",
                       },
-                      " before words that start with a consonant sound. ",
+                      "  words that start with ",
+                      {
+                        part: "a consonant sound",
+                        type: "mark"
+                      },
+                      ". ",
                       {
                         part: "Use 'a' antes de som de consoante e 'an' antes de som de vogal.",
                         type: "portuguese",
@@ -278,14 +283,19 @@ export default function Articles() {
                         attention: true,
                       },
                       {
-                        part: "Use",
+                        part: "Use 'an'",
                       },
                       " ",
                       {
-                        part: "'an'",
+                        part: "before",
                         type: "mark",
                       },
-                      " before words that start with a vowel sound. ",
+                      "  words that start with ",
+                      {
+                        part: "a vowel sound",
+                        type: "mark"
+                      },
+                      ". ",
                       {
                         part: "Use 'a' antes de som de consoante e 'an' antes de som de vogal.",
                         type: "portuguese",
