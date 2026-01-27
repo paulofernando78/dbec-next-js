@@ -3,13 +3,16 @@ import { InlineText } from "@/components/molecules/InlineText";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { Dialogue } from "@/components/molecules/Dialogue";
 
 export default function Travel() {
   return (
     <>
       <Whiteboard title="Vocabulary" subtitle="Travel" />
       <div className="line-break">
-        <InlineText text={[{ part: "Common vocabulary for travel.", type: "bold" }]} />
+        <InlineText
+          text={[{ part: "Common vocabulary for travel.", type: "bold" }]}
+        />
         <Contents
           items={[
             { href: "packing", label: "Packing" },
@@ -58,7 +61,10 @@ export default function Travel() {
                       " ",
                       { part: "bagagem de mão", type: "portuguese" },
                       " ",
-                      { bullet: true, part: "You can take one carry-on on the plane." },
+                      {
+                        bullet: true,
+                        part: "You can take one carry-on on the plane.",
+                      },
                       " ",
                       {
                         part: "Você pode levar uma bagagem de mão no avião.",
@@ -86,7 +92,10 @@ export default function Travel() {
                       " ",
                       { part: "roupas", type: "portuguese" },
                       " ",
-                      { bullet: true, part: "I packed warm clothes for the trip." },
+                      {
+                        bullet: true,
+                        part: "I packed warm clothes for the trip.",
+                      },
                       " ",
                       {
                         part: "Eu arrumei roupas quentes para a viagem.",
@@ -108,6 +117,90 @@ export default function Travel() {
                       },
                     ],
                   },
+                  {
+                    hr: true,
+                  },
+                  {
+                    text: [
+                      {
+                        part: "Listen to the dialogue and practice with someone.",
+                        type: "bold",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                ],
+              },
+            ]}
+          />
+          <Dialogue
+            title="Packing at Home"
+            audioPlayer="/assets/audio/dialogues/packing.mp3"
+            lines={[
+              {
+                text: [
+                  {
+                    type: "italic",
+                    part: "Two friends are getting ready for a trip at home.",
+                  },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Have you finished packing yet? ",
+                  { part: "Você já terminou de fazer as malas?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Almost. I still need to pack my toiletries and my travel documents. ",
+                  { part: "Quase. Ainda preciso arrumar meus itens de higiene e meus documentos de viagem.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Don’t forget your charger. ",
+                  { part: "Não se esqueça do seu carregador.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Good point. I’ll put them in my carry-on. ",
+                  { part: "Boa ideia. Vou colocá-los na minha bagagem de mão.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Try to pack light. Airlines charge extra for heavy luggage. ",
+                  { part: "Tente viajar leve. As companhias aéreas cobram a mais por bagagem pesada.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "I know! I also brought a laundry bag to separate dirty clothes. ",
+                  { part: "Eu sei! Também trouxe um saco para separar as roupas sujas.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Perfect. What time are we leaving for the airport? ",
+                  { part: "Perfeito. Que horas vamos sair para o aeroporto?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "In about an hour. Let’s double-check everything. ",
+                  { part: "Em cerca de uma hora. Vamos conferir tudo mais uma vez.", type: "portuguese" },
                 ],
               },
             ]}
@@ -153,7 +246,10 @@ export default function Travel() {
                       " ",
                       { part: "compartimento superior", type: "portuguese" },
                       " ",
-                      { bullet: true, part: "Put your bag in the overhead bin." },
+                      {
+                        bullet: true,
+                        part: "Put your bag in the overhead bin.",
+                      },
                       " ",
                       {
                         part: "Coloque sua bolsa no compartimento superior.",
@@ -181,7 +277,10 @@ export default function Travel() {
                       " ",
                       { part: "comissário(a) de bordo", type: "portuguese" },
                       " ",
-                      { bullet: true, part: "Ask the flight attendant for help." },
+                      {
+                        bullet: true,
+                        part: "Ask the flight attendant for help.",
+                      },
                       " ",
                       {
                         part: "Peça ajuda ao(à) comissário(a) de bordo.",
@@ -203,6 +302,90 @@ export default function Travel() {
                       },
                     ],
                   },
+                ],
+              },
+            ]}
+          />
+          <Dialogue
+            title="At the Airport Check-in"
+            audioPlayer="/assets/audio/dialogues/travel-essentials.mp3"
+            lines={[
+              {
+                text: [
+                  {
+                    type: "italic",
+                    part: "A traveler checks in at the airport counter.",
+                  },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "May I see your passport, please? ",
+                  { part: "Posso ver seu passaporte, por favor?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Here you are. I also have my boarding pass. ",
+                  { part: "Aqui está. Também tenho meu cartão de embarque.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Do you have any luggage to check in? ",
+                  { part: "Você tem alguma bagagem para despachar?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Yes, just this suitcase. ",
+                  { part: "Sim, apenas esta mala.", type: "portuguese" },
+                ],
+              },
+            ]}
+          />
+          <Dialogue
+            title="Finding Your Seat"
+            audioPlayer="/assets/audio/dialogues/inside-the-plane.mp3"
+            lines={[
+              {
+                text: [
+                  {
+                    type: "italic",
+                    part: "A passenger asks for help on the plane.",
+                  },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Excuse me, is this seat 14A? ",
+                  { part: "Com licença, este é o assento 14A?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Yes, that’s the window seat. Your seatbelt is under the armrest. ",
+                  { part: "Sim, é o assento da janela. Seu cinto de segurança está sob o apoio de braço.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Thank you. Where can I put my bag? ",
+                  { part: "Obrigado(a). Onde posso colocar minha bolsa?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Please place it in the overhead bin. ",
+                  { part: "Por favor, coloque-a no compartimento superior.", type: "portuguese" },
                 ],
               },
             ]}
@@ -293,6 +476,48 @@ export default function Travel() {
                       },
                     ],
                   },
+                ],
+              },
+            ]}
+          />
+          <Dialogue
+            title="Asking for Help in the City"
+            audioPlayer="/assets/audio/dialogues/common-vocabulary.mp3"
+            lines={[
+              {
+                text: [
+                  {
+                    type: "italic",
+                    part: "A tourist asks for directions in a new city.",
+                  },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Excuse me, can you give me directions to the hotel? ",
+                  { part: "Com licença, você pode me dar direções para o hotel?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Sure. Go straight, then turn left at the restaurant. ",
+                  { part: "Claro. Vá em frente e depois vire à esquerda no restaurante.", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "A:",
+                text: [
+                  "Thank you. Is there a map I can use? ",
+                  { part: "Obrigado(a). Há um mapa que eu possa usar?", type: "portuguese" },
+                ],
+              },
+              {
+                speaker: "B:",
+                text: [
+                  "Yes, you can find one at the tourist center. ",
+                  { part: "Sim, você pode encontrar um no centro de informações turísticas.", type: "portuguese" },
                 ],
               },
             ]}
