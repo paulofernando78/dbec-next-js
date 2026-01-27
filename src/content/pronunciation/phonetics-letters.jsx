@@ -1468,7 +1468,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/this-is-the-end.mp3",
                       },
                       "This is the ",
                       { type: "mark", part: "end" },
@@ -1497,12 +1497,12 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/i-had-a-bad-day.mp3",
                       },
                       "I had a ",
                       { type: "mark", part: "bad" },
                       " day. ",
-                      { part: "Eu tive um dia ruim.", type: "portuguese" },
+                      { part: "Eu tive um péssimo dia.", type: "portuguese" },
                     ],
                   },
                   { lineBreak: true },
@@ -1524,7 +1524,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/she-went-to-bed-early.mp3",
                       },
                       "She went to ",
                       { type: "mark", part: "bed" },
@@ -1553,7 +1554,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/he-hit-the-ball-with-a-bat.mp3",
                       },
                       "He hit the ball with a ",
                       { type: "mark", part: "bat" },
@@ -1583,7 +1585,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/i-bet-you-were-right.mp3",
                       },
                       "I ",
                       { type: "mark", part: "bet" },
@@ -1615,7 +1617,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/my-dad-is-cool.mp3",
                       },
                       "My ",
                       { type: "mark", part: "dad" },
@@ -1642,7 +1644,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/the-plant-is-dead.mp3",
                       },
                       "The plant is ",
                       { type: "mark", part: "dead" },
@@ -1671,7 +1673,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/john-had-a-good-time.mp3",
                       },
                       "John ",
                       { type: "mark", part: "had" },
@@ -1698,7 +1700,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/he-hit-his-head.mp3",
                       },
                       "He hit his ",
                       { type: "mark", part: "head" },
@@ -1727,12 +1729,12 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/the-man-is-here.mp3",
                       },
-                      "That ",
+                      "The ",
                       { type: "mark", part: "man" },
-                      " is tall. ",
-                      { part: "O homem está aqui..", type: "portuguese" },
+                      " is here. ",
+                      { part: "O homem está aqui.", type: "portuguese" },
                     ],
                   },
                   { lineBreak: true },
@@ -1754,7 +1756,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/the-men-are-here.mp3",
                       },
                       "The ",
                       { type: "mark", part: "men" },
@@ -1783,7 +1785,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/put-the-eggs-in-the-pan.mp3",
                       },
                       "Put the eggs in the ",
                       { type: "mark", part: "pan" },
@@ -1813,7 +1816,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/i-wrote-with-a-pen.mp3",
                       },
                       "I wrote with a ",
                       { type: "mark", part: "pen" },
@@ -1845,7 +1848,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/she-got-a-tan-at-the-beach.mp3",
                       },
                       "She got a ",
                       { type: "mark", part: "tan" },
@@ -1875,7 +1879,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/i-got-ten-out-of-ten-on-the-test.mp3",
                       },
                       "I got ",
                       { type: "mark", part: "ten" },
@@ -1922,7 +1927,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/i-dont-usually-eat-breakfast.mp3",
                       },
                       "I don’t usually ",
                       { type: "mark", part: "eat" },
@@ -1951,6 +1957,10 @@ export default function PhoneticsLetters() {
                   // It is very cold today.
                   {
                     text: [
+                      {
+                        audio:
+                          "/assets/audio/general/it-is-very-cold-today.mp3",
+                      },
                       { type: "mark", part: "It" },
                       " is very cold today. ",
                       { part: "Está muito frio hoje.", type: "portuguese" },
@@ -1977,7 +1987,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/i-feel-tired.mp3",
                       },
                       "I ",
                       { type: "mark", part: "feel" },
@@ -2004,7 +2014,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/fill-the-glass-please.mp3",
                       },
                       { type: "mark", part: "Fill" },
                       " the glass, please. ",
@@ -2032,7 +2043,8 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio:
+                          "/assets/audio/general/i-saw-a-sheep-on-the-farm.mp3",
                       },
                       "I saw a ",
                       { type: "mark", part: "sheep" },
@@ -2058,15 +2070,18 @@ export default function PhoneticsLetters() {
                       { part: "navio", type: "portuguese" },
                     ],
                   },
-                  // This ship is huge.
+                  {
+                    audio:
+                      "/assets/audio/general/i-dont-usually-eat-breakfast.mp3",
+                  }, // This ship is huge.
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/this-ship-is-huge.mp3",
                       },
                       "This ",
                       { type: "mark", part: "ship" },
-                      " arrived late. ",
+                      " is huge. ",
                       {
                         part: "Este navio é enorme.",
                         type: "portuguese",
@@ -2094,7 +2109,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/i-need-to-sleep.mp3",
                       },
                       "I need to ",
                       { type: "mark", part: "sleep" },
@@ -2121,7 +2136,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/.mp3",
+                        audio: "/assets/audio/general/becareful-not-to-slip.mp3",
                       },
                       "Be careful not to ",
                       { type: "mark", part: "slip" },
@@ -2324,7 +2339,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/bottom-us.mp3",
                         part: "bo",
                       },
                       {
@@ -2350,7 +2365,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/butter-us.mp3",
                         part: "bu",
                       },
                       {
@@ -2376,7 +2391,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/party-us.mp3",
                         part: "par",
                       },
                       {
@@ -2402,7 +2417,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/photo-us.mp3",
                         part: "pho",
                       },
                       {
@@ -2428,7 +2443,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/later-us.mp3",
                         part: "la",
                       },
                       {
@@ -2454,7 +2469,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/",
+                        audio: "/assets/audio/general/water-us.mp3",
                         part: "wa",
                       },
                       {
