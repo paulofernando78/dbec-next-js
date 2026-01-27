@@ -49,6 +49,19 @@ export const Close = () => (
   </svg>
 );
 
+export const Compare = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24px"
+    height="24px"
+    viewBox="0 -960 960 960"
+    fill="#999999"
+    {...props}
+  >
+    <path d="m320-160-56-57 103-103H80v-80h287L264-503l56-57 200 200-200 200Zm320-240L440-600l200-200 56 57-103 103h287v80H593l103 103-56 57Z" />
+  </svg>
+);
+
 export const Content = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +81,7 @@ export const ContentLink = (props) => (
     height="24px"
     viewBox="0 -960 960 960"
     fill="#999999"
-    {... props}
+    {...props}
   >
     <path d="M400-280h160v-80H400v80Zm0-160h280v-80H400v80ZM280-600h400v-80H280v80Zm200 120ZM265-80q-79 0-134.5-55.5T75-270q0-57 29.5-102t77.5-68H80v-80h240v240h-80v-97q-37 8-61 38t-24 69q0 46 32.5 78t77.5 32v80Zm135-40v-80h360v-560H200v160h-80v-160q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H400Z" />
   </svg>
@@ -151,12 +164,12 @@ export const Keyboard = () => (
 
 export const Lesson = (props) => (
   <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={iconSize}
-  height={iconSize}
-  viewBox="0 -960 960 960"
-  fill="#999999"
-  {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width={iconSize}
+    height={iconSize}
+    viewBox="0 -960 960 960"
+    fill="#999999"
+    {...props}
   >
     <path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
   </svg>
@@ -176,12 +189,12 @@ export const LightMode = () => (
 
 export const PauseAudio = (props) => (
   <svg
-  xmlns="http://www.w3.org/2000/svg"
-  height="24px"
-  viewBox="0 -960 960 960"
-  width="24px"
-  fill="#999999"
-  {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    height="24px"
+    viewBox="0 -960 960 960"
+    width="24px"
+    fill="#999999"
+    {...props}
   >
     <path d="M360-320h80v-320h-80v320Zm160 0h80v-320h-80v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
@@ -189,11 +202,11 @@ export const PauseAudio = (props) => (
 
 export const PlayAudio = (props) => (
   <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={iconSize}
-  viewBox="0 -960 960 960"
-  fill="#999999"
-  {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    width={iconSize}
+    viewBox="0 -960 960 960"
+    fill="#999999"
+    {...props}
   >
     <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
@@ -250,11 +263,11 @@ export const Show = () => (
 
 export const StopAudio = (props) => (
   <svg
-  xmlns="http://www.w3.org/2000/svg"
-  height={iconSize}
-  viewBox="0 -960 960 960"
-  fill="#999999"
-  {...props}
+    xmlns="http://www.w3.org/2000/svg"
+    height={iconSize}
+    viewBox="0 -960 960 960"
+    fill="#999999"
+    {...props}
   >
     <path d="M320-320h320v-320H320v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>

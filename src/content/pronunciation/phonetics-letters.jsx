@@ -12,18 +12,16 @@ export default function PhoneticsLetters() {
           items={[
             {
               href: "vowels",
-              label: "Vowels"
+              label: "Vowels",
             },
 
             {
               href: "diphthongs",
-              label: "Diphthongs"
+              label: "Diphthongs",
             },
 
-            { href: "consonants",
-              label: "Consonants"
-            },
-            
+            { href: "consonants", label: "Consonants" },
+
             {
               href: "rhotic-vowels-r",
               label: "Rhotic (Vowels + R)",
@@ -39,7 +37,7 @@ export default function PhoneticsLetters() {
               label: [
                 "Letters 'a':  ",
                 {
-                  part: "/æ/, /ɑː/, /ə/, /eɪ/",
+                  part: "/æ/, /ɑː/, /eɪ/, /ə/",
                   type: "phonetics",
                 },
               ],
@@ -52,14 +50,14 @@ export default function PhoneticsLetters() {
 
             {
               href: "letters-au",
-              label: ["Letters 'au':  ", { part: "/ɑː/", type: "phonetics" }],
+              label: ["Letters 'au':  ", { part: "/ɔː/", type: "phonetics" }],
             },
 
             {
               href: "letters-aw-awe",
               label: [
-                "Letter 'aw / awe':  ",
-                { part: "/ɑː/", type: "phonetics" },
+                "Letter 'aw', 'awe':  ",
+                { part: "/ɔː/", type: "phonetics" },
               ],
             },
 
@@ -117,9 +115,10 @@ export default function PhoneticsLetters() {
             },
 
             {
-              href: "letters-a-e",
+              compare: true,
+              href: "letters-a-vs-e",
               label: [
-                "Letters 'a' ",
+                "Letters 'a': ",
                 {
                   part: "/æ/ ",
                   type: "phonetics",
@@ -129,7 +128,7 @@ export default function PhoneticsLetters() {
                   part: "vs. ",
                   type: "connector",
                 },
-                "'e' ",
+                "'e': ",
                 {
                   part: "/e/",
                   type: "phonetics",
@@ -141,19 +140,20 @@ export default function PhoneticsLetters() {
             {
               lineBreak: true,
             },
-            
+
             {
               href: "letter-i",
               label: [
-                "Letter 'i': /i/, /ɪ/, /ə/, /aɪ/, /ɑː/",
+                "Letter 'i': ",
                 { part: "/i/, /ɪ/, /ə/, /aɪ/, /ɑː/", type: "phonetics" },
               ],
             },
 
             {
+              compare: true,
               href: "letters-ea-ee-i",
               label: [
-                "Letters 'ea', 'ee' ",
+                "Letters 'ea': ",
                 {
                   part: "/iː/ ",
                   type: "phonetics",
@@ -163,7 +163,7 @@ export default function PhoneticsLetters() {
                   part: "vs. ",
                   type: "connector",
                 },
-                " ",
+                "'ee': ",
                 {
                   part: "/ɪ/",
                   type: "phonetics",
@@ -182,12 +182,12 @@ export default function PhoneticsLetters() {
             {
               lineBreak: true,
             },
-            
-            // Letters 'ng'
+
             {
               href: "letters-ng",
               label: ["Letters 'ng':  ", { part: "/ŋ/", type: "phonetics" }],
             },
+
             {
               lineBreak: true,
             },
@@ -206,9 +206,10 @@ export default function PhoneticsLetters() {
             },
 
             {
+              compare: true,
               href: "letters-sh-vs-ch",
               label: [
-                "Letters 'sh' ",
+                "Letters 'sh': ",
                 " ",
                 {
                   part: "/ʃ/ ",
@@ -218,7 +219,7 @@ export default function PhoneticsLetters() {
                   part: "vs. ",
                   type: "connector",
                 },
-                "'ch' ",
+                "'ch': ",
                 {
                   part: "/tʃ/",
                   type: "phonetics",
@@ -255,7 +256,6 @@ export default function PhoneticsLetters() {
               ],
             },
 
-            // Letters 'ous'
             {
               href: "letters-ous",
               label: ["Letters 'ous':  ", { part: "/əs/", type: "phonetics" }],
@@ -292,7 +292,6 @@ export default function PhoneticsLetters() {
               lineBreak: true,
             },
 
-            // Letter 'u'
             {
               href: "letter-u",
               label: [
@@ -301,7 +300,6 @@ export default function PhoneticsLetters() {
               ],
             },
 
-            // Letters 'ui'
             {
               href: "letters-ui",
               label: [
@@ -310,21 +308,22 @@ export default function PhoneticsLetters() {
               ],
             },
 
-            // Letters 'us'
             {
               href: "letters-us",
               label: ["Letters 'us':  ", { part: "/əs/", type: "phonetics" }],
             },
 
-            // "Letters 'oo' vs. 'u'
             {
+              compare: true,
               href: "letters-oo-vs-u",
               label: [
                 "Letters 'oo' vs. 'u':  ",
                 { part: "/uː/ vs. /ʊ/", type: "phonetics" },
               ],
             },
-
+            {
+              lineBreak: true,
+            },
             {
               href: "letter-y",
               label: [
@@ -1538,29 +1537,241 @@ export default function PhoneticsLetters() {
 
         <Section
           id="letter-a"
-          label="Letters 'a': /æ/, /ɑː/, /ə/, /eɪ/"
+          label="Letters 'a': /æ/, /ɑː/, /eɪ/, /ə/"
           heading={3}
         >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // /æ/
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
+                        part: "/æ/",
                         type: "phonetics",
                       },
+                    ],
+                  },
+                  {
+                    text: [
+                      // apple
+                      {
+                        audio: "/assets/audio/general/apple.mp3",
+                        part: "a",
+                        type: "bold-mark",
+                      },
+                      {
+                        part: "pple",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ˈæp.əl/", type: "phonetics" },
                       " ",
                       {
-                        part: "...",
-                        type: "portuguese",
+                        bullet: true,
                       },
+                      // cat
+                      {
+                        audio: "/assets/audio/general/cat.mp3",
+                        part: "c",
+                        type: "bold",
+                      },
+                      {
+                        part: "a",
+                        type: "bold-mark",
+                      },
+                      "t ",
+                      { part: "/kæt/", type: "phonetics" },
+                      " ",
+                      // cat
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      "I ate an ",
+                      { type: "mark", part: "apple" },
+                      ". ",
+                      { part: "Eu comi uma maçã.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+                  // /ɑː/ — long
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
+                        part: "/ɑː/",
+                        type: "phonetics",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      // calm
+                      {
+                        audio: "/assets/audio/general/calm.mp3",
+                        part: "c",
+                        type: "bold",
+                      },
+                      {
+                        part: "a",
+                        type: "bold-mark",
+                      },
+                      {
+                        part: "lm",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "//", type: "phonetics" },
+                      " ",
+                      {
+                        bullet: true,
+                      },
+                      // father
+                      {
+                        audio: "/assets/audio/general/father.mp3",
+                        part: "f",
+                        type: "bold",
+                      },
+                      {
+                        part: "a",
+                        type: "bold-mark",
+                      },
+                      {
+                        part: "ther",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ˈfɑːðər/", type: "phonetics" },
+                      " ",
+                      {
+                        bullet: true,
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      "My ",
+                      { type: "mark", part: "father" },
+                      " is at home. ",
+                      { part: "Meu pai está em casa.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+                  // /eɪ/
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/eɪ.mp3",
+                        part: "/eɪ/",
+                        type: "phonetics",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      // day
+                      {
+                        audio: "/assets/audio/general/day.mp3",
+                        part: "d",
+                        type: "bold",
+                      },
+                      {
+                        part: "a",
+                        type: "bold-mark",
+                      },
+                      {
+                        part: "y",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/deɪ/", type: "phonetics" },
+                      {
+                        bullet: true,
+                      },
+                      // pay
+                      {
+                        audio: "/assets/audio/general/pay.mp3",
+                        part: "p",
+                        type: "bold",
+                      },
+                      {
+                        part: "a",
+                        type: "bold-mark",
+                      },
+                      {
+                        part: "y",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/peɪ/", type: "phonetics" },
+                      {
+                        bullet: true,
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      "Have a nice ",
+                      { type: "mark", part: "day" },
+                      "! ",
+                      { part: "Tenha um bom dia!", type: "portuguese" },
+                    ],
+                  },
+
+                  { hr: true },
+
+                  // /ə/
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/vowels/ə-ʌ.mp3",
+                        part: "/ə/",
+                        type: "phonetics",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/banana.mp3",
+                        part: "b",
+                        type: "bold",
+                      },
+                      {
+                        part: "a",
+                        type: "bold-mark",
+                      },
+                      {
+                        part: "nana",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/bəˈnænə/", type: "phonetics" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  {
+                    text: [
+                      "I like ",
+                      { type: "mark", part: "banana" },
+                      "s. ",
+                      { part: "Eu gosto de bananas.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -1578,7 +1789,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1598,16 +1809,16 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letters-au" label="Letters 'au': /ɑː/" heading={3}>
+        <Section id="letters-au" label="Letters 'au': /ɔː/" heading={3}>
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // audio
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/audio.mp3",
                         part: "... ",
                       },
                       {
@@ -1629,29 +1840,216 @@ export default function PhoneticsLetters() {
 
         <Section
           id="letters-aw-awe"
-          label="Letters 'aw / awe': /ɑː/"
+          label="Letters 'aw', 'awe': /ɔː/"
           heading={3}
         >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // awe
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
+                        audio: "/assets/audio/general/awe.mp3",
+                        part: "awe",
+                        type: "bold",
                       },
                       " ",
+                      { part: "/ɔː/", type: "phonetics" },
+                      " ",
+                      { part: "admiração; espanto", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      "We watched in ",
+                      { type: "mark", part: "awe" },
+                      ". ",
                       {
-                        part: "...",
+                        part: "Nós assistimos com admiração.",
                         type: "portuguese",
                       },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // law
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/law.mp3",
+                        part: "law",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/lɔː/", type: "phonetics" },
+                      " ",
+                      { part: "lei", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      "This is the ",
+                      { type: "mark", part: "law" },
+                      ". ",
+                      { part: "Esta é a lei.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // saw
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/saw.mp3",
+                        part: "saw",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/sɔː/", type: "phonetics" },
+                      " ",
+                      { part: "viu / serra", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      "I ",
+                      { type: "mark", part: "saw" },
+                      " a bird. ",
+                      { part: "Eu vi um pássaro.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // draw
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/draw.mp3",
+                        part: "draw",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/drɔː/", type: "phonetics" },
+                      " ",
+                      {
+                        part: "desenhar / puxar / empatar",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      "Let’s ",
+                      { type: "mark", part: "draw" },
+                      " a picture. ",
+                      {
+                        part: "Vamos desenhar um desenho.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // raw
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/raw.mp3",
+                        part: "raw",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/rɔː/", type: "phonetics" },
+                      " ",
+                      { part: "cru", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      "The meat is ",
+                      { type: "mark", part: "raw" },
+                      ". ",
+                      { part: "A carne está crua.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // claw
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/claw.mp3",
+                        part: "claw",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/klɔː/", type: "phonetics" },
+                      " ",
+                      { part: "garra", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      "The cat has a sharp ",
+                      { type: "mark", part: "claw" },
+                      ". ",
+                      {
+                        part: "O gato tem uma garra afiada.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // jaw
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/jaw.mp3",
+                        part: "jaw",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/dʒɔː/", type: "phonetics" },
+                      " ",
+                      { part: "mandíbula", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      "My ",
+                      { type: "mark", part: "jaw" },
+                      " hurts. ",
+                      { part: "Minha mandíbula dói.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  { hr: true },
+
+                  // awesome
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/awesome.mp3",
+                        part: "awesome",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ˈɔːsəm/", type: "phonetics" },
+                      " ",
+                      { part: "incrível / impressionante", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      "That movie is ",
+                      { type: "mark", part: "awesome" },
+                      ". ",
+                      { part: "Esse filme é incrível.", type: "portuguese" },
                     ],
                   },
                 ],
@@ -1669,7 +2067,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1698,7 +2096,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1728,7 +2126,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1757,7 +2155,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1786,7 +2184,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1815,7 +2213,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1844,36 +2242,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letters-e-ea-ee-ei-eo-ey-i-ie-y" label="Letters 'e', 'ea', 'ee', 'ei', 'eo', 'ey', 'i', 'ie', 'y': /iː/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // bottom
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -1894,8 +2263,41 @@ export default function PhoneticsLetters() {
         </Section>
 
         <Section
-          id="letters-a-e"
-          label="Letters 'a' /æ/ vs. 'e' /e/"
+          id="letters-e-ea-ee-ei-eo-ey-i-ie-y"
+          label="Letters 'e', 'ea', 'ee', 'ei', 'eo', 'ey', 'i', 'ie', 'y': /iː/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section
+          id="letters-a-vs-e"
+          label="Letters 'a': /æ/ vs. 'e': /e/"
           heading={3}
         >
           <Paragraph
@@ -1938,6 +2340,7 @@ export default function PhoneticsLetters() {
                         part: "end",
                         type: "bold",
                       },
+                      " ",
                       { part: "/end/", type: "phonetics" },
                     ],
                   },
@@ -2376,16 +2779,20 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letter-i" label="Letter 'i': /i/, /ɪ/, /ə/, /aɪ/, /ɑː/" heading={3}>
+        <Section
+          id="letter-i"
+          label="Letter 'i': /i/, /ɪ/, /ə/, /aɪ/, /ɑː/"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2665,11 +3072,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2694,11 +3101,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2723,11 +3130,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2747,16 +3154,20 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letters-(t)ch" label="Letters '(t)ch': /tʃ/, /ʃ/, /k/" heading={3}>
+        <Section
+          id="letters-(t)ch"
+          label="Letters '(t)ch': /tʃ/, /ʃ/, /k/"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // .
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2776,16 +3187,20 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letters-sh-vs-ch" label="Letters 'sh' /ʃ/ vs. 'ch' /tʃ/:" heading={3}>
+        <Section
+          id="letters-sh-vs-ch"
+          label="Letters 'sh' /ʃ/ vs. 'ch' /tʃ/:"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2810,11 +3225,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2843,7 +3258,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2863,16 +3278,20 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letters-oo" label="Letters 'oo': /ʌ/, /ʊ/, /uː/" heading={3}>
+        <Section
+          id="letters-oo"
+          label="Letters 'oo': /ʌ/, /ʊ/, /uː/"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2897,11 +3316,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2926,11 +3345,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -2955,11 +3374,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -3329,16 +3748,20 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letter-u" label="Letter 'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/" heading={3}>
+        <Section
+          id="letter-u"
+          label="Letter 'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -3363,11 +3786,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -3392,11 +3815,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ..
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -3416,7 +3839,11 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letters-oo-vs-u" label="Letters 'oo' /uː/ vs. 'u' /ʊ/" heading={3}>
+        <Section
+          id="letters-oo-vs-u"
+          label="Letters 'oo' /uː/ vs. 'u' /ʊ/"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
@@ -3425,7 +3852,7 @@ export default function PhoneticsLetters() {
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {
@@ -3450,11 +3877,11 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // bottom
+                  // ...
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/bottom-us.mp3",
+                        audio: "/assets/audio/general/.mp3",
                         part: "... ",
                       },
                       {

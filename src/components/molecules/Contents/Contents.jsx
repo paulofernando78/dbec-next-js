@@ -1,6 +1,6 @@
 import { Bold } from "@/components/atoms/Bold";
 import { InlineText } from "@/components/molecules/InlineText";
-import { Content, ContentLink } from "@/lib/svg-imports.js";
+import { Content, ContentLink, Compare } from "@/lib/svg-imports.js";
 
 export const Contents = ({ items = [] }) => {
   return (
@@ -17,6 +17,7 @@ export const Contents = ({ items = [] }) => {
             <div key={index} className="flex-align">
               <li className={item.lineBreak ? "line-break-item" : ""}>
                 {!item.lineBreak && <ContentLink className="icon-position" />}
+                {item.compare && <Compare className="icon-position" />}
                 <a href={`#${item.href}`}>
                   {Array.isArray(item.label) ? (
                     <InlineText text={item.label} />

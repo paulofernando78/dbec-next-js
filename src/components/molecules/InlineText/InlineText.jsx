@@ -38,6 +38,9 @@ export const InlineText = ({ text = [] }) => {
           case "mark":
             content = <Mark>{part.part}</Mark>;
             break;
+          case "bold-mark":
+            content = <Bold><Mark>{part.part}</Mark></Bold>;
+            break;
           case "underline":
             content = <Underline>{part.part}</Underline>;
             break;
