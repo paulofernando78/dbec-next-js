@@ -1,4 +1,5 @@
 import { Bold } from "@/components/atoms/Bold";
+import { InlineText } from "@/components/molecules/InlineText";
 import { Content, ContentLink } from "@/lib/svg-imports.js";
 
 export const Contents = ({ items = [] }) => {
@@ -15,8 +16,15 @@ export const Contents = ({ items = [] }) => {
           {items.map((item, index) => (
             <div key={index} className="flex-align">
               <li className={item.lineBreak ? "line-break-item" : ""}>
-                <ContentLink className="icon-position"/>
-                <a href={`#${item.href}`}>{item.label}</a>
+                {!item.lineBreak && <ContentLink className="icon-position" />}
+                <a href={`#${item.href}`}>
+                  {item.label}
+                  {Array.isArray(item.label) ? (
+                    <InlineText text={item.label} />
+                  ) : (
+                    item.label
+                  )}
+                </a>
               </li>
             </div>
           ))}
