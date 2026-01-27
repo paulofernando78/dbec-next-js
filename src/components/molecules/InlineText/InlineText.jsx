@@ -62,7 +62,7 @@ export const InlineText = ({ text = [] }) => {
           <span key={i}>
             {part.usFlag && <USflag className="icon-position" />}
             {part.ukFlag && <UKflag className="icon-position" />}
-            {part.important && <Attention className="icon-position" />}
+            {part.attention && <Attention className="icon-position" />}
             {part.correct && <Correct className="icon-position" />}
             {part.incorrect && <Incorrect className="icon-position" />}
             {part.audio && <Audio src={part.audio} />}

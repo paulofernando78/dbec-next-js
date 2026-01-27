@@ -5,6 +5,7 @@ import styles from "./Navbar.module.css";
 import { HeaderContext } from "@/context/headerContext";
 import Link from "next/link";
 import { useContext } from "react";
+import { Attention } from "@/lib/svg-imports";
 
 const links = [
   {
@@ -126,11 +127,13 @@ const links = [
     links: [
       // Phonetics + Letters
       {
+        attention: true,
         href: "/pronunciation/phonetics-letters",
         label: "Phonetics + Letters",
       },
       // Linked Sounds
       {
+        attention: true,
         href: "/pronunciation/linked-sounds",
         label: "Linked Sounds",
       },
@@ -337,9 +340,12 @@ export default function NavBar() {
           {group.links && (
             <div>
               {group.links.map((item, linkIndex) => (
-                <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
-                  {item.label}
-                </Link>
+                <>
+                  <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
+                  {item.attention && <Attention className={`${styles.attentionIcon} icon-position`}  />}
+                    {item.label}
+                  </Link>
+                </>
               ))}
             </div>
           )}

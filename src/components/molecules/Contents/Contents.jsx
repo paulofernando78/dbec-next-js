@@ -18,7 +18,6 @@ export const Contents = ({ items = [] }) => {
               <li className={item.lineBreak ? "line-break-item" : ""}>
                 {!item.lineBreak && <ContentLink className="icon-position" />}
                 <a href={`#${item.href}`}>
-                  {item.label}
                   {Array.isArray(item.label) ? (
                     <InlineText text={item.label} />
                   ) : (
