@@ -10,34 +10,6 @@ export default function Articles() {
     <>
       <Whiteboard title="Reference" subtitle="blank" />
       <div className="line-break">
-        <Paragraph
-          blocks={[
-            {
-              audioPlayer: "/assets/audio/general/",
-              img: "/img/general/",
-              alt: "",
-              width: 200,
-              height: 200,
-              lines: [
-                {
-                  text: [
-                    {
-                      part: "Articles",
-                      type: "bold",
-                    },
-                    " ",
-                    "are small words that come before a noun to show if it is specific or general.",
-                    " ",
-                    {
-                      part: "Eles vêm antes do substantivo para mostrar se algo é específico ou geral.",
-                      type: "portuguese",
-                    },
-                  ],
-                },
-              ],
-            },
-          ]}
-        />
         <Contents
           items={[
             { href: "basic", label: "What Are Articles?" },
@@ -56,11 +28,11 @@ export default function Articles() {
                     text: [
                       { part: "Articles", type: "bold" },
                       " ",
-                      "are words that come before a noun.",
+                      "are words that come before a noun. They help us know if we are talking about something general or specific.",
                       " ",
                       {
-                        part: "They help us know if we are talking about something general or specific.",
-                        type: "mark",
+                        part: "Artigos são palavras que vêm antes de um substantivo. Eles nos ajudam a saber se estamos falando de algo geral ou específico.",
+                        type: "portuguese",
                       },
                     ],
                   },
@@ -218,8 +190,9 @@ export default function Articles() {
                     ],
                   },
                   {
-                    lineBreak: true,
+                    hr: true,
                   },
+                  // The letter 'u' can have the phonetic symbol /j/, which means it starts with a consonant sound, not a vowel sound.
                   {
                     text: [
                       {
@@ -480,6 +453,7 @@ export default function Articles() {
             blocks={[
               {
                 lines: [
+                  // Zero article means we do not use an article before the noun.
                   {
                     text: [
                       { part: "Zero article", type: "bold" },
@@ -495,15 +469,25 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
+                  // We often use no article with plural nouns and uncountable nouns when talking in general.
                   {
                     text: [
                       {
                         attention: true,
                       },
                       {
-                        part: "We often use no article with plural nouns and uncountable nouns when talking in general.",
+                        part: "We often use no article with ",
                       },
-                      " ",
+                      {
+                        part: "plural nouns",
+                        type: "mark"
+                      },
+                      " and ",
+                      {
+                        part: "uncountable nouns",
+                        type: "mark"
+                      },
+                      "  when talking in general. ",
                       {
                         part: "Usamos sem artigo com plurais e substantivos incontáveis em sentido geral.",
                         type: "portuguese",
@@ -513,24 +497,23 @@ export default function Articles() {
                   {
                     lineBreak: true,
                   },
+                  // • Dogs are friendly. 
                   {
                     text: [
-                      {
-                        bullet: true,
-                      },
+                      { bullet: true },
                       "Dogs are friendly. ",
                       { part: "Cachorros são amigáveis.", type: "portuguese" },
                     ],
                   },
+                  // • Water is important.
                   {
                     text: [
-                      {
-                        bullet: true,
-                      },
+                      { bullet: true },
                       "Water is important. ",
                       { part: "Água é importante.", type: "portuguese" },
                     ],
                   },
+                  // • I like music.
                   {
                     text: [
                       { bullet: true },
@@ -539,6 +522,7 @@ export default function Articles() {
                       { part: "Eu gosto de música.", type: "portuguese" },
                     ],
                   },
+                  // • Children need love.
                   {
                     text: [
                       { bullet: true },
@@ -548,6 +532,130 @@ export default function Articles() {
                         part: "Crianças precisam de amor.",
                         type: "portuguese",
                       },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  // We usually use no article with most country names, languages, meals, sports, and academic subjects.
+                  {
+                    text: [
+                      {
+                        attention: true,
+                      },
+                      {
+                        part: "We usually use no article with ",
+                      },
+                      " ",
+                      {
+                        part: "most country names, languages, meals, sports, and academic subjects",
+                        type: "mark"
+                      },
+                      ". ",
+                      {
+                        part: "Normalmente não usamos artigo com a maioria dos nomes de países, idiomas, refeições, esportes e matérias acadêmicas.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // They live in Brazil.
+                  {
+                    text: [
+                      { bullet: true },
+                      "They live in Brazil. ",
+                      { part: "Eles moram no Brasil.", type: "portuguese" },
+                    ],
+                  },
+                  // She speaks Portuguese.
+                  {
+                    text: [
+                      { bullet: true },
+                      "She speaks Portuguese. ",
+                      { part: "Ela fala português.", type: "portuguese" },
+                    ],
+                  },
+                  // We had breakfast at home.
+                  {
+                    text: [
+                      { bullet: true },
+                      "We had breakfast at home.",
+                      " ",
+                      { part: "Nós tomamos café da manhã em casa.", type: "portuguese" },
+                    ],
+                  },
+                  // She plays soccer on weekends.
+                  {
+                    text: [
+                      { bullet: true },
+                      "She plays soccer on weekends.",
+                      " ",
+                      { part: "Ela joga futebol nos fins de semana.", type: "portuguese" },
+                    ],
+                  },
+                  // I study math and history.
+                  {
+                    text: [
+                      { bullet: true },
+                      "I study math and history.",
+                      " ",
+                      { part: "Eu estudo matemática e história.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  // We also use no article with streets, parks, lakes, and mountains, and with institutions in a general sense (school, bed, hospital, prison, church, university).
+                  {
+                    text: [
+                      {
+                        attention: true,
+                      },
+                      {
+                        part: "We also use no article with ",
+                      },
+                      " ",
+                      {
+                        part: "streets, parks, lakes, and mountains, and with institutions",
+                        type: "mark"
+                      },
+                      "  in a general sense (school, bed, hospital, prison, church, university). ",
+                      {
+                        part: "Também usamos sem artigo com ruas, parques, lagos e montanhas, e com instituições em sentido geral (escola, cama, hospital, prisão, igreja, universidade).",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // They live on Main Street.
+                  {
+                    text: [
+                      { bullet: true },
+                      "They live on Main Street.",
+                      " ",
+                      { part: "Eles moram na Rua Principal.", type: "portuguese" },
+                    ],
+                  },
+                  // He goes to school every day.
+                  {
+                    text: [
+                      { bullet: true },
+                      "He goes to school every day.",
+                      " ",
+                      { part: "Ele vai para a escola todos os dias.", type: "portuguese" },
+                    ],
+                  },
+                  // He is in bed.
+                  {
+                    text: [
+                      { bullet: true },
+                      "He is in bed.",
+                      " ",
+                      { part: "Ele está na cama.", type: "portuguese" },
                     ],
                   },
                 ],
