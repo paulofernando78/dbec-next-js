@@ -12,36 +12,67 @@ export default function Adjectives() {
         <Contents
           items={[
             { href: "basic", label: "Basic Adjectives" },
-            { href: "comparative", label: "Comparatives" },
-            { href: "ing-ed", label: "Superlatives" },
             { href: "ing-ed", label: "-ing vs. -ed" },
-            { href: "descriptive", label: "Descriptive" },
+            { href: "descriptive", label: "-ing (Descriptive / Participial)" },
             { href: "compound", label: "Compound" },
+            { href: "comparative", label: "Comparatives" },
+            { href: "superltives", label: "Superlatives" },
           ]}
         />
-        
+
         <Section id="basic" label="Basic Adjectives" heading={3}>
           <Paragraph
             blocks={[
               {
                 lines: [
+                  // Basic adjectives are used to describe people, things, places, and situations.
                   {
                     text: [
                       { part: "Basic adjectives", type: "bold" },
                       " ",
                       "are used to describe people, things, places, and situations. They answer the question:",
-                      " ",
-                      { part: "What is it like?", type: "mark" },
                     ],
                   },
                   {
                     lineBreak: true,
                   },
+                  // They answer the question: What is it like?
                   {
                     text: [
                       {
                         attention: true,
-                        part: "Adjectives usually come before a noun or after the verb 'to be'.",
+                      },
+                      "They answer the question:",
+                      " ",
+                      {
+                        part: "What is it like?",
+                        type: "mark",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // Adjectives usually come before a noun or after the verb 'to be'.
+                  {
+                    text: [
+                      {
+                        attention: true,
+                        part: "Adjectives usually come",
+                      },
+                      " ",
+                      {
+                        part: "before",
+                        type: "mark",
+                      },
+                      " a noun or ",
+                      {
+                        part: "after",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "the verb 'to be'.",
                       },
                       " ",
                       {
@@ -53,6 +84,7 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
+                  // a big house
                   {
                     text: [
                       { part: "a big house", type: "bold" },
@@ -60,6 +92,7 @@ export default function Adjectives() {
                       { part: "uma casa grande", type: "portuguese" },
                     ],
                   },
+                  // a happy child
                   {
                     text: [
                       { part: "a happy child", type: "bold" },
@@ -67,6 +100,7 @@ export default function Adjectives() {
                       { part: "uma criança feliz", type: "portuguese" },
                     ],
                   },
+                  // the blue sky
                   {
                     text: [
                       { part: "the blue sky", type: "bold" },
@@ -77,6 +111,7 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
+                  // The house is big.
                   {
                     text: [
                       { bullet: true },
@@ -88,6 +123,7 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // She is happy.
                   {
                     text: [
                       { bullet: true },
@@ -99,6 +135,7 @@ export default function Adjectives() {
                       },
                     ],
                   },
+                  // The sky is blue.
                   {
                     text: [
                       { bullet: true },
@@ -113,10 +150,11 @@ export default function Adjectives() {
                   {
                     hr: true,
                   },
+                  // Adjectives do not change for plural or gender in English.
                   {
                     text: [
                       {
-                        important: true,
+                        attention: true,
                         part: "Adjectives do not change for plural or gender in English.",
                       },
                       " ",
@@ -129,6 +167,7 @@ export default function Adjectives() {
                   {
                     lineBreak: true,
                   },
+                  // two small cars
                   {
                     text: [
                       { part: "two small cars", type: "bold" },
@@ -136,11 +175,304 @@ export default function Adjectives() {
                       { part: "dois carros pequenos", type: "portuguese" },
                     ],
                   },
+                  // three old houses
                   {
                     text: [
                       { part: "three old houses", type: "bold" },
                       " ",
                       { part: "três casas velhas", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="ing-ed" label="-ing vs. -ed" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // Adjectives ending in -ing describe the cause of a feeling or what makes something interesting, boring, exciting, etc.
+                  {
+                    text: [
+                      { part: "Adjectives ending in -ing", type: "bold" },
+                      " ",
+                      "describe the ",
+                      { part: "cause", type: "mark" },
+                      " of a feeling or what makes something interesting, boring, exciting, etc.",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // The movie is interesting.
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                        part: "The movie is interest",
+                        type: "bold",
+                      },
+                      {
+                        part: "ing",
+                        type: "mark",
+                      },
+                      ". ",
+                      { part: "O filme é interessante.", type: "portuguese" },
+                    ],
+                  },
+                  // The class was boring.
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                        part: "The class was bor",
+                        type: "bold",
+                      },
+                      {
+                        part: "ing",
+                        type: "mark",
+                      },
+                      ". ",
+                      { part: "A aula foi entediante.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    hr: true,
+                  },
+                  // Adjectives ending in -ed describe how a personfeels as a result of something.
+                  {
+                    text: [
+                      { part: "Adjectives ending in -ed", type: "bold" },
+                      " describe how a person ",
+                      {
+                        part: "feels",
+                        type: "mark",
+                      },
+                      " as a result of something.",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // I am interested in the movie.
+                  {
+                    text: [
+                      { bullet: true, part: "I am interest", type: "bold" },
+                      {
+                        part: "ed",
+                        type: "mark",
+                      },
+                      " in the movie. ",
+                      {
+                        part: "Eu estou interessado no filme.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // She was bored during the class.
+                  {
+                    text: [
+                      { bullet: true, part: "She was bor", type: "bold" },
+                      {
+                        part: "ed",
+                        type: "mark",
+                      },
+                      " during the class. ",
+                      " ",
+                      {
+                        part: "Ela estava entediada durante a aula.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // They are excited about the trip.
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                        part: "They are excit",
+                        type: "bold",
+                      },
+                      {
+                        part: "ed",
+                        type: "mark",
+                      },
+                      " about the trip. ",
+                      " ",
+                      {
+                        part: "Eles estão animados com a viagem.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                        part: "The food is disgust",
+                        type: "bold",
+                      },
+                      { part: "ing", type: "mark" },
+                      ". ",
+                      { part: "A comida é nojenta.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true, part: "I am disgust", type: "bold" },
+                      { part: "ed", type: "mark" },
+                      ". ",
+                      { part: "Eu estou enojado(a).", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section
+          id="descriptive"
+          label="-ing (Descriptive / Participial)"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      {
+                        part: "-ing as a descriptive / participial adjective",
+                        type: "bold",
+                      },
+                      " ",
+                      {
+                        part: "is used to describe a state, characteristic, or type of thing, not a feeling or its cause.",
+                        type: "portuguese",
+                      },
+                      " ",
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        attention: true,
+                        part: "It answers: What kind of thing is it?",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { part: "living organisms", type: "bold" },
+                      " ",
+                      { part: "organismos vivos", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "a sleeping baby", type: "bold" },
+                      " ",
+                      { part: "um bebê dormindo", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "boiling water", type: "bold" },
+                      " ",
+                      { part: "água fervendo", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { part: "flying saucer", type: "bold" },
+                      " ",
+                      { part: "disco voador", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="compound" label="Compound" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // Compound adjectives are made of two or more words that work together as one adjective.
+                  {
+                    text: [
+                      { part: "Compound adjectives", type: "bold" },
+                      " are made of two or more words that work together as one adjective.",
+                    ],
+                  },
+                  // lineBreak
+                  {
+                    lineBreak: true,
+                  },
+                  // They are often connected with a hyphen.
+                  {
+                    text: [
+                      {
+                        attention: true,
+                        part: "They are often connected with a hyphen.",
+                      },
+                    ],
+                  },
+                  // lineBreak
+                  {
+                    lineBreak: true,
+                  },
+                  // a well-known actor
+                  {
+                    text: [
+                      { part: "a well-known actor", type: "bold" },
+                      " ",
+                      { part: "um ator conhecido", type: "portuguese" },
+                    ],
+                  },
+                  // a full-time job
+                  {
+                    text: [
+                      { part: "a full-time job", type: "bold" },
+                      " ",
+                      {
+                        part: "um trabalho em tempo integral",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // a five-minute break
+                  {
+                    text: [
+                      { part: "a five-minute break", type: "bold" },
+                      " ",
+                      {
+                        part: "uma pausa de cinco minutos",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // a high-quality product
+                  {
+                    text: [
+                      { part: "a high-quality product", type: "bold" },
+                      " ",
+                      {
+                        part: "um produto de alta qualidade",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -1443,7 +1775,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the best day of my life.",
                       " ",
-                      { part: "Este é o melhor dia da minha vida.", type: "portuguese" },
+                      {
+                        part: "Este é o melhor dia da minha vida.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1451,7 +1786,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the worst movie I have ever seen.",
                       " ",
-                      { part: "Este é o pior filme que eu já vi.", type: "portuguese" },
+                      {
+                        part: "Este é o pior filme que eu já vi.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1459,7 +1797,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "She has the least free time in the group.",
                       " ",
-                      { part: "Ela tem menos tempo livre no grupo.", type: "portuguese" },
+                      {
+                        part: "Ela tem menos tempo livre no grupo.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1467,7 +1808,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the farthest house from the school.",
                       " ",
-                      { part: "Esta é a casa mais distante da escola.", type: "portuguese" },
+                      {
+                        part: "Esta é a casa mais distante da escola.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1537,7 +1881,10 @@ export default function Adjectives() {
                       { part: "the old", type: "bold" },
                       { part: "est", type: "mark" },
                       " ",
-                      { part: "o mais velho / o mais antigo", type: "portuguese" },
+                      {
+                        part: "o mais velho / o mais antigo",
+                        type: "portuguese",
+                      },
                       " ",
                     ],
                   },
@@ -1549,7 +1896,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the cleanest room in the house.",
                       " ",
-                      { part: "Este é o quarto mais limpo da casa.", type: "portuguese" },
+                      {
+                        part: "Este é o quarto mais limpo da casa.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1557,7 +1907,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "He is the fastest runner on the team.",
                       " ",
-                      { part: "Ele é o corredor mais rápido do time.", type: "portuguese" },
+                      {
+                        part: "Ele é o corredor mais rápido do time.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1565,7 +1918,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "She is the oldest student in the class.",
                       " ",
-                      { part: "Ela é a aluna mais velha da turma.", type: "portuguese" },
+                      {
+                        part: "Ela é a aluna mais velha da turma.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1621,7 +1977,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the nicest park in the city.",
                       " ",
-                      { part: "Este é o parque mais legal da cidade.", type: "portuguese" },
+                      {
+                        part: "Este é o parque mais legal da cidade.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1629,7 +1988,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the safest neighborhood in the area.",
                       " ",
-                      { part: "Este é o bairro mais seguro da região.", type: "portuguese" },
+                      {
+                        part: "Este é o bairro mais seguro da região.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1685,7 +2047,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the biggest house on the street.",
                       " ",
-                      { part: "Esta é a maior casa da rua.", type: "portuguese" },
+                      {
+                        part: "Esta é a maior casa da rua.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1693,7 +2058,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the hottest day of the year.",
                       " ",
-                      { part: "Este é o dia mais quente do ano.", type: "portuguese" },
+                      {
+                        part: "Este é o dia mais quente do ano.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1762,7 +2130,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "She is the busiest person in the office.",
                       " ",
-                      { part: "Ela é a pessoa mais ocupada do escritório.", type: "portuguese" },
+                      {
+                        part: "Ela é a pessoa mais ocupada do escritório.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1770,7 +2141,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the easiest test in the course.",
                       " ",
-                      { part: "Este é o teste mais fácil do curso.", type: "portuguese" },
+                      {
+                        part: "Este é o teste mais fácil do curso.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1778,7 +2152,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "He is the happiest child in the family.",
                       " ",
-                      { part: "Ele é a criança mais feliz da família.", type: "portuguese" },
+                      {
+                        part: "Ele é a criança mais feliz da família.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1863,7 +2240,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the most beautiful place I know.",
                       " ",
-                      { part: "Este é o lugar mais bonito que eu conheço.", type: "portuguese" },
+                      {
+                        part: "Este é o lugar mais bonito que eu conheço.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1871,7 +2251,10 @@ export default function Adjectives() {
                       { bullet: true },
                       "This is the most important decision of my life.",
                       " ",
-                      { part: "Esta é a decisão mais importante da minha vida.", type: "portuguese" },
+                      {
+                        part: "Esta é a decisão mais importante da minha vida.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -1879,293 +2262,8 @@ export default function Adjectives() {
                       { bullet: true },
                       "This job is the most stressful one in the company.",
                       " ",
-                      { part: "Este trabalho é o mais estressante da empresa.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="ing-ed" label="-ing vs. -ed" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // Adjectives ending in -ing describe the cause of a feeling or what makes something interesting, boring, exciting, etc.
-                  {
-                    text: [
-                      { part: "Adjectives ending in -ing", type: "bold" },
-                      " ",
-                      "describe the ",
-                      { part: "cause", type: "mark" },
-                      " of a feeling or what makes something interesting, boring, exciting, etc.",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // The movie is interesting.
-                  {
-                    text: [
                       {
-                        bullet: true,
-                        part: "The movie is interest",
-                        type: "bold",
-                      },
-                      {
-                        part: "ing",
-                        type: "mark",
-                      },
-                      ". ",
-                      { part: "O filme é interessante.", type: "portuguese" },
-                    ],
-                  },
-                  // The class was boring.
-                  {
-                    text: [
-                      {
-                        bullet: true,
-                        part: "The class was bor",
-                        type: "bold",
-                      },
-                      {
-                        part: "ing",
-                        type: "mark",
-                      },
-                      ". ",
-                      { part: "A aula foi entediante.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    hr: true,
-                  },
-                  // Adjectives ending in -ed describe how a personfeels as a result of something.
-                  {
-                    text: [
-                      { part: "Adjectives ending in -ed", type: "bold" },
-                      " describe how a person ",
-                      {
-                        part: "feels",
-                        type: "mark",
-                      },
-                      " as a result of something.",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // I am interested in the movie.
-                  {
-                    text: [
-                      { bullet: true, part: "I am interest", type: "bold" },
-                      {
-                        part: "ed",
-                        type: "mark",
-                      },
-                      " in the movie. ",
-                      {
-                        part: "Eu estou interessado no filme.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // She was bored during the class.
-                  {
-                    text: [
-                      { bullet: true, part: "She was bor", type: "bold" },
-                      {
-                        part: "ed",
-                        type: "mark",
-                      },
-                      " during the class. ",
-                      " ",
-                      {
-                        part: "Ela estava entediada durante a aula.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // They are excited about the trip.
-                  {
-                    text: [
-                      {
-                        bullet: true,
-                        part: "They are excit",
-                        type: "bold",
-                      },
-                      {
-                        part: "ed",
-                        type: "mark",
-                      },
-                      " about the trip. ",
-                      " ",
-                      {
-                        part: "Eles estão animados com a viagem.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true, part: "The food is disgust", type: "bold" },
-                      { part: "ing", type: "mark" },
-                      ". ",
-                      { part: "A comida é nojenta.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true, part: "I am disgust", type: "bold" },
-                      { part: "ed", type: "mark" },
-                      ". ",
-                      { part: "Eu estou enojado(a).", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section
-          id="descriptive"
-          label="-ing (Descriptive / Participial)"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        part: "-ing as a descriptive / participial adjective",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "is used to describe a state, characteristic, or type of thing, not a feeling or its cause.",
-                        type: "portuguese",
-                      },
-                      " ",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        attention: true,
-                        part: "It answers: What kind of thing is it?",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "living organisms", type: "bold" },
-                      " ",
-                      { part: "organismos vivos", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "a sleeping baby", type: "bold" },
-                      " ",
-                      { part: "um bebê dormindo", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "boiling water", type: "bold" },
-                      " ",
-                      { part: "água fervendo", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { part: "flying saucer", type: "bold" },
-                      " ",
-                      { part: "disco voador", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="compound" label="Compound" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // Compound adjectives are made of two or more words that work together as one adjective.
-                  {
-                    text: [
-                      { part: "Compound adjectives", type: "bold" },
-                      " are made of two or more words that work together as one adjective.",
-                    ],
-                  },
-                  // lineBreak
-                  {
-                    lineBreak: true,
-                  },
-                  // They are often connected with a hyphen.
-                  {
-                    text: [
-                      {
-                        attention: true,
-                        part: "They are often connected with a hyphen.",
-                      },
-                    ],
-                  },
-                  // lineBreak
-                  {
-                    lineBreak: true,
-                  },
-                  // a well-known actor
-                  {
-                    text: [
-                      { part: "a well-known actor", type: "bold" },
-                      " ",
-                      { part: "um ator conhecido", type: "portuguese" },
-                    ],
-                  },
-                  // a full-time job
-                  {
-                    text: [
-                      { part: "a full-time job", type: "bold" },
-                      " ",
-                      {
-                        part: "um trabalho em tempo integral",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // a five-minute break
-                  {
-                    text: [
-                      { part: "a five-minute break", type: "bold" },
-                      " ",
-                      {
-                        part: "uma pausa de cinco minutos",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // a high-quality product
-                  {
-                    text: [
-                      { part: "a high-quality product", type: "bold" },
-                      " ",
-                      {
-                        part: "um produto de alta qualidade",
+                        part: "Este trabalho é o mais estressante da empresa.",
                         type: "portuguese",
                       },
                     ],
