@@ -11,6 +11,8 @@ import { PartOfSpeech } from "@/components/atoms/PartOfSpeech";
 import { Phonetics } from "@/components/atoms/Phonetics";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import { PortugueseBold } from "@/components/atoms/PortugueseBold";
+import { BulletPoint } from "@/components/atoms/BulletPoint";
+import { SquarePoint } from "@/components/atoms/SquarePoint";
 import { Connector } from "@/components/atoms/Connector";
 import {
   Correct,
@@ -69,7 +71,8 @@ export const InlineText = ({ text = [] }) => {
             {part.correct && <Correct className="icon-position" />}
             {part.incorrect && <Incorrect className="icon-position" />}
             {part.audio && <Audio src={part.audio} />}
-            {part.bullet && <Bold>• </Bold>}
+            {part.bullet && <BulletPoint>• </BulletPoint>}
+            {part.square && <SquarePoint>• </SquarePoint>}
             {content}
           </span>
         );
