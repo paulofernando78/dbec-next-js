@@ -3,7 +3,6 @@ import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Radio } from "@/components/molecules/Exercises/Radio";
-import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
 export default function Homonyms() {
   return (
@@ -279,94 +278,87 @@ export default function Homonyms() {
                     { option: "two", isCorrect: false },
                   ],
                 },
+                {
+                  question: "11. I have ___ brothers.",
+                  options: [
+                    { option: "two", isCorrect: true },
+                    { option: "too", isCorrect: false },
+                    { option: "to", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "12. It’s ___ hot today.",
+                  options: [
+                    { option: "too", isCorrect: true },
+                    { option: "to", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "13. She wants ___ learn English.",
+                  options: [
+                    { option: "to", isCorrect: true },
+                    { option: "too", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "14. He will ___ the project.",
+                  options: [
+                    { option: "lead", isCorrect: true },
+                    { option: "bank", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "15. The boat is near the river ___.",
+                  options: [
+                    { option: "bank", isCorrect: true },
+                    { option: "lead", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "16. The pipe is made of ___.",
+                  options: [
+                    { option: "lead", isCorrect: true },
+                    { option: "bank", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "17. It’s ___ late now.",
+                  options: [
+                    { option: "too", isCorrect: true },
+                    { option: "to", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "18. She has ___ cats.",
+                  options: [
+                    { option: "two", isCorrect: true },
+                    { option: "to", isCorrect: false },
+                    { option: "too", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "19. I need ___ go home.",
+                  options: [
+                    { option: "to", isCorrect: true },
+                    { option: "too", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
+                {
+                  question: "20. They sat on the river ___.",
+                  options: [
+                    { option: "bank", isCorrect: true },
+                    { option: "lead", isCorrect: false },
+                    { option: "two", isCorrect: false },
+                  ],
+                },
               ],
-            }}
-          />
-
-          <FillInTheBlanks
-            exercise={{
-              instructions: "2. Fill in the blanks with the correct word.",
-              blocks: [
-                {
-                  block: [
-                    { text: "1. I have " },
-                    { blank: "two" },
-                    { text: " brothers." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "2. It’s " },
-                    { blank: "too" },
-                    { text: " hot today." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "3. She wants " },
-                    { blank: "to" },
-                    { text: " learn English." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "4. He will " },
-                    { blank: "lead" },
-                    { text: " the project." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "5. The boat is near the river " },
-                    { blank: "bank" },
-                    { text: "." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "6. The pipe is made of " },
-                    { blank: "lead" },
-                    { text: "." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "7. It’s " },
-                    { blank: "too" },
-                    { text: " late now." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "8. She has " },
-                    { blank: "two" },
-                    { text: " cats." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "9. I need " },
-                    { blank: "to" },
-                    { text: " go home." }
-                  ],
-                  lineBreak: true
-                },
-                {
-                  block: [
-                    { text: "10. They sat on the river " },
-                    { blank: "bank" },
-                    { text: "." }
-                  ]
-                }
-              ]
             }}
           />
         </Section>

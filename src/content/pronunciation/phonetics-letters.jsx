@@ -1586,7 +1586,6 @@ export default function PhoneticsLetters() {
                       "t ",
                       { part: "/kæt/", type: "phonetics" },
                       " ",
-                      // cat
                     ],
                   },
                   {
@@ -2709,6 +2708,70 @@ export default function PhoneticsLetters() {
                   },
                   { hr: true },
 
+                  //! shad vs. shed
+                  // shad
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/shad.mp3",
+                        part: "shad",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ʃæd/", type: "phonetics" },
+                      " ",
+                      {
+                        part: "peixe shad (tipo de arenque)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // Example shad
+                  {
+                    text: [
+                      "The fisherman caught a ",
+                      { type: "mark", part: "shad" },
+                      ". ",
+                      {
+                        part: "O pescador pegou um peixe shad.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // shed
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/shed.mp3",
+                        part: "shed",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ʃed/", type: "phonetics" },
+                      " ",
+                      {
+                        part: "galpão / derramar / perder (pele, lágrimas)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // Example shed
+                  {
+                    text: [
+                      "He built a ",
+                      { type: "mark", part: "shed" },
+                      " in the yard. ",
+                      {
+                        part: "Ele construiu um galpão no quintal.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+
+                  { hr: true },
+
                   //! tan vs. ten
                   // tan
                   {
@@ -2769,6 +2832,64 @@ export default function PhoneticsLetters() {
                       " on the test. ",
                       {
                         part: "Eu tirei nota máxima na prova.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+
+                  { hr: true },
+
+                  //! than vs. then
+                  // than
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/than.mp3",
+                        part: "than",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ðæn/", type: "phonetics" },
+                      " ",
+                      { part: "do que (comparação)", type: "portuguese" },
+                    ],
+                  },
+                  // Example than
+                  {
+                    text: [
+                      "She is taller ",
+                      { type: "mark", part: "than" },
+                      " me. ",
+                      {
+                        part: "Ela é mais alta do que eu.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // then
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/then.mp3",
+                        part: "then",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ðen/", type: "phonetics" },
+                      " ",
+                      { part: "então / depois", type: "portuguese" },
+                    ],
+                  },
+                  // Example then
+                  {
+                    text: [
+                      "Finish your work, ",
+                      { type: "mark", part: "then" },
+                      " you can rest. ",
+                      {
+                        part: "Termine seu trabalho, depois você pode descansar.",
                         type: "portuguese",
                       },
                     ],
