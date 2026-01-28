@@ -1430,7 +1430,7 @@ export default function Adjectives() {
                       },
                       " ",
                       {
-                        part: "more beautiful",
+                        part: "beautiful",
                         type: "bold",
                       },
                       " ",

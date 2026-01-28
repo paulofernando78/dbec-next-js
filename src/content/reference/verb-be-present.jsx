@@ -10,7 +10,7 @@ import { List } from "@/components/molecules/List";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
-export default function VerbBe() {
+export default function VerbBePresent() {
   return (
     <>
       <Whiteboard title="Grammar" subtitle="Verb Be" />

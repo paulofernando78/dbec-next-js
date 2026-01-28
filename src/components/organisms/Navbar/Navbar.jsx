@@ -251,12 +251,12 @@ const links = [
       },
       // Passive Voice
       {
-        href: "/reference/passive Voice",
+        href: "/reference/passive-voice",
         label: "Passive Voice",
       },
       // Modal Verbs
       {
-        href: "/reference/modals",
+        href: "/reference/modal-verbs",
         label: "Modal Verbs",
       },
       // Conditonals

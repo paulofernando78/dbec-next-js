@@ -9,7 +9,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 export default function Pronouns() {
   return (
     <>
-      <Whiteboard title="Reference" subtitle="blank" />
+      <Whiteboard title="Reference" subtitle="Pronouns" />
       <div className="line-break">
         <Paragraph
           blocks={[

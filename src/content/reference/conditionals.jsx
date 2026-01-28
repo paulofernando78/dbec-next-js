@@ -4,7 +4,7 @@ import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
-export default function Blank() {
+export default function Conditionals() {
   return (
     <>
       <Whiteboard title="Reference" subtitle="Conditionals" />
