@@ -38,6 +38,7 @@ export default function Pronouns() {
             { href: "overview", label: "Overview" },
             { href: "subject", label: "Subject Pronouns" },
             { href: "object", label: "Object Pronouns" },
+            { href: "possessive-adjectives", label: "Possessive Adjectives" },
             { href: "possessive", label: "Possessive Pronouns" },
             { href: "reflexive", label: "Reflexive Pronouns" },
             { href: "exercises", label: "Exercises" },
@@ -888,6 +889,59 @@ export default function Pronouns() {
                         part: "Ele deu um presente para ela.",
                         type: "portuguese",
                       },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="possessive-adjectives" label="Possessive Adjectives" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  {
+                    text: [
+                      { part: "Possessive adjectives", type: "bold" },
+                      " ",
+                      "come before a noun and show who owns something.",
+                      " ",
+                      { part: "Eles vêm antes do substantivo e mostram posse.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "This is ",
+                      { part: "my", type: "bold" },
+                      " book. ",
+                      { part: "Este é o meu livro.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "She lost ",
+                      { part: "her", type: "bold" },
+                      " keys. ",
+                      { part: "Ela perdeu as chaves dela.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      { bullet: true },
+                      "They love ",
+                      { part: "their", type: "bold" },
+                      " dog. ",
+                      { part: "Eles amam o cachorro deles.", type: "portuguese" },
                     ],
                   },
                 ],

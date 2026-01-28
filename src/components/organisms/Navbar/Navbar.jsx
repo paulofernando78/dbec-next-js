@@ -211,7 +211,7 @@ const links = [
       },
       // Nouns
       {
-        href: "/reference/adjectives",
+        href: "/reference/nouns",
         label: "Nouns",
       },
       // Adverbs
