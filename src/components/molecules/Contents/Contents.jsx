@@ -1,3 +1,5 @@
+import styles from "./Contents.module.css"
+
 import { Bold } from "@/components/atoms/Bold";
 import { InlineText } from "@/components/molecules/InlineText";
 import { Content, ContentLink, Compare } from "@/lib/svg-imports.js";
@@ -13,21 +15,32 @@ export const Contents = ({ items = [] }) => {
       </div>
       <nav>
         <ul>
-          {items.map((item, index) => (
-            <div key={index} className="flex-align">
-              <li className={item.lineBreak ? "line-break-item" : ""}>
-                {!item.lineBreak && <ContentLink className="icon-position" />}
-                {item.compare && <Compare className="icon-position" />}
-                <a href={`#${item.href}`}>
-                  {Array.isArray(item.label) ? (
-                    <InlineText text={item.label} />
-                  ) : (
-                    item.label
-                  )}
-                </a>
-              </li>
-            </div>
-          ))}
+          {items.map((item, index) => {
+            // Title
+            if (item.title) {
+              return (
+                <li key={`title-${index}`} className={styles.title}>
+                  <Bold>{item.title}</Bold>
+                </li>
+              );
+            }
+
+            return (
+              <div key={index} className="flex-align">
+                <li className={item.lineBreak ? "line-break-item" : ""}>
+                  {!item.lineBreak && <ContentLink className="icon-position" />}
+                  {item.compare && <Compare className="icon-position" />}
+                  <a href={`#${item.href}`}>
+                    {Array.isArray(item.label) ? (
+                      <InlineText text={item.label} />
+                    ) : (
+                      item.label
+                    )}
+                  </a>
+                </li>
+              </div>
+            );
+          })}
         </ul>
       </nav>
     </>

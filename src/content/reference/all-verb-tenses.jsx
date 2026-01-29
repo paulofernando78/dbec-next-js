@@ -33,12 +33,10 @@ export default function AllVerbsTense() {
         />
         <Contents
           items={[
-            { href: "verb-be-present", label: "Verb Be (Present)" },
-            { href: "verb-be-past", label: "Verb Be (PAst)" },
-            { href: "exerises", label: "Exercises" },
             {
-              lineBreak: true,
+              title: "Present",
             },
+            { href: "verb-be-present", label: "Verb Be (Present)" },
             { href: "simple-present", label: "Simple Present" },
             { href: "present-continuous", label: "Present Continuous" },
             { href: "present-perfect", label: "Present Perfect" },
@@ -46,10 +44,10 @@ export default function AllVerbsTense() {
               href: "present-perfect-continuous",
               label: "Present Perfect Continuous",
             },
-            { href: "exerises", label: "Exercises" },
             {
-              lineBreak: true,
+              title: "Past",
             },
+            { href: "verb-be-past", label: "Verb Be (PAst)" },
             { href: "simple-past", label: "Simple Past" },
             { href: "past-continuous", label: "Past Continuous" },
             { href: "past-perfect", label: "Past Perfect" },
@@ -57,9 +55,8 @@ export default function AllVerbsTense() {
               href: "past-perfect-continuous",
               label: "Past Perfect Continuous",
             },
-            { href: "exerises", label: "Exercises" },
-            {
-              lineBreak: true,
+{
+              title: "Future",
             },
             {
               href: "simple-future",
@@ -70,10 +67,6 @@ export default function AllVerbsTense() {
             {
               href: "future-perfect-continuous",
               label: "Future Perfect Continuous",
-            },
-            { href: "exerises", label: "Exercises" },
-            {
-              lineBreak: true,
             },
           ]}
         />
@@ -416,14 +409,33 @@ export default function AllVerbsTense() {
             ]}
           />
           <Column
-            width="300"
+            width="330"
             cols={[
               // /t/
               {
                 bgColor: "var(--slate-4)",
                 textColor: "white",
-                column: "/t/",
+                column: "/t/ - voiceless sound",
                 blocks: [
+                  // ...:
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            attention: true,
+                          },
+                          {
+                            part: "/k/, /p/, /s/, /t/ ...:",
+                            type: "phonetics",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
                   // ask
                   {
                     block: [
@@ -432,7 +444,11 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/ask-asked.mp3",
                           },
-                          "ask",
+                          "ask ",
+                          {
+                            part: "perguntar",
+                            type: "portuguese",
+                          },
                           " ➜ ",
                           "ask",
                           {
@@ -451,7 +467,11 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/attack-attacked.mp3",
                           },
-                          "attack",
+                          "attack ",
+                          {
+                            part: "atacar",
+                            type: "portuguese",
+                          },
                           " ➜ ",
                           "attack",
                           {
@@ -652,6 +672,68 @@ export default function AllVerbsTense() {
                       },
                     ],
                   },
+                  {
+                    lineBreak: true,
+                  },
+                  // -e:
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            attention: true,
+                          },
+                          "-e:",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // like
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/like.mp3",
+                          },
+                          "lik(e)",
+                          " ➜ ",
+                          "lik",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // practice
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio:
+                              "/assets/audio/general/practice-practiceed.mp3",
+                          },
+                          "practic(e) ",
+                          {
+                            part: "praticar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "practic",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
                 ],
               },
 
@@ -659,8 +741,28 @@ export default function AllVerbsTense() {
               {
                 bgColor: "var(--slate-4)",
                 textColor: "white",
-                column: "/d/",
+                column: "/d/ - voiced sound",
                 blocks: [
+                  // ...:
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            attention: true,
+                          },
+                          "vowel sounds, ",
+                          {
+                            part: "/d/, /m/, /n/, /r/, /v/, /z/ ...:",
+                            type: "phonetics",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
                   // answer
                   {
                     block: [
@@ -669,7 +771,11 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/answer-answered.mp3",
                           },
-                          "answer",
+                          "answer ",
+                          {
+                            part: "responder",
+                            type: "portuguese",
+                          },
                           " ➜ ",
                           "answer",
                           {
@@ -699,6 +805,25 @@ export default function AllVerbsTense() {
                       },
                     ],
                   },
+                  // learn
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/learn-learned.mp3",
+                          },
+                          "learn",
+                          " ➜ ",
+                          "learn",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
                   // listen
                   {
                     block: [
@@ -718,6 +843,29 @@ export default function AllVerbsTense() {
                       },
                     ],
                   },
+                  // live
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/live-lived.mp3",
+                          },
+                          "live ",
+                          {
+                            part: "viver, morar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "liv",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
                   // open
                   {
                     block: [
@@ -729,6 +877,52 @@ export default function AllVerbsTense() {
                           "open",
                           " ➜ ",
                           "open",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // plan
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/plan-planed.mp3",
+                          },
+                          "plan ",
+                          {
+                            part: "planejar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "plan",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // play
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/play-played.mp3",
+                          },
+                          "play ",
+                          {
+                            part: "jogar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "play",
                           {
                             part: "ed",
                             type: "mark",
@@ -759,7 +953,7 @@ export default function AllVerbsTense() {
                   {
                     lineBreak: true,
                   },
-                  // -e ending:
+                  // -e:
                   {
                     block: [
                       {
@@ -767,7 +961,7 @@ export default function AllVerbsTense() {
                           {
                             attention: true,
                           },
-                          "-e ending:",
+                          "-e:",
                         ],
                       },
                     ],
@@ -783,7 +977,7 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/achieve-achieved.mp3",
                           },
-                          "achieve",
+                          "achiev(e)",
                           " ➜ ",
                           "achiev",
                           {
@@ -802,7 +996,7 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/admire-admired.mp3",
                           },
-                          "admire",
+                          "admir(e)",
                           " ➜ ",
                           "admir",
                           {
@@ -821,7 +1015,7 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/arrive-arrived.mp3",
                           },
-                          "arrive",
+                          "arriv(e)",
                           " ➜ ",
                           "arriv",
                           {
@@ -840,7 +1034,7 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/close-closed.mp3",
                           },
-                          "close",
+                          "clos(e)",
                           " ➜ ",
                           "clos",
                           {
@@ -859,7 +1053,7 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/damage-damaged.mp3",
                           },
-                          "damage",
+                          "damag(e)",
                           " ➜ ",
                           "damag",
                           {
@@ -878,9 +1072,32 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/dance-danced.mp3",
                           },
-                          "dance",
+                          "danc(e)",
                           " ➜ ",
                           "danc",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // lie
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/lie-lied.mp3",
+                          },
+                          "li(e) ",
+                          {
+                            part: "mentir, deitar-se",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "li",
                           {
                             part: "ed",
                             type: "mark",
@@ -897,7 +1114,7 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/love-loved.mp3",
                           },
-                          "love",
+                          "lov(e)",
                           " ➜ ",
                           "lov",
                           {
@@ -916,9 +1133,28 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/manage-managed.mp3",
                           },
-                          "manage",
+                          "manag(e)",
                           " ➜ ",
                           "manag",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // scare
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/scare-scared.mp3",
+                          },
+                          "scare(e)",
+                          " ➜ ",
+                          "scare",
                           {
                             part: "ed",
                             type: "mark",
@@ -935,7 +1171,7 @@ export default function AllVerbsTense() {
                           {
                             audio: "/assets/audio/general/use-used.mp3",
                           },
-                          "use",
+                          "us(e)",
                           " ➜ ",
                           "us",
                           {
@@ -1003,6 +1239,25 @@ export default function AllVerbsTense() {
                       },
                     ],
                   },
+                  // dry
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/dry-studied.mp3",
+                          },
+                          "dry",
+                          " ➜ ",
+                          "dr",
+                          {
+                            part: "ied",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
                   // study
                   {
                     block: [
@@ -1050,6 +1305,22 @@ export default function AllVerbsTense() {
                 textColor: "white",
                 column: "/ɪd/",
                 blocks: [
+                  // ...:
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            attention: true,
+                          },
+                          "/t/ and /d/:",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
                   // add
                   {
                     block: [
@@ -1088,25 +1359,6 @@ export default function AllVerbsTense() {
                       },
                     ],
                   },
-                  // celebrate
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/assit-celebrateed.mp3",
-                          },
-                          "celebrate",
-                          " ➜ ",
-                          "celebrat",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
                   // end
                   {
                     block: [
@@ -1118,6 +1370,98 @@ export default function AllVerbsTense() {
                           "end",
                           " ➜ ",
                           "end",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // last
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/last-lasted.mp3",
+                          },
+                          "last ",
+                          {
+                            part: "durar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "last",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // list
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/list-listed.mp3",
+                          },
+                          "list ",
+                          {
+                            part: "listar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "list",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // need
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/need-needed.mp3",
+                          },
+                          "need ",
+                          {
+                            part: "precisar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "need",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // notice
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/notice-noticeed.mp3",
+                          },
+                          "notice ",
+                          {
+                            part: "perceber",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "notic",
                           {
                             part: "ed",
                             type: "mark",
@@ -1175,6 +1519,71 @@ export default function AllVerbsTense() {
                           "want",
                           " ➜ ",
                           "want",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // -e:
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            attention: true,
+                          },
+                          "-e:",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // celebrate
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/assit-celebrated.mp3",
+                          },
+                          "celebrat(e) ",
+                          {
+                            part: "celebrar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "celebrat",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // locate
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/locate-locateed.mp3",
+                          },
+                          "locat(e) ",
+                          {
+                            part: "localizar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "locat",
                           {
                             part: "ed",
                             type: "mark",
