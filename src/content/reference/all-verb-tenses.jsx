@@ -2,6 +2,7 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { Column } from "@/components/molecules/Column";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 
@@ -41,7 +42,10 @@ export default function AllVerbsTense() {
             { href: "simple-present", label: "Simple Present" },
             { href: "present-continuous", label: "Present Continuous" },
             { href: "present-perfect", label: "Present Perfect" },
-            { href: "present-perfect-continuous", label: "Present Perfect Continuous",},
+            {
+              href: "present-perfect-continuous",
+              label: "Present Perfect Continuous",
+            },
             { href: "exerises", label: "Exercises" },
             {
               lineBreak: true,
@@ -49,15 +53,24 @@ export default function AllVerbsTense() {
             { href: "simple-past", label: "Simple Past" },
             { href: "past-continuous", label: "Past Continuous" },
             { href: "past-perfect", label: "Past Perfect" },
-            { href: "past-perfect-continuous", label: "Past Perfect Continuous",},
+            {
+              href: "past-perfect-continuous",
+              label: "Past Perfect Continuous",
+            },
             { href: "exerises", label: "Exercises" },
             {
               lineBreak: true,
             },
-            { href: "simple-future", label: "Simple Future (Will vs. Going to)" },
+            {
+              href: "simple-future",
+              label: "Simple Future (Will vs. Going to)",
+            },
             { href: "future-continuous", label: "Future Continuous" },
             { href: "future-perfect", label: "Future Perfect" },
-            { href: "future-perfect-continuous", label: "Future Perfect Continuous",},
+            {
+              href: "future-perfect-continuous",
+              label: "Future Perfect Continuous",
+            },
             { href: "exerises", label: "Exercises" },
             {
               lineBreak: true,
@@ -71,10 +84,7 @@ export default function AllVerbsTense() {
               {
                 lines: [
                   {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " am / is / are",
-                    ],
+                    text: [{ part: "Form:", type: "bold" }, " am / is / are"],
                   },
                   {
                     lineBreak: true,
@@ -84,7 +94,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " states, identity, age, location.",
                       " ",
-                      { part: "Usamos para estado, identidade, idade e localização.", type: "portuguese" },
+                      {
+                        part: "Usamos para estado, identidade, idade e localização.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -116,10 +129,7 @@ export default function AllVerbsTense() {
               {
                 lines: [
                   {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " was / were",
-                    ],
+                    text: [{ part: "Form:", type: "bold" }, " was / were"],
                   },
                   {
                     lineBreak: true,
@@ -129,7 +139,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " past states and situations.",
                       " ",
-                      { part: "Usamos para estados e situações no passado.", type: "portuguese" },
+                      {
+                        part: "Usamos para estados e situações no passado.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -165,7 +178,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " routines, facts, and general truths.",
                       " ",
-                      { part: "Rotinas, fatos e verdades gerais.", type: "portuguese" },
+                      {
+                        part: "Rotinas, fatos e verdades gerais.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -184,7 +200,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "She works in an office. ",
-                      { part: "Ela trabalha em um escritório.", type: "portuguese" },
+                      {
+                        part: "Ela trabalha em um escritório.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -219,7 +238,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " actions happening now or temporary situations.",
                       " ",
-                      { part: "Ações acontecendo agora ou situações temporárias.", type: "portuguese" },
+                      {
+                        part: "Ações acontecendo agora ou situações temporárias.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -236,7 +258,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "They are working this week. ",
-                      { part: "Eles estão trabalhando esta semana.", type: "portuguese" },
+                      {
+                        part: "Eles estão trabalhando esta semana.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -264,7 +289,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " life experience and actions with results now.",
                       " ",
-                      { part: "Experiências de vida e ações com resultado no presente.", type: "portuguese" },
+                      {
+                        part: "Experiências de vida e ações com resultado no presente.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -290,7 +318,11 @@ export default function AllVerbsTense() {
           />
         </Section>
 
-        <Section id="present-perfect-continuous" label="Present Perfect Continuous" heading={3}>
+        <Section
+          id="present-perfect-continuous"
+          label="Present Perfect Continuous"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
@@ -309,7 +341,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " duration of an action that started in the past and continues now.",
                       " ",
-                      { part: "Duração de uma ação que começou no passado e continua agora.", type: "portuguese" },
+                      {
+                        part: "Duração de uma ação que começou no passado e continua agora.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -319,7 +354,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "I have been studying for two hours. ",
-                      { part: "Eu estou estudando há duas horas.", type: "portuguese" },
+                      {
+                        part: "Eu estou estudando há duas horas.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -338,7 +376,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " finished actions in the past.",
                       " ",
-                      { part: "Ações concluídas no passado.", type: "portuguese" },
+                      {
+                        part: "Ações concluídas no passado.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -357,7 +398,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "We watched a movie. ",
-                      { part: "Nós assistimos a um filme.", type: "portuguese" },
+                      {
+                        part: "Nós assistimos a um filme.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -365,6 +409,778 @@ export default function AllVerbsTense() {
                       { bullet: true },
                       "He went home early. ",
                       { part: "Ele foi para casa cedo.", type: "portuguese" },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+          <Column
+            width="300"
+            cols={[
+              // /t/
+              {
+                bgColor: "var(--slate-4)",
+                textColor: "white",
+                column: "/t/",
+                blocks: [
+                  // ask
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/ask-asked.mp3",
+                          },
+                          "ask",
+                          " ➜ ",
+                          "ask",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // attack
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/attack-attacked.mp3",
+                          },
+                          "attack",
+                          " ➜ ",
+                          "attack",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // help
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/help-helped.mp3",
+                          },
+                          "help",
+                          " ➜ ",
+                          "help",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // jump
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/jump-jumped.mp3",
+                          },
+                          "jump",
+                          " ➜ ",
+                          "jump",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // kiss
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/kiss-kissed.mp3",
+                          },
+                          "kiss",
+                          " ➜ ",
+                          "kiss",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // laugh
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/laugh.mp3",
+                          },
+                          "laugh",
+                          " ➜ ",
+                          "laugh",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // look
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/look.mp3",
+                          },
+                          "look",
+                          " ➜ ",
+                          "look",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // talk
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/talk.mp3",
+                          },
+                          "talk",
+                          " ➜ ",
+                          "talk",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // walk
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/walk.mp3",
+                          },
+                          "walk",
+                          " ➜ ",
+                          "walk",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // wash
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/wash-washed.mp3",
+                          },
+                          "wash",
+                          " ➜ ",
+                          "wash",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // watch
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/watch-watched.mp3",
+                          },
+                          "watch",
+                          " ➜ ",
+                          "watch",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // work
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/work-worked.mp3",
+                          },
+                          "work",
+                          " ➜ ",
+                          "work",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+
+              // /d/
+              {
+                bgColor: "var(--slate-4)",
+                textColor: "white",
+                column: "/d/",
+                blocks: [
+                  // answer
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/answer-answered.mp3",
+                          },
+                          "answer",
+                          " ➜ ",
+                          "answer",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // clean
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/clean-cleaned.mp3",
+                          },
+                          "clean",
+                          " ➜ ",
+                          "clean",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // listen
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/listen-listened.mp3",
+                          },
+                          "listen",
+                          " ➜ ",
+                          "listen",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // open
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/open-opened.mp3",
+                          },
+                          "open",
+                          " ➜ ",
+                          "open",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // turn
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/turn-turned.mp3",
+                          },
+                          "turn",
+                          " ➜ ",
+                          "turn",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // -e ending:
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            attention: true,
+                          },
+                          "-e ending:",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // achieve
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/achieve-achieved.mp3",
+                          },
+                          "achieve",
+                          " ➜ ",
+                          "achiev",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // admire
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/admire-admired.mp3",
+                          },
+                          "admire",
+                          " ➜ ",
+                          "admir",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // arrive
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/arrive-arrived.mp3",
+                          },
+                          "arrive",
+                          " ➜ ",
+                          "arriv",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // close
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/close-closed.mp3",
+                          },
+                          "close",
+                          " ➜ ",
+                          "clos",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // damage
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/damage-damaged.mp3",
+                          },
+                          "damage",
+                          " ➜ ",
+                          "damag",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // dance
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/dance-danced.mp3",
+                          },
+                          "dance",
+                          " ➜ ",
+                          "danc",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // love
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/love-loved.mp3",
+                          },
+                          "love",
+                          " ➜ ",
+                          "lov",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // manage
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/manage-managed.mp3",
+                          },
+                          "manage",
+                          " ➜ ",
+                          "manag",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // use
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/use-used.mp3",
+                          },
+                          "use",
+                          " ➜ ",
+                          "us",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // change -y for ied:
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            attention: true,
+                          },
+                          "change -y for ied:",
+                        ],
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // carry
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/carry-studied.mp3",
+                          },
+                          "carry",
+                          " ➜ ",
+                          "carr",
+                          {
+                            part: "ied",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // cry
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/cry-studied.mp3",
+                          },
+                          "cry",
+                          " ➜ ",
+                          "cr",
+                          {
+                            part: "ied",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // study
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/study-studied.mp3",
+                          },
+                          "study",
+                          " ➜ ",
+                          "stud",
+                          {
+                            part: "ied",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // try
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/try-tried.mp3",
+                          },
+                          "try",
+                          " ➜ ",
+                          "tr",
+                          {
+                            part: "ied",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+
+              // /ɪd/
+              {
+                bgColor: "var(--slate-4)",
+                textColor: "white",
+                column: "/ɪd/",
+                blocks: [
+                  // add
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/add-added.mp3",
+                          },
+                          "add",
+                          " ➜ ",
+                          "add",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // assist
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/assit-assisted.mp3",
+                          },
+                          "assist",
+                          " ➜ ",
+                          "assist",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // celebrate
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/assit-celebrateed.mp3",
+                          },
+                          "celebrate",
+                          " ➜ ",
+                          "celebrat",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // end
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/end-ended.mp3",
+                          },
+                          "end",
+                          " ➜ ",
+                          "end",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // start
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/start-started.mp3",
+                          },
+                          "start",
+                          " ➜ ",
+                          "start",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // wait
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/wait-waited.mp3",
+                          },
+                          "wait",
+                          " ➜ ",
+                          "wait",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                  // want
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/want-wanted.mp3",
+                          },
+                          "want",
+                          " ➜ ",
+                          "want",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
                     ],
                   },
                 ],
@@ -392,7 +1208,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " an action in progress in the past.",
                       " ",
-                      { part: "Ação em progresso no passado.", type: "portuguese" },
+                      {
+                        part: "Ação em progresso no passado.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -402,7 +1221,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "I was studying when you called. ",
-                      { part: "Eu estava estudando quando você ligou.", type: "portuguese" },
+                      {
+                        part: "Eu estava estudando quando você ligou.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -430,7 +1252,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " an action before another action in the past.",
                       " ",
-                      { part: "Ação que aconteceu antes de outra no passado.", type: "portuguese" },
+                      {
+                        part: "Ação que aconteceu antes de outra no passado.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -440,7 +1265,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "She had left before I arrived. ",
-                      { part: "Ela tinha saído antes de eu chegar.", type: "portuguese" },
+                      {
+                        part: "Ela tinha saído antes de eu chegar.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -449,7 +1277,11 @@ export default function AllVerbsTense() {
           />
         </Section>
 
-        <Section id="past-perfect-continuous" label="Past Perfect Continuous" heading={3}>
+        <Section
+          id="past-perfect-continuous"
+          label="Past Perfect Continuous"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
@@ -468,7 +1300,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " duration before a past moment.",
                       " ",
-                      { part: "Duração antes de um momento no passado.", type: "portuguese" },
+                      {
+                        part: "Duração antes de um momento no passado.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -478,7 +1313,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "They had been waiting for an hour. ",
-                      { part: "Eles estavam esperando há uma hora.", type: "portuguese" },
+                      {
+                        part: "Eles estavam esperando há uma hora.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -487,7 +1325,11 @@ export default function AllVerbsTense() {
           />
         </Section>
 
-        <Section id="simple-future" label="Simple Future (Will vs. Going to)" heading={3}>
+        <Section
+          id="simple-future"
+          label="Simple Future (Will vs. Going to)"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
@@ -497,7 +1339,10 @@ export default function AllVerbsTense() {
                       { part: "Will", type: "bold" },
                       " → decisions made now, promises, predictions.",
                       " ",
-                      { part: "Decisões no momento, promessas, previsões.", type: "portuguese" },
+                      {
+                        part: "Decisões no momento, promessas, previsões.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -553,7 +1398,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " an action in progress at a future time.",
                       " ",
-                      { part: "Ação em progresso em um momento futuro.", type: "portuguese" },
+                      {
+                        part: "Ação em progresso em um momento futuro.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -563,7 +1411,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "This time tomorrow, I will be working. ",
-                      { part: "A essa hora amanhã, estarei trabalhando.", type: "portuguese" },
+                      {
+                        part: "A essa hora amanhã, estarei trabalhando.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -591,7 +1442,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " an action finished before a future moment.",
                       " ",
-                      { part: "Ação concluída antes de um momento futuro.", type: "portuguese" },
+                      {
+                        part: "Ação concluída antes de um momento futuro.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -601,7 +1455,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "By 6 p.m., she will have finished. ",
-                      { part: "Até as 18h, ela terá terminado.", type: "portuguese" },
+                      {
+                        part: "Até as 18h, ela terá terminado.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -610,7 +1467,11 @@ export default function AllVerbsTense() {
           />
         </Section>
 
-        <Section id="future-perfect-continuous" label="Future Perfect Continuous" heading={3}>
+        <Section
+          id="future-perfect-continuous"
+          label="Future Perfect Continuous"
+          heading={3}
+        >
           <Paragraph
             blocks={[
               {
@@ -629,7 +1490,10 @@ export default function AllVerbsTense() {
                       { part: "Use:", type: "bold" },
                       " duration up to a future point.",
                       " ",
-                      { part: "Duração até um ponto no futuro.", type: "portuguese" },
+                      {
+                        part: "Duração até um ponto no futuro.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -639,7 +1503,10 @@ export default function AllVerbsTense() {
                     text: [
                       { bullet: true },
                       "By next year, I will have been working here for five years. ",
-                      { part: "Até o ano que vem, estarei trabalhando aqui há cinco anos.", type: "portuguese" },
+                      {
+                        part: "Até o ano que vem, estarei trabalhando aqui há cinco anos.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
@@ -739,88 +1606,89 @@ export default function AllVerbsTense() {
 
           <FillInTheBlanks
             exercise={{
-              instructions: "2. Fill in the blanks with the correct verb tense.",
+              instructions:
+                "2. Fill in the blanks with the correct verb tense.",
               blocks: [
                 {
                   block: [
                     { text: "1. I " },
                     { blank: "have been working" },
-                    { text: " here since 2020." }
+                    { text: " here since 2020." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "2. She " },
                     { blank: "is cooking" },
-                    { text: " dinner right now." }
+                    { text: " dinner right now." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "3. They " },
                     { blank: "went" },
-                    { text: " to the party last night." }
+                    { text: " to the party last night." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "4. By 8 p.m., he " },
                     { blank: "will have finished" },
-                    { text: " the task." }
+                    { text: " the task." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "5. When I called, she " },
                     { blank: "was sleeping" },
-                    { text: "." }
+                    { text: "." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "6. We " },
                     { blank: "are going to travel" },
-                    { text: " next month." }
+                    { text: " next month." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "7. He " },
                     { blank: "has read" },
-                    { text: " that book already." }
+                    { text: " that book already." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "8. This time tomorrow, I " },
                     { blank: "will be working" },
-                    { text: "." }
+                    { text: "." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "9. They " },
                     { blank: "had left" },
-                    { text: " before we arrived." }
+                    { text: " before we arrived." },
                   ],
-                  lineBreak: true
+                  lineBreak: true,
                 },
                 {
                   block: [
                     { text: "10. By next year, she " },
                     { blank: "will have been studying" },
-                    { text: " here for five years." }
-                  ]
-                }
-              ]
+                    { text: " here for five years." },
+                  ],
+                },
+              ],
             }}
           />
         </Section>
