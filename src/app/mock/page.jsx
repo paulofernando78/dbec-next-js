@@ -30,6 +30,9 @@ export default function Mock() {
 
         <Contents
           items={[
+            {
+              title: "Title",
+            },
             { href: "audio-player", label: "Audio Player" },
             { href: "inline-text", label: "InlineText" },
             { href: "list", label: "List" },
