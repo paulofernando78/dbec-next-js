@@ -482,6 +482,29 @@ export default function AllVerbsTense() {
                       },
                     ],
                   },
+                  // finish
+                  {
+                    block: [
+                      {
+                        text: [
+                          {
+                            audio: "/assets/audio/general/finish-finished.mp3",
+                          },
+                          "finish ",
+                          {
+                            part: "terminar, acabar",
+                            type: "portuguese",
+                          },
+                          " ➜ ",
+                          "finish",
+                          {
+                            part: "ed",
+                            type: "mark",
+                          },
+                        ],
+                      },
+                    ],
+                  },
                   // help
                   {
                     block: [
