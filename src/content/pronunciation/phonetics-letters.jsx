@@ -160,6 +160,22 @@ export default function PhoneticsLetters() {
             {
               title: [
                 {
+                  part: "n...",
+                  type: "bold",
+                },
+              ],
+            },
+            // Letters 'n', 'ng':
+            {
+              href: "letters-n-ng",
+              label: [
+                "Letters 'n', 'ng':  ",
+                { part: "/ŋ/", type: "phonetics" },
+              ],
+            },
+            {
+              title: [
+                {
                   part: "o...",
                   type: "bold",
                 },
@@ -232,22 +248,6 @@ export default function PhoneticsLetters() {
               label: ["Letters 'us':  ", { part: "/əs/", type: "phonetics" }],
             },
             {
-              title: [
-                {
-                  part: "n...",
-                  type: "bold",
-                },
-              ],
-            },
-            // Letters 'n', 'ng':
-            {
-              href: "letters-n-ng",
-              label: [
-                "Letters 'n', 'ng':  ",
-                { part: "/ŋ/", type: "phonetics" },
-              ],
-            },
-            {
               lineBreak: true,
             },
             // Letters 'sh':
@@ -311,11 +311,11 @@ export default function PhoneticsLetters() {
                 ": ",
               ],
             },
-            // Letters 'ea': /iː/ vs. 'ee': /ɪ/
+            // Letters 'ea', 'ee': /iː/ vs. 'i': /ɪ/
             {
               href: "letters-ea-ee-i",
               label: [
-                "Letters 'ea': ",
+                "Letters 'ea', 'ee': ",
                 {
                   part: "/iː/ ",
                   type: "phonetics",
@@ -325,7 +325,7 @@ export default function PhoneticsLetters() {
                   part: "vs. ",
                   type: "connector",
                 },
-                "'ee': ",
+                "'i': ",
                 {
                   part: "/ɪ/",
                   type: "phonetics",
@@ -2834,619 +2834,6 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        {/* Comparison */}
-        {/*  letters-a-vs-e */}
-        <Section
-          id="letters-a-vs-e"
-          label="Letters 'a': /æ/ vs. 'e': /e/"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  //! and vs. end
-                  // and
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/and.mp3",
-                      },
-                      {
-                        part: "and",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ænd/", type: "phonetics" },
-                      " ",
-                      { part: "e", type: "portuguese" },
-                    ],
-                  },
-                  // Bread and butter.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bread-and-butter.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " Bread ",
-                      { type: "mark", part: "and" },
-                      " butter. ",
-                      { part: "Pão e manteiga.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // end
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/end.mp3",
-                        part: "end",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/end/", type: "phonetics" },
-                    ],
-                  },
-                  // This is the end.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/this-is-the-end.mp3",
-                      },
-                      "This is the ",
-                      { type: "mark", part: "end" },
-                      ". ",
-                      { part: "Isso é o fim.", type: "portuguese" },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! bad vs. bed
-                  // bad
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bad.mp3",
-                        part: "bad",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/bæd/", type: "phonetics" },
-                      " ",
-                      { part: "ruim", type: "portuguese" },
-                    ],
-                  },
-                  // I had a day.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i-had-a-bad-day.mp3",
-                      },
-                      "I had a ",
-                      { type: "mark", part: "bad" },
-                      " day. ",
-                      { part: "Eu tive um péssimo dia.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // bed
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bed.mp3",
-                        part: "bed",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/bed/", type: "phonetics" },
-                      " ",
-                      { part: "cama", type: "portuguese" },
-                    ],
-                  },
-                  // She went to bed early.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/she-went-to-bed-early.mp3",
-                      },
-                      "She went to ",
-                      { type: "mark", part: "bed" },
-                      " early. ",
-                      { part: "Ela foi para a cama cedo.", type: "portuguese" },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! bat vs. bet
-                  // bat
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bat.mp3",
-                        part: "bat",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/bæt/", type: "phonetics" },
-                      " ",
-                      { part: "taco / morcego", type: "portuguese" },
-                    ],
-                  },
-                  // He hit the ball with a bat.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/he-hit-the-ball-with-a-bat.mp3",
-                      },
-                      "He hit the ball with a ",
-                      { type: "mark", part: "bat" },
-                      ". ",
-                      {
-                        part: "Ele acertou a bola com um bastão.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // bet
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bet.mp3",
-                        part: "bet",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/bet/", type: "phonetics" },
-                      " ",
-                      { part: "apostar", type: "portuguese" },
-                    ],
-                  },
-                  // I bet you are right.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i-bet-you-were-right.mp3",
-                      },
-                      "I ",
-                      { type: "mark", part: "bet" },
-                      " you are right. ",
-                      {
-                        part: "Aposto que você está certo.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! dad vs. dead
-                  // dad
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/dad.mp3",
-                        part: "dad",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/dæd/", type: "phonetics" },
-                      " ",
-                      { part: "pai", type: "portuguese" },
-                    ],
-                  },
-                  // My dad is cool.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/my-dad-is-cool.mp3",
-                      },
-                      "My ",
-                      { type: "mark", part: "dad" },
-                      " is cool. ",
-                      { part: "Meu pai é legal.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // dead
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/dead.mp3",
-                        part: "dead",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ded/", type: "phonetics" },
-                      " ",
-                      { part: "morto(a)", type: "portuguese" },
-                    ],
-                  },
-                  // The plant is dead.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/the-plant-is-dead.mp3",
-                      },
-                      "The plant is ",
-                      { type: "mark", part: "dead" },
-                      ". ",
-                      { part: "A planta está morta.", type: "portuguese" },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! had vs. head
-                  // had
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/had.mp3",
-                        part: "had",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/hæd/", type: "phonetics" },
-                      " ",
-                      { part: "teve / tinha", type: "portuguese" },
-                    ],
-                  },
-                  // John had a good time.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/john-had-a-good-time.mp3",
-                      },
-                      "John ",
-                      { type: "mark", part: "had" },
-                      " a good time. ",
-                      { part: "John se divertiu.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // head
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/head.mp3",
-                        part: "head",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/hed/", type: "phonetics" },
-                      " ",
-                      { part: "cabeça", type: "portuguese" },
-                    ],
-                  },
-                  // He hit his head.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/he-hit-his-head.mp3",
-                      },
-                      "He hit his ",
-                      { type: "mark", part: "head" },
-                      ". ",
-                      { part: "Ele bateu a cabeça.", type: "portuguese" },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! man vs. men
-                  // man
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/man.mp3",
-                        part: "man",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/mæn/", type: "phonetics" },
-                      " ",
-                      { part: "homem", type: "portuguese" },
-                    ],
-                  },
-                  // That man is here.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/the-man-is-here.mp3",
-                      },
-                      "The ",
-                      { type: "mark", part: "man" },
-                      " is here. ",
-                      { part: "O homem está aqui.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // men
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/men.mp3",
-                        part: "men",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/men/", type: "phonetics" },
-                      " ",
-                      { part: "homens", type: "portuguese" },
-                    ],
-                  },
-                  // The men are here.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/the-men-are-here.mp3",
-                      },
-                      "The ",
-                      { type: "mark", part: "men" },
-                      " are here. ",
-                      { part: "Os homens estão aqui.", type: "portuguese" },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! pan vs. pen
-                  // pan
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/pan.mp3",
-                        part: "pan",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/pæn/", type: "phonetics" },
-                      " ",
-                      { part: "panela", type: "portuguese" },
-                    ],
-                  },
-                  // Put the eggs in the pan.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/put-the-eggs-in-the-pan.mp3",
-                      },
-                      "Put the eggs in the ",
-                      { type: "mark", part: "pan" },
-                      ". ",
-                      {
-                        part: "Coloque os ovos na panela.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // pen
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/pen.mp3",
-                        part: "pen",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/pen/", type: "phonetics" },
-                      " ",
-                      { part: "caneta", type: "portuguese" },
-                    ],
-                  },
-                  // I wrote with a pen.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i-wrote-with-a-pen.mp3",
-                      },
-                      "I wrote with a ",
-                      { type: "mark", part: "pen" },
-                      ". ",
-                      {
-                        part: "Eu escrevi com uma caneta.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! shad vs. shed
-                  // shad
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/shad.mp3",
-                        part: "shad",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ʃæd/", type: "phonetics" },
-                      " ",
-                      {
-                        part: "peixe shad (tipo de arenque)",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // Example shad
-                  {
-                    text: [
-                      "The fisherman caught a ",
-                      { type: "mark", part: "shad" },
-                      ". ",
-                      {
-                        part: "O pescador pegou um peixe shad.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { lineBreak: true },
-
-                  // shed
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/shed.mp3",
-                        part: "shed",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ʃed/", type: "phonetics" },
-                      " ",
-                      {
-                        part: "galpão / derramar / perder (pele, lágrimas)",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // Example shed
-                  {
-                    text: [
-                      "He built a ",
-                      { type: "mark", part: "shed" },
-                      " in the yard. ",
-                      {
-                        part: "Ele construiu um galpão no quintal.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-
-                  { hr: true },
-
-                  //! tan vs. ten
-                  // tan
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/tan.mp3",
-                        part: "tan",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/tæn/", type: "phonetics" },
-                      " ",
-                      { part: "bronzeado", type: "portuguese" },
-                    ],
-                  },
-                  // She got a tan at the beach.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/she-got-a-tan-at-the-beach.mp3",
-                      },
-                      "She got a ",
-                      { type: "mark", part: "tan" },
-                      " at the beach. ",
-                      {
-                        part: "Ela ficou bronzeada na praia.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // ten
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/ten.mp3",
-                        part: "ten",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ten/", type: "phonetics" },
-                      " ",
-                      { part: "dez", type: "portuguese" },
-                    ],
-                  },
-                  // I got ten out of ten on the test.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/i-got-ten-out-of-ten-on-the-test.mp3",
-                      },
-                      "I got ",
-                      { type: "mark", part: "ten" },
-                      " out of ",
-                      { type: "mark", part: "ten" },
-                      " on the test. ",
-                      {
-                        part: "Eu tirei nota máxima na prova.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-
-                  { hr: true },
-
-                  //! than vs. then
-                  // than
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/than.mp3",
-                        part: "than",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ðæn/", type: "phonetics" },
-                      " ",
-                      { part: "do que (comparação)", type: "portuguese" },
-                    ],
-                  },
-                  // Example than
-                  {
-                    text: [
-                      "She is taller ",
-                      { type: "mark", part: "than" },
-                      " me. ",
-                      {
-                        part: "Ela é mais alta do que eu.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { lineBreak: true },
-
-                  // then
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/then.mp3",
-                        part: "then",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ðen/", type: "phonetics" },
-                      " ",
-                      { part: "então / depois", type: "portuguese" },
-                    ],
-                  },
-                  // Example then
-                  {
-                    text: [
-                      "Finish your work, ",
-                      { type: "mark", part: "then" },
-                      " you can rest. ",
-                      {
-                        part: "Termine seu trabalho, depois você pode descansar.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
         {/* Letter 'i': /i/, /ɪ/, /ə/, /aɪ/, /ɑː/ */}
         <Section
           id="letter-i"
@@ -3487,677 +2874,6 @@ export default function PhoneticsLetters() {
         </Section>
 
         <Section id="letters-ie" label="Letters 'ie': /i/, /aɪ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        {/* Comparison */}
-        {/* Letters 'ea', 'ee' /iː/ vs. 'i' /ɪ/ */}
-        <Section
-          id="letters-ea-ee-i"
-          label="Letters 'ea', 'ee' /iː/ vs. 'i' /ɪ/"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  //! eat vs, it
-                  // eat
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/eat.mp3",
-                        part: "eat",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/iːt/", type: "phonetics" },
-                      " ",
-                      { part: "comer", type: "portuguese" },
-                    ],
-                  },
-                  // I don’t usually eat breakfast.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/i-dont-usually-eat-breakfast.mp3",
-                      },
-                      "I don’t usually ",
-                      { type: "mark", part: "eat" },
-                      " breakfast. ",
-                      {
-                        part: "Normalmente eu não tomo café da manhã.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // it
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/it.mp3",
-                        part: "it",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ɪt/", type: "phonetics" },
-                      " ",
-                      { part: "isso / ele / ela", type: "portuguese" },
-                    ],
-                  },
-                  // It is very cold today.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/it-is-very-cold-today.mp3",
-                      },
-                      { type: "mark", part: "It" },
-                      " is very cold today. ",
-                      { part: "Está muito frio hoje.", type: "portuguese" },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! feel vs. fill
-                  // feel
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/feel.mp3",
-                        part: "feel",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/fiːl/", type: "phonetics" },
-                      " ",
-                      { part: "sentir", type: "portuguese" },
-                    ],
-                  },
-                  // I feel tired.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i-feel-tired.mp3",
-                      },
-                      "I ",
-                      { type: "mark", part: "feel" },
-                      " tired. ",
-                      { part: "Eu me sinto cansado.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // fill
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/fill.mp3",
-                        part: "fill",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/fɪl/", type: "phonetics" },
-                      " ",
-                      { part: "encher", type: "portuguese" },
-                    ],
-                  },
-                  // Fill the glass, please.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/fill-the-glass-please.mp3",
-                      },
-                      { type: "mark", part: "Fill" },
-                      " the glass, please. ",
-                      { part: "Encha o copo, por favor.", type: "portuguese" },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! sheep vs. ship
-                  // sheep
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/sheep.mp3",
-                        part: "sheep",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ʃiːp/", type: "phonetics" },
-                      " ",
-                      { part: "ovelha", type: "portuguese" },
-                    ],
-                  },
-                  // I saw a sheep on the mark.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/i-saw-a-sheep-on-the-farm.mp3",
-                      },
-                      "I saw a ",
-                      { type: "mark", part: "sheep" },
-                      " on the farm. ",
-                      {
-                        part: "Eu vi uma ovelha na fazenda.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // ship
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/ship.mp3",
-                        part: "ship",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/ʃɪp/", type: "phonetics" },
-                      " ",
-                      { part: "navio", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    audio:
-                      "/assets/audio/general/i-dont-usually-eat-breakfast.mp3",
-                  }, // This ship is huge.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/this-ship-is-huge.mp3",
-                      },
-                      "This ",
-                      { type: "mark", part: "ship" },
-                      " is huge. ",
-                      {
-                        part: "Este navio é enorme.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  { hr: true },
-
-                  //! sleep vs. slip
-                  // sleep
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/sleep.mp3",
-                        part: "sleep",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/sliːp/", type: "phonetics" },
-                      " ",
-                      { part: "dormir", type: "portuguese" },
-                    ],
-                  },
-                  // I need to sleep.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i-need-to-sleep.mp3",
-                      },
-                      "I need to ",
-                      { type: "mark", part: "sleep" },
-                      ". ",
-                      { part: "Eu preciso dormir.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-                  // slip
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/slip.mp3",
-                        part: "slip",
-                        type: "bold",
-                      },
-                      " ",
-                      { part: "/slɪp/", type: "phonetics" },
-                      " ",
-                      { part: "escorregar", type: "portuguese" },
-                    ],
-                  },
-                  // Becareful not to slip.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/becareful-not-to-slip.mp3",
-                      },
-                      "Be careful not to ",
-                      { type: "mark", part: "slip" },
-                      ". ",
-                      {
-                        part: "Cuidado para não escorregar.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letter-o" label="Letter 'o': /ɑː/, /ɔː/, /oʊ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letters-oa" label="Letters 'oa': /ɔː/, /oʊ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        {/* Letters 'oo': /ʌ/, /ʊ/, /uː/ */}
-        <Section
-          id="letters-oo"
-          label="Letters 'oo': /ʌ/, /ʊ/, /uː/"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letters-ous" label="Letters 'ous': /əs/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letters-ow" label="Letters 'ow': /oʊ/, /aʊ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        {/* Letter 'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/ */}
-        <Section
-          id="letter-u"
-          label="Letter 'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letters-ui" label="Letters 'ui': /ɪ/, /aɪ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letters-us" label="Letters 'us': /əs/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ..
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        {/* Compariion */}
-        {/*  Letters 'oo' /uː/ vs. 'u' /ʊ/ */}
-        <Section
-          id="letters-oo-vs-u"
-          label="Letters 'oo' /uː/ vs. 'u' /ʊ/"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // bottom
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="letters-sh" label="Letters 'sh': /ʃ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        {/* Letters '(t)ch': /tʃ/, /ʃ/, /k/ */}
-        <Section
-          id="letters-(t)ch"
-          label="Letters '(t)ch': /tʃ/, /ʃ/, /k/"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        {/*  Letters 'sh': /ʃ/ vs. 'ch': /tʃ/ */}
-        <Section
-          id="letters-sh-vs-ch"
-          label="Letters 'sh': /ʃ/ vs. 'ch': /tʃ/"
-          heading={3}
-        >
           <Paragraph
             blocks={[
               {
@@ -4391,144 +3107,292 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        {/* Compare */}
+        <Section id="letter-o" label="Letter 'o': /ɑː/, /ɔː/, /oʊ/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="letters-oa" label="Letters 'oa': /ɔː/, /oʊ/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letters 'oo': /ʌ/, /ʊ/, /uː/ */}
         <Section
-          id="letters-n-ng"
-          label="Letters 'n': /n/ vs. 'ng': /ŋ/"
+          id="letters-oo"
+          label="Letters 'oo': /ʌ/, /ʊ/, /uː/"
           heading={3}
         >
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // letter 'n'
+                  // ...
                   {
                     text: [
                       {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
                       },
                       {
-                        part: "/ŋ/",
+                        part: "/.../",
                         type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
                       },
                       " ",
                       {
                         square: true,
                       },
                       " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="letters-ous" label="Letters 'ous': /əs/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
                       {
-                        part: "'n'",
-                        type: "",
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="letters-ow" label="Letters 'ow': /oʊ/, /aʊ/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letter s'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/ */}
+        <Section
+          id="letter-u"
+          label="Letters 'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
                       },
                     ],
                   },
-                  //. words...
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="letters-ui" label="Letters 'ui': /ɪ/, /aɪ/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
                   {
                     text: [
-                      // anger
                       {
-                        audio: "/assets/audio/general/anger.mp3",
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
                       },
                       {
-                        part: "a",
-                      },
-                      {
-                        part: "n",
-                        type: "mark",
-                      },
-                      {
-                        part: "ger",
-                      },
-                      {
-                        part: "/ˈæŋ.ɡɚ/",
+                        part: "/.../",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "raiva, braveza",
+                        part: "...",
                         type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // angry
-                      {
-                        audio: "/assets/audio/general/angry.mp3",
-                      },
-                      {
-                        part: "a",
-                      },
-                      {
-                        part: "n",
-                        type: "mark",
-                      },
-                      {
-                        part: "gry",
-                      },
-                      {
-                        part: "/ˈæŋ.ɡri/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "com raiva",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
                       },
                     ],
                   },
-                  {
-                    lineBreak: true,
-                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="letters-us" label="Letters 'us': /əs/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ..
                   {
                     text: [
                       {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
                       },
                       {
-                        part: "/ŋ/",
+                        part: "/.../",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        square: true,
-                      },
-                      " ",
-                      {
-                        part: "'ng'",
-                        type: "",
+                        part: "...",
+                        type: "portuguese",
                       },
                     ],
                   },
-                  //. words...
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        <Section id="letters-sh" label="Letters 'sh': /ʃ/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
                   {
                     text: [
-                      // going
                       {
-                        audio: "/assets/audio/general/going.mp3",
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
                       },
                       {
-                        part: "goi",
-                      },
-                      {
-                        part: "ng",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
+                        part: "/.../",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "em andamento",
+                        part: "...",
                         type: "portuguese",
                       },
                       " ",
@@ -4536,51 +3400,38 @@ export default function PhoneticsLetters() {
                         square: true,
                       },
                       " ",
-                      // interesting
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letters '(t)ch': /tʃ/, /ʃ/, /k/ */}
+        <Section
+          id="letters-(t)ch"
+          label="Letters '(t)ch': /tʃ/, /ʃ/, /k/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
                       {
-                        audio: "/assets/audio/general/interesting.mp3",
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
                       },
                       {
-                        part: "interesti",
-                      },
-                      {
-                        part: "ng",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
+                        part: "/.../",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "interessante",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // interesting
-                      {
-                        audio: "/assets/audio/general/thing.mp3",
-                      },
-                      {
-                        part: "thi",
-                      },
-                      {
-                        part: "ng",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "coisa",
+                        part: "...",
                         type: "portuguese",
                       },
                       " ",
@@ -5209,6 +4060,1154 @@ export default function PhoneticsLetters() {
                       " ",
                       {
                         part: "sonolent",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Comparison */}
+
+        {/*  Letters 'a': /æ/ vs. 'e': /e/ */}
+        <Section
+          id="letters-a-vs-e"
+          label="Letters 'a': /æ/ vs. 'e': /e/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  //! and vs. end
+                  // and
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/and.mp3",
+                      },
+                      {
+                        part: "and",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ænd/", type: "phonetics" },
+                      " ",
+                      { part: "e", type: "portuguese" },
+                    ],
+                  },
+                  // Bread and butter.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bread-and-butter.mp3",
+                      },
+                      {
+                        bullet: true,
+                      },
+                      " Bread ",
+                      { type: "mark", part: "and" },
+                      " butter. ",
+                      { part: "Pão e manteiga.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // end
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/end.mp3",
+                        part: "end",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/end/", type: "phonetics" },
+                    ],
+                  },
+                  // This is the end.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/this-is-the-end.mp3",
+                      },
+                      "This is the ",
+                      { type: "mark", part: "end" },
+                      ". ",
+                      { part: "Isso é o fim.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! bad vs. bed
+                  // bad
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bad.mp3",
+                        part: "bad",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/bæd/", type: "phonetics" },
+                      " ",
+                      { part: "ruim", type: "portuguese" },
+                    ],
+                  },
+                  // I had a day.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/i-had-a-bad-day.mp3",
+                      },
+                      "I had a ",
+                      { type: "mark", part: "bad" },
+                      " day. ",
+                      { part: "Eu tive um péssimo dia.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // bed
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bed.mp3",
+                        part: "bed",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/bed/", type: "phonetics" },
+                      " ",
+                      { part: "cama", type: "portuguese" },
+                    ],
+                  },
+                  // She went to bed early.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/she-went-to-bed-early.mp3",
+                      },
+                      "She went to ",
+                      { type: "mark", part: "bed" },
+                      " early. ",
+                      { part: "Ela foi para a cama cedo.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! bat vs. bet
+                  // bat
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bat.mp3",
+                        part: "bat",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/bæt/", type: "phonetics" },
+                      " ",
+                      { part: "taco / morcego", type: "portuguese" },
+                    ],
+                  },
+                  // He hit the ball with a bat.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/he-hit-the-ball-with-a-bat.mp3",
+                      },
+                      "He hit the ball with a ",
+                      { type: "mark", part: "bat" },
+                      ". ",
+                      {
+                        part: "Ele acertou a bola com um bastão.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // bet
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/bet.mp3",
+                        part: "bet",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/bet/", type: "phonetics" },
+                      " ",
+                      { part: "apostar", type: "portuguese" },
+                    ],
+                  },
+                  // I bet you are right.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/i-bet-you-were-right.mp3",
+                      },
+                      "I ",
+                      { type: "mark", part: "bet" },
+                      " you are right. ",
+                      {
+                        part: "Aposto que você está certo.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! dad vs. dead
+                  // dad
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/dad.mp3",
+                        part: "dad",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/dæd/", type: "phonetics" },
+                      " ",
+                      { part: "pai", type: "portuguese" },
+                    ],
+                  },
+                  // My dad is cool.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/my-dad-is-cool.mp3",
+                      },
+                      "My ",
+                      { type: "mark", part: "dad" },
+                      " is cool. ",
+                      { part: "Meu pai é legal.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // dead
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/dead.mp3",
+                        part: "dead",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ded/", type: "phonetics" },
+                      " ",
+                      { part: "morto(a)", type: "portuguese" },
+                    ],
+                  },
+                  // The plant is dead.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-plant-is-dead.mp3",
+                      },
+                      "The plant is ",
+                      { type: "mark", part: "dead" },
+                      ". ",
+                      { part: "A planta está morta.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! had vs. head
+                  // had
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/had.mp3",
+                        part: "had",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/hæd/", type: "phonetics" },
+                      " ",
+                      { part: "teve / tinha", type: "portuguese" },
+                    ],
+                  },
+                  // John had a good time.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/john-had-a-good-time.mp3",
+                      },
+                      "John ",
+                      { type: "mark", part: "had" },
+                      " a good time. ",
+                      { part: "John se divertiu.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // head
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/head.mp3",
+                        part: "head",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/hed/", type: "phonetics" },
+                      " ",
+                      { part: "cabeça", type: "portuguese" },
+                    ],
+                  },
+                  // He hit his head.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/he-hit-his-head.mp3",
+                      },
+                      "He hit his ",
+                      { type: "mark", part: "head" },
+                      ". ",
+                      { part: "Ele bateu a cabeça.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! man vs. men
+                  // man
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/man.mp3",
+                        part: "man",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/mæn/", type: "phonetics" },
+                      " ",
+                      { part: "homem", type: "portuguese" },
+                    ],
+                  },
+                  // That man is here.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-man-is-here.mp3",
+                      },
+                      "The ",
+                      { type: "mark", part: "man" },
+                      " is here. ",
+                      { part: "O homem está aqui.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // men
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/men.mp3",
+                        part: "men",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/men/", type: "phonetics" },
+                      " ",
+                      { part: "homens", type: "portuguese" },
+                    ],
+                  },
+                  // The men are here.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/the-men-are-here.mp3",
+                      },
+                      "The ",
+                      { type: "mark", part: "men" },
+                      " are here. ",
+                      { part: "Os homens estão aqui.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! pan vs. pen
+                  // pan
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/pan.mp3",
+                        part: "pan",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/pæn/", type: "phonetics" },
+                      " ",
+                      { part: "panela", type: "portuguese" },
+                    ],
+                  },
+                  // Put the eggs in the pan.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/put-the-eggs-in-the-pan.mp3",
+                      },
+                      "Put the eggs in the ",
+                      { type: "mark", part: "pan" },
+                      ". ",
+                      {
+                        part: "Coloque os ovos na panela.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // pen
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/pen.mp3",
+                        part: "pen",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/pen/", type: "phonetics" },
+                      " ",
+                      { part: "caneta", type: "portuguese" },
+                    ],
+                  },
+                  // I wrote with a pen.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/i-wrote-with-a-pen.mp3",
+                      },
+                      "I wrote with a ",
+                      { type: "mark", part: "pen" },
+                      ". ",
+                      {
+                        part: "Eu escrevi com uma caneta.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! shad vs. shed
+                  // shad
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/shad.mp3",
+                        part: "shad",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ʃæd/", type: "phonetics" },
+                      " ",
+                      {
+                        part: "peixe shad (tipo de arenque)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // Example shad
+                  {
+                    text: [
+                      "The fisherman caught a ",
+                      { type: "mark", part: "shad" },
+                      ". ",
+                      {
+                        part: "O pescador pegou um peixe shad.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // shed
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/shed.mp3",
+                        part: "shed",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ʃed/", type: "phonetics" },
+                      " ",
+                      {
+                        part: "galpão / derramar / perder (pele, lágrimas)",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  // Example shed
+                  {
+                    text: [
+                      "He built a ",
+                      { type: "mark", part: "shed" },
+                      " in the yard. ",
+                      {
+                        part: "Ele construiu um galpão no quintal.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+
+                  { hr: true },
+
+                  //! tan vs. ten
+                  // tan
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/tan.mp3",
+                        part: "tan",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/tæn/", type: "phonetics" },
+                      " ",
+                      { part: "bronzeado", type: "portuguese" },
+                    ],
+                  },
+                  // She got a tan at the beach.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/she-got-a-tan-at-the-beach.mp3",
+                      },
+                      "She got a ",
+                      { type: "mark", part: "tan" },
+                      " at the beach. ",
+                      {
+                        part: "Ela ficou bronzeada na praia.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // ten
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/ten.mp3",
+                        part: "ten",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ten/", type: "phonetics" },
+                      " ",
+                      { part: "dez", type: "portuguese" },
+                    ],
+                  },
+                  // I got ten out of ten on the test.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/i-got-ten-out-of-ten-on-the-test.mp3",
+                      },
+                      "I got ",
+                      { type: "mark", part: "ten" },
+                      " out of ",
+                      { type: "mark", part: "ten" },
+                      " on the test. ",
+                      {
+                        part: "Eu tirei nota máxima na prova.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+
+                  { hr: true },
+
+                  //! than vs. then
+                  // than
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/than.mp3",
+                        part: "than",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ðæn/", type: "phonetics" },
+                      " ",
+                      { part: "do que (comparação)", type: "portuguese" },
+                    ],
+                  },
+                  // Example than
+                  {
+                    text: [
+                      "She is taller ",
+                      { type: "mark", part: "than" },
+                      " me. ",
+                      {
+                        part: "Ela é mais alta do que eu.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+
+                  // then
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/then.mp3",
+                        part: "then",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ðen/", type: "phonetics" },
+                      " ",
+                      { part: "então / depois", type: "portuguese" },
+                    ],
+                  },
+                  // Example then
+                  {
+                    text: [
+                      "Finish your work, ",
+                      { type: "mark", part: "then" },
+                      " you can rest. ",
+                      {
+                        part: "Termine seu trabalho, depois você pode descansar.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letters 'ea', 'ee': /iː/ vs. 'i': /ɪ/ */}
+        <Section
+          id="letters-ea-ee-i"
+          label="Letters 'ea', 'ee': /iː/ vs. 'i': /ɪ/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  //! eat vs, it
+                  // eat
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/eat.mp3",
+                        part: "eat",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/iːt/", type: "phonetics" },
+                      " ",
+                      { part: "comer", type: "portuguese" },
+                    ],
+                  },
+                  // I don’t usually eat breakfast.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/i-dont-usually-eat-breakfast.mp3",
+                      },
+                      "I don’t usually ",
+                      { type: "mark", part: "eat" },
+                      " breakfast. ",
+                      {
+                        part: "Normalmente eu não tomo café da manhã.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // it
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/it.mp3",
+                        part: "it",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ɪt/", type: "phonetics" },
+                      " ",
+                      { part: "isso / ele / ela", type: "portuguese" },
+                    ],
+                  },
+                  // It is very cold today.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/it-is-very-cold-today.mp3",
+                      },
+                      { type: "mark", part: "It" },
+                      " is very cold today. ",
+                      { part: "Está muito frio hoje.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! feel vs. fill
+                  // feel
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/feel.mp3",
+                        part: "feel",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/fiːl/", type: "phonetics" },
+                      " ",
+                      { part: "sentir", type: "portuguese" },
+                    ],
+                  },
+                  // I feel tired.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/i-feel-tired.mp3",
+                      },
+                      "I ",
+                      { type: "mark", part: "feel" },
+                      " tired. ",
+                      { part: "Eu me sinto cansado.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // fill
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/fill.mp3",
+                        part: "fill",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/fɪl/", type: "phonetics" },
+                      " ",
+                      { part: "encher", type: "portuguese" },
+                    ],
+                  },
+                  // Fill the glass, please.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/fill-the-glass-please.mp3",
+                      },
+                      { type: "mark", part: "Fill" },
+                      " the glass, please. ",
+                      { part: "Encha o copo, por favor.", type: "portuguese" },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! sheep vs. ship
+                  // sheep
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/sheep.mp3",
+                        part: "sheep",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ʃiːp/", type: "phonetics" },
+                      " ",
+                      { part: "ovelha", type: "portuguese" },
+                    ],
+                  },
+                  // I saw a sheep on the mark.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/i-saw-a-sheep-on-the-farm.mp3",
+                      },
+                      "I saw a ",
+                      { type: "mark", part: "sheep" },
+                      " on the farm. ",
+                      {
+                        part: "Eu vi uma ovelha na fazenda.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // ship
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/ship.mp3",
+                        part: "ship",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/ʃɪp/", type: "phonetics" },
+                      " ",
+                      { part: "navio", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    audio:
+                      "/assets/audio/general/i-dont-usually-eat-breakfast.mp3",
+                  }, // This ship is huge.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/this-ship-is-huge.mp3",
+                      },
+                      "This ",
+                      { type: "mark", part: "ship" },
+                      " is huge. ",
+                      {
+                        part: "Este navio é enorme.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  { hr: true },
+
+                  //! sleep vs. slip
+                  // sleep
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/sleep.mp3",
+                        part: "sleep",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/sliːp/", type: "phonetics" },
+                      " ",
+                      { part: "dormir", type: "portuguese" },
+                    ],
+                  },
+                  // I need to sleep.
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/i-need-to-sleep.mp3",
+                      },
+                      "I need to ",
+                      { type: "mark", part: "sleep" },
+                      ". ",
+                      { part: "Eu preciso dormir.", type: "portuguese" },
+                    ],
+                  },
+                  { lineBreak: true },
+                  // slip
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/slip.mp3",
+                        part: "slip",
+                        type: "bold",
+                      },
+                      " ",
+                      { part: "/slɪp/", type: "phonetics" },
+                      " ",
+                      { part: "escorregar", type: "portuguese" },
+                    ],
+                  },
+                  // Becareful not to slip.
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/general/becareful-not-to-slip.mp3",
+                      },
+                      "Be careful not to ",
+                      { type: "mark", part: "slip" },
+                      ". ",
+                      {
+                        part: "Cuidado para não escorregar.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Letters 'n': /n/ vs. 'ng': /ŋ/ */}
+        <Section
+          id="letters-n-ng"
+          label="Letters 'n': /n/ vs. 'ng': /ŋ/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // letter 'n'
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                      },
+                      {
+                        part: "/ŋ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      {
+                        part: "'n'",
+                        type: "",
+                      },
+                    ],
+                  },
+                  //. words...
+                  {
+                    text: [
+                      // anger
+                      {
+                        audio: "/assets/audio/general/anger.mp3",
+                      },
+                      {
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark",
+                      },
+                      {
+                        part: "ger",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡɚ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "raiva, braveza",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // angry
+                      {
+                        audio: "/assets/audio/general/angry.mp3",
+                      },
+                      {
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark",
+                      },
+                      {
+                        part: "gry",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡri/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "com raiva",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                      },
+                      {
+                        part: "/ŋ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      {
+                        part: "'ng'",
+                        type: "",
+                      },
+                    ],
+                  },
+                  //. words...
+                  {
+                    text: [
+                      // going
+                      {
+                        audio: "/assets/audio/general/going.mp3",
+                      },
+                      {
+                        part: "goi",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "em andamento",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // interesting
+                      {
+                        audio: "/assets/audio/general/interesting.mp3",
+                      },
+                      {
+                        part: "interesti",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "interessante",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // interesting
+                      {
+                        audio: "/assets/audio/general/thing.mp3",
+                      },
+                      {
+                        part: "thi",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "coisa",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/*  Letters 'oo' /uː/ vs. 'u' /ʊ/ */}
+        <Section
+          id="letters-oo-vs-u"
+          label="Letters 'oo' /uː/ vs. 'u' /ʊ/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // bottom
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/*  Letters 'sh': /ʃ/ vs. 'ch': /tʃ/ */}
+        <Section
+          id="letters-sh-vs-ch"
+          label="Letters 'sh': /ʃ/ vs. 'ch': /tʃ/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // ...
+                  {
+                    text: [
+                      {
+                        audio: "/assets/audio/general/.mp3",
+                        part: "... ",
+                      },
+                      {
+                        part: "/.../",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "...",
                         type: "portuguese",
                       },
                       " ",
