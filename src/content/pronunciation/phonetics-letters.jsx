@@ -816,6 +816,8 @@ export default function PhoneticsLetters() {
                       {
                         audio:
                           "/assets/audio/pronunciation/phonetics-letters/diphthongs/aɪ.mp3",
+                      },
+                      {
                         part: "/aɪ/",
                         type: "phonetics",
                       },
@@ -4701,11 +4703,96 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letter-y" label="Letter 'y': /i/, /j/, /aɪ/" heading={3}>
+        <Section id="letter-y" label="Letter 'y': /aɪ/, /i/, /j/, " heading={3}>
           <Paragraph
             blocks={[
               {
                 lines: [
+                  // /aɪ/
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/aɪ.mp3",
+                      },
+                      {
+                        part: "/aɪ/",
+                        type: "phonetics"
+                      },
+                    ],
+                  },
+                  // words...
+                  {
+                    text: [
+                      // fly
+                      {
+                        audio: "/assets/audio/general/fly.mp3",
+                      },
+                      {
+                        part: "fl",
+                      },
+                      {
+                        part: "y",
+                        type: "mark"
+                      },
+                      " ",
+                      {
+                        part: "/flaɪ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "voar",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
+                      // type
+                      {
+                        audio: "/assets/audio/general/type.mp3",
+                      },
+                      {
+                        part: "t",
+                      },
+                      {
+                        part: "y",
+                        type: "mark"
+                      },
+                      {
+                        part: "pe",
+                      },
+                      " ",
+                      {
+                        part: "/flaɪ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "tipo",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  // /i/
+                  {
+                    text: [
+                      // /i/
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/vowels/i.mp3",
+                      },
+                      {
+                        part: "/i/",
+                        type: "phonetics"
+                      },
+                    ],
+                  },
                   {
                     text: [
                       // angry
