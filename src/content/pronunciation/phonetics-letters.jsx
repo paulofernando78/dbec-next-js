@@ -1,6 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
+import { InlineText } from "@/components/molecules/InlineText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 
 export default function PhoneticsLetters() {
@@ -413,25 +414,6 @@ export default function PhoneticsLetters() {
                 {
                   part: "/tʃ/",
                   type: "phonetics",
-                },
-              ],
-            },
-          ]}
-        />
-
-        {/* Check out the phonetic sounds of American English plus British variants. */}
-        <Paragraph
-          blocks={[
-            {
-              lines: [
-                {
-                  text: [
-                    {
-                      audio: "/assets/audio/phonetics-letters/check-out.mp3",
-                      part: "Check out the phonetic sounds of American English plus British variants.",
-                      type: "bold",
-                    },
-                  ],
                 },
               ],
             },
@@ -2256,20 +2238,77 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // audio
                   {
                     text: [
+                      // audio
                       {
                         audio: "/assets/audio/general/audio.mp3",
-                        part: "... ",
                       },
                       {
-                        part: "/.../",
+                        part: "au",
+                        type: "mark",
+                      },
+                      {
+                        part: "dio ",
+                      },
+                      {
+                        part: "/ˈɔː.di.oʊ/",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "...",
+                        part: "áudio",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      // automatic
+                      " ",
+                      {
+                        audio: "/assets/audio/general/automatic.mp3",
+                      },
+                      {
+                        part: "au",
+                        type: "mark",
+                      },
+                      {
+                        part: "tomatic ",
+                      },
+                      {
+                        part: "/ˈɔː.t̬əˈmæt̬.ɪk/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "automático",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // automaton
+                      " ",
+                      {
+                        audio: "/assets/audio/general/automatic.mp3",
+                      },
+                      {
+                        part: "au",
+                        type: "mark",
+                      },
+                      {
+                        part: "tomaton ",
+                      },
+                      {
+                        part: "/ɔːˈtɑː.mə.tən/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "autômato",
                         type: "portuguese",
                       },
                       " ",
@@ -2295,89 +2334,60 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // awe
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/awe.mp3",
-                        part: "awe",
+                        part: "-aw",
                         type: "bold",
                       },
-                      " ",
-                      { part: "/ɔː/", type: "phonetics" },
-                      " ",
-                      { part: "admiração; espanto", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      "We watched in ",
-                      { type: "mark", part: "awe" },
-                      ". ",
-                      {
-                        part: "Nós assistimos com admiração.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // law
-                  {
-                    text: [
+                      // law
                       {
                         audio: "/assets/audio/general/law.mp3",
-                        part: "law",
-                        type: "bold",
+                      },
+                      "l",
+                      {
+                        part: "aw",
+                        type: "mark",
                       },
                       " ",
                       { part: "/lɔː/", type: "phonetics" },
                       " ",
                       { part: "lei", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      "This is the ",
-                      { type: "mark", part: "law" },
-                      ". ",
-                      { part: "Esta é a lei.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-
-                  // saw
-                  {
-                    text: [
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // saw
                       {
                         audio: "/assets/audio/general/saw.mp3",
-                        part: "saw",
-                        type: "bold",
+                      },
+                      "s",
+                      {
+                        part: "aw",
+                        type: "mark",
                       },
                       " ",
                       { part: "/sɔː/", type: "phonetics" },
                       " ",
                       { part: "viu / serra", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      "I ",
-                      { type: "mark", part: "saw" },
-                      " a bird. ",
-                      { part: "Eu vi um pássaro.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-
-                  // draw
-                  {
-                    text: [
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // draw
                       {
                         audio: "/assets/audio/general/draw.mp3",
-                        part: "draw",
-                        type: "bold",
+                      },
+                      "dr",
+                      {
+                        part: "aw",
+                        type: "mark",
                       },
                       " ",
                       { part: "/drɔː/", type: "phonetics" },
@@ -2386,79 +2396,55 @@ export default function PhoneticsLetters() {
                         part: "desenhar / puxar / empatar",
                         type: "portuguese",
                       },
-                    ],
-                  },
-                  {
-                    text: [
-                      "Let’s ",
-                      { type: "mark", part: "draw" },
-                      " a picture. ",
+                      " ",
                       {
-                        part: "Vamos desenhar um desenho.",
-                        type: "portuguese",
+                        square: true,
                       },
-                    ],
-                  },
-                  { lineBreak: true },
-
-                  // raw
-                  {
-                    text: [
+                      " ",
+                      // raw
                       {
                         audio: "/assets/audio/general/raw.mp3",
-                        part: "raw",
-                        type: "bold",
+                      },
+                      "r",
+                      {
+                        part: "aw",
+                        type: "mark",
                       },
                       " ",
                       { part: "/rɔː/", type: "phonetics" },
                       " ",
                       { part: "cru", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      "The meat is ",
-                      { type: "mark", part: "raw" },
-                      ". ",
-                      { part: "A carne está crua.", type: "portuguese" },
-                    ],
-                  },
-                  { lineBreak: true },
-
-                  // claw
-                  {
-                    text: [
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // claw
                       {
                         audio: "/assets/audio/general/claw.mp3",
-                        part: "claw",
-                        type: "bold",
+                      },
+                      "cl",
+                      {
+                        part: "aw",
+                        type: "mark",
                       },
                       " ",
                       { part: "/klɔː/", type: "phonetics" },
                       " ",
                       { part: "garra", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      "The cat has a sharp ",
-                      { type: "mark", part: "claw" },
-                      ". ",
+                      " ",
                       {
-                        part: "O gato tem uma garra afiada.",
-                        type: "portuguese",
+                        square: true,
                       },
-                    ],
-                  },
-                  { lineBreak: true },
-
-                  // jaw
-                  {
-                    text: [
+                      " ",
+                      // jaw
                       {
                         audio: "/assets/audio/general/jaw.mp3",
-                        part: "jaw",
-                        type: "bold",
+                      },
+                      "j",
+                      {
+                        part: "aw",
+                        type: "mark",
                       },
                       " ",
                       { part: "/dʒɔː/", type: "phonetics" },
@@ -2467,37 +2453,132 @@ export default function PhoneticsLetters() {
                     ],
                   },
                   {
-                    text: [
-                      "My ",
-                      { type: "mark", part: "jaw" },
-                      " hurts. ",
-                      { part: "Minha mandíbula dói.", type: "portuguese" },
-                    ],
+                    lineBreak: true,
                   },
-                  { lineBreak: true },
-
-                  { hr: true },
-
-                  // awesome
                   {
                     text: [
                       {
-                        audio: "/assets/audio/general/awesome.mp3",
-                        part: "awesome",
+                        part: "awe-",
                         type: "bold",
                       },
-                      " ",
-                      { part: "/ˈɔːsəm/", type: "phonetics" },
-                      " ",
-                      { part: "incrível / impressionante", type: "portuguese" },
                     ],
                   },
                   {
                     text: [
-                      "That movie is ",
-                      { type: "mark", part: "awesome" },
-                      ". ",
+                      // awe
+                      {
+                        audio: "/assets/audio/general/awe.mp3",
+                      },
+                      {
+                        part: "awe",
+                        type: "mark",
+                      },
+                      " ",
+                      { part: "/ɔː/", type: "phonetics" },
+                      " ",
+                      { part: "admiração; espanto", type: "portuguese" },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // awesome
+                      {
+                        audio: "/assets/audio/general/awesome.mp3",
+                      },
+                      {
+                        part: "awe",
+                        type: "mark",
+                      },
+                      "some",
+                      " ",
+                      { part: "/ˈɔːsəm/", type: "phonetics" },
+                      " ",
+                      { part: "incrível, impressionante", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " This is the law.",
+                      { part: "Esta é a lei.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " I saw a bird. ",
+                      { part: "Eu vi um pássaro.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " Let’s draw a picture. ",
+                      {
+                        part: "Vamos desenhar um desenho.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " The meat is raw.",
+                      { type: "mark", part: "" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " The cat has a sharp claw.",
+                      {
+                        part: "O gato tem uma garra afiada.",
+                        type: "portuguese",
+                      },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " My jaw hurts. ",
+                      { part: "Minha mandíbula dói.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " That movie is awesome.",
                       { part: "Esse filme é incrível.", type: "portuguese" },
+                    ],
+                  },
+                  {
+                    text: [
+                      {
+                        bullet: true,
+                      },
+                      " We watched in awe.",
+                      {
+                        part: "Nós assistimos com admiração.",
+                        type: "portuguese",
+                      },
                     ],
                   },
                 ],
