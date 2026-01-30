@@ -5,6 +5,7 @@ import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { InlineText } from "@/components/molecules/InlineText";
+import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -31,10 +32,15 @@ export default function Mock() {
         <Contents
           items={[
             {
-              title: "Title",
+              title: [
+                {
+                  part: "Components",
+                  type: "bold",
+                },
+              ],
             },
             { href: "audio-player", label: "Audio Player" },
-            { href: "inline-text", label: "InlineText" },
+            { href: "line", label: "Line" },
             { href: "list", label: "List" },
             { href: "card-text", label: "CardText" },
             { href: "paragraph", label: "Paragraph" },
@@ -52,30 +58,23 @@ export default function Mock() {
           <AudioPlayer src="/assets/audio/general/about-to.mp3" />
         </Section>
 
-        <Section id="inline-text" label="InlineText" heading={3}>
-          <InlineText
-            text={[
+        <Section id="line" label="Line" heading={3}>
+          <Line
+            value={[
+              {
+                icons: [
+                  "us",
+                  "uk",
+                  "attetion",
+                  "correct",
+                  "incorrect",
+                  "compare",
+                ],
+              },
+              {
+                audio: "/audio/",
+              },
               "normal ",
-              {
-                icons: ["us", "uk", "attetion", "correct", "incorrect", "compare"]
-              },
-              {
-                audio: "/audio/",
-              },
-              {
-                part: "normal",
-              },
-              " ",
-              {
-                usFlag: true,
-                ukFlag: true,
-                attention: true,
-                correct: true,
-                incorrect: true,
-                audio: "/audio/",
-                part: "bold",
-                type: "bold",
-              },
               " ",
               {
                 part: "italic",
@@ -88,8 +87,18 @@ export default function Mock() {
               },
               " ",
               {
+                part: "bold mark",
+                type: "bold-mark",
+              },
+              " ",
+              {
                 part: "phonetics",
                 type: "phonetics",
+              },
+              " ",
+              {
+                part: "underline",
+                type: "underline",
               },
               " ",
               {
@@ -97,11 +106,6 @@ export default function Mock() {
                 type: "portuguese",
               },
               " ",
-              {
-                part: "underline",
-                type: "underline",
-              },
-              " end ",
             ]}
           />
         </Section>
@@ -112,7 +116,7 @@ export default function Mock() {
             items={[
               {
                 text: [
-                  "normal ",
+                  "text ",
                   {
                     usFlag: true,
                     ukFlag: true,
@@ -1062,7 +1066,7 @@ export default function Mock() {
                     phonetics: "...",
                   },
                 ],
-              }
+              },
             ]}
           />
         </Section>

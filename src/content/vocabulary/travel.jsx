@@ -376,7 +376,7 @@ export default function Travel() {
           />
         </Section>
 
-        <Section id="At the airport" label="Inside the Plane" heading={3}>
+        <Section id="At the airport" label="at-the-airport" heading={3}>
           <Paragraph
             blocks={[
               {
