@@ -136,39 +136,6 @@ export default function PhoneticsLetters() {
             {
               title: [
                 {
-                  icons: ["compare"],
-                },
-                {
-                  part: "Comparison",
-                  type: "bold",
-                },
-              ],
-            },
-            // Letters 'a': /æ/ vs. 'e': /e/:
-            {
-              href: "letters-a-vs-e",
-              label: [
-                "Letters 'a': ",
-                {
-                  part: "/æ/ ",
-                  type: "phonetics",
-                },
-                " ",
-                {
-                  part: "vs. ",
-                  type: "connector",
-                },
-                "'e': ",
-                {
-                  part: "/e/",
-                  type: "phonetics",
-                },
-                ": ",
-              ],
-            },
-            {
-              title: [
-                {
                   part: "i...",
                   type: "bold",
                 },
@@ -188,36 +155,6 @@ export default function PhoneticsLetters() {
               label: [
                 "Letters 'ie':  ",
                 { part: "/i/, /aɪ/", type: "phonetics" },
-              ],
-            },
-
-            {
-              title: [
-                {
-                  part: "Comparison",
-                  type: "bold",
-                },
-              ],
-            },
-            // Letters 'ea': /iː/ vs. 'ee': /ɪ/
-            {
-              href: "letters-ea-ee-i",
-              label: [
-                "Letters 'ea': ",
-                {
-                  part: "/iː/ ",
-                  type: "phonetics",
-                },
-                " ",
-                {
-                  part: "vs. ",
-                  type: "connector",
-                },
-                "'ee': ",
-                {
-                  part: "/ɪ/",
-                  type: "phonetics",
-                },
               ],
             },
             {
@@ -297,17 +234,17 @@ export default function PhoneticsLetters() {
             {
               title: [
                 {
-                  part: "Comparison",
+                  part: "n...",
                   type: "bold",
                 },
               ],
             },
-            // Letters 'oo' vs. 'u':
+            // Letters 'n', 'ng':
             {
-              href: "letters-oo-vs-u",
+              href: "letters-n-ng",
               label: [
-                "Letters 'oo' vs. 'u':  ",
-                { part: "/uː/ vs. /ʊ/", type: "phonetics" },
+                "Letters 'n', 'ng':  ",
+                { part: "/ŋ/", type: "phonetics" },
               ],
             },
             {
@@ -326,11 +263,114 @@ export default function PhoneticsLetters() {
                 { part: "/tʃ/, /ʃ/, /k/", type: "phonetics" },
               ],
             },
+            // Letter 't' and its sounds
+            {
+              href: "letter-t-sounds",
+              label: ["Letter 't'  and its sounds"],
+            },
+            // Letter 'y':
+            {
+              href: "letter-y",
+              label: [
+                "Letter 'y':  ",
+                { part: "/i/, /j/, /aɪ/", type: "phonetics" },
+              ],
+            },
+
+            // Comparison
             {
               title: [
                 {
+                  icons: ["compare"],
+                },
+                {
                   part: "Comparison",
                   type: "bold",
+                },
+              ],
+            },
+            // Letters 'a': /æ/ vs. 'e': /e/:
+            {
+              href: "letters-a-vs-e",
+              label: [
+                "Letters 'a': ",
+                {
+                  part: "/æ/ ",
+                  type: "phonetics",
+                },
+                " ",
+                {
+                  part: "vs. ",
+                  type: "connector",
+                },
+                "'e': ",
+                {
+                  part: "/e/",
+                  type: "phonetics",
+                },
+                ": ",
+              ],
+            },
+            // Letters 'ea': /iː/ vs. 'ee': /ɪ/
+            {
+              href: "letters-ea-ee-i",
+              label: [
+                "Letters 'ea': ",
+                {
+                  part: "/iː/ ",
+                  type: "phonetics",
+                },
+                " ",
+                {
+                  part: "vs. ",
+                  type: "connector",
+                },
+                "'ee': ",
+                {
+                  part: "/ɪ/",
+                  type: "phonetics",
+                },
+              ],
+            },
+            // Letters 'n': /n/ vs. 'ng': /ŋ/
+            {
+              href: "letters-n-ng",
+              label: [
+                "Letters 'n':  ",
+                {
+                  part: "/n/",
+                  type: "phonetics",
+                },
+                " ",
+                {
+                  part: "vs.",
+                  type: "connector",
+                },
+                " 'ng': ",
+                {
+                  part: "/ŋ/",
+                  type: "phonetics",
+                },
+              ],
+            },
+            // Letters 'oo' vs. 'u':
+            {
+              href: "letters-oo-vs-u",
+              label: [
+                "Letters 'oo':  ",
+                {
+                  part: "/uː/",
+                  type: "phonetics",
+                },
+                " ",
+                {
+                  part: "vs.",
+                  type: "connector",
+                },
+                " 'u': ",
+                {
+                  part: "/ʊ/",
+                  type: "phonetics",
                 },
               ],
             },
@@ -353,28 +393,27 @@ export default function PhoneticsLetters() {
                   part: "/tʃ/",
                   type: "phonetics",
                 },
-                ":",
               ],
             },
+            // Letters 't': /t/ vs. 'ch': /tʃ/:
             {
-              lineBreak: true,
-            },
-            // Letter 't' and its sounds
-            {
-              href: "letter-t-sounds",
-              label: ["Letter 't'  and its sounds"],
-            },
-            // Letters 'n', 'ng':
-            {
-              href: "letters-ng",
-              label: ["Letters 'n', 'ng':  ", { part: "/ŋ/", type: "phonetics" }],
-            },
-            // Letter 'y':
-            {
-              href: "letter-y",
+              href: "letters-sh-vs-ch",
               label: [
-                "Letter 'y':  ",
-                { part: "/i/, /j/, /aɪ/", type: "phonetics" },
+                "Letters 't': ",
+                " ",
+                {
+                  part: "/t/ ",
+                  type: "phonetics",
+                },
+                {
+                  part: "vs. ",
+                  type: "connector",
+                },
+                "'ch': ",
+                {
+                  part: "/tʃ/",
+                  type: "phonetics",
+                },
               ],
             },
           ]}
@@ -4152,6 +4191,411 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        <Section id="letters-n-ng" label="Letters 'n', 'ng': /ŋ/" heading={3}>
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // letter 'n'
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                      },
+                      {
+                        part: "/ŋ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      {
+                        part: "'n'",
+                        type: "",
+                      },
+                    ],
+                  },
+                  //. words...
+                  {
+                    text: [
+                      // anger
+                      {
+                        audio: "/assets/audio/general/anger.mp3",
+                      },
+                      {
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark",
+                      },
+                      {
+                        part: "ger",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡɚ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "raiva, braveza",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // angry
+                      {
+                        audio: "/assets/audio/general/angry.mp3",
+                      },
+                      {
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark",
+                      },
+                      {
+                        part: "gry",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡri/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "com raiva",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                      },
+                      {
+                        part: "/ŋ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      {
+                        part: "'ng'",
+                        type: "",
+                      },
+                    ],
+                  },
+                  //. words...
+                  {
+                    text: [
+                      // going
+                      {
+                        audio: "/assets/audio/general/going.mp3",
+                      },
+                      {
+                        part: "goi",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "em andamento",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // interesting
+                      {
+                        audio: "/assets/audio/general/interesting.mp3",
+                      },
+                      {
+                        part: "interesti",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "interessante",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // interesting
+                      {
+                        audio: "/assets/audio/general/thing.mp3",
+                      },
+                      {
+                        part: "thi",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "coisa",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
+        {/* Compare */}
+        <Section
+          id="letters-n-ng"
+          label="Letters 'n': /n/ vs. 'ng': /ŋ/"
+          heading={3}
+        >
+          <Paragraph
+            blocks={[
+              {
+                lines: [
+                  // letter 'n'
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                      },
+                      {
+                        part: "/ŋ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      {
+                        part: "'n'",
+                        type: "",
+                      },
+                    ],
+                  },
+                  //. words...
+                  {
+                    text: [
+                      // anger
+                      {
+                        audio: "/assets/audio/general/anger.mp3",
+                      },
+                      {
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark",
+                      },
+                      {
+                        part: "ger",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡɚ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "raiva, braveza",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // angry
+                      {
+                        audio: "/assets/audio/general/angry.mp3",
+                      },
+                      {
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark",
+                      },
+                      {
+                        part: "gry",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡri/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "com raiva",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                    ],
+                  },
+                  {
+                    lineBreak: true,
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                      },
+                      {
+                        part: "/ŋ/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      {
+                        part: "'ng'",
+                        type: "",
+                      },
+                    ],
+                  },
+                  //. words...
+                  {
+                    text: [
+                      // going
+                      {
+                        audio: "/assets/audio/general/going.mp3",
+                      },
+                      {
+                        part: "goi",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "em andamento",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // interesting
+                      {
+                        audio: "/assets/audio/general/interesting.mp3",
+                      },
+                      {
+                        part: "interesti",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "interessante",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // interesting
+                      {
+                        audio: "/assets/audio/general/thing.mp3",
+                      },
+                      {
+                        part: "thi",
+                      },
+                      {
+                        part: "ng",
+                        type: "mark",
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "coisa",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                    ],
+                  },
+                ],
+              },
+            ]}
+          />
+        </Section>
+
         {/* Letter 't': /t/ and its sounds */}
         <Section
           id="letter-t-sounds"
@@ -4554,155 +4998,6 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letters-n-ng" label="Letters 'n', 'ng': /ŋ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      // angry
-                      {
-                        audio: "/assets/audio/general/anger.mp3",
-                      },
-                      {
-                        part: "a",
-                      },
-                      {
-                        part: "n",
-                        type: "mark"
-                      },
-                      {
-                        part: "ger",
-                      },
-                      {
-                        part: "/ˈæŋ.ɡɚ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "raiva, braveza",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true
-                      },
-                      " ",
-                      // angry
-                      {
-                        audio: "/assets/audio/general/angry.mp3",
-                      },
-                      {
-                        part: "a",
-                      },
-                      {
-                        part: "n",
-                        type: "mark"
-                      },
-                      {
-                        part: "gry",
-                      },
-                      {
-                        part: "/ˈæŋ.ɡri/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "com raiva",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true
-                      },
-                      " ",
-                      // going
-                      {
-                        audio: "/assets/audio/general/going.mp3",
-                      },
-                      {
-                        part: "go",
-                      },
-                      {
-                        part: "ing",
-                        type: "mark"
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "em andamento",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // interesting
-                      {
-                        audio: "/assets/audio/general/interesting.mp3",
-                      },
-                      {
-                        part: "interest",
-                      },
-                      {
-                        part: "ing",
-                        type: "mark"
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "interessante",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                       // interesting
-                      {
-                        audio: "/assets/audio/general/thing.mp3",
-                      },
-                      {
-                        part: "th",
-                      },
-                      {
-                        part: "ing",
-                        type: "mark"
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "coisa",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
         <Section id="letter-y" label="Letter 'y': /aɪ/, /i/, /j/, " heading={3}>
           <Paragraph
             blocks={[
@@ -4717,7 +5012,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "/aɪ/",
-                        type: "phonetics"
+                        type: "phonetics",
                       },
                     ],
                   },
@@ -4733,7 +5028,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "y",
-                        type: "mark"
+                        type: "mark",
                       },
                       " ",
                       {
@@ -4747,7 +5042,7 @@ export default function PhoneticsLetters() {
                       },
                       " ",
                       {
-                        square: true
+                        square: true,
                       },
                       " ",
                       // type
@@ -4759,7 +5054,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "y",
-                        type: "mark"
+                        type: "mark",
                       },
                       {
                         part: "pe",
@@ -4789,10 +5084,11 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "/i/",
-                        type: "phonetics"
+                        type: "phonetics",
                       },
                     ],
                   },
+                  // words...
                   {
                     text: [
                       // angry
@@ -4804,7 +5100,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "y",
-                        type: "mark"
+                        type: "mark",
                       },
                       {
                         part: "/ˈæŋ.ɡri/",
@@ -4817,7 +5113,7 @@ export default function PhoneticsLetters() {
                       },
                       " ",
                       {
-                        square: true
+                        square: true,
                       },
                       " ",
                       // crazy
@@ -4829,7 +5125,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "y",
-                        type: "mark"
+                        type: "mark",
                       },
                       {
                         part: "/ˈkreɪ.zi/",
@@ -4842,7 +5138,7 @@ export default function PhoneticsLetters() {
                       },
                       " ",
                       {
-                        square: true
+                        square: true,
                       },
                       " ",
                       // hungry
@@ -4854,7 +5150,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "y",
-                        type: "mark"
+                        type: "mark",
                       },
                       {
                         part: "/ˈhʌŋ.ɡri/",
@@ -4867,7 +5163,7 @@ export default function PhoneticsLetters() {
                       },
                       " ",
                       {
-                        square: true
+                        square: true,
                       },
                       " ",
                       // salty
@@ -4879,7 +5175,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "y",
-                        type: "mark"
+                        type: "mark",
                       },
                       {
                         part: "/ˈsɑːl.t̬i/",
@@ -4892,7 +5188,7 @@ export default function PhoneticsLetters() {
                       },
                       " ",
                       {
-                        square: true
+                        square: true,
                       },
                       " ",
                       // sleepy
@@ -4904,7 +5200,7 @@ export default function PhoneticsLetters() {
                       },
                       {
                         part: "y",
-                        type: "mark"
+                        type: "mark",
                       },
                       {
                         part: "/ˈsliː.pi/",
@@ -4917,7 +5213,7 @@ export default function PhoneticsLetters() {
                       },
                       " ",
                       {
-                        square: true
+                        square: true,
                       },
                       " ",
                     ],
