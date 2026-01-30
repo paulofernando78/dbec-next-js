@@ -57,12 +57,12 @@ export default function Mock() {
             text={[
               "normal ",
               {
-                usFlag: true,
-                ukFlag: true,
-                attention: true,
-                correct: true,
-                incorrect: true,
+                icons: ["us", "uk", "attetion", "correct", "incorrect", "compare"]
+              },
+              {
                 audio: "/audio/",
+              },
+              {
                 part: "normal",
               },
               " ",

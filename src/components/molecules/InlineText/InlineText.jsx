@@ -18,14 +18,66 @@ import {
   Correct,
   Incorrect,
   Attention,
+  Compare,
   USflag,
   UKflag,
 } from "@/lib/svg-imports";
 
-export const InlineText = ({ text = [] }) => {
+export const InlineText = ({ value, text = [] }) => {
+  const raw = value ?? text;
+  const contentArray = Array.isArray(raw) ? raw : [raw];
+
+  const iconMap = {
+    us: USflag,
+    uk: UKflag,
+    attention: Attention,
+    correct: Correct,
+    incorrect: Incorrect,
+    compare: Compare,
+  };
+
+  const legacyFlagMap = {
+    usFlag: "us",
+    ukFlag: "uk",
+    attention: "attention",
+    correct: "correct",
+    incorrect: "incorrect",
+    comparison: "compare",
+  };
+
+  const renderIcons = (part) => {
+    const icons = [];
+
+    // New schema: icons: ["us", "uk", "correct", etc.]
+    if (Array.isArray(part.icons)) {
+      part.icons.forEach((name) => {
+        const Icon = iconMap[name];
+        if (Icon) {
+          icons.push(
+            <Icon key={`icon-${name}`} className="icon-position" />
+          );
+        }
+      });
+    }
+
+    // Legacy schema: usFlag, ukFlag, etc.
+    Object.entries(legacyFlagMap).forEach(([flag, name]) => {
+      if (part[flag] && !part.icons?.includes(name)) {
+        const Icon = iconMap[name];
+        if (Icon) {
+          icons.push(
+            <Icon key={`legacy-${name}`} className="icon-position" />
+          );
+        }
+      }
+    });
+
+    return icons;
+  };
+
   return (
     <span className={styles.text}>
-      {text.map((part, i) => {
+      {contentArray.map((part, i) => {
         if (typeof part === "string") return part;
 
         let content = part.part;
@@ -65,11 +117,7 @@ export const InlineText = ({ text = [] }) => {
 
         return (
           <span key={i}>
-            {part.usFlag && <USflag className="icon-position" />}
-            {part.ukFlag && <UKflag className="icon-position" />}
-            {part.attention && <Attention className="icon-position" />}
-            {part.correct && <Correct className="icon-position" />}
-            {part.incorrect && <Incorrect className="icon-position" />}
+            {typeof part === "object" && renderIcons(part)}
             {part.audio && <Audio src={part.audio} />}
             {part.bullet && <BulletPoint>• </BulletPoint>}
             {part.square && <SquarePoint>• </SquarePoint>}

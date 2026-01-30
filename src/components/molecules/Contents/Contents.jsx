@@ -16,20 +16,25 @@ export const Contents = ({ items = [] }) => {
       <nav>
         <ul>
           {items.map((item, index) => {
+
+            const key = item.href || item.id || `item-${index}`
+
             // Title
             if (item.title) {
               return (
-                <li key={`title-${index}`} className={styles.title}>
-                  <Bold>{item.title}</Bold>
+                <li
+                key={`title-${key}`}
+                className={styles.title}>
+                  <InlineText text={item.title}/>
                 </li>
               );
             }
 
             return (
-              <div key={index} className="flex-align">
-                <li className={item.lineBreak ? "line-break-item" : ""}>
+                <li
+                key={key}
+                className={`flex-align ${item.lineBreak ? "line-break-item" : ""}`}>
                   {!item.lineBreak && <ContentLink className="icon-position" />}
-                  {item.compare && <Compare className="icon-position" />}
                   <a href={`#${item.href}`}>
                     {Array.isArray(item.label) ? (
                       <InlineText text={item.label} />
@@ -38,7 +43,6 @@ export const Contents = ({ items = [] }) => {
                     )}
                   </a>
                 </li>
-              </div>
             );
           })}
         </ul>
