@@ -364,10 +364,10 @@ export default function PhoneticsLetters() {
               href: "letter-t-sounds",
               label: ["Letter 't'  and its sounds"],
             },
-            // Letters 'ng':
+            // Letters 'n', 'ng':
             {
               href: "letters-ng",
-              label: ["Letters 'ng':  ", { part: "/ŋ/", type: "phonetics" }],
+              label: ["Letters 'n', 'ng':  ", { part: "/ŋ/", type: "phonetics" }],
             },
             // Letter 'y':
             {
@@ -4463,7 +4463,7 @@ export default function PhoneticsLetters() {
                       },
                       " ",
                       {
-                        part: "festa, ???",
+                        part: "festa, grupo, partido político",
                         type: "portuguese",
                       },
                     ],
@@ -4552,25 +4552,140 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letters-ng" label="Letters 'ng': /ŋ/" heading={3}>
+        <Section id="letters-n-ng" label="Letters 'n', 'ng': /ŋ/" heading={3}>
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // ...
                   {
                     text: [
+                      // angry
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
+                        audio: "/assets/audio/general/anger.mp3",
                       },
                       {
-                        part: "/.../",
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark"
+                      },
+                      {
+                        part: "ger",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡɚ/",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "...",
+                        part: "raiva, braveza",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
+                      // angry
+                      {
+                        audio: "/assets/audio/general/angry.mp3",
+                      },
+                      {
+                        part: "a",
+                      },
+                      {
+                        part: "n",
+                        type: "mark"
+                      },
+                      {
+                        part: "gry",
+                      },
+                      {
+                        part: "/ˈæŋ.ɡri/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "com raiva",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
+                      // going
+                      {
+                        audio: "/assets/audio/general/going.mp3",
+                      },
+                      {
+                        part: "go",
+                      },
+                      {
+                        part: "ing",
+                        type: "mark"
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "em andamento",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // interesting
+                      {
+                        audio: "/assets/audio/general/interesting.mp3",
+                      },
+                      {
+                        part: "interest",
+                      },
+                      {
+                        part: "ing",
+                        type: "mark"
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "interessante",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                       // interesting
+                      {
+                        audio: "/assets/audio/general/thing.mp3",
+                      },
+                      {
+                        part: "th",
+                      },
+                      {
+                        part: "ing",
+                        type: "mark"
+                      },
+                      " ",
+                      {
+                        part: "/ing/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "coisa",
                         type: "portuguese",
                       },
                       " ",
@@ -4591,22 +4706,133 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // ...
                   {
                     text: [
+                      // angry
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
+                        audio: "/assets/audio/general/angry.mp3",
                       },
                       {
-                        part: "/.../",
+                        part: "angr",
+                      },
+                      {
+                        part: "y",
+                        type: "mark"
+                      },
+                      {
+                        part: "/ˈæŋ.ɡri/",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "...",
+                        part: "com raiva",
                         type: "portuguese",
                       },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
+                      // crazy
+                      {
+                        audio: "/assets/audio/general/crazy.mp3",
+                      },
+                      {
+                        part: "craz",
+                      },
+                      {
+                        part: "y",
+                        type: "mark"
+                      },
+                      {
+                        part: "/ˈkreɪ.zi/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "louco(a)",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
+                      // hungry
+                      {
+                        audio: "/assets/audio/general/hungry.mp3",
+                      },
+                      {
+                        part: "hungr",
+                      },
+                      {
+                        part: "y",
+                        type: "mark"
+                      },
+                      {
+                        part: "/ˈhʌŋ.ɡri/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "com fome",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
+                      // salty
+                      {
+                        audio: "/assets/audio/general/salty.mp3",
+                      },
+                      {
+                        part: "salt",
+                      },
+                      {
+                        part: "y",
+                        type: "mark"
+                      },
+                      {
+                        part: "/ˈsɑːl.t̬i/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "salgado",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
+                      // sleepy
+                      {
+                        audio: "/assets/audio/general/sleepy.mp3",
+                      },
+                      {
+                        part: "sleep",
+                      },
+                      {
+                        part: "y",
+                        type: "mark"
+                      },
+                      {
+                        part: "/ˈsliː.pi/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "sonolent",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true
+                      },
+                      " ",
                     ],
                   },
                 ],
