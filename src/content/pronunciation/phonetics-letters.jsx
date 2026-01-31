@@ -2506,7 +2506,7 @@ export default function PhoneticsLetters() {
                       {
                         bullet: true,
                       },
-                      " This is the law.",
+                      " This is the law. ",
                       { part: "Esta é a lei.", type: "portuguese" },
                     ],
                   },
@@ -2536,8 +2536,11 @@ export default function PhoneticsLetters() {
                       {
                         bullet: true,
                       },
-                      " The meat is raw.",
-                      { type: "mark", part: "" },
+                      " The meat is raw. ",
+                      {
+                        part: "A carne está crua",
+                        type: "portuguese",
+                      },
                     ],
                   },
                   {
@@ -2545,7 +2548,7 @@ export default function PhoneticsLetters() {
                       {
                         bullet: true,
                       },
-                      " The cat has a sharp claw.",
+                      " The cat has a sharp claw. ",
                       {
                         part: "O gato tem uma garra afiada.",
                         type: "portuguese",
@@ -2566,7 +2569,7 @@ export default function PhoneticsLetters() {
                       {
                         bullet: true,
                       },
-                      " That movie is awesome.",
+                      " That movie is awesome. ",
                       { part: "Esse filme é incrível.", type: "portuguese" },
                     ],
                   },
@@ -2575,7 +2578,7 @@ export default function PhoneticsLetters() {
                       {
                         bullet: true,
                       },
-                      " We watched in awe.",
+                      " We watched in awe. ",
                       {
                         part: "Nós assistimos com admiração.",
                         type: "portuguese",
@@ -3370,24 +3373,41 @@ export default function PhoneticsLetters() {
           label="Letters 'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/"
           heading={3}
         >
+          <Line
+            value={[
+              {
+                icons: ["attention"],
+              },
+              {
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/vowels/ə-ʌ.mp3",
+              },
+              {
+                part: "/ə/",
+                type: "phonetics",
+              },
+              " ",
+            ]}
+          />
+
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // ...
                   {
                     text: [
+                      // success
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
+                        audio: "/assets/audio/general/success.mp3",
+                        part: "success ",
                       },
                       {
-                        part: "/.../",
+                        part: "/səkˈses/",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "...",
+                        part: "sucesso",
                         type: "portuguese",
                       },
                     ],
@@ -3446,20 +3466,24 @@ export default function PhoneticsLetters() {
             blocks={[
               {
                 lines: [
-                  // ..
                   {
                     text: [
+                      // focus
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
+                        audio: "/assets/audio/general/focus.mp3",
+                      },
+                      "foc",
+                      {
+                        part: "us ",
+                        type: "mark",
                       },
                       {
-                        part: "/.../",
+                        part: "/ˈfoʊ.kəs/",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "...",
+                        part: "focar",
                         type: "portuguese",
                       },
                     ],
@@ -5497,7 +5521,7 @@ export default function PhoneticsLetters() {
           <Line
             value={[
               {
-                icons: ["attention"]
+                icons: ["attention"],
               },
               {
                 audio:
@@ -5616,7 +5640,7 @@ export default function PhoneticsLetters() {
           <Line
             value={[
               {
-                icons: ["attention"]
+                icons: ["attention"],
               },
               {
                 audio:
