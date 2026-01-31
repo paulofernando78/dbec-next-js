@@ -2200,6 +2200,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'ai:' /e/Letters 'ai:' /e/ */}
         <Section id="letters-ai" label="Letters 'ai:' /e/" heading={3}>
           <Paragraph
             blocks={[
@@ -2234,6 +2235,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'au': /ɔː/ */}
         <Section id="letters-au" label="Letters 'au': /ɔː/" heading={3}>
           <Paragraph
             blocks={[
@@ -2591,6 +2593,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letter 'e' silent */}
         <Section id="letter-e-silent" label="Letter 'e' silent" heading={3}>
           <Paragraph
             blocks={[
@@ -2625,6 +2628,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'ea': /iː/, /e/ */}
         <Section id="letters-ea" label="Letters 'ea': /iː/, /e/" heading={3}>
           <Paragraph
             blocks={[
@@ -2694,6 +2698,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'ee': /iː/ */}
         <Section id="letters-ee" label="Letters 'ee': /iː/" heading={3}>
           <Paragraph
             blocks={[
@@ -2728,6 +2733,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'ei': /eɪ/ */}
         <Section id="letters-ei" label="Letters 'ei': /eɪ/" heading={3}>
           <Paragraph
             blocks={[
@@ -2762,6 +2768,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letter 'et': /eɪ/ */}
         <Section id="letters-et" label="Letter 'et': /eɪ/" heading={3}>
           <Paragraph
             blocks={[
@@ -2796,6 +2803,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'ey': /i/, /eɪ/ */}
         <Section id="letters-ey" label="Letters 'ey': /i/, /eɪ/" heading={3}>
           <Paragraph
             blocks={[
@@ -2958,6 +2966,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'ie': /i/, /aɪ/ */}
         <Section id="letters-ie" label="Letters 'ie': /i/, /aɪ/" heading={3}>
           <Paragraph
             blocks={[
@@ -2992,6 +3001,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'n', 'ng': /ŋ/ */}
         <Section id="letters-n-ng" label="Letters 'n', 'ng': /ŋ/" heading={3}>
           <Paragraph
             blocks={[
@@ -3192,6 +3202,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letter 'o': /ɑː/, /ɔː/, /oʊ/ */}
         <Section id="letter-o" label="Letter 'o': /ɑː/, /ɔː/, /oʊ/" heading={3}>
           <Paragraph
             blocks={[
@@ -3226,6 +3237,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'oa': /ɔː/, /oʊ/ */}
         <Section id="letters-oa" label="Letters 'oa': /ɔː/, /oʊ/" heading={3}>
           <Paragraph
             blocks={[
@@ -3299,6 +3311,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* etters 'ous': /əs/ */}
         <Section id="letters-ous" label="Letters 'ous': /əs/" heading={3}>
           <Paragraph
             blocks={[
@@ -3333,25 +3346,79 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'ow': /oʊ/, /aʊ/ */}
         <Section id="letters-ow" label="Letters 'ow': /oʊ/, /aʊ/" heading={3}>
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // ...
                   {
                     text: [
+                       // brown
                       {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
+                        audio: "/assets/audio/general/brown.mp3",
                       },
+                      "br",
                       {
-                        part: "/.../",
+                        part: "ow",
+                        type: "mark"
+                      },
+                      "n",
+                      {
+                        part: "/braʊn/",
                         type: "phonetics",
                       },
                       " ",
                       {
-                        part: "...",
+                        part: "marrom",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // clown
+                      {
+                        audio: "/assets/audio/general/clown.mp3",
+                      },
+                      "cl",
+                      {
+                        part: "ow",
+                        type: "mark"
+                      },
+                      "n",
+                      {
+                        part: "/klaʊn/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "palhaço",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // frown
+                      {
+                        audio: "/assets/audio/general/frown.mp3",
+                      },
+                      "fr",
+                      {
+                        part: "ow",
+                        type: "mark"
+                      },
+                      "n",
+                      {
+                        part: "/fraʊn/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "franzir",
                         type: "portuguese",
                       },
                       " ",
@@ -3376,14 +3443,14 @@ export default function PhoneticsLetters() {
           <Line
             value={[
               {
-                icons: ["attention"],
+                icons: ["attention", "us"],
               },
               {
                 audio:
                   "/assets/audio/pronunciation/phonetics-letters/vowels/ə-ʌ.mp3",
               },
               {
-                part: "/ə/",
+                part: "/ə/, /ʌ/",
                 type: "phonetics",
               },
               " ",
@@ -3396,6 +3463,25 @@ export default function PhoneticsLetters() {
                 lines: [
                   {
                     text: [
+                      // cuff
+                      {
+                        audio: "/assets/audio/general/cuff.mp3",
+                        part: "cuff ",
+                      },
+                      {
+                        part: "/cuff/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "punho; algemar",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
                       // success
                       {
                         audio: "/assets/audio/general/success.mp3",
@@ -3410,12 +3496,36 @@ export default function PhoneticsLetters() {
                         part: "sucesso",
                         type: "portuguese",
                       },
+                      " ",
+                      {
+                        square: true,
+                      },
+                      " ",
+                      // support
+                      {
+                        audio: "/assets/audio/general/support.mp3",
+                        part: "support ",
+                      },
+                      {
+                        part: "/səˈpɔːrt/",
+                        type: "phonetics",
+                      },
+                      " ",
+                      {
+                        part: "apoiar",
+                        type: "portuguese",
+                      },
+                      " ",
+                      {
+                        square: true,
+                      },
                     ],
                   },
                 ],
               },
             ]}
           />
+          
         </Section>
 
         {/* Letters 'ui': /ɪ/, /aɪ/, /uː/ */}
@@ -3461,6 +3571,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'us': /əs/ */}
         <Section id="letters-us" label="Letters 'us': /əs/" heading={3}>
           <Paragraph
             blocks={[
@@ -3494,6 +3605,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters 'sh': /ʃ/ */}
         <Section id="letters-sh" label="Letters 'sh': /ʃ/" heading={3}>
           <Paragraph
             blocks={[
@@ -3969,7 +4081,8 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        <Section id="letter-y" label="Letter 'y': /aɪ/, /i/, /j/, " heading={3}>
+        {/* Letter 'y': /aɪ/, /i/, /j/ */}
+        <Section id="letter-y" label="Letter 'y': /aɪ/, /i/, /j/" heading={3}>
           <Paragraph
             blocks={[
               {
