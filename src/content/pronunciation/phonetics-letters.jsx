@@ -5,7 +5,7 @@ import { Line } from "@/components/molecules/Line";
 import { Phonetics } from "@/components/molecules/Phonetics";
 import { ExampleList } from "@/components/molecules/ExampleList";
 import { Paragraph } from "@/components/molecules/Paragraph";
-import { wordList, example } from "../../helpers/content";
+import { wordRow, example } from "../../helpers/content";
 
 export default function PhoneticsLetters() {
   return (
@@ -1608,27 +1608,27 @@ export default function PhoneticsLetters() {
           {/* /æ/ */}
           <Phonetics
             value={[
-              ...wordList({
+              ...wordRow({
                 audio:
                   "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
                 phonetics: "/æ/",
               }),
               // apple
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/apple.mp3",
                 parts: [{ part: "a", type: "mark" }, { part: "pple" }],
                 phonetics: "/ˈæp.əl/",
                 pt: "maçã",
               }),
               // anniversary
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/anniversary.mp3",
                 parts: [{ part: "a", type: "mark" }, { part: "nniversary" }],
                 phonetics: "/ˌæn.əˈvɝː.sɚ.i/",
                 pt: "",
               }),
               // bad
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/bad.mp3",
                 parts: [
                   { part: "b" },
@@ -1639,7 +1639,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // bat
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/bat.mp3",
                 parts: [
                   { part: "b" },
@@ -1650,7 +1650,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // cap
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/cap.mp3",
                 parts: [
                   { part: "c" },
@@ -1661,7 +1661,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // cat
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/cat.mp3",
                 parts: [
                   { part: "c" },
@@ -1672,7 +1672,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // fat
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/fat.mp3",
                 parts: [
                   { part: "f" },
@@ -1683,7 +1683,18 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // hat
-              ...wordList({
+              ...wordRow({
+                audio: "/assets/audio/general/habit.mp3",
+                parts: [
+                  { part: "h" },
+                  { part: "a", type: "mark" },
+                  { part: "bit" },
+                ],
+                phonetics: "/ˈhæb.ɪt/",
+                pt: "hábito",
+              }),
+              // hat
+              ...wordRow({
                 audio: "/assets/audio/general/hat.mp3",
                 parts: [
                   { part: "h" },
@@ -1694,7 +1705,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // has
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/has.mp3",
                 parts: [
                   { part: "h" },
@@ -1705,7 +1716,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // have
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/have.mp3",
                 parts: [
                   { part: "h" },
@@ -1716,7 +1727,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
               // man
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/man.mp3",
                 parts: [
                   { part: "m" },
@@ -1727,7 +1738,7 @@ export default function PhoneticsLetters() {
                 pt: "",
               }),
             ]}
-            />
+          />
           <ExampleList
             items={[
               example({
@@ -1757,85 +1768,129 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-
+          <hr />
           {/* /ɑː/ */}
           <Phonetics
             value={[
               // calm
-              ...wordList({
-                audio: "/assets/audio/general/.mp3",
+              ...wordRow({
+                audio: "/assets/audio/general/calm.mp3",
                 parts: [
                   { part: "c" },
                   { part: "a", type: "mark" },
                   { part: "lm" },
                 ],
                 phonetics: "/kɑːm/",
-                pt: "",
+                pt: "calma",
               }),
               // palm
-              ...wordList({
-                audio: "/assets/audio/general/.mp3",
+              ...wordRow({
+                audio: "/assets/audio/general/palm.mp3",
                 parts: [
                   { part: "p" },
                   { part: "a", type: "mark" },
-                  { part: "" },
+                  { part: "lm" },
                 ],
                 phonetics: "/pɑːm/",
-                pt: "",
+                pt: "palma (mãos); palmeira",
               }),
               // father
-              ...wordList({
-                audio: "/assets/audio/general/.mp3",
+              ...wordRow({
+                audio: "/assets/audio/general/father.mp3",
                 parts: [
-                  { part: "" },
-                  { part: "", type: "mark" },
-                  { part: "" },
+                  { part: "f" },
+                  { part: "a", type: "mark" },
+                  { part: "ther" },
                 ],
                 phonetics: "/ˈfɑːðər/",
-                pt: "",
+                pt: "pai",
               }),
               // spa
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/.mp3",
-                parts: [
-                  { part: "" },
-                  { part: "", type: "mark" },
-                  { part: "" },
-                ],
+                parts: [{ part: "sp" }, { part: "a", type: "mark" }],
                 phonetics: "/spɑː/",
-                pt: "",
+                pt: "spa",
               }),
             ]}
           />
           <ExampleList
-            value={[
-              // • It’s an apple.
-              ...example({
-                audio: "/assets/audio/general/.mp3",
-                parts: [{ part: "" }],
-                pt: "",
+            items={[
+              // • calm / arm
+              example({
+                audio: "/assets/audio/general/keep-calm-and-lift-your-arm.mp3",
+                parts: [{ part: "Keep calm and lift your arm." }],
+                pt: "Fique calmo e levante o braço.",
+              }),
+              // • palm / arm
+              example({
+                audio: "/assets/audio/general/put-your-palm-on-my-arm.mp3",
+                parts: [{ part: "Put your palm on my arm." }],
+                pt: "Coloque sua palma no meu braço.",
+              }),
+              // • father / car / far
+              example({
+                audio: "/assets/audio/general/my-father-drove-the-car-far.mp3",
+                parts: [{ part: "My father drove the car far." }],
+                pt: "Meu pai dirigiu o carro para longe.",
+              }),
+              // • spa / car
+              example({
+                audio: "/assets/audio/general/we-drove-the-car-to-the-spa.mp3",
+                parts: [{ part: "We drove the car to the spa." }],
+                pt: "Nós fomos de carro ao spa.",
               }),
             ]}
           />
-
+          <hr />
           {/* /eɪ/ */}
           <Phonetics
             value={[
-              // ...
-              ...wordList({
-                audio: "/assets/audio/general/.mp3",
-                parts: [{ part: "" }, { part: "", type: "" }],
+              // ate
+              ...wordRow({
+                audio: "/assets/audio/general/ate.mp3",
+                parts: [{ part: "a", type: "mark" }, { part: "te" }],
+                phonetics: "/eɪt/",
+                pt: "comi, comeu (passado verbo eat)",
+              }),
+              ...wordRow({
+                audio: "/assets/audio/general/chase.mp3",
+                parts: [
+                  { part: "ch" },
+                  { part: "a", type: "mark" },
+                  { part: "se" },
+                ],
+                phonetics: "/tʃeɪs/",
+                pt: "",
+              }),
+              ...wordRow({
+                audio: "/assets/audio/general/game.mp3",
+                parts: [
+                  { part: "g" },
+                  { part: "a", type: "mark" },
+                  { part: "me" },
+                ],
+                phonetics: "/ɡeɪm/",
+                pt: "",
+              }),
+              ...wordRow({
+                audio: "/assets/audio/general/made.mp3",
+                parts: [
+                  { part: "m" },
+                  { part: "a", type: "mark" },
+                  { part: "de" },
+                ],
                 phonetics: "//",
                 pt: "",
               }),
-            ]}
-          />
-          <ExampleList
-            value={[
-              // • It’s an apple.
-              ...example({
+              ...wordRow({
                 audio: "/assets/audio/general/.mp3",
-                parts: [{ part: "" }],
+                parts: [
+                  { part: "t" },
+                  { part: "a", type: "mark" },
+                  { part: "pe" },
+                ],
+                phonetics: "/teɪp/",
                 pt: "",
               }),
             ]}
@@ -1845,7 +1900,7 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               // ...
-              ...wordList({
+              ...wordRow({
                 audio: "/assets/audio/general/banana.mp3",
                 parts: [
                   { part: "b" },
@@ -1854,16 +1909,6 @@ export default function PhoneticsLetters() {
                   { part: "a", type: "mark" },
                 ],
                 phonetics: "/bəˈnænə/",
-                pt: "",
-              }),
-            ]}
-          />
-          <ExampleList
-            value={[
-              // • It’s an apple.
-              ...example({
-                audio: "/assets/audio/general/.mp3",
-                parts: [{ part: "" }],
                 pt: "",
               }),
             ]}

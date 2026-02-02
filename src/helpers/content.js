@@ -50,14 +50,20 @@ export const instruction = (opts) =>
 
 export const word = (opts) => baseToken({ ...opts, square: false });
 
-export const wordList = (opts) =>
+export const wordRow = (opts) =>
   baseToken({
     ...opts,
     bullet: false,
     square: true,
   });
 
-export const UKWordList = (opts) =>
+export const wordColumn = (opts) =>
+  baseToken({
+    ...opts,
+    bullet: false,
+  });
+
+export const UKWordRow = (opts) =>
   baseToken({
     ...opts,
     bullet: false,
