@@ -4,7 +4,7 @@ import styles from "./Paragraph.module.css";
 
 import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 
 export const Paragraph = ({ blocks = [] }) => {
   return (
@@ -44,7 +44,7 @@ export const Paragraph = ({ blocks = [] }) => {
                       key={lineIndex}
                       className={line.lineBreak ? styles.pLineBreak : undefined}
                     >
-                      <InlineText text={line.text} />
+                      <ContentToken text={line.text} />
                     </p>
                     {line.hr && <hr className="hr"/>}
                   </>

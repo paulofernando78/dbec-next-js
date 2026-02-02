@@ -1,7 +1,7 @@
 import { ContentToken } from "@/components/molecules/ContentToken";
 
-export const Line = (props) => {
+export const Phonetics = (props) => {
   return (
-      <ContentToken as="p" {...props} />
+      <ContentToken {...props} />
   );
 };

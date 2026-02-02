@@ -288,7 +288,7 @@ export const UnderConstruction = ({ className }) => (
 
 export const UKflag = ({ className }) => (
   <img
-    src="/assets/img/flags/gb.svg"
+    src="/assets/img/flags/uk.svg"
     alt="UK Flag icon"
     className={`flag-icon ${className}`}
   />

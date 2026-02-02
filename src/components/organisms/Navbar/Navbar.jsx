@@ -340,12 +340,14 @@ export default function NavBar() {
           {group.links && (
             <div>
               {group.links.map((item, linkIndex) => (
-                <>
-                  <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
-                  {item.attention && <Attention className={`${styles.attentionIcon} icon-position`}  />}
-                    {item.label}
-                  </Link>
-                </>
+                <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
+                  {item.attention && (
+                    <Attention
+                      className={`${styles.attentionIcon} icon-position`}
+                    />
+                  )}
+                  {item.label}
+                </Link>
               ))}
             </div>
           )}

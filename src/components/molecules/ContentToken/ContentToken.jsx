@@ -1,7 +1,3 @@
-"use client";
-
-import styles from "./InlineText.module.css";
-
 import { Audio } from "@/components/atoms/Audio";
 import { Bold } from "@/components/atoms/Bold";
 import { Italic } from "@/components/atoms/Italic";
@@ -15,22 +11,22 @@ import { BulletPoint } from "@/components/atoms/BulletPoint";
 import { SquarePoint } from "@/components/atoms/SquarePoint";
 import { Connector } from "@/components/atoms/Connector";
 import {
-  Correct,
-  Incorrect,
   Attention,
-  Compare,
   USflag,
   UKflag,
+  Correct,
+  Incorrect,
+  Compare,
 } from "@/lib/svg-imports";
 
-export const InlineText = ({ value, text = [] }) => {
+export const ContentToken = ({ value, text = [] }) => {
   const raw = value ?? text;
   const contentArray = Array.isArray(raw) ? raw : [raw];
 
   const iconMap = {
+    attention: Attention,
     us: USflag,
     uk: UKflag,
-    attention: Attention,
     correct: Correct,
     incorrect: Incorrect,
     compare: Compare,
@@ -53,9 +49,7 @@ export const InlineText = ({ value, text = [] }) => {
       part.icons.forEach((name) => {
         const Icon = iconMap[name];
         if (Icon) {
-          icons.push(
-            <Icon key={`icon-${name}`} className="icon-position" />
-          );
+          icons.push(<Icon key={`icon-${name}`} className="icon-position" />);
         }
       });
     }
@@ -65,9 +59,7 @@ export const InlineText = ({ value, text = [] }) => {
       if (part[flag] && !part.icons?.includes(name)) {
         const Icon = iconMap[name];
         if (Icon) {
-          icons.push(
-            <Icon key={`legacy-${name}`} className="icon-position" />
-          );
+          icons.push(<Icon key={`legacy-${name}`} className="icon-position" />);
         }
       }
     });
@@ -76,7 +68,7 @@ export const InlineText = ({ value, text = [] }) => {
   };
 
   return (
-    <span className={styles.text}>
+    <span>
       {contentArray.map((part, i) => {
         if (typeof part === "string") return part;
 
@@ -93,7 +85,11 @@ export const InlineText = ({ value, text = [] }) => {
             content = <Mark>{part.part}</Mark>;
             break;
           case "bold-mark":
-            content = <Bold><Mark>{part.part}</Mark></Bold>;
+            content = (
+              <Bold>
+                <Mark>{part.part}</Mark>
+              </Bold>
+            );
             break;
           case "underline":
             content = <Underline>{part.part}</Underline>;
@@ -110,7 +106,7 @@ export const InlineText = ({ value, text = [] }) => {
           case "portuguese-bold":
             content = <PortugueseBold>{part.part}</PortugueseBold>;
             break;
-            case "connector":
+          case "connector":
             content = <Connector>{part.part}</Connector>;
             break;
         }

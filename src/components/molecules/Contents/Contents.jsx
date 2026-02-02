@@ -1,7 +1,7 @@
 import styles from "./Contents.module.css"
 
 import { Bold } from "@/components/atoms/Bold";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { Content, ContentLink, Compare } from "@/lib/svg-imports.js";
 
 export const Contents = ({ items = [] }) => {
@@ -25,7 +25,7 @@ export const Contents = ({ items = [] }) => {
                 <li
                 key={`title-${key}`}
                 className={styles.title}>
-                  <InlineText text={item.title}/>
+                  <ContentToken text={item.title}/>
                 </li>
               );
             }
@@ -37,7 +37,7 @@ export const Contents = ({ items = [] }) => {
                   {!item.lineBreak && <ContentLink className="icon-position" />}
                   <a href={`#${item.href}`}>
                     {Array.isArray(item.label) ? (
-                      <InlineText text={item.label} />
+                      <ContentToken text={item.label} />
                     ) : (
                       item.label
                     )}
