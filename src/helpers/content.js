@@ -46,29 +46,34 @@ export function baseToken({
 }
 
 export const instruction = (opts) =>
-  baseToken({ ...opts, icons: [attention], square: false });
+  baseToken({
+    ...opts,
+    icons: [attention],
+    square: false,
+  });
 
-export const word = (opts) => baseToken({ ...opts, square: false });
+export const word = (opts) =>
+  baseToken({
+    ...opts,
+    square: false,
+  });
 
-export const wordRow = (opts) =>
+export const wordRowList = (opts) =>
   baseToken({
     ...opts,
     bullet: false,
     square: true,
   });
 
-export const wordColumn = (opts) =>
+export const wordColumnList = (opts) =>
   baseToken({
     ...opts,
     bullet: false,
-  });
-
-export const UKWordRow = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: false,
-    square: true,
   });
 
 export const example = (opts) =>
-  baseToken({ ...opts, bullet: true, square: false });
+  baseToken({
+    ...opts,
+    bullet: true,
+    square: false,
+  });
