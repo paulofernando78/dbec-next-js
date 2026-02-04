@@ -19,17 +19,21 @@ export function baseToken({
 
   if (bullet) {
     blocks.push({ bullet: true });
+    blocks.push(" ");
   }
-  blocks.push(" ");
 
   parts.forEach((p) => {
     blocks.push(p);
   });
-  blocks.push(" ");
 
+  if (parts.length > 0) {
+    blocks.push(" ");
+  }
+  
   if (phonetics) {
     blocks.push({ part: phonetics, type: "phonetics" });
   }
+
   blocks.push(" ");
 
   if (pt) {
@@ -52,7 +56,14 @@ export const instruction = (opts) =>
     square: false,
   });
 
-export const word = (opts) =>
+export const note = (opts) =>
+  baseToken({
+    ...opts,
+    icons: ["attention"], // ou "info" se você tiver esse ícone
+    bullet: false,
+    square: false,
+  });
+  export const word = (opts) =>
   baseToken({
     ...opts,
     square: false,
