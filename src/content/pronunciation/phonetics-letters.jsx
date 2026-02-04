@@ -64,13 +64,18 @@ export default function PhoneticsLetters() {
               href: "letters-au",
               label: ["Letters 'au':  ", { part: "/ɔː/", type: "phonetics" }],
             },
-            // Letter 'aw', 'awe':
+            // Letters 'aw', 'awe':
             {
               href: "letters-aw-awe",
               label: [
                 "Letter 'aw', 'awe':  ",
                 { part: "/ɔː/", type: "phonetics" },
               ],
+            },
+            // Letters 'ay':
+            {
+              href: "letters-ay",
+              label: ["Letter 'ay':  ", { part: "/eɪ/", type: "phonetics" }],
             },
             {
               title: [
@@ -435,6 +440,12 @@ export default function PhoneticsLetters() {
                 parts: [{ part: "a", type: "mark" }, { part: "sk" }],
                 phonetics: "/æsk/",
               }),
+              // bath
+              ...wordRowList({
+                audio: "/assets/audio/general/bath.mp3",
+                parts: ["b", { part: "a", type: "mark" }, "th"],
+                phonetics: "/bæθ/",
+              }),
               // cat
               ...wordRowList({
                 audio: "/assets/audio/general/cat.mp3",
@@ -524,6 +535,12 @@ export default function PhoneticsLetters() {
                 parts: [{ part: "a", type: "mark" }, { part: "sk" }],
                 phonetics: "/ɑːsk/",
               }),
+              // bath
+              ...wordRowList({
+                audio: "/assets/audio/general/bath-uk.mp3",
+                parts: ["b", { part: "a", type: "mark" }, "th"],
+                phonetics: "/bɑːθ/",
+              }),
               // can’t
               ...wordRowList({
                 audio: "/assets/audio/general/cant-uk.mp3",
@@ -556,7 +573,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /e/ */}
           <Phonetics
             value={[
@@ -597,7 +613,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /ɪ/ */}
           <Phonetics
             value={[
@@ -630,7 +645,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /iː/ */}
           <Phonetics
             value={[
@@ -670,7 +684,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /ə/ */}
           <Phonetics
             value={[
@@ -748,7 +761,7 @@ export default function PhoneticsLetters() {
                   { part: "/ʌ/", type: "phonetics" },
                   "occurs in stressed syllables, while ",
                   { part: "/ə/", type: "phonetics" },
-                  " occurs in unstressed syllables. In British English, they are distinguished as separate vowels."
+                  " occurs in unstressed syllables. In British English, they are distinguished as separate vowels.",
                 ],
               }),
             ]}
@@ -762,12 +775,12 @@ export default function PhoneticsLetters() {
                 parts: [
                   {
                     part: "/ʌ/",
-                    type: "phonetics"
+                    type: "phonetics",
                   },
                   {
                     part: "stressed",
-                    type: "italic"
-                  }
+                    type: "italic",
+                  },
                 ],
                 phonetics: "",
               }),
@@ -887,7 +900,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /ɑː/ */}
           <Phonetics
             value={[
@@ -1130,7 +1142,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /ɔː/ */}
           <Phonetics
             value={[
@@ -1162,7 +1173,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /ʊ/ */}
           <Phonetics
             value={[
@@ -1197,7 +1207,6 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          <hr />
           {/* /uː/ */}
           <Phonetics
             value={[
@@ -1236,787 +1245,961 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
-
         <Section id="diphthongs" label="Diphthongs" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // aɪ
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/aɪ.mp3",
-                      },
-                      {
-                        part: "/aɪ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/buy.mp3" },
-                      "buy ",
-                      { audio: "/assets/audio/general/my.mp3" },
-                      "my ",
-                      { audio: "/assets/audio/general/time.mp3" },
-                      "time ",
-                    ],
-                  },
-                  // aʊ
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/aʊ.mp3",
-                        part: "/aʊ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/cow.mp3" },
-                      "cow ",
-                      { audio: "/assets/audio/general/bow-verb.mp3" },
-                      "bow ",
-                      { audio: "/assets/audio/general/south.mp3" },
-                      "south",
-                    ],
-                  },
-                  // eɪ
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/eɪ.mp3",
-                        part: "/eɪ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/day.mp3" },
-                      "day ",
-                      { audio: "/assets/audio/general/make.mp3" },
-                      "make ",
-                      { audio: "/assets/audio/general/say.mp3" },
-                      "say",
-                    ],
-                  },
-                  // ɔɪ
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/ɔɪ.mp3",
-                        part: "/ɔɪ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/boy.mp3" },
-                      "boy ",
-                      { audio: "/assets/audio/general/choice.mp3" },
-                      "choice ",
-                      { audio: "/assets/audio/general/toy.mp3" },
-                      "toy",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // oʊ (US)
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/oʊ.mp3",
-                        part: "/oʊ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/go.mp3" },
-                      "go ",
-                      { audio: "/assets/audio/general/show.mp3" },
-                      "show ",
-                      { audio: "/assets/audio/general/slow.mp3" },
-                      "slow",
-                    ],
-                  },
-                  // əʊ (UK)
-                  {
-                    text: [
-                      {
-                        ukFlag: true,
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/diphthongs/əʊ.mp3",
-                        part: "/əʊ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/go-uk.mp3" },
-                      "go ",
-                      { audio: "/assets/audio/general/show-uk.mp3" },
-                      "show ",
-                      { audio: "/assets/audio/general/slow-uk.mp3" },
-                      "slow",
-                    ],
-                  },
-                ],
-              },
+          {/* /aɪ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/aɪ.mp3",
+                parts: [{ part: "/aɪ/", type: "phonetics" }],
+              }),
+
+              // buy
+              ...wordRowList({
+                audio: "/assets/audio/general/buy.mp3",
+                parts: ["b", { part: "uy", type: "mark" }],
+                phonetics: "/baɪ/",
+              }),
+
+              // my
+              ...wordRowList({
+                audio: "/assets/audio/general/my.mp3",
+                parts: ["m", { part: "y", type: "mark" }],
+                phonetics: "/maɪ/",
+              }),
+
+              // time
+              ...wordRowList({
+                audio: "/assets/audio/general/time.mp3",
+                parts: ["t", { part: "i", type: "mark" }, "me"],
+                phonetics: "/taɪm/",
+              }),
+            ]}
+          />
+          {/* /aʊ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/aʊ.mp3",
+                parts: [{ part: "/aʊ/", type: "phonetics" }],
+              }),
+
+              // cow
+              ...wordRowList({
+                audio: "/assets/audio/general/cow.mp3",
+                parts: ["c", { part: "ow", type: "mark" }],
+                phonetics: "/kaʊ/",
+              }),
+
+              // bow (verb)
+              ...wordRowList({
+                audio: "/assets/audio/general/bow-verb.mp3",
+                parts: ["b", { part: "ow", type: "mark" }],
+                phonetics: "/baʊ/",
+              }),
+
+              // south
+              ...wordRowList({
+                audio: "/assets/audio/general/south.mp3",
+                parts: ["s", { part: "ou", type: "mark" }, "th"],
+                phonetics: "/saʊθ/",
+              }),
+            ]}
+          />
+          {/* /eɪ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/eɪ.mp3",
+                parts: [{ part: "/eɪ/", type: "phonetics" }],
+              }),
+
+              // day
+              ...wordRowList({
+                audio: "/assets/audio/general/day.mp3",
+                parts: ["d", { part: "a", type: "mark" }, "y"],
+                phonetics: "/deɪ/",
+              }),
+
+              // make
+              ...wordRowList({
+                audio: "/assets/audio/general/make.mp3",
+                parts: ["m", { part: "a", type: "mark" }, "ke"],
+                phonetics: "/meɪk/",
+              }),
+
+              // say
+              ...wordRowList({
+                audio: "/assets/audio/general/say.mp3",
+                parts: ["s", { part: "a", type: "mark" }, "y"],
+                phonetics: "/seɪ/",
+              }),
+            ]}
+          />
+          {/* /ɔɪ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/ɔɪ.mp3",
+                parts: [{ part: "/ɔɪ/", type: "phonetics" }],
+              }),
+
+              // boy
+              ...wordRowList({
+                audio: "/assets/audio/general/boy.mp3",
+                parts: ["b", { part: "oy", type: "mark" }],
+                phonetics: "/bɔɪ/",
+              }),
+
+              // choice
+              ...wordRowList({
+                audio: "/assets/audio/general/choice.mp3",
+                parts: ["ch", { part: "oi", type: "mark" }, "ce"],
+                phonetics: "/tʃɔɪs/",
+              }),
+
+              // toy
+              ...wordRowList({
+                audio: "/assets/audio/general/toy.mp3",
+                parts: ["t", { part: "oy", type: "mark" }],
+                phonetics: "/tɔɪ/",
+              }),
+            ]}
+          />
+          {/* /oʊ/ — US */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/oʊ.mp3",
+                parts: [{ part: "/oʊ/", type: "phonetics" }],
+              }),
+
+              // go
+              ...wordRowList({
+                audio: "/assets/audio/general/go.mp3",
+                parts: ["g", { part: "o", type: "mark" }],
+                phonetics: "/goʊ/",
+              }),
+
+              // show
+              ...wordRowList({
+                audio: "/assets/audio/general/show.mp3",
+                parts: ["sh", { part: "ow", type: "mark" }],
+                phonetics: "/ʃoʊ/",
+              }),
+
+              // slow
+              ...wordRowList({
+                audio: "/assets/audio/general/slow.mp3",
+                parts: ["sl", { part: "ow", type: "mark" }],
+                phonetics: "/sloʊ/",
+              }),
+            ]}
+          />
+          {/* /əʊ/ — UK */}
+          <Phonetics
+            variant="uk"
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/əʊ.mp3",
+                parts: [{ part: "/əʊ/", type: "phonetics" }],
+              }),
+
+              // go
+              ...wordRowList({
+                audio: "/assets/audio/general/go-uk.mp3",
+                parts: ["g", { part: "o", type: "mark" }],
+                phonetics: "/gəʊ/",
+              }),
+
+              // show
+              ...wordRowList({
+                audio: "/assets/audio/general/show-uk.mp3",
+                parts: ["sh", { part: "ow", type: "mark" }],
+                phonetics: "/ʃəʊ/",
+              }),
+
+              // slow
+              ...wordRowList({
+                audio: "/assets/audio/general/slow-uk.mp3",
+                parts: ["sl", { part: "ow", type: "mark" }],
+                phonetics: "/sləʊ/",
+              }),
             ]}
           />
         </Section>
-
         <Section id="consonants" label="Consonants" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // /p/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/p.mp3",
-                        part: "/p/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless plosive)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/pen.mp3" },
-                      "pen ",
-                      { audio: "/assets/audio/general/map.mp3" },
-                      "map",
-                    ],
-                  },
-                  // /b/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/b.mp3",
-                        part: "/b/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiced plosive)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/book.mp3" },
-                      "book ",
-                      { audio: "/assets/audio/general/table.mp3" },
-                      "table",
-                    ],
-                  },
-                  // /d/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/d.mp3",
-                        part: "/d/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiced plosive)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/do.mp3" },
-                      "do ",
-                      { audio: "/assets/audio/general/did.mp3" },
-                      "did ",
-                    ],
-                  },
-                  // /k/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/k.mp3",
-                        part: "/k/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless plosive)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/cat.mp3" },
-                      "cat ",
-                      { audio: "/assets/audio/general/back.mp3" },
-                      "back",
-                    ],
-                  },
-                  // /g/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/g.mp3",
-                        part: "/g/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiced plosive)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/go.mp3" },
-                      "go ",
-                      { audio: "/assets/audio/general/bag.mp3" },
-                      "bag",
-                    ],
-                  },
-                  // /f/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/f.mp3",
-                        part: "/f/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/fish.mp3" },
-                      "fish ",
-                      { audio: "/assets/audio/general/coffee.mp3" },
-                      "coffee",
-                    ],
-                  },
-                  // /v/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/v.mp3",
-                        part: "/v/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiced fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/very.mp3" },
-                      "very ",
-                      { audio: "/assets/audio/general/over.mp3" },
-                      "over",
-                    ],
-                  },
-                  // /θ/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/θ.mp3",
-                        part: "/θ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless dental fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/think.mp3" },
-                      "think ",
-                      { audio: "/assets/audio/general/bath.mp3" },
-                      "bath",
-                    ],
-                  },
-                  // /ð/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ð.mp3",
-                        part: "/ð/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiced dental fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/this.mp3" },
-                      "this ",
-                      { audio: "/assets/audio/general/mother.mp3" },
-                      "mother",
-                    ],
-                  },
-                  // /s/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/s.mp3",
-                        part: "/s/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/see.mp3" },
-                      "see ",
-                      { audio: "/assets/audio/general/city.mp3" },
-                      "city",
-                    ],
-                  },
-                  // /z/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/z.mp3",
-                        part: "/z/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiced fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/zoo.mp3" },
-                      "zoo ",
-                      { audio: "/assets/audio/general/music.mp3" },
-                      "music",
-                    ],
-                  },
-                  // /ʃ/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ʃ.mp3",
-                        part: "/ʃ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/she.mp3" },
-                      "she ",
-                      { audio: "/assets/audio/general/nation.mp3" },
-                      "nation",
-                    ],
-                  },
-                  // /ʒ/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ʒ.mp3",
-                        part: "/ʒ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiced fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/vision.mp3" },
-                      "vision ",
-                      { audio: "/assets/audio/general/measure.mp3" },
-                      "measure",
-                    ],
-                  },
-                  // /h/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/h.mp3",
-                        part: "/h/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless glottal fricative)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/hat.mp3" },
-                      "hat ",
-                      { audio: "/assets/audio/general/head.mp3" },
-                      "head",
-                    ],
-                  },
-                  // /m/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/m.mp3",
-                        part: "/m/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(nasal)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/man.mp3" },
-                      "man ",
-                      { audio: "/assets/audio/general/summer.mp3" },
-                      "summer",
-                    ],
-                  },
-                  // /n/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/n.mp3",
-                        part: "/n/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(nasal)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/no.mp3" },
-                      "no ",
-                      { audio: "/assets/audio/general/dinner.mp3" },
-                      "dinner",
-                    ],
-                  },
-                  // /ŋ/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
-                        part: "/ŋ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(nasal)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/sing.mp3" },
-                      "sing ",
-                      { audio: "/assets/audio/general/long.mp3" },
-                      "long",
-                    ],
-                  },
-                  // /l/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/l.mp3",
-                        part: "/l/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(lateral approximant)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/love.mp3" },
-                      "love ",
-                      { audio: "/assets/audio/general/feel.mp3" },
-                      "feel",
-                    ],
-                  },
-                  // /r/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/r.mp3",
-                        part: "/r/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(approximant)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/carry.mp3" },
-                      "carry ",
-                      { audio: "/assets/audio/general/red.mp3" },
-                      "red",
-                    ],
-                  },
-                  // /t/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/t.mp3",
-                        part: "/t/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(voiceless plosive)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/ten.mp3" },
-                      "ten ",
-                      { audio: "/assets/audio/general/top.mp3" },
-                      "top",
-                    ],
-                  },
-                  // /j/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/j.mp3",
-                        part: "/j/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(approximant)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/yes.mp3" },
-                      "yes ",
-                      { audio: "/assets/audio/general/yellow.mp3" },
-                      "yellow ",
-                      { audio: "/assets/audio/general/use.mp3" },
-                      "use",
-                    ],
-                  },
-                  // /w/
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/w.mp3",
-                        part: "/w/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      { part: "(approximant)" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/we.mp3" },
-                      "we ",
-                      { audio: "/assets/audio/general/quick.mp3" },
-                      "quick",
-                    ],
-                  },
-                ],
-              },
+          {/* /b/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/b.mp3",
+                parts: [{ part: "/b/", type: "phonetics" }],
+              }),
+              // book
+              ...wordRowList({
+                audio: "/assets/audio/general/book.mp3",
+                parts: ["b", { part: "ook", type: "mark" }],
+                phonetics: "/bʊk/",
+              }),
+              // table
+              ...wordRowList({
+                audio: "/assets/audio/general/table.mp3",
+                parts: ["ta", { part: "b", type: "mark" }, "le"],
+                phonetics: "/ˈteɪbəl/",
+              }),
+            ]}
+          />
+          {/* /d/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/d.mp3",
+                parts: [{ part: "/d/", type: "phonetics" }],
+              }),
+              // do
+              ...wordRowList({
+                audio: "/assets/audio/general/do.mp3",
+                parts: [{ part: "d", type: "mark" }, "o"],
+                phonetics: "/duː/",
+              }),
+              // did
+              ...wordRowList({
+                audio: "/assets/audio/general/did.mp3",
+                parts: [{ part: "d", type: "mark" }, "id"],
+                phonetics: "/dɪd/",
+              }),
+            ]}
+          />
+          {/* /f/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/f.mp3",
+                parts: [{ part: "/f/", type: "phonetics" }],
+              }),
+              // fish
+              ...wordRowList({
+                audio: "/assets/audio/general/fish.mp3",
+                parts: [{ part: "f", type: "mark" }, "ish"],
+                phonetics: "/fɪʃ/",
+              }),
+              // coffee
+              ...wordRowList({
+                audio: "/assets/audio/general/coffee.mp3",
+                parts: ["co", { part: "ff", type: "mark" }, "ee"],
+                phonetics: "/ˈkɔfi/",
+              }),
+            ]}
+          />
+          {/* /g/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/g.mp3",
+                parts: [{ part: "/g/", type: "phonetics" }],
+              }),
+              // go
+              ...wordRowList({
+                audio: "/assets/audio/general/go.mp3",
+                parts: [{ part: "g", type: "mark" }, "o"],
+                phonetics: "/goʊ/",
+              }),
+              // bag
+              ...wordRowList({
+                audio: "/assets/audio/general/bag.mp3",
+                parts: ["ba", { part: "g", type: "mark" }],
+                phonetics: "/bæg/",
+              }),
+            ]}
+          />
+          {/* /h/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/h.mp3",
+                parts: [{ part: "/h/", type: "phonetics" }],
+              }),
+              // hat
+              ...wordRowList({
+                audio: "/assets/audio/general/hat.mp3",
+                parts: [{ part: "h", type: "mark" }, "at"],
+                phonetics: "/hæt/",
+              }),
+              // head
+              ...wordRowList({
+                audio: "/assets/audio/general/head.mp3",
+                parts: [{ part: "h", type: "mark" }, "ead"],
+                phonetics: "/hɛd/",
+              }),
+            ]}
+          />
+          {/* /j/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/j.mp3",
+                parts: [{ part: "/j/", type: "phonetics" }],
+              }),
+              // university
+              ...wordRowList({
+                audio: "/assets/audio/general/university.mp3",
+                parts: [{ part: "u", type: "mark" }, "niversity"],
+                phonetics: "/ˌjuː.nəˈvɝː.sə.t̬i/",
+              }),
+              // yes
+              ...wordRowList({
+                audio: "/assets/audio/general/yes.mp3",
+                parts: [{ part: "y", type: "mark" }, "es"],
+                phonetics: "/jɛs/",
+              }),
+              // yeallow
+              ...wordRowList({
+                audio: "/assets/audio/general/yellow.mp3",
+                parts: [{ part: "y", type: "mark" }, "ellow"],
+                phonetics: "/ˈjɛloʊ/",
+              }),
+            ]}
+          />
+          {/* /k/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/k.mp3",
+                parts: [{ part: "/k/", type: "phonetics" }],
+              }),
+              // cat
+              ...wordRowList({
+                audio: "/assets/audio/general/cat.mp3",
+                parts: [{ part: "c", type: "mark" }, "at"],
+                phonetics: "/kæt/",
+              }),
+              // back
+              ...wordRowList({
+                audio: "/assets/audio/general/back.mp3",
+                parts: ["ba", { part: "ck", type: "mark" }],
+                phonetics: "/bæk/",
+              }),
+            ]}
+          />
+          {/* /ʒ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/ʒ.mp3",
+                parts: [{ part: "/ʒ/", type: "phonetics" }],
+              }),
+              // vision
+              ...wordRowList({
+                audio: "/assets/audio/general/vision.mp3",
+                parts: ["vi", { part: "s", type: "mark" }, "ion"],
+                phonetics: "/ˈvɪʒən/",
+              }),
+              // measure
+              ...wordRowList({
+                audio: "/assets/audio/general/measure.mp3",
+                parts: ["mea", { part: "s", type: "mark" }, "ure"],
+                phonetics: "/ˈmɛʒər/",
+              }),
+            ]}
+          />
+          {/* /l/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/l.mp3",
+                parts: [{ part: "/l/", type: "phonetics" }],
+              }),
+              // love
+              ...wordRowList({
+                audio: "/assets/audio/general/love.mp3",
+                parts: [{ part: "l", type: "mark" }, "ove"],
+                phonetics: "/lʌv/",
+              }),
+              // feel
+              ...wordRowList({
+                audio: "/assets/audio/general/feel.mp3",
+                parts: ["fee", { part: "l", type: "mark" }],
+                phonetics: "/fiːl/",
+              }),
+            ]}
+          />
+          {/* /m/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/m.mp3",
+                parts: [{ part: "/m/", type: "phonetics" }],
+              }),
+              // man
+              ...wordRowList({
+                audio: "/assets/audio/general/man.mp3",
+                parts: [{ part: "m", type: "mark" }, "an"],
+                phonetics: "/mæn/",
+              }),
+              // summer
+              ...wordRowList({
+                audio: "/assets/audio/general/summer.mp3",
+                parts: ["su", { part: "mm", type: "mark" }, "er"],
+                phonetics: "/ˈsʌmər/",
+              }),
+            ]}
+          />
+          {/* /n/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/n.mp3",
+                parts: [{ part: "/n/", type: "phonetics" }],
+              }),
+              // no
+              ...wordRowList({
+                audio: "/assets/audio/general/no.mp3",
+                parts: [{ part: "n", type: "mark" }, "o"],
+                phonetics: "/noʊ/",
+              }),
+              // dinner
+              ...wordRowList({
+                audio: "/assets/audio/general/dinner.mp3",
+                parts: ["di", { part: "nn", type: "mark" }, "er"],
+                phonetics: "/ˈdɪnər/",
+              }),
+            ]}
+          />
+          {/* /ŋ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                parts: [{ part: "/ŋ/", type: "phonetics" }],
+              }),
+              // sing
+              ...wordRowList({
+                audio: "/assets/audio/general/sing.mp3",
+                parts: ["si", { part: "ng", type: "mark" }],
+                phonetics: "/sɪŋ/",
+              }),
+              // long
+              ...wordRowList({
+                audio: "/assets/audio/general/long.mp3",
+                parts: ["lo", { part: "ng", type: "mark" }],
+                phonetics: "/lɔŋ/",
+              }),
+            ]}
+          />
+          {/* /p/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/p.mp3",
+                parts: [{ part: "/p/", type: "phonetics" }],
+              }),
+              // pen
+              ...wordRowList({
+                audio: "/assets/audio/general/pen.mp3",
+                parts: [{ part: "p", type: "mark" }, "en"],
+                phonetics: "/pɛn/",
+              }),
+              // map
+              ...wordRowList({
+                audio: "/assets/audio/general/map.mp3",
+                parts: ["ma", { part: "p", type: "mark" }],
+                phonetics: "/mæp/",
+              }),
+            ]}
+          />
+          {/* /r/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/r.mp3",
+                parts: [{ part: "/r/", type: "phonetics" }],
+              }),
+              // red
+              ...wordRowList({
+                audio: "/assets/audio/general/red.mp3",
+                parts: [{ part: "r", type: "mark" }, "ed"],
+                phonetics: "/rɛd/",
+              }),
+              // carry
+              ...wordRowList({
+                audio: "/assets/audio/general/carry.mp3",
+                parts: ["ca", { part: "rr", type: "mark" }, "y"],
+                phonetics: "/ˈkæri/",
+              }),
+            ]}
+          />
+          {/* /s/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/s.mp3",
+                parts: [{ part: "/s/", type: "phonetics" }],
+              }),
+              // see
+              ...wordRowList({
+                audio: "/assets/audio/general/sea-see.mp3",
+                parts: [{ part: "s", type: "mark" }, "ee"],
+                phonetics: "/siː/",
+              }),
+              // city
+              ...wordRowList({
+                audio: "/assets/audio/general/city.mp3",
+                parts: ["ci", { part: "t", type: "mark" }, "y"],
+                phonetics: "/ˈsɪti/",
+              }),
+            ]}
+          />
+          {/* /ʃ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/ʃ.mp3",
+                parts: [{ part: "/ʃ/", type: "phonetics" }],
+              }),
+              // she
+              ...wordRowList({
+                audio: "/assets/audio/general/she.mp3",
+                parts: [{ part: "sh", type: "mark" }, "e"],
+                phonetics: "/ʃiː/",
+              }),
+              // nation
+              ...wordRowList({
+                audio: "/assets/audio/general/nation.mp3",
+                parts: ["na", { part: "ti", type: "mark" }, "on"],
+                phonetics: "/ˈneɪʃən/",
+              }),
+            ]}
+          />
+          {/* /t/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/t.mp3",
+                parts: [{ part: "/t/", type: "phonetics" }],
+              }),
+              // ten
+              ...wordRowList({
+                audio: "/assets/audio/general/ten.mp3",
+                parts: [{ part: "t", type: "mark" }, "en"],
+                phonetics: "/tɛn/",
+              }),
+              // top
+              ...wordRowList({
+                audio: "/assets/audio/general/top.mp3",
+                parts: [{ part: "t", type: "mark" }, "op"],
+                phonetics: "/tɑp/",
+              }),
+            ]}
+          />
+          {/* /θ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/θ.mp3",
+                parts: [{ part: "/θ/", type: "phonetics" }],
+              }),
+              // think
+              ...wordRowList({
+                audio: "/assets/audio/general/think.mp3",
+                parts: [{ part: "th", type: "mark" }, "ink"],
+                phonetics: "/θɪŋk/",
+              }),
+              // bath
+              ...wordRowList({
+                audio: "/assets/audio/general/bath.mp3",
+                parts: ["ba", { part: "th", type: "mark" }],
+                phonetics: "/bæθ/",
+              }),
+            ]}
+          />
+          {/* /ð/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/ð.mp3",
+                parts: [{ part: "/ð/", type: "phonetics" }],
+              }),
+              // this
+              ...wordRowList({
+                audio: "/assets/audio/general/this.mp3",
+                parts: [{ part: "th", type: "mark" }, "is"],
+                phonetics: "/ðɪs/",
+              }),
+              // mother
+              ...wordRowList({
+                audio: "/assets/audio/general/mother.mp3",
+                parts: ["mo", { part: "th", type: "mark" }, "er"],
+                phonetics: "/ˈmʌðər/",
+              }),
+            ]}
+          />
+          {/* /v/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/v.mp3",
+                parts: [{ part: "/v/", type: "phonetics" }],
+              }),
+              // very
+              ...wordRowList({
+                audio: "/assets/audio/general/very.mp3",
+                parts: [{ part: "v", type: "mark" }, "ery"],
+                phonetics: "/ˈvɛri/",
+              }),
+              // over
+              ...wordRowList({
+                audio: "/assets/audio/general/over.mp3",
+                parts: ["o", { part: "v", type: "mark" }, "er"],
+                phonetics: "/ˈoʊvər/",
+              }),
+            ]}
+          />
+          {/* /w/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/w.mp3",
+                parts: [{ part: "/w/", type: "phonetics" }],
+              }),
+              // we
+              ...wordRowList({
+                audio: "/assets/audio/general/we.mp3",
+                parts: [{ part: "w", type: "mark" }, "e"],
+                phonetics: "/wiː/",
+              }),
+              // quick
+              ...wordRowList({
+                audio: "/assets/audio/general/quick.mp3",
+                parts: ["q", { part: "u", type: "mark" }, "ick"],
+                phonetics: "/kwɪk/",
+              }),
+            ]}
+          />
+          {/* /z/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/z.mp3",
+                parts: [{ part: "/z/", type: "phonetics" }],
+              }),
+              // zoo
+              ...wordRowList({
+                audio: "/assets/audio/general/zoo.mp3",
+                parts: [{ part: "z", type: "mark" }, "oo"],
+                phonetics: "/zuː/",
+              }),
+              // music
+              ...wordRowList({
+                audio: "/assets/audio/general/music.mp3",
+                parts: ["mu", { part: "s", type: "mark" }, "ic"],
+                phonetics: "/ˈmjuːzɪk/",
+              }),
             ]}
           />
         </Section>
-
         <Section id="rhotic-vowels-r" label="Rhotic (Vowels + R)" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ɑr
-                  {
-                    text: [
-                      { part: "/ɑːr/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/car.mp3" },
-                      "car ",
-                      { audio: "/assets/audio/general/far.mp3" },
-                      "far ",
-                      { audio: "/assets/audio/general/heart.mp3" },
-                      "heart ",
-                      { audio: "/assets/audio/general/park.mp3" },
-                      "park ",
-                      { audio: "/assets/audio/general/start.mp3" },
-                      "start ",
-                    ],
-                  },
-                  {
-                    text: [
-                      { ukFlag: true, part: "/ɑː/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/car-uk.mp3" },
-                      "car ",
-                      { audio: "/assets/audio/general/far-uk.mp3" },
-                      "far ",
-                      { audio: "/assets/audio/general/heart-uk.mp3" },
-                      "heart ",
-                      { audio: "/assets/audio/general/start-uk.mp3" },
-                      "start ",
-                    ],
-                  },
-                  { lineBreak: true },
-                  // ɑɪr
-                  {
-                    text: [
-                      { part: "/ɑɪr/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/choir.mp3" },
-                      "choir ",
-                      { audio: "/assets/audio/general/fire.mp3" },
-                      "fire ",
-                      { audio: "/assets/audio/general/inspire.mp3" },
-                      "inspire ",
-                      { audio: "/assets/audio/general/liar.mp3" },
-                      "liar ",
-                    ],
-                  },
-                  {
-                    text: [
-                      { ukFlag: true, part: "/ɑɪə/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/choir-uk.mp3" },
-                      "choir ",
-                      { audio: "/assets/audio/general/fire-uk.mp3" },
-                      "fire ",
-                      { audio: "/assets/audio/general/inspire-uk.mp3" },
-                      "inspire ",
-                      { audio: "/assets/audio/general/liar-uk.mp3" },
-                      "liar ",
-                    ],
-                  },
-                  { lineBreak: true },
-                  // er
-                  {
-                    text: [
-                      { part: "/er/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/air.mp3" },
-                      "air ",
-                      { audio: "/assets/audio/general/hair.mp3" },
-                      "hair ",
-                      { audio: "/assets/audio/general/pair.mp3" },
-                      "pair ",
-                      { audio: "/assets/audio/general/where.mp3" },
-                      "where ",
-                    ],
-                  },
-                  {
-                    text: [
-                      { ukFlag: true, part: "/eə/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/air-uk.mp3" },
-                      "air ",
-                      { audio: "/assets/audio/general/hair-uk.mp3" },
-                      "hair ",
-                      { audio: "/assets/audio/general/pair-uk.mp3" },
-                      "pair ",
-                      { audio: "/assets/audio/general/where-uk.mp3" },
-                      "where ",
-                    ],
-                  },
-                  { lineBreak: true },
-                  // ɪr / ɝ
-                  {
-                    text: [
-                      { part: "/ɝː/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/bird.mp3" },
-                      "bird ",
-                      { audio: "/assets/audio/general/learn.mp3" },
-                      "learn ",
-                      { audio: "/assets/audio/general/were.mp3" },
-                      "were ",
-                      { audio: "/assets/audio/general/word.mp3" },
-                      "word ",
-                      { audio: "/assets/audio/general/world.mp3" },
-                      "world ",
-                      { audio: "/assets/audio/general/work.mp3" },
-                      "work",
-                    ],
-                  },
-                  {
-                    text: [
-                      { ukFlag: true, part: "/ɜː/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/bird-uk.mp3" },
-                      "bird ",
-                      { audio: "/assets/audio/general/learn-uk.mp3" },
-                      "learn ",
-                      { audio: "/assets/audio/general/were-uk.mp3" },
-                      "were ",
-                      { audio: "/assets/audio/general/word-uk.mp3" },
-                      "word ",
-                      { audio: "/assets/audio/general/world-uk.mp3" },
-                      "world ",
-                      { audio: "/assets/audio/general/work-uk.mp3" },
-                      "work",
-                    ],
-                  },
-                  { lineBreak: true },
-                  // ɔːr
-                  {
-                    text: [
-                      { part: "/ɔːr/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/door.mp3" },
-                      "door ",
-                      { audio: "/assets/audio/general/four.mp3" },
-                      "four ",
-                      { audio: "/assets/audio/general/north.mp3" },
-                      "north ",
-                      { audio: "/assets/audio/general/war.mp3" },
-                      "war ",
-                    ],
-                  },
-                  {
-                    text: [
-                      { ukFlag: true, part: "/ɔː/", type: "phonetics" },
-                      " ",
-                      { part: "•", type: "bold" },
-                      " ",
-                      { audio: "/assets/audio/general/door-uk.mp3" },
-                      "door ",
-                      { audio: "/assets/audio/general/four-uk.mp3" },
-                      "four ",
-                      { audio: "/assets/audio/general/north-uk.mp3" },
-                      "north ",
-                      { audio: "/assets/audio/general/war-uk.mp3" },
-                      "war ",
-                    ],
-                  },
-                ],
-              },
+          {/* /aɪr/ — US */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/aɪr/", type: "phonetics" }],
+              }),
+              // choir
+              ...wordRowList({
+                audio: "/assets/audio/general/choir.mp3",
+                parts: ["cho", { part: "ir", type: "mark" }],
+                phonetics: "/kwaɪr/",
+              }),
+              // fire
+              ...wordRowList({
+                audio: "/assets/audio/general/fire.mp3",
+                parts: ["f", { part: "ire", type: "mark" }],
+                phonetics: "/faɪr/",
+              }),
+              // inspire
+              ...wordRowList({
+                audio: "/assets/audio/general/inspire.mp3",
+                parts: ["in", { part: "spire", type: "mark" }],
+                phonetics: "/ɪnˈspaɪr/",
+              }),
+              // liar
+              ...wordRowList({
+                audio: "/assets/audio/general/liar.mp3",
+                parts: ["l", { part: "iar", type: "mark" }],
+                phonetics: "/ˈlaɪr/",
+              }),
+            ]}
+          />
+          {/* /aɪə/ — UK */}
+          <Phonetics
+            variant="uk"
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/aɪə/", type: "phonetics" }],
+              }),
+              // choir
+              ...wordRowList({
+                audio: "/assets/audio/general/choir-uk.mp3",
+                parts: ["cho", { part: "ir", type: "mark" }],
+                phonetics: "/ˈkwaɪə/",
+              }),
+              // fire
+              ...wordRowList({
+                audio: "/assets/audio/general/fire-uk.mp3",
+                parts: ["f", { part: "ire", type: "mark" }],
+                phonetics: "/ˈfaɪə/",
+              }),
+              // inspire
+              ...wordRowList({
+                audio: "/assets/audio/general/inspire-uk.mp3",
+                parts: ["in", { part: "spire", type: "mark" }],
+                phonetics: "/ɪnˈspaɪə/",
+              }),
+              // liar
+              ...wordRowList({
+                audio: "/assets/audio/general/liar-uk.mp3",
+                parts: ["l", { part: "iar", type: "mark" }],
+                phonetics: "/ˈlaɪə/",
+              }),
+            ]}
+          />
+          {/* /eər/ — US */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/eər/", type: "phonetics" }],
+              }),
+              // air
+              ...wordRowList({
+                audio: "/assets/audio/general/air.mp3",
+                parts: ["a", { part: "ir", type: "mark" }],
+                phonetics: "/eər/",
+              }),
+              // hair
+              ...wordRowList({
+                audio: "/assets/audio/general/hair.mp3",
+                parts: ["h", { part: "air", type: "mark" }],
+                phonetics: "/heər/",
+              }),
+              // pair
+              ...wordRowList({
+                audio: "/assets/audio/general/pair.mp3",
+                parts: ["p", { part: "air", type: "mark" }],
+                phonetics: "/peər/",
+              }),
+              // where
+              ...wordRowList({
+                audio: "/assets/audio/general/where.mp3",
+                parts: ["wh", { part: "ere", type: "mark" }],
+                phonetics: "/weər/",
+              }),
+            ]}
+          />
+          {/* /eə/ — UK */}
+          <Phonetics
+            variant="uk"
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/eə/", type: "phonetics" }],
+              }),
+              // air
+              ...wordRowList({
+                audio: "/assets/audio/general/air-uk.mp3",
+                parts: ["a", { part: "ir", type: "mark" }],
+                phonetics: "/eə/",
+              }),
+              // hair
+              ...wordRowList({
+                audio: "/assets/audio/general/hair-uk.mp3",
+                parts: ["h", { part: "air", type: "mark" }],
+                phonetics: "/heə/",
+              }),
+              // pair
+              ...wordRowList({
+                audio: "/assets/audio/general/pair-uk.mp3",
+                parts: ["p", { part: "air", type: "mark" }],
+                phonetics: "/peə/",
+              }),
+              // where
+              ...wordRowList({
+                audio: "/assets/audio/general/where-uk.mp3",
+                parts: ["wh", { part: "ere", type: "mark" }],
+                phonetics: "/weə/",
+              }),
+            ]}
+          />
+          {/* /ɝː/ — US */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/ɝː/", type: "phonetics" }],
+              }),
+              // bird
+              ...wordRowList({
+                audio: "/assets/audio/general/bird.mp3",
+                parts: ["b", { part: "ird", type: "mark" }],
+                phonetics: "/bɝːd/",
+              }),
+              // learn
+              ...wordRowList({
+                audio: "/assets/audio/general/learn.mp3",
+                parts: ["l", { part: "earn", type: "mark" }],
+                phonetics: "/lɝːn/",
+              }),
+              // were
+              ...wordRowList({
+                audio: "/assets/audio/general/were.mp3",
+                parts: ["w", { part: "ere", type: "mark" }],
+                phonetics: "/wɝː/",
+              }),
+              // word
+              ...wordRowList({
+                audio: "/assets/audio/general/word.mp3",
+                parts: ["w", { part: "ord", type: "mark" }],
+                phonetics: "/wɝːd/",
+              }),
+              // work
+              ...wordRowList({
+                audio: "/assets/audio/general/work.mp3",
+                parts: ["w", { part: "ork", type: "mark" }],
+                phonetics: "/wɝːk/",
+              }),
+            ]}
+          />
+          {/* /ɜː/ — UK */}
+          <Phonetics
+            variant="uk"
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/ɜː/", type: "phonetics" }],
+              }),
+              // bird
+              ...wordRowList({
+                audio: "/assets/audio/general/bird-uk.mp3",
+                parts: ["b", { part: "ird", type: "mark" }],
+                phonetics: "/bɜːd/",
+              }),
+              // learn
+              ...wordRowList({
+                audio: "/assets/audio/general/learn-uk.mp3",
+                parts: ["l", { part: "earn", type: "mark" }],
+                phonetics: "/lɜːn/",
+              }),
+              // were
+              ...wordRowList({
+                audio: "/assets/audio/general/were-uk.mp3",
+                parts: ["w", { part: "ere", type: "mark" }],
+                phonetics: "/wɜː/",
+              }),
+              // word
+              ...wordRowList({
+                audio: "/assets/audio/general/word-uk.mp3",
+                parts: ["w", { part: "ord", type: "mark" }],
+                phonetics: "/wɜːd/",
+              }),
+              // work
+              ...wordRowList({
+                audio: "/assets/audio/general/work-uk.mp3",
+                parts: ["w", { part: "ork", type: "mark" }],
+                phonetics: "/wɜːk/",
+              }),
+            ]}
+          />
+          {/* /ɔːr/ — US */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/ɔːr/", type: "phonetics" }],
+              }),
+              // door
+              ...wordRowList({
+                audio: "/assets/audio/general/door.mp3",
+                parts: ["d", { part: "oor", type: "mark" }],
+                phonetics: "/dɔːr/",
+              }),
+              // four
+              ...wordRowList({
+                audio: "/assets/audio/general/four.mp3",
+                parts: ["f", { part: "our", type: "mark" }],
+                phonetics: "/fɔːr/",
+              }),
+              // north
+              ...wordRowList({
+                audio: "/assets/audio/general/north.mp3",
+                parts: ["n", { part: "orth", type: "mark" }],
+                phonetics: "/nɔːrθ/",
+              }),
+              // war
+              ...wordRowList({
+                audio: "/assets/audio/general/war.mp3",
+                parts: ["w", { part: "ar", type: "mark" }],
+                phonetics: "/wɔːr/",
+              }),
+            ]}
+          />
+          {/* /ɔː/ — UK */}
+          <Phonetics
+            variant="uk"
+            value={[
+              ...wordRowList({
+                parts: [{ part: "/ɔː/", type: "phonetics" }],
+              }),
+              // door
+              ...wordRowList({
+                audio: "/assets/audio/general/door-uk.mp3",
+                parts: ["d", { part: "oor", type: "mark" }],
+                phonetics: "/dɔː/",
+              }),
+              // four
+              ...wordRowList({
+                audio: "/assets/audio/general/four-uk.mp3",
+                parts: ["f", { part: "our", type: "mark" }],
+                phonetics: "/fɔː/",
+              }),
+              // north
+              ...wordRowList({
+                audio: "/assets/audio/general/north-uk.mp3",
+                parts: ["n", { part: "orth", type: "mark" }],
+                phonetics: "/nɔːθ/",
+              }),
+              // war
+              ...wordRowList({
+                audio: "/assets/audio/general/war-uk.mp3",
+                parts: ["w", { part: "ar", type: "mark" }],
+                phonetics: "/wɔː/",
+              }),
             ]}
           />
         </Section>
-
         {/* Letters 'a': /æ/, /ɑː/, /eɪ/, /ə/ */}
         <Section
           id="letter-a"
@@ -2177,7 +2360,6 @@ export default function PhoneticsLetters() {
             ]}
           />
           <hr />
-
           {/* /ɑː/ */}
           <Phonetics
             value={[
@@ -2185,6 +2367,12 @@ export default function PhoneticsLetters() {
                 audio:
                   "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                 phonetics: "/ɑː/",
+              }),
+              // all
+              ...wordRowList({
+                audio: "/assets/audio/general/all.mp3",
+                parts: [{ part: "a", type: "mark" }, "ll"],
+                phonetics: "/ɑːl/",
               }),
               // calm
               ...wordRowList({
@@ -2230,37 +2418,37 @@ export default function PhoneticsLetters() {
           />
           <ExampleList
             items={[
-              // • calm / arm
+              // • Keep calm and hold my arm.
               example({
-                audio: "/assets/audio/general/keep-calm-and-lift-your-arm.mp3",
-                parts: ["Keep calm and lift your arm."],
-                pt: "Fique calmo e levante o braço.",
+                audio: "/assets/audio/general/keep-calm-and-hold-my-arm.mp3",
+                parts: ["Keep calm and hold my arm."],
+                pt: "Fique calmo e segure o meu braço.",
               }),
-              // • palm / arm
+              // • My father drove the car far away.
               example({
-                audio: "/assets/audio/general/put-your-palm-on-my-arm.mp3",
-                parts: ["Put your palm on my arm."],
-                pt: "Coloque sua palma no meu braço.",
-              }),
-              // • father / car / far
-              example({
-                audio: "/assets/audio/general/my-father-drove-the-car-far.mp3",
-                parts: ["My father drove the car far."],
+                audio:
+                  "/assets/audio/general/my-father-drove-the-car-far-away.mp3",
+                parts: ["My father drove the car far away."],
                 pt: "Meu pai dirigiu o carro para longe.",
               }),
-              // • spa / car
+              // • I could really use a spa right now.
               example({
-                audio: "/assets/audio/general/we-drove-the-car-to-the-spa.mp3",
-                parts: ["We drove the car to the spa."],
-                pt: "Nós fomos de carro ao spa.",
+                audio:
+                  "/assets/audio/general/i-could-really-use-a-spa-right-now.mp3",
+                parts: ["I could really use a spa right now."],
+                pt: "Preciso de um spa no momento.",
               }),
             ]}
           />
-
           <hr />
           {/* /eɪ/ */}
           <Phonetics
             value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/eɪ.mp3",
+                phonetics: "/eɪ/",
+              }),
               // ate
               ...wordRowList({
                 audio: "/assets/audio/general/ate.mp3",
@@ -2332,18 +2520,69 @@ export default function PhoneticsLetters() {
           />
           <ExampleList
             items={[
-              // • ...
+              // • I ate a sandwich this morning.
               example({
-                audio: "/assets/audio/general/.mp3",
-                parts: [""],
+                audio:
+                  "/assets/audio/general/i-ate-a-sandwhich-this-morning.mp3",
+                parts: ["I ate a sandwich this morning."],
+                pt: "Eu comi um sanduíche esta manhã.",
+              }),
+              // • She chased the dog across the yard.
+              example({
+                audio:
+                  "/assets/audio/general/she-chased-the-dog-across-the-yard.mp3",
+                parts: ["She chased the dog across the yard."],
+                pt: "Ela correu atrás do cachorro pelo quintal.",
+              }),
+              // • We played a fun game after school.
+              example({
+                audio:
+                  "/assets/audio/general/we-played-a-fun-game-after-school.mp3",
+                parts: ["We played a fun game after school."],
+                pt: "Nós jogamos um jogo divertido depois da escola.",
               }),
             ]}
           />
-
+          <hr />
           {/* /ə/ */}
           <Phonetics
             value={[
-              // ...
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/vowels/ə-ʌ.mp3",
+                phonetics: "/ə/",
+              }),
+              // a
+              ...wordRowList({
+                audio: "/assets/audio/general/a.mp3",
+                parts: [{ part: "a", type: "mark" }],
+                phonetics: "/ə/",
+              }),
+              // about
+              ...wordRowList({
+                audio: "/assets/audio/general/about.mp3",
+                parts: [{ part: "a", type: "mark" }, "bout"],
+                phonetics: "/əˈweɪ/",
+              }),
+              // above
+              ...wordRowList({
+                audio: "/assets/audio/general/above.mp3",
+                parts: [{ part: "a", type: "mark" }, { part: "bove" }],
+                phonetics: "/əˈbʌv/",
+              }),
+              // ago
+              ...wordRowList({
+                audio: "/assets/audio/general/ago.mp3",
+                parts: [{ part: "a", type: "mark" }, "go"],
+                phonetics: "/əˈɡoʊ/",
+              }),
+              // away
+              ...wordRowList({
+                audio: "/assets/audio/general/away.mp3",
+                parts: [{ part: "a", type: "mark" }, "way"],
+                phonetics: "/əˈweɪ/",
+              }),
+              // banana
               ...wordRowList({
                 audio: "/assets/audio/general/banana.mp3",
                 parts: [
@@ -2354,11 +2593,44 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/bəˈnænə/",
               }),
+              // sofa
+              ...wordRowList({
+                audio: "/assets/audio/general/sofa.mp3",
+                parts: ["sof", { part: "a", type: "mark" }],
+                phonetics: "/ˈsoʊ.fə/",
+              }),
+            ]}
+          />
+          <ExampleList
+            items={[
+              // • I bought a banana at the store.
+              example({
+                audio:
+                  "/assets/audio/general/i-bought-a-banana-at-the-store.mp3",
+                parts: ["The monkey ate a banana."],
+                pt: "O macaco comeu uma banana.",
+              }),
+
+              // • She was talking about her new computer.
+              // • She was talking about her new computer.
+              example({
+                audio:
+                  "/assets/audio/general/she-was-talking-about-her-new-computer.mp3",
+                parts: ["She was talking about her new computer."],
+                pt: "Ela estava falando sobre o novo computador dela.",
+              }),
+
+              // • We sat on the sofa a few minutes ago.
+              example({
+                audio:
+                  "/assets/audio/general/we-sat-on-the-sofa-a-few-minutes-ago.mp3",
+                parts: ["We sat on the sofa a few minutes ago."],
+                pt: "Nós sentamos no sofá há alguns minutos.",
+              }),
             ]}
           />
         </Section>
-
-        {/* Letters 'ai:' /e/Letters 'ai:' /e/ */}
+        {/* Letters 'ai:' /e/ */}
         <Section id="letters-ai" label="Letters 'ai:' /e/" heading={3}>
           <Paragraph
             blocks={[
@@ -2392,7 +2664,6 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
-
         {/* Letters 'au': /ɔː/ */}
         <Section id="letters-au" label="Letters 'au': /ɔː/" heading={3}>
           <Paragraph
@@ -2484,7 +2755,6 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
-
         {/*  Letters 'aw', 'awe': /ɔː/ */}
         <Section
           id="letters-aw-awe"
@@ -2750,38 +3020,80 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
-
+        <Section id="letters-ay" label="Letters: 'ay: /eɪ/'" heading={3}>
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/eɪ.mp3",
+                phonetics: "/eɪ/",
+              }),
+              // day
+              ...wordRowList({
+                audio: "/assets/audio/general/day.mp3",
+                parts: [
+                  { part: "d" },
+                  { part: "a", type: "mark" },
+                  { part: "y" },
+                ],
+                phonetics: "/deɪ/",
+              }),
+              // lay
+              ...wordRowList({
+                audio: "/assets/audio/general/lay.mp3",
+                parts: [
+                  { part: "l" },
+                  { part: "a", type: "mark" },
+                  { part: "y" },
+                ],
+                phonetics: "/leɪ/",
+              }),
+              // pay
+              ...wordRowList({
+                audio: "/assets/audio/general/pay.mp3",
+                parts: [
+                  { part: "p" },
+                  { part: "a", type: "mark" },
+                  { part: "y" },
+                ],
+                phonetics: "/peɪ/",
+              }),
+            ]}
+          />
+          <ExampleList
+            items={[
+              // • I’ll pay you tomorrow.
+              example({
+                audio: "/assets/audio/general/ill-pay-you-tomorrow.mp3",
+                parts: ["I’ll pay you tomorrow."],
+                pt: "Te pago amanhã.",
+              }),
+              // • She laid the book on the table.
+              example({
+                audio:
+                  "/assets/audio/general/she-laid-the-book-on-the-table.mp3",
+                parts: ["She laid the book on the table."],
+                pt: "Ela colocou o livro na mesa.",
+              }),
+              // • It’s a beautiful day today.
+              example({
+                audio: "/assets/audio/general/its-a-beautiful-day-today.mp3",
+                parts: ["It’s a beautiful day today."],
+                pt: "Hoje é um dia bonito.",
+              }),
+            ]}
+          />
+        </Section>
         {/* Letter 'e' silent */}
         <Section id="letter-e-silent" label="Letter 'e' silent" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // bottom
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                        part: "... ",
-                      },
-                      {
-                        part: "/.../",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "...",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              // ...
+              ...wordRowList({
+                audio: "/assets/audio/general/make.mp3",
+                parts: ["mak(e)"],
+                phonetics: "//",
+              }),
             ]}
           />
         </Section>
