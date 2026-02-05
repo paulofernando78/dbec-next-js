@@ -3,7 +3,7 @@
 import styles from "./CardText.module.css";
 
 import Image from "next/image";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 
 export const CardText = ({ blocks = [], width }) => {
   return (
@@ -27,7 +27,7 @@ export const CardText = ({ blocks = [], width }) => {
             <div>
               {(block.lines || []).map((line, lineIndex) => (
                 <p key={lineIndex}>
-                  <InlineText text={line.text} />
+                  <ContentToken text={line.text} />
                 </p>
               ))}
             </div>

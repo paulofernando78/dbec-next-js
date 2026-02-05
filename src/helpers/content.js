@@ -5,7 +5,9 @@ export function baseToken({
   parts = [],
   phonetics,
   pt,
+  connector,
   square = true,
+  lineBreak,
 }) {
   const blocks = [];
 
@@ -29,7 +31,7 @@ export function baseToken({
   if (parts.length > 0) {
     blocks.push(" ");
   }
-  
+
   if (phonetics) {
     blocks.push({ part: phonetics, type: "phonetics" });
   }
@@ -41,10 +43,18 @@ export function baseToken({
   }
   blocks.push(" ");
 
+  if (connector) {
+    blocks.push({ part: connector, type: "connector" });
+  }
+
   if (square) {
     blocks.push({ square: true });
   }
   blocks.push(" ");
+
+  if (lineBreak) {
+    blocks.push({ lineBreak: true });
+  }
 
   return blocks;
 }
@@ -59,11 +69,12 @@ export const instruction = (opts) =>
 export const note = (opts) =>
   baseToken({
     ...opts,
-    icons: ["attention"], // ou "info" se você tiver esse ícone
+    icons: ["attention"],
     bullet: false,
     square: false,
   });
-  export const word = (opts) =>
+
+export const word = (opts) =>
   baseToken({
     ...opts,
     square: false,
@@ -81,6 +92,16 @@ export const wordColumnList = (opts) =>
     ...opts,
     bullet: false,
   });
+
+export const wordComparison = ({ left, right }) => [
+  ...wordRowList({ ...left, square: false }),
+  {
+    part: "vs ",
+    type: "connector",
+  },
+  ...wordRowList({ ...right, square: false }),
+  { lineBreak: true },
+];
 
 export const example = (opts) =>
   baseToken({

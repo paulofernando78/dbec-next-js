@@ -5,7 +5,12 @@ import { Line } from "@/components/molecules/Line";
 import { Phonetics } from "@/components/molecules/Phonetics";
 import { ExampleList } from "@/components/molecules/ExampleList";
 import { Paragraph } from "@/components/molecules/Paragraph";
-import { note, wordRowList, example } from "../../helpers/content";
+import {
+  note,
+  wordRowList,
+  wordComparison,
+  example,
+} from "../../helpers/content";
 
 export default function PhoneticsLetters() {
   return (
@@ -216,7 +221,7 @@ export default function PhoneticsLetters() {
               href: "letters-ow",
               label: [
                 "Letters 'ow':  ",
-                { part: "/oʊ/, /aʊ/", type: "phonetics" },
+                { part: "/aʊ/, /oʊ/", type: "phonetics" },
               ],
             },
             {
@@ -2761,6 +2766,48 @@ export default function PhoneticsLetters() {
           label="Letters 'aw', 'awe': /ɔː/"
           heading={3}
         >
+          <Phonetics
+            value={[
+              // ...
+              ...wordRowList({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }, ""],
+                phonetics: "//",
+              }),
+            ]}
+          />
+          <Phonetics
+            value={[
+              // ...
+              ...wordRowList({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }, ""],
+                phonetics: "//",
+              }),
+            ]}
+          />
+          <ExampleList
+            items={[
+              // • Example sentence
+              example({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }],
+                pt: "",
+              }),
+              // • Example sentence
+              example({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }],
+                pt: "",
+              }),
+              // • Example sentence
+              example({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }],
+                pt: "",
+              }),
+            ]}
+          />
           <Paragraph
             blocks={[
               {
@@ -3823,92 +3870,125 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
-        {/* Letters 'ow': /oʊ/, /aʊ/ */}
-        <Section id="letters-ow" label="Letters 'ow': /oʊ/, /aʊ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      // brown
-                      {
-                        audio: "/assets/audio/general/brown.mp3",
-                      },
-                      "br",
-                      {
-                        part: "ow",
-                        type: "mark",
-                      },
-                      "n",
-                      {
-                        part: "/braʊn/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "marrom",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // clown
-                      {
-                        audio: "/assets/audio/general/clown.mp3",
-                      },
-                      "cl",
-                      {
-                        part: "ow",
-                        type: "mark",
-                      },
-                      "n",
-                      {
-                        part: "/klaʊn/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "palhaço",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // frown
-                      {
-                        audio: "/assets/audio/general/frown.mp3",
-                      },
-                      "fr",
-                      {
-                        part: "ow",
-                        type: "mark",
-                      },
-                      "n",
-                      {
-                        part: "/fraʊn/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "franzir",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
+        {/* Letters 'ow': /aʊ/, /oʊ/ */}
+        <Section id="letters-ow" label="Letters 'ow': /aʊ/, /oʊ/" heading={3}>
+          {/* /aʊ/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/aʊ.mp3",
+                phonetics: "/aʊ/",
+              }),
+              // brown
+              ...wordRowList({
+                audio: "/assets/audio/general/bow-verb.mp3",
+                parts: [
+                  "b",
+                  { part: "ow", type: "mark" },
+                  " ",
+                  { part: "verb", type: "italic" },
                 ],
-              },
+                phonetics: "/baʊ/",
+              }),
+              // brown
+              ...wordRowList({
+                audio: "/assets/audio/general/brown.mp3",
+                parts: ["br", { part: "ow", type: "mark" }, "n"],
+                phonetics: "/braʊn/",
+              }),
+              // clown
+              ...wordRowList({
+                audio: "/assets/audio/general/clown.mp3",
+                parts: ["cl", { part: "ow", type: "mark" }, "n"],
+                phonetics: "/klaʊn/",
+              }),
+              // cow
+              ...wordRowList({
+                audio: "/assets/audio/general/cow.mp3",
+                parts: ["c", { part: "ow", type: "mark" }, ""],
+                phonetics: "/kaʊ/",
+              }),
+              // coward
+              ...wordRowList({
+                audio: "/assets/audio/general/coward.mp3",
+                parts: ["c", { part: "ow", type: "mark" }, "ard"],
+                phonetics: "/ˈkaʊ.ɚd/",
+              }),
+              // frown
+              ...wordRowList({
+                audio: "/assets/audio/general/frown.mp3",
+                parts: ["fr", { part: "ow", type: "mark" }, "n"],
+                phonetics: "/fraʊn/",
+              }),
+              // town
+              ...wordRowList({
+                audio: "/assets/audio/general/town.mp3",
+                parts: ["t", { part: "ow", type: "mark" }, "n"],
+                phonetics: "/taʊn/",
+              }),
             ]}
           />
+          {/* /oʊ/ */}
+          <Phonetics
+            value={[
+              // ...
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/diphthongs/oʊ.mp3",
+                phonetics: "/oʊ/",
+              }),
+              // bow
+              ...wordRowList({
+                audio: "/assets/audio/general/bow-noun.mp3",
+                parts: [
+                  "b",
+                  { part: "ow", type: "mark" },
+                  " ",
+                  { part: "noun", type: "italic" },
+                ],
+                phonetics: "/boʊ/",
+              }),
+            ]}
+          />
+          <Line
+            value={[
+              ...note({
+                parts: ["Listen to the differences. "],
+              }),
+            ]}
+          />
+
+            <Phonetics
+              value={[
+                //cow vs. call
+                ...wordComparison({
+                  left: {
+                    audio: "/assets/audio/general/cow.mp3",
+                    parts: ["c", { part: "ow", type: "mark" }],
+                    phonetics: "/kaʊ/",
+                  },
+                  right: {
+                    audio: "/assets/audio/general/call.mp3",
+                    parts: ["ca", { part: "ll", type: "mark" }],
+                    phonetics: "/kɑːl/",
+                  },
+                }),
+                // bow vs. bowl
+                ...wordComparison({
+                  left: {
+                    audio: "/assets/audio/general/bow-noun.mp3",
+                    parts: ["b", { part: "ow", type: "mark" }],
+                    phonetics: "/boʊ/",
+                  },
+                  right: {
+                    audio: "/assets/audio/general/bowl.mp3",
+                    parts: ["bow", { part: "l", type: "mark" }],
+                    phonetics: "/boʊl/",
+                  },
+                }),
+              ]}
+            />
         </Section>
 
         {/* Letter s'u': /uː/, /ʌ/, /ɪ/, /ʊ/, /jʊ/ */}

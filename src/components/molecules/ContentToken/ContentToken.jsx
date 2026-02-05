@@ -117,6 +117,7 @@ export const ContentToken = ({ value, text = [] }) => {
             {part.audio && <Audio src={part.audio} />}
             {part.bullet && <BulletPoint />}
             {part.square && <SquarePoint />}
+            {part.lineBreak && <span className="block" />}
             {content}
           </span>
         );

@@ -1,7 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
-import { CardText } from "@/components/molecules/CardText";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking";
@@ -37,64 +36,6 @@ export default function PastContinuous() {
                         part: "Look at the pictures and listen to the sentences.",
                         type: "bold",
                       },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-          <CardText
-            blocks={[
-              {
-                imgs: [
-                  {
-                    img: "",
-                    alt: "",
-                  },
-                ],
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/",
-                      },
-                      "normal ",
-                    ],
-                  },
-                ],
-              },
-              {
-                imgs: [
-                  {
-                    img: "",
-                    alt: "",
-                  },
-                ],
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/",
-                      },
-                      "normal ",
-                    ],
-                  },
-                ],
-              },
-              {
-                imgs: [
-                  {
-                    img: "",
-                    alt: "",
-                  },
-                ],
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/",
-                      },
-                      "normal ",
                     ],
                   },
                 ],

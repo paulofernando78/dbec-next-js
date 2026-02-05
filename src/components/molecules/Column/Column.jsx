@@ -4,7 +4,7 @@ import styles from "./Column.module.css";
 
 import { useRef } from "react";
 import { Ribbon } from "@/components/atoms/Ribbon";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { useDragScroll } from "@/hooks/useDragScroll";
 
 export const Column = ({ cols = [], maxCols, width = 250 }) => {
@@ -37,7 +37,7 @@ export const Column = ({ cols = [], maxCols, width = 250 }) => {
                     className={bs.lineBreak ? "line-break-item" : undefined}
                   >
                     {(bs.block || []).map((b, bIndex) => (
-                      <InlineText key={bIndex} text={b.text} />
+                      <ContentToken key={bIndex} text={b.text} />
                     ))}
                   </div>
                 ))}

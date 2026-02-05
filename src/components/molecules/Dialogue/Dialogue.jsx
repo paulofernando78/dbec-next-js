@@ -3,7 +3,7 @@ import styles from "./Dialogue.module.css";
 import Image from "next/image";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Bold } from "@/components/atoms/Bold";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 
 export const Dialogue = ({ imgs = [], audioPlayer, title, lines = [] }) => {
   return (
@@ -32,7 +32,7 @@ export const Dialogue = ({ imgs = [], audioPlayer, title, lines = [] }) => {
       {lines.map((line, index) => (
         <p key={index} className={styles.lines}>
           {line.speaker && <Bold>{line.speaker} </Bold>}
-          <InlineText
+          <ContentToken
             text={line.text}
             phonetics={line.phonetics}
             portuguese={line.portuguese}
