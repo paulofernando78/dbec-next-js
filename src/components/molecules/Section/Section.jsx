@@ -6,8 +6,8 @@ export const Section = ({ id, label, heading = 2, children }) => {
   const HeadingTag = `h${heading}`;
 
   return (
-    <section id={id} className={`${styles.scrollOffset} line-break`}>
-      <Ribbon>
+    <section id={id} className={styles.scrollOffset}>
+      <Ribbon className="line-break-item">
         <HeadingTag>{label}</HeadingTag>
       </Ribbon>
       {children}

@@ -81,11 +81,13 @@ export const word = (opts) =>
   });
 
 export const wordRowList = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: false,
-    square: true,
-  });
+  baseToken(
+    {
+      ...opts,
+      bullet: false,
+      square: true,
+    },
+  );
 
 export const wordColumnList = (opts) =>
   baseToken({
@@ -102,7 +104,6 @@ export const wordComparison = ({ left, right }) => [
   ...wordRowList({ ...right, square: false }),
   { lineBreak: true },
 ];
-
 export const example = (opts) =>
   baseToken({
     ...opts,

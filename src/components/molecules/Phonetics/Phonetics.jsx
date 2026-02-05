@@ -13,5 +13,5 @@ export const Phonetics = ({ variant = "default", value = [] }) => {
   ? [{ icons: [meta.icons ]}, ...value]
   : value;
 
-  return <ContentToken value={tokens} />;
+  return <div><ContentToken value={tokens} /></div>;
 };
