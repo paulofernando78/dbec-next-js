@@ -1157,21 +1157,10 @@ export default function PhoneticsLetters() {
           {/* /ɔː/ */}
           <Phonetics
             value={[
-              // /ɔː/ (short)
               ...wordRowList({
                 audio:
                   "/assets/audio/pronunciation/phonetics-letters/vowels/ɔ.mp3",
                 parts: [{ part: "/ɔː/", type: "phonetics" }],
-              }),
-              // north
-              ...wordRowList({
-                audio: "/assets/audio/general/north.mp3",
-                parts: [
-                  { part: "n" },
-                  { part: "o", type: "mark" },
-                  { part: "rth" },
-                ],
-                phonetics: "/nɔːrθ/",
               }),
               // north
               ...wordRowList({
@@ -2695,25 +2684,25 @@ export default function PhoneticsLetters() {
             value={[
               ...wordRowList({
                 audio: "/assets/audio/general/ɔ.mp3",
-                phonetics: "/ɔː/",
+                phonetics: "/ɑː/",
               }),
               // audio
               ...wordRowList({
                 audio: "/assets/audio/general/audio.mp3",
                 parts: [{ part: "au", type: "mark" }, "dio"],
-                phonetics: "/ˈɔː.di.oʊ/",
+                phonetics: "/ˈɑː.di.oʊ/",
               }),
               // automatic
               ...wordRowList({
                 audio: "/assets/audio/general/automatic.mp3",
                 parts: [{ part: "au", type: "mark" }, "tomatic"],
-                phonetics: "/ˈɔː.t̬əˈmæt̬.ɪk/",
+                phonetics: "/ˈɑː.t̬əˈmæt̬.ɪk/",
               }),
               // automatic
               ...wordRowList({
                 audio: "/assets/audio/general/automaton.mp3",
                 parts: [{ part: "au", type: "mark" }, "automaton"],
-                phonetics: "/ɔːˈtɑː.mə.tən/",
+                phonetics: "/ɑːˈtɑː.mə.tən/",
               }),
             ]}
           />
@@ -2728,7 +2717,7 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
+                audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                 parts: [{ part: "'aw'", type: "bold" }],
                 phonetics: "/ɑː/"
               }),
@@ -2785,7 +2774,7 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
+                audio: "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                 parts: [{ part: "'aw'", type: "bold" }],
                 phonetics: "/ɑː/"
               }),
