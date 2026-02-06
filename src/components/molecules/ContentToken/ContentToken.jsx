@@ -74,6 +74,10 @@ export const ContentToken = ({ value, text = [] }) => {
 
         let content = part.part;
 
+        const isSquare = part.square;
+        const isLastSquare =
+          isSquare && !contentArray.slice(i + 1).some((v) => v?.square);
+
         switch (part.type) {
           case "bold":
             content = <Bold>{part.part}</Bold>;
@@ -116,7 +120,7 @@ export const ContentToken = ({ value, text = [] }) => {
             {typeof part === "object" && renderIcons(part)}
             {part.audio && <Audio src={part.audio} />}
             {part.bullet && <BulletPoint />}
-            {part.square && <SquarePoint />}
+            {part.square && !isLastSquare && <SquarePoint />}
             {part.lineBreak && <span className="block" />}
             {content}
           </span>

@@ -1,6 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { TheAlphabet } from "@/components/organisms/TheAlphabet";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { List } from "@/components/molecules/List";
 import { Note } from "@/components/molecules/Note";
 
@@ -9,7 +9,7 @@ export default function TheAlphabetPage() {
     <>
       <Whiteboard title="Pronunciation" subtitle="The Alphabet" />
       <div className="line-break">
-        <InlineText
+        <ContentToken
           text={[
             {
               audio: "/assets/audio/pronunciation/the-alphabet/26-letters.mp3",
@@ -19,7 +19,7 @@ export default function TheAlphabetPage() {
           ]}
         />
         <TheAlphabet />
-        <InlineText
+        <ContentToken
           text={[
             {
               audio: "/assets/audio/general/answer-these-questions.mp3",

@@ -1,5 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -9,7 +9,7 @@ export default function Conditionals() {
     <>
       <Whiteboard title="Reference" subtitle="Conditionals" />
       <div className="line-break">
-        <InlineText
+        <ContentToken
           text={[
             { part: "English Conditionals – Reference Guide", type: "bold" },
           ]}

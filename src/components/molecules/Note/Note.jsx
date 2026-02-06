@@ -1,6 +1,6 @@
 import styles from "./Note.module.css";
 
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { Card } from "@/components/atoms/Card";
 import { Bold } from "@/components/atoms/Bold";
 
@@ -13,7 +13,7 @@ export const Note = ({ lines = [] }) => {
       <ul>
         {lines.map((line, index) => (
           <li key={index}>
-            <InlineText
+            <ContentToken
               text={line.text}
             />
           </li>

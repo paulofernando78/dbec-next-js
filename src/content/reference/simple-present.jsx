@@ -1,7 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Note } from "@/components/molecules/Note";
 import { List } from "@/components/molecules/List";
@@ -2663,7 +2663,7 @@ export default function SimplePresent() {
         </Section>
 
         <Section id="production" label="Production" heading={3}>
-          <InlineText
+          <ContentToken
             audio="/assets/audio/"
             text={["Talk about your daily routine."]}
           />

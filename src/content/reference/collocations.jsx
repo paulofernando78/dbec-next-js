@@ -1,4 +1,4 @@
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { List } from "@/components/molecules/List";
 import { Section } from "@/components/molecules/Section";
@@ -291,7 +291,7 @@ export default function Collocations() {
               },
             ]}
           />
-          <InlineText
+          <ContentToken
             text={[
               {
                 part: "Quick costuma enfatizar agilidade, reação, rapidez em pouco tempo:",

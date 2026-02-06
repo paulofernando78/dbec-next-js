@@ -1,7 +1,7 @@
 import styles from "./TheAlphabet.module.css";
 
 import { Audio } from "@/components/atoms/Audio";
-import { InlineText } from "@/components/molecules/InlineText";
+import { ContentToken } from "@/components/molecules/ContentToken";
 
 const alphabet = [
   {
@@ -165,7 +165,7 @@ const alphabet = [
 export const TheAlphabet = () => {
   return (
     <>
-      <InlineText />
+      <ContentToken />
       <div className={styles.container}>
         {alphabet.map((a, i) => (
           <div key={i} className={styles.wrapper}>
