@@ -2724,16 +2724,13 @@ export default function PhoneticsLetters() {
           label="Letters 'aw', 'awe': /ɑː/"
           heading={3}
         >
+          {/* -aw */}
           <Phonetics
             value={[
-              // -aw
               ...wordRowList({
-                parts: [{ part: "-aw", type: "bold" }],
-              }),
-              // /ɑː/
-              ...wordRowList({
-                audio: "/assets/audio/general/.mp3",
-                phonetics: "/ɑː/",
+                audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
+                parts: [{ part: "'aw'", type: "bold" }],
+                phonetics: "/ɑː/"
               }),
               // law
               ...wordRowList({
@@ -2784,16 +2781,13 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+          {/* awe- */}
           <Phonetics
             value={[
-              // awe
               ...wordRowList({
-                parts: [{ part: "awe-", type: "bold" }],
-              }),
-              // /ɑː/
-              ...wordRowList({
-                audio: "/assets/audio/general/.mp3",
-                phonetics: "/ɑː/",
+                audio: "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
+                parts: [{ part: "'aw'", type: "bold" }],
+                phonetics: "/ɑː/"
               }),
               // awe
               ...wordRowList({
@@ -2862,7 +2856,7 @@ export default function PhoneticsLetters() {
             ]}
           />
         </Section>
-        <Section id="letters-ay" label="Letters: 'ay: /eɪ/'" heading={3}>
+        <Section id="letters-ay" label="Letters: 'ay': /eɪ/'" heading={3}>
           <Phonetics
             value={[
               ...wordRowList({
@@ -3142,85 +3136,50 @@ export default function PhoneticsLetters() {
 
         {/* Letters 'ey': /i/, /eɪ/ */}
         <Section id="letters-ey" label="Letters 'ey': /i/, /eɪ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // /i/
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i.mp3",
-                      },
-                      {
-                        part: "/i/",
-                        type: "phonetics",
-                      },
-                    ],
-                  },
-                  // words...
-                  {
-                    text: [
-                      // abbey
-                      {
-                        audio: "/assets/audio/general/abbey.mp3",
-                      },
-                      {
-                        part: "abb",
-                      },
-                      {
-                        part: "ey",
-                        type: "mark",
-                      },
-                      {
-                        part: "/ˈæb.i/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // disney
-                      {
-                        audio: "/assets/audio/general/disney.mp3",
-                      },
-                      {
-                        part: "Disn",
-                      },
-                      {
-                        part: "ey",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // ...
-                      {
-                        audio: "/assets/audio/general/.mp3",
-                      },
-                      {
-                        part: "...",
-                      },
-                      {
-                        part: "...",
-                        type: "mark",
-                      },
-                      {
-                        part: "...",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
+          {/* /i/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/vowels/i.mp3",
+                phonetics: "/i/",
+              }),
+              // abbey
+              ...wordRowList({
+                audio: "/assets/audio/general/abbey.mp3",
+                parts: ["abb", { part: "ey", type: "mark" }],
+                phonetics: "/ˈæb.i/",
+              }),
+              // disney
+              ...wordRowList({
+                audio: "/assets/audio/general/disney.mp3",
+                parts: ["Disn", { part: "ey", type: "mark" }],
+                phonetics: "/ˈdɪz.ni/",
+              }),
+              // donkey
+              ...wordRowList({
+                audio: "/assets/audio/general/donkey.mp3",
+                parts: ["donk", { part: "ey", type: "mark" }],
+                phonetics: "/ˈdɑːŋ.ki/",
+              }),
+              // money
+              ...wordRowList({
+                audio: "/assets/audio/general/money.mp3",
+                parts: ["mon", { part: "ey", type: "mark" }],
+                phonetics: "/ˈmʌn.i/",
+              }),
+              // odyssey
+              ...wordRowList({
+                audio: "/assets/audio/general/odyssey.mp3",
+                parts: ["odyss", { part: "ey", type: "mark" }],
+                phonetics: "/ˈɑː.dɪ.si/",
+              }),
+              // Sydney
+              ...wordRowList({
+                audio: "/assets/audio/general/sydney.mp3",
+                parts: ["sydn", { part: "ey", type: "mark" }],
+                phonetics: "/ˈsɪd.ni/",
+              }),
             ]}
           />
         </Section>
@@ -3340,243 +3299,93 @@ export default function PhoneticsLetters() {
 
         {/* Letters 'n', 'ng': /ŋ/ */}
         <Section id="letters-n-ng" label="Letters 'n', 'ng': /ŋ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // letter 'n'
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
-                      },
-                      {
-                        part: "/ŋ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      {
-                        part: "'n'",
-                        type: "",
-                      },
-                    ],
-                  },
-                  //. words...
-                  {
-                    text: [
-                      // anger
-                      {
-                        audio: "/assets/audio/general/anger.mp3",
-                      },
-                      {
-                        part: "a",
-                      },
-                      {
-                        part: "n",
-                        type: "mark",
-                      },
-                      {
-                        part: "ger",
-                      },
-                      {
-                        part: "/ˈæŋ.ɡɚ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "raiva, braveza",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // angry
-                      {
-                        audio: "/assets/audio/general/angry.mp3",
-                      },
-                      {
-                        part: "a",
-                      },
-                      {
-                        part: "n",
-                        type: "mark",
-                      },
-                      {
-                        part: "gry",
-                      },
-                      {
-                        part: "/ˈæŋ.ɡri/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "com raiva",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
-                      },
-                      {
-                        part: "/ŋ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      {
-                        part: "'ng'",
-                        type: "",
-                      },
-                    ],
-                  },
-                  //. words...
-                  {
-                    text: [
-                      // going
-                      {
-                        audio: "/assets/audio/general/going.mp3",
-                      },
-                      {
-                        part: "goi",
-                      },
-                      {
-                        part: "ng",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "em andamento",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // interesting
-                      {
-                        audio: "/assets/audio/general/interesting.mp3",
-                      },
-                      {
-                        part: "interesti",
-                      },
-                      {
-                        part: "ng",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "interessante",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                      // interesting
-                      {
-                        audio: "/assets/audio/general/thing.mp3",
-                      },
-                      {
-                        part: "thi",
-                      },
-                      {
-                        part: "ng",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "/ing/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "coisa",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
+          {/* 'n' */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/n.mp3",
+                  parts: [{ part: "'n'", type: "bold" }],
+                  phonetics: "/ŋ/",
+              }),
+
+              // anger
+              ...wordRowList({
+                audio: "/assets/audio/general/anger.mp3",
+                parts: ["a", { part: "n", type: "mark" }, "ger"],
+                phonetics: "/ˈæŋ.ɡɚ/",
+                pt: "raiva, braveza",
+              }),
+
+              // angry
+              ...wordRowList({
+                audio: "/assets/audio/general/angry.mp3",
+                parts: ["a", { part: "n", type: "mark" }, "gry"],
+                phonetics: "/ˈæŋ.ɡri/",
+                pt: "com raiva",
+              }),
+            ]}
+          />
+          <LineBreak />
+          {/* 'ng' */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/consonants/ŋ.mp3",
+                phonetics: "/ŋ/",
+                parts: [{ part: "'ng'", type: "bold" }],
+              }),
+
+              // going
+              ...wordRowList({
+                audio: "/assets/audio/general/going.mp3",
+                parts: ["goi", { part: "ng", type: "mark" }],
+                phonetics: "/ɡoʊɪŋ/",
+                pt: "em andamento",
+              }),
+
+              // interesting
+              ...wordRowList({
+                audio: "/assets/audio/general/interesting.mp3",
+                parts: ["interesti", { part: "ng", type: "mark" }],
+                phonetics: "/ˈɪn.trə.stɪŋ/",
+                pt: "interessante",
+              }),
+
+              // thing
+              ...wordRowList({
+                audio: "/assets/audio/general/thing.mp3",
+                parts: ["thi", { part: "ng", type: "mark" }],
+                phonetics: "/θɪŋ/",
+                pt: "coisa",
+              }),
             ]}
           />
         </Section>
 
         {/* Letter 'o': /ɑː/, /ɔː/, /oʊ/ */}
         <Section id="letter-o" label="Letter 'o': /ɑː/, /ɔː/, /oʊ/" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      // odyssey
-                      {
-                        audio: "/assets/audio/general/odyssey.mp3",
-                      },
-                      {
-                        part: "o",
-                        type: "mark",
-                      },
-                      {
-                        part: "dyssey",
-                      },
-                      " ",
-                      {
-                        part: "/ˈɑː.dɪ.si/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "odisseia",
-                        type: "portuguese",
-                      },
-                      " ",
-                      {
-                        square: true,
-                      },
-                      " ",
-                    ],
-                  },
-                ],
-              },
+          {/* /ɑː/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
+                phonetics: "/ɑː/",
+              }),
+              // donkey
+              ...wordRowList({
+                audio: "/assets/audio/general/donkey.mp3",
+                parts: ["d", { part: "o", type: "mark" }, "nkey"],
+                phonetics: "/ˈdɑːŋ.ki/",
+              }),
+              // odyssey
+              ...wordRowList({
+                audio: "/assets/audio/general/odyssey.mp3",
+                parts: [{ part: "o", type: "mark" }, "dyssey"],
+                phonetics: "/ˈɑː.dɪ.si/",
+              }),
             ]}
           />
         </Section>
