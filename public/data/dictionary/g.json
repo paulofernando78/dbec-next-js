@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "go nuts",
+        "partOfSpeech": "idiom",
+        "enDefinition": "to become very excited, angry, or crazy; to react with strong emotion or enthusiasm",
+        "ptDefinition": "ficar maluco; ficar muito animado; enlouquecer; reagir com muita emoção ou entusiasmo",
+        "examples": [
+          {
+            "enExample": "The crowd went nuts when the band came on stage.",
+            "ptExample": "A multidão foi à loucura quando a banda subiu ao palco."
+          },
+          {
+            "enExample": "My kids go nuts when they see ice cream.",
+            "ptExample": "Meus filhos ficam super animados quando veem sorvete."
+          }
+        ],
+        "synonyms": ["go crazy", "go wild", "lose control"],
+        "antonyms": ["stay calm", "keep cool"],
+        "seeAlso": ["go crazy", "lose it"],
+        "notes": [
+          {
+            "enNote": "Informal expression. Depending on context, it can mean becoming very excited or becoming very angry.",
+            "ptNote": "Expressão informal. Dependendo do contexto, pode significar ficar muito animado ou muito irritado."
+          }
+        ]
+      },
+      {
         "word": "give someone the time of day",
         "phonetics": "/ɡɪv ˈsʌmˌwʌn ðə taɪm əv deɪ/",
         "partOfSpeech": "idiom",

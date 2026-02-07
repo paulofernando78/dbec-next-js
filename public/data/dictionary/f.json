@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "from scratch",
+        "partOfSpeech": "idiom",
+        "enDefinition": "starting from the very beginning, without using anything prepared or previously made",
+        "ptDefinition": "do zero; desde o início; sem usar nada pronto ou pré-preparado",
+        "examples": [
+          {
+            "enExample": "She made the cake from scratch.",
+            "ptExample": "Ela fez o bolo do zero."
+          },
+          {
+            "enExample": "We had to build the system from scratch after the data was lost.",
+            "ptExample": "Tivemos que construir o sistema do zero depois que os dados foram perdidos."
+          }
+        ],
+        "synonyms": ["from the beginning", "from the ground up"],
+        "antonyms": ["pre-made", "ready-made"],
+        "seeAlso": ["start from scratch", "make from scratch"],
+        "notes": [
+          {
+            "enNote": "Often used when emphasizing that something was made or created without using pre-prepared materials.",
+            "ptNote": "Frequentemente usado para enfatizar que algo foi feito ou criado sem usar materiais ou partes já prontas."
+          }
+        ]
+      },
+      {
         "word": "full of oneself",
         "phonetics": "/fʊl əv wʌnˈsɛlf/",
         "partOfSpeech": "adjective phrase",

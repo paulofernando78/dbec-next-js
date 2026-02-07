@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "you can say that again",
+        "partOfSpeech": "idiom",
+        "enDefinition": "used to strongly agree with what someone has just said",
+        "ptDefinition": "com certeza; pode apostar; concordo totalmente",
+        "examples": [
+          {
+            "enExample": "“This project is harder than we expected.” — “You can say that again.”",
+            "ptExample": "“Este projeto está mais difícil do que esperávamos.” — “Com certeza.”"
+          },
+          {
+            "enExample": "“It’s really hot today.” — “You can say that again.”",
+            "ptExample": "“Está muito quente hoje.” — “Pode apostar.”"
+          }
+        ],
+        "synonyms": ["absolutely", "exactly", "I agree", "tell me about it"],
+        "antonyms": ["I disagree", "not really"],
+        "seeAlso": ["I couldn't agree more", "exactly", "tell me about it"],
+        "notes": [
+          {
+            "enNote": "Common in informal conversation to emphasize strong agreement.",
+            "ptNote": "Comum em conversas informais para enfatizar forte concordância."
+          }
+        ]
+      },
+      {
         "word": "yes man",
         "phonetics": "ˈjɛs mæn",
         "partOfSpeech": "noun",

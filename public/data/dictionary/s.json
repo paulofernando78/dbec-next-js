@@ -1,6 +1,32 @@
 [
   {
     "definitions": [
+      
+      {
+        "word": "sit tight",
+        "partOfSpeech": "idiom",
+        "enDefinition": "to stay where you are or remain in the same situation while waiting for something to happen",
+        "ptDefinition": "aguardar; ficar onde está; esperar pacientemente sem agir",
+        "examples": [
+          {
+            "enExample": "Just sit tight while I check the details.",
+            "ptExample": "Apenas aguarde enquanto eu verifico os detalhes."
+          },
+          {
+            "enExample": "We were told to sit tight until further instructions.",
+            "ptExample": "Fomos instruídos a aguardar até novas instruções."
+          }
+        ],
+        "synonyms": ["wait patiently", "hold on", "stay put"],
+        "antonyms": ["take action", "move", "rush"],
+        "seeAlso": ["hold tight", "hang on", "wait"],
+        "notes": [
+          {
+            "enNote": "Common in informal spoken English when asking someone to wait calmly.",
+            "ptNote": "Comum no inglês falado informal ao pedir que alguém espere com calma."
+          }
+        ]
+      },
       {
         "word": "you scratch my back and I'll scratch yours",
         "phonetics": "/juː skrætʃ maɪ bæk ænd aɪl skrætʃ jʊrz/",

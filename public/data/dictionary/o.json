@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "out of this world",
+        "partOfSpeech": "idiom",
+        "enDefinition": "extremely good, impressive, or enjoyable; much better than usual",
+        "ptDefinition": "incrível; fantástico; extraordinário; muito melhor do que o normal",
+        "examples": [
+          {
+            "enExample": "The dessert was out of this world.",
+            "ptExample": "A sobremesa estava incrível."
+          },
+          {
+            "enExample": "The special effects in the movie were out of this world.",
+            "ptExample": "Os efeitos especiais do filme estavam extraordinários."
+          }
+        ],
+        "synonyms": ["amazing", "fantastic", "incredible", "outstanding"],
+        "antonyms": ["terrible", "awful", "ordinary"],
+        "seeAlso": ["amazing", "blow someone's mind", "incredible"],
+        "notes": [
+          {
+            "enNote": "Informal expression often used to strongly praise food, experiences, or performances.",
+            "ptNote": "Expressão informal frequentemente usada para elogiar fortemente comida, experiências ou performances."
+          }
+        ]
+      },
+      {
         "word": "obnoxious",
         "phonetics": "/əbˈnɑːk.ʃəs/ (US), /əbˈnɒk.ʃəs/ (UK)",
         "partOfSpeech": "adjective",

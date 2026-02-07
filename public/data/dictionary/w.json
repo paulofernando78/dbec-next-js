@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "What’s up?",
+        "partOfSpeech": "idiom / informal greeting",
+        "enDefinition": "used as an informal greeting to ask how someone is or what is happening",
+        "ptDefinition": "e aí?; o que está acontecendo?; tudo bem? (cumprimento informal)",
+        "examples": [
+          {
+            "enExample": "Hey, what’s up?",
+            "ptExample": "E aí?"
+          },
+          {
+            "enExample": "You look worried. What’s up?",
+            "ptExample": "Você parece preocupado. O que houve?"
+          }
+        ],
+        "synonyms": ["what’s going on", "how’s it going", "what’s new"],
+        "antonyms": [],
+        "seeAlso": ["how’s it going", "what’s going on"],
+        "notes": [
+          {
+            "enNote": "Very common in informal spoken English as a casual greeting or to ask what is happening.",
+            "ptNote": "Muito comum no inglês falado informal como cumprimento casual ou para perguntar o que está acontecendo."
+          }
+        ]
+      },
+      {
         "word": "wise guy",
         "partOfSpeech": "noun (informal)",
         "enDefinition": "a person who acts as if they know everything, often in an annoying, sarcastic, or disrespectful way",

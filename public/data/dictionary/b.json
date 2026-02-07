@@ -1,6 +1,31 @@
 [
   {
     "definitions": [
+            {
+        "word": "ballpark figure",
+        "partOfSpeech": "idiom",
+        "enDefinition": "an approximate or rough estimate of a number, cost, or amount, not intended to be exact",
+        "ptDefinition": "estimativa aproximada; valor aproximado, não exato",
+        "examples": [
+          {
+            "enExample": "Can you give me a ballpark figure for the total cost?",
+            "ptExample": "Você pode me dar uma estimativa aproximada do custo total?"
+          },
+          {
+            "enExample": "I don't need the exact number, just a ballpark figure.",
+            "ptExample": "Não preciso do número exato, apenas uma estimativa aproximada."
+          }
+        ],
+        "synonyms": ["rough estimate", "approximation", "guesstimate"],
+        "antonyms": ["exact figure", "precise calculation"],
+        "seeAlso": ["estimate", "rough estimate", "approximate"],
+        "notes": [
+          {
+            "enNote": "Common in business and informal conversations when an exact number is not yet available.",
+            "ptNote": "Comum em contextos de negócios e conversas informais quando um número exato ainda não está disponível."
+          }
+        ]
+      },
       {
         "word": "by far",
         "phonetics": "/baɪ fɑːr/",

@@ -2,6 +2,56 @@
   {
     "definitions": [
       {
+        "word": "make a pig of oneself",
+        "partOfSpeech": "idiom",
+        "enDefinition": "to eat too much or behave in a greedy or excessive way, especially when eating",
+        "ptDefinition": "comer demais; exagerar na comida; comportar-se de maneira gulosa ou excessiva",
+        "examples": [
+          {
+            "enExample": "I really made a pig of myself at the buffet last night.",
+            "ptExample": "Eu realmente exagerei na comida no buffet ontem à noite."
+          },
+          {
+            "enExample": "He made a pig of himself at the party and felt sick afterward.",
+            "ptExample": "Ele comeu demais na festa e passou mal depois."
+          }
+        ],
+        "synonyms": ["overeat", "stuff oneself", "pig out"],
+        "antonyms": ["eat moderately", "control oneself"],
+        "seeAlso": ["pig out", "overeat"],
+        "notes": [
+          {
+            "enNote": "Informal expression often used humorously to admit eating too much.",
+            "ptNote": "Expressão informal frequentemente usada de forma humorística para admitir que comeu demais."
+          }
+        ]
+      },
+      {
+        "word": "make time for",
+        "partOfSpeech": "verb phrase",
+        "enDefinition": "to deliberately find or create time in your schedule to do something or spend time with someone",
+        "ptDefinition": "arranjar tempo para algo ou alguém; reservar tempo intencionalmente na agenda",
+        "examples": [
+          {
+            "enExample": "She always makes time for her family despite her busy schedule.",
+            "ptExample": "Ela sempre arranja tempo para a família apesar da agenda cheia."
+          },
+          {
+            "enExample": "You should make time for exercise during the week.",
+            "ptExample": "Você deveria arranjar tempo para se exercitar durante a semana."
+          }
+        ],
+        "synonyms": ["find time for", "set aside time for", "take time for"],
+        "antonyms": ["neglect", "ignore", "have no time for"],
+        "seeAlso": ["make time", "fit someone in", "set aside"],
+        "notes": [
+          {
+            "enNote": "Commonly used when emphasizing effort or intention to prioritize something or someone.",
+            "ptNote": "Usado frequentemente para enfatizar o esforço ou a intenção de priorizar algo ou alguém."
+          }
+        ]
+      },
+      {
         "word": "make a splash",
         "partOfSpeech": "idiom",
         "enDefinition": "to attract a lot of attention or create a strong impression, especially when something is new or first introduced",

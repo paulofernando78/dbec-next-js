@@ -2,6 +2,35 @@
   {
     "definitions": [
       {
+        "word": "don’t mention it",
+        "partOfSpeech": "idiom",
+        "enDefinition": "used as a polite reply when someone thanks you, meaning that the help or favor was not a problem",
+        "ptDefinition": "de nada; não há de quê; usado como resposta educada quando alguém agradece",
+        "examples": [
+          {
+            "enExample": "“Thanks for helping me with my homework.” — “Don’t mention it.”",
+            "ptExample": "“Obrigado por me ajudar com a lição.” — “De nada.”"
+          },
+          {
+            "enExample": "“I really appreciate your help.” — “Don’t mention it, happy to help.”",
+            "ptExample": "“Eu realmente agradeço sua ajuda.” — “Não há de quê, foi um prazer ajudar.”"
+          }
+        ],
+        "synonyms": [
+          "you're welcome",
+          "no problem",
+          "not at all",
+          "my pleasure"
+        ],
+        "seeAlso": ["you're welcome", "no worries"],
+        "notes": [
+          {
+            "enNote": "Commonly used in polite or informal conversation as a modest response to thanks.",
+            "ptNote": "Comumente usado em conversas educadas ou informais como uma resposta modesta a um agradecimento."
+          }
+        ]
+      },
+      {
         "word": "a dime a dozen",
         "partOfSpeech": "idiom",
         "enDefinition": "very common and easy to find; not rare or special",

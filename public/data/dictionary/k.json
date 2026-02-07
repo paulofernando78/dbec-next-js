@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "just kidding",
+        "partOfSpeech": "idiom / expression",
+        "enDefinition": "used to say that something you said was a joke and not meant to be taken seriously",
+        "ptDefinition": "estou brincando; é brincadeira; usado para indicar que algo dito não era sério",
+        "examples": [
+          {
+            "enExample": "You have to work all weekend… just kidding!",
+            "ptExample": "Você vai ter que trabalhar o fim de semana inteiro… brincadeira!"
+          },
+          {
+            "enExample": "I was serious for a moment, but then I said I was just kidding.",
+            "ptExample": "Eu falei sério por um momento, mas depois disse que estava brincando."
+          }
+        ],
+        "synonyms": ["just joking", "only joking", "I'm joking"],
+        "antonyms": ["seriously", "I'm serious"],
+        "seeAlso": ["just joking", "kidding aside"],
+        "notes": [
+          {
+            "enNote": "Commonly used in informal conversation to avoid misunderstandings after saying something humorous or exaggerated.",
+            "ptNote": "Usado com frequência em conversas informais para evitar mal-entendidos depois de dizer algo humorístico ou exagerado."
+          }
+        ]
+      },
+      {
         "word": "keep one’s chin up",
         "partOfSpeech": "idiom",
         "enDefinition": "to remain positive, confident, or cheerful in a difficult or disappointing situation",
