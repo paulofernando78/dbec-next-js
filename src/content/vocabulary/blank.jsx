@@ -1,5 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { InlineText } from "@/components/molecules/InlineText";
+import { Line } from "@/components/molecules/Line";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -9,7 +9,7 @@ export default function Blank() {
     <>
       <Whiteboard title="Vocabulary" subtitle="blank" />
       <div className="line-break">
-        <InlineText text={[{ part: "...", type: "bold" }]} />
+        <Line text={[{ part: "...", type: "bold" }]} />
         <Contents items={[{ href: "...", label: "..." }]} />
         <Section id="..." label="..." heading={3}>
           <Paragraph

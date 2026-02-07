@@ -4,7 +4,6 @@ import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { InlineText } from "@/components/molecules/InlineText";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardText } from "@/components/molecules/CardText";
@@ -153,7 +152,7 @@ export default function Mock() {
             ]}
           />
 
-          <InlineText text={["+ bullet"]} />
+          <Line text={["+ bullet"]} />
           <List
             items={[
               {

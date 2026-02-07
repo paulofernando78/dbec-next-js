@@ -1,5 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { InlineText } from "@/components/molecules/InlineText";
+import { Line } from "@/components/molecules/Line";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -9,7 +9,7 @@ export default function Law() {
     <>
       <Whiteboard title="Vocabulary" subtitle="Law & Legal English" />
       <div className="line-break">
-        <InlineText text={[{ part: "Common law and legal terms.", type: "bold" }]} />
+        <Line text={[{ part: "Common law and legal terms.", type: "bold" }]} />
         <Contents
           items={[
             { href: "#court-and-procedure", label: "Court & Procedure" },

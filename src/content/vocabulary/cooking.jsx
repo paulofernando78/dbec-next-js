@@ -1,5 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { InlineText } from "@/components/molecules/InlineText";
+import { Line } from "@/components/molecules/Line";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -9,7 +9,7 @@ export default function Cooking() {
     <>
       <Whiteboard title="Vocabulary" subtitle="Cooking & Food" />
       <div className="line-break">
-        <InlineText text={[{ part: "Common cooking and food vocabulary.", type: "bold" }]} />
+        <Line text={[{ part: "Common cooking and food vocabulary.", type: "bold" }]} />
         <Contents
           items={[
             { href: "#cooking-actions", label: "Cooking Actions" },

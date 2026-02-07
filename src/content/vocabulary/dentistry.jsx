@@ -1,5 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { InlineText } from "@/components/molecules/InlineText";
+import { Line } from "@/components/molecules/Line";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -9,7 +9,7 @@ export default function Dentistry() {
     <>
       <Whiteboard title="Vocabulary" subtitle="Dentistry" />
       <div className="line-break">
-        <InlineText
+        <Line
           text={[
             {
               audio: "",
