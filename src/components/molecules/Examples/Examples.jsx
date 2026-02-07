@@ -1,6 +1,6 @@
 import { ContentToken } from "@/components/molecules/ContentToken";
 
-export const ExampleList = ({ items = [] }) => {
+export const Examples = ({ items = [] }) => {
   return (
     <div>
       {items.map((value, i) => (

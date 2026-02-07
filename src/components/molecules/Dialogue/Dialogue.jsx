@@ -1,39 +1,17 @@
 import styles from "./Dialogue.module.css";
-
-import Image from "next/image";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Italic } from "@/components/atoms/Italic";
 import { Bold } from "@/components/atoms/Bold";
 import { ContentToken } from "@/components/molecules/ContentToken";
 
-export const Dialogue = ({ imgs = [], audioPlayer, title, lines = [] }) => {
+export const Dialogue = ({ description, lines = [] }) => {
   return (
     <div className="line-break">
-      {imgs.length > 0 && (
-        <div className={styles.flexImg}>
-          {imgs.map(
-            (i, iIndex) =>
-              i.img && (
-                <Image
-                  key={iIndex}
-                  src={i.img}
-                  alt={i.alt}
-                  width={i.width}
-                  height={i.height}
-                  className="imgs"
-                />
-              )
-          )}
-        </div>
-      )}
-
-      {audioPlayer && <AudioPlayer src={audioPlayer} />}
-      {title && <p><Bold>{title}</Bold></p>}
-
+      <p><Italic>{description}</Italic></p>
       {lines.map((line, index) => (
         <p key={index} className={styles.lines}>
           {line.speaker && <Bold>{line.speaker} </Bold>}
           <ContentToken
-            text={line.text}
+            value={line.text}
             phonetics={line.phonetics}
             portuguese={line.portuguese}
           />

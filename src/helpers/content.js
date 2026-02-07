@@ -4,7 +4,12 @@ export function baseToken({
   bullet = true,
   parts = [],
   phonetics,
-  pt,
+  englishTerm,
+  portugueseTerm,
+  englishDefinition,
+  portugueseDefinition,
+  englishExample,
+  portugueseExample,
   connector,
   square = true,
   lineBreak,
@@ -35,11 +40,39 @@ export function baseToken({
   if (phonetics) {
     blocks.push({ part: phonetics, type: "phonetics" });
   }
-
   blocks.push(" ");
 
-  if (pt) {
-    blocks.push({ part: pt, type: "portuguese" });
+  if (englishTerm) {
+    if (Array.isArray(englishTerm)) {
+      englishTerm.forEach((p) => blocks.push(p));
+    } else {
+      blocks.push({ part: englishTerm, type: "bold" });
+    }
+  }
+  blocks.push(" ");
+
+  if (portugueseTerm) {
+    blocks.push({ part: portugueseTerm, type: "bold-portuguese" });
+  }
+  blocks.push(" ");
+
+  if (englishDefinition) {
+    blocks.push({ part: englishDefinition, type: "portuguese" });
+  }
+  blocks.push(" ");
+
+  if (portugueseDefinition) {
+    blocks.push({ part: portugueseDefinition, type: "portuguese" });
+  }
+  blocks.push(" ");
+
+  if (englishExample) {
+    blocks.push({ part: englishExample, type: "" });
+  }
+  blocks.push(" ");
+
+  if (portugueseExample) {
+    blocks.push({ part: portugueseExample, type: "portuguese" });
   }
   blocks.push(" ");
 
@@ -59,10 +92,16 @@ export function baseToken({
   return blocks;
 }
 
+// Exports
+
+export const audio = (src) => ({
+  audio: src
+})
+
 export const instruction = (opts) =>
   baseToken({
     ...opts,
-    icons: [attention],
+    icons: ["attention"],
     square: false,
   });
 
@@ -81,13 +120,11 @@ export const word = (opts) =>
   });
 
 export const wordRowList = (opts) =>
-  baseToken(
-    {
-      ...opts,
-      bullet: false,
-      square: true,
-    },
-  );
+  baseToken({
+    ...opts,
+    bullet: false,
+    square: true,
+  });
 
 export const wordColumnList = (opts) =>
   baseToken({
@@ -104,6 +141,27 @@ export const wordComparison = ({ left, right }) => [
   ...wordRowList({ ...right, square: false }),
   { lineBreak: true },
 ];
+
+export const expression = (opts) =>
+  baseToken({
+    ...opts,
+    bullet: false,
+    square: false,
+  });
+
+export const line = (parts) =>
+  baseToken({
+    parts: Array.isArray(parts) ? parts : [parts],
+    bullet: false,
+    square: false,
+  });
+
+
+export const mark = (text) => ({
+  part: text,
+  type: "mark",
+});
+
 export const example = (opts) =>
   baseToken({
     ...opts,

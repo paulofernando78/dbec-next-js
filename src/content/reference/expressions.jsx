@@ -1,357 +1,455 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Paragraph } from "@/components/molecules/Paragraph";
+import { Section } from "@/components/molecules/Section";
+import { Expressions } from "@/components/molecules/Expressions";
+import { Examples } from "@/components/molecules/Examples";
+import { expression, example } from "../../helpers/content";
+import { LineBreak } from "@/components/atoms/LineBreak";
 
-export default function Expressions() {
+export default function Expression() {
   return (
     <>
       <Whiteboard title="Vocabulary" subtitle="Expressions" />
       <div className="line-break">
-        <Paragraph
-          blocks={[
-            {
-              lines: [
-                {
-                  text: [
-                    {
-                      part: "Common expressions:",
-                      type: "bold",
-                    },
-                  ],
-                },
-                {
-                  lineBreak: true,
-                },
-                // all of a sudden
-                {
-                  text: [
-                    { part: "all of a sudden", type: "bold" },
-                    " ",
-                    { part: "de repente", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "All of a sudden, the lights went out" },
-                    { part: " De repente, as luzes se apagaram.", type: "portuguese" },
-                  ],
-                },
-                {
-                  linebreak: true,
-                },
-                // as a matter of fact
-                {
-                  text: [
-                    { part: "as a matter of fact", type: "bold" },
-                    " ",
-                    { part: "na verdade", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "As a matter of fact, I don’t like coffee."
-                    },
-                    { part: " Na verdade, eu não gosto de café.", type: "portuguese" },
-                  ],
-                },
-                // as soon as possible
-                {
-                  text: [
-                    { part: "as soon as possible", type: "bold" },
-                    " ",
-                    { part: "o mais rápido possível", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "Please call me as soon as possible."
-                    },
-                    { part: " Por favor, me ligue o mais rápido possível.", type: "portuguese" },
-                  ],
-                },
-                // at first
-                {
-                  text: [
-                    { part: "at first", type: "bold" },
-                    " ",
-                    { part: "no começo / a princípio", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "At first, I didn’t understand the question."
-                    },
-                    { part: " No começo, eu não entendi a pergunta.", type: "portuguese" },
-                  ],
-                },
-                // at the end of the day
-                {
-                  text: [
-                    { part: "at the end of the day", type: "bold" },
-                    " ",
-                    { part: "no fim das contas", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "At the end of the day, family is what matters most."
-                    },
-                    { part: " No fim das contas, a família é o que mais importa.", type: "portuguese" },
-                  ],
-                },
-                // by the way
-                {
-                  text: [
-                    { part: "by the way", type: "bold" },
-                    " ",
-                    { part: "a propósito", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "By the way, have you seen my keys?"
-                    },
-                    { part: " A propósito, você viu minhas chaves?", type: "portuguese" },
-                  ],
-                },
-                // call it a day
-                {
-                  text: [
-                    { part: "call it a day", type: "bold" },
-                    " ",
-                    {
-                      part: "encerrar por hoje/pelo dia (trabalho/expediente/tarefa)",
-                      type: "portuguese",
-                    },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "Let’s call it a day and go home."
-                    },
-                    { part: " Vamos encerrar por hoje e ir para casa.", type: "portuguese" },
-                  ],
-                },
-                // every now and then
-                {
-                  text: [
-                    { part: "every now and then", type: "bold" },
-                    " ",
-                    { part: "de vez em quando", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "Every now and then, I eat chocolate."
-                    },
-                    { part: " De vez em quando, eu como chocolate.", type: "portuguese" },
-                  ],
-                },
-                // every other day
-                {
-                  text: [
-                    { part: "every other day", type: "bold" },
-                    " ",
-                    { part: "dia sim, dia não", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "I go to the gym every other day."
-                    },
-                    { part: " Eu vou à academia dia sim, dia não.", type: "portuguese" },
-                  ],
-                },
-                // for the time being
-                {
-                  text: [
-                    { part: "for the time being", type: "bold" },
-                    " ",
-                    { part: "por enquanto", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "For the time being, we will stay here."
-                    },
-                    { part: " Por enquanto, vamos ficar aqui.", type: "portuguese" },
-                  ],
-                },
-                // from time to time
-                {
-                  text: [
-                    { part: "from time to time", type: "bold" },
-                    " ",
-                    { part: "de tempos em tempos", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "From time to time, she visits her grandparents."
-                    },
-                    { part: " De tempos em tempos, ela visita os avós.", type: "portuguese" },
-                  ],
-                },
-                // hard stop
-                {
-                  text: [
-                    { part: "hard stop", type: "bold" },
-                    " ",
-                    { part: "encerrar por exemplo um reunião em um tempo limite", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "We have a hard stop at 5 p.m."
-                    },
-                    { part: " Temos que encerrar às 5 da tarde", type: "portuguese" },
-                  ],
-                },
-                // if the shoe fits / if the cap fits
-                {
-                  text: [
-                    { part: "if the shoe fits", type: "bold" },
-                    " ",
-                    {
-                      ukFlag: true,
-                      part: "if the cap fits",
-                    },
-                    " ",
-                    {
-                      part: "se a carapuça serve",
-                      type: "portuguese",
-                    },
-                  ],
-                },
-                // in a nutshell
-                {
-                  text: [
-                    { part: "in a nutshell", type: "bold" },
-                    " ",
-                    {
-                      part: "em poucas palavras / resumindo",
-                      type: "portuguese",
-                    },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "In a nutshell, the plan didn’t work."
-                    },
-                    { part: " Resumindo, o plano não funcionou.", type: "portuguese" },
-                  ],
-                },
-                // in the long run
-                {
-                  text: [
-                    { part: "in the long run", type: "bold" },
-                    " ",
-                    { part: "a longo prazo", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "In the long run, this will save money."
-                    },
-                    { part: " A longo prazo, isso vai economizar dinheiro.", type: "portuguese" },
-                  ],
-                },
-                // in the meantime
-                {
-                  text: [
-                    { part: "in the meantime", type: "bold" },
-                    " ",
-                    { part: "enquanto isso", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "In the meantime, you can wait here."
-                    },
-                    { part: " Enquanto isso, você pode esperar aqui.", type: "portuguese" },
-                  ],
-                },
-                // no matter what
-                {
-                  text: [
-                    { part: "no matter what", type: "bold" },
-                    " ",
-                    { part: "não importa o que aconteça", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "I will support you no matter what."
-                    },
-                    { part: " Eu vou te apoiar não importa o que aconteça.", type: "portuguese" },
-                  ],
-                },
-                // on the other hand
-                {
-                  text: [
-                    { part: "on the other hand", type: "bold" },
-                    " ",
-                    { part: "por outro lado", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "I like coffee. On the other hand, she prefers tea."
-                    },
-                    { part: " Eu gosto de café. Por outro lado, ela prefere chá.", type: "portuguese" },
-                  ],
-                },
-                // once in a while
-                {
-                  text: [
-                    { part: "once in a while", type: "bold" },
-                    " ",
-                    { part: "de vez em quando", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "Once in a while, we go to the beach."
-                    },
-                    { part: " De vez em quando, nós vamos à praia.", type: "portuguese" },
-                  ],
-                },
-                // right away
-                {
-                  text: [
-                    { part: "right away", type: "bold" },
-                    " ",
-                    { part: "imediatamente", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "Please answer me right away."
-                    },
-                    { part: " Por favor, me responda imediatamente.", type: "portuguese" },
-                  ],
-                },
-                // so far, so good
-                {
-                  text: [
-                    { part: "so far, so good", type: "bold" },
-                    " ",
-                    { part: "até agora, tudo bem", type: "portuguese" },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "So far, so good. Everything is working."
-                    },
-                    { part: " Até agora, tudo bem. Tudo está funcionando.", type: "portuguese" },
-                  ],
-                },
-                // The shoemaker's son always goes barefoot
-                {
-                  text: [
-                    {
-                      part: "The shoemaker's son always goes barefoot",
-                      type: "bold",
-                    },
-                    " ",
-                    {
-                      part: "casa de ferreiro, espeto de pau",
-                      type: "portuguese",
-                    },
-                    " ",
-                    {
-                      bullet: true,
-                      part: "He is a mechanic, but his own car is always broken."
-                    },
-                    {
-                      part: " Ele é mecânico, mas o próprio carro dele está sempre quebrado.",
-                      type: "portuguese",
-                    },
-                  ],
-                },
+        <Section id="" label="Common Epxressions" heading={3}>
+          {/* all of a sudden */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/all-of-a-sudden.mp3",
+              englishTerm: "all of a sudden",
+              portugueseDefinition: "de repente",
+            })}
+          />
+          {/* All of a sudden, the lights went out. */}
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/all-of-a-sudden.mp3",
+                englishExample: ["All of a sudden, the lights went out."],
+                portugueseExample: ["De repente, as luzes se apagaram."],
+              }),
+            ]}
+          />
+          <LineBreak />
+          {/* // ... */}
+
+          {/* as a matter of fact */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "as a matter of fact",
+              portugueseDefinition: "na verdade",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["As a matter of fact, I don’t like coffee."],
+                portugueseExample: ["Na verdade, eu não gosto de café."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* as soon as possible */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "as soon as possible",
+              portugueseDefinition: "o mais rápido possível",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["Please call me as soon as possible."],
+                portugueseExample: [
+                  "Por favor, me ligue o mais rápido possível.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* at first */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "at first",
+              portugueseDefinition: "no começo / a princípio",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["At first, I didn’t understand the question."],
+                portugueseExample: ["No começo, eu não entendi a pergunta."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* at the end of the day */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "at the end of the day",
+              portugueseDefinition: "no fim das contas",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: [
+                  "At the end of the day, family is what matters most.",
+                ],
+                portugueseExample: [
+                  "No fim das contas, a família é o que mais importa.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* by the way */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "by the way",
+              portugueseDefinition: "a propósito",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["By the way, have you seen my keys?"],
+                portugueseExample: ["A propósito, você viu minhas chaves?"],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* call it a day */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "call it a day",
+              portugueseDefinition:
+                "encerrar por hoje/pelo dia (trabalho/expediente/tarefa)",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["Let’s call it a day and go home."],
+                portugueseExample: ["Vamos encerrar por hoje e ir para casa."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* every now and then */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "every now and then",
+              portugueseDefinition: "de vez em quando",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["Every now and then, I eat chocolate."],
+                portugueseExample: ["De vez em quando, eu como chocolate."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* every other day */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "every other day",
+              portugueseDefinition: "dia sim, dia não",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["I go to the gym every other day."],
+                portugueseExample: ["Eu vou à academia dia sim, dia não."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* for the time being */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "for the time being",
+              portugueseDefinition: "por enquanto",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["For the time being, we will stay here."],
+                portugueseExample: ["Por enquanto, vamos ficar aqui."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* from time to time */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "from time to time",
+              portugueseDefinition: "de tempos em tempos",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: [
+                  "From time to time, she visits her grandparents.",
+                ],
+                portugueseExample: ["De tempos em tempos, ela visita os avós."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* hard stop */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "hard stop",
+              portugueseDefinition:
+                "encerrar por exemplo uma reunião em um tempo limite",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["We have a hard stop at 5 p.m."],
+                portugueseExample: ["Temos que encerrar às 5 da tarde."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* if the shoe fits / if the cap fits */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: [
+                { part: "if the shoe fits", type: "bold" },
+                " ",
+                { part: "if the cap fits", ukFlag: true },
               ],
-            },
-          ]}
-        />
+              portugueseDefinition: "se a carapuça serve",
+            })}
+          />
+          <LineBreak />
+
+          {/* in a nutshell */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "in a nutshell",
+              portugueseDefinition: "em poucas palavras / resumindo",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["In a nutshell, the plan didn’t work."],
+                portugueseExample: ["Resumindo, o plano não funcionou."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* in the long run */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "in the long run",
+              portugueseDefinition: "a longo prazo",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["In the long run, this will save money."],
+                portugueseExample: [
+                  "A longo prazo, isso vai economizar dinheiro.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* in the meantime */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "in the meantime",
+              portugueseDefinition: "enquanto isso",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["In the meantime, you can wait here."],
+                portugueseExample: ["Enquanto isso, você pode esperar aqui."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* no matter what */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "no matter what",
+              portugueseDefinition: "não importa o que aconteça",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["I will support you no matter what."],
+                portugueseExample: [
+                  "Eu vou te apoiar não importa o que aconteça.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* on the other hand */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "on the other hand",
+              portugueseDefinition: "por outro lado",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: [
+                  "I like coffee. On the other hand, she prefers tea.",
+                ],
+                portugueseExample: [
+                  "Eu gosto de café. Por outro lado, ela prefere chá.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* once in a while */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "once in a while",
+              portugueseDefinition: "de vez em quando",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["Once in a while, we go to the beach."],
+                portugueseExample: ["De vez em quando, nós vamos à praia."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* right away */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "right away",
+              portugueseDefinition: "imediatamente",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["Please answer me right away."],
+                portugueseExample: ["Por favor, me responda imediatamente."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* so far, so good */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "so far, so good",
+              portugueseDefinition: "até agora, tudo bem",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["So far, so good. Everything is working."],
+                portugueseExample: [
+                  "Até agora, tudo bem. Tudo está funcionando.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* The shoemaker's son always goes barefoot */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/.mp3",
+              englishTerm: "The shoemaker's son always goes barefoot",
+              portugueseDefinition: "casa de ferreiro, espeto de pau",
+            })}
+          />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: [
+                  "He is a mechanic, but his own car is always broken.",
+                ],
+                portugueseExample: [
+                  "Ele é mecânico, mas o próprio carro dele está sempre quebrado.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+        </Section>
       </div>
     </>
   );
