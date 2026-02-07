@@ -2361,6 +2361,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+          <LineBreak />
           <Examples
             items={[
               example({
@@ -2391,6 +2392,7 @@ export default function PhoneticsLetters() {
             ]}
           />
           <LineBreak />
+
           {/* /ɑː/ */}
           <Phonetics
             value={[
@@ -2447,6 +2449,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+          <LineBreak />
           <Examples
             items={[
               // • Keep calm and hold my arm.
@@ -2549,6 +2552,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+          <LineBreak />
           <Examples
             items={[
               // • I ate a sandwich this morning.
@@ -2643,6 +2647,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+          <LineBreak />
           <Examples
             items={[
               // • Bananas contain a lot of potassium.
@@ -2875,6 +2880,7 @@ export default function PhoneticsLetters() {
           />
         </Section>
 
+        {/* Letters: 'ay': /eɪ/ */}
         <Section id="letters-ay" label="Letters: 'ay': /eɪ/'" heading={3}>
           <Phonetics
             value={[
