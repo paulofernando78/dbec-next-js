@@ -23,7 +23,6 @@ export default function Expression() {
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/all-of-a-sudden.mp3",
                 englishExample: ["All of a sudden, the lights went out."],
                 portugueseExample: ["De repente, as luzes se apagaram."],
               }),
@@ -35,15 +34,15 @@ export default function Expression() {
           {/* as a matter of fact */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/as-a-matter-of-fact.mp3",
               englishTerm: "as a matter of fact",
               portugueseDefinition: "na verdade",
             })}
           />
+          {/* As a matter of fact, I don’t like coffee. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["As a matter of fact, I don’t like coffee."],
                 portugueseExample: ["Na verdade, eu não gosto de café."],
               }),
@@ -54,15 +53,15 @@ export default function Expression() {
           {/* as soon as possible */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/as-soon-as-possible.mp3",
               englishTerm: "as soon as possible",
               portugueseDefinition: "o mais rápido possível",
             })}
           />
+          {/* Please call me as soon as possible. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["Please call me as soon as possible."],
                 portugueseExample: [
                   "Por favor, me ligue o mais rápido possível.",
@@ -75,15 +74,15 @@ export default function Expression() {
           {/* at first */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/at-first.mp3",
               englishTerm: "at first",
               portugueseDefinition: "no começo / a princípio",
             })}
           />
+          {/* At first, I didn’t understand the question. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["At first, I didn’t understand the question."],
                 portugueseExample: ["No começo, eu não entendi a pergunta."],
               }),
@@ -94,15 +93,15 @@ export default function Expression() {
           {/* at the end of the day */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/at-the-end-of-the-day.mp3",
               englishTerm: "at the end of the day",
               portugueseDefinition: "no fim das contas",
             })}
           />
+          {/* At the end of the day, family is what matters most. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: [
                   "At the end of the day, family is what matters most.",
                 ],
@@ -117,15 +116,15 @@ export default function Expression() {
           {/* by the way */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/by-the-way.mp3",
               englishTerm: "by the way",
               portugueseDefinition: "a propósito",
             })}
           />
+          {/* By the way, have you seen my keys? */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["By the way, have you seen my keys?"],
                 portugueseExample: ["A propósito, você viu minhas chaves?"],
               }),
@@ -136,16 +135,16 @@ export default function Expression() {
           {/* call it a day */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/call-it-a-day.mp3",
               englishTerm: "call it a day",
               portugueseDefinition:
                 "encerrar por hoje/pelo dia (trabalho/expediente/tarefa)",
             })}
           />
+          {/* Let’s call it a day and go home. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["Let’s call it a day and go home."],
                 portugueseExample: ["Vamos encerrar por hoje e ir para casa."],
               }),
@@ -156,15 +155,15 @@ export default function Expression() {
           {/* every now and then */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/every-now-and-then.mp3",
               englishTerm: "every now and then",
               portugueseDefinition: "de vez em quando",
             })}
           />
+          {/* Every now and then, I eat chocolate. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["Every now and then, I eat chocolate."],
                 portugueseExample: ["De vez em quando, eu como chocolate."],
               }),
@@ -175,15 +174,15 @@ export default function Expression() {
           {/* every other day */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/every-other-day.mp3",
               englishTerm: "every other day",
               portugueseDefinition: "dia sim, dia não",
             })}
           />
+          {/* I go to the gym every other day. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["I go to the gym every other day."],
                 portugueseExample: ["Eu vou à academia dia sim, dia não."],
               }),
@@ -194,15 +193,15 @@ export default function Expression() {
           {/* for the time being */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/for-the-time-being.mp3",
               englishTerm: "for the time being",
               portugueseDefinition: "por enquanto",
             })}
           />
+          {/* For the time being, we will stay here. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["For the time being, we will stay here."],
                 portugueseExample: ["Por enquanto, vamos ficar aqui."],
               }),
@@ -213,15 +212,15 @@ export default function Expression() {
           {/* from time to time */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/from-time-to-time.mp3",
               englishTerm: "from time to time",
               portugueseDefinition: "de tempos em tempos",
             })}
           />
+          {/* From time to time, she visits her grandparents. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: [
                   "From time to time, she visits her grandparents.",
                 ],
@@ -234,16 +233,16 @@ export default function Expression() {
           {/* hard stop */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/hard-stop.mp3",
               englishTerm: "hard stop",
               portugueseDefinition:
                 "encerrar por exemplo uma reunião em um tempo limite",
             })}
           />
+          {/* We have a hard stop at 5 p.m. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["We have a hard stop at 5 p.m."],
                 portugueseExample: ["Temos que encerrar às 5 da tarde."],
               }),
@@ -254,29 +253,47 @@ export default function Expression() {
           {/* if the shoe fits / if the cap fits */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
-              englishTerm: [
-                { part: "if the shoe fits", type: "bold" },
-                " ",
-                { part: "if the cap fits", ukFlag: true },
-              ],
+              audio: "/assets/audio/general/if-the-cap-fits.mp3",
+              englishTerm: [{ part: "if the cap fits", type: "bold" }, " "],
               portugueseDefinition: "se a carapuça serve",
             })}
+          />
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/if-the-shoe-fits.mp3",
+              englishTerm: [
+                { ukFlag: true },
+                { part: "if the shoe fits", type: "bold" },
+              ],
+            })}
+          />
+          {/* I wasn’t talking about you, but if the shoe fits... */}
+          <Examples
+            items={[
+              example({
+                englishExample: [
+                  "I wasn’t talking about you, but if the shoe fits...",
+                ],
+                portugueseExample: [
+                  "Eu não estava falando de você, mas se a carapuça serve...",
+                ],
+              }),
+            ]}
           />
           <LineBreak />
 
           {/* in a nutshell */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/in-a-nut-shell.mp3",
               englishTerm: "in a nutshell",
               portugueseDefinition: "em poucas palavras / resumindo",
             })}
           />
+          {/* In a nutshell, the plan didn’t work. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["In a nutshell, the plan didn’t work."],
                 portugueseExample: ["Resumindo, o plano não funcionou."],
               }),
@@ -287,15 +304,15 @@ export default function Expression() {
           {/* in the long run */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/in-the-long-run.mp3",
               englishTerm: "in the long run",
               portugueseDefinition: "a longo prazo",
             })}
           />
+          {/* In the long run, this will save money. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["In the long run, this will save money."],
                 portugueseExample: [
                   "A longo prazo, isso vai economizar dinheiro.",
@@ -308,15 +325,15 @@ export default function Expression() {
           {/* in the meantime */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/in-the-meantime.mp3",
               englishTerm: "in the meantime",
               portugueseDefinition: "enquanto isso",
             })}
           />
+          {/* In the meantime, you can wait here. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["In the meantime, you can wait here."],
                 portugueseExample: ["Enquanto isso, você pode esperar aqui."],
               }),
@@ -327,15 +344,15 @@ export default function Expression() {
           {/* no matter what */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/no-matter-what.mp3",
               englishTerm: "no matter what",
               portugueseDefinition: "não importa o que aconteça",
             })}
           />
+          {/* I will support you no matter what. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["I will support you no matter what."],
                 portugueseExample: [
                   "Eu vou te apoiar não importa o que aconteça.",
@@ -348,15 +365,15 @@ export default function Expression() {
           {/* on the other hand */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/on-the-other-hand.mp3",
               englishTerm: "on the other hand",
               portugueseDefinition: "por outro lado",
             })}
           />
+          {/* I like coffee. On the other hand, she prefers tea. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: [
                   "I like coffee. On the other hand, she prefers tea.",
                 ],
@@ -371,15 +388,15 @@ export default function Expression() {
           {/* once in a while */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/once-in-a-while.mp3",
               englishTerm: "once in a while",
               portugueseDefinition: "de vez em quando",
             })}
           />
+          {/* Once in a while, we go to the beach. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["Once in a while, we go to the beach."],
                 portugueseExample: ["De vez em quando, nós vamos à praia."],
               }),
@@ -390,15 +407,15 @@ export default function Expression() {
           {/* right away */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/right-away.mp3",
               englishTerm: "right away",
               portugueseDefinition: "imediatamente",
             })}
           />
+          {/* Please answer me right away. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["Please answer me right away."],
                 portugueseExample: ["Por favor, me responda imediatamente."],
               }),
@@ -409,15 +426,15 @@ export default function Expression() {
           {/* so far, so good */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/general/so-far-so-good.mp3",
               englishTerm: "so far, so good",
               portugueseDefinition: "até agora, tudo bem",
             })}
           />
+          {/* So far, so good. Everything is working. */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: ["So far, so good. Everything is working."],
                 portugueseExample: [
                   "Até agora, tudo bem. Tudo está funcionando.",
@@ -430,21 +447,20 @@ export default function Expression() {
           {/* The shoemaker's son always goes barefoot */}
           <Expressions
             value={expression({
-              audio: "/assets/audio/general/.mp3",
+              audio:
+                "/assets/audio/general/the-shoemakers-son-always-goes-barefoot.mp3",
               englishTerm: "The shoemaker's son always goes barefoot",
               portugueseDefinition: "casa de ferreiro, espeto de pau",
             })}
           />
+          {/* A: Isn’t their mother a seamstress? Why are their clothes always so tattered?" B: "Well, you know what they say — the shoemaker’s son always goes barefoot." */}
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/.mp3",
                 englishExample: [
-                  "He is a mechanic, but his own car is always broken.",
+                  '"A: Isn’t their mother a seamstress? Why are their clothes always so tattered?" B: "Well, you know what they say — the shoemaker’s son always goes barefoot."',
                 ],
-                portugueseExample: [
-                  "Ele é mecânico, mas o próprio carro dele está sempre quebrado.",
-                ],
+                portugueseExample: ["\"A: A mãe deles não é costureira? Por que as roupas deles estão sempre tão rasgadas?\" \"B: Bom, você sabe como dizem — casa de ferreiro, espeto de pau.\""],
               }),
             ]}
           />
