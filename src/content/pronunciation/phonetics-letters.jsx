@@ -4151,420 +4151,160 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
-          {/* ... or. ... */}
+          {/* dentist or. den(t)ist */}
           <Phonetics
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/dentist.mp3",
+                  parts: ["dentist"],
                 },
                 right: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/den(t)ist.mp3",
+                  parts: ["den(t)ist"],
                 },
               }),
             ]}
           />
-          {/* ... or. ... */}
+          {/* identify or. iden(t)ify */}
           <Phonetics
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/identify.mp3",
+                  parts: ["identify"],
                 },
                 right: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/iden(t)ify.mp3",
+                  parts: ["iden(t)ify"],
                 },
               }),
             ]}
           />
-          {/* ... or. ... */}
+          {/* identity or. iden(t)ity */}
           <Phonetics
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/identity.mp3",
+                  parts: ["identity"],
                 },
                 right: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/iden(t)ity.mp3",
+                  parts: ["iden(t)ity"],
                 },
               }),
             ]}
           />
-          {/* ... or. ... */}
+          {/* international or. international */}
           <Phonetics
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/international.mp3",
+                  parts: ["international"],
                 },
                 right: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/in(t)ernational.mp3",
+                  parts: ["in(t)ernational"],
                 },
               }),
             ]}
           />
-          {/* ... or. ... */}
+          {/* intervention or. intervention */}
           <Phonetics
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/intervention.mp3",
+                  parts: ["intervention"],
                 },
                 right: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/in(t)ervention.mp3",
+                  parts: ["in(t)ervention"],
                 },
               }),
             ]}
           />
-          {/* ... or. ... */}
+          {/* interrupt or. interrupt */}
           <Phonetics
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/interrupt.mp3",
+                  parts: ["interrupt"],
                 },
                 right: {
-                  audio: "/assets/audio/general/.mp3",
-                  parts: [""],
+                  audio: "/assets/audio/general/in(t)errupt.mp3",
+                  parts: ["in(t)errupt"],
                 },
               }),
             ]}
           />
+          <LineBreak />
+          <Line
+            value={[
+              ...note({
+                parts: [
+                  {
+                    icons: ["us"],
+                    part: "Flap 't'",
+                    type: "bold",
+                  },
+                ],
+              }),
+            ]}
+          />
+          <Phonetics
+            value={[
+              // bottom
+              ...wordRowList({
+                audio: "/assets/audio/general/bottom-us.mp3",
+                parts: ["bo", { part: "tt", type: "mark" }, "om"],
+                phonetics: "/ˈbɑː.t̬əm/",
+                pt: "fundo, parte de baixo; bunda",
+              }),
 
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // dentist
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/dentist.mp3",
-                        part: "dentist",
-                      },
-                      " ",
-                      {
-                        part: "or",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/den(t)ist.mp3",
-                        part: "den(t)ist",
-                      },
-                      " ",
-                      {
-                        part: "dentista",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // indentify
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/identify.mp3",
-                        part: "identify",
-                      },
-                      " ",
-                      {
-                        part: "or",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/iden(t)ify.mp3",
-                        part: "iden(t)ify",
-                      },
-                      " ",
-                      {
-                        part: "identificar",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // identity
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/identity.mp3",
-                        part: "identity",
-                      },
-                      " ",
-                      {
-                        part: "or",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/iden(t)ity.mp3",
-                        part: "iden(t)ity",
-                      },
-                      " ",
-                      {
-                        part: "identidade",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // international
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/international.mp3",
-                        part: "international",
-                      },
-                      " ",
-                      {
-                        part: "or",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/in(t)ernational.mp3",
-                        part: "in(t)ernational",
-                      },
-                      " ",
-                      {
-                        part: "internacional",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // international
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/intervention.mp3",
-                        part: "intervention",
-                      },
-                      " ",
-                      {
-                        part: "or",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/in(t)ervention.mp3",
-                        part: "in(t)ervention",
-                      },
-                      " ",
-                      {
-                        part: "intervenção",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // interrupt
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/interrupt.mp3",
-                        part: "interrupt",
-                      },
-                      " ",
-                      {
-                        part: "or",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/in(t)errupt.mp3",
-                        part: "in(t)errupt",
-                      },
-                      " ",
-                      {
-                        part: "interromper",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // Flap t
-                  {
-                    text: [
-                      {
-                        part: "Flap t",
-                        type: "bold",
-                      },
-                    ],
-                  },
-                  // bottom
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bottom-us.mp3",
-                        part: "bo",
-                      },
-                      {
-                        part: "tt",
-                        type: "mark",
-                      },
-                      {
-                        part: "om",
-                      },
-                      " ",
-                      {
-                        part: "/ˈbɑː.t̬əm/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "fundo, parte de baixo; bunda",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // butter
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/butter-us.mp3",
-                        part: "bu",
-                      },
-                      {
-                        part: "tt",
-                        type: "mark",
-                      },
-                      {
-                        part: "er",
-                      },
-                      " ",
-                      {
-                        part: "/ˈbʌt̬.ɚ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "manteiga",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // party
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/party-us.mp3",
-                        part: "par",
-                      },
-                      {
-                        part: "t",
-                        type: "mark",
-                      },
-                      {
-                        part: "y",
-                      },
-                      " ",
-                      {
-                        part: "/ˈpɑːr.t̬i/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "festa, grupo, partido político",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // photo
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/photo-us.mp3",
-                        part: "pho",
-                      },
-                      {
-                        part: "t",
-                        type: "mark",
-                      },
-                      {
-                        part: "o",
-                      },
-                      " ",
-                      {
-                        part: "/ˈfoʊ.t̬oʊ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "foto",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // latter
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/later-us.mp3",
-                        part: "la",
-                      },
-                      {
-                        part: "t",
-                        type: "mark",
-                      },
-                      {
-                        part: "er",
-                      },
-                      " ",
-                      {
-                        part: "/ˈleɪ.t̬ɚ/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "mais tarde (tempo)",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // water
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/water-us.mp3",
-                        part: "wa",
-                      },
-                      {
-                        part: "t",
-                        type: "mark",
-                      },
-                      {
-                        part: "er",
-                      },
-                      " ",
-                      {
-                        part: "/ˈwɔː.t̬ər/",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "água",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
+              // butter
+              ...wordRowList({
+                audio: "/assets/audio/general/butter-us.mp3",
+                parts: ["bu", { part: "tt", type: "mark" }, "er"],
+                phonetics: "/ˈbʌt̬.ɚ/",
+                pt: "manteiga",
+              }),
+
+              // party
+              ...wordRowList({
+                audio: "/assets/audio/general/party-us.mp3",
+                parts: ["par", { part: "t", type: "mark" }, "y"],
+                phonetics: "/ˈpɑːr.t̬i/",
+                pt: "festa, grupo, partido político",
+              }),
+
+              // photo
+              ...wordRowList({
+                audio: "/assets/audio/general/photo-us.mp3",
+                parts: ["pho", { part: "t", type: "mark" }, "o"],
+                phonetics: "/ˈfoʊ.t̬oʊ/",
+                pt: "foto",
+              }),
+
+              // later
+              ...wordRowList({
+                audio: "/assets/audio/general/later-us.mp3",
+                parts: ["la", { part: "t", type: "mark" }, "er"],
+                phonetics: "/ˈleɪ.t̬ɚ/",
+                pt: "mais tarde (tempo)",
+              }),
+
+              // water (último sem square)
+              ...wordRowList({
+                audio: "/assets/audio/general/water-us.mp3",
+                parts: ["wa", { part: "t", type: "mark" }, "er"],
+                phonetics: "/ˈwɔː.t̬ər/",
+                pt: "água",
+                square: false,
+              }),
             ]}
           />
         </Section>
