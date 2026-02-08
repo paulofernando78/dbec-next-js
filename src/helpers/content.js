@@ -93,11 +93,9 @@ export function baseToken({
 }
 
 // Exports
-
 export const audio = (src) => ({
   audio: src
 })
-
 export const instruction = (opts) =>
   baseToken({
     ...opts,
@@ -138,21 +136,16 @@ export const wordVariant = ({ left, right }) => [
     part: "or ",
     type: "connector",
   },
-  
   ...wordRowList({ ...right, square: false }),
 ];
-
-
 export const wordComparison = ({ left, right }) => [
   ...wordRowList({ ...left, square: false }),
   {
     part: "vs ",
     type: "connector",
   },
-  
   ...wordRowList({ ...right, square: false }),
 ];
-
 export const expression = (opts) =>
   baseToken({
     ...opts,
@@ -172,7 +165,6 @@ export const mark = (text) => ({
   part: text,
   type: "mark",
 });
-
 export const example = (opts) =>
   baseToken({
     ...opts,

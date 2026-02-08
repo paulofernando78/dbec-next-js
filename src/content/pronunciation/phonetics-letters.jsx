@@ -979,6 +979,16 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/ˈfɑːðər/",
               }),
+              // god
+              ...wordRowList({
+                audio: "/assets/audio/general/god.mp3",
+                parts: [
+                  { part: "g" },
+                  { part: "o", type: "mark" },
+                  { part: "d" },
+                ],
+                phonetics: "/ɡɑːd/",
+              }),
               // hot
               ...wordRowList({
                 audio: "/assets/audio/general/hot.mp3",
@@ -4264,7 +4274,6 @@ export default function PhoneticsLetters() {
                 phonetics: "/ˈbɑː.t̬əm/",
                 pt: "fundo, parte de baixo; bunda",
               }),
-
               // butter
               ...wordRowList({
                 audio: "/assets/audio/general/butter-us.mp3",
@@ -4272,7 +4281,6 @@ export default function PhoneticsLetters() {
                 phonetics: "/ˈbʌt̬.ɚ/",
                 pt: "manteiga",
               }),
-
               // party
               ...wordRowList({
                 audio: "/assets/audio/general/party-us.mp3",
@@ -4280,7 +4288,6 @@ export default function PhoneticsLetters() {
                 phonetics: "/ˈpɑːr.t̬i/",
                 pt: "festa, grupo, partido político",
               }),
-
               // photo
               ...wordRowList({
                 audio: "/assets/audio/general/photo-us.mp3",
@@ -4288,7 +4295,6 @@ export default function PhoneticsLetters() {
                 phonetics: "/ˈfoʊ.t̬oʊ/",
                 pt: "foto",
               }),
-
               // later
               ...wordRowList({
                 audio: "/assets/audio/general/later-us.mp3",
@@ -4296,7 +4302,6 @@ export default function PhoneticsLetters() {
                 phonetics: "/ˈleɪ.t̬ɚ/",
                 pt: "mais tarde (tempo)",
               }),
-
               // water (último sem square)
               ...wordRowList({
                 audio: "/assets/audio/general/water-us.mp3",
@@ -4457,749 +4462,398 @@ export default function PhoneticsLetters() {
           label="Letters 'a': /æ/ vs. 'e', 'ea': /e/"
           heading={3}
         >
-          <Line
+          <Phonetics
             value={[
-              {
-                icons: ["attention"],
-              },
-              {
-                audio:
-                  "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
-              },
-              "'a': ",
-              {
-                part: "/æ/",
-                type: "phonetics",
-              },
-              " ",
-              {
-                part: "vs.",
-                type: "connector",
-              },
-              " ",
-              {
-                audio:
-                  "/assets/audio/pronunciation/phonetics-letters/vowels/e.mp3",
-              },
-              "'e': ",
-              {
-                part: "/e/",
-                type: "phonetics",
-              },
+              ...wordComparison({
+                left: {
+                  audio:
+                    "/assets/audio/pronunciation/phonetics-letters/vowels/æ.mp3",
+                  phonetics: "/æ/",
+                },
+                right: {
+                  audio:
+                    "/assets/audio/pronunciation/phonetics-letters/vowels/e.mp3",
+                  phonetics: "/e/",
+                },
+              }),
             ]}
           />
+          <LineBreak />
           {/* and vs. end */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/and.mp3",
-                      },
-                      {
-                        part: "and",
-                      },
-                      " ",
-                      { part: "/ænd/", type: "phonetics" },
-                      " ",
-                      { part: "e", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/end.mp3",
-                        part: "end",
-                      },
-                      " ",
-                      { part: "/end/", type: "phonetics" },
-                      " ",
-                      { part: "acabar; fim", type: "portuguese" },
-                    ],
-                  },
-                  // Bread and butter.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bread-and-butter.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " Bread and butter.",
-                      "  ",
-                      { part: "Pão e manteiga.", type: "portuguese" },
-                    ],
-                  },
-                  // This is the end.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/this-is-the-end.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " This is the end.",
-                      " ",
-                      { part: "Isso é o fim.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/and.mp3",
+                  parts: [{ part: "a", type: "mark" }, "nd"],
+                  phonetics: "/ænd/",
+                  pt: "e",
+                },
+                right: {
+                  audio: "/assets/audio/general/end.mp3",
+                  parts: [{ part: "e", type: "mark" }, "nd"],
+                  phonetics: "/end/",
+                  pt: "acabar; fim",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              // • Bread and butter.
+              example({
+                audio: "/assets/audio/general/bread-and-butter.mp3",
+                englishExample: ["Bread and butter."],
+                portugueseExample: ["Pão e manteiga."],
+              }),
+              // • ...
+              example({
+                audio: "/assets/audio/general/this-is-the-end.mp3",
+                englishExample: ["This is the end."],
+                portugueseExample: ["Isso é o fim."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* bad vs. bed */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bad.mp3",
-                      },
-                      {
-                        part: "bad",
-                      },
-                      " ",
-                      { part: "/bæd/", type: "phonetics" },
-                      " ",
-                      { part: "ruim", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/bed.mp3",
-                        part: "bed",
-                      },
-                      " ",
-                      { part: "/bed/", type: "phonetics" },
-                      " ",
-                      { part: "cama", type: "portuguese" },
-                    ],
-                  },
-                  // I had a bad day.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i-had-a-bad-day.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " I had a bad day.",
-                      "  ",
-                      { part: "Eu tive um péssimo dia.", type: "portuguese" },
-                    ],
-                  },
-                  // he went to bed early.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/she-went-to-bed-early.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " She went to bed early.",
-                      " ",
-                      { part: "Ela foi para a cama cedo.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio:
+                    "/assets/audio/general/bad.mp3",
+                  parts: ["b", { part: "a", type: "mark" }, "d"],
+                  phonetics: "/bæd/",
+                },
+                right: {
+                  audio:
+                    "/assets/audio/general/bed.mp3",
+                  parts: ["b", { part: "e", type: "mark" }, "d"],
+                  phonetics: "/bed/",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              // • ...
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["I had a bad day."],
+                portugueseExample: ["Eu tive um péssimo dia."],
+              }),
+              // • ...
+              example({
+                audio: "/assets/audio/general/.mp3",
+                englishExample: ["She went to bed early."],
+                portugueseExample: ["Ela foi para a cama cedo."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
           {/* bat vs. bet */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/bat.mp3",
-                        part: "bat",
-                      },
-                      " ",
-                      { part: "/bæt/", type: "phonetics" },
-                      " ",
-                      { part: "morcego; taco", type: "portuguese" },
-                      {
-                        part: " vs. ",
-                        type: "connector",
-                      },
-                      // bet
-                      {
-                        audio: "/assets/audio/general/bet.mp3",
-                        part: "bet",
-                      },
-                      " ",
-                      { part: "/bet/", type: "phonetics" },
-                      " ",
-                      { part: "apostar", type: "portuguese" },
-                    ],
-                  },
-                  // He hit the ball with a bat.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/he-hit-the-ball-with-a-bat.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " He hit the ball with a bat.",
-                      ". ",
-                      {
-                        part: "Ele acertou a bola com um bastão.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // I bet you are right.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/i-bet-you-were-right.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " I bet you are right.",
-                      " ",
-                      {
-                        part: "Aposto que você está certo.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/bat.mp3",
+                  parts: ["b", { part: "a", type: "mark" }, "t"],
+                  phonetics: "/bæt/",
+                  pt: "morcego; taco",
+                },
+                right: {
+                  audio: "/assets/audio/general/bet.mp3",
+                  parts: ["b", { part: "e", type: "mark" }, "t"],
+                  phonetics: "/bet/",
+                  pt: "apostar",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio:
+                  "/assets/audio/general/he-hit-the-ball-with-a-bat.mp3",
+                englishExample: ["He hit the ball with a bat."],
+                portugueseExample: ["Ele acertou a bola com um bastão."],
+              }),
+              example({
+                audio:
+                  "/assets/audio/general/i-bet-you-were-right.mp3",
+                englishExample: ["I bet you are right."],
+                portugueseExample: ["Aposto que você está certo."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* dad vs. dead */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/dad.mp3",
-                      },
-                      {
-                        part: "dad",
-                      },
-                      " ",
-                      { part: "/dæd/", type: "phonetics" },
-                      " ",
-                      { part: "pai", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/dead.mp3",
-                        part: "dead",
-                      },
-                      " ",
-                      { part: "/ded/", type: "phonetics" },
-                      " ",
-                      { part: "morto(a)", type: "portuguese" },
-                    ],
-                  },
-                  // My dad is cool.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/my-dad-is-cool.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " My dad is cool.",
-                      "  ",
-                      { part: "Meu pai é legal.", type: "portuguese" },
-                    ],
-                  },
-                  // The plant is dead.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/the-plant-is-dead.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " The plant is dead.",
-                      " ",
-                      { part: "A planta está morta.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/dad.mp3",
+                  parts: ["d", { part: "a", type: "mark" }, "d"],
+                  phonetics: "/dæd/",
+                  pt: "pai",
+                },
+                right: {
+                  audio: "/assets/audio/general/dead.mp3",
+                  parts: ["d", { part: "ea", type: "mark" }, "d"],
+                  phonetics: "/ded/",
+                  pt: "morto(a)",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/my-dad-is-cool.mp3",
+                englishExample: ["My dad is cool."],
+                portugueseExample: ["Meu pai é legal."],
+              }),
+              example({
+                audio: "/assets/audio/general/the-plant-is-dead.mp3",
+                englishExample: ["The plant is dead."],
+                portugueseExample: ["A planta está morta."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* had vs. head */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/had.mp3",
-                      },
-                      {
-                        part: "had",
-                      },
-                      " ",
-                      { part: "/hæd/", type: "phonetics" },
-                      " ",
-                      { part: "teve, tinha", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/head.mp3",
-                        part: "head",
-                      },
-                      " ",
-                      { part: "/hed/", type: "phonetics" },
-                      " ",
-                      { part: "cabeça", type: "portuguese" },
-                    ],
-                  },
-                  // John had a good time.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/john-had-a-good-time.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " John had a good time.",
-                      "  ",
-                      { part: "John se divertiu.", type: "portuguese" },
-                    ],
-                  },
-                  // He hit his head.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/he-hit-his-head.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " He hit his head.",
-                      " ",
-                      { part: "Ele bateu a cabeça.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/had.mp3",
+                  parts: ["h", { part: "a", type: "mark" }, "d"],
+                  phonetics: "/hæd/",
+                  pt: "teve, tinha",
+                },
+                right: {
+                  audio: "/assets/audio/general/head.mp3",
+                  parts: ["h", { part: "ea", type: "mark" }, "d"],
+                  phonetics: "/hed/",
+                  pt: "cabeça",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio:
+                  "/assets/audio/general/john-had-a-good-time.mp3",
+                englishExample: ["John had a good time."],
+                portugueseExample: ["John se divertiu."],
+              }),
+              example({
+                audio: "/assets/audio/general/he-hit-his-head.mp3",
+                englishExample: ["He hit his head."],
+                portugueseExample: ["Ele bateu a cabeça."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* man vs. men */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/man.mp3",
-                      },
-                      {
-                        part: "man",
-                      },
-                      " ",
-                      { part: "/mæn/", type: "phonetics" },
-                      " ",
-                      { part: "homem", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/men.mp3",
-                        part: "men",
-                      },
-                      " ",
-                      { part: "/men/", type: "phonetics" },
-                      " ",
-                      { part: "homens", type: "portuguese" },
-                    ],
-                  },
-                  // That man is here.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/the-man-is-here.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " The man is here.",
-                      "  ",
-                      { part: "O homem está aqui.", type: "portuguese" },
-                    ],
-                  },
-                  // The men are here.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/the-men-are-here.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " The men are here.",
-                      "  ",
-                      { part: "Os homens estão aqui.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/man.mp3",
+                  parts: ["m", { part: "a", type: "mark" }, "n"],
+                  phonetics: "/mæn/",
+                  pt: "homem",
+                },
+                right: {
+                  audio: "/assets/audio/general/men.mp3",
+                  parts: ["m", { part: "e", type: "mark" }, "n"],
+                  phonetics: "/men/",
+                  pt: "homens",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/the-man-is-here.mp3",
+                englishExample: ["The man is here."],
+                portugueseExample: ["O homem está aqui."],
+              }),
+              example({
+                audio: "/assets/audio/general/the-men-are-here.mp3",
+                englishExample: ["The men are here."],
+                portugueseExample: ["Os homens estão aqui."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* pan vs. pen */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/pan.mp3",
-                      },
-                      {
-                        part: "pan",
-                      },
-                      " ",
-                      { part: "/pæn/", type: "phonetics" },
-                      " ",
-                      { part: "panela", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/pen.mp3",
-                        part: "pen",
-                      },
-                      " ",
-                      { part: "/pen/", type: "phonetics" },
-                      " ",
-                      { part: "caneta", type: "portuguese" },
-                    ],
-                  },
-                  // Put the eggs in the pan.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/put-the-eggs-in-the-pan.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " Put the eggs in the pan. ",
-                      {
-                        part: "Coloque os ovos na panela.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // I wrote with a pen.
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/you-can-use-this-pen.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " You can use this pen. ",
-                      {
-                        part: "Você pode usar esta caneta.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/pan.mp3",
+                  parts: ["p", { part: "a", type: "mark" }, "n"],
+                  phonetics: "/pæn/",
+                  pt: "panela",
+                },
+                right: {
+                  audio: "/assets/audio/general/pen.mp3",
+                  parts: ["p", { part: "e", type: "mark" }, "n"],
+                  phonetics: "/pen/",
+                  pt: "caneta",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio:
+                  "/assets/audio/general/put-the-eggs-in-the-pan.mp3",
+                englishExample: ["Put the eggs in the pan."],
+                portugueseExample: ["Coloque os ovos na panela."],
+              }),
+              example({
+                audio:
+                  "/assets/audio/general/you-can-use-this-pen.mp3",
+                englishExample: ["You can use this pen."],
+                portugueseExample: ["Você pode usar esta caneta."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* shad vs. shed */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/shad.mp3",
-                      },
-                      {
-                        part: "shad",
-                      },
-                      " ",
-                      { part: "/ʃæd/", type: "phonetics" },
-                      " ",
-                      { part: "peixe (tipo de arenque)", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/shed.mp3",
-                        part: "shed",
-                      },
-                      " ",
-                      { part: "/ʃed/", type: "phonetics" },
-                      " ",
-                      {
-                        part: "derramar, perder (pele, cabelo, lágrimas, etc.); galpão",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // The fisherman caught a shad.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/the-fisherman-caught-a-shad.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " The fisherman caught a shad.",
-                      "  ",
-                      {
-                        part: "O pescador pegou um peixe shad.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // Cats shed their fur every day.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/cats-shed-their-fur-every-day.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " Cats shed their fur every day.",
-                      " ",
-                      {
-                        part: "Gatos soltam pelos todos os dias.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // He built a shed in the yard.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/he-built-a-shed-in-the-yard.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " He built a shed in the yard.",
-                      " ",
-                      {
-                        part: "Ele construiu um galpão no quintal.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/shad.mp3",
+                  parts: ["sh", { part: "a", type: "mark" }, "d"],
+                  phonetics: "/ʃæd/",
+                  pt: "peixe (tipo de arenque)",
+                },
+                right: {
+                  audio: "/assets/audio/general/shed.mp3",
+                  parts: ["sh", { part: "e", type: "mark" }, "d"],
+                  phonetics: "/ʃed/",
+                  pt: "derramar; galpão",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio:
+                  "/assets/audio/general/the-fisherman-caught-a-shad.mp3",
+                englishExample: ["The fisherman caught a shad."],
+                portugueseExample: ["O pescador pegou um peixe shad."],
+              }),
+              example({
+                audio:
+                  "/assets/audio/general/cats-shed-their-fur-every-day.mp3",
+                englishExample: ["Cats shed their fur every day."],
+                portugueseExample: ["Gatos soltam pelos todos os dias."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* tan vs. ten */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/tan.mp3",
-                      },
-                      {
-                        part: "tan",
-                      },
-                      " ",
-                      { part: "/tæn/", type: "phonetics" },
-                      " ",
-                      { part: "bronzear; bronzeado", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/ten.mp3",
-                        part: "ten",
-                      },
-                      " ",
-                      { part: "/ten/", type: "phonetics" },
-                      " ",
-                      { part: "dez (numeral)", type: "portuguese" },
-                    ],
-                  },
-                  // She got a tan at the beach.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/she-got-a-tan-at-the-beach.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " She got a tan t the beach.",
-                      " ",
-                      {
-                        part: "Ela ficou bronzeada na praia.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // I got ten out of ten on the test.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/i-got-ten-out-of-ten-on-the-test.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " I got ten out of ten on the test.",
-                      { type: "mark", part: "" },
-                      "  ",
-                      {
-                        part: "Eu tirei nota máxima na prova.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/tan.mp3",
+                  parts: ["t", { part: "a", type: "mark" }, "n"],
+                  phonetics: "/tæn/",
+                  pt: "bronzeado; bronzear",
+                },
+                right: {
+                  audio: "/assets/audio/general/ten.mp3",
+                  parts: ["t", { part: "e", type: "mark" }, "n"],
+                  phonetics: "/ten/",
+                  pt: "dez",
+                },
+              }),
             ]}
           />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio:
+                  "/assets/audio/general/she-got-a-tan-at-the-beach.mp3",
+                englishExample: ["She got a tan at the beach."],
+                portugueseExample: ["Ela ficou bronzeada na praia."],
+              }),
+              example({
+                audio:
+                  "/assets/audio/general/i-got-ten-out-of-ten-on-the-test.mp3",
+                englishExample: ["I got ten out of ten on the test."],
+                portugueseExample: ["Eu tirei nota máxima na prova."],
+              }),
+            ]}
+          />
+          <LineBreak />
 
           {/* than vs. then */}
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/than.mp3",
-                      },
-                      {
-                        part: "than",
-                      },
-                      " ",
-                      { part: "/ðæn/", type: "phonetics" },
-                      " ",
-                      { part: "do que (comparativo)", type: "portuguese" },
-                      " ",
-                      {
-                        part: "vs.",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/then.mp3",
-                        part: "then",
-                      },
-                      " ",
-                      { part: " /ðen/", type: "phonetics" },
-                      " ",
-                      { part: "então; depois", type: "portuguese" },
-                    ],
-                  },
-                  // She is taller than me.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/she-is-taller-than-me.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " She is taller than me.",
-                      " ",
-                      {
-                        part: "Ela é mais alta do que eu.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // Finish your work,then.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/general/finish-your-work-then-you-can-rest.mp3",
-                      },
-                      {
-                        bullet: true,
-                      },
-                      " Finish your work, then you can rest.",
-                      "  ",
-                      {
-                        part: "Termine seu trabalho, depois você pode descansar.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/than.mp3",
+                  parts: ["th", { part: "a", type: "mark" }, "n"],
+                  phonetics: "/ðæn/",
+                  pt: "do que",
+                },
+                right: {
+                  audio: "/assets/audio/general/then.mp3",
+                  parts: ["th", { part: "e", type: "mark" }, "n"],
+                  phonetics: "/ðen/",
+                  pt: "então; depois",
+                },
+              }),
+            ]}
+          />
+          <LineBreak />
+          <Examples
+            items={[
+              example({
+                audio:
+                  "/assets/audio/general/she-is-taller-than-me.mp3",
+                englishExample: ["She is taller than me."],
+                portugueseExample: ["Ela é mais alta do que eu."],
+              }),
+              example({
+                audio:
+                  "/assets/audio/general/finish-your-work-then-you-can-rest.mp3",
+                englishExample: [
+                  "Finish your work, then you can rest.",
                 ],
-              },
+                portugueseExample: [
+                  "Termine seu trabalho, depois você pode descansar.",
+                ],
+              }),
             ]}
           />
         </Section>
@@ -5210,6 +4864,46 @@ export default function PhoneticsLetters() {
           label="Letters 'ea', 'ee': /iː/ vs. 'i': /ɪ/"
           heading={3}
         >
+          {/* ... vs. ... */}
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio:
+                    "/assets/audio/general/.mp3",
+                  parts: ["", { part: "", type: "mark" }, ""],
+                  phonetics: "//",
+                },
+                right: {
+                  audio:
+                    "/assets/audio/general/.mp3",
+                  parts: ["", { part: "", type: "mark" }, ""],
+                  phonetics: "//",
+                },
+              }),
+            ]}
+          />
+          <LineBreak />
+          <Examples
+            items={[
+              // • ...
+              example({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }],
+                englishExample: ["..."],
+                portugueseExample: ["..."],
+              }),
+              // • ...
+              example({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }],
+                englishExample: ["..."],
+                portugueseExample: ["..."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
           <Line
             value={[
               {
