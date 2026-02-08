@@ -121,9 +121,9 @@ export const word = (opts) =>
 
 export const wordRowList = (opts) =>
   baseToken({
-    ...opts,
     bullet: false,
     square: true,
+    ...opts,
   });
 
 export const wordColumnList = (opts) =>
@@ -132,14 +132,25 @@ export const wordColumnList = (opts) =>
     bullet: false,
   });
 
+export const wordVariant = ({ left, right }) => [
+  ...wordRowList({ ...left, square: false }),
+  {
+    part: "or ",
+    type: "connector",
+  },
+  
+  ...wordRowList({ ...right, square: false }),
+];
+
+
 export const wordComparison = ({ left, right }) => [
   ...wordRowList({ ...left, square: false }),
   {
     part: "vs ",
     type: "connector",
   },
+  
   ...wordRowList({ ...right, square: false }),
-  { lineBreak: true },
 ];
 
 export const expression = (opts) =>

@@ -11,6 +11,7 @@ import {
   wordRowList,
   wordComparison,
   example,
+  wordVariant,
 } from "../../helpers/content";
 
 export default function PhoneticsLetters() {
@@ -459,7 +460,6 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/kæt/",
               }),
-
               // can’t
               ...wordRowList({
                 audio: "/assets/audio/general/cant.mp3",
@@ -470,7 +470,6 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/kænt/",
               }),
-
               // dance
               ...wordRowList({
                 audio: "/assets/audio/general/dance.mp3",
@@ -481,7 +480,6 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/dæns/",
               }),
-
               // fat
               ...wordRowList({
                 audio: "/assets/audio/general/fat.mp3",
@@ -492,7 +490,6 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/fæt/",
               }),
-
               // fast
               ...wordRowList({
                 audio: "/assets/audio/general/fast.mp3",
@@ -503,7 +500,12 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/fæst/",
               }),
-
+              // last
+              ...wordRowList({
+                audio: "/assets/audio/general/last-us.mp3",
+                parts: ["l", { part: "a", type: "mark" }, "st"],
+                phonetics: "/fæst/",
+              }),
               // man
               ...wordRowList({
                 audio: "/assets/audio/general/man.mp3",
@@ -513,6 +515,27 @@ export default function PhoneticsLetters() {
                   { part: "n" },
                 ],
                 phonetics: "/mæn/",
+              }),
+              // task
+              ...wordRowList({
+                audio: "/assets/audio/general/task-us.mp3",
+                parts: ["t", { part: "a", type: "mark" }, "sk"],
+                phonetics: "/tæsk/",
+              }),
+            ]}
+          />
+          <LineBreak />
+          <Line
+            value={[
+              ...note({
+                parts: [
+                  "In British English, ",
+                  { part: "/æ/", type: "phonetics" },
+                  " often becomes ",
+                  { part: "/ɑː/", type: "phonetics" },
+                  " in certain words.",
+                ],
+                pt: "",
               }),
             ]}
           />
@@ -574,8 +597,20 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/fɑːst/",
               }),
+              ...wordRowList({
+                audio: "/assets/audio/general/last-uk.mp3",
+                parts: ["l", { part: "a", type: "mark" }, "st"],
+                phonetics: "/lɑːst/",
+              }),
+              // task
+              ...wordRowList({
+                audio: "/assets/audio/general/task-uk.mp3",
+                parts: ["t", { part: "a", type: "mark" }, "sk"],
+                phonetics: "/tæsk/",
+              }),
             ]}
           />
+
           <LineBreak />
           {/* /e/ */}
           <Phonetics
@@ -617,6 +652,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+
           {/* /ɪ/ */}
           <Phonetics
             value={[
@@ -649,6 +685,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+
           {/* /iː/ */}
           <Phonetics
             value={[
@@ -706,6 +743,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+
           <LineBreak />
           {/* /ə/ */}
           <Phonetics
@@ -754,6 +792,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+
           {/* uk */}
           <Phonetics
             variant="uk"
@@ -773,6 +812,7 @@ export default function PhoneticsLetters() {
             ]}
           />
           <LineBreak />
+
           {/* /ʌ/ */}
           <Phonetics
             value={[
@@ -849,6 +889,7 @@ export default function PhoneticsLetters() {
               }),
             ]}
           />
+
           {/* uk */}
           {/* /ʌ/ */}
           <Phonetics
@@ -4076,49 +4117,135 @@ export default function PhoneticsLetters() {
           label="Letter 't': /t/ and its sounds"
           heading={3}
         >
-   
+          <Line
+            value={[
+              ...note({
+                parts: [],
+                parts: [
+                  "",
+                  {
+                    part: "t' silent in",
+                    type: "bold",
+                  },
+                  " ",
+                  {
+                    part: "/nt/",
+                    type: "phonetics",
+                  },
+                ],
+              }),
+            ]}
+          />
+          {/* center or. cen(t)er */}
+          <Phonetics
+            value={[
+              ...wordVariant({
+                left: {
+                  audio: "/assets/audio/general/center.mp3",
+                  parts: ["center"],
+                },
+                right: {
+                  audio: "/assets/audio/general/cen(t)er.mp3",
+                  parts: ["cen(t)er"],
+                },
+              }),
+            ]}
+          />
+          {/* ... or. ... */}
+          <Phonetics
+            value={[
+              ...wordVariant({
+                left: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+                right: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+              }),
+            ]}
+          />
+          {/* ... or. ... */}
+          <Phonetics
+            value={[
+              ...wordVariant({
+                left: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+                right: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+              }),
+            ]}
+          />
+          {/* ... or. ... */}
+          <Phonetics
+            value={[
+              ...wordVariant({
+                left: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+                right: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+              }),
+            ]}
+          />
+          {/* ... or. ... */}
+          <Phonetics
+            value={[
+              ...wordVariant({
+                left: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+                right: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+              }),
+            ]}
+          />
+          {/* ... or. ... */}
+          <Phonetics
+            value={[
+              ...wordVariant({
+                left: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+                right: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+              }),
+            ]}
+          />
+          {/* ... or. ... */}
+          <Phonetics
+            value={[
+              ...wordVariant({
+                left: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+                right: {
+                  audio: "/assets/audio/general/.mp3",
+                  parts: [""],
+                },
+              }),
+            ]}
+          />
+
           <Paragraph
             blocks={[
               {
                 lines: [
-                  // 't' silent in /nt/
-                  {
-                    text: [
-                      {
-                        part: "'t' silent in",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "/nt/",
-                        type: "phonetics",
-                      },
-                    ],
-                  },
-                  // center
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/general/center.mp3",
-                        part: "center",
-                      },
-                      " ",
-                      {
-                        part: "or",
-                        type: "connector",
-                      },
-                      " ",
-                      {
-                        audio: "/assets/audio/general/cen(t)er.mp3",
-                        part: "cen(t)er",
-                      },
-                      " ",
-                      {
-                        part: "centro",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
                   // dentist
                   {
                     text: [
