@@ -460,7 +460,120 @@ export default function Expression() {
                 englishExample: [
                   '"A: Isn’t their mother a seamstress? Why are their clothes always so tattered?" B: "Well, you know what they say — the shoemaker’s son always goes barefoot."',
                 ],
-                portugueseExample: ["\"A: A mãe deles não é costureira? Por que as roupas deles estão sempre tão rasgadas?\" \"B: Bom, você sabe como dizem — casa de ferreiro, espeto de pau.\""],
+                portugueseExample: [
+                  '"A: A mãe deles não é costureira? Por que as roupas deles estão sempre tão rasgadas?" "B: Bom, você sabe como dizem — casa de ferreiro, espeto de pau."',
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* find a way */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/find-a-way.mp3",
+              englishTerm: "find a way",
+              portugueseDefinition: "dar um jeito; encontrar uma maneira; 'dar seus pulos'",
+            })}
+          />
+          {/* We will find a way to solve this problem. */}
+          <Examples
+            items={[
+              example({
+                englishExample: ["We will find a way to solve this problem."],
+                portugueseExample: [
+                  "Nós vamos dar um jeito de resolver esse problema.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* the main character */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/the-main-character.mp3",
+              englishTerm: "the main character",
+              portugueseDefinition:
+                "agir como se fosse o centro de tudo; se achar a última Coca-Cola do deserto",
+            })}
+          />
+          {/* The main character changes a lot during the story. */}
+          <Examples
+            items={[
+              example({
+                englishExample: [
+                  "He walks into every room like he’s the main character.",
+                ],
+                portugueseExample: [
+                  " Ele entra em todo lugar como se fosse a última Coca-Cola do deserto.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* keep your cool */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/keep-your-cool.mp3",
+              englishTerm: "keep your cool",
+              portugueseDefinition: "manter a calma / controle; 'segura a sua onda'",
+            })}
+          />
+          {/* Try to keep your cool during the meeting. */}
+          <Examples
+            items={[
+              example({
+                englishExample: ["Try to keep your cool during the meeting."],
+                portugueseExample: ["Tente manter a calma durante a reunião."],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* life catches up with you */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/life-catches-up-with-you.mp3",
+              englishTerm: "life catches up with you",
+              portugueseDefinition: "a vida cobra; a realidade chega",
+            })}
+          />
+          {/* Eventually, life catches up with you if you ignore your responsibilities. */}
+          <Examples
+            items={[
+              example({
+                englishExample: [
+                  "Eventually, life catches up with you if you ignore your responsibilities.",
+                ],
+                portugueseExample: [
+                  "Eventualmente, a vida cobra se você ignora suas responsabilidades.",
+                ],
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* that's a whole different story */}
+          <Expressions
+            value={expression({
+              audio: "/assets/audio/general/thats-a-whole-different-story.mp3",
+              englishTerm: "that's a whole different story",
+              portugueseDefinition:
+                "são outros quinhentos",
+            })}
+          />
+          {/* I like traveling alone, but living abroad is a whole different story. */}
+          <Examples
+            items={[
+              example({
+                englishExample: [
+                  "I like traveling alone, but living abroad is a whole different story.",
+                ],
+                portugueseExample: [
+                  "Eu gosto de viajar sozinho, mas morar no exterior já são outros quinhentos.",
+                ],
               }),
             ]}
           />
