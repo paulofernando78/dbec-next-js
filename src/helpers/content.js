@@ -103,10 +103,10 @@ export const instruction = (opts) =>
     square: false,
   });
 
-export const note = (opts) =>
+export const note = ({ icons = [], ...opts}) =>
   baseToken({
     ...opts,
-    icons: ["attention"],
+    icons: ["attention", ...icons],
     bullet: false,
     square: false,
   });

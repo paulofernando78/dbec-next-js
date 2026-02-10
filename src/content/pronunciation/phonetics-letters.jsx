@@ -950,6 +950,102 @@ export default function PhoneticsLetters() {
           />
           <LineBreak />
 
+          {/* /ɔː/ */}
+          <Phonetics
+            value={[
+              ...wordRowList({
+                audio:
+                  "/assets/audio/pronunciation/phonetics-letters/vowels/ɔ.mp3",
+                parts: [{ part: "/ɔː/", type: "phonetics" }],
+              }),
+              // all
+              ...wordRowList({
+                audio: "/assets/audio/general/all.mp3",
+                parts: [{ part: "a", type: "mark" }, "ll"],
+                phonetics: "/l/",
+              }),
+              // call
+              ...wordRowList({
+                audio: "/assets/audio/general/call.mp3",
+                parts: ["c", { part: "a", type: "mark" }, "ll"],
+                phonetics: "/kɔːl/",
+              }),
+              // caught
+              ...wordRowList({
+                audio: "/assets/audio/general/caught.mp3",
+                parts: ["c", { part: "augh", type: "mark" }, "t"],
+                phonetics: "/kɔːt/",
+              }),
+              // coffee
+              ...wordRowList({
+                audio: "/assets/audio/general/coffee.mp3",
+                parts: ["c", { part: "o", type: "mark" }, "ffee"],
+                phonetics: "/ˈkɔː.fi/",
+              }),
+              // daughter
+              ...wordRowList({
+                audio: "/assets/audio/general/daughter.mp3",
+                parts: ["d", { part: "au", type: "mark" }, "ghter"],
+                phonetics: "/ˈdɔː.t̬ɚ/",
+              }),
+              // dog
+              ...wordRowList({
+                audio: "/assets/audio/general/dog.mp3",
+                parts: [
+                  { part: "d" },
+                  { part: "o", type: "mark" },
+                  { part: "g" },
+                ],
+                phonetics: "/dɔːg/",
+              }),
+              // fog
+              ...wordRowList({
+                audio: "/assets/audio/general/fog.mp3",
+                parts: [
+                  { part: "f" },
+                  { part: "o", type: "mark" },
+                  { part: "g" },
+                ],
+                phonetics: "/fɔːg/",
+              }),
+              // frog
+              ...wordRowList({
+                audio: "/assets/audio/general/frog.mp3",
+                parts: [
+                  { part: "fr" },
+                  { part: "o", type: "mark" },
+                  { part: "g" },
+                ],
+                phonetics: "/frɔːg/",
+              }),
+              // law
+              ...wordRowList({
+                audio: "/assets/audio/general/law.mp3",
+                parts: [{ part: "l" }, { part: "aw", type: "mark" }],
+                phonetics: "/lɔː/",
+              }),
+              // raw
+              ...wordRowList({
+                audio: "/assets/audio/general/raw.mp3",
+                parts: [{ part: "r" }, { part: "aw", type: "mark" }],
+                phonetics: "/rɔː/",
+              }),
+              // talk
+              ...wordRowList({
+                audio: "/assets/audio/general/talk.mp3",
+                parts: ["t", { part: "a", type: "mark" }, "lk"],
+                phonetics: "/tɔːk/",
+              }),
+              // walk
+              ...wordRowList({
+                audio: "/assets/audio/general/walk.mp3",
+                parts: ["w", { part: "a", type: "mark" }, "lk"],
+                phonetics: "/wɔːk/",
+              }),
+            ]}
+          />
+          <LineBreak />
+
           {/* /ɑː/ */}
           <Phonetics
             value={[
@@ -968,6 +1064,16 @@ export default function PhoneticsLetters() {
                   { part: "lm" },
                 ],
                 phonetics: "/kɑːm/",
+              }),
+              // cot
+              ...wordRowList({
+                // audio: "/assets/audio/general/cot.mp3",
+                parts: [
+                  { part: "c" },
+                  { part: "o", type: "mark" },
+                  { part: "t" },
+                ],
+                phonetics: "/kɑːt/",
               }),
               // father
               ...wordRowList({
@@ -1097,85 +1203,16 @@ export default function PhoneticsLetters() {
           />
           <LineBreak />
 
-          {/* /ɔː/ */}
-          <Phonetics
+          <Line
             value={[
-              ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics-letters/vowels/ɔ.mp3",
-                parts: [{ part: "/ɔː/", type: "phonetics" }],
-              }),
-              // all
-              ...wordRowList({
-                audio: "/assets/audio/general/all.mp3",
-                parts: [{ part: "a", type: "mark" }, "ll"],
-                phonetics: "/ɑːl/",
-              }),
-              // ...
-              ...wordRowList({
-                audio: "/assets/audio/general/call.mp3",
-                parts: ["ca", { part: "ll", type: "mark" }],
-                phonetics: "/kɔːl/",
-              }),
-              // daughter
-              ...wordRowList({
-                audio: "/assets/audio/general/daughter.mp3",
-                parts: ["d", { part: "au", type: "mark" }, "ghter"],
-                phonetics: "/ˈdɔː.t̬ɚ/",
-              }),
-              // dog
-              ...wordRowList({
-                audio: "/assets/audio/general/dog.mp3",
+              ...note({
                 parts: [
-                  { part: "d" },
-                  { part: "o", type: "mark" },
-                  { part: "g" },
+                  "In the western United States, the ",
+                  { part: "/ɔː/", type: "phonetics" },
+                  "sound is usually merged with the ",
+                  { part: "/ɑː/", type: "phonetics" },
+                  " sound.",
                 ],
-                phonetics: "/dɔːg/",
-              }),
-              // fog
-              ...wordRowList({
-                audio: "/assets/audio/general/fog.mp3",
-                parts: [
-                  { part: "f" },
-                  { part: "o", type: "mark" },
-                  { part: "g" },
-                ],
-                phonetics: "/fɔːg/",
-              }),
-              // frog
-              ...wordRowList({
-                audio: "/assets/audio/general/frog.mp3",
-                parts: [
-                  { part: "fr" },
-                  { part: "o", type: "mark" },
-                  { part: "g" },
-                ],
-                phonetics: "/frɔːg/",
-              }),
-              // law
-              ...wordRowList({
-                audio: "/assets/audio/general/law.mp3",
-                parts: [{ part: "l" }, { part: "aw", type: "mark" }],
-                phonetics: "/lɔː/",
-              }),
-              // raw
-              ...wordRowList({
-                audio: "/assets/audio/general/raw.mp3",
-                parts: [{ part: "r" }, { part: "aw", type: "mark" }],
-                phonetics: "/rɔː/",
-              }),
-              // talk
-              ...wordRowList({
-                audio: "/assets/audio/general/talk.mp3",
-                parts: ["t", { part: "a", type: "mark" }, "lk"],
-                phonetics: "/tɔːk/",
-              }),
-              // walk
-              ...wordRowList({
-                audio: "/assets/audio/general/walk.mp3",
-                parts: ["w", { part: "a", type: "mark" }, "lk"],
-                phonetics: "/wɔːk/",
               }),
             ]}
           />
@@ -4527,7 +4564,6 @@ export default function PhoneticsLetters() {
                   parts: ["b", { part: "a", type: "mark" }, "d"],
                   phonetics: "/bæd/",
                   portugueseExample: "ruim, péssimo",
-                  
                 },
                 right: {
                   audio: "/assets/audio/general/bed.mp3",
@@ -5174,18 +5210,14 @@ export default function PhoneticsLetters() {
           id="letters-oo-vs-u"
           label="Letters 'oo' /uː/ vs. 'u' /ʊ/"
           heading={3}
-        >
-    
-        </Section>
+        ></Section>
 
         {/*  Letters 'sh': /ʃ/ vs. 'ch': /tʃ/ */}
         <Section
           id="letters-sh-vs-ch"
           label="Letters 'sh': /ʃ/ vs. 'ch': /tʃ/"
           heading={3}
-        >
-    
-        </Section>
+        ></Section>
       </div>
     </>
   );
