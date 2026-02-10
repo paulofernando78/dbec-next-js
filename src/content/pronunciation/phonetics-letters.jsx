@@ -1055,6 +1055,16 @@ export default function PhoneticsLetters() {
                   "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                 parts: [{ part: "/ɑː/", type: "phonetics" }],
               }),
+              // bottom
+              ...wordRowList({
+                audio: "/assets/audio/general/bottom.mp3",
+                parts: [
+                  { part: "b" },
+                  { part: "o", type: "mark" },
+                  { part: "ttom" },
+                ],
+                phonetics: "/ˈbɑː.t̬əm/",
+              }),
               // calm
               ...wordRowList({
                 audio: "/assets/audio/general/calm.mp3",
@@ -1114,6 +1124,16 @@ export default function PhoneticsLetters() {
                   { part: "b" },
                 ],
                 phonetics: "/dʒɑːb/",
+              }),
+              // lock
+              ...wordRowList({
+                audio: "/assets/audio/general/lock.mp3",
+                parts: [
+                  { part: "l" },
+                  { part: "o", type: "mark" },
+                  { part: "ck" },
+                ],
+                phonetics: "/lɑːk/",
               }),
               // lot
               ...wordRowList({
@@ -1176,6 +1196,12 @@ export default function PhoneticsLetters() {
                 audio: "/assets/audio/general/shop.mp3",
                 parts: ["sh", { part: "o", type: "mark" }, "p"],
                 phonetics: "/ʃɑːp/",
+              }),
+              // sock
+              ...wordRowList({
+                audio: "/assets/audio/general/sock.mp3",
+                parts: ["s", { part: "o", type: "mark" }, "ck"],
+                phonetics: "/sɑːk/",
               }),
               // spa
               ...wordRowList({
