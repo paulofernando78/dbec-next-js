@@ -982,6 +982,12 @@ export default function PhoneticsLetters() {
                 parts: ["c", { part: "augh", type: "mark" }, "t"],
                 phonetics: "/kɔːt/",
               }),
+              // claw
+              ...wordRowList({
+                audio: "/assets/audio/general/claw.mp3",
+                parts: ["cl", { part: "aw", type: "mark" }],
+                phonetics: "/klɔː/",
+              }),
               // coffee
               ...wordRowList({
                 audio: "/assets/audio/general/coffee.mp3",
@@ -1004,6 +1010,14 @@ export default function PhoneticsLetters() {
                 ],
                 phonetics: "/dɔːg/",
               }),
+              // draw
+              ...wordRowList({
+                audio: "/assets/audio/general/draw.mp3",
+                parts: ["dr",
+                  { part: "aw", type: "mark" },
+                ],
+                phonetics: "/drɔː/",
+              }),
               // fog
               ...wordRowList({
                 audio: "/assets/audio/general/fog.mp3",
@@ -1013,6 +1027,15 @@ export default function PhoneticsLetters() {
                   { part: "g" },
                 ],
                 phonetics: "/fɔːg/",
+              }),
+              // jaw
+              ...wordRowList({
+                audio: "/assets/audio/general/jaw.mp3",
+                parts: ["j",
+                  { part: "j" },
+                  { part: "aw", type: "mark" },
+                ],
+                phonetics: "//dʒɔː/",
               }),
               // frog
               ...wordRowList({
@@ -1035,6 +1058,12 @@ export default function PhoneticsLetters() {
                 audio: "/assets/audio/general/raw.mp3",
                 parts: [{ part: "r" }, { part: "aw", type: "mark" }],
                 phonetics: "/rɔː/",
+              }),
+              // saw
+              ...wordRowList({
+                audio: "/assets/audio/general/saw.mp3",
+                parts: [{ part: "s" }, { part: "aw", type: "mark" }],
+                phonetics: "/sɔː/",
               }),
               // talk
               ...wordRowList({
@@ -2900,13 +2929,13 @@ export default function PhoneticsLetters() {
                 audio:
                   "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                 parts: [{ part: "'aw'", type: "bold" }],
-                phonetics: "/ɑː/",
+                phonetics: "/ɔː/",
               }),
               // law
               ...wordRowList({
                 audio: "/assets/audio/general/law.mp3",
                 parts: ["l", { part: "aw", type: "mark" }],
-                phonetics: "/lɑː/",
+                phonetics: "/lɔː/",
                 pt: "lei",
               }),
 
@@ -2914,7 +2943,7 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/saw.mp3",
                 parts: ["s", { part: "aw", type: "mark" }],
-                phonetics: "/sɑː/",
+                phonetics: "/sɔː/",
                 pt: "viu / serra",
               }),
 
@@ -2922,7 +2951,7 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/draw.mp3",
                 parts: ["dr", { part: "aw", type: "mark" }],
-                phonetics: "/drɑː/",
+                phonetics: "/drɔː/",
                 pt: "desenhar / puxar / empatar",
               }),
 
@@ -2930,7 +2959,7 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/raw.mp3",
                 parts: ["r", { part: "aw", type: "mark" }],
-                phonetics: "/rɑː/",
+                phonetics: "/rɔː/",
                 pt: "cru",
               }),
 
@@ -2938,7 +2967,7 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/claw.mp3",
                 parts: ["cl", { part: "aw", type: "mark" }],
-                phonetics: "/klɑː/",
+                phonetics: "/klɔː/",
                 pt: "garra",
               }),
 
@@ -2946,7 +2975,7 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/jaw.mp3",
                 parts: ["j", { part: "aw", type: "mark" }],
-                phonetics: "/dʒɑː/",
+                phonetics: "/dʒɔː/",
                 pt: "mandíbula",
               }),
             ]}
@@ -2958,7 +2987,7 @@ export default function PhoneticsLetters() {
                 audio:
                   "/assets/audio/pronunciation/phonetics-letters/vowels/ɑ.mp3",
                 parts: [{ part: "'awe'", type: "bold" }],
-                phonetics: "/ɑː/",
+                phonetics: "/ɔː/",
               }),
               // awe
               ...wordRowList({
