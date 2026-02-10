@@ -964,6 +964,12 @@ export default function PhoneticsLetters() {
                 parts: [{ part: "a", type: "mark" }, "ll"],
                 phonetics: "/l/",
               }),
+              // bought
+              ...wordRowList({
+                audio: "/assets/audio/general/bought.mp3",
+                parts: ["b", { part: "ough", type: "mark" }, "t"],
+                phonetics: "/bɔːt/",
+              }),
               // call
               ...wordRowList({
                 audio: "/assets/audio/general/call.mp3",
