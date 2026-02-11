@@ -109,6 +109,12 @@ export const instruction = (opts) =>
     bullet: false,
     square: false,
   });
+export const text = ({ icons = [], ...opts}) =>
+  baseToken({
+    ...opts,
+    bullet: false,
+    square: false,
+  });
 
 export const note = ({ icons = [], ...opts}) =>
   baseToken({
@@ -160,12 +166,6 @@ export const expression = (opts) =>
     square: false,
   });
 
-export const line = (parts) =>
-  baseToken({
-    parts: Array.isArray(parts) ? parts : [parts],
-    bullet: false,
-    square: false,
-  });
 
 
 export const mark = (text) => ({

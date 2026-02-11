@@ -1,9 +1,12 @@
 import styles from "./page.module.css";
 
-import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Paragraph } from "@/components/molecules/Paragraph";
-import { Audio } from "@/components/atoms/Audio";
 import Image from "next/image";
+import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Paragraph } from "@/components/molecules/Paragraph";
+import { Line } from "@/components/molecules/Line";
+import { Audio } from "@/components/atoms/Audio";
+import { note, text } from "@/helpers/content";
 
 const emojis = [
   {
@@ -360,46 +363,47 @@ export default function Home() {
       <Whiteboard title="Home Page" />
       <div className="line-break">
         <>
-          <Paragraph
-            blocks={[
-              {
-                audioPlayer: "/assets/audio/home/welcome.mp3",
-                lines: [
-                  {
-                    text: [
-                      "Hey there! Welcome to ",
-                      {
-                        part: "DAILY BASIS ENGLISH COURSE",
-                        type: "bold",
-                      },
-                      " website. Here, you’ll find a lot of interesting materials. Please, use it wisely. ",
-                    ],
-                    lineBreak: true,
-                  },
+          <Line
+            value={[
+              ...note({
+                parts: [
+                  "Site is under construction ",
                 ],
-              },
-              {
-                audioPlayer: "/assets/audio/home/below.mp3",
-                lines: [
-                  {
-                    text: [
-                      "Below, you can listen to some adjectives that describe how you’re feeling.",
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/home/feeling.mp3",
-                        part: "How are you feeling today?",
-                      },
-                    ],
-                  },
-                ],
-              },
+              }),
             ]}
           />
-          <p></p>
+          <Line
+            value={[
+              ...text({
+                audio: "/assets/audio/home/welcome.mp3",
+                parts: [
+                  "Hey there! Welcome to, ",
+                  { part: "DAILY BASIS ENGLISH COURSE", type: "bold" },
+                  " website. Here, you’ll find a lot of interesting materials. Please, use it wisely. ",
+                ],
+              }),
+            ]}
+          />
+          <Line
+            value={[
+              ...text({
+                audio: "/assets/audio/home/below.mp3",
+                parts: [
+                  "Below, you can listen to some adjectives that describe how you’re feeling.",
+                ],
+              }),
+            ]}
+          />
+          <Line
+            value={[
+              ...text({
+                audio: "/assets/audio/home/feeling.mp3",
+                parts: [
+                  "How are you feeling today?",
+                ],
+              }),
+            ]}
+          />
           <div className={styles.wrapper}>
             {emojis.map((emoji, emojiIndex) => (
               <div key={emojiIndex} className={`imgs ${styles.innerWrapper}`}>

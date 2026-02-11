@@ -48,7 +48,7 @@ export default function Blank() {
         <Section id="stone-phase" label="Stone Phase" heading={3}>
           <Line
             value={[
-              ...instruction({
+              ...note({
                 parts: [
                   "After collecting stones we can craft stone tools like:",
                   { part: "", type: "" },
