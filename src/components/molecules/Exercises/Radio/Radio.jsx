@@ -37,7 +37,6 @@ export const Radio = ({ exercise = {} }) => {
   };
 
   return (
-    <>
       <div className="line-break">
         <p>
           {exercise.audio && <Audio src={exercise.audio} />}
@@ -92,11 +91,11 @@ export const Radio = ({ exercise = {} }) => {
         <span>
           Score: {totalScore} out of {questions.length}
         </span>
+      
         <div className="button-wrapper">
           <Button icon={<Check />} onToggle={handleCheck} />
           <Button icon={<Redo />} onToggle={handleReset} />
         </div>
       </div>
-    </>
   );
 };

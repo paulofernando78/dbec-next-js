@@ -10,6 +10,7 @@ export function baseToken({
   portugueseDefinition,
   englishExample,
   portugueseExample,
+  portugueseTranslation,
   connector,
   square = true,
   lineBreak,
@@ -76,6 +77,11 @@ export function baseToken({
   }
   blocks.push(" ");
 
+  if (portugueseTranslation) {
+    blocks.push({ part: portugueseTranslation, type: "portuguese" });
+  }
+  blocks.push(" ");
+
   if (connector) {
     blocks.push({ part: connector, type: "connector" });
   }
@@ -100,6 +106,7 @@ export const instruction = (opts) =>
   baseToken({
     ...opts,
     icons: ["attention"],
+    bullet: false,
     square: false,
   });
 

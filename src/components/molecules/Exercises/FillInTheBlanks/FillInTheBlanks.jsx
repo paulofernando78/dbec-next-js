@@ -57,7 +57,7 @@ export const FillInTheBlanks = ({ exercise }) => {
   }, 0);
 
   return (
-    <>
+    <div className="line-break">
       <p>
         <Bold>{exercise.instructions}</Bold>
       </p>
@@ -116,6 +116,6 @@ export const FillInTheBlanks = ({ exercise }) => {
         <Button icon={<Check />} onToggle={handleCheck} />
         <Button icon={<Redo />} onToggle={handleReset} />
       </div>
-    </>
+    </div>
   );
 };

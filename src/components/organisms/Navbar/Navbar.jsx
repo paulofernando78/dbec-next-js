@@ -315,16 +315,15 @@ const links = [
   //     },
   //   ],
   // },
-  // // Games
-  // {
-  //   title: "Games",
-  //   links: [
-  //     {
-  //       href: "/games/minecraft",
-  //       label: "Minecraft",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Games",
+    links: [
+      {
+        href: "/games/minecraft",
+        label: "Minecraft",
+      },
+    ],
+  },
 ];
 
 export default function NavBar() {

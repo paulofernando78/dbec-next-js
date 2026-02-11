@@ -1,68 +1,44 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { LineBreak } from "@/components/atoms/LineBreak";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
-import { Paragraph } from "@/components/molecules/Paragraph";
+import { Line } from "@/components/molecules/Line";
+import { Examples } from "@/components/molecules/Examples";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
+import { note, example } from "@/helpers/content";
 
 export default function Blank() {
   return (
     <>
       <Whiteboard title="Reference" subtitle="blank" />
       <div className="line-break">
-        <Paragraph
-          blocks={[
-            {
-              lines: [
-                {
-                  text: [
-                    "",
-                    {
-                      part: "...",
-                      type: "",
-                    },
-                    "",
-                  ],
-                },
-              ],
-            },
-          ]}
-        />
         <Contents
           items={[
             { href: "...", label: "..." },
             { href: "exerises", label: "Exercises" },
           ]}
         />
-
         <Section id="..." label="..." heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  // ...
-                  {
-                    text: [
-                      { part: "word", type: "bold" },
-                      " ",
-                      { part: "meaning", type: "portuguese" },
-                      " ",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        bullet: true,
-                        part: "example",
-                      },
-                      { part: " example", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
+          <Line
+            value={[
+              ...note({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }],
+                pt: "",
+              }),
+            ]}
+          />
+          <LineBreak />
+          <Examples
+            items={[
+              // • Example sentence
+              example({
+                audio: "/assets/audio/general/.mp3",
+                parts: ["", { part: "", type: "" }],
+                englishExample: "",
+                portugueseExample: "",
+              }),
             ]}
           />
         </Section>
@@ -83,6 +59,7 @@ export default function Blank() {
               ],
             }}
           />
+          <LineBreak />
           <FillInTheBlanks
             exercise={{
               instructions: "1. Fill in the blanks with the correct answer.",
