@@ -515,7 +515,7 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/last-us.mp3",
                 parts: ["l", { part: "a", type: "mark" }, "st"],
-                phonetics: "/fæst/",
+                phonetics: "/læst/",
               }),
               // man
               ...wordRowList({
@@ -719,7 +719,7 @@ export default function PhoneticsLetters() {
                   { part: "e", type: "mark" },
                   { part: "y" },
                 ],
-                phonetics: "//",
+                phonetics: "/kiː/",
               }),
               // sea
               ...wordRowList({
@@ -865,7 +865,7 @@ export default function PhoneticsLetters() {
                   { part: "u", type: "mark" },
                   { part: "p" },
                 ],
-                phonetics: "/bʌt/",
+                phonetics: "/kʌp/",
               }),
               // hulk
               ...wordRowList({
@@ -934,7 +934,7 @@ export default function PhoneticsLetters() {
                   { part: "u", type: "mark" },
                   { part: "p" },
                 ],
-                phonetics: "/bʌt/",
+                phonetics: "/kʌp/",
               }),
               // son
               ...wordRowList({
@@ -1123,7 +1123,7 @@ export default function PhoneticsLetters() {
               }),
               // cot
               ...wordRowList({
-                // audio: "/assets/audio/general/cot.mp3",
+                audio: "/assets/audio/general/cot.mp3",
                 parts: [
                   { part: "c" },
                   { part: "o", type: "mark" },
