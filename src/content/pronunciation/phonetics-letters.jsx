@@ -6165,7 +6165,8 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/they-are-swimming-in-the-pool.mp3",
+                audio:
+                  "/assets/audio/general/they-are-swimming-in-the-pool.mp3",
                 englishExample: "They are swimming in the pool.",
                 portugueseExample: "Eles estão nadando na piscina.",
               }),
@@ -6205,7 +6206,8 @@ export default function PhoneticsLetters() {
                 portugueseExample: "Ele está usando um terno.",
               }),
               example({
-                audio: "/assets/audio/general/the-chimney-was-covered-in-soot.mp3",
+                audio:
+                  "/assets/audio/general/the-chimney-was-covered-in-soot.mp3",
                 englishExample: "The chimney was covered in soot.",
                 portugueseExample: "A chaminé estava coberta de fuligem.",
               }),
@@ -6241,7 +6243,8 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               example({
-                audio: "/assets/audio/general/dont-forget-to-wash-your-hands.mp3",
+                audio:
+                  "/assets/audio/general/dont-forget-to-wash-your-hands.mp3",
                 englishExample: "Don’t forget to wash your hands.",
                 portugueseExample: "Eu lavo minhas mãos.",
               }),
@@ -6319,6 +6322,117 @@ export default function PhoneticsLetters() {
                 audio: "/assets/audio/general/this-shirt-is-cheap.mp3",
                 englishExample: "This shirt is cheap.",
                 portugueseExample: "Esta camisa é barata.",
+              }),
+            ]}
+          />
+        </Section>
+
+        {/* Letters 't': /t/ vs. 'ch': /tʃ/ */}
+        <Section
+          id="letters-t-vs-ch"
+          label="Letters 't': /t/ vs. 'ch': /tʃ/"
+          heading={3}
+        >
+          {/* tick vs chick */}
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/tick.mp3",
+                  parts: [mark("t"), "ick"],
+                  phonetics: "/tɪk/",
+                },
+                right: {
+                  audio: "/assets/audio/general/chick.mp3",
+                  parts: [mark("ch"), "ick"],
+                  phonetics: "/tʃɪk/",
+                },
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/the-clock-ticks-every-second.mp3",
+                englishExample: "The clock ticks every second.",
+                portugueseExample: "O relógio marca cada segundo.",
+              }),
+              example({
+                audio: "/assets/audio/general/the-chick-is-small.mp3",
+                englishExample: "The chick is small.",
+                portugueseExample: "O pintinho é pequeno.",
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* tin vs chin */}
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/tin.mp3",
+                  parts: [mark("t"), "in"],
+                  phonetics: "/tɪn/",
+                },
+                right: {
+                  audio: "/assets/audio/general/chin.mp3",
+                  parts: [mark("ch"), "in"],
+                  phonetics: "/tʃɪn/",
+                },
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/the-box-is-made-of-tin.mp3",
+                englishExample: "The box is made of tin.",
+                portugueseExample: "A caixa é feita de estanho.",
+              }),
+              example({
+                audio: "/assets/audio/general/he-touched-his-chin.mp3",
+                englishExample: "He touched his chin.",
+                portugueseExample: "Ele tocou o queixo.",
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          {/* to vs chew */}
+          <Phonetics
+            value={[
+              ...wordComparison({
+                left: {
+                  audio: "/assets/audio/general/to.mp3",
+                  parts: [mark("t"), "o"],
+                  phonetics: "/tuː/",
+                },
+                right: {
+                  audio: "/assets/audio/general/chew.mp3",
+                  parts: [mark("ch"), "ew"],
+                  phonetics: "/tʃuː/",
+                },
+              }),
+            ]}
+          />
+          <LineBreak />
+
+          <Examples
+            items={[
+              example({
+                audio: "/assets/audio/general/i-want-to-go-home.mp3",
+                englishExample: "I want to go home.",
+                portugueseExample: "Eu quero ir para casa.",
+              }),
+              example({
+                audio: "/assets/audio/general/chew-your-food-slowly.mp3",
+                englishExample: "Chew your food slowly.",
+                portugueseExample: "Mastigue sua comida devagar.",
               }),
             ]}
           />
