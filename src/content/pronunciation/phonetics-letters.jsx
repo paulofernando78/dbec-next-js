@@ -3704,7 +3704,7 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/ski.mp3",
                 parts: ["sk", { part: "i", type: "mark" }],
-                phonetics: "/.../",
+                phonetics: "/skiː/",
               }),
             ]}
           />
