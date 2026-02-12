@@ -2851,10 +2851,10 @@ export default function PhoneticsLetters() {
                 pt: "Está sem bateria.",
               }),
 
-              // • We sat on the sofa a few minutes ago.
+              // • We sat on the sofa minutes ago.
               example({
                 audio:
-                  "/assets/audio/general/we-sat-on-the-sofa-minutes-ago.mp3",
+                  "/assets/audio/general/we-sat-on-the-sofa-a-few-minutes-ago.mp3",
                 parts: ["We sat on the sofa a few minutes ago."],
                 pt: "Nós sentamos no sofá há alguns minutos.",
               }),

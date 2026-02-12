@@ -6,7 +6,7 @@ import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { Ribbon } from "@/components/atoms/Ribbon";
-import { instruction, line, audio, mark } from "@/helpers/content";
+import { instruction, text, audio, mark } from "@/helpers/content";
 
 export default function SELAAlessonTen() {
   return (
@@ -37,7 +37,7 @@ export default function SELAAlessonTen() {
           lines={[
             {
               speaker: "Bob:",
-              text: line([
+              text: text([
                 "Thank you for ",
                 audio("/assets/audio/general/making-time-for.mp3"),
                 mark(" making time for"),
@@ -46,7 +46,7 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Carol:",
-              text: line([
+              text: text([
                 audio("/assets/audio/general/dont-mention-it.mp3"),
                 mark("Don’t mention it"),
                 ", Bob. ",
@@ -56,7 +56,7 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Bob:",
-              text: line([
+              text: text([
                 "My wife baked these cookies ",
                 audio("/assets/audio/general/from-scratch.mp3"),
                 mark("from scratch"),
@@ -65,7 +65,7 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Carol:",
-              text: line([
+              text: text([
                 "Mmmm, chewy. These are ",
                 audio("/assets/audio/general/out-of-this-world.mp3"),
                 mark("out of this world!"),
@@ -73,11 +73,11 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Bob:",
-              text: line(["My wife’s a great cook."]),
+              text: text(["My wife’s a great cook."]),
             },
             {
               speaker: "Carol:",
-              text: line([
+              text: text([
                 audio("/assets/audio/general/you-can-say-that-again.mp3"),
                 mark("You can say that again"),
                 ". I don’t want to make a pig of myself, but let me take a few more.",
@@ -86,7 +86,7 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Bob:",
-              text: line([
+              text: text([
                 "Oink oink! ",
                 audio("/assets/audio/general/just-kidding.mp3"),
                 mark("Just kidding"),
@@ -95,7 +95,7 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Carol:",
-              text: line([
+              text: text([
                 "I’d like to sell these at the Village Market. My customers will ",
                 audio("/assets/audio/general/go-nuts.mp3"),
                 mark("go nuts"),
@@ -104,11 +104,11 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Bob:",
-              text: line(["How much would you pay us for each cookie?"]),
+              text: text(["How much would you pay us for each cookie?"]),
             },
             {
               speaker: "Carol:",
-              text: line([
+              text: text([
                 "I’m not sure. I need to ",
                 audio("/assets/audio/general/roll-up-my-sleeves.mp3"),
                 mark("roll up my sleeves"),
@@ -120,7 +120,7 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Bob:",
-              text: line([
+              text: text([
                 "Can you give me a ",
                 audio("/assets/audio/general/ballpark-figure.mp3"),
                 mark("ballpark figure"),
@@ -129,7 +129,7 @@ export default function SELAAlessonTen() {
             },
             {
               speaker: "Carol:",
-              text: line([
+              text: text([
                 "I don’t want to ",
                 audio("/assets/audio/general/jump-the-gun.mp3"),
                 mark("jump the gun"),
