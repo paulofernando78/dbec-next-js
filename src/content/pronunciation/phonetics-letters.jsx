@@ -6246,7 +6246,7 @@ export default function PhoneticsLetters() {
                 audio:
                   "/assets/audio/general/dont-forget-to-wash-your-hands.mp3",
                 englishExample: "Don’t forget to wash your hands.",
-                portugueseExample: "Não esqueça de lavar as suas mãos.",
+                portugueseExample: "Não se esqueça de lavar as suas mãos.",
               }),
               example({
                 audio: "/assets/audio/general/i-usually-watch-tv-at-night.mp3",
