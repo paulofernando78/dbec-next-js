@@ -4186,7 +4186,7 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/assets/audio/general/.mp3",
+                audio: "/assets/audio/pronunciation/phonetics-letters/diphthongs/oʊ.mp3",
                 phonetics: "/oʊ/",
               }),
               // go
