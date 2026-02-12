@@ -6052,7 +6052,7 @@ export default function PhoneticsLetters() {
             items={[
               example({
                 audio: "/assets/audio/general/he-confessed-his-sins.mp3",
-                englishExample: ["He confessed his sin."],
+                englishExample: ["He confessed his sins."],
                 portugueseExample: ["Ele confessou seu pecado."],
               }),
               example({
