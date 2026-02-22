@@ -367,7 +367,7 @@ export default function Home() {
             value={[
               ...note({
                 parts: [
-                  "Site is under construction ",
+                  "Site is under construction",
                 ],
               }),
             ]}

@@ -91,6 +91,15 @@ export default function LikedSounds() {
                         type: "portuguese",
                       },
                     ],
+                  },
+                  {
+                    text: [
+                      {
+                        audio:
+                        "/assets/audio/pronunciation/linked-sounds/consonant-vowel/you-have-to-get-used-to-it.mp3",
+                      },
+                      "You have to ge(t) used to i(t).",
+                    ],
                     lineBreak: true,
                   },
                   // /j/
@@ -235,48 +244,14 @@ export default function LikedSounds() {
                       },
                     ],
                   },
-                  // I have online classes in the morning.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-have-online-classes-in-the-morning.mp3",
-                      },
-                      "I ha",
-                      {
-                        part: "ve o",
-                        type: "underline",
-                      },
-                      "nline class",
-                      {
-                        part: "es i",
-                        type: "underline",
-                      },
-                      "n the morning.",
-                      {
-                        part: " Eu tenho aulas online pela manhã.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  // I have online classes in the morning.
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/.mp3",
-                      },
-                      "I’m having online class right now. Call me later.",
-                    ],
-                  },
                   // You have to get used to it.
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/.mp3",
+                          "/assets/audio/pronunciation/linked-sounds/consonant-vowel/you-have-to-get-used-to-it.mp3",
                       },
-                      "You have to get used to i(t).",
+                      "You have to ge(t) used to i(t).",
                     ],
                   },
                   // I like it a lot.

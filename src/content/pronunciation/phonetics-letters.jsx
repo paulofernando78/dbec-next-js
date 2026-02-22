@@ -3843,7 +3843,7 @@ export default function PhoneticsLetters() {
               // kite
               ...wordRowList({
                 audio: "/assets/audio/general/kite.mp3",
-                parts: ["k", { part: "i", type: "mark" }, "nd"],
+                parts: ["k", { part: "i", type: "mark" }, "te"],
                 phonetics: "/kaɪt/",
               }),
               // like

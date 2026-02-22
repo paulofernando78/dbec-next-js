@@ -14,6 +14,17 @@ import { Column } from "@/components/molecules/Column/";
 import { Note } from "@/components/molecules/Note";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
+import {
+  audio,
+  text,
+  bold,
+  italic,
+  mark,
+  underline,
+  boldMark,
+  phonetics,
+  portuguese,
+} from "@/helpers/content";
 
 export default function Mock() {
   return (
@@ -60,51 +71,34 @@ export default function Mock() {
         <Section id="line" label="Line" heading={3}>
           <Line
             value={[
-              {
+              ...text({
                 icons: [
                   "us",
                   "uk",
-                  "attetion",
+                  "attention",
                   "correct",
                   "incorrect",
                   "compare",
                 ],
-              },
-              {
-                audio: "/audio/",
-              },
-              "normal ",
-              " ",
-              {
-                part: "italic",
-                type: "italic",
-              },
-              " ",
-              {
-                part: "mark",
-                type: "mark",
-              },
-              " ",
-              {
-                part: "bold mark",
-                type: "bold-mark",
-              },
-              " ",
-              {
-                part: "phonetics",
-                type: "phonetics",
-              },
-              " ",
-              {
-                part: "underline",
-                type: "underline",
-              },
-              " ",
-              {
-                part: "portuguese",
-                type: "portuguese",
-              },
-              " ",
+                audio: "/",
+                parts: [
+                  "normal ",
+                  bold("bold"),
+                  " ",
+                  italic("italic"),
+                  " ",
+                  mark("mark"),
+                  " ",
+                  audio("/"),
+                  underline("underline"),
+                  " ",
+                  boldMark("bold-mark"),
+                  " ",
+                  phonetics("phonetics"),
+                  " ",
+                  portuguese("portuguese"),
+                ],
+              }),
             ]}
           />
         </Section>

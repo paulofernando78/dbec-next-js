@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "kid around",
+        "partOfSpeech": "phrasal verb",
+        "enDefinition": "to joke, behave playfully, or not be serious",
+        "ptDefinition": "brincar; fazer graça; não agir seriamente",
+        "examples": [
+          {
+            "enExample": "Stop kidding around and finish your homework.",
+            "ptExample": "Pare de brincar e termine sua lição de casa."
+          },
+          {
+            "enExample": "They were just kidding around during the meeting.",
+            "ptExample": "Eles estavam apenas brincando durante a reunião."
+          }
+        ],
+        "synonyms": ["joke", "mess around", "fool around"],
+        "antonyms": ["be serious", "focus"],
+        "seeAlso": ["just kidding", "mess around"],
+        "notes": [
+          {
+            "enNote": "Informal expression commonly used when someone is not taking a situation seriously.",
+            "ptNote": "Expressão informal usada quando alguém não está levando algo a sério."
+          }
+        ]
+      },
+      {
         "word": "just kidding",
         "partOfSpeech": "idiom / expression",
         "enDefinition": "used to say that something you said was a joke and not meant to be taken seriously",

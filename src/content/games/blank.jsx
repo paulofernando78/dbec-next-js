@@ -23,12 +23,9 @@ export default function Blank() {
             ]}
           />
           <LineBreak />
-          <Checklist items={[
-            { item: "item 1" },
-            { item: "item 2" },
-            { item: "item 3" }
-          ]}
-            />
+          <Checklist
+            items={[{ item: "item 1" }, { item: "item 2" }, { item: "item 3" }]}
+          />
         </Section>
       </div>
     </>

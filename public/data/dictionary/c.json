@@ -2,6 +2,31 @@
   {
     "definitions": [
       {
+        "word": "count on someone",
+        "partOfSpeech": "phrasal verb",
+        "enDefinition": "to rely on or trust someone to do what they say they will do or to provide help or support",
+        "ptDefinition": "contar com alguém; confiar que alguém fará algo ou dará apoio",
+        "examples": [
+          {
+            "enExample": "You can always count on me if you need help.",
+            "ptExample": "Você sempre pode contar comigo se precisar de ajuda."
+          },
+          {
+            "enExample": "She knows she can count on her friends during difficult times.",
+            "ptExample": "Ela sabe que pode contar com seus amigos em momentos difíceis."
+          }
+        ],
+        "synonyms": ["rely on", "depend on", "trust"],
+        "antonyms": ["doubt", "mistrust", "be unsure of"],
+        "seeAlso": ["depend on", "rely on", "be there for someone"],
+        "notes": [
+          {
+            "enNote": "Commonly used in both informal and professional contexts to express trust or reliability.",
+            "ptNote": "Usado tanto em contextos informais quanto profissionais para expressar confiança ou confiabilidade."
+          }
+        ]
+      },
+      {
         "word": "give someone the cold shoulder",
         "partOfSpeech": "idiom",
         "enDefinition": "to deliberately ignore someone or treat them in an unfriendly or distant way",

@@ -24,7 +24,7 @@ export default function SELAAlessonNine() {
             {
               text: [
                 {
-                  part: "Nicole discusses her plans to run for student body president. Nicole wants Ted to ask his friends to vote for her. Ted agrees, in exchange for Nicole's help with his homework.",
+                  part: "Nicole and Ted discuss Nicole’s plans to run for student body president. Nicole wants Ted to ask his friends to vote for her. Ted agrees, in exchange for Nicole's help with his homework.",
                   type: "italic",
                 },
               ],
@@ -43,7 +43,7 @@ export default function SELAAlessonNine() {
             {
               speaker: "Ted:",
               text: [
-                "She'll ",
+                "Andrea Jenkins is also running. She'll ",
                 { part: "give", type: "mark" },
                 " you a ",
                 { part: "run for your money", type: "mark" },
@@ -53,7 +53,7 @@ export default function SELAAlessonNine() {
             {
               speaker: "Nicole:",
               text: [
-                "I'm ",
+                "Andrea Jenkins is an idiot. I'm ",
                 { part: "by far", type: "mark" },
                 " the better candidate."
               ],
@@ -100,7 +100,9 @@ export default function SELAAlessonNine() {
               text: [
                 "But you never ",
                 { part: "give my friends the time of day", type: "mark" },
-                ". All you give them is the ",
+                ". All you ",
+                { part: "give them", type: "mark" },
+                " is the ",
                 { part: "cold shoulder", type: "mark" },
                 "."
               ],
@@ -136,6 +138,7 @@ export default function SELAAlessonNine() {
             {
               speaker: "Ted:",
               text: [
+                "Okay. ",
                 { part: "You scratch my back and I'll scratch yours", type: "mark" },
                 ". If you do my chemistry homework, I'll help you get the votes."
               ],

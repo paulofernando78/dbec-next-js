@@ -98,10 +98,55 @@ export function baseToken({
   return blocks;
 }
 
-// Exports
+//! Exports
+
+// audio
 export const audio = (src) => ({
-  audio: src
+  audio: src,
+});
+
+// bold
+export const bold = (text) => ({
+  part: text,
+  type: "bold"
 })
+
+// bold
+export const italic = (text) => ({
+  part: text,
+  type: "italic"
+})
+
+// mark
+export const mark = (text) => ({
+  part: text,
+  type: "mark",
+});
+
+// underline
+export const underline = (text) => ({
+  part: text,
+  type: "underline",
+});
+
+// bold mark
+export const boldMark = (text) => ({
+  part: text,
+  type: "bold-mark",
+});
+
+// phonetics
+export const phonetics = (text) => ({
+  part: text,
+  type: "phonetics",
+});
+
+// portuguese
+export const portuguese = (text) => ({
+  part: text,
+  type: "portuguese",
+});
+
 export const instruction = (opts) =>
   baseToken({
     ...opts,
@@ -109,14 +154,16 @@ export const instruction = (opts) =>
     bullet: false,
     square: false,
   });
-export const text = ({ icons = [], ...opts}) =>
+
+export const text = ({ icons = [], ...opts }) =>
   baseToken({
+    icons,
     ...opts,
     bullet: false,
     square: false,
   });
 
-export const note = ({ icons = [], ...opts}) =>
+export const note = ({ icons = [], ...opts }) =>
   baseToken({
     ...opts,
     icons: ["attention", ...icons],
@@ -166,12 +213,6 @@ export const expression = (opts) =>
     square: false,
   });
 
-
-
-export const mark = (text) => ({
-  part: text,
-  type: "mark",
-});
 export const example = (opts) =>
   baseToken({
     ...opts,

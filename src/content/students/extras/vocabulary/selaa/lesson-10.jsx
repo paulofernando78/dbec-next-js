@@ -33,7 +33,7 @@ export default function SELAAlessonTen() {
         />
         <AudioPlayer src="/assets/audio/vocabulary/selaa/lesson-10.mp3" />
         <Dialogue
-          description=""
+          description="aaa"
           lines={[
             {
               speaker: "Bob:",
