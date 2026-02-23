@@ -1,6 +1,6 @@
 .note {
   display: block;
-  margin-bottom: var(--line-break);
+  margin-bottom: 9px;
   color: black
 }
 

@@ -2,11 +2,13 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
+import { CardLayout } from "@/components/molecules/CardLayout";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardText } from "@/components/molecules/CardText";
+import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Comparison } from "@/components/molecules/Comparison/";
@@ -14,7 +16,9 @@ import { Column } from "@/components/molecules/Column/";
 import { Note } from "@/components/molecules/Note";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
+import { LineBreak } from "@/components/atoms/LineBreak";
 import {
+  content,
   audio,
   text,
   bold,
@@ -54,6 +58,7 @@ export default function Mock() {
             { href: "list", label: "List" },
             { href: "card-text", label: "CardText" },
             { href: "paragraph", label: "Paragraph" },
+            { href: "paragraph-media", label: "Paragraph + Media" },
             { href: "note", label: "Note" },
             { href: "dialogue", label: "Dialogue" },
             { href: "comparison", label: "Comparison" },
@@ -64,14 +69,16 @@ export default function Mock() {
           ]}
         />
 
+        {/* AudioPlayer */}
         <Section id="audio-player" label="Audio Player" heading={3}>
           <AudioPlayer src="/assets/audio/general/about-to.mp3" />
         </Section>
 
+        {/* Line */}
         <Section id="line" label="Line" heading={3}>
           <Line
             value={[
-              ...text({
+              ...content({
                 icons: [
                   "us",
                   "uk",
@@ -83,13 +90,13 @@ export default function Mock() {
                 audio: "/",
                 parts: [
                   "normal ",
+                  audio("/"),
                   bold("bold"),
                   " ",
                   italic("italic"),
                   " ",
                   mark("mark"),
                   " ",
-                  audio("/"),
                   underline("underline"),
                   " ",
                   boldMark("bold-mark"),
@@ -103,90 +110,86 @@ export default function Mock() {
           />
         </Section>
 
-        <Section id="List" label="List" heading={3}>
+        {/* List */}
+        <Section id="list" label="List" heading={3}>
           <List
             bullet={false}
             items={[
               {
-                text: [
-                  "text ",
-                  {
-                    usFlag: true,
-                    ukFlag: true,
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "normal",
-                  },
-                  " ",
-                  {
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "bold",
-                    type: "bold",
-                  },
-                  " ",
-                  {
-                    part: "italic",
-                    type: "italic",
-                  },
-                  " ",
-                  {
-                    part: "mark",
-                    type: "mark",
-                  },
-                  " end ",
+                value: [
+                  ...content({
+                    icons: [
+                      "us",
+                      "uk",
+                      "attention",
+                      "correct",
+                      "incorrect",
+                      "compare",
+                    ],
+                    audio: "/",
+                    parts: [
+                      "normal ",
+                      audio("/"),
+                      bold("bold"),
+                      " ",
+                      italic("italic"),
+                      " ",
+                      mark("mark"),
+                      " ",
+                      underline("underline"),
+                      " ",
+                      boldMark("bold-mark"),
+                      " ",
+                      phonetics("phonetics"),
+                      " ",
+                      portuguese("portuguese"),
+                    ],
+                  }),
                 ],
-                phonetics: "phonetics",
-                portuguese: "portuguese",
               },
             ]}
           />
-
+          <LineBreak />
           <Line text={["+ bullet"]} />
           <List
             items={[
               {
-                text: [
-                  "normal ",
-                  {
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "normal",
-                  },
-                  " ",
-                  {
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "bold",
-                    type: "bold",
-                  },
-                  " ",
-                  {
-                    part: "italic",
-                    type: "italic",
-                  },
-                  " ",
-                  {
-                    part: "mark",
-                    type: "mark",
-                  },
-                  " end ",
+                value: [
+                  ...content({
+                    icons: [
+                      "us",
+                      "uk",
+                      "attention",
+                      "correct",
+                      "incorrect",
+                      "compare",
+                    ],
+                    audio: "/",
+                    parts: [
+                      "normal ",
+                      audio("/"),
+                      bold("bold"),
+                      " ",
+                      italic("italic"),
+                      " ",
+                      mark("mark"),
+                      " ",
+                      underline("underline"),
+                      " ",
+                      boldMark("bold-mark"),
+                      " ",
+                      phonetics("phonetics"),
+                      " ",
+                      portuguese("portuguese"),
+                    ],
+                  }),
                 ],
-                phonetics: "phonetics",
-                portuguese: "portuguese",
               },
             ]}
           />
         </Section>
 
+        {/* Card Text */}
         <Section id="card-text" label="CardText" heading={3}>
           <CardText
             blocks={[
@@ -201,48 +204,35 @@ export default function Mock() {
                 ],
                 lines: [
                   {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
+                    value: [
+                      ...content({
+                        icons: [
+                          "us",
+                          "uk",
+                          "attention",
+                          "correct",
+                          "incorrect",
+                          "compare",
+                        ],
+                        audio: "/",
+                        parts: [
+                          "normal ",
+                          audio("/"),
+                          bold("bold"),
+                          " ",
+                          italic("italic"),
+                          " ",
+                          mark("mark"),
+                          " ",
+                          underline("underline"),
+                          " ",
+                          boldMark("bold-mark"),
+                          " ",
+                          phonetics("phonetics"),
+                          " ",
+                          portuguese("portuguese"),
+                        ],
+                      }),
                     ],
                   },
                 ],
@@ -258,7 +248,7 @@ export default function Mock() {
                 ],
                 lines: [
                   {
-                    text: ["normal "],
+                    value: ["normal "],
                   },
                 ],
               },
@@ -273,7 +263,7 @@ export default function Mock() {
                 ],
                 lines: [
                   {
-                    text: ["normal"],
+                    value: ["normal"],
                   },
                 ],
               },
@@ -281,596 +271,231 @@ export default function Mock() {
           />
         </Section>
 
+        {/* Paragraph */}
         <Section id="paragraph" label="Paragraph" heading={3}>
           <Paragraph
-            blocks={[
-              // img top
-              {
-                audioPlayer: "/assets/audio/general/about-to.mp3",
-                imgPosition: "top",
-                imgs: [
-                  {
-                    img: "/assets/img/general/cat-1.jpg",
-                    alt: "a cat photo",
-                    width: 200,
-                    height: 200,
-                  },
+            value={[
+              ...content({
+                icons: [
+                  "us",
+                  "uk",
+                  "attention",
+                  "correct",
+                  "incorrect",
+                  "compare",
                 ],
-                lines: [
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-              // img right
-              {
-                audioPlayer: "/assets/audio/general/about-to.mp3",
-                imgPosition: "right",
-                imgs: [
-                  {
-                    img: "/assets/img/general/cat-1.jpg",
-                    alt: "a cat photo",
-                    width: 200,
-                    height: 200,
-                  },
-                ],
-                lines: [
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-              // img bottom
-              {
-                audioPlayer: "/assets/audio/general/about-to.mp3",
-                imgPosition: "bottom",
-                imgs: [
-                  {
-                    img: "/assets/img/general/cat-1.jpg",
-                    alt: "a cat photo",
-                    width: 200,
-                    height: 200,
-                  },
-                ],
-                lines: [
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-              // img left
-              {
-                audioPlayer: "/assets/audio/general/about-to.mp3",
-                imgPosition: "left",
-                imgs: [
-                  {
-                    img: "/assets/img/general/cat-1.jpg",
-                    alt: "a cat photo",
-                    width: 200,
-                    height: 200,
-                  },
-                ],
-                lines: [
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-              // img top array
-              {
-                audioPlayer: "/assets/audio/general/about-to.mp3",
-                imgPosition: "top",
-                imgs: [
-                  {
-                    img: "/assets/img/general/cat-1.jpg",
-                    alt: "a cat photo",
-                    width: 200,
-                    height: 200,
-                  },
-                  {
-                    img: "/assets/img/general/cat-1.jpg",
-                    alt: "a cat photo",
-                    width: 200,
-                    height: 200,
-                  },
-                  {
-                    img: "/assets/img/general/cat-1.jpg",
-                    alt: "a cat photo",
-                    width: 200,
-                    height: 200,
-                  },
-                ],
-                lines: [
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      "normal ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "normal",
-                      },
-                      " ",
-                      {
-                        usFlag: true,
-                        ukFlag: true,
-                        attention: true,
-                        correct: true,
-                        incorrect: true,
-                        audio: "/audio/",
-                        part: "bold",
-                        type: "bold",
-                      },
-                      " ",
-                      {
-                        part: "italic",
-                        type: "italic",
-                      },
-                      " ",
-                      {
-                        part: "mark",
-                        type: "mark",
-                      },
-                      " ",
-                      {
-                        part: "phonetics",
-                        type: "phonetics",
-                      },
-                      " ",
-                      {
-                        part: "portuguese",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-        </Section>
-
-        <Section id="note" label="Note" heading={3}>
-          <Note
-            lines={[
-              {
-                text: [
+                audio: "/",
+                parts: [
                   "normal ",
-                  {
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "normal",
-                  },
+                  audio("/"),
+                  bold("bold"),
                   " ",
-                  {
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "bold",
-                    type: "bold",
-                  },
+                  italic("italic"),
                   " ",
-                  {
-                    part: "italic",
-                    type: "italic",
-                  },
+                  mark("mark"),
                   " ",
-                  {
-                    part: "mark",
-                    type: "mark",
-                  },
-                  " end ",
+                  underline("underline"),
+                  " ",
+                  boldMark("bold-mark"),
+                  " ",
+                  phonetics("phonetics"),
+                  " ",
+                  portuguese("portuguese"),
                 ],
-                phonetics: "phonetics",
-                portuguese: "portuguese",
-              },
+              }),
             ]}
           />
         </Section>
 
+        {/* Paragraph + Media */}
+        <Section id="paragraph-media" label="Paragraph + Media" heading={3}>
+          {/* Card Layout */}
+          <AudioPlayer src="/assets/audio/general/about-to.mp3" />
+          <LineBreak />
+          <CardLayout mediaPosition="top">
+            <Image src="/assets/img/general/cat-1.jpg" alt="cat" width={200} />
+            <Paragraph
+              value={[
+                ...content({
+                  icons: [
+                    "us",
+                    "uk",
+                    "attention",
+                    "correct",
+                    "incorrect",
+                    "compare",
+                  ],
+                  audio: "/",
+                  parts: [
+                    "normal ",
+                    audio("/"),
+                    bold("bold"),
+                    " ",
+                    italic("italic"),
+                    " ",
+                    mark("mark"),
+                    " ",
+                    underline("underline"),
+                    " ",
+                    boldMark("bold-mark"),
+                    " ",
+                    phonetics("phonetics"),
+                    " ",
+                    portuguese("portuguese"),
+                  ],
+                }),
+              ]}
+            />
+          </CardLayout>
+          <LineBreak />
+          <CardLayout mediaPosition="right">
+            <Image src="/assets/img/general/cat-1.jpg" alt="cat" width={200} />
+            <Paragraph
+              value={[
+                ...content({
+                  icons: [
+                    "us",
+                    "uk",
+                    "attention",
+                    "correct",
+                    "incorrect",
+                    "compare",
+                  ],
+                  audio: "/",
+                  parts: [
+                    "normal ",
+                    audio("/"),
+                    bold("bold"),
+                    " ",
+                    italic("italic"),
+                    " ",
+                    mark("mark"),
+                    " ",
+                    underline("underline"),
+                    " ",
+                    boldMark("bold-mark"),
+                    " ",
+                    phonetics("phonetics"),
+                    " ",
+                    portuguese("portuguese"),
+                  ],
+                }),
+              ]}
+            />
+          </CardLayout>
+          <LineBreak />
+          <CardLayout mediaPosition="bottom">
+            <Image src="/assets/img/general/cat-1.jpg" alt="cat" width={200} />
+            <Paragraph
+              value={[
+                ...content({
+                  icons: [
+                    "us",
+                    "uk",
+                    "attention",
+                    "correct",
+                    "incorrect",
+                    "compare",
+                  ],
+                  audio: "/",
+                  parts: [
+                    "normal ",
+                    audio("/"),
+                    bold("bold"),
+                    " ",
+                    italic("italic"),
+                    " ",
+                    mark("mark"),
+                    " ",
+                    underline("underline"),
+                    " ",
+                    boldMark("bold-mark"),
+                    " ",
+                    phonetics("phonetics"),
+                    " ",
+                    portuguese("portuguese"),
+                  ],
+                }),
+              ]}
+            />
+          </CardLayout>
+          <LineBreak />
+          <CardLayout mediaPosition="left">
+            <Image src="/assets/img/general/cat-1.jpg" alt="cat" width={200} />
+            <Paragraph
+              value={[
+                ...content({
+                  icons: [
+                    "us",
+                    "uk",
+                    "attention",
+                    "correct",
+                    "incorrect",
+                    "compare",
+                  ],
+                  audio: "/",
+                  parts: [
+                    "normal ",
+                    audio("/"),
+                    bold("bold"),
+                    " ",
+                    italic("italic"),
+                    " ",
+                    mark("mark"),
+                    " ",
+                    underline("underline"),
+                    " ",
+                    boldMark("bold-mark"),
+                    " ",
+                    phonetics("phonetics"),
+                    " ",
+                    portuguese("portuguese"),
+                  ],
+                }),
+              ]}
+            />
+          </CardLayout>
+        </Section>
+
+        {/* Notes */}
+        <Section id="note" label="Notes" heading={3}>
+          <Note>
+            <Line
+            value={[
+              ...content({
+                icons: [
+                  "us",
+                  "uk",
+                  "attention",
+                  "correct",
+                  "incorrect",
+                  "compare",
+                ],
+                audio: "/",
+                parts: [
+                  "normal ",
+                  audio("/"),
+                  bold("bold"),
+                  " ",
+                  italic("italic"),
+                  " ",
+                  mark("mark"),
+                  " ",
+                  underline("underline"),
+                  " ",
+                  boldMark("bold-mark"),
+                  " ",
+                  phonetics("phonetics"),
+                  " ",
+                  portuguese("portuguese"),
+                ],
+              }),
+            ]}
+          />
+          </Note>
+        </Section>
+
+        {/* Dialogue */}
         <Section id="dialogue" label="Dialogue" heading={3}>
           <Dialogue
             imgs={[
@@ -933,6 +558,7 @@ export default function Mock() {
           />
         </Section>
 
+        {/* Comparison */}
         <Section id="comparison" label="Comparison" heading={3}>
           <Comparison
             groups={[
@@ -956,6 +582,7 @@ export default function Mock() {
           />
         </Section>
 
+        {/* Column */}
         <Section id="column" label="Column" heading={3}>
           <Column
             width="300"
@@ -1047,6 +674,7 @@ export default function Mock() {
           />
         </Section>
 
+        {/* Links */}
         <Section id="links" label="Links" heading={3}>
           {/* <Ribbon label="Links" /> */}
           <Links
@@ -1064,6 +692,7 @@ export default function Mock() {
           />
         </Section>
 
+        {/* Radio */}
         <Section id="radio" label="Radio" heading={3}>
           <Radio
             exercise={{
@@ -1082,6 +711,7 @@ export default function Mock() {
           />
         </Section>
 
+        {/* Fill in the Blanks */}
         <Section id="fill" label="FillInTheBlanks" heading={3}>
           <FillInTheBlanks
             exercise={{

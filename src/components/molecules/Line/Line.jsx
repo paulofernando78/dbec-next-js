@@ -1,7 +1,9 @@
 import { ContentToken } from "@/components/molecules/ContentToken";
 
-export const Line = (props) => {
+export const Line = ({as: Tag = "p", ...props}) => {
   return (
-      <ContentToken as="p" {...props} />
+    <Tag>
+      <ContentToken {...props} />
+    </Tag>
   );
 };

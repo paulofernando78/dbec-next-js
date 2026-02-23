@@ -27,7 +27,7 @@ export const CardText = ({ blocks = [], width }) => {
             <div>
               {(block.lines || []).map((line, lineIndex) => (
                 <p key={lineIndex}>
-                  <ContentToken text={line.text} />
+                  <ContentToken text={line.value} />
                 </p>
               ))}
             </div>

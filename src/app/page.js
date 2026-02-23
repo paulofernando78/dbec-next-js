@@ -6,7 +6,7 @@ import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Line } from "@/components/molecules/Line";
 import { Audio } from "@/components/atoms/Audio";
-import { note, text } from "@/helpers/content";
+import { note, content } from "@/helpers/content";
 
 const emojis = [
   {
@@ -365,7 +365,7 @@ export default function Home() {
         <>
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [
                   "Site is under construction",
                 ],
@@ -374,7 +374,7 @@ export default function Home() {
           />
           <Line
             value={[
-              ...text({
+              ...content({
                 audio: "/assets/audio/home/welcome.mp3",
                 parts: [
                   "Hey there! Welcome to, ",
@@ -386,7 +386,7 @@ export default function Home() {
           />
           <Line
             value={[
-              ...text({
+              ...content({
                 audio: "/assets/audio/home/below.mp3",
                 parts: [
                   "Below, you can listen to some adjectives that describe how you’re feeling.",
@@ -396,7 +396,7 @@ export default function Home() {
           />
           <Line
             value={[
-              ...text({
+              ...content({
                 audio: "/assets/audio/home/feeling.mp3",
                 parts: [
                   "How are you feeling today?",

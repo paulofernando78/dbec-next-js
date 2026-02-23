@@ -100,7 +100,75 @@ export function baseToken({
 
 //! Exports
 
-// audio
+export const content = ({ icons = [], ...opts }) =>
+  baseToken({
+    icons,
+    ...opts,
+    bullet: false,
+    square: false,
+  });
+
+export const attention = ({ icons = [], ...opts }) =>
+  baseToken({
+    ...opts,
+    icons: ["attention", ...icons],
+    bullet: false,
+    square: false,
+  });
+
+export const word = (opts) =>
+  baseToken({
+    ...opts,
+    square: false,
+  });
+
+export const wordRowList = (opts) =>
+  baseToken({
+    bullet: false,
+    square: true,
+    ...opts,
+  });
+
+export const wordColumnList = (opts) =>
+  baseToken({
+    ...opts,
+    bullet: false,
+  });
+
+export const wordVariant = ({ left, right }) => [
+  ...wordRowList({ ...left, square: false }),
+  {
+    part: "or ",
+    type: "connector",
+  },
+  ...wordRowList({ ...right, square: false }),
+];
+export const wordComparison = ({ left, right }) => [
+  ...wordRowList({ ...left, square: false }),
+  {
+    part: "vs ",
+    type: "connector",
+  },
+  ...wordRowList({ ...right, square: false }),
+];
+
+export const expression = (opts) =>
+  baseToken({
+    ...opts,
+    bullet: false,
+    square: false,
+  });
+
+export const example = (opts) =>
+  baseToken({
+    ...opts,
+    bullet: true,
+    square: false,
+  });
+
+  //! Tokens
+
+  // audio
 export const audio = (src) => ({
   audio: src,
 });
@@ -152,70 +220,5 @@ export const instruction = (opts) =>
     ...opts,
     icons: ["attention"],
     bullet: false,
-    square: false,
-  });
-
-export const text = ({ icons = [], ...opts }) =>
-  baseToken({
-    icons,
-    ...opts,
-    bullet: false,
-    square: false,
-  });
-
-export const note = ({ icons = [], ...opts }) =>
-  baseToken({
-    ...opts,
-    icons: ["attention", ...icons],
-    bullet: false,
-    square: false,
-  });
-
-export const word = (opts) =>
-  baseToken({
-    ...opts,
-    square: false,
-  });
-
-export const wordRowList = (opts) =>
-  baseToken({
-    bullet: false,
-    square: true,
-    ...opts,
-  });
-
-export const wordColumnList = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: false,
-  });
-
-export const wordVariant = ({ left, right }) => [
-  ...wordRowList({ ...left, square: false }),
-  {
-    part: "or ",
-    type: "connector",
-  },
-  ...wordRowList({ ...right, square: false }),
-];
-export const wordComparison = ({ left, right }) => [
-  ...wordRowList({ ...left, square: false }),
-  {
-    part: "vs ",
-    type: "connector",
-  },
-  ...wordRowList({ ...right, square: false }),
-];
-export const expression = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: false,
-    square: false,
-  });
-
-export const example = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: true,
     square: false,
   });

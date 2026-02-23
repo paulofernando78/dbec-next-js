@@ -197,7 +197,7 @@ mark {
   margin-bottom: 5px;
 }
 
-.imgs {
+.img {
   border: var(--border);
   border-radius: var(--border-radius);
 }
