@@ -511,31 +511,32 @@ export default function Mock() {
         {/* Dialogue */}
         <Section id="dialogue" label="Dialogue" heading={3}>
           <Dialogue
+            description="Description"
             imgs={[
               {
-                img: "/img/general/cat-1.jpg",
+                img: "/assets/img/general/cat-1.jpg",
                 alt: "",
                 width: 200,
                 height: 200,
               },
               {
-                img: "/img/general/cat-2.jpg",
+                img: "/assets/img/general/cat-2.jpg",
                 alt: "",
                 width: 200,
                 height: 200,
               },
               {
-                img: "/img/general/cat-3.jpg",
+                img: "/assets/img/general/cat-3.jpg",
                 alt: "",
                 width: 200,
                 height: 200,
               },
             ]}
-            audioPlayer="/audio/vocabulary/selaa/lesson-1.mp3"
+            audioPlayer="/assets/audio/vocabulary/selaa/lesson-1.mp3"
             lines={[
               {
                 speaker: "speaker:",
-                audio: "/audio/vocabulary/selaa/lesson-1.mp3",
+                audio: "/assets/audio/vocabulary/selaa/lesson-1.mp3",
                 text: [
                   ...content({
                 icons: [
@@ -578,16 +579,16 @@ export default function Mock() {
               {
                 group: [
                   {
-                    audio: "/audio/.mp3",
+                    audio: "/assets/audio/.mp3",
                     word: "Example 1",
                     phonetics: "/.../",
-                    translation: "...",
+                    portuguese: "...",
                   },
                   {
-                    audio: "/audio/.mp3",
+                    audio: "/assets/audio/.mp3",
                     word: "Example 2",
                     phonetics: "/.../",
-                    translation: "...",
+                    portuguese: "...",
                   },
                 ],
               },

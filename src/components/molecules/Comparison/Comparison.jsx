@@ -18,8 +18,8 @@ export const Comparison = ({ groups = [] }) => {
                 {subItem.phonetics && (
                   <Phonetics>{subItem.phonetics}</Phonetics>
                 )}{" "}
-                {subItem.portuguese && (
-                  <Portuguese>{subItem.portuguese}</Portuguese>
+                {(subItem.portuguese || subItem.translation) && (
+                  <Portuguese>{subItem.portuguese || subItem.translation}</Portuguese>
                 )}
               </p>
             ))}

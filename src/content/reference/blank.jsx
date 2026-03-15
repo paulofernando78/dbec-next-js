@@ -14,6 +14,7 @@ import { Dialogue } from "@/components/molecules/Dialogue";
 import { Comparison } from "@/components/molecules/Comparison/";
 import { Column } from "@/components/molecules/Column/";
 import { Notes } from "@/components/molecules/Notes";
+import { Examples } from "@/components/molecules/Examples";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
@@ -27,6 +28,8 @@ import {
   boldMark,
   phonetics,
   portuguese,
+  example,
+  note,
 } from "@/helpers/content";
 
 export default function Blank() {

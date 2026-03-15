@@ -107,6 +107,7 @@ export const ContentToken = ({ value, text = [] }) => {
           case "portuguese":
             content = <Portuguese>{part.part}</Portuguese>;
             break;
+          case "bold-portuguese":
           case "portuguese-bold":
             content = <PortugueseBold>{part.part}</PortugueseBold>;
             break;

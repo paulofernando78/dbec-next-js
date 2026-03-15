@@ -21,6 +21,7 @@
 }
 
 .meComputerWrapper {
+  margin-top: 30px;
   display: grid;
   place-items: center;
 }

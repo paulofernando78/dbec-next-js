@@ -1,6 +1,19 @@
 import styles from "./Whiteboard.module.css";
 
-export const Whiteboard = ({ title, subtitle, book, lesson, descriptions }) => {
+export const Whiteboard = ({
+  title,
+  subtitle,
+  book,
+  lesson,
+  descriptions,
+  description,
+}) => {
+  const normalizedDescriptions = Array.isArray(descriptions)
+    ? descriptions
+    : description
+      ? [description]
+      : [];
+
   return (
     <div className={styles.frame}>
       <h1>{title}</h1>
@@ -11,7 +24,7 @@ export const Whiteboard = ({ title, subtitle, book, lesson, descriptions }) => {
           <strong>{lesson}</strong>
         </span>
       )}
-      {descriptions?.map((item, index) => (
+      {normalizedDescriptions.map((item, index) => (
         <span key={index}>{item}</span>
       ))}
     </div>

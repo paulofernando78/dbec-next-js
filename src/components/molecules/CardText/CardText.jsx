@@ -4,6 +4,7 @@ import styles from "./CardText.module.css";
 
 import Image from "next/image";
 import { ContentToken } from "@/components/molecules/ContentToken";
+import { normalizeCardTextLine } from "@/utils/contentAdapters";
 
 export const CardText = ({ blocks = [], width }) => {
   return (
@@ -27,7 +28,7 @@ export const CardText = ({ blocks = [], width }) => {
             <div>
               {(block.lines || []).map((line, lineIndex) => (
                 <p key={lineIndex}>
-                  <ContentToken text={line.value} />
+                  <ContentToken value={normalizeCardTextLine(line)} />
                 </p>
               ))}
             </div>

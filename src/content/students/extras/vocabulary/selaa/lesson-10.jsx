@@ -1,12 +1,10 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
 import { Line } from "@/components/molecules/Line";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { Ribbon } from "@/components/atoms/Ribbon";
-import { instruction, text, audio, mark } from "@/helpers/content";
+import { audio, mark } from "@/helpers/content";
 
 export default function SELAAlessonTen() {
   return (
@@ -23,92 +21,100 @@ export default function SELAAlessonTen() {
         </div>
         <Line
           value={[
-            instruction({
+            {
+              icons: ["attention"],
+            },
+            {
               audio: "/assets/audio/general/.mp3",
-              englishInstruction:
-                "Listen to 'Lesson 10 • Bob Visits the Village Market'",
-              portugueseInstruction: "aaa",
-            }),
+            },
+            {
+              part: "Listen to 'Lesson 10 • Bob Visits the Village Market'",
+              type: "bold",
+            },
+            { lineBreak: true },
+            {
+              part: "Ouça a lição 10: Bob Visits the Village Market.",
+              type: "portuguese",
+            },
           ]}
         />
-        <AudioPlayer src="/assets/audio/vocabulary/selaa/lesson-10.mp3" />
         <Dialogue
-          description="aaa"
+          description="Bob and Carol discuss Bob's homemade cookies and the possibility of selling them at the Village Market."
+          audioPlayer="/assets/audio/vocabulary/selaa/lesson-10.mp3"
           lines={[
             {
               speaker: "Bob:",
-              text: text([
+              text: [
                 "Thank you for ",
                 audio("/assets/audio/general/making-time-for.mp3"),
                 mark(" making time for"),
                 " me today, Carol.",
-              ]),
+              ],
             },
             {
               speaker: "Carol:",
-              text: text([
+              text: [
                 audio("/assets/audio/general/dont-mention-it.mp3"),
                 mark("Don’t mention it"),
                 ", Bob. ",
                 audio("/assets/audio/general/whats-up.mp3"),
                 mark("What’s up?"),
-              ]),
+              ],
             },
             {
               speaker: "Bob:",
-              text: text([
+              text: [
                 "My wife baked these cookies ",
                 audio("/assets/audio/general/from-scratch.mp3"),
                 mark("from scratch"),
                 ". Please take one.",
-              ]),
+              ],
             },
             {
               speaker: "Carol:",
-              text: text([
+              text: [
                 "Mmmm, chewy. These are ",
                 audio("/assets/audio/general/out-of-this-world.mp3"),
                 mark("out of this world!"),
-              ]),
+              ],
             },
             {
               speaker: "Bob:",
-              text: text(["My wife’s a great cook."]),
+              text: ["My wife’s a great cook."],
             },
             {
               speaker: "Carol:",
-              text: text([
+              text: [
                 audio("/assets/audio/general/you-can-say-that-again.mp3"),
                 mark("You can say that again"),
                 ". I don’t want to make a pig of myself, but let me take a few more.",
-                mark(""),
-              ]),
+              ],
             },
             {
               speaker: "Bob:",
-              text: text([
+              text: [
                 "Oink oink! ",
                 audio("/assets/audio/general/just-kidding.mp3"),
                 mark("Just kidding"),
                 "! ",
-              ]),
+              ],
             },
             {
               speaker: "Carol:",
-              text: text([
+              text: [
                 "I’d like to sell these at the Village Market. My customers will ",
                 audio("/assets/audio/general/go-nuts.mp3"),
                 mark("go nuts"),
-                " over these ",
-              ]),
+                " over these cookies.",
+              ],
             },
             {
               speaker: "Bob:",
-              text: text(["How much would you pay us for each cookie?"]),
+              text: ["How much would you pay us for each cookie?"],
             },
             {
               speaker: "Carol:",
-              text: text([
+              text: [
                 "I’m not sure. I need to ",
                 audio("/assets/audio/general/roll-up-my-sleeves.mp3"),
                 mark("roll up my sleeves"),
@@ -116,20 +122,20 @@ export default function SELAAlessonTen() {
                 audio("/assets/audio/general/figure-out.mp3"),
                 mark(" figure out "),
                 " the finances.",
-              ]),
+              ],
             },
             {
               speaker: "Bob:",
-              text: text([
+              text: [
                 "Can you give me a ",
                 audio("/assets/audio/general/ballpark-figure.mp3"),
                 mark("ballpark figure"),
                 " now? ",
-              ]),
+              ],
             },
             {
               speaker: "Carol:",
-              text: text([
+              text: [
                 "I don’t want to ",
                 audio("/assets/audio/general/jump-the-gun.mp3"),
                 mark("jump the gun"),
@@ -137,7 +143,7 @@ export default function SELAAlessonTen() {
                 audio("/assets/audio/general/sit-tight.mp3"),
                 mark("Sit tight"),
                 " for now, and we'll talk things over this evening.",
-              ]),
+              ],
             },
           ]}
         />
