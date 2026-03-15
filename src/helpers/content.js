@@ -161,8 +161,6 @@ export const expression = (opts) =>
 
 export const text = (parts = []) => parts;
 
-export const note = (opts) => instruction(opts);
-
   //! Tokens
 
   // audio
