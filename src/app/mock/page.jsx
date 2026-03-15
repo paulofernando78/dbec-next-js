@@ -1,6 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
 import { Contents } from "@/components/molecules/Contents";
+import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
@@ -11,6 +12,7 @@ import { CardText } from "@/components/molecules/CardText";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
+import { Examples } from "@/components/molecules/Examples";
 import { Comparison } from "@/components/molecules/Comparison/";
 import { Column } from "@/components/molecules/Column/";
 import { Notes } from "@/components/molecules/Notes";
@@ -71,17 +73,17 @@ export default function Mock() {
         />
 
         {/* AudioPlayer */}
-        <Section id="audio-player" label="Audio Player" heading={3}>
-          <AudioPlayer src="/assets/audio/general/about-to.mp3" />
-        </Section>
+        <PageSections>
+          <Section id="audio-player" label="Audio Player" heading={3}>
+            <AudioPlayer src="/assets/audio/general/about-to.mp3" />
+          </Section>
+        </PageSections>
 
         <Section id="text-only" label="Text Only" heading={3}>
           <Paragraph
             value={[
               ...content({
-                parts: [
-                  "...",
-                ],
+                parts: ["..."],
               }),
             ]}
           />
@@ -506,37 +508,37 @@ export default function Mock() {
         <Section id="notes" label="Notes" heading={3}>
           <Notes>
             <Line
-            value={[
-              ...content({
-                icons: [
-                  "us",
-                  "uk",
-                  "attention",
-                  "correct",
-                  "incorrect",
-                  "compare",
-                ],
-                audio: "/",
-                parts: [
-                  "normal ",
-                  audio("/"),
-                  bold("bold"),
-                  " ",
-                  italic("italic"),
-                  " ",
-                  mark("mark"),
-                  " ",
-                  underline("underline"),
-                  " ",
-                  boldMark("bold-mark"),
-                  " ",
-                  phonetics("phonetics"),
-                  " ",
-                  portuguese("portuguese"),
-                ],
-              }),
-            ]}
-          />
+              value={[
+                ...content({
+                  icons: [
+                    "us",
+                    "uk",
+                    "attention",
+                    "correct",
+                    "incorrect",
+                    "compare",
+                  ],
+                  audio: "/",
+                  parts: [
+                    "normal ",
+                    audio("/"),
+                    bold("bold"),
+                    " ",
+                    italic("italic"),
+                    " ",
+                    mark("mark"),
+                    " ",
+                    underline("underline"),
+                    " ",
+                    boldMark("bold-mark"),
+                    " ",
+                    phonetics("phonetics"),
+                    " ",
+                    portuguese("portuguese"),
+                  ],
+                }),
+              ]}
+            />
           </Notes>
         </Section>
 
@@ -571,35 +573,73 @@ export default function Mock() {
                 audio: "/assets/audio/vocabulary/selaa/lesson-1.mp3",
                 text: [
                   ...content({
-                icons: [
-                  "us",
-                  "uk",
-                  "attention",
-                  "correct",
-                  "incorrect",
-                  "compare",
-                ],
-                audio: "/",
-                parts: [
-                  "normal ",
-                  audio("/"),
-                  bold("bold"),
-                  " ",
-                  italic("italic"),
-                  " ",
-                  mark("mark"),
-                  " ",
-                  underline("underline"),
-                  " ",
-                  boldMark("bold-mark"),
-                  " ",
-                  phonetics("phonetics"),
-                  " ",
-                  portuguese("portuguese"),
-                ],
-              }),
+                    icons: [
+                      "us",
+                      "uk",
+                      "attention",
+                      "correct",
+                      "incorrect",
+                      "compare",
+                    ],
+                    audio: "/",
+                    parts: [
+                      "normal ",
+                      audio("/"),
+                      bold("bold"),
+                      " ",
+                      italic("italic"),
+                      " ",
+                      mark("mark"),
+                      " ",
+                      underline("underline"),
+                      " ",
+                      boldMark("bold-mark"),
+                      " ",
+                      phonetics("phonetics"),
+                      " ",
+                      portuguese("portuguese"),
+                    ],
+                  }),
                 ],
               },
+            ]}
+          />
+        </Section>
+
+        {/* Example */}
+        <Section id="example" label="Example" heading={3}>
+          <Examples
+            items={[
+              [
+                ...content({
+                  icons: [
+                    "us",
+                    "uk",
+                    "attention",
+                    "correct",
+                    "incorrect",
+                    "compare",
+                  ],
+                  audio: "/",
+                  parts: [
+                    "normal ",
+                    audio("/"),
+                    bold("bold"),
+                    " ",
+                    italic("italic"),
+                    " ",
+                    mark("mark"),
+                    " ",
+                    underline("underline"),
+                    " ",
+                    boldMark("bold-mark"),
+                    " ",
+                    phonetics("phonetics"),
+                    " ",
+                    portuguese("portuguese"),
+                  ],
+                }),
+              ],
             ]}
           />
         </Section>

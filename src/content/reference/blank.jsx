@@ -29,7 +29,6 @@ import {
   phonetics,
   portuguese,
   example,
-  note,
 } from "@/helpers/content";
 
 export default function Blank() {
@@ -46,7 +45,7 @@ export default function Blank() {
         <Section id="..." label="..." heading={3}>
           <Line
             value={[
-              ...note({
+              ...content({
                 audio: "/assets/audio/general/.mp3",
                 parts: ["", { part: "", type: "" }],
                 pt: "",

@@ -1,23 +1,37 @@
+//! Layout tokens
+// icons
+// audio
+// bullet
+// square
+// lineBreak
+
+//! Content tokens
+// bold
+// italic
+// mark
+// underline
+// boldMark
+// phonetics
+// portuguese
+// example
+
+//! Builders
+// baseToken
+// content
+
 export function baseToken({
   icons = [],
   audio,
   bullet = true,
   parts = [],
   phonetics,
-  englishTerm,
-  portugueseTerm,
-  englishDefinition,
-  portugueseDefinition,
-  englishExample,
-  portugueseExample,
-  portugueseTranslation,
   connector,
   square = true,
   lineBreak,
 }) {
   const blocks = [];
 
-  if (Array.isArray(icons) && icons.length > 0) {
+  if (icons.length) {
     blocks.push({ icons });
   }
 
@@ -27,60 +41,20 @@ export function baseToken({
 
   if (bullet) {
     blocks.push({ bullet: true });
-    blocks.push(" ");
   }
 
-  parts.forEach((p) => {
-    blocks.push(p);
-  });
+  //! old
+  // parts.forEach((p) => {
+  //   blocks.push(p);
+  // });
 
-  if (parts.length > 0) {
-    blocks.push(" ");
-  }
+  //! New / Modern
+  blocks.push(...parts);
+  // blocks.push(parts[0], parts[1], parts[2])
 
   if (phonetics) {
     blocks.push({ part: phonetics, type: "phonetics" });
   }
-  blocks.push(" ");
-
-  if (englishTerm) {
-    if (Array.isArray(englishTerm)) {
-      englishTerm.forEach((p) => blocks.push(p));
-    } else {
-      blocks.push({ part: englishTerm, type: "bold" });
-    }
-  }
-  blocks.push(" ");
-
-  if (portugueseTerm) {
-    blocks.push({ part: portugueseTerm, type: "bold-portuguese" });
-  }
-  blocks.push(" ");
-
-  if (englishDefinition) {
-    blocks.push({ part: englishDefinition, type: "portuguese" });
-  }
-  blocks.push(" ");
-
-  if (portugueseDefinition) {
-    blocks.push({ part: portugueseDefinition, type: "portuguese" });
-  }
-  blocks.push(" ");
-
-  if (englishExample) {
-    blocks.push({ part: englishExample, type: "" });
-  }
-  blocks.push(" ");
-
-  if (portugueseExample) {
-    blocks.push({ part: portugueseExample, type: "portuguese" });
-  }
-  blocks.push(" ");
-
-  if (portugueseTranslation) {
-    blocks.push({ part: portugueseTranslation, type: "portuguese" });
-  }
-  blocks.push(" ");
 
   if (connector) {
     blocks.push({ part: connector, type: "connector" });
@@ -89,7 +63,6 @@ export function baseToken({
   if (square) {
     blocks.push({ square: true });
   }
-  blocks.push(" ");
 
   if (lineBreak) {
     blocks.push({ lineBreak: true });
@@ -98,7 +71,7 @@ export function baseToken({
   return blocks;
 }
 
-//! Exports
+//! Builders
 
 export const content = ({ icons = [], ...opts }) =>
   baseToken({
@@ -152,18 +125,11 @@ export const wordComparison = ({ left, right }) => [
   ...wordRowList({ ...right, square: false }),
 ];
 
-export const expression = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: false,
-    square: false,
-  });
-
 export const text = (parts = []) => parts;
 
-  //! Tokens
+//! Tokens
 
-  // audio
+// audio
 export const audio = (src) => ({
   audio: src,
 });
@@ -171,14 +137,14 @@ export const audio = (src) => ({
 // bold
 export const bold = (text) => ({
   part: text,
-  type: "bold"
-})
+  type: "bold",
+});
 
 // bold
 export const italic = (text) => ({
   part: text,
-  type: "italic"
-})
+  type: "italic",
+});
 
 // mark
 export const mark = (text) => ({
@@ -205,10 +171,10 @@ export const phonetics = (text) => ({
 });
 
 export const example = (text) => ({
-    part: ` ${text}`,
-    bullet: true,
-    square: false,
-  });
+  part: ` ${text}`,
+  bullet: true,
+  square: false,
+});
 
 // portuguese
 export const portuguese = (text) => ({

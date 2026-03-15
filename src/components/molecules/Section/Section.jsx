@@ -1,16 +1,22 @@
 import styles from "./Section.module.css"
 
 import { Ribbon } from "@/components/atoms/Ribbon/";
+import { formatSectionLabel } from "@/utils/formatSectionLabel"
 
 export const Section = ({ id, label, heading = 2, children }) => {
   const HeadingTag = `h${heading}`;
 
+  // If no label is passed, build one from the id
+  const resolvedLabel = label ?? formatSectionLabel(id)
+
   return (
     <section id={id} className={styles.scrollOffset}>
       <Ribbon className="line-break-item">
-        <HeadingTag>{label}</HeadingTag>
+        <HeadingTag>{resolvedLabel}</HeadingTag>
       </Ribbon>
       {children}
     </section>
   );
 };
+
+Section.displayName = "Section"
