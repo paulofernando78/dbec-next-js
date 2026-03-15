@@ -1,33 +1,13 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Dictionary } from "@/components/molecules/Dictionary";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
-import { CardLayout } from "@/components/molecules/CardLayout";
-import { Links } from "@/components/molecules/Links";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Line } from "@/components/molecules/Line";
-import { List } from "@/components/molecules/List";
-import { CardText } from "@/components/molecules/CardText";
-import { Image } from "@/components/atoms/Image";
-import { Paragraph } from "@/components/molecules/Paragraph";
-import { Dialogue } from "@/components/molecules/Dialogue";
-import { Comparison } from "@/components/molecules/Comparison/";
-import { Column } from "@/components/molecules/Column/";
-import { Notes } from "@/components/molecules/Notes";
 import { Examples } from "@/components/molecules/Examples";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
 import {
   content,
-  audio,
-  bold,
-  italic,
-  mark,
-  underline,
-  boldMark,
-  phonetics,
-  portuguese,
   example,
 } from "@/helpers/content";
 
@@ -39,7 +19,7 @@ export default function Blank() {
         <Contents
           items={[
             { href: "...", label: "..." },
-            { href: "exerises", label: "Exercises" },
+            { href: "exercises", label: "Exercises" },
           ]}
         />
         <Section id="..." label="..." heading={3}>

@@ -416,7 +416,7 @@ export default function Home() {
           <Line
             value={[
               ...content({
-                audio: "/assets/audio/home/welcome.mp3",
+                audio: "/assets/audio/welcome.mp3",
                 parts: [
                   bold("DAILY BASIS ENGLISH COURSE"),
                   " offers specialized English classes focused on the four core language skills: ",
