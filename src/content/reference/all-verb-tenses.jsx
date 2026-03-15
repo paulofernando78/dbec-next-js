@@ -5,2347 +5,1663 @@ import { Paragraph } from "@/components/molecules/Paragraph";
 import { Column } from "@/components/molecules/Column";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
-
 export default function AllVerbsTense() {
-  return (
-    <>
+  return <>
       <Whiteboard title="Reference" subtitle="All Verb Tenses" />
       <div className="line-break">
-        <Paragraph
-          blocks={[
-            {
-              lines: [
-                {
-                  text: [
-                    { part: "Verb Tenses", type: "bold" },
-                    " ",
-                    "show when an action happens and how it is viewed (simple, continuous, or perfect).",
-                    " ",
-                    {
-                      part: "Os tempos verbais mostram quando uma ação acontece e como ela é vista (simples, contínua ou perfeita).",
-                      type: "portuguese",
-                    },
-                  ],
-                },
-              ],
-            },
-          ]}
-        />
-        <Contents
-          items={[
-            {
-              title: "Present",
-            },
-            { href: "verb-be-present", label: "Verb Be" },
-            { href: "simple-present", label: "Simple Present" },
-            { href: "present-continuous", label: "Present Continuous" },
-            { href: "present-perfect", label: "Present Perfect" },
-            {
-              href: "present-perfect-continuous",
-              label: "Present Perfect Continuous",
-            },
-            {
-              title: "Past",
-            },
-            { href: "verb-be-past", label: "Verb Be" },
-            { href: "simple-past", label: "Simple Past" },
-            { href: "past-continuous", label: "Past Continuous" },
-            { href: "past-perfect", label: "Past Perfect" },
-            {
-              href: "past-perfect-continuous",
-              label: "Past Perfect Continuous",
-            },
-            {
-              title: "Future",
-            },
-            {
-              href: "simple-future",
-              label: "Simple Future (Will vs. Going to)",
-            },
-            { href: "future-continuous", label: "Future Continuous" },
-            { href: "future-perfect", label: "Future Perfect" },
-            {
-              href: "future-perfect-continuous",
-              label: "Future Perfect Continuous",
-            },
-          ]}
-        />
+        <Paragraph value={[{
+        part: "Verb Tenses",
+        type: "bold"
+      }, " ", "show when an action happens and how it is viewed (simple, continuous, or perfect).", " ", {
+        part: "Os tempos verbais mostram quando uma ação acontece e como ela é vista (simples, contínua ou perfeita).",
+        type: "portuguese"
+      }]} />
+        <Contents items={[{
+        title: "Present"
+      }, {
+        href: "verb-be-present",
+        label: "Verb Be"
+      }, {
+        href: "simple-present",
+        label: "Simple Present"
+      }, {
+        href: "present-continuous",
+        label: "Present Continuous"
+      }, {
+        href: "present-perfect",
+        label: "Present Perfect"
+      }, {
+        href: "present-perfect-continuous",
+        label: "Present Perfect Continuous"
+      }, {
+        title: "Past"
+      }, {
+        href: "verb-be-past",
+        label: "Verb Be"
+      }, {
+        href: "simple-past",
+        label: "Simple Past"
+      }, {
+        href: "past-continuous",
+        label: "Past Continuous"
+      }, {
+        href: "past-perfect",
+        label: "Past Perfect"
+      }, {
+        href: "past-perfect-continuous",
+        label: "Past Perfect Continuous"
+      }, {
+        title: "Future"
+      }, {
+        href: "simple-future",
+        label: "Simple Future (Will vs. Going to)"
+      }, {
+        href: "future-continuous",
+        label: "Future Continuous"
+      }, {
+        href: "future-perfect",
+        label: "Future Perfect"
+      }, {
+        href: "future-perfect-continuous",
+        label: "Future Perfect Continuous"
+      }]} />
 
         <Section id="verb-be-present" label="Verb Be (Present)" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [{ part: "Form:", type: "bold" }, " am / is / are"],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " states, identity, age, location.",
-                      " ",
-                      {
-                        part: "Usamos para estado, identidade, idade e localização.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "I am a student. ",
-                      { part: "Eu sou um estudante.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "She is at home. ",
-                      { part: "Ela está em casa.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " am / is / are", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " states, identity, age, location.", " ", {
+          part: "Usamos para estado, identidade, idade e localização.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "I am a student. ", {
+          part: "Eu sou um estudante.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "She is at home. ", {
+          part: "Ela está em casa.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="verb-be-past" label="Verb Be (Past)" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [{ part: "Form:", type: "bold" }, " was / were"],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " past states and situations.",
-                      " ",
-                      {
-                        part: "Usamos para estados e situações no passado.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "I was tired yesterday. ",
-                      { part: "Eu estava cansado ontem.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "They were late. ",
-                      { part: "Eles estavam atrasados.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " was / were", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " past states and situations.", " ", {
+          part: "Usamos para estados e situações no passado.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "I was tired yesterday. ", {
+          part: "Eu estava cansado ontem.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "They were late. ", {
+          part: "Eles estavam atrasados.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="simple-present" label="Simple Present" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " routines, facts, and general truths.",
-                      " ",
-                      {
-                        part: "Rotinas, fatos e verdades gerais.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " base verb (+s in 3rd person singular)",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "She works in an office. ",
-                      {
-                        part: "Ela trabalha em um escritório.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "We live in Brazil. ",
-                      { part: "Nós moramos no Brasil.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Use:",
+          type: "bold"
+        }, " routines, facts, and general truths.", " ", {
+          part: "Rotinas, fatos e verdades gerais.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Form:",
+          type: "bold"
+        }, " base verb (+s in 3rd person singular)", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "She works in an office. ", {
+          part: "Ela trabalha em um escritório.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "We live in Brazil. ", {
+          part: "Nós moramos no Brasil.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="present-continuous" label="Present Continuous" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " am / is / are + verb-ing",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " actions happening now or temporary situations.",
-                      " ",
-                      {
-                        part: "Ações acontecendo agora ou situações temporárias.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "I am studying now. ",
-                      { part: "Estou estudando agora.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "They are working this week. ",
-                      {
-                        part: "Eles estão trabalhando esta semana.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " am / is / are + verb-ing", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " actions happening now or temporary situations.", " ", {
+          part: "Ações acontecendo agora ou situações temporárias.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "I am studying now. ", {
+          part: "Estou estudando agora.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "They are working this week. ", {
+          part: "Eles estão trabalhando esta semana.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="present-perfect" label="Present Perfect" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " have / has + past participle",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " life experience and actions with results now.",
-                      " ",
-                      {
-                        part: "Experiências de vida e ações com resultado no presente.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "I have visited London. ",
-                      { part: "Eu visitei Londres.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "She has finished her homework. ",
-                      { part: "Ela terminou a lição.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " have / has + past participle", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " life experience and actions with results now.", " ", {
+          part: "Experiências de vida e ações com resultado no presente.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "I have visited London. ", {
+          part: "Eu visitei Londres.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "She has finished her homework. ", {
+          part: "Ela terminou a lição.",
+          type: "portuguese"
+        }]} />
         </Section>
 
-        <Section
-          id="present-perfect-continuous"
-          label="Present Perfect Continuous"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " have / has been + verb-ing",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " duration of an action that started in the past and continues now.",
-                      " ",
-                      {
-                        part: "Duração de uma ação que começou no passado e continua agora.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "I have been studying for two hours. ",
-                      {
-                        part: "Eu estou estudando há duas horas.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+        <Section id="present-perfect-continuous" label="Present Perfect Continuous" heading={3}>
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " have / has been + verb-ing", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " duration of an action that started in the past and continues now.", " ", {
+          part: "Duração de uma ação que começou no passado e continua agora.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "I have been studying for two hours. ", {
+          part: "Eu estou estudando há duas horas.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="simple-past" label="Simple Past" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " finished actions in the past.",
-                      " ",
-                      {
-                        part: "Ações concluídas no passado.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " regular (-ed) / irregular verbs",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "We watched a movie. ",
-                      {
-                        part: "Nós assistimos a um filme.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "He went home early. ",
-                      { part: "Ele foi para casa cedo.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
-          <Column
-            width="330"
-            cols={[
-              // /t/
-              {
-                bgColor: "var(--slate-4)",
-                textColor: "white",
-                column: "/t/ - voiceless sound",
-                blocks: [
-                  // ...:
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            attention: true,
-                          },
-                          {
-                            part: "/k/, /p/, /s/, /t/ ...:",
-                            type: "phonetics",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // ask
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/ask-asked.mp3",
-                          },
-                          "ask ",
-                          {
-                            part: "perguntar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "ask",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // attack
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/attack-attacked.mp3",
-                          },
-                          "attack ",
-                          {
-                            part: "atacar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "attack",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // finish
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/finish-finished.mp3",
-                          },
-                          "finish ",
-                          {
-                            part: "terminar, acabar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "finish",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // help
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/help-helped.mp3",
-                          },
-                          "help ",
-                          {
-                            part: "ajudar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "help",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // jump
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/jump-jumped.mp3",
-                          },
-                          "jump ",
-                          {
-                            part: "pular",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "jump",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // kiss
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/kiss-kissed.mp3",
-                          },
-                          "kiss ",
-                          {
-                            part: "beijar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "kiss",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // laugh
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/laugh.mp3",
-                          },
-                          "laugh ",
-                          {
-                            part: "rir",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "laugh",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // look
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/look.mp3",
-                          },
-                          "look ",
-                          {
-                            part: "olhar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "look",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // stop
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/stop.mp3",
-                          },
-                          "stop ",
-                          {
-                            part: "parar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "stop",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // talk
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/talk.mp3",
-                          },
-                          "talk ",
-                          {
-                            part: "conversar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "talk",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // thank
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/thank.mp3",
-                          },
-                          "thank ",
-                          {
-                            part: "agradecer",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "thank",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // walk
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/walk.mp3",
-                          },
-                          "walk ",
-                          {
-                            part: "caminhar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "walk",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // wash
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/wash-washed.mp3",
-                          },
-                          "wash ",
-                          {
-                            part: "lavar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "wash",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // watch
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/watch-watched.mp3",
-                          },
-                          "watch ",
-                          {
-                            part: "assistir, ...",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "watch",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // work
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/work-worked.mp3",
-                          },
-                          "work ",
-                          {
-                            part: "trabalhar, ...",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "work",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // -e:
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            attention: true,
-                          },
-                          "-e:",
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // like
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/like.mp3",
-                          },
-                          "lik(e) ",
-                          {
-                            part: "gostar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "lik",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // practice
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio:
-                              "/assets/audio/general/practice-practiceed.mp3",
-                          },
-                          "practic(e) ",
-                          {
-                            part: "praticar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "practic",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                ],
-              },
-
-              // /d/
-              {
-                bgColor: "var(--slate-4)",
-                textColor: "white",
-                column: "/d/ - voiced sound",
-                blocks: [
-                  // ...:
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            attention: true,
-                          },
-                          "vowel sounds, ",
-                          {
-                            part: "/d/, /m/, /n/, /r/, /v/, /z/ ...:",
-                            type: "phonetics",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // answer
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/answer-answered.mp3",
-                          },
-                          "answer ",
-                          {
-                            part: "responder",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "answer",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // clean
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/clean-cleaned.mp3",
-                          },
-                          "clean ",
-                          { part: "limpar", type: "portuguese" },
-                          " ➜ ",
-                          "clean",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // learn
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/learn-learned.mp3",
-                          },
-                          "learn ",
-                          { part: "aprender", type: "portuguese" },
-                          " ➜ ",
-                          "learn",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // listen
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/listen-listened.mp3",
-                          },
-                          "listen ",
-                          { part: "ouvir / escutar", type: "portuguese" },
-                          " ➜ ",
-                          "listen",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // live
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/live-lived.mp3",
-                          },
-                          "live ",
-                          {
-                            part: "viver, morar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "liv",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // open
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/open-opened.mp3",
-                          },
-                          "open ",
-                          { part: "abrir", type: "portuguese" },
-                          " ➜ ",
-                          "open",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // plan
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/plan-planed.mp3",
-                          },
-                          "plan ",
-                          {
-                            part: "planejar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "plan",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // play
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/play-played.mp3",
-                          },
-                          "play ",
-                          {
-                            part: "jogar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "play",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // turn
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/turn-turned.mp3",
-                          },
-                          "turn ",
-                          { part: "virar / girar", type: "portuguese" },
-                          " ➜ ",
-                          "turn",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // water
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/water-watered.mp3",
-                          },
-                          "water ",
-                          {
-                            part: "molhar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "water",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // -e:
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            attention: true,
-                          },
-                          "-e:",
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // achieve
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/achieve-achieved.mp3",
-                          },
-                          "achiev(e) ",
-                          { part: "conquistar", type: "portuguese" },
-                          " ➜ ",
-                          "achiev",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // admire
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/admire-admired.mp3",
-                          },
-                          "admir(e) ",
-                          { part: "admirar", type: "portuguese" },
-                          " ➜ ",
-                          "admir",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // arrive
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/arrive-arrived.mp3",
-                          },
-                          "arriv(e) ",
-                          { part: "chegar", type: "portuguese" },
-                          " ➜ ",
-                          "arriv",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // close
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/close-closed.mp3",
-                          },
-                          "clos(e) ",
-                          { part: "fechar", type: "portuguese" },
-                          " ➜ ",
-                          "clos",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // damage
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/damage-damaged.mp3",
-                          },
-                          "damag(e) ",
-                          { part: "danificar", type: "portuguese" },
-                          " ➜ ",
-                          "damag",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // dance
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/dance-danced.mp3",
-                          },
-                          "danc(e) ",
-                          { part: "dançar", type: "portuguese" },
-                          " ➜ ",
-                          "danc",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // lie
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/lie-lied.mp3",
-                          },
-                          "li(e) ",
-                          {
-                            part: "mentir, deitar-se",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "li",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // love
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/love-loved.mp3",
-                          },
-                          "lov(e) ",
-                          { part: "amar", type: "portuguese" },
-                          " ➜ ",
-                          "lov",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // manage
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/manage-managed.mp3",
-                          },
-                          "manag(e) ",
-                          {
-                            part: "gerenciar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "manag",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // scare
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/scare-scared.mp3",
-                          },
-                          "scare(e) ",
-                          { part: "assustar", type: "portuguese" },
-                          " ➜ ",
-                          "scare",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // tie
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/tie-tied.mp3",
-                          },
-                          "ti(e)",
-                          {
-                            part: "amarrar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "ti",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // use
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/use-used.mp3",
-                          },
-                          "us(e) ",
-                          { part: "usar", type: "portuguese" },
-                          " ➜ ",
-                          "us",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // change -y for ied:
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            attention: true,
-                          },
-                          "change -y for ied:",
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // carry
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/carry-studied.mp3",
-                          },
-                          "carry ",
-                          {
-                            part: "carregar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "carr",
-                          {
-                            part: "ied",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // cry
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/cry-studied.mp3",
-                          },
-                          "cry ",
-                          {
-                            part: "chorar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "cr",
-                          {
-                            part: "ied",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // dry
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/dry-studied.mp3",
-                          },
-                          "dry ",
-                          {
-                            part: "secar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "dr",
-                          {
-                            part: "ied",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // study
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/study-studied.mp3",
-                          },
-                          "study ",
-                          {
-                            part: "estudar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "stud",
-                          {
-                            part: "ied",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // try
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/try-tried.mp3",
-                          },
-                          "try ",
-                          {
-                            part: "tentar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "tr",
-                          {
-                            part: "ied",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                ],
-              },
-
-              // /ɪd/
-              {
-                bgColor: "var(--slate-4)",
-                textColor: "white",
-                column: "/ɪd/",
-                blocks: [
-                  // ...:
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            attention: true,
-                          },
-                          "/t/ and /d/:",
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // add
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/add-added.mp3",
-                          },
-                          "add ",
-                          {
-                            part: "adicionar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "add",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // assist
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/assit-assisted.mp3",
-                          },
-                          "assist ",
-                          {
-                            part: "auxilar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "assist",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // end
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/end-ended.mp3",
-                          },
-                          "end ",
-                          {
-                            part: "acabar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "end",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // last
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/last-lasted.mp3",
-                          },
-                          "last ",
-                          {
-                            part: "durar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "last",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // list
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/list-listed.mp3",
-                          },
-                          "list ",
-                          {
-                            part: "listar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "list",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // need
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/need-needed.mp3",
-                          },
-                          "need ",
-                          {
-                            part: "precisar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "need",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // notice
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/notice-noticeed.mp3",
-                          },
-                          "notice ",
-                          {
-                            part: "perceber",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "notic",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // shout
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/shout-shouted.mp3",
-                          },
-                          "shout ",
-                          {
-                            part: "gritar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "shout",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // start
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/start-started.mp3",
-                          },
-                          "start ",
-                          {
-                            part: "começar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "start",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // wait
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/wait-waited.mp3",
-                          },
-                          "wait ",
-                          {
-                            part: "esperar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "wait",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // want
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/want-wanted.mp3",
-                          },
-                          "want ",
-                          {
-                            part: "querer",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "want",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // -e:
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            attention: true,
-                          },
-                          "-e:",
-                        ],
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  // celebrate
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/assit-celebrated.mp3",
-                          },
-                          "celebrat(e) ",
-                          {
-                            part: "celebrar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "celebrat",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                  // locate
-                  {
-                    block: [
-                      {
-                        text: [
-                          {
-                            audio: "/assets/audio/general/locate-locateed.mp3",
-                          },
-                          "locat(e) ",
-                          {
-                            part: "localizar",
-                            type: "portuguese",
-                          },
-                          " ➜ ",
-                          "locat",
-                          {
-                            part: "ed",
-                            type: "mark",
-                          },
-                        ],
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Use:",
+          type: "bold"
+        }, " finished actions in the past.", " ", {
+          part: "Ações concluídas no passado.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Form:",
+          type: "bold"
+        }, " regular (-ed) / irregular verbs", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "We watched a movie. ", {
+          part: "Nós assistimos a um filme.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "He went home early. ", {
+          part: "Ele foi para casa cedo.",
+          type: "portuguese"
+        }]} />
+          <Column width="330" cols={[
+        // /t/
+        {
+          bgColor: "var(--slate-4)",
+          textColor: "white",
+          column: "/t/ - voiceless sound",
+          blocks: [
+          // ...:
+          {
+            block: [{
+              text: [{
+                attention: true
+              }, {
+                part: "/k/, /p/, /s/, /t/ ...:",
+                type: "phonetics"
+              }]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // ask
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/ask-asked.mp3"
+              }, "ask ", {
+                part: "perguntar",
+                type: "portuguese"
+              }, " ➜ ", "ask", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // attack
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/attack-attacked.mp3"
+              }, "attack ", {
+                part: "atacar",
+                type: "portuguese"
+              }, " ➜ ", "attack", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // finish
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/finish-finished.mp3"
+              }, "finish ", {
+                part: "terminar, acabar",
+                type: "portuguese"
+              }, " ➜ ", "finish", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // help
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/help-helped.mp3"
+              }, "help ", {
+                part: "ajudar",
+                type: "portuguese"
+              }, " ➜ ", "help", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // jump
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/jump-jumped.mp3"
+              }, "jump ", {
+                part: "pular",
+                type: "portuguese"
+              }, " ➜ ", "jump", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // kiss
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/kiss-kissed.mp3"
+              }, "kiss ", {
+                part: "beijar",
+                type: "portuguese"
+              }, " ➜ ", "kiss", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // laugh
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/laugh.mp3"
+              }, "laugh ", {
+                part: "rir",
+                type: "portuguese"
+              }, " ➜ ", "laugh", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // look
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/look.mp3"
+              }, "look ", {
+                part: "olhar",
+                type: "portuguese"
+              }, " ➜ ", "look", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // stop
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/stop.mp3"
+              }, "stop ", {
+                part: "parar",
+                type: "portuguese"
+              }, " ➜ ", "stop", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // talk
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/talk.mp3"
+              }, "talk ", {
+                part: "conversar",
+                type: "portuguese"
+              }, " ➜ ", "talk", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // thank
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/thank.mp3"
+              }, "thank ", {
+                part: "agradecer",
+                type: "portuguese"
+              }, " ➜ ", "thank", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // walk
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/walk.mp3"
+              }, "walk ", {
+                part: "caminhar",
+                type: "portuguese"
+              }, " ➜ ", "walk", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // wash
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/wash-washed.mp3"
+              }, "wash ", {
+                part: "lavar",
+                type: "portuguese"
+              }, " ➜ ", "wash", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // watch
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/watch-watched.mp3"
+              }, "watch ", {
+                part: "assistir, ...",
+                type: "portuguese"
+              }, " ➜ ", "watch", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // work
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/work-worked.mp3"
+              }, "work ", {
+                part: "trabalhar, ...",
+                type: "portuguese"
+              }, " ➜ ", "work", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // -e:
+          {
+            block: [{
+              text: [{
+                attention: true
+              }, "-e:"]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // like
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/like.mp3"
+              }, "lik(e) ", {
+                part: "gostar",
+                type: "portuguese"
+              }, " ➜ ", "lik", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // practice
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/practice-practiceed.mp3"
+              }, "practic(e) ", {
+                part: "praticar",
+                type: "portuguese"
+              }, " ➜ ", "practic", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          }]
+        },
+        // /d/
+        {
+          bgColor: "var(--slate-4)",
+          textColor: "white",
+          column: "/d/ - voiced sound",
+          blocks: [
+          // ...:
+          {
+            block: [{
+              text: [{
+                attention: true
+              }, "vowel sounds, ", {
+                part: "/d/, /m/, /n/, /r/, /v/, /z/ ...:",
+                type: "phonetics"
+              }]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // answer
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/answer-answered.mp3"
+              }, "answer ", {
+                part: "responder",
+                type: "portuguese"
+              }, " ➜ ", "answer", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // clean
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/clean-cleaned.mp3"
+              }, "clean ", {
+                part: "limpar",
+                type: "portuguese"
+              }, " ➜ ", "clean", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // learn
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/learn-learned.mp3"
+              }, "learn ", {
+                part: "aprender",
+                type: "portuguese"
+              }, " ➜ ", "learn", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // listen
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/listen-listened.mp3"
+              }, "listen ", {
+                part: "ouvir / escutar",
+                type: "portuguese"
+              }, " ➜ ", "listen", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // live
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/live-lived.mp3"
+              }, "live ", {
+                part: "viver, morar",
+                type: "portuguese"
+              }, " ➜ ", "liv", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // open
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/open-opened.mp3"
+              }, "open ", {
+                part: "abrir",
+                type: "portuguese"
+              }, " ➜ ", "open", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // plan
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/plan-planed.mp3"
+              }, "plan ", {
+                part: "planejar",
+                type: "portuguese"
+              }, " ➜ ", "plan", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // play
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/play-played.mp3"
+              }, "play ", {
+                part: "jogar",
+                type: "portuguese"
+              }, " ➜ ", "play", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // turn
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/turn-turned.mp3"
+              }, "turn ", {
+                part: "virar / girar",
+                type: "portuguese"
+              }, " ➜ ", "turn", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // water
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/water-watered.mp3"
+              }, "water ", {
+                part: "molhar",
+                type: "portuguese"
+              }, " ➜ ", "water", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // -e:
+          {
+            block: [{
+              text: [{
+                attention: true
+              }, "-e:"]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // achieve
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/achieve-achieved.mp3"
+              }, "achiev(e) ", {
+                part: "conquistar",
+                type: "portuguese"
+              }, " ➜ ", "achiev", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // admire
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/admire-admired.mp3"
+              }, "admir(e) ", {
+                part: "admirar",
+                type: "portuguese"
+              }, " ➜ ", "admir", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // arrive
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/arrive-arrived.mp3"
+              }, "arriv(e) ", {
+                part: "chegar",
+                type: "portuguese"
+              }, " ➜ ", "arriv", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // close
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/close-closed.mp3"
+              }, "clos(e) ", {
+                part: "fechar",
+                type: "portuguese"
+              }, " ➜ ", "clos", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // damage
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/damage-damaged.mp3"
+              }, "damag(e) ", {
+                part: "danificar",
+                type: "portuguese"
+              }, " ➜ ", "damag", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // dance
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/dance-danced.mp3"
+              }, "danc(e) ", {
+                part: "dançar",
+                type: "portuguese"
+              }, " ➜ ", "danc", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // lie
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/lie-lied.mp3"
+              }, "li(e) ", {
+                part: "mentir, deitar-se",
+                type: "portuguese"
+              }, " ➜ ", "li", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // love
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/love-loved.mp3"
+              }, "lov(e) ", {
+                part: "amar",
+                type: "portuguese"
+              }, " ➜ ", "lov", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // manage
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/manage-managed.mp3"
+              }, "manag(e) ", {
+                part: "gerenciar",
+                type: "portuguese"
+              }, " ➜ ", "manag", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // scare
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/scare-scared.mp3"
+              }, "scare(e) ", {
+                part: "assustar",
+                type: "portuguese"
+              }, " ➜ ", "scare", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // tie
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/tie-tied.mp3"
+              }, "ti(e)", {
+                part: "amarrar",
+                type: "portuguese"
+              }, " ➜ ", "ti", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // use
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/use-used.mp3"
+              }, "us(e) ", {
+                part: "usar",
+                type: "portuguese"
+              }, " ➜ ", "us", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // change -y for ied:
+          {
+            block: [{
+              text: [{
+                attention: true
+              }, "change -y for ied:"]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // carry
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/carry-studied.mp3"
+              }, "carry ", {
+                part: "carregar",
+                type: "portuguese"
+              }, " ➜ ", "carr", {
+                part: "ied",
+                type: "mark"
+              }]
+            }]
+          },
+          // cry
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/cry-studied.mp3"
+              }, "cry ", {
+                part: "chorar",
+                type: "portuguese"
+              }, " ➜ ", "cr", {
+                part: "ied",
+                type: "mark"
+              }]
+            }]
+          },
+          // dry
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/dry-studied.mp3"
+              }, "dry ", {
+                part: "secar",
+                type: "portuguese"
+              }, " ➜ ", "dr", {
+                part: "ied",
+                type: "mark"
+              }]
+            }]
+          },
+          // study
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/study-studied.mp3"
+              }, "study ", {
+                part: "estudar",
+                type: "portuguese"
+              }, " ➜ ", "stud", {
+                part: "ied",
+                type: "mark"
+              }]
+            }]
+          },
+          // try
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/try-tried.mp3"
+              }, "try ", {
+                part: "tentar",
+                type: "portuguese"
+              }, " ➜ ", "tr", {
+                part: "ied",
+                type: "mark"
+              }]
+            }]
+          }]
+        },
+        // /ɪd/
+        {
+          bgColor: "var(--slate-4)",
+          textColor: "white",
+          column: "/ɪd/",
+          blocks: [
+          // ...:
+          {
+            block: [{
+              text: [{
+                attention: true
+              }, "/t/ and /d/:"]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // add
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/add-added.mp3"
+              }, "add ", {
+                part: "adicionar",
+                type: "portuguese"
+              }, " ➜ ", "add", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // assist
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/assit-assisted.mp3"
+              }, "assist ", {
+                part: "auxilar",
+                type: "portuguese"
+              }, " ➜ ", "assist", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // end
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/end-ended.mp3"
+              }, "end ", {
+                part: "acabar",
+                type: "portuguese"
+              }, " ➜ ", "end", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // last
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/last-lasted.mp3"
+              }, "last ", {
+                part: "durar",
+                type: "portuguese"
+              }, " ➜ ", "last", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // list
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/list-listed.mp3"
+              }, "list ", {
+                part: "listar",
+                type: "portuguese"
+              }, " ➜ ", "list", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // need
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/need-needed.mp3"
+              }, "need ", {
+                part: "precisar",
+                type: "portuguese"
+              }, " ➜ ", "need", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // notice
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/notice-noticeed.mp3"
+              }, "notice ", {
+                part: "perceber",
+                type: "portuguese"
+              }, " ➜ ", "notic", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // shout
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/shout-shouted.mp3"
+              }, "shout ", {
+                part: "gritar",
+                type: "portuguese"
+              }, " ➜ ", "shout", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // start
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/start-started.mp3"
+              }, "start ", {
+                part: "começar",
+                type: "portuguese"
+              }, " ➜ ", "start", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // wait
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/wait-waited.mp3"
+              }, "wait ", {
+                part: "esperar",
+                type: "portuguese"
+              }, " ➜ ", "wait", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // want
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/want-wanted.mp3"
+              }, "want ", {
+                part: "querer",
+                type: "portuguese"
+              }, " ➜ ", "want", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // -e:
+          {
+            block: [{
+              text: [{
+                attention: true
+              }, "-e:"]
+            }]
+          }, {
+            lineBreak: true
+          },
+          // celebrate
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/assit-celebrated.mp3"
+              }, "celebrat(e) ", {
+                part: "celebrar",
+                type: "portuguese"
+              }, " ➜ ", "celebrat", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          },
+          // locate
+          {
+            block: [{
+              text: [{
+                audio: "/assets/audio/general/locate-locateed.mp3"
+              }, "locat(e) ", {
+                part: "localizar",
+                type: "portuguese"
+              }, " ➜ ", "locat", {
+                part: "ed",
+                type: "mark"
+              }]
+            }]
+          }]
+        }]} />
         </Section>
 
         <Section id="past-continuous" label="Past Continuous" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " was / were + verb-ing",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " an action in progress in the past.",
-                      " ",
-                      {
-                        part: "Ação em progresso no passado.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "I was studying when you called. ",
-                      {
-                        part: "Eu estava estudando quando você ligou.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " was / were + verb-ing", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " an action in progress in the past.", " ", {
+          part: "Ação em progresso no passado.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "I was studying when you called. ", {
+          part: "Eu estava estudando quando você ligou.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="past-perfect" label="Past Perfect" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " had + past participle",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " an action before another action in the past.",
-                      " ",
-                      {
-                        part: "Ação que aconteceu antes de outra no passado.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "She had left before I arrived. ",
-                      {
-                        part: "Ela tinha saído antes de eu chegar.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " had + past participle", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " an action before another action in the past.", " ", {
+          part: "Ação que aconteceu antes de outra no passado.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "She had left before I arrived. ", {
+          part: "Ela tinha saído antes de eu chegar.",
+          type: "portuguese"
+        }]} />
         </Section>
 
-        <Section
-          id="past-perfect-continuous"
-          label="Past Perfect Continuous"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " had been + verb-ing",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " duration before a past moment.",
-                      " ",
-                      {
-                        part: "Duração antes de um momento no passado.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "They had been waiting for an hour. ",
-                      {
-                        part: "Eles estavam esperando há uma hora.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+        <Section id="past-perfect-continuous" label="Past Perfect Continuous" heading={3}>
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " had been + verb-ing", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " duration before a past moment.", " ", {
+          part: "Duração antes de um momento no passado.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "They had been waiting for an hour. ", {
+          part: "Eles estavam esperando há uma hora.",
+          type: "portuguese"
+        }]} />
         </Section>
 
-        <Section
-          id="simple-future"
-          label="Simple Future (Will vs. Going to)"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Will", type: "bold" },
-                      " → decisions made now, promises, predictions.",
-                      " ",
-                      {
-                        part: "Decisões no momento, promessas, previsões.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Going to", type: "bold" },
-                      " → plans and strong evidence.",
-                      " ",
-                      { part: "Planos e evidência forte.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "I will help you. ",
-                      { part: "Eu vou te ajudar.", type: "portuguese" },
-                    ],
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "She is going to travel tomorrow. ",
-                      { part: "Ela vai viajar amanhã.", type: "portuguese" },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+        <Section id="simple-future" label="Simple Future (Will vs. Going to)" heading={3}>
+          <Paragraph value={[{
+          part: "Will",
+          type: "bold"
+        }, " → decisions made now, promises, predictions.", " ", {
+          part: "Decisões no momento, promessas, previsões.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Going to",
+          type: "bold"
+        }, " → plans and strong evidence.", " ", {
+          part: "Planos e evidência forte.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "I will help you. ", {
+          part: "Eu vou te ajudar.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "She is going to travel tomorrow. ", {
+          part: "Ela vai viajar amanhã.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="future-continuous" label="Future Continuous" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " will be + verb-ing",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " an action in progress at a future time.",
-                      " ",
-                      {
-                        part: "Ação em progresso em um momento futuro.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "This time tomorrow, I will be working. ",
-                      {
-                        part: "A essa hora amanhã, estarei trabalhando.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " will be + verb-ing", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " an action in progress at a future time.", " ", {
+          part: "Ação em progresso em um momento futuro.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "This time tomorrow, I will be working. ", {
+          part: "A essa hora amanhã, estarei trabalhando.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="future-perfect" label="Future Perfect" heading={3}>
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " will have + past participle",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " an action finished before a future moment.",
-                      " ",
-                      {
-                        part: "Ação concluída antes de um momento futuro.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "By 6 p.m., she will have finished. ",
-                      {
-                        part: "Até as 18h, ela terá terminado.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " will have + past participle", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " an action finished before a future moment.", " ", {
+          part: "Ação concluída antes de um momento futuro.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "By 6 p.m., she will have finished. ", {
+          part: "Até as 18h, ela terá terminado.",
+          type: "portuguese"
+        }]} />
         </Section>
 
-        <Section
-          id="future-perfect-continuous"
-          label="Future Perfect Continuous"
-          heading={3}
-        >
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  {
-                    text: [
-                      { part: "Form:", type: "bold" },
-                      " will have been + verb-ing",
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { part: "Use:", type: "bold" },
-                      " duration up to a future point.",
-                      " ",
-                      {
-                        part: "Duração até um ponto no futuro.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      { bullet: true },
-                      "By next year, I will have been working here for five years. ",
-                      {
-                        part: "Até o ano que vem, estarei trabalhando aqui há cinco anos.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          />
+        <Section id="future-perfect-continuous" label="Future Perfect Continuous" heading={3}>
+          <Paragraph value={[{
+          part: "Form:",
+          type: "bold"
+        }, " will have been + verb-ing", {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          part: "Use:",
+          type: "bold"
+        }, " duration up to a future point.", " ", {
+          part: "Duração até um ponto no futuro.",
+          type: "portuguese"
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          lineBreak: true
+        }, {
+          bullet: true
+        }, "By next year, I will have been working here for five years. ", {
+          part: "Até o ano que vem, estarei trabalhando aqui há cinco anos.",
+          type: "portuguese"
+        }]} />
         </Section>
 
         <Section id="exercises" label="Exercises" heading={3}>
-          <Radio
-            exercise={{
-              instruction: "1. Choose the correct verb tense.",
-              questions: [
-                {
-                  question: "1. She usually ___ to work by bus.",
-                  options: [
-                    { option: "goes", isCorrect: true },
-                    { option: "is going", isCorrect: false },
-                    { option: "has gone", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "2. I ___ my homework already.",
-                  options: [
-                    { option: "have finished", isCorrect: true },
-                    { option: "finished", isCorrect: false },
-                    { option: "am finishing", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "3. This time yesterday, we ___ dinner.",
-                  options: [
-                    { option: "were having", isCorrect: true },
-                    { option: "have", isCorrect: false },
-                    { option: "had", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "4. By tomorrow, he ___ the report.",
-                  options: [
-                    { option: "will have completed", isCorrect: true },
-                    { option: "completes", isCorrect: false },
-                    { option: "is completing", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "5. They ___ here since 2018.",
-                  options: [
-                    { option: "have lived", isCorrect: true },
-                    { option: "live", isCorrect: false },
-                    { option: "are living", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "6. Look at those clouds! It ___ rain.",
-                  options: [
-                    { option: "is going to", isCorrect: true },
-                    { option: "will", isCorrect: false },
-                    { option: "rains", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "7. When I arrived, she ___ on the phone.",
-                  options: [
-                    { option: "was talking", isCorrect: true },
-                    { option: "talked", isCorrect: false },
-                    { option: "has talked", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "8. He ___ three books this month.",
-                  options: [
-                    { option: "has read", isCorrect: true },
-                    { option: "reads", isCorrect: false },
-                    { option: "read", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "9. By next week, we ___ here for a year.",
-                  options: [
-                    { option: "will have been working", isCorrect: true },
-                    { option: "will work", isCorrect: false },
-                    { option: "are working", isCorrect: false },
-                  ],
-                },
-                {
-                  question: "10. She ___ when the lights went out.",
-                  options: [
-                    { option: "was studying", isCorrect: true },
-                    { option: "studied", isCorrect: false },
-                    { option: "has studied", isCorrect: false },
-                  ],
-                },
-              ],
-            }}
-          />
+          <Radio exercise={{
+          instruction: "1. Choose the correct verb tense.",
+          questions: [{
+            question: "1. She usually ___ to work by bus.",
+            options: [{
+              option: "goes",
+              isCorrect: true
+            }, {
+              option: "is going",
+              isCorrect: false
+            }, {
+              option: "has gone",
+              isCorrect: false
+            }]
+          }, {
+            question: "2. I ___ my homework already.",
+            options: [{
+              option: "have finished",
+              isCorrect: true
+            }, {
+              option: "finished",
+              isCorrect: false
+            }, {
+              option: "am finishing",
+              isCorrect: false
+            }]
+          }, {
+            question: "3. This time yesterday, we ___ dinner.",
+            options: [{
+              option: "were having",
+              isCorrect: true
+            }, {
+              option: "have",
+              isCorrect: false
+            }, {
+              option: "had",
+              isCorrect: false
+            }]
+          }, {
+            question: "4. By tomorrow, he ___ the report.",
+            options: [{
+              option: "will have completed",
+              isCorrect: true
+            }, {
+              option: "completes",
+              isCorrect: false
+            }, {
+              option: "is completing",
+              isCorrect: false
+            }]
+          }, {
+            question: "5. They ___ here since 2018.",
+            options: [{
+              option: "have lived",
+              isCorrect: true
+            }, {
+              option: "live",
+              isCorrect: false
+            }, {
+              option: "are living",
+              isCorrect: false
+            }]
+          }, {
+            question: "6. Look at those clouds! It ___ rain.",
+            options: [{
+              option: "is going to",
+              isCorrect: true
+            }, {
+              option: "will",
+              isCorrect: false
+            }, {
+              option: "rains",
+              isCorrect: false
+            }]
+          }, {
+            question: "7. When I arrived, she ___ on the phone.",
+            options: [{
+              option: "was talking",
+              isCorrect: true
+            }, {
+              option: "talked",
+              isCorrect: false
+            }, {
+              option: "has talked",
+              isCorrect: false
+            }]
+          }, {
+            question: "8. He ___ three books this month.",
+            options: [{
+              option: "has read",
+              isCorrect: true
+            }, {
+              option: "reads",
+              isCorrect: false
+            }, {
+              option: "read",
+              isCorrect: false
+            }]
+          }, {
+            question: "9. By next week, we ___ here for a year.",
+            options: [{
+              option: "will have been working",
+              isCorrect: true
+            }, {
+              option: "will work",
+              isCorrect: false
+            }, {
+              option: "are working",
+              isCorrect: false
+            }]
+          }, {
+            question: "10. She ___ when the lights went out.",
+            options: [{
+              option: "was studying",
+              isCorrect: true
+            }, {
+              option: "studied",
+              isCorrect: false
+            }, {
+              option: "has studied",
+              isCorrect: false
+            }]
+          }]
+        }} />
 
-          <FillInTheBlanks
-            exercise={{
-              instructions:
-                "2. Fill in the blanks with the correct verb tense.",
-              blocks: [
-                {
-                  block: [
-                    { text: "1. I " },
-                    { blank: "have been working" },
-                    { text: " here since 2020." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "2. She " },
-                    { blank: "is cooking" },
-                    { text: " dinner right now." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "3. They " },
-                    { blank: "went" },
-                    { text: " to the party last night." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "4. By 8 p.m., he " },
-                    { blank: "will have finished" },
-                    { text: " the task." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "5. When I called, she " },
-                    { blank: "was sleeping" },
-                    { text: "." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "6. We " },
-                    { blank: "are going to travel" },
-                    { text: " next month." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "7. He " },
-                    { blank: "has read" },
-                    { text: " that book already." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "8. This time tomorrow, I " },
-                    { blank: "will be working" },
-                    { text: "." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "9. They " },
-                    { blank: "had left" },
-                    { text: " before we arrived." },
-                  ],
-                  lineBreak: true,
-                },
-                {
-                  block: [
-                    { text: "10. By next year, she " },
-                    { blank: "will have been studying" },
-                    { text: " here for five years." },
-                  ],
-                },
-              ],
-            }}
-          />
+          <FillInTheBlanks exercise={{
+          instructions: "2. Fill in the blanks with the correct verb tense.",
+          blocks: [{
+            block: [{
+              text: "1. I "
+            }, {
+              blank: "have been working"
+            }, {
+              text: " here since 2020."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "2. She "
+            }, {
+              blank: "is cooking"
+            }, {
+              text: " dinner right now."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "3. They "
+            }, {
+              blank: "went"
+            }, {
+              text: " to the party last night."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "4. By 8 p.m., he "
+            }, {
+              blank: "will have finished"
+            }, {
+              text: " the task."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "5. When I called, she "
+            }, {
+              blank: "was sleeping"
+            }, {
+              text: "."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "6. We "
+            }, {
+              blank: "are going to travel"
+            }, {
+              text: " next month."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "7. He "
+            }, {
+              blank: "has read"
+            }, {
+              text: " that book already."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "8. This time tomorrow, I "
+            }, {
+              blank: "will be working"
+            }, {
+              text: "."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "9. They "
+            }, {
+              blank: "had left"
+            }, {
+              text: " before we arrived."
+            }],
+            lineBreak: true
+          }, {
+            block: [{
+              text: "10. By next year, she "
+            }, {
+              blank: "will have been studying"
+            }, {
+              text: " here for five years."
+            }]
+          }]
+        }} />
         </Section>
       </div>
-    </>
-  );
+    </>;
 }

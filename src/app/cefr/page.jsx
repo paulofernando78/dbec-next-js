@@ -16,7 +16,6 @@ import {
   phonetics,
   portuguese,
 } from "@/helpers/content";
-
 export default function WhatsCEFR() {
   return (
     <>
@@ -27,13 +26,34 @@ export default function WhatsCEFR() {
       <div className="line-break">
         <Contents
           items={[
-            { href: "cefr", label: "What’s CEFR?" },
-            { href: "a1-beginner", label: "A1 – Beginner" },
-            { href: "a2-elementary", label: "A2 – Elementary" },
-            { href: "b1-intermediate", label: "B1 – Intermediate" },
-            { href: "b2-upper-intermediate", label: "B2 – Upper-Intermediate" },
-            { href: "c1-advanced", label: "C1 – Advanced" },
-            { href: "c2-proficiency", label: "C2 – Proficiency" },
+            {
+              href: "cefr",
+              label: "What’s CEFR?",
+            },
+            {
+              href: "a1-beginner",
+              label: "A1 – Beginner",
+            },
+            {
+              href: "a2-elementary",
+              label: "A2 – Elementary",
+            },
+            {
+              href: "b1-intermediate",
+              label: "B1 – Intermediate",
+            },
+            {
+              href: "b2-upper-intermediate",
+              label: "B2 – Upper-Intermediate",
+            },
+            {
+              href: "c1-advanced",
+              label: "C1 – Advanced",
+            },
+            {
+              href: "c2-proficiency",
+              label: "C2 – Proficiency",
+            },
           ]}
         />
 
@@ -103,43 +123,35 @@ export default function WhatsCEFR() {
             ]}
           />
           <Paragraph
-            blocks={[
+            value={[
               {
-                lines: [
-                  {
-                    text: [
-                      {
-                        part: "",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      {
-                        part: "",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                  {
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        part: "The CEFR is widely used by universities, employers, and examination boards such as Cambridge English to design courses, set learning objectives, and report language proficiency in a transparent and comparable way.",
-                      },
-                    ],
-                  },
-                  {
-                    text: [
-                      {
-                        part: "O CEFR é amplamente utilizado por universidades, empregadores e instituições de exame, como a Cambridge English, para planejar cursos, definir objetivos de aprendizagem e relatar a proficiência linguística de forma clara e comparável.",
-                        type: "portuguese",
-                      },
-                    ],
-                  },
-                ],
+                part: "",
+              },
+              {
+                lineBreak: true,
+              },
+              {
+                part: "",
+                type: "portuguese",
+              },
+              {
+                lineBreak: true,
+              },
+              {
+                lineBreak: true,
+              },
+              {
+                lineBreak: true,
+              },
+              {
+                part: "The CEFR is widely used by universities, employers, and examination boards such as Cambridge English to design courses, set learning objectives, and report language proficiency in a transparent and comparable way.",
+              },
+              {
+                lineBreak: true,
+              },
+              {
+                part: "O CEFR é amplamente utilizado por universidades, empregadores e instituições de exame, como a Cambridge English, para planejar cursos, definir objetivos de aprendizagem e relatar a proficiência linguística de forma clara e comparável.",
+                type: "portuguese",
               },
             ]}
           />
@@ -178,23 +190,69 @@ export default function WhatsCEFR() {
           <List
             bullet={true}
             items={[
-              { value: [...content({ parts: ["Hello. How are you?"] })] },
-              { value: [...content({ parts: ["What's your name?"] })] },
-              { value: [...content({ parts: ["Where are you from?"] })] },
-              { value: [...content({ parts: ["Do you study English?"] })] },
               {
                 value: [
-                  ...content({ parts: ["What is your favorite subject in school?"] }),
+                  ...content({
+                    parts: ["Hello. How are you?"],
+                  }),
                 ],
               },
-              { value: [...content({ parts: ["Do you have a job?"] })] },
               {
                 value: [
-                  ...content({ parts: ["What do you do in your free time?"] }),
+                  ...content({
+                    parts: ["What's your name?"],
+                  }),
                 ],
               },
-              { value: [...content({ parts: ["Do you like sports?"] })] },
-              { value: [...content({ parts: ["Do you play sports?"] })] },
+              {
+                value: [
+                  ...content({
+                    parts: ["Where are you from?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["Do you study English?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["What is your favorite subject in school?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["Do you have a job?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["What do you do in your free time?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["Do you like sports?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["Do you play sports?"],
+                  }),
+                ],
+              },
             ]}
           />
         </Section>
@@ -233,16 +291,32 @@ export default function WhatsCEFR() {
             bullet={true}
             items={[
               {
-                value: [...content({ parts: ["What's your favorite movie?"] })],
+                value: [
+                  ...content({
+                    parts: ["What's your favorite movie?"],
+                  }),
+                ],
               },
               {
                 value: [
-                  ...content({ parts: ["What kinds of movies do you like?"] }),
+                  ...content({
+                    parts: ["What kinds of movies do you like?"],
+                  }),
                 ],
               },
-              { value: [...content({ parts: ["Where did you grow up?"] })] },
               {
-                value: [...content({ parts: ["What did you do yesterday?"] })],
+                value: [
+                  ...content({
+                    parts: ["Where did you grow up?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["What did you do yesterday?"],
+                  }),
+                ],
               },
               {
                 value: [
@@ -253,63 +327,23 @@ export default function WhatsCEFR() {
               },
               {
                 value: [
-                  ...content({ parts: ["What was your favorite class?"] }),
+                  ...content({
+                    parts: ["What was your favorite class?"],
+                  }),
                 ],
               },
               {
                 value: [
-                  ...content({ parts: ["What are you doing later today?"] }),
+                  ...content({
+                    parts: ["What are you doing later today?"],
+                  }),
                 ],
               },
               {
                 value: [
-                  ...content({ parts: ["Are you doing anything this evening?"] }),
-                ],
-              },
-            ]}
-          />
-          <Paragraph
-            blocks={[
-              {
-                lines: [
-                  { lineBreak: true },
-                  {
-                    text: [{ part: "Questions", type: "bold" }],
-                  },
-                  { lineBreak: true },
-                  { text: [{ bullet: true, part: "" }] },
-                  {
-                    text: [{ bullet: true, part: "" }],
-                  },
-                  {
-                    text: [
-                      {
-                        bullet: true,
-                        part: "",
-                      },
-                    ],
-                  },
-                  { text: [{ bullet: true, part: "" }] },
-                  {
-                    text: [{ bullet: true, part: "" }],
-                  },
-                  {
-                    text: [
-                      {
-                        bullet: true,
-                        part: "",
-                      },
-                    ],
-                  },
-                  {
-                    text: [{ bullet: true, part: "" }],
-                  },
-                  {
-                    text: [{ bullet: true, part: "" }],
-                  },
-                  {
-                    text: [{ bullet: true, part: "" }],
-                  },
+                  ...content({
+                    parts: ["Are you doing anything this evening?"],
+                  }),
                 ],
               },
             ]}
@@ -351,11 +385,25 @@ export default function WhatsCEFR() {
             items={[
               {
                 value: [
-                  ...content({ parts: ["Have you ever eaten unusual foods?"] }),
+                  ...content({
+                    parts: ["Have you ever eaten unusual foods?"],
+                  }),
                 ],
               },
-              { value: [...content({ parts: ["Where did you eat it?"] })] },
-              { value: [...content({ parts: ["What did you think of it?"] })] },
+              {
+                value: [
+                  ...content({
+                    parts: ["Where did you eat it?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["What did you think of it?"],
+                  }),
+                ],
+              },
               {
                 value: [
                   ...content({
@@ -370,7 +418,13 @@ export default function WhatsCEFR() {
                   }),
                 ],
               },
-              { value: [...content({ parts: ["What is it like?"] })] },
+              {
+                value: [
+                  ...content({
+                    parts: ["What is it like?"],
+                  }),
+                ],
+              },
               {
                 value: [
                   ...content({
@@ -427,10 +481,18 @@ export default function WhatsCEFR() {
           <List
             bullet={true}
             items={[
-              { value: [...content({ parts: ["What happened?"] })] },
               {
                 value: [
-                  ...content({ parts: ["What were you doing at the time?"] }),
+                  ...content({
+                    parts: ["What happened?"],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: ["What were you doing at the time?"],
+                  }),
                 ],
               },
               {
@@ -462,7 +524,9 @@ export default function WhatsCEFR() {
               },
               {
                 value: [
-                  ...content({ parts: ["Explain your choice. Give at least two reasons."] }),
+                  ...content({
+                    parts: ["Explain your choice. Give at least two reasons."],
+                  }),
                 ],
               },
               {

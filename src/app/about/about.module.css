@@ -1,0 +1,13 @@
+.aboutImg {
+  
+  border-radius: 100%;
+  border: 5px solid var(--slate-3)
+}
+
+.subtionTitle {
+  font-size: 1.6rem;
+}
+
+.details {
+  display: block;
+}

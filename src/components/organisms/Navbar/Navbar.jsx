@@ -15,6 +15,10 @@ const links = [
         label: "Home",
       },
       {
+        href: "/about",
+        label: "About",
+      },
+      {
         href: "/cefr",
         label: "What's CEFR?",
       },

@@ -1,12 +1,11 @@
 "use client";
 
 import { ContentToken } from "@/components/molecules/ContentToken";
-import { normalizeParagraphValue } from "@/utils/contentAdapters";
 
-export const Paragraph = ({ value, text, blocks, ...props }) => {
+export const Paragraph = ({ ...props }) => {
   return (
     <p>
-      <ContentToken value={normalizeParagraphValue({ value, text, blocks })} {...props} />
+      <ContentToken {...props} />
     </p>
   );
 };

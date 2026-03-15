@@ -159,13 +159,6 @@ export const expression = (opts) =>
     square: false,
   });
 
-export const example = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: true,
-    square: false,
-  });
-
 export const text = (parts = []) => parts;
 
 export const note = (opts) => instruction(opts);
@@ -213,16 +206,14 @@ export const phonetics = (text) => ({
   type: "phonetics",
 });
 
+export const example = (text) => ({
+    part: ` ${text}`,
+    bullet: true,
+    square: false,
+  });
+
 // portuguese
 export const portuguese = (text) => ({
   part: text,
   type: "portuguese",
 });
-
-export const instruction = (opts) =>
-  baseToken({
-    ...opts,
-    icons: ["attention"],
-    bullet: false,
-    square: false,
-  });

@@ -198,6 +198,38 @@ export default function Mock() {
                   }),
                 ],
               },
+              {
+                value: [
+                  ...content({
+                    icons: [
+                      "us",
+                      "uk",
+                      "attention",
+                      "correct",
+                      "incorrect",
+                      "compare",
+                    ],
+                    audio: "/",
+                    parts: [
+                      "normal ",
+                      audio("/"),
+                      bold("bold"),
+                      " ",
+                      italic("italic"),
+                      " ",
+                      mark("mark"),
+                      " ",
+                      underline("underline"),
+                      " ",
+                      boldMark("bold-mark"),
+                      " ",
+                      phonetics("phonetics"),
+                      " ",
+                      portuguese("portuguese"),
+                    ],
+                  }),
+                ],
+              },
             ]}
           />
         </Section>
