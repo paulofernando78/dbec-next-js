@@ -1,11 +1,11 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 
-export default function AudioBooksStarter() {
+export default function AudioBooksList() {
   return (
     <>
       <Whiteboard
       title="Audiobooks"
-      subtitle="Starter"
+      subtitle="A1 Beginner"
       />
       <div className="line-break">
         

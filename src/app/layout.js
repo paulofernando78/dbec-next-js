@@ -1,6 +1,6 @@
 import styles from "./layout.module.css"
 
-import { Montserrat, Oswald } from "next/font/google";
+import { Luckiest_Guy, Montserrat, Oswald } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/themeContext";
 import { HeaderProvider } from "../context/headerContext";
@@ -12,6 +12,12 @@ import Footer from "@/components/organisms/Footer";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const luckiestGuy = Luckiest_Guy({
+  variable: "--font-luckiestGuy",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -29,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${montserrat.variable} ${oswald.variable}`}>
+      <body className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable}`}>
         <ThemeProvider>
           <div className="layout">
             <HeaderProvider>

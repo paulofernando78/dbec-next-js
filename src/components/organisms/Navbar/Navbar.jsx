@@ -31,18 +31,23 @@ const links = [
       },
       // Talk about yourself (Personal Information)
       {
-        href: "/cefr/a1/personal-information",
+        href: "/cefr/a1/talk-about-yourself",
         label: "Talk about yourself (Personal Information)",
       },
       // Daily Routines
       {
-        href: "/cefr/a1/daily-routines",
+        href: "/cefr/a1/talk-about-your-free-time",
         label: "Talk about you free time",
       },
       // Places & Objects
       {
-        href: "/cefr/a1/places-objects",
+        href: "/cefr/a1/places-and-objects",
         label: "Places & Objects",
+      },
+      // Places & Objects
+      {
+        href: "/cefr/a1/audiobooks",
+        label: "Audiobooks",
       },
     ],
   },
@@ -117,6 +122,16 @@ const links = [
       },
       {
         href: "/cefr/b2/modals",
+        label: "...",
+      },
+    ],
+  },
+  // C1 (Advanced)
+  {
+    title: "C1 Advanced",
+    links: [
+      {
+        href: "/cefr/c1/videos",
         label: "...",
       },
     ],

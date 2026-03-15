@@ -6,7 +6,7 @@ import { Line } from "@/components/molecules/Line";
 import { Phonetics } from "@/components/molecules/Phonetics";
 import { Examples } from "@/components/molecules/Examples";
 import {
-  note,
+  attention,
   mark,
   wordRowList,
   wordComparison,
@@ -538,7 +538,7 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [
                   "In British English, ",
                   { part: "/æ/", type: "phonetics" },
@@ -738,7 +738,7 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [
                   "In American English, ",
                   { part: "/ə/", type: "phonetics" },
@@ -1283,7 +1283,7 @@ export default function PhoneticsLetters() {
 
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [
                   "On the West Coast, in much of the Midwest, in Canada, and in parts of the Northeast, the ",
                   { part: "/ɔː/", type: "phonetics" },
@@ -1300,7 +1300,7 @@ export default function PhoneticsLetters() {
           {/* /ɒ/ */}
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [
                   "In British English, ",
                   { part: "/ɑː/, /ɔː/", type: "phonetics" },
@@ -3556,7 +3556,7 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [{ part: "Exception:", type: "bold" }],
                 pt: "",
               }),
@@ -4533,7 +4533,7 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: ["Listen to the differences. "],
               }),
             ]}
@@ -5062,7 +5062,7 @@ export default function PhoneticsLetters() {
         >
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [],
                 parts: [
                   "",
@@ -5187,7 +5187,7 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [
                   {
                     icons: ["us"],

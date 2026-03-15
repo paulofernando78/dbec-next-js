@@ -30,7 +30,7 @@ export const Image = ({
           display: "block"
         }}
         {...props}
-        className="img"
+        className={`img ${className ?? ""}`}
       />
     </div>
   );

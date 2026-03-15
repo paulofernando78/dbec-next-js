@@ -2,25 +2,24 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
-import { CardLayout } from "@/components/molecules/CardLayout";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
+import { CardLayout } from "@/components/molecules/CardLayout";
 import { CardText } from "@/components/molecules/CardText";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Comparison } from "@/components/molecules/Comparison/";
 import { Column } from "@/components/molecules/Column/";
-import { Note } from "@/components/molecules/Note";
+import { Notes } from "@/components/molecules/Notes";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
 import {
   content,
   audio,
-  text,
   bold,
   italic,
   mark,
@@ -54,12 +53,14 @@ export default function Mock() {
               ],
             },
             { href: "audio-player", label: "Audio Player" },
+            { href: "text-only", label: "Text Only" },
             { href: "line", label: "Line" },
             { href: "list", label: "List" },
             { href: "card-text", label: "CardText" },
             { href: "paragraph", label: "Paragraph" },
             { href: "paragraph-media", label: "Paragraph + Media" },
-            { href: "note", label: "Note" },
+            { href: "notes", label: "Notes" },
+            { href: "examples", label: "Examples" },
             { href: "dialogue", label: "Dialogue" },
             { href: "comparison", label: "Comparison" },
             { href: "column", label: "Column" },
@@ -72,6 +73,18 @@ export default function Mock() {
         {/* AudioPlayer */}
         <Section id="audio-player" label="Audio Player" heading={3}>
           <AudioPlayer src="/assets/audio/general/about-to.mp3" />
+        </Section>
+
+        <Section id="text-only" label="Text Only" heading={3}>
+          <Paragraph
+            value={[
+              ...content({
+                parts: [
+                  "...",
+                ],
+              }),
+            ]}
+          />
         </Section>
 
         {/* Line */}
@@ -458,8 +471,8 @@ export default function Mock() {
         </Section>
 
         {/* Notes */}
-        <Section id="note" label="Notes" heading={3}>
-          <Note>
+        <Section id="notes" label="Notes" heading={3}>
+          <Notes>
             <Line
             value={[
               ...content({
@@ -492,7 +505,7 @@ export default function Mock() {
               }),
             ]}
           />
-          </Note>
+          </Notes>
         </Section>
 
         {/* Dialogue */}
@@ -524,34 +537,34 @@ export default function Mock() {
                 speaker: "speaker:",
                 audio: "/audio/vocabulary/selaa/lesson-1.mp3",
                 text: [
+                  ...content({
+                icons: [
+                  "us",
+                  "uk",
+                  "attention",
+                  "correct",
+                  "incorrect",
+                  "compare",
+                ],
+                audio: "/",
+                parts: [
                   "normal ",
-                  {
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "normal",
-                  },
+                  audio("/"),
+                  bold("bold"),
                   " ",
-                  {
-                    attention: true,
-                    correct: true,
-                    incorrect: true,
-                    audio: "/audio/",
-                    part: "bold",
-                    type: "bold",
-                  },
+                  italic("italic"),
                   " ",
-                  {
-                    part: "italic",
-                    type: "italic",
-                  },
+                  mark("mark"),
                   " ",
-                  {
-                    part: "mark",
-                    type: "mark",
-                  },
-                  " end ",
+                  underline("underline"),
+                  " ",
+                  boldMark("bold-mark"),
+                  " ",
+                  phonetics("phonetics"),
+                  " ",
+                  portuguese("portuguese"),
+                ],
+              }),
                 ],
               },
             ]}

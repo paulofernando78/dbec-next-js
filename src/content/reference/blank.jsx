@@ -1,12 +1,33 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { LineBreak } from "@/components/atoms/LineBreak";
+import { Dictionary } from "@/components/molecules/Dictionary";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
+import { CardLayout } from "@/components/molecules/CardLayout";
+import { Links } from "@/components/molecules/Links";
+import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Line } from "@/components/molecules/Line";
-import { Examples } from "@/components/molecules/Examples";
+import { List } from "@/components/molecules/List";
+import { CardText } from "@/components/molecules/CardText";
+import { Image } from "@/components/atoms/Image";
+import { Paragraph } from "@/components/molecules/Paragraph";
+import { Dialogue } from "@/components/molecules/Dialogue";
+import { Comparison } from "@/components/molecules/Comparison/";
+import { Column } from "@/components/molecules/Column/";
+import { Notes } from "@/components/molecules/Notes";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
-import { note, example } from "@/helpers/content";
+import { LineBreak } from "@/components/atoms/LineBreak";
+import {
+  content,
+  audio,
+  bold,
+  italic,
+  mark,
+  underline,
+  boldMark,
+  phonetics,
+  portuguese,
+} from "@/helpers/content";
 
 export default function Blank() {
   return (

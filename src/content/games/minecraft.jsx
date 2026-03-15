@@ -6,7 +6,7 @@ import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { Checklist } from "@/components/molecules/Checklist";
 import { instruction } from "@/helpers/content";
-import { note } from "@/helpers/content";
+import { attention } from "@/helpers/content";
 
 export default function Blank() {
   return (
@@ -48,7 +48,7 @@ export default function Blank() {
         <Section id="stone-phase" label="Stone Phase" heading={3}>
           <Line
             value={[
-              ...note({
+              ...attention({
                 parts: [
                   "After collecting stones we can craft stone tools like:",
                   { part: "", type: "" },
@@ -71,7 +71,7 @@ export default function Blank() {
         <Section id="" label="Get Food" heading={3}>
           <Line
             value={[
-              ...note({
+              ...attention({
                 audio: "/assets/audio/general/.mp3",
                 parts: [
                   "Kill animals to collect food to avoid starving.",
@@ -138,7 +138,7 @@ export default function Blank() {
           <LineBreak />
           <Line
             value={[
-              ...note({
+              ...attention({
                 audio: "/assets/audio/general/.mp3",
                 parts: ["Animals we shouldn’t kill:", { part: "", type: "" }],
                 portugueseTranslation: "",
@@ -221,7 +221,7 @@ export default function Blank() {
         <Section id="breed-animals" label="Breed Animals" heading={3}>
           <Line
             value={[
-              ...note({
+              ...attention({
                 audio: "/assets/audio/general/.mp3",
                 parts: [
                   "We can feed the animals in order to breed:",

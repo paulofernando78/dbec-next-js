@@ -1,17 +1,38 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Dictionary } from "@/components/molecules/Dictionary";
+import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
+import { Links } from "@/components/molecules/Links";
+import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Line } from "@/components/molecules/Line";
+import { List } from "@/components/molecules/List";
+import { CardLayout } from "@/components/molecules/CardLayout";
+import { CardText } from "@/components/molecules/CardText";
+import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
-import { Checking } from "@/components/molecules/Checking";
-import { Column } from "@/components/molecules/Column";
-import { List } from "@/components/molecules/List";
+import { Checking } from "@/components/molecules/Checking/";
+import { Column } from "@/components/molecules/Column/";
+import { Notes } from "@/components/molecules/Notes";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
-import { Contents } from "@/components/molecules/Contents";
+import { LineBreak } from "@/components/atoms/LineBreak";
+import {
+  content,
+  audio,
+  bold,
+  italic,
+  mark,
+  underline,
+  boldMark,
+  phonetics,
+  portuguese,
+} from "@/helpers/content";
 
 export const metadata = {
   title: "Numbers in English – Cardinal and Ordinal",
-  description: "Learn cardinal and ordinal numbers in English with examples, dialogue, and practice exercises.",
+  description:
+    "Learn cardinal and ordinal numbers in English with examples, dialogue, and practice exercises.",
 };
 
 export default function Numbers() {
@@ -19,7 +40,6 @@ export default function Numbers() {
     <>
       <Whiteboard title="Vocabulary" subtitle="Numbers" />
       <div className="line-break">
-
         <Contents
           items={[
             { href: "introduction", label: "Introduction" },
@@ -32,51 +52,52 @@ export default function Numbers() {
         />
 
         <Section id="introduction" label="Introduction" heading={3}>
-          <Paragraph
+          <CardLayout mediaPosition="left">
+            <Image
+              src="/assets/img/vocabulary/numbers/Lauras-birthday.png"
+              alt="Students celebrating a birthday in a classroom."
+              width={350} height={250}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio:
+                    "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentence.mp3",
+                  parts: [
+                    "",
+                    bold("Look at the picture and listen to the sentences."),
+                  ],
+                }),
+              ]}
+            />
+          </CardLayout>
+          <Line
+            value={[
+              ...content({
+                audio:
+                  "/assets/audio/vocabulary/numbers/introduction/students-are-having-a-party-at-school.mp3",
+                parts: ["Students are having a party at school."],
+              }),
+            ]}
+          />
+          <Line
+            value={[
+              ...content({
+                audio:
+                  "/assets/audio/vocabulary/numbers/introduction/its-lauras-birthday.mp3",
+                parts: ["It's Laura’s birthday."],
+              }),
+            ]}
+          />
+          <Line
             blocks={[
               {
-                imgPosition: "left",
-                imgs: [
-                  {
-                    img: "/assets/img/vocabulary/numbers/Lauras-birthday.png",
-                    alt: "students celebrating a birthday in a classroom",
-                    width: 350,
-                    height: 250,
-                  },
-                ],
                 lines: [
                   {
                     text: [
                       {
                         audio:
-                          "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentence.mp3",
-                        part: "Look at the picture and listen to the sentences.",
-                        type: "bold",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    text: [
-                      {
-                        audio:
-                          "/assets/audio/vocabulary/numbers/introduction/students-are-having-a-party-at-school.mp3",
-                      },
-                      "Students are having a party at school.",
-                    ],
-                  },
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/vocabulary/numbers/introduction/its-lauras-birthday.mp3",
-                      },
-                      "It's Laura’s birthday.",
-                    ],
-                  },
-                  {
-                    text: [
-                      {
-                        audio: "/assets/audio/vocabulary/numbers/introduction/her-birthday-is-on-the-third.mp3",
+                          "/assets/audio/vocabulary/numbers/introduction/her-birthday-is-on-the-third.mp3",
                       },
                       "Her birthday is on the 3rd (third).",
                     ],
@@ -86,7 +107,6 @@ export default function Numbers() {
               },
             ]}
           />
-
           <Radio
             exercise={{
               audio: "/assets/audio/general/now-answer-the-questions.mp3",
@@ -1498,7 +1518,7 @@ export default function Numbers() {
                         type: "bold",
                       },
                     ],
-                  }
+                  },
                 ],
               },
             ]}
@@ -1509,7 +1529,7 @@ export default function Numbers() {
               {
                 text: ["How old are you?"],
               },
-                            {
+              {
                 text: ["How old is your (dad, mom, brother, sister, etc.)?"],
               },
               {

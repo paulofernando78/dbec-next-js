@@ -4,7 +4,7 @@ import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
 import { Line } from "@/components/molecules/Line";
 import { Checklist } from "@/components/molecules/Checklist";
-import { note } from "@/helpers/content";
+import { attention } from "@/helpers/content";
 
 export default function Blank() {
   return (
@@ -15,7 +15,7 @@ export default function Blank() {
         <Section id="..." label="..." heading={3}>
           <Line
             value={[
-              ...note({
+              ...attention({
                 audio: "/assets/audio/general/.mp3",
                 parts: ["", { part: "", type: "" }],
                 pt: "",

@@ -1,12 +1,24 @@
+"use client";
+
 import styles from "./page.module.css";
 
-import Image from "next/image";
-import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer";
-import { Paragraph } from "@/components/molecules/Paragraph";
-import { Line } from "@/components/molecules/Line";
 import { Audio } from "@/components/atoms/Audio";
-import { note, content } from "@/helpers/content";
+import { Line } from "@/components/molecules/Line";
+import { List } from "@/components/molecules/List";
+import { Card } from "@/components/atoms/Card";
+import { Image } from "@/components/atoms/Image";
+import { content, bold, italic } from "@/helpers/content";
+
+import { useState, useEffect } from "react";
+
+const greetingsList = [
+  "Hi there!",
+  "How are you doing?",
+  "How's it going?",
+  "What's up?",
+  "How are you?",
+  "How are you feeling?",
+];
 
 const emojis = [
   {
@@ -358,38 +370,64 @@ const emojis = [
 ];
 
 export default function Home() {
+  // greetingIndex = question current position
+  const [greetingIndex, setGreetingIndex] = useState(0);
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setOpacity(0); // fade out
+      
+      setTimeout(() => {
+        // % faz voltar para o início.
+        setGreetingIndex((prev) => (prev + 1) % greetingsList.length);
+        setOpacity(1); // fade in
+      }, 500);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="line-break-double">
-      <Whiteboard title="Home Page" />
       <div className="line-break">
         <>
-          <Line
-            value={[
-              ...attention({
-                parts: [
-                  "Site is under construction",
-                ],
-              }),
-            ]}
-          />
+          <div className={styles.meComputerWrapper}>
+            <Line
+              value={[
+                ...content({
+                  icons: ["attention"],
+                  parts: ["This website is currently under construction."],
+                }),
+              ]}
+            />
+            <Image
+              src="/assets/img/home-me.png"
+              alt="A pic of myself"
+              width={200}
+              className={styles.meComputer}
+            />
+            <ul>
+              <li className={styles.greetings} style={{ opacity }}>
+                {greetingsList[greetingIndex]}
+              </li>
+            </ul>
+          </div>
           <Line
             value={[
               ...content({
                 audio: "/assets/audio/home/welcome.mp3",
                 parts: [
-                  "Hey there! Welcome to, ",
-                  { part: "DAILY BASIS ENGLISH COURSE", type: "bold" },
-                  " website. Here, you’ll find a lot of interesting materials. Please, use it wisely. ",
-                ],
-              }),
-            ]}
-          />
-          <Line
-            value={[
-              ...content({
-                audio: "/assets/audio/home/below.mp3",
-                parts: [
-                  "Below, you can listen to some adjectives that describe how you’re feeling.",
+                  bold("DAILY BASIS ENGLISH COURSE"),
+                  " offers specialized English classes focused on the four core language skills: ",
+                  italic("Speaking "),
+                  "(with an emphasis on conversation), ",
+                  italic("Listening"),
+                  " (listening comprehension), ",
+                  italic("Reading, "),
+                  "and ",
+                  italic("Writing"),
+                  ". On this web site, you’ll find a variety of useful learning materials. Please use them wisely.",
                 ],
               }),
             ]}
@@ -398,26 +436,32 @@ export default function Home() {
             value={[
               ...content({
                 audio: "/assets/audio/home/feeling.mp3",
-                parts: [
-                  "How are you feeling today?",
-                ],
+                parts: ["How are you feeling today?"],
               }),
             ]}
           />
           <div className={styles.wrapper}>
             {emojis.map((emoji, emojiIndex) => (
-              <div key={emojiIndex} className={`imgs ${styles.innerWrapper}`}>
-                <Image src={emoji.img} alt={emoji.alt} width={60} height={60} />
-                {emoji.words &&
-                  emoji.words.map((word, wordIndex) => (
-                    <div key={wordIndex} className={styles.wordAudioWrapper}>
-                      {word.audio && <Audio src={word.audio} />}
-                      <span key={wordIndex} className={styles.word}>
-                        {word.word}
-                      </span>
-                    </div>
-                  ))}
-              </div>
+              <Card key={emojiIndex}>
+                <div className={`imgs ${styles.innerWrapper}`}>
+                  <Image
+                    src={emoji.img}
+                    alt={emoji.alt}
+                    width={60}
+                    height={60}
+                    className={styles.imgEmoji}
+                  />
+                  {emoji.words &&
+                    emoji.words.map((word, wordIndex) => (
+                      <div key={wordIndex} className={styles.wordAudioWrapper}>
+                        {word.audio && <Audio src={word.audio} />}
+                        <span key={wordIndex} className={styles.word}>
+                          {word.word}
+                        </span>
+                      </div>
+                    ))}
+                </div>
+              </Card>
             ))}
           </div>
         </>
