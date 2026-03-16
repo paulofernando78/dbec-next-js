@@ -2,284 +2,256 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Line } from "@/components/molecules/Line";
 import { Contents } from "@/components/molecules/Contents";
 import { Section } from "@/components/molecules/Section";
-import { Paragraph } from "@/components/molecules/Paragraph";
+
+import { content, bold, example, portuguese } from "@/helpers/content";
+
 export default function Cooking() {
-  return <>
+  return (
+    <>
       <Whiteboard title="Vocabulary" subtitle="Cooking & Food" />
       <div className="line-break">
-        <Line text={[{
-        part: "Common cooking and food vocabulary.",
-        type: "bold"
-      }]} />
-        <Contents items={[{
-        href: "#cooking-actions",
-        label: "Cooking Actions"
-      }, {
-        href: "#ingredients-and-food",
-        label: "Ingredients & Food"
-      }, {
-        href: "#kitchen-ware",
-        label: "Kitchen Ware"
-      }, {
-        href: "#phrases-and-questions",
-        label: "Phrases & Questions"
-      }]} />
+        <Line
+          value={[
+            ...content({
+              parts: [bold("Common cooking and food vocabulary.")],
+            }),
+          ]}
+        />
+        <Contents
+          items={[
+            {
+              href: "cooking-actions",
+              label: "Cooking Actions",
+            },
+            {
+              href: "ingredients-and-food",
+              label: "Ingredients & Food",
+            },
+            {
+              href: "kitchen-ware",
+              label: "Kitchen Ware",
+            },
+            {
+              href: "phrases-and-questions",
+              label: "Phrases & Questions",
+            },
+          ]}
+        />
         <Section id="cooking-actions" label="Cooking Actions" heading={3}>
-          <Paragraph value={[{
-          part: "to chop",
-          type: "bold"
-        }, " ", {
-          part: "cortar (em pedaços)",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Chop the onions into small pieces."
-        }, {
-          part: " Corte as cebolas em pedaços pequenos.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "to carve",
-          type: "bold"
-        }, " ", {
-          part: "fatiar / cortar em fatias",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "He carved the turkey for dinner."
-        }, {
-          part: " Ele fatiou o peru para o jantar.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "to grate",
-          type: "bold"
-        }, " ", {
-          part: "ralar",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Grate the cheese on top of the pasta."
-        }, {
-          part: " Rale o queijo em cima da massa.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "to peel",
-          type: "bold"
-        }, " ", {
-          part: "descascar",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Peel the potatoes before cooking."
-        }, {
-          part: " Descasque as batatas antes de cozinhar.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "to scrape",
-          type: "bold"
-        }, " ", {
-          part: "raspar",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Scrape the burnt part off the pan."
-        }, {
-          part: " Raspe a parte queimada da panela.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "to stir",
-          type: "bold"
-        }, " ", {
-          part: "mexer",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Stir the soup so it doesn’t stick."
-        }, {
-          part: " Mexa a sopa para não grudar.",
-          type: "portuguese"
-        }]} />
+          <Line
+            value={[
+              bold("to chop"),
+              " ",
+              portuguese("cortar (em pedaços)"),
+              " ",
+              example("Chop the onions into small pieces."),
+              " ",
+              portuguese("Corte as cebolas em pedaços pequenos."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("to carve"),
+              " ",
+              portuguese("fatiar / cortar em fatias"),
+              " ",
+              example("He carved the turkey for dinner."),
+              " ",
+              portuguese("Ele fatiou o peru para o jantar."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("to grate"),
+              " ",
+              portuguese("ralar"),
+              " ",
+              example("Grate the cheese on top of the pasta."),
+              " ",
+              portuguese("Rale o queijo em cima da massa."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("to peel"),
+              " ",
+              portuguese("descascar"),
+              " ",
+              example("Peel the potatoes before cooking."),
+              " ",
+              portuguese("Descasque as batatas antes de cozinhar."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("to scrape"),
+              " ",
+              portuguese("raspar"),
+              " ",
+              example("Scrape the burnt part off the pan."),
+              " ",
+              portuguese("Raspe a parte queimada da panela."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("to stir"),
+              " ",
+              portuguese("mexer"),
+              " ",
+              example("Stir the soup so it doesn't stick."),
+              " ",
+              portuguese("Mexa a sopa para não grudar."),
+            ]}
+          />
         </Section>
-        <Section id="ingredients-and-food" label="Ingredients & Food" heading={3}>
-          <Paragraph value={[{
-          part: "broth",
-          type: "bold"
-        }, " ", {
-          part: "caldo",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Add the broth to the soup."
-        }, {
-          part: " Adicione o caldo à sopa.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "cold cuts",
-          type: "bold"
-        }, " ", {
-          part: "frios",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "We served cold cuts and cheese."
-        }, {
-          part: " Servimos frios e queijo.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "dough",
-          type: "bold"
-        }, " ", {
-          part: "massa",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Let the dough rest for 30 minutes."
-        }, {
-          part: " Deixe a massa descansar por 30 minutos.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "salad dressing",
-          type: "bold"
-        }, " ", {
-          part: "molho para salada",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "This salad dressing is homemade."
-        }, {
-          part: " Este molho para salada é caseiro.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "sauce",
-          type: "bold"
-        }, " ", {
-          part: "molho (ex: tomate)",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "The sauce is ready to serve."
-        }, {
-          part: " O molho está pronto para servir.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "seasoning",
-          type: "bold"
-        }, " ", {
-          part: "tempero",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Add some seasoning to improve the flavor."
-        }, {
-          part: " Adicione um pouco de tempero para melhorar o sabor.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "stew",
-          type: "bold"
-        }, " ", {
-          part: "ensopado / moqueca",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "She made a beef stew for dinner."
-        }, {
-          part: " Ela fez um ensopado de carne para o jantar.",
-          type: "portuguese"
-        }]} />
+        <Section
+          id="ingredients-and-food"
+          label="Ingredients & Food"
+          heading={3}
+        >
+          <Line
+            value={[
+              bold("broth"),
+              " ",
+              portuguese("caldo"),
+              " ",
+              example("Add the broth to the soup."),
+              " ",
+              portuguese("Adicione o caldo à sopa."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("cold cuts"),
+              " ",
+              portuguese("frios"),
+              " ",
+              example("We served cold cuts and cheese."),
+              " ",
+              portuguese("Servimos frios e queijo."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("dough"),
+              " ",
+              portuguese("massa"),
+              " ",
+              example("Let the dough rest for 30 minutes."),
+              " ",
+              portuguese("Deixe a massa descansar por 30 minutos."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("salad dressing"),
+              " ",
+              portuguese("molho para salada"),
+              " ",
+              example("This salad dressing is homemade."),
+              " ",
+              portuguese("Este molho para salada é caseiro."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("sauce"),
+              " ",
+              portuguese("molho (ex: tomate)"),
+              " ",
+              example("The sauce is ready to serve."),
+              " ",
+              portuguese("O molho está pronto para servir."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("seasoning"),
+              " ",
+              portuguese("tempero"),
+              " ",
+              example("Add some seasoning to improve the flavor."),
+              " ",
+              portuguese("Adicione um pouco de tempero para melhorar o sabor."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("stew"),
+              " ",
+              portuguese("ensopado / moqueca"),
+              " ",
+              example("She made a beef stew for dinner."),
+              " ",
+              portuguese("Ela fez um ensopado de carne para o jantar."),
+            ]}
+          />
         </Section>
         <Section id="kitchen-ware" label="Kitchen Ware" heading={3}>
-          <Paragraph value={[{
-          part: "clay pot",
-          type: "bold"
-        }, " ", {
-          part: "panela de barro",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "The stew is cooking in a clay pot."
-        }, {
-          part: " O ensopado está cozinhando em uma panela de barro.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "frying pan",
-          type: "bold"
-        }, " ", {
-          part: "frigideira",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Heat the oil in the frying pan."
-        }, {
-          part: " Aqueça o óleo na frigideira.",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "pan",
-          type: "bold"
-        }, " ", {
-          part: "panela",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Boil the pasta in a large pan."
-        }, {
-          part: " Ferva a massa em uma panela grande.",
-          type: "portuguese"
-        }]} />
+          <Line
+            value={[
+              bold("clay pot"),
+              " ",
+              portuguese("panela de barro"),
+              " ",
+              example("The stew is cooking in a clay pot."),
+              " ",
+              portuguese("O ensopado está cozinhando em uma panela de barro."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("frying pan"),
+              " ",
+              portuguese("frigideira"),
+              " ",
+              example("Heat the oil in the frying pan."),
+              " ",
+              portuguese("Aqueça o óleo na frigideira."),
+            ]}
+          />
+          <Line
+            value={[
+              bold("pan"),
+              " ",
+              portuguese("panela"),
+              " ",
+              example("Boil the pasta in a large pan."),
+              " ",
+              portuguese("Ferva a massa em uma panela grande."),
+            ]}
+          />
         </Section>
-        <Section id="phrases-and-questions" label="Phrases & Questions" heading={3}>
-          <Paragraph value={[{
-          part: "Have you ever eaten...?",
-          type: "bold"
-        }, " ", {
-          part: "Você já comeu...?",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "Have you ever eaten sushi?"
-        }, {
-          part: " Você já comeu sushi?",
-          type: "portuguese"
-        }, {
-          lineBreak: true
-        }, {
-          part: "What's your specialty?",
-          type: "bold"
-        }, " ", {
-          part: "Qual é a sua especialidade?",
-          type: "portuguese"
-        }, " ", {
-          bullet: true,
-          part: "What's your specialty? This dish is amazing!"
-        }, {
-          part: " Qual é a sua especialidade? Este prato está incrível!",
-          type: "portuguese"
-        }]} />
+        <Section
+          id="phrases-and-questions"
+          label="Phrases & Questions"
+          heading={3}
+        >
+          <Line
+            value={[
+              bold("Have you ever eaten...?"),
+              " ",
+              portuguese("Você já comeu...?"),
+              " ",
+              example("Have you ever eaten sushi?"),
+              " ",
+              portuguese("Você já comeu sushi?"),
+            ]}
+          />
+          <Line
+            value={[
+              bold("What's your specialty?"),
+              " ",
+              portuguese("Qual é a sua especialidade?"),
+              " ",
+              example("What's your specialty? This dish is amazing!"),
+              " ",
+              portuguese("Qual é a sua especialidade? Este prato está incrível!"),
+            ]}
+          />
         </Section>
       </div>
-    </>;
+    </>
+  );
 }

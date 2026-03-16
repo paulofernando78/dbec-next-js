@@ -1,40 +1,52 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Contents } from "@/components/molecules/Contents";
+import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
-import { Paragraph } from "@/components/molecules/Paragraph";
+import { CardLayout } from "@/components/molecules/CardLayout";
 import { Card } from "@/components/atoms/Card";
+import { Image } from "@/components/atoms/Image";
+import { Paragraph } from "@/components/molecules/Paragraph";
+import { content } from "@/helpers/content";
 
-export default function TalkAboutYourself() {
+export default function Introductions() {
   return (
     <>
       <Whiteboard
         title="A1 Beginner"
-        subtitle="Talk about your yourself"
+        subtitle="Talk about yourself"
+        descriptions={["Personal Information"]}
       />
+
       <div className="line-break">
-        <Card>
-          By the end of this class, students will ...
-        </Card>
-        <Contents
-          items={[
-            { href: "introduction", label: "Introduction" },
-            { href: "presentation", label: "Presentation" },
-            { href: "meaning", label: "Meaning" },
-            { href: "pronunciation-form", label: "Pronunciation + Form" },
-            { href: "practice", label: "Practice" },
-            { href: "production", label: "Production" },
-          ]}
-        />
-        <Section id="Introduction" label="Introduction" heading={3}></Section>
-        <Section id="Presentation" label="Presentation" heading={3}></Section>
-        <Section id="Meaning" label="Meaning" heading={3}></Section>
-        <Section
-          id="Pronunciation-form"
-          label="Pronunciation + Form"
-          heading={3}
-        ></Section>
-        <Section id="Practice" label="Practice" heading={3}></Section>
-        <Section id="Production" label="Production" heading={3}></Section>
+        <Card>By the end of this class, students will ...</Card>
+
+        <PageSections>
+          <Section id="Introduction" label="Introduction" heading={3}>
+            <CardLayout>
+              <Image
+                src="/"
+                alt="..."
+                width={200}
+              />
+              <Paragraph
+                value={[
+                  ...content({
+                    parts: ["..."],
+                  }),
+                ]}
+              />
+            </CardLayout>
+          </Section>
+
+          <Section id="Presentation" label="Presentation" heading={3}></Section>
+          <Section id="Meaning" label="Meaning" heading={3}></Section>
+          <Section
+            id="Pronunciation-form"
+            label="Pronunciation + Form"
+            heading={3}
+          ></Section>
+          <Section id="Practice" label="Practice" heading={3}></Section>
+          <Section id="Production" label="Production" heading={3}></Section>
+        </PageSections>
       </div>
     </>
   );

@@ -11,9 +11,9 @@ export default function Introductions() {
   return (
     <>
       <Whiteboard
-        title="A1 Beginner"
-        subtitle="Introductions"
-        descriptions={["Hello, I’m Laura. I’m 23. How do you spell your name?"]}
+        title="B1 Intermediate"
+        subtitle="Discuss work & study"
+        descriptions={["..."]}
       />
 
       <div className="line-break">

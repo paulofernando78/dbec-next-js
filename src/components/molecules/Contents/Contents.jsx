@@ -1,8 +1,6 @@
-import styles from "./Contents.module.css"
-
 import { Bold } from "@/components/atoms/Bold";
 import { ContentToken } from "@/components/molecules/ContentToken";
-import { Content, ContentLink, Compare } from "@/lib/svg-imports.js";
+import { Content, ContentLink } from "@/lib/svg-imports.js";
 
 export const Contents = ({ items = [] }) => {
   return (
@@ -16,19 +14,7 @@ export const Contents = ({ items = [] }) => {
       <nav>
         <ul>
           {items.map((item, index) => {
-
             const key = item.href || item.id || `item-${index}`
-
-            // Title
-            if (item.title) {
-              return (
-                <li
-                key={`title-${key}`}
-                className={styles.title}>
-                  <ContentToken text={item.title}/>
-                </li>
-              );
-            }
 
             return (
                 <li

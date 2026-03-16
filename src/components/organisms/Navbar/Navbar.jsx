@@ -28,27 +28,30 @@ const links = [
   {
     title: "A1 Beginner",
     links: [
-      // Greetings, Introdutions
       {
         href: "/cefr/a1/introductions",
         label: "Introductions",
       },
-      // Talk about yourself (Personal Information)
       {
         href: "/cefr/a1/talk-about-yourself",
-        label: "Talk about yourself (Personal Information)",
+        label: "Talk about yourself",
       },
-      // Daily Routines
       {
         href: "/cefr/a1/talk-about-your-free-time",
         label: "Talk about you free time",
       },
-      // Places & Objects
       {
         href: "/cefr/a1/places-and-objects",
         label: "Places & Objects",
       },
-      // Places & Objects
+      {
+        href: "/cefr/a1/numbers-and-telling-the-time",
+        label: "Numbers & Telling Time",
+      },
+      {
+        href: "/cefr/a1/describe-people",
+        label: "Describing People",
+      },
       {
         href: "/cefr/a1/audiobooks",
         label: "Audiobooks",
@@ -59,35 +62,37 @@ const links = [
   {
     title: "A2 Elementary",
     links: [
-      // Talk about likes and dislikes
       {
-        href: "/cefr/a2/",
+        href: "/cefr/a2/talk-about-likes-and-dislikes",
         label: "Talk about likes and dislikes",
       },
-      // Talk about the past
       {
-        href: "/cefr/a2/",
-        label: "Talk about the past",
+        href: "/cefr/a2/describe-past-experiences",
+        label: "Describe past experiences",
       },
-      // Talk about plans
       {
-        href: "/cefr/a2/",
-        label: "Talk about plans",
+        href: "/cefr/a2/talk-about-your-future-plans",
+        label: "Talk about your future plans",
       },
-      // Talk about foods
       {
-        href: "/cefr/a2/",
-        label: "Talk about foods",
+        href: "/cefr/a2/talk-about-food",
+        label: "Talk about food",
       },
-      // Talk about your home
       {
-        href: "/cefr/a2/",
-        label: "Talk about your home",
+        href: "/cefr/a2/describe-your-home",
+        label: "Describe your home",
       },
-      // Give advice
       {
-        href: "/cefr/a2/",
+        href: "/cefr/a2/give-advice",
         label: "Give advice",
+      },
+      {
+        href: "/cefr/a2/shopping-and-money",
+        label: "Shopping & Money",
+      },
+      {
+        href: "/cefr/a2/describe-your-neighrhood",
+        label: "Describe your Neighborhood",
       },
     ],
   },
@@ -95,51 +100,62 @@ const links = [
   {
     title: "B1 Intermediate",
     links: [
-      // Describe the past/tell a story
+      { href: "/cefr/b1/tell-a-story", label: "Tell a story" },
+      { href: "/cefr/b1/express-opinions", label: "Express opinions" },
+      { href: "/cefr/b1/compare-things", label: "Compare things" },
       {
-        href: "/cefr/b1/...",
-        label: "Describe the past/tell a story",
+        href: "/cefr/b1/hypothetical-situations",
+        label: "Hypothetical situations",
       },
-      // Talk about learning preferences
       {
-        href: "/cefr/b1/...",
-        label: "Talk about learning preferences",
+        href: "/cefr/b1/describe-problems-and-solutions",
+        label: "Describe problems & solutions",
       },
-      // Speculate about the future
       {
-        href: "/cefr/b1/...",
-        label: "Speculate about the future",
+        href: "/cefr/b1/talk-about-health-and-lifestyle",
+        label: "Talk about health & lifestyle",
+      },
+      {
+        href: "/cefr/b1/discuss-work-and-study",
+        label: "Discuss work & study",
       },
     ],
   },
   // B2 (Upper-Intermediate)
-  {
-    title: "B2 Upper-Intermediate",
-    links: [
-      {
-        href: "/cefr/b2/modals",
-        label: "...",
-      },
-      {
-        href: "/cefr/b2/modals",
-        label: "...",
-      },
-      {
-        href: "/cefr/b2/modals",
-        label: "...",
-      },
-    ],
-  },
+  // {
+  //   title: "B2 Upper-Intermediate",
+  //   links: [
+  //     { href: "/cefr/b2/debate-and-argue", label: "Debate & argue a point" },
+  //     {
+  //       href: "/cefr/b2/formal-vs-informal",
+  //       label: "Formal vs. informal register",
+  //     },
+  //     { href: "/cefr/b2/current-events", label: "Discuss current events" },
+  //     { href: "/cefr/b2/complex-emotions", label: "Express complex emotions" },
+  //     {
+  //       href: "/cefr/b2/idiomatic-language",
+  //       label: "Idiomatic language in context",
+  //     },
+  //     {
+  //       href: "/cefr/b2/hypothetical-and-regret",
+  //       label: "Hypothetical & regret structures",
+  //     },
+  //     {
+  //       href: "/cefr/b2/media-and-technology",
+  //       label: "Discuss media & technology",
+  //     },
+  //   ],
+  // },
   // C1 (Advanced)
-  {
-    title: "C1 Advanced",
-    links: [
-      {
-        href: "/cefr/c1/videos",
-        label: "...",
-      },
-    ],
-  },
+  // {
+  //   title: "C1 Advanced",
+  //   links: [
+  //     {
+  //       href: "/cefr/c1/videos",
+  //       label: "...",
+  //     },
+  //   ],
+  // },
   // PRONUNCIATION
   {
     title: "PRONUNCIATION",
