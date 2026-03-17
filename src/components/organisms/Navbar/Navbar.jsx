@@ -45,8 +45,12 @@ const links = [
         label: "Places & Objects",
       },
       {
-        href: "/cefr/a1/numbers-and-telling-the-time",
-        label: "Numbers & Telling Time",
+        href: "/cefr/a1/numbers",
+        label: "Numbers",
+      },
+      {
+        href: "/cefr/a1/telling-the-time",
+        label: "Telling Time",
       },
       {
         href: "/cefr/a1/describe-people",

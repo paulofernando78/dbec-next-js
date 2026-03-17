@@ -1,7 +1,6 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
-import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardLayout } from "@/components/molecules/CardLayout";
@@ -10,79 +9,85 @@ import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Checking } from "@/components/molecules/Checking/";
 import { Column } from "@/components/molecules/Column/";
-import { Notes } from "@/components/molecules/Notes";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, audio, bold } from "@/helpers/content";
+import { content, bold } from "@/helpers/content";
+
 export const metadata = {
-  title: "Numbers in English – Cardinal and Ordinal",
-  description:
-    "Learn cardinal and ordinal numbers in English with examples, dialogue, and practice exercises.",
+  title: "Numbers and Telling the Time",
+  description: "...",
 };
 export default function Numbers() {
   return (
     <>
-      <Whiteboard title="Vocabulary" subtitle="Numbers" />
+      <Whiteboard
+      title="Vocabulary"
+      subtitle="Telling the Time"
+      description="What time is it?" />
       <div className="line-break">
         <PageSections>
-          <Section id="introduction" label="Introduction" heading={3}>
+          <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/vocabulary/numbers/Lauras-birthday.png"
+                src="/assets/img/cefr/a1-beginner/what-time-is-it/introduction.png"
                 alt="Students celebrating a birthday in a classroom."
                 width={350}
                 height={250}
               />
-              <Line
-                value={[
-                  ...content({
-                    audio:
-                      "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentence.mp3",
-                    parts: [
-                      "",
-                      bold("Look at the picture and listen to the sentences."),
-                    ],
-                  }),
-                ]}
-              />
-            </CardLayout>
-            <Line
-              value={[
-                ...content({
-                  audio:
-                    "/assets/audio/vocabulary/numbers/introduction/students-are-having-a-party-at-school.mp3",
-                  parts: ["Students are having a party at school."],
-                }),
-              ]}
-            />
-            <Line
-              value={[
-                ...content({
-                  audio:
-                    "/assets/audio/vocabulary/numbers/introduction/its-lauras-birthday.mp3",
-                  parts: ["It's Laura’s birthday."],
-                }),
-              ]}
-            />
-            <Line
-              blocks={[
-                {
-                  lines: [
-                    {
-                      text: [
-                        {
-                          audio:
-                            "/assets/audio/vocabulary/numbers/introduction/her-birthday-is-on-the-third.mp3",
-                        },
-                        "Her birthday is on the 3rd (third).",
+              <div>
+                <Line
+                  value={[
+                    ...content({
+                      parts: [
+                        "",
+                        bold(
+                          "Look at the picture and listen to the sentences.",
+                        ),
                       ],
-                      lineBreak: true,
-                    },
-                  ],
-                },
-              ]}
-            />
+                    }),
+                  ]}
+                />
+                <LineBreak />
+                <Line
+                  value={[
+                    ...content({
+                      audio:
+                        "/assets/audio/vocabulary/numbers/introduction/students-are-having-a-party-at-school.mp3",
+                      parts: ["Students are having a party at school."],
+                    }),
+                  ]}
+                />
+                <Line
+                  value={[
+                    ...content({
+                      audio:
+                        "/assets/audio/vocabulary/numbers/introduction/its-lauras-birthday.mp3",
+                      parts: ["It's Laura’s birthday."],
+                    }),
+                  ]}
+                />
+                <Line
+                  value={[
+                    ...content({
+                      audio:
+                        "/assets/audio/vocabulary/numbers/introduction/shes-twenty-nine-now.mp3",
+                      parts: ["She's 29 now."],
+                    }),
+                  ]}
+                />
+                <Line
+                  value={[
+                    ...content({
+                      audio:
+                        "/assets/audio/vocabulary/numbers/introduction/her-birthday-is-on-the-third.mp3",
+                      parts: ["Her birthday is on the 3rd."],
+                    }),
+                  ]}
+                />
+              </div>
+            </CardLayout>
+            <LineBreak />
             <Radio
               exercise={{
                 audio: "/assets/audio/general/now-answer-the-questions.mp3",
@@ -127,66 +132,68 @@ export default function Numbers() {
             />
           </Section>
 
-          <Section id="presentation" label="Presentation" heading={3}>
-            <Dialogue
-              audioPlayer="/assets/audio/vocabulary/numbers/presenttion-dialogue.mp3"
+          <Section id="presentation" heading={3}>
+           <Dialogue
+              description="Description"
+              audioPlayer="/assets/audio/vocabulary/selaa/lesson-1.mp3"
               lines={[
                 {
-                  speaker: "Eric:",
-                  text: ["Surprise!"],
-                },
-                {
-                  speaker: "Laura:",
-                  text: ["Oh! Thank you so much!"],
-                },
-                {
-                  speaker: "Eric:",
+                  speaker: "speaker:",
+                  audio: "/",
                   text: [
-                    "Today is your birthday. It’s ",
-                    {
-                      part: "on the 3rd (third)",
-                      type: "mark",
-                    },
-                    ", right?",
+                    ...content({
+                      parts: [
+                        "normal ",
+                      ],
+                    }),
                   ],
                 },
                 {
-                  speaker: "Laura:",
-                  text: ["Yes, that’s right."],
-                },
-                {
-                  speaker: "Eric:",
-                  text: ["How old are you now?"],
-                },
-                {
-                  speaker: "Laura:",
+                  speaker: "speaker:",
+                  audio: "/",
                   text: [
-                    "I'm ",
-                    {
-                      part: "29 (twenty-nine)",
-                      type: "mark",
-                    },
-                    ".",
+                    ...content({
+                      parts: [
+                        "normal ",
+                      ],
+                    }),
                   ],
                 },
                 {
-                  speaker: "Eric:",
-                  text: ["Great! Let's sing Happy birthday, then."],
+                  speaker: "speaker:",
+                  audio: "/",
+                  text: [
+                    ...content({
+                      parts: [
+                        "normal ",
+                      ],
+                    }),
+                  ],
                 },
               ]}
             />
           </Section>
 
-          <Section id="meaning" label="Meaning" heading={4}>
-            <Paragraph
+          <Section id="meaning" heading={4}>
+            <Line
               value={[
-                "We use cardinal numbers to talk about quantity, age, and numbers in general.",
-                {
-                  lineBreak: true,
-                },
-                "We use ordinal numbers to talk about order, position, and dates.",
+                ...content({
+                  parts: [
+                    "We use cardinal numbers to talk about quantity, age, and numbers in general.",
+                  ],
+                }),
               ]}
             />
+            <Line
+              value={[
+                ...content({
+                  parts: [
+                    "We use ordinal numbers to talk about order, position, and dates.",
+                  ],
+                }),
+              ]}
+            />
+            <LineBreak />
             <Checking
               type="CCQ"
               ccq={[
@@ -219,7 +226,7 @@ export default function Numbers() {
             />
           </Section>
 
-          <Section id="column" label="Column" heading={3}>
+          <Section id="column" heading={3}>
             <Column
               width="210"
               cols={[
@@ -1092,7 +1099,7 @@ export default function Numbers() {
             />
           </Section>
 
-          <Section id="exercises" label="exercises" heading={3}>
+          <Section id="practice" heading={3}>
             <FillInTheBlanks
               exercise={{
                 instructions: "1. Fill in the blanks with affirmative form.",
@@ -1631,7 +1638,7 @@ export default function Numbers() {
                 ],
               }}
             />
-
+            <LineBreak />
             <Radio
               exercise={{
                 instruction: "Choose the correct answer.",
@@ -1725,7 +1732,7 @@ export default function Numbers() {
                 ],
               }}
             />
-
+            <LineBreak />
             <Radio
               exercise={{
                 instruction: "Listen and choose the correct answer.",
@@ -1820,26 +1827,39 @@ export default function Numbers() {
             />
           </Section>
 
-          <Section id="production" label="Production" heading={3}>
+          <Section id="production" heading={3}>
             <Paragraph
               value={[
-                {
-                  part: "Now talk about you.",
-                  type: "bold",
-                },
+                ...content({
+                  parts: [bold("Now talk about you.")],
+                }),
               ]}
             />
             <List
               bullet={true}
               items={[
                 {
-                  value: ["How old are you?"],
+                  value: [
+                    ...content({
+                      parts: ["How old are you?"],
+                    }),
+                  ],
                 },
                 {
-                  value: ["How old is your (dad, mom, brother, sister, etc.)?"],
+                  value: [
+                    ...content({
+                      parts: [
+                        "How old is your (dad, mom, brother, sister, etc.)?",
+                      ],
+                    }),
+                  ],
                 },
                 {
-                  value: ["When is your birthday?"],
+                  value: [
+                    ...content({
+                      parts: ["When is your birthday?"],
+                    }),
+                  ],
                 },
               ]}
             />

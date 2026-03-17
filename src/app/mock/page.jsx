@@ -8,6 +8,7 @@ import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardLayout } from "@/components/molecules/CardLayout";
 import { CardText } from "@/components/molecules/CardText";
+import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
