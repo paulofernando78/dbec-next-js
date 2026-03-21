@@ -37,7 +37,7 @@ export const metadata = {
     siteName: "Daily Basis English Course",
     images: [
       {
-        url: "https://www.dbec.com.br/assets/img/general/two-people-talking-school.png",
+        url: "https://dbec-next-ktdi5hg7a-paulofernando78s-projects.vercel.app/assets/img/home-me.png",
         width: 1200,
         height: 630,
         alt: "Daily Basis English Course",
