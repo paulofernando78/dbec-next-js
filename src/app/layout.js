@@ -30,6 +30,22 @@ const oswald = Oswald({
 export const metadata = {
   title: "Daily Basis English Course",
   description: "Aulas particulares de inglês",
+  openGraph: {
+    title: "Daily Basis English Course",
+    description: "Aulas particulares de inglês",
+    url: "https://www.dbec.com.br",
+    siteName: "Daily Basis English Course",
+    images: [
+      {
+        url: "https://www.dbec.com.br/assets/img/general/two-people-talking-school.png",
+        width: 1200,
+        height: 630,
+        alt: "Daily Basis English Course",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
