@@ -16,17 +16,17 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold } from "@/helpers/content";
 
 export const metadata = {
-  title: "Numbers and Telling the Time",
-  description: "...",
+  title: "A1 Beginner | Numbers",
+  description: "Basic cardinal and ordinal numbers for everyday use.",
 };
 export default function Numbers() {
   return (
     <>
       <Whiteboard
-      title="Vocabulary"
-      subtitle="Numbers"
-      description="How old are you?" 
-       />
+        title="A1 Beginner"
+        subtitle="Numbers"
+        description="One, two, three... first, second, third."
+      />
       <div className="line-break">
         <PageSections>
           <Section id="introduction" heading={3}>

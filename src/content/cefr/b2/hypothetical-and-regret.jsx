@@ -15,32 +15,32 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, mark, portuguese } from "@/helpers/content";
 
 export const metadata = {
-  title: "B1 Intermediate | Health and Lifestyle",
-  description: "Talking about habits, balance, stress, and healthy routines.",
+  title: "B2 Upper-Intermediate | Hypothetical and Regret Structures",
+  description: "Using advanced conditional and regret language to reflect on imagined alternatives.",
 };
 
-export default function TalkAboutHealthAndLifestyle() {
+export default function HypotheticalAndRegret() {
   return (
     <>
       <Whiteboard
-        title="B1 Intermediate"
-        subtitle="Talk about health and lifestyle"
-        description="I try to stay healthy by sleeping well, eating balanced meals, and exercising a few times a week."
+        title="B2 Upper-Intermediate"
+        subtitle="Hypothetical and regret structures"
+        description="If I had prepared more carefully, I would not have made so many mistakes, and I wish I had asked for help earlier."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to describe health
-          habits, talk about lifestyle choices, and explain how routines affect
-          energy, stress, and well-being.
+          By the end of this class, students will be able to discuss unreal
+          present and past situations, express regret more naturally, and
+          compare what happened with what might have happened.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
-                alt="A man in an evening routine."
+                src="/assets/img/general/man-study-home.png"
+                alt="A reflective study moment."
                 width={320}
                 height={220}
               />
@@ -50,7 +50,7 @@ export default function TalkAboutHealthAndLifestyle() {
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold("Read the sentences and notice the difference between present hypotheticals and past regret."),
                       ],
                     }),
                   ]}
@@ -59,21 +59,21 @@ export default function TalkAboutHealthAndLifestyle() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
+                      parts: ["If I had more confidence, I would apply for that position."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
+                      parts: ["If I had studied harder, I would have passed the exam more easily."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
+                      parts: ["I wish I had spoken to her sooner."],
                     }),
                   ]}
                 />
@@ -81,7 +81,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   value={[
                     ...content({
                       parts: [
-                        "This topic often combines routine language with causes and effects: one habit leads to one result.",
+                        "At B2 level, it is important to distinguish between imagining a different present and regretting a different past.",
                       ],
                     }),
                   ]}
@@ -96,27 +96,27 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What healthy habit does she have?",
+                    question: "1. Which sentence imagines a different present?",
                     options: [
-                      { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
-                      { option: "She never rests.", isCorrect: false },
+                      { option: "If I had more confidence, I would apply for that position.", isCorrect: true },
+                      { option: "I wish I had called her yesterday.", isCorrect: false },
+                      { option: "I have confidence today.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Why does he feel tired in the morning?",
+                    question: "2. Which sentence refers to regret about the past?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      { option: "I wish I had spoken to her sooner.", isCorrect: true },
+                      { option: "If I were taller, I would play basketball.", isCorrect: false },
+                      { option: "I am speaking now.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. How do they reduce stress?",
+                    question: "3. Which structure describes an unreal past result?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
-                      { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      { option: "If I had studied harder, I would have passed.", isCorrect: true },
+                      { option: "If I study harder, I pass.", isCorrect: false },
+                      { option: "If I had study, I would pass yesterday.", isCorrect: false },
                     ],
                   },
                 ],
@@ -126,21 +126,13 @@ export default function TalkAboutHealthAndLifestyle() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="Laura and Eric talk about their routines and stress levels."
+              description="Laura reflects on a presentation that did not go well."
               lines={[
                 {
-                  speaker: "Laura:",
-                  text: [
-                    ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
-                    }),
-                  ],
-                },
-                {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: ["You seem disappointed. Did the presentation go badly?"],
                     }),
                   ],
                 },
@@ -148,7 +140,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Has it made a difference?"],
+                      parts: ["Not terribly, but I know it could have gone better."],
                     }),
                   ],
                 },
@@ -156,7 +148,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: ["What would you change if you had the chance?"],
                     }),
                   ],
                 },
@@ -164,7 +156,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
+                      parts: ["If I had prepared more examples, I would have sounded more convincing."],
                     }),
                   ],
                 },
@@ -172,7 +164,23 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: ["Do you regret anything in particular?"],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Laura:",
+                  text: [
+                    ...content({
+                      parts: ["Yes. I wish I had practiced the final section more carefully."],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Eric:",
+                  text: [
+                    ...content({
+                      parts: ["At least you know what to improve next time."],
                     }),
                   ],
                 },
@@ -185,15 +193,13 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Health and lifestyle conversations often include ",
-                    mark("habits"),
+                    "This topic combines ",
+                    mark("second conditional"),
                     ", ",
-                    mark("frequency"),
-                    ", ",
-                    mark("results"),
+                    mark("third conditional"),
                     ", and ",
-                    mark("small changes"),
-                    ".",
+                    mark("wish + past perfect"),
+                    " to describe imagined alternatives and regret.",
                   ],
                 }),
               ]}
@@ -203,7 +209,7 @@ export default function TalkAboutHealthAndLifestyle() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Conversas sobre saúde e estilo de vida geralmente incluem hábitos, frequência, resultados e pequenas mudanças.",
+                      "Este tópico combina second conditional, third conditional e wish + past perfect para descrever alternativas imaginadas e arrependimento.",
                     ),
                   ],
                 }),
@@ -217,28 +223,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [bold("Unreal present: "), mark("If I had more time, I would learn another language.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [bold("Unreal past: "), mark("If I had left earlier, I would have caught the train.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [bold("Regret: "), mark("I wish I had asked for help sooner.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [bold("Reflection: "), mark("Things might have been different if...")],
                     }),
                   ],
                 },
@@ -251,9 +257,11 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "A useful B1 pattern is ",
-                    mark("habit -> effect -> possible improvement"),
-                    ".",
+                    "A useful contrast is: ",
+                    mark("If I had more... I would..."),
+                    " for unreal present situations, and ",
+                    mark("If I had done... I would have..."),
+                    " for unreal past situations.",
                   ],
                 }),
               ]}
@@ -267,54 +275,54 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
-                  column: "Healthy Habits",
+                  column: "Unreal Present",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [{ text: [...content({ parts: ["If I had more time, I would..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [{ text: [...content({ parts: ["If I were more confident, I would..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [{ text: [...content({ parts: ["If I lived closer, I would..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
-                  column: "Lifestyle Problems",
+                  column: "Unreal Past",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [{ text: [...content({ parts: ["If I had prepared better, I would have..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [{ text: [...content({ parts: ["If we had left earlier, we would have..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [{ text: [...content({ parts: ["If she had known, she would have..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
-                  column: "Improvement Language",
+                  column: "Regret",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [{ text: [...content({ parts: ["I wish I had..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [{ text: [...content({ parts: ["If only I had..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [{ text: [...content({ parts: ["Things might have been different if..."] })] }],
                     },
                   ],
                 },
@@ -326,45 +334,45 @@ export default function TalkAboutHealthAndLifestyle() {
             <FillInTheBlanks
               exercise={{
                 instructions:
-                  "Complete the health and lifestyle sentences.",
+                  "Complete the hypothetical and regret sentences with the correct forms.",
                 blocks: [
                   {
                     block: [
-                      { text: "I try to " },
-                      { blank: "exercise" },
-                      { text: " three times a week." },
+                      { text: "If I had more time, I " },
+                      { blank: "would" },
+                      { text: " read more." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "He often stays up too " },
-                      { blank: "late" },
-                      { text: ", so he feels tired." },
+                      { text: "If she had left earlier, she would have " },
+                      { blank: "arrived" },
+                      { text: " on time." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "A balanced " },
-                      { blank: "diet" },
-                      { text: " can improve your energy." },
+                      { text: "I wish I had " },
+                      { blank: "prepared" },
+                      { text: " more carefully." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "They take short " },
-                      { blank: "breaks" },
-                      { text: " to reduce stress." },
+                      { text: "If only we had " },
+                      { blank: "known" },
+                      { text: " about the change earlier." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "One small change could " },
+                      { text: "Things might have been different if he had asked for " },
                       { blank: "help" },
-                      { text: " a lot." },
+                      { text: "." },
                     ],
                   },
                 ],
@@ -378,35 +386,35 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the best response.",
                 questions: [
                   {
-                    question: "1. Which sentence describes a healthy routine?",
+                    question: "1. Which sentence expresses regret?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      { option: "I wish I had listened more carefully.", isCorrect: true },
+                      { option: "I wish I listen more carefully now yesterday.", isCorrect: false },
+                      { option: "I am listening more carefully.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Which sentence shows cause and effect?",
+                    question: "2. Which sentence describes an unreal past result?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
-                      { option: "I like tea and coffee.", isCorrect: false },
-                      { option: "My city has a park.", isCorrect: false },
+                      { option: "If I had left earlier, I would have caught the train.", isCorrect: true },
+                      { option: "If I leave earlier, I caught the train.", isCorrect: false },
+                      { option: "If I had earlier, train.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Which sentence suggests improvement?",
+                    question: "3. Which sentence imagines a different present?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
-                      { option: "Lunch is at one.", isCorrect: false },
-                      { option: "Yesterday was sunny.", isCorrect: false },
+                      { option: "If I were more confident, I would speak more in meetings.", isCorrect: true },
+                      { option: "If I had spoken more yesterday, I would speak now.", isCorrect: false },
+                      { option: "I spoke more in meetings last year.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "4. Which answer is more developed?",
+                    question: "4. Which sentence sounds most natural at B2 level?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
-                      { option: "Healthy.", isCorrect: false },
-                      { option: "At night.", isCorrect: false },
+                      { option: "Looking back, I wish I had asked for feedback before submitting the final version.", isCorrect: true },
+                      { option: "I regret because yes.", isCorrect: false },
+                      { option: "Feedback was table yesterday.", isCorrect: false },
                     ],
                   },
                 ],
@@ -419,7 +427,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Talk to a partner about your routine. Mention one healthy habit, one unhealthy habit, and one change you would like to make.",
+                    "Reflect on a decision, mistake, or missed opportunity. Explain what happened, what might have happened differently, and what you regret, if anything.",
                   ],
                 }),
               ]}
@@ -430,28 +438,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: ["sleep and rest"],
+                      parts: ["a presentation, exam, or interview"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["food and meals"],
+                      parts: ["a decision about work or study"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["exercise and movement"],
+                      parts: ["a missed opportunity"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["stress and work-life balance"],
+                      parts: ["a situation where you would act differently now"],
                     }),
                   ],
                 },

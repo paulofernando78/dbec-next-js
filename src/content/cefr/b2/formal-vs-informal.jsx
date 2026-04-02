@@ -15,32 +15,32 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, mark, portuguese } from "@/helpers/content";
 
 export const metadata = {
-  title: "B1 Intermediate | Health and Lifestyle",
-  description: "Talking about habits, balance, stress, and healthy routines.",
+  title: "B2 Upper-Intermediate | Formal vs Informal Register",
+  description: "Choosing suitable language for professional and casual contexts.",
 };
 
-export default function TalkAboutHealthAndLifestyle() {
+export default function FormalVsInformal() {
   return (
     <>
       <Whiteboard
-        title="B1 Intermediate"
-        subtitle="Talk about health and lifestyle"
-        description="I try to stay healthy by sleeping well, eating balanced meals, and exercising a few times a week."
+        title="B2 Upper-Intermediate"
+        subtitle="Formal vs informal register"
+        description="I was wondering whether you could send me the report by Friday sounds very different from Can you send me the report by Friday?"
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to describe health
-          habits, talk about lifestyle choices, and explain how routines affect
-          energy, stress, and well-being.
+          By the end of this class, students will be able to distinguish
+          between formal and informal register, choose appropriate language for
+          different situations, and rewrite messages to sound more suitable.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
-                alt="A man in an evening routine."
+                src="/assets/img/general/woman-work-hand-over-report.png"
+                alt="A professional communication setting."
                 width={320}
                 height={220}
               />
@@ -50,7 +50,7 @@ export default function TalkAboutHealthAndLifestyle() {
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold("Compare the two versions and think about which context each one fits."),
                       ],
                     }),
                   ]}
@@ -59,21 +59,21 @@ export default function TalkAboutHealthAndLifestyle() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
+                      parts: ["Can you send me the file today?"],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
+                      parts: ["Could you please send me the file by the end of the day?"],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
+                      parts: ["I would appreciate it if you could confirm your availability."],
                     }),
                   ]}
                 />
@@ -81,7 +81,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   value={[
                     ...content({
                       parts: [
-                        "This topic often combines routine language with causes and effects: one habit leads to one result.",
+                        "Register is not only about vocabulary. It also involves tone, directness, sentence structure, and the relationship between speakers.",
                       ],
                     }),
                   ]}
@@ -96,27 +96,27 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What healthy habit does she have?",
+                    question: "1. Which sentence sounds more casual?",
                     options: [
-                      { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
-                      { option: "She never rests.", isCorrect: false },
+                      { option: "Can you send me the file today?", isCorrect: true },
+                      { option: "I would appreciate it if you could confirm your availability.", isCorrect: false },
+                      { option: "Please accept my apologies for the inconvenience caused.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Why does he feel tired in the morning?",
+                    question: "2. Which sentence sounds more polite and professional?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      { option: "Could you please send me the file by the end of the day?", isCorrect: true },
+                      { option: "Send it now.", isCorrect: false },
+                      { option: "Where is your bag?", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. How do they reduce stress?",
+                    question: "3. What changes between formal and informal language?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
-                      { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      { option: "Tone, directness, and wording.", isCorrect: true },
+                      { option: "Only spelling.", isCorrect: false },
+                      { option: "Only the subject of the sentence.", isCorrect: false },
                     ],
                   },
                 ],
@@ -126,13 +126,13 @@ export default function TalkAboutHealthAndLifestyle() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="Laura and Eric talk about their routines and stress levels."
+              description="Laura compares two emails with Eric."
               lines={[
                 {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
+                      parts: ["I wrote two versions of the same email, and I am not sure which one sounds more appropriate."],
                     }),
                   ],
                 },
@@ -140,7 +140,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: ["What is the situation?"],
                     }),
                   ],
                 },
@@ -148,7 +148,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Has it made a difference?"],
+                      parts: ["I need to ask my professor for an extension."],
                     }),
                   ],
                 },
@@ -156,7 +156,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: ["In that case, the more formal version is probably safer."],
                     }),
                   ],
                 },
@@ -164,7 +164,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
+                      parts: ["The first version says, 'Hi, I need more time for the assignment.' The second says, 'I am writing to request a short extension for the assignment.'"],
                     }),
                   ],
                 },
@@ -172,7 +172,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: ["The second one is much more suitable because it sounds respectful and specific."],
                     }),
                   ],
                 },
@@ -185,15 +185,13 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Health and lifestyle conversations often include ",
-                    mark("habits"),
+                    "Formal language often sounds ",
+                    mark("less direct"),
                     ", ",
-                    mark("frequency"),
-                    ", ",
-                    mark("results"),
+                    mark("more polite"),
                     ", and ",
-                    mark("small changes"),
-                    ".",
+                    mark("more carefully structured"),
+                    ", while informal language tends to be shorter and more personal.",
                   ],
                 }),
               ]}
@@ -203,7 +201,7 @@ export default function TalkAboutHealthAndLifestyle() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Conversas sobre saúde e estilo de vida geralmente incluem hábitos, frequência, resultados e pequenas mudanças.",
+                      "A linguagem formal costuma soar menos direta, mais polida e mais cuidadosamente estruturada, enquanto a linguagem informal tende a ser mais curta e pessoal.",
                     ),
                   ],
                 }),
@@ -217,28 +215,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [bold("Informal request: "), mark("Can you send me the file?")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [bold("Formal request: "), mark("Could you please send me the file at your earliest convenience?")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [bold("Informal apology: "), mark("Sorry I am late.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [bold("Formal apology: "), mark("Please accept my apologies for the delay.")],
                     }),
                   ],
                 },
@@ -251,8 +249,12 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "A useful B1 pattern is ",
-                    mark("habit -> effect -> possible improvement"),
+                    "More formal language often uses longer framing expressions such as ",
+                    mark("I am writing to..."),
+                    ", ",
+                    mark("I would like to..."),
+                    ", and ",
+                    mark("I would appreciate it if..."),
                     ".",
                   ],
                 }),
@@ -267,54 +269,54 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
-                  column: "Healthy Habits",
+                  column: "Informal",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [{ text: [...content({ parts: ["Can you help me?"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [{ text: [...content({ parts: ["I need more time."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [{ text: [...content({ parts: ["Sorry I missed the meeting."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
-                  column: "Lifestyle Problems",
+                  column: "Formal",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [{ text: [...content({ parts: ["Could you please assist me?"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [{ text: [...content({ parts: ["I am writing to request additional time."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [{ text: [...content({ parts: ["Please accept my apologies for missing the meeting."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
-                  column: "Improvement Language",
+                  column: "Useful Contexts",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [{ text: [...content({ parts: ["friend"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [{ text: [...content({ parts: ["teacher or manager"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [{ text: [...content({ parts: ["email or message"] })] }],
                     },
                   ],
                 },
@@ -326,45 +328,45 @@ export default function TalkAboutHealthAndLifestyle() {
             <FillInTheBlanks
               exercise={{
                 instructions:
-                  "Complete the health and lifestyle sentences.",
+                  "Complete the sentences with suitable formal or informal phrases.",
                 blocks: [
                   {
                     block: [
-                      { text: "I try to " },
-                      { blank: "exercise" },
-                      { text: " three times a week." },
+                      { text: "I am writing to " },
+                      { blank: "request" },
+                      { text: " a short extension." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "He often stays up too " },
-                      { blank: "late" },
-                      { text: ", so he feels tired." },
+                      { text: "Could you " },
+                      { blank: "please" },
+                      { text: " confirm your availability?" },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "A balanced " },
-                      { blank: "diet" },
-                      { text: " can improve your energy." },
+                      { text: "Sorry I " },
+                      { blank: "missed" },
+                      { text: " your message earlier." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "They take short " },
-                      { blank: "breaks" },
-                      { text: " to reduce stress." },
+                      { text: "I would " },
+                      { blank: "appreciate" },
+                      { text: " it if you could reply by Friday." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "One small change could " },
-                      { blank: "help" },
-                      { text: " a lot." },
+                      { text: "That version sounds too " },
+                      { blank: "casual" },
+                      { text: " for a professor." },
                     ],
                   },
                 ],
@@ -378,35 +380,35 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the best response.",
                 questions: [
                   {
-                    question: "1. Which sentence describes a healthy routine?",
+                    question: "1. Which sentence is most appropriate for a professor?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      { option: "I am writing to ask whether it would be possible to meet next week.", isCorrect: true },
+                      { option: "Hey, can we talk sometime?", isCorrect: false },
+                      { option: "Meet me tomorrow.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Which sentence shows cause and effect?",
+                    question: "2. Which sentence sounds more informal?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
-                      { option: "I like tea and coffee.", isCorrect: false },
-                      { option: "My city has a park.", isCorrect: false },
+                      { option: "Sorry, I cannot make it today.", isCorrect: true },
+                      { option: "Please accept my apologies for my inability to attend today.", isCorrect: false },
+                      { option: "I would be grateful for your response.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Which sentence suggests improvement?",
+                    question: "3. Which expression softens a request?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
-                      { option: "Lunch is at one.", isCorrect: false },
-                      { option: "Yesterday was sunny.", isCorrect: false },
+                      { option: "I would appreciate it if...", isCorrect: true },
+                      { option: "Do it now.", isCorrect: false },
+                      { option: "No excuses.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "4. Which answer is more developed?",
+                    question: "4. Why does register matter?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
-                      { option: "Healthy.", isCorrect: false },
-                      { option: "At night.", isCorrect: false },
+                      { option: "Because different relationships and situations require different tones.", isCorrect: true },
+                      { option: "Because formal language is always better.", isCorrect: false },
+                      { option: "Because informal language is always rude.", isCorrect: false },
                     ],
                   },
                 ],
@@ -419,7 +421,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Talk to a partner about your routine. Mention one healthy habit, one unhealthy habit, and one change you would like to make.",
+                    "Rewrite one informal message in a more formal way, then do the opposite with a formal message. Explain why each version fits its context.",
                   ],
                 }),
               ]}
@@ -430,28 +432,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: ["sleep and rest"],
+                      parts: ["asking a professor for an extension"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["food and meals"],
+                      parts: ["inviting a friend to meet after work"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["exercise and movement"],
+                      parts: ["apologizing to a manager for a delay"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["stress and work-life balance"],
+                      parts: ["messaging a classmate about homework"],
                     }),
                   ],
                 },

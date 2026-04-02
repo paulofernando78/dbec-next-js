@@ -15,32 +15,32 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, mark, portuguese } from "@/helpers/content";
 
 export const metadata = {
-  title: "B1 Intermediate | Health and Lifestyle",
-  description: "Talking about habits, balance, stress, and healthy routines.",
+  title: "A2 Elementary | Talk About Your Future Plans",
+  description: "Using going to for simple future plans and intentions.",
 };
 
-export default function TalkAboutHealthAndLifestyle() {
+export default function TalkAboutYourFuturePlans() {
   return (
     <>
       <Whiteboard
-        title="B1 Intermediate"
-        subtitle="Talk about health and lifestyle"
-        description="I try to stay healthy by sleeping well, eating balanced meals, and exercising a few times a week."
+        title="A2 Elementary"
+        subtitle="Talk about your future plans"
+        description="I'm going to study tonight, and I'm going to visit my cousin on Saturday."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to describe health
-          habits, talk about lifestyle choices, and explain how routines affect
-          energy, stress, and well-being.
+          By the end of this class, students will be able to talk about future
+          plans and intentions with going to, ask about upcoming activities,
+          and mention future time expressions clearly.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
-                alt="A man in an evening routine."
+                src="/assets/img/grammar/future-perfect/laura-working-on-her-report.png"
+                alt="Laura working on her report."
                 width={320}
                 height={220}
               />
@@ -50,7 +50,7 @@ export default function TalkAboutHealthAndLifestyle() {
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold("Read the plan sentences and think about your next few days."),
                       ],
                     }),
                   ]}
@@ -59,21 +59,21 @@ export default function TalkAboutHealthAndLifestyle() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
+                      parts: ["I'm going to study tonight."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
+                      parts: ["Laura is going to finish her report tomorrow."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
+                      parts: ["We're going to visit our friends this weekend."],
                     }),
                   ]}
                 />
@@ -81,7 +81,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   value={[
                     ...content({
                       parts: [
-                        "This topic often combines routine language with causes and effects: one habit leads to one result.",
+                        "We often use going to when we already have a plan or intention for the future.",
                       ],
                     }),
                   ]}
@@ -96,27 +96,27 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What healthy habit does she have?",
+                    question: "1. When is the speaker going to study?",
                     options: [
-                      { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
-                      { option: "She never rests.", isCorrect: false },
+                      { option: "Tonight.", isCorrect: true },
+                      { option: "Last night.", isCorrect: false },
+                      { option: "Yesterday morning.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Why does he feel tired in the morning?",
+                    question: "2. What is Laura going to finish tomorrow?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      { option: "Her report.", isCorrect: true },
+                      { option: "A sandwich.", isCorrect: false },
+                      { option: "A neighborhood.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. How do they reduce stress?",
+                    question: "3. When are they going to visit their friends?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
-                      { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      { option: "This weekend.", isCorrect: true },
+                      { option: "Two days ago.", isCorrect: false },
+                      { option: "Every Monday last year.", isCorrect: false },
                     ],
                   },
                 ],
@@ -126,21 +126,13 @@ export default function TalkAboutHealthAndLifestyle() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="Laura and Eric talk about their routines and stress levels."
+              description="Laura and Eric are making plans for the weekend."
               lines={[
                 {
-                  speaker: "Laura:",
-                  text: [
-                    ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
-                    }),
-                  ],
-                },
-                {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: ["What are you going to do this weekend?"],
                     }),
                   ],
                 },
@@ -148,7 +140,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Has it made a difference?"],
+                      parts: ["I'm going to visit my cousin on Saturday."],
                     }),
                   ],
                 },
@@ -156,7 +148,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: ["Nice. Are you going to stay there all day?"],
                     }),
                   ],
                 },
@@ -164,7 +156,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
+                      parts: ["No, I'm not. I'm going to come back in the evening."],
                     }),
                   ],
                 },
@@ -172,7 +164,23 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: ["I'm going to study for my English test on Sunday."],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Laura:",
+                  text: [
+                    ...content({
+                      parts: ["Good plan. Are you going to go out after that?"],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Eric:",
+                  text: [
+                    ...content({
+                      parts: ["Maybe. I'm going to decide later."],
                     }),
                   ],
                 },
@@ -185,15 +193,9 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Health and lifestyle conversations often include ",
-                    mark("habits"),
-                    ", ",
-                    mark("frequency"),
-                    ", ",
-                    mark("results"),
-                    ", and ",
-                    mark("small changes"),
-                    ".",
+                    "We use ",
+                    mark("be going to + base verb"),
+                    " for future plans and intentions.",
                   ],
                 }),
               ]}
@@ -203,7 +205,7 @@ export default function TalkAboutHealthAndLifestyle() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Conversas sobre saúde e estilo de vida geralmente incluem hábitos, frequência, resultados e pequenas mudanças.",
+                      "Usamos be going to + verbo na forma base para falar de planos e intenções futuras.",
                     ),
                   ],
                 }),
@@ -217,28 +219,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [bold("Affirmative: "), mark("I'm going to study tonight.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [bold("Negative: "), mark("I'm not going to stay long.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [bold("Question: "), mark("Are you going to visit your cousin?")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [bold("Time markers: "), mark("tonight"), ", ", mark("tomorrow"), ", ", mark("this weekend")],
                     }),
                   ],
                 },
@@ -251,8 +253,14 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "A useful B1 pattern is ",
-                    mark("habit -> effect -> possible improvement"),
+                    "The form changes with the verb ",
+                    mark("be"),
+                    ": ",
+                    mark("I'm going to"),
+                    ", ",
+                    mark("you're going to"),
+                    ", ",
+                    mark("she's going to"),
                     ".",
                   ],
                 }),
@@ -267,54 +275,54 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
-                  column: "Healthy Habits",
+                  column: "Starts",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [{ text: [...content({ parts: ["I'm going to..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [{ text: [...content({ parts: ["She's going to..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [{ text: [...content({ parts: ["We're going to..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
-                  column: "Lifestyle Problems",
+                  column: "Verbs",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [{ text: [...content({ parts: ["study"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [{ text: [...content({ parts: ["visit"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [{ text: [...content({ parts: ["travel"] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
-                  column: "Improvement Language",
+                  column: "Time Expressions",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [{ text: [...content({ parts: ["tonight"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [{ text: [...content({ parts: ["tomorrow"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [{ text: [...content({ parts: ["next week"] })] }],
                     },
                   ],
                 },
@@ -326,45 +334,45 @@ export default function TalkAboutHealthAndLifestyle() {
             <FillInTheBlanks
               exercise={{
                 instructions:
-                  "Complete the health and lifestyle sentences.",
+                  "Complete the future plan sentences with the correct words.",
                 blocks: [
                   {
                     block: [
-                      { text: "I try to " },
-                      { blank: "exercise" },
-                      { text: " three times a week." },
+                      { text: "I am " },
+                      { blank: "going" },
+                      { text: " to study tonight." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "He often stays up too " },
-                      { blank: "late" },
-                      { text: ", so he feels tired." },
+                      { text: "She is going to " },
+                      { blank: "visit" },
+                      { text: " her cousin tomorrow." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "A balanced " },
-                      { blank: "diet" },
-                      { text: " can improve your energy." },
+                      { text: "We are going to travel next " },
+                      { blank: "week" },
+                      { text: "." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "They take short " },
-                      { blank: "breaks" },
-                      { text: " to reduce stress." },
+                      { text: "He isn't going to " },
+                      { blank: "work" },
+                      { text: " on Sunday." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "One small change could " },
-                      { blank: "help" },
-                      { text: " a lot." },
+                      { text: "Are you going to study " },
+                      { blank: "tonight" },
+                      { text: "?" },
                     ],
                   },
                 ],
@@ -378,35 +386,35 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the best response.",
                 questions: [
                   {
-                    question: "1. Which sentence describes a healthy routine?",
+                    question: "1. What are you going to do tonight?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      { option: "I'm going to study.", isCorrect: true },
+                      { option: "I studied yesterday.", isCorrect: false },
+                      { option: "At the supermarket.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Which sentence shows cause and effect?",
+                    question: "2. Are you going to travel next month?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
-                      { option: "I like tea and coffee.", isCorrect: false },
-                      { option: "My city has a park.", isCorrect: false },
+                      { option: "Yes, I am.", isCorrect: true },
+                      { option: "Yes, I do.", isCorrect: false },
+                      { option: "Yes, I did.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Which sentence suggests improvement?",
+                    question: "3. Is Laura going to visit her cousin?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
-                      { option: "Lunch is at one.", isCorrect: false },
-                      { option: "Yesterday was sunny.", isCorrect: false },
+                      { option: "Yes, she is.", isCorrect: true },
+                      { option: "Yes, she does.", isCorrect: false },
+                      { option: "Yes, she visited.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "4. Which answer is more developed?",
+                    question: "4. When are you going to finish the report?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
-                      { option: "Healthy.", isCorrect: false },
-                      { option: "At night.", isCorrect: false },
+                      { option: "Tomorrow afternoon.", isCorrect: true },
+                      { option: "Last weekend.", isCorrect: false },
+                      { option: "Because it's cheap.", isCorrect: false },
                     ],
                   },
                 ],
@@ -419,7 +427,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Talk to a partner about your routine. Mention one healthy habit, one unhealthy habit, and one change you would like to make.",
+                    "Talk with a partner about your future plans. Use going to and clear time expressions.",
                   ],
                 }),
               ]}
@@ -430,28 +438,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: ["sleep and rest"],
+                      parts: ["What are you going to do tonight?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["food and meals"],
+                      parts: ["What are you going to do this weekend?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["exercise and movement"],
+                      parts: ["Are you going to study or work tomorrow?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["stress and work-life balance"],
+                      parts: ["What are you going to do next month?"],
                     }),
                   ],
                 },

@@ -15,32 +15,32 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, mark, portuguese } from "@/helpers/content";
 
 export const metadata = {
-  title: "B1 Intermediate | Health and Lifestyle",
-  description: "Talking about habits, balance, stress, and healthy routines.",
+  title: "B2 Upper-Intermediate | Discuss Current Events",
+  description: "Summarizing recent developments and reacting with nuance.",
 };
 
-export default function TalkAboutHealthAndLifestyle() {
+export default function CurrentEvents() {
   return (
     <>
       <Whiteboard
-        title="B1 Intermediate"
-        subtitle="Talk about health and lifestyle"
-        description="I try to stay healthy by sleeping well, eating balanced meals, and exercising a few times a week."
+        title="B2 Upper-Intermediate"
+        subtitle="Discuss current events"
+        description="From what I have read, the issue is more complex than the headlines suggest."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to describe health
-          habits, talk about lifestyle choices, and explain how routines affect
-          energy, stress, and well-being.
+          By the end of this class, students will be able to summarize current
+          events, distinguish facts from reactions, and discuss recent topics in
+          a more measured and nuanced way.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
-                alt="A man in an evening routine."
+                src="/assets/img/general/woman-work-office.png"
+                alt="A woman reading and discussing information."
                 width={320}
                 height={220}
               />
@@ -50,7 +50,7 @@ export default function TalkAboutHealthAndLifestyle() {
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold("Read the short reactions and notice the difference between summary and opinion."),
                       ],
                     }),
                   ]}
@@ -59,21 +59,21 @@ export default function TalkAboutHealthAndLifestyle() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
+                      parts: ["According to the report, public transport use has increased over the past year."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
+                      parts: ["Some people see this as a positive environmental trend, while others worry about overcrowding."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
+                      parts: ["At this stage, it is still too early to know the long-term impact."],
                     }),
                   ]}
                 />
@@ -81,7 +81,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   value={[
                     ...content({
                       parts: [
-                        "This topic often combines routine language with causes and effects: one habit leads to one result.",
+                        "When talking about current events, strong B2 speakers separate reported information from personal interpretation.",
                       ],
                     }),
                   ]}
@@ -96,27 +96,27 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What healthy habit does she have?",
+                    question: "1. What does the report say?",
                     options: [
-                      { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
-                      { option: "She never rests.", isCorrect: false },
+                      { option: "Public transport use has increased.", isCorrect: true },
+                      { option: "Everyone now works from home.", isCorrect: false },
+                      { option: "Crowding has completely disappeared.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Why does he feel tired in the morning?",
+                    question: "2. What is one concern people have?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      { option: "Overcrowding.", isCorrect: true },
+                      { option: "Too many private jets.", isCorrect: false },
+                      { option: "A lack of weather reports.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. How do they reduce stress?",
+                    question: "3. What does the speaker say about the long-term effect?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
-                      { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      { option: "It is too early to know.", isCorrect: true },
+                      { option: "It is completely clear already.", isCorrect: false },
+                      { option: "It does not matter.", isCorrect: false },
                     ],
                   },
                 ],
@@ -126,13 +126,13 @@ export default function TalkAboutHealthAndLifestyle() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="Laura and Eric talk about their routines and stress levels."
+              description="Laura and Eric are discussing a recent news story about artificial intelligence in schools."
               lines={[
                 {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
+                      parts: ["Have you seen the recent debate about AI tools in schools?"],
                     }),
                   ],
                 },
@@ -140,7 +140,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: ["Yes. From what I have read, schools are still trying to decide how these tools should be used."],
                     }),
                   ],
                 },
@@ -148,7 +148,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Has it made a difference?"],
+                      parts: ["Some teachers seem to be worried that students will rely on them too much."],
                     }),
                   ],
                 },
@@ -156,7 +156,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: ["That is a valid concern. At the same time, banning them completely may not be realistic."],
                     }),
                   ],
                 },
@@ -164,7 +164,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
+                      parts: ["Exactly. It might be more useful to teach students how to use them responsibly."],
                     }),
                   ],
                 },
@@ -172,7 +172,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: ["I agree. The real challenge seems to be creating clear rules rather than pretending the technology does not exist."],
                     }),
                   ],
                 },
@@ -185,14 +185,18 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Health and lifestyle conversations often include ",
-                    mark("habits"),
+                    "To discuss current events well, it helps to combine ",
+                    mark("reported information"),
                     ", ",
-                    mark("frequency"),
-                    ", ",
-                    mark("results"),
+                    mark("careful interpretation"),
                     ", and ",
-                    mark("small changes"),
+                    mark("tentative language"),
+                    " such as ",
+                    mark("seems"),
+                    ", ",
+                    mark("may"),
+                    ", or ",
+                    mark("it is still unclear whether"),
                     ".",
                   ],
                 }),
@@ -203,7 +207,7 @@ export default function TalkAboutHealthAndLifestyle() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Conversas sobre saúde e estilo de vida geralmente incluem hábitos, frequência, resultados e pequenas mudanças.",
+                      "Para discutir atualidades bem, ajuda combinar informação relatada, interpretação cuidadosa e linguagem cautelosa como seems, may ou it is still unclear whether.",
                     ),
                   ],
                 }),
@@ -217,28 +221,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [bold("Reporting: "), mark("According to the report..."), " / ", mark("From what I have read...")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [bold("Reaction: "), mark("Some people see this as...")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [bold("Caution: "), mark("It may be too early to say."), " / ", mark("The situation still seems unclear.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [bold("Evaluation: "), mark("The real challenge appears to be...")],
                     }),
                   ],
                 },
@@ -251,8 +255,14 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "A useful B1 pattern is ",
-                    mark("habit -> effect -> possible improvement"),
+                    "Current-events discussions often sound more mature when they avoid certainty and use careful wording like ",
+                    mark("appears to"),
+                    ", ",
+                    mark("seems to"),
+                    ", ",
+                    mark("is likely to"),
+                    ", or ",
+                    mark("it remains to be seen whether"),
                     ".",
                   ],
                 }),
@@ -267,54 +277,54 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
-                  column: "Healthy Habits",
+                  column: "Reporting Language",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [{ text: [...content({ parts: ["According to..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [{ text: [...content({ parts: ["From what I have read..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [{ text: [...content({ parts: ["The report suggests that..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
-                  column: "Lifestyle Problems",
+                  column: "Careful Evaluation",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [{ text: [...content({ parts: ["It seems that..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [{ text: [...content({ parts: ["It may be too early to say..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [{ text: [...content({ parts: ["It remains to be seen whether..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
-                  column: "Improvement Language",
+                  column: "Discussion Moves",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [{ text: [...content({ parts: ["What is your take on that?"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [{ text: [...content({ parts: ["That is a valid concern."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [{ text: [...content({ parts: ["The bigger issue might be..."] })] }],
                     },
                   ],
                 },
@@ -326,45 +336,45 @@ export default function TalkAboutHealthAndLifestyle() {
             <FillInTheBlanks
               exercise={{
                 instructions:
-                  "Complete the health and lifestyle sentences.",
+                  "Complete the current-events phrases with the best missing words.",
                 blocks: [
                   {
                     block: [
-                      { text: "I try to " },
-                      { blank: "exercise" },
-                      { text: " three times a week." },
+                      { text: "According " },
+                      { blank: "to" },
+                      { text: " the article, prices have risen this year." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "He often stays up too " },
-                      { blank: "late" },
-                      { text: ", so he feels tired." },
+                      { text: "From what I have " },
+                      { blank: "read" },
+                      { text: ", the policy is still under review." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "A balanced " },
-                      { blank: "diet" },
-                      { text: " can improve your energy." },
+                      { text: "It may be too early to " },
+                      { blank: "say" },
+                      { text: " what the final effect will be." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "They take short " },
-                      { blank: "breaks" },
-                      { text: " to reduce stress." },
+                      { text: "That is a valid " },
+                      { blank: "concern" },
+                      { text: ", but the issue is more complex." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "One small change could " },
-                      { blank: "help" },
-                      { text: " a lot." },
+                      { text: "The bigger " },
+                      { blank: "issue" },
+                      { text: " might be how the change is managed." },
                     ],
                   },
                 ],
@@ -378,35 +388,35 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the best response.",
                 questions: [
                   {
-                    question: "1. Which sentence describes a healthy routine?",
+                    question: "1. Which sentence reports information rather than opinion?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      { option: "According to the report, attendance has increased by 12 percent.", isCorrect: true },
+                      { option: "That policy is terrible.", isCorrect: false },
+                      { option: "I completely hate the idea.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Which sentence shows cause and effect?",
+                    question: "2. Which phrase sounds most cautious?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
-                      { option: "I like tea and coffee.", isCorrect: false },
-                      { option: "My city has a park.", isCorrect: false },
+                      { option: "It remains to be seen whether the measure will succeed.", isCorrect: true },
+                      { option: "This will definitely fail.", isCorrect: false },
+                      { option: "Everyone knows the answer.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Which sentence suggests improvement?",
+                    question: "3. Which sentence shows a balanced reaction?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
-                      { option: "Lunch is at one.", isCorrect: false },
-                      { option: "Yesterday was sunny.", isCorrect: false },
+                      { option: "That is a valid concern, although there may also be long-term benefits.", isCorrect: true },
+                      { option: "Only one side matters.", isCorrect: false },
+                      { option: "The news is lunch.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "4. Which answer is more developed?",
+                    question: "4. Which question invites discussion?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
-                      { option: "Healthy.", isCorrect: false },
-                      { option: "At night.", isCorrect: false },
+                      { option: "What is your take on that issue?", isCorrect: true },
+                      { option: "How old is the newspaper?", isCorrect: false },
+                      { option: "Where is your kitchen?", isCorrect: false },
                     ],
                   },
                 ],
@@ -419,7 +429,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Talk to a partner about your routine. Mention one healthy habit, one unhealthy habit, and one change you would like to make.",
+                    "Choose a recent topic and discuss it with a partner. Summarize the issue first, then react to it carefully and explain what remains uncertain.",
                   ],
                 }),
               ]}
@@ -430,28 +440,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: ["sleep and rest"],
+                      parts: ["technology in education"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["food and meals"],
+                      parts: ["changes in transport or city planning"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["exercise and movement"],
+                      parts: ["a social or environmental issue in your country"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["stress and work-life balance"],
+                      parts: ["a recent development affecting work or study"],
                     }),
                   ],
                 },

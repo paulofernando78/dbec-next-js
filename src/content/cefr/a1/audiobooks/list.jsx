@@ -4,12 +4,10 @@ export default function AudioBooksList() {
   return (
     <>
       <Whiteboard
-      title="Audiobooks"
-      subtitle="A1 Beginner"
+        title="A1 Beginner"
+        subtitle="Audiobooks"
       />
-      <div className="line-break">
-        
-      </div>
+      <div className="line-break"></div>
     </>
   );
 }

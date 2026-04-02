@@ -15,32 +15,32 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, mark, portuguese } from "@/helpers/content";
 
 export const metadata = {
-  title: "B1 Intermediate | Health and Lifestyle",
-  description: "Talking about habits, balance, stress, and healthy routines.",
+  title: "B2 Upper-Intermediate | Debate and Argue a Point",
+  description: "Presenting arguments, counterarguments, and conclusions clearly.",
 };
 
-export default function TalkAboutHealthAndLifestyle() {
+export default function DebateAndArgue() {
   return (
     <>
       <Whiteboard
-        title="B1 Intermediate"
-        subtitle="Talk about health and lifestyle"
-        description="I try to stay healthy by sleeping well, eating balanced meals, and exercising a few times a week."
+        title="B2 Upper-Intermediate"
+        subtitle="Debate and argue a point"
+        description="Although remote work offers flexibility, I would argue that in-person collaboration still matters in some contexts."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to describe health
-          habits, talk about lifestyle choices, and explain how routines affect
-          energy, stress, and well-being.
+          By the end of this class, students will be able to present an
+          argument, support it with reasons and examples, respond to opposing
+          views, and reach a balanced conclusion.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
-                alt="A man in an evening routine."
+                src="/assets/img/general/two-people-talking.png"
+                alt="Two people engaged in discussion."
                 width={320}
                 height={220}
               />
@@ -50,7 +50,7 @@ export default function TalkAboutHealthAndLifestyle() {
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold("Read the statements and notice how the speaker builds an argument."),
                       ],
                     }),
                   ]}
@@ -59,21 +59,21 @@ export default function TalkAboutHealthAndLifestyle() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
+                      parts: ["I can see the advantages of remote work; however, I do not think it suits every team."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
+                      parts: ["One reason is that some tasks require immediate collaboration and quick decisions."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
+                      parts: ["That said, a hybrid model may be a more realistic solution than a complete return to the office."],
                     }),
                   ]}
                 />
@@ -81,7 +81,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   value={[
                     ...content({
                       parts: [
-                        "This topic often combines routine language with causes and effects: one habit leads to one result.",
+                        "Strong B2 arguments are usually balanced. They recognize complexity instead of presenting only one side.",
                       ],
                     }),
                   ]}
@@ -96,27 +96,27 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What healthy habit does she have?",
+                    question: "1. What does the speaker think about remote work?",
                     options: [
-                      { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
-                      { option: "She never rests.", isCorrect: false },
+                      { option: "It has advantages, but it does not suit every team.", isCorrect: true },
+                      { option: "It should disappear completely.", isCorrect: false },
+                      { option: "It is exactly the same as office work in every case.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Why does he feel tired in the morning?",
+                    question: "2. What reason does the speaker give?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      { option: "Some tasks require immediate collaboration.", isCorrect: true },
+                      { option: "Offices are always quieter than homes.", isCorrect: false },
+                      { option: "Remote workers never communicate.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. How do they reduce stress?",
+                    question: "3. What final position does the speaker suggest?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
-                      { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      { option: "A hybrid model may be more realistic.", isCorrect: true },
+                      { option: "Everyone should work alone forever.", isCorrect: false },
+                      { option: "No one should use technology.", isCorrect: false },
                     ],
                   },
                 ],
@@ -126,13 +126,13 @@ export default function TalkAboutHealthAndLifestyle() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="Laura and Eric talk about their routines and stress levels."
+              description="Laura and Eric are debating whether universities should make attendance mandatory."
               lines={[
                 {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
+                      parts: ["Do you think university attendance should always be mandatory?"],
                     }),
                   ],
                 },
@@ -140,7 +140,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: ["Personally, I would argue that it depends on the course and the learning objectives."],
                     }),
                   ],
                 },
@@ -148,7 +148,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Has it made a difference?"],
+                      parts: ["I understand that view, but I still think regular attendance improves discipline and engagement."],
                     }),
                   ],
                 },
@@ -156,7 +156,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: ["That may be true in some cases. On the other hand, adult learners often need more flexibility because of work or family responsibilities."],
                     }),
                   ],
                 },
@@ -164,7 +164,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
+                      parts: ["Fair point. Even so, if attendance were completely optional, some students might fall behind very quickly."],
                     }),
                   ],
                 },
@@ -172,7 +172,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: ["Perhaps a better approach would be to require attendance in practical classes but allow more freedom in lecture-based courses."],
                     }),
                   ],
                 },
@@ -185,14 +185,14 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Health and lifestyle conversations often include ",
-                    mark("habits"),
+                    "At B2 level, argument language often includes ",
+                    mark("position"),
                     ", ",
-                    mark("frequency"),
+                    mark("reason"),
                     ", ",
-                    mark("results"),
+                    mark("counterargument"),
                     ", and ",
-                    mark("small changes"),
+                    mark("qualified conclusion"),
                     ".",
                   ],
                 }),
@@ -203,7 +203,7 @@ export default function TalkAboutHealthAndLifestyle() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Conversas sobre saúde e estilo de vida geralmente incluem hábitos, frequência, resultados e pequenas mudanças.",
+                      "No nível B2, a linguagem de argumentação geralmente inclui posição, razão, contra-argumento e conclusão qualificada.",
                     ),
                   ],
                 }),
@@ -217,28 +217,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [bold("Position: "), mark("I would argue that...")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [bold("Reason: "), mark("One reason is that...")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [bold("Counterargument: "), mark("On the other hand..."), " / ", mark("That may be true, but...")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [bold("Conclusion: "), mark("A more balanced approach would be...")],
                     }),
                   ],
                 },
@@ -251,8 +251,12 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "A useful B1 pattern is ",
-                    mark("habit -> effect -> possible improvement"),
+                    "Persuasive answers often sound stronger when they avoid extreme claims and use cautious framing such as ",
+                    mark("in some cases"),
+                    ", ",
+                    mark("to a certain extent"),
+                    ", or ",
+                    mark("a better approach would be"),
                     ".",
                   ],
                 }),
@@ -267,54 +271,54 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
-                  column: "Healthy Habits",
+                  column: "Position Phrases",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [{ text: [...content({ parts: ["I would argue that..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [{ text: [...content({ parts: ["From my perspective..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [{ text: [...content({ parts: ["I can see both sides, but..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
-                  column: "Lifestyle Problems",
+                  column: "Counterargument",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [{ text: [...content({ parts: ["That may be true; however..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [{ text: [...content({ parts: ["On the other hand..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [{ text: [...content({ parts: ["Even so..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
-                  column: "Improvement Language",
+                  column: "Balanced Conclusion",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [{ text: [...content({ parts: ["A better approach would be..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [{ text: [...content({ parts: ["A more realistic solution might be..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [{ text: [...content({ parts: ["The key point is that..."] })] }],
                     },
                   ],
                 },
@@ -326,45 +330,45 @@ export default function TalkAboutHealthAndLifestyle() {
             <FillInTheBlanks
               exercise={{
                 instructions:
-                  "Complete the health and lifestyle sentences.",
+                  "Complete the argument phrases with the best missing word or expression.",
                 blocks: [
                   {
                     block: [
-                      { text: "I try to " },
-                      { blank: "exercise" },
-                      { text: " three times a week." },
+                      { text: "I would " },
+                      { blank: "argue" },
+                      { text: " that flexibility matters in higher education." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "He often stays up too " },
-                      { blank: "late" },
-                      { text: ", so he feels tired." },
+                      { text: "One " },
+                      { blank: "reason" },
+                      { text: " is that students have different responsibilities outside class." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "A balanced " },
-                      { blank: "diet" },
-                      { text: " can improve your energy." },
+                      { text: "On the other " },
+                      { blank: "hand" },
+                      { text: ", too much freedom may reduce participation." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "They take short " },
-                      { blank: "breaks" },
-                      { text: " to reduce stress." },
+                      { text: "A better " },
+                      { blank: "approach" },
+                      { text: " would be a partial attendance rule." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "One small change could " },
-                      { blank: "help" },
-                      { text: " a lot." },
+                      { text: "The key " },
+                      { blank: "point" },
+                      { text: " is that one rule will not suit every situation." },
                     ],
                   },
                 ],
@@ -378,35 +382,35 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the best response.",
                 questions: [
                   {
-                    question: "1. Which sentence describes a healthy routine?",
+                    question: "1. Which sentence sounds most balanced?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      { option: "I can see the advantages, but I still think some limits are necessary.", isCorrect: true },
+                      { option: "This is perfect in every situation.", isCorrect: false },
+                      { option: "Everyone who disagrees is wrong.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Which sentence shows cause and effect?",
+                    question: "2. Which phrase introduces a counterargument?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
-                      { option: "I like tea and coffee.", isCorrect: false },
-                      { option: "My city has a park.", isCorrect: false },
+                      { option: "On the other hand...", isCorrect: true },
+                      { option: "For breakfast...", isCorrect: false },
+                      { option: "At nine o'clock...", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Which sentence suggests improvement?",
+                    question: "3. Which sentence gives a qualified conclusion?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
-                      { option: "Lunch is at one.", isCorrect: false },
-                      { option: "Yesterday was sunny.", isCorrect: false },
+                      { option: "A more practical solution might be to combine both systems.", isCorrect: true },
+                      { option: "This is the only possible answer.", isCorrect: false },
+                      { option: "I do not know the difference.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "4. Which answer is more developed?",
+                    question: "4. Which answer sounds most suitable for a debate?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
-                      { option: "Healthy.", isCorrect: false },
-                      { option: "At night.", isCorrect: false },
+                      { option: "I understand your point, but I am not convinced it would work in practice.", isCorrect: true },
+                      { option: "That idea is stupid.", isCorrect: false },
+                      { option: "Where is the station?", isCorrect: false },
                     ],
                   },
                 ],
@@ -419,7 +423,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Talk to a partner about your routine. Mention one healthy habit, one unhealthy habit, and one change you would like to make.",
+                    "Debate one of the following topics with a partner. Give a position, one supporting argument, one counterargument, and a final conclusion.",
                   ],
                 }),
               ]}
@@ -430,28 +434,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: ["sleep and rest"],
+                      parts: ["university attendance requirements"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["food and meals"],
+                      parts: ["remote work versus office work"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["exercise and movement"],
+                      parts: ["the role of smartphones in education"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["stress and work-life balance"],
+                      parts: ["whether cities should limit private car use"],
                     }),
                   ],
                 },

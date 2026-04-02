@@ -15,32 +15,32 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, mark, portuguese } from "@/helpers/content";
 
 export const metadata = {
-  title: "B1 Intermediate | Health and Lifestyle",
-  description: "Talking about habits, balance, stress, and healthy routines.",
+  title: "B2 Upper-Intermediate | Idiomatic Language in Context",
+  description: "Understanding and using common idioms naturally in conversation.",
 };
 
-export default function TalkAboutHealthAndLifestyle() {
+export default function IdiomaticLanguage() {
   return (
     <>
       <Whiteboard
-        title="B1 Intermediate"
-        subtitle="Talk about health and lifestyle"
-        description="I try to stay healthy by sleeping well, eating balanced meals, and exercising a few times a week."
+        title="B2 Upper-Intermediate"
+        subtitle="Idiomatic language in context"
+        description="After a difficult week, I finally felt like I could see the light at the end of the tunnel."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to describe health
-          habits, talk about lifestyle choices, and explain how routines affect
-          energy, stress, and well-being.
+          By the end of this class, students will be able to understand common
+          idiomatic expressions from context, explain their meaning, and use a
+          few of them naturally without sounding forced.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
-                alt="A man in an evening routine."
+                src="/assets/img/general/two-people-talking.png"
+                alt="A conversational setting for idiomatic language."
                 width={320}
                 height={220}
               />
@@ -50,7 +50,7 @@ export default function TalkAboutHealthAndLifestyle() {
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold("Read the expressions and focus on their meaning in context, not word by word."),
                       ],
                     }),
                   ]}
@@ -59,21 +59,21 @@ export default function TalkAboutHealthAndLifestyle() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
+                      parts: ["At first the project seemed impossible, but now we can see the light at the end of the tunnel."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
+                      parts: ["When the meeting became tense, Maria broke the ice with a joke."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
+                      parts: ["After months of uncertainty, they were finally back on track."],
                     }),
                   ]}
                 />
@@ -81,7 +81,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   value={[
                     ...content({
                       parts: [
-                        "This topic often combines routine language with causes and effects: one habit leads to one result.",
+                        "Idioms are most useful when they appear in a believable context and match the tone of the conversation.",
                       ],
                     }),
                   ]}
@@ -96,27 +96,27 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What healthy habit does she have?",
+                    question: "1. What does 'see the light at the end of the tunnel' suggest?",
                     options: [
-                      { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
-                      { option: "She never rests.", isCorrect: false },
+                      { option: "A difficult situation is starting to improve.", isCorrect: true },
+                      { option: "Someone is literally in a tunnel.", isCorrect: false },
+                      { option: "A train is arriving immediately.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Why does he feel tired in the morning?",
+                    question: "2. What does 'break the ice' mean here?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      { option: "Make people feel more comfortable.", isCorrect: true },
+                      { option: "Start an argument.", isCorrect: false },
+                      { option: "Open a cold drink.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. How do they reduce stress?",
+                    question: "3. What does 'back on track' imply?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
-                      { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      { option: "Progress has returned to normal.", isCorrect: true },
+                      { option: "A train is late.", isCorrect: false },
+                      { option: "The team has disappeared.", isCorrect: false },
                     ],
                   },
                 ],
@@ -126,13 +126,13 @@ export default function TalkAboutHealthAndLifestyle() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="Laura and Eric talk about their routines and stress levels."
+              description="Laura and Eric are talking about a stressful month at work."
               lines={[
                 {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
+                      parts: ["How are things going with that big project now?"],
                     }),
                   ],
                 },
@@ -140,7 +140,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: ["Much better. For a while, it felt as if everything was falling apart, but we are finally back on track."],
                     }),
                   ],
                 },
@@ -148,7 +148,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Has it made a difference?"],
+                      parts: ["That is good to hear. Last time we spoke, you sounded completely overwhelmed."],
                     }),
                   ],
                 },
@@ -156,7 +156,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: ["I was. Still, once the team started communicating properly, we began to see the light at the end of the tunnel."],
                     }),
                   ],
                 },
@@ -164,15 +164,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
-                    }),
-                  ],
-                },
-                {
-                  speaker: "Eric:",
-                  text: [
-                    ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: ["Sometimes that first honest conversation is enough to break the ice and get everyone moving again."],
                     }),
                   ],
                 },
@@ -185,15 +177,9 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Health and lifestyle conversations often include ",
-                    mark("habits"),
-                    ", ",
-                    mark("frequency"),
-                    ", ",
-                    mark("results"),
-                    ", and ",
-                    mark("small changes"),
-                    ".",
+                    "Idiomatic language should be learned as ",
+                    mark("whole expressions in context"),
+                    ", not as literal word-by-word translations.",
                   ],
                 }),
               ]}
@@ -203,7 +189,7 @@ export default function TalkAboutHealthAndLifestyle() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Conversas sobre saúde e estilo de vida geralmente incluem hábitos, frequência, resultados e pequenas mudanças.",
+                      "A linguagem idiomática deve ser aprendida como expressões completas em contexto, e não como tradução literal palavra por palavra.",
                     ),
                   ],
                 }),
@@ -217,28 +203,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [bold("break the ice"), " = make a situation feel less tense or awkward"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [bold("back on track"), " = progressing normally again"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [bold("see the light at the end of the tunnel"), " = feel that a difficult period is almost over"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [bold("fall apart"), " = fail or lose control badly"],
                     }),
                   ],
                 },
@@ -251,9 +237,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "A useful B1 pattern is ",
-                    mark("habit -> effect -> possible improvement"),
-                    ".",
+                    "At B2 level, it is better to use a few idioms accurately than many idioms unnaturally. Context and tone matter more than quantity.",
                   ],
                 }),
               ]}
@@ -267,54 +251,54 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
-                  column: "Healthy Habits",
+                  column: "Useful Idioms",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [{ text: [...content({ parts: ["break the ice"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [{ text: [...content({ parts: ["back on track"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [{ text: [...content({ parts: ["fall apart"] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
-                  column: "Lifestyle Problems",
+                  column: "Context Clues",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [{ text: [...content({ parts: ["tense conversation"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [{ text: [...content({ parts: ["difficult period"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [{ text: [...content({ parts: ["recovered progress"] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
-                  column: "Improvement Language",
+                  column: "Safer Use",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [{ text: [...content({ parts: ["It feels like we are finally back on track."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [{ text: [...content({ parts: ["Her joke helped break the ice."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [{ text: [...content({ parts: ["We can see the light at the end of the tunnel now."] })] }],
                     },
                   ],
                 },
@@ -326,45 +310,45 @@ export default function TalkAboutHealthAndLifestyle() {
             <FillInTheBlanks
               exercise={{
                 instructions:
-                  "Complete the health and lifestyle sentences.",
+                  "Complete the idioms with the correct missing words.",
                 blocks: [
                   {
                     block: [
-                      { text: "I try to " },
-                      { blank: "exercise" },
-                      { text: " three times a week." },
+                      { text: "Her comment helped break the " },
+                      { blank: "ice" },
+                      { text: " at the start of the meeting." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "He often stays up too " },
-                      { blank: "late" },
-                      { text: ", so he feels tired." },
+                      { text: "After several delays, the team is finally back on " },
+                      { blank: "track" },
+                      { text: "." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "A balanced " },
-                      { blank: "diet" },
-                      { text: " can improve your energy." },
+                      { text: "The plan almost fell " },
+                      { blank: "apart" },
+                      { text: " when two people left the project." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "They take short " },
-                      { blank: "breaks" },
-                      { text: " to reduce stress." },
+                      { text: "We can see the light at the end of the " },
+                      { blank: "tunnel" },
+                      { text: " now." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "One small change could " },
-                      { blank: "help" },
-                      { text: " a lot." },
+                      { text: "That idiom fits the " },
+                      { blank: "context" },
+                      { text: " well." },
                     ],
                   },
                 ],
@@ -378,35 +362,35 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the best response.",
                 questions: [
                   {
-                    question: "1. Which sentence describes a healthy routine?",
+                    question: "1. Which sentence uses an idiom naturally?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      { option: "After a difficult few months, the company is finally back on track.", isCorrect: true },
+                      { option: "I ate back on track for breakfast.", isCorrect: false },
+                      { option: "The tunnel is my opinion.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Which sentence shows cause and effect?",
+                    question: "2. Which idiom is useful in a tense social situation?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
-                      { option: "I like tea and coffee.", isCorrect: false },
-                      { option: "My city has a park.", isCorrect: false },
+                      { option: "break the ice", isCorrect: true },
+                      { option: "see the light at the end of the tunnel", isCorrect: false },
+                      { option: "back on track", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Which sentence suggests improvement?",
+                    question: "3. Which advice about idioms is best?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
-                      { option: "Lunch is at one.", isCorrect: false },
-                      { option: "Yesterday was sunny.", isCorrect: false },
+                      { option: "Use a few idioms accurately and in the right context.", isCorrect: true },
+                      { option: "Use as many idioms as possible in every sentence.", isCorrect: false },
+                      { option: "Translate every idiom literally.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "4. Which answer is more developed?",
+                    question: "4. Which sentence shows understanding of the idiom?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
-                      { option: "Healthy.", isCorrect: false },
-                      { option: "At night.", isCorrect: false },
+                      { option: "Seeing the light at the end of the tunnel means a hard situation is nearly over.", isCorrect: true },
+                      { option: "It means someone bought a lamp.", isCorrect: false },
+                      { option: "It means there is a train ticket on the table.", isCorrect: false },
                     ],
                   },
                 ],
@@ -419,7 +403,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Talk to a partner about your routine. Mention one healthy habit, one unhealthy habit, and one change you would like to make.",
+                    "Choose one real situation from your life and describe it using one idiom naturally. Then explain what the idiom means in that context.",
                   ],
                 }),
               ]}
@@ -430,28 +414,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: ["sleep and rest"],
+                      parts: ["a difficult project or course"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["food and meals"],
+                      parts: ["an awkward first meeting"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["exercise and movement"],
+                      parts: ["a period when things nearly went wrong"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["stress and work-life balance"],
+                      parts: ["a moment when you started to feel hopeful again"],
                     }),
                   ],
                 },

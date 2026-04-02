@@ -38,7 +38,7 @@ const links = [
       },
       {
         href: "/cefr/a1/talk-about-your-free-time",
-        label: "Talk about you free time",
+        label: "Talk about your free time",
       },
       {
         href: "/cefr/a1/places-and-objects",
@@ -50,11 +50,11 @@ const links = [
       },
       {
         href: "/cefr/a1/telling-the-time",
-        label: "Telling Time",
+        label: "Telling the time",
       },
       {
         href: "/cefr/a1/describe-people",
-        label: "Describing People",
+        label: "Describe people",
       },
       {
         href: "/cefr/a1/audiobooks",
@@ -92,11 +92,11 @@ const links = [
       },
       {
         href: "/cefr/a2/shopping-and-money",
-        label: "Shopping & Money",
+        label: "Shopping and money",
       },
       {
-        href: "/cefr/a2/describe-your-neighrhood",
-        label: "Describe your Neighborhood",
+        href: "/cefr/a2/describe-your-neighborhood",
+        label: "Describe your neighborhood",
       },
     ],
   },
@@ -113,43 +113,42 @@ const links = [
       },
       {
         href: "/cefr/b1/describe-problems-and-solutions",
-        label: "Describe problems & solutions",
+        label: "Describe problems and solutions",
       },
       {
         href: "/cefr/b1/talk-about-health-and-lifestyle",
-        label: "Talk about health & lifestyle",
+        label: "Talk about health and lifestyle",
       },
       {
         href: "/cefr/b1/discuss-work-and-study",
-        label: "Discuss work & study",
+        label: "Discuss work and study",
       },
     ],
   },
-  // B2 (Upper-Intermediate)
-  // {
-  //   title: "B2 Upper-Intermediate",
-  //   links: [
-  //     { href: "/cefr/b2/debate-and-argue", label: "Debate & argue a point" },
-  //     {
-  //       href: "/cefr/b2/formal-vs-informal",
-  //       label: "Formal vs. informal register",
-  //     },
-  //     { href: "/cefr/b2/current-events", label: "Discuss current events" },
-  //     { href: "/cefr/b2/complex-emotions", label: "Express complex emotions" },
-  //     {
-  //       href: "/cefr/b2/idiomatic-language",
-  //       label: "Idiomatic language in context",
-  //     },
-  //     {
-  //       href: "/cefr/b2/hypothetical-and-regret",
-  //       label: "Hypothetical & regret structures",
-  //     },
-  //     {
-  //       href: "/cefr/b2/media-and-technology",
-  //       label: "Discuss media & technology",
-  //     },
-  //   ],
-  // },
+  {
+    title: "B2 Upper-Intermediate",
+    links: [
+      { href: "/cefr/b2/debate-and-argue", label: "Debate and argue a point" },
+      {
+        href: "/cefr/b2/formal-vs-informal",
+        label: "Formal vs informal register",
+      },
+      { href: "/cefr/b2/current-events", label: "Discuss current events" },
+      { href: "/cefr/b2/complex-emotions", label: "Express complex emotions" },
+      {
+        href: "/cefr/b2/idiomatic-language",
+        label: "Idiomatic language in context",
+      },
+      {
+        href: "/cefr/b2/hypothetical-and-regret",
+        label: "Hypothetical and regret structures",
+      },
+      {
+        href: "/cefr/b2/media-and-technology",
+        label: "Discuss media and technology",
+      },
+    ],
+  },
   // C1 (Advanced)
   // {
   //   title: "C1 Advanced",

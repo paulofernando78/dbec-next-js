@@ -15,32 +15,32 @@ import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, mark, portuguese } from "@/helpers/content";
 
 export const metadata = {
-  title: "B1 Intermediate | Health and Lifestyle",
-  description: "Talking about habits, balance, stress, and healthy routines.",
+  title: "B2 Upper-Intermediate | Express Complex Emotions",
+  description: "Describing mixed feelings, emotional nuance, and personal reactions.",
 };
 
-export default function TalkAboutHealthAndLifestyle() {
+export default function ComplexEmotions() {
   return (
     <>
       <Whiteboard
-        title="B1 Intermediate"
-        subtitle="Talk about health and lifestyle"
-        description="I try to stay healthy by sleeping well, eating balanced meals, and exercising a few times a week."
+        title="B2 Upper-Intermediate"
+        subtitle="Express complex emotions"
+        description="I was relieved that the project was over, but at the same time I felt strangely disappointed."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to describe health
-          habits, talk about lifestyle choices, and explain how routines affect
-          energy, stress, and well-being.
+          By the end of this class, students will be able to describe mixed or
+          complex emotions, explain why they felt that way, and talk about
+          emotional reactions with greater nuance.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
-                alt="A man in an evening routine."
+                src="/assets/img/general/man-study-home.png"
+                alt="A reflective moment at home."
                 width={320}
                 height={220}
               />
@@ -50,7 +50,7 @@ export default function TalkAboutHealthAndLifestyle() {
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold("Read the emotional reactions and notice how the speaker combines feelings."),
                       ],
                     }),
                   ]}
@@ -59,21 +59,21 @@ export default function TalkAboutHealthAndLifestyle() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
+                      parts: ["I felt relieved, but also slightly guilty."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
+                      parts: ["She sounded frustrated rather than angry, although there was clearly some disappointment too."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
+                      parts: ["At first I was excited, but the feeling gradually turned into anxiety."],
                     }),
                   ]}
                 />
@@ -81,7 +81,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   value={[
                     ...content({
                       parts: [
-                        "This topic often combines routine language with causes and effects: one habit leads to one result.",
+                        "Complex emotions often involve contrast, change over time, or two feelings that exist at once.",
                       ],
                     }),
                   ]}
@@ -96,27 +96,27 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What healthy habit does she have?",
+                    question: "1. What mixed feeling does the speaker describe first?",
                     options: [
-                      { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
-                      { option: "She never rests.", isCorrect: false },
+                      { option: "Relief and guilt.", isCorrect: true },
+                      { option: "Hunger and sleepiness.", isCorrect: false },
+                      { option: "Boredom and pride in cooking.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Why does he feel tired in the morning?",
+                    question: "2. How is the second person's emotion described?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      { option: "Frustrated, with some disappointment too.", isCorrect: true },
+                      { option: "Only happy and relaxed.", isCorrect: false },
+                      { option: "Completely calm and silent.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. How do they reduce stress?",
+                    question: "3. How did the third speaker's feeling change?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
-                      { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      { option: "Excitement gradually turned into anxiety.", isCorrect: true },
+                      { option: "Anger turned into laughter immediately.", isCorrect: false },
+                      { option: "Nothing changed at all.", isCorrect: false },
                     ],
                   },
                 ],
@@ -126,21 +126,13 @@ export default function TalkAboutHealthAndLifestyle() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="Laura and Eric talk about their routines and stress levels."
+              description="Laura reflects on how she felt after getting a new job offer."
               lines={[
                 {
-                  speaker: "Laura:",
-                  text: [
-                    ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
-                    }),
-                  ],
-                },
-                {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: ["You got the offer, right? You must be thrilled."],
                     }),
                   ],
                 },
@@ -148,7 +140,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Has it made a difference?"],
+                      parts: ["I am happy, of course, but I am not feeling only one thing."],
                     }),
                   ],
                 },
@@ -156,7 +148,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: ["What do you mean?"],
                     }),
                   ],
                 },
@@ -164,7 +156,7 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
+                      parts: ["Part of me feels excited about the opportunity, but another part feels uneasy about leaving my current team."],
                     }),
                   ],
                 },
@@ -172,7 +164,15 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: ["That makes sense. Big changes can be both exciting and unsettling."],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Laura:",
+                  text: [
+                    ...content({
+                      parts: ["Exactly. I think I will feel more confident once I have had time to process everything."],
                     }),
                   ],
                 },
@@ -185,14 +185,16 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Health and lifestyle conversations often include ",
-                    mark("habits"),
+                    "B2 speakers often move beyond basic words like ",
+                    mark("happy"),
+                    " or ",
+                    mark("sad"),
+                    " and combine feelings with phrases such as ",
+                    mark("part of me feels..."),
                     ", ",
-                    mark("frequency"),
-                    ", ",
-                    mark("results"),
-                    ", and ",
-                    mark("small changes"),
+                    mark("I was torn between..."),
+                    ", or ",
+                    mark("the feeling gradually changed into..."),
                     ".",
                   ],
                 }),
@@ -203,7 +205,7 @@ export default function TalkAboutHealthAndLifestyle() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Conversas sobre saúde e estilo de vida geralmente incluem hábitos, frequência, resultados e pequenas mudanças.",
+                      "Falantes de nível B2 costumam ir além de palavras básicas como happy ou sad e combinar sentimentos com expressões como part of me feels..., I was torn between... ou the feeling gradually changed into....",
                     ),
                   ],
                 }),
@@ -217,28 +219,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [bold("Mixed feeling: "), mark("I felt relieved but also disappointed.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [bold("Internal conflict: "), mark("I was torn between staying and leaving.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [bold("Emotional shift: "), mark("My excitement gradually turned into anxiety.")],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [bold("Nuanced reaction: "), mark("I was not angry exactly, just deeply frustrated.")],
                     }),
                   ],
                 },
@@ -251,8 +253,14 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "A useful B1 pattern is ",
-                    mark("habit -> effect -> possible improvement"),
+                    "Useful complex-emotion language often relies on contrast and qualification: ",
+                    mark("not exactly"),
+                    ", ",
+                    mark("to some extent"),
+                    ", ",
+                    mark("at the same time"),
+                    ", and ",
+                    mark("part of me"),
                     ".",
                   ],
                 }),
@@ -267,54 +275,54 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
-                  column: "Healthy Habits",
+                  column: "Emotion Words",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [{ text: [...content({ parts: ["relieved"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [{ text: [...content({ parts: ["uneasy"] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [{ text: [...content({ parts: ["overwhelmed"] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
-                  column: "Lifestyle Problems",
+                  column: "Nuance Phrases",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [{ text: [...content({ parts: ["not exactly..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [{ text: [...content({ parts: ["to some extent..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [{ text: [...content({ parts: ["at the same time..."] })] }],
                     },
                   ],
                 },
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
-                  column: "Improvement Language",
+                  column: "Complex Patterns",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [{ text: [...content({ parts: ["Part of me feels..., but..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [{ text: [...content({ parts: ["I was torn between... and..."] })] }],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [{ text: [...content({ parts: ["The feeling gradually turned into..."] })] }],
                     },
                   ],
                 },
@@ -326,45 +334,45 @@ export default function TalkAboutHealthAndLifestyle() {
             <FillInTheBlanks
               exercise={{
                 instructions:
-                  "Complete the health and lifestyle sentences.",
+                  "Complete the complex-emotion sentences with the best missing words.",
                 blocks: [
                   {
                     block: [
-                      { text: "I try to " },
-                      { blank: "exercise" },
-                      { text: " three times a week." },
+                      { text: "I felt relieved, but at the same " },
+                      { blank: "time" },
+                      { text: " I was still worried." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "He often stays up too " },
-                      { blank: "late" },
-                      { text: ", so he feels tired." },
+                      { text: "Part of me felt excited, while another part felt " },
+                      { blank: "uneasy" },
+                      { text: "." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "A balanced " },
-                      { blank: "diet" },
-                      { text: " can improve your energy." },
+                      { text: "I was " },
+                      { blank: "torn" },
+                      { text: " between accepting the offer and staying where I was." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "They take short " },
-                      { blank: "breaks" },
-                      { text: " to reduce stress." },
+                      { text: "My excitement gradually turned into " },
+                      { blank: "anxiety" },
+                      { text: "." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "One small change could " },
-                      { blank: "help" },
-                      { text: " a lot." },
+                      { text: "I was not exactly angry, just deeply " },
+                      { blank: "frustrated" },
+                      { text: "." },
                     ],
                   },
                 ],
@@ -378,35 +386,35 @@ export default function TalkAboutHealthAndLifestyle() {
                 instruction: "Choose the best response.",
                 questions: [
                   {
-                    question: "1. Which sentence describes a healthy routine?",
+                    question: "1. Which sentence expresses mixed emotions?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      { option: "I was proud of the result, but I still felt strangely dissatisfied.", isCorrect: true },
+                      { option: "I was proud.", isCorrect: false },
+                      { option: "I bought a book.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Which sentence shows cause and effect?",
+                    question: "2. Which phrase shows internal conflict?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
-                      { option: "I like tea and coffee.", isCorrect: false },
-                      { option: "My city has a park.", isCorrect: false },
+                      { option: "I was torn between two options.", isCorrect: true },
+                      { option: "I took the bus.", isCorrect: false },
+                      { option: "I like sandwiches.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Which sentence suggests improvement?",
+                    question: "3. Which sentence sounds most nuanced?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
-                      { option: "Lunch is at one.", isCorrect: false },
-                      { option: "Yesterday was sunny.", isCorrect: false },
+                      { option: "I was not angry exactly; it was more a sense of disappointment.", isCorrect: true },
+                      { option: "I was emotion.", isCorrect: false },
+                      { option: "Everything was the same forever.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "4. Which answer is more developed?",
+                    question: "4. Which sentence describes an emotional shift?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
-                      { option: "Healthy.", isCorrect: false },
-                      { option: "At night.", isCorrect: false },
+                      { option: "At first I felt calm, but later I became increasingly nervous.", isCorrect: true },
+                      { option: "I am calm and nervous and kitchen.", isCorrect: false },
+                      { option: "I was at school on Tuesday.", isCorrect: false },
                     ],
                   },
                 ],
@@ -419,7 +427,7 @@ export default function TalkAboutHealthAndLifestyle() {
               value={[
                 ...content({
                   parts: [
-                    "Talk to a partner about your routine. Mention one healthy habit, one unhealthy habit, and one change you would like to make.",
+                    "Describe a moment when your feelings were not simple. Explain what happened, how your emotions changed, and why the situation was complicated.",
                   ],
                 }),
               ]}
@@ -430,28 +438,28 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: ["sleep and rest"],
+                      parts: ["receiving good news that also created pressure"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["food and meals"],
+                      parts: ["finishing a difficult project or course"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["exercise and movement"],
+                      parts: ["making a decision that felt both right and difficult"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["stress and work-life balance"],
+                      parts: ["saying goodbye to a place, role, or group"],
                     }),
                   ],
                 },
