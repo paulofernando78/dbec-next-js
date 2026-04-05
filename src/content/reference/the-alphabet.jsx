@@ -1,9 +1,9 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Section } from "@/components/molecules/Section";
-import { TheAlphabet } from "@/components/organisms/TheAlphabet";
+import { TheAlphabet } from "@/components/organisms/lessons/TheAlphabet";
 import { Card } from "@/components/atoms/Card";
 import { Line } from "@/components/molecules/Line";
-import { List } from "@/components/molecules/List";
+import { List } from  "@/components/molecules/List";
 import { content, audio, bold } from "@/helpers/content";
 export default function TheAlphabetPage() {
   return <>

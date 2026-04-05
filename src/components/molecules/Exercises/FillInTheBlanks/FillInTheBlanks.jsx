@@ -4,6 +4,7 @@ import styles from "./FillInTheBlanks.module.css";
 
 import { Bold } from "@/components/atoms/Bold";
 import { Button } from "@/components/atoms/Button";
+import { Card } from "@/components/atoms/Card";
 import { Check, Redo } from "@/lib/svg-imports";
 import { useState } from "react";
 
@@ -18,6 +19,13 @@ export const FillInTheBlanks = ({ exercise }) => {
   }
   const blocks = Array.isArray(exercise.blocks) ? exercise.blocks : [];
 
+  const normalizeAnswer = (value) => {
+    value
+    ?.trim()
+    .toLowerCase()
+    .replaceAll("’", "'")
+  }
+
   const handleCheck = () => {
     let score = 0;
     const newResults = {};
@@ -28,11 +36,11 @@ export const FillInTheBlanks = ({ exercise }) => {
 
         const key = `${bsIndex}-${bIndex}`;
 
-        const user = answers[key]?.trim().toLowerCase();
+        const user = normalizeAnswer(answers[key]);
 
         const correctAnswers = Array.isArray(b.blank)
-          ? b.blank.map((a) => a.toLowerCase())
-          : [b.blank.toLowerCase()];
+          ? b.blank.map((a) => normalizeAnswer(a))
+          : [normalizeAnswer(b.blank)];
 
         const isCorrect = correctAnswers.includes(user);
         newResults[key] = isCorrect;
@@ -61,6 +69,7 @@ export const FillInTheBlanks = ({ exercise }) => {
       <p>
         <Bold>{exercise.instructions}</Bold>
       </p>
+      <Card><span>{exercise.description}</span></Card>
 
       <div>
         {blocks.map((bs, bsIndex) => (

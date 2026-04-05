@@ -160,7 +160,19 @@ mark {
 }
 
 .hr {
-  margin: 1rem 2px;
+  width: 100%;
+  height: 1px;
+  margin: 1.5rem 0;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--slate-3) 20%,
+    var(--slate-4) 50%,
+    var(--slate-3) 80%,
+    transparent 100%
+  );
+  opacity: 0.9;
 }
 
 .flex {

@@ -2,6 +2,7 @@ import styles from "./TheAlphabet.module.css";
 
 import { Audio } from "@/components/atoms/Audio";
 import { ContentToken } from "@/components/molecules/ContentToken";
+import { LineBreak } from "@/components/atoms/LineBreak";
 
 const alphabet = [
   {
@@ -165,6 +166,8 @@ const alphabet = [
 export const TheAlphabet = () => {
   return (
     <>
+    <span><b>THE ALPHABET</b></span>
+    <LineBreak />
       <ContentToken />
       <div className={styles.container}>
         {alphabet.map((a, i) => (

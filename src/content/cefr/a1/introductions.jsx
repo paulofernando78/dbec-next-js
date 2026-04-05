@@ -1,6 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
+import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardLayout } from "@/components/molecules/CardLayout";
@@ -12,7 +13,15 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold, mark, portuguese } from "@/helpers/content";
+import {
+  content,
+  bold,
+  mark,
+  portuguese,
+} from "@/helpers/content";
+
+// Lessons
+import { TheAlphabet } from "@/components/organisms/lessons/TheAlphabet";
 
 export const metadata = {
   title: "A1 Beginner | Introductions",
@@ -25,17 +34,18 @@ export default function Introductions() {
       <Whiteboard
         title="A1 Beginner"
         subtitle="Introductions"
-        description="What's your name? Where are you from? Nice to meet you."
+        description="What's your name? Nice to meet you."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to greet someone,
-          say their name, ask for basic personal information, and introduce
+          By the end of this class, students will be able to greet someone, say
+          their name, ask for basic personal information, and introduce
           themselves clearly.
         </Card>
 
         <PageSections>
+          {/* Introduction */}
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
@@ -129,11 +139,11 @@ export default function Introductions() {
                     ],
                   },
                   {
-                    question: "3. When are they meeting?",
+                    question: "3. Who is Mr. Smith?",
                     options: [
-                      { option: "Before class.", isCorrect: true },
-                      { option: "During lunch at home.", isCorrect: false },
-                      { option: "After a football game.", isCorrect: false },
+                      { option: "The teacher.", isCorrect: true },
+                      { option: "A student.", isCorrect: false },
+                      { option: "A classmate.", isCorrect: false },
                     ],
                   },
                 ],
@@ -141,7 +151,10 @@ export default function Introductions() {
             />
           </Section>
 
+          {/* Presentation */}
           <Section id="presentation" heading={3}>
+            <AudioPlayer src="/" />
+            <LineBreak />
             <Dialogue
               description="Laura and Eric meet for the first time before class."
               lines={[
@@ -165,7 +178,7 @@ export default function Introductions() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Nice to meet you too."],
+                      parts: ["Nice to meet you too. What's your last name?"],
                     }),
                   ],
                 },
@@ -173,7 +186,7 @@ export default function Introductions() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Where are you from?"],
+                      parts: ["It's Palmer. "],
                     }),
                   ],
                 },
@@ -181,7 +194,7 @@ export default function Introductions() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["I'm from Brazil. And you?"],
+                      parts: ["How do you spell it?"],
                     }),
                   ],
                 },
@@ -189,7 +202,7 @@ export default function Introductions() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I'm from Mexico."],
+                      parts: ["It's P-A-L-M-E-R."],
                     }),
                   ],
                 },
@@ -197,7 +210,7 @@ export default function Introductions() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Great! How do you spell your name?"],
+                      parts: ["Are you new here?"],
                     }),
                   ],
                 },
@@ -205,7 +218,23 @@ export default function Introductions() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["L-A-U-R-A."],
+                      parts: ["Yes, I am."],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Eric:",
+                  text: [
+                    ...content({
+                      parts: ["Great! Me too. So, class starts in 5 minutes."],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Laura:",
+                  text: [
+                    ...content({
+                      parts: ["Good. Let's go then."],
                     }),
                   ],
                 },
@@ -213,12 +242,13 @@ export default function Introductions() {
             />
           </Section>
 
+          {/* Meaning */}
           <Section id="meaning" heading={3}>
             <Paragraph
               value={[
                 ...content({
                   parts: [
-                    "We use introductions to greet someone, say who we are, ask for a name, ask where a person is from, and respond politely.",
+                    "We use introductions to greet someone, say who we are, ask for a name or last name, ask for spelling, and respond politely.",
                   ],
                 }),
               ]}
@@ -228,7 +258,7 @@ export default function Introductions() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Usamos introduções para cumprimentar alguém, dizer quem somos, perguntar o nome, perguntar de onde a pessoa é e responder de forma educada.",
+                      "Usamos introduções para cumprimentar alguém, dizer quem somos, perguntar o nome ou sobrenome, pedir a soletração e responder de forma educada.",
                     ),
                   ],
                 }),
@@ -251,9 +281,9 @@ export default function Introductions() {
                     ...content({
                       parts: [
                         bold("Saying your name: "),
-                        mark("I'm Laura."),
+                        "I'm Laura.",
                         " / ",
-                        mark("My name's Eric."),
+                        "My name's Eric.",
                       ],
                     }),
                   ],
@@ -263,7 +293,7 @@ export default function Introductions() {
                     ...content({
                       parts: [
                         bold("Asking a name: "),
-                        mark("What's your name?"),
+                        "What's your name?",
                       ],
                     }),
                   ],
@@ -272,8 +302,8 @@ export default function Introductions() {
                   value: [
                     ...content({
                       parts: [
-                        bold("Asking origin: "),
-                        mark("Where are you from?"),
+                        bold("Asking a last name: "),
+                        "What's your last name?",
                       ],
                     }),
                   ],
@@ -283,9 +313,9 @@ export default function Introductions() {
                     ...content({
                       parts: [
                         bold("Being polite: "),
-                        mark("Nice to meet you."),
+                        "Nice to meet you.",
                         " / ",
-                        mark("Nice to meet you too."),
+                        "Nice to meet you too.",
                       ],
                     }),
                   ],
@@ -295,7 +325,7 @@ export default function Introductions() {
                     ...content({
                       parts: [
                         bold("Spelling: "),
-                        mark("How do you spell your name?"),
+                        "How do you spell your name?",
                       ],
                     }),
                   ],
@@ -304,8 +334,13 @@ export default function Introductions() {
             />
           </Section>
 
-          <Section id="pronunciation-form" label="Pronunciation + Form" heading={3}>
-            <Paragraph
+          {/* Pronunciation-Form */}
+          <Section
+            id="pronunciation-form"
+            label="Pronunciation + Form"
+            heading={3}
+          >
+            <Line
               value={[
                 ...content({
                   parts: [
@@ -328,24 +363,54 @@ export default function Introductions() {
             <Column
               width="260"
               cols={[
+                // Greetings
                 {
                   bgColor: "var(--green-6)",
                   textColor: "white",
                   column: "Greetings",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["Hi!"] })] }],
-                      lineBreak: true,
-                    },
-                    {
-                      block: [{ text: [...content({ parts: ["Hello!"] })] }],
-                      lineBreak: true,
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/assets/audio/cefr/a1/introductions/hi.mp3",
+                              parts: ["Hi!"],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                     {
                       block: [
                         {
                           text: [
                             ...content({
+                              audio: "/assets/audio/cefr/a1/introductions/hello.mp3",
+                              parts: ["Hello!"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
+                              parts: ["Nice to meet you."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
                               parts: ["Nice to meet you."],
                             }),
                           ],
@@ -354,11 +419,25 @@ export default function Introductions() {
                     },
                   ],
                 },
+                // Questions
                 {
                   bgColor: "var(--red-4)",
                   textColor: "white",
                   column: "Questions",
                   blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/whats-your-name.mp3",
+                              parts: ["What's your name?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                     {
                       block: [
                         {
@@ -371,26 +450,52 @@ export default function Introductions() {
                           ],
                         },
                       ],
-                      lineBreak: true,
                     },
                     {
                       block: [
                         {
                           text: [
                             ...content({
-                              parts: ["Where are you from?"],
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/whats-your-first-name.mp3",
+                              parts: ["What's your first name?"],
                             }),
                           ],
                         },
                       ],
-                      lineBreak: true,
                     },
                     {
                       block: [
                         {
                           text: [
                             ...content({
-                              parts: ["How do you spell your name?"],
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/whats-your-last-name.mp3",
+                              parts: ["What's your last name?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
+                              parts: ["How do you spell your first name?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-last-name.mp3",
+                              parts: ["How do you spell your last name?"],
                             }),
                           ],
                         },
@@ -398,6 +503,7 @@ export default function Introductions() {
                     },
                   ],
                 },
+                // Answers
                 {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
@@ -408,31 +514,32 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
+                              audio: "/assets/audio/cefr/a1/introductions/im-laura.mp3",
                               parts: ["I'm Laura."],
                             }),
                           ],
                         },
                       ],
-                      lineBreak: true,
                     },
                     {
                       block: [
                         {
                           text: [
                             ...content({
-                              parts: ["I'm from Brazil."],
+                              audio: "/assets/audio/cefr/a1/introductions/l-a-u-r-a.mp3",
+                              parts: ["L-A-U-R-A."],
                             }),
                           ],
                         },
                       ],
-                      lineBreak: true,
                     },
                     {
                       block: [
                         {
                           text: [
                             ...content({
-                              parts: ["L-A-U-R-A."],
+                              audio: "/assets/audio/cefr/a1/introductions/p-a-l-m-e-r.mp3",
+                              parts: ["P-A-L-M-E-R."],
                             }),
                           ],
                         },
@@ -450,7 +557,8 @@ export default function Introductions() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/pronunciation/the-alphabet/first-name.mp3",
+                      audio:
+                        "/assets/audio/cefr/a1/introductions/first-name-given-name.mp3",
                       parts: [bold("first name"), " = given name"],
                     }),
                   ],
@@ -458,19 +566,24 @@ export default function Introductions() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/pronunciation/the-alphabet/last-name.mp3",
-                      parts: [bold("last name"), " = family name"],
+                      audio:
+                        "/assets/audio/cefr/a1/introductions/last-name-surname-family-name.mp3",
+                      parts: [bold("last name / surname"), " = family name"],
                     }),
                   ],
-                },
+                }
               ]}
             />
+            <hr className="hr" />
+            <TheAlphabet />
           </Section>
 
+          {/* Practice */}
           <Section id="practice" heading={3}>
             <FillInTheBlanks
               exercise={{
                 instructions: "Complete the dialogue with the correct words.",
+                description: "It's • C-O-S-T-A • spell • I'm • meet • last name • too • I'm",
                 blocks: [
                   {
                     block: [
@@ -506,17 +619,33 @@ export default function Introductions() {
                   },
                   {
                     block: [
-                      { text: "A: Where are you " },
-                      { blank: "from" },
+                      { text: "A: What's your " },
+                      { blank: "last name" },
                       { text: "?" },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
-                      { text: "B: I'm from Canada. How do you spell your " },
-                      { blank: "name" },
-                      { text: "?" },
+                      { text: "B: " },
+                      { blank: "It's" },
+                      { text: " Costa." },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "A: How do you " },
+                      { blank: "spell" },
+                      { text: " it?" },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "B: " },
+                      { blank: "C-O-S-T-A" },
+                      { text: "." },
                     ],
                   },
                 ],
@@ -533,24 +662,24 @@ export default function Introductions() {
                     question: "1. Hello! I'm Sara.",
                     options: [
                       { option: "Nice to meet you.", isCorrect: true },
-                      { option: "I'm from Brazil.", isCorrect: false },
+                      { option: "My last name is Silva.", isCorrect: false },
                       { option: "How old is your school?", isCorrect: false },
                     ],
                   },
                   {
                     question: "2. What's your name?",
                     options: [
-                      { option: "I'm from Mexico.", isCorrect: false },
+                      { option: "My last name is Costa.", isCorrect: false },
                       { option: "My name's Diego.", isCorrect: true },
                       { option: "Nice to meet you too.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "3. Where are you from?",
+                    question: "3. What's your last name?",
                     options: [
-                      { option: "I'm from Japan.", isCorrect: true },
+                      { option: "It's Gomez.", isCorrect: true },
                       { option: "I'm Ana.", isCorrect: false },
-                      { option: "J-A-P-A-N.", isCorrect: false },
+                      { option: "Nice to meet you too.", isCorrect: false },
                     ],
                   },
                   {
@@ -558,7 +687,7 @@ export default function Introductions() {
                     options: [
                       { option: "I'm a student.", isCorrect: false },
                       { option: "A-N-N-A.", isCorrect: true },
-                      { option: "I'm from Chile.", isCorrect: false },
+                      { option: "My name's Anna.", isCorrect: false },
                     ],
                   },
                 ],
@@ -566,6 +695,7 @@ export default function Introductions() {
             />
           </Section>
 
+          {/* Production */}
           <Section id="production" heading={3}>
             <Paragraph
               value={[
@@ -596,24 +726,21 @@ export default function Introductions() {
                 {
                   value: [
                     ...content({
-                      parts: ["3. Ask where your partner is from."],
+                      parts: ["3. Ask your partner's last name."],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["4. Ask your partner to spell their first name."],
+                      parts: ["4. Ask your partner to spell his/her first name."],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "5. Introduce your partner to the class: ",
-                        mark("This is Ana. She's from Peru."),
-                      ],
+                      parts: ["4. Ask your partner to spell his/her last name."],
                     }),
                   ],
                 },
