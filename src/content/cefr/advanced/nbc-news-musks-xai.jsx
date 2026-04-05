@@ -135,12 +135,12 @@ export default function MusksXaiMemphis() {
                     question: "1. What is the main topic of the report?",
                     options: [
                       {
-                        option: "An xAI supercomputer project and local concern.",
-                        isCorrect: true,
-                      },
-                      {
                         option: "A school competition in Memphis.",
                         isCorrect: false,
+                      },
+                      {
+                        option: "An xAI supercomputer project and local concern.",
+                        isCorrect: true,
                       },
                       {
                         option: "A travel guide to Tennessee.",
@@ -151,9 +151,9 @@ export default function MusksXaiMemphis() {
                   {
                     question: "2. Who is mentioned as being concerned?",
                     options: [
-                      { option: "Some Memphis residents.", isCorrect: true },
                       { option: "Only foreign tourists.", isCorrect: false },
                       { option: "A football team.", isCorrect: false },
+                      { option: "Some Memphis residents.", isCorrect: true },
                     ],
                   },
                   {
@@ -161,13 +161,13 @@ export default function MusksXaiMemphis() {
                     options: [
                       {
                         option:
-                          "A powerful technology project is creating concern in the local community.",
-                        isCorrect: true,
+                        "A new music festival is attracting more residents.",
+                        isCorrect: false,
                       },
                       {
                         option:
-                          "A new music festival is attracting more residents.",
-                        isCorrect: false,
+                          "A powerful technology project is creating concern in the local community.",
+                        isCorrect: true,
                       },
                       {
                         option:
