@@ -6,7 +6,7 @@ import { LinkIcon } from "@/lib/svg-imports";
 
 const topics = [
   {
-    href: "/cefr/advanced/nbc-news-musks-xai",
+  href: "/cefr/advanced/nbc-news-musks-xai",
     label: "Musk’s xAI supercomputer concerns some Memphis residents",
     description:
       "Advanced listening and discussion based on a short NBC News report.",
