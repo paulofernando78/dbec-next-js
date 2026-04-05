@@ -125,6 +125,7 @@ const links = [
       },
     ],
   },
+  // B2 (Upper-Intermediate)
   {
     title: "B2 Upper-Intermediate",
     links: [
@@ -149,16 +150,17 @@ const links = [
       },
     ],
   },
-  // C1 (Advanced)
-  // {
-  //   title: "C1 Advanced",
-  //   links: [
-  //     {
-  //       href: "/cefr/c1/videos",
-  //       label: "...",
-  //     },
-  //   ],
-  // },
+  // Advanced
+  {
+    title: "Advanced",
+    links: [
+      {
+        href: "/cefr/advanced/youtube",
+        label: "YouTube",
+      },
+    ],
+  },
+
   // PRONUNCIATION
   {
     title: "PRONUNCIATION",

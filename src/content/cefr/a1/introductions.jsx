@@ -13,12 +13,7 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import {
-  content,
-  bold,
-  mark,
-  portuguese,
-} from "@/helpers/content";
+import { content, bold, mark, portuguese } from "@/helpers/content";
 
 // Lessons
 import { TheAlphabet } from "@/components/organisms/lessons/TheAlphabet";
@@ -291,10 +286,7 @@ export default function Introductions() {
                 {
                   value: [
                     ...content({
-                      parts: [
-                        bold("Asking a name: "),
-                        "What's your name?",
-                      ],
+                      parts: [bold("Asking a name: "), "What's your name?"],
                     }),
                   ],
                 },
@@ -374,7 +366,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/hi.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/hi.mp3",
                               parts: ["Hi!"],
                             }),
                           ],
@@ -386,7 +379,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/hello.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/hello.mp3",
                               parts: ["Hello!"],
                             }),
                           ],
@@ -398,7 +392,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
                               parts: ["Nice to meet you."],
                             }),
                           ],
@@ -410,7 +405,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
                               parts: ["Nice to meet you."],
                             }),
                           ],
@@ -482,7 +478,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
                               parts: ["How do you spell your first name?"],
                             }),
                           ],
@@ -494,7 +491,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-last-name.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-last-name.mp3",
                               parts: ["How do you spell your last name?"],
                             }),
                           ],
@@ -514,7 +512,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/im-laura.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/im-laura.mp3",
                               parts: ["I'm Laura."],
                             }),
                           ],
@@ -526,7 +525,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/l-a-u-r-a.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/l-a-u-r-a.mp3",
                               parts: ["L-A-U-R-A."],
                             }),
                           ],
@@ -538,7 +538,8 @@ export default function Introductions() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a1/introductions/p-a-l-m-e-r.mp3",
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/p-a-l-m-e-r.mp3",
                               parts: ["P-A-L-M-E-R."],
                             }),
                           ],
@@ -571,7 +572,7 @@ export default function Introductions() {
                       parts: [bold("last name / surname"), " = family name"],
                     }),
                   ],
-                }
+                },
               ]}
             />
             <hr className="hr" />
@@ -583,7 +584,8 @@ export default function Introductions() {
             <FillInTheBlanks
               exercise={{
                 instructions: "Complete the dialogue with the correct words.",
-                description: "It's • C-O-S-T-A • spell • I'm • meet • last name • too • I'm",
+                description:
+                  "It's • C-O-S-T-A • spell • I'm • meet • last name • too • I'm",
                 blocks: [
                   {
                     block: [
@@ -733,14 +735,18 @@ export default function Introductions() {
                 {
                   value: [
                     ...content({
-                      parts: ["4. Ask your partner to spell his/her first name."],
+                      parts: [
+                        "4. Ask your partner to spell his/her first name.",
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["4. Ask your partner to spell his/her last name."],
+                      parts: [
+                        "4. Ask your partner to spell his/her last name.",
+                      ],
                     }),
                   ],
                 },
@@ -754,7 +760,7 @@ export default function Introductions() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Em duplas, conversem como se estivessem se conhecendo pela primeira vez. No final, apresentem o colega para a turma.",
+                      "Em duplas, conversem como se estivessem se conhecendo pela primeira vez.",
                     ),
                   ],
                 }),

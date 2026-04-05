@@ -4,6 +4,7 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardLayout } from "@/components/molecules/CardLayout";
@@ -45,6 +46,10 @@ export default function Mock() {
         </div>
 
         <PageSections>
+          <Section id="video-player" label="Video Player" heading={3}>
+            <VideoPlayer videoId="C8rU4dv2w8Q"/>
+          </Section>
+
           {/* AudioPlayer */}
           <Section id="audio-player" heading={3}>
             <AudioPlayer src="/assets/audio/general/about-to.mp3" />
