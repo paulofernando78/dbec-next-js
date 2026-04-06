@@ -4,6 +4,9 @@ import createMDX from '@next/mdx'
 const nextConfig = {
   // output: "export",
   // distDir: "dist",
+  experimental: {
+    cpus: 1,
+  },
   reactCompiler: true,
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
 };

@@ -1,6 +1,6 @@
-import fs from "fs";
-import path from "path";
 import { notFound } from "next/navigation";
+
+export const dynamic = "force-dynamic";
 
 export default async function Games({ params }) {
   const { slug } = await params;
@@ -16,15 +16,4 @@ export default async function Games({ params }) {
   } catch (error) {
     notFound();
   }
-}
-
-export function generateStaticParams() {
-  const dir = path.join(process.cwd(), "src/content/games");
-
-  return fs
-    .readdirSync(dir)
-    .filter((file) => file.endsWith(".jsx"))
-    .map((file) => ({
-      slug: file.replace(".jsx", ""),
-    }));
 }

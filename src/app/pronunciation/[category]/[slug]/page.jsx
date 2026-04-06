@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { pronunciationNestedPages } from "@/content/pronunciation/registry";
 
+export const dynamic = "force-dynamic";
+
 export default async function PronunciationCategorySlug({ params }) {
   const { category, slug } = await params;
 
@@ -17,12 +19,4 @@ export default async function PronunciationCategorySlug({ params }) {
   } catch {
     notFound();
   }
-}
-
-export function generateStaticParams() {
-  return Object.keys(pronunciationNestedPages).map((key) => {
-    const [category, slug] = key.split("/");
-
-    return { category, slug };
-  });
 }

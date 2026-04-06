@@ -3,6 +3,9 @@
 @import "../css/colors.css";
 
 :root {
+  --font-montserrat: "Avenir Next", "Montserrat", "Segoe UI", Arial, sans-serif;
+  --font-oswald: "Arial Narrow", "Helvetica Neue Condensed", "Oswald", sans-serif;
+  --font-luckiestGuy: "Cooper Black", "Arial Black", "Luckiest Guy", cursive;
   --background-color: var(--slate-1);
   --text-color: var(--slate-9);
   --icon-color: var(--gray-4);

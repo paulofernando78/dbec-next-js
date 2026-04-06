@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { pronunciationPages } from "@/content/pronunciation/registry";
 
+export const dynamic = "force-dynamic";
+
 export default async function PronunciationCategory({ params }) {
   const { category } = await params;
 
@@ -17,8 +19,4 @@ export default async function PronunciationCategory({ params }) {
   } catch {
     notFound();
   }
-}
-
-export function generateStaticParams() {
-  return Object.keys(pronunciationPages).map((category) => ({ category }));
 }
