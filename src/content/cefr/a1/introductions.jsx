@@ -992,9 +992,9 @@ export default function Introductions() {
                   {
                     question: "3. What's your last name?",
                     options: [
-                      { option: "It's Gomez.", isCorrect: true },
                       { option: "I'm Ana.", isCorrect: false },
                       { option: "Nice to meet you too.", isCorrect: false },
+                      { option: "It's Gomez.", isCorrect: true },
                     ],
                   },
                   {
@@ -1012,7 +1012,7 @@ export default function Introductions() {
 
           {/* Production */}
           <Section id="production" heading={3}>
-            <Paragraph
+            <Line
               value={[
                 ...content({
                   parts: [
@@ -1021,7 +1021,6 @@ export default function Introductions() {
                 }),
               ]}
             />
-
             <List
               items={[
                 {
@@ -1063,20 +1062,6 @@ export default function Introductions() {
                     }),
                   ],
                 },
-              ]}
-            />
-
-            <LineBreak />
-
-            <Paragraph
-              value={[
-                ...content({
-                  parts: [
-                    portuguese(
-                      "Em duplas, conversem como se estivessem se conhecendo pela primeira vez.",
-                    ),
-                  ],
-                }),
               ]}
             />
           </Section>
