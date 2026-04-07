@@ -17,7 +17,7 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, audio, bold, underline, portuguese } from "@/helpers/content";
+import { content, audio, bold, italic, underline, portuguese } from "@/helpers/content";
 
 export const metadata = {
   title: "A1 Beginner | Introductions",
@@ -463,6 +463,19 @@ export default function Introductions() {
                           ],
                         },
                       ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/hey.mp3",
+                              parts: ["Hey!"],
+                            }),
+                          ],
+                        },
+                      ],
                       lineBreak: true,
                     },
                     {
@@ -497,8 +510,22 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
+                              "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
                               parts: ["How's it going?"],
+                            }),
+                          ],
+                        },
+                      ],
+                      lineBreak: true,
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                italic("possible answers"),
+                              ],
                             }),
                           ],
                         },
@@ -529,6 +556,33 @@ export default function Introductions() {
                           ],
                         },
                       ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/not-bad.mp3",
+                              parts: ["Not bad."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/cant-complain.mp3",
+                              parts: ["Can’t complain."],
+                            }),
+                          ],
+                        },
+                      ],
+                      lineBreak: true,
                     },
                     {
                       block: [
