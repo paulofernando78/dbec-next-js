@@ -1,4 +1,5 @@
 import { Luckiest_Guy, Montserrat, Oswald } from "next/font/google";
+import Script from "next/script";
 
 import styles from "./layout.module.css";
 import "./globals.css";
@@ -51,6 +52,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0FBQ6F0DWC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-0FBQ6F0DWC');
+          `}
+        </Script>
+      </head>
       <body className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable}`}>
         <ThemeProvider>
           <div className="layout">
