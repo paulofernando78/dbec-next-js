@@ -17,7 +17,7 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold, mark, underline, portuguese } from "@/helpers/content";
+import { content, audio, bold, underline, portuguese } from "@/helpers/content";
 
 export const metadata = {
   title: "A1 Beginner | Introductions",
@@ -523,7 +523,20 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3.mp3",
+                                "/assets/audio/cefr/a1/introductions/im-pretty-good.mp3",
+                              parts: ["I'm pretty-good."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
                               parts: ["Nice to meet you."],
                             }),
                           ],
@@ -570,8 +583,8 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/im-laura.mp3",
-                              parts: ["I'm Laura."],
+                                "/assets/audio/cefr/a1/introductions/laura.mp3",
+                              parts: ["Laura."],
                             }),
                           ],
                         },
@@ -596,7 +609,7 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
+                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-it.mp3",
                               parts: ["How do you spell it?"],
                             }),
                           ],
@@ -637,8 +650,8 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/p-a-l-m-e-r.mp3",
-                              parts: ["P-A-L-M-E-R."],
+                                "/assets/audio/cefr/a1/introductions/palmer.mp3",
+                              parts: ["Palmer."],
                             }),
                           ],
                         },
@@ -657,14 +670,33 @@ export default function Introductions() {
                         },
                       ],
                     },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-it.mp3",
+                              parts: ["How do you spell it?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/p-a-l-m-e-r.mp3",
+                              parts: ["P-A-L-M-E-R."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
-                },
-                // Answers
-                {
-                  bgColor: "var(--yellow-4)",
-                  textColor: "white",
-                  column: "Answers",
-                  blocks: [],
                 },
               ]}
             />
@@ -709,9 +741,12 @@ export default function Introductions() {
                   value: [
                     ...content({
                       audio:
-                        "/assets/audio/pronunciation/linked-sounds/t-y/whats-your-name.mp3",
+                        "/assets/audio/cefr/a1/introductions/whats-your-name.mp3",
                       parts: [
-                        "What's your name? ➜ What'",
+                        "What’s your name?",
+                        " ➜ ",
+                        audio("/assets/audio/pronunciation/linked-sounds/t-y/whats-your-name.mp3"),
+                        "What’",
                         underline("s y"),
                         "our name?",
                       ],
@@ -721,16 +756,28 @@ export default function Introductions() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/cefr/a1/introductions/I-am.mp3",
-                      parts: ["I am... ➜ I’m..."],
+                      parts: [
+                        audio("/assets/audio/cefr/a1/introductions/I-am.mp3"),
+                        "I am...",
+                        " ➜ ",
+                        audio("/assets/audio/cefr/a1/introductions/Im.mp3"),
+                        "I’m..."
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/cefr/a1/introductions/my-names.mp3",
-                      parts: ["My name is... ➜ My name's..."],
+                      audio: "",
+                      parts: [
+                        audio("/assets/audio/cefr/a1/introductions/my-name-is.mp3"),
+                        "My name is...",
+                        " ➜ ",
+                        audio("/assets/audio/cefr/a1/introductions/my-names.mp3"),
+                        "My na",
+                        underline("me’s..."),
+                      ],
                     }),
                   ],
                 },
@@ -738,9 +785,13 @@ export default function Introductions() {
                   value: [
                     ...content({
                       audio:
-                        "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
+                        "",
                       parts: [
-                        "Nice to meet you ➜ Nice to mee",
+                        audio("/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3"),
+                        "Nice to meet you",
+                        " ➜ ",
+                        audio("/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3"),
+                        "Nice to mee",
                         underline("t y"),
                         "ou",
                       ],
