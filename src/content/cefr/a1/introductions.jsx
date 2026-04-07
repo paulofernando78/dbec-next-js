@@ -1,7 +1,11 @@
+import styles from "./introductions.module.css";
+
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { PageSections } from "@/components/molecules/PageSections";
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { Section } from "@/components/molecules/Section";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
+import { Audio } from "@/components/atoms/Audio";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardLayout } from "@/components/molecules/CardLayout";
@@ -13,15 +17,171 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold, mark, portuguese } from "@/helpers/content";
-
-// Lessons
-import { TheAlphabet } from "@/components/organisms/lessons/TheAlphabet";
+import { content, bold, mark, underline, portuguese } from "@/helpers/content";
 
 export const metadata = {
   title: "A1 Beginner | Introductions",
   description: "Basic greetings and personal introductions.",
 };
+
+const alphabet = [
+  {
+    number: "1",
+    letter: "A",
+    phonetics: "/eɪ/",
+    audio: "/assets/audio/pronunciation/the-alphabet/a.mp3",
+  },
+  {
+    number: "2",
+    letter: "B",
+    phonetics: "/biː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/b.mp3",
+  },
+  {
+    number: "3",
+    letter: "C",
+    phonetics: "/siː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/c.mp3",
+  },
+  {
+    number: "4",
+    letter: "D",
+    phonetics: "/diː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/d.mp3",
+  },
+  {
+    number: "5",
+    letter: "E",
+    phonetics: "/iː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/e.mp3",
+  },
+  {
+    number: "6",
+    letter: "F",
+    phonetics: "/ef/",
+    audio: "/assets/audio/pronunciation/the-alphabet/f.mp3",
+  },
+  {
+    number: "7",
+    letter: "G",
+    phonetics: "/dʒiː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/g.mp3",
+  },
+  {
+    number: "8",
+    letter: "H",
+    phonetics: "/eɪtʃ/",
+    audio: "/assets/audio/pronunciation/the-alphabet/h.mp3",
+  },
+  {
+    number: "9",
+    letter: "I",
+    phonetics: "/aɪ/",
+    audio: "/assets/audio/pronunciation/the-alphabet/i.mp3",
+  },
+  {
+    number: "10",
+    letter: "J",
+    phonetics: "/dʒeɪ/",
+    audio: "/assets/audio/pronunciation/the-alphabet/j.mp3",
+  },
+  {
+    number: "11",
+    letter: "K",
+    phonetics: "/keɪ/",
+    audio: "/assets/audio/pronunciation/the-alphabet/k.mp3",
+  },
+  {
+    number: "12",
+    letter: "L",
+    phonetics: "/el/",
+    audio: "/assets/audio/pronunciation/the-alphabet/l.mp3",
+  },
+  {
+    number: "13",
+    letter: "M",
+    phonetics: "/em/",
+    audio: "/assets/audio/pronunciation/the-alphabet/m.mp3",
+  },
+  {
+    number: "14",
+    letter: "N",
+    phonetics: "/en/",
+    audio: "/assets/audio/pronunciation/the-alphabet/n.mp3",
+  },
+  {
+    number: "15",
+    letter: "O",
+    phonetics: "/oʊ/",
+    audio: "/assets/audio/pronunciation/the-alphabet/o.mp3",
+  },
+  {
+    number: "16",
+    letter: "P",
+    phonetics: "/piː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/p.mp3",
+  },
+  {
+    number: "17",
+    letter: "Q",
+    phonetics: "/kjuː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/q.mp3",
+  },
+  {
+    number: "18",
+    letter: "R",
+    phonetics: "/ɑːr/",
+    audio: "/assets/audio/pronunciation/the-alphabet/r.mp3",
+  },
+  {
+    number: "19",
+    letter: "S",
+    phonetics: "/es/",
+    audio: "/assets/audio/pronunciation/the-alphabet/s.mp3",
+  },
+  {
+    number: "20",
+    letter: "T",
+    phonetics: "/tiː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/t.mp3",
+  },
+  {
+    number: "21",
+    letter: "U",
+    phonetics: "/juː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/u.mp3",
+  },
+  {
+    number: "22",
+    letter: "V",
+    phonetics: "/viː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/v.mp3",
+  },
+  {
+    number: "23",
+    letter: "W",
+    phonetics: "/ˈdʌb.əl.juː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/w.mp3",
+  },
+  {
+    number: "24",
+    letter: "X",
+    phonetics: "/eks/",
+    audio: "/assets/audio/pronunciation/the-alphabet/x.mp3",
+  },
+  {
+    number: "25",
+    letter: "Y",
+    phonetics: "/waɪ/",
+    audio: "/assets/audio/pronunciation/the-alphabet/y.mp3",
+  },
+  {
+    number: "26",
+    letter: "Z",
+    phonetics: "/ziː/",
+    audio: "/assets/audio/pronunciation/the-alphabet/z.mp3",
+  },
+];
 
 export default function Introductions() {
   return (
@@ -29,7 +189,7 @@ export default function Introductions() {
       <Whiteboard
         title="A1 Beginner"
         subtitle="Introductions"
-        description="What's your name? Nice to meet you."
+        description="What's your name? I’m Laura. Nice to meet you."
       />
 
       <div className="line-break">
@@ -53,8 +213,8 @@ export default function Introductions() {
                 <Line
                   value={[
                     ...content({
+                      audio: "/assets/audio/general/look-at-the-picture-and-listen-to-the-sentences.mp3",
                       parts: [
-                        "",
                         bold(
                           "Look at the picture and listen to the sentences.",
                         ),
@@ -148,14 +308,26 @@ export default function Introductions() {
 
           {/* Presentation */}
           <Section id="presentation" heading={3}>
-            <AudioPlayer src="/" />
+            <AudioPlayer src="/assets/audio/cefr/a1/introductions/presentation.mp3" />
             <LineBreak />
             <Dialogue
-              description="Laura and Eric meet for the first time before class."
+              description="Listen to Laura and Eric."
               lines={[
                 {
                   speaker: "Laura:",
-                  text: [...content({ parts: ["Hi! I'm Laura."] })],
+                  text: [
+                    ...content({ parts: ["Hi there! How are you doing?"] }),
+                  ],
+                },
+                {
+                  speaker: "Eric:",
+                  text: [
+                    ...content({ parts: ["Hello, I'm pretty good. How about you?"] }),
+                  ],
+                },
+                {
+                  speaker: "Laura:",
+                  text: [...content({ parts: ["I'm great, thanks. I'm Laura."] })],
                 },
                 {
                   speaker: "Eric:",
@@ -165,7 +337,7 @@ export default function Introductions() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Nice to meet you, Eric."],
+                      parts: ["Nice to meet you."],
                     }),
                   ],
                 },
@@ -197,7 +369,7 @@ export default function Introductions() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["It's P-A-L-M-E-R."],
+                      parts: ["P-A-L-M-E-R."],
                     }),
                   ],
                 },
@@ -205,7 +377,7 @@ export default function Introductions() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Are you new here?"],
+                      parts: ["Are you a new student here?"],
                     }),
                   ],
                 },
@@ -213,7 +385,7 @@ export default function Introductions() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Yes, I am."],
+                      parts: ["Yes, I am. How about you?"],
                     }),
                   ],
                 },
@@ -221,7 +393,9 @@ export default function Introductions() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Great! Me too. So, class starts in 5 minutes."],
+                      parts: [
+                        "Me too. So, class starts in 5 minutes, right? Ready?",
+                      ],
                     }),
                   ],
                 },
@@ -229,7 +403,7 @@ export default function Introductions() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Good. Let's go then."],
+                      parts: ["Yes. I am. Let's go."],
                     }),
                   ],
                 },
@@ -239,121 +413,24 @@ export default function Introductions() {
 
           {/* Meaning */}
           <Section id="meaning" heading={3}>
-            <Paragraph
-              value={[
-                ...content({
-                  parts: [
-                    "We use introductions to greet someone, say who we are, ask for a name or last name, ask for spelling, and respond politely.",
-                  ],
-                }),
-              ]}
-            />
-            <Paragraph
-              value={[
-                ...content({
-                  parts: [
-                    portuguese(
-                      "Usamos introduções para cumprimentar alguém, dizer quem somos, perguntar o nome ou sobrenome, pedir a soletração e responder de forma educada.",
-                    ),
-                  ],
-                }),
-              ]}
-            />
-
             <LineBreak />
-
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      parts: [bold("Greeting: "), "Hi! / Hello!"],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Saying your name: "),
-                        "I'm Laura.",
-                        " / ",
-                        "My name's Eric.",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [bold("Asking a name: "), "What's your name?"],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Asking a last name: "),
-                        "What's your last name?",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Being polite: "),
-                        "Nice to meet you.",
-                        " / ",
-                        "Nice to meet you too.",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Spelling: "),
-                        "How do you spell your name?",
-                      ],
-                    }),
-                  ],
-                },
-              ]}
-            />
-          </Section>
-
-          {/* Pronunciation-Form */}
-          <Section
-            id="pronunciation-form"
-            label="Pronunciation + Form"
-            heading={3}
-          >
             <Line
               value={[
                 ...content({
-                  parts: [
-                    "In conversation, we often use short forms. ",
-                    mark("I am"),
-                    " becomes ",
-                    mark("I'm"),
-                    ", and ",
-                    mark("my name is"),
-                    " often becomes ",
-                    mark("my name's"),
-                    ".",
-                  ],
+                  parts: ["Listen and repeat"],
                 }),
               ]}
             />
-
+            <Line
+              value={[
+                ...content({
+                  parts: [portuguese("Ouça e repita.")],
+                }),
+              ]}
+            />
             <LineBreak />
-
             <Column
-              width="260"
+              width="272"
               cols={[
                 // Greetings
                 {
@@ -386,6 +463,7 @@ export default function Introductions() {
                           ],
                         },
                       ],
+                      lineBreak: true,
                     },
                     {
                       block: [
@@ -393,8 +471,8 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
-                              parts: ["Nice to meet you."],
+                                "/assets/audio/cefr/a1/introductions/how-are-you.mp3",
+                              parts: ["How are you?"],
                             }),
                           ],
                         },
@@ -406,7 +484,46 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
+                                "/assets/audio/cefr/a1/introductions/how-are-you-doing.mp3",
+                              parts: ["How are you doing?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
+                              parts: ["How's it going?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/im-good.mp3",
+                              parts: ["I'm good."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3.mp3",
                               parts: ["Nice to meet you."],
                             }),
                           ],
@@ -440,8 +557,8 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/pronunciation/linked-sounds/t-y/whats-your-name.mp3",
-                              parts: ["What's your name?"],
+                                "/assets/audio/cefr/a1/introductions/whats-your-first-name.mp3",
+                              parts: ["What's your first name?"],
                             }),
                           ],
                         },
@@ -453,13 +570,54 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/whats-your-first-name.mp3",
-                              parts: ["What's your first name?"],
+                                "/assets/audio/cefr/a1/introductions/im-laura.mp3",
+                              parts: ["I'm Laura."],
                             }),
                           ],
                         },
                       ],
                     },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
+                              parts: ["How do you spell your first name?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
+                              parts: ["How do you spell it?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/l-a-u-r-a.mp3",
+                              parts: ["L-A-U-R-A."],
+                            }),
+                          ],
+                        },
+                      ],
+                      lineBreak: true,
+                    },
+
                     {
                       block: [
                         {
@@ -479,8 +637,8 @@ export default function Introductions() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
-                              parts: ["How do you spell your first name?"],
+                                "/assets/audio/cefr/a1/introductions/p-a-l-m-e-r.mp3",
+                              parts: ["P-A-L-M-E-R."],
                             }),
                           ],
                         },
@@ -506,53 +664,11 @@ export default function Introductions() {
                   bgColor: "var(--yellow-4)",
                   textColor: "white",
                   column: "Answers",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/im-laura.mp3",
-                              parts: ["I'm Laura."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/l-a-u-r-a.mp3",
-                              parts: ["L-A-U-R-A."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/p-a-l-m-e-r.mp3",
-                              parts: ["P-A-L-M-E-R."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
+                  blocks: [],
                 },
               ]}
             />
-
             <LineBreak />
-
             <List
               items={[
                 {
@@ -575,9 +691,155 @@ export default function Introductions() {
                 },
               ]}
             />
-            <hr className="hr" />
-            <TheAlphabet />
           </Section>
+
+          {/* Pronunciation-Form */}
+          <Section id="pronunciation" label="Pronunciation" heading={3}>
+            <Line
+              value={[
+                ...content({
+                  parts: ["Listen to the difference."],
+                }),
+              ]}
+            />
+            <LineBreak />
+            <List
+              items={[
+                {
+                  value: [
+                    ...content({
+                      audio:
+                        "/assets/audio/pronunciation/linked-sounds/t-y/whats-your-name.mp3",
+                      parts: [
+                        "What's your name? ➜ What'",
+                        underline("s y"),
+                        "our name?",
+                      ],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      audio: "/assets/audio/cefr/a1/introductions/I-am.mp3",
+                      parts: ["I am... ➜ I’m..."],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      audio: "/assets/audio/cefr/a1/introductions/my-names.mp3",
+                      parts: ["My name is... ➜ My name's..."],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      audio:
+                        "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
+                      parts: [
+                        "Nice to meet you ➜ Nice to mee",
+                        underline("t y"),
+                        "ou",
+                      ],
+                    }),
+                  ],
+                },
+              ]}
+            />
+            <LineBreak />
+            <hr className="hr" />
+          </Section>
+
+          <span>
+            <b>THE ALPHABET</b>
+          </span>
+          <Line
+            value={[
+              ...content({
+                audio:
+                  "/assets/audio/pronunciation/the-alphabet/26-letters.mp3",
+                parts: ["There are 26 letters in the english alphabet."],
+              }),
+            ]}
+          />
+          <ContentToken />
+          <div className={styles.container}>
+            {alphabet.map((a, i) => (
+              <div key={i} className={styles.wrapper}>
+                <>
+                  <span className={styles.number}>{a.number}</span>
+                  <span className={styles.letter}>{a.letter}</span>
+                  <span className="phonetics">{a.phonetics}</span>
+                  <Audio src={a.audio} />
+                </>
+              </div>
+            ))}
+          </div>
+          <div className="line-break">
+            <Card>
+              <Line
+                value={[
+                  ...content({
+                    audio:
+                      "/assets/audio/pronunciation/the-alphabet/letter-c.mp3",
+                    parts: [
+                      "“C” has the same sound as the verb “see” and the noun “sea.”",
+                    ],
+                  }),
+                ]}
+              />
+              <Line
+                value={[
+                  ...content({
+                    audio:
+                      "/assets/audio/pronunciation/the-alphabet/letter-d.mp3",
+                    parts: ["“D” is pronounced differently from letter “G.”"],
+                  }),
+                ]}
+              />
+              <Line
+                value={[
+                  ...content({
+                    audio:
+                      "/assets/audio/pronunciation/the-alphabet/number-eight.mp3",
+                    parts: [
+                      "Number “eight” is pronounced differently from letter “H.”",
+                    ],
+                  }),
+                ]}
+              />
+              <Line
+                value={[
+                  ...content({
+                    audio:
+                      "/assets/audio/pronunciation/the-alphabet/letter-t.mp3",
+                    parts: ["“T” has the same sound as in “tea.”"],
+                  }),
+                ]}
+              />
+              <Line
+                value={[
+                  ...content({
+                    audio:
+                      "/assets/audio/pronunciation/the-alphabet/letter-u.mp3",
+                    parts: ["“U” has the same sound as in “you.”"],
+                  }),
+                ]}
+              />
+              <Line
+                value={[
+                  ...content({
+                    audio:
+                      "/assets/audio/pronunciation/the-alphabet/letter-z.mp3",
+                    parts: ["“Z” in British is pronounced “zed.”"],
+                  }),
+                ]}
+              />
+            </Card>
+          </div>
 
           {/* Practice */}
           <Section id="practice" heading={3}>
