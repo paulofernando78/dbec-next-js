@@ -151,7 +151,7 @@ export default function TalkAboutYourself() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Not much really. So, Where are you from?"],
+                      parts: ["Not much really. So, where are you from?"],
                     }),
                   ],
                 },
@@ -183,7 +183,7 @@ export default function TalkAboutYourself() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["I am musican. I'm a drummer."],
+                      parts: ["I am musician. I'm a drummer."],
                     }),
                   ],
                 },
