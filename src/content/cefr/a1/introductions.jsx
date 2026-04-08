@@ -316,10 +316,18 @@ export default function Introductions() {
 
           {/* Presentation */}
           <Section id="presentation" heading={3}>
+            <Line
+              value={[
+                ...content({
+                  parts: [bold("Listen to Laura and Eric.")],
+                }),
+              ]}
+            />
+            <LineBreak />
             <AudioPlayer src="/assets/audio/cefr/a1/introductions/presentation.mp3" />
             <LineBreak />
             <Dialogue
-              description="Listen to Laura and Eric."
+              description=""
               lines={[
                 {
                   speaker: "Laura:",
@@ -444,12 +452,7 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-               
-                  parts: [
-                    bold("Greetings"),
-                    " ",
-                    portuguese("Saudações")
-                  ],
+                  parts: [bold("Greetings"), " ", portuguese("Saudações")],
                 }),
               ]}
             />
@@ -490,7 +493,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/how-are-you-doing.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/how-are-you-doing.mp3",
                   parts: ["How are you doing?"],
                 }),
               ]}
@@ -498,7 +502,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
                   parts: ["How's it going?"],
                 }),
               ]}
@@ -522,7 +527,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/im-pretty-good.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/im-pretty-good.mp3",
                   parts: ["I'm pretty-good."],
                 }),
               ]}
@@ -538,7 +544,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/cant-complain.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/cant-complain.mp3",
                   parts: ["Can’t complain."],
                 }),
               ]}
@@ -547,7 +554,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
                   parts: ["Nice to meet you."],
                 }),
               ]}
@@ -556,12 +564,7 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-               
-                  parts: [
-                    bold("Questions"),
-                    " ",
-                    portuguese("Perguntas")
-                  ],
+                  parts: [bold("Questions"), " ", portuguese("Perguntas")],
                 }),
               ]}
             />
@@ -569,7 +572,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/whats-your-name.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/whats-your-name.mp3",
                   parts: ["What's your name?"],
                 }),
               ]}
@@ -577,7 +581,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/whats-your-first-name.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/whats-your-first-name.mp3",
                   parts: ["What's your first name?"],
                 }),
               ]}
@@ -593,7 +598,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
                   parts: ["How do you spell your first name?"],
                 }),
               ]}
@@ -601,7 +607,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-it.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/how-do-you-spell-it.mp3",
                   parts: ["How do you spell it?"],
                 }),
               ]}
@@ -617,7 +624,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/whats-your-last-name.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/whats-your-last-name.mp3",
                   parts: ["What's your last name?"],
                 }),
               ]}
@@ -633,7 +641,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-last-name.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-last-name.mp3",
                   parts: ["How do you spell your last name?"],
                 }),
               ]}
@@ -641,7 +650,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/how-do-you-spell-it.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/how-do-you-spell-it.mp3",
                   parts: ["How do you spell it?"],
                 }),
               ]}
