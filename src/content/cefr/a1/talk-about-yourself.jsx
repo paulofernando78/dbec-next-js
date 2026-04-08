@@ -25,14 +25,13 @@ export default function TalkAboutYourself() {
       <Whiteboard
         title="A1 Beginner"
         subtitle="Talk about yourself"
-        description="My name's Diego. I'm from Brazil. I'm a student."
+        description="My name's Laura. I'm from the United States. I'm an accountant."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to give basic
-          personal information about themselves, including name, country, and
-          job or studies.
+          By the end of this class, students will be able to give basic personal
+          information about themselves, including name, country, job or studies.
         </Card>
 
         <PageSections>
@@ -48,7 +47,10 @@ export default function TalkAboutYourself() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["", bold("Read the profile and answer the questions.")],
+                      parts: [
+                        "",
+                        bold("Read the profile and answer the questions."),
+                      ],
                     }),
                   ]}
                 />
@@ -56,31 +58,36 @@ export default function TalkAboutYourself() {
                 <Line
                   value={[
                     ...content({
-                      parts: ["Her name is Kate."],
+                      audio:
+                        "/assets/audio/cefr/a1/talk-about-yourself/her-names-laura.mp3",
+                      parts: ["Her name's Laura."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      parts: ["She is from Brazil."],
+                      audio:
+                        "/assets/audio/cefr/a1/talk-about-yourself/shes-from-the-united-states.mp3",
+                      parts: ["She is from the United States."],
                     }),
                   ]}
                 />
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/grammar/simple-present/meaning/she-works-in-an-office.mp3",
+                      audio:
+                        "/assets/audio/cefr/a1/talk-about-yourself/shes-an-accountant.mp3",
+                      parts: ["She’s an accountant."],
+                    }),
+                  ]}
+                />
+                <Line
+                  value={[
+                    ...content({
+                      audio:
+                        "/assets/audio/cefr/a1/talk-about-yourself/she-works-in-an-office.mp3",
                       parts: ["She works in an office."],
-                    }),
-                  ]}
-                />
-                <Paragraph
-                  value={[
-                    ...content({
-                      parts: [
-                        "Now think about your own information: your name, where you are from, and what you do.",
-                      ],
                     }),
                   ]}
                 />
@@ -94,27 +101,25 @@ export default function TalkAboutYourself() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. What is her name?",
+                    question: "1. Where is she from?",
                     options: [
-                      { option: "Kate.", isCorrect: true },
-                      { option: "Laura.", isCorrect: false },
-                      { option: "Mexico.", isCorrect: false },
+                      { option: "Brazil", isCorrect: false },
+                      { option: "U.S.", isCorrect: true },
+                      { option: "England", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. Where is she from?",
+                    question: "2. Is she an American?",
                     options: [
-                      { option: "Brazil.", isCorrect: true },
-                      { option: "Canada.", isCorrect: false },
-                      { option: "An office.", isCorrect: false },
+                      { option: "No, she isn’t.", isCorrect: false },
+                      { option: "Yes, she is.", isCorrect: true },
                     ],
                   },
                   {
-                    question: "3. What does she do?",
+                    question: "3. Is she a student?",
                     options: [
-                      { option: "She works in an office.", isCorrect: true },
-                      { option: "She plays soccer.", isCorrect: false },
-                      { option: "She is at school now.", isCorrect: false },
+                      { option: "Yes, she is.", isCorrect: true },
+                      { option: "No, she isn’t.", isCorrect: false },
                     ],
                   },
                 ],
@@ -124,69 +129,69 @@ export default function TalkAboutYourself() {
 
           <Section id="presentation" heading={3}>
             <Dialogue
-              description="A teacher asks a new student for personal information."
+              description="Laura and Eric talk after class."
               lines={[
                 {
-                  speaker: "Teacher:",
+                  speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Hello. What's your name?"],
+                      parts: ["Hi, Laura. How’s it going?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Diego:",
+                  speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["My name's Diego."],
+                      parts: ["Pretty good, thanks. What’s up?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Teacher:",
+                  speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Where are you from, Diego?"],
+                      parts: ["Not much really. So, Where are you from?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Diego:",
+                  speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I'm from Brazil."],
+                      parts: ["I'm from the United States. How about you?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Teacher:",
+                  speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Are you a student or do you work?"],
+                      parts: ["I'm from England. Tell me, what's your job?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Diego:",
+                  speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I'm a student."],
+                      parts: ["I’m an accountant. How about you?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Teacher:",
+                  speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Great. Nice to meet you."],
+                      parts: ["I am musican. I'm a drummer."],
                     }),
                   ],
                 },
                 {
-                  speaker: "Diego:",
+                  speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Nice to meet you too."],
+                      parts: ["Cool!"],
                     }),
                   ],
                 },
@@ -199,7 +204,7 @@ export default function TalkAboutYourself() {
               value={[
                 ...content({
                   parts: [
-                    "When we talk about ourselves, we usually give personal information in a simple order: name, country, and job or studies.",
+                    "When we talk about ourselves, we usually give personal information in a simple order: name, country, job or studies.",
                   ],
                 }),
               ]}
@@ -209,7 +214,7 @@ export default function TalkAboutYourself() {
                 ...content({
                   parts: [
                     portuguese(
-                      "Quando falamos sobre nós mesmos, normalmente damos informações pessoais em uma ordem simples: nome, país e trabalho ou estudos.",
+                      "Quando falamos sobre nós mesmos, normalmente damos informações pessoais em uma ordem simples: nome, país, trabalho ou estudos.",
                     ),
                   ],
                 }),
@@ -223,7 +228,12 @@ export default function TalkAboutYourself() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Name: "), mark("My name's Diego."), " / ", mark("I'm Diego.")],
+                      parts: [
+                        bold("Name: "),
+                        mark("My name's Diego."),
+                        " / ",
+                        mark("I'm Diego."),
+                      ],
                     }),
                   ],
                 },
@@ -237,14 +247,22 @@ export default function TalkAboutYourself() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Job / studies: "), mark("I'm a student."), " / ", mark("I'm a teacher.")],
+                      parts: [
+                        bold("Job / studies: "),
+                        mark("I'm a student."),
+                        " / ",
+                        mark("I'm a teacher."),
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Work place: "), mark("I work in an office.")],
+                      parts: [
+                        bold("Work place: "),
+                        mark("I work in an office."),
+                      ],
                     }),
                   ],
                 },
@@ -257,22 +275,6 @@ export default function TalkAboutYourself() {
             label="Pronunciation + Form"
             heading={3}
           >
-            <Paragraph
-              value={[
-                ...content({
-                  parts: [
-                    mark("I am"),
-                    " usually becomes ",
-                    mark("I'm"),
-                    ", and ",
-                    mark("my name is"),
-                    " often becomes ",
-                    mark("my name's"),
-                    " in natural speech.",
-                  ],
-                }),
-              ]}
-            />
 
             <LineBreak />
 
@@ -289,8 +291,7 @@ export default function TalkAboutYourself() {
                         {
                           text: [
                             ...content({
-                              audio:
-                                "/assets/audio/pronunciation/linked-sounds/t-y/whats-your-name.mp3",
+                              
                               parts: ["What's your name?"],
                             }),
                           ],
@@ -329,11 +330,15 @@ export default function TalkAboutYourself() {
                   column: "Short Answers",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I'm Diego."] })] }],
+                      block: [
+                        { text: [...content({ parts: ["I'm Diego."] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["I'm from Brazil."] })] }],
+                      block: [
+                        { text: [...content({ parts: ["I'm from Brazil."] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
@@ -397,26 +402,6 @@ export default function TalkAboutYourself() {
 
             <LineBreak />
 
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      audio: "/assets/audio/pronunciation/the-alphabet/first-name.mp3",
-                      parts: [bold("first name"), " = given name"],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      audio: "/assets/audio/pronunciation/the-alphabet/last-name.mp3",
-                      parts: [bold("last name"), " = family name"],
-                    }),
-                  ],
-                },
-              ]}
-            />
           </Section>
 
           <Section id="practice" heading={3}>
@@ -471,7 +456,7 @@ export default function TalkAboutYourself() {
                     options: [
                       { option: "I'm from Peru.", isCorrect: false },
                       { option: "My name's Camila.", isCorrect: true },
-                      { option: "I'm 8 o'clock.", isCorrect: false },
+                      { option: "I'm doctor.", isCorrect: false },
                     ],
                   },
                   {
@@ -485,16 +470,16 @@ export default function TalkAboutYourself() {
                   {
                     question: "3. Are you a student?",
                     options: [
-                      { option: "Yes, I am.", isCorrect: true },
                       { option: "I'm from Mexico.", isCorrect: false },
                       { option: "My last name is Costa.", isCorrect: false },
+                      { option: "Yes, I am.", isCorrect: true },
                     ],
                   },
                   {
-                    question: "4. What do you do?",
+                    question: "4. What’s your job?",
                     options: [
-                      { option: "I'm an architect.", isCorrect: true },
                       { option: "I'm from Brazil.", isCorrect: false },
+                      { option: "I'm an architect.", isCorrect: true },
                       { option: "A-N-A.", isCorrect: false },
                     ],
                   },
@@ -533,16 +518,8 @@ export default function TalkAboutYourself() {
                 {
                   value: [
                     ...content({
-                      parts: ["3. Say if you are a student or what your job is."],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
                       parts: [
-                        "4. Use this model: ",
-                        mark("Hello. My name's Ana. I'm from Brazil. I'm a student."),
+                        "3. Say if you are a student or what your job is.",
                       ],
                     }),
                   ],
@@ -552,13 +529,12 @@ export default function TalkAboutYourself() {
 
             <LineBreak />
 
-            <Paragraph
+            <Line
               value={[
                 ...content({
                   parts: [
-                    portuguese(
-                      "Escreva ou fale uma pequena apresentação sobre você. Depois, compartilhe com um colega.",
-                    ),
+                    bold("Model:"),
+                    " Hello. My name's ... I'm from ... I'm a ....",
                   ],
                 }),
               ]}
