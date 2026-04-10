@@ -43,17 +43,12 @@ export function baseToken({
     blocks.push({ bullet: true });
   }
 
-  //! old
-  // parts.forEach((p) => {
-  //   blocks.push(p);
-  // });
-
-  //! New / Modern
   blocks.push(...parts);
-  // blocks.push(parts[0], parts[1], parts[2])
+  blocks.push({part: " "})
 
   if (phonetics) {
     blocks.push({ part: phonetics, type: "phonetics" });
+    blocks.push({part: " "})
   }
 
   if (connector) {
@@ -61,7 +56,8 @@ export function baseToken({
   }
 
   if (square) {
-    blocks.push({ square: true });
+    blocks.push({square: true});
+    blocks.push({part: " "})
   }
 
   if (lineBreak) {

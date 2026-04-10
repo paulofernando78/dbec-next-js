@@ -174,8 +174,8 @@ const links = [
       // Linked Sounds
       {
         attention: true,
-        href: "/pronunciation/linked-sounds",
-        label: "Linked Sounds",
+        href: "/pronunciation/linking-sounds",
+        label: "Linking Sounds",
       },
       // Sites
       {

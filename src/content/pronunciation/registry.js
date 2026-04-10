@@ -1,5 +1,5 @@
 export const pronunciationPages = {
-  "linked-sounds": () => import("./linked-sounds.jsx"),
+  "linking-sounds": () => import("./linking-sounds.jsx"),
   "phonetics-letters": () => import("./phonetics-letters.jsx"),
   sites: () => import("./sites.jsx"),
 };
