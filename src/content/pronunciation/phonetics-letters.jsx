@@ -3476,8 +3476,7 @@ export default function PhoneticsLetters() {
               // Theodoro
               ...wordRowList({
                 audio: "/assets/audio/general/theodore.mp3",
-                parts: ["Th", { part: "eo", type: "mark" }, "dore"],
-                phonetics: "//",
+                parts: ["Th", { part: "eo", type: "mark" }, "dore"]
               }),
               // leotard
               ...wordRowList({
@@ -3623,7 +3622,7 @@ export default function PhoneticsLetters() {
               // Sydney
               ...wordRowList({
                 audio: "/assets/audio/general/sydney.mp3",
-                parts: ["sydn", { part: "ey", type: "mark" }],
+                parts: ["Sydn", { part: "ey", type: "mark" }],
                 phonetics: "/ˈsɪd.ni/",
               }),
             ]}
@@ -4362,7 +4361,7 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/",
+                audio: "/assets/audio/pronunciation/phonetics-letters/əs.mp3",
                 phonetics: "/əs/",
               }),
               // curious
@@ -5219,12 +5218,6 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/by-bye.mp3",
                 parts: ["b", { part: "y", type: "mark" }],
-                phonetics: "/baɪ/",
-              }),
-              // bye
-              ...wordRowList({
-                audio: "/assets/audio/general/by-bye.mp3",
-                parts: ["b", { part: "y", type: "mark" }, "e"],
                 phonetics: "/baɪ/",
               }),
               // fly
