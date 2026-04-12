@@ -119,7 +119,11 @@ export const ContentToken = ({ value, text = [] }) => {
         return (
           <span key={i}>
             {typeof part === "object" && renderIcons(part)}
-            {part.audio && <Audio src={part.audio} />}
+            {part.audio && (
+              <span className="inline-audio">
+                <Audio src={part.audio} />
+              </span>
+            )}
             {part.bullet && <BulletPoint />}
             {part.square && !isLastSquare && <SquarePoint />}
             {part.lineBreak && <span className="block" />}

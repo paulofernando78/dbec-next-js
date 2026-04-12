@@ -19,6 +19,7 @@
 // baseToken
 // content
 
+//! Layout tokens
 export function baseToken({
   icons = [],
   audio,
@@ -68,7 +69,6 @@ export function baseToken({
 }
 
 //! Builders
-
 export const content = ({ icons = [], ...opts }) =>
   baseToken({
     icons,
@@ -115,7 +115,7 @@ export const wordVariant = ({ left, right }) => [
 export const wordComparison = ({ left, right }) => [
   ...wordRowList({ ...left, square: false }),
   {
-    part: "vs ",
+    part: "vs. ",
     type: "connector",
   },
   ...wordRowList({ ...right, square: false }),
@@ -124,7 +124,6 @@ export const wordComparison = ({ left, right }) => [
 export const text = (parts = []) => parts;
 
 //! Tokens
-
 // audio
 export const audio = (src) => ({
   audio: src,
@@ -176,4 +175,10 @@ export const example = (text) => ({
 export const portuguese = (text) => ({
   part: text,
   type: "portuguese",
+});
+
+// portuguese
+export const connector = (text) => ({
+  part: text,
+  type: "connector",
 });
