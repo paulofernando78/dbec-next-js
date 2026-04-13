@@ -1,17 +1,16 @@
-/* .coffee {
-  border: 3px solid var(--yellow-4);
+.coffee {
   border-radius: 5px;
-  padding: 3px 5px;
   width: max-content;
-  background-color: var(--yellow-1);
+  background-color: #FFDD00;
   color: black;
   font-family: var(--font-allura);
   font-size: 1.3rem;
+  transition: .2s;
 }
 
 .coffee:hover {
-  background-color: var(--yellow-2);
-} */
+  box-shadow: 1px 1px 10px var(--yellow-5);
+}
 
 .img {
   height: 37px;
