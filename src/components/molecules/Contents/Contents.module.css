@@ -1,3 +1,4 @@
-.title:not(:first-child) {
+.title {
+  display: block;
   margin-top: var(--line-break);
 }

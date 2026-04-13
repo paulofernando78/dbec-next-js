@@ -1,0 +1,11 @@
+.coffee {
+  border: 3px solid var(--yellow-4);
+  border-radius: 5px;
+  padding: 3px 5px;
+  width: max-content;
+  background-color: var(--yellow-1);
+}
+
+.coffee:hover {
+  background-color: var(--yellow-2);
+}

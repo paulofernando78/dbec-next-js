@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 
 import { Audio } from "@/components/atoms/Audio";
 import { Line } from "@/components/molecules/Line";
-import { List } from "@/components/molecules/List";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { content, bold, italic } from "@/helpers/content";

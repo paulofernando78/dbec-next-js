@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import { Attention } from "@/lib/svg-imports";
 
+
 const links = [
   {
     links: [
@@ -370,28 +371,30 @@ export default function NavBar() {
   const { showNavBar, closeNavBar } = useContext(HeaderContext);
 
   return (
-    <nav
-      className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`}
-    >
-      {links.map((group, groupIndex) => (
-        <div key={groupIndex}>
-          <span className={styles.navTitle}>{group.title}</span>
-          {group.links && (
-            <div>
-              {group.links.map((item, linkIndex) => (
-                <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
-                  {item.attention && (
-                    <Attention
-                      className={`${styles.attentionIcon} icon-position`}
-                    />
-                  )}
-                  {item.label}
-                </Link>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
-    </nav>
+    <>
+      <nav
+        className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`}
+      >
+        {links.map((group, groupIndex) => (
+          <div key={groupIndex}>
+            <span className={styles.navTitle}>{group.title}</span>
+            {group.links && (
+              <div>
+                {group.links.map((item, linkIndex) => (
+                  <Link key={linkIndex} href={item.href} onClick={closeNavBar}>
+                    {item.attention && (
+                      <Attention
+                        className={`${styles.attentionIcon} icon-position`}
+                      />
+                    )}
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </nav>
+    </>
   );
 }

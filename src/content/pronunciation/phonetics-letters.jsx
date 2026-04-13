@@ -48,12 +48,7 @@ export default function PhoneticsLetters() {
               phonetics: "/i/",
             },
             {
-              title: [
-                {
-                  part: "a...",
-                  type: "bold",
-                },
-              ],
+              title: [bold("a...")],
             },
             // Letter 'a':
             {
@@ -424,7 +419,7 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Line
             value={[
-              ...attention({
+              ...content({
                 parts: [
                   "In British English, ",
                   phonetics("/æ/"),
@@ -432,7 +427,6 @@ export default function PhoneticsLetters() {
                   phonetics("/ɑː/"),
                   " in certain words.",
                 ],
-                pt: "",
               }),
             ]}
           />
@@ -2109,7 +2103,6 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio: "/assets/audio/general/man.mp3",
                 parts: ["m", mark("a"), "n", " ", phonetics("/mæn/")],
-                square: false,
               }),
             ]}
           />
@@ -2119,35 +2112,35 @@ export default function PhoneticsLetters() {
               content({
                 audio: "/assets/audio/general/bats-usually-eat-apples.mp3",
                 parts: [
-                  "Bats usually eat apples.",
+                  "Bats usually eat apples. ",
                   portuguese("Morcegos normalmente comem maçã."),
                 ],
               }),
               content({
                 audio: "/assets/audio/general/the-cat-is-on-the-mat.mp3",
                 parts: [
-                  "The cat is on the mat.",
+                  "The cat is on the mat. ",
                   portuguese("O gato está no tapete."),
                 ],
               }),
               content({
                 audio: "/assets/audio/general/the-man-has-a-black-cat.mp3",
                 parts: [
-                  "The man has a black hat.",
+                  "The man has a black hat. ",
                   portuguese("O homem tem um chapéu preto."),
                 ],
               }),
               content({
                 audio: "/assets/audio/general/she-has-a-bad-habit.mp3",
                 parts: [
-                  "She has a bad habit.",
+                  "She has a bad habit. ",
                   portuguese("Ela tem um mau hábito."),
                 ],
               }),
               content({
                 audio: "/assets/audio/general/i-have-a-map-in-my-bag.mp3",
                 parts: [
-                  "I have a map in my bag.",
+                  "I have a map in my bag. ",
                   portuguese("Eu tenho um mapa na minha bolsa."),
                 ],
               }),
@@ -2187,27 +2180,30 @@ export default function PhoneticsLetters() {
             ]}
           />
           <LineBreak />
-          <Examples
+         <Examples
             items={[
-              // • Keep calm and hold my arm.
               content({
                 audio: "/assets/audio/general/keep-calm-and-hold-my-arm.mp3",
-                parts: ["Keep calm and hold my arm."],
-                pt: "Fique calmo e segure o meu braço.",
+                parts: [
+                  "Keep calm and hold my arm. ",
+                  portuguese("Fique calmo e segure o meu braço."),
+                ],
               }),
-              // • My father drove the car far away.
               content({
                 audio:
                   "/assets/audio/general/my-father-drove-the-car-far-away.mp3",
-                parts: ["My father drove the car far away."],
-                pt: "Meu pai dirigiu o carro para longe.",
+                parts: [
+                  "My father drove the car far away. ",
+                  portuguese("Meu pai dirigiu o carro para longe."),
+                ],
               }),
-              // • I could really use a spa right now.
               content({
                 audio:
                   "/assets/audio/general/i-could-really-use-a-spa-right-now.mp3",
-                parts: ["I could really use a spa right now."],
-                pt: "Preciso de um spa no momento.",
+                parts: [
+                  "I could really use a spa right now. ",
+                  portuguese("Preciso de um spa no momento."),
+                ],
               }),
             ]}
           />
@@ -2267,26 +2263,29 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Examples
             items={[
-              // • I ate a sandwich this morning.
               content({
                 audio:
                   "/assets/audio/general/i-ate-a-sandwhich-this-morning.mp3",
-                parts: ["I ate a sandwich this morning."],
-                pt: "Eu comi um sanduíche esta manhã.",
+                parts: [
+                  "I ate a sandwich this morning. ",
+                  portuguese("Eu comi um sanduíche esta manhã."),
+                ],
               }),
-              // • She chased the dog across the yard.
               content({
                 audio:
                   "/assets/audio/general/she-chased-the-dog-across-the-yard.mp3",
-                parts: ["She chased the dog across the yard."],
-                pt: "Ela correu atrás do cachorro pelo quintal.",
+                parts: [
+                  "She chased the dog across the yard. ",
+                  portuguese("Ela correu atrás do cachorro pelo quintal."),
+                ],
               }),
-              // • We played a fun game after school.
               content({
                 audio:
                   "/assets/audio/general/we-played-a-fun-game-after-school.mp3",
-                parts: ["We played a fun game after school."],
-                pt: "Nós jogamos um jogo divertido depois da escola.",
+                parts: [
+                  "We played a fun game after school. ",
+                  portuguese("Nós jogamos um jogo divertido depois da escola."),
+                ],
               }),
             ]}
           />
@@ -2355,26 +2354,28 @@ export default function PhoneticsLetters() {
           <LineBreak />
           <Examples
             items={[
-              // • Bananas contain a lot of potassium.
               content({
                 audio:
                   "/assets/audio/general/bananas-contain-a-lot-of-potassium.mp3",
-                parts: ["Bananas contain a lot of potassium."],
-                pt: "Bananas contém muito potássio.",
+                parts: [
+                  "Bananas contain a lot of potassium. ",
+                  portuguese("Bananas contêm muito potássio."),
+                ],
               }),
-              // • It's out of ideas.
               content({
                 audio: "/assets/audio/general/its-out-of-ideas.mp3",
-                parts: ["It's out of ideas."],
-                pt: "Está sem bateria.",
+                parts: [
+                  "It's out of ideas. ",
+                  portuguese("Está sem ideias."),
+                ],
               }),
-
-              // • We sat on the sofa minutes ago.
               content({
                 audio:
                   "/assets/audio/general/we-sat-on-the-sofa-a-few-minutes-ago.mp3",
-                parts: ["We sat on the sofa a few minutes ago."],
-                pt: "Nós sentamos no sofá há alguns minutos.",
+                parts: [
+                  "We sat on the sofa a few minutes ago. ",
+                  portuguese("Nós sentamos no sofá há alguns minutos."),
+                ],
               }),
             ]}
           />
@@ -2553,72 +2554,61 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 audio:
                   "/assets/audio/pronunciation/phonetics-letters/vowels/ɔ.mp3",
-                parts: [bold("'awe'")],
-                phonetics: "/ɔː/",
+                parts: [bold("'awe'"), " ", phonetics("/ɔː/")],
               }),
               // awe
               ...wordRowList({
                 audio: "/assets/audio/general/awe.mp3",
-                parts: [mark("awe")],
-                phonetics: "/ˈɔː/",
+                parts: [mark("awe"), " ", phonetics("/ˈɔː/")],
               }),
               // awesome
               ...wordRowList({
                 audio: "/assets/audio/general/awesome.mp3",
-                parts: [mark("awe"), "some"],
-                phonetics: "/ˈɔː.səm/",
+                parts: [mark("awe"), "some", " ", phonetics("/ˈɔː.səm/")],
               }),
             ]}
           />
           <LineBreak />
-          <Examples
+         <Examples
             items={[
               content({
                 audio: "/assets/audio/general/this-is-the-law.mp3",
-                parts: ["This is the law."],
-                pt: "Esta é a lei.",
+                parts: ["This is the law. ", portuguese("Esta é a lei.")],
               }),
 
               content({
                 audio: "/assets/audio/general/i-saw-a-bird.mp3",
-                parts: ["I saw a bird."],
-                pt: "Eu vi um pássaro.",
+                parts: ["I saw a bird. ", portuguese("Eu vi um pássaro.")],
               }),
 
               content({
                 audio: "/assets/audio/general/lets-draw-a-picture.mp3",
-                parts: ["Let’s draw a picture."],
-                pt: "Vamos desenhar um desenho.",
+                parts: ["Let’s draw a picture. ", portuguese("Vamos desenhar um desenho. ")],
               }),
 
               content({
                 audio: "/assets/audio/general/the-meat-is-raw.mp3",
-                parts: ["The meat is raw."],
-                pt: "A carne está crua.",
+                parts: ["The meat is raw. ", portuguese("A carne está crua.")],
               }),
 
               content({
                 audio: "/assets/audio/general/the-cat-has-a-sharp-claw.mp3",
-                parts: ["The cat has a sharp claw."],
-                pt: "O gato tem uma garra afiada.",
+                parts: ["The cat has a sharp claw. ", portuguese("O gato tem uma garra afiada.")],
               }),
 
               content({
                 audio: "/assets/audio/general/my-jaw-hurts.mp3",
-                parts: ["My jaw hurts."],
-                pt: "Minha mandíbula dói.",
+                parts: ["My jaw hurts. ", portuguese("Minha mandíbula dói.")],
               }),
 
               content({
                 audio: "/assets/audio/general/that-movie-is-awesome.mp3",
-                parts: ["That movie is awesome."],
-                pt: "Esse filme é incrível.",
+                parts: ["That movie is awesome. ", portuguese("Esse filme é incrível.")],
               }),
 
               content({
                 audio: "/assets/audio/general/we-watched-in-awe.mp3",
-                parts: ["We watched in awe."],
-                pt: "Nós assistimos com admiração.",
+                parts: ["We watched in awe. ", portuguese("Nós assistimos com admiração.")],
               }),
             ]}
           />
@@ -2908,24 +2898,33 @@ export default function PhoneticsLetters() {
               // beau
               ...wordRowList({
                 audio: "/assets/audio/general/beau.mp3",
-                parts: ["b", mark("eau")],
-                phonetics: "/boʊ/",
+                parts: ["b", mark("eau"), " ", phonetics("/boʊ/")],
               }),
 
               // bureau
               ...wordRowList({
                 audio: "/assets/audio/general/bureau.mp3",
-                parts: ["bur", mark("eau")],
-                phonetics: "/ˈbjʊr.oʊ/",
-                pt: "escritório / departamento",
+                parts: [
+                  "bur",
+                  mark("eau"),
+                  " ",
+                  phonetics("/ˈbjʊr.oʊ/"),
+                  " ",
+                  portuguese("escritório / departamento"),
+                ],
               }),
 
               // plateau (último sem square)
               ...wordRowList({
                 audio: "/assets/audio/general/plateau.mp3",
-                parts: ["plat", mark("eau")],
-                phonetics: "/plæˈtoʊ/",
-                pt: "planalto / estabilizar",
+                parts: [
+                  "plat",
+                  mark("eau"),
+                  " ",
+                  phonetics("/plæˈtoʊ/"),
+                  " ",
+                  portuguese("planalto / estabilizar"),
+                ],
                 square: false,
               }),
             ]}
@@ -4698,32 +4697,17 @@ export default function PhoneticsLetters() {
               // by
               ...wordRowList({
                 audio: "/assets/audio/general/by-bye.mp3",
-                parts: [
-                  "b",
-                  mark("y"),
-                  " ",
-                  phonetics("/baɪ/"),
-                ],
+                parts: ["b", mark("y"), " ", phonetics("/baɪ/")],
               }),
               // fly
               ...wordRowList({
                 audio: "/assets/audio/general/fly.mp3",
-                parts: [
-                  "fl",
-                  mark("y"),
-                  " ",
-                  phonetics("/flaɪ/"),
-                ],
+                parts: ["fl", mark("y"), " ", phonetics("/flaɪ/")],
               }),
               // type
               ...wordRowList({
                 audio: "/assets/audio/general/type.mp3",
-                parts: [
-                  "t",
-                  mark("y"),
-                  "pe ",
-                  phonetics("/taɪp/"),
-                ],
+                parts: ["t", mark("y"), "pe ", phonetics("/taɪp/")],
               }),
             ]}
           />
@@ -4740,62 +4724,32 @@ export default function PhoneticsLetters() {
               // angry
               ...wordRowList({
                 audio: "/assets/audio/general/angry.mp3",
-                parts: [
-                  "angr",
-                  mark("y"),
-                  " ",
-                  phonetics("/ˈæŋ.ɡri/"),
-                ],
+                parts: ["angr", mark("y"), " ", phonetics("/ˈæŋ.ɡri/")],
               }),
               // crazy
               ...wordRowList({
                 audio: "/assets/audio/general/crazy.mp3",
-                parts: [
-                  "craz",
-                  mark("y"),
-                  " ",
-                  phonetics("/ˈkreɪ.zi/"),
-                ],
+                parts: ["craz", mark("y"), " ", phonetics("/ˈkreɪ.zi/")],
               }),
               // hungry
               ...wordRowList({
                 audio: "/assets/audio/general/hungry.mp3",
-                parts: [
-                  "hungr",
-                  mark("y"),
-                  " ",
-                  phonetics("/ˈhʌŋ.ɡri/"),
-                ],
+                parts: ["hungr", mark("y"), " ", phonetics("/ˈhʌŋ.ɡri/")],
               }),
               // odyssey
               ...wordRowList({
                 audio: "/assets/audio/general/odyssey.mp3",
-                parts: [
-                  "odysse",
-                  mark("y"),
-                  " ",
-                  phonetics("/ˈɑː.dɪ.si/"),
-                ],
+                parts: ["odysse", mark("y"), " ", phonetics("/ˈɑː.dɪ.si/")],
               }),
               // salty
               ...wordRowList({
                 audio: "/assets/audio/general/salty.mp3",
-                parts: [
-                  "salt",
-                  mark("y"),
-                  " ",
-                  phonetics("/ˈsɑːl.t̬i/"),
-                ],
+                parts: ["salt", mark("y"), " ", phonetics("/ˈsɑːl.t̬i/")],
               }),
               // sleepy
               ...wordRowList({
                 audio: "/assets/audio/general/sleepy.mp3",
-                parts: [
-                  "sleep",
-                  mark("y"),
-                  " ",
-                  phonetics("/ˈsliː.pi/"),
-                ],
+                parts: ["sleep", mark("y"), " ", phonetics("/ˈsliː.pi/")],
               }),
             ]}
           />
@@ -4812,38 +4766,22 @@ export default function PhoneticsLetters() {
               // yes
               ...wordRowList({
                 audio: "/assets/audio/general/yes.mp3",
-                parts: [
-                  mark("y"),
-                  "es ",
-                  phonetics("/jes/"),
-                ],
+                parts: [mark("y"), "es ", phonetics("/jes/")],
               }),
               // year
               ...wordRowList({
                 audio: "/assets/audio/general/year.mp3",
-                parts: [
-                  mark("y"),
-                  "ear ",
-                  phonetics("/jɪr/"),
-                ],
+                parts: [mark("y"), "ear ", phonetics("/jɪr/")],
               }),
               // yellow
               ...wordRowList({
                 audio: "/assets/audio/general/yellow.mp3",
-                parts: [
-                  mark("y"),
-                  "ellow ",
-                  phonetics("/ˈjel.oʊ/"),
-                ],
+                parts: [mark("y"), "ellow ", phonetics("/ˈjel.oʊ/")],
               }),
               // yesterday
               ...wordRowList({
                 audio: "/assets/audio/general/yesterday.mp3",
-                parts: [
-                  mark("y"),
-                  "esterday ",
-                  phonetics("/ˈjes.tɚ.deɪ/"),
-                ],
+                parts: [mark("y"), "esterday ", phonetics("/ˈjes.tɚ.deɪ/")],
               }),
             ]}
           />
@@ -4862,12 +4800,7 @@ export default function PhoneticsLetters() {
               // bye
               ...wordRowList({
                 audio: "/assets/audio/general/by-bye.mp3",
-                parts: [
-                  "b",
-                  mark("ye"),
-                  " ",
-                  phonetics("/baɪ/"),
-                ],
+                parts: ["b", mark("ye"), " ", phonetics("/baɪ/")],
               }),
             ]}
           />

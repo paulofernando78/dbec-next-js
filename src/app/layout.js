@@ -9,6 +9,7 @@ import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import Footer from "@/components/organisms/Footer";
+import { BuyMeACoffee } from "@/components/atoms/BuyMeACoffee";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -67,14 +68,19 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable}`}>
+      <body
+        className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable}`}
+      >
         <ThemeProvider>
           <div className="layout">
             <HeaderProvider>
               <Header></Header>
+
               <div className="nav-main">
                 <NavBar></NavBar>
                 <main className={styles.main}>
+                  <BuyMeACoffee className="coffee" />
+
                   {children}
                   <div className={styles.scrollToTopWrapper}>
                     <ScrollToTop />

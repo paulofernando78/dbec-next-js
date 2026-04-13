@@ -16,6 +16,7 @@ import {
   UKflag,
   Correct,
   Incorrect,
+  Arrow,
   Compare,
 } from "@/lib/svg-imports";
 
@@ -29,6 +30,7 @@ export const ContentToken = ({ value, text = [] }) => {
     uk: UKflag,
     correct: Correct,
     incorrect: Incorrect,
+    arrow: Arrow,
     compare: Compare,
   };
 
@@ -37,6 +39,7 @@ export const ContentToken = ({ value, text = [] }) => {
     ukFlag: "uk",
     attention: "attention",
     correct: "correct",
+    arrow: "arrow",
     incorrect: "incorrect",
     comparison: "compare",
   };

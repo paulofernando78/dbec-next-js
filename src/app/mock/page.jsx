@@ -77,6 +77,7 @@ export default function Mock() {
                     "attention",
                     "correct",
                     "incorrect",
+                    "arrow",
                     "compare",
                   ],
                   audio: "/",

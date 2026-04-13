@@ -22,7 +22,7 @@ export default function Header() {
         active={!showHam}
         ></Button>
         <Link href="/">
-        <span className={styles.logoName}>DAILY BASIS ENGLISH COURSE</span>
+        <span className={styles.logoName}><b>DAILY BASIS ENGLISH COURSE</b></span>
         </Link>
         <Button icon={isDarkMode ? <LightMode /> : <DarkMode />}
         onToggle={toggleTheme}
