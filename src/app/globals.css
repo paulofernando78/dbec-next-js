@@ -42,7 +42,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gray-6);
+  background: var(--gray-3);
   border-radius: 10px;
 }
 
@@ -243,7 +243,7 @@ mark {
 
 .coffee {
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   right: 5px;
   z-index: 10;
 }
