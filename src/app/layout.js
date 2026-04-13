@@ -73,6 +73,11 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-0FBQ6F0DWC');
           `}
         </Script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7288029314979883"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body
         className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable} ${allura.variable}`}
