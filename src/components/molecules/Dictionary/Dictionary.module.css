@@ -7,6 +7,8 @@
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 5px 5px 1px 5px;
+  width: max-content;
+  margin-bottom: 5px;
 }
 
 .title {
@@ -29,7 +31,7 @@
 .wordCard,
 .emptyState {
   background-color: var(--slate-2);
-  margin-bottom: var(--line-break);
+  margin-bottom: 5px;
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 5px 5px 3px 8px;

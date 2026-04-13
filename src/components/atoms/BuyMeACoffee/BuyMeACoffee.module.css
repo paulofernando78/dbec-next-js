@@ -4,6 +4,7 @@
   padding: 3px 5px;
   width: max-content;
   background-color: var(--yellow-1);
+  color: black;
 }
 
 .coffee:hover {
