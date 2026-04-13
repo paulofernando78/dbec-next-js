@@ -1,4 +1,5 @@
 import styles from "./BuyMeACoffee.module.css"
+import { Image } from "@/components/atoms/Image";
 
 export const BuyMeACoffee = ({className}) => {
   return (
@@ -8,7 +9,7 @@ export const BuyMeACoffee = ({className}) => {
       rel="noopener noreferrer"
       className={`${styles.coffee} coffee`}
     >
-      ☕ Buy me a coffee
+      <img src="/assets/img/coffee.png" className={styles.img}/>
     </a>
   );
 };

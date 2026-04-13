@@ -1,4 +1,4 @@
-import { Luckiest_Guy, Montserrat, Oswald } from "next/font/google";
+import { Luckiest_Guy, Montserrat, Oswald, Allura } from "next/font/google";
 import Script from "next/script";
 
 import styles from "./layout.module.css";
@@ -13,20 +13,26 @@ import { BuyMeACoffee } from "@/components/atoms/BuyMeACoffee";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
-  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const luckiestGuy = Luckiest_Guy({
   variable: "--font-luckiestGuy",
-  weight: "400",
   subsets: ["latin"],
+  weight: "400",
 });
 
 const oswald = Oswald({
   variable: "--font-oswald",
-  weight: "400",
   subsets: ["latin"],
+  weight: "400",
+});
+
+const allura = Allura({
+  variable: "--font-allura",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata = {
@@ -69,7 +75,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body
-        className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable}`}
+        className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable} ${allura.variable}`}
       >
         <ThemeProvider>
           <div className="layout">
