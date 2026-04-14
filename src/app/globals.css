@@ -38,11 +38,11 @@
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: .6vw;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gray-3);
+  background: var(--gray-4);
   border-radius: 10px;
 }
 

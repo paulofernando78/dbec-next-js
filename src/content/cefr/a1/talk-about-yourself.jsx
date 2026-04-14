@@ -12,7 +12,7 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold, mark, underline, portuguese } from "@/helpers/content";
+import { content, bold, underline, portuguese } from "@/helpers/content";
 
 export const metadata = {
   title: "A1 Beginner | Talk About Yourself",
@@ -183,9 +183,7 @@ export default function TalkAboutYourself() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: [
-                        "I am a musician. I play the drums. I play in bars and at events.",
-                      ],
+                      parts: ["I am programmer. I work from home."],
                     }),
                   ],
                 },
@@ -193,7 +191,7 @@ export default function TalkAboutYourself() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Cool!"],
+                      parts: ["Easy life, huh?"],
                     }),
                   ],
                 },
@@ -202,7 +200,7 @@ export default function TalkAboutYourself() {
           </Section>
 
           <Section id="meaning" heading={3}>
-            <Paragraph
+            <Line
               value={[
                 ...content({
                   parts: [
@@ -211,7 +209,7 @@ export default function TalkAboutYourself() {
                 }),
               ]}
             />
-            <Paragraph
+            <Line
               value={[
                 ...content({
                   parts: [
@@ -225,52 +223,204 @@ export default function TalkAboutYourself() {
 
             <LineBreak />
 
-            <List
-              items={[
+            <Column
+              width="260"
+              cols={[
+                // Name
                 {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Name: "),
-                        "My name’s Diego.",
-                        " / ",
-                        "I’m Diego.",
+                  bgColor: "var(--slate-4)",
+                  textColor: "white",
+                  column: "Name",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/whats-your-name.mp3",
+                              parts: ["What’s your name?"],
+                            }),
+                          ],
+                        },
                       ],
-                    }),
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/my-names.mp3",
+                              parts: ["My name’s..."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im.mp3",
+                              parts: ["I’m..."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
+                // Country / Nationality
                 {
-                  value: [
-                    ...content({
-                      parts: [bold("Country / Nationality: "), "I’m from Brazil. I’m Brazilian."],
-                    }),
+                  bgColor: "var(--slate-4)",
+                  textColor: "white",
+                  column: "Country / Nationality",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/where-are-you-from.mp3",
+                              parts: ["Where are you from?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im-from-brazil-im-brazilian-i-live-in-sao-paulo.mp3",
+                              parts: [
+                                "I’m from Brazil. I’m Brazilian. I live in São Paulo.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im-from-the-united-states-im-american-i-live-in-new-york.mp3",
+                              parts: [
+                                "I’m from the United States. I’m American. I live in New York.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im-from-england-im-british-i-live-in-london.mp3",
+                              parts: [
+                                "I’m from England. I’m British. I live in London.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
+                // Studies / Job
                 {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Studies / Job: "),
-                        "I’m a student.",
-                        " / ",
-                        "I’m a teacher.",
+                  bgColor: "var(--slate-4)",
+                  textColor: "white",
+                  column: "Studies / Job",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do.mp3",
+                              parts: ["What do you do?"],
+                            }),
+                          ],
+                        },
                       ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Work place: "),
-                        "I work in an office.",
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im-a-teacher-i-work-in-a-school.mp3",
+                              parts: ["I’m a teacher. I work in a school."],
+                            }),
+                          ],
+                        },
                       ],
-                    }),
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im-an-accountant-i-work-in-an-office.mp3",
+                              parts: [
+                                "I’m an accountant. I work in an office.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im-a-doctor-i-work-in-a-hospital.mp3",
+                              parts: ["I’m a doctor. I work in a hospital."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/Im-a-software-developer-i-work-from-home.mp3",
+                              parts: [
+                                "I’m a software developer. I work from home.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
               ]}
             />
+
             <LineBreak />
+
             <Line
               value={[
                 ...content({
@@ -284,30 +434,22 @@ export default function TalkAboutYourself() {
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "Where are you from?",
-                      ],
+                      parts: ["Where are you from?"],
                     }),
                     ...content({
-                      icons: ["correct"],
-                      parts: [       
-                        "Where are you from originally?",
-                      ],
+                      icons: ["arrow"],
+                      parts: ["Where are you from originally?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "What do you do?",
-                      ],
+                      parts: ["What do you do?"],
                     }),
                     ...content({
                       icons: ["arrow"],
-                      parts: [
-                        "What do you do for a living?",
-                      ],
+                      parts: ["What do you do for a living?"],
                     }),
                   ],
                 },
@@ -355,13 +497,7 @@ export default function TalkAboutYourself() {
                   value: [
                     ...content({
                       icons: ["incorrect"],
-                      parts: [
-                        "Where ",
-                        underline("you are"),
-                        " ",
-                        "from?"
-                      ],
-                      
+                      parts: ["Where ", underline("you are"), " ", "from?"],
                     }),
                     ...content({
                       icons: ["correct"],
@@ -374,127 +510,33 @@ export default function TalkAboutYourself() {
           </Section>
 
           <Section
-            id="pronunciation-form"
-            label="Pronunciation + Form"
+            id="pronunciation"
+            label="Pronunciation"
             heading={3}
           >
             <LineBreak />
-
-            <Column
-              width="260"
-              cols={[
+            <List
+              items={[
                 {
-                  bgColor: "var(--green-6)",
-                  textColor: "white",
-                  column: "Questions",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["What’s your name?"],
-                            }),
-                          ],
-                        },
+                  value: [
+                    ...content({
+                      audio:
+                        "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do.mp3",
+                      parts: ["What do you do?"],
+                    }),
+                     ...content({
+                      audio:
+                        "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-2.mp3",
+                      parts: [
+                        "What ",
+                        underline("do you"),
+                        " do?"
                       ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["Where are you from?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["What do you do?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  bgColor: "var(--red-4)",
-                  textColor: "white",
-                  column: "Short Answers",
-                  blocks: [
-                    {
-                      block: [
-                        { text: [...content({ parts: ["I’m Diego."] })] },
-                      ],
-                    },
-                    {
-                      block: [
-                        { text: [...content({ parts: ["I’m from Brazil."] })] },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["I’m a student."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  bgColor: "var(--yellow-4)",
-                  textColor: "white",
-                  column: "Extra Information",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["My first name is Diego."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["I’m from Salvador, Brazil."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/assets/audio/general/Im-a-teacher.mp3",
-                              parts: ["I’m a teacher."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
+                    }),
                   ],
                 },
               ]}
             />
-
             <LineBreak />
           </Section>
 
