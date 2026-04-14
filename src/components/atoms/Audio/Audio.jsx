@@ -1,5 +1,7 @@
 "use client";
 
+import styles from "../../molecules/ContentToken/ContentToken.module.css"
+
 import { useRef, useState } from "react";
 import { PlayAudio, StopAudio } from "@/lib/svg-imports.js";
 
@@ -73,9 +75,9 @@ export const Audio = ({ src }) => {
   return (
     <>
       {playing ? (
-        <StopAudio onClick={handleStop} className="icon-position" />
+        <StopAudio onClick={handleStop} className={styles.iconPosition} />
       ) : (
-        <PlayAudio onClick={handlePlay} className="icon-position" />
+        <PlayAudio onClick={handlePlay} className={styles.iconPosition} />
       )}
 
       <audio

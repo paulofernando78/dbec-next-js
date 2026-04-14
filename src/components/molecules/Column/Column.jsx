@@ -34,7 +34,7 @@ export const Column = ({ cols = [], maxCols, width = 250 }) => {
                 {(c.blocks || []).map((bs, bsIndex) => (
                   <div
                     key={bsIndex}
-                    className={bs.lineBreak ? "line-break-item" : undefined}
+                    className={bs.lineBreak ? "line-break-item" : ""}
                   >
                     {(bs.block || []).map((b, bIndex) => (
                       <ContentToken key={bIndex} text={b.text} />

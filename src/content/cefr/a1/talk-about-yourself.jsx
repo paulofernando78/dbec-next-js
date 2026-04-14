@@ -12,7 +12,7 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold, underline, portuguese } from "@/helpers/content";
+import { content, audio, bold, mark, underline, portuguese } from "@/helpers/content";
 
 export const metadata = {
   title: "A1 Beginner | Talk About Yourself",
@@ -293,6 +293,9 @@ export default function TalkAboutYourself() {
                       ],
                     },
                     {
+                      lineBreak: true
+                    },
+                    {
                       block: [
                         {
                           text: [
@@ -337,6 +340,40 @@ export default function TalkAboutYourself() {
                         },
                       ],
                     },
+                    {
+                      lineBreak: true
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              icons: ["variation"],
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/where-do-you-come-from.mp3",
+                              parts: ["Where do you come from?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      lineBreak: true
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              icons: ["variation"],
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/i-come-from.mp3",
+                              parts: ["I come from..."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
                 // Studies / Job
@@ -357,6 +394,52 @@ export default function TalkAboutYourself() {
                           ],
                         },
                       ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                              "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-2.mp3",
+                              icons: ["soundVariation"],
+                              parts: ["What do you do?"],
+                            }),                      
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                              "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-for-a-living.mp3",
+                              parts: ["What do you do for a living?"],
+                            }),                      
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                              "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-for-a-living-2.mp3",
+                               icons: ["soundVariation"],
+                              parts: [
+                                "What do you do for a living?"
+                              ],
+                            }),                      
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      lineBreak: true
                     },
                     {
                       block: [
@@ -424,6 +507,97 @@ export default function TalkAboutYourself() {
             <Line
               value={[
                 ...content({
+                  parts: [
+                    bold("Use "),
+                    mark("a"),
+                    bold(" before consonant sounds."),
+                  ],
+                }),
+              ]}
+            />
+            <LineBreak />
+            <List
+              items={[
+                {
+                  value: [
+                    ...content({
+                      parts: ["I’m ", underline("a t"), "eacher."],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      parts: ["I’m ", underline("a d"), "octor."],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      parts: ["I’m ", underline("a s"), "oftware developer."],
+                    }),
+                  ],
+                },
+              ]}
+            />
+            <LineBreak />
+            <Line
+              value={[
+                ...content({
+                  parts: [
+                    "Use ",
+                    mark("an"),
+                    " before vowel sounds (a, e, i, o, u).",
+                  ],
+                }),
+              ]}
+            />
+            <LineBreak />
+            <List
+              items={[
+                {
+                  value: [
+                    ...content({
+                      icons: ["correct"],
+                      parts: ["I’m ", underline("an a"), "ccountant."],
+                    }),
+                    ...content({
+                      icons: ["incorrect"],
+                      parts: ["I’m a accountant."],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      icons: ["correct"],
+                      parts: ["I’m ", underline("an a"), "rchitect."],
+                    }),
+                    ...content({
+                      icons: ["incorrect"],
+                      parts: ["I’m a architect."],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      icons: ["incorrect"],
+                      parts: ["Where ", underline("you are"), " ", "from?"],
+                    }),
+                    ...content({
+                      icons: ["correct"],
+                      parts: ["Where are you from?"],
+                    }),
+                  ],
+                },
+              ]}
+            />
+            <LineBreak />
+            <Line
+              value={[
+                ...content({
                   parts: [bold("Variations: ")],
                 }),
               ]}
@@ -461,50 +635,6 @@ export default function TalkAboutYourself() {
                 ...content({
                   parts: [bold("Common mistakes:")],
                 }),
-              ]}
-            />
-
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      icons: ["incorrect"],
-                      parts: ["I’m accountant."],
-                    }),
-                    ...content({
-                      icons: ["correct"],
-                      parts: ["I’m an accountant"],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      icons: ["incorrect"],
-                      parts: ["I’m musician."],
-                    }),
-                    ...content({
-                      icons: ["bullet"],
-                    }),
-                    ...content({
-                      icons: ["correct"],
-                      parts: ["I’m a musician"],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      icons: ["incorrect"],
-                      parts: ["Where ", underline("you are"), " ", "from?"],
-                    }),
-                    ...content({
-                      icons: ["correct"],
-                      parts: ["Where are you from?"],
-                    }),
-                  ],
-                },
               ]}
             />
           </Section>
@@ -674,7 +804,6 @@ export default function TalkAboutYourself() {
                 ],
               }}
             />
-
           </Section>
 
           <Section id="production" heading={3}>

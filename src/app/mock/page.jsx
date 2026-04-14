@@ -77,8 +77,45 @@ export default function Mock() {
                     "attention",
                     "correct",
                     "incorrect",
-                    "arrow",
                     "compare",
+                    "arrow",
+                    "variation",
+                    "soundVariation",
+                  ],
+                  audio: "/",
+                  parts: [
+                    "normal ",
+                    audio("/"),
+                    bold("bold"),
+                    " ",
+                    italic("italic"),
+                    " ",
+                    mark("mark"),
+                    " ",
+                    underline("underline"),
+                    " ",
+                    boldMark("bold-mark"),
+                    " ",
+                    phonetics("phonetics"),
+                    " ",
+                    portuguese("portuguese"),
+                  ],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  icons: [
+                    "us",
+                    "uk",
+                    "attention",
+                    "correct",
+                    "incorrect",
+                    "compare",
+                    "arrow",
+                    "variation",
+                    "soundVariation",
                   ],
                   audio: "/",
                   parts: [

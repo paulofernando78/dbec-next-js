@@ -1,12 +1,16 @@
+import styles from "../components/molecules/ContentToken/ContentToken.module.css"
+
+const color = "#999999";
 const iconSize = "1.5rem";
 
-export const Arrow = () => (
+export const Arrow = ({ className}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24px"
     height="24px"
     viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
+    className={className}
   >
     <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
   </svg>
@@ -15,9 +19,9 @@ export const Arrow = () => (
 export const ArrowUp = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="28px"
     height="28px"
-    viewBox="0 -960 960 960"
     fill="black"
   >
     <path d="M440-320h80v-168l64 64 56-56-160-160-160 160 56 56 64-64v168Zm40 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
@@ -27,10 +31,10 @@ export const ArrowUp = () => (
 export const Attention = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
     className={className}
   >
     <path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240Zm40 412L346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-112 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z" />
@@ -40,10 +44,10 @@ export const Attention = ({ className }) => (
 export const Check = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
   >
     <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
   </svg>
@@ -52,10 +56,10 @@ export const Check = () => (
 export const Close = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
   >
     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
   </svg>
@@ -64,10 +68,10 @@ export const Close = () => (
 export const Compare = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
     {...props}
   >
     <path d="m320-160-56-57 103-103H80v-80h287L264-503l56-57 200 200-200 200Zm320-240L440-600l200-200 56 57-103 103h287v80H593l103 103-56 57Z" />
@@ -77,10 +81,10 @@ export const Compare = (props) => (
 export const Content = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
   >
     <path d="M400-400h160v-80H400v80Zm0-120h320v-80H400v80Zm0-120h320v-80H400v80Zm-80 400q-33 0-56.5-23.5T240-320v-480q0-33 23.5-56.5T320-880h480q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H320Zm0-80h480v-480H320v480ZM160-80q-33 0-56.5-23.5T80-160v-560h80v560h560v80H160Zm160-720v480-480Z" />
   </svg>
@@ -89,10 +93,10 @@ export const Content = () => (
 export const ContentLink = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
     {...props}
   >
     <path d="M400-280h160v-80H400v80Zm0-160h280v-80H400v80ZM280-600h400v-80H280v80Zm200 120ZM265-80q-79 0-134.5-55.5T75-270q0-57 29.5-102t77.5-68H80v-80h240v240h-80v-97q-37 8-61 38t-24 69q0 46 32.5 78t77.5 32v80Zm135-40v-80h360v-560H200v160h-80v-160q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H400Z" />
@@ -102,9 +106,9 @@ export const ContentLink = (props) => (
 export const Correct = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width={iconSize}
     height={iconSize}
-    viewBox="0 -960 960 960"
     fill="var(--green-7)"
     className={className}
   >
@@ -115,9 +119,9 @@ export const Correct = ({ className }) => (
 export const DarkMode = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="1.4rem"
     height="1.4rem"
-    viewBox="0 -960 960 960"
     fill="var(--blue-5)"
   >
     <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
@@ -127,10 +131,10 @@ export const DarkMode = () => (
 export const DictionaryBook = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="24px"
     viewBox="0 -960 960 960"
     width="24px"
-    fill="#999999"
+    height="24px"
+    fill={color}
   >
     <path d="M160-391h45l23-66h104l24 66h44l-97-258h-46l-97 258Zm81-103 38-107h2l38 107h-78Zm319-70v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-499Z" />
   </svg>
@@ -139,9 +143,9 @@ export const DictionaryBook = () => (
 export const Incorrect = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width={iconSize}
     height={iconSize}
-    viewBox="0 -960 960 960"
     fill="var(--red-5)"
     className={className}
   >
@@ -152,10 +156,10 @@ export const Incorrect = ({ className }) => (
 export const LinkIcon = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="24px"
     viewBox="0 -960 960 960"
     width="24px"
-    fill="#999999"
+    height="24px"
+    fill={color}
     className={className}
   >
     <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
@@ -165,10 +169,10 @@ export const LinkIcon = ({ className }) => (
 export const Keyboard = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="24px"
     viewBox="0 -960 960 960"
+    height="24px"
     width="24px"
-    fill="#999999"
+    fill={color}
   >
     <path d="M160-200q-33 0-56.5-23.5T80-280v-400q0-33 23.5-56.5T160-760h640q33 0 56.5 23.5T880-680v400q0 33-23.5 56.5T800-200H160Zm0-80h640v-400H160v400Zm160-40h320v-80H320v80ZM200-440h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80ZM200-560h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80Zm120 0h80v-80h-80v80ZM160-280v-400 400Z" />
   </svg>
@@ -177,10 +181,10 @@ export const Keyboard = () => (
 export const Lesson = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width={iconSize}
     height={iconSize}
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
     {...props}
   >
     <path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
@@ -190,34 +194,37 @@ export const Lesson = (props) => (
 export const LightMode = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="1.125rem"
     height="1.125rem"
-    viewBox="0 -960 960 960"
     fill="var(--yellow-4)"
   >
     <path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z" />
   </svg>
 );
 
-export const PauseAudio = (props) => (
+export const PauseAudio = ({className, ...props}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="24px"
     viewBox="0 -960 960 960"
-    width="24px"
-    fill="#999999"
+    width={iconSize}
+    height={iconSize}
+    fill={color}
+    className={className}
     {...props}
   >
     <path d="M360-320h80v-320h-80v320Zm160 0h80v-320h-80v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
   </svg>
 );
 
-export const PlayAudio = (props) => (
+export const PlayAudio = ({className, ...props}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={iconSize}
     viewBox="0 -960 960 960"
-    fill="#999999"
+    width={iconSize}
+    height={iconSize}
+    fill={color}
+    className={className}
     {...props}
   >
     <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
@@ -227,10 +234,10 @@ export const PlayAudio = (props) => (
 export const Question = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="24px"
     viewBox="0 -960 960 960"
     width="24px"
-    fill="#999999"
+    height="24px"
+    fill={color}
     className={className}
   >
     <path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
@@ -240,10 +247,10 @@ export const Question = ({ className }) => (
 export const Redo = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="20px"
     height="20px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
   >
     <path d="M480-80q-75 0-140.5-28.5t-114-77q-48.5-48.5-77-114T120-440h80q0 117 81.5 198.5T480-160q117 0 198.5-81.5T760-440q0-117-81.5-198.5T480-720h-6l62 62-56 58-160-160 160-160 56 58-62 62h6q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-440q0 75-28.5 140.5t-77 114q-48.5 48.5-114 77T480-80Z" />
   </svg>
@@ -252,10 +259,10 @@ export const Redo = () => (
 export const Search = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="22px"
     height="22px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
   >
     <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
   </svg>
@@ -264,21 +271,34 @@ export const Search = () => (
 export const Show = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
   >
     <path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+  </svg>
+);
+
+export const SoundVariation = ({ className}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
+    width="24px"
+    height="24px"
+    fill={color}
+    className={className}
+  >
+    <path d="M280-120v-123q-104-14-172-93T40-520h80q0 83 58.5 141.5T320-320h10q5 0 10-1 13 20 28 37.5t32 32.5q-10 3-19.5 4.5T360-243v123h-80Zm20-282q-43-8-71.5-40.5T200-520v-240q0-50 35-85t85-35q50 0 85 35t35 85v160H280v80q0 31 5 60.5t15 57.5Zm255-33q-35-35-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35q-50 0-85-35Zm45 315v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T640-320q83 0 141.5-58.5T840-520h80q0 105-68 184t-172 93v123h-80Zm68.5-371.5Q680-503 680-520v-240q0-17-11.5-28.5T640-800q-17 0-28.5 11.5T600-760v240q0 17 11.5 28.5T640-480q17 0 28.5-11.5ZM640-640Z" />
   </svg>
 );
 
 export const StopAudio = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height={iconSize}
     viewBox="0 -960 960 960"
-    fill="#999999"
+    height={iconSize}
+    fill={color}
     {...props}
   >
     <path d="M320-320h320v-320H320v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
@@ -288,13 +308,26 @@ export const StopAudio = (props) => (
 export const UnderConstruction = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    viewBox="0 -960 960 960"
-    fill="#999999"
+    fill={color}
     className={className}
   >
     <path d="m620-284 56-56q6-6 6-14t-6-14L540-505q4-11 6-22t2-25q0-57-40.5-97.5T410-690q-17 0-34 4.5T343-673l94 94-56 56-94-94q-8 16-12.5 33t-4.5 34q0 57 40.5 97.5T408-412q13 0 24.5-2t22.5-6l137 136q6 6 14 6t14-6ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+  </svg>
+);
+
+export const Variation = ({ className}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
+    width="24px"
+    height="24px"
+    fill={color}
+    className={className}
+  >
+    <path d="M440-80v-200q0-56-17-83t-45-53l57-57q12 11 23 23.5t22 26.5q14-19 28.5-33.5T538-485q38-35 69-81t33-161l-63 63-57-56 160-160 160 160-56 56-64-63q-2 143-44 203.5T592-425q-32 29-52 56.5T520-280v200h-80ZM248-633q-4-20-5.5-44t-2.5-50l-64 63-56-56 160-160 160 160-57 56-63-62q0 21 2 39.5t4 34.5l-78 19Zm86 176q-20-21-38.5-49T263-575l77-19q10 27 23 46t28 34l-57 57Z" />
   </svg>
 );
 
@@ -302,7 +335,7 @@ export const UKflag = ({ className }) => (
   <img
     src="/assets/img/flags/uk.svg"
     alt="UK Flag icon"
-    className={`flag-icon ${className}`}
+    className={`${styles.flagIcon} ${className}`}
   />
 );
 
@@ -310,6 +343,6 @@ export const USflag = ({ className }) => (
   <img
     src="/assets/img/flags/us.svg"
     alt="US Flag icon"
-    className={`flag-icon ${className}`}
+    className={`${styles.flagIcon} ${className}`}
   />
 );

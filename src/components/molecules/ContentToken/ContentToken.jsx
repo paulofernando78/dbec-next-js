@@ -1,3 +1,5 @@
+import styles from "./ContentToken.module.css"
+
 import { Audio } from "@/components/atoms/Audio";
 import { Bold } from "@/components/atoms/Bold";
 import { Italic } from "@/components/atoms/Italic";
@@ -18,6 +20,8 @@ import {
   Incorrect,
   Arrow,
   Compare,
+  Variation,
+  SoundVariation
 } from "@/lib/svg-imports";
 
 export const ContentToken = ({ value, text = [] }) => {
@@ -32,6 +36,8 @@ export const ContentToken = ({ value, text = [] }) => {
     incorrect: Incorrect,
     arrow: Arrow,
     compare: Compare,
+    variation: Variation,
+    soundVariation: SoundVariation
   };
 
   const legacyFlagMap = {
@@ -42,6 +48,8 @@ export const ContentToken = ({ value, text = [] }) => {
     arrow: "arrow",
     incorrect: "incorrect",
     comparison: "compare",
+    variation: "variation",
+    soundVariation: "soundVariation"
   };
 
   const renderIcons = (part) => {
@@ -52,7 +60,12 @@ export const ContentToken = ({ value, text = [] }) => {
       part.icons.forEach((name) => {
         const Icon = iconMap[name];
         if (Icon) {
-          icons.push(<Icon key={`icon-${name}`} className="icon-position" />);
+          const className =
+            name === "soundVariation"
+              ? `${styles.iconPosition} ${styles.soundVariationIcon}`
+              : styles.iconPosition
+
+          icons.push(<Icon key={`icon-${name}`} className={className} />);
         }
       });
     }
@@ -129,7 +142,6 @@ export const ContentToken = ({ value, text = [] }) => {
             )}
             {part.bullet && <BulletPoint />}
             {part.square && !isLastSquare && <SquarePoint />}
-            {part.lineBreak && <span className="block" />}
             {content}
           </span>
         );
