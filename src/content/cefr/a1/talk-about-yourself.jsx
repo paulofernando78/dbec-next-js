@@ -183,7 +183,7 @@ export default function TalkAboutYourself() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["I am programmer. I work from home."],
+                      parts: ["I am a programmer. I work from home."],
                     }),
                   ],
                 },
@@ -509,11 +509,7 @@ export default function TalkAboutYourself() {
             />
           </Section>
 
-          <Section
-            id="pronunciation"
-            label="Pronunciation"
-            heading={3}
-          >
+          <Section id="pronunciation" label="Pronunciation" heading={3}>
             <LineBreak />
             <List
               items={[
@@ -524,14 +520,10 @@ export default function TalkAboutYourself() {
                         "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do.mp3",
                       parts: ["What do you do?"],
                     }),
-                     ...content({
+                    ...content({
                       audio:
                         "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-2.mp3",
-                      parts: [
-                        "What ",
-                        underline("do you"),
-                        " do?"
-                      ],
+                      parts: ["What ", underline("do you"), " do?"],
                     }),
                   ],
                 },
@@ -540,6 +532,46 @@ export default function TalkAboutYourself() {
           </Section>
 
           <Section id="practice" heading={3}>
+            <Radio
+              exercise={{
+                instruction: "Choose the best response.",
+                questions: [
+                  {
+                    question: "1. What’s your name?",
+                    options: [
+                      { option: "I’m from Peru.", isCorrect: false },
+                      { option: "My name’s Camila.", isCorrect: true },
+                      { option: "I’m doctor.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "2. Where are you from?",
+                    options: [
+                      { option: "I’m from Argentina.", isCorrect: true },
+                      { option: "I’m a student.", isCorrect: false },
+                      { option: "Nice to meet you.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "3. Are you a student?",
+                    options: [
+                      { option: "I’m from Mexico.", isCorrect: false },
+                      { option: "My last name is Costa.", isCorrect: false },
+                      { option: "Yes, I am.", isCorrect: true },
+                    ],
+                  },
+                  {
+                    question: "4. What do you do?",
+                    options: [
+                      { option: "I’m from Brazil.", isCorrect: false },
+                      { option: "I’m an architect.", isCorrect: true },
+                      { option: "A-N-A.", isCorrect: false },
+                    ],
+                  },
+                ],
+              }}
+            />
+            <LineBreak />
             <FillInTheBlanks
               exercise={{
                 instructions:
@@ -579,48 +611,70 @@ export default function TalkAboutYourself() {
                 ],
               }}
             />
-
             <LineBreak />
-
-            <Radio
+            <FillInTheBlanks
+              showWordBank={false}
               exercise={{
-                instruction: "Choose the best response.",
-                questions: [
+                instructions: "Build the sentence in the correct order.",
+                blocks: [
                   {
-                    question: "1. What’s your name?",
-                    options: [
-                      { option: "I’m from Peru.", isCorrect: false },
-                      { option: "My name’s Camila.", isCorrect: true },
-                      { option: "I’m doctor.", isCorrect: false },
+                    block: [
+                      { text: "1. your / name? / What's" },
+                      {
+                        blank: [
+                          "What's your name?",
+                          "What is your name?",
+                          "What’s your name?",
+                        ],
+                      },
                     ],
+                    lineBreak: true,
                   },
                   {
-                    question: "2. Where are you from?",
-                    options: [
-                      { option: "I’m from Argentina.", isCorrect: true },
-                      { option: "I’m a student.", isCorrect: false },
-                      { option: "Nice to meet you.", isCorrect: false },
+                    block: [
+                      { text: "2. from? / you / Where / are" },
+                      { blank: ["Where are you from?"] },
                     ],
+                    lineBreak: true,
                   },
                   {
-                    question: "3. Are you a student?",
-                    options: [
-                      { option: "I’m from Mexico.", isCorrect: false },
-                      { option: "My last name is Costa.", isCorrect: false },
-                      { option: "Yes, I am.", isCorrect: true },
+                    block: [
+                      { text: "3. a / I’m / student." },
+                      {
+                        blank: [
+                          "I am a student.",
+                          "I'm a student.",
+                          "I’m a student.",
+                        ],
+                      },
                     ],
+                    lineBreak: true,
                   },
                   {
-                    question: "4. What’s your job?",
-                    options: [
-                      { option: "I’m from Brazil.", isCorrect: false },
-                      { option: "I’m an architect.", isCorrect: true },
-                      { option: "A-N-A.", isCorrect: false },
+                    block: [
+                      { text: "4. from / I’m / Brazil." },
+                      { blank: ["I’m from Brazil.", "I am from Brazil."] },
                     ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "5. work / I / from / home." },
+                      { blank: ["I work from home."] },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "6. do / What / you / do?" },
+                      { blank: ["What do you do?"] },
+                    ],
+                    lineBreak: true,
                   },
                 ],
               }}
             />
+
           </Section>
 
           <Section id="production" heading={3}>

@@ -50,7 +50,7 @@ const buildDescription = (descriptionText, blocks) => {
   return shuffleItems(items).join(" • ");
 };
 
-export const FillInTheBlanks = ({ exercise }) => {
+export const FillInTheBlanks = ({ exercise, showWordBank = true }) => {
   const descriptionText = exercise?.description;
   const rawBlocks = exercise?.blocks;
   const blocks = Array.isArray(rawBlocks) ? rawBlocks : [];
@@ -59,7 +59,7 @@ export const FillInTheBlanks = ({ exercise }) => {
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
   const [description, setDescription] = useState(() =>
-    buildDescription(descriptionText, blocks),
+    showWordBank ? buildDescription(descriptionText, blocks) : "",
   );
 
   const normalizeAnswer = (value) =>
@@ -71,8 +71,10 @@ export const FillInTheBlanks = ({ exercise }) => {
 
   useEffect(() => {
     const nextBlocks = Array.isArray(rawBlocks) ? rawBlocks : [];
-    setDescription(buildDescription(descriptionText, nextBlocks));
-  }, [descriptionText, rawBlocks]);
+    setDescription(
+      showWordBank ? buildDescription(descriptionText, nextBlocks) : "",
+    );
+  }, [descriptionText, rawBlocks, showWordBank]);
 
   if (!exercise || !rawBlocks) {
     return null;
@@ -110,7 +112,7 @@ export const FillInTheBlanks = ({ exercise }) => {
     setAnswers({});
     setResults({});
     setChecked(false);
-    setDescription(buildDescription(descriptionText, blocks));
+    setDescription(showWordBank ? buildDescription(descriptionText, blocks) : "");
   };
 
   const totalBlanks = blocks.reduce((acc, bs) => {
@@ -122,7 +124,7 @@ export const FillInTheBlanks = ({ exercise }) => {
       <p>
         <Bold>{exercise.instructions}</Bold>
       </p>
-      {description && (
+      {showWordBank && description && (
         <Card>
           <span>{description}</span>
         </Card>
