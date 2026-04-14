@@ -486,29 +486,23 @@ export default function Introductions() {
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/how-are-you.mp3",
-                  parts: ["How are you?"],
+                  parts: ["How are you? ", portuguese("Como você está?")],
                 }),
               ]}
             />
+
             <Line
               value={[
                 ...content({
                   audio:
                     "/assets/audio/cefr/a1/introductions/how-are-you-doing.mp3",
-                  parts: ["How are you doing?"],
+                  parts: [
+                    "How are you doing? ",
+                    portuguese("Como você está? / Como vai você?"),
+                  ],
                 }),
               ]}
             />
-            <Line
-              value={[
-                ...content({
-                  audio:
-                    "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
-                  parts: ["How's it going?"],
-                }),
-              ]}
-            />
-            <LineBreak />
             <Line
               value={[
                 ...content({
@@ -530,6 +524,73 @@ export default function Introductions() {
                   audio:
                     "/assets/audio/cefr/a1/introductions/im-pretty-good.mp3",
                   parts: ["I'm pretty-good."],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio: "/assets/audio/cefr/a1/introductions/not-bad.mp3",
+                  parts: ["Not bad."],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/cant-complain.mp3",
+                  parts: ["Can’t complain."],
+                }),
+              ]}
+            />
+            <LineBreak />
+            <Line
+              value={[
+                ...content({
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
+                  parts: [
+                    "How's it going? ",
+                    portuguese("Como estão as coisas? / Como está indo?"),
+                  ],
+                }),
+              ]}
+            />
+
+            <Line
+              value={[
+                ...content({
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/hows-everything.mp3",
+                  parts: [
+                    "How's everything? ",
+                    portuguese("Como está tudo?")
+                  ],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  parts: [italic("possible answers")],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio: "/assets/audio/cefr/a1/introductions/good.mp3",
+                  parts: ["Good."],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/pretty-good.mp3",
+                  parts: ["Pretty-good."],
                 }),
               ]}
             />

@@ -293,9 +293,6 @@ export default function TalkAboutYourself() {
                       ],
                     },
                     {
-                      lineBreak: true
-                    },
-                    {
                       block: [
                         {
                           text: [
@@ -356,9 +353,6 @@ export default function TalkAboutYourself() {
                           ],
                         },
                       ],
-                    },
-                    {
-                      lineBreak: true
                     },
                     {
                       block: [
@@ -635,28 +629,6 @@ export default function TalkAboutYourself() {
                 ...content({
                   parts: [bold("Common mistakes:")],
                 }),
-              ]}
-            />
-          </Section>
-
-          <Section id="pronunciation" label="Pronunciation" heading={3}>
-            <LineBreak />
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      audio:
-                        "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do.mp3",
-                      parts: ["What do you do?"],
-                    }),
-                    ...content({
-                      audio:
-                        "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-2.mp3",
-                      parts: ["What ", underline("do you"), " do?"],
-                    }),
-                  ],
-                },
               ]}
             />
           </Section>
