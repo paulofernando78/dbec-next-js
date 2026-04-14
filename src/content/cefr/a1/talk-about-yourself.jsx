@@ -537,7 +537,6 @@ export default function TalkAboutYourself() {
                 },
               ]}
             />
-            <LineBreak />
           </Section>
 
           <Section id="practice" heading={3}>
