@@ -1,6 +1,7 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
+import { Ribbon } from "@/components/atoms/Ribbon";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { CardLayout } from "@/components/molecules/CardLayout";
@@ -12,7 +13,7 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, audio, bold, mark, underline, portuguese } from "@/helpers/content";
+import { content, bold, mark, underline, portuguese } from "@/helpers/content";
 
 export const metadata = {
   title: "A1 Beginner | Talk About Yourself",
@@ -222,15 +223,15 @@ export default function TalkAboutYourself() {
             />
 
             <LineBreak />
-
+            <Ribbon label="Name" bgColor="var(--slate-7)" />
+            <LineBreak />
             <Column
               width="260"
               cols={[
-                // Name
+                // Questions
                 {
-                  bgColor: "var(--slate-4)",
-                  textColor: "white",
-                  column: "Name",
+                  column: "Questions",
+                  bgColor: "var(--slate-5)",
                   blocks: [
                     {
                       block: [
@@ -245,6 +246,13 @@ export default function TalkAboutYourself() {
                         },
                       ],
                     },
+                  ],
+                },
+                // Answers
+                {
+                  column: "Answers",
+                  bgColor: "var(--slate-5)",
+                  blocks: [
                     {
                       block: [
                         {
@@ -273,11 +281,18 @@ export default function TalkAboutYourself() {
                     },
                   ],
                 },
-                // Country / Nationality
+              ]}
+            />
+            <LineBreak />
+            <Ribbon label="Country / Nationality" bgColor="var(--slate-7)" />
+            <LineBreak />
+            <Column
+              width="260"
+              cols={[
+                // Questions
                 {
-                  bgColor: "var(--slate-4)",
-                  textColor: "white",
-                  column: "Country / Nationality",
+                  column: "Questions",
+                  bgColor: "var(--slate-5)",
                   blocks: [
                     {
                       block: [
@@ -298,40 +313,8 @@ export default function TalkAboutYourself() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a1/talk-about-yourself/im-from-brazil-im-brazilian-i-live-in-sao-paulo.mp3",
-                              parts: [
-                                "I’m from Brazil. I’m Brazilian. I live in São Paulo.",
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/talk-about-yourself/im-from-the-united-states-im-american-i-live-in-new-york.mp3",
-                              parts: [
-                                "I’m from the United States. I’m American. I live in New York.",
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/talk-about-yourself/im-from-england-im-british-i-live-in-london.mp3",
-                              parts: [
-                                "I’m from England. I’m British. I live in London.",
-                              ],
+                                "/assets/audio/cefr/a1/talk-about-yourself/where-do-you-come-from.mp3",
+                              parts: ["Where do you come from?"],
                             }),
                           ],
                         },
@@ -345,10 +328,29 @@ export default function TalkAboutYourself() {
                         {
                           text: [
                             ...content({
-                              icons: ["variation"],
                               audio:
                                 "/assets/audio/cefr/a1/talk-about-yourself/where-do-you-come-from.mp3",
-                              parts: ["Where do you come from?"],
+                              parts: ["Where are you from originally?"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                // Say...
+                {
+                  column: "Say...",
+                  bgColor: "var(--slate-5)",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/im-from.mp3",
+                              parts: ["I’m from..."],
                             }),
                           ],
                         },
@@ -359,7 +361,6 @@ export default function TalkAboutYourself() {
                         {
                           text: [
                             ...content({
-                              icons: ["variation"],
                               audio:
                                 "/assets/audio/cefr/a1/talk-about-yourself/i-come-from.mp3",
                               parts: ["I come from..."],
@@ -370,11 +371,70 @@ export default function TalkAboutYourself() {
                     },
                   ],
                 },
-                // Studies / Job
+                // Answers
                 {
-                  bgColor: "var(--slate-4)",
-                  textColor: "white",
-                  column: "Studies / Job",
+                  column: "Answers",
+                  bgColor: "var(--slate-5)",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/brazil-im-brazilian-i-live-in-sao-paulo.mp3",
+                              parts: [
+                                "...Brazil. I’m Brazilian. I live in São Paulo.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/the-united-states-im-american-i-live-in-new-york.mp3",
+                              parts: [
+                                "...the United States. I’m American. I live in New York.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/talk-about-yourself/england-im-british-i-live-in-london.mp3",
+                              parts: [
+                                "...England. I’m British. I live in London.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ]}
+            />
+            <LineBreak />
+            <Ribbon label="Studies / Jobs" bgColor="var(--slate-7)" />
+            <LineBreak />
+            <Column
+              width="260"
+              cols={[
+                // Questions
+                {
+                  column: "Answers",
+                  bgColor: "var(--slate-6)",
                   blocks: [
                     {
                       block: [
@@ -394,14 +454,17 @@ export default function TalkAboutYourself() {
                         {
                           text: [
                             ...content({
+                              icons: ["attention"],
                               audio:
-                              "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-2.mp3",
-                              icons: ["soundVariation"],
-                              parts: ["What do you do?"],
-                            }),                      
+                                "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-2.mp3",
+                              parts: ["Wha", underline("t do"), " you do?"],
+                            }),
                           ],
                         },
                       ],
+                    },
+                    {
+                      lineBreak: true,
                     },
                     {
                       block: [
@@ -409,9 +472,9 @@ export default function TalkAboutYourself() {
                           text: [
                             ...content({
                               audio:
-                              "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-for-a-living.mp3",
+                                "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-for-a-living.mp3",
                               parts: ["What do you do for a living?"],
-                            }),                      
+                            }),
                           ],
                         },
                       ],
@@ -421,20 +484,25 @@ export default function TalkAboutYourself() {
                         {
                           text: [
                             ...content({
+                              icons: ["attention"],
                               audio:
-                              "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-for-a-living-2.mp3",
-                               icons: ["soundVariation"],
+                                "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-for-a-living-2.mp3",
                               parts: [
-                                "What do you do for a living?"
+                                "Wha",
+                                underline("t do"),
+                                " you do for a living?",
                               ],
-                            }),                      
+                            }),
                           ],
                         },
                       ],
                     },
-                    {
-                      lineBreak: true
-                    },
+                  ],
+                },
+                // Answers
+                {
+                  column: "Answers",
+                  blocks: [
                     {
                       block: [
                         {
@@ -495,9 +563,7 @@ export default function TalkAboutYourself() {
                 },
               ]}
             />
-
             <LineBreak />
-
             <Line
               value={[
                 ...content({
@@ -586,49 +652,6 @@ export default function TalkAboutYourself() {
                     }),
                   ],
                 },
-              ]}
-            />
-            <LineBreak />
-            <Line
-              value={[
-                ...content({
-                  parts: [bold("Variations: ")],
-                }),
-              ]}
-            />
-
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      parts: ["Where are you from?"],
-                    }),
-                    ...content({
-                      icons: ["arrow"],
-                      parts: ["Where are you from originally?"],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: ["What do you do?"],
-                    }),
-                    ...content({
-                      icons: ["arrow"],
-                      parts: ["What do you do for a living?"],
-                    }),
-                  ],
-                },
-              ]}
-            />
-            <LineBreak />
-            <Line
-              value={[
-                ...content({
-                  parts: [bold("Common mistakes:")],
-                }),
               ]}
             />
           </Section>
