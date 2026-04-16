@@ -25,69 +25,48 @@ export default function DescribePastExperiences() {
       <Whiteboard
         title="A2 Elementary"
         subtitle="Describe past experiences"
-        description="Last weekend I visited my cousin and we watched a movie."
+        description="Last weekend I went to the beach."
       />
 
       <div className="line-break">
         <Card>
-          By the end of this class, students will be able to talk about
-          finished past experiences, use common regular and irregular past
-          verbs, and ask follow-up questions about yesterday, last weekend, or
-          last month.
+          By the end of this class, students will be able to talk about finished
+          past experiences, use common regular and irregular past verbs, and ask
+          follow-up questions about yesterday, last weekend, or last month.
         </Card>
 
         <PageSections>
           <Section id="introduction" heading={3}>
-            <CardLayout mediaPosition="left">
+            <Line
+              value={[
+                ...content({
+                  audio:
+                    "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+                  parts: [
+                    "",
+                    bold("Look at the pictures and listen to the sentences."),
+                  ],
+                }),
+              ]}
+            />
+            <LineBreak />
+            <CardLayout mediaPosition="top">
               <Image
-                src="/assets/img/general/woman-man-birthday-school.png"
-                alt="Two people talking at a birthday celebration."
-                width={320}
-                height={220}
+                src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
+                alt=""
+                width={250}
+                height={250}
               />
-              <div>
-                <Line
-                  value={[
-                    ...content({
-                      parts: [
-                        "",
-                        bold("Read and listen to the short past-time sentences."),
-                      ],
-                    }),
-                  ]}
-                />
-                <LineBreak />
+              <div className="text-align-center">
                 <Line
                   value={[
                     ...content({
                       audio:
-                        "/assets/audio/general/we-played-a-fun-game-after-school.mp3",
-                      parts: ["We played a fun game after school."],
+                        "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
+                      parts: ["Last weekend Laura wento the the beach."],
                     }),
                   ]}
-                />
-                <Line
-                  value={[
-                    ...content({
-                      parts: ["Laura visited her aunt on Saturday."],
-                    }),
-                  ]}
-                />
-                <Line
-                  value={[
-                    ...content({
-                      parts: ["They watched a movie in the evening."],
-                    }),
-                  ]}
-                />
-                <Paragraph
-                  value={[
-                    ...content({
-                      parts: [
-                        "When we describe past experiences, we talk about actions that started and finished in the past.",
-                      ],
-                    }),
-                  ]}
+                  className="text-align-center"
                 />
               </div>
             </CardLayout>
@@ -159,7 +138,9 @@ export default function DescribePastExperiences() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["We cooked dinner, talked for hours, and watched a movie."],
+                      parts: [
+                        "We cooked dinner, talked for hours, and watched a movie.",
+                      ],
                     }),
                   ],
                 },
@@ -183,7 +164,9 @@ export default function DescribePastExperiences() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Sounds good. I stayed home and finished a book."],
+                      parts: [
+                        "Sounds good. I stayed home and finished a book.",
+                      ],
                     }),
                   ],
                 },
@@ -236,28 +219,52 @@ export default function DescribePastExperiences() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Regular verbs: "), mark("visited"), ", ", mark("watched"), ", ", mark("finished")],
+                      parts: [
+                        bold("Regular verbs: "),
+                        mark("visited"),
+                        ", ",
+                        mark("watched"),
+                        ", ",
+                        mark("finished"),
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Irregular verbs: "), mark("went"), ", ", mark("had"), ", ", mark("saw")],
+                      parts: [
+                        bold("Irregular verbs: "),
+                        mark("went"),
+                        ", ",
+                        mark("had"),
+                        ", ",
+                        mark("saw"),
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Questions: "), mark("What did you do?"), " / ", mark("Did you go out?")],
+                      parts: [
+                        bold("Questions: "),
+                        mark("What did you do?"),
+                        " / ",
+                        mark("Did you go out?"),
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Short answers: "), mark("Yes, I did."), " / ", mark("No, I didn't.")],
+                      parts: [
+                        bold("Short answers: "),
+                        mark("Yes, I did."),
+                        " / ",
+                        mark("No, I didn't."),
+                      ],
                     }),
                   ],
                 },
@@ -265,7 +272,11 @@ export default function DescribePastExperiences() {
             />
           </Section>
 
-          <Section id="pronunciation-form" label="Pronunciation + Form" heading={3}>
+          <Section
+            id="pronunciation-form"
+            label="Pronunciation + Form"
+            heading={3}
+          >
             <Paragraph
               value={[
                 ...content({
@@ -295,11 +306,15 @@ export default function DescribePastExperiences() {
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["last weekend"] })] }],
+                      block: [
+                        { text: [...content({ parts: ["last weekend"] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["two days ago"] })] }],
+                      block: [
+                        { text: [...content({ parts: ["two days ago"] })] },
+                      ],
                     },
                   ],
                 },
@@ -327,15 +342,25 @@ export default function DescribePastExperiences() {
                   column: "Questions",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["What did you do?"] })] }],
+                      block: [
+                        { text: [...content({ parts: ["What did you do?"] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["Where did you go?"] })] }],
+                      block: [
+                        {
+                          text: [...content({ parts: ["Where did you go?"] })],
+                        },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["Did you have fun?"] })] }],
+                      block: [
+                        {
+                          text: [...content({ parts: ["Did you have fun?"] })],
+                        },
+                      ],
                     },
                   ],
                 },
@@ -403,7 +428,10 @@ export default function DescribePastExperiences() {
                     options: [
                       { option: "I visited my cousin.", isCorrect: true },
                       { option: "I am visiting now.", isCorrect: false },
-                      { option: "I usually visit on Fridays.", isCorrect: false },
+                      {
+                        option: "I usually visit on Fridays.",
+                        isCorrect: false,
+                      },
                     ],
                   },
                   {
@@ -417,7 +445,10 @@ export default function DescribePastExperiences() {
                   {
                     question: "3. Where did Laura go?",
                     options: [
-                      { option: "She went to her cousin's house.", isCorrect: true },
+                      {
+                        option: "She went to her cousin's house.",
+                        isCorrect: true,
+                      },
                       { option: "She goes every day.", isCorrect: false },
                       { option: "She is at work now.", isCorrect: false },
                     ],

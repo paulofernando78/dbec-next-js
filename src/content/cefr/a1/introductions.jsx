@@ -567,7 +567,7 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/just-working.mp3",
+                  audio: "/assets/audio/cefr/a1/introductions/just-chilling.mp3",
                   parts: ["Just chilling. ", portuguese("De boa / Relaxando")],
                 }),
               ]}

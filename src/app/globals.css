@@ -229,6 +229,10 @@ mark {
   border-radius: var(--border-radius);
 }
 
+.text-align-center {
+  text-align: center
+}
+
 .coffee {
   position: absolute;
   bottom: 5px;
