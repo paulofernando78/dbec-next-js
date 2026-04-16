@@ -200,7 +200,7 @@ export default function TalkAboutYourself() {
             />
           </Section>
 
-          <Section id="meaning" heading={3}>
+          <Section id="language-focus" heading={3}>
             <Line
               value={[
                 ...content({
@@ -321,7 +321,7 @@ export default function TalkAboutYourself() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     {
                       block: [

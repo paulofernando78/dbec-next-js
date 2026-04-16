@@ -212,7 +212,7 @@ export default function Numbers() {
             />
           </Section>
 
-          <Section id="meaning" heading={4}>
+          <Section id="language-focus" heading={4}>
             <Line
               value={[
                 ...content({

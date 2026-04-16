@@ -180,7 +180,7 @@ export default function FormalVsInformal() {
             />
           </Section>
 
-          <Section id="meaning" heading={3}>
+          <Section id="language-focus" heading={3}>
             <Paragraph
               value={[
                 ...content({

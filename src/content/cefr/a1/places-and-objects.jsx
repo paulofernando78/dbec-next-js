@@ -184,7 +184,7 @@ export default function PlacesAndObjects() {
             />
           </Section>
 
-          <Section id="meaning" heading={3}>
+          <Section id="language-focus" heading={3}>
             <Paragraph
               value={[
                 ...content({

@@ -82,15 +82,6 @@ export default function TalkAboutYourFreeTime() {
                     }),
                   ]}
                 />
-                <Paragraph
-                  value={[
-                    ...content({
-                      parts: [
-                        "People often talk about hobbies and activities when they want to know more about each other.",
-                      ],
-                    }),
-                  ]}
-                />
               </div>
             </CardLayout>
 
@@ -193,7 +184,8 @@ export default function TalkAboutYourFreeTime() {
             />
           </Section>
 
-          <Section id="meaning" heading={3}>
+          {/* Language Focus */}
+          <Section id="language-focus" heading={3}>
             <Paragraph
               value={[
                 ...content({
