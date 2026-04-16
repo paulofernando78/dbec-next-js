@@ -517,6 +517,14 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
+                  audio: "/assets/audio/cefr/a1/introductions/im-great.mp3",
+                  parts: ["I’m great. ", portuguese("Estou ótimo(a).")],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-good.mp3",
                   parts: ["I’m good. ", portuguese("Estou bem."), " ", italic("informal")],
                 }),
@@ -536,7 +544,7 @@ export default function Introductions() {
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/whats-up.mp3",
-                  parts: ["What’s up? ", portuguese("E aí, beleza?")],
+                  parts: ["What’s up? ", italic("informal "),portuguese("E aí, beleza?")],
                 }),
               ]}
             />
@@ -545,6 +553,38 @@ export default function Introductions() {
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/nothing-much.mp3",
                   parts: ["Nothing much. ", portuguese("Nada demais.")],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio: "/assets/audio/cefr/a1/introductions/not-much-you.mp3",
+                  parts: ["Not much, you? ", portuguese("Nada demais, e você?")],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio: "/assets/audio/cefr/a1/introductions/just-working.mp3",
+                  parts: ["Just chilling. ", portuguese("De boa / Relaxando")],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio: "/assets/audio/cefr/a1/introductions/same-as-usual.mp3",
+                  parts: ["Same as usual. ", portuguese("O de sempre")],
+                }),
+              ]}
+            />
+            <Line
+              value={[
+                ...content({
+                  audio: "/assets/audio/cefr/a1/introductions/just-working.mp3",
+                  parts: ["Just working. ", portuguese("Só trabalhando")],
                 }),
               ]}
             />
