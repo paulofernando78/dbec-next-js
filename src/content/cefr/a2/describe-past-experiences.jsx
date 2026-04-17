@@ -7,6 +7,7 @@ import { CardLayout } from "@/components/molecules/CardLayout";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
+import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
@@ -25,7 +26,7 @@ export default function DescribePastExperiences() {
       <Whiteboard
         title="A2 Elementary"
         subtitle="Describe past experiences"
-        description="Last weekend I went to the beach."
+        description="Last weekend, I went to the beach."
       />
 
       <div className="line-break">
@@ -50,26 +51,60 @@ export default function DescribePastExperiences() {
               ]}
             />
             <LineBreak />
-            <CardLayout mediaPosition="top">
-              <Image
-                src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
-                alt=""
-                width={250}
-                height={250}
-              />
-              <div className="text-align-center">
-                <Line
-                  value={[
-                    ...content({
-                      audio:
-                        "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
-                      parts: ["Last weekend Laura wento the the beach."],
-                    }),
-                  ]}
-                  className="text-align-center"
+            <div className="grid-container">
+              <CardLayout width="max-content" mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
+                  alt="Laura at the beach"
                 />
-              </div>
-            </CardLayout>
+                <div>
+                  <Line
+                    value={[
+                      ...content({
+                        audio:
+                          "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
+                        parts: ["Last weekend, Laura went to the beach."],
+                      }),
+                    ]}
+                  />
+                </div>
+              </CardLayout>
+              <CardLayout mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/movie.png"
+                  alt="Eric watching a movie at night"
+                />
+                <div>
+                  <Line
+                    value={[
+                      ...content({
+                        audio: "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
+                        parts: ["Last night, Eric watched a movie."],
+                      }),
+                    ]}
+                  />
+                </div>
+              </CardLayout>
+              <CardLayout mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
+                  alt="Laura and Eric eating lunch in the cafeteria"
+                />
+                <div>
+                  <Line
+                    value={[
+                      ...content({
+                        audio:
+                          "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
+                        parts: [
+                          "Yesterday, Laura and Eric ate lunch together in the cafeteria.",
+                        ],
+                      }),
+                    ]}
+                  />
+                </div>
+              </CardLayout>
+            </div>
 
             <LineBreak />
 
@@ -78,27 +113,27 @@ export default function DescribePastExperiences() {
                 instruction: "Choose the correct answer.",
                 questions: [
                   {
-                    question: "1. When did they play a game?",
+                    question: "1. Where did Laura go last weekend?",
                     options: [
-                      { option: "After school.", isCorrect: true },
-                      { option: "Tomorrow morning.", isCorrect: false },
-                      { option: "Every day.", isCorrect: false },
+                      { option: "She watched a movie.", isCorrect: false },
+                      { option: "She went to the beach.", isCorrect: true },
+                      { option: "She ate with Eric at the cafeteria.", isCorrect: false },
                     ],
                   },
                   {
-                    question: "2. What did Laura do on Saturday?",
+                    question: "2. What did Eric do last night?",
                     options: [
-                      { option: "She visited her aunt.", isCorrect: true },
-                      { option: "She studies math.", isCorrect: false },
-                      { option: "She is cooking now.", isCorrect: false },
+                      { option: "He went to the beach.", isCorrect: false },
+                      { option: "He ate with Laura at the cafeteria.", isCorrect: false },
+                      { option: "He watched a movie.", isCorrect: true },
                     ],
                   },
                   {
-                    question: "3. What did they do in the evening?",
+                    question: "3. What did Laura and Eric do yesterday?",
                     options: [
-                      { option: "They watched a movie.", isCorrect: true },
-                      { option: "They are going to work.", isCorrect: false },
-                      { option: "They don't like movies.", isCorrect: false },
+                      { option: "They ate lunch together in the cafeteria.", isCorrect: true },
+                      { option: "They watched a movie.", isCorrect: false },
+                      { option: "They went to the beach.", isCorrect: false },
                     ],
                   },
                 ],
@@ -107,14 +142,34 @@ export default function DescribePastExperiences() {
           </Section>
 
           <Section id="presentation" heading={3}>
+            <div className="text-align-center">
+              <Image
+                src="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
+                alt="Eric and Laura at the school cafeteria"
+                ratio="16-9"
+              />
+              <Line
+              
+                value={[
+                  ...content({
+                    audio: "",
+                    parts: [
+                      "Eric and Laura are at the school’s cafeteria.",
+                    ],
+                  }),
+                ]}
+              />
+            </div>
+            <LineBreak />
+            <AudioPlayer src="/assets/audio/.mp3" />
+            <LineBreak />
             <Dialogue
-              description="Eric and Laura are talking about last weekend."
               lines={[
                 {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["How was your weekend?"],
+                      parts: ["So, how was your weekend?"],
                     }),
                   ],
                 },
@@ -122,7 +177,7 @@ export default function DescribePastExperiences() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["It was great. I visited my cousin on Saturday."],
+                      parts: ["It was great! I went to the beach."],
                     }),
                   ],
                 },
@@ -130,7 +185,7 @@ export default function DescribePastExperiences() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Nice. What did you do there?"],
+                      parts: ["Nice!"],
                     }),
                   ],
                 },
@@ -138,9 +193,7 @@ export default function DescribePastExperiences() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: [
-                        "We cooked dinner, talked for hours, and watched a movie.",
-                      ],
+                      parts: ["What about you?"],
                     }),
                   ],
                 },
@@ -148,7 +201,7 @@ export default function DescribePastExperiences() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Did you stay there all day?"],
+                      parts: ["I watched a movie last night."],
                     }),
                   ],
                 },
@@ -156,7 +209,7 @@ export default function DescribePastExperiences() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["No, I went home at about ten."],
+                      parts: ["That sounds fun! What movie did you watch?"],
                     }),
                   ],
                 },
@@ -164,9 +217,7 @@ export default function DescribePastExperiences() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: [
-                        "Sounds good. I stayed home and finished a book.",
-                      ],
+                      parts: ["I watched Star Wars: The Last Jedi, and I loved it."],
                     }),
                   ],
                 },
@@ -174,7 +225,15 @@ export default function DescribePastExperiences() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["That sounds relaxing."],
+                      parts: ["Maybe next time we can watch another Star Wars movie."],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Eric:",
+                  text: [
+                    ...content({
+                      parts: ["Sounds good!"],
                     }),
                   ],
                 },
@@ -291,6 +350,55 @@ export default function DescribePastExperiences() {
               ]}
             />
 
+            <LineBreak />
+
+            <Column
+              width="220"
+              cols={[
+                {
+                  bgColor: "var(--blue-5)",
+                  textColor: "white",
+                  column: "/t/",
+                  blocks: [
+                    {
+                      block: [{ text: [...content({ parts: ["watched"] })] }],
+                      lineBreak: true,
+                    },
+                    {
+                      block: [{ text: [...content({ parts: ["finished"] })] }],
+                    },
+                  ],
+                },
+                {
+                  bgColor: "var(--green-6)",
+                  textColor: "white",
+                  column: "/d/",
+                  blocks: [
+                    {
+                      block: [{ text: [...content({ parts: ["played"] })] }],
+                      lineBreak: true,
+                    },
+                    {
+                      block: [{ text: [...content({ parts: ["lived"] })] }],
+                    },
+                  ],
+                },
+                {
+                  bgColor: "var(--orange-5)",
+                  textColor: "white",
+                  column: "/ɪd/",
+                  blocks: [
+                    {
+                      block: [{ text: [...content({ parts: ["visited"] })] }],
+                      lineBreak: true,
+                    },
+                    {
+                      block: [{ text: [...content({ parts: ["wanted"] })] }],
+                    },
+                  ],
+                },
+              ]}
+            />
             <LineBreak />
 
             <Column
@@ -446,7 +554,7 @@ export default function DescribePastExperiences() {
                     question: "3. Where did Laura go?",
                     options: [
                       {
-                        option: "She went to her cousin's house.",
+                        option: "She went to the beach.",
                         isCorrect: true,
                       },
                       { option: "She goes every day.", isCorrect: false },
@@ -503,7 +611,7 @@ export default function DescribePastExperiences() {
                 {
                   value: [
                     ...content({
-                      parts: ["Did you enjoy it? Why?"],
+                      parts: ["Did you enjoy it? Why or why not?"],
                     }),
                   ],
                 },

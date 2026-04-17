@@ -1,24 +1,27 @@
+import styles from "./Image.module.css";
+
 import { toCssUnit } from "../../../utils/toCssUnit";
 
 export const Image = ({
   src,
   alt = "",
-  ratio = "1 / 1",
   width,
   height,
   className,
+  ratio,
   ...props
 }) => {
   const wrapperStyle = {
-    aspectRatio: ratio,
     ...(width != null && { width: toCssUnit(width) }),
-    ...(height != null && { height: toCssUnit(height) })
-  }
+    ...(height != null && { height: toCssUnit(height) }),
+  };
+
+  const isImgRatio = ratio === "16-9"
 
   return (
     <div
-        style={wrapperStyle}
-        >
+    className={`${styles.img} ${isImgRatio ? styles["ratio-16-9"]: ""}`}
+    style={wrapperStyle}>
       <img
         src={src}
         alt={alt}
@@ -27,7 +30,7 @@ export const Image = ({
           width: "100%",
           height: "100%",
           objectFit: "cover", // <img> is inline by default
-          display: "block"
+          display: "block",
         }}
         {...props}
         className={`img ${className ?? ""}`}

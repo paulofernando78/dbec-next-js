@@ -1,9 +1,7 @@
-import styles from "./CardLayout.module.css"
+import styles from "./CardLayout.module.css";
 
-export const CardLayout = ({children, mediaPosition}) => {
-  const layoutClass = styles[mediaPosition] ?? styles.left
+export const CardLayout = ({ children, mediaPosition }) => {
+  const layoutClass = styles[mediaPosition] ?? styles.left;
 
-  return (
-    <div className={layoutClass}>{children}</div>
-  )
-}
+  return <div className={layoutClass}>{children}</div>;
+};
