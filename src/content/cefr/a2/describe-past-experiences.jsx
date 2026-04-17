@@ -13,7 +13,14 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold, mark, portuguese } from "@/helpers/content";
+import {
+  content,
+  bold,
+  mark,
+  underline,
+  portuguese,
+  phonetics,
+} from "@/helpers/content";
 
 export const metadata = {
   title: "A2 Elementary | Describe Past Experiences",
@@ -78,7 +85,8 @@ export default function DescribePastExperiences() {
                   <Line
                     value={[
                       ...content({
-                        audio: "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
+                        audio:
+                          "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
                         parts: ["Last night, Eric watched a movie."],
                       }),
                     ]}
@@ -117,21 +125,30 @@ export default function DescribePastExperiences() {
                     options: [
                       { option: "She watched a movie.", isCorrect: false },
                       { option: "She went to the beach.", isCorrect: true },
-                      { option: "She ate with Eric at the cafeteria.", isCorrect: false },
+                      {
+                        option: "She ate with Eric at the cafeteria.",
+                        isCorrect: false,
+                      },
                     ],
                   },
                   {
                     question: "2. What did Eric do last night?",
                     options: [
                       { option: "He went to the beach.", isCorrect: false },
-                      { option: "He ate with Laura at the cafeteria.", isCorrect: false },
+                      {
+                        option: "He ate with Laura at the cafeteria.",
+                        isCorrect: false,
+                      },
                       { option: "He watched a movie.", isCorrect: true },
                     ],
                   },
                   {
                     question: "3. What did Laura and Eric do yesterday?",
                     options: [
-                      { option: "They ate lunch together in the cafeteria.", isCorrect: true },
+                      {
+                        option: "They ate lunch together in the cafeteria.",
+                        isCorrect: true,
+                      },
                       { option: "They watched a movie.", isCorrect: false },
                       { option: "They went to the beach.", isCorrect: false },
                     ],
@@ -149,13 +166,10 @@ export default function DescribePastExperiences() {
                 ratio="16-9"
               />
               <Line
-              
                 value={[
                   ...content({
                     audio: "",
-                    parts: [
-                      "Eric and Laura are at the school’s cafeteria.",
-                    ],
+                    parts: ["Eric and Laura are at the school’s cafeteria."],
                   }),
                 ]}
               />
@@ -217,7 +231,9 @@ export default function DescribePastExperiences() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["I watched Star Wars: The Last Jedi, and I loved it."],
+                      parts: [
+                        "I watched Star Wars: The Last Jedi, and I loved it.",
+                      ],
                     }),
                   ],
                 },
@@ -225,7 +241,9 @@ export default function DescribePastExperiences() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["Maybe next time we can watch another Star Wars movie."],
+                      parts: [
+                        "Maybe next time we can watch another Star Wars movie.",
+                      ],
                     }),
                   ],
                 },
@@ -242,101 +260,239 @@ export default function DescribePastExperiences() {
           </Section>
 
           <Section id="language-focus" heading={3}>
-            <Paragraph
-              value={[
-                ...content({
-                  parts: [
-                    "We use the ",
-                    mark("simple past"),
-                    " to talk about finished actions in the past. We often add time expressions such as ",
-                    mark("yesterday"),
-                    ", ",
-                    mark("last weekend"),
-                    ", or ",
-                    mark("two days ago"),
-                    ".",
-                  ],
-                }),
-              ]}
-            />
-            <Paragraph
-              value={[
-                ...content({
-                  parts: [
-                    portuguese(
-                      "Usamos o simple past para falar de ações terminadas no passado. Muitas vezes usamos expressões como yesterday, last weekend ou two days ago.",
-                    ),
-                  ],
-                }),
-              ]}
-            />
-
             <LineBreak />
-
-            <List
-              items={[
+            <Column
+              width="220"
+              cols={[
+                // Positive
                 {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Regular verbs: "),
-                        mark("visited"),
-                        ", ",
-                        mark("watched"),
-                        ", ",
-                        mark("finished"),
+                  bgColor: "var(--green-5)",
+                  textColor: "white",
+                  column: "Positive",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["I worked today."],
+                            }),
+                          ],
+                        },
                       ],
-                    }),
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["I did my homework this morning."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["I studied in the afternoon."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["I ate chicken for lunch today."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
+                // Negative
                 {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Irregular verbs: "),
-                        mark("went"),
-                        ", ",
-                        mark("had"),
-                        ", ",
-                        mark("saw"),
+                  bgColor: "var(--red-5)",
+                  textColor: "white",
+                  column: "Negative",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["I ", mark("didn’t"), " work yesterday."],
+                            }),
+                          ],
+                        },
                       ],
-                    }),
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                "I ",
+                                mark("didn’t"),
+                                " do my homework last night.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["I didn’t study in the morning. "],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["I didn’t eat past for lunch today. "],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
+                // Question
                 {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Questions: "),
-                        mark("What did you do?"),
-                        " / ",
-                        mark("Did you go out?"),
+                  bgColor: "var(--yellow-5)",
+                  textColor: "white",
+                  column: "Question",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [mark("Did"), " you work today?"],
+                            }),
+                          ],
+                        },
                       ],
-                    }),
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                mark("Did"),
+                                " you do your homework last night?",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                mark("Did"),
+                                " you study in the afternoon?",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                mark("Did"),
+                                " you eat pizza for lunch today?",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
+                // Short answer
                 {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Short answers: "),
-                        mark("Yes, I did."),
-                        " / ",
-                        mark("No, I didn't."),
+                  bgColor: "var(--yellow-5)",
+                  textColor: "white",
+                  column: "Short answer",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["Yes, I", mark("did.")],
+                            }),
+                          ],
+                        },
                       ],
-                    }),
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["No, I", mark("didn’t.")],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["Yes, I", mark("did.")],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["No, I", mark("didn’t.")],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
               ]}
             />
-          </Section>
-
-          <Section
-            id="pronunciation-form"
-            label="Pronunciation + Form"
-            heading={3}
-          >
-            <Paragraph
+            <LineBreak />
+            <Line
               value={[
                 ...content({
                   parts: [
@@ -349,131 +505,270 @@ export default function DescribePastExperiences() {
                 }),
               ]}
             />
-
             <LineBreak />
-
+            {/* Regular / Irregular Verbs */}
             <Column
               width="220"
               cols={[
+                // Regular
                 {
-                  bgColor: "var(--blue-5)",
+                  bgColor: "var(--slate-5)",
+                  textColor: "white",
+                  column: "Regular (-ed)",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["work "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "worked",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["study "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "studied",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                // Irregular
+                {
+                  bgColor: "var(--slate-5)",
+                  textColor: "white",
+                  column: "Irregular",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["do "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "did",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },  
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["eat "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "ate",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },  
+                  ],
+                },
+              ]}
+            />
+            <LineBreak />
+            <Line
+              value={[
+                ...content({
+                  parts: [
+                    "Regular past verbs can have 3 different sounds ",
+                    ".",
+                  ],
+                }),
+              ]}
+            />
+            <LineBreak />
+            {/* -ed sound ending  */}
+            <Column
+              width="220"
+              cols={[
+                // /t/
+                {
+                  bgColor: "var(--blue-4)",
                   textColor: "white",
                   column: "/t/",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["watched"] })] }],
-                      lineBreak: true,
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["ask "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "ask",
+                                underline("ed"),
+                                " ",
+                                phonetics("/t/"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                     {
-                      block: [{ text: [...content({ parts: ["finished"] })] }],
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["work "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "work",
+                                underline("ed"),
+                                " ",
+                                phonetics("/t/"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                   ],
                 },
+                // /d/
                 {
-                  bgColor: "var(--green-6)",
+                  bgColor: "var(--blue-5)",
                   textColor: "white",
                   column: "/d/",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["played"] })] }],
-                      lineBreak: true,
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["play "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "play",
+                                underline("ed"),
+                                " ",
+                                phonetics("/d/"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                     {
-                      block: [{ text: [...content({ parts: ["lived"] })] }],
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["live "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "liv",
+                                underline("ed"),
+                                " ",
+                                phonetics("/d/"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                   ],
                 },
+                // /ɪd/
                 {
-                  bgColor: "var(--orange-5)",
+                  bgColor: "var(--blue-6)",
                   textColor: "white",
                   column: "/ɪd/",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["visited"] })] }],
-                      lineBreak: true,
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["visit "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "visit",
+                                underline("ed"),
+                                " ",
+                                phonetics("/ɪd/"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                     {
-                      block: [{ text: [...content({ parts: ["wanted"] })] }],
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["want "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "want",
+                                underline("ed"),
+                                " ",
+                                phonetics("/ɪd/"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                   ],
                 },
               ]}
             />
             <LineBreak />
-
-            <Column
-              width="260"
-              cols={[
-                {
-                  bgColor: "var(--green-6)",
-                  textColor: "white",
-                  column: "Time Markers",
-                  blocks: [
-                    {
-                      block: [{ text: [...content({ parts: ["yesterday"] })] }],
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        { text: [...content({ parts: ["last weekend"] })] },
-                      ],
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        { text: [...content({ parts: ["two days ago"] })] },
-                      ],
-                    },
-                  ],
-                },
-                {
-                  bgColor: "var(--red-4)",
-                  textColor: "white",
-                  column: "Model Verbs",
-                  blocks: [
-                    {
-                      block: [{ text: [...content({ parts: ["visited"] })] }],
-                      lineBreak: true,
-                    },
-                    {
-                      block: [{ text: [...content({ parts: ["watched"] })] }],
-                      lineBreak: true,
-                    },
-                    {
-                      block: [{ text: [...content({ parts: ["went"] })] }],
-                    },
-                  ],
-                },
-                {
-                  bgColor: "var(--yellow-4)",
-                  textColor: "white",
-                  column: "Questions",
-                  blocks: [
-                    {
-                      block: [
-                        { text: [...content({ parts: ["What did you do?"] })] },
-                      ],
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        {
-                          text: [...content({ parts: ["Where did you go?"] })],
-                        },
-                      ],
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        {
-                          text: [...content({ parts: ["Did you have fun?"] })],
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ]}
-            />
           </Section>
 
           <Section id="practice" heading={3}>
