@@ -439,7 +439,7 @@ export default function DescribePastExperiences() {
                 },
                 // Short answer
                 {
-                  bgColor: "var(--yellow-5)",
+                  bgColor: "var(--yellow-6)",
                   textColor: "white",
                   column: "Short answer",
                   blocks: [
@@ -448,7 +448,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["Yes, I", mark("did.")],
+                              parts: ["Yes, I ", mark("did.")],
                             }),
                           ],
                         },
@@ -459,7 +459,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["No, I", mark("didn’t.")],
+                              parts: ["No, I ", mark("didn’t.")],
                             }),
                           ],
                         },
@@ -470,7 +470,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["Yes, I", mark("did.")],
+                              parts: ["Yes, I ", mark("did.")],
                             }),
                           ],
                         },
@@ -481,7 +481,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["No, I", mark("didn’t.")],
+                              parts: ["No, I ", mark("didn’t.")],
                             }),
                           ],
                         },
@@ -495,11 +495,12 @@ export default function DescribePastExperiences() {
             <Line
               value={[
                 ...content({
+                  icons: ["attention"],
                   parts: [
-                    "Regular past verbs usually end in ",
+                    "Regular verbs usually end in ",
                     mark("-ed"),
                     ", but some common verbs are irregular and change form completely, like ",
-                    mark("go -> went"),
+                    mark("go - went"),
                     ".",
                   ],
                 }),
@@ -516,13 +517,14 @@ export default function DescribePastExperiences() {
                   textColor: "white",
                   column: "Regular (-ed)",
                   blocks: [
+                    // ask
                     {
                       block: [
                         {
                           text: [
                             ...content({
                               audio: "/",
-                              parts: ["work "],
+                              parts: ["ask "],
                             }),
                             ...content({
                               icons: ["arrow"],
@@ -534,6 +536,26 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    // ask
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["play "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "played",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // study
                     {
                       block: [
                         {
@@ -552,6 +574,25 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    // work
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["work "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "worked",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
                 // Irregular
@@ -560,24 +601,7 @@ export default function DescribePastExperiences() {
                   textColor: "white",
                   column: "Irregular",
                   blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["do "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "did",
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },  
+                    // ate  
                     {
                       block: [
                         {
@@ -595,7 +619,45 @@ export default function DescribePastExperiences() {
                           ],
                         },
                       ],
-                    },  
+                    },
+                    // do
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["do "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "did",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // go
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/",
+                              parts: ["go "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                "went",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
               ]}
