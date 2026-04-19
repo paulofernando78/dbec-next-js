@@ -10,10 +10,11 @@
 
 .flipIcon {
   position: absolute;
-  top: 5px;
+  top: 6px;
   right: 5px;
-  border: 1px solid;
+  border: 2px solid var(--slate-4);
   border-radius: 50%;
+  outline: 2px solid white;
   background-color: aliceblue;
 }
 
