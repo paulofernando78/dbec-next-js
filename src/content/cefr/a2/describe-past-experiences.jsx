@@ -1,10 +1,12 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { Notes } from "@/components/molecules/Notes";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { GridLayout } from "@/components/molecules/GridLayout";
 import { CardLayout } from "@/components/molecules/CardLayout";
+import { FlipCard } from "@/components/molecules/FlipCard/";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -38,22 +40,21 @@ export default function DescribePastExperiences() {
       />
 
       <div className="line-break">
-        <Card bgColor="var(--yellow-5)">
+        <Notes>
           By the end of this class, students will be able to talk about finished
           past experiences, use common regular and irregular past verbs, and ask
           follow-up questions about yesterday, last weekend, or last month, etc.
-        </Card>
+        </Notes>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <Line
               value={[
                 ...content({
-                  audio:
-                    "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
                   parts: [
-                    "",
-                    bold("Look at the pictures and listen to the sentences."),
+                    bold(
+                      "Look at the pictures. Describe what you see, then flip it to listen to the sentence.",
+                    ),
                   ],
                 }),
               ]}
@@ -61,12 +62,10 @@ export default function DescribePastExperiences() {
             <LineBreak />
             <GridLayout>
               {/* Last weekend, Laura went to the beach. */}
-              <CardLayout width="max-content" mediaPosition="top">
-                <Image
-                  src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
-                  alt="Laura at the beach"
-                />
-                <div>
+              <FlipCard
+                frontImg="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
+                frontAlt="Laura on the beach"
+                backContent={
                   <Line
                     value={[
                       ...content({
@@ -76,15 +75,13 @@ export default function DescribePastExperiences() {
                       }),
                     ]}
                   />
-                </div>
-              </CardLayout>
+                }
+              />
               {/* Last night, Eric watched a movie. */}
-              <CardLayout mediaPosition="top">
-                <Image
-                  src="/assets/img/cefr/a2/describe-past-experiences/movie.png"
-                  alt="Eric watching a movie at night"
-                />
-                <div>
+              <FlipCard
+                frontImg="/assets/img/cefr/a2/describe-past-experiences/movie.png"
+                frontAlt="Eric watching a movie at night"
+                backContent={
                   <Line
                     value={[
                       ...content({
@@ -94,26 +91,24 @@ export default function DescribePastExperiences() {
                       }),
                     ]}
                   />
-                </div>
-              </CardLayout>
+                }
+              />
               {/* Yesterday, Laura met Eric in the cafeteria.  */}
-              <CardLayout mediaPosition="top">
-                <Image
-                  src="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
-                  alt="Laura and Eric eating lunch in the cafeteria"
-                />
-                <div>
+              <FlipCard
+                frontImg="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
+                frontAlt="Laura and Eric eating lunch in the cafeteria"
+                backContent={
                   <Line
                     value={[
                       ...content({
                         audio:
-                          "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-Eric-in-the-cafeteria.mp3",
+                          "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria-they-had-lunch-together.mp3",
                         parts: ["Yesterday, Laura met Eric in the cafeteria."],
                       }),
                     ]}
                   />
-                </div>
-              </CardLayout>
+                }
+              />
             </GridLayout>
 
             <LineBreak />

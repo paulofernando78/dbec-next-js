@@ -9,6 +9,7 @@ import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { GridLayout } from "@/components/molecules/GridLayout";
 import { CardLayout } from "@/components/molecules/CardLayout";
+import { FlipCard } from "@/components/molecules/FlipCard/";
 import { CardText } from "@/components/molecules/CardText";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -32,7 +33,6 @@ import {
   phonetics,
   portuguese,
 } from "@/helpers/content";
-import { FlipCard } from "../../components/molecules/FlipCard/FlipCard";
 
 export default function Mock() {
   return (
@@ -579,6 +579,34 @@ export default function Mock() {
                     value={[
                       ...content({
                         parts: [mark("asked")],
+                      }),
+                    ]}
+                  />
+                }
+              />
+
+
+              <FlipCard
+                frontImg=""
+                frontAlt=""
+                backImg=""
+                backAlt=""
+              />
+              <FlipCard
+                frontContent={
+                  <Line
+                    value={[
+                      ...content({
+                        parts: [""],
+                      }),
+                    ]}
+                  />
+                }
+                backContent={
+                  <Line
+                    value={[
+                      ...content({
+                        parts: ["asked"],
                       }),
                     ]}
                   />

@@ -10,8 +10,11 @@
 
 .flipIcon {
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 5px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: aliceblue;
 }
 
 .card {
