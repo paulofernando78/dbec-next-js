@@ -162,26 +162,29 @@ export default function DescribePastExperiences() {
           </Section>
 
           <Section id="presentation" heading={3}>
-            <div className="text-align-center">
+            <figure className="text-align-center">
               <Image
                 src="/assets/img/cefr/a2/describe-past-experiences/cafeteria-lunch.png"
                 alt="Eric and Laura at the school cafeteria"
                 ratio="16-9"
               />
-              <Line
-                value={[
-                  ...content({
-                    audio:
-                      "/assets/audio/cefr/a2/describe-the-past/yesterday,-laura-met-eric-in-the-school-cafeteria-they-had-lunch-together.mp3",
-                    parts: [
-                      "Yesterday, Laura met Eric in the school cafe",
-                      stressed("te"),
-                      "ria. They had lunch together.",
-                    ],
-                  }),
-                ]}
-              />
-            </div>
+              <LineBreak />
+              <figcaption>
+                <Line
+                  value={[
+                    ...content({
+                      audio:
+                        "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria-they-had-lunch-together.mp3",
+                      parts: [
+                        "Yesterday, Laura met Eric in the school cafe",
+                        stressed("te"),
+                        "ria. They had lunch together.",
+                      ],
+                    }),
+                  ]}
+                />
+              </figcaption>
+            </figure>
             <LineBreak />
             <AudioPlayer src="/assets/audio/.mp3" />
             <LineBreak />
@@ -316,8 +319,12 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
-                              parts: ["Last weekend, Laura went to the beach."],
+                              audio: "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
+                              parts: [
+                                "Last weekend, Laura ",
+                                mark("went"),
+                                " to the beach."
+                              ],
                             }),
                           ],
                         },
@@ -329,8 +336,12 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
-                              parts: ["Last night, Eric watched a movie."],
+                              audio: "",
+                              parts: [
+                                "Last night, Eric ",
+                                mark("watched"),
+                                " a movie.",
+                              ],
                             }),
                           ],
                         },
@@ -344,7 +355,9 @@ export default function DescribePastExperiences() {
                             ...content({
                               audio: "/",
                               parts: [
-                                "Yesterday, Laura met Eric in the cafeteria.",
+                                "Yesterday, Laura ",
+                                mark("met"),
+                                " Eric in the cafeteria.",
                               ],
                             }),
                           ],
@@ -395,7 +408,11 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["I didn’t study in the morning. "],
+                              parts: [
+                                "She ",
+                                mark("didn’t"),
+                                " meet Eric in the classroom.",
+                              ],
                             }),
                           ],
                         },
@@ -486,7 +503,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["Yes, she ", mark("did.")],
+                              parts: ["Yes, she ", mark("did"), "."],
                             }),
                           ],
                         },
@@ -498,7 +515,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["No, she ", mark("didn’t.")],
+                              parts: ["No, she ", mark("didn’t"), "."],
                             }),
                           ],
                         },
@@ -522,7 +539,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["Yes, he ", mark("did.")],
+                              parts: ["Yes, he ", mark("did"), "."],
                             }),
                           ],
                         },
@@ -534,7 +551,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["No, he ", mark("didn’t.")],
+                              parts: ["No, he ", mark("didn’t"), "."],
                             }),
                           ],
                         },
@@ -558,7 +575,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["Yes, they ", mark("did.")],
+                              parts: ["Yes, they ", mark("did"), "."],
                             }),
                           ],
                         },
@@ -570,7 +587,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["No, they ", mark("didn’t.")],
+                              parts: ["No, they ", mark("didn’t"), "."],
                             }),
                           ],
                         },
