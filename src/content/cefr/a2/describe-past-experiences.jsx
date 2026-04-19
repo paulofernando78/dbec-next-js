@@ -336,7 +336,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "",
+                              audio: "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
                               parts: [
                                 "Last night, Eric ",
                                 mark("watched"),
@@ -353,11 +353,28 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
+                              audio: "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
                               parts: [
                                 "Yesterday, Laura ",
                                 mark("met"),
                                 " Eric in the cafeteria.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // They had lunch together.
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: "/assets/audio/cefr/a2/describe-the-past/they-had-lunch-together.mp3",
+                              parts: [
+                                "They ",
+                                mark("had"),
+                                "lunch together.",
                               ],
                             }),
                           ],
@@ -378,7 +395,11 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: ["She ", mark("didn’t"), " go to school."],
+                              parts: ["She ",
+                                mark("didn’t"),
+                                " ",
+                                mark("go"),
+                                " to school."],
                             }),
                           ],
                         },
@@ -393,6 +414,8 @@ export default function DescribePastExperiences() {
                               parts: [
                                 "He ",
                                 mark("didn’t"),
+                                " ",
+                                mark(" watch"),
                                 " watch a docu",
                                 stressed("me"),
                                 "ntary.",
@@ -411,7 +434,27 @@ export default function DescribePastExperiences() {
                               parts: [
                                 "She ",
                                 mark("didn’t"),
-                                " meet Eric in the classroom.",
+                                " ",
+                                mark("meet"),
+                                " Eric in the classroom.",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // They didn’t have breakfast.
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                "They ",
+                                mark("didn’t"),
+                                " ",
+                                mark("have"),
+                                " breakfast.",
                               ],
                             }),
                           ],
@@ -432,7 +475,12 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: [mark("Did"), " she go the beach?"],
+                              parts: [
+                                mark("Did"),
+                                " she ",
+                                mark("go"),
+                                " to the beach?",
+                              ],
                             }),
                           ],
                         },
@@ -444,23 +492,19 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: [mark("Did"), " she go to school?"],
+                              parts: [
+                                mark("Did"),
+                                " she ",
+                                mark("go"),
+                                " to school?",
+                              ],
                             }),
                           ],
                         },
                       ],
                     },
-                    // -
                     {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["-"],
-                            }),
-                          ],
-                        },
-                      ],
+                      lineBreak: true
                     },
                     // Did Eric watch a movie?
                     {
@@ -468,7 +512,12 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              parts: [mark("Did"), " Eric watch a movie?"],
+                              parts: [
+                                mark("Did"),
+                                " Eric ",
+                                mark("watch"),
+                                " a movie?"
+                              ],
                             }),
                           ],
                         },
@@ -482,7 +531,29 @@ export default function DescribePastExperiences() {
                             ...content({
                               parts: [
                                 mark("Did"),
-                                " Eric watch a documentary?",
+                                " Eric ",
+                                mark("watch"),
+                                " a documentary?",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      lineBreak: true
+                    },
+                    // Did Laura meet Eric in the school cafeteria?
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                mark("Did"),
+                                " Laura ",
+                                mark("meet"),
+                                " Eric in the school cafeteria?",
                               ],
                             }),
                           ],
@@ -521,17 +592,8 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
-                    // -
                     {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              parts: ["-"],
-                            }),
-                          ],
-                        },
-                      ],
+                      lineBreak: true
                     },
                     // Yes, he did.
                     {
@@ -557,17 +619,35 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
-                    // -
+                    {
+                      lineBreak: true
+                    },
+                    // Yes, they did.
                     {
                       block: [
                         {
                           text: [
                             ...content({
-                              parts: ["-"],
+                              parts: ["Yes, they ", mark("did"), "."],
                             }),
                           ],
                         },
                       ],
+                    },
+                    // No, they didn’t.
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["No, they ", mark("didn’t"), "."],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      lineBreak: true
                     },
                     // Yes, they did.
                     {
