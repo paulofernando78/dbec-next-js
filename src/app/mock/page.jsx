@@ -528,28 +528,41 @@ export default function Mock() {
           {/* Flip Card 1 Image */}
           <Section id="flip-card-1-image" heading={3}>
             <GridLayout>
-              <FlipCard backImg="/assets/img/general/cat-1.jpg" backAlt="" />
+              <FlipCard
+                backImg="/assets/img/general/cat-1.jpg"
+                backAlt="A cat photo"
+              />
             </GridLayout>
           </Section>
 
           {/* Flip Card 2 Images */}
-          <Section id="flip-card-1-image" heading={3}>
+          <Section id="flip-card-2-image" heading={3}>
             <GridLayout>
-              <FlipCard backImg="/assets/img/general/cat-1.jpg" backAlt="" />
+              <FlipCard
+                backImg="/assets/img/general/cat-1.jpg"
+                backAlt="A cat photo"
+              />
               <FlipCard
                 frontImg="/assets/img/general/cat-2.jpg"
+                frontAlt="A cat photo"
                 backImg="/assets/img/general/cat-3.jpg"
+                backAlt="A cat photo"
               />
             </GridLayout>
           </Section>
 
           {/* Flip Card 3 Images */}
-          <Section id="flip-card-1-image" heading={3}>
+          <Section id="flip-card-3-image" heading={3}>
             <GridLayout>
-              <FlipCard backImg="/assets/img/general/cat-1.jpg" backAlt="" />
+              <FlipCard
+                backImg="/assets/img/general/cat-1.jpg"
+                backAlt="A cat photo"
+              />
               <FlipCard
                 frontImg="/assets/img/general/cat-2.jpg"
+                frontAlt="A cat photo"
                 backImg="/assets/img/general/cat-3.jpg"
+                backAlt="A cat photo"
               />
               <FlipCard
                 frontContent={
@@ -573,8 +586,6 @@ export default function Mock() {
               />
             </GridLayout>
           </Section>
-
-          
 
           {/* Dialogue */}
           <Section id="dialogue" heading={3}>
