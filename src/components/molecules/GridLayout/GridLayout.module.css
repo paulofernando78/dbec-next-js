@@ -4,3 +4,13 @@
   justify-content: start;
   gap: 10px;
 }
+
+.gridLayout > :only-child {
+  max-width: 320px;
+  justify-self: center;
+}
+
+.gridLayout:has(> :nth-child(2):last-child) {
+  grid-template-columns: repeat(2, minmax(250px, 320px));
+  justify-content: center;
+}

@@ -1,23 +1,31 @@
-import styles from "./FlipCard.module.css";
+"use client";
 
+import styles from "./FlipCard.module.css";
+import { useState } from "react";
 import { Image } from "@/components/atoms/Image";
 
+import { Flip } from "@/lib/svg-imports";
+
 export const FlipCard = ({
-  frontText,
+  frontContent,
   frontImg,
   frontAlt,
-  backText,
+  backContent,
   backImg,
   backAlt,
 }) => {
+  const [flipped, setFlipped] = useState(false);
+
   return (
     <div className={styles.cardContainer}>
-      <div className={styles.card}>
+      <div
+        className={`${styles.card} ${flipped ? styles.flipped : ""}`}
+        onClick={() => setFlipped(!flipped)}
+      >
         <div className={styles.front}>
-          {frontText ? (
-            <span className={styles.text}>
-              <b>{frontText}</b>
-            </span>
+          <Flip className={styles.flipIcon} />
+          {frontContent ? (
+            <div className={styles.content}>{frontContent}</div>
           ) : frontImg ? (
             <Image src={frontImg} alt={frontAlt} className={styles.img} />
           ) : (
@@ -29,12 +37,11 @@ export const FlipCard = ({
           )}
         </div>
         <div className={styles.back}>
-          {backText && (
-            <span className={styles.text}>
-              <b>{backText}</b>
-            </span>
-          )}
-          {backImg && <Image src={backImg} alt={backAlt} />}
+          {backContent ? (
+            <div className={styles.content}>{backContent}</div>
+          ) : backImg ? (
+            <Image src={backImg} alt={backAlt} className={styles.img} />
+          ) : null}
         </div>
       </div>
     </div>

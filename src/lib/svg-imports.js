@@ -1,9 +1,9 @@
-import styles from "../components/molecules/ContentToken/ContentToken.module.css"
+import styles from "../components/molecules/ContentToken/ContentToken.module.css";
 
 const color = "#999999";
 const iconSize = "1.5rem";
 
-export const Arrow = ({ className}) => (
+export const Arrow = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24px"
@@ -203,7 +203,7 @@ export const LightMode = () => (
   </svg>
 );
 
-export const PauseAudio = ({className, ...props}) => (
+export const PauseAudio = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
@@ -217,7 +217,7 @@ export const PauseAudio = ({className, ...props}) => (
   </svg>
 );
 
-export const PlayAudio = ({className, ...props}) => (
+export const PlayAudio = ({ className, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
@@ -280,7 +280,7 @@ export const Show = () => (
   </svg>
 );
 
-export const SoundVariation = ({ className}) => (
+export const SoundVariation = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
@@ -318,7 +318,7 @@ export const UnderConstruction = ({ className }) => (
   </svg>
 );
 
-export const Variation = ({ className}) => (
+export const Variation = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
@@ -328,6 +328,19 @@ export const Variation = ({ className}) => (
     className={className}
   >
     <path d="M440-80v-200q0-56-17-83t-45-53l57-57q12 11 23 23.5t22 26.5q14-19 28.5-33.5T538-485q38-35 69-81t33-161l-63 63-57-56 160-160 160 160-56 56-64-63q-2 143-44 203.5T592-425q-32 29-52 56.5T520-280v200h-80ZM248-633q-4-20-5.5-44t-2.5-50l-64 63-56-56 160-160 160 160-57 56-63-62q0 21 2 39.5t4 34.5l-78 19Zm86 176q-20-21-38.5-49T263-575l77-19q10 27 23 46t28 34l-57 57Z" />
+  </svg>
+);
+
+export const Flip = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
+    width="24px"
+    height="24px"
+    fill={color}
+    className={className}
+  >
+    <path d="m360-160-56-56 70-72q-128-17-211-70T80-480q0-83 115.5-141.5T480-680q169 0 284.5 58.5T880-480q0 62-66.5 111T640-296v-82q77-20 118.5-49.5T800-480q0-32-85.5-76T480-600q-149 0-234.5 44T160-480q0 24 51 57.5T356-372l-52-52 56-56 160 160-160 160Z" />
   </svg>
 );
 

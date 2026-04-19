@@ -499,8 +499,52 @@ export default function Mock() {
             </Notes>
           </Section>
 
-          {/* Flip Card */}
-          <Section id="flip-card" heading={3}>
+          <Section id="images" heading={3}>
+            <GridLayout>
+              {/* Last weekend, Laura went to the beach. */}
+              <CardLayout width="max-content" mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
+                  alt="Laura at the beach"
+                />
+              </CardLayout>
+              {/* Last night, Eric watched a movie. */}
+              <CardLayout mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/movie.png"
+                  alt="Eric watching a movie at night"
+                />
+              </CardLayout>
+              {/* Yesterday, Laura met Eric in the cafeteria.  */}
+              <CardLayout mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
+                  alt="Laura and Eric eating lunch in the cafeteria"
+                />
+              </CardLayout>
+            </GridLayout>
+          </Section>
+
+          {/* Flip Card 1 Image */}
+          <Section id="flip-card-1-image" heading={3}>
+            <GridLayout>
+              <FlipCard backImg="/assets/img/general/cat-1.jpg" backAlt="" />
+            </GridLayout>
+          </Section>
+
+          {/* Flip Card 2 Images */}
+          <Section id="flip-card-1-image" heading={3}>
+            <GridLayout>
+              <FlipCard backImg="/assets/img/general/cat-1.jpg" backAlt="" />
+              <FlipCard
+                frontImg="/assets/img/general/cat-2.jpg"
+                backImg="/assets/img/general/cat-3.jpg"
+              />
+            </GridLayout>
+          </Section>
+
+          {/* Flip Card 3 Images */}
+          <Section id="flip-card-1-image" heading={3}>
             <GridLayout>
               <FlipCard backImg="/assets/img/general/cat-1.jpg" backAlt="" />
               <FlipCard
@@ -508,11 +552,29 @@ export default function Mock() {
                 backImg="/assets/img/general/cat-3.jpg"
               />
               <FlipCard
-                frontText="What’s the past of 'ask`?"
-                backText="asked?"
+                frontContent={
+                  <Line
+                    value={[
+                      ...content({
+                        parts: ["What's the past of ", mark("ask"), "?"],
+                      }),
+                    ]}
+                  />
+                }
+                backContent={
+                  <Line
+                    value={[
+                      ...content({
+                        parts: [mark("asked")],
+                      }),
+                    ]}
+                  />
+                }
               />
             </GridLayout>
           </Section>
+
+          
 
           {/* Dialogue */}
           <Section id="dialogue" heading={3}>
