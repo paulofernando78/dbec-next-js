@@ -330,6 +330,9 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    {
+                      lineBreak: true
+                    },
                     // Last night, Eric watched a movie.
                     {
                       block: [
@@ -347,6 +350,9 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    {
+                      lineBreak: true
+                    },
                     // Yesterday, Laura met Eric in the cafeteria.
                     {
                       block: [
@@ -363,6 +369,9 @@ export default function DescribePastExperiences() {
                           ],
                         },
                       ],
+                    },
+                    {
+                      lineBreak: true
                     },
                     // They had lunch together.
                     {
@@ -395,6 +404,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["She ",
                                 mark("didn’t"),
                                 " ",
@@ -405,12 +415,16 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    {
+                      lineBreak: true
+                    },
                     // He didn’t watch the news.
                     {
                       block: [
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 "He ",
                                 mark("didn’t"),
@@ -425,12 +439,16 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    {
+                      lineBreak: true
+                    },
                     // She didn’t meet Eric in the classroom.
                     {
                       block: [
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 "She ",
                                 mark("didn’t"),
@@ -443,12 +461,16 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    {
+                      lineBreak: true
+                    },
                     // They didn’t have breakfast.
                     {
                       block: [
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 "They ",
                                 mark("didn’t"),
@@ -475,6 +497,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 mark("Did"),
                                 " she ",
@@ -486,12 +509,16 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    {
+                      lineBreak: true
+                    },
                     // Did Laura go to school?
                     {
                       block: [
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 mark("Did"),
                                 " she ",
@@ -512,6 +539,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 mark("Did"),
                                 " Eric ",
@@ -529,6 +557,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 mark("Did"),
                                 " Eric ",
@@ -549,6 +578,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: [
                                 mark("Did"),
                                 " Laura ",
@@ -574,6 +604,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["Yes, she ", mark("did"), "."],
                             }),
                           ],
@@ -586,6 +617,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["No, she ", mark("didn’t"), "."],
                             }),
                           ],
@@ -601,6 +633,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["Yes, he ", mark("did"), "."],
                             }),
                           ],
@@ -613,6 +646,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["No, he ", mark("didn’t"), "."],
                             }),
                           ],
@@ -628,6 +662,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["Yes, they ", mark("did"), "."],
                             }),
                           ],
@@ -640,6 +675,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["No, they ", mark("didn’t"), "."],
                             }),
                           ],
@@ -655,6 +691,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["Yes, they ", mark("did"), "."],
                             }),
                           ],
@@ -667,6 +704,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
+                              audio: ["/"],
                               parts: ["No, they ", mark("didn’t"), "."],
                             }),
                           ],
