@@ -142,6 +142,12 @@ export const italic = (text) => ({
 });
 
 // mark
+export const stressed = (text) => ({
+  part: text,
+  type: "stressed",
+});
+
+// mark
 export const mark = (text) => ({
   part: text,
   type: "mark",

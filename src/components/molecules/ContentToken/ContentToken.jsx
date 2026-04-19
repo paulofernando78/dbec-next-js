@@ -1,4 +1,4 @@
-import styles from "./ContentToken.module.css"
+import styles from "./ContentToken.module.css";
 
 import { Audio } from "@/components/atoms/Audio";
 import { Bold } from "@/components/atoms/Bold";
@@ -6,9 +6,10 @@ import { Italic } from "@/components/atoms/Italic";
 import { Mark } from "@/components/atoms/Mark";
 import { Underline } from "@/components/atoms/Underline";
 import { PartOfSpeech } from "@/components/atoms/PartOfSpeech";
-import { Phonetics } from "@/components/atoms/Phonetics";
+import { Stressed } from "@/components/atoms/Stressed";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import { PortugueseBold } from "@/components/atoms/PortugueseBold";
+import { Phonetics } from "@/components/atoms/Phonetics";
 import { BulletPoint } from "@/components/atoms/BulletPoint";
 import { SquarePoint } from "@/components/atoms/SquarePoint";
 import { Connector } from "@/components/atoms/Connector";
@@ -21,7 +22,7 @@ import {
   Arrow,
   Compare,
   Variation,
-  SoundVariation
+  SoundVariation,
 } from "@/lib/svg-imports";
 
 export const ContentToken = ({ value, text = [] }) => {
@@ -37,7 +38,7 @@ export const ContentToken = ({ value, text = [] }) => {
     arrow: Arrow,
     compare: Compare,
     variation: Variation,
-    soundVariation: SoundVariation
+    soundVariation: SoundVariation,
   };
 
   const legacyFlagMap = {
@@ -49,7 +50,7 @@ export const ContentToken = ({ value, text = [] }) => {
     incorrect: "incorrect",
     comparison: "compare",
     variation: "variation",
-    soundVariation: "soundVariation"
+    soundVariation: "soundVariation",
   };
 
   const renderIcons = (part) => {
@@ -63,7 +64,7 @@ export const ContentToken = ({ value, text = [] }) => {
           const className =
             name === "soundVariation"
               ? `${styles.iconPosition} ${styles.soundVariationIcon}`
-              : styles.iconPosition
+              : styles.iconPosition;
 
           icons.push(<Icon key={`icon-${name}`} className={className} />);
         }
@@ -116,6 +117,9 @@ export const ContentToken = ({ value, text = [] }) => {
             break;
           case "partOfSpeech":
             content = <PartOfSpeech>{part.part}</PartOfSpeech>;
+            break;
+          case "stressed":
+            content = <Stressed>{part.part}</Stressed>;
             break;
           case "phonetics":
             content = <Phonetics>{part.part}</Phonetics>;

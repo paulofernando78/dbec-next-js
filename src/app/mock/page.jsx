@@ -25,11 +25,13 @@ import {
   bold,
   italic,
   mark,
-  underline,
   boldMark,
+  underline,
+  stressed,
   phonetics,
   portuguese,
 } from "@/helpers/content";
+import { FlipCard } from "../../components/molecules/FlipCard/FlipCard";
 
 export default function Mock() {
   return (
@@ -46,7 +48,7 @@ export default function Mock() {
 
         <PageSections>
           <Section id="video-player" label="Video Player" heading={3}>
-            <VideoPlayer videoId="C8rU4dv2w8Q"/>
+            <VideoPlayer videoId="C8rU4dv2w8Q" />
           </Section>
 
           {/* AudioPlayer */}
@@ -91,9 +93,11 @@ export default function Mock() {
                     " ",
                     mark("mark"),
                     " ",
+                    boldMark("bold-mark"),
+                    " ",
                     underline("underline"),
                     " ",
-                    boldMark("bold-mark"),
+                    stressed("stressed"),
                     " ",
                     phonetics("phonetics"),
                     " ",
@@ -570,6 +574,24 @@ export default function Mock() {
                 ]}
               />
             </Notes>
+          </Section>
+
+          {/* Flip Card */}
+          <Section id="flip-card" heading={3}>
+            <CardLayout>
+              <FlipCard
+              backImg="/assets/img/general/cat-1.jpg"
+              backAlt=""
+              />
+              <FlipCard
+              frontImg="/assets/img/general/cat-3.jpg"
+              backImg="/assets/img/general/cat-3.jpg"
+              />
+              <FlipCard
+              frontText="What’s the past of 'ask`?"
+              backText="asked?"
+               />
+            </CardLayout>
           </Section>
 
           {/* Dialogue */}

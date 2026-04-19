@@ -27,8 +27,6 @@ export const Image = ({
         alt={alt}
         loading="lazy"
         style={{
-          width: "100%",
-          height: "100%",
           objectFit: "cover", // <img> is inline by default
           display: "block",
         }}
