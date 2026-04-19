@@ -53,7 +53,7 @@ export default function DescribePastExperiences() {
                 ...content({
                   parts: [
                     bold(
-                      "Look at the pictures. Describe what you see, then flip it to listen to the sentence.",
+                      "Look at the pictures. Describe what you see, then flip each card to listen to the sentence.",
                     ),
                   ],
                 }),
