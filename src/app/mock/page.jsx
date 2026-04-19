@@ -7,6 +7,7 @@ import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
+import { GridLayout } from "@/components/molecules/GridLayout";
 import { CardLayout } from "@/components/molecules/CardLayout";
 import { CardText } from "@/components/molecules/CardText";
 import { Image } from "@/components/atoms/Image";
@@ -143,199 +144,6 @@ export default function Mock() {
             />
           </Section>
 
-          {/* List */}
-          <Section id="list" heading={3}>
-            <List
-              bullet={false}
-              items={[
-                {
-                  value: [
-                    ...content({
-                      icons: [
-                        "us",
-                        "uk",
-                        "attention",
-                        "correct",
-                        "incorrect",
-                        "compare",
-                      ],
-                      audio: "/",
-                      parts: [
-                        "normal ",
-                        audio("/"),
-                        bold("bold"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        boldMark("bold-mark"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
-                    }),
-                  ],
-                },
-              ]}
-            />
-            <LineBreak />
-            <Line text={["+ bullet"]} />
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      icons: [
-                        "us",
-                        "uk",
-                        "attention",
-                        "correct",
-                        "incorrect",
-                        "compare",
-                      ],
-                      audio: "/",
-                      parts: [
-                        "normal ",
-                        audio("/"),
-                        bold("bold"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        boldMark("bold-mark"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      icons: [
-                        "us",
-                        "uk",
-                        "attention",
-                        "correct",
-                        "incorrect",
-                        "compare",
-                      ],
-                      audio: "/",
-                      parts: [
-                        "normal ",
-                        audio("/"),
-                        bold("bold"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        boldMark("bold-mark"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
-                    }),
-                  ],
-                },
-              ]}
-            />
-          </Section>
-
-          {/* Card Text */}
-          <Section id="card-text" heading={3}>
-            <CardText
-              blocks={[
-                {
-                  imgs: [
-                    {
-                      img: "/assets/img/general/cat-1.jpg",
-                      alt: "a cat photo",
-                      width: 200,
-                      height: 200,
-                    },
-                  ],
-                  lines: [
-                    {
-                      value: [
-                        ...content({
-                          icons: [
-                            "us",
-                            "uk",
-                            "attention",
-                            "correct",
-                            "incorrect",
-                            "compare",
-                          ],
-                          audio: "/",
-                          parts: [
-                            "normal ",
-                            audio("/"),
-                            bold("bold"),
-                            " ",
-                            italic("italic"),
-                            " ",
-                            mark("mark"),
-                            " ",
-                            underline("underline"),
-                            " ",
-                            boldMark("bold-mark"),
-                            " ",
-                            phonetics("phonetics"),
-                            " ",
-                            portuguese("portuguese"),
-                          ],
-                        }),
-                      ],
-                    },
-                  ],
-                },
-                {
-                  imgs: [
-                    {
-                      img: "/assets/img/general/cat-2.jpg",
-                      alt: "a cat photo",
-                      width: 200,
-                      height: 200,
-                    },
-                  ],
-                  lines: [
-                    {
-                      value: ["normal "],
-                    },
-                  ],
-                },
-                {
-                  imgs: [
-                    {
-                      img: "/assets/img/general/cat-3.jpg",
-                      alt: "a cat photo",
-                      width: 200,
-                      height: 200,
-                    },
-                  ],
-                  lines: [
-                    {
-                      value: ["normal"],
-                    },
-                  ],
-                },
-              ]}
-            />
-          </Section>
-
           {/* Paragraph */}
           <Section id="paragraph" heading={3}>
             <Paragraph
@@ -372,8 +180,12 @@ export default function Mock() {
             />
           </Section>
 
-          {/* Paragraph + Media */}
-          <Section id="paragraph-media" label="Paragraph + Media" heading={3}>
+          {/* Line / Paragraph + Media */}
+          <Section
+            id="line-paragraph-media"
+            label="Line / Paragraph + Media"
+            heading={3}
+          >
             {/* Card Layout */}
             <AudioPlayer src="/assets/audio/general/about-to.mp3" />
             <LineBreak />
@@ -538,6 +350,117 @@ export default function Mock() {
             </CardLayout>
           </Section>
 
+          {/* List */}
+          <Section id="list" heading={3}>
+            <List
+              bullet={false}
+              items={[
+                {
+                  value: [
+                    ...content({
+                      icons: [
+                        "us",
+                        "uk",
+                        "attention",
+                        "correct",
+                        "incorrect",
+                        "compare",
+                      ],
+                      audio: "/",
+                      parts: [
+                        "normal ",
+                        audio("/"),
+                        bold("bold"),
+                        " ",
+                        italic("italic"),
+                        " ",
+                        mark("mark"),
+                        " ",
+                        underline("underline"),
+                        " ",
+                        boldMark("bold-mark"),
+                        " ",
+                        phonetics("phonetics"),
+                        " ",
+                        portuguese("portuguese"),
+                      ],
+                    }),
+                  ],
+                },
+              ]}
+            />
+            <LineBreak />
+            <Line text={["+ bullet"]} />
+            <List
+              items={[
+                {
+                  value: [
+                    ...content({
+                      icons: [
+                        "us",
+                        "uk",
+                        "attention",
+                        "correct",
+                        "incorrect",
+                        "compare",
+                      ],
+                      audio: "/",
+                      parts: [
+                        "normal ",
+                        audio("/"),
+                        bold("bold"),
+                        " ",
+                        italic("italic"),
+                        " ",
+                        mark("mark"),
+                        " ",
+                        underline("underline"),
+                        " ",
+                        boldMark("bold-mark"),
+                        " ",
+                        phonetics("phonetics"),
+                        " ",
+                        portuguese("portuguese"),
+                      ],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      icons: [
+                        "us",
+                        "uk",
+                        "attention",
+                        "correct",
+                        "incorrect",
+                        "compare",
+                      ],
+                      audio: "/",
+                      parts: [
+                        "normal ",
+                        audio("/"),
+                        bold("bold"),
+                        " ",
+                        italic("italic"),
+                        " ",
+                        mark("mark"),
+                        " ",
+                        underline("underline"),
+                        " ",
+                        boldMark("bold-mark"),
+                        " ",
+                        phonetics("phonetics"),
+                        " ",
+                        portuguese("portuguese"),
+                      ],
+                    }),
+                  ],
+                },
+              ]}
+            />
+          </Section>
+
           {/* Notes */}
           <Section id="notes" heading={3}>
             <Notes>
@@ -578,20 +501,17 @@ export default function Mock() {
 
           {/* Flip Card */}
           <Section id="flip-card" heading={3}>
-            <CardLayout>
+            <GridLayout>
+              <FlipCard backImg="/assets/img/general/cat-1.jpg" backAlt="" />
               <FlipCard
-              backImg="/assets/img/general/cat-1.jpg"
-              backAlt=""
+                frontImg="/assets/img/general/cat-2.jpg"
+                backImg="/assets/img/general/cat-3.jpg"
               />
               <FlipCard
-              frontImg="/assets/img/general/cat-3.jpg"
-              backImg="/assets/img/general/cat-3.jpg"
+                frontText="What’s the past of 'ask`?"
+                backText="asked?"
               />
-              <FlipCard
-              frontText="What’s the past of 'ask`?"
-              backText="asked?"
-               />
-            </CardLayout>
+            </GridLayout>
           </Section>
 
           {/* Dialogue */}

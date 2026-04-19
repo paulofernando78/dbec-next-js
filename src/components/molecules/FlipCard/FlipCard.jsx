@@ -15,7 +15,7 @@ export const FlipCard = ({
       <div className={styles.card}>
         <div className={styles.front}>
           {frontText ? (
-            <span className={styles.frontText}>
+            <span className={styles.text}>
               <b>{frontText}</b>
             </span>
           ) : frontImg ? (
@@ -34,7 +34,7 @@ export const FlipCard = ({
               <b>{backText}</b>
             </span>
           )}
-          <Image src={backImg} alt={backAlt} />
+          {backImg && <Image src={backImg} alt={backAlt} />}
         </div>
       </div>
     </div>

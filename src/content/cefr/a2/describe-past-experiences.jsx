@@ -3,6 +3,7 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
+import { GridLayout } from "@/components/molecules/GridLayout";
 import { CardLayout } from "@/components/molecules/CardLayout";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
@@ -58,8 +59,7 @@ export default function DescribePastExperiences() {
               ]}
             />
             <LineBreak />
-            <div className="grid-container">
-
+            <GridLayout>
               {/* Last weekend, Laura went to the beach. */}
               <CardLayout width="max-content" mediaPosition="top">
                 <Image
@@ -114,7 +114,7 @@ export default function DescribePastExperiences() {
                   />
                 </div>
               </CardLayout>
-            </div>
+            </GridLayout>
 
             <LineBreak />
 
