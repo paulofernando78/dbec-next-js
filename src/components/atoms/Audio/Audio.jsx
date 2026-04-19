@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../../molecules/ContentToken/ContentToken.module.css"
+import styles from "../../molecules/ContentToken/ContentToken.module.css";
 
 import { useRef, useState } from "react";
 import { PlayAudio, StopAudio } from "@/lib/svg-imports.js";
@@ -11,7 +11,8 @@ export const Audio = ({ src }) => {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
 
-  const handlePlay = () => {
+  const handlePlay = (e) => {
+    e.stopPropagation();
     // audioRef.current?.play();
     // setPlaying(true);
 
@@ -31,7 +32,8 @@ export const Audio = ({ src }) => {
     setPlaying(true);
   };
 
-  const handleStop = () => {
+  const handleStop = (e) => {
+    e.stopPropagation();
     // audioRef.current?.pause();
     // audioRef.current.currentTime = 0;
     // setPlaying(false);
