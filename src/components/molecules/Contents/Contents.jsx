@@ -29,7 +29,7 @@ export const Contents = ({ items = [] }) => {
 
                 {item.href && (
                   <li className="flex-align">
-                    <ContentLink className="icon-position" />
+                    <ContentLink />
                     <a href={`#${item.href}`}>
                       {Array.isArray(item.label) ? (
                         <ContentToken text={item.label} />

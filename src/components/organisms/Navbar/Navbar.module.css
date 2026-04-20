@@ -48,4 +48,6 @@
 
 .attentionIcon {
   width: 21px;
+  transform: translate(-2px, -2px);
+  margin-inline: 2px;
 }

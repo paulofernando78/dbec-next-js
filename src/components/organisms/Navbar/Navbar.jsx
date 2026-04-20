@@ -161,7 +161,6 @@ const links = [
       },
     ],
   },
-
   // PRONUNCIATION
   {
     title: "PRONUNCIATION",
@@ -172,11 +171,16 @@ const links = [
         href: "/pronunciation/phonetics-letters",
         label: "Phonetics + Letters",
       },
-      // Linked Sounds
+      // Linking Sounds
       {
         attention: true,
         href: "/pronunciation/linking-sounds",
         label: "Linking Sounds",
+      },
+      // Accents
+      {
+        href: "/pronunciation/accents",
+        label: "accents",
       },
       // Sites
       {

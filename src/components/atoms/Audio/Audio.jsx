@@ -77,9 +77,9 @@ export const Audio = ({ src }) => {
   return (
     <>
       {playing ? (
-        <StopAudio onClick={handleStop} className={styles.iconPosition} />
+        <StopAudio onClick={handleStop} className="icon-position" />
       ) : (
-        <PlayAudio onClick={handlePlay} className={styles.iconPosition} />
+        <PlayAudio onClick={handlePlay} className="icon-position" />
       )}
 
       <audio

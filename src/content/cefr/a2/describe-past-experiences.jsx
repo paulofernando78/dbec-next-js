@@ -5,9 +5,7 @@ import { Section } from "@/components/molecules/Section";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { GridLayout } from "@/components/molecules/GridLayout";
-import { CardLayout } from "@/components/molecules/CardLayout";
 import { FlipCard } from "@/components/molecules/FlipCard/";
-import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
@@ -70,7 +68,7 @@ export default function DescribePastExperiences() {
                     value={[
                       ...content({
                         audio:
-                          "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
+                          "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/last-weekend-laura-went-to-the-beach.mp3",
                         parts: ["Last weekend, Laura went to the beach."],
                       }),
                     ]}
@@ -86,7 +84,7 @@ export default function DescribePastExperiences() {
                     value={[
                       ...content({
                         audio:
-                          "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
+                          "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/last-night-eric-watched-a-movie.mp3",
                         parts: ["Last night, Eric watched a movie."],
                       }),
                     ]}
@@ -102,8 +100,8 @@ export default function DescribePastExperiences() {
                     value={[
                       ...content({
                         audio:
-                          "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria-they-had-lunch-together.mp3",
-                        parts: ["Yesterday, Laura met Eric in the cafeteria."],
+                          "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
+                        parts: ["Yesterday, Laura met Eric in the school cafeteria."],
                       }),
                     ]}
                   />
@@ -174,7 +172,7 @@ export default function DescribePastExperiences() {
                   value={[
                     ...content({
                       audio:
-                        "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria-they-had-lunch-together.mp3",
+                        "/assets/audio/cefr/a2/describe-the-past/presentation/yesterday-laura-met-eric-in-the-school-cafeteria-they-had-lunch-together.mp3",
                       parts: [
                         "Yesterday, Laura met Eric in the school cafe",
                         stressed("te"),
@@ -186,7 +184,7 @@ export default function DescribePastExperiences() {
               </figcaption>
             </figure>
             <LineBreak />
-            <AudioPlayer src="/assets/audio/.mp3" />
+            <AudioPlayer src="/assets/audio/cefr/a2/describe-the-past/presentation/dialogue.mp3" />
             <LineBreak />
             <Dialogue
               lines={[

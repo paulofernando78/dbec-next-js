@@ -14,8 +14,7 @@ export default function LikedSounds() {
         <Line
           value={[
             {
-              audio: "/assets/audio/pronunciation/linked-sounds/check-out.mp3",
-              part: "Check out a couple of linked sounds.",
+              part: "Listen to a couple of linking sounds.",
               type: "bold",
             },
           ]}
@@ -301,6 +300,19 @@ export default function LikedSounds() {
               underline("k on an e"),
               "xtraordinary journey.",
               portuguese(" Embarque em uma jornada extraordinária."),
+            ]}
+          />
+          {/* I need to get a better job. */}
+          <Line
+            value={[
+              {
+                audio:
+                  "/assets/audio/pronunciation/linked-sounds/consonant-vowel/i-need-to-get-a-better-job.mp3",
+              },
+              "I need to ge",
+              underline("t a"),
+              " better job.",
+              portuguese(" Preciso de um emprego melhor."),
             ]}
           />
         </Section>

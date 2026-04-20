@@ -63,8 +63,8 @@ export const ContentToken = ({ value, text = [] }) => {
         if (Icon) {
           const className =
             name === "soundVariation"
-              ? `${styles.iconPosition} ${styles.soundVariationIcon}`
-              : styles.iconPosition;
+              ? `icon-position ${styles.soundVariationIcon}`
+              : `icon-position`;
 
           icons.push(<Icon key={`icon-${name}`} className={className} />);
         }
@@ -76,7 +76,7 @@ export const ContentToken = ({ value, text = [] }) => {
       if (part[flag] && !part.icons?.includes(name)) {
         const Icon = iconMap[name];
         if (Icon) {
-          icons.push(<Icon key={`legacy-${name}`} className="icon-position" />);
+          icons.push(<Icon key={`legacy-${name}`} />);
         }
       }
     });

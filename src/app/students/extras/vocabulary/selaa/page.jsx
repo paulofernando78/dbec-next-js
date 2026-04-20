@@ -108,7 +108,7 @@ export default function SELAA() {
       <div className="line-break">
         {links.map((item, index) => (
           <div key={index}>
-            <Lesson className="icon-position" /><Link href={item.href}>
+            <Lesson /><Link href={item.href}>
             <Bold><span>{item.label}</span></Bold></Link>{" "}
             <span className={styles.words}>{item.words}</span>
           </div>

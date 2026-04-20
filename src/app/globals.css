@@ -243,6 +243,11 @@ mark {
   z-index: 10;
 }
 
+.icon-position {
+  transform: translate(-2px, -1px);
+  display: inline-flex;
+}
+
 @media (max-width: 700px) {
   .nav {
     margin-left: var(--nav-width);
