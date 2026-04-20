@@ -101,7 +101,9 @@ export default function DescribePastExperiences() {
                       ...content({
                         audio:
                           "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
-                        parts: ["Yesterday, Laura met Eric in the school cafeteria."],
+                        parts: [
+                          "Yesterday, Laura met Eric in the school cafeteria.",
+                        ],
                       }),
                     ]}
                   />
@@ -317,11 +319,12 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
+                              audio:
+                                "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
                               parts: [
                                 "Last weekend, Laura ",
                                 mark("went"),
-                                " to the beach."
+                                " to the beach.",
                               ],
                             }),
                           ],
@@ -329,7 +332,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Last night, Eric watched a movie.
                     {
@@ -337,7 +340,8 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
+                              audio:
+                                "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
                               parts: [
                                 "Last night, Eric ",
                                 mark("watched"),
@@ -349,7 +353,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Yesterday, Laura met Eric in the cafeteria.
                     {
@@ -357,7 +361,8 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
+                              audio:
+                                "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
                               parts: [
                                 "Yesterday, Laura ",
                                 mark("met"),
@@ -369,7 +374,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // They had lunch together.
                     {
@@ -377,12 +382,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/cefr/a2/describe-the-past/they-had-lunch-together.mp3",
-                              parts: [
-                                "They ",
-                                mark("had"),
-                                "lunch together.",
-                              ],
+                              audio:
+                                "/assets/audio/cefr/a2/describe-the-past/they-had-lunch-together.mp3",
+                              parts: ["They ", mark("had"), "lunch together."],
                             }),
                           ],
                         },
@@ -403,18 +405,20 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio: ["/"],
-                              parts: ["She ",
+                              parts: [
+                                "She ",
                                 mark("didn’t"),
                                 " ",
                                 mark("go"),
-                                " to school."],
+                                " to school.",
+                              ],
                             }),
                           ],
                         },
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // He didn’t watch the news.
                     {
@@ -438,7 +442,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // She didn’t meet Eric in the classroom.
                     {
@@ -460,7 +464,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // They didn’t have breakfast.
                     {
@@ -508,7 +512,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Did Laura go to school?
                     {
@@ -529,7 +533,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Did Eric watch a movie?
                     {
@@ -542,7 +546,7 @@ export default function DescribePastExperiences() {
                                 mark("Did"),
                                 " Eric ",
                                 mark("watch"),
-                                " a movie?"
+                                " a movie?",
                               ],
                             }),
                           ],
@@ -568,7 +572,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Did Laura meet Eric in the school cafeteria?
                     {
@@ -623,7 +627,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Yes, he did.
                     {
@@ -652,7 +656,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Yes, they did.
                     {
@@ -681,7 +685,7 @@ export default function DescribePastExperiences() {
                       ],
                     },
                     {
-                      lineBreak: true
+                      lineBreak: true,
                     },
                     // Yes, they did.
                     {
