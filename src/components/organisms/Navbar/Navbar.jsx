@@ -180,7 +180,7 @@ const links = [
       // Accents
       {
         href: "/pronunciation/accents",
-        label: "accents",
+        label: "Accents",
       },
       // Sites
       {
