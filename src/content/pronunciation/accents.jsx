@@ -19,7 +19,7 @@ export default function LikedSounds() {
             },
           ]}
         />
-        <Contents
+        {/* <Contents
           items={[
             {
               href: "vowel-vowel",
@@ -42,7 +42,7 @@ export default function LikedSounds() {
               label: "s + y",
             },
           ]}
-        />
+        /> */}
 
         <Section id="vowel-vowel" label="Vowel + Vowel" heading={3}>
           {/* /w/ */}
@@ -91,6 +91,7 @@ export default function LikedSounds() {
               "You have to ge(t) used t",
               underline("o i"),
               "(t).",
+              portuguese("Você precisa se acostumar."),
             ]}
           />
 
@@ -224,6 +225,7 @@ export default function LikedSounds() {
                   "/assets/audio/pronunciation/linked-sounds/consonant-vowel/you-have-to-get-used-to-it.mp3",
               },
               "You hav(e) to ge(t) us(ed) to i(t).",
+              portuguese("Você precisa se acostumar."),
             ]}
           />
           {/* Turn off the lights. */}
