@@ -45,7 +45,10 @@ export function baseToken({
   }
 
   blocks.push(...parts);
-  blocks.push({part: " "})
+
+  if (parts.length) {
+    blocks.push({ part: " " });
+  }
 
   if (phonetics) {
     blocks.push({ part: phonetics, type: "phonetics" });

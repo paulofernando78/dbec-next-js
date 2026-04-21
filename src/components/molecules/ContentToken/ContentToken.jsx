@@ -23,11 +23,13 @@ import {
   Compare,
   Variation,
   SoundVariation,
+  Square,
 } from "@/lib/svg-imports";
 
 export const ContentToken = ({ value, text = [] }) => {
   const raw = value ?? text;
   const contentArray = Array.isArray(raw) ? raw : [raw];
+  const squareCount = contentArray.filter((part) => part?.square).length;
 
   const iconMap = {
     attention: Attention,
@@ -39,6 +41,7 @@ export const ContentToken = ({ value, text = [] }) => {
     compare: Compare,
     variation: Variation,
     soundVariation: SoundVariation,
+    square: Square,
   };
 
   const legacyFlagMap = {
@@ -93,7 +96,9 @@ export const ContentToken = ({ value, text = [] }) => {
 
         const isSquare = part.square;
         const isLastSquare =
-          isSquare && !contentArray.slice(i + 1).some((v) => v?.square);
+          isSquare &&
+          squareCount > 1 &&
+          !contentArray.slice(i + 1).some((v) => v?.square);
 
         switch (part.type) {
           case "bold":

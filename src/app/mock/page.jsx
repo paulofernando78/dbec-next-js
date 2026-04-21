@@ -83,6 +83,7 @@ export default function Mock() {
                     "arrow",
                     "variation",
                     "soundVariation",
+                    "square",
                   ],
                   audio: "/",
                   parts: [
