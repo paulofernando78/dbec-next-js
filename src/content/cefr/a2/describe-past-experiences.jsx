@@ -320,7 +320,7 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a2/describe-the-past/last-weekend-laura-went-to-the-beach.mp3",
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/last-weekend-laura-went-to-the-beach.mp3",
                               parts: [
                                 "Last weekend, Laura ",
                                 mark("went"),
@@ -341,7 +341,7 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a2/describe-the-past/last-night-eric-watched-a-movie.mp3",
+                                "/assets/audio/cefr/a2/describe-the-past/languague-focus/positive/last-night-eric-watched-a-movie.mp3",
                               parts: [
                                 "Last night, Eric ",
                                 mark("watched"),
@@ -362,7 +362,7 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a2/describe-the-past/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
+                                "/assets/audio/cefr/a2/describe-the-past/languague-focus/positive/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
                               parts: [
                                 "Yesterday, Laura ",
                                 mark("met"),
@@ -383,7 +383,7 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a2/describe-the-past/they-had-lunch-together.mp3",
+                                "/assets/audio/cefr/a2/describe-the-past/languague-focus/positive/they-had-lunch-together.mp3",
                               parts: ["They ", mark("had"), "lunch together."],
                             }),
                           ],
@@ -404,7 +404,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: ["/assets/audio/cefr/a2/describe-the-past/language-focus/negative/she-didnt-go-to-school.mp3"],
                               parts: [
                                 "She ",
                                 mark("didn’t"),
@@ -1380,7 +1380,7 @@ export default function DescribePastExperiences() {
           </Section>
 
           <Section id="production" heading={3}>
-            <Paragraph
+            <Line
               value={[
                 ...content({
                   parts: [
