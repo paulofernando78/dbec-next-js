@@ -341,7 +341,7 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a2/describe-the-past/languague-focus/positive/last-night-eric-watched-a-movie.mp3",
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/last-night-eric-watched-a-movie.mp3",
                               parts: [
                                 "Last night, Eric ",
                                 mark("watched"),
@@ -362,7 +362,7 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a2/describe-the-past/languague-focus/positive/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/yesterday-laura-met-eric-in-the-school-cafeteria.mp3",
                               parts: [
                                 "Yesterday, Laura ",
                                 mark("met"),
@@ -383,8 +383,8 @@ export default function DescribePastExperiences() {
                           text: [
                             ...content({
                               audio:
-                                "/assets/audio/cefr/a2/describe-the-past/languague-focus/positive/they-had-lunch-together.mp3",
-                              parts: ["They ", mark("had"), "lunch together."],
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/they-had-lunch-together.mp3",
+                              parts: ["They ", mark("had"), " lunch together."],
                             }),
                           ],
                         },
@@ -478,7 +478,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/negative/they-didnt-have-breakfast.mp3",
+                              ],
                               parts: [
                                 "They ",
                                 mark("didn’t"),
@@ -505,10 +507,12 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/question/did-Laura-go-to-the-beach.mp3",
+                              ],
                               parts: [
                                 mark("Did"),
-                                " she ",
+                                " Laura ",
                                 mark("go"),
                                 " to the beach?",
                               ],
@@ -523,12 +527,14 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/question/did-laura-visit-her-parents.mp3",
+                              ],
                               parts: [
                                 mark("Did"),
-                                " she ",
-                                mark("go"),
-                                " to school?",
+                                " Laura ",
+                                mark("visit"),
+                                " her parents?",
                               ],
                             }),
                           ],
@@ -544,7 +550,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/question/did-eric-watch-a-moive.mp3",
+                              ],
                               parts: [
                                 mark("Did"),
                                 " Eric ",
@@ -562,7 +570,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/question/did-eric-watch-a-documentary.mp3",
+                              ],
                               parts: [
                                 mark("Did"),
                                 " Eric ",
@@ -583,7 +593,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/question/did-laura-meet-eric-in-the-school-cafeteria.mp3",
+                              ],
                               parts: [
                                 mark("Did"),
                                 " Laura ",
@@ -601,7 +613,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/question/did-laura-meet-eric-in-the-classroom.mp3",
+                              ],
                               parts: [
                                 mark("Did"),
                                 " Laura ",
@@ -627,7 +641,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/yes-she-did.mp3",
+                              ],
                               parts: ["Yes, she ", mark("did"), "."],
                             }),
                           ],
@@ -640,7 +656,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/no-she-didnt.mp3",
+                              ],
                               parts: ["No, she ", mark("didn’t"), "."],
                             }),
                           ],
@@ -656,7 +674,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/yes-he-did.mp3",
+                              ],
                               parts: ["Yes, he ", mark("did"), "."],
                             }),
                           ],
@@ -669,7 +689,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/no-he-didnt.mp3",
+                              ],
                               parts: ["No, he ", mark("didn’t"), "."],
                             }),
                           ],
@@ -685,7 +707,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/yes-she-did.mp3",
+                              ],
                               parts: ["Yes, she ", mark("did"), "."],
                             }),
                           ],
@@ -698,7 +722,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/no-she-didnt.mp3",
+                              ],
                               parts: ["No, she ", mark("didn’t"), "."],
                             }),
                           ],
@@ -714,7 +740,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: ["/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/yes-they-did.mp3"],
                               parts: ["Yes, they ", mark("did"), "."],
                             }),
                           ],
@@ -727,7 +753,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: ["/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/no-they-didnt.mp3"],
                               parts: ["No, they ", mark("didn’t"), "."],
                             }),
                           ],
