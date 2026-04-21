@@ -404,7 +404,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/assets/audio/cefr/a2/describe-the-past/language-focus/negative/she-didnt-go-to-school.mp3"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/negative/she-didnt-go-to-school.mp3",
+                              ],
                               parts: [
                                 "She ",
                                 mark("didn’t"),
@@ -426,13 +428,15 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/negative/he-didnt-watch-a-documentary.mp3",
+                              ],
                               parts: [
                                 "He ",
                                 mark("didn’t"),
                                 " ",
                                 mark(" watch"),
-                                " watch a docu",
+                                " a docu",
                                 stressed("me"),
                                 "ntary.",
                               ],
@@ -450,7 +454,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/negative/she-didnt-meet-eric-in-the-classroom.mp3",
+                              ],
                               parts: [
                                 "She ",
                                 mark("didn’t"),
@@ -510,9 +516,6 @@ export default function DescribePastExperiences() {
                           ],
                         },
                       ],
-                    },
-                    {
-                      lineBreak: true,
                     },
                     // Did Laura go to school?
                     {
@@ -592,6 +595,24 @@ export default function DescribePastExperiences() {
                         },
                       ],
                     },
+                    // Did Laura meet Eric in the classroom?
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio: ["/"],
+                              parts: [
+                                mark("Did"),
+                                " Laura ",
+                                mark("meet"),
+                                " Eric in the classroom?",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
                   ],
                 },
                 // Short answer
@@ -658,27 +679,27 @@ export default function DescribePastExperiences() {
                     {
                       lineBreak: true,
                     },
-                    // Yes, they did.
+                    // Yes, she did.
                     {
                       block: [
                         {
                           text: [
                             ...content({
                               audio: ["/"],
-                              parts: ["Yes, they ", mark("did"), "."],
+                              parts: ["Yes, she ", mark("did"), "."],
                             }),
                           ],
                         },
                       ],
                     },
-                    // No, they didn’t.
+                    // No, she didn’t.
                     {
                       block: [
                         {
                           text: [
                             ...content({
                               audio: ["/"],
-                              parts: ["No, they ", mark("didn’t"), "."],
+                              parts: ["No, she ", mark("didn’t"), "."],
                             }),
                           ],
                         },
