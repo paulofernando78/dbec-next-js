@@ -18,9 +18,9 @@ import {
   content,
   bold,
   mark,
-  underline,
   stressed,
   phonetics,
+  portuguese,
 } from "@/helpers/content";
 
 export const metadata = {
@@ -303,6 +303,21 @@ export default function DescribePastExperiences() {
           </Section>
 
           <Section id="language-focus" heading={3}>
+            <LineBreak />
+            <Line
+              value={[
+                ...content({
+                  icons: ["attention"],
+                  parts: [
+                    "Regular verbs usually end in ",
+                    mark("-ed"),
+                    ", but some common verbs are irregular and change form completely, like ",
+                    mark("go - went"),
+                    ".",
+                  ],
+                }),
+              ]}
+            />
             <LineBreak />
             <Column
               width="240"
@@ -740,7 +755,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/yes-they-did.mp3"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/yes-they-did.mp3",
+                              ],
                               parts: ["Yes, they ", mark("did"), "."],
                             }),
                           ],
@@ -753,7 +770,9 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: ["/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/no-they-didnt.mp3"],
+                              audio: [
+                                "/assets/audio/cefr/a2/describe-the-past/language-focus/short-answer/no-they-didnt.mp3",
+                              ],
                               parts: ["No, they ", mark("didn’t"), "."],
                             }),
                           ],
@@ -770,10 +789,74 @@ export default function DescribePastExperiences() {
                 ...content({
                   icons: ["attention"],
                   parts: [
-                    "Regular verbs usually end in ",
+                    "As a general rule, the ending ",
                     mark("-ed"),
-                    ", but some common verbs are irregular and change form completely, like ",
-                    mark("go - went"),
+                    " regular verbs can have 3 different sounds.",
+                    portuguese(
+                      "Como regra geral, a terminação -ed dos verbos regulares pode ter 3 sons diferentes.",
+                    ),
+                  ],
+                }),
+              ]}
+            />
+            <LineBreak />
+
+            <Line
+              value={[
+                ...content({
+                  audio: [
+                    "/assets/audio/cefr/a2/describe-the-past/-ed-endings/t.mp3",
+                  ],
+                  parts: [
+                    phonetics("/t/"),
+                    " after voiceless sounds like ",
+                    mark("p"),
+                    ", ",
+                    mark("k"),
+                    ", ",
+                    mark("f"),
+                    ", ",
+                    mark("s"),
+                    ".",
+                  ],
+                }),
+              ]}
+            />
+
+            <Line
+              value={[
+                ...content({
+                  audio: ["/"],
+                  parts: [
+                    phonetics("/d/"),
+                    " after voiced sounds like vowels, ",
+                    mark("b"),
+                    ", ",
+                    mark("g"),
+                    ", ",
+                    mark("m"),
+                    ", ",
+                    mark("v"),
+                    ", ",
+                    mark("z"),
+                    ".",
+                  ],
+                }),
+              ]}
+            />
+
+            <Line
+              value={[
+                ...content({
+                  audio: [
+                    "/assets/audio/cefr/a2/describe-the-past/-ed-endings/d2.mp3",
+                  ],
+                  parts: [
+                    phonetics("/ɪd/"),
+                    " after verbs ending in ",
+                    mark("/t/"),
+                    " or ",
+                    mark("/d/"),
                     ".",
                   ],
                 }),
@@ -781,6 +864,15 @@ export default function DescribePastExperiences() {
             />
             <LineBreak />
             {/* Regular / Irregular Verbs */}
+            <Line
+              value={[
+                ...content({
+                  icons: ["attention"],
+                  parts: ["Common list of regular and irregular verbs "],
+                }),
+              ]}
+            />
+            <LineBreak />
             <Column
               width="220"
               cols={[
@@ -796,12 +888,16 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
+                              audio:
+                                "/assets/audio/cefr/a2/describe-the-past/regular-irregular-verbs/ask-asked.mp3",
                               parts: ["ask "],
                             }),
                             ...content({
                               icons: ["arrow"],
-                              parts: ["asked"],
+                              parts: [
+                                "asked",
+                                " ",
+                                phonetics("/ɪd/")],
                             }),
                           ],
                         },
@@ -813,7 +909,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
+                              audio: "/assets/audio/cefr/a2/describe-the-past/regular-irregular-verbs/play-played.mp3",
                               parts: ["play "],
                             }),
                             ...content({
@@ -830,7 +926,7 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
+                              audio: "/assets/audio/cefr/a2/describe-the-past/regular-irregular-verbs/study-studied.mp3",
                               parts: ["study "],
                             }),
                             ...content({
@@ -920,7 +1016,7 @@ export default function DescribePastExperiences() {
                             }),
                             ...content({
                               icons: ["arrow"],
-                              parts: ["wanted"],
+                              parts: ["wanted", " ", phonetics("/ɪd/")],
                             }),
                           ],
                         },
@@ -1082,240 +1178,6 @@ export default function DescribePastExperiences() {
                             ...content({
                               icons: ["arrow"],
                               parts: ["got"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ]}
-            />
-            <LineBreak />
-            <Line
-              value={[
-                ...content({
-                  parts: [
-                    "Regular past verbs can have 3 different sounds ",
-                    ".",
-                  ],
-                }),
-              ]}
-            />
-            <LineBreak />
-            {/* -ed sound ending  */}
-            <Column
-              width="220"
-              cols={[
-                // /t/
-                {
-                  bgColor: "var(--blue-4)",
-                  textColor: "white",
-                  column: "/t/",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["ask "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "ask",
-                                underline("ed"),
-                                " ",
-                                phonetics("/t/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["work "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "work",
-                                underline("ed"),
-                                " ",
-                                phonetics("/t/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // wash -> washed /t/
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["wash "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "wash",
-                                underline("ed"),
-                                " ",
-                                phonetics("/t/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-                // /d/
-                {
-                  bgColor: "var(--blue-5)",
-                  textColor: "white",
-                  column: "/d/",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["play "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "play",
-                                underline("ed"),
-                                " ",
-                                phonetics("/d/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["live "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "liv",
-                                underline("ed"),
-                                " ",
-                                phonetics("/d/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // clean -> cleaned /d/
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["clean "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "clean",
-                                underline("ed"),
-                                " ",
-                                phonetics("/d/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-                // /ɪd/
-                {
-                  bgColor: "var(--blue-6)",
-                  textColor: "white",
-                  column: "/ɪd/",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["visit "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "visit",
-                                underline("ed"),
-                                " ",
-                                phonetics("/ɪd/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["want "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "want",
-                                underline("ed"),
-                                " ",
-                                phonetics("/ɪd/"),
-                              ],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // need -> needed /ɪd/
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["need "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: [
-                                "need",
-                                underline("ed"),
-                                " ",
-                                phonetics("/ɪd/"),
-                              ],
                             }),
                           ],
                         },

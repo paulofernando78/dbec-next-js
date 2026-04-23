@@ -229,11 +229,6 @@ const links = [
   {
     title: "REFERENCE",
     links: [
-      // The Alphabet
-      {
-        href: "/reference/the-alphabet",
-        label: "The Alphabet",
-      },
       // Numbers
       {
         href: "/reference/numbers",
