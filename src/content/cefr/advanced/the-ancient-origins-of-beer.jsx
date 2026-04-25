@@ -33,6 +33,53 @@ export default function AncientOriginsOfBeer() {
         </Card>
 
         <PageSections>
+          <Section id="Introduction" heading={3}>
+          <List
+            items={[
+              {
+                value: [
+                  ...content({
+                    parts: [
+                      bold("Topic: "),
+                      "the historical development of beer",
+                    ],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: [
+                      bold("Time span: "),
+                      "from ancient brewing to modern varieties",
+                    ],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: [
+                      bold("Key process: "),
+                      "converting grain starches into sugars and fermenting them",
+                    ],
+                  }),
+                ],
+              },
+              {
+                value: [
+                  ...content({
+                    parts: [
+                      bold("Important innovations: "),
+                      "hops, refrigeration, and understanding yeast",
+                    ],
+                  }),
+                ],
+              },
+            ]}
+          />
+            
+          </Section>
           <Section id="Guess" heading={3}>
             <Radio
               exercise={{
@@ -114,51 +161,6 @@ export default function AncientOriginsOfBeer() {
             />
 
             <LineBreak />
-
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Topic: "),
-                        "the historical development of beer",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Time span: "),
-                        "from ancient brewing to modern varieties",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Key process: "),
-                        "converting grain starches into sugars and fermenting them",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Important innovations: "),
-                        "hops, refrigeration, and understanding yeast",
-                      ],
-                    }),
-                  ],
-                },
-              ]}
-            />
           </Section>
 
           <Section id="practice" heading={3}>
