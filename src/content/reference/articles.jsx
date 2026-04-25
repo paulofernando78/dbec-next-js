@@ -325,7 +325,7 @@ export default function Articles() {
         }, {
           lineBreak: true
         }, "It sounds ", {
-          audio: "/assets/audio/general/the1.mp3"
+          audio: "/assets/audio/words/t/the1.mp3"
         }, {
           part: "/ðiː/",
           type: "phonetics"
@@ -339,49 +339,49 @@ export default function Articles() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-address.mp3"
+          audio: "/assets/audio/words/t/the-address.mp3"
         }, "the address ", {
           part: "o endereço",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-airport.mp3"
+          audio: "/assets/audio/words/t/the-airport.mp3"
         }, "the airport ", {
           part: "o aeroporto",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-apple.mp3"
+          audio: "/assets/audio/words/t/the-apple.mp3"
         }, "the apple ", {
           part: "a maçã",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-elevator.mp3"
+          audio: "/assets/audio/words/t/the-elevator.mp3"
         }, "the elevator ", {
           part: "o elevador",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-email.mp3"
+          audio: "/assets/audio/words/t/the-email.mp3"
         }, "the email ", {
           part: "o e-mail",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-internet1.mp3"
+          audio: "/assets/audio/words/t/the-internet1.mp3"
         }, "the internet ", {
           part: "a internet",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-office.mp3"
+          audio: "/assets/audio/words/t/the-office.mp3"
         }, "the office ", {
           part: "o escritório",
           type: "portuguese"
@@ -392,7 +392,7 @@ export default function Articles() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-office-is-open.mp3",
+          audio: "/assets/audio/words/t/the-office-is-open.mp3",
           bullet: true
         }, "The office is open.", " ", {
           part: "O escritório está aberto.",
@@ -400,7 +400,7 @@ export default function Articles() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/check-the-email-please.mp3",
+          audio: "/assets/audio/words/c/check-the-email-please.mp3",
           bullet: true
         }, "Check the email, please.", " ", {
           part: "Verifique o e-mail, por favor.",
@@ -408,7 +408,7 @@ export default function Articles() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-address-is-wrong.mp3",
+          audio: "/assets/audio/words/t/the-address-is-wrong.mp3",
           bullet: true
         }, "The address is wrong.", " ", {
           part: "O endereço está errado.",
@@ -420,7 +420,7 @@ export default function Articles() {
         }, {
           lineBreak: true
         }, "It sounds ", {
-          audio: "/assets/audio/general/the2.mp3"
+          audio: "/assets/audio/words/t/the2.mp3"
         }, {
           part: "/ðə/",
           type: "phonetics"
@@ -434,21 +434,21 @@ export default function Articles() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-bus.mp3"
+          audio: "/assets/audio/words/t/the-bus.mp3"
         }, "the bus ", {
           part: "o ônibus",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-sun.mp3"
+          audio: "/assets/audio/words/t/the-sun.mp3"
         }, "the sun ", {
           part: "o sol",
           type: "portuguese"
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/the-door.mp3"
+          audio: "/assets/audio/words/t/the-door.mp3"
         }, "the door ", {
           part: "a porta",
           type: "portuguese"

@@ -38,7 +38,7 @@ export default function Numbers() {
                 value={[
                   ...content({
                     audio:
-                      "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentence.mp3",
+                      "/assets/audio/words/l/look-at-the-pictures-and-listen-to-the-sentence.mp3",
                     parts: [
                       "",
                       bold("Look at the picture and listen to the sentences."),
@@ -85,7 +85,7 @@ export default function Numbers() {
             />
             <Radio
               exercise={{
-                audio: "/assets/audio/general/now-answer-the-questions.mp3",
+                audio: "/assets/audio/words/n/now-answer-the-questions.mp3",
                 instruction: "Now answer the questions.",
                 questions: [
                   {

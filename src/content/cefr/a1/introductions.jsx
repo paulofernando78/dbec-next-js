@@ -221,7 +221,7 @@ export default function Introductions() {
                   value={[
                     ...content({
                       audio:
-                        "/assets/audio/general/look-at-the-picture-and-listen-to-the-sentences.mp3",
+                        "/assets/audio/words/l/look-at-the-picture-and-listen-to-the-sentences.mp3",
                       parts: [
                         bold(
                           "Look at the picture and listen to the sentences.",

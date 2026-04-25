@@ -77,7 +77,7 @@ export default function TalkAboutYourFreeTime() {
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/general/i-usually-watch-tv-at-night.mp3",
+                      audio: "/assets/audio/words/i/i-usually-watch-tv-at-night.mp3",
                       parts: ["I usually watch TV at night."],
                     }),
                   ]}
@@ -427,7 +427,7 @@ export default function TalkAboutYourFreeTime() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/watch.mp3",
+                      audio: "/assets/audio/words/w/watch.mp3",
                       parts: [bold("watch"), " = movies / TV"],
                     }),
                   ],

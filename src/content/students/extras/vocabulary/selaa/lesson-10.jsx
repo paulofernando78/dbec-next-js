@@ -25,7 +25,7 @@ export default function SELAAlessonTen() {
               icons: ["attention"],
             },
             {
-              audio: "/assets/audio/general/.mp3",
+              audio: "/assets/audio/words/.mp3",
             },
             {
               part: "Listen to 'Lesson 10 • Bob Visits the Village Market'",
@@ -46,7 +46,7 @@ export default function SELAAlessonTen() {
               speaker: "Bob:",
               text: [
                 "Thank you for ",
-                audio("/assets/audio/general/making-time-for.mp3"),
+                audio("/assets/audio/words/m/making-time-for.mp3"),
                 mark(" making time for"),
                 " me today, Carol.",
               ],
@@ -54,10 +54,10 @@ export default function SELAAlessonTen() {
             {
               speaker: "Carol:",
               text: [
-                audio("/assets/audio/general/dont-mention-it.mp3"),
+                audio("/assets/audio/words/d/dont-mention-it.mp3"),
                 mark("Don’t mention it"),
                 ", Bob. ",
-                audio("/assets/audio/general/whats-up.mp3"),
+                audio("/assets/audio/words/w/whats-up.mp3"),
                 mark("What’s up?"),
               ],
             },
@@ -65,7 +65,7 @@ export default function SELAAlessonTen() {
               speaker: "Bob:",
               text: [
                 "My wife baked these cookies ",
-                audio("/assets/audio/general/from-scratch.mp3"),
+                audio("/assets/audio/words/f/from-scratch.mp3"),
                 mark("from scratch"),
                 ". Please take one.",
               ],
@@ -74,7 +74,7 @@ export default function SELAAlessonTen() {
               speaker: "Carol:",
               text: [
                 "Mmmm, chewy. These are ",
-                audio("/assets/audio/general/out-of-this-world.mp3"),
+                audio("/assets/audio/words/o/out-of-this-world.mp3"),
                 mark("out of this world!"),
               ],
             },
@@ -85,7 +85,7 @@ export default function SELAAlessonTen() {
             {
               speaker: "Carol:",
               text: [
-                audio("/assets/audio/general/you-can-say-that-again.mp3"),
+                audio("/assets/audio/words/y/you-can-say-that-again.mp3"),
                 mark("You can say that again"),
                 ". I don’t want to make a pig of myself, but let me take a few more.",
               ],
@@ -94,7 +94,7 @@ export default function SELAAlessonTen() {
               speaker: "Bob:",
               text: [
                 "Oink oink! ",
-                audio("/assets/audio/general/just-kidding.mp3"),
+                audio("/assets/audio/words/j/just-kidding.mp3"),
                 mark("Just kidding"),
                 "! ",
               ],
@@ -103,7 +103,7 @@ export default function SELAAlessonTen() {
               speaker: "Carol:",
               text: [
                 "I’d like to sell these at the Village Market. My customers will ",
-                audio("/assets/audio/general/go-nuts.mp3"),
+                audio("/assets/audio/words/g/go-nuts.mp3"),
                 mark("go nuts"),
                 " over these cookies.",
               ],
@@ -116,10 +116,10 @@ export default function SELAAlessonTen() {
               speaker: "Carol:",
               text: [
                 "I’m not sure. I need to ",
-                audio("/assets/audio/general/roll-up-my-sleeves.mp3"),
+                audio("/assets/audio/words/r/roll-up-my-sleeves.mp3"),
                 mark("roll up my sleeves"),
                 " and ",
-                audio("/assets/audio/general/figure-out.mp3"),
+                audio("/assets/audio/words/f/figure-out.mp3"),
                 mark(" figure out "),
                 " the finances.",
               ],
@@ -128,7 +128,7 @@ export default function SELAAlessonTen() {
               speaker: "Bob:",
               text: [
                 "Can you give me a ",
-                audio("/assets/audio/general/ballpark-figure.mp3"),
+                audio("/assets/audio/words/b/ballpark-figure.mp3"),
                 mark("ballpark figure"),
                 " now? ",
               ],
@@ -137,10 +137,10 @@ export default function SELAAlessonTen() {
               speaker: "Carol:",
               text: [
                 "I don’t want to ",
-                audio("/assets/audio/general/jump-the-gun.mp3"),
+                audio("/assets/audio/words/j/jump-the-gun.mp3"),
                 mark("jump the gun"),
                 ". ",
-                audio("/assets/audio/general/sit-tight.mp3"),
+                audio("/assets/audio/words/s/sit-tight.mp3"),
                 mark("Sit tight"),
                 " for now, and we'll talk things over this evening.",
               ],

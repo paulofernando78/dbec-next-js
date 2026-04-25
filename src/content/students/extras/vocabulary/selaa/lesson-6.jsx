@@ -38,7 +38,7 @@ export default function SELAAlessonSix() {
               text: [
                 "That was so nice of you, dear. You've got a ",
                 {
-                  audio: "/assets/audio/general/heart-of-gold.mp3",
+                  audio: "/assets/audio/words/h/heart-of-gold.mp3",
                   part: "heart of gold",
                   type: "mark",
                 },
@@ -50,7 +50,7 @@ export default function SELAAlessonSix() {
               text: [
                 "Go ahead and ",
                 {
-                  audio: "/assets/audio/general/pig-out.mp3",
+                  audio: "/assets/audio/words/p/pig-out.mp3",
                   part: "pig out",
                   type: "mark",
                 },
@@ -66,13 +66,13 @@ export default function SELAAlessonSix() {
               text: [
                 "I thought they might ",
                 {
-                  audio: "/assets/audio/general/cheer-you-up.mp3",
+                  audio: "/assets/audio/words/c/cheer-you-up.mp3",
                   part: "cheer you up",
                   type: "mark",
                 },
                 ". You've been ",
                 {
-                  audio: "/assets/audio/general/in-a-bad-mood.mp3",
+                  audio: "/assets/audio/words/i/in-a-bad-mood.mp3",
                   part: "in a bad mood",
                   type: "mark",
                 },
@@ -84,14 +84,14 @@ export default function SELAAlessonSix() {
               text: [
                 "I guess I have been a little ",
                 {
-                  audio: "/assets/audio/general/on-edge.mp3",
+                  audio: "/assets/audio/words/o/on-edge.mp3",
                   part: "on edge",
                   type: "mark",
                 },
                 ". But these cookies are ",
                 {
                   audio:
-                    "/assets/audio/general/just-what-the-doctor-ordered.mp3",
+                    "/assets/audio/words/j/just-what-the-doctor-ordered.mp3",
                   part: "just what the doctor ordered",
                   type: "mark",
                 },
@@ -106,7 +106,7 @@ export default function SELAAlessonSix() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/assets/audio/general/help-yourself.mp3",
+                  audio: "/assets/audio/words/h/help-yourself.mp3",
                   part: "Help yourself",
                   type: "mark",
                 },
@@ -118,13 +118,13 @@ export default function SELAAlessonSix() {
               text: [
                 "Yum-yum. These are ",
                 {
-                  audio: "/assets/audio/general/out-of-this-world.mp3",
+                  audio: "/assets/audio/words/o/out-of-this-world.mp3",
                   part: "out of this world",
                   type: "mark",
                 },
                 ". You could ",
                 {
-                  audio: "/assets/audio/general/go-into-business.mp3",
+                  audio: "/assets/audio/words/g/go-into-business.mp3",
                   part: "go into business",
                   type: "mark",
                 },
@@ -136,7 +136,7 @@ export default function SELAAlessonSix() {
               text: [
                 "You could call them Susan's Scrumptious Cookies. You'd ",
                 {
-                  audio: "/assets/audio/general/make-a-bundle.mp3",
+                  audio: "/assets/audio/words/m/make-a-bundle.mp3",
                   part: "make a bundle",
                   type: "mark",
                 },
@@ -147,7 +147,7 @@ export default function SELAAlessonSix() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/assets/audio/general/good-thinking.mp3",
+                  audio: "/assets/audio/words/g/good-thinking.mp3",
                   part: "Good thinking",
                   type: "mark",
                 },
@@ -159,7 +159,7 @@ export default function SELAAlessonSix() {
               text: [
                 "Don't forget to ",
                 {
-                  audio: "/assets/audio/general/give-me-credit.mp3",
+                  audio: "/assets/audio/words/g/give-me-credit.mp3",
                   part: "give me credit",
                   type: "mark",
                 },
@@ -172,7 +172,7 @@ export default function SELAAlessonSix() {
                 "You know I always ",
                 {
                   audio:
-                    "/assets/audio/general/give-credit-where-credit-is-due.mp3",
+                    "/assets/audio/words/g/give-credit-where-credit-is-due.mp3",
                   part: "give credit where credit is due",
                   type: "mark",
                 },

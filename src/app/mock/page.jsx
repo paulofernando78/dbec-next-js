@@ -54,7 +54,7 @@ export default function Mock() {
 
           {/* AudioPlayer */}
           <Section id="audio-player" heading={3}>
-            <AudioPlayer src="/assets/audio/general/about-to.mp3" />
+            <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
           </Section>
 
           {/* Text only */}
@@ -188,7 +188,7 @@ export default function Mock() {
             heading={3}
           >
             {/* Card Layout */}
-            <AudioPlayer src="/assets/audio/general/about-to.mp3" />
+            <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
             <LineBreak />
             <CardLayout mediaPosition="top">
               <Image

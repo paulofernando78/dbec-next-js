@@ -340,7 +340,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/ask-asked.mp3"
+                audio: "/assets/audio/words/a/ask-asked.mp3"
               }, "ask ", {
                 part: "perguntar",
                 type: "portuguese"
@@ -354,7 +354,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/attack-attacked.mp3"
+                audio: "/assets/audio/words/a/attack-attacked.mp3"
               }, "attack ", {
                 part: "atacar",
                 type: "portuguese"
@@ -368,7 +368,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/finish-finished.mp3"
+                audio: "/assets/audio/words/f/finish-finished.mp3"
               }, "finish ", {
                 part: "terminar, acabar",
                 type: "portuguese"
@@ -382,7 +382,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/help-helped.mp3"
+                audio: "/assets/audio/words/h/help-helped.mp3"
               }, "help ", {
                 part: "ajudar",
                 type: "portuguese"
@@ -396,7 +396,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/jump-jumped.mp3"
+                audio: "/assets/audio/words/j/jump-jumped.mp3"
               }, "jump ", {
                 part: "pular",
                 type: "portuguese"
@@ -410,7 +410,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/kiss-kissed.mp3"
+                audio: "/assets/audio/words/k/kiss-kissed.mp3"
               }, "kiss ", {
                 part: "beijar",
                 type: "portuguese"
@@ -424,7 +424,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/laugh.mp3"
+                audio: "/assets/audio/words/l/laugh.mp3"
               }, "laugh ", {
                 part: "rir",
                 type: "portuguese"
@@ -438,7 +438,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/look.mp3"
+                audio: "/assets/audio/words/l/look.mp3"
               }, "look ", {
                 part: "olhar",
                 type: "portuguese"
@@ -452,7 +452,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/stop.mp3"
+                audio: "/assets/audio/words/s/stop.mp3"
               }, "stop ", {
                 part: "parar",
                 type: "portuguese"
@@ -466,7 +466,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/talk.mp3"
+                audio: "/assets/audio/words/t/talk.mp3"
               }, "talk ", {
                 part: "conversar",
                 type: "portuguese"
@@ -480,7 +480,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/thank.mp3"
+                audio: "/assets/audio/words/t/thank.mp3"
               }, "thank ", {
                 part: "agradecer",
                 type: "portuguese"
@@ -494,7 +494,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/walk.mp3"
+                audio: "/assets/audio/words/w/walk.mp3"
               }, "walk ", {
                 part: "caminhar",
                 type: "portuguese"
@@ -508,7 +508,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/wash-washed.mp3"
+                audio: "/assets/audio/words/w/wash-washed.mp3"
               }, "wash ", {
                 part: "lavar",
                 type: "portuguese"
@@ -522,7 +522,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/watch-watched.mp3"
+                audio: "/assets/audio/words/w/watch-watched.mp3"
               }, "watch ", {
                 part: "assistir, ...",
                 type: "portuguese"
@@ -536,7 +536,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/work-worked.mp3"
+                audio: "/assets/audio/words/w/work-worked.mp3"
               }, "work ", {
                 part: "trabalhar, ...",
                 type: "portuguese"
@@ -562,7 +562,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/like.mp3"
+                audio: "/assets/audio/words/l/like.mp3"
               }, "lik(e) ", {
                 part: "gostar",
                 type: "portuguese"
@@ -576,7 +576,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/practice-practiceed.mp3"
+                audio: "/assets/audio/words/p/practice-practiceed.mp3"
               }, "practic(e) ", {
                 part: "praticar",
                 type: "portuguese"
@@ -610,7 +610,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/answer-answered.mp3"
+                audio: "/assets/audio/words/a/answer-answered.mp3"
               }, "answer ", {
                 part: "responder",
                 type: "portuguese"
@@ -624,7 +624,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/clean-cleaned.mp3"
+                audio: "/assets/audio/words/c/clean-cleaned.mp3"
               }, "clean ", {
                 part: "limpar",
                 type: "portuguese"
@@ -638,7 +638,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/learn-learned.mp3"
+                audio: "/assets/audio/words/l/learn-learned.mp3"
               }, "learn ", {
                 part: "aprender",
                 type: "portuguese"
@@ -652,7 +652,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/listen-listened.mp3"
+                audio: "/assets/audio/words/l/listen-listened.mp3"
               }, "listen ", {
                 part: "ouvir / escutar",
                 type: "portuguese"
@@ -666,7 +666,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/live-lived.mp3"
+                audio: "/assets/audio/words/l/live-lived.mp3"
               }, "live ", {
                 part: "viver, morar",
                 type: "portuguese"
@@ -680,7 +680,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/open-opened.mp3"
+                audio: "/assets/audio/words/o/open-opened.mp3"
               }, "open ", {
                 part: "abrir",
                 type: "portuguese"
@@ -694,7 +694,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/plan-planed.mp3"
+                audio: "/assets/audio/words/p/plan-planed.mp3"
               }, "plan ", {
                 part: "planejar",
                 type: "portuguese"
@@ -708,7 +708,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/play-played.mp3"
+                audio: "/assets/audio/words/p/play-played.mp3"
               }, "play ", {
                 part: "jogar",
                 type: "portuguese"
@@ -722,7 +722,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/turn-turned.mp3"
+                audio: "/assets/audio/words/t/turn-turned.mp3"
               }, "turn ", {
                 part: "virar / girar",
                 type: "portuguese"
@@ -736,7 +736,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/water-watered.mp3"
+                audio: "/assets/audio/words/w/water-watered.mp3"
               }, "water ", {
                 part: "molhar",
                 type: "portuguese"
@@ -762,7 +762,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/achieve-achieved.mp3"
+                audio: "/assets/audio/words/a/achieve-achieved.mp3"
               }, "achiev(e) ", {
                 part: "conquistar",
                 type: "portuguese"
@@ -776,7 +776,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/admire-admired.mp3"
+                audio: "/assets/audio/words/a/admire-admired.mp3"
               }, "admir(e) ", {
                 part: "admirar",
                 type: "portuguese"
@@ -790,7 +790,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/arrive-arrived.mp3"
+                audio: "/assets/audio/words/a/arrive-arrived.mp3"
               }, "arriv(e) ", {
                 part: "chegar",
                 type: "portuguese"
@@ -804,7 +804,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/close-closed.mp3"
+                audio: "/assets/audio/words/c/close-closed.mp3"
               }, "clos(e) ", {
                 part: "fechar",
                 type: "portuguese"
@@ -818,7 +818,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/damage-damaged.mp3"
+                audio: "/assets/audio/words/d/damage-damaged.mp3"
               }, "damag(e) ", {
                 part: "danificar",
                 type: "portuguese"
@@ -832,7 +832,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/dance-danced.mp3"
+                audio: "/assets/audio/words/d/dance-danced.mp3"
               }, "danc(e) ", {
                 part: "dançar",
                 type: "portuguese"
@@ -846,7 +846,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/lie-lied.mp3"
+                audio: "/assets/audio/words/l/lie-lied.mp3"
               }, "li(e) ", {
                 part: "mentir, deitar-se",
                 type: "portuguese"
@@ -860,7 +860,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/love-loved.mp3"
+                audio: "/assets/audio/words/l/love-loved.mp3"
               }, "lov(e) ", {
                 part: "amar",
                 type: "portuguese"
@@ -874,7 +874,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/manage-managed.mp3"
+                audio: "/assets/audio/words/m/manage-managed.mp3"
               }, "manag(e) ", {
                 part: "gerenciar",
                 type: "portuguese"
@@ -888,7 +888,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/scare-scared.mp3"
+                audio: "/assets/audio/words/s/scare-scared.mp3"
               }, "scare(e) ", {
                 part: "assustar",
                 type: "portuguese"
@@ -902,7 +902,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/tie-tied.mp3"
+                audio: "/assets/audio/words/t/tie-tied.mp3"
               }, "ti(e)", {
                 part: "amarrar",
                 type: "portuguese"
@@ -916,7 +916,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/use-used.mp3"
+                audio: "/assets/audio/words/u/use-used.mp3"
               }, "us(e) ", {
                 part: "usar",
                 type: "portuguese"
@@ -942,7 +942,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/carry-studied.mp3"
+                audio: "/assets/audio/words/c/carry-studied.mp3"
               }, "carry ", {
                 part: "carregar",
                 type: "portuguese"
@@ -956,7 +956,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/cry-studied.mp3"
+                audio: "/assets/audio/words/c/cry-studied.mp3"
               }, "cry ", {
                 part: "chorar",
                 type: "portuguese"
@@ -970,7 +970,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/dry-studied.mp3"
+                audio: "/assets/audio/words/d/dry-studied.mp3"
               }, "dry ", {
                 part: "secar",
                 type: "portuguese"
@@ -984,7 +984,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/study-studied.mp3"
+                audio: "/assets/audio/words/s/study-studied.mp3"
               }, "study ", {
                 part: "estudar",
                 type: "portuguese"
@@ -998,7 +998,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/try-tried.mp3"
+                audio: "/assets/audio/words/t/try-tried.mp3"
               }, "try ", {
                 part: "tentar",
                 type: "portuguese"
@@ -1029,7 +1029,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/add-added.mp3"
+                audio: "/assets/audio/words/a/add-added.mp3"
               }, "add ", {
                 part: "adicionar",
                 type: "portuguese"
@@ -1043,7 +1043,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/assit-assisted.mp3"
+                audio: "/assets/audio/words/a/assit-assisted.mp3"
               }, "assist ", {
                 part: "auxilar",
                 type: "portuguese"
@@ -1057,7 +1057,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/end-ended.mp3"
+                audio: "/assets/audio/words/e/end-ended.mp3"
               }, "end ", {
                 part: "acabar",
                 type: "portuguese"
@@ -1071,7 +1071,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/last-lasted.mp3"
+                audio: "/assets/audio/words/l/last-lasted.mp3"
               }, "last ", {
                 part: "durar",
                 type: "portuguese"
@@ -1085,7 +1085,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/list-listed.mp3"
+                audio: "/assets/audio/words/l/list-listed.mp3"
               }, "list ", {
                 part: "listar",
                 type: "portuguese"
@@ -1099,7 +1099,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/need-needed.mp3"
+                audio: "/assets/audio/words/n/need-needed.mp3"
               }, "need ", {
                 part: "precisar",
                 type: "portuguese"
@@ -1113,7 +1113,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/notice-noticeed.mp3"
+                audio: "/assets/audio/words/n/notice-noticeed.mp3"
               }, "notice ", {
                 part: "perceber",
                 type: "portuguese"
@@ -1127,7 +1127,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/shout-shouted.mp3"
+                audio: "/assets/audio/words/s/shout-shouted.mp3"
               }, "shout ", {
                 part: "gritar",
                 type: "portuguese"
@@ -1141,7 +1141,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/start-started.mp3"
+                audio: "/assets/audio/words/s/start-started.mp3"
               }, "start ", {
                 part: "começar",
                 type: "portuguese"
@@ -1155,7 +1155,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/wait-waited.mp3"
+                audio: "/assets/audio/words/w/wait-waited.mp3"
               }, "wait ", {
                 part: "esperar",
                 type: "portuguese"
@@ -1169,7 +1169,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/want-wanted.mp3"
+                audio: "/assets/audio/words/w/want-wanted.mp3"
               }, "want ", {
                 part: "querer",
                 type: "portuguese"
@@ -1195,7 +1195,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/assit-celebrated.mp3"
+                audio: "/assets/audio/words/a/assit-celebrated.mp3"
               }, "celebrat(e) ", {
                 part: "celebrar",
                 type: "portuguese"
@@ -1209,7 +1209,7 @@ export default function AllVerbsTense() {
           {
             block: [{
               text: [{
-                audio: "/assets/audio/general/locate-locateed.mp3"
+                audio: "/assets/audio/words/l/locate-locateed.mp3"
               }, "locat(e) ", {
                 part: "localizar",
                 type: "portuguese"

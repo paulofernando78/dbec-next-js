@@ -33,7 +33,7 @@ export default function Conditionals() {
       }]} />
         <Section id="" label="Introduction" heading={3}>
           <Paragraph value={[{
-          audio: "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+          audio: "/assets/audio/words/l/look-at-the-pictures-and-listen-to-the-sentences.mp3",
           part: "Look at the pictures and listen to the sentences.",
           type: "bold"
         }]} />
@@ -109,7 +109,7 @@ export default function Conditionals() {
           }]
         }} />
           <Paragraph value={[{
-          audio: "/assets/audio/general/answer-these-questions.mp3",
+          audio: "/assets/audio/words/a/answer-these-questions.mp3",
           part: "Answer these questions.",
           type: "bold"
         }, {
@@ -120,7 +120,7 @@ export default function Conditionals() {
         </Section>
 
         <Section id="" label="Zero Conditional" heading={3}>
-          <Dialogue audioPlayer="/assets/audio/general/.mp3" lines={[{
+          <Dialogue audioPlayer="/assets/audio/words/.mp3" lines={[{
           speaker: "A:",
           text: ["What do you do ", {
             type: "mark",
@@ -163,7 +163,7 @@ export default function Conditionals() {
         </Section>
 
         <Section id="" label="First Conditional" heading={3}>
-          <Dialogue audioPlayer="/assets/audio/general/.mp3" lines={[{
+          <Dialogue audioPlayer="/assets/audio/words/.mp3" lines={[{
           speaker: "A:",
           text: ["What will you do ", {
             type: "mark",
@@ -206,7 +206,7 @@ export default function Conditionals() {
         </Section>
 
         <Section id="" label="Second Conditional" heading={3}>
-          <Dialogue audioPlayer="/assets/audio/general/.mp3" lines={[{
+          <Dialogue audioPlayer="/assets/audio/words/.mp3" lines={[{
           speaker: "A:",
           text: ["What would you do ", {
             type: "mark",
@@ -249,7 +249,7 @@ export default function Conditionals() {
         </Section>
 
         <Section label="Third Conditional" heading={3}>
-          <Dialogue audioPlayer="/assets/audio/general/.mp3" lines={[{
+          <Dialogue audioPlayer="/assets/audio/words/.mp3" lines={[{
           speaker: "A:",
           text: ["What would you have done ", {
             type: "mark",

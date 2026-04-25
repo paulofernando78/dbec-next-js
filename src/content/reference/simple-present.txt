@@ -38,7 +38,7 @@ export default function SimplePresent() {
         <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph value={[...content({
           icons: ["us", "uk", "attention", "correct", "incorrect", "compare"],
-          audio: "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+          audio: "/assets/audio/words/l/look-at-the-pictures-and-listen-to-the-sentences.mp3",
           parts: ["normal ", audio("/"), bold("Look at the pictures and listen to the sentences."), " ", italic("italic"), " ", mark("mark"), " ", underline("underline"), " ", boldMark("bold-mark"), " ", phonetics("phonetics"), " ", portuguese("portuguese")]
         })]} />
 

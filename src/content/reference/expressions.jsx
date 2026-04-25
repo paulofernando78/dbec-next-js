@@ -19,7 +19,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/all-of-a-sudden.mp3",
+                audio: "/assets/audio/words/a/all-of-a-sudden.mp3",
                 parts: [
                   bold("all of a sudden"),
                   portuguese("de repente")
@@ -43,7 +43,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/as-a-matter-of-fact.mp3",
+                audio: "/assets/audio/words/a/as-a-matter-of-fact.mp3",
                 parts: [
                   bold("as a matter of fact"),
                   portuguese("na verdade")
@@ -66,7 +66,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/as-soon-as-possible.mp3",
+                audio: "/assets/audio/words/a/as-soon-as-possible.mp3",
                 parts: [
                   bold("as soon as possible"),
                   portuguese("o mais rápido possível")
@@ -89,7 +89,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/at-first.mp3",
+                audio: "/assets/audio/words/a/at-first.mp3",
                 parts: [
                   bold("at first"),
                   portuguese("no começo / a princípio")
@@ -112,7 +112,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/at-the-end-of-the-day.mp3",
+                audio: "/assets/audio/words/a/at-the-end-of-the-day.mp3",
                 parts: [
                   bold("at the end of the day"),
                   portuguese("no fim das contas")
@@ -135,7 +135,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/by-the-way.mp3",
+                audio: "/assets/audio/words/b/by-the-way.mp3",
                 parts: [
                   bold("by the way"),
                   portuguese("a propósito")
@@ -158,7 +158,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/call-it-a-day.mp3",
+                audio: "/assets/audio/words/c/call-it-a-day.mp3",
                 parts: [
                   bold("call it a day"),
                   portuguese("encerrar por hoje/pelo dia (trabalho/expediente/tarefa)")
@@ -181,7 +181,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/every-now-and-then.mp3",
+                audio: "/assets/audio/words/e/every-now-and-then.mp3",
                 parts: [
                   bold("every now and then"),
                   portuguese("de vez em quando")
@@ -204,7 +204,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/every-other-day.mp3",
+                audio: "/assets/audio/words/e/every-other-day.mp3",
                 parts: [
                   bold("every other day"),
                   portuguese("dia sim, dia não")
@@ -227,7 +227,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/for-the-time-being.mp3",
+                audio: "/assets/audio/words/f/for-the-time-being.mp3",
                 parts: [
                   bold("for the time being"),
                   portuguese("por enquanto")
@@ -250,7 +250,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/from-time-to-time.mp3",
+                audio: "/assets/audio/words/f/from-time-to-time.mp3",
                 parts: [
                   bold("from time to time"),
                   portuguese("de tempos em tempos")
@@ -273,7 +273,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/hard-stop.mp3",
+                audio: "/assets/audio/words/h/hard-stop.mp3",
                 parts: [
                   bold("hard stop"),
                   portuguese("encerrar por exemplo uma reunião em um tempo limite")
@@ -296,7 +296,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/if-the-cap-fits.mp3",
+                audio: "/assets/audio/words/i/if-the-cap-fits.mp3",
                 parts: [
                   bold("if the cap fits"),
                   portuguese("se a carapuça serve")
@@ -307,7 +307,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/if-the-shoe-fits.mp3",
+                audio: "/assets/audio/words/i/if-the-shoe-fits.mp3",
                 parts: [
                   bold("if the shoe fits"),
                   // omit UK flag for now, as per pattern
@@ -330,7 +330,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/in-a-nut-shell.mp3",
+                audio: "/assets/audio/words/i/in-a-nut-shell.mp3",
                 parts: [
                   bold("in a nutshell"),
                   portuguese("em poucas palavras / resumindo")
@@ -353,7 +353,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/in-the-long-run.mp3",
+                audio: "/assets/audio/words/i/in-the-long-run.mp3",
                 parts: [
                   bold("in the long run"),
                   portuguese("a longo prazo")
@@ -376,7 +376,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/in-the-meantime.mp3",
+                audio: "/assets/audio/words/i/in-the-meantime.mp3",
                 parts: [
                   bold("in the meantime"),
                   portuguese("enquanto isso")
@@ -399,7 +399,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/no-matter-what.mp3",
+                audio: "/assets/audio/words/n/no-matter-what.mp3",
                 parts: [
                   bold("no matter what"),
                   portuguese("não importa o que aconteça")
@@ -422,7 +422,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/on-the-other-hand.mp3",
+                audio: "/assets/audio/words/o/on-the-other-hand.mp3",
                 parts: [
                   bold("on the other hand"),
                   portuguese("por outro lado")
@@ -445,7 +445,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/once-in-a-while.mp3",
+                audio: "/assets/audio/words/o/once-in-a-while.mp3",
                 parts: [
                   bold("once in a while"),
                   portuguese("de vez em quando")
@@ -468,7 +468,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/right-away.mp3",
+                audio: "/assets/audio/words/r/right-away.mp3",
                 parts: [
                   bold("right away"),
                   portuguese("imediatamente")
@@ -491,7 +491,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/so-far-so-good.mp3",
+                audio: "/assets/audio/words/s/so-far-so-good.mp3",
                 parts: [
                   bold("so far, so good"),
                   portuguese("até agora, tudo bem")
@@ -514,7 +514,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/the-shoemakers-son-always-goes-barefoot.mp3",
+                audio: "/assets/audio/words/t/the-shoemakers-son-always-goes-barefoot.mp3",
                 parts: [
                   bold("The shoemaker's son always goes barefoot"),
                   portuguese("casa de ferreiro, espeto de pau")
@@ -537,7 +537,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/find-a-way.mp3",
+                audio: "/assets/audio/words/f/find-a-way.mp3",
                 parts: [
                   bold("find a way"),
                   portuguese("dar um jeito; encontrar uma maneira; 'dar seus pulos'")
@@ -560,7 +560,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/the-main-character.mp3",
+                audio: "/assets/audio/words/t/the-main-character.mp3",
                 parts: [
                   bold("the main character"),
                   portuguese("agir como se fosse o centro de tudo; se achar a última Coca-Cola do deserto")
@@ -583,7 +583,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/keep-your-cool.mp3",
+                audio: "/assets/audio/words/k/keep-your-cool.mp3",
                 parts: [
                   bold("keep your cool"),
                   portuguese("manter a calma / controle; 'segura a sua onda'")
@@ -606,7 +606,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/life-catches-up-with-you.mp3",
+                audio: "/assets/audio/words/l/life-catches-up-with-you.mp3",
                 parts: [
                   bold("life catches up with you"),
                   portuguese("a vida cobra; a realidade chega")
@@ -629,7 +629,7 @@ export default function Expression() {
           <Expressions
             value={[
               ...content({
-                audio: "/assets/audio/general/thats-a-whole-different-story.mp3",
+                audio: "/assets/audio/words/t/thats-a-whole-different-story.mp3",
                 parts: [
                   bold("that's a whole different story"),
                   portuguese("são outros quinhentos")

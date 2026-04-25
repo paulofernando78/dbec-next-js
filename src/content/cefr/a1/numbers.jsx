@@ -92,7 +92,7 @@ export default function Numbers() {
             <LineBreak />
             <Radio
               exercise={{
-                audio: "/assets/audio/general/now-answer-the-questions.mp3",
+                audio: "/assets/audio/words/n/now-answer-the-questions.mp3",
                 instruction: "Now answer the questions.",
                 questions: [
                   {

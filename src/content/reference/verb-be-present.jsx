@@ -34,7 +34,7 @@ export default function VerbBePresent() {
       }]} />
         <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph value={[{
-          audio: "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+          audio: "/assets/audio/words/l/look-at-the-pictures-and-listen-to-the-sentences.mp3",
           part: "Look at the pictures and listen to the sentences.",
           type: "bold"
         }]} />
@@ -110,7 +110,7 @@ export default function VerbBePresent() {
           }]
         }} />
           <Paragraph value={[{
-          audio: "/assets/audio/general/answer-the-question.mp3",
+          audio: "/assets/audio/words/a/answer-the-question.mp3",
           part: "Answer these questions.",
           type: "bold"
         }, {
@@ -129,7 +129,7 @@ export default function VerbBePresent() {
 
         <Section id="presentation" label="Presentation" heading={3}>
           <Paragraph value={["", {
-          audio: "/assets/audio/general/listen-to-the-dialogue.mp3",
+          audio: "/assets/audio/words/l/listen-to-the-dialogue.mp3",
           part: "Listen to the dialogue.",
           type: "bold"
         }, ""]} />
@@ -203,7 +203,7 @@ export default function VerbBePresent() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/identity.mp3",
+          audio: "/assets/audio/words/i/identity.mp3",
           bullet: true,
           part: "Identity",
           type: "bold"
@@ -213,7 +213,7 @@ export default function VerbBePresent() {
         }, ":", {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/im-paul.mp3",
+          audio: "/assets/audio/words/i/im-paul.mp3",
           part: "I’m Paul."
         }, " ", {
           part: "Sou o Paulo.",
@@ -221,7 +221,7 @@ export default function VerbBePresent() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/hes-my-brother.mp3",
+          audio: "/assets/audio/words/h/hes-my-brother.mp3",
           part: "He’s my brother."
         }, " ", {
           part: "Ele é o meu irmão.",
@@ -229,7 +229,7 @@ export default function VerbBePresent() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/theyre-my-friends.mp3",
+          audio: "/assets/audio/words/t/theyre-my-friends.mp3",
           part: "They are my friends."
         }, " ", {
           part: "Eles são meus amigos.",
@@ -239,7 +239,7 @@ export default function VerbBePresent() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/job.mp3",
+          audio: "/assets/audio/words/j/job.mp3",
           bullet: true,
           part: "Job",
           type: "bold"
@@ -249,7 +249,7 @@ export default function VerbBePresent() {
         }, ":", {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/Im-a-teacher.mp3",
+          audio: "/assets/audio/words/i/Im-a-teacher.mp3",
           part: "I’m a teacher."
         }, " ", {
           part: "Sou professor(a).",
@@ -257,19 +257,19 @@ export default function VerbBePresent() {
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/hes-an-engineer.mp3",
+          audio: "/assets/audio/words/h/hes-an-engineer.mp3",
           part: "He’s an engineer."
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/shes-a-doctor.mp3",
+          audio: "/assets/audio/words/s/shes-a-doctor.mp3",
           part: "She’s a doctor."
         }, {
           lineBreak: true
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/state-condition-description.mp3",
+          audio: "/assets/audio/words/s/state-condition-description.mp3",
           bullet: true,
           part: "State / Condition / Description",
           type: "bold"
@@ -279,24 +279,24 @@ export default function VerbBePresent() {
         }, ":", {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/im-tired.mp3",
+          audio: "/assets/audio/words/i/im-tired.mp3",
           part: "I’m tired."
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/shes-happy.mp3",
+          audio: "/assets/audio/words/s/shes-happy.mp3",
           part: "She’s happy."
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/this-car-is-fast.mp3",
+          audio: "/assets/audio/words/t/this-car-is-fast.mp3",
           part: "This car is fast."
         }, {
           lineBreak: true
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/nationality.mp3",
+          audio: "/assets/audio/words/n/nationality.mp3",
           bullet: true,
           part: "Nationality",
           type: "bold"
@@ -306,17 +306,17 @@ export default function VerbBePresent() {
         }, ":", {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/mike-is-american.mp3",
+          audio: "/assets/audio/words/m/mike-is-american.mp3",
           part: "Mike is American. He’s from the United States."
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/George-is-british.mp3",
+          audio: "/assets/audio/words/g/George-is-british.mp3",
           part: "George is British. He’s from England."
         }, {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/juan-and-maria-are-mexican.mp3",
+          audio: "/assets/audio/words/j/juan-and-maria-are-mexican.mp3",
           part: "Juan and Maria are Mexican. They’re from Mexico."
         }]} />
 
@@ -1385,7 +1385,7 @@ export default function VerbBePresent() {
 
         <Section id="production" label="Production" heading={3}>
           <Paragraph value={[{
-          audio: "/assets/audio/general/talk-about-yourself.mp3",
+          audio: "/assets/audio/words/t/talk-about-yourself.mp3",
           part: "Talk about yourself.",
           type: "bold"
         }]} />

@@ -26,7 +26,7 @@ export default function Blank() {
           <Line
             value={[
               ...content({
-                audio: "/assets/audio/general/.mp3",
+                audio: "/assets/audio/words/.mp3",
                 parts: ["", { part: "", type: "" }],
                 pt: "",
               }),
@@ -37,7 +37,7 @@ export default function Blank() {
             items={[
               // • Example sentence
               example({
-                audio: "/assets/audio/general/.mp3",
+                audio: "/assets/audio/words/.mp3",
                 parts: ["", { part: "", type: "" }],
                 englishExample: "",
                 portugueseExample: "",

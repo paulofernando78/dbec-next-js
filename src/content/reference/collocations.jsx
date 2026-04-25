@@ -29,11 +29,11 @@ export default function Collocations() {
         }, "Focus: action / learning / personal choice", {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/take-classes-1.mp3"
+          audio: "/assets/audio/words/t/take-classes-1.mp3"
         }, "I take online classes at night.", {
           lineBreak: true
         }, {
-          audio: "/assets/audio/general/take-classes-2.mp3"
+          audio: "/assets/audio/words/t/take-classes-2.mp3"
         }, "He takes piano classes."]} />
         </Section>
 
@@ -49,7 +49,7 @@ export default function Collocations() {
         }, {
           lineBreak: true
         }, "", {
-          audio: "/audio/general/i-have-to-do-my-homework.mp3",
+          audio: "/audio/words/i/i-have-to-do-my-homework.mp3",
           correct: true,
           part: "I have to do my homework."
         }, {
@@ -66,7 +66,7 @@ export default function Collocations() {
           lineBreak: true
         }, {
           correct: true,
-          audio: "/audio/general/I-have-to-make-my-bed.mp3",
+          audio: "/audio/words/i/I-have-to-make-my-bed.mp3",
           part: "I have to make my bed."
         }, {
           lineBreak: true
@@ -86,7 +86,7 @@ export default function Collocations() {
           lineBreak: true
         }, {
           correct: true,
-          audio: "/audio/general/im-in-love-with-you.mp3",
+          audio: "/audio/words/i/im-in-love-with-you.mp3",
           part: "I’m in love with you."
         }, {
           lineBreak: true
@@ -102,7 +102,7 @@ export default function Collocations() {
           lineBreak: true
         }, {
           correct: true,
-          audio: "/audio/general/im-worried-about-you.mp3",
+          audio: "/audio/words/i/im-worried-about-you.mp3",
           part: "I’m worried about you."
         }, {
           lineBreak: true
@@ -122,7 +122,7 @@ export default function Collocations() {
           lineBreak: true
         }, {
           correct: true,
-          audio: "/audio/general/.mp3",
+          audio: "/audio/words/.mp3",
           part: "It’s a fast car."
         }, {
           lineBreak: true
@@ -138,7 +138,7 @@ export default function Collocations() {
           lineBreak: true
         }, {
           correct: true,
-          audio: "/audio/general/Can-I-have-a-quick-word-with-you.mp3",
+          audio: "/audio/words/c/Can-I-have-a-quick-word-with-you.mp3",
           part: "Can I have a quick word with you?"
         }, {
           lineBreak: true
@@ -154,7 +154,7 @@ export default function Collocations() {
           lineBreak: true
         }, {
           correct: true,
-          audio: "/audio/general/hes-a-fast-runner.mp3",
+          audio: "/audio/words/h/hes-a-fast-runner.mp3",
           part: "He’s a fast runner."
         }]} />
           <ContentToken text={[{

@@ -59,7 +59,7 @@ export default function DescribeYourHome() {
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/general/this-is-my-house.mp3",
+                      audio: "/assets/audio/words/t/this-is-my-house.mp3",
                       parts: ["This is my house."],
                     }),
                   ]}
@@ -297,7 +297,7 @@ export default function DescribeYourHome() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/room.mp3",
+                              audio: "/assets/audio/words/r/room.mp3",
                               parts: ["room"],
                             }),
                           ],
@@ -310,7 +310,7 @@ export default function DescribeYourHome() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/kitchen.mp3",
+                              audio: "/assets/audio/words/k/kitchen.mp3",
                               parts: ["kitchen"],
                             }),
                           ],
@@ -341,7 +341,7 @@ export default function DescribeYourHome() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/table.mp3",
+                              audio: "/assets/audio/words/t/table.mp3",
                               parts: ["table"],
                             }),
                           ],
@@ -354,7 +354,7 @@ export default function DescribeYourHome() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/chair.mp3",
+                              audio: "/assets/audio/words/c/chair.mp3",
                               parts: ["chair"],
                             }),
                           ],
@@ -367,7 +367,7 @@ export default function DescribeYourHome() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/door.mp3",
+                              audio: "/assets/audio/words/d/door.mp3",
                               parts: ["door"],
                             }),
                           ],

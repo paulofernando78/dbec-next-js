@@ -65,7 +65,7 @@ export default function DescribePeople() {
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/general/that-man-is-tall.mp3",
+                      audio: "/assets/audio/words/t/that-man-is-tall.mp3",
                       parts: ["The man is tall."],
                     }),
                   ]}
@@ -276,7 +276,7 @@ export default function DescribePeople() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/beautiful.mp3",
+                              audio: "/assets/audio/words/b/beautiful.mp3",
                               parts: ["beautiful"],
                             }),
                           ],
@@ -301,7 +301,7 @@ export default function DescribePeople() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/hair.mp3",
+                              audio: "/assets/audio/words/h/hair.mp3",
                               parts: ["long hair"],
                             }),
                           ],
@@ -406,7 +406,7 @@ export default function DescribePeople() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/man.mp3",
+                      audio: "/assets/audio/words/m/man.mp3",
                       parts: [bold("man"), " = an adult male person"],
                     }),
                   ],
@@ -414,7 +414,7 @@ export default function DescribePeople() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/student.mp3",
+                      audio: "/assets/audio/words/s/student.mp3",
                       parts: [bold("student"), " = a person who studies"],
                     }),
                   ],

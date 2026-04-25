@@ -33,7 +33,7 @@ export default function SimplePast() {
       }]} />
         <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph value={[{
-          audio: "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+          audio: "/assets/audio/words/l/look-at-the-pictures-and-listen-to-the-sentences.mp3",
           part: "Look at the pictures and listen to the sentences.",
           type: "bold"
         }]} />
@@ -109,7 +109,7 @@ export default function SimplePast() {
           }]
         }} />
           <Paragraph value={[{
-          audio: "/assets/audio/general/answer-these-questions.mp3",
+          audio: "/assets/audio/words/a/answer-these-questions.mp3",
           part: "Answer these questions.",
           type: "bold"
         }, {
@@ -120,7 +120,7 @@ export default function SimplePast() {
         </Section>
 
         <Section id="presentation" label="Presentation" heading={3}>
-          <Dialogue audioPlayer="/assets/audio/general/.mp3" lines={[{
+          <Dialogue audioPlayer="/assets/audio/words/.mp3" lines={[{
           speaker: "A:",
           text: ["Where ", {
             type: "mark",

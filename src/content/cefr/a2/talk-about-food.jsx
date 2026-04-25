@@ -310,7 +310,7 @@ export default function TalkAboutFood() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/coffee.mp3",
+                              audio: "/assets/audio/words/c/coffee.mp3",
                               parts: ["coffee"],
                             }),
                           ],
@@ -323,7 +323,7 @@ export default function TalkAboutFood() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/bread.mp3",
+                              audio: "/assets/audio/words/b/bread.mp3",
                               parts: ["bread"],
                             }),
                           ],
@@ -336,7 +336,7 @@ export default function TalkAboutFood() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/milk.mp3",
+                              audio: "/assets/audio/words/m/milk.mp3",
                               parts: ["milk"],
                             }),
                           ],

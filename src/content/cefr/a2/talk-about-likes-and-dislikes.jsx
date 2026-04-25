@@ -59,7 +59,7 @@ export default function TalkAboutLikesAndDislikes() {
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/general/i-prefer-bananas.mp3",
+                      audio: "/assets/audio/words/i/i-prefer-bananas.mp3",
                       parts: ["I prefer bananas."],
                     }),
                   ]}
@@ -67,7 +67,7 @@ export default function TalkAboutLikesAndDislikes() {
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/general/she-loves-to-sing-in-the-shower.mp3",
+                      audio: "/assets/audio/words/s/she-loves-to-sing-in-the-shower.mp3",
                       parts: ["She loves to sing."],
                     }),
                   ]}
@@ -408,7 +408,7 @@ export default function TalkAboutLikesAndDislikes() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/coffee.mp3",
+                      audio: "/assets/audio/words/c/coffee.mp3",
                       parts: [bold("coffee"), " = a drink"],
                     }),
                   ],
@@ -416,7 +416,7 @@ export default function TalkAboutLikesAndDislikes() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/music.mp3",
+                      audio: "/assets/audio/words/m/music.mp3",
                       parts: [bold("music"), " = songs and sounds"],
                     }),
                   ],
@@ -424,7 +424,7 @@ export default function TalkAboutLikesAndDislikes() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/food.mp3",
+                      audio: "/assets/audio/words/f/food.mp3",
                       parts: [bold("food"), " = what we eat"],
                     }),
                   ],

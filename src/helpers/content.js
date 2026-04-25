@@ -1,6 +1,6 @@
 //! Layout tokens
 // icons
-// audio
+// audioSrc
 // bullet
 // square
 // lineBreak
@@ -22,7 +22,7 @@
 //! Layout tokens
 export function baseToken({
   icons = [],
-  audio,
+  audioSrc,
   bullet = true,
   parts = [],
   phonetics,
@@ -36,8 +36,8 @@ export function baseToken({
     blocks.push({ icons });
   }
 
-  if (audio) {
-    blocks.push({ audio });
+  if (audioSrc) {
+    blocks.push({ audioSrc });
   }
 
   if (bullet) {
@@ -52,7 +52,7 @@ export function baseToken({
 
   if (phonetics) {
     blocks.push({ part: phonetics, type: "phonetics" });
-    blocks.push({part: " "})
+    blocks.push({ part: " " });
   }
 
   if (connector) {
@@ -60,8 +60,8 @@ export function baseToken({
   }
 
   if (square) {
-    blocks.push({square: true});
-    blocks.push({part: " "})
+    blocks.push({ square: true });
+    blocks.push({ part: " " });
   }
 
   if (lineBreak) {
@@ -71,66 +71,23 @@ export function baseToken({
   return blocks;
 }
 
-//! Builders
-export const content = ({ icons = [], ...opts }) =>
-  baseToken({
-    icons,
-    ...opts,
-    bullet: false,
-    square: false,
-  });
-
-export const attention = ({ icons = [], ...opts }) =>
-  baseToken({
-    ...opts,
-    icons: ["attention", ...icons],
-    bullet: false,
-    square: false,
-  });
-
-export const word = (opts) =>
-  baseToken({
-    ...opts,
-    square: false,
-  });
-
-export const wordRowList = (opts) =>
-  baseToken({
-    bullet: false,
-    square: true,
-    ...opts,
-  });
-
-export const wordColumnList = (opts) =>
-  baseToken({
-    ...opts,
-    bullet: false,
-  });
-
-export const wordVariant = ({ left, right }) => [
-  ...wordRowList({ ...left, square: false }),
-  {
-    part: "or ",
-    type: "connector",
-  },
-  ...wordRowList({ ...right, square: false }),
-];
-export const wordComparison = ({ left, right }) => [
-  ...wordRowList({ ...left, square: false }),
-  {
-    part: "vs. ",
-    type: "connector",
-  },
-  ...wordRowList({ ...right, square: false }),
-];
-
-export const text = (parts = []) => parts;
-
 //! Tokens
 // audio
-export const audio = (src) => ({
+export const audioSrc = (src) => ({
   audio: src,
 });
+
+export const wordAudio = (file) => {
+  const first = file?.[0]?.toLowerCase();
+
+  if (!first || !/[a-z]/.test(first)) {
+    return `/assets/audio/words/${file}`;
+  }
+
+  return `/assets/audio/words/${first}/${file}`;
+};
+
+export const audio = (file) => audioSrc(wordAudio(file));
 
 // bold
 export const bold = (text) => ({
@@ -191,3 +148,58 @@ export const connector = (text) => ({
   part: text,
   type: "connector",
 });
+
+//! Builders
+export const content = ({ icons = [], ...opts }) =>
+  baseToken({
+    icons,
+    ...opts,
+    bullet: false,
+    square: false,
+  });
+
+export const text = (parts = []) => parts;
+
+export const attention = ({ icons = [], ...opts }) =>
+  baseToken({
+    ...opts,
+    icons: ["attention", ...icons],
+    bullet: false,
+    square: false,
+  });
+
+export const word = (opts) =>
+  baseToken({
+    ...opts,
+    square: false,
+  });
+
+export const wordRowList = (opts) =>
+  baseToken({
+    bullet: false,
+    square: true,
+    ...opts,
+  });
+
+export const wordColumnList = (opts) =>
+  baseToken({
+    ...opts,
+    bullet: false,
+  });
+
+export const wordVariant = ({ left, right }) => [
+  ...wordRowList({ ...left, square: false }),
+  {
+    part: "or ",
+    type: "connector",
+  },
+  ...wordRowList({ ...right, square: false }),
+];
+export const wordComparison = ({ left, right }) => [
+  ...wordRowList({ ...left, square: false }),
+  {
+    part: "vs. ",
+    type: "connector",
+  },
+  ...wordRowList({ ...right, square: false }),
+];

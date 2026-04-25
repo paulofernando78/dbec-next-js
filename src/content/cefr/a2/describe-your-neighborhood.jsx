@@ -284,7 +284,7 @@ export default function DescribeYourNeighborhood() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/park.mp3",
+                              audio: "/assets/audio/words/p/park.mp3",
                               parts: ["park"],
                             }),
                           ],
@@ -297,7 +297,7 @@ export default function DescribeYourNeighborhood() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/shop.mp3",
+                              audio: "/assets/audio/words/s/shop.mp3",
                               parts: ["shop"],
                             }),
                           ],
@@ -310,7 +310,7 @@ export default function DescribeYourNeighborhood() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/town.mp3",
+                              audio: "/assets/audio/words/t/town.mp3",
                               parts: ["town"],
                             }),
                           ],

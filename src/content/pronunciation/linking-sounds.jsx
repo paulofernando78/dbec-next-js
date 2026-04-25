@@ -127,7 +127,8 @@ export default function LikedSounds() {
             <Line
               value={[
                 {
-                  audio: "/assets/audio/general/she-asked-me-a-question.mp3",
+                  audio:
+                    "/assets/audio/pronunciation/linked-sounds/vowel-vowel/j/she-asked-me-a-question.mp3",
                 },
                 "Sh",
                 underline("e a"),

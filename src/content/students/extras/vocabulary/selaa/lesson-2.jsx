@@ -33,7 +33,7 @@ export default function SELAAlessonTwo() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/audio/general/right-hand-man.mp3",
+                  audio: "/audio/words/r/right-hand-man.mp3",
                   part: "What’s the matter",
                   type: "mark",
                 },
@@ -49,7 +49,7 @@ export default function SELAAlessonTwo() {
               text: [
                 "But Bob, you were Peter’s ",
                 {
-                  audio: "/audio/general/right-hand-man.mp3",
+                  audio: "/audio/words/r/right-hand-man.mp3",
                   part: "right-hand man",
                   type: "mark",
                 },
@@ -61,7 +61,7 @@ export default function SELAAlessonTwo() {
               text: [
                 "Yes, and he ",
                 {
-                  audio: "/audio/general/stabbed-me-in-the-back.mp3",
+                  audio: "/audio/words/s/stabbed-me-in-the-back.mp3",
                   part: "stabbed me in the back",
                   type: "mark",
                 },
@@ -72,13 +72,13 @@ export default function SELAAlessonTwo() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/audio/general/keep-your-chin-up.mp3",
+                  audio: "/audio/words/k/keep-your-chin-up.mp3",
                   part: "Keep your chin up",
                   type: "mark",
                 },
                 ". Maybe he’ll ",
                 {
-                  audio: "/audio/general/change-his-mind.mp3",
+                  audio: "/audio/words/c/change-his-mind.mp3",
                   part: "change his mind",
                   type: "mark",
                 },
@@ -89,13 +89,13 @@ export default function SELAAlessonTwo() {
               speaker: "Bob:",
               text: [
                 {
-                  audio: "/audio/general/when-pigs-fly.mp3",
+                  audio: "/audio/words/w/when-pigs-fly.mp3",
                   part: "When pigs fly",
                   type: "mark",
                 },
                 "! Once he ",
                 {
-                  audio: "/audio/general/makes-up-his-mind.mp3",
+                  audio: "/audio/words/m/makes-up-his-mind.mp3",
                   part: "makes up his mind",
                   type: "mark",
                 },
@@ -106,13 +106,13 @@ export default function SELAAlessonTwo() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/audio/general/look-on-the-bright-side.mp3",
+                  audio: "/audio/words/l/look-on-the-bright-side.mp3",
                   part: "Look on the bright side",
                   type: "mark",
                 },
                 ": you won’t have to ",
                 {
-                  audio: "/audio/general/set-eyes-on.mp3",
+                  audio: "/audio/words/s/set-eyes-on.mp3",
                   part: "set eyes on",
                   type: "mark",
                 },
@@ -123,7 +123,7 @@ export default function SELAAlessonTwo() {
               speaker: "Bob:",
               text: [
                 {
-                  audio: "/audio/general/thank-goodness.mp3",
+                  audio: "/audio/words/t/thank-goodness.mp3",
                   part: "Thank goodness",
                   type: "mark",
                 },
@@ -134,13 +134,13 @@ export default function SELAAlessonTwo() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/audio/general/hang-in-there.mp3",
+                  audio: "/audio/words/h/hang-in-there.mp3",
                   part: "Hang in there",
                   type: "mark",
                 },
                 ", I’m sure you won’t be ",
                 {
-                  audio: "/audio/general/out-of-work.mp3",
+                  audio: "/audio/words/o/out-of-work.mp3",
                   part: "out of work",
                   type: "mark",
                 },
@@ -152,7 +152,7 @@ export default function SELAAlessonTwo() {
               text: [
                 "In the meantime, we’ll have to ",
                 {
-                  audio: "/audio/general/live-from-hand-to-mouth.mp3",
+                  audio: "/audio/words/l/live-from-hand-to-mouth.mp3",
                   part: "live from hand to mouth",
                   type: "mark",
                 },
@@ -164,13 +164,13 @@ export default function SELAAlessonTwo() {
               text: [
                 "Don’t get too ",
                 {
-                  audio: "/audio/general/stressed-out.mp3",
+                  audio: "/audio/words/s/stressed-out.mp3",
                   part: "stressed out",
                   type: "mark",
                 },
                 ", Bob. We’ll ",
                 {
-                  audio: "/audio/general/make-ends-meet.mp3",
+                  audio: "/audio/words/m/make-ends-meet.mp3",
                   part: "make ends meet",
                   type: "mark",
                 },
@@ -182,7 +182,7 @@ export default function SELAAlessonTwo() {
               text: [
                 "I can always get a job at McDonald’s as a ",
                 {
-                  audio: "/audio/general/last-resort.mp3",
+                  audio: "/audio/words/l/last-resort.mp3",
                   part: "last resort",
                   type: "mark",
                 },
@@ -198,7 +198,7 @@ export default function SELAAlessonTwo() {
               text: [
                 "If ",
                 {
-                  audio: "/audio/general/worse-comes-to-worst.mp3",
+                  audio: "/audio/words/w/worse-comes-to-worst.mp3",
                   part: "worse comes to worst",
                   type: "mark",
                 },
@@ -209,7 +209,7 @@ export default function SELAAlessonTwo() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/audio/general/lets-think-big.mp3",
+                  audio: "/audio/words/l/lets-think-big.mp3",
                   part: "Let’s think big",
                   type: "mark",
                 },
@@ -220,7 +220,7 @@ export default function SELAAlessonTwo() {
               speaker: "Bob:",
               text: [
                 {
-                  audio: "/audio/general/easier-said-than-done.mp3",
+                  audio: "/audio/words/e/easier-said-than-done.mp3",
                   part: "Easier said than done",
                   type: "mark",
                 },

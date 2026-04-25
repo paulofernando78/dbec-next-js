@@ -276,7 +276,7 @@ export default function PlacesAndObjects() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/school.mp3",
+                              audio: "/assets/audio/words/s/school.mp3",
                               parts: ["school"],
                             }),
                           ],
@@ -301,7 +301,7 @@ export default function PlacesAndObjects() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/room.mp3",
+                              audio: "/assets/audio/words/r/room.mp3",
                               parts: ["room"],
                             }),
                           ],
@@ -320,7 +320,7 @@ export default function PlacesAndObjects() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/book.mp3",
+                              audio: "/assets/audio/words/b/book.mp3",
                               parts: ["book"],
                             }),
                           ],
@@ -333,7 +333,7 @@ export default function PlacesAndObjects() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/bag.mp3",
+                              audio: "/assets/audio/words/b/bag.mp3",
                               parts: ["bag"],
                             }),
                           ],
@@ -346,7 +346,7 @@ export default function PlacesAndObjects() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/pen.mp3",
+                              audio: "/assets/audio/words/p/pen.mp3",
                               parts: ["pen"],
                             }),
                           ],
@@ -408,7 +408,7 @@ export default function PlacesAndObjects() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/table.mp3",
+                      audio: "/assets/audio/words/t/table.mp3",
                       parts: [bold("table"), " = a flat piece of furniture"],
                     }),
                   ],
@@ -416,7 +416,7 @@ export default function PlacesAndObjects() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/chair.mp3",
+                      audio: "/assets/audio/words/c/chair.mp3",
                       parts: [bold("chair"), " = something you sit on"],
                     }),
                   ],
@@ -424,7 +424,7 @@ export default function PlacesAndObjects() {
                 {
                   value: [
                     ...content({
-                      audio: "/assets/audio/general/door.mp3",
+                      audio: "/assets/audio/words/d/door.mp3",
                       parts: [bold("door"), " = the part you open and close"],
                     }),
                   ],

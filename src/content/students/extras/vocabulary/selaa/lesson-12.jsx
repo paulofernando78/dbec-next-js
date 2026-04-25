@@ -34,7 +34,7 @@ export default function SELAAlessonTwelve() {
               text: [
                 "",
                 {
-                  audio: "/audio/general/.mp3",
+                  audio: "/audio/words/.mp3",
                   part: "",
                   type: "",
                 },

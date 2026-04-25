@@ -16,7 +16,7 @@ export default function Blank() {
           <Line
             value={[
               ...attention({
-                audio: "/assets/audio/general/.mp3",
+                audio: "/assets/audio/words/.mp3",
                 parts: ["", { part: "", type: "" }],
                 pt: "",
               }),

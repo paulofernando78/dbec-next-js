@@ -34,7 +34,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "You're up ",
                 {
-                  audio: "/assets/audio/general/bright-and-early.mp3",
+                  audio: "/assets/audio/words/b/bright-and-early.mp3",
                   part: "bright and early",
                   type: "mark",
                 },
@@ -46,7 +46,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "I didn't ",
                 {
-                  audio: "/assets/audio/general/sleep-a-wink.mp3",
+                  audio: "/assets/audio/words/s/sleep-a-wink.mp3",
                   part: "sleep a wink",
                   type: "mark",
                 },
@@ -58,7 +58,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "Running your own business is lots of work. Are you prepared to ",
                 {
-                  audio: "/assets/audio/general/work-like-a-dog.mp3",
+                  audio: "/assets/audio/words/w/work-like-a-dog.mp3",
                   part: "work like a dog",
                   type: "mark",
                 },
@@ -74,7 +74,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "You want me to run a cookie business? ",
                 {
-                  audio: "/assets/audio/general/fat-chance.mp3",
+                  audio: "/assets/audio/words/f/fat-chance.mp3",
                   part: "Fat chance",
                   type: "mark",
                 },
@@ -90,7 +90,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "I don't ",
                 {
-                  audio: "/assets/audio/general/have-a-clue.mp3",
+                  audio: "/assets/audio/words/h/have-a-clue.mp3",
                   part: "have a clue",
                   type: "mark",
                 },
@@ -102,7 +102,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "I'll give you a ",
                 {
-                  audio: "/assets/audio/general/crash-course.mp3",
+                  audio: "/assets/audio/words/c/crash-course.mp3",
                   part: "crash course",
                   type: "mark",
                 },
@@ -121,13 +121,13 @@ export default function SELAAlessonSeven() {
               speaker: "Bob:",
               text: [
                 {
-                  audio: "/assets/audio/general/needless-to-say.mp3",
+                  audio: "/assets/audio/words/n/needless-to-say.mp3",
                   part: "Needless to say",
                   type: "mark",
                 },
                 ", I have ",
                 {
-                  audio: "/assets/audio/general/mixed-feelings.mp3",
+                  audio: "/assets/audio/words/m/mixed-feelings.mp3",
                   part: "mixed feelings",
                   type: "mark",
                 },
@@ -139,7 +139,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "I'll be nice. I promise you'll be a ",
                 {
-                  audio: "/assets/audio/general/happy-camper.mp3",
+                  audio: "/assets/audio/words/h/happy-camper.mp3",
                   part: "happy camper",
                   type: "mark",
                 },
@@ -151,7 +151,7 @@ export default function SELAAlessonSeven() {
               text: [
                 "Okay. Let's ",
                 {
-                  audio: "/assets/audio/general/give-it-a-shot.mp3",
+                  audio: "/assets/audio/words/g/give-it-a-shot.mp3",
                   part: "give it a shot",
                   type: "mark",
                 },

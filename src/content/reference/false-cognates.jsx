@@ -679,7 +679,7 @@ export default function FalseCognates() {
 
         <Section id="policy-policia" label="policy ≠ polícia" heading={3}>
           <Paragraph value={[{
-          audio: "/assets/audio/general/policy.mp3",
+          audio: "/assets/audio/words/p/policy.mp3",
           part: "policy",
           type: "bold"
         }, " ", {
@@ -705,7 +705,7 @@ export default function FalseCognates() {
           part: "polícia",
           type: "portuguese-bold"
         }, " ", {
-          audio: "/assets/audio/general/police.mp3"
+          audio: "/assets/audio/words/p/police.mp3"
         }, "police ", {
           part: "/pəˈliːs/",
           type: "phonetics"

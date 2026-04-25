@@ -34,7 +34,7 @@ export default function SELAAlessonEight() {
               text: [
                 "You're in ",
                 {
-                  audio: "/assets/audio/general/good-spirits.mp3",
+                  audio: "/assets/audio/words/g/good-spirits.mp3",
                   part: "good spirits",
                   type: "mark",
                 },
@@ -62,7 +62,7 @@ export default function SELAAlessonEight() {
               text: [
                 "Mom, I'm not going to ",
                 {
-                  audio: "/assets/audio/general/beat-around-the-bush.mp3",
+                  audio: "/assets/audio/words/b/beat-around-the-bush.mp3",
                   part: "beat around the bush",
                   type: "mark",
                 },
@@ -74,13 +74,13 @@ export default function SELAAlessonEight() {
               text: [
                 "Ted, your father and I can't ",
                 {
-                  audio: "/assets/audio/general/shell-out.mp3",
+                  audio: "/assets/audio/words/s/shell-out.mp3",
                   part: "shell out",
                   type: "mark",
                 },
                 " that much. We aren't ",
                 {
-                  audio: "/assets/audio/general/made-of-money.mp3",
+                  audio: "/assets/audio/words/m/made-of-money.mp3",
                   part: "made of money",
                   type: "mark",
                 },
@@ -98,7 +98,7 @@ export default function SELAAlessonEight() {
               text: [
                 "Ha ha. This is no time to be a ",
                 {
-                  audio: "/assets/audio/general/wise-guy.mp3",
+                  audio: "/assets/audio/words/w/wise-guy.mp3",
                   part: "wise guy",
                   type: "mark",
                 },
@@ -119,7 +119,7 @@ export default function SELAAlessonEight() {
                 "We're going to ",
                 {
                   audio:
-                    "/assets/audio/general/take-the-music-world-by-storm.mp3",
+                    "/assets/audio/words/t/take-the-music-world-by-storm.mp3",
                   part: "take the music world by storm",
                   type: "mark",
                 },
@@ -131,13 +131,13 @@ export default function SELAAlessonEight() {
               text: [
                 "That sounds like a ",
                 {
-                  audio: "/assets/audio/general/pipe-dream.mp3",
+                  audio: "/assets/audio/words/p/pipe-dream.mp3",
                   part: "pipe dream",
                   type: "mark",
                 },
                 ". Aren't high school rock bands ",
                 {
-                  audio: "/assets/audio/general/a-dime-a-dozen.mp3",
+                  audio: "/assets/audio/words/a/a-dime-a-dozen.mp3",
                   part: "a dime a dozen",
                   type: "mark",
                 },
@@ -149,7 +149,7 @@ export default function SELAAlessonEight() {
               text: [
                 "Yeah, but we're different. With my guitar playing and Amber's beautiful voice, we're sure to ",
                 {
-                  audio: "/assets/audio/general/make-a-splash.mp3",
+                  audio: "/assets/audio/words/m/make-a-splash.mp3",
                   part: "make a splash",
                   type: "mark",
                 },
@@ -161,7 +161,7 @@ export default function SELAAlessonEight() {
               text: [
                 "Well, we're going through ",
                 {
-                  audio: "/assets/audio/general/hard-times.mp3",
+                  audio: "/assets/audio/words/h/hard-times.mp3",
                   part: "hard times",
                   type: "mark",
                 },
@@ -181,7 +181,7 @@ export default function SELAAlessonEight() {
               text: [
                 "I bet Mrs. Clapton never made Eric bake cookies, but I guess ",
                 {
-                  audio: "/assets/audio/general/those-are-the-breaks.mp3",
+                  audio: "/assets/audio/words/t/those-are-the-breaks.mp3",
                   part: "those are the breaks",
                   type: "mark",
                 },

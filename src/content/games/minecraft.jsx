@@ -131,7 +131,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "cow ",
                 ],
@@ -139,7 +139,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "chicken",
                 ],
@@ -147,7 +147,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "pig",
                 ],
@@ -155,7 +155,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "sheep",
                 ],
@@ -163,7 +163,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "fish",
                 ],
@@ -171,7 +171,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "rabbit",
                 ],
@@ -203,7 +203,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "wolf ",
                 ],
@@ -211,7 +211,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "cat ",
                 ],
@@ -219,7 +219,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "dolphin ",
                 ],
@@ -227,7 +227,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "panda ",
                 ],
@@ -235,7 +235,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "parrot ",
                 ],
@@ -243,7 +243,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "fox ",
                 ],
@@ -251,7 +251,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "frog ",
                 ],
@@ -259,7 +259,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "armadillo ",
                 ],
@@ -287,7 +287,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "cow ➜ calf ",
                 ],
@@ -295,7 +295,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "chicken ➜ chick",
                 ],
@@ -303,7 +303,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "pig ➜ piglet",
                 ],
@@ -311,7 +311,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "sheep ➜ lamb",
                 ],
@@ -319,7 +319,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "rabbit ➜ bunny",
                 ],
@@ -327,7 +327,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "turtle ➜ baby turtles",
                 ],
@@ -335,7 +335,7 @@ export default function Minecraft() {
               {
                 value: [
                   {
-                    audio: "/audio/general/....mp3",
+                    audio: "/audio/words/....mp3",
                   },
                   "rabbit ➜ baby pandas",
                 ],

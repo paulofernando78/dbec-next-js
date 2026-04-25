@@ -42,7 +42,7 @@ export default function SELAAlessonFive() {
               text: [
                 "I told Amber I'd ",
                 {
-                  audio: "/assets/audio/general/drop-by.mp3",
+                  audio: "/assets/audio/words/d/drop-by.mp3",
                   part: "drop by",
                   type: "mark",
                 },
@@ -58,7 +58,7 @@ export default function SELAAlessonFive() {
               text: [
                 "Maybe go to the movies or to a party. Our plans are still ",
                 {
-                  audio: "/assets/audio/general/up-in-the-air.mp3",
+                  audio: "/assets/audio/words/u/up-in-the-air.mp3",
                   part: "up in the air",
                   type: "mark",
                 },
@@ -74,13 +74,13 @@ export default function SELAAlessonFive() {
               text: [
                 "I don't want to ",
                 {
-                  audio: "/assets/audio/general/hang-around.mp3",
+                  audio: "/assets/audio/words/h/hang-around.mp3",
                   part: "hang around",
                   type: "mark",
                 },
                 " here. Dad is really ",
                 {
-                  audio: "/assets/audio/general/down-in-the-dumps.mp3",
+                  audio: "/assets/audio/words/d/down-in-the-dumps.mp3",
                   part: "down in the dumps",
                   type: "mark",
                 },
@@ -98,7 +98,7 @@ export default function SELAAlessonFive() {
               text: [
                 "Yeah. I'm ",
                 {
-                  audio: "/assets/audio/general/crazy-about.mp3",
+                  audio: "/assets/audio/words/c/crazy-about.mp3",
                   part: "crazy about",
                   type: "mark",
                 },
@@ -110,13 +110,13 @@ export default function SELAAlessonFive() {
               text: [
                 "Don't ",
                 {
-                  audio: "/assets/audio/general/take-this-the-wrong-way.mp3",
+                  audio: "/assets/audio/words/t/take-this-the-wrong-way.mp3",
                   part: "take this the wrong way",
                   type: "mark",
                 },
                 ", but she's not exactly my ",
                 {
-                  audio: "/assets/audio/general/cup-of-tea.mp3",
+                  audio: "/assets/audio/words/c/cup-of-tea.mp3",
                   part: "cup of tea",
                   type: "mark",
                 },
@@ -127,19 +127,19 @@ export default function SELAAlessonFive() {
               speaker: "Ted:",
               text: [
                 {
-                  audio: "/assets/audio/general/take-it-easy.mp3",
+                  audio: "/assets/audio/words/t/take-it-easy.mp3",
                   part: "Take it easy",
                   type: "mark",
                 },
                 ", Mom. We're not ",
                 {
-                  audio: "/assets/audio/general/about-to.mp3",
+                  audio: "/assets/audio/words/a/about-to.mp3",
                   part: "about to",
                   type: "mark",
                 },
                 " get married. We just enoy ",
                 {
-                  audio: "/assets/audio/general/hanging-out.mp3",
+                  audio: "/assets/audio/words/h/hanging-out.mp3",
                   part: "hanging out",
                   type: "mark",
                 },
@@ -151,7 +151,7 @@ export default function SELAAlessonFive() {
               text: [
                 "I guess ",
                 {
-                  audio: "/assets/audio/general/no-accounting-for-taste.mp3",
+                  audio: "/assets/audio/words/n/no-accounting-for-taste.mp3",
                   part: "there’s no accounting for taste",
                   type: "mark",
                 },
@@ -163,7 +163,7 @@ export default function SELAAlessonFive() {
               text: [
                 "Don't worry. We'll ",
                 {
-                  audio: "/assets/audio/general/have-a-blast.mp3",
+                  audio: "/assets/audio/words/h/have-a-blast.mp3",
                   part: "have a blast",
                   type: "mark",
                 },
@@ -175,7 +175,7 @@ export default function SELAAlessonFive() {
               text: [
                 "(",
                 {
-                  audio: "/assets/audio/general/under-her-breath.mp3",
+                  audio: "/assets/audio/words/u/under-her-breath.mp3",
                   part: "under her breath",
                   type: "mark",
                 },

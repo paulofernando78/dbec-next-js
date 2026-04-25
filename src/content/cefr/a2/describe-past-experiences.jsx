@@ -16,8 +16,11 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 import { LineBreak } from "@/components/atoms/LineBreak";
 import {
   content,
+  audio,
+  wordAudio,
   bold,
   mark,
+  underline,
   stressed,
   phonetics,
   portuguese,
@@ -337,6 +340,9 @@ export default function DescribePastExperiences() {
                               audio:
                                 "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/last-weekend-laura-went-to-the-beach.mp3",
                               parts: [
+                                audio(
+                                  "/assets/audio/cefr/a2/describe-the-past/language-focus/positive/last-weekend-laura-went-to-the-beach.mp3",
+                                ),
                                 "Last weekend, Laura ",
                                 mark("went"),
                                 " to the beach.",
@@ -800,7 +806,7 @@ export default function DescribePastExperiences() {
               ]}
             />
             <LineBreak />
-
+            {/* /t/ after voiceless sounds like p, k, f, s. */}
             <Line
               value={[
                 ...content({
@@ -823,6 +829,7 @@ export default function DescribePastExperiences() {
               ]}
             />
 
+            {/* /d/ after voiced sounds like vowels, b, g, m, v, z. */}
             <Line
               value={[
                 ...content({
@@ -845,6 +852,7 @@ export default function DescribePastExperiences() {
               ]}
             />
 
+            {/* /ɪd/ after verbs ending in /t/ or /d/. */}
             <Line
               value={[
                 ...content({
@@ -874,7 +882,7 @@ export default function DescribePastExperiences() {
             />
             <LineBreak />
             <Column
-              width="220"
+              width="250"
               cols={[
                 // Regular
                 {
@@ -888,135 +896,19 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio:
-                                "/assets/audio/cefr/a2/describe-the-past/regular-irregular-verbs/ask-asked.mp3",
-                              parts: ["ask "],
+                              parts: [audio("ask.mp3"), "ask "],
                             }),
                             ...content({
                               icons: ["arrow"],
                               parts: [
-                                "asked",
+                                audio("asked.mp3"),
+                                "ask",
+                                underline("ed"),
                                 " ",
-                                phonetics("/ɪd/")],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // play
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/assets/audio/cefr/a2/describe-the-past/regular-irregular-verbs/play-played.mp3",
-                              parts: ["play "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["played"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // study
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/assets/audio/cefr/a2/describe-the-past/regular-irregular-verbs/study-studied.mp3",
-                              parts: ["study "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["studied"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // work
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["work "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["worked"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // watch
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["watch "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["watched"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // visit
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["visit "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["visited"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // live
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["live "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["lived"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // want
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["want "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["wanted", " ", phonetics("/ɪd/")],
+                                phonetics("/t/"),
+                                " ",
+                                portuguese("perguntar"),
+                              ],
                             }),
                           ],
                         },
@@ -1028,12 +920,235 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
-                              parts: ["clean "],
+                              parts: [audio("clean.mp3"), "clean "],
                             }),
                             ...content({
                               icons: ["arrow"],
-                              parts: ["cleaned"],
+                              parts: [
+                                audio("cleaned.mp3"),
+                                "clean",
+                                underline("ed"),
+                                " ",
+                                phonetics("/d/"),
+                                " ",
+                                portuguese("limpar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // help
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("help.mp3"), "help "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("helped.mp3"),
+                                "help",
+                                underline("ed"),
+                                " ",
+                                phonetics("/t/"),
+                                " ",
+                                portuguese("ajudar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // live
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("live1.mp3"), "live "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("lived.mp3"),
+                                "liv",
+                                underline("ed"),
+                                " ",
+                                phonetics("/d/"),
+                                " ",
+                                portuguese("morar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // play
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("play.mp3"), "play "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("played.mp3"),
+                                "play",
+                                underline("ed"),
+                                " ",
+                                phonetics("/d/"),
+                                " ",
+                                portuguese("jogar / brincar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // study
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("study.mp3"), "study "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("studied.mp3"),
+                                "studi",
+                                underline("ed"),
+                                " ",
+                                phonetics("/d/"),
+                                " ",
+                                portuguese("estudar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // use
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("use-verb.mp3"), "use "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("used.mp3"),
+                                "us",
+                                underline("ed"),
+                                " ",
+                                phonetics("/d/"),
+                                " ",
+                                portuguese("usar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // visit
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("visit.mp3"), "visit "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("visited.mp3"),
+                                "visit",
+                                underline("ed"),
+                                " ",
+                                phonetics("/ɪd/"),
+                                " ",
+                                portuguese("visitar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // want
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("want.mp3"), "want "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("wanted.mp3"),
+                                "want",
+                                underline("ed"),
+                                " ",
+                                phonetics("/ɪd/"),
+                                " ",
+                                portuguese("querer"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // watch
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("watch.mp3"), "watch "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("watched.mp3"),
+                                "watch",
+                                underline("ed"),
+                                " ",
+                                phonetics("/t/"),
+                                " ",
+                                portuguese("assistir"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // work
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("work.mp3"), "work "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("worked.mp3"),
+                                "work",
+                                underline("ed"),
+                                " ",
+                                phonetics("/t/"),
+                                " ",
+                                portuguese("trabalhar"),
+                              ],
                             }),
                           ],
                         },
@@ -1047,18 +1162,25 @@ export default function DescribePastExperiences() {
                   textColor: "white",
                   column: "Irregular",
                   blocks: [
-                    // eat
+                    // come
                     {
                       block: [
                         {
                           text: [
                             ...content({
                               audio: "/",
-                              parts: ["eat "],
+                              parts: [audio("come.mp3"), "come "],
                             }),
                             ...content({
                               icons: ["arrow"],
-                              parts: ["ate"],
+                              parts: [
+                                audio("came.mp3"),
+                                "came",
+                                " ",
+                                phonetics("/keɪm/"),
+                                " ",
+                                portuguese("vir"),
+                              ],
                             }),
                           ],
                         },
@@ -1070,97 +1192,41 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
-                              parts: ["do "],
+                              parts: [audio("do.mp3"), "do "],
                             }),
                             ...content({
                               icons: ["arrow"],
-                              parts: ["did"],
+                              parts: [
+                                audio("did.mp3"),
+                                "did",
+                                " ",
+                                phonetics("/dɪd/"),
+                                " ",
+                                portuguese("fazer"),
+                              ],
                             }),
                           ],
                         },
                       ],
                     },
-                    // go
+                    // eat
                     {
                       block: [
                         {
                           text: [
                             ...content({
-                              audio: "/",
-                              parts: ["go "],
+                              parts: [audio("eat.mp3"), "eat "],
                             }),
                             ...content({
                               icons: ["arrow"],
-                              parts: ["went"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // have
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["have "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["had"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // make
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["make "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["made"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // see
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["see "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["saw"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    // come
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: "/",
-                              parts: ["come "],
-                            }),
-                            ...content({
-                              icons: ["arrow"],
-                              parts: ["came"],
+                              parts: [
+                                audio("ate.mp3"),
+                                "ate",
+                                " ",
+                                phonetics("/eɪt/"),
+                                " ",
+                                portuguese("comer"),
+                              ],
                             }),
                           ],
                         },
@@ -1172,12 +1238,156 @@ export default function DescribePastExperiences() {
                         {
                           text: [
                             ...content({
-                              audio: "/",
-                              parts: ["get "],
+                              parts: [audio("get.mp3"), "get "],
                             }),
                             ...content({
                               icons: ["arrow"],
-                              parts: ["got"],
+                              parts: [
+                                audio("got.mp3"),
+                                "got",
+                                " ",
+                                phonetics("/gɑːt/"),
+                                " ",
+                                portuguese("conseguir / pegar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // give
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("give.mp3"), "give "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("gave.mp3"),
+                                "gave",
+                                " ",
+                                phonetics("/geɪv/"),
+                                " ",
+                                portuguese("dar"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // go
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("go.mp3"), "go "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("went.mp3"),
+                                "went",
+                                " ",
+                                phonetics("/went/"),
+                                " ",
+                                portuguese("ir"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // have
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("have.mp3"), "have "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("had.mp3"),
+                                "had",
+                                " ",
+                                phonetics("/hæd/"),
+                                " ",
+                                portuguese("ter"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // make
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("make.mp3"), "make "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("made.mp3"),
+                                "made",
+                                " ",
+                                phonetics("/meɪd/"),
+                                " ",
+                                portuguese("fazer"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // see
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("see.mp3"), "see "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("saw.mp3"),
+                                "saw",
+                                " ",
+                                phonetics("/sɔː/"),
+                                " ",
+                                portuguese("ver"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    // take
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [audio("take.mp3"), "take "],
+                            }),
+                            ...content({
+                              icons: ["arrow"],
+                              parts: [
+                                audio("took.mp3"),
+                                "took",
+                                " ",
+                                phonetics("/tʊk/"),
+                                " ",
+                                portuguese("pegar / levar"),
+                              ],
                             }),
                           ],
                         },

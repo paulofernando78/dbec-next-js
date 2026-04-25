@@ -38,7 +38,7 @@ export default function SELAAlessonFour() {
               text: [
                 "It was great, Mom. I gave a presentation on Hillary Clinton in government class. Afterwards, my teacher ",
                 {
-                  audio: "/audio/general/paid-me-a-compliment.mp3",
+                  audio: "/audio/words/p/paid-me-a-compliment.mp3",
                   part: "paid me a compliment",
                   type: "mark",
                 },
@@ -54,7 +54,7 @@ export default function SELAAlessonFour() {
               text: [
                 "She said my presentation was ",
                 {
-                  audio: "/audio/general/head-and-shoulders-above.mp3",
+                  audio: "/audio/words/h/head-and-shoulders-above.mp3",
                   part: "head and shoulders above",
                   type: "mark",
                 },
@@ -65,7 +65,7 @@ export default function SELAAlessonFour() {
               speaker: "Susan:",
               text: [
                 {
-                  audio: "/audio/general/way-to-go.mp3",
+                  audio: "/audio/words/w/way-to-go.mp3",
                   part: "Way to go!",
                   type: "mark",
                 },
@@ -76,7 +76,7 @@ export default function SELAAlessonFour() {
               text: [
                 "She also said I should ",
                 {
-                  audio: "/audio/general/go-into-politics.mp3",
+                  audio: "/audio/words/g/go-into-politics.mp3",
                   part: "go into politics",
                   type: "mark",
                 },
@@ -88,7 +88,7 @@ export default function SELAAlessonFour() {
               text: [
                 "You're so ",
                 {
-                  audio: "/audio/general/gung-ho.mp3",
+                  audio: "/audio/words/g/gung-ho.mp3",
                   part: "gung ho",
                   type: "mark",
                 },
@@ -100,7 +100,7 @@ export default function SELAAlessonFour() {
               text: [
                 "Ted, don't ",
                 {
-                  audio: "/audio/general/butt-in.mp3",
+                  audio: "/audio/words/b/butt-in.mp3",
                   part: "butt in",
                   type: "mark",
                 },
@@ -112,13 +112,13 @@ export default function SELAAlessonFour() {
               text: [
                 "Right. You ",
                 {
-                  audio: "/audio/general/hit-the-nail-on-the-head.mp3",
+                  audio: "/audio/words/h/hit-the-nail-on-the-head.mp3",
                   part: "hit the nail on the head",
                   type: "mark",
                 },
                 ". I'm ",
                 {
-                  audio: "/audio/general/green-with-envy.mp3",
+                  audio: "/audio/words/g/green-with-envy.mp3",
                   part: "green with envy",
                   type: "mark",
                 },
@@ -130,13 +130,13 @@ export default function SELAAlessonFour() {
               text: [
                 "Would you just ",
                 {
-                  audio: "/audio/general/shut-up.mp3",
+                  audio: "/audio/words/s/shut-up.mp3",
                   part: "shut up",
                   type: "mark",
                 },
                 "? You're ",
                 {
-                  audio: "/audio/general/on-thin-ice.mp3",
+                  audio: "/audio/words/o/on-thin-ice.mp3",
                   part: "on thin ice",
                   type: "mark",
                 },
@@ -148,7 +148,7 @@ export default function SELAAlessonFour() {
               text: [
                 "Oh no! Look at me. I'm ",
                 {
-                  audio: "/audio/general/shaking-in-my-shoes.mp3",
+                  audio: "/audio/words/s/shaking-in-my-shoes.mp3",
                   part: "shaking in my shoes",
                   type: "mark",
                 },

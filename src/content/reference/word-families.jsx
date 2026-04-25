@@ -18,28 +18,28 @@ const words = [
   // answer
   {
     verb: {
-      audio: "/assets/audio/general/answer.mp3",
+      audio: "/assets/audio/words/a/answer.mp3",
       word: "answer",
       partOfSpeech: "regular",
       phonetics: "/ˈæn.sɚ/",
       ptDefinition: "responder",
     },
     conjugation: {
-      thirdPersonAudio: "/assets/audio/general/answers.mp3",
+      thirdPersonAudio: "/assets/audio/words/a/answers.mp3",
       thirdPerson: "answers",
       thirdPersonPhonetics: "/z/",
-      pastAudio: "/assets/audio/general/answered.mp3",
+      pastAudio: "/assets/audio/words/a/answered.mp3",
       past: "answered",
       pastPhonetics: "/d/",
-      participleAudio: "/assets/audio/general/answered.mp3",
+      participleAudio: "/assets/audio/words/a/answered.mp3",
       participle: "answered",
       participlePhonetics: "/d/",
-      progressiveAudio: "/assets/audio/general/answering.mp3",
+      progressiveAudio: "/assets/audio/words/a/answering.mp3",
       progressive: "answering",
     },
     nouns: [
       {
-        audio: "/assets/audio/general/answer.mp3",
+        audio: "/assets/audio/words/a/answer.mp3",
         word: "answer",
         ptDefinition: "resposta",
       },
@@ -48,13 +48,13 @@ const words = [
   // ask
   {
     verb: {
-      audio: "/assets/audio/general/ask.mp3",
+      audio: "/assets/audio/words/a/ask.mp3",
       word: "ask",
       ptDefinition: "perguntar",
     },
     phrasalVerbs: [
       {
-        audio: "/assets/audio/general/ask-out.mp3",
+        audio: "/assets/audio/words/a/ask-out.mp3",
         word: "ask (someone) out",
         ptDefinition: "convidar para sair",
       },
@@ -114,7 +114,7 @@ const words = [
     ],
     expressions: [
       {
-        audio: "/assets/audio/general/beat-around-the-bush.mp3",
+        audio: "/assets/audio/words/b/beat-around-the-bush.mp3",
         word: "beat around the bush",
         ptDefinition: "enrolar",
       },
@@ -483,7 +483,7 @@ const words = [
     ],
     nouns: [
       {
-        audio: "/audio/general/dig-noun.mp3",
+        audio: "/audio/words/d/dig-noun.mp3",
         word: "dig",
         ptDefinition: "escavação; crítica (informal)",
       },

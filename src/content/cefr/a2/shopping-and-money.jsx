@@ -59,7 +59,7 @@ export default function ShoppingAndMoney() {
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/general/this-shirt-is-cheap.mp3",
+                      audio: "/assets/audio/words/t/this-shirt-is-cheap.mp3",
                       parts: ["This shirt is cheap."],
                     }),
                   ]}
@@ -67,7 +67,7 @@ export default function ShoppingAndMoney() {
                 <Line
                   value={[
                     ...content({
-                      audio: "/assets/audio/general/ill-pay-you-tomorrow.mp3",
+                      audio: "/assets/audio/words/i/ill-pay-you-tomorrow.mp3",
                       parts: ["I'll pay you tomorrow."],
                     }),
                   ]}
@@ -306,7 +306,7 @@ export default function ShoppingAndMoney() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/cheap.mp3",
+                              audio: "/assets/audio/words/c/cheap.mp3",
                               parts: ["cheap"],
                             }),
                           ],
@@ -341,7 +341,7 @@ export default function ShoppingAndMoney() {
                         {
                           text: [
                             ...content({
-                              audio: "/assets/audio/general/buy.mp3",
+                              audio: "/assets/audio/words/b/buy.mp3",
                               parts: ["buy"],
                             }),
                           ],

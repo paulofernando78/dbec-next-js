@@ -34,7 +34,7 @@ export default function PresentContinuous() {
       }]} />
         <Section id="introduction" label="Introduction" heading={3}>
           <Paragraph value={[{
-          audio: "/assets/audio/general/look-at-the-pictures-and-listen-to-the-sentences.mp3",
+          audio: "/assets/audio/words/l/look-at-the-pictures-and-listen-to-the-sentences.mp3",
           part: "Look at the pictures and listen to the sentences.",
           type: "bold"
         }]} />
@@ -90,7 +90,7 @@ export default function PresentContinuous() {
           }]
         }]} />
           <Radio exercise={{
-          audio: "/assets/audio/general/choose-the-right-answer.mp3",
+          audio: "/assets/audio/words/c/choose-the-right-answer.mp3",
           instruction: "Choose the right answer.",
           questions: [{
             question: "1. Mr. Smith is _____ .",
@@ -134,7 +134,7 @@ export default function PresentContinuous() {
 
         <Section id="presentation" label="Presentation" heading={3}>
           <Paragraph value={[{
-          audio: "/assets/audio/general/listen-to-the-dialogue.mp3",
+          audio: "/assets/audio/words/l/listen-to-the-dialogue.mp3",
           part: "Listen to the dialogue.",
           type: "bold"
         }]} />

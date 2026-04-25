@@ -25,11 +25,11 @@ const emojis = [
     alt: '"thumb" up emoji',
     words: [
       {
-        audio: "/assets/audio/general/good.mp3",
+        audio: "/assets/audio/words/g/good.mp3",
         word: "good",
       },
       {
-        audio: "/assets/audio/general/well.mp3",
+        audio: "/assets/audio/words/w/well.mp3",
         word: "well",
       },
     ],
@@ -39,11 +39,11 @@ const emojis = [
     alt: '"happy" emoji',
     words: [
       {
-        audio: "/assets/audio/general/happy.mp3",
+        audio: "/assets/audio/words/h/happy.mp3",
         word: "happy",
       },
       {
-        audio: "/assets/audio/general/glad.mp3",
+        audio: "/assets/audio/words/g/glad.mp3",
         word: "glad",
       },
     ],
@@ -53,11 +53,11 @@ const emojis = [
     alt: '"sad" emoji',
     words: [
       {
-        audio: "/assets/audio/general/sad.mp3",
+        audio: "/assets/audio/words/s/sad.mp3",
         word: "sad",
       },
       {
-        audio: "/assets/audio/general/unhappy.mp3",
+        audio: "/assets/audio/words/u/unhappy.mp3",
         word: "unhappy",
       },
     ],
@@ -67,11 +67,11 @@ const emojis = [
     alt: '"angry" emoji',
     words: [
       {
-        audio: "/assets/audio/general/angry.mp3",
+        audio: "/assets/audio/words/a/angry.mp3",
         word: "angry (with)",
       },
       {
-        audio: "/assets/audio/general/mad.mp3",
+        audio: "/assets/audio/words/m/mad.mp3",
         word: "mad (at)",
       },
     ],
@@ -81,11 +81,11 @@ const emojis = [
     alt: '"annoyed" emoji',
     words: [
       {
-        audio: "/assets/audio/general/annoyed.mp3",
+        audio: "/assets/audio/words/a/annoyed.mp3",
         word: "annoyed",
       },
       {
-        audio: "/assets/audio/general/irritated.mp3",
+        audio: "/assets/audio/words/i/irritated.mp3",
         word: "irritated",
       },
     ],
@@ -95,11 +95,11 @@ const emojis = [
     alt: '"calm" emoji',
     words: [
       {
-        audio: "/assets/audio/general/calm.mp3",
+        audio: "/assets/audio/words/c/calm.mp3",
         word: "calm",
       },
       {
-        audio: "/assets/audio/general/relaxed.mp3",
+        audio: "/assets/audio/words/r/relaxed.mp3",
         word: "relaxed",
       },
     ],
@@ -109,11 +109,11 @@ const emojis = [
     alt: '"crazy" emoji',
     words: [
       {
-        audio: "/assets/audio/general/crazy.mp3",
+        audio: "/assets/audio/words/c/crazy.mp3",
         word: "crazy",
       },
       {
-        audio: "/assets/audio/general/wacky.mp3",
+        audio: "/assets/audio/words/w/wacky.mp3",
         word: "wacky",
       },
     ],
@@ -123,11 +123,11 @@ const emojis = [
     alt: '"tired" emoji',
     words: [
       {
-        audio: "/assets/audio/general/tired.mp3",
+        audio: "/assets/audio/words/t/tired.mp3",
         word: "tired",
       },
       {
-        audio: "/assets/audio/general/exhausted.mp3",
+        audio: "/assets/audio/words/e/exhausted.mp3",
         word: "exhausted",
       },
     ],
@@ -137,11 +137,11 @@ const emojis = [
     alt: '"anxious" emoji',
     words: [
       {
-        audio: "/assets/audio/general/anxious.mp3",
+        audio: "/assets/audio/words/a/anxious.mp3",
         word: "anxious",
       },
       {
-        audio: "/assets/audio/general/nervous.mp3",
+        audio: "/assets/audio/words/n/nervous.mp3",
         word: "nervous",
       },
     ],
@@ -151,11 +151,11 @@ const emojis = [
     alt: '"bored" emoji',
     words: [
       {
-        audio: "/assets/audio/general/bored.mp3",
+        audio: "/assets/audio/words/b/bored.mp3",
         word: "bored",
       },
       {
-        audio: "/assets/audio/general/fed-up.mp3",
+        audio: "/assets/audio/words/f/fed-up.mp3",
         word: "fed up (with)",
       },
     ],
@@ -165,11 +165,11 @@ const emojis = [
     alt: '"hot" emoji',
     words: [
       {
-        audio: "/assets/audio/general/hot.mp3",
+        audio: "/assets/audio/words/h/hot.mp3",
         word: "hot",
       },
       {
-        audio: "/assets/audio/general/overheating.mp3",
+        audio: "/assets/audio/words/o/overheating.mp3",
         word: "overheating",
       },
     ],
@@ -179,11 +179,11 @@ const emojis = [
     alt: '"in love" emoji',
     words: [
       {
-        audio: "/assets/audio/general/in-love.mp3",
+        audio: "/assets/audio/words/i/in-love.mp3",
         word: "in love",
       },
       {
-        audio: "/assets/audio/general/romantic.mp3",
+        audio: "/assets/audio/words/r/romantic.mp3",
         word: "romantic",
       },
     ],
@@ -193,11 +193,11 @@ const emojis = [
     alt: '"loved" emoji',
     words: [
       {
-        audio: "/assets/audio/general/loved.mp3",
+        audio: "/assets/audio/words/l/loved.mp3",
         word: "loved",
       },
       {
-        audio: "/assets/audio/general/appreciated.mp3",
+        audio: "/assets/audio/words/a/appreciated.mp3",
         word: "appreciated",
       },
     ],
@@ -207,11 +207,11 @@ const emojis = [
     alt: '"heartbroken" emoji',
     words: [
       {
-        audio: "/assets/audio/general/heartbroken.mp3",
+        audio: "/assets/audio/words/h/heartbroken.mp3",
         word: "heartbroken",
       },
       {
-        audio: "/assets/audio/general/devastated.mp3",
+        audio: "/assets/audio/words/d/devastated.mp3",
         word: "devastated",
       },
     ],
@@ -221,11 +221,11 @@ const emojis = [
     alt: '"silly" emoji',
     words: [
       {
-        audio: "/assets/audio/general/silly.mp3",
+        audio: "/assets/audio/words/s/silly.mp3",
         word: "silly",
       },
       {
-        audio: "/assets/audio/general/goofy.mp3",
+        audio: "/assets/audio/words/g/goofy.mp3",
         word: "goofy",
       },
     ],
@@ -235,11 +235,11 @@ const emojis = [
     alt: '"scared" emoji',
     words: [
       {
-        audio: "/assets/audio/general/scared.mp3",
+        audio: "/assets/audio/words/s/scared.mp3",
         word: "scared (of)",
       },
       {
-        audio: "/assets/audio/general/afraid.mp3",
+        audio: "/assets/audio/words/a/afraid.mp3",
         word: "afraid (of)",
       },
     ],
@@ -249,11 +249,11 @@ const emojis = [
     alt: '"thoughtful" emoji',
     words: [
       {
-        audio: "/assets/audio/general/thoughtful.mp3",
+        audio: "/assets/audio/words/t/thoughtful.mp3",
         word: "thoughtful",
       },
       {
-        audio: "/assets/audio/general/reflective.mp3",
+        audio: "/assets/audio/words/r/reflective.mp3",
         word: "reflective",
       },
     ],
@@ -263,11 +263,11 @@ const emojis = [
     alt: '"frustrated" emoji',
     words: [
       {
-        audio: "/assets/audio/general/frustrated.mp3",
+        audio: "/assets/audio/words/f/frustrated.mp3",
         word: "frustrated",
       },
       {
-        audio: "/assets/audio/general/bothered.mp3",
+        audio: "/assets/audio/words/b/bothered.mp3",
         word: "bothered",
       },
     ],
@@ -277,11 +277,11 @@ const emojis = [
     alt: '"disappointed" emoji',
     words: [
       {
-        audio: "/assets/audio/general/disappointed.mp3",
+        audio: "/assets/audio/words/d/disappointed.mp3",
         word: "disappointed",
       },
       {
-        audio: "/assets/audio/general/betrayed.mp3",
+        audio: "/assets/audio/words/b/betrayed.mp3",
         word: "betrayed",
       },
     ],
@@ -291,11 +291,11 @@ const emojis = [
     alt: '"embarrassed" emoji',
     words: [
       {
-        audio: "/assets/audio/general/embarrassed.mp3",
+        audio: "/assets/audio/words/e/embarrassed.mp3",
         word: "embarrassed",
       },
       {
-        audio: "/assets/audio/general/ashamed.mp3",
+        audio: "/assets/audio/words/a/ashamed.mp3",
         word: "ashamed",
       },
     ],
@@ -305,11 +305,11 @@ const emojis = [
     alt: '"sleepy" emoji',
     words: [
       {
-        audio: "/assets/audio/general/sleepy.mp3",
+        audio: "/assets/audio/words/s/sleepy.mp3",
         word: "sleepy",
       },
       {
-        audio: "/assets/audio/general/tired.mp3",
+        audio: "/assets/audio/words/t/tired.mp3",
         word: "tired",
       },
     ],
@@ -319,11 +319,11 @@ const emojis = [
     alt: '"peaceful" emoji',
     words: [
       {
-        audio: "/assets/audio/general/peaceful.mp3",
+        audio: "/assets/audio/words/p/peaceful.mp3",
         word: "peaceful",
       },
       {
-        audio: "/assets/audio/general/serene.mp3",
+        audio: "/assets/audio/words/s/serene.mp3",
         word: "serene",
       },
     ],
@@ -333,11 +333,11 @@ const emojis = [
     alt: '"thankful" emoji',
     words: [
       {
-        audio: "/assets/audio/general/thankful.mp3",
+        audio: "/assets/audio/words/t/thankful.mp3",
         word: "thankful",
       },
       {
-        audio: "/assets/audio/general/grateful.mp3",
+        audio: "/assets/audio/words/g/grateful.mp3",
         word: "grateful",
       },
     ],
@@ -347,11 +347,11 @@ const emojis = [
     alt: '"sick" emoji',
     words: [
       {
-        audio: "/assets/audio/general/sick.mp3",
+        audio: "/assets/audio/words/s/sick.mp3",
         word: "sick",
       },
       {
-        audio: "/assets/audio/general/ill.mp3",
+        audio: "/assets/audio/words/i/ill.mp3",
         word: "ill",
       },
     ],
@@ -361,7 +361,7 @@ const emojis = [
     alt: '"i-dont-know" emoji',
     words: [
       {
-        audio: "/assets/audio/general/i-dont-know.mp3",
+        audio: "/assets/audio/words/i/i-dont-know.mp3",
         word: "I dont know",
       },
     ],
