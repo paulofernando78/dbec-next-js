@@ -34,187 +34,57 @@ export default function AncientOriginsOfBeer() {
 
         <PageSections>
           <Section id="Introduction" heading={3}>
-          <List
-            items={[
-              {
-                value: [
-                  ...content({
-                    parts: [
-                      bold("Topic: "),
-                      "the historical development of beer",
-                    ],
-                  }),
-                ],
-              },
-              {
-                value: [
-                  ...content({
-                    parts: [
-                      bold("Time span: "),
-                      "from ancient brewing to modern varieties",
-                    ],
-                  }),
-                ],
-              },
-              {
-                value: [
-                  ...content({
-                    parts: [
-                      bold("Key process: "),
-                      "converting grain starches into sugars and fermenting them",
-                    ],
-                  }),
-                ],
-              },
-              {
-                value: [
-                  ...content({
-                    parts: [
-                      bold("Important innovations: "),
-                      "hops, refrigeration, and understanding yeast",
-                    ],
-                  }),
-                ],
-              },
-            ]}
-          />
-            
-          </Section>
-          <Section id="Guess" heading={3}>
-            <Radio
-              exercise={{
-                instruction: "Choose the best response.",
-                questions: [
-                  {
-                    question: "1. What is the main purpose of the video?",
-                    options: [
-                      {
-                        option: "To advertise a modern beer brand.",
-                        isCorrect: false,
-                      },
-                      {
-                        option:
-                          "To explain how beer developed from ancient times to the present.",
-                        isCorrect: true,
-                      },
-                      {
-                        option: "To compare beer with soft drinks.",
-                        isCorrect: false,
-                      },
-                    ],
-                  },
-                  {
-                    question:
-                      "2. What did ancient brewing require before fermentation?",
-                    options: [
-                      {
-                        option:
-                          "Turning grain starches into sugars that yeast could act on.",
-                        isCorrect: true,
-                      },
-                      {
-                        option: "Freezing the beer mixture.",
-                        isCorrect: false,
-                      },
-                      { option: "Adding modern chemicals.", isCorrect: false },
-                    ],
-                  },
-                  {
-                    question:
-                      "3. Why were hops important in the history of beer?",
-                    options: [
-                      {
-                        option:
-                          "They made beer sweeter and removed all alcohol.",
-                        isCorrect: false,
-                      },
-                      {
-                        option:
-                          "They added bitterness and acted as a preservative.",
-                        isCorrect: true,
-                      },
-                      {
-                        option:
-                          "They replaced cereal grains as the main ingredient.",
-                        isCorrect: false,
-                      },
-                    ],
-                  },
-                ],
-              }}
-            />
-          </Section>
-
-          <Section id="video" heading={3}>
-            <Paragraph
-              value={[
-                ...content({
-                  parts: [
-                    "Watch the video and listen for when beer first appeared, how ancient people brewed it, and which later innovations changed its flavor and production.",
+            <List
+              items={[
+                {
+                  value: [
+                    ...content({
+                      parts: [
+                        bold("Topic: "),
+                        "the historical development of beer",
+                      ],
+                    }),
                   ],
-                }),
+                },
+                {
+                  value: [
+                    ...content({
+                      parts: [
+                        bold("Time span: "),
+                        "from ancient brewing to modern varieties",
+                      ],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      parts: [
+                        bold("Key process: "),
+                        "converting grain starches into sugars and fermenting them",
+                      ],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      parts: [
+                        bold("Important innovations: "),
+                        "hops, refrigeration, and understanding yeast",
+                      ],
+                    }),
+                  ],
+                },
               ]}
             />
-            <VideoPlayer
-              videoId="D98UJl6Ea6o"
-              title="The ancient origins of beer"
-            />
-
-            <LineBreak />
           </Section>
-
-          <Section id="practice" heading={3}>
-            <FillInTheBlanks
-              exercise={{
-                instructions: "Complete the summary with the key words.",
-                blocks: [
-                  {
-                    block: [
-                      {
-                        text: "The oldest evidence of beer brewing dates back about ",
-                      },
-                      { blank: "13,000" },
-                      { text: " years." },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    block: [
-                      {
-                        text: "Ancient brewers needed to convert grain starches into fermentable ",
-                      },
-                      { blank: "sugars" },
-                      { text: "." },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    block: [
-                      { text: "Wild " },
-                      { blank: "yeast" },
-                      { text: " helped transform the mixture into alcohol." },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    block: [
-                      { text: "Later, brewers added " },
-                      { blank: "hops" },
-                      { text: " to create bitterness and help preserve beer." },
-                    ],
-                    lineBreak: true,
-                  },
-                ],
-              }}
-            />
-          </Section>
-
-          <Section id="discussion" heading={3}>
+          <Section id="Before watching" heading={3}>
             <Paragraph
               value={[
                 ...content({
                   parts: [
-                    "Discuss the video with a partner. Use the prompts below to summarize the history and evaluate which changes were most important.",
+                    "Discuss the questions below before watching the video.",
                   ],
                 }),
               ]}
@@ -228,7 +98,203 @@ export default function AncientOriginsOfBeer() {
                   value: [
                     ...content({
                       parts: [
-                        "1. What surprised you most about the earliest forms of beer?",
+                        "1. Why do you think beer became popular in ancient societies?",
+                      ],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      parts: ["2. What ingredients are needed to make beer?"],
+                    }),
+                  ],
+                },
+                {
+                  value: [
+                    ...content({
+                      parts: [
+                        "3. How do you think modern beer is different from ancient beer?",
+                      ],
+                    }),
+                  ],
+                },
+              ]}
+            />
+          </Section>
+
+          <Section id="Gist" heading={3}>
+            <Paragraph
+              value={[
+                ...content({
+                  parts: ["Watch the video once and choose the best summary."],
+                }),
+              ]}
+            />
+
+            <VideoPlayer
+              videoId="D98UJl6Ea6o"
+              title="The ancient origins of beer"
+            />
+
+            <Radio
+              exercise={{
+                instruction: "Choose the best answer.",
+                questions: [
+                  {
+                    question: "What is the video mainly about?",
+                    options: [
+                      {
+                        option: "How to brew beer at home.",
+                        isCorrect: false,
+                      },
+                      {
+                        option:
+                          "How beer developed from ancient times to the modern world.",
+                        isCorrect: true,
+                      },
+                      {
+                        option: "Why people should stop drinking beer.",
+                        isCorrect: false,
+                      },
+                    ],
+                  },
+                ],
+              }}
+            />
+          </Section>
+
+          <Section id="Details" heading={3}>
+            <Paragraph
+              value={[
+                ...content({
+                  parts: ["Watch again and listen for specific information."],
+                }),
+              ]}
+            />
+
+            <Radio
+              exercise={{
+                instruction: "Choose the best response.",
+                questions: [
+                  {
+                    question:
+                      "1. How old is the oldest evidence of beer brewing?",
+                    options: [
+                      {
+                        option: "About 2,000 years old.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "About 13,000 years old.",
+                        isCorrect: true,
+                      },
+                      {
+                        option: "About 500 years old.",
+                        isCorrect: false,
+                      },
+                    ],
+                  },
+                  {
+                    question:
+                      "2. What had to happen before fermentation could begin?",
+                    options: [
+                      {
+                        option: "Grain starches had to be turned into sugars.",
+                        isCorrect: true,
+                      },
+                      {
+                        option: "The beer had to be frozen.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "Hops had to be added first.",
+                        isCorrect: false,
+                      },
+                    ],
+                  },
+                  {
+                    question: "3. Why were hops important?",
+                    options: [
+                      {
+                        option: "They added bitterness and preserved beer.",
+                        isCorrect: true,
+                      },
+                      {
+                        option: "They removed alcohol.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "They made beer sweeter.",
+                        isCorrect: false,
+                      },
+                    ],
+                  },
+                ],
+              }}
+            />
+
+            <FillInTheBlanks
+              exercise={{
+                instructions: "Complete the notes.",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: "The oldest evidence of brewing dates back about ",
+                      },
+                      { blank: "13,000" },
+                      { text: " years." },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "Wild ",
+                      },
+                      { blank: "yeast" },
+                      {
+                        text: " helped create alcohol.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "Later, brewers added ",
+                      },
+                      { blank: "hops" },
+                      {
+                        text: " for flavor and preservation.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                ],
+              }}
+            />
+          </Section>
+
+          <Section id="Follow-up discussion" heading={3}>
+            <Paragraph
+              value={[
+                ...content({
+                  parts: ["Discuss the questions below."],
+                }),
+              ]}
+            />
+
+            <LineBreak />
+
+            <List
+              items={[
+                {
+                  value: [
+                    ...content({
+                      parts: [
+                        "1. What surprised you most about the history of beer?",
                       ],
                     }),
                   ],
@@ -237,7 +303,7 @@ export default function AncientOriginsOfBeer() {
                   value: [
                     ...content({
                       parts: [
-                        "2. Why do you think beer developed differently in different regions?",
+                        "2. Which innovation was most important: hops, refrigeration, or understanding yeast?",
                       ],
                     }),
                   ],
@@ -246,7 +312,7 @@ export default function AncientOriginsOfBeer() {
                   value: [
                     ...content({
                       parts: [
-                        "3. Which innovation seems most significant to you: hops, refrigeration, or understanding yeast?",
+                        "3. How has technology changed the food and drink we consume today?",
                       ],
                     }),
                   ],
@@ -255,10 +321,7 @@ export default function AncientOriginsOfBeer() {
                   value: [
                     ...content({
                       parts: [
-                        "4. Give your opinion: ",
-                        mark(
-                          "Beer changed not only because of taste, but because of science, safety, and culture.",
-                        ),
+                        "4. Do traditional foods and drinks matter in modern society? Why?",
                       ],
                     }),
                   ],

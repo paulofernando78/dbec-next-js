@@ -10,29 +10,34 @@ export const Button = ({ icon, onClick, onToggle, active, ...props }) => {
   if (icon === "menu") {
     return (
       <button
-        className={`${styles.button} ${active ? styles.active : ""}`}
+        className={`${styles.pushable} ${active ? styles.active : ""}`}
         onClick={handleClick}
         id={styles.btnMenu}
       >
-        <div className={`${styles.menuBtn} ${active ? styles.active : ""}`}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <span className={styles.shadow}></span>
+        <span className={styles.edge}></span>
+        <span className={styles.front}>
+          <div className={`${styles.menuBtn} ${active ? styles.active : ""}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </span>
       </button>
     );
   }
 
   return (
     <button
-      className={`${styles.button} ${active || pressed ? styles.active : ""}`}
+      className={`${styles.pushable} ${active || pressed ? styles.active : ""}`}
       onMouseDown={() => setPressed(true)}
       onMouseUp={() => setPressed(false)}
-      
       onClick={handleClick}
       {...props}
     >
-      {icon}
+      <span className={styles.shadow}></span>
+      <span className={styles.edge}></span>
+      <span className={styles.front}>{icon}</span>
     </button>
   );
 };

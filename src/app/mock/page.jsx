@@ -18,6 +18,7 @@ import { Examples } from "@/components/molecules/Examples";
 import { Comparison } from "@/components/molecules/Comparison/";
 import { Column } from "@/components/molecules/Column/";
 import { Notes } from "@/components/molecules/Notes";
+import { GuessWord } from "@/components/molecules/GuessWord";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
@@ -85,7 +86,6 @@ export default function Mock() {
                     "soundVariation",
                     "square",
                   ],
-                  audio: "/",
                   parts: [
                     "normal ",
                     audio("/"),
@@ -122,7 +122,6 @@ export default function Mock() {
                     "variation",
                     "soundVariation",
                   ],
-                  audio: "/",
                   parts: [
                     "normal ",
                     audio("/"),
@@ -158,7 +157,6 @@ export default function Mock() {
                     "incorrect",
                     "compare",
                   ],
-                  audio: "/",
                   parts: [
                     "normal ",
                     audio("/"),
@@ -207,7 +205,7 @@ export default function Mock() {
                       "incorrect",
                       "compare",
                     ],
-                    audio: "/",
+
                     parts: [
                       "normal ",
                       audio("/"),
@@ -247,7 +245,7 @@ export default function Mock() {
                       "incorrect",
                       "compare",
                     ],
-                    audio: "/",
+
                     parts: [
                       "normal ",
                       audio("/"),
@@ -287,7 +285,7 @@ export default function Mock() {
                       "incorrect",
                       "compare",
                     ],
-                    audio: "/",
+
                     parts: [
                       "normal ",
                       audio("/"),
@@ -327,7 +325,7 @@ export default function Mock() {
                       "incorrect",
                       "compare",
                     ],
-                    audio: "/",
+
                     parts: [
                       "normal ",
                       audio("/"),
@@ -367,7 +365,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-                      audio: "/",
+  
                       parts: [
                         "normal ",
                         audio("/"),
@@ -405,7 +403,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-                      audio: "/",
+  
                       parts: [
                         "normal ",
                         audio("/"),
@@ -437,7 +435,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-                      audio: "/",
+  
                       parts: [
                         "normal ",
                         audio("/"),
@@ -476,7 +474,7 @@ export default function Mock() {
                       "incorrect",
                       "compare",
                     ],
-                    audio: "/",
+
                     parts: [
                       "normal ",
                       audio("/"),
@@ -655,7 +653,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-                      audio: "/",
+  
                       parts: [
                         "normal ",
                         audio("/"),
@@ -694,7 +692,7 @@ export default function Mock() {
                       "incorrect",
                       "compare",
                     ],
-                    audio: "/",
+
                     parts: [
                       "normal ",
                       audio("/"),
@@ -850,6 +848,10 @@ export default function Mock() {
                 },
               ]}
             />
+          </Section>
+
+          <Section id="guess-word" heading={3}>
+            <GuessWord />
           </Section>
 
           {/* Radio */}

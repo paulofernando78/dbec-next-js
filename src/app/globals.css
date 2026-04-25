@@ -25,16 +25,6 @@
   --border: 1px solid var(--gray-3);
   --border-radius: 5px;
   --box-shadow: 0 0 2px rgba(0, 0, 0, 0.342);
-
-  /* Neumorphism */
-  --neumorphism:
-    -0.1rem -0.1rem 0.1rem #fff, inset 0.01rem 0.01rem 0.1rem var(--slate-2),
-    0.1rem 0.1rem 0.4rem var(--slate-3);
-  --neumorphism-active:
-    inset -0.02rem -0.02rem 0.1rem var(--slate-2),
-    inset 0.1rem 0.1rem 0.2rem var(--slate-3);
-  --neumorphism-soft:
-    4px 4px 8px rgba(0, 0, 0, 0.15), -4px -4px 8px rgba(255, 255, 255, 0.6);
 }
 
 ::-webkit-scrollbar {
@@ -58,14 +48,7 @@ html.dark {
   --icon-color: var(--slate-1);
   --dictionary-bg: var(--slate-9);
 
-
   --icon-invert: 1;
-  --neumorphism:
-    -0.07rem -0.07rem 0.1rem var(--slate-7),
-    0.1rem 0.1rem 0.1rem var(--slate-10);
-  --neumorphism-active:
-    inset 0.1rem 0.1rem 0.1rem var(--slate-10),
-    inset -0.03rem -0.03rem 0.2rem var(--slate-6);
 }
 
 .line-break {

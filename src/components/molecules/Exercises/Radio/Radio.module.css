@@ -16,22 +16,16 @@
 .radio {
   width: 20px;
   height: 20px;
+  border: 1px solid var(--slate-4);
   border-radius: 50%;
-  box-shadow: var(--neumorphism);
 
   position: relative;
-  transition: box-shadow 5s ease;
-}
-
-.radioActive {
-  box-shadow: var(--neumorphism-active);
 }
 
 .radioDisabled {
   pointer-events: none;
   opacity: 0.5;
   filter: grayscale(40%);
-  box-shadow: var(--neumorphism-soft);
 }
 
 .radioInner {
@@ -42,7 +36,7 @@
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: var(--gray-4);
+  background: var(--gray-5);
 }
 
 .radioGreen .radioInner {
