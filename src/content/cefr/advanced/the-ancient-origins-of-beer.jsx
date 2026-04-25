@@ -33,6 +33,71 @@ export default function AncientOriginsOfBeer() {
         </Card>
 
         <PageSections>
+          <Section id="Guess" heading={3}>
+            <Radio
+              exercise={{
+                instruction: "Choose the best response.",
+                questions: [
+                  {
+                    question: "1. What is the main purpose of the video?",
+                    options: [
+                      {
+                        option: "To advertise a modern beer brand.",
+                        isCorrect: false,
+                      },
+                      {
+                        option:
+                          "To explain how beer developed from ancient times to the present.",
+                        isCorrect: true,
+                      },
+                      {
+                        option: "To compare beer with soft drinks.",
+                        isCorrect: false,
+                      },
+                    ],
+                  },
+                  {
+                    question:
+                      "2. What did ancient brewing require before fermentation?",
+                    options: [
+                      {
+                        option:
+                          "Turning grain starches into sugars that yeast could act on.",
+                        isCorrect: true,
+                      },
+                      {
+                        option: "Freezing the beer mixture.",
+                        isCorrect: false,
+                      },
+                      { option: "Adding modern chemicals.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question:
+                      "3. Why were hops important in the history of beer?",
+                    options: [
+                      {
+                        option:
+                          "They made beer sweeter and removed all alcohol.",
+                        isCorrect: false,
+                      },
+                      {
+                        option:
+                          "They added bitterness and acted as a preservative.",
+                        isCorrect: true,
+                      },
+                      {
+                        option:
+                          "They replaced cereal grains as the main ingredient.",
+                        isCorrect: false,
+                      },
+                    ],
+                  },
+                ],
+              }}
+            />
+          </Section>
+
           <Section id="video" heading={3}>
             <Paragraph
               value={[
@@ -55,14 +120,20 @@ export default function AncientOriginsOfBeer() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Topic: "), "the historical development of beer"],
+                      parts: [
+                        bold("Topic: "),
+                        "the historical development of beer",
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Time span: "), "from ancient brewing to modern varieties"],
+                      parts: [
+                        bold("Time span: "),
+                        "from ancient brewing to modern varieties",
+                      ],
                     }),
                   ],
                 },
@@ -97,7 +168,9 @@ export default function AncientOriginsOfBeer() {
                 blocks: [
                   {
                     block: [
-                      { text: "The oldest evidence of beer brewing dates back about " },
+                      {
+                        text: "The oldest evidence of beer brewing dates back about ",
+                      },
                       { blank: "13,000" },
                       { text: " years." },
                     ],
@@ -105,7 +178,9 @@ export default function AncientOriginsOfBeer() {
                   },
                   {
                     block: [
-                      { text: "Ancient brewers needed to convert grain starches into fermentable " },
+                      {
+                        text: "Ancient brewers needed to convert grain starches into fermentable ",
+                      },
                       { blank: "sugars" },
                       { text: "." },
                     ],
@@ -130,66 +205,6 @@ export default function AncientOriginsOfBeer() {
                 ],
               }}
             />
-
-            <LineBreak />
-
-            <Radio
-              exercise={{
-                instruction: "Choose the best response.",
-                questions: [
-                  {
-                    question: "1. What is the main purpose of the video?",
-                    options: [
-                      {
-                        option: "To advertise a modern beer brand.",
-                        isCorrect: false,
-                      },
-                      {
-                        option:
-                          "To explain how beer developed from ancient times to the present.",
-                        isCorrect: true,
-                      },
-                      {
-                        option: "To compare beer with soft drinks.",
-                        isCorrect: false,
-                      },
-                    ],
-                  },
-                  {
-                    question: "2. What did ancient brewing require before fermentation?",
-                    options: [
-                      {
-                        option:
-                          "Turning grain starches into sugars that yeast could act on.",
-                        isCorrect: true,
-                      },
-                      { option: "Freezing the beer mixture.", isCorrect: false },
-                      { option: "Adding modern chemicals.", isCorrect: false },
-                    ],
-                  },
-                  {
-                    question: "3. Why were hops important in the history of beer?",
-                    options: [
-                      {
-                        option:
-                          "They made beer sweeter and removed all alcohol.",
-                        isCorrect: false,
-                      },
-                      {
-                        option:
-                          "They added bitterness and acted as a preservative.",
-                        isCorrect: true,
-                      },
-                      {
-                        option:
-                          "They replaced cereal grains as the main ingredient.",
-                        isCorrect: false,
-                      },
-                    ],
-                  },
-                ],
-              }}
-            />
           </Section>
 
           <Section id="discussion" heading={3}>
@@ -210,7 +225,9 @@ export default function AncientOriginsOfBeer() {
                 {
                   value: [
                     ...content({
-                      parts: ["1. What surprised you most about the earliest forms of beer?"],
+                      parts: [
+                        "1. What surprised you most about the earliest forms of beer?",
+                      ],
                     }),
                   ],
                 },
