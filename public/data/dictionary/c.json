@@ -2,6 +2,42 @@
   {
     "definitions": [
       {
+        "word": "cat",
+        "phonetics": "/kæt/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a small domesticated animal with soft fur, four legs, and a tail, often kept as a pet",
+        "ptDefinition": "um pequeno animal domesticado com pelo macio, quatro patas e cauda, frequentemente criado como animal de estimação",
+        "examples": [
+          {
+            "enExample": "The cat is sleeping on the sofa.",
+            "ptExample": "O gato está dormindo no sofá."
+          },
+          {
+            "enExample": "She adopted a black cat from the shelter.",
+            "ptExample": "Ela adotou um gato preto do abrigo."
+          }
+        ],
+        "synonyms": ["feline", "kitty"],
+        "antonyms": ["dog"],
+        "seeAlso": ["kitten", "pet", "feline"],
+        "notes": [
+          {
+            "enNote": "Cats are known for being independent, curious, and agile animals.",
+            "ptNote": "Gatos são conhecidos por serem animais independentes, curiosos e ágeis."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "/assets/img/dictionary/cat-1.jpg",
+            "alt": "A domestic cat"
+          },
+          {
+            "src": "/assets/img/dictionary/cat-3.jpg",
+            "alt": "A domestic cat"
+          }
+        ]
+      },
+      {
         "word": "count on someone",
         "partOfSpeech": "phrasal verb",
         "enDefinition": "to rely on or trust someone to do what they say they will do or to provide help or support",

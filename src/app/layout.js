@@ -1,4 +1,4 @@
-import { Luckiest_Guy, Montserrat, Oswald, Allura } from "next/font/google";
+import { Luckiest_Guy, Montserrat, Oswald, Allura, Rampart_One } from "next/font/google";
 import Script from "next/script";
 
 import styles from "./layout.module.css";
@@ -31,6 +31,12 @@ const oswald = Oswald({
 
 const allura = Allura({
   variable: "--font-allura",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const rampartOne = Rampart_One({
+  variable: "--font-rampart-one",
   subsets: ["latin"],
   weight: "400",
 });
@@ -80,7 +86,7 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body
-        className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable} ${allura.variable}`}
+        className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable} ${allura.variable} ${rampartOne.variable}`}
       >
         <ThemeProvider>
           <div className="layout">

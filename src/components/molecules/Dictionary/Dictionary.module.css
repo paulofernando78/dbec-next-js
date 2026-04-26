@@ -98,3 +98,13 @@
 .seeAlso {
   font-family: "Times New Roman", Times, serif;
 }
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.images > * {
+  margin: 0;
+}

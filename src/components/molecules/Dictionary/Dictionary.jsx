@@ -5,7 +5,9 @@ import styles from "./Dictionary.module.css";
 import { Button } from "@/components/atoms/Button";
 import { Portuguese } from "@/components/atoms/Portuguese";
 import { BulletPoint } from "@/components/atoms/BulletPoint";
-import { DictionaryBook, Keyboard } from "@/lib/svg-imports";
+import { Image } from "@/components/atoms/Image";
+import { Keyboard } from "@/lib/svg-imports";
+
 
 import { useState, useEffect } from "react";
 import { Search, Close } from "@/lib/svg-imports";
@@ -193,6 +195,20 @@ export const Dictionary = () => {
                           <Portuguese>{note.ptNote}</Portuguese>
                         </span>
                       </span>
+                    ))}
+                  </div>
+                )}
+
+                {item.imgs && (
+                  <div className={styles.images}>
+                    {item.imgs.map((img, index) => (
+                      <Image
+                        key={index}
+                        src={img.src || img}
+                        alt={img.alt || item.word || `image-${index}`}
+                        width={270}
+                        height={270}
+                      />
                     ))}
                   </div>
                 )}
