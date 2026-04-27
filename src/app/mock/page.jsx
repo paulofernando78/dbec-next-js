@@ -190,10 +190,9 @@ export default function Mock() {
             <LineBreak />
             <CardLayout mediaPosition="top">
               <Image
-                src="/assets/img/general/cat-1.jpg"
+                src="/assets/img/dictionary/cat-1.jpg"
                 alt="cat"
-                width={200}
-              />
+            />
               <Paragraph
                 value={[
                   ...content({
@@ -230,9 +229,8 @@ export default function Mock() {
             <LineBreak />
             <CardLayout mediaPosition="right">
               <Image
-                src="/assets/img/general/cat-1.jpg"
+                src="/assets/img/dictionary/cat-1.jpg"
                 alt="cat"
-                width={200}
               />
               <Paragraph
                 value={[
@@ -272,7 +270,6 @@ export default function Mock() {
               <Image
                 src="/assets/img/general/cat-1.jpg"
                 alt="cat"
-                width={200}
               />
               <Paragraph
                 value={[
@@ -312,7 +309,6 @@ export default function Mock() {
               <Image
                 src="/assets/img/general/cat-1.jpg"
                 alt="cat"
-                width={200}
               />
               <Paragraph
                 value={[

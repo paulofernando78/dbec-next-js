@@ -150,6 +150,7 @@ export const GuessWord = ({ img, words }) => {
           </p>
         </div>
         <div className={styles.containerLetters}>
+          <span><b>Words:</b> {currentIndex + 1} | {words.length}</span>
           <div className={styles.letters}>
             {/* STEP 7: Create one button for each letter */}
             {letters.map((letter, index) => (
@@ -164,7 +165,7 @@ export const GuessWord = ({ img, words }) => {
           </div>
           {/* STEP 9: Show attempts counter */}
           <span>
-            Attempts: {attempts} / {maxAttempts}
+            <b>Attempts:</b> {attempts} | {maxAttempts}
           </span>
           {/* STEP 10: Show hidden/revealed word here */}
           <div className={styles.message}>

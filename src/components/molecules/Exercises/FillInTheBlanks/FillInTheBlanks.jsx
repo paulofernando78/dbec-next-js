@@ -58,9 +58,7 @@ export const FillInTheBlanks = ({ exercise, showWordBank = true }) => {
   const [results, setResults] = useState({});
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
-  const [description, setDescription] = useState(() =>
-    showWordBank ? buildDescription(descriptionText, blocks) : "",
-  );
+  const [description, setDescription] = useState("");
 
   const normalizeAnswer = (value) =>
     String(value ?? "")

@@ -5,7 +5,7 @@ import { toCssUnit } from "../../../utils/toCssUnit";
 export const Image = ({
   src,
   alt = "",
-  width,
+  width = 250,
   height,
   className,
   ratio,
