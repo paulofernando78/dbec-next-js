@@ -2,32 +2,77 @@
 
 import styles from "./GuessWord.module.css";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/atoms/Button/";
 import { Image } from "@/components/atoms/Image/";
 
-export const GuessWord = ({ img }) => {
+import { Redo } from "@/lib/svg-imports";
+
+export const GuessWord = ({ img, words }) => {
   // STEP 1: Create alphabet letters for all keyboard buttons
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
   // STEP 2: State to store clicked/used letters
   const [usedLetters, setUsedLetters] = useState([]);
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   // STEP 3: Future state for the selected secret word
-  const [selected, setSelectedWord] = useState("apple");
+  const [selected, setSelectedWord] = useState(null);
+
+  const [message, setMessage] = useState("");
 
   // STEP 4: Future state for attempts/errors
   const [attempts, setAttempts] = useState(0);
+  const maxAttempts = selected ? Math.max(5, selected.word.length + 1) : 5;
 
   // STEP 5: Future state for game result
   const [status, setStatus] = useState("playing");
 
-  // STEP 6: Render screen
-  // - title
-  // - image clue
-  // - letter buttons
-  // - attempts
-  // - hidden word
+  useEffect(() => {
+    loadWord(words[currentIndex]);
+  }, [currentIndex]);
+
+  const loadWord = async (word) => {
+    const firstLetter = word[0].toLowerCase();
+
+    const response = await fetch(`/data/dictionary/${firstLetter}.json`);
+    const data = await response.json();
+
+    const foundWord = data[0].definitions.find(
+      (item) => item.word.toLowerCase() === word.toLowerCase(),
+    );
+
+    setSelectedWord(foundWord);
+  };
+
+  // STEP 5.1: Move to next word and reset round state
+  const nextWord = () => {
+    const nextIndex = currentIndex + 1;
+
+    // If there are no more words, finish game on last success
+    if (nextIndex >= words.length) {
+      setMessage("Great job!");
+      setStatus("win");
+      return;
+    }
+
+    setCurrentIndex(nextIndex);
+    setUsedLetters([]);
+    setAttempts(0);
+    setMessage("");
+    setStatus("playing");
+  };
+
+  // STEP 5.2: Restart full game from first word
+  const resetGame = () => {
+    setCurrentIndex(0);
+    loadWord(words[0]);
+    setUsedLetters([]);
+    setAttempts(0);
+    setMessage("");
+    setStatus("playing");
+  };
 
   // STEP 11: Build click function logic
   const handleLetterClick = (letter) => {
@@ -38,7 +83,7 @@ export const GuessWord = ({ img }) => {
     setUsedLetters((prev) => [...prev, letter]);
 
     // 3. Check if clicked letter exists in selected word
-    const isCorrectLetter = selected.toUpperCase().includes(letter);
+    const isCorrectLetter = selected.word.toUpperCase().includes(letter);
     const isWrongLetter = !isCorrectLetter;
 
     if (isWrongLetter) {
@@ -47,7 +92,8 @@ export const GuessWord = ({ img }) => {
       setAttempts(nextAttempts);
 
       // 4. Check lose condition
-      if (nextAttempts >= 6) {
+      if (nextAttempts >= maxAttempts) {
+        setMessage("Try again!");
         setStatus("lose");
         return;
       }
@@ -55,36 +101,61 @@ export const GuessWord = ({ img }) => {
 
     // 5. Check win condition
     // Need all unique letters discovered:
-    const uniqueLetters = [...new Set(selected.toUpperCase().split(""))];
+    const uniqueLetters = [...new Set(selected.word.toUpperCase().split(""))];
     // const hasWon = uniqueLetters.every((item) =>
     const hasWon = uniqueLetters.every(
       (item) => usedLetters.includes(item) || item === letter,
     );
 
+    const praise = [
+      "Good!",
+      "Awesome!",
+      "Great!",
+      "Excellent!",
+      "Nice!",
+      "Well done!",
+    ];
+
     if (hasWon) {
+      const randomMessage = praise[Math.floor(Math.random() * praise.length)];
+
+      setMessage(randomMessage);
       setStatus("win");
+
+      setTimeout(() => {
+        nextWord();
+      }, 800);
     }
 
     // 6. If no win / lose:
     // keep status = playing
   };
 
+  if (!selected) return <span>Loading...</span>;
+
   return (
     <>
       <span className={styles.title}>Guess Word!</span>
       <div className={styles.container}>
-        <div>
-          <Image src={img} alt="" />
-          <p>Hint:{selected.enDefinition}</p>
+        <div className={styles.imgHint}>
+          <Image
+            src={selected?.imgs?.[0]?.src}
+            alt={selected?.imgs?.[0]?.alt || selected.word}
+            width={300}
+            height={300}
+            
+          />
+          <p>
+            <b>Hint:</b> {selected?.enDefinition}
+          </p>
         </div>
-        <div>
+        <div className={styles.containerLetters}>
           <div className={styles.letters}>
             {/* STEP 7: Create one button for each letter */}
             {letters.map((letter, index) => (
               <Button
                 // STEP 8: Later add:
                 disabled={usedLetters.includes(letter) || status !== "playing"}
-                // onClick={() => handleLetterClick(letter)}
                 onClick={() => handleLetterClick(letter)}
                 key={letter}
                 icon={letter}
@@ -92,14 +163,24 @@ export const GuessWord = ({ img }) => {
             ))}
           </div>
           {/* STEP 9: Show attempts counter */}
-          {/* <span className={styles.wordDisplay}>Attempts: {attempts} / {maxScore}</span> */}
+          <span>
+            Attempts: {attempts} / {maxAttempts}
+          </span>
           {/* STEP 10: Show hidden/revealed word here */}
-          <div>
-            Status:
-            {status === "win" && <span>Congratulation!</span>}
-            {status === "lose" && <span>Try again!</span>}
+          <div className={styles.message}>
+            {message && <span>{message}</span>}
           </div>
-          <span className={styles.wordDisplay}>Word Display</span>
+          <span className={styles.wordDisplay}>
+            {selected.word
+              .toUpperCase()
+              .split("")
+              .map((char, index) => (
+                <span key={index} className={styles.word}>
+                  {usedLetters.includes(char) ? char : "_"}
+                </span>
+              ))}
+          </span>
+          <Button icon={<Redo />} onClick={resetGame} />
         </div>
       </div>
     </>

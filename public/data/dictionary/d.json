@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "dog",
+        "phonetics": "/dɔːɡ/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a common domesticated animal kept as a pet, known for loyalty, barking, and companionship",
+        "ptDefinition": "um animal doméstico comum mantido como animal de estimação, conhecido por lealdade, latidos e companhia",
+        "examples": [
+          {
+            "enExample": "The dog wagged its tail when I came home.",
+            "ptExample": "O cachorro abanou o rabo quando cheguei em casa."
+          },
+          {
+            "enExample": "She takes her dog for a walk every morning.",
+            "ptExample": "Ela leva seu cachorro para passear todas as manhãs."
+          }
+        ],
+        "synonyms": ["canine", "puppy", "hound"],
+        "antonyms": ["cat"],
+        "seeAlso": ["puppy", "pet", "canine"],
+        "notes": [
+          {
+            "enNote": "Dogs are one of the earliest animals domesticated by humans and are often called man's best friend.",
+            "ptNote": "Os cães são um dos primeiros animais domesticados pelos humanos e frequentemente chamados de melhor amigo do homem."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "/assets/img/dictionary/dog.png",
+            "alt": "A domestic dog sitting and looking forward"
+          }
+        ]
+      },
+      {
         "word": "don’t mention it",
         "partOfSpeech": "idiom",
         "enDefinition": "used as a polite reply when someone thanks you, meaning that the help or favor was not a problem",

@@ -365,7 +365,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-  
+
                       parts: [
                         "normal ",
                         audio("/"),
@@ -403,7 +403,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-  
+
                       parts: [
                         "normal ",
                         audio("/"),
@@ -435,7 +435,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-  
+
                       parts: [
                         "normal ",
                         audio("/"),
@@ -584,13 +584,7 @@ export default function Mock() {
                 }
               />
 
-
-              <FlipCard
-                frontImg=""
-                frontAlt=""
-                backImg=""
-                backAlt=""
-              />
+              <FlipCard frontImg="" frontAlt="" backImg="" backAlt="" />
               <FlipCard
                 frontContent={
                   <Line
@@ -653,7 +647,7 @@ export default function Mock() {
                         "incorrect",
                         "compare",
                       ],
-  
+
                       parts: [
                         "normal ",
                         audio("/"),
@@ -850,8 +844,9 @@ export default function Mock() {
             />
           </Section>
 
+          {/* Guess Word */}
           <Section id="guess-word" heading={3}>
-            <GuessWord />
+            <GuessWord words={["cat", "dog"]} />
           </Section>
 
           {/* Radio */}
