@@ -8,12 +8,12 @@ import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { bold, content, mark } from "@/helpers/content";
+import { bold, content } from "@/helpers/content";
 
 export const metadata = {
-  title: "Advanced | The Ancient Origins of Beer",
+  title: "Advanced | What Causes Constipation?",
   description:
-    "Advanced listening and discussion practice based on a TED-Ed video about the history of beer.",
+    "Advanced listening and discussion practice based on a TED-Ed video about constipation and how the digestive system works.",
 };
 
 export default function Constipation() {
@@ -21,13 +21,21 @@ export default function Constipation() {
     <>
       <Whiteboard
         title="Advanced"
-        subtitle="The ancient origins of beer"
-        description="Watch the video, identify the main historical stages, and discuss how brewing changed over time."
+        subtitle="What causes constipation?"
+        description="Watch the video, understand why constipation happens, and discuss digestive health."
       />
 
       <div className="line-break">
         <Card>
-          
+          <Paragraph
+            value={[
+              ...content({
+                parts: [
+                  "By the end of this lesson, you will understand the main causes of constipation and talk about healthy digestive habits.",
+                ],
+              }),
+            ]}
+          />
         </Card>
 
         <PageSections>
@@ -39,7 +47,7 @@ export default function Constipation() {
                     ...content({
                       parts: [
                         bold("Topic: "),
-                        "the historical development of beer",
+                        "how the digestive system works",
                       ],
                     }),
                   ],
@@ -48,8 +56,8 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        bold("Time span: "),
-                        "from ancient brewing to modern varieties",
+                        bold("Condition: "),
+                        "constipation and delayed bowel movements",
                       ],
                     }),
                   ],
@@ -58,8 +66,8 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        bold("Key process: "),
-                        "converting grain starches into sugars and fermenting them",
+                        bold("Possible causes: "),
+                        "slow colon movement, dehydration, low fiber, pelvic floor issues",
                       ],
                     }),
                   ],
@@ -68,8 +76,8 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        bold("Important innovations: "),
-                        "hops, refrigeration, and understanding yeast",
+                        bold("Solutions mentioned: "),
+                        "fiber, water, movement, posture, medical support",
                       ],
                     }),
                   ],
@@ -77,13 +85,12 @@ export default function Constipation() {
               ]}
             />
           </Section>
+
           <Section id="Before watching" heading={3}>
             <Paragraph
               value={[
                 ...content({
-                  parts: [
-                    "Discuss the questions below before watching the video.",
-                  ],
+                  parts: ["Discuss the questions below before watching."],
                 }),
               ]}
             />
@@ -96,7 +103,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "1. Why do you think beer became popular in ancient societies?",
+                        "1. What usually causes constipation?",
                       ],
                     }),
                   ],
@@ -104,7 +111,9 @@ export default function Constipation() {
                 {
                   value: [
                     ...content({
-                      parts: ["2. What ingredients are needed to make beer?"],
+                      parts: [
+                        "2. How can food choices affect digestion?",
+                      ],
                     }),
                   ],
                 },
@@ -112,7 +121,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "3. How do you think modern beer is different from ancient beer?",
+                        "3. What habits help keep the digestive system healthy?",
                       ],
                     }),
                   ],
@@ -131,8 +140,8 @@ export default function Constipation() {
             />
 
             <VideoPlayer
-              videoId="D98UJl6Ea6o"
-              title="The ancient origins of beer"
+              videoId="0IVO50DuMCs"
+              title="What causes constipation?"
             />
 
             <Radio
@@ -143,16 +152,16 @@ export default function Constipation() {
                     question: "What is the video mainly about?",
                     options: [
                       {
-                        option: "How to brew beer at home.",
-                        isCorrect: false,
-                      },
-                      {
                         option:
-                          "How beer developed from ancient times to the modern world.",
+                          "How the digestive system works and why constipation happens.",
                         isCorrect: true,
                       },
                       {
-                        option: "Why people should stop drinking beer.",
+                        option: "How to cook healthy meals.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "Why stomach pain always needs surgery.",
                         isCorrect: false,
                       },
                     ],
@@ -166,7 +175,9 @@ export default function Constipation() {
             <Paragraph
               value={[
                 ...content({
-                  parts: ["Watch again and listen for specific information."],
+                  parts: [
+                    "Watch again and listen for specific information.",
+                  ],
                 }),
               ]}
             />
@@ -177,53 +188,55 @@ export default function Constipation() {
                 questions: [
                   {
                     question:
-                      "1. How old is the oldest evidence of beer brewing?",
+                      "1. What happens when stool moves too slowly through the colon?",
                     options: [
                       {
-                        option: "About 2,000 years old.",
-                        isCorrect: false,
-                      },
-                      {
-                        option: "About 13,000 years old.",
+                        option:
+                          "Too much water is absorbed and stool becomes hard.",
                         isCorrect: true,
                       },
                       {
-                        option: "About 500 years old.",
+                        option: "It becomes sweeter.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "It disappears completely.",
                         isCorrect: false,
                       },
                     ],
                   },
                   {
                     question:
-                      "2. What had to happen before fermentation could begin?",
+                      "2. Which nutrient can help prevent constipation?",
                     options: [
                       {
-                        option: "Grain starches had to be turned into sugars.",
+                        option: "Fiber",
                         isCorrect: true,
                       },
                       {
-                        option: "The beer had to be frozen.",
+                        option: "Sugar",
                         isCorrect: false,
                       },
                       {
-                        option: "Hops had to be added first.",
+                        option: "Salt",
                         isCorrect: false,
                       },
                     ],
                   },
                   {
-                    question: "3. Why were hops important?",
+                    question:
+                      "3. What body area can also affect bowel movements?",
                     options: [
                       {
-                        option: "They added bitterness and preserved beer.",
+                        option: "Pelvic floor muscles",
                         isCorrect: true,
                       },
                       {
-                        option: "They removed alcohol.",
+                        option: "Shoulders",
                         isCorrect: false,
                       },
                       {
-                        option: "They made beer sweeter.",
+                        option: "Ears",
                         isCorrect: false,
                       },
                     ],
@@ -239,21 +252,24 @@ export default function Constipation() {
                   {
                     block: [
                       {
-                        text: "The oldest evidence of brewing dates back about ",
+                        text:
+                          "When stool stays in the colon too long, it loses ",
                       },
-                      { blank: "13,000" },
-                      { text: " years." },
+                      { blank: "water" },
+                      { text: "." },
                     ],
                     lineBreak: true,
                   },
                   {
                     block: [
                       {
-                        text: "Wild ",
+                        text:
+                          "Eating more ",
                       },
-                      { blank: "yeast" },
+                      { blank: "fiber" },
                       {
-                        text: " helped create alcohol.",
+                        text:
+                          " can help bowel movements.",
                       },
                     ],
                     lineBreak: true,
@@ -261,11 +277,13 @@ export default function Constipation() {
                   {
                     block: [
                       {
-                        text: "Later, brewers added ",
+                        text:
+                          "Problems with the pelvic floor can make it harder to ",
                       },
-                      { blank: "hops" },
+                      { blank: "pass" },
                       {
-                        text: " for flavor and preservation.",
+                        text:
+                          " stool.",
                       },
                     ],
                     lineBreak: true,
@@ -292,7 +310,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "1. What surprised you most about the history of beer?",
+                        "1. What surprised you most in the video?",
                       ],
                     }),
                   ],
@@ -301,7 +319,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "2. Which innovation was most important: hops, refrigeration, or understanding yeast?",
+                        "2. Why do many people ignore digestive health?",
                       ],
                     }),
                   ],
@@ -310,7 +328,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "3. How has technology changed the food and drink we consume today?",
+                        "3. What healthy habits can reduce constipation?",
                       ],
                     }),
                   ],
@@ -319,7 +337,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "4. Do traditional foods and drinks matter in modern society? Why?",
+                        "4. Should schools teach more about nutrition and digestion? Why?",
                       ],
                     }),
                   ],

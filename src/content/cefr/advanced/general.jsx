@@ -4,13 +4,6 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Links } from "@/components/molecules/Links";
 import { Bold } from "@/components/atoms/Bold";
 
-const topics = [
-  {
-    href: "",
-    label: "",
-  },
-];
-
 export const metadata = {
   title: "Advanced | General Videos",
   description: "Advanced lessons based on General videos.",
@@ -39,16 +32,6 @@ export default function AdvancedYoutube() {
           },
         ]}
       />
-      <div className="line-break">
-        {topics.map((topic, index) => (
-          <div key={index}>
-            <Links href={topic.href}>
-              <Bold>{topic.label}</Bold>
-            </Links>
-            <span className="block">{topic.description}</span>
-          </div>
-        ))}
-      </div>
     </>
   );
 }

@@ -20,11 +20,18 @@ export const Links = ({ groups = [] }) => {
                   rel="noopener noreferrer"
                   className={styles.linkHeight}
                 >
-                  <LinkIcon className={styles.icon}/>
-                  {item.label}
-                  {item.phonetics && <span>
-                    <Phonetics>{item.phonetics}</Phonetics>
-                  </span>}
+                  <LinkIcon className={styles.icon} />
+                  <b>{item.label}</b>
+                  {item.phonetics && (
+                    <span>
+                      <Phonetics>{item.phonetics}</Phonetics>
+                    </span>
+                  )}
+                  {item.description && (
+                    <p>
+                      <description>{item.description}</description>
+                    </p>
+                  )}
                 </Link>
               </div>
             ))}
