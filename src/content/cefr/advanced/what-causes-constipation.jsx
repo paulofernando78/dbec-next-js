@@ -2,6 +2,7 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
+import { GuessWord } from "@/components/molecules/GuessWord";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { List } from "@/components/molecules/List";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
@@ -86,6 +87,10 @@ export default function Constipation() {
             />
           </Section>
 
+          <Section id="guess-word" heading={3}>
+            <GuessWord words={["cat", "dog"]} />
+          </Section>
+
           <Section id="Before watching" heading={3}>
             <Paragraph
               value={[
@@ -102,18 +107,14 @@ export default function Constipation() {
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "1. What usually causes constipation?",
-                      ],
+                      parts: ["1. What usually causes constipation?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "2. How can food choices affect digestion?",
-                      ],
+                      parts: ["2. How can food choices affect digestion?"],
                     }),
                   ],
                 },
@@ -175,9 +176,7 @@ export default function Constipation() {
             <Paragraph
               value={[
                 ...content({
-                  parts: [
-                    "Watch again and listen for specific information.",
-                  ],
+                  parts: ["Watch again and listen for specific information."],
                 }),
               ]}
             />
@@ -252,8 +251,7 @@ export default function Constipation() {
                   {
                     block: [
                       {
-                        text:
-                          "When stool stays in the colon too long, it loses ",
+                        text: "When stool stays in the colon too long, it loses ",
                       },
                       { blank: "water" },
                       { text: "." },
@@ -263,13 +261,11 @@ export default function Constipation() {
                   {
                     block: [
                       {
-                        text:
-                          "Eating more ",
+                        text: "Eating more ",
                       },
                       { blank: "fiber" },
                       {
-                        text:
-                          " can help bowel movements.",
+                        text: " can help bowel movements.",
                       },
                     ],
                     lineBreak: true,
@@ -277,13 +273,11 @@ export default function Constipation() {
                   {
                     block: [
                       {
-                        text:
-                          "Problems with the pelvic floor can make it harder to ",
+                        text: "Problems with the pelvic floor can make it harder to ",
                       },
                       { blank: "pass" },
                       {
-                        text:
-                          " stool.",
+                        text: " stool.",
                       },
                     ],
                     lineBreak: true,
@@ -309,18 +303,14 @@ export default function Constipation() {
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "1. What surprised you most in the video?",
-                      ],
+                      parts: ["1. What surprised you most in the video?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "2. Why do many people ignore digestive health?",
-                      ],
+                      parts: ["2. Why do many people ignore digestive health?"],
                     }),
                   ],
                 },
