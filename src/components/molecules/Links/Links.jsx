@@ -16,8 +16,8 @@ export const Links = ({ groups = [] }) => {
                 <Link
                   key={linkIndex}
                   href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
                   className={styles.linkHeight}
                 >
                   <LinkIcon className={styles.icon} />

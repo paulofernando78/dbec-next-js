@@ -832,7 +832,9 @@ export default function Mock() {
                     {
                       href: "/",
                       label: "... ",
+                      description: "... ",
                       phonetics: "...",
+                      external: true
                     },
                   ],
                 },

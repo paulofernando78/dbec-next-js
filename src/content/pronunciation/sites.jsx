@@ -12,14 +12,17 @@ export default function LikedSounds() {
               {
                 href: "https://youglish.com/",
                 label: "Youglish (Search words directly from Youtube)",
+                external: true
               },
               {
                 href: "https://www.playphrase.me/",
                 label: "Play Phrase Me (Word / Phrases from movies)",
+                external: true
               },
               {
                 href: "https://www.languagereactor.com/",
                 label: "Language Rector (An extesion for Youtube, etc.)",
+                external: true
               },
             ],
           }
