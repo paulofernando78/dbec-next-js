@@ -50,7 +50,7 @@
   font-size: 1.5rem;
 }
 
-@media (width < 500) {
+@media (width < 800) {
   .container {
     grid-template-columns: 1fr;
   }
