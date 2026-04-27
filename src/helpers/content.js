@@ -72,8 +72,14 @@ export function baseToken({
 }
 
 //! Tokens
+
+// Icon
+export const icon = (name) => ({
+  icons: [name],
+});
+
 // audio
-export const audioSrc = (src) => ({
+export const audio = (src) => ({
   audio: src,
 });
 
@@ -81,13 +87,11 @@ export const wordAudio = (file) => {
   const first = file?.[0]?.toLowerCase();
 
   if (!first || !/[a-z]/.test(first)) {
-    return `/assets/audio/words/${file}`;
+    return `/assets/audio/dictionary/${file}`;
   }
 
-  return `/assets/audio/words/${first}/${file}`;
+  return `/assets/audio/dictionary/${first}/${file}`;
 };
-
-export const audio = (file) => audioSrc(wordAudio(file));
 
 // bold
 export const bold = (text) => ({

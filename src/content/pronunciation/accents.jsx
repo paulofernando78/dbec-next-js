@@ -3,7 +3,7 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Line } from "@/components/molecules/Line";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold } from "@/helpers/content";
+import { content, icon, audio, bold } from "@/helpers/content";
 
 const accentSections = [
   {
@@ -11,25 +11,25 @@ const accentSections = [
     label: "Final R / -er",
     examples: [
       {
-        text: "This car is better.",
         usAudio:
           "/assets/audio/pronunciation/accents/us-this-car-is-better.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-this-car-is-better.mp3",
+        text: "This car is better.",
       },
       {
-        text: "Work smarter, not harder.",
         usAudio:
           "/assets/audio/pronunciation/accents/us-work-smarter-not-harder.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-work-smarter-not-harder.mp3",
+        text: "Work smarter, not harder.",
       },
       {
-        text: "I parked the car near the garden.",
         usAudio:
           "/assets/audio/pronunciation/accents/us-i-parked-the-car-near-the-garden.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-i-parked-the-car-near-the-garden.mp3",
+        text: "I parked the car near the garden.",
       },
     ],
   },
@@ -38,25 +38,25 @@ const accentSections = [
     label: "Ask / Last / Class",
     examples: [
       {
-        text: "Can I have a glass of water, please?",
         usAudio:
           "/assets/audio/pronunciation/accents/us-can-i-have-a-glass-of-water-please.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-can-i-have-a-glass-of-water-please.mp3",
+        text: "Can I have a glass of water, please?",
       },
       {
-        text: "Ask the last dancer to pass the glass.",
         usAudio:
           "/assets/audio/pronunciation/accents/us-ask-the-last-dancer-to-pass-the-glass.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-ask-the-last-dancer-to-pass-the-glass.mp3",
+        text: "Ask the last dancer to pass the glass.",
       },
       {
-        text: "I can't dance after class.",
         usAudio:
           "/assets/audio/pronunciation/accents/us-i-cant-dance-after-class.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-i-cant-dance-after-class.mp3",
+        text: "I can't dance after class.",
       },
     ],
   },
@@ -65,11 +65,11 @@ const accentSections = [
     label: "T Sound",
     examples: [
       {
-        text: "The bottle of water is on the table.",
         usAudio:
           "/assets/audio/pronunciation/accents/us-the-bottle-of-water-is-on-the-table.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-the-bottle-of-water-is-on-the-table.mp3",
+        text: "The bottle of water is on the table.",
       },
     ],
   },
@@ -78,18 +78,18 @@ const accentSections = [
     label: "Word Differences",
     examples: [
       {
-        text: "The tomato sauce is in the garage.",
         usAudio:
           "/assets/audio/pronunciation/accents/us-the-tomate-sauce-is-in-the-garage.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-the-tomate-sauce-is-in-the-garage.mp3",
+        text: "The tomato sauce is in the garage.",
       },
       {
-        text: "What's your schedule for Tuesday?",
         usAudio:
           "/assets/audio/pronunciation/accents/us-whats-your-schedule-for-tuesday.mp3",
         ukAudio:
           "/assets/audio/pronunciation/accents/uk-whats-your-schedule-for-tuesday.mp3",
+        text: "What's your schedule for Tuesday?",
       },
     ],
   },
@@ -101,15 +101,7 @@ function AccentExample({ text, usAudio, ukAudio }) {
       <Line
         value={[
           ...content({
-            icons: ["us"],
-            audio: usAudio,
-          }),
-          ...content({
-            icons: ["square"],
-          }),
-          ...content({
-            icons: ["uk"],
-            audio: ukAudio,
+            parts: [icon("us"), audio(usAudio), "|", " ", icon("uk"), audio(ukAudio)],
           }),
         ]}
       />
@@ -136,7 +128,7 @@ export default function Accents() {
             ...content({
               parts: [
                 bold(
-                  "Like in many languages, English can have different accents."
+                  "Like in many languages, English can have different accents.",
                 ),
               ],
             }),

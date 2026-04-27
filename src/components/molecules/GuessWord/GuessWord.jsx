@@ -29,10 +29,6 @@ export const GuessWord = ({ img, words }) => {
   // STEP 5: Future state for game result
   const [status, setStatus] = useState("playing");
 
-  useEffect(() => {
-    loadWord(words[currentIndex]);
-  }, [currentIndex]);
-
   const loadWord = async (word) => {
     const firstLetter = word[0].toLowerCase();
 
@@ -45,6 +41,10 @@ export const GuessWord = ({ img, words }) => {
 
     setSelectedWord(foundWord);
   };
+
+  useEffect(() => {
+    loadWord(words[currentIndex]);
+  }, [currentIndex, words]);
 
   // STEP 5.1: Move to next word and reset round state
   const nextWord = () => {
@@ -143,14 +143,15 @@ export const GuessWord = ({ img, words }) => {
             alt={selected?.imgs?.[0]?.alt || selected.word}
             width={300}
             height={300}
-            
           />
           <p>
             <b>Hint:</b> {selected?.enDefinition}
           </p>
         </div>
         <div className={styles.containerLetters}>
-          <span><b>Words:</b> {currentIndex + 1} | {words.length}</span>
+          <span>
+            <b>Words:</b> {currentIndex + 1} | {words.length}
+          </span>
           <div className={styles.letters}>
             {/* STEP 7: Create one button for each letter */}
             {letters.map((letter, index) => (

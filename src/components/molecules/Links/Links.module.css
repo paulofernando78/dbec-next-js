@@ -5,9 +5,11 @@
 .title {
   font-size: 1.2rem;
   font-weight: bold;
+  display: block;
   margin-bottom: var(--line-break);
 }
 
 .icon {
-  transform: translateY(5px);
+  transform: translateY(-1px);
+  margin-right: 4px;
 }

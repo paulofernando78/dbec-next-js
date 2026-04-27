@@ -153,11 +153,15 @@ const links = [
   },
   // Advanced
   {
-    title: "Advanced",
+    title: "Advanced (Videos)",
     links: [
       {
-        href: "/cefr/advanced/youtube",
-        label: "YouTube",
+        href: "/cefr/advanced/general",
+        label: "General",
+      },
+      {
+        href: "/cefr/advanced/ted-ed",
+        label: "TED-Ed",
       },
     ],
   },

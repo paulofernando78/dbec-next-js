@@ -9,7 +9,7 @@ export const Links = ({ groups = [] }) => {
     <div className="line-break">
       {groups.map((group, groupIndex) => (
         <div key={groupIndex}>
-          <span className={styles.title}>{group.title}</span>
+          {group.title && <span className={styles.title}>{group.title}</span>}
           <div>
             {(group.items || []).map((item, linkIndex) => (
               <div key={linkIndex}>
@@ -20,11 +20,11 @@ export const Links = ({ groups = [] }) => {
                   rel="noopener noreferrer"
                   className={styles.linkHeight}
                 >
-                  <LinkIcon className="icon-position" />
+                  <LinkIcon className={styles.icon}/>
                   {item.label}
-                  <span>
+                  {item.phonetics && <span>
                     <Phonetics>{item.phonetics}</Phonetics>
-                  </span>
+                  </span>}
                 </Link>
               </div>
             ))}

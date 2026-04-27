@@ -6,22 +6,22 @@ import { LinkIcon } from "@/lib/svg-imports";
 
 const topics = [
   {
-    href: "/cefr/advanced/nbc-news-musks-xai",
-    label: "Musk’s xAI supercomputer concerns some Memphis residents",
+    href: "/cefr/advanced/what-causes-constipation",
+    label: "What causes constipation?",
     description:
-      "Advanced listening and discussion based on a short NBC News report.",
+      "Learn what causes constipation and how the digestive system moves food through the body.",
   },
   {
     href: "/cefr/advanced/the-ancient-origins-of-beer",
     label: "The ancient origins of beer",
     description:
-      "Advanced listening and discussion based on a TED-Ed video about the history of beer.",
+      "Discover the ancient history of beer and how one of the world's oldest drinks began.",
   },
 ];
 
 export const metadata = {
-  title: "Advanced | YouTube",
-  description: "Advanced lessons based on YouTube videos.",
+  title: "Advanced | TED-Ed",
+  description: "Lessons based on YouTube videos.",
 };
 
 export default function AdvancedYoutube() {
@@ -29,8 +29,8 @@ export default function AdvancedYoutube() {
     <>
       <Whiteboard
         title="Advanced"
-        subtitle="YouTube"
-        description="Choose a video-based lesson."
+        subtitle="TED-Ed"
+        description="Lessons based on TED-Ed videos."
       />
 
       <div className="line-break">

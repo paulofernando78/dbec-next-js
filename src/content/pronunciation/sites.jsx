@@ -8,7 +8,6 @@ export default function LikedSounds() {
       <Links
         groups={[
           {
-            title: "Group title",
             items: [
               {
                 href: "https://youglish.com/",
