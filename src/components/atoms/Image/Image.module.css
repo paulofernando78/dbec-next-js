@@ -1,6 +1,7 @@
 .img {
-  /* padding: 10px; */
   margin: 0 auto;
+  display: "block";
+  object-fit: "cover";
 }
 
 .ratio-16-9 {

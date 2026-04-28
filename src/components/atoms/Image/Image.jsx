@@ -5,7 +5,7 @@ import { toCssUnit } from "../../../utils/toCssUnit";
 export const Image = ({
   src,
   alt = "",
-  width = 250,
+  width,
   height,
   className,
   ratio,
@@ -26,10 +26,6 @@ export const Image = ({
         src={src}
         alt={alt}
         loading="lazy"
-        style={{
-          objectFit: "cover", // <img> is inline by default
-          display: "block",
-        }}
         {...props}
         className={`img ${className ?? ""}`}
       />

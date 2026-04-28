@@ -207,3 +207,13 @@ export const wordComparison = ({ left, right }) => [
   },
   ...wordRowList({ ...right, square: false }),
 ];
+
+export const dictionary = (file) => {
+  const first = file?.[0]?.toLowerCase();
+
+  if (!file || !/[a-z]/.test(first)) {
+    return `/assets/img/dictionary/${file}`;
+  }
+
+  return `/assets/img/dictionary/${first}/${file}`;
+};

@@ -135,7 +135,7 @@ export const GuessWord = ({ img, words }) => {
 
   return (
     <>
-      <span className={styles.title}>Guess Word!</span>
+      <span className={styles.title}>Guess the Word!</span>
       <div className={styles.container}>
         <div className={styles.imgHint}>
           <Image

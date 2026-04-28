@@ -30,7 +30,7 @@ export const FlipCard = ({
             <Image src={frontImg} alt={frontAlt} className={styles.img} />
           ) : (
             <Image
-              src="/assets/img/general/question-mark.gif"
+              src="/assets/img/ui/question-mark.gif"
               alt="Question mark gif"
               className={styles.placeholderImg}
             />

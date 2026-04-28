@@ -3,13 +3,16 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
 import { GuessWord } from "@/components/molecules/GuessWord";
+import { FlipCard } from "@/components/molecules/FlipCard/";
+import { Line } from "@/components/molecules/Line";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { List } from "@/components/molecules/List";
+import { GridLayout } from "@/components/molecules/GridLayout";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { bold, content } from "@/helpers/content";
+import { content, bold, mark, dictionary } from "@/helpers/content";
 
 export const metadata = {
   title: "Advanced | What Causes Constipation?",
@@ -40,62 +43,11 @@ export default function Constipation() {
         </Card>
 
         <PageSections>
-          <Section id="Introduction" heading={3}>
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Topic: "),
-                        "how the digestive system works",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Condition: "),
-                        "constipation and delayed bowel movements",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Possible causes: "),
-                        "slow colon movement, dehydration, low fiber, pelvic floor issues",
-                      ],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      parts: [
-                        bold("Solutions mentioned: "),
-                        "fiber, water, movement, posture, medical support",
-                      ],
-                    }),
-                  ],
-                },
-              ]}
-            />
-          </Section>
-
-          <Section id="guess-word" heading={3}>
-            <GuessWord words={["cat", "dog"]} />
-          </Section>
-
-          <Section id="Before watching" heading={3}>
-            <Paragraph
+          <Section id="introduction" heading={3}>
+            <Line
               value={[
                 ...content({
-                  parts: ["Discuss the questions below before watching."],
+                  parts: [bold("Discuss the questions below before watching.")],
                 }),
               ]}
             />
@@ -103,6 +55,7 @@ export default function Constipation() {
             <LineBreak />
 
             <List
+              bullet={false}
               items={[
                 {
                   value: [
@@ -131,20 +84,36 @@ export default function Constipation() {
             />
           </Section>
 
-          <Section id="Gist" heading={3}>
-            <Paragraph
+          <Section id="vocabulary-focus" heading={3}>
+            <Line
               value={[
                 ...content({
-                  parts: ["Watch the video once and choose the best summary."],
+                  parts: [bold("Flip the cards and describe what you see.")],
                 }),
               ]}
             />
+            <LineBreak />
+            <GridLayout>
+              <FlipCard backImg={dictionary("intestine.avif")} backAlt="" />
+            </GridLayout>
+          </Section>
 
+          <Section id="gist" heading={3}>
+            <Line
+              value={[
+                ...content({
+                  parts: [
+                    bold("Watch the video once and choose the best summary."),
+                  ],
+                }),
+              ]}
+            />
+            <LineBreak />
             <VideoPlayer
               videoId="0IVO50DuMCs"
               title="What causes constipation?"
             />
-
+            <LineBreak />
             <Radio
               exercise={{
                 instruction: "Choose the best answer.",
@@ -172,7 +141,7 @@ export default function Constipation() {
             />
           </Section>
 
-          <Section id="Details" heading={3}>
+          <Section id="details" heading={3}>
             <Paragraph
               value={[
                 ...content({
@@ -287,7 +256,11 @@ export default function Constipation() {
             />
           </Section>
 
-          <Section id="Follow-up discussion" heading={3}>
+          <Section id="practice" heading={3}>
+            <GuessWord words={["cat", "dog"]} />
+          </Section>
+
+          <Section id="follow-up-discussion" label="Follow-up Discussion" heading={3}>
             <Paragraph
               value={[
                 ...content({
