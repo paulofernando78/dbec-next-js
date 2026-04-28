@@ -122,17 +122,17 @@ export default function Constipation() {
                     question: "What is the video mainly about?",
                     options: [
                       {
-                        option:
-                          "How the digestive system works and why constipation happens.",
-                        isCorrect: true,
-                      },
-                      {
                         option: "How to cook healthy meals.",
                         isCorrect: false,
                       },
                       {
                         option: "Why stomach pain always needs surgery.",
                         isCorrect: false,
+                      },
+                      {
+                        option:
+                          "How the digestive system works and why constipation happens.",
+                        isCorrect: true,
                       },
                     ],
                   },
@@ -159,13 +159,13 @@ export default function Constipation() {
                       "1. What happens when stool moves too slowly through the colon?",
                     options: [
                       {
+                        option: "It becomes sweeter.",
+                        isCorrect: false,
+                      },
+                      {
                         option:
                           "Too much water is absorbed and stool becomes hard.",
                         isCorrect: true,
-                      },
-                      {
-                        option: "It becomes sweeter.",
-                        isCorrect: false,
                       },
                       {
                         option: "It disappears completely.",
@@ -178,16 +178,16 @@ export default function Constipation() {
                       "2. Which nutrient can help prevent constipation?",
                     options: [
                       {
-                        option: "Fiber",
-                        isCorrect: true,
-                      },
-                      {
                         option: "Sugar",
                         isCorrect: false,
                       },
                       {
                         option: "Salt",
                         isCorrect: false,
+                      },
+                      {
+                        option: "Fiber",
+                        isCorrect: true,
                       },
                     ],
                   },
@@ -196,12 +196,12 @@ export default function Constipation() {
                       "3. What body area can also affect bowel movements?",
                     options: [
                       {
-                        option: "Pelvic floor muscles",
-                        isCorrect: true,
-                      },
-                      {
                         option: "Shoulders",
                         isCorrect: false,
+                      },
+                      {
+                        option: "Pelvic floor muscles",
+                        isCorrect: true,
                       },
                       {
                         option: "Ears",
