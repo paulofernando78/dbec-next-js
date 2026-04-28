@@ -2,6 +2,43 @@
   {
     "definitions": [
       {
+        "word": "intestine",
+        "phonetics": "/ɪnˈtes.tɪn/",
+        "partOfSpeech": "noun",
+        "enDefinition": "the long tube in the body where food is digested and nutrients are absorbed after leaving the stomach; it includes the small intestine and large intestine",
+        "ptDefinition": "o longo tubo no corpo onde a comida é digerida e os nutrientes são absorvidos após sair do estômago; inclui o intestino delgado e o intestino grosso",
+        "examples": [
+          {
+            "enExample": "Food moves from the stomach into the small intestine.",
+            "ptExample": "A comida passa do estômago para o intestino delgado."
+          },
+          {
+            "enExample": "The intestine absorbs important nutrients from food.",
+            "ptExample": "O intestino absorve nutrientes importantes dos alimentos."
+          }
+        ],
+        "synonyms": ["bowel", "gut", "intestinal tract"],
+        "seeAlso": [
+          "stomach",
+          "colon",
+          "digestion",
+          "small intestine",
+          "large intestine"
+        ],
+        "notes": [
+          {
+            "enNote": "The small intestine is mainly responsible for digestion and nutrient absorption, while the large intestine absorbs water and forms stool.",
+            "ptNote": "O intestino delgado é principalmente responsável pela digestão e absorção de nutrientes, enquanto o intestino grosso absorve água e forma as fezes."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "intestine",
+            "alt": "Human intestine illustration"
+          }
+        ]
+      },
+      {
         "word": "it",
         "phonetics": "/ɪt/",
         "partOfSpeech": "pronoun",

@@ -2,7 +2,6 @@ import styles from "./introductions.module.css";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { PageSections } from "@/components/molecules/PageSections";
-import { ContentToken } from "@/components/molecules/ContentToken";
 import { Section } from "@/components/molecules/Section";
 import { Ribbon } from "@/components/atoms/Ribbon";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
@@ -211,7 +210,7 @@ export default function Introductions() {
           <Section id="introduction" heading={3}>
             <CardLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/two-people-talking-school.png"
+                src="/assets/img/cefr/a1/introductions/two-people-talking-school.png"
                 alt="Two students talking at school."
                 width={320}
                 height={220}

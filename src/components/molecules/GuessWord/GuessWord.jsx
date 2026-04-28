@@ -8,6 +8,8 @@ import { Image } from "@/components/atoms/Image/";
 
 import { Redo } from "@/lib/svg-imports";
 
+import { dictionary } from "@/helpers/content";
+
 export const GuessWord = ({ img, words }) => {
   // STEP 1: Create alphabet letters for all keyboard buttons
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -23,7 +25,7 @@ export const GuessWord = ({ img, words }) => {
   const [message, setMessage] = useState("");
 
   // STEP 4: Future state for attempts/errors
-  const [attempts, setAttempts] = useState(0);
+  const  [attempts, setAttempts] = useState(0);
   const maxAttempts = selected ? Math.max(5, selected.word.length + 1) : 5;
 
   // STEP 5: Future state for game result
@@ -135,11 +137,11 @@ export const GuessWord = ({ img, words }) => {
 
   return (
     <>
-      <span className={styles.title}>Guess the Word!</span>
+      <span className={styles.title}>Guess!</span>
       <div className={styles.container}>
         <div className={styles.imgHint}>
           <Image
-            src={selected?.imgs?.[0]?.src}
+            src={dictionary(selected?.imgs?.[0]?.src)}
             alt={selected?.imgs?.[0]?.alt || selected.word}
             width={300}
             height={300}

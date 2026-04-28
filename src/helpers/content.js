@@ -211,9 +211,10 @@ export const wordComparison = ({ left, right }) => [
 export const dictionary = (file) => {
   const first = file?.[0]?.toLowerCase();
 
-  if (!file || !/[a-z]/.test(first)) {
-    return `/assets/img/dictionary/${file}`;
-  }
+  const base =
+    !first || !/[a-z]/.test(first)
+      ? `/assets/img/dictionary/${file}`
+      : `/assets/img/dictionary/${first}/${file}`;
 
-  return `/assets/img/dictionary/${first}/${file}`;
+  return base;
 };

@@ -1,3 +1,5 @@
+"use client"
+
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
 import { PageSections } from "@/components/molecules/PageSections";
@@ -15,7 +17,7 @@ import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
 import { Examples } from "@/components/molecules/Examples";
-import { Comparison } from "@/components/molecules/Comparison/";
+import { Comparison } from "@/components/molecules/Comparison";
 import { Column } from "@/components/molecules/Column/";
 import { Notes } from "@/components/molecules/Notes";
 import { GuessWord } from "@/components/molecules/GuessWord";
@@ -33,6 +35,7 @@ import {
   stressed,
   phonetics,
   portuguese,
+  dictionary,
 } from "@/helpers/content";
 
 export default function Mock() {
@@ -189,10 +192,8 @@ export default function Mock() {
             <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
             <LineBreak />
             <CardLayout mediaPosition="top">
-              <Image
-                src="/assets/img/dictionary/cat-1.jpg"
-                alt="cat"
-            />
+              <Image src={dictionary("cat")} alt="" width={250} height={250} />
+              <Image src={dictionary("cat")} alt="" width={250} height={250} />
               <Paragraph
                 value={[
                   ...content({
@@ -228,10 +229,7 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="right">
-              <Image
-                src="/assets/img/dictionary/cat-1.jpg"
-                alt="cat"
-              />
+              <Image src={dictionary("cat")} alt="" width={250} height={250}/>
               <Paragraph
                 value={[
                   ...content({
@@ -267,10 +265,7 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="bottom">
-              <Image
-                src="/assets/img/general/cat-1.jpg"
-                alt="cat"
-              />
+              <Image src={dictionary("cat")} alt="" width={250} height={250}/>
               <Paragraph
                 value={[
                   ...content({
@@ -306,10 +301,7 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="left">
-              <Image
-                src="/assets/img/general/cat-1.jpg"
-                alt="cat"
-              />
+              <Image src={dictionary("cat")} alt="" width={250} height={250}/>
               <Paragraph
                 value={[
                   ...content({
@@ -520,44 +512,28 @@ export default function Mock() {
             </GridLayout>
           </Section>
 
-          {/* Flip Card 1 Image */}
-          <Section id="flip-card-1-image" heading={3}>
+          {/* Flip Card */}
+          <Section id="flip-card" heading={3}>
             <GridLayout>
+              <FlipCard backImg={dictionary("cat")} backAlt="A cat photo" />
               <FlipCard
-                backImg="/assets/img/general/cat-1.jpg"
-                backAlt="A cat photo"
-              />
-            </GridLayout>
-          </Section>
-
-          {/* Flip Card 2 Images */}
-          <Section id="flip-card-2-image" heading={3}>
-            <GridLayout>
-              <FlipCard
-                backImg="/assets/img/general/cat-1.jpg"
-                backAlt="A cat photo"
-              />
-              <FlipCard
-                frontImg="/assets/img/general/cat-2.jpg"
+                frontImg={dictionary("cat")}
                 frontAlt="A cat photo"
-                backImg="/assets/img/general/cat-3.jpg"
-                backAlt="A cat photo"
-              />
-            </GridLayout>
-          </Section>
-
-          {/* Flip Card 3 Images */}
-          <Section id="flip-card-3-image" heading={3}>
-            <GridLayout>
-              <FlipCard
-                backImg="/assets/img/general/cat-1.jpg"
+                backImg={dictionary("cat")}
                 backAlt="A cat photo"
               />
               <FlipCard
-                frontImg="/assets/img/general/cat-2.jpg"
+                frontImg={dictionary("cat")}
                 frontAlt="A cat photo"
-                backImg="/assets/img/general/cat-3.jpg"
-                backAlt="A cat photo"
+                backContent={
+                  <Line
+                    value={[
+                      ...content({
+                        parts: ["It's a cat"],
+                      }),
+                    ]}
+                  />
+                }
               />
               <FlipCard
                 frontContent={
@@ -579,55 +555,12 @@ export default function Mock() {
                   />
                 }
               />
-
-              <FlipCard frontImg="" frontAlt="" backImg="" backAlt="" />
-              <FlipCard
-                frontContent={
-                  <Line
-                    value={[
-                      ...content({
-                        parts: [""],
-                      }),
-                    ]}
-                  />
-                }
-                backContent={
-                  <Line
-                    value={[
-                      ...content({
-                        parts: ["asked"],
-                      }),
-                    ]}
-                  />
-                }
-              />
             </GridLayout>
           </Section>
 
           {/* Dialogue */}
           <Section id="dialogue" heading={3}>
             <Dialogue
-              description="Description"
-              imgs={[
-                {
-                  img: "/assets/img/general/cat-1.jpg",
-                  alt: "",
-                  width: 200,
-                  height: 200,
-                },
-                {
-                  img: "/assets/img/general/cat-2.jpg",
-                  alt: "",
-                  width: 200,
-                  height: 200,
-                },
-                {
-                  img: "/assets/img/general/cat-3.jpg",
-                  alt: "",
-                  width: 200,
-                  height: 200,
-                },
-              ]}
               audioPlayer="/assets/audio/vocabulary/selaa/lesson-1.mp3"
               lines={[
                 {
@@ -834,7 +767,7 @@ export default function Mock() {
                       label: "... ",
                       description: "... ",
                       phonetics: "...",
-                      external: true
+                      external: true,
                     },
                   ],
                 },
@@ -842,8 +775,8 @@ export default function Mock() {
             />
           </Section>
 
-          {/* Guess Word */}
-          <Section id="guess-word" heading={3}>
+          {/* Guess */}
+          <Section id="guess" heading={3}>
             <GuessWord words={["cat", "dog"]} />
           </Section>
 

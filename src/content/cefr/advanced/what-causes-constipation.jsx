@@ -94,7 +94,14 @@ export default function Constipation() {
             />
             <LineBreak />
             <GridLayout>
-              <FlipCard backImg={dictionary("intestine.avif")} backAlt="" />
+              <FlipCard backImg={dictionary("intestine")}/>
+              <FlipCard backImg={dictionary("bowel-movement")}/>
+              <FlipCard backImg={dictionary("stool")}/>
+              <FlipCard backImg={dictionary("dehydration")}/>
+              <FlipCard backImg={dictionary("strain")}/>
+              <FlipCard backImg={dictionary("symptom")}/>
+              <FlipCard backImg={dictionary("colon")}/>
+              <FlipCard backImg={dictionary("fiber")}/>
             </GridLayout>
           </Section>
 
@@ -257,7 +264,7 @@ export default function Constipation() {
           </Section>
 
           <Section id="practice" heading={3}>
-            <GuessWord words={["cat", "dog"]} />
+            <GuessWord words={["intestine"]} />
           </Section>
 
           <Section id="follow-up-discussion" label="Follow-up Discussion" heading={3}>

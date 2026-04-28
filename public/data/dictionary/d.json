@@ -28,8 +28,8 @@
         ],
         "imgs": [
           {
-            "src": "/assets/img/dictionary/dog.png",
-            "alt": "A domestic dog sitting and looking forward"
+            "src": "dog",
+            "alt": "a domestic dog facing the camera"
           }
         ]
       },

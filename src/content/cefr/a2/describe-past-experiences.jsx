@@ -113,9 +113,7 @@ export default function DescribePastExperiences() {
                 }
               />
             </GridLayout>
-
             <LineBreak />
-
             <Radio
               exercise={{
                 instruction: "Choose the correct answer.",

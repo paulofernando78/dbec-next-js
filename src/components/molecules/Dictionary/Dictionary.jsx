@@ -7,6 +7,7 @@ import { Portuguese } from "@/components/atoms/Portuguese";
 import { BulletPoint } from "@/components/atoms/BulletPoint";
 import { Image } from "@/components/atoms/Image";
 import { Keyboard } from "@/lib/svg-imports";
+import { dictionary } from "@/helpers/content";
 
 
 import { useState, useEffect } from "react";
@@ -204,7 +205,7 @@ export const Dictionary = () => {
                     {item.imgs.map((img, index) => (
                       <Image
                         key={index}
-                        src={img.src || img}
+                        src={dictionary(img.src)}
                         alt={img.alt || item.word || `image-${index}`}
                         width={270}
                         height={270}
