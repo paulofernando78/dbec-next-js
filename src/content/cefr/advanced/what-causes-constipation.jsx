@@ -94,14 +94,14 @@ export default function Constipation() {
             />
             <LineBreak />
             <GridLayout>
-              <FlipCard backImg={dictionary("intestine")}/>
-              <FlipCard backImg={dictionary("bowel-movement")}/>
-              <FlipCard backImg={dictionary("stool")}/>
-              <FlipCard backImg={dictionary("dehydration")}/>
-              <FlipCard backImg={dictionary("strain")}/>
-              <FlipCard backImg={dictionary("symptom")}/>
-              <FlipCard backImg={dictionary("colon")}/>
-              <FlipCard backImg={dictionary("fiber")}/>
+              <FlipCard backImg={dictionary("intestine.avif")}/>
+              <FlipCard backImg={dictionary("symptom.avif")}/>
+              <FlipCard backImg={dictionary("bowel-movement.avif")}/>
+              <FlipCard backImg={dictionary("strain-constipation.avif")}/>
+              <FlipCard backImg={dictionary("stool.avif")}/>
+              <FlipCard backImg={dictionary("dehydration.avif")}/>
+              <FlipCard backImg={dictionary("colon.avif")}/>
+              <FlipCard backImg={dictionary("fiber.avif")}/>
             </GridLayout>
           </Section>
 
@@ -110,7 +110,7 @@ export default function Constipation() {
               value={[
                 ...content({
                   parts: [
-                    bold("Watch the video once and choose the best summary."),
+                    bold("What is the video mainly about? Watch the video and answer que question below."),
                   ],
                 }),
               ]}
@@ -120,13 +120,10 @@ export default function Constipation() {
               videoId="0IVO50DuMCs"
               title="What causes constipation?"
             />
-            <LineBreak />
             <Radio
               exercise={{
-                instruction: "Choose the best answer.",
                 questions: [
                   {
-                    question: "What is the video mainly about?",
                     options: [
                       {
                         option: "How to cook healthy meals.",
@@ -264,7 +261,7 @@ export default function Constipation() {
           </Section>
 
           <Section id="practice" heading={3}>
-            <GuessWord words={["intestine"]} />
+            <GuessWord words={["intestine", "symptom", "bowel movement", "strain", "stool", "dehydration", "colon", "fiber"]} />
           </Section>
 
           <Section id="follow-up-discussion" label="Follow-up Discussion" heading={3}>

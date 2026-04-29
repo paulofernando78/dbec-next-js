@@ -193,7 +193,7 @@ export default function Mock() {
             <LineBreak />
             <CardLayout mediaPosition="top">
               <Image src={dictionary("cat")} alt="" width={250} height={250} />
-              <Image src={dictionary("cat")} alt="" width={250} height={250} />
+              <Image src={dictionary("cat.avif")} alt="" width={250} height={250} />
               <Paragraph
                 value={[
                   ...content({
@@ -229,7 +229,7 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="right">
-              <Image src={dictionary("cat")} alt="" width={250} height={250}/>
+              <Image src={dictionary("cat.avif")} alt="" width={250} height={250}/>
               <Paragraph
                 value={[
                   ...content({
@@ -265,7 +265,7 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="bottom">
-              <Image src={dictionary("cat")} alt="" width={250} height={250}/>
+              <Image src={dictionary("cat.avif")} alt="" width={250} height={250}/>
               <Paragraph
                 value={[
                   ...content({
@@ -301,7 +301,7 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="left">
-              <Image src={dictionary("cat")} alt="" width={250} height={250}/>
+              <Image src={dictionary("cat.avif")} alt="" width={250} height={250}/>
               <Paragraph
                 value={[
                   ...content({
@@ -517,7 +517,7 @@ export default function Mock() {
             <GridLayout>
               <FlipCard backImg={dictionary("cat")} backAlt="A cat photo" />
               <FlipCard
-                frontImg={dictionary("cat")}
+                frontImg={dictionary("cat.avif")}
                 frontAlt="A cat photo"
                 backImg={dictionary("cat")}
                 backAlt="A cat photo"
@@ -775,8 +775,8 @@ export default function Mock() {
             />
           </Section>
 
-          {/* Guess */}
-          <Section id="guess" heading={3}>
+          {/* Vocab Guess*/}
+          <Section id="vocab-guess" heading={3}>
             <GuessWord words={["cat", "dog"]} />
           </Section>
 

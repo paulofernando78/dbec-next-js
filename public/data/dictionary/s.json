@@ -1,7 +1,38 @@
 [
   {
     "definitions": [
-      
+      {
+        "word": "symptom",
+        "phonetics": "/ˈsɪmp.təm/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a physical or mental sign that shows a person may have an illness or medical condition.",
+        "ptDefinition": "um sinal físico ou mental que mostra que uma pessoa pode ter uma doença ou condição médica.",
+        "examples": [
+          {
+            "enExample": "A fever is a common symptom of the flu.",
+            "ptExample": "Febre é um sintoma comum da gripe."
+          },
+          {
+            "enExample": "Headache can be a symptom of dehydration.",
+            "ptExample": "Dor de cabeça pode ser um sintoma de desidratação."
+          }
+        ],
+        "synonyms": ["sign", "indication", "manifestation"],
+        "antonyms": ["health", "wellness"],
+        "seeAlso": ["disease", "condition", "diagnosis", "illness"],
+        "notes": [
+          {
+            "enNote": "A symptom is usually noticed by the person, while a sign may be observed by others or by a doctor.",
+            "ptNote": "Um symptom geralmente é percebido pela própria pessoa, enquanto um sign pode ser observado por outros ou por um médico."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "symptom",
+            "alt": "Illustration showing common symptoms such as headache, fever, cough, fatigue, and muscle aches."
+          }
+        ]
+      },
       {
         "word": "sit tight",
         "partOfSpeech": "idiom",

@@ -1,7 +1,45 @@
 [
   {
     "definitions": [
-            {
+      {
+        "word": "bowel movement",
+        "phonetics": "/ˈbaʊ.əl ˌmuːv.mənt/",
+        "partOfSpeech": "noun",
+        "enDefinition": "the act of emptying waste from the intestines through the rectum; passing stool.",
+        "ptDefinition": "evacuação; ato de eliminar fezes do intestino pelo reto.",
+        "examples": [
+          {
+            "enExample": "Drinking enough water can help improve regular bowel movements.",
+            "ptExample": "Beber água suficiente pode ajudar a melhorar evacuações regulares."
+          },
+          {
+            "enExample": "He had not had a bowel movement for three days.",
+            "ptExample": "Ele não evacuava há três dias."
+          }
+        ],
+        "synonyms": ["defecation", "stool passage", "pooping"],
+        "antonyms": ["constipation", "retention"],
+        "seeAlso": [
+          "constipation",
+          "stool",
+          "intestine",
+          "colon",
+          "digestive system"
+        ],
+        "notes": [
+          {
+            "enNote": "This is a polite and common medical term used instead of more informal words like 'poop'.",
+            "ptNote": "Este é um termo educado e comum na área médica, usado no lugar de palavras mais informais como 'cocô'."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "bowel-movement",
+            "alt": "Illustration representing a healthy bowel movement and digestive regularity."
+          }
+        ]
+      },
+      {
         "word": "ballpark figure",
         "partOfSpeech": "idiom",
         "enDefinition": "an approximate or rough estimate of a number, cost, or amount, not intended to be exact",

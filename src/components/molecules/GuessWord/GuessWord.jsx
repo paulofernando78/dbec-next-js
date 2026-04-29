@@ -137,7 +137,7 @@ export const GuessWord = ({ img, words }) => {
 
   return (
     <>
-      <span className={styles.title}>Guess!</span>
+      <span className={styles.title}>Vocab Guess!</span>
       <div className={styles.container}>
         <div className={styles.imgHint}>
           <Image
@@ -180,7 +180,13 @@ export const GuessWord = ({ img, words }) => {
               .split("")
               .map((char, index) => (
                 <span key={index} className={styles.word}>
-                  {usedLetters.includes(char) ? char : "_"}
+                  {
+                    char === " "
+                    ? "\u2002"
+                    : usedLetters.includes(char)
+                    ? char
+                    : "_"
+                  }
                 </span>
               ))}
           </span>
