@@ -163,14 +163,14 @@ export const GuessWord = ({ img, words }) => {
             width={300}
             height={300}
           />
+          <span className={styles.pics}>
+            <b>Pics:</b> {currentIndex + 1} | {words.length}
+          </span>
           <p className={styles.hint}>
             <b>Hint:</b> {selected?.enDefinition}
           </p>
         </div>
         <div className={styles.containerLetters}>
-          <span>
-            <b>Words:</b> {currentIndex + 1} | {words.length}
-          </span>
           <div className={styles.letters}>
             {/* STEP 7: Create one button for each letter */}
             {letters.map((letter, index) => (
@@ -206,11 +206,10 @@ export const GuessWord = ({ img, words }) => {
               ))}
           </span>
           <Button icon={<Redo />} onClick={resetGame} />
-          {completeWords.length > 0 && (
-            <div>
-              <b>Completed:</b> {completeWords.join(" • ")}
-            </div>
-          )}
+          <div className={styles.completed}>
+            <b>Completed:</b>
+            {completeWords.length > 0 && <div>{completeWords.join(" • ")}</div>}
+          </div>
         </div>
       </div>
     </>

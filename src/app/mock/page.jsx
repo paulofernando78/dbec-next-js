@@ -794,17 +794,17 @@ export default function Mock() {
           </Section>
 
           {/* Vocab Guess*/}
-          <Section id="vocab-guess" heading={3}>
+          <Section id="guess" heading={3}>
             <GuessWord
               words={[
-                {
-                  word: "year's time", img: 0
-                },
                 {
                   word: "cat", img: 0
                 },
                 {
                   word: "dog", img: 0
+                },
+                {
+                  word: "year's time", img: 0
                 },
               ]}
             />
