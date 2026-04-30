@@ -226,8 +226,8 @@ export default function Constipation() {
           <Section id="practice" heading={3}>
             <GuessWord
               words={[
-                { word: "bowel movement", img: 0 },
                 { word: "strain", img: 1 },
+                { word: "bowel movement", img: 0 },
                 { word: "fiber", img: 0 },
                 { word: "colon", img: 0 },
                 { word: "dehydration", img: 0 },
@@ -239,6 +239,7 @@ export default function Constipation() {
             <LineBreak />
             <FillInTheBlanks
               showWordBank={false}
+              numbered={false}
               exercise={{
                 instructions: "Complete the notes with words from Guess Word.",
                 blocks: [
@@ -346,16 +347,14 @@ export default function Constipation() {
             label="Follow-up Discussion"
             heading={3}
           >
-            <Paragraph
+            <Line
               value={[
                 ...content({
                   parts: [bold("Discuss the questions below.")],
                 }),
               ]}
             />
-
             <LineBreak />
-
             <List
               ordered
               items={[

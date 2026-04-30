@@ -50,7 +50,7 @@ const buildDescription = (descriptionText, blocks) => {
   return shuffleItems(items).join(" • ");
 };
 
-export const FillInTheBlanks = ({ exercise, showWordBank = true }) => {
+export const FillInTheBlanks = ({ exercise, showWordBank = true, numbered = true }) => {
   const descriptionText = exercise?.description;
   const rawBlocks = exercise?.blocks;
   const blocks = Array.isArray(rawBlocks) ? rawBlocks : [];
@@ -145,6 +145,7 @@ export const FillInTheBlanks = ({ exercise, showWordBank = true }) => {
 
               return (
                 <div key={key} className={styles.inline}>
+                  {numbered && bIndex === 0 && <span>{bsIndex + 1}. </span>}
                   {b.text && <span>{b.text}</span>}
                   {b.blank && (
                     <input

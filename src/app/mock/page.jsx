@@ -396,7 +396,8 @@ export default function Mock() {
             />
             <LineBreak />
             <Line text={["+ ordered"]} />
-            <List ordered
+            <List
+              ordered
               items={[
                 {
                   value: [
@@ -798,13 +799,16 @@ export default function Mock() {
             <GuessWord
               words={[
                 {
-                  word: "cat", img: 0
+                  word: "cat",
+                  img: 0,
                 },
                 {
-                  word: "dog", img: 0
+                  word: "dog",
+                  img: 0,
                 },
                 {
-                  word: "year's time", img: 0
+                  word: "year's time",
+                  img: 0,
                 },
               ]}
             />
@@ -832,6 +836,8 @@ export default function Mock() {
           {/* Fill in the Blanks */}
           <Section id="fill-in-the-blanks" heading={3}>
             <FillInTheBlanks
+              showWordBank={true}
+              numbered={true}
               exercise={{
                 instructions: "1. Fill in the blanks with the correct answer.",
                 blocks: [
