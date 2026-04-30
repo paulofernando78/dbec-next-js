@@ -800,6 +800,9 @@ export default function Mock() {
             <GuessWord
               words={[
                 {
+                  word: "year's time", img: 0
+                },
+                {
                   word: "cat", img: 0
                 },
                 {

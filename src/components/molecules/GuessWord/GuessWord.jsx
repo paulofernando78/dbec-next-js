@@ -31,6 +31,9 @@ export const GuessWord = ({ img, words }) => {
   // STEP 5: Future state for game result
   const [status, setStatus] = useState("playing");
 
+  // STEP ???
+  const [completeWords, setCompleteWords] = useState([]);
+
   const loadWord = async (word) => {
     const firstLetter = word[0].toLowerCase();
 
@@ -69,11 +72,12 @@ export const GuessWord = ({ img, words }) => {
   // STEP 5.2: Restart full game from first word
   const resetGame = () => {
     setCurrentIndex(0);
-    loadWord(words[0]);
+    loadWord(words[0].word);
     setUsedLetters([]);
     setAttempts(0);
     setMessage("");
     setStatus("playing");
+    setCompleteWords([]);
   };
 
   // STEP 11: Build click function logic
@@ -106,10 +110,11 @@ export const GuessWord = ({ img, words }) => {
     const uniqueLetters = [
       ...new Set(
         selected.word
-        .toUpperCase()
-        .split("")
-        .filter((char) => char >= "A" && char <= "Z")
-      )];
+          .toUpperCase()
+          .split("")
+          .filter((char) => char !== " "),
+      ),
+    ];
     // const hasWon = uniqueLetters.every((item) =>
     const hasWon = uniqueLetters.every(
       (item) => usedLetters.includes(item) || item === letter,
@@ -125,6 +130,7 @@ export const GuessWord = ({ img, words }) => {
     ];
 
     if (hasWon) {
+      setCompleteWords((prev) => [...prev, selected.word]);
       const randomMessage = praise[Math.floor(Math.random() * praise.length)];
 
       setMessage(randomMessage);
@@ -200,6 +206,11 @@ export const GuessWord = ({ img, words }) => {
               ))}
           </span>
           <Button icon={<Redo />} onClick={resetGame} />
+          {completeWords.length > 0 && (
+            <div>
+              <b>Completed:</b> {completeWords.join(" • ")}
+            </div>
+          )}
         </div>
       </div>
     </>

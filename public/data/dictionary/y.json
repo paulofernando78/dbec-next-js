@@ -2,6 +2,43 @@
   {
     "definitions": [
       {
+        "word": "year's time",
+        "phonetics": "/jɪrz taɪm/",
+        "partOfSpeech": "noun phrase",
+        "enDefinition": "a period of one year from now or from a specified point in time; one year later",
+        "ptDefinition": "daqui a um ano; dentro de um ano; um período de um ano a partir de agora ou de um momento específico",
+        "examples": [
+          {
+            "enExample": "We hope to move into our new house in a year's time.",
+            "ptExample": "Esperamos nos mudar para nossa nova casa daqui a um ano."
+          },
+          {
+            "enExample": "A lot can change in a year's time.",
+            "ptExample": "Muita coisa pode mudar em um ano."
+          }
+        ],
+        "synonyms": [
+          "in one year",
+          "one year later",
+          "within a year",
+          "a year from now"
+        ],
+        "antonyms": ["now", "immediately", "at once"],
+        "seeAlso": ["in no time", "in time", "a month's time", "from now"],
+        "notes": [
+          {
+            "enNote": "Often used after 'in': 'in a year's time'. Common in British and general English.",
+            "ptNote": "Frequentemente usado após 'in': 'in a year's time'. Comum no inglês britânico e no inglês geral."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "years-time.avif",
+            "alt": "calendar showing one year passing over time"
+          }
+        ]
+      },
+      {
         "word": "you can say that again",
         "partOfSpeech": "idiom",
         "enDefinition": "used to strongly agree with what someone has just said",

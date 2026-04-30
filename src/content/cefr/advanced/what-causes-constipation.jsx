@@ -98,10 +98,10 @@ export default function Constipation() {
               <FlipCard backImg={dictionary("symptom.avif")} />
               <FlipCard backImg={dictionary("bowel-movement.avif")} />
               <FlipCard backImg={dictionary("strain-constipation.avif")} />
-              <FlipCard backImg={dictionary("stool.avif")} />
+              <FlipCard backImg={dictionary("stool-feces.avif")} />
               <FlipCard backImg={dictionary("dehydration.avif")} />
               <FlipCard backImg={dictionary("colon.avif")} />
-              <FlipCard backImg={dictionary("fiber.avif")} />
+              <FlipCard backImg={dictionary("fiber-food.avif")} />
             </GridLayout>
           </Section>
 
@@ -218,48 +218,6 @@ export default function Constipation() {
                 ],
               }}
             />
-
-            <FillInTheBlanks
-              exercise={{
-                instructions: "Complete the notes.",
-                blocks: [
-                  {
-                    block: [
-                      {
-                        text: "When stool stays in the colon too long, it loses ",
-                      },
-                      { blank: "water" },
-                      { text: "." },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    block: [
-                      {
-                        text: "Eating more ",
-                      },
-                      { blank: "fiber" },
-                      {
-                        text: " can help bowel movements.",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                  {
-                    block: [
-                      {
-                        text: "Problems with the pelvic floor can make it harder to ",
-                      },
-                      { blank: "pass" },
-                      {
-                        text: " stool.",
-                      },
-                    ],
-                    lineBreak: true,
-                  },
-                ],
-              }}
-            />
           </Section>
 
           <Section id="practice" heading={3}>
@@ -275,6 +233,108 @@ export default function Constipation() {
                 { word: "symptom", img: 0 },
               ]}
             />
+            <LineBreak />
+            <FillInTheBlanks
+  exercise={{
+    instructions: "Complete the notes with words from Guess Word.",
+    blocks: [
+      {
+        block: [
+          {
+            text: "A healthy ",
+          },
+          { blank: "bowel movement" },
+          { text: " should happen regularly." },
+        ],
+        lineBreak: true,
+      },
+      {
+        block: [
+          {
+            text: "Eating more ",
+          },
+          { blank: "fiber" },
+          {
+            text: " can help digestion.",
+          },
+        ],
+        lineBreak: true,
+      },
+      {
+        block: [
+          {
+            text: "The ",
+          },
+          { blank: "colon" },
+          {
+            text: " absorbs water from waste.",
+          },
+        ],
+        lineBreak: true,
+      },
+      {
+        block: [
+          {
+            text: "Not drinking enough water may cause ",
+          },
+          { blank: "dehydration" },
+          {
+            text: ".",
+          },
+        ],
+        lineBreak: true,
+      },
+      {
+        block: [
+          {
+            text: "Some people need to ",
+          },
+          { blank: "strain" },
+          {
+            text: " when constipated.",
+          },
+        ],
+        lineBreak: true,
+      },
+      {
+        block: [
+          {
+            text: "Hard ",
+          },
+          { blank: "stool" },
+          {
+            text: " can be painful to pass.",
+          },
+        ],
+        lineBreak: true,
+      },
+      {
+        block: [
+          {
+            text: "The ",
+          },
+          { blank: "intestine" },
+          {
+            text: " is part of the digestive system.",
+          },
+        ],
+        lineBreak: true,
+      },
+      {
+        block: [
+          {
+            text: "Constipation can be a ",
+          },
+          { blank: "symptom" },
+          {
+            text: " of another problem.",
+          },
+        ],
+        lineBreak: true,
+      },
+    ],
+  }}
+/>
           </Section>
 
           <Section
