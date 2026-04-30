@@ -124,6 +124,7 @@ export default function Constipation() {
               title="What causes constipation?"
             />
             <Radio
+            score={false}
               exercise={{
                 questions: [
                   {
@@ -346,26 +347,26 @@ export default function Constipation() {
             <Paragraph
               value={[
                 ...content({
-                  parts: ["Discuss the questions below."],
+                  parts: [bold("Discuss the questions below.")],
                 }),
               ]}
             />
 
             <LineBreak />
 
-            <List
+            <List ordered
               items={[
                 {
                   value: [
                     ...content({
-                      parts: ["1. What surprised you most in the video?"],
+                      parts: ["What surprised you most in the video?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["2. Why do many people ignore digestive health?"],
+                      parts: ["Why do many people ignore digestive health?"],
                     }),
                   ],
                 },
@@ -373,7 +374,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "3. What healthy habits can reduce constipation?",
+                        "What healthy habits can reduce constipation?",
                       ],
                     }),
                   ],
@@ -382,7 +383,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "4. Should schools teach more about nutrition and digestion? Why?",
+                        "Should schools teach more about nutrition and digestion? Why?",
                       ],
                     }),
                   ],

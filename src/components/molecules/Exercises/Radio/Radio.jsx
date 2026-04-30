@@ -8,7 +8,7 @@ import { Button } from "@/components/atoms/Button";
 import { Check, Redo } from "@/lib/svg-imports";
 import { useState } from "react";
 
-export const Radio = ({ exercise = {} }) => {
+export const Radio = ({ exercise = {}, score = true }) => {
   const [selected, setSelected] = useState({});
   const [checked, setChecked] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
@@ -88,9 +88,9 @@ export const Radio = ({ exercise = {} }) => {
             })}
           </div>
         ))}
-        <span>
+        {score && <span>
           Score: {totalScore} out of {questions.length}
-        </span>
+        </span>}
       
         <div className="button-wrapper">
           <Button icon={<Check />} onToggle={handleCheck} />
