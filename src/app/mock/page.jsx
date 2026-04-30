@@ -2,6 +2,7 @@
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
+import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Links } from "@/components/molecules/Links";
@@ -47,9 +48,7 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
-        <div className="dictionary-area">
-          <Dictionary />
-        </div>
+        <DictionaryArea />
 
         <PageSections>
           <Section id="video-player" label="Video Player" heading={3}>
@@ -360,7 +359,6 @@ export default function Mock() {
           {/* List */}
           <Section id="list" heading={3}>
             <List
-              bullet={false}
               items={[
                 {
                   value: [
@@ -397,8 +395,8 @@ export default function Mock() {
               ]}
             />
             <LineBreak />
-            <Line text={["+ bullet"]} />
-            <List
+            <Line text={["+ ordered"]} />
+            <List ordered
               items={[
                 {
                   value: [

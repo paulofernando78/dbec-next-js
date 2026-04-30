@@ -1,6 +1,6 @@
 .scrollToTopWrapper {
   position: absolute;
-  top: 5px;
+  bottom: 40px;
   right: 5px;
   z-index: 15;
 }

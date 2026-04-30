@@ -2,14 +2,15 @@ import styles from "./List.module.css";
 
 import { ContentToken } from "@/components/molecules/ContentToken";
 
-export const List = ({ items = [], bullet = true }) => {
+export const List = ({ items = [], ordered = false }) => {
+  const Tag = ordered ? "ol" : "ul"
   return (
-    <ul className={bullet ? styles.bulleted : styles.noBullet}>
+    <Tag className={ordered ? styles.ordered : styles.bulleted}>
       {items.map((item, index) => (
         <li key={index} className={item.lineBreak ? "line-break-item" : ""}>
           <ContentToken value={item.value} />
         </li>
       ))}
-    </ul>
+    </Tag>
   );
 };

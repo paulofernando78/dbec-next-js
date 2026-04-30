@@ -7,10 +7,11 @@
   list-style-position: outside;
 }
 
-.noBullet {
-  padding-left: 0;
+.ordered {
+  padding-left: 1.5rem;
 }
 
-.noBullet li {
-  list-style-type: none;
+.ordered li {
+  list-style-type: decimal;
+  list-style-position: outside;
 }

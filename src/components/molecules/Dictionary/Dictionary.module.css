@@ -9,6 +9,7 @@
   padding: 5px 5px 1px 5px;
   width: max-content;
   margin-bottom: 5px;
+  margin-left: auto;
 }
 
 .title {
@@ -32,8 +33,8 @@
 .emptyState {
   background-color: var(--slate-2);
   margin-bottom: 5px;
-  border: var(--border);
-  border-radius: var(--border-radius);
+  /* border: var(--border); */
+  /* border-radius: var(--border-radius); */
   padding: 5px 5px 3px 8px;
   color: black;
 }
@@ -41,7 +42,7 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 5px;  
+  gap: 5px;
   background-color: var(--dictionary-bg);
 }
 
@@ -53,8 +54,11 @@
 }
 
 .results {
+  width: 70%;
   height: 300px;
-  background-color: var(--slate-1);
+  margin-left: auto;
+  background-color: var(--slate-2);
+  border: 2px solid var(--slate-3);
   border-radius: var(--border-radius);
   overflow-y: scroll;
 }
@@ -87,7 +91,8 @@
   color: var(--blue-6);
 }
 
-.ptDefinition, .ptExample {
+.ptDefinition,
+.ptExample {
   display: block;
 }
 
@@ -107,4 +112,11 @@
 
 .images > * {
   margin: 0;
+}
+
+@media (width < 600px) {
+  .results {
+    width: 100%;
+    padding-right: 10px;
+  }
 }

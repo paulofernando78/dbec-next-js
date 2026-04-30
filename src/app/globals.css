@@ -128,9 +128,10 @@ main {
 }
 
 .dictionary-area {
-  position: sticky;
-  top: 0px;
+  position: absolute;
+  top: 5px;
   z-index: 1;
+  align-self: flex-end;
 }
 
 .block {

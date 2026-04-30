@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
@@ -41,33 +42,33 @@ export default function Constipation() {
             ]}
           />
         </Card>
+        <DictionaryArea />
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <Line
               value={[
                 ...content({
-                  parts: [bold("Discuss the questions below before watching.")],
+                  parts: [bold("Discuss these questions.")],
                 }),
               ]}
             />
 
             <LineBreak />
 
-            <List
-              bullet={false}
+            <List ordered
               items={[
                 {
                   value: [
                     ...content({
-                      parts: ["1. What usually causes constipation?"],
+                      parts: ["What usually causes constipation?"],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["2. How can food choices affect digestion?"],
+                      parts: ["How can food choices affect digestion?"],
                     }),
                   ],
                 },
@@ -75,7 +76,7 @@ export default function Constipation() {
                   value: [
                     ...content({
                       parts: [
-                        "3. What habits help keep the digestive system healthy?",
+                        "What habits help keep the digestive system healthy?",
                       ],
                     }),
                   ],
@@ -235,106 +236,106 @@ export default function Constipation() {
             />
             <LineBreak />
             <FillInTheBlanks
-  exercise={{
-    instructions: "Complete the notes with words from Guess Word.",
-    blocks: [
-      {
-        block: [
-          {
-            text: "A healthy ",
-          },
-          { blank: "bowel movement" },
-          { text: " should happen regularly." },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "Eating more ",
-          },
-          { blank: "fiber" },
-          {
-            text: " can help digestion.",
-          },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "The ",
-          },
-          { blank: "colon" },
-          {
-            text: " absorbs water from waste.",
-          },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "Not drinking enough water may cause ",
-          },
-          { blank: "dehydration" },
-          {
-            text: ".",
-          },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "Some people need to ",
-          },
-          { blank: "strain" },
-          {
-            text: " when constipated.",
-          },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "Hard ",
-          },
-          { blank: "stool" },
-          {
-            text: " can be painful to pass.",
-          },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "The ",
-          },
-          { blank: "intestine" },
-          {
-            text: " is part of the digestive system.",
-          },
-        ],
-        lineBreak: true,
-      },
-      {
-        block: [
-          {
-            text: "Constipation can be a ",
-          },
-          { blank: "symptom" },
-          {
-            text: " of another problem.",
-          },
-        ],
-        lineBreak: true,
-      },
-    ],
-  }}
-/>
+              exercise={{
+                instructions: "Complete the notes with words from Guess Word.",
+                blocks: [
+                  {
+                    block: [
+                      {
+                        text: "A healthy ",
+                      },
+                      { blank: "bowel movement" },
+                      { text: " should happen regularly." },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "Eating more ",
+                      },
+                      { blank: "fiber" },
+                      {
+                        text: " can help digestion.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "The ",
+                      },
+                      { blank: "colon" },
+                      {
+                        text: " absorbs water from waste.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "Not drinking enough water may cause ",
+                      },
+                      { blank: "dehydration" },
+                      {
+                        text: ".",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "Some people need to ",
+                      },
+                      { blank: "strain" },
+                      {
+                        text: " when constipated.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "Hard ",
+                      },
+                      { blank: "stool" },
+                      {
+                        text: " can be painful to pass.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "The ",
+                      },
+                      { blank: "intestine" },
+                      {
+                        text: " is part of the digestive system.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      {
+                        text: "Constipation can be a ",
+                      },
+                      { blank: "symptom" },
+                      {
+                        text: " of another problem.",
+                      },
+                    ],
+                    lineBreak: true,
+                  },
+                ],
+              }}
+            />
           </Section>
 
           <Section
