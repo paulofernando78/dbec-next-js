@@ -123,7 +123,7 @@ export const FillInTheBlanks = ({ exercise, showWordBank = true }) => {
         <Bold>{exercise.instructions}</Bold>
       </p>
       {showWordBank && description && (
-        <Card>
+        <Card maxContent>
           <span>{description}</span>
         </Card>
       )}

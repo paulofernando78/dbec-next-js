@@ -56,7 +56,8 @@ export default function Constipation() {
 
             <LineBreak />
 
-            <List ordered
+            <List
+              ordered
               items={[
                 {
                   value: [
@@ -124,7 +125,7 @@ export default function Constipation() {
               title="What causes constipation?"
             />
             <Radio
-            score={false}
+              score={false}
               exercise={{
                 questions: [
                   {
@@ -237,6 +238,7 @@ export default function Constipation() {
             />
             <LineBreak />
             <FillInTheBlanks
+              showWordBank={false}
               exercise={{
                 instructions: "Complete the notes with words from Guess Word.",
                 blocks: [
@@ -354,7 +356,8 @@ export default function Constipation() {
 
             <LineBreak />
 
-            <List ordered
+            <List
+              ordered
               items={[
                 {
                   value: [
@@ -373,9 +376,7 @@ export default function Constipation() {
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "What healthy habits can reduce constipation?",
-                      ],
+                      parts: ["What healthy habits can reduce constipation?"],
                     }),
                   ],
                 },
