@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { Dictionary } from "@/components/molecules/Dictionary";
@@ -193,7 +193,12 @@ export default function Mock() {
             <LineBreak />
             <CardLayout mediaPosition="top">
               <Image src={dictionary("cat")} alt="" width={250} height={250} />
-              <Image src={dictionary("cat.avif")} alt="" width={250} height={250} />
+              <Image
+                src={dictionary("cat.avif")}
+                alt=""
+                width={250}
+                height={250}
+              />
               <Paragraph
                 value={[
                   ...content({
@@ -229,7 +234,12 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="right">
-              <Image src={dictionary("cat.avif")} alt="" width={250} height={250}/>
+              <Image
+                src={dictionary("cat.avif")}
+                alt=""
+                width={250}
+                height={250}
+              />
               <Paragraph
                 value={[
                   ...content({
@@ -265,7 +275,12 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="bottom">
-              <Image src={dictionary("cat.avif")} alt="" width={250} height={250}/>
+              <Image
+                src={dictionary("cat.avif")}
+                alt=""
+                width={250}
+                height={250}
+              />
               <Paragraph
                 value={[
                   ...content({
@@ -301,7 +316,12 @@ export default function Mock() {
             </CardLayout>
             <LineBreak />
             <CardLayout mediaPosition="left">
-              <Image src={dictionary("cat.avif")} alt="" width={250} height={250}/>
+              <Image
+                src={dictionary("cat.avif")}
+                alt=""
+                width={250}
+                height={250}
+              />
               <Paragraph
                 value={[
                   ...content({
@@ -777,7 +797,16 @@ export default function Mock() {
 
           {/* Vocab Guess*/}
           <Section id="vocab-guess" heading={3}>
-            <GuessWord words={["cat", "dog"]} />
+            <GuessWord
+              words={[
+                {
+                  word: "cat", img: 0
+                },
+                {
+                  word: "dog", img: 0
+                },
+              ]}
+            />
           </Section>
 
           {/* Radio */}

@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "dehydration",
+        "phonetics": "/ˌdiːhaɪˈdreɪʃən/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a condition in which the body does not have enough water or fluids to function properly",
+        "ptDefinition": "uma condição em que o corpo não tem água ou líquidos suficientes para funcionar corretamente; desidratação",
+        "examples": [
+          {
+            "enExample": "After running in the sun for hours, he suffered from dehydration.",
+            "ptExample": "Depois de correr no sol por horas, ele sofreu de desidratação."
+          },
+          {
+            "enExample": "Drinking enough water helps prevent dehydration during hot weather.",
+            "ptExample": "Beber água suficiente ajuda a prevenir a desidratação durante o tempo quente."
+          }
+        ],
+        "synonyms": ["fluid loss", "lack of hydration", "water depletion"],
+        "antonyms": ["hydration", "rehydration"],
+        "seeAlso": ["dehydrate", "hydration", "thirst", "heatstroke"],
+        "notes": [
+          {
+            "enNote": "Dehydration can cause symptoms such as thirst, dizziness, dry mouth, fatigue, and headaches.",
+            "ptNote": "A desidratação pode causar sintomas como sede, tontura, boca seca, fadiga e dores de cabeça."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "dehydration.avif",
+            "alt": "a person feeling weak and thirsty due to dehydration"
+          }
+        ]
+      },
+      {
         "word": "dog",
         "phonetics": "/dɔːɡ/",
         "partOfSpeech": "noun",

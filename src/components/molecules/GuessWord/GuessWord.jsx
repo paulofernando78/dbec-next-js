@@ -12,7 +12,7 @@ import { dictionary } from "@/helpers/content";
 
 export const GuessWord = ({ img, words }) => {
   // STEP 1: Create alphabet letters for all keyboard buttons
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ'".split("");
 
   // STEP 2: State to store clicked/used letters
   const [usedLetters, setUsedLetters] = useState([]);
@@ -103,7 +103,13 @@ export const GuessWord = ({ img, words }) => {
 
     // 5. Check win condition
     // Need all unique letters discovered:
-    const uniqueLetters = [...new Set(selected.word.toUpperCase().split(""))];
+    const uniqueLetters = [
+      ...new Set(
+        selected.word
+        .toUpperCase()
+        .split("")
+        .filter((char) => char >= "A" && char <= "Z")
+      )];
     // const hasWon = uniqueLetters.every((item) =>
     const hasWon = uniqueLetters.every(
       (item) => usedLetters.includes(item) || item === letter,
@@ -151,7 +157,7 @@ export const GuessWord = ({ img, words }) => {
             width={300}
             height={300}
           />
-          <p>
+          <p className={styles.hint}>
             <b>Hint:</b> {selected?.enDefinition}
           </p>
         </div>

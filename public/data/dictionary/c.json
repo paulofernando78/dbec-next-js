@@ -2,6 +2,47 @@
   {
     "definitions": [
       {
+        "word": "colon",
+        "phonetics": "/ˈkoʊ.lən/ (US), /ˈkəʊ.lən/ (UK)",
+        "partOfSpeech": "noun",
+        "enDefinition": "1. the main part of the large intestine, where water is absorbed from waste before it leaves the body. 2. the punctuation mark : used before lists, explanations, quotations, or examples.",
+        "ptDefinition": "1. cólon; a principal parte do intestino grosso, onde a água é absorvida dos resíduos antes de saírem do corpo. 2. dois-pontos (:); sinal de pontuação usado antes de listas, explicações, citações ou exemplos.",
+        "examples": [
+          {
+            "enExample": "The doctor said the colon was healthy after the examination.",
+            "ptExample": "O médico disse que o cólon estava saudável após o exame."
+          },
+          {
+            "enExample": "Fiber helps keep the colon functioning properly.",
+            "ptExample": "A fibra ajuda a manter o cólon funcionando corretamente."
+          },
+          {
+            "enExample": "Use a colon before the list.",
+            "ptExample": "Use dois-pontos antes da lista."
+          }
+        ],
+        "synonyms": ["large intestine (part)", "bowel (informal)"],
+        "seeAlso": [
+          "intestine",
+          "large intestine",
+          "rectum",
+          "digestive system",
+          "constipation"
+        ],
+        "notes": [
+          {
+            "enNote": "The colon includes the ascending, transverse, descending, and sigmoid sections. It plays an important role in absorbing water and forming stool.",
+            "ptNote": "O cólon inclui as partes ascendente, transversa, descendente e sigmoide. Ele tem papel importante na absorção de água e na formação das fezes."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "colon.avif",
+            "alt": "medical illustration of the human colon with arrows showing movement"
+          }
+        ]
+      },
+      {
         "word": "cat",
         "phonetics": "/kæt/",
         "partOfSpeech": "noun",
@@ -29,6 +70,10 @@
         "imgs": [
           {
             "src": "cat.avif",
+            "alt": "a domestic cat"
+          },
+          {
+            "src": "cat.webp",
             "alt": "a domestic cat"
           }
         ]

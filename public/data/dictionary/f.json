@@ -2,6 +2,50 @@
   {
     "definitions": [
       {
+        "word": "fiber",
+        "phonetics": "/ˈfaɪ.bɚ/ (US), /ˈfaɪ.bə/ (UK)",
+        "partOfSpeech": "noun",
+        "enDefinition": "1. a thread or thin strand that forms part of a material, fabric, plant, or body tissue. 2. dietary material found in foods such as fruits, vegetables, and grains that helps digestion. 3. strength of character or moral quality. 4. a very thin structure such as a nerve or muscle strand in the body. 5. material used in technology or industry, such as optical fiber for transmitting data.",
+        "ptDefinition": "1. fibra; fio ou filamento fino que forma parte de um material, tecido, planta ou tecido corporal. 2. fibra alimentar encontrada em alimentos como frutas, vegetais e grãos que ajuda na digestão. 3. fibra moral; força de caráter ou qualidade moral. 4. fibra; estrutura fina do corpo como nervo ou músculo. 5. fibra usada em tecnologia ou indústria, como fibra óptica para transmissão de dados.",
+        "examples": [
+          {
+            "enExample": "Cotton fiber is commonly used to make clothing.",
+            "ptExample": "A fibra de algodão é comumente usada para fazer roupas."
+          },
+          {
+            "enExample": "Eating more fiber can help prevent constipation.",
+            "ptExample": "Comer mais fibra pode ajudar a prevenir a constipação."
+          }
+        ],
+        "synonyms": [
+          "strand",
+          "filament",
+          "roughage",
+          "character",
+          "optic fiber"
+        ],
+        "antonyms": [""],
+        "seeAlso": [
+          "dietary fiber",
+          "optical fiber",
+          "fiber optic",
+          "constipation",
+          "nutrition"
+        ],
+        "notes": [
+          {
+            "enNote": "In American English, 'fiber' is the standard spelling. In British English, 'fibre' is more common.",
+            "ptNote": "No inglês americano, 'fiber' é a grafia padrão. No inglês britânico, 'fibre' é mais comum."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "fiber-food.avif",
+            "alt": ""
+          }
+        ]
+      },
+      {
         "word": "from scratch",
         "partOfSpeech": "idiom",
         "enDefinition": "starting from the very beginning, without using anything prepared or previously made",
