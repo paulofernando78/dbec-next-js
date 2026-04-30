@@ -25,7 +25,7 @@ export const GuessWord = ({ img, words }) => {
   const [message, setMessage] = useState("");
 
   // STEP 4: Future state for attempts/errors
-  const  [attempts, setAttempts] = useState(0);
+  const [attempts, setAttempts] = useState(0);
   const maxAttempts = selected ? Math.max(5, selected.word.length + 1) : 5;
 
   // STEP 5: Future state for game result
@@ -45,7 +45,7 @@ export const GuessWord = ({ img, words }) => {
   };
 
   useEffect(() => {
-    loadWord(words[currentIndex]);
+    loadWord(words[currentIndex].word);
   }, [currentIndex, words]);
 
   // STEP 5.1: Move to next word and reset round state
@@ -137,12 +137,17 @@ export const GuessWord = ({ img, words }) => {
 
   return (
     <>
-      <span className={styles.title}>Vocab Guess!</span>
+      <span className={styles.title}>Guess!</span>
       <div className={styles.container}>
         <div className={styles.imgHint}>
           <Image
-            src={dictionary(selected?.imgs?.[0]?.src)}
-            alt={selected?.imgs?.[0]?.alt || selected.word}
+            src={dictionary(
+              selected?.imgs?.[words[currentIndex].img ?? 0]?.src,
+            )}
+            alt={
+              selected?.imgs?.[words[currentIndex].img ?? 0]?.alt ||
+              selected.word
+            }
             width={300}
             height={300}
           />
@@ -180,13 +185,11 @@ export const GuessWord = ({ img, words }) => {
               .split("")
               .map((char, index) => (
                 <span key={index} className={styles.word}>
-                  {
-                    char === " "
+                  {char === " "
                     ? "\u2002"
                     : usedLetters.includes(char)
-                    ? char
-                    : "_"
-                  }
+                      ? char
+                      : "_"}
                 </span>
               ))}
           </span>

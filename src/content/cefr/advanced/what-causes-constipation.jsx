@@ -94,14 +94,14 @@ export default function Constipation() {
             />
             <LineBreak />
             <GridLayout>
-              <FlipCard backImg={dictionary("intestine.avif")}/>
-              <FlipCard backImg={dictionary("symptom.avif")}/>
-              <FlipCard backImg={dictionary("bowel-movement.avif")}/>
-              <FlipCard backImg={dictionary("strain-constipation.avif")}/>
-              <FlipCard backImg={dictionary("stool.avif")}/>
-              <FlipCard backImg={dictionary("dehydration.avif")}/>
-              <FlipCard backImg={dictionary("colon.avif")}/>
-              <FlipCard backImg={dictionary("fiber.avif")}/>
+              <FlipCard backImg={dictionary("intestine.avif")} />
+              <FlipCard backImg={dictionary("symptom.avif")} />
+              <FlipCard backImg={dictionary("bowel-movement.avif")} />
+              <FlipCard backImg={dictionary("strain-constipation.avif")} />
+              <FlipCard backImg={dictionary("stool.avif")} />
+              <FlipCard backImg={dictionary("dehydration.avif")} />
+              <FlipCard backImg={dictionary("colon.avif")} />
+              <FlipCard backImg={dictionary("fiber.avif")} />
             </GridLayout>
           </Section>
 
@@ -110,7 +110,9 @@ export default function Constipation() {
               value={[
                 ...content({
                   parts: [
-                    bold("What is the video mainly about? Watch the video and answer que question below."),
+                    bold(
+                      "What is the video mainly about? Watch the video and answer que question below.",
+                    ),
                   ],
                 }),
               ]}
@@ -261,10 +263,25 @@ export default function Constipation() {
           </Section>
 
           <Section id="practice" heading={3}>
-            <GuessWord words={["intestine", "symptom", "bowel movement", "strain", "stool", "dehydration", "colon", "fiber"]} />
+            <GuessWord
+              words={[
+                { word: "stool", img: 1 },
+                { word: "strain", img: 1 },
+                { word: "intestine", img: 0 },
+                { word: "symptom", img: 0 },
+                { word: "bowel movement", img: 0 },
+                { word: "dehydration", img: 0 },
+                { word: "colon", img: 0 },
+                { word: "fiber", img: 0 },
+              ]}
+            />
           </Section>
 
-          <Section id="follow-up-discussion" label="Follow-up Discussion" heading={3}>
+          <Section
+            id="follow-up-discussion"
+            label="Follow-up Discussion"
+            heading={3}
+          >
             <Paragraph
               value={[
                 ...content({

@@ -2,6 +2,77 @@
   {
     "definitions": [
       {
+        "word": "stool",
+        "phonetics": "/stuːl/",
+        "partOfSpeech": "noun",
+        "enDefinition": "1. a small seat without a back or arms. 2. solid waste passed from the body through the bowels; feces.",
+        "ptDefinition": "1. banquinho ou banco pequeno sem encosto. 2. excremento eliminado pelo intestino; fezes. ",
+        "examples": [
+          {
+            "enExample": "The doctor asked if there was blood in the stool.",
+            "ptExample": "O médico perguntou se havia sangue nas fezes."
+          },
+          {
+            "enExample": "He sat on a wooden stool in the kitchen.",
+            "ptExample": "Ele se sentou em um banquinho de madeira na cozinha."
+          }
+        ],
+        "synonyms": ["feces", "poop", "excrement", "seat"],
+        "seeAlso": ["bowel movement", "constipation", "chair", "seat"],
+        "notes": [
+          {
+            "enNote": "In medical contexts, 'stool' commonly means feces. In everyday conversation, people often say 'poop'. It can also mean a small backless chair.",
+            "ptNote": "Em contextos médicos, 'stool' normalmente significa fezes. No dia a dia, as pessoas costumam dizer 'poop'. Também pode significar um banco pequeno sem encosto."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "stool-chair.avif",
+            "alt": "small wooden stool without a backrest"
+          },
+          {
+            "src": "stool-feces.avif",
+            "alt": "medical illustration showing stool in the large intestine"
+          }
+        ]
+      },
+      {
+        "word": "strain",
+        "phonetics": "/streɪn/",
+        "partOfSpeech": "verb, noun",
+        "enDefinition": "verb: to make a great physical or mental effort, or to injure by overstretching; noun: pressure, tension, or a particular type of plant, animal, or disease.",
+        "ptDefinition": "verbo: fazer grande esforço físico ou mental, ou machucar ao forçar demais; substantivo: pressão, tensão, ou um tipo específico de planta, animal ou doença.",
+        "examples": [
+          {
+            "enExample": "Don't strain your back when lifting that heavy box.",
+            "ptExample": "Não force as costas ao levantar aquela caixa pesada."
+          },
+          {
+            "enExample": "The long hours at work put a strain on his health.",
+            "ptExample": "As longas horas de trabalho colocaram pressão na saúde dele."
+          }
+        ],
+        "synonyms": ["stress", "pressure", "overexert", "tension"],
+        "antonyms": ["relax", "ease", "comfort"],
+        "seeAlso": ["stress", "sprain", "effort", "pressure"],
+        "notes": [
+          {
+            "enNote": "Commonly used for muscles, relationships, finances, and situations involving pressure or overuse.",
+            "ptNote": "Usado com frequência para músculos, relacionamentos, finanças e situações envolvendo pressão ou excesso de esforço."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "strain-back-pain.avif",
+            "alt": "person straining to lift a heavy box while holding their back"
+          },
+          {
+            "src": "strain-constipation.avif",
+            "alt": "a man sitting on a toilet with stomach pain and constipation, sweating and grimacing in discomfort"
+          }
+        ]
+      },
+      {
         "word": "symptom",
         "phonetics": "/ˈsɪmp.təm/",
         "partOfSpeech": "noun",
@@ -28,7 +99,7 @@
         ],
         "imgs": [
           {
-            "src": "symptom",
+            "src": "symptom.avif",
             "alt": "Illustration showing common symptoms such as headache, fever, cough, fatigue, and muscle aches."
           }
         ]
