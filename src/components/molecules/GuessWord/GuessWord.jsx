@@ -152,6 +152,10 @@ export const GuessWord = ({ img, words }) => {
       <span className={styles.title}>Guess!</span>
       <div className={styles.container}>
         <div className={styles.imgHint}>
+          {/* Pics */}
+          <span className={styles.pics}>
+            <b>Pics:</b> {currentIndex + 1} | {words.length}
+          </span>
           <Image
             src={dictionary(
               selected?.imgs?.[words[currentIndex].img ?? 0]?.src,
@@ -163,26 +167,14 @@ export const GuessWord = ({ img, words }) => {
             width={300}
             height={300}
           />
-          <span className={styles.pics}>
-            <b>Pics:</b> {currentIndex + 1} | {words.length}
-          </span>
-          <p className={styles.hint}>
+          
+          {/* Hints */}
+          <span className={styles.hint}>
             <b>Hint:</b> {selected?.enDefinition}
-          </p>
+          </span>
         </div>
         <div className={styles.containerLetters}>
-          <div className={styles.letters}>
-            {/* STEP 7: Create one button for each letter */}
-            {letters.map((letter, index) => (
-              <Button
-                // STEP 8: Later add:
-                disabled={usedLetters.includes(letter) || status !== "playing"}
-                onClick={() => handleLetterClick(letter)}
-                key={letter}
-                icon={letter}
-              />
-            ))}
-          </div>
+          
           {/* STEP 9: Show attempts counter */}
           <span>
             <b>Attempts:</b> {attempts} | {maxAttempts}
@@ -191,6 +183,7 @@ export const GuessWord = ({ img, words }) => {
           <div className={styles.message}>
             {message && <span>{message}</span>}
           </div>
+          {/* _ _ _ _ _ */}
           <span className={styles.wordDisplay}>
             {selected.word
               .toUpperCase()
@@ -205,6 +198,18 @@ export const GuessWord = ({ img, words }) => {
                 </span>
               ))}
           </span>
+          <div className={styles.letters}>
+            {/* STEP 7: Create one button for each letter */}
+            {letters.map((letter, index) => (
+              <Button
+                // STEP 8: Later add:
+                disabled={usedLetters.includes(letter) || status !== "playing"}
+                onClick={() => handleLetterClick(letter)}
+                key={letter}
+                icon={letter}
+              />
+            ))}
+          </div>
           <Button icon={<Redo />} onClick={resetGame} />
           <div className={styles.completed}>
             <b>Completed:</b>
