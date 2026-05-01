@@ -536,7 +536,7 @@ export default function Mock() {
             <GridLayout>
               <FlipCard backImg={dictionary("cat")} backAlt="A cat photo" />
               <FlipCard
-                frontImg={dictionary("cat.avif")}
+                frontImg={dictionary("cat")}
                 frontAlt="A cat photo"
                 backImg={dictionary("cat")}
                 backAlt="A cat photo"
@@ -819,6 +819,7 @@ export default function Mock() {
             <Radio
               exercise={{
                 instruction: "Choose the best response.",
+                description: "description",
                 questions: [
                   {
                     question: "1. Question",
@@ -839,7 +840,8 @@ export default function Mock() {
               showWordBank={true}
               numbered={true}
               exercise={{
-                instructions: "1. Fill in the blanks with the correct answer.",
+                instruction: "Fill in the blanks.",
+                description: "description",
                 blocks: [
                   {
                     block: [

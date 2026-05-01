@@ -2,7 +2,9 @@
 
 import styles from "./FillInTheBlanks.module.css";
 
+import { ContentToken } from "@/components/molecules/ContentToken";
 import { Bold } from "@/components/atoms/Bold";
+import { Italic } from "@/components/atoms/Italic";
 import { Button } from "@/components/atoms/Button";
 import { Card } from "@/components/atoms/Card";
 import { Check, Redo } from "@/lib/svg-imports";
@@ -50,7 +52,11 @@ const buildDescription = (descriptionText, blocks) => {
   return shuffleItems(items).join(" • ");
 };
 
-export const FillInTheBlanks = ({ exercise, showWordBank = true, numbered = true }) => {
+export const FillInTheBlanks = ({
+  exercise,
+  showWordBank = true,
+  numbered = true,
+}) => {
   const descriptionText = exercise?.description;
   const rawBlocks = exercise?.blocks;
   const blocks = Array.isArray(rawBlocks) ? rawBlocks : [];
@@ -110,7 +116,9 @@ export const FillInTheBlanks = ({ exercise, showWordBank = true, numbered = true
     setAnswers({});
     setResults({});
     setChecked(false);
-    setDescription(showWordBank ? buildDescription(descriptionText, blocks) : "");
+    setDescription(
+      showWordBank ? buildDescription(descriptionText, blocks) : "",
+    );
   };
 
   const totalBlanks = blocks.reduce((acc, bs) => {
@@ -119,9 +127,12 @@ export const FillInTheBlanks = ({ exercise, showWordBank = true, numbered = true
 
   return (
     <div className="line-break">
-      <p>
-        <Bold>{exercise.instructions}</Bold>
-      </p>
+      <div>
+        <Bold>
+          <ContentToken value={exercise.instruction} />
+        </Bold>
+        {exercise.description && <Italic>{exercise.description}</Italic>}
+      </div>
       {showWordBank && description && (
         <Card maxContent>
           <span>{description}</span>
@@ -141,7 +152,7 @@ export const FillInTheBlanks = ({ exercise, showWordBank = true, numbered = true
                 ? Array.isArray(b.blank)
                   ? Math.max(...b.blank.map((a) => a.length))
                   : b.blank.length
-                  : 2
+                : 2;
 
               return (
                 <div key={key} className={styles.inline}>
