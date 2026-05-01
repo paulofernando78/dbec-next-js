@@ -131,7 +131,7 @@ export const FillInTheBlanks = ({
         <Bold>
           <ContentToken value={exercise.instruction} />
         </Bold>
-        {exercise.description && <Italic>{exercise.description}</Italic>}
+        {exercise.description && <Italic className="display-block">{exercise.description}</Italic>}
       </div>
       {showWordBank && description && (
         <Card maxContent>

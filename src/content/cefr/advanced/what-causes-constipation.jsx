@@ -113,7 +113,7 @@ export default function Constipation() {
                 ...content({
                   parts: [
                     bold(
-                      "What is the video mainly about? Watch the video and answer que question below.",
+                      "What is the video mainly about? Watch it and answer que question below.",
                     ),
                   ],
                 }),
@@ -239,7 +239,7 @@ export default function Constipation() {
             <LineBreak />
             <FillInTheBlanks
               showWordBank={false}
-              numbered={false}
+              numbered={true}
               exercise={{
                 instructions: "Complete the notes with words from Guess Word.",
                 blocks: [

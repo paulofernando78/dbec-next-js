@@ -2,7 +2,7 @@
 
 import styles from "./GuessWord.module.css";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/atoms/Button/";
 import { Image } from "@/components/atoms/Image/";
 
@@ -16,8 +16,21 @@ export const GuessWord = ({ img, words }) => {
 
   // STEP 2: State to store clicked/used letters
   const [usedLetters, setUsedLetters] = useState([]);
-
   const [currentIndex, setCurrentIndex] = useState(0);
+  const letterSound = useRef(null);
+
+  const playLetterSound = (letter) => {
+    speechSynthesis.cancel();
+
+    const cleanLetter = letter === "'" ? "apostrophe" : letter.toLowerCase();
+
+    const utterance = new SpeechSynthesisUtterance(cleanLetter);
+    utterance.lang = "en-US";
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+
+    speechSynthesis.speak(utterance);
+  };
 
   // STEP 3: Future state for the selected secret word
   const [selected, setSelectedWord] = useState(null);
@@ -167,14 +180,13 @@ export const GuessWord = ({ img, words }) => {
             width={300}
             height={300}
           />
-          
+
           {/* Hints */}
           <span className={styles.hint}>
             <b>Hint:</b> {selected?.enDefinition}
           </span>
         </div>
         <div className={styles.containerLetters}>
-          
           {/* STEP 9: Show attempts counter */}
           <span>
             <b>Attempts:</b> {attempts} | {maxAttempts}
@@ -204,12 +216,16 @@ export const GuessWord = ({ img, words }) => {
               <Button
                 // STEP 8: Later add:
                 disabled={usedLetters.includes(letter) || status !== "playing"}
-                onClick={() => handleLetterClick(letter)}
+                onClick={() => {
+                  playLetterSound(letter);
+                  handleLetterClick(letter);
+                }}
                 key={letter}
                 icon={letter}
               />
             ))}
           </div>
+          <audio ref={letterSound} src="/assets/audio/key.mp3" preload="auto" />
           <Button icon={<Redo />} onClick={resetGame} />
           <div className={styles.completed}>
             <b>Completed:</b>

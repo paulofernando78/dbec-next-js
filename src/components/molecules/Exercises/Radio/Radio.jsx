@@ -44,7 +44,7 @@ export const Radio = ({ exercise = {}, score = true }) => {
         <Bold>
           <ContentToken value={exercise.instruction} />
         </Bold>
-        {exercise.description && <Italic>{exercise.description}</Italic>}
+        {exercise.description && <Italic className="display-block">{exercise.description}</Italic>}
       </div>
       {questions.map((q, qIndex) => (
         <div key={qIndex}>
