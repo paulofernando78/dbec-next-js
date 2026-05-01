@@ -138,7 +138,7 @@ export const GuessWord = ({ img, words }) => {
 
       setTimeout(() => {
         nextWord();
-      }, 800);
+      }, 2000);
     }
 
     // 6. If no win / lose:
