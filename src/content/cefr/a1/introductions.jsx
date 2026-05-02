@@ -214,6 +214,7 @@ export default function Introductions() {
                 alt="Two students talking at school."
               />
               <div>
+                {/* Look at the picture and listen to the sentences. */}
                 <Line
                   value={[
                     ...content({
@@ -226,15 +227,15 @@ export default function Introductions() {
                   ]}
                 />
                 <LineBreak />
+                {/* This is an English school. */}
                 <Line
                   value={[
                     ...content({
-                      audio:
-                        "/assets/audio/cefr/a1/introductions/this-is-an-english-school.mp3",
-                      parts: ["This is an English school."],
+                      parts: [audio("/assets/audio/cefr/a1/introductions/this-is-an-english-school.mp3"), "This is an English school."],
                     }),
                   ]}
                 />
+                {/* Laura and Eric are students. */}
                 <Line
                   value={[
                     ...content({
@@ -244,6 +245,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
+                {/* They're in the classroom. */}
                 <Line
                   value={[
                     ...content({
@@ -253,6 +255,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
+                {/* They are classmates. */}
                 <Line
                   value={[
                     ...content({
@@ -262,6 +265,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
+                {/* Mr. Smith is the teacher. */}
                 <Line
                   value={[
                     ...content({
@@ -283,25 +287,25 @@ export default function Introductions() {
                   {
                     question: "1. Where are Laura and Eric?",
                     options: [
-                      { option: "At an English school.", isCorrect: true },
                       { option: "At a restaurant.", isCorrect: false },
                       { option: "At a hospital.", isCorrect: false },
+                      { option: "At an English school.", isCorrect: true },
                     ],
                   },
                   {
                     question: "2. Are Laura and Eric students?",
                     options: [
-                      { option: "Yes, they are.", isCorrect: true },
                       { option: "No, they aren't.", isCorrect: false },
+                      { option: "Yes, they are.", isCorrect: true },
                       { option: "One is a doctor.", isCorrect: false },
                     ],
                   },
                   {
                     question: "3. Who is Mr. Smith?",
                     options: [
-                      { option: "The teacher.", isCorrect: true },
                       { option: "A student.", isCorrect: false },
                       { option: "A classmate.", isCorrect: false },
+                      { option: "The teacher.", isCorrect: true },
                     ],
                   },
                 ],
