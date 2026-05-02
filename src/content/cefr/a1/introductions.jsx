@@ -18,6 +18,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 import { LineBreak } from "@/components/atoms/LineBreak";
 import {
   content,
+  icon,
   audio,
   bold,
   italic,
@@ -900,6 +901,19 @@ export default function Introductions() {
                               audio:
                                 "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
                               parts: ["Nice to mee", underline("t y"), "ou"],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              audio:
+                                "/assets/audio/cefr/a1/introductions/nice-meeting-you.mp3",
+                              parts: [icon("attention"),"Nice meeting you."],
                             }),
                           ],
                         },
