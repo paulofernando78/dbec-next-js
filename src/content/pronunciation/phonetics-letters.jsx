@@ -1816,36 +1816,31 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/b/bats-usually-eat-apples.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/bats-usually-eat-apples.mp3"),
                   "Bats usually eat apples. ",
                   portuguese("Morcegos normalmente comem maçã."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/the-cat-is-on-the-mat.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-cat-is-on-the-mat.mp3"),
                   "The cat is on the mat. ",
                   portuguese("O gato está no tapete."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/the-man-has-a-black-cat.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-man-has-a-black-cat.mp3"),
                   "The man has a black hat. ",
                   portuguese("O homem tem um chapéu preto."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/s/she-has-a-bad-habit.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-has-a-bad-habit.mp3"),
                   "She has a bad habit. ",
                   portuguese("Ela tem um mau hábito."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/i/i-have-a-map-in-my-bag.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-have-a-map-in-my-bag.mp3"),
                   "I have a map in my bag. ",
                   portuguese("Eu tenho um mapa na minha bolsa."),
                 ],
@@ -1883,24 +1878,19 @@ export default function PhoneticsLetters() {
          <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/k/keep-calm-and-hold-my-arm.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/k/keep-calm-and-hold-my-arm.mp3"),
                   "Keep calm and hold my arm. ",
                   portuguese("Fique calmo e segure o meu braço."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/m/my-father-drove-the-car-far-away.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/m/my-father-drove-the-car-far-away.mp3"),
                   "My father drove the car far away. ",
                   portuguese("Meu pai dirigiu o carro para longe."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/i/i-could-really-use-a-spa-right-now.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-could-really-use-a-spa-right-now.mp3"),
                   "I could really use a spa right now. ",
                   portuguese("Preciso de um spa no momento."),
                 ],
@@ -1955,17 +1945,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio:
-                  "/assets/audio/dictionary/i/i-ate-a-sandwhich-this-morning.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-ate-a-sandwhich-this-morning.mp3"),
                   "I ate a sandwich this morning. ",
                   portuguese("Eu comi um sanduíche esta manhã."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/s/she-chased-the-dog-across-the-yard.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-chased-the-dog-across-the-yard.mp3"),
                   "She chased the dog across the yard. ",
                   portuguese("Ela correu atrás do cachorro pelo quintal."),
                 ],
@@ -2034,16 +2020,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio:
-                  "/assets/audio/dictionary/b/bananas-contain-a-lot-of-potassium.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/bananas-contain-a-lot-of-potassium.mp3"),
                   "Bananas contain a lot of potassium. ",
                   portuguese("Bananas contêm muito potássio."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/i/its-out-of-ideas.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/its-out-of-ideas.mp3"),
                   "It's out of ideas. ",
                   portuguese("Está sem ideias."),
                 ],
@@ -2226,43 +2209,35 @@ export default function PhoneticsLetters() {
          <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/this-is-the-law.mp3",
-                parts: ["This is the law. ", portuguese("Esta é a lei.")],
+                parts: [audio("/assets/audio/dictionary/t/this-is-the-law.mp3"), "This is the law. ", portuguese("Esta é a lei.")],
               }),
 
               content({
-                audio: "/assets/audio/dictionary/i/i-saw-a-bird.mp3",
-                parts: ["I saw a bird. ", portuguese("Eu vi um pássaro.")],
+                parts: [audio("/assets/audio/dictionary/i/i-saw-a-bird.mp3"), "I saw a bird. ", portuguese("Eu vi um pássaro.")],
               }),
 
               content({
-                audio: "/assets/audio/dictionary/l/lets-draw-a-picture.mp3",
-                parts: ["Let’s draw a picture. ", portuguese("Vamos desenhar um desenho. ")],
+                parts: [audio("/assets/audio/dictionary/l/lets-draw-a-picture.mp3"), "Let’s draw a picture. ", portuguese("Vamos desenhar um desenho. ")],
               }),
 
               content({
-                audio: "/assets/audio/dictionary/t/the-meat-is-raw.mp3",
-                parts: ["The meat is raw. ", portuguese("A carne está crua.")],
+                parts: [audio("/assets/audio/dictionary/t/the-meat-is-raw.mp3"), "The meat is raw. ", portuguese("A carne está crua.")],
               }),
 
               content({
-                audio: "/assets/audio/dictionary/t/the-cat-has-a-sharp-claw.mp3",
-                parts: ["The cat has a sharp claw. ", portuguese("O gato tem uma garra afiada.")],
+                parts: [audio("/assets/audio/dictionary/t/the-cat-has-a-sharp-claw.mp3"), "The cat has a sharp claw. ", portuguese("O gato tem uma garra afiada.")],
               }),
 
               content({
-                audio: "/assets/audio/dictionary/m/my-jaw-hurts.mp3",
-                parts: ["My jaw hurts. ", portuguese("Minha mandíbula dói.")],
+                parts: [audio("/assets/audio/dictionary/m/my-jaw-hurts.mp3"), "My jaw hurts. ", portuguese("Minha mandíbula dói.")],
               }),
 
               content({
-                audio: "/assets/audio/dictionary/t/that-movie-is-awesome.mp3",
-                parts: ["That movie is awesome. ", portuguese("Esse filme é incrível.")],
+                parts: [audio("/assets/audio/dictionary/t/that-movie-is-awesome.mp3"), "That movie is awesome. ", portuguese("Esse filme é incrível.")],
               }),
 
               content({
-                audio: "/assets/audio/dictionary/w/we-watched-in-awe.mp3",
-                parts: ["We watched in awe. ", portuguese("Nós assistimos com admiração.")],
+                parts: [audio("/assets/audio/dictionary/w/we-watched-in-awe.mp3"), "We watched in awe. ", portuguese("Nós assistimos com admiração.")],
               }),
             ]}
           />
@@ -2294,25 +2269,21 @@ export default function PhoneticsLetters() {
             items={[
               // • I’ll pay you tomorrow.
               content({
-                audio: "/assets/audio/dictionary/i/ill-pay-you-tomorrow.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/ill-pay-you-tomorrow.mp3"),
                   "I’ll pay you tomorrow. ",
                   portuguese("Te pago amanhã."),
                 ],
               }),
               // • She laid the book on the table.
               content({
-                audio:
-                  "/assets/audio/dictionary/s/she-laid-the-book-on-the-table.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-laid-the-book-on-the-table.mp3"),
                   "She laid the book on the table. ",
                   portuguese("Ela colocou o livro na mesa."),
                 ],
               }),
               // • It’s a beautiful day today.
               content({
-                audio: "/assets/audio/dictionary/i/its-a-beautiful-day-today.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/its-a-beautiful-day-today.mp3"),
                   "It’s a beautiful day today. ",
                   portuguese("Hoje é um dia bonito."),
                 ],
@@ -3452,12 +3423,10 @@ export default function PhoneticsLetters() {
               // cow vs. call
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/c/cow.mp3",
-                  parts: ["c", mark("ow"), " ", phonetics("/kaʊ/")],
+                  parts: [audio("/assets/audio/dictionary/c/cow.mp3"), "c", mark("ow"), " ", phonetics("/kaʊ/")],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/c/call.mp3",
-                  parts: ["ca", mark("ll"), " ", phonetics("/kɔːl/")],
+                  parts: [audio("/assets/audio/dictionary/c/call.mp3"), "ca", mark("ll"), " ", phonetics("/kɔːl/")],
                 },
               }),
             ]}
@@ -3468,12 +3437,10 @@ export default function PhoneticsLetters() {
               // bow vs. bowl
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/b/bow-noun.mp3",
-                  parts: ["b", mark("ow"), " ", phonetics("/boʊ/")],
+                  parts: [audio("/assets/audio/dictionary/b/bow-noun.mp3"), "b", mark("ow"), " ", phonetics("/boʊ/")],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/b/bowl.mp3",
-                  parts: ["bow", mark("l"), " ", phonetics("/boʊl/")],
+                  parts: [audio("/assets/audio/dictionary/b/bowl.mp3"), "bow", mark("l"), " ", phonetics("/boʊl/")],
                 },
               }),
             ]}
@@ -3870,12 +3837,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/dictionary/c/center.mp3",
-                  parts: ["center"],
+                  parts: [audio("/assets/audio/dictionary/c/center.mp3"), "center"],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/c/cen(t)er.mp3",
-                  parts: ["cen(t)er"],
+                  parts: [audio("/assets/audio/dictionary/c/cen(t)er.mp3"), "cen(t)er"],
                 },
               }),
             ]}
@@ -3885,12 +3850,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/dictionary/d/dentist.mp3",
-                  parts: ["dentist"],
+                  parts: [audio("/assets/audio/dictionary/d/dentist.mp3"), "dentist"],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/d/den(t)ist.mp3",
-                  parts: ["den(t)ist"],
+                  parts: [audio("/assets/audio/dictionary/d/den(t)ist.mp3"), "den(t)ist"],
                 },
               }),
             ]}
@@ -3900,12 +3863,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/dictionary/i/identify.mp3",
-                  parts: ["identify"],
+                  parts: [audio("/assets/audio/dictionary/i/identify.mp3"), "identify"],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/i/iden(t)ify.mp3",
-                  parts: ["iden(t)ify"],
+                  parts: [audio("/assets/audio/dictionary/i/iden(t)ify.mp3"), "iden(t)ify"],
                 },
               }),
             ]}
@@ -3915,12 +3876,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/dictionary/i/identity.mp3",
-                  parts: ["identity"],
+                  parts: [audio("/assets/audio/dictionary/i/identity.mp3"), "identity"],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/i/iden(t)ity.mp3",
-                  parts: ["iden(t)ity"],
+                  parts: [audio("/assets/audio/dictionary/i/iden(t)ity.mp3"), "iden(t)ity"],
                 },
               }),
             ]}
@@ -3930,12 +3889,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/dictionary/i/international.mp3",
-                  parts: ["international"],
+                  parts: [audio("/assets/audio/dictionary/i/international.mp3"), "international"],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/i/in(t)ernational.mp3",
-                  parts: ["in(t)ernational"],
+                  parts: [audio("/assets/audio/dictionary/i/in(t)ernational.mp3"), "in(t)ernational"],
                 },
               }),
             ]}
@@ -3945,12 +3902,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/dictionary/i/intervention.mp3",
-                  parts: ["intervention"],
+                  parts: [audio("/assets/audio/dictionary/i/intervention.mp3"), "intervention"],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/i/in(t)ervention.mp3",
-                  parts: ["in(t)ervention"],
+                  parts: [audio("/assets/audio/dictionary/i/in(t)ervention.mp3"), "in(t)ervention"],
                 },
               }),
             ]}
@@ -3960,12 +3915,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/dictionary/i/interrupt.mp3",
-                  parts: ["interrupt"],
+                  parts: [audio("/assets/audio/dictionary/i/interrupt.mp3"), "interrupt"],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/i/in(t)errupt.mp3",
-                  parts: ["in(t)errupt"],
+                  parts: [audio("/assets/audio/dictionary/i/in(t)errupt.mp3"), "in(t)errupt"],
                 },
               }),
             ]}
@@ -4163,14 +4116,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio:
-                    "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
-                  parts: [phonetics("/æ/")],
+                  parts: [audio("/assets/audio/pronunciation/phonetics/vowels/æ.mp3"), phonetics("/æ/")],
                 },
                 right: {
-                  audio:
-                    "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
-                  parts: [phonetics("/e/")],
+                  parts: [audio("/assets/audio/pronunciation/phonetics/vowels/e.mp3"), phonetics("/e/")],
                 },
               }),
             ]}
@@ -4182,8 +4131,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/a/and.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/a/and.mp3"),
                     "a",
                     mark("nd"),
                     " ",
@@ -4193,8 +4141,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/e/end.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/e/end.mp3"),
                     "e",
                     mark("nd"),
                     " ",
@@ -4210,12 +4157,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/b/bread-and-butter.mp3",
-                parts: ["Bread and butter. ", portuguese("Pão e manteiga.")],
+                parts: [audio("/assets/audio/dictionary/b/bread-and-butter.mp3"), "Bread and butter. ", portuguese("Pão e manteiga.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/this-is-the-end.mp3",
-                parts: ["This is the end. ", portuguese("Isso é o fim.")],
+                parts: [audio("/assets/audio/dictionary/t/this-is-the-end.mp3"), "This is the end. ", portuguese("Isso é o fim.")],
               }),
             ]}
           />
@@ -4226,8 +4171,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/b/bad.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/b/bad.mp3"),
                     "b",
                     mark("a"),
                     "d ",
@@ -4237,8 +4181,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/b/bed.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/b/bed.mp3"),
                     "b",
                     mark("e"),
                     "d ",
@@ -4254,15 +4197,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/i/i-had-a-bad-day.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-had-a-bad-day.mp3"),
                   "I had a bad day. ",
                   portuguese("Eu tive um péssimo dia."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/s/she-went-to-bed-early.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-went-to-bed-early.mp3"),
                   "She went to bed early. ",
                   portuguese("Ela foi para a cama cedo."),
                 ],
@@ -4276,8 +4217,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/b/bat.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/b/bat.mp3"),
                     "b",
                     mark("a"),
                     "t ",
@@ -4287,8 +4227,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/b/bet.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/b/bet.mp3"),
                     "b",
                     mark("e"),
                     "t ",
@@ -4305,15 +4244,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/h/he-hit-the-ball-with-a-bat.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/h/he-hit-the-ball-with-a-bat.mp3"),
                   "He hit the ball with a bat. ",
                   portuguese("Ele acertou a bola com um bastão."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/i/i-bet-you-were-right.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-bet-you-were-right.mp3"),
                   "I bet you were right. ",
                   portuguese("Aposto que você estava certo."),
                 ],
@@ -4327,8 +4264,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/d/dad.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/d/dad.mp3"),
                     "d",
                     mark("a"),
                     "d ",
@@ -4338,8 +4274,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/d/dead.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/d/dead.mp3"),
                     "d",
                     mark("ea"),
                     "d ",
@@ -4355,12 +4290,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/m/my-dad-is-cool.mp3",
-                parts: ["My dad is cool. ", portuguese("Meu pai é legal.")],
+                parts: [audio("/assets/audio/dictionary/m/my-dad-is-cool.mp3"), "My dad is cool. ", portuguese("Meu pai é legal.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/the-plant-is-dead.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-plant-is-dead.mp3"),
                   "The plant is dead. ",
                   portuguese("A planta está morta."),
                 ],
@@ -4374,8 +4307,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/h/had.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/h/had.mp3"),
                     "h",
                     mark("a"),
                     "d ",
@@ -4385,8 +4317,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/h/head.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/h/head.mp3"),
                     "h",
                     mark("ea"),
                     "d ",
@@ -4402,15 +4333,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/j/john-had-a-good-time.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/j/john-had-a-good-time.mp3"),
                   "John had a good time. ",
                   portuguese("John se divertiu."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/h/he-hit-his-head.mp3",
-                parts: ["He hit his head. ", portuguese("Ele bateu a cabeça.")],
+                parts: [audio("/assets/audio/dictionary/h/he-hit-his-head.mp3"), "He hit his head. ", portuguese("Ele bateu a cabeça.")],
               }),
             ]}
           />
@@ -4421,8 +4350,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/m/man.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/m/man.mp3"),
                     "m",
                     mark("a"),
                     "n ",
@@ -4432,8 +4360,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/m/men.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/m/men.mp3"),
                     "m",
                     mark("e"),
                     "n ",
@@ -4449,12 +4376,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/the-man-is-here.mp3",
-                parts: ["The man is here. ", portuguese("O homem está aqui.")],
+                parts: [audio("/assets/audio/dictionary/t/the-man-is-here.mp3"), "The man is here. ", portuguese("O homem está aqui.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/the-men-are-here.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-men-are-here.mp3"),
                   "The men are here. ",
                   portuguese("Os homens estão aqui."),
                 ],
@@ -4468,8 +4393,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/p/pan.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/p/pan.mp3"),
                     "p",
                     mark("a"),
                     "n ",
@@ -4479,8 +4403,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/p/pen.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/p/pen.mp3"),
                     "p",
                     mark("e"),
                     "n ",
@@ -4496,15 +4419,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/p/put-the-eggs-in-the-pan.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/p/put-the-eggs-in-the-pan.mp3"),
                   "Put the eggs in the pan. ",
                   portuguese("Coloque os ovos na panela."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/y/you-can-use-this-pen.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/y/you-can-use-this-pen.mp3"),
                   "You can use this pen. ",
                   portuguese("Você pode usar esta caneta."),
                 ],
@@ -4518,8 +4439,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/s/shad.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/shad.mp3"),
                     "sh",
                     mark("a"),
                     "d ",
@@ -4529,8 +4449,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/s/shed.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/shed.mp3"),
                     "sh",
                     mark("e"),
                     "d ",
@@ -4546,16 +4465,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/the-fisherman-caught-a-shad.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-fisherman-caught-a-shad.mp3"),
                   "The fisherman caught a shad. ",
                   portuguese("O pescador pegou um peixe shad."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/c/cats-shed-their-fur-every-day.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/c/cats-shed-their-fur-every-day.mp3"),
                   "Cats shed their fur every day. ",
                   portuguese("Gatos soltam pelos todos os dias."),
                 ],
@@ -4569,8 +4485,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/t/tan.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/tan.mp3"),
                     "t",
                     mark("a"),
                     "n ",
@@ -4580,8 +4495,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/t/ten.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/ten.mp3"),
                     "t",
                     mark("e"),
                     "n ",
@@ -4597,16 +4511,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/s/she-got-a-tan-at-the-beach.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-got-a-tan-at-the-beach.mp3"),
                   "She got a tan at the beach. ",
                   portuguese("Ela ficou bronzeada na praia."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/i/i-got-ten-out-of-ten-on-the-test.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-got-ten-out-of-ten-on-the-test.mp3"),
                   "I got ten out of ten on the test. ",
                   portuguese("Eu tirei nota máxima na prova."),
                 ],
@@ -4620,8 +4531,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/t/than.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/than.mp3"),
                     "th",
                     mark("a"),
                     "n ",
@@ -4631,8 +4541,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/t/then.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/then.mp3"),
                     "th",
                     mark("e"),
                     "n ",
@@ -4648,16 +4557,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/s/she-is-taller-than-me.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-is-taller-than-me.mp3"),
                   "She is taller than me. ",
                   portuguese("Ela é mais alta do que eu."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/f/finish-your-work-then-you-can-rest.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/f/finish-your-work-then-you-can-rest.mp3"),
                   "Finish your work, then you can rest. ",
                   portuguese(
                     "Termine seu trabalho, depois você pode descansar.",
@@ -4678,14 +4584,10 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio:
-                    "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                  parts: [phonetics("/iː/")],
+                  parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/iː/")],
                 },
                 right: {
-                  audio:
-                    "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
-                  parts: [phonetics("/ɪ/")],
+                  parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3"), phonetics("/ɪ/")],
                 },
               }),
             ]}
@@ -4697,8 +4599,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/e/eat.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/e/eat.mp3"),
                     mark("ea"),
                     "t ",
                     phonetics("/iːt/"),
@@ -4707,8 +4608,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/i/it.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/i/it.mp3"),
                     mark("i"),
                     "t ",
                     phonetics("/ɪt/"),
@@ -4724,15 +4624,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/i/i-dont-usually-eat-breakfast.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-dont-usually-eat-breakfast.mp3"),
                   "I don’t usually eat breakfast. ",
                   portuguese("Normalmente eu não tomo café da manhã."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/i/it-is-very-cold-today.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/it-is-very-cold-today.mp3"),
                   "It is very cold today. ",
                   portuguese("Está muito frio hoje."),
                 ],
@@ -4746,8 +4644,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/f/feel.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/f/feel.mp3"),
                     "f",
                     mark("ee"),
                     "l ",
@@ -4757,8 +4654,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/f/fill.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/f/fill.mp3"),
                     "f",
                     mark("i"),
                     "ll ",
@@ -4775,12 +4671,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/i/i-feel-tired.mp3",
-                parts: ["I feel tired. ", portuguese("Eu me sinto cansado.")],
+                parts: [audio("/assets/audio/dictionary/i/i-feel-tired.mp3"), "I feel tired. ", portuguese("Eu me sinto cansado.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/f/fill-the-glass-please.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/f/fill-the-glass-please.mp3"),
                   "Fill the glass, please. ",
                   portuguese("Encha o copo, por favor."),
                 ],
@@ -4794,8 +4688,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/l/leave.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/l/leave.mp3"),
                     "l",
                     mark("ea"),
                     "ve ",
@@ -4805,8 +4698,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/l/live1.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/l/live1.mp3"),
                     "l",
                     mark("i"),
                     "ve ",
@@ -4823,12 +4715,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/i/i-leave-at-six.mp3",
-                parts: ["I leave at six. ", portuguese("Eu saio às seis.")],
+                parts: [audio("/assets/audio/dictionary/i/i-leave-at-six.mp3"), "I leave at six. ", portuguese("Eu saio às seis.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/i/i-live-here.mp3",
-                parts: ["I live here. ", portuguese("Eu moro aqui.")],
+                parts: [audio("/assets/audio/dictionary/i/i-live-here.mp3"), "I live here. ", portuguese("Eu moro aqui.")],
               }),
             ]}
           />
@@ -4839,8 +4729,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/s/sheep.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/sheep.mp3"),
                     "sh",
                     mark("ee"),
                     "p ",
@@ -4850,8 +4739,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/s/ship.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/ship.mp3"),
                     "sh",
                     mark("i"),
                     "p ",
@@ -4868,15 +4756,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/i/i-saw-a-sheep-on-the-farm.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-saw-a-sheep-on-the-farm.mp3"),
                   "I saw a sheep on the farm. ",
                   portuguese("Eu vi uma ovelha na fazenda."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/this-ship-is-huge.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/this-ship-is-huge.mp3"),
                   "This ship is huge. ",
                   portuguese("Este navio é enorme."),
                 ],
@@ -4890,8 +4776,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/s/sleep.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/sleep.mp3"),
                     "sl",
                     mark("ee"),
                     "p ",
@@ -4901,8 +4786,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/s/slip.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/slip.mp3"),
                     "sl",
                     mark("i"),
                     "p ",
@@ -4918,12 +4802,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/i/i-need-to-sleep.mp3",
-                parts: ["I need to sleep. ", portuguese("Eu preciso dormir.")],
+                parts: [audio("/assets/audio/dictionary/i/i-need-to-sleep.mp3"), "I need to sleep. ", portuguese("Eu preciso dormir.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/b/becareful-not-to-slip.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/becareful-not-to-slip.mp3"),
                   "Be careful not to slip. ",
                   portuguese("Cuidado para não escorregar."),
                 ],
@@ -4940,19 +4822,13 @@ export default function PhoneticsLetters() {
         >
           <Line
             value={[
-              {
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/n.mp3",
-              },
+              audio("/assets/audio/pronunciation/phonetics/consonants/n.mp3"),
               "'n': ",
               phonetics("/n/"),
               " ",
               connector("vs."),
               " ",
-              {
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3",
-              },
+              audio("/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3"),
               "'ng': ",
               phonetics("/ŋ/"),
             ]}
@@ -4963,8 +4839,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/s/sin.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/sin.mp3"),
                     "si",
                     mark("n"),
                     " ",
@@ -4974,8 +4849,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/s/sing.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/sing.mp3"),
                     "si",
                     mark("ng"),
                     " ",
@@ -4992,16 +4866,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/h/he-confessed-his-sins.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/h/he-confessed-his-sins.mp3"),
                   "He confessed his sins. ",
                   portuguese("Ele confessou seu pecado."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/s/she-loves-to-sing-in-the-shower.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-loves-to-sing-in-the-shower.mp3"),
                   "She loves to sing in the shower. ",
                   portuguese("Ela adora cantar no chuveiro."),
                 ],
@@ -5015,8 +4886,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/t/thin.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/thin.mp3"),
                     "thi",
                     mark("n"),
                     " ",
@@ -5026,8 +4896,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/t/thing.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/thing.mp3"),
                     "thi",
                     mark("ng"),
                     " ",
@@ -5044,12 +4913,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/the-ice-is-thin.mp3",
-                parts: ["The ice is thin. ", portuguese("O gelo está fino.")],
+                parts: [audio("/assets/audio/dictionary/t/the-ice-is-thin.mp3"), "The ice is thin. ", portuguese("O gelo está fino.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/this-thing-is-important.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/this-thing-is-important.mp3"),
                   "This thing is important. ",
                   portuguese("Esta coisa é importante."),
                 ],
@@ -5069,8 +4936,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/f/fool.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/f/fool.mp3"),
                     "f",
                     mark("oo"),
                     "l",
@@ -5081,8 +4947,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/f/full.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/f/full.mp3"),
                     "f",
                     mark("u"),
                     "ll",
@@ -5100,12 +4965,10 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/d/dont-be-a-fool.mp3",
-                parts: ["Don’t be a fool. ", portuguese("Não seja um tolo.")],
+                parts: [audio("/assets/audio/dictionary/d/dont-be-a-fool.mp3"), "Don’t be a fool. ", portuguese("Não seja um tolo.")],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/the-glass-is-full.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-glass-is-full.mp3"),
                   "The glass is full. ",
                   portuguese("O copo está cheio."),
                 ],
@@ -5119,8 +4982,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/p/pool.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/p/pool.mp3"),
                     "p",
                     mark("oo"),
                     "l",
@@ -5131,8 +4993,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/p/pull.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/p/pull.mp3"),
                     "p",
                     mark("u"),
                     "ll",
@@ -5150,16 +5011,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio:
-                  "/assets/audio/dictionary/t/they-are-swimming-in-the-pool.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/they-are-swimming-in-the-pool.mp3"),
                   "They are swimming in the pool. ",
                   portuguese("Eles estão nadando na piscina."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/p/pull-the-door.mp3",
-                parts: ["Pull the door. ", portuguese("Puxe a porta.")],
+                parts: [audio("/assets/audio/dictionary/p/pull-the-door.mp3"), "Pull the door. ", portuguese("Puxe a porta.")],
               }),
             ]}
           />
@@ -5170,8 +5028,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/s/suit.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/suit.mp3"),
                     "s",
                     mark("ui"),
                     "t",
@@ -5182,8 +5039,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/s/soot.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/soot.mp3"),
                     "s",
                     mark("oo"),
                     "t",
@@ -5201,16 +5057,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/h/he-is-wearing-a-suit.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/h/he-is-wearing-a-suit.mp3"),
                   "He is wearing a suit. ",
                   portuguese("Ele está usando um terno."),
                 ],
               }),
               content({
-                audio:
-                  "/assets/audio/dictionary/t/the-chimney-was-covered-in-soot.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-chimney-was-covered-in-soot.mp3"),
                   "The chimney was covered in soot. ",
                   portuguese("A chaminé estava coberta de fuligem."),
                 ],
@@ -5230,8 +5083,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/w/wash.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/w/wash.mp3"),
                     "wa",
                     mark("sh"),
                     " ",
@@ -5241,8 +5093,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/w/watch.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/w/watch.mp3"),
                     "wa",
                     mark("tch"),
                     " ",
@@ -5259,16 +5110,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio:
-                  "/assets/audio/dictionary/d/dont-forget-to-wash-your-hands.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/d/dont-forget-to-wash-your-hands.mp3"),
                   "Don’t forget to wash your hands. ",
                   portuguese("Não se esqueça de lavar as suas mãos."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/i/i-usually-watch-tv-at-night.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-usually-watch-tv-at-night.mp3"),
                   "I usually watch TV at night. ",
                   portuguese("Eu assisto TV à noite."),
                 ],
@@ -5282,8 +5130,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/s/ship.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/ship.mp3"),
                     mark("sh"),
                     "ip",
                     " ",
@@ -5293,8 +5140,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/c/chip.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/c/chip.mp3"),
                     mark("ch"),
                     "ip",
                     " ",
@@ -5311,15 +5157,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/the-ship-is-really-big.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-ship-is-really-big.mp3"),
                   "The ship is really big. ",
                   portuguese("O navio é grande."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/s/she-ate-a-chip.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/she-ate-a-chip.mp3"),
                   "She ate a chip. ",
                   portuguese("Ela comeu uma batata frita."),
                 ],
@@ -5333,8 +5177,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/s/sheep.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/s/sheep.mp3"),
                     mark("sh"),
                     "eep",
                     " ",
@@ -5344,8 +5187,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/c/cheap.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/c/cheap.mp3"),
                     mark("ch"),
                     "eap",
                     " ",
@@ -5362,15 +5204,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/the-sheep-are-in-the-field.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-sheep-are-in-the-field.mp3"),
                   "The sheep are in the field. ",
                   portuguese("As ovelhas estão no campo."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/this-shirt-is-cheap.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/this-shirt-is-cheap.mp3"),
                   "This shirt is cheap. ",
                   portuguese("Esta camisa é barata."),
                 ],
@@ -5390,8 +5230,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/t/tick.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/tick.mp3"),
                     mark("t"),
                     "ick",
                     " ",
@@ -5401,8 +5240,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/c/chick.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/c/chick.mp3"),
                     mark("ch"),
                     "ick",
                     " ",
@@ -5419,15 +5257,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/the-clock-ticks-every-second.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-clock-ticks-every-second.mp3"),
                   "The clock ticks every second. ",
                   portuguese("O relógio marca cada segundo."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/t/the-chick-is-small.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-chick-is-small.mp3"),
                   "The chick is small. ",
                   portuguese("O pintinho é pequeno."),
                 ],
@@ -5441,8 +5277,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/t/tin.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/tin.mp3"),
                     mark("t"),
                     "in",
                     " ",
@@ -5452,8 +5287,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/c/chin.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/c/chin.mp3"),
                     mark("ch"),
                     "in",
                     " ",
@@ -5470,15 +5304,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/t/the-box-is-made-of-tin.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/the-box-is-made-of-tin.mp3"),
                   "The box is made of tin. ",
                   portuguese("A caixa é feita de estanho."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/h/he-touched-his-chin.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/h/he-touched-his-chin.mp3"),
                   "He touched his chin. ",
                   portuguese("Ele tocou o queixo."),
                 ],
@@ -5492,8 +5324,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/dictionary/t/to.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/t/to.mp3"),
                     mark("t"),
                     "o",
                     " ",
@@ -5503,8 +5334,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/dictionary/c/chew.mp3",
-                  parts: [
+                  parts: [audio("/assets/audio/dictionary/c/chew.mp3"),
                     mark("ch"),
                     "ew",
                     " ",
@@ -5521,15 +5351,13 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/dictionary/i/i-want-to-go-home.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/i-want-to-go-home.mp3"),
                   "I want to go home. ",
                   portuguese("Eu quero ir para casa."),
                 ],
               }),
               content({
-                audio: "/assets/audio/dictionary/c/chew-your-food-slowly.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/c/chew-your-food-slowly.mp3"),
                   "Chew your food slowly. ",
                   portuguese("Mastigue sua comida devagar."),
                 ],

@@ -212,15 +212,11 @@ export default function Introductions() {
               <Image
                 src="/assets/img/cefr/a1/introductions/two-people-talking-school.png"
                 alt="Two students talking at school."
-                width={320}
-                height={220}
               />
               <div>
                 <Line
                   value={[
                     ...content({
-                      audio:
-                        "/assets/audio/words/l/look-at-the-picture-and-listen-to-the-sentences.mp3",
                       parts: [
                         bold(
                           "Look at the picture and listen to the sentences.",

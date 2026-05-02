@@ -1,42 +1,75 @@
-.top {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.right {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 1rem;
-}
-
-.left {
-  display: flex;
-  gap: 1rem;
-}
-
+.top,
+.right,
+.left,
 .bottom {
-  display: flex;
-  flex-direction: column-reverse;
+  display: grid;
   gap: 1rem;
+  align-items: start;
+}
+
+.left,
+.right {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.top,
+.bottom {
+  grid-template-columns: minmax(0, 1fr);
+  
+}
+
+.right > :first-child {
+  grid-column: 2;
+}
+
+.right > :last-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.bottom > :first-child {
+  grid-row: 2;
+}
+
+.bottom > :last-child {
+  grid-row: 1;
 }
 
 .top > :first-child,
 .bottom > :first-child {
-    align-self: center;
+  width: min(100%, 500px);
+  justify-self: center;
 }
 
 .top > :first-child,
 .bottom > :first-child,
 .left > :first-child,
-.right > :first-child {
-  flex: 0 0 auto;
+.right > :first-child,
+.left > :last-child,
+.right > :last-child {
+  min-width: 0;
 }
 
 @media (max-width: 600px) {
-  .top, .right, .bottom, .left  {
-    flex-direction: column;
-    align-items: center;
-  } 
+  .top,
+  .right,
+  .bottom,
+  .left {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .right > :first-child,
+  .right > :last-child,
+  .bottom > :first-child,
+  .bottom > :last-child {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .top > :first-child,
+  .right > :first-child,
+  .bottom > :first-child,
+  .left > :first-child {
+    justify-self: center;
+  }
 }

@@ -18,7 +18,7 @@ const words = [
   // answer
   {
     verb: {
-      audio: "/assets/audio/words/a/answer.mp3",
+      audio: "/assets/audio/dictionary/a/answer.mp3",
       word: "answer",
       partOfSpeech: "regular",
       phonetics: "/ˈæn.sɚ/",
