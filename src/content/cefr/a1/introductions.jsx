@@ -232,7 +232,12 @@ export default function Introductions() {
                 <Line
                   value={[
                     ...content({
-                      parts: [audio("/assets/audio/cefr/a1/introductions/this-is-an-english-school.mp3"), "This is an English school."],
+                      parts: [
+                        audio(
+                          "/assets/audio/cefr/a1/introductions/this-is-an-english-school.mp3",
+                        ),
+                        "This is an English school.",
+                      ],
                     }),
                   ]}
                 />
@@ -526,7 +531,12 @@ export default function Introductions() {
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-good.mp3",
-                  parts: ["I’m good. ", portuguese("Estou bem."), " ", italic("informal")],
+                  parts: [
+                    "I’m good. ",
+                    portuguese("Estou bem."),
+                    " ",
+                    italic("informal"),
+                  ],
                 }),
               ]}
             />
@@ -535,7 +545,12 @@ export default function Introductions() {
                 ...content({
                   audio:
                     "/assets/audio/cefr/a1/introductions/im-pretty-good.mp3",
-                  parts: ["I’m pretty good. ", portuguese("Estou bem / Muito bem."), " ", italic("informal")],
+                  parts: [
+                    "I’m pretty good. ",
+                    portuguese("Estou bem / Muito bem."),
+                    " ",
+                    italic("informal"),
+                  ],
                 }),
               ]}
             />
@@ -544,7 +559,11 @@ export default function Introductions() {
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/whats-up.mp3",
-                  parts: ["What’s up? ", italic("informal "),portuguese("E aí, beleza?")],
+                  parts: [
+                    "What’s up? ",
+                    italic("informal "),
+                    portuguese("E aí, beleza?"),
+                  ],
                 }),
               ]}
             />
@@ -560,14 +579,18 @@ export default function Introductions() {
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/not-much-you.mp3",
-                  parts: ["Not much, you? ", portuguese("Nada demais, e você?")],
+                  parts: [
+                    "Not much, you? ",
+                    portuguese("Nada demais, e você?"),
+                  ],
                 }),
               ]}
             />
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/just-chilling.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/just-chilling.mp3",
                   parts: ["Just chilling. ", portuguese("De boa / Relaxando")],
                 }),
               ]}
@@ -575,7 +598,8 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/same-as-usual.mp3",
+                  audio:
+                    "/assets/audio/cefr/a1/introductions/same-as-usual.mp3",
                   parts: ["Same as usual. ", portuguese("O de sempre")],
                 }),
               ]}
@@ -913,7 +937,7 @@ export default function Introductions() {
                             ...content({
                               audio:
                                 "/assets/audio/cefr/a1/introductions/nice-meeting-you.mp3",
-                              parts: [icon("attention"),"Nice meeting you."],
+                              parts: [icon("attention"), "Nice meeting you."],
                             }),
                           ],
                         },
@@ -952,9 +976,7 @@ export default function Introductions() {
           <Section id="practice" heading={3}>
             <FillInTheBlanks
               exercise={{
-                instructions: "Complete the dialogue with the correct words.",
-                description:
-                  "It's • C-O-S-T-A • spell • I'm • meet • last name • too • I'm",
+                instruction: "Complete the dialogue with the correct words.",
                 blocks: [
                   {
                     block: [
@@ -1078,25 +1100,26 @@ export default function Introductions() {
               ]}
             />
             <List
+              ordered
               items={[
                 {
                   value: [
                     ...content({
-                      parts: ["1. Say hello and say your name."],
+                      parts: ["Say hello and say your name."],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["2. Ask your partner's name."],
+                      parts: ["Ask your partner's name."],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: ["3. Ask your partner's last name."],
+                      parts: ["Ask your partner's last name."],
                     }),
                   ],
                 },
@@ -1104,7 +1127,7 @@ export default function Introductions() {
                   value: [
                     ...content({
                       parts: [
-                        "4. Ask your partner to spell his/her first name.",
+                        "Ask your partner to spell his/her first name.",
                       ],
                     }),
                   ],
@@ -1113,7 +1136,7 @@ export default function Introductions() {
                   value: [
                     ...content({
                       parts: [
-                        "4. Ask your partner to spell his/her last name.",
+                        "Ask your partner to spell his/her last name.",
                       ],
                     }),
                   ],
