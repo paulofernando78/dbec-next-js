@@ -1,6 +1,6 @@
 //! Layout tokens
 // icons
-// audioSrc
+// audio
 // bullet
 // square
 // lineBreak
@@ -22,6 +22,7 @@
 //! Layout tokens
 export function baseToken({
   icons = [],
+  audio,
   audioSrc,
   bullet = true,
   parts = [],
@@ -36,8 +37,8 @@ export function baseToken({
     blocks.push({ icons });
   }
 
-  if (audioSrc) {
-    blocks.push({ audioSrc });
+  if (audio || audioSrc) {
+    blocks.push({ audio: audio ?? audioSrc });
   }
 
   if (bullet) {

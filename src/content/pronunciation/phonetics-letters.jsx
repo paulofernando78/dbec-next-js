@@ -7,6 +7,7 @@ import { Phonetics } from "@/components/molecules/Phonetics";
 import { Examples } from "@/components/molecules/Examples";
 import {
   content,
+  audio,
   attention,
   bold,
   mark,
@@ -355,64 +356,51 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
-                parts: [phonetics("/æ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/æ.mp3"), phonetics("/æ/")],
               }),
               // answer
               ...wordRowList({
-                audio: "/assets/audio/words/a/answer.mp3",
-                parts: [mark("a"), "nswer", " ", phonetics("/ˈæn.sɚ/")],
+                parts: [audio("/assets/audio/dictionary/a/answer.mp3"), mark("a"), "nswer", " ", phonetics("/ˈæn.sɚ/")],
               }),
               // ask
               ...wordRowList({
-                audio: "/assets/audio/words/a/ask.mp3",
-                parts: [mark("a"), "sk", " ", phonetics("/æsk/")],
+                parts: [audio("/assets/audio/dictionary/a/ask.mp3"), mark("a"), "sk", " ", phonetics("/æsk/")],
               }),
               // bath
               ...wordRowList({
-                audio: "/assets/audio/words/b/bath.mp3",
-                parts: ["b", mark("a"), "th", " ", phonetics("/bæθ/")],
+                parts: [audio("/assets/audio/dictionary/b/bath.mp3"), "b", mark("a"), "th", " ", phonetics("/bæθ/")],
               }),
               // cat
               ...wordRowList({
-                audio: "/assets/audio/words/c/cat.mp3",
-                parts: ["c", mark("a"), "t", " ", phonetics("/kæt/")],
+                parts: [audio("/assets/audio/dictionary/c/cat.mp3"), "c", mark("a"), "t", " ", phonetics("/kæt/")],
               }),
               // can’t
               ...wordRowList({
-                audio: "/assets/audio/words/c/cant.mp3",
-                parts: ["c", mark("a"), "n’t", " ", phonetics("/kænt/")],
+                parts: [audio("/assets/audio/dictionary/c/cant.mp3"), "c", mark("a"), "n’t", " ", phonetics("/kænt/")],
               }),
               // dance
               ...wordRowList({
-                audio: "/assets/audio/words/d/dance.mp3",
-                parts: ["d", mark("a"), "nce", " ", phonetics("/dæns/")],
+                parts: [audio("/assets/audio/dictionary/d/dance.mp3"), "d", mark("a"), "nce", " ", phonetics("/dæns/")],
               }),
               // fat
               ...wordRowList({
-                audio: "/assets/audio/words/f/fat.mp3",
-                parts: ["f", mark("a"), "t", " ", phonetics("/fæt/")],
+                parts: [audio("/assets/audio/dictionary/f/fat.mp3"), "f", mark("a"), "t", " ", phonetics("/fæt/")],
               }),
               // fast
               ...wordRowList({
-                audio: "/assets/audio/words/f/fast.mp3",
-                parts: ["f", mark("a"), "st", " ", phonetics("/fæst/")],
+                parts: [audio("/assets/audio/dictionary/f/fast.mp3"), "f", mark("a"), "st", " ", phonetics("/fæst/")],
               }),
               // last
               ...wordRowList({
-                audio: "/assets/audio/words/l/last-us.mp3",
-                parts: ["l", mark("a"), "st", " ", phonetics("/læst/")],
+                parts: [audio("/assets/audio/dictionary/l/last-us.mp3"), "l", mark("a"), "st", " ", phonetics("/læst/")],
               }),
               // man
               ...wordRowList({
-                audio: "/assets/audio/words/m/man.mp3",
-                parts: ["m", mark("a"), "n", " ", phonetics("/mæn/")],
+                parts: [audio("/assets/audio/dictionary/m/man.mp3"), "m", mark("a"), "n", " ", phonetics("/mæn/")],
               }),
               // task
               ...wordRowList({
-                audio: "/assets/audio/words/t/task-us.mp3",
-                parts: ["t", mark("a"), "sk", " ", phonetics("/tæsk/")],
+                parts: [audio("/assets/audio/dictionary/t/task-us.mp3"), "t", mark("a"), "sk", " ", phonetics("/tæsk/")],
               }),
             ]}
           />
@@ -436,48 +424,38 @@ export default function PhoneticsLetters() {
             value={[
               // /ɑː/
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                parts: [phonetics("/ɑː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3"), phonetics("/ɑː/")],
               }),
               // answer
               ...wordRowList({
-                audio: "/assets/audio/words/a/answer-uk.mp3",
-                parts: [mark("a"), "nswer", " ", phonetics("/ˈɑːn.sər/")],
+                parts: [audio("/assets/audio/dictionary/a/answer-uk.mp3"), mark("a"), "nswer", " ", phonetics("/ˈɑːn.sər/")],
               }),
               // ask
               ...wordRowList({
-                audio: "/assets/audio/words/a/ask-uk.mp3",
-                parts: [mark("a"), "sk", " ", phonetics("/ɑːsk/")],
+                parts: [audio("/assets/audio/dictionary/a/ask-uk.mp3"), mark("a"), "sk", " ", phonetics("/ɑːsk/")],
               }),
               // bath
               ...wordRowList({
-                audio: "/assets/audio/words/b/bath-uk.mp3",
-                parts: ["b", mark("a"), "th", " ", phonetics("/bɑːθ/")],
+                parts: [audio("/assets/audio/dictionary/b/bath-uk.mp3"), "b", mark("a"), "th", " ", phonetics("/bɑːθ/")],
               }),
               // can’t
               ...wordRowList({
-                audio: "/assets/audio/words/c/cant-uk.mp3",
-                parts: ["c", mark("a"), "n’t", " ", phonetics("/kɑːnt/")],
+                parts: [audio("/assets/audio/dictionary/c/cant-uk.mp3"), "c", mark("a"), "n’t", " ", phonetics("/kɑːnt/")],
               }),
               // dance
               ...wordRowList({
-                audio: "/assets/audio/words/d/dance-uk.mp3",
-                parts: ["d", mark("a"), "nce", " ", phonetics("/dɑːns/")],
+                parts: [audio("/assets/audio/dictionary/d/dance-uk.mp3"), "d", mark("a"), "nce", " ", phonetics("/dɑːns/")],
               }),
               // fast
               ...wordRowList({
-                audio: "/assets/audio/words/f/fast-uk.mp3",
-                parts: ["f", mark("a"), "st", " ", phonetics("/fɑːst/")],
+                parts: [audio("/assets/audio/dictionary/f/fast-uk.mp3"), "f", mark("a"), "st", " ", phonetics("/fɑːst/")],
               }),
               ...wordRowList({
-                audio: "/assets/audio/words/l/last-uk.mp3",
-                parts: ["l", mark("a"), "st", " ", phonetics("/lɑːst/")],
+                parts: [audio("/assets/audio/dictionary/l/last-uk.mp3"), "l", mark("a"), "st", " ", phonetics("/lɑːst/")],
               }),
               // task
               ...wordRowList({
-                audio: "/assets/audio/words/t/task-uk.mp3",
-                parts: ["t", mark("a"), "sk", " ", phonetics("/tɑːsk/")],
+                parts: [audio("/assets/audio/dictionary/t/task-uk.mp3"), "t", mark("a"), "sk", " ", phonetics("/tɑːsk/")],
               }),
             ]}
           />
@@ -487,24 +465,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
-                parts: [phonetics("/e/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/e.mp3"), phonetics("/e/")],
               }),
               // bed
               ...wordRowList({
-                audio: "/assets/audio/words/b/bed.mp3",
-                parts: ["b", mark("e"), "d", " ", phonetics("/bed/")],
+                parts: [audio("/assets/audio/dictionary/b/bed.mp3"), "b", mark("e"), "d", " ", phonetics("/bed/")],
               }),
               // head
               ...wordRowList({
-                audio: "/assets/audio/words/h/head.mp3",
-                parts: ["h", mark("ea"), "d", " ", phonetics("/hed/")],
+                parts: [audio("/assets/audio/dictionary/h/head.mp3"), "h", mark("ea"), "d", " ", phonetics("/hed/")],
               }),
               // red
               ...wordRowList({
-                audio: "/assets/audio/words/r/red.mp3",
-                parts: ["r", mark("e"), "d", " ", phonetics("/red/")],
+                parts: [audio("/assets/audio/dictionary/r/red.mp3"), "r", mark("e"), "d", " ", phonetics("/red/")],
               }),
             ]}
           />
@@ -513,24 +486,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
-                parts: [phonetics("/ɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3"), phonetics("/ɪ/")],
               }),
               // busy
               ...wordRowList({
-                audio: "/assets/audio/words/b/busy.mp3",
-                parts: ["b", mark("u"), "sy", " ", phonetics("/ˈbɪz.i/")],
+                parts: [audio("/assets/audio/dictionary/b/busy.mp3"), "b", mark("u"), "sy", " ", phonetics("/ˈbɪz.i/")],
               }),
               // English
               ...wordRowList({
-                audio: "/assets/audio/words/e/english.mp3",
-                parts: [mark("E"), "nglish", " ", phonetics("/ˈɪŋ.ɡlɪʃ/")],
+                parts: [audio("/assets/audio/dictionary/e/english.mp3"), mark("E"), "nglish", " ", phonetics("/ˈɪŋ.ɡlɪʃ/")],
               }),
               // it
               ...wordRowList({
-                audio: "/assets/audio/words/i/it.mp3",
-                parts: [mark("i"), "t", " ", phonetics("/ɪt/")],
+                parts: [audio("/assets/audio/dictionary/i/it.mp3"), mark("i"), "t", " ", phonetics("/ɪt/")],
               }),
             ]}
           />
@@ -539,29 +507,23 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                parts: [phonetics("/iː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/iː/")],
               }),
               // eat
               ...wordRowList({
-                audio: "/assets/audio/words/e/eat.mp3",
-                parts: [mark("ea"), "t ", phonetics("/iːt/")],
+                parts: [audio("/assets/audio/dictionary/e/eat.mp3"), mark("ea"), "t ", phonetics("/iːt/")],
               }),
               // key
               ...wordRowList({
-                audio: "/assets/audio/words/k/key.mp3",
-                parts: ["k", mark("e"), "y ", phonetics("/kiː/")],
+                parts: [audio("/assets/audio/dictionary/k/key.mp3"), "k", mark("e"), "y ", phonetics("/kiː/")],
               }),
               // sea
               ...wordRowList({
-                audio: "/assets/audio/words/s/sea-see.mp3",
-                parts: ["s", mark("ea"), " ", phonetics("/siː/")],
+                parts: [audio("/assets/audio/dictionary/s/sea-see.mp3"), "s", mark("ea"), " ", phonetics("/siː/")],
               }),
               // see
               ...wordRowList({
-                audio: "/assets/audio/words/s/sea-see.mp3",
-                parts: ["s", mark("ee"), " ", phonetics("/siː/")],
+                parts: [audio("/assets/audio/dictionary/s/sea-see.mp3"), "s", mark("ee"), " ", phonetics("/siː/")],
               }),
             ]}
           />
@@ -589,33 +551,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
-                parts: [phonetics("/ə/"), " ", italic("unstressed schwa")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3"), phonetics("/ə/"), " ", italic("unstressed schwa")],
               }),
 
               // about
               ...wordRowList({
-                audio: "/assets/audio/words/a/about.mp3",
-                parts: [mark("a"), "bout", " ", phonetics("/əˈbaʊt/")],
+                parts: [audio("/assets/audio/dictionary/a/about.mp3"), mark("a"), "bout", " ", phonetics("/əˈbaʊt/")],
               }),
 
               // above
               ...wordRowList({
-                audio: "/assets/audio/words/a/above.mp3",
-                parts: [mark("a"), "bove", " ", phonetics("/əˈbʌv/")],
+                parts: [audio("/assets/audio/dictionary/a/above.mp3"), mark("a"), "bove", " ", phonetics("/əˈbʌv/")],
               }),
 
               // open
               ...wordRowList({
-                audio: "/assets/audio/words/o/open.mp3",
-                parts: ["op", mark("e"), "n", " ", phonetics("/ˈoʊ.pən/")],
+                parts: [audio("/assets/audio/dictionary/o/open.mp3"), "op", mark("e"), "n", " ", phonetics("/ˈoʊ.pən/")],
               }),
 
               // student
               ...wordRowList({
-                audio: "/assets/audio/words/s/student.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/student.mp3"),
                   "stud",
                   mark("e"),
                   "nt",
@@ -626,8 +582,7 @@ export default function PhoneticsLetters() {
 
               // the
               ...wordRowList({
-                audio: "/assets/audio/words/t/the2.mp3",
-                parts: ["th", mark("e"), " ", phonetics("/ðə/")],
+                parts: [audio("/assets/audio/dictionary/t/the2.mp3"), "th", mark("e"), " ", phonetics("/ðə/")],
               }),
             ]}
           />
@@ -638,8 +593,7 @@ export default function PhoneticsLetters() {
             value={[
               // cinema
               ...wordRowList({
-                audio: "/assets/audio/words/c/cinema-uk.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/c/cinema-uk.mp3"),
                   { part: "vocab", type: "italic" },
                   " cin",
                   mark("e"),
@@ -657,45 +611,37 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
-                parts: [phonetics("/ʌ/"), " ", italic("stressed")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3"), phonetics("/ʌ/"), " ", italic("stressed")],
               }),
 
               // but
               ...wordRowList({
-                audio: "/assets/audio/words/b/but.mp3",
-                parts: ["b", mark("u"), "t", " ", phonetics("/bʌt/")],
+                parts: [audio("/assets/audio/dictionary/b/but.mp3"), "b", mark("u"), "t", " ", phonetics("/bʌt/")],
               }),
 
               // cup
               ...wordRowList({
-                audio: "/assets/audio/words/c/cup.mp3",
-                parts: ["c", mark("u"), "p", " ", phonetics("/kʌp/")],
+                parts: [audio("/assets/audio/dictionary/c/cup.mp3"), "c", mark("u"), "p", " ", phonetics("/kʌp/")],
               }),
 
               // hulk
               ...wordRowList({
-                audio: "/assets/audio/words/h/hulk.mp3",
-                parts: ["H", mark("u"), "lk", " ", phonetics("/hʌk/")],
+                parts: [audio("/assets/audio/dictionary/h/hulk.mp3"), "H", mark("u"), "lk", " ", phonetics("/hʌk/")],
               }),
 
               // son
               ...wordRowList({
-                audio: "/assets/audio/words/s/son-sun.mp3",
-                parts: ["s", mark("o"), "n", " ", phonetics("/sʌn/")],
+                parts: [audio("/assets/audio/dictionary/s/son-sun.mp3"), "s", mark("o"), "n", " ", phonetics("/sʌn/")],
               }),
 
               // sun
               ...wordRowList({
-                audio: "/assets/audio/words/s/son-sun.mp3",
-                parts: ["s", mark("u"), "n", " ", phonetics("/sʌn/")],
+                parts: [audio("/assets/audio/dictionary/s/son-sun.mp3"), "s", mark("u"), "n", " ", phonetics("/sʌn/")],
               }),
 
               // under
               ...wordRowList({
-                audio: "/assets/audio/words/u/under.mp3",
-                parts: [mark("u"), "nder", " ", phonetics("/ˈʌn.dɚ/")],
+                parts: [audio("/assets/audio/dictionary/u/under.mp3"), mark("u"), "nder", " ", phonetics("/ˈʌn.dɚ/")],
               }),
             ]}
           />
@@ -706,39 +652,32 @@ export default function PhoneticsLetters() {
             variant="uk"
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ʌ.mp3",
-                parts: [phonetics("/ʌ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ʌ.mp3"), phonetics("/ʌ/")],
               }),
 
               // but
               ...wordRowList({
-                audio: "/assets/audio/words/b/but-uk.mp3",
-                parts: ["b", mark("u"), "t", " ", phonetics("/bʌt/")],
+                parts: [audio("/assets/audio/dictionary/b/but-uk.mp3"), "b", mark("u"), "t", " ", phonetics("/bʌt/")],
               }),
 
               // cup
               ...wordRowList({
-                audio: "/assets/audio/words/c/cup-uk.mp3",
-                parts: ["c", mark("u"), "p", " ", phonetics("/kʌp/")],
+                parts: [audio("/assets/audio/dictionary/c/cup-uk.mp3"), "c", mark("u"), "p", " ", phonetics("/kʌp/")],
               }),
 
               // son
               ...wordRowList({
-                audio: "/assets/audio/words/s/son-sun-uk.mp3",
-                parts: ["s", mark("o"), "n", " ", phonetics("/sʌn/")],
+                parts: [audio("/assets/audio/dictionary/s/son-sun-uk.mp3"), "s", mark("o"), "n", " ", phonetics("/sʌn/")],
               }),
 
               // sun
               ...wordRowList({
-                audio: "/assets/audio/words/s/son-sun-uk.mp3",
-                parts: ["s", mark("u"), "n", " ", phonetics("/sʌn/")],
+                parts: [audio("/assets/audio/dictionary/s/son-sun-uk.mp3"), "s", mark("u"), "n", " ", phonetics("/sʌn/")],
               }),
 
               // under
               ...wordRowList({
-                audio: "/assets/audio/words/u/under-uk.mp3",
-                parts: [mark("u"), "nder", " ", phonetics("/ˈʌn.də/")],
+                parts: [audio("/assets/audio/dictionary/u/under-uk.mp3"), mark("u"), "nder", " ", phonetics("/ˈʌn.də/")],
               }),
             ]}
           />
@@ -748,94 +687,75 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
-                parts: [phonetics("/ɔː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3"), phonetics("/ɔː/")],
               }),
               // all
               ...wordRowList({
-                audio: "/assets/audio/words/a/all.mp3",
-                parts: [mark("a"), "ll", " ", phonetics("/ɔːl/")],
+                parts: [audio("/assets/audio/dictionary/a/all.mp3"), mark("a"), "ll", " ", phonetics("/ɔːl/")],
               }),
               // bought
               ...wordRowList({
-                audio: "/assets/audio/words/b/bought.mp3",
-                parts: ["b", mark("o"), "ught", " ", phonetics("/bɔːt/")],
+                parts: [audio("/assets/audio/dictionary/b/bought.mp3"), "b", mark("o"), "ught", " ", phonetics("/bɔːt/")],
               }),
               // call
               ...wordRowList({
-                audio: "/assets/audio/words/c/call.mp3",
-                parts: ["c", mark("a"), "ll", " ", phonetics("/kɔːl/")],
+                parts: [audio("/assets/audio/dictionary/c/call.mp3"), "c", mark("a"), "ll", " ", phonetics("/kɔːl/")],
               }),
               // caught
               ...wordRowList({
-                audio: "/assets/audio/words/c/caught.mp3",
-                parts: ["c", mark("augh"), "t", " ", phonetics("/kɔːt/")],
+                parts: [audio("/assets/audio/dictionary/c/caught.mp3"), "c", mark("augh"), "t", " ", phonetics("/kɔːt/")],
               }),
               // claw
               ...wordRowList({
-                audio: "/assets/audio/words/c/claw.mp3",
-                parts: ["cl", mark("aw"), " ", phonetics("/klɔː/")],
+                parts: [audio("/assets/audio/dictionary/c/claw.mp3"), "cl", mark("aw"), " ", phonetics("/klɔː/")],
               }),
               // coffee
               ...wordRowList({
-                audio: "/assets/audio/words/c/coffee.mp3",
-                parts: ["c", mark("o"), "ffee", " ", phonetics("/ˈkɔː.fi/")],
+                parts: [audio("/assets/audio/dictionary/c/coffee.mp3"), "c", mark("o"), "ffee", " ", phonetics("/ˈkɔː.fi/")],
               }),
               // daughter
               ...wordRowList({
-                audio: "/assets/audio/words/d/daughter.mp3",
-                parts: ["d", mark("au"), "ghter", " ", phonetics("/ˈdɔː.t̬ɚ/")],
+                parts: [audio("/assets/audio/dictionary/d/daughter.mp3"), "d", mark("au"), "ghter", " ", phonetics("/ˈdɔː.t̬ɚ/")],
               }),
               // dog
               ...wordRowList({
-                audio: "/assets/audio/words/d/dog.mp3",
-                parts: ["d", mark("o"), "g", " ", phonetics("/dɔːg/")],
+                parts: [audio("/assets/audio/dictionary/d/dog.mp3"), "d", mark("o"), "g", " ", phonetics("/dɔːg/")],
               }),
               // draw
               ...wordRowList({
-                audio: "/assets/audio/words/d/draw.mp3",
-                parts: ["dr", mark("aw"), " ", phonetics("/drɔː/")],
+                parts: [audio("/assets/audio/dictionary/d/draw.mp3"), "dr", mark("aw"), " ", phonetics("/drɔː/")],
               }),
               // fog
               ...wordRowList({
-                audio: "/assets/audio/words/f/fog.mp3",
-                parts: ["f", mark("o"), "g", " ", phonetics("/fɔːg/")],
+                parts: [audio("/assets/audio/dictionary/f/fog.mp3"), "f", mark("o"), "g", " ", phonetics("/fɔːg/")],
               }),
               // jaw
               ...wordRowList({
-                audio: "/assets/audio/words/j/jaw.mp3",
-                parts: ["j", mark("aw"), " ", phonetics("/dʒɔː/")],
+                parts: [audio("/assets/audio/dictionary/j/jaw.mp3"), "j", mark("aw"), " ", phonetics("/dʒɔː/")],
               }),
               // frog
               ...wordRowList({
-                audio: "/assets/audio/words/f/frog.mp3",
-                parts: ["fr", mark("o"), "g", " ", phonetics("/frɔːg/")],
+                parts: [audio("/assets/audio/dictionary/f/frog.mp3"), "fr", mark("o"), "g", " ", phonetics("/frɔːg/")],
               }),
               // law
               ...wordRowList({
-                audio: "/assets/audio/words/l/law.mp3",
-                parts: ["l", mark("aw"), " ", phonetics("/lɔː/")],
+                parts: [audio("/assets/audio/dictionary/l/law.mp3"), "l", mark("aw"), " ", phonetics("/lɔː/")],
               }),
               // raw
               ...wordRowList({
-                audio: "/assets/audio/words/r/raw.mp3",
-                parts: ["r", mark("aw"), " ", phonetics("/rɔː/")],
+                parts: [audio("/assets/audio/dictionary/r/raw.mp3"), "r", mark("aw"), " ", phonetics("/rɔː/")],
               }),
               // saw
               ...wordRowList({
-                audio: "/assets/audio/words/s/saw.mp3",
-                parts: ["s", mark("aw"), " ", phonetics("/sɔː/")],
+                parts: [audio("/assets/audio/dictionary/s/saw.mp3"), "s", mark("aw"), " ", phonetics("/sɔː/")],
               }),
               // talk
               ...wordRowList({
-                audio: "/assets/audio/words/t/talk.mp3",
-                parts: ["t", mark("a"), "lk", " ", phonetics("/tɔːk/")],
+                parts: [audio("/assets/audio/dictionary/t/talk.mp3"), "t", mark("a"), "lk", " ", phonetics("/tɔːk/")],
               }),
               // walk
               ...wordRowList({
-                audio: "/assets/audio/words/w/walk.mp3",
-                parts: ["w", mark("a"), "lk", " ", phonetics("/wɔːk/")],
+                parts: [audio("/assets/audio/dictionary/w/walk.mp3"), "w", mark("a"), "lk", " ", phonetics("/wɔːk/")],
               }),
             ]}
           />
@@ -845,109 +765,87 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                parts: [phonetics("/ɑː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3"), phonetics("/ɑː/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/b/bottom-us.mp3",
-                parts: ["b", mark("o"), "ttom", " ", phonetics("/ˈbɑː.t̬əm/")],
+                parts: [audio("/assets/audio/dictionary/b/bottom-us.mp3"), "b", mark("o"), "ttom", " ", phonetics("/ˈbɑː.t̬əm/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/c/calm.mp3",
-                parts: ["c", mark("a"), "lm", " ", phonetics("/kɑːm/")],
+                parts: [audio("/assets/audio/dictionary/c/calm.mp3"), "c", mark("a"), "lm", " ", phonetics("/kɑːm/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/c/cot.mp3",
-                parts: ["c", mark("o"), "t", " ", phonetics("/kɑːt/")],
+                parts: [audio("/assets/audio/dictionary/c/cot.mp3"), "c", mark("o"), "t", " ", phonetics("/kɑːt/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/f/father.mp3",
-                parts: ["f", mark("a"), "ther", " ", phonetics("/ˈfɑːðər/")],
+                parts: [audio("/assets/audio/dictionary/f/father.mp3"), "f", mark("a"), "ther", " ", phonetics("/ˈfɑːðər/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/g/god.mp3",
-                parts: ["g", mark("o"), "d", " ", phonetics("/ɡɑːd/")],
+                parts: [audio("/assets/audio/dictionary/g/god.mp3"), "g", mark("o"), "d", " ", phonetics("/ɡɑːd/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/h/hot.mp3",
-                parts: ["h", mark("o"), "t", " ", phonetics("/hɑːt/")],
+                parts: [audio("/assets/audio/dictionary/h/hot.mp3"), "h", mark("o"), "t", " ", phonetics("/hɑːt/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/j/job.mp3",
-                parts: ["j", mark("o"), "b", " ", phonetics("/dʒɑːb/")],
+                parts: [audio("/assets/audio/dictionary/j/job.mp3"), "j", mark("o"), "b", " ", phonetics("/dʒɑːb/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/l/lock.mp3",
-                parts: ["l", mark("o"), "ck", " ", phonetics("/lɑːk/")],
+                parts: [audio("/assets/audio/dictionary/l/lock.mp3"), "l", mark("o"), "ck", " ", phonetics("/lɑːk/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/l/lot.mp3",
-                parts: ["l", mark("o"), "t", " ", phonetics("/lɑːt/")],
+                parts: [audio("/assets/audio/dictionary/l/lot.mp3"), "l", mark("o"), "t", " ", phonetics("/lɑːt/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/n/not.mp3",
-                parts: ["n", mark("o"), "t", " ", phonetics("/nɑːt/")],
+                parts: [audio("/assets/audio/dictionary/n/not.mp3"), "n", mark("o"), "t", " ", phonetics("/nɑːt/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/o/odd.mp3",
-                parts: [mark("o"), "dd", " ", phonetics("/ɑːd/")],
+                parts: [audio("/assets/audio/dictionary/o/odd.mp3"), mark("o"), "dd", " ", phonetics("/ɑːd/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/o/office.mp3",
-                parts: [mark("o"), "ffice", " ", phonetics("/ˈɑː.fɪs/")],
+                parts: [audio("/assets/audio/dictionary/o/office.mp3"), mark("o"), "ffice", " ", phonetics("/ˈɑː.fɪs/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/p/palm.mp3",
-                parts: ["p", mark("a"), "lm", " ", phonetics("/pɑːm/")],
+                parts: [audio("/assets/audio/dictionary/p/palm.mp3"), "p", mark("a"), "lm", " ", phonetics("/pɑːm/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/r/rob.mp3",
-                parts: ["r", mark("o"), "b", " ", phonetics("/rɑːb/")],
+                parts: [audio("/assets/audio/dictionary/r/rob.mp3"), "r", mark("o"), "b", " ", phonetics("/rɑːb/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/r/rock.mp3",
-                parts: ["r", mark("o"), "ck", " ", phonetics("/rɑːk/")],
+                parts: [audio("/assets/audio/dictionary/r/rock.mp3"), "r", mark("o"), "ck", " ", phonetics("/rɑːk/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/s/shop.mp3",
-                parts: ["sh", mark("o"), "p", " ", phonetics("/ʃɑːp/")],
+                parts: [audio("/assets/audio/dictionary/s/shop.mp3"), "sh", mark("o"), "p", " ", phonetics("/ʃɑːp/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/s/sock.mp3",
-                parts: ["s", mark("o"), "ck", " ", phonetics("/sɑːk/")],
+                parts: [audio("/assets/audio/dictionary/s/sock.mp3"), "s", mark("o"), "ck", " ", phonetics("/sɑːk/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/s/spa.mp3",
-                parts: ["sp", mark("a"), " ", phonetics("/spɑː/")],
+                parts: [audio("/assets/audio/dictionary/s/spa.mp3"), "sp", mark("a"), " ", phonetics("/spɑː/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/s/stop.mp3",
-                parts: ["st", mark("o"), "p", " ", phonetics("/stɑːp/")],
+                parts: [audio("/assets/audio/dictionary/s/stop.mp3"), "st", mark("o"), "p", " ", phonetics("/stɑːp/")],
               }),
 
               ...wordRowList({
-                audio: "/assets/audio/words/t/top.mp3",
-                parts: ["t", mark("o"), "p", " ", phonetics("/tɑːp/")],
+                parts: [audio("/assets/audio/dictionary/t/top.mp3"), "t", mark("o"), "p", " ", phonetics("/tɑːp/")],
               }),
             ]}
           />
@@ -988,51 +886,42 @@ export default function PhoneticsLetters() {
             value={[
               // UK /ɒ/ (short)
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɒ.mp3",
-                parts: [phonetics("/ɒ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɒ.mp3"), phonetics("/ɒ/")],
               }),
 
               // dog
               ...wordRowList({
-                audio: "/assets/audio/words/d/dog-uk.mp3",
-                parts: ["d", mark("o"), "g", " ", phonetics("/dɒɡ/")],
+                parts: [audio("/assets/audio/dictionary/d/dog-uk.mp3"), "d", mark("o"), "g", " ", phonetics("/dɒɡ/")],
               }),
 
               // frog
               ...wordRowList({
-                audio: "/assets/audio/words/f/frog-uk.mp3",
-                parts: ["fr", mark("o"), "g", " ", phonetics("/frɒɡ/")],
+                parts: [audio("/assets/audio/dictionary/f/frog-uk.mp3"), "fr", mark("o"), "g", " ", phonetics("/frɒɡ/")],
               }),
 
               // hot
               ...wordRowList({
-                audio: "/assets/audio/words/h/hot-uk.mp3",
-                parts: ["h", mark("o"), "t", " ", phonetics("/hɒt/")],
+                parts: [audio("/assets/audio/dictionary/h/hot-uk.mp3"), "h", mark("o"), "t", " ", phonetics("/hɒt/")],
               }),
 
               // shop
               ...wordRowList({
-                audio: "/assets/audio/words/s/shop-uk.mp3",
-                parts: ["sh", mark("o"), "p", " ", phonetics("/ʃɒp/")],
+                parts: [audio("/assets/audio/dictionary/s/shop-uk.mp3"), "sh", mark("o"), "p", " ", phonetics("/ʃɒp/")],
               }),
 
               // stop
               ...wordRowList({
-                audio: "/assets/audio/words/s/stop-uk.mp3",
-                parts: ["st", mark("o"), "p", " ", phonetics("/stɒp/")],
+                parts: [audio("/assets/audio/dictionary/s/stop-uk.mp3"), "st", mark("o"), "p", " ", phonetics("/stɒp/")],
               }),
 
               // lot
               ...wordRowList({
-                audio: "/assets/audio/words/l/lot-uk.mp3",
-                parts: ["l", mark("o"), "t", " ", phonetics("/lɒt/")],
+                parts: [audio("/assets/audio/dictionary/l/lot-uk.mp3"), "l", mark("o"), "t", " ", phonetics("/lɒt/")],
               }),
 
               // rob
               ...wordRowList({
-                audio: "/assets/audio/words/r/rob-uk.mp3",
-                parts: ["r", mark("o"), "b", " ", phonetics("/rɒb/")],
+                parts: [audio("/assets/audio/dictionary/r/rob-uk.mp3"), "r", mark("o"), "b", " ", phonetics("/rɒb/")],
               }),
             ]}
           />
@@ -1042,33 +931,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
-                parts: [phonetics("/ʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3"), phonetics("/ʊ/")],
               }),
 
               // book
               ...wordRowList({
-                audio: "/assets/audio/words/b/book.mp3",
-                parts: ["b", mark("oo"), "k", " ", phonetics("/bʊk/")],
+                parts: [audio("/assets/audio/dictionary/b/book.mp3"), "b", mark("oo"), "k", " ", phonetics("/bʊk/")],
               }),
 
               // good
               ...wordRowList({
-                audio: "/assets/audio/words/g/good.mp3",
-                parts: ["g", mark("oo"), "d", " ", phonetics("/gʊd/")],
+                parts: [audio("/assets/audio/dictionary/g/good.mp3"), "g", mark("oo"), "d", " ", phonetics("/gʊd/")],
               }),
 
               // wood
               ...wordRowList({
-                audio: "/assets/audio/words/w/wood-would.mp3",
-                parts: ["w", mark("oo"), "d", " ", phonetics("/wʊd/")],
+                parts: [audio("/assets/audio/dictionary/w/wood-would.mp3"), "w", mark("oo"), "d", " ", phonetics("/wʊd/")],
               }),
 
               // would
               ...wordRowList({
-                audio: "/assets/audio/words/w/wood-would.mp3",
-                parts: ["w", mark("oul"), "d", " ", phonetics("/wʊd/")],
+                parts: [audio("/assets/audio/dictionary/w/wood-would.mp3"), "w", mark("oul"), "d", " ", phonetics("/wʊd/")],
               }),
             ]}
           />
@@ -1078,27 +961,22 @@ export default function PhoneticsLetters() {
             value={[
               // /uː/ (long)
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
-                parts: [phonetics("/uː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/u.mp3"), phonetics("/uː/")],
               }),
 
               // blue
               ...wordRowList({
-                audio: "/assets/audio/words/b/blue.mp3",
-                parts: ["bl", mark("ue"), " ", phonetics("/bluː/")],
+                parts: [audio("/assets/audio/dictionary/b/blue.mp3"), "bl", mark("ue"), " ", phonetics("/bluː/")],
               }),
 
               // food
               ...wordRowList({
-                audio: "/assets/audio/words/f/food.mp3",
-                parts: ["f", mark("oo"), "d", " ", phonetics("/fuːd/")],
+                parts: [audio("/assets/audio/dictionary/f/food.mp3"), "f", mark("oo"), "d", " ", phonetics("/fuːd/")],
               }),
 
               // student
               ...wordRowList({
-                audio: "/assets/audio/words/s/student.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/student.mp3"),
                   "st",
                   mark("u"),
                   "dent",
@@ -1115,27 +993,22 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3",
-                parts: [phonetics("/aɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3"), phonetics("/aɪ/")],
               }),
 
               // buy
               ...wordRowList({
-                audio: "/assets/audio/words/b/buy.mp3",
-                parts: ["b", mark("uy"), " ", phonetics("/baɪ/")],
+                parts: [audio("/assets/audio/dictionary/b/buy.mp3"), "b", mark("uy"), " ", phonetics("/baɪ/")],
               }),
 
               // my
               ...wordRowList({
-                audio: "/assets/audio/words/m/my.mp3",
-                parts: ["m", mark("y"), " ", phonetics("/maɪ/")],
+                parts: [audio("/assets/audio/dictionary/m/my.mp3"), "m", mark("y"), " ", phonetics("/maɪ/")],
               }),
 
               // time
               ...wordRowList({
-                audio: "/assets/audio/words/t/time.mp3",
-                parts: ["t", mark("i"), "me", " ", phonetics("/taɪm/")],
+                parts: [audio("/assets/audio/dictionary/t/time.mp3"), "t", mark("i"), "me", " ", phonetics("/taɪm/")],
               }),
             ]}
           />
@@ -1143,27 +1016,22 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aʊ.mp3",
-                parts: [phonetics("/aʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aʊ.mp3"), phonetics("/aʊ/")],
               }),
 
               // cow
               ...wordRowList({
-                audio: "/assets/audio/words/c/cow.mp3",
-                parts: ["c", mark("ow"), " ", phonetics("/kaʊ/")],
+                parts: [audio("/assets/audio/dictionary/c/cow.mp3"), "c", mark("ow"), " ", phonetics("/kaʊ/")],
               }),
 
               // bow (verb)
               ...wordRowList({
-                audio: "/assets/audio/words/b/bow-verb.mp3",
-                parts: ["b", mark("ow"), " ", phonetics("/baʊ/")],
+                parts: [audio("/assets/audio/dictionary/b/bow-verb.mp3"), "b", mark("ow"), " ", phonetics("/baʊ/")],
               }),
 
               // south
               ...wordRowList({
-                audio: "/assets/audio/words/s/south.mp3",
-                parts: ["s", mark("ou"), "th", " ", phonetics("/saʊθ/")],
+                parts: [audio("/assets/audio/dictionary/s/south.mp3"), "s", mark("ou"), "th", " ", phonetics("/saʊθ/")],
               }),
             ]}
           />
@@ -1171,27 +1039,22 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3",
-                parts: [phonetics("/eɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3"), phonetics("/eɪ/")],
               }),
 
               // day
               ...wordRowList({
-                audio: "/assets/audio/words/d/day.mp3",
-                parts: ["d", mark("a"), "y", " ", phonetics("/deɪ/")],
+                parts: [audio("/assets/audio/dictionary/d/day.mp3"), "d", mark("a"), "y", " ", phonetics("/deɪ/")],
               }),
 
               // make
               ...wordRowList({
-                audio: "/assets/audio/words/m/make.mp3",
-                parts: ["m", mark("a"), "ke", " ", phonetics("/meɪk/")],
+                parts: [audio("/assets/audio/dictionary/m/make.mp3"), "m", mark("a"), "ke", " ", phonetics("/meɪk/")],
               }),
 
               // say
               ...wordRowList({
-                audio: "/assets/audio/words/s/say.mp3",
-                parts: ["s", mark("a"), "y", " ", phonetics("/seɪ/")],
+                parts: [audio("/assets/audio/dictionary/s/say.mp3"), "s", mark("a"), "y", " ", phonetics("/seɪ/")],
               }),
             ]}
           />
@@ -1199,27 +1062,22 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/ɔɪ.mp3",
-                parts: [phonetics("/ɔɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/ɔɪ.mp3"), phonetics("/ɔɪ/")],
               }),
 
               // boy
               ...wordRowList({
-                audio: "/assets/audio/words/b/boy.mp3",
-                parts: ["b", mark("oy"), " ", phonetics("/bɔɪ/")],
+                parts: [audio("/assets/audio/dictionary/b/boy.mp3"), "b", mark("oy"), " ", phonetics("/bɔɪ/")],
               }),
 
               // choice
               ...wordRowList({
-                audio: "/assets/audio/words/c/choice.mp3",
-                parts: ["ch", mark("oi"), "ce", " ", phonetics("/tʃɔɪs/")],
+                parts: [audio("/assets/audio/dictionary/c/choice.mp3"), "ch", mark("oi"), "ce", " ", phonetics("/tʃɔɪs/")],
               }),
 
               // toy
               ...wordRowList({
-                audio: "/assets/audio/words/t/toy.mp3",
-                parts: ["t", mark("oy"), " ", phonetics("/tɔɪ/")],
+                parts: [audio("/assets/audio/dictionary/t/toy.mp3"), "t", mark("oy"), " ", phonetics("/tɔɪ/")],
               }),
             ]}
           />
@@ -1227,27 +1085,22 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3",
-                parts: [phonetics("/oʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3"), phonetics("/oʊ/")],
               }),
 
               // go
               ...wordRowList({
-                audio: "/assets/audio/words/g/go.mp3",
-                parts: ["g", mark("o"), " ", phonetics("/goʊ/")],
+                parts: [audio("/assets/audio/dictionary/g/go.mp3"), "g", mark("o"), " ", phonetics("/goʊ/")],
               }),
 
               // show
               ...wordRowList({
-                audio: "/assets/audio/words/s/show.mp3",
-                parts: ["sh", mark("ow"), " ", phonetics("/ʃoʊ/")],
+                parts: [audio("/assets/audio/dictionary/s/show.mp3"), "sh", mark("ow"), " ", phonetics("/ʃoʊ/")],
               }),
 
               // slow
               ...wordRowList({
-                audio: "/assets/audio/words/s/slow.mp3",
-                parts: ["sl", mark("ow"), " ", phonetics("/sloʊ/")],
+                parts: [audio("/assets/audio/dictionary/s/slow.mp3"), "sl", mark("ow"), " ", phonetics("/sloʊ/")],
               }),
             ]}
           />
@@ -1256,27 +1109,22 @@ export default function PhoneticsLetters() {
             variant="uk"
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/əʊ.mp3",
-                parts: [phonetics("/əʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/əʊ.mp3"), phonetics("/əʊ/")],
               }),
 
               // go
               ...wordRowList({
-                audio: "/assets/audio/words/g/go-uk.mp3",
-                parts: ["g", mark("o"), " ", phonetics("/gəʊ/")],
+                parts: [audio("/assets/audio/dictionary/g/go-uk.mp3"), "g", mark("o"), " ", phonetics("/gəʊ/")],
               }),
 
               // show
               ...wordRowList({
-                audio: "/assets/audio/words/s/show-uk.mp3",
-                parts: ["sh", mark("ow"), " ", phonetics("/ʃəʊ/")],
+                parts: [audio("/assets/audio/dictionary/s/show-uk.mp3"), "sh", mark("ow"), " ", phonetics("/ʃəʊ/")],
               }),
 
               // slow
               ...wordRowList({
-                audio: "/assets/audio/words/s/slow-uk.mp3",
-                parts: ["sl", mark("ow"), " ", phonetics("/sləʊ/")],
+                parts: [audio("/assets/audio/dictionary/s/slow-uk.mp3"), "sl", mark("ow"), " ", phonetics("/sləʊ/")],
               }),
             ]}
           />
@@ -1287,21 +1135,17 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/b.mp3",
-                parts: [phonetics("/b/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/b.mp3"), phonetics("/b/")],
               }),
 
               // book
               ...wordRowList({
-                audio: "/assets/audio/words/b/book.mp3",
-                parts: [mark("b"), "ook", " ", phonetics("/bʊk/")],
+                parts: [audio("/assets/audio/dictionary/b/book.mp3"), mark("b"), "ook", " ", phonetics("/bʊk/")],
               }),
 
               // table
               ...wordRowList({
-                audio: "/assets/audio/words/t/table.mp3",
-                parts: ["ta", mark("b"), "le", " ", phonetics("/ˈteɪ.bəl/")],
+                parts: [audio("/assets/audio/dictionary/t/table.mp3"), "ta", mark("b"), "le", " ", phonetics("/ˈteɪ.bəl/")],
               }),
             ]}
           />
@@ -1309,19 +1153,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/d.mp3",
-                parts: [phonetics("/d/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/d.mp3"), phonetics("/d/")],
               }),
               // do
               ...wordRowList({
-                audio: "/assets/audio/words/d/do.mp3",
-                parts: [mark("d"), "o", " ", phonetics("/duː/")],
+                parts: [audio("/assets/audio/dictionary/d/do.mp3"), mark("d"), "o", " ", phonetics("/duː/")],
               }),
               // did
               ...wordRowList({
-                audio: "/assets/audio/words/d/did.mp3",
-                parts: [mark("d"), "id", " ", phonetics("/dɪd/")],
+                parts: [audio("/assets/audio/dictionary/d/did.mp3"), mark("d"), "id", " ", phonetics("/dɪd/")],
               }),
             ]}
           />
@@ -1329,21 +1169,17 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/f.mp3",
-                parts: [phonetics("/f/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/f.mp3"), phonetics("/f/")],
               }),
 
               // fish
               ...wordRowList({
-                audio: "/assets/audio/words/f/fish.mp3",
-                parts: [mark("f"), "ish", " ", phonetics("/fɪʃ/")],
+                parts: [audio("/assets/audio/dictionary/f/fish.mp3"), mark("f"), "ish", " ", phonetics("/fɪʃ/")],
               }),
 
               // coffee
               ...wordRowList({
-                audio: "/assets/audio/words/c/coffee.mp3",
-                parts: ["co", mark("ff"), "ee", " ", phonetics("/ˈkɑː.fi/")],
+                parts: [audio("/assets/audio/dictionary/c/coffee.mp3"), "co", mark("ff"), "ee", " ", phonetics("/ˈkɑː.fi/")],
               }),
             ]}
           />
@@ -1351,21 +1187,17 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/g.mp3",
-                parts: [phonetics("/g/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/g.mp3"), phonetics("/g/")],
               }),
 
               // go
               ...wordRowList({
-                audio: "/assets/audio/words/g/go.mp3",
-                parts: [mark("g"), "o", " ", phonetics("/goʊ/")],
+                parts: [audio("/assets/audio/dictionary/g/go.mp3"), mark("g"), "o", " ", phonetics("/goʊ/")],
               }),
 
               // bag
               ...wordRowList({
-                audio: "/assets/audio/words/b/bag.mp3",
-                parts: ["ba", mark("g"), " ", phonetics("/bæg/")],
+                parts: [audio("/assets/audio/dictionary/b/bag.mp3"), "ba", mark("g"), " ", phonetics("/bæg/")],
               }),
             ]}
           />
@@ -1373,21 +1205,17 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/h.mp3",
-                parts: [phonetics("/h/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/h.mp3"), phonetics("/h/")],
               }),
 
               // hat
               ...wordRowList({
-                audio: "/assets/audio/words/h/hat.mp3",
-                parts: [mark("h"), "at", " ", phonetics("/hæt/")],
+                parts: [audio("/assets/audio/dictionary/h/hat.mp3"), mark("h"), "at", " ", phonetics("/hæt/")],
               }),
 
               // head
               ...wordRowList({
-                audio: "/assets/audio/words/h/head.mp3",
-                parts: [mark("h"), "ead", " ", phonetics("/hed/")],
+                parts: [audio("/assets/audio/dictionary/h/head.mp3"), mark("h"), "ead", " ", phonetics("/hed/")],
               }),
             ]}
           />
@@ -1395,15 +1223,12 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/j.mp3",
-                parts: [phonetics("/j/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/j.mp3"), phonetics("/j/")],
               }),
 
               // university
               ...wordRowList({
-                audio: "/assets/audio/words/u/university.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/u/university.mp3"),
                   mark("u"),
                   "niversity",
                   " ",
@@ -1413,14 +1238,12 @@ export default function PhoneticsLetters() {
 
               // yes
               ...wordRowList({
-                audio: "/assets/audio/words/y/yes.mp3",
-                parts: [mark("y"), "es", " ", phonetics("/jɛs/")],
+                parts: [audio("/assets/audio/dictionary/y/yes.mp3"), mark("y"), "es", " ", phonetics("/jɛs/")],
               }),
 
               // yellow
               ...wordRowList({
-                audio: "/assets/audio/words/y/yellow.mp3",
-                parts: [mark("y"), "ellow", " ", phonetics("/ˈjɛloʊ/")],
+                parts: [audio("/assets/audio/dictionary/y/yellow.mp3"), mark("y"), "ellow", " ", phonetics("/ˈjɛloʊ/")],
               }),
             ]}
           />
@@ -1428,19 +1251,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/k.mp3",
-                parts: [phonetics("/k/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/k.mp3"), phonetics("/k/")],
               }),
               // cat
               ...wordRowList({
-                audio: "/assets/audio/words/c/cat.mp3",
-                parts: [mark("c"), "at", " ", phonetics("/kæt/")],
+                parts: [audio("/assets/audio/dictionary/c/cat.mp3"), mark("c"), "at", " ", phonetics("/kæt/")],
               }),
               // back
               ...wordRowList({
-                audio: "/assets/audio/words/b/back.mp3",
-                parts: ["ba", mark("ck"), " ", phonetics("/bæk/")],
+                parts: [audio("/assets/audio/dictionary/b/back.mp3"), "ba", mark("ck"), " ", phonetics("/bæk/")],
               }),
             ]}
           />
@@ -1448,21 +1267,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ʒ.mp3",
-                parts: [phonetics("/ʒ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ʒ.mp3"), phonetics("/ʒ/")],
               }),
               // vision
               ...wordRowList({
-                audio: "/assets/audio/words/v/vision.mp3",
-                parts: ["vi", mark("s"), "ion"],
-                phonetics: "/ˈvɪʒən/",
+                parts: [audio("/assets/audio/dictionary/v/vision.mp3"), "vi", mark("s"), "ion", " ", phonetics("/ˈvɪʒən/")],
               }),
               // measure
               ...wordRowList({
-                audio: "/assets/audio/words/m/measure.mp3",
-                parts: ["mea", mark("su"), "re"],
-                phonetics: "/ˈmeʒ.ɚ/",
+                parts: [audio("/assets/audio/dictionary/m/measure.mp3"), "mea", mark("su"), "re", " ", phonetics("/ˈmeʒ.ɚ/")],
               }),
             ]}
           />
@@ -1470,19 +1283,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/l.mp3",
-                parts: [phonetics("/l/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/l.mp3"), phonetics("/l/")],
               }),
               // love
               ...wordRowList({
-                audio: "/assets/audio/words/l/love.mp3",
-                parts: [mark("l"), "ove", " ", phonetics("/lʌv/")],
+                parts: [audio("/assets/audio/dictionary/l/love.mp3"), mark("l"), "ove", " ", phonetics("/lʌv/")],
               }),
               // feel
               ...wordRowList({
-                audio: "/assets/audio/words/f/feel.mp3",
-                parts: ["fee", mark("l"), " ", phonetics("/fiːl/")],
+                parts: [audio("/assets/audio/dictionary/f/feel.mp3"), "fee", mark("l"), " ", phonetics("/fiːl/")],
               }),
             ]}
           />
@@ -1490,19 +1299,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/m.mp3",
-                parts: [phonetics("/m/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/m.mp3"), phonetics("/m/")],
               }),
               // man
               ...wordRowList({
-                audio: "/assets/audio/words/m/man.mp3",
-                parts: [mark("m"), "an", " ", phonetics("/mæn/")],
+                parts: [audio("/assets/audio/dictionary/m/man.mp3"), mark("m"), "an", " ", phonetics("/mæn/")],
               }),
               // summer
               ...wordRowList({
-                audio: "/assets/audio/words/s/summer.mp3",
-                parts: ["su", mark("mm"), "er", " ", phonetics("/ˈsʌm.ɚ/")],
+                parts: [audio("/assets/audio/dictionary/s/summer.mp3"), "su", mark("mm"), "er", " ", phonetics("/ˈsʌm.ɚ/")],
               }),
             ]}
           />
@@ -1510,19 +1315,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/n.mp3",
-                parts: [phonetics("/n/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/n.mp3"), phonetics("/n/")],
               }),
               // no
               ...wordRowList({
-                audio: "/assets/audio/words/n/no.mp3",
-                parts: [mark("n"), "o", " ", phonetics("/noʊ/")],
+                parts: [audio("/assets/audio/dictionary/n/no.mp3"), mark("n"), "o", " ", phonetics("/noʊ/")],
               }),
               // dinner
               ...wordRowList({
-                audio: "/assets/audio/words/d/dinner.mp3",
-                parts: ["di", mark("nn"), "er", " ", phonetics("/ˈdɪn.ɚ/")],
+                parts: [audio("/assets/audio/dictionary/d/dinner.mp3"), "di", mark("nn"), "er", " ", phonetics("/ˈdɪn.ɚ/")],
               }),
             ]}
           />
@@ -1530,19 +1331,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3",
-                parts: [phonetics("/ŋ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3"), phonetics("/ŋ/")],
               }),
               // sing
               ...wordRowList({
-                audio: "/assets/audio/words/s/sing.mp3",
-                parts: ["si", mark("ng"), " ", phonetics("/sɪŋ/")],
+                parts: [audio("/assets/audio/dictionary/s/sing.mp3"), "si", mark("ng"), " ", phonetics("/sɪŋ/")],
               }),
               // long
               ...wordRowList({
-                audio: "/assets/audio/words/l/long.mp3",
-                parts: ["lo", mark("ng"), " ", phonetics("/lɔŋ/")],
+                parts: [audio("/assets/audio/dictionary/l/long.mp3"), "lo", mark("ng"), " ", phonetics("/lɔŋ/")],
               }),
             ]}
           />
@@ -1550,19 +1347,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/p.mp3",
-                parts: [phonetics("/p/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/p.mp3"), phonetics("/p/")],
               }),
               // pen
               ...wordRowList({
-                audio: "/assets/audio/words/p/pen.mp3",
-                parts: [mark("p"), "en", " ", phonetics("/pen/")],
+                parts: [audio("/assets/audio/dictionary/p/pen.mp3"), mark("p"), "en", " ", phonetics("/pen/")],
               }),
               // map
               ...wordRowList({
-                audio: "/assets/audio/words/m/map.mp3",
-                parts: ["ma", mark("p"), " ", phonetics("/mæp/")],
+                parts: [audio("/assets/audio/dictionary/m/map.mp3"), "ma", mark("p"), " ", phonetics("/mæp/")],
               }),
             ]}
           />
@@ -1570,19 +1363,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/r.mp3",
-                parts: [phonetics("/r/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/r.mp3"), phonetics("/r/")],
               }),
               // red
               ...wordRowList({
-                audio: "/assets/audio/words/r/red.mp3",
-                parts: [mark("r"), "ed", " ", phonetics("/red/")],
+                parts: [audio("/assets/audio/dictionary/r/red.mp3"), mark("r"), "ed", " ", phonetics("/red/")],
               }),
               // carry
               ...wordRowList({
-                audio: "/assets/audio/words/c/carry.mp3",
-                parts: ["ca", mark("rr"), "y", " ", phonetics("/ˈkæri/")],
+                parts: [audio("/assets/audio/dictionary/c/carry.mp3"), "ca", mark("rr"), "y", " ", phonetics("/ˈkæri/")],
               }),
             ]}
           />
@@ -1590,19 +1379,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/s.mp3",
-                parts: [phonetics("/s/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/s.mp3"), phonetics("/s/")],
               }),
               // see
               ...wordRowList({
-                audio: "/assets/audio/words/s/sea-see.mp3",
-                parts: [mark("s"), "ee", " ", phonetics("/siː/")],
+                parts: [audio("/assets/audio/dictionary/s/sea-see.mp3"), mark("s"), "ee", " ", phonetics("/siː/")],
               }),
               // city
               ...wordRowList({
-                audio: "/assets/audio/words/c/city.mp3",
-                parts: ["ci", mark("t"), "y", " ", phonetics("/ˈsɪt̬.i/")],
+                parts: [audio("/assets/audio/dictionary/c/city.mp3"), "ci", mark("t"), "y", " ", phonetics("/ˈsɪt̬.i/")],
               }),
             ]}
           />
@@ -1610,19 +1395,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3",
-                parts: [phonetics("/ʃ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3"), phonetics("/ʃ/")],
               }),
               // she
               ...wordRowList({
-                audio: "/assets/audio/words/s/she.mp3",
-                parts: [mark("sh"), "e", " ", phonetics("/ʃiː/")],
+                parts: [audio("/assets/audio/dictionary/s/she.mp3"), mark("sh"), "e", " ", phonetics("/ʃiː/")],
               }),
               // nation
               ...wordRowList({
-                audio: "/assets/audio/words/n/nation.mp3",
-                parts: ["na", mark("ti"), "on", " ", phonetics("/ˈneɪʃən/")],
+                parts: [audio("/assets/audio/dictionary/n/nation.mp3"), "na", mark("ti"), "on", " ", phonetics("/ˈneɪʃən/")],
               }),
             ]}
           />
@@ -1630,19 +1411,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/t.mp3",
-                parts: [phonetics("/t/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/t.mp3"), phonetics("/t/")],
               }),
               // ten
               ...wordRowList({
-                audio: "/assets/audio/words/t/ten.mp3",
-                parts: [mark("t"), "en", " ", phonetics("/ten/")],
+                parts: [audio("/assets/audio/dictionary/t/ten.mp3"), mark("t"), "en", " ", phonetics("/ten/")],
               }),
               // top
               ...wordRowList({
-                audio: "/assets/audio/words/t/top.mp3",
-                parts: [mark("t"), "op", " ", phonetics("/tɑːp/")],
+                parts: [audio("/assets/audio/dictionary/t/top.mp3"), mark("t"), "op", " ", phonetics("/tɑːp/")],
               }),
             ]}
           />
@@ -1650,19 +1427,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/θ.mp3",
-                parts: [phonetics("/θ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/θ.mp3"), phonetics("/θ/")],
               }),
               // think
               ...wordRowList({
-                audio: "/assets/audio/words/t/think.mp3",
-                parts: [mark("th"), "ink", " ", phonetics("/θɪŋk/")],
+                parts: [audio("/assets/audio/dictionary/t/think.mp3"), mark("th"), "ink", " ", phonetics("/θɪŋk/")],
               }),
               // bath
               ...wordRowList({
-                audio: "/assets/audio/words/b/bath.mp3",
-                parts: ["ba", mark("th"), " ", phonetics("/bæθ/")],
+                parts: [audio("/assets/audio/dictionary/b/bath.mp3"), "ba", mark("th"), " ", phonetics("/bæθ/")],
               }),
             ]}
           />
@@ -1670,19 +1443,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ð.mp3",
-                parts: [phonetics("/ð/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ð.mp3"), phonetics("/ð/")],
               }),
               // this
               ...wordRowList({
-                audio: "/assets/audio/words/t/this.mp3",
-                parts: [mark("th"), "is", " ", phonetics("/ðɪs/")],
+                parts: [audio("/assets/audio/dictionary/t/this.mp3"), mark("th"), "is", " ", phonetics("/ðɪs/")],
               }),
               // mother
               ...wordRowList({
-                audio: "/assets/audio/words/m/mother.mp3",
-                parts: ["mo", mark("th"), "er", " ", phonetics("/ˈmʌð.ɚ/")],
+                parts: [audio("/assets/audio/dictionary/m/mother.mp3"), "mo", mark("th"), "er", " ", phonetics("/ˈmʌð.ɚ/")],
               }),
             ]}
           />
@@ -1690,19 +1459,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/v.mp3",
-                parts: [phonetics("/v/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/v.mp3"), phonetics("/v/")],
               }),
               // very
               ...wordRowList({
-                audio: "/assets/audio/words/v/very.mp3",
-                parts: [mark("v"), "ery", " ", phonetics("/ˈver.i/")],
+                parts: [audio("/assets/audio/dictionary/v/very.mp3"), mark("v"), "ery", " ", phonetics("/ˈver.i/")],
               }),
               // over
               ...wordRowList({
-                audio: "/assets/audio/words/o/over.mp3",
-                parts: ["o", mark("v"), "er", " ", phonetics("/ˈoʊ.vɚ/")],
+                parts: [audio("/assets/audio/dictionary/o/over.mp3"), "o", mark("v"), "er", " ", phonetics("/ˈoʊ.vɚ/")],
               }),
             ]}
           />
@@ -1710,19 +1475,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/w.mp3",
-                parts: [phonetics("/w/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/w.mp3"), phonetics("/w/")],
               }),
               // we
               ...wordRowList({
-                audio: "/assets/audio/words/w/we.mp3",
-                parts: [mark("w"), "e", " ", phonetics("/wiː/")],
+                parts: [audio("/assets/audio/dictionary/w/we.mp3"), mark("w"), "e", " ", phonetics("/wiː/")],
               }),
               // quick
               ...wordRowList({
-                audio: "/assets/audio/words/q/quick.mp3",
-                parts: ["q", mark("u"), "ick", " ", phonetics("/kwɪk/")],
+                parts: [audio("/assets/audio/dictionary/q/quick.mp3"), "q", mark("u"), "ick", " ", phonetics("/kwɪk/")],
               }),
             ]}
           />
@@ -1730,19 +1491,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/z.mp3",
-                parts: [phonetics("/z/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/z.mp3"), phonetics("/z/")],
               }),
               // zoo
               ...wordRowList({
-                audio: "/assets/audio/words/z/zoo.mp3",
-                parts: [mark("z"), "oo", " ", phonetics("/zuː/")],
+                parts: [audio("/assets/audio/dictionary/z/zoo.mp3"), mark("z"), "oo", " ", phonetics("/zuː/")],
               }),
               // music
               ...wordRowList({
-                audio: "/assets/audio/words/m/music.mp3",
-                parts: ["mu", mark("s"), "ic", " ", phonetics("/ˈmjuː.zɪk/")],
+                parts: [audio("/assets/audio/dictionary/m/music.mp3"), "mu", mark("s"), "ic", " ", phonetics("/ˈmjuː.zɪk/")],
               }),
             ]}
           />
@@ -1757,18 +1514,15 @@ export default function PhoneticsLetters() {
               }),
               // choir
               ...wordRowList({
-                audio: "/assets/audio/words/c/choir.mp3",
-                parts: ["cho", mark("ir"), " ", phonetics("/kwaɪr/")],
+                parts: [audio("/assets/audio/dictionary/c/choir.mp3"), "cho", mark("ir"), " ", phonetics("/kwaɪr/")],
               }),
               // fire
               ...wordRowList({
-                audio: "/assets/audio/words/f/fire.mp3",
-                parts: ["f", mark("ir"), "(e)", " ", phonetics("/faɪr/")],
+                parts: [audio("/assets/audio/dictionary/f/fire.mp3"), "f", mark("ir"), "(e)", " ", phonetics("/faɪr/")],
               }),
               // inspire
               ...wordRowList({
-                audio: "/assets/audio/words/i/inspire.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/inspire.mp3"),
                   "insp",
                   mark("ir"),
                   "(e)",
@@ -1778,8 +1532,7 @@ export default function PhoneticsLetters() {
               }),
               // liar
               ...wordRowList({
-                audio: "/assets/audio/words/l/liar.mp3",
-                parts: ["l", mark("iar"), " ", phonetics("/ˈlaɪr/")],
+                parts: [audio("/assets/audio/dictionary/l/liar.mp3"), "l", mark("iar"), " ", phonetics("/ˈlaɪr/")],
               }),
             ]}
           />
@@ -1792,18 +1545,15 @@ export default function PhoneticsLetters() {
               }),
               // choir
               ...wordRowList({
-                audio: "/assets/audio/words/c/choir-uk.mp3",
-                parts: ["cho", mark("ir"), " ", phonetics("/ˈkwaɪə/")],
+                parts: [audio("/assets/audio/dictionary/c/choir-uk.mp3"), "cho", mark("ir"), " ", phonetics("/ˈkwaɪə/")],
               }),
               // fire
               ...wordRowList({
-                audio: "/assets/audio/words/f/fire-uk.mp3",
-                parts: ["f", mark("ir"), "(e)", " ", phonetics("/ˈfaɪə/")],
+                parts: [audio("/assets/audio/dictionary/f/fire-uk.mp3"), "f", mark("ir"), "(e)", " ", phonetics("/ˈfaɪə/")],
               }),
               // inspire
               ...wordRowList({
-                audio: "/assets/audio/words/i/inspire-uk.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/inspire-uk.mp3"),
                   "insp",
                   mark("ir"),
                   "(e)",
@@ -1813,8 +1563,7 @@ export default function PhoneticsLetters() {
               }),
               // liar
               ...wordRowList({
-                audio: "/assets/audio/words/l/liar-uk.mp3",
-                parts: ["l", mark("iar"), " ", phonetics("/ˈlaɪə/")],
+                parts: [audio("/assets/audio/dictionary/l/liar-uk.mp3"), "l", mark("iar"), " ", phonetics("/ˈlaɪə/")],
               }),
             ]}
           />
@@ -1827,23 +1576,19 @@ export default function PhoneticsLetters() {
               }),
               // air
               ...wordRowList({
-                audio: "/assets/audio/words/a/air.mp3",
-                parts: ["a", mark("ir"), " ", phonetics("/eər/")],
+                parts: [audio("/assets/audio/dictionary/a/air.mp3"), "a", mark("ir"), " ", phonetics("/eər/")],
               }),
               // hair
               ...wordRowList({
-                audio: "/assets/audio/words/h/hair.mp3",
-                parts: ["h", mark("air"), " ", phonetics("/heər/")],
+                parts: [audio("/assets/audio/dictionary/h/hair.mp3"), "h", mark("air"), " ", phonetics("/heər/")],
               }),
               // pair
               ...wordRowList({
-                audio: "/assets/audio/words/p/pair.mp3",
-                parts: ["p", mark("air"), " ", phonetics("/peər/")],
+                parts: [audio("/assets/audio/dictionary/p/pair.mp3"), "p", mark("air"), " ", phonetics("/peər/")],
               }),
               // where
               ...wordRowList({
-                audio: "/assets/audio/words/w/where.mp3",
-                parts: ["wh", mark("er"), "(e)", " ", phonetics("/wer/")],
+                parts: [audio("/assets/audio/dictionary/w/where.mp3"), "wh", mark("er"), "(e)", " ", phonetics("/wer/")],
               }),
             ]}
           />
@@ -1856,23 +1601,19 @@ export default function PhoneticsLetters() {
               }),
               // air
               ...wordRowList({
-                audio: "/assets/audio/words/a/air-uk.mp3",
-                parts: ["a", mark("ir"), " ", phonetics("/eə/")],
+                parts: [audio("/assets/audio/dictionary/a/air-uk.mp3"), "a", mark("ir"), " ", phonetics("/eə/")],
               }),
               // hair
               ...wordRowList({
-                audio: "/assets/audio/words/h/hair-uk.mp3",
-                parts: ["h", mark("air"), " ", phonetics("/heə/")],
+                parts: [audio("/assets/audio/dictionary/h/hair-uk.mp3"), "h", mark("air"), " ", phonetics("/heə/")],
               }),
               // pair
               ...wordRowList({
-                audio: "/assets/audio/words/p/pair-uk.mp3",
-                parts: ["p", mark("air"), " ", phonetics("/peə/")],
+                parts: [audio("/assets/audio/dictionary/p/pair-uk.mp3"), "p", mark("air"), " ", phonetics("/peə/")],
               }),
               // where
               ...wordRowList({
-                audio: "/assets/audio/words/w/where-uk.mp3",
-                parts: ["wh", mark("ere"), "(e)", " ", phonetics("/weə/")],
+                parts: [audio("/assets/audio/dictionary/w/where-uk.mp3"), "wh", mark("ere"), "(e)", " ", phonetics("/weə/")],
               }),
             ]}
           />
@@ -1885,38 +1626,31 @@ export default function PhoneticsLetters() {
               }),
               // bird
               ...wordRowList({
-                audio: "/assets/audio/words/b/bird.mp3",
-                parts: ["b", mark("ir"), "d", " ", phonetics("/bɝːd/")],
+                parts: [audio("/assets/audio/dictionary/b/bird.mp3"), "b", mark("ir"), "d", " ", phonetics("/bɝːd/")],
               }),
               // girl
               ...wordRowList({
-                audio: "/assets/audio/words/g/girl.mp3",
-                parts: ["g", mark("ir"), "l", " ", phonetics("/ɡɝːl/")],
+                parts: [audio("/assets/audio/dictionary/g/girl.mp3"), "g", mark("ir"), "l", " ", phonetics("/ɡɝːl/")],
               }),
               // learn
               ...wordRowList({
-                audio: "/assets/audio/words/l/learn.mp3",
-                parts: ["l", mark("ear"), "n", " ", phonetics("/lɝːn/")],
+                parts: [audio("/assets/audio/dictionary/l/learn.mp3"), "l", mark("ear"), "n", " ", phonetics("/lɝːn/")],
               }),
               // were
               ...wordRowList({
-                audio: "/assets/audio/words/w/were.mp3",
-                parts: ["w", mark("er"), "(e)", " ", phonetics("/wɝː/")],
+                parts: [audio("/assets/audio/dictionary/w/were.mp3"), "w", mark("er"), "(e)", " ", phonetics("/wɝː/")],
               }),
               // world
               ...wordRowList({
-                audio: "/assets/audio/words/w/world.mp3",
-                parts: ["w", mark("or"), "ld", " ", phonetics("/wɝːld/")],
+                parts: [audio("/assets/audio/dictionary/w/world.mp3"), "w", mark("or"), "ld", " ", phonetics("/wɝːld/")],
               }),
               // word
               ...wordRowList({
-                audio: "/assets/audio/words/w/word.mp3",
-                parts: ["w", mark("or"), "d", " ", phonetics("/wɝːd/")],
+                parts: [audio("/assets/audio/dictionary/w/word.mp3"), "w", mark("or"), "d", " ", phonetics("/wɝːd/")],
               }),
               // work
               ...wordRowList({
-                audio: "/assets/audio/words/w/work.mp3",
-                parts: ["w", mark("or"), "k", " ", phonetics("/wɝːk/")],
+                parts: [audio("/assets/audio/dictionary/w/work.mp3"), "w", mark("or"), "k", " ", phonetics("/wɝːk/")],
               }),
             ]}
           />
@@ -1929,33 +1663,27 @@ export default function PhoneticsLetters() {
               }),
               // bird
               ...wordRowList({
-                audio: "/assets/audio/words/b/bird-uk.mp3",
-                parts: ["b", mark("ir"), "d", " ", phonetics("/bɜːd/")],
+                parts: [audio("/assets/audio/dictionary/b/bird-uk.mp3"), "b", mark("ir"), "d", " ", phonetics("/bɜːd/")],
               }),
               // learn
               ...wordRowList({
-                audio: "/assets/audio/words/l/learn-uk.mp3",
-                parts: ["l", mark("ear"), "n", " ", phonetics("/lɜːn/")],
+                parts: [audio("/assets/audio/dictionary/l/learn-uk.mp3"), "l", mark("ear"), "n", " ", phonetics("/lɜːn/")],
               }),
               // were
               ...wordRowList({
-                audio: "/assets/audio/words/w/were-uk.mp3",
-                parts: ["w", mark("er"), "(e)", " ", phonetics("/wɜː/")],
+                parts: [audio("/assets/audio/dictionary/w/were-uk.mp3"), "w", mark("er"), "(e)", " ", phonetics("/wɜː/")],
               }),
               // world
               ...wordRowList({
-                audio: "/assets/audio/words/w/world-uk.mp3",
-                parts: ["w", mark("orl"), "d", " ", phonetics("/wɜːld/")],
+                parts: [audio("/assets/audio/dictionary/w/world-uk.mp3"), "w", mark("orl"), "d", " ", phonetics("/wɜːld/")],
               }),
               // word
               ...wordRowList({
-                audio: "/assets/audio/words/w/word-uk.mp3",
-                parts: ["w", mark("or"), "d", " ", phonetics("/wɜːd/")],
+                parts: [audio("/assets/audio/dictionary/w/word-uk.mp3"), "w", mark("or"), "d", " ", phonetics("/wɜːd/")],
               }),
               // work
               ...wordRowList({
-                audio: "/assets/audio/words/w/work-uk.mp3",
-                parts: ["w", mark("or"), "k", " ", phonetics("/wɜːk/")],
+                parts: [audio("/assets/audio/dictionary/w/work-uk.mp3"), "w", mark("or"), "k", " ", phonetics("/wɜːk/")],
               }),
             ]}
           />
@@ -1968,23 +1696,19 @@ export default function PhoneticsLetters() {
               }),
               // door
               ...wordRowList({
-                audio: "/assets/audio/words/d/door.mp3",
-                parts: ["d", mark("oor"), " ", phonetics("/dɔːr/")],
+                parts: [audio("/assets/audio/dictionary/d/door.mp3"), "d", mark("oor"), " ", phonetics("/dɔːr/")],
               }),
               // four
               ...wordRowList({
-                audio: "/assets/audio/words/f/four.mp3",
-                parts: ["f", mark("our"), " ", phonetics("/fɔːr/")],
+                parts: [audio("/assets/audio/dictionary/f/four.mp3"), "f", mark("our"), " ", phonetics("/fɔːr/")],
               }),
               // north
               ...wordRowList({
-                audio: "/assets/audio/words/n/north.mp3",
-                parts: ["n", mark("orth"), " ", phonetics("/nɔːrθ/")],
+                parts: [audio("/assets/audio/dictionary/n/north.mp3"), "n", mark("orth"), " ", phonetics("/nɔːrθ/")],
               }),
               // war
               ...wordRowList({
-                audio: "/assets/audio/words/w/war.mp3",
-                parts: ["w", mark("ar"), " ", phonetics("/wɔːr/")],
+                parts: [audio("/assets/audio/dictionary/w/war.mp3"), "w", mark("ar"), " ", phonetics("/wɔːr/")],
               }),
             ]}
           />
@@ -1997,23 +1721,19 @@ export default function PhoneticsLetters() {
               }),
               // door
               ...wordRowList({
-                audio: "/assets/audio/words/d/door-uk.mp3",
-                parts: ["d", mark("oor"), " ", phonetics("/dɔː/")],
+                parts: [audio("/assets/audio/dictionary/d/door-uk.mp3"), "d", mark("oor"), " ", phonetics("/dɔː/")],
               }),
               // four
               ...wordRowList({
-                audio: "/assets/audio/words/f/four-uk.mp3",
-                parts: ["f", mark("our"), " ", phonetics("/fɔː/")],
+                parts: [audio("/assets/audio/dictionary/f/four-uk.mp3"), "f", mark("our"), " ", phonetics("/fɔː/")],
               }),
               // north
               ...wordRowList({
-                audio: "/assets/audio/words/n/north-uk.mp3",
-                parts: ["n", mark("orth"), " ", phonetics("/nɔːθ/")],
+                parts: [audio("/assets/audio/dictionary/n/north-uk.mp3"), "n", mark("orth"), " ", phonetics("/nɔːθ/")],
               }),
               // war
               ...wordRowList({
-                audio: "/assets/audio/words/w/war-uk.mp3",
-                parts: ["w", mark("ar"), " ", phonetics("/wɔː/")],
+                parts: [audio("/assets/audio/dictionary/w/war-uk.mp3"), "w", mark("ar"), " ", phonetics("/wɔː/")],
               }),
             ]}
           />
@@ -2029,14 +1749,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/æ.mp3",
-                parts: [phonetics("/æ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/æ.mp3"), phonetics("/æ/")],
               }),
               // apple
               ...wordRowList({
-                audio: "/assets/audio/words/a/apple.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/apple.mp3"),
                   mark("a"),
                   "pple",
                   " ",
@@ -2046,8 +1763,7 @@ export default function PhoneticsLetters() {
               }),
               // anniversary
               ...wordRowList({
-                audio: "/assets/audio/words/a/anniversary.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/anniversary.mp3"),
                   mark("a"),
                   "nniversary",
                   " ",
@@ -2056,53 +1772,43 @@ export default function PhoneticsLetters() {
               }),
               // bad
               ...wordRowList({
-                audio: "/assets/audio/words/b/bad.mp3",
-                parts: ["b", mark("a"), "d", " ", phonetics("/bæd/")],
+                parts: [audio("/assets/audio/dictionary/b/bad.mp3"), "b", mark("a"), "d", " ", phonetics("/bæd/")],
               }),
               // bat
               ...wordRowList({
-                audio: "/assets/audio/words/b/bat.mp3",
-                parts: ["b", mark("a"), "t", " ", phonetics("/bæt/")],
+                parts: [audio("/assets/audio/dictionary/b/bat.mp3"), "b", mark("a"), "t", " ", phonetics("/bæt/")],
               }),
               // cap
               ...wordRowList({
-                audio: "/assets/audio/words/c/cap.mp3",
-                parts: ["c", mark("a"), "p", " ", phonetics("/kæp/")],
+                parts: [audio("/assets/audio/dictionary/c/cap.mp3"), "c", mark("a"), "p", " ", phonetics("/kæp/")],
               }),
               // cat
               ...wordRowList({
-                audio: "/assets/audio/words/c/cat.mp3",
-                parts: ["c", mark("a"), "t", " ", phonetics("/kæt/")],
+                parts: [audio("/assets/audio/dictionary/c/cat.mp3"), "c", mark("a"), "t", " ", phonetics("/kæt/")],
               }),
               // fat
               ...wordRowList({
-                audio: "/assets/audio/words/f/fat.mp3",
-                parts: ["f", mark("a"), "t", " ", phonetics("/fæt/")],
+                parts: [audio("/assets/audio/dictionary/f/fat.mp3"), "f", mark("a"), "t", " ", phonetics("/fæt/")],
               }),
               // habit
               ...wordRowList({
-                audio: "/assets/audio/words/h/habit.mp3",
-                parts: ["h", mark("a"), "bit", " ", phonetics("/ˈhæb.ɪt/")],
+                parts: [audio("/assets/audio/dictionary/h/habit.mp3"), "h", mark("a"), "bit", " ", phonetics("/ˈhæb.ɪt/")],
               }),
               // hat
               ...wordRowList({
-                audio: "/assets/audio/words/h/hat.mp3",
-                parts: ["h", mark("a"), "t", " ", phonetics("/hæt/")],
+                parts: [audio("/assets/audio/dictionary/h/hat.mp3"), "h", mark("a"), "t", " ", phonetics("/hæt/")],
               }),
               // has
               ...wordRowList({
-                audio: "/assets/audio/words/h/has.mp3",
-                parts: ["h", mark("a"), "s", " ", phonetics("/hæz/")],
+                parts: [audio("/assets/audio/dictionary/h/has.mp3"), "h", mark("a"), "s", " ", phonetics("/hæz/")],
               }),
               // have
               ...wordRowList({
-                audio: "/assets/audio/words/h/have.mp3",
-                parts: ["h", mark("a"), "ve", " ", phonetics("/hæv/")],
+                parts: [audio("/assets/audio/dictionary/h/have.mp3"), "h", mark("a"), "ve", " ", phonetics("/hæv/")],
               }),
               // man
               ...wordRowList({
-                audio: "/assets/audio/words/m/man.mp3",
-                parts: ["m", mark("a"), "n", " ", phonetics("/mæn/")],
+                parts: [audio("/assets/audio/dictionary/m/man.mp3"), "m", mark("a"), "n", " ", phonetics("/mæn/")],
               }),
             ]}
           />
@@ -2110,35 +1816,35 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/b/bats-usually-eat-apples.mp3",
+                audio: "/assets/audio/dictionary/b/bats-usually-eat-apples.mp3",
                 parts: [
                   "Bats usually eat apples. ",
                   portuguese("Morcegos normalmente comem maçã."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/t/the-cat-is-on-the-mat.mp3",
+                audio: "/assets/audio/dictionary/t/the-cat-is-on-the-mat.mp3",
                 parts: [
                   "The cat is on the mat. ",
                   portuguese("O gato está no tapete."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/t/the-man-has-a-black-cat.mp3",
+                audio: "/assets/audio/dictionary/t/the-man-has-a-black-cat.mp3",
                 parts: [
                   "The man has a black hat. ",
                   portuguese("O homem tem um chapéu preto."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/s/she-has-a-bad-habit.mp3",
+                audio: "/assets/audio/dictionary/s/she-has-a-bad-habit.mp3",
                 parts: [
                   "She has a bad habit. ",
                   portuguese("Ela tem um mau hábito."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/i/i-have-a-map-in-my-bag.mp3",
+                audio: "/assets/audio/dictionary/i/i-have-a-map-in-my-bag.mp3",
                 parts: [
                   "I have a map in my bag. ",
                   portuguese("Eu tenho um mapa na minha bolsa."),
@@ -2153,29 +1859,23 @@ export default function PhoneticsLetters() {
             value={[
               // /ɑː/ (long)
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                parts: [phonetics("/ɑː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3"), phonetics("/ɑː/")],
               }),
               // calm
               ...wordRowList({
-                audio: "/assets/audio/words/c/calm.mp3",
-                parts: ["c", mark("a"), "lm", " ", phonetics("/kɑːm/")],
+                parts: [audio("/assets/audio/dictionary/c/calm.mp3"), "c", mark("a"), "lm", " ", phonetics("/kɑːm/")],
               }),
               // father
               ...wordRowList({
-                audio: "/assets/audio/words/f/father.mp3",
-                parts: ["f", mark("a"), "ther", " ", phonetics("/ˈfɑːðər/")],
+                parts: [audio("/assets/audio/dictionary/f/father.mp3"), "f", mark("a"), "ther", " ", phonetics("/ˈfɑːðər/")],
               }),
               // palm
               ...wordRowList({
-                audio: "/assets/audio/words/p/palm.mp3",
-                parts: ["p", mark("a"), "lm", " ", phonetics("/pɑːm/")],
+                parts: [audio("/assets/audio/dictionary/p/palm.mp3"), "p", mark("a"), "lm", " ", phonetics("/pɑːm/")],
               }),
               // spa
               ...wordRowList({
-                audio: "/assets/audio/words/s/spa.mp3",
-                parts: ["sp", mark("a"), " ", phonetics("/spɑː/")],
+                parts: [audio("/assets/audio/dictionary/s/spa.mp3"), "sp", mark("a"), " ", phonetics("/spɑː/")],
               }),
             ]}
           />
@@ -2183,7 +1883,7 @@ export default function PhoneticsLetters() {
          <Examples
             items={[
               content({
-                audio: "/assets/audio/words/k/keep-calm-and-hold-my-arm.mp3",
+                audio: "/assets/audio/dictionary/k/keep-calm-and-hold-my-arm.mp3",
                 parts: [
                   "Keep calm and hold my arm. ",
                   portuguese("Fique calmo e segure o meu braço."),
@@ -2191,7 +1891,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/m/my-father-drove-the-car-far-away.mp3",
+                  "/assets/audio/dictionary/m/my-father-drove-the-car-far-away.mp3",
                 parts: [
                   "My father drove the car far away. ",
                   portuguese("Meu pai dirigiu o carro para longe."),
@@ -2199,7 +1899,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/i/i-could-really-use-a-spa-right-now.mp3",
+                  "/assets/audio/dictionary/i/i-could-really-use-a-spa-right-now.mp3",
                 parts: [
                   "I could really use a spa right now. ",
                   portuguese("Preciso de um spa no momento."),
@@ -2213,14 +1913,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3",
-                parts: [phonetics("/eɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3"), phonetics("/eɪ/")],
               }),
               // ate
               ...wordRowList({
-                audio: "/assets/audio/words/a/ate.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/ate.mp3"),
                   mark("a"),
                   "te",
                   " ",
@@ -2230,33 +1927,27 @@ export default function PhoneticsLetters() {
               }),
               // chase
               ...wordRowList({
-                audio: "/assets/audio/words/c/chase.mp3",
-                parts: ["ch", mark("a"), "se", " ", phonetics("/tʃeɪs/")],
+                parts: [audio("/assets/audio/dictionary/c/chase.mp3"), "ch", mark("a"), "se", " ", phonetics("/tʃeɪs/")],
               }),
               // day
               ...wordRowList({
-                audio: "/assets/audio/words/d/day.mp3",
-                parts: ["d", mark("a"), "y", " ", phonetics("/deɪ/")],
+                parts: [audio("/assets/audio/dictionary/d/day.mp3"), "d", mark("a"), "y", " ", phonetics("/deɪ/")],
               }),
               // game
               ...wordRowList({
-                audio: "/assets/audio/words/g/game.mp3",
-                parts: ["g", mark("a"), "me", " ", phonetics("/ɡeɪm/")],
+                parts: [audio("/assets/audio/dictionary/g/game.mp3"), "g", mark("a"), "me", " ", phonetics("/ɡeɪm/")],
               }),
               // made
               ...wordRowList({
-                audio: "/assets/audio/words/m/made.mp3",
-                parts: ["m", mark("a"), "de", " ", phonetics("/meɪd/")],
+                parts: [audio("/assets/audio/dictionary/m/made.mp3"), "m", mark("a"), "de", " ", phonetics("/meɪd/")],
               }),
               // tape
               ...wordRowList({
-                audio: "/assets/audio/words/t/tape.mp3",
-                parts: ["t", mark("a"), "pe", " ", phonetics("/teɪp/")],
+                parts: [audio("/assets/audio/dictionary/t/tape.mp3"), "t", mark("a"), "pe", " ", phonetics("/teɪp/")],
               }),
               // pay
               ...wordRowList({
-                audio: "/assets/audio/words/p/pay.mp3",
-                parts: ["p", mark("a"), "y", " ", phonetics("/peɪ/")],
+                parts: [audio("/assets/audio/dictionary/p/pay.mp3"), "p", mark("a"), "y", " ", phonetics("/peɪ/")],
               }),
             ]}
           />
@@ -2265,7 +1956,7 @@ export default function PhoneticsLetters() {
             items={[
               content({
                 audio:
-                  "/assets/audio/words/i/i-ate-a-sandwhich-this-morning.mp3",
+                  "/assets/audio/dictionary/i/i-ate-a-sandwhich-this-morning.mp3",
                 parts: [
                   "I ate a sandwich this morning. ",
                   portuguese("Eu comi um sanduíche esta manhã."),
@@ -2273,7 +1964,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/s/she-chased-the-dog-across-the-yard.mp3",
+                  "/assets/audio/dictionary/s/she-chased-the-dog-across-the-yard.mp3",
                 parts: [
                   "She chased the dog across the yard. ",
                   portuguese("Ela correu atrás do cachorro pelo quintal."),
@@ -2292,9 +1983,7 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
-                parts: [phonetics("/ə/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3"), phonetics("/ə/")],
               }),
               // a
               ...wordRowList({
@@ -2302,38 +1991,31 @@ export default function PhoneticsLetters() {
               }),
               // about
               ...wordRowList({
-                audio: "/assets/audio/words/a/about.mp3",
-                parts: [mark("a"), "bout", " ", phonetics("/əˈbaʊt/")],
+                parts: [audio("/assets/audio/dictionary/a/about.mp3"), mark("a"), "bout", " ", phonetics("/əˈbaʊt/")],
               }),
               // above
               ...wordRowList({
-                audio: "/assets/audio/words/a/above.mp3",
-                parts: [mark("a"), "bove", " ", phonetics("/əˈbʌv/")],
+                parts: [audio("/assets/audio/dictionary/a/above.mp3"), mark("a"), "bove", " ", phonetics("/əˈbʌv/")],
               }),
               // idea
               ...wordRowList({
-                audio: "/assets/audio/words/i/idea.mp3",
-                parts: ["ide", mark("a"), " ", phonetics("/aɪˈdiː.ə/")],
+                parts: [audio("/assets/audio/dictionary/i/idea.mp3"), "ide", mark("a"), " ", phonetics("/aɪˈdiː.ə/")],
               }),
               // of
               ...wordRowList({
-                audio: "/assets/audio/words/o/of.mp3",
-                parts: [mark("o"), "f", " ", phonetics("/əv/")],
+                parts: [audio("/assets/audio/dictionary/o/of.mp3"), mark("o"), "f", " ", phonetics("/əv/")],
               }),
               // ago
               ...wordRowList({
-                audio: "/assets/audio/words/a/ago.mp3",
-                parts: [mark("a"), "go", " ", phonetics("/əˈɡoʊ/")],
+                parts: [audio("/assets/audio/dictionary/a/ago.mp3"), mark("a"), "go", " ", phonetics("/əˈɡoʊ/")],
               }),
               // away
               ...wordRowList({
-                audio: "/assets/audio/words/a/away.mp3",
-                parts: [mark("a"), "way", " ", phonetics("/əˈweɪ/")],
+                parts: [audio("/assets/audio/dictionary/a/away.mp3"), mark("a"), "way", " ", phonetics("/əˈweɪ/")],
               }),
               // banana
               ...wordRowList({
-                audio: "/assets/audio/words/b/banana.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/banana.mp3"),
                   "b",
                   mark("a"),
                   "nan",
@@ -2344,8 +2026,7 @@ export default function PhoneticsLetters() {
               }),
               // sofa
               ...wordRowList({
-                audio: "/assets/audio/words/s/sofa.mp3",
-                parts: ["sof", mark("a"), " ", phonetics("/ˈsoʊ.fə/")],
+                parts: [audio("/assets/audio/dictionary/s/sofa.mp3"), "sof", mark("a"), " ", phonetics("/ˈsoʊ.fə/")],
               }),
             ]}
           />
@@ -2354,14 +2035,14 @@ export default function PhoneticsLetters() {
             items={[
               content({
                 audio:
-                  "/assets/audio/words/b/bananas-contain-a-lot-of-potassium.mp3",
+                  "/assets/audio/dictionary/b/bananas-contain-a-lot-of-potassium.mp3",
                 parts: [
                   "Bananas contain a lot of potassium. ",
                   portuguese("Bananas contêm muito potássio."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/i/its-out-of-ideas.mp3",
+                audio: "/assets/audio/dictionary/i/its-out-of-ideas.mp3",
                 parts: [
                   "It's out of ideas. ",
                   portuguese("Está sem ideias."),
@@ -2382,27 +2063,22 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
-                parts: [phonetics("/e/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/e.mp3"), phonetics("/e/")],
               }),
 
               // said
               ...wordRowList({
-                audio: "/assets/audio/words/s/said.mp3",
-                parts: ["s", mark("ai"), "d", " ", phonetics("/sed/")],
+                parts: [audio("/assets/audio/dictionary/s/said.mp3"), "s", mark("ai"), "d", " ", phonetics("/sed/")],
               }),
 
               // again
               ...wordRowList({
-                audio: "/assets/audio/words/a/again.mp3",
-                parts: ["ag", mark("ai"), "n", " ", phonetics("/əˈɡen/")],
+                parts: [audio("/assets/audio/dictionary/a/again.mp3"), "ag", mark("ai"), "n", " ", phonetics("/əˈɡen/")],
               }),
 
               // against
               ...wordRowList({
-                audio: "/assets/audio/words/a/against.mp3",
-                parts: ["ag", mark("ai"), "nst", " ", phonetics("/əˈɡenst/")],
+                parts: [audio("/assets/audio/dictionary/a/against.mp3"), "ag", mark("ai"), "nst", " ", phonetics("/əˈɡenst/")],
               }),
             ]}
           />
@@ -2413,19 +2089,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
-                parts: [phonetics("/ɔː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3"), phonetics("/ɔː/")],
               }),
               // audio
               ...wordRowList({
-                audio: "/assets/audio/words/a/audio.mp3",
-                parts: [mark("au"), "dio", " ", phonetics("/ˈɔː.di.oʊ/")],
+                parts: [audio("/assets/audio/dictionary/a/audio.mp3"), mark("au"), "dio", " ", phonetics("/ˈɔː.di.oʊ/")],
               }),
               // automatic
               ...wordRowList({
-                audio: "/assets/audio/words/a/automatic.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/automatic.mp3"),
                   mark("au"),
                   "tomatic",
                   " ",
@@ -2434,8 +2106,7 @@ export default function PhoneticsLetters() {
               }),
               // automaton
               ...wordRowList({
-                audio: "/assets/audio/words/a/automaton.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/automaton.mp3"),
                   mark("au"),
                   "tomaton",
                   " ",
@@ -2444,8 +2115,7 @@ export default function PhoneticsLetters() {
               }),
               // daughter
               ...wordRowList({
-                audio: "/assets/audio/words/d/daughter.mp3",
-                parts: ["d", mark("au"), "ghter", " ", phonetics("/ˈdɔː.t̬ɚ/")],
+                parts: [audio("/assets/audio/dictionary/d/daughter.mp3"), "d", mark("au"), "ghter", " ", phonetics("/ˈdɔː.t̬ɚ/")],
               }),
             ]}
           />
@@ -2461,14 +2131,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
-                parts: [bold("'aw'"), " ", phonetics("/ɔː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3"), bold("'aw'"), " ", phonetics("/ɔː/")],
               }),
               // law
               ...wordRowList({
-                audio: "/assets/audio/words/l/law.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/l/law.mp3"),
                   "l",
                   mark("aw"),
                   " ",
@@ -2480,8 +2147,7 @@ export default function PhoneticsLetters() {
 
               // saw
               ...wordRowList({
-                audio: "/assets/audio/words/s/saw.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/saw.mp3"),
                   "s",
                   mark("aw"),
                   " ",
@@ -2493,8 +2159,7 @@ export default function PhoneticsLetters() {
 
               // draw
               ...wordRowList({
-                audio: "/assets/audio/words/d/draw.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/d/draw.mp3"),
                   "dr",
                   mark("aw"),
                   " ",
@@ -2506,8 +2171,7 @@ export default function PhoneticsLetters() {
 
               // raw
               ...wordRowList({
-                audio: "/assets/audio/words/r/raw.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/r/raw.mp3"),
                   "r",
                   mark("aw"),
                   " ",
@@ -2519,8 +2183,7 @@ export default function PhoneticsLetters() {
 
               // claw
               ...wordRowList({
-                audio: "/assets/audio/words/c/claw.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/c/claw.mp3"),
                   "cl",
                   mark("aw"),
                   " ",
@@ -2532,8 +2195,7 @@ export default function PhoneticsLetters() {
 
               // jaw
               ...wordRowList({
-                audio: "/assets/audio/words/j/jaw.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/j/jaw.mp3"),
                   "j",
                   mark("aw"),
                   " ",
@@ -2548,19 +2210,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
-                parts: [bold("'awe'"), " ", phonetics("/ɔː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3"), bold("'awe'"), " ", phonetics("/ɔː/")],
               }),
               // awe
               ...wordRowList({
-                audio: "/assets/audio/words/a/awe.mp3",
-                parts: [mark("awe"), " ", phonetics("/ˈɔː/")],
+                parts: [audio("/assets/audio/dictionary/a/awe.mp3"), mark("awe"), " ", phonetics("/ˈɔː/")],
               }),
               // awesome
               ...wordRowList({
-                audio: "/assets/audio/words/a/awesome.mp3",
-                parts: [mark("awe"), "some", " ", phonetics("/ˈɔː.səm/")],
+                parts: [audio("/assets/audio/dictionary/a/awesome.mp3"), mark("awe"), "some", " ", phonetics("/ˈɔː.səm/")],
               }),
             ]}
           />
@@ -2568,42 +2226,42 @@ export default function PhoneticsLetters() {
          <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/this-is-the-law.mp3",
+                audio: "/assets/audio/dictionary/t/this-is-the-law.mp3",
                 parts: ["This is the law. ", portuguese("Esta é a lei.")],
               }),
 
               content({
-                audio: "/assets/audio/words/i/i-saw-a-bird.mp3",
+                audio: "/assets/audio/dictionary/i/i-saw-a-bird.mp3",
                 parts: ["I saw a bird. ", portuguese("Eu vi um pássaro.")],
               }),
 
               content({
-                audio: "/assets/audio/words/l/lets-draw-a-picture.mp3",
+                audio: "/assets/audio/dictionary/l/lets-draw-a-picture.mp3",
                 parts: ["Let’s draw a picture. ", portuguese("Vamos desenhar um desenho. ")],
               }),
 
               content({
-                audio: "/assets/audio/words/t/the-meat-is-raw.mp3",
+                audio: "/assets/audio/dictionary/t/the-meat-is-raw.mp3",
                 parts: ["The meat is raw. ", portuguese("A carne está crua.")],
               }),
 
               content({
-                audio: "/assets/audio/words/t/the-cat-has-a-sharp-claw.mp3",
+                audio: "/assets/audio/dictionary/t/the-cat-has-a-sharp-claw.mp3",
                 parts: ["The cat has a sharp claw. ", portuguese("O gato tem uma garra afiada.")],
               }),
 
               content({
-                audio: "/assets/audio/words/m/my-jaw-hurts.mp3",
+                audio: "/assets/audio/dictionary/m/my-jaw-hurts.mp3",
                 parts: ["My jaw hurts. ", portuguese("Minha mandíbula dói.")],
               }),
 
               content({
-                audio: "/assets/audio/words/t/that-movie-is-awesome.mp3",
+                audio: "/assets/audio/dictionary/t/that-movie-is-awesome.mp3",
                 parts: ["That movie is awesome. ", portuguese("Esse filme é incrível.")],
               }),
 
               content({
-                audio: "/assets/audio/words/w/we-watched-in-awe.mp3",
+                audio: "/assets/audio/dictionary/w/we-watched-in-awe.mp3",
                 parts: ["We watched in awe. ", portuguese("Nós assistimos com admiração.")],
               }),
             ]}
@@ -2615,24 +2273,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3",
-                parts: [phonetics("/eɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3"), phonetics("/eɪ/")],
               }),
               // day
               ...wordRowList({
-                audio: "/assets/audio/words/d/day.mp3",
-                parts: ["d", mark("a"), "y", " ", phonetics("/deɪ/")],
+                parts: [audio("/assets/audio/dictionary/d/day.mp3"), "d", mark("a"), "y", " ", phonetics("/deɪ/")],
               }),
               // lay
               ...wordRowList({
-                audio: "/assets/audio/words/l/lay.mp3",
-                parts: ["l", mark("a"), "y", " ", phonetics("/leɪ/")],
+                parts: [audio("/assets/audio/dictionary/l/lay.mp3"), "l", mark("a"), "y", " ", phonetics("/leɪ/")],
               }),
               // pay
               ...wordRowList({
-                audio: "/assets/audio/words/p/pay.mp3",
-                parts: ["p", mark("a"), "y", " ", phonetics("/peɪ/")],
+                parts: [audio("/assets/audio/dictionary/p/pay.mp3"), "p", mark("a"), "y", " ", phonetics("/peɪ/")],
               }),
             ]}
           />
@@ -2641,7 +2294,7 @@ export default function PhoneticsLetters() {
             items={[
               // • I’ll pay you tomorrow.
               content({
-                audio: "/assets/audio/words/i/ill-pay-you-tomorrow.mp3",
+                audio: "/assets/audio/dictionary/i/ill-pay-you-tomorrow.mp3",
                 parts: [
                   "I’ll pay you tomorrow. ",
                   portuguese("Te pago amanhã."),
@@ -2650,7 +2303,7 @@ export default function PhoneticsLetters() {
               // • She laid the book on the table.
               content({
                 audio:
-                  "/assets/audio/words/s/she-laid-the-book-on-the-table.mp3",
+                  "/assets/audio/dictionary/s/she-laid-the-book-on-the-table.mp3",
                 parts: [
                   "She laid the book on the table. ",
                   portuguese("Ela colocou o livro na mesa."),
@@ -2658,7 +2311,7 @@ export default function PhoneticsLetters() {
               }),
               // • It’s a beautiful day today.
               content({
-                audio: "/assets/audio/words/i/its-a-beautiful-day-today.mp3",
+                audio: "/assets/audio/dictionary/i/its-a-beautiful-day-today.mp3",
                 parts: [
                   "It’s a beautiful day today. ",
                   portuguese("Hoje é um dia bonito."),
@@ -2674,29 +2327,23 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
-                parts: [phonetics("/e/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/e.mp3"), phonetics("/e/")],
               }),
               // bed
               ...wordRowList({
-                audio: "/assets/audio/words/b/bed.mp3",
-                parts: ["b", mark("e"), "d", " ", phonetics("/bed/")],
+                parts: [audio("/assets/audio/dictionary/b/bed.mp3"), "b", mark("e"), "d", " ", phonetics("/bed/")],
               }),
               // get
               ...wordRowList({
-                audio: "/assets/audio/words/g/get.mp3",
-                parts: ["g", mark("e"), "t", " ", phonetics("/get/")],
+                parts: [audio("/assets/audio/dictionary/g/get.mp3"), "g", mark("e"), "t", " ", phonetics("/get/")],
               }),
               // men
               ...wordRowList({
-                audio: "/assets/audio/words/m/men.mp3",
-                parts: ["m", mark("e"), "n", " ", phonetics("/men/")],
+                parts: [audio("/assets/audio/dictionary/m/men.mp3"), "m", mark("e"), "n", " ", phonetics("/men/")],
               }),
               // red
               ...wordRowList({
-                audio: "/assets/audio/words/r/red.mp3",
-                parts: ["r", mark("e"), "d", " ", phonetics("/red/")],
+                parts: [audio("/assets/audio/dictionary/r/red.mp3"), "r", mark("e"), "d", " ", phonetics("/red/")],
               }),
             ]}
           />
@@ -2706,24 +2353,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
-                parts: [phonetics("/ə/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3"), phonetics("/ə/")],
               }),
               // business
               ...wordRowList({
-                audio: "/assets/audio/words/b/business.mp3",
-                parts: ["busin", mark("e"), "ss", " ", phonetics("/ˈbɪ.znəs/")],
+                parts: [audio("/assets/audio/dictionary/b/business.mp3"), "busin", mark("e"), "ss", " ", phonetics("/ˈbɪ.znəs/")],
               }),
               // open
               ...wordRowList({
-                audio: "/assets/audio/words/o/open.mp3",
-                parts: ["op", mark("e"), "n", " ", phonetics("/ˈoʊ.pən/")],
+                parts: [audio("/assets/audio/dictionary/o/open.mp3"), "op", mark("e"), "n", " ", phonetics("/ˈoʊ.pən/")],
               }),
               // problem
               ...wordRowList({
-                audio: "/assets/audio/words/p/problem.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/p/problem.mp3"),
                   "probl",
                   mark("e"),
                   "m",
@@ -2733,8 +2375,7 @@ export default function PhoneticsLetters() {
               }),
               // taken
               ...wordRowList({
-                audio: "/assets/audio/words/t/taken.mp3",
-                parts: ["tak", mark("e"), "n", " ", phonetics("/ˈteɪ.kən/")],
+                parts: [audio("/assets/audio/dictionary/t/taken.mp3"), "tak", mark("e"), "n", " ", phonetics("/ˈteɪ.kən/")],
               }),
             ]}
           />
@@ -2753,33 +2394,27 @@ export default function PhoneticsLetters() {
               }),
               // ate
               ...wordRowList({
-                audio: "/assets/audio/words/a/ate.mp3",
-                parts: ["at", mark("e"), " ", phonetics("/eɪt/")],
+                parts: [audio("/assets/audio/dictionary/a/ate.mp3"), "at", mark("e"), " ", phonetics("/eɪt/")],
               }),
               // fate
               ...wordRowList({
-                audio: "/assets/audio/words/f/fate.mp3",
-                parts: ["fat", mark("e"), " ", phonetics("/feɪt/")],
+                parts: [audio("/assets/audio/dictionary/f/fate.mp3"), "fat", mark("e"), " ", phonetics("/feɪt/")],
               }),
               // time
               ...wordRowList({
-                audio: "/assets/audio/words/t/time.mp3",
-                parts: ["tim", mark("e"), " ", phonetics("/taɪm/")],
+                parts: [audio("/assets/audio/dictionary/t/time.mp3"), "tim", mark("e"), " ", phonetics("/taɪm/")],
               }),
               // make
               ...wordRowList({
-                audio: "/assets/audio/words/m/make.mp3",
-                parts: ["mak", mark("e"), " ", phonetics("/meɪk/")],
+                parts: [audio("/assets/audio/dictionary/m/make.mp3"), "mak", mark("e"), " ", phonetics("/meɪk/")],
               }),
               // where
               ...wordRowList({
-                audio: "/assets/audio/words/w/where.mp3",
-                parts: ["wher", mark("e"), " ", phonetics("/wer/")],
+                parts: [audio("/assets/audio/dictionary/w/where.mp3"), "wher", mark("e"), " ", phonetics("/wer/")],
               }),
               // write
               ...wordRowList({
-                audio: "/assets/audio/words/r/right-write.mp3",
-                parts: ["writ", mark("e"), " ", phonetics("/raɪt/")],
+                parts: [audio("/assets/audio/dictionary/r/right-write.mp3"), "writ", mark("e"), " ", phonetics("/raɪt/")],
               }),
             ]}
           />
@@ -2791,24 +2426,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/e.mp3",
-                parts: [phonetics("/e/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/e.mp3"), phonetics("/e/")],
               }),
               // bread
               ...wordRowList({
-                audio: "/assets/audio/words/b/bread.mp3",
-                parts: ["br", mark("ea"), "d", " ", phonetics("/bred/")],
+                parts: [audio("/assets/audio/dictionary/b/bread.mp3"), "br", mark("ea"), "d", " ", phonetics("/bred/")],
               }),
               // head
               ...wordRowList({
-                audio: "/assets/audio/words/h/head.mp3",
-                parts: ["h", mark("ea"), "d", " ", phonetics("/hed/")],
+                parts: [audio("/assets/audio/dictionary/h/head.mp3"), "h", mark("ea"), "d", " ", phonetics("/hed/")],
               }),
               // meant
               ...wordRowList({
-                audio: "/assets/audio/words/m/meant.mp3",
-                parts: ["m", mark("ea"), "nt", " ", phonetics("/ment/")],
+                parts: [audio("/assets/audio/dictionary/m/meant.mp3"), "m", mark("ea"), "nt", " ", phonetics("/ment/")],
               }),
             ]}
           />
@@ -2818,24 +2448,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                parts: [phonetics("/iː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/iː/")],
               }),
               // eat
               ...wordRowList({
-                audio: "/assets/audio/words/e/eat.mp3",
-                parts: [mark("ea"), "t", " ", phonetics("/iːt/")],
+                parts: [audio("/assets/audio/dictionary/e/eat.mp3"), mark("ea"), "t", " ", phonetics("/iːt/")],
               }),
               // meat
               ...wordRowList({
-                audio: "/assets/audio/words/m/meat.mp3",
-                parts: ["m", mark("ea"), "t", " ", phonetics("/miːt/")],
+                parts: [audio("/assets/audio/dictionary/m/meat.mp3"), "m", mark("ea"), "t", " ", phonetics("/miːt/")],
               }),
               // seat
               ...wordRowList({
-                audio: "/assets/audio/words/s/seat.mp3",
-                parts: ["s", mark("ea"), "t", " ", phonetics("/siːt/")],
+                parts: [audio("/assets/audio/dictionary/s/seat.mp3"), "s", mark("ea"), "t", " ", phonetics("/siːt/")],
               }),
             ]}
           />
@@ -2850,13 +2475,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/assets/audio/pronunciation/phonetics/ju.mp3",
-                parts: [phonetics("/juː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/ju.mp3"), phonetics("/juː/")],
               }),
               // beauty
               ...wordRowList({
-                audio: "/assets/audio/words/b/beauty.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/beauty.mp3"),
                   "b",
                   mark("eau"),
                   "ty",
@@ -2869,8 +2492,7 @@ export default function PhoneticsLetters() {
 
               // beautiful
               ...wordRowList({
-                audio: "/assets/audio/words/b/beautiful.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/beautiful.mp3"),
                   "b",
                   mark("eau"),
                   "tiful",
@@ -2886,21 +2508,17 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3",
-                parts: [phonetics("/oʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3"), phonetics("/oʊ/")],
               }),
 
               // beau
               ...wordRowList({
-                audio: "/assets/audio/words/b/beau.mp3",
-                parts: ["b", mark("eau"), " ", phonetics("/boʊ/")],
+                parts: [audio("/assets/audio/dictionary/b/beau.mp3"), "b", mark("eau"), " ", phonetics("/boʊ/")],
               }),
 
               // bureau
               ...wordRowList({
-                audio: "/assets/audio/words/b/bureau.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/bureau.mp3"),
                   "bur",
                   mark("eau"),
                   " ",
@@ -2912,8 +2530,7 @@ export default function PhoneticsLetters() {
 
               // plateau (último sem square)
               ...wordRowList({
-                audio: "/assets/audio/words/p/plateau.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/p/plateau.mp3"),
                   "plat",
                   mark("eau"),
                   " ",
@@ -2932,44 +2549,36 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                parts: [phonetics("/iː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/iː/")],
               }),
               // see
               ...wordRowList({
-                audio: "/assets/audio/words/s/sea-see.mp3",
-                parts: ["s", mark("ee"), " ", phonetics("/siː/")],
+                parts: [audio("/assets/audio/dictionary/s/sea-see.mp3"), "s", mark("ee"), " ", phonetics("/siː/")],
               }),
 
               // green
               ...wordRowList({
-                audio: "/assets/audio/words/g/green.mp3",
-                parts: ["gr", mark("ee"), "n", " ", phonetics("/ɡriːn/")],
+                parts: [audio("/assets/audio/dictionary/g/green.mp3"), "gr", mark("ee"), "n", " ", phonetics("/ɡriːn/")],
               }),
 
               // meet
               ...wordRowList({
-                audio: "/assets/audio/words/m/meet.mp3",
-                parts: ["m", mark("ee"), "t", " ", phonetics("/miːt/")],
+                parts: [audio("/assets/audio/dictionary/m/meet.mp3"), "m", mark("ee"), "t", " ", phonetics("/miːt/")],
               }),
 
               // need
               ...wordRowList({
-                audio: "/assets/audio/words/n/need.mp3",
-                parts: ["n", mark("ee"), "d", " ", phonetics("/niːd/")],
+                parts: [audio("/assets/audio/dictionary/n/need.mp3"), "n", mark("ee"), "d", " ", phonetics("/niːd/")],
               }),
 
               // sleep
               ...wordRowList({
-                audio: "/assets/audio/words/s/sleep.mp3",
-                parts: ["sl", mark("ee"), "p", " ", phonetics("/sliːp/")],
+                parts: [audio("/assets/audio/dictionary/s/sleep.mp3"), "sl", mark("ee"), "p", " ", phonetics("/sliːp/")],
               }),
 
               // tree
               ...wordRowList({
-                audio: "/assets/audio/words/t/tree.mp3",
-                parts: ["tr", mark("ee"), " ", phonetics("/triː/")],
+                parts: [audio("/assets/audio/dictionary/t/tree.mp3"), "tr", mark("ee"), " ", phonetics("/triː/")],
                 square: false,
               }),
             ]}
@@ -2982,39 +2591,32 @@ export default function PhoneticsLetters() {
             value={[
               // /eɪ/
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3",
-                parts: [phonetics("/eɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3"), phonetics("/eɪ/")],
               }),
 
               // eight
               ...wordRowList({
-                audio: "/assets/audio/words/e/eight.mp3",
-                parts: [mark("ei"), "ght", " ", phonetics("/eɪt/")],
+                parts: [audio("/assets/audio/dictionary/e/eight.mp3"), mark("ei"), "ght", " ", phonetics("/eɪt/")],
               }),
 
               // vein
               ...wordRowList({
-                audio: "/assets/audio/words/v/vein.mp3",
-                parts: ["v", mark("ei"), "n", " ", phonetics("/veɪn/")],
+                parts: [audio("/assets/audio/dictionary/v/vein.mp3"), "v", mark("ei"), "n", " ", phonetics("/veɪn/")],
               }),
 
               // rein
               ...wordRowList({
-                audio: "/assets/audio/words/r/rein.mp3",
-                parts: ["r", mark("ei"), "n", " ", phonetics("/reɪn/")],
+                parts: [audio("/assets/audio/dictionary/r/rein.mp3"), "r", mark("ei"), "n", " ", phonetics("/reɪn/")],
               }),
 
               // neighbor
               ...wordRowList({
-                audio: "/assets/audio/words/n/neighbor.mp3",
-                parts: ["n", mark("ei"), "ghbor", " ", phonetics("/ˈneɪ.bɚ/")],
+                parts: [audio("/assets/audio/dictionary/n/neighbor.mp3"), "n", mark("ei"), "ghbor", " ", phonetics("/ˈneɪ.bɚ/")],
               }),
 
               // weight
               ...wordRowList({
-                audio: "/assets/audio/words/w/weight.mp3",
-                parts: ["w", mark("ei"), "ght", " ", phonetics("/weɪt/")],
+                parts: [audio("/assets/audio/dictionary/w/weight.mp3"), "w", mark("ei"), "ght", " ", phonetics("/weɪt/")],
                 square: false,
               }),
             ]}
@@ -3031,18 +2633,15 @@ export default function PhoneticsLetters() {
             value={[
               // theory
               ...wordRowList({
-                audio: "/assets/audio/words/t/theory.mp3",
-                parts: ["th", mark("eo"), "ry", " ", phonetics("/ˈθiːər.i/")],
+                parts: [audio("/assets/audio/dictionary/t/theory.mp3"), "th", mark("eo"), "ry", " ", phonetics("/ˈθiːər.i/")],
               }),
               // theorem
               ...wordRowList({
-                audio: "/assets/audio/words/t/theorem.mp3",
-                parts: ["th", mark("eo"), "rem", " ", phonetics("/ˈθiːə.rəm/")],
+                parts: [audio("/assets/audio/dictionary/t/theorem.mp3"), "th", mark("eo"), "rem", " ", phonetics("/ˈθiːə.rəm/")],
               }),
               // Theodore
               ...wordRowList({
-                audio: "/assets/audio/words/t/theodore.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/theodore.mp3"),
                   "Th",
                   mark("eo"),
                   "dore",
@@ -3052,8 +2651,7 @@ export default function PhoneticsLetters() {
               }),
               // leotard
               ...wordRowList({
-                audio: "/assets/audio/words/l/leotard.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/l/leotard.mp3"),
                   "l",
                   mark("eo"),
                   "tard",
@@ -3068,18 +2666,15 @@ export default function PhoneticsLetters() {
             value={[
               // neon
               ...wordRowList({
-                audio: "/assets/audio/words/n/neon.mp3",
-                parts: ["n", mark("eo"), "n", " ", phonetics("/ˈniː.ɑːn/")],
+                parts: [audio("/assets/audio/dictionary/n/neon.mp3"), "n", mark("eo"), "n", " ", phonetics("/ˈniː.ɑːn/")],
               }),
               // peon
               ...wordRowList({
-                audio: "/assets/audio/words/p/peon.mp3",
-                parts: ["p", mark("eo"), "n", " ", phonetics("/ˈpiː.ən/")],
+                parts: [audio("/assets/audio/dictionary/p/peon.mp3"), "p", mark("eo"), "n", " ", phonetics("/ˈpiː.ən/")],
               }),
               // theology
               ...wordRowList({
-                audio: "/assets/audio/words/t/theology.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/theology.mp3"),
                   "th",
                   mark("eo"),
                   "logy",
@@ -3102,13 +2697,11 @@ export default function PhoneticsLetters() {
             value={[
               // leopard
               ...wordRowList({
-                audio: "/assets/audio/words/l/leopard.mp3",
-                parts: ["l", mark("eo"), "pard", " ", phonetics("/ˈlep.ɚd/")],
+                parts: [audio("/assets/audio/dictionary/l/leopard.mp3"), "l", mark("eo"), "pard", " ", phonetics("/ˈlep.ɚd/")],
               }),
               // jeopardy
               ...wordRowList({
-                audio: "/assets/audio/words/j/jeopardy.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/j/jeopardy.mp3"),
                   "j",
                   mark("eo"),
                   "pardy",
@@ -3118,8 +2711,7 @@ export default function PhoneticsLetters() {
               }),
               // people
               ...wordRowList({
-                audio: "/assets/audio/words/p/people.mp3",
-                parts: ["p", mark("eo"), "ple", " ", phonetics("/ˈpiː.pəl/")],
+                parts: [audio("/assets/audio/dictionary/p/people.mp3"), "p", mark("eo"), "ple", " ", phonetics("/ˈpiː.pəl/")],
               }),
             ]}
           />
@@ -3131,27 +2723,22 @@ export default function PhoneticsLetters() {
             value={[
               // /eɪ/
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3",
-                parts: [phonetics("/eɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/eɪ.mp3"), phonetics("/eɪ/")],
               }),
 
               // ballet
               ...wordRowList({
-                audio: "/assets/audio/words/b/ballet.mp3",
-                parts: ["ball", mark("et"), " ", phonetics("/bæˈleɪ/")],
+                parts: [audio("/assets/audio/dictionary/b/ballet.mp3"), "ball", mark("et"), " ", phonetics("/bæˈleɪ/")],
               }),
 
               // buffet
               ...wordRowList({
-                audio: "/assets/audio/words/b/buffet.mp3",
-                parts: ["buff", mark("et"), " ", phonetics("/bəˈfeɪ/")],
+                parts: [audio("/assets/audio/dictionary/b/buffet.mp3"), "buff", mark("et"), " ", phonetics("/bəˈfeɪ/")],
               }),
 
               // gourmet
               ...wordRowList({
-                audio: "/assets/audio/words/g/gourmet.mp3",
-                parts: ["gourm", mark("et"), " ", phonetics("/ɡʊrˈmeɪ/")],
+                parts: [audio("/assets/audio/dictionary/g/gourmet.mp3"), "gourm", mark("et"), " ", phonetics("/ɡʊrˈmeɪ/")],
                 square: false,
               }),
             ]}
@@ -3164,39 +2751,31 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                parts: [phonetics("/i/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/i/")],
               }),
               // abbey
               ...wordRowList({
-                audio: "/assets/audio/words/a/abbey.mp3",
-                parts: ["abb", mark("ey"), " ", phonetics("/ˈæb.i/")],
+                parts: [audio("/assets/audio/dictionary/a/abbey.mp3"), "abb", mark("ey"), " ", phonetics("/ˈæb.i/")],
               }),
               // disney
               ...wordRowList({
-                audio: "/assets/audio/words/d/disney.mp3",
-                parts: ["Disn", mark("ey"), " ", phonetics("/ˈdɪz.ni/")],
+                parts: [audio("/assets/audio/dictionary/d/disney.mp3"), "Disn", mark("ey"), " ", phonetics("/ˈdɪz.ni/")],
               }),
               // donkey
               ...wordRowList({
-                audio: "/assets/audio/words/d/donkey.mp3",
-                parts: ["donk", mark("ey"), " ", phonetics("/ˈdɑːŋ.ki/")],
+                parts: [audio("/assets/audio/dictionary/d/donkey.mp3"), "donk", mark("ey"), " ", phonetics("/ˈdɑːŋ.ki/")],
               }),
               // money
               ...wordRowList({
-                audio: "/assets/audio/words/m/money.mp3",
-                parts: ["mon", mark("ey"), " ", phonetics("/ˈmʌn.i/")],
+                parts: [audio("/assets/audio/dictionary/m/money.mp3"), "mon", mark("ey"), " ", phonetics("/ˈmʌn.i/")],
               }),
               // odyssey
               ...wordRowList({
-                audio: "/assets/audio/words/o/odyssey.mp3",
-                parts: ["odyss", mark("ey"), " ", phonetics("/ˈɑː.dɪ.si/")],
+                parts: [audio("/assets/audio/dictionary/o/odyssey.mp3"), "odyss", mark("ey"), " ", phonetics("/ˈɑː.dɪ.si/")],
               }),
               // Sydney
               ...wordRowList({
-                audio: "/assets/audio/words/s/sydney.mp3",
-                parts: ["Sydn", mark("ey"), " ", phonetics("/ˈsɪd.ni/")],
+                parts: [audio("/assets/audio/dictionary/s/sydney.mp3"), "Sydn", mark("ey"), " ", phonetics("/ˈsɪd.ni/")],
               }),
             ]}
           />
@@ -3213,24 +2792,19 @@ export default function PhoneticsLetters() {
             value={[
               // /iː/
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                parts: [phonetics("/iː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/iː/")],
               }),
               // machine
               ...wordRowList({
-                audio: "/assets/audio/words/m/machine.mp3",
-                parts: ["mach", mark("i"), "ne", " ", phonetics("/məˈʃiːn/")],
+                parts: [audio("/assets/audio/dictionary/m/machine.mp3"), "mach", mark("i"), "ne", " ", phonetics("/məˈʃiːn/")],
               }),
               // police
               ...wordRowList({
-                audio: "/assets/audio/words/p/police.mp3",
-                parts: ["pol", mark("i"), "ce", " ", phonetics("/pəˈliːs/")],
+                parts: [audio("/assets/audio/dictionary/p/police.mp3"), "pol", mark("i"), "ce", " ", phonetics("/pəˈliːs/")],
               }),
               // ski
               ...wordRowList({
-                audio: "/assets/audio/words/s/ski.mp3",
-                parts: ["sk", mark("i"), " ", phonetics("/skiː/")],
+                parts: [audio("/assets/audio/dictionary/s/ski.mp3"), "sk", mark("i"), " ", phonetics("/skiː/")],
               }),
             ]}
           />
@@ -3241,29 +2815,23 @@ export default function PhoneticsLetters() {
             value={[
               // /ɪ/
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
-                parts: [phonetics("/ɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3"), phonetics("/ɪ/")],
               }),
               // animal
               ...wordRowList({
-                audio: "/assets/audio/words/a/animal.mp3",
-                parts: ["an", mark("i"), "mal", " ", phonetics("/ˈæn.ɪ.məl/")],
+                parts: [audio("/assets/audio/dictionary/a/animal.mp3"), "an", mark("i"), "mal", " ", phonetics("/ˈæn.ɪ.məl/")],
               }),
               // big
               ...wordRowList({
-                audio: "/assets/audio/words/b/big.mp3",
-                parts: ["b", mark("i"), "g", " ", phonetics("/bɪɡ/")],
+                parts: [audio("/assets/audio/dictionary/b/big.mp3"), "b", mark("i"), "g", " ", phonetics("/bɪɡ/")],
               }),
               // city
               ...wordRowList({
-                audio: "/assets/audio/words/c/city.mp3",
-                parts: ["c", mark("i"), "ty", " ", phonetics("/ˈsɪt̬.i/")],
+                parts: [audio("/assets/audio/dictionary/c/city.mp3"), "c", mark("i"), "ty", " ", phonetics("/ˈsɪt̬.i/")],
               }),
               // finish
               ...wordRowList({
-                audio: "/assets/audio/words/f/finish.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/f/finish.mp3"),
                   "f",
                   mark("i"),
                   "n",
@@ -3275,8 +2843,7 @@ export default function PhoneticsLetters() {
               }),
               // limit
               ...wordRowList({
-                audio: "/assets/audio/words/l/limit.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/l/limit.mp3"),
                   "l",
                   mark("i"),
                   "m",
@@ -3288,23 +2855,19 @@ export default function PhoneticsLetters() {
               }),
               // milk
               ...wordRowList({
-                audio: "/assets/audio/words/m/milk.mp3",
-                parts: ["m", mark("i"), "lk", " ", phonetics("/mɪlk/")],
+                parts: [audio("/assets/audio/dictionary/m/milk.mp3"), "m", mark("i"), "lk", " ", phonetics("/mɪlk/")],
               }),
               // minute
               ...wordRowList({
-                audio: "/assets/audio/words/m/minute.mp3",
-                parts: ["m", mark("i"), "nute", " ", phonetics("/ˈmɪn.ɪt/")],
+                parts: [audio("/assets/audio/dictionary/m/minute.mp3"), "m", mark("i"), "nute", " ", phonetics("/ˈmɪn.ɪt/")],
               }),
               // sit
               ...wordRowList({
-                audio: "/assets/audio/words/s/sit.mp3",
-                parts: ["s", mark("i"), "t", " ", phonetics("/sɪt/")],
+                parts: [audio("/assets/audio/dictionary/s/sit.mp3"), "s", mark("i"), "t", " ", phonetics("/sɪt/")],
               }),
               // visit
               ...wordRowList({
-                audio: "/assets/audio/words/v/visit.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/v/visit.mp3"),
                   "v",
                   mark("i"),
                   "s",
@@ -3323,19 +2886,15 @@ export default function PhoneticsLetters() {
             value={[
               // /ə/
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
-                parts: [phonetics("/ə/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3"), phonetics("/ə/")],
               }),
               // family
               ...wordRowList({
-                audio: "/assets/audio/words/f/family.mp3",
-                parts: ["fam", mark("i"), "ly", " ", phonetics("/ˈfæm.əl.i/")],
+                parts: [audio("/assets/audio/dictionary/f/family.mp3"), "fam", mark("i"), "ly", " ", phonetics("/ˈfæm.əl.i/")],
               }),
               // possible
               ...wordRowList({
-                audio: "/assets/audio/words/p/possible.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/p/possible.mp3"),
                   "poss",
                   mark("i"),
                   "ble",
@@ -3351,34 +2910,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3",
-                parts: [phonetics("/aɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3"), phonetics("/aɪ/")],
               }),
               // find
               ...wordRowList({
-                audio: "/assets/audio/words/f/find.mp3",
-                parts: ["f", mark("i"), "nd", " ", phonetics("/faɪnd/")],
+                parts: [audio("/assets/audio/dictionary/f/find.mp3"), "f", mark("i"), "nd", " ", phonetics("/faɪnd/")],
               }),
               // kind
               ...wordRowList({
-                audio: "/assets/audio/words/k/kind.mp3",
-                parts: ["k", mark("i"), "nd", " ", phonetics("/kaɪnd/")],
+                parts: [audio("/assets/audio/dictionary/k/kind.mp3"), "k", mark("i"), "nd", " ", phonetics("/kaɪnd/")],
               }),
               // kite
               ...wordRowList({
-                audio: "/assets/audio/words/k/kite.mp3",
-                parts: ["k", mark("i"), "te", " ", phonetics("/kaɪt/")],
+                parts: [audio("/assets/audio/dictionary/k/kite.mp3"), "k", mark("i"), "te", " ", phonetics("/kaɪt/")],
               }),
               // like
               ...wordRowList({
-                audio: "/assets/audio/words/l/like.mp3",
-                parts: ["l", mark("i"), "ke", " ", phonetics("/laɪk/")],
+                parts: [audio("/assets/audio/dictionary/l/like.mp3"), "l", mark("i"), "ke", " ", phonetics("/laɪk/")],
               }),
               // time
               ...wordRowList({
-                audio: "/assets/audio/words/t/time.mp3",
-                parts: ["t", mark("i"), "me", " ", phonetics("/taɪm/")],
+                parts: [audio("/assets/audio/dictionary/t/time.mp3"), "t", mark("i"), "me", " ", phonetics("/taɪm/")],
               }),
             ]}
           />
@@ -3390,34 +2942,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                parts: [phonetics("/iː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/iː/")],
               }),
               // believe
               ...wordRowList({
-                audio: "/assets/audio/words/b/believe.mp3",
-                parts: ["bel", mark("ie"), "ve", " ", phonetics("/bɪˈliːv/")],
+                parts: [audio("/assets/audio/dictionary/b/believe.mp3"), "bel", mark("ie"), "ve", " ", phonetics("/bɪˈliːv/")],
               }),
               // brief
               ...wordRowList({
-                audio: "/assets/audio/words/b/brief.mp3",
-                parts: ["br", mark("ie"), "f", " ", phonetics("/briːf/")],
+                parts: [audio("/assets/audio/dictionary/b/brief.mp3"), "br", mark("ie"), "f", " ", phonetics("/briːf/")],
               }),
               // chief
               ...wordRowList({
-                audio: "/assets/audio/words/c/chief.mp3",
-                parts: ["ch", mark("ie"), "f", " ", phonetics("/tʃiːf/")],
+                parts: [audio("/assets/audio/dictionary/c/chief.mp3"), "ch", mark("ie"), "f", " ", phonetics("/tʃiːf/")],
               }),
               // field
               ...wordRowList({
-                audio: "/assets/audio/words/f/field.mp3",
-                parts: ["f", mark("ie"), "ld", " ", phonetics("/fiːld/")],
+                parts: [audio("/assets/audio/dictionary/f/field.mp3"), "f", mark("ie"), "ld", " ", phonetics("/fiːld/")],
               }),
               // piece
               ...wordRowList({
-                audio: "/assets/audio/words/p/piece.mp3",
-                parts: ["p", mark("ie"), "ce", " ", phonetics("/piːs/")],
+                parts: [audio("/assets/audio/dictionary/p/piece.mp3"), "p", mark("ie"), "ce", " ", phonetics("/piːs/")],
               }),
             ]}
           />
@@ -3427,34 +2972,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3",
-                parts: [phonetics("/aɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3"), phonetics("/aɪ/")],
               }),
               // cried
               ...wordRowList({
-                audio: "/assets/audio/words/c/cried.mp3",
-                parts: ["cr", mark("ie"), "d", " ", phonetics("/kraɪd/")],
+                parts: [audio("/assets/audio/dictionary/c/cried.mp3"), "cr", mark("ie"), "d", " ", phonetics("/kraɪd/")],
               }),
               // die
               ...wordRowList({
-                audio: "/assets/audio/words/d/die.mp3",
-                parts: ["d", mark("ie"), " ", phonetics("/daɪ/")],
+                parts: [audio("/assets/audio/dictionary/d/die.mp3"), "d", mark("ie"), " ", phonetics("/daɪ/")],
               }),
               // lie
               ...wordRowList({
-                audio: "/assets/audio/words/l/lie.mp3",
-                parts: ["l", mark("ie"), " ", phonetics("/laɪ/")],
+                parts: [audio("/assets/audio/dictionary/l/lie.mp3"), "l", mark("ie"), " ", phonetics("/laɪ/")],
               }),
               // pie
               ...wordRowList({
-                audio: "/assets/audio/words/p/pie.mp3",
-                parts: ["p", mark("ie"), " ", phonetics("/paɪ/")],
+                parts: [audio("/assets/audio/dictionary/p/pie.mp3"), "p", mark("ie"), " ", phonetics("/paɪ/")],
               }),
               // tie
               ...wordRowList({
-                audio: "/assets/audio/words/t/tie.mp3",
-                parts: ["t", mark("ie"), " ", phonetics("/taɪ/")],
+                parts: [audio("/assets/audio/dictionary/t/tie.mp3"), "t", mark("ie"), " ", phonetics("/taɪ/")],
               }),
             ]}
           />
@@ -3466,15 +3004,12 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/n.mp3",
-                parts: [bold("'n' "), phonetics("/ŋ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/n.mp3"), bold("'n' "), phonetics("/ŋ/")],
               }),
 
               // anger
               ...wordRowList({
-                audio: "/assets/audio/words/a/anger.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/anger.mp3"),
                   "a",
                   mark("n"),
                   "ger",
@@ -3487,8 +3022,7 @@ export default function PhoneticsLetters() {
 
               // angry
               ...wordRowList({
-                audio: "/assets/audio/words/a/angry.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/angry.mp3"),
                   "a",
                   mark("n"),
                   "gry",
@@ -3505,15 +3039,12 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3",
-                parts: [bold("'ng'"), " ", phonetics("/ŋ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ŋ.mp3"), bold("'ng'"), " ", phonetics("/ŋ/")],
               }),
 
               // going
               ...wordRowList({
-                audio: "/assets/audio/words/g/going.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/g/going.mp3"),
                   "goi",
                   mark("ng"),
                   " ",
@@ -3525,8 +3056,7 @@ export default function PhoneticsLetters() {
 
               // interesting
               ...wordRowList({
-                audio: "/assets/audio/words/i/interesting.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/i/interesting.mp3"),
                   "interesti",
                   mark("ng"),
                   " ",
@@ -3538,8 +3068,7 @@ export default function PhoneticsLetters() {
 
               // thing
               ...wordRowList({
-                audio: "/assets/audio/words/t/thing.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/thing.mp3"),
                   "thi",
                   mark("ng"),
                   " ",
@@ -3558,69 +3087,55 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3",
-                parts: [phonetics("/ɑː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɑ.mp3"), phonetics("/ɑː/")],
               }),
               // donkey
               ...wordRowList({
-                audio: "/assets/audio/words/d/donkey.mp3",
-                parts: ["d", mark("o"), "nkey", " ", phonetics("/ˈdɑːŋ.ki/")],
+                parts: [audio("/assets/audio/dictionary/d/donkey.mp3"), "d", mark("o"), "nkey", " ", phonetics("/ˈdɑːŋ.ki/")],
               }),
               // hot
               ...wordRowList({
-                audio: "/assets/audio/words/h/hot.mp3",
-                parts: ["h", mark("o"), "t", " ", phonetics("/hɑːt/")],
+                parts: [audio("/assets/audio/dictionary/h/hot.mp3"), "h", mark("o"), "t", " ", phonetics("/hɑːt/")],
               }),
               // job
               ...wordRowList({
-                audio: "/assets/audio/words/j/job.mp3",
-                parts: ["j", mark("o"), "b", " ", phonetics("/dʒɑːb/")],
+                parts: [audio("/assets/audio/dictionary/j/job.mp3"), "j", mark("o"), "b", " ", phonetics("/dʒɑːb/")],
               }),
               // lot
               ...wordRowList({
-                audio: "/assets/audio/words/l/lot.mp3",
-                parts: ["l", mark("o"), "t", " ", phonetics("/lɑːt/")],
+                parts: [audio("/assets/audio/dictionary/l/lot.mp3"), "l", mark("o"), "t", " ", phonetics("/lɑːt/")],
               }),
               // not
               ...wordRowList({
-                audio: "/assets/audio/words/n/not.mp3",
-                parts: ["n", mark("o"), "t", " ", phonetics("/nɑːt/")],
+                parts: [audio("/assets/audio/dictionary/n/not.mp3"), "n", mark("o"), "t", " ", phonetics("/nɑːt/")],
               }),
               // odyssey
               ...wordRowList({
-                audio: "/assets/audio/words/o/odyssey.mp3",
-                parts: [mark("o"), "dyssey", " ", phonetics("/ˈɑː.dɪ.si/")],
+                parts: [audio("/assets/audio/dictionary/o/odyssey.mp3"), mark("o"), "dyssey", " ", phonetics("/ˈɑː.dɪ.si/")],
               }),
               // office
               ...wordRowList({
-                audio: "/assets/audio/words/o/office.mp3",
-                parts: [mark("o"), "ffice", " ", phonetics("/ˈɑː.fɪs/")],
+                parts: [audio("/assets/audio/dictionary/o/office.mp3"), mark("o"), "ffice", " ", phonetics("/ˈɑː.fɪs/")],
               }),
               // rob
               ...wordRowList({
-                audio: "/assets/audio/words/r/rob.mp3",
-                parts: ["r", mark("o"), "b", " ", phonetics("/rɑːb/")],
+                parts: [audio("/assets/audio/dictionary/r/rob.mp3"), "r", mark("o"), "b", " ", phonetics("/rɑːb/")],
               }),
               // rock
               ...wordRowList({
-                audio: "/assets/audio/words/r/rock.mp3",
-                parts: ["r", mark("o"), "ck", " ", phonetics("/rɑːk/")],
+                parts: [audio("/assets/audio/dictionary/r/rock.mp3"), "r", mark("o"), "ck", " ", phonetics("/rɑːk/")],
               }),
               // shop
               ...wordRowList({
-                audio: "/assets/audio/words/s/shop.mp3",
-                parts: ["sh", mark("o"), "p", " ", phonetics("/ʃɑːp/")],
+                parts: [audio("/assets/audio/dictionary/s/shop.mp3"), "sh", mark("o"), "p", " ", phonetics("/ʃɑːp/")],
               }),
               // stop
               ...wordRowList({
-                audio: "/assets/audio/words/s/stop.mp3",
-                parts: ["st", mark("o"), "p", " ", phonetics("/stɑːp/")],
+                parts: [audio("/assets/audio/dictionary/s/stop.mp3"), "st", mark("o"), "p", " ", phonetics("/stɑːp/")],
               }),
               // top
               ...wordRowList({
-                audio: "/assets/audio/words/t/top.mp3",
-                parts: ["t", mark("o"), "p", " ", phonetics("/tɑːp/")],
+                parts: [audio("/assets/audio/dictionary/t/top.mp3"), "t", mark("o"), "p", " ", phonetics("/tɑːp/")],
               }),
             ]}
           />
@@ -3630,34 +3145,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
-                parts: [phonetics("/ɔː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3"), phonetics("/ɔː/")],
               }),
               // bought
               ...wordRowList({
-                audio: "/assets/audio/words/b/bought.mp3",
-                parts: ["b", mark("o"), "ught", " ", phonetics("/bɔːt/")],
+                parts: [audio("/assets/audio/dictionary/b/bought.mp3"), "b", mark("o"), "ught", " ", phonetics("/bɔːt/")],
               }),
               // coffee
               ...wordRowList({
-                audio: "/assets/audio/words/c/coffee.mp3",
-                parts: ["c", mark("o"), "ffee", " ", phonetics("/ˈkɔː.fi/")],
+                parts: [audio("/assets/audio/dictionary/c/coffee.mp3"), "c", mark("o"), "ffee", " ", phonetics("/ˈkɔː.fi/")],
               }),
               // dog
               ...wordRowList({
-                audio: "/assets/audio/words/d/dog.mp3",
-                parts: ["d", mark("o"), "g", " ", phonetics("/dɔːg/")],
+                parts: [audio("/assets/audio/dictionary/d/dog.mp3"), "d", mark("o"), "g", " ", phonetics("/dɔːg/")],
               }),
               // fog
               ...wordRowList({
-                audio: "/assets/audio/words/f/fog.mp3",
-                parts: ["f", mark("o"), "g", " ", phonetics("/fɔːg/")],
+                parts: [audio("/assets/audio/dictionary/f/fog.mp3"), "f", mark("o"), "g", " ", phonetics("/fɔːg/")],
               }),
               // frog
               ...wordRowList({
-                audio: "/assets/audio/words/f/frog.mp3",
-                parts: ["fr", mark("o"), "g", " ", phonetics("/frɔːg/")],
+                parts: [audio("/assets/audio/dictionary/f/frog.mp3"), "fr", mark("o"), "g", " ", phonetics("/frɔːg/")],
               }),
             ]}
           />
@@ -3667,29 +3175,23 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3",
-                parts: [phonetics("/oʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3"), phonetics("/oʊ/")],
               }),
               // go
               ...wordRowList({
-                audio: "/assets/audio/words/g/go.mp3",
-                parts: ["g", mark("o"), " ", phonetics("/ɡoʊ/")],
+                parts: [audio("/assets/audio/dictionary/g/go.mp3"), "g", mark("o"), " ", phonetics("/ɡoʊ/")],
               }),
               // hotel
               ...wordRowList({
-                audio: "/assets/audio/words/h/hotel.mp3",
-                parts: ["h", mark("o"), "tel", " ", phonetics("/hoʊˈtel/")],
+                parts: [audio("/assets/audio/dictionary/h/hotel.mp3"), "h", mark("o"), "tel", " ", phonetics("/hoʊˈtel/")],
               }),
               // no
               ...wordRowList({
-                audio: "/assets/audio/words/n/no.mp3",
-                parts: ["n", mark("o"), " ", phonetics("/noʊ/")],
+                parts: [audio("/assets/audio/dictionary/n/no.mp3"), "n", mark("o"), " ", phonetics("/noʊ/")],
               }),
               // open
               ...wordRowList({
-                audio: "/assets/audio/words/o/open.mp3",
-                parts: [mark("o"), "pen", " ", phonetics("/ˈoʊ.pən/")],
+                parts: [audio("/assets/audio/dictionary/o/open.mp3"), mark("o"), "pen", " ", phonetics("/ˈoʊ.pən/")],
               }),
             ]}
           />
@@ -3702,19 +3204,15 @@ export default function PhoneticsLetters() {
             value={[
               //
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3",
-                parts: [phonetics("/ɔː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɔ.mp3"), phonetics("/ɔː/")],
               }),
               // abroad
               ...wordRowList({
-                audio: "/assets/audio/words/a/abroad.mp3",
-                parts: ["abr", mark("oa"), "d", " ", phonetics("/əˈbrɔːd/")],
+                parts: [audio("/assets/audio/dictionary/a/abroad.mp3"), "abr", mark("oa"), "d", " ", phonetics("/əˈbrɔːd/")],
               }),
               // broad
               ...wordRowList({
-                audio: "/assets/audio/words/b/broad.mp3",
-                parts: ["br", mark("oa"), "d", " ", phonetics("/brɔːd/")],
+                parts: [audio("/assets/audio/dictionary/b/broad.mp3"), "br", mark("oa"), "d", " ", phonetics("/brɔːd/")],
               }),
             ]}
           />
@@ -3724,34 +3222,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3",
-                parts: [phonetics("/oʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3"), phonetics("/oʊ/")],
               }),
               // boat
               ...wordRowList({
-                audio: "/assets/audio/words/b/boat.mp3",
-                parts: ["b", mark("oa"), "t", " ", phonetics("/boʊt/")],
+                parts: [audio("/assets/audio/dictionary/b/boat.mp3"), "b", mark("oa"), "t", " ", phonetics("/boʊt/")],
               }),
               // coat
               ...wordRowList({
-                audio: "/assets/audio/words/c/coat.mp3",
-                parts: ["c", mark("oa"), "t", " ", phonetics("/koʊt/")],
+                parts: [audio("/assets/audio/dictionary/c/coat.mp3"), "c", mark("oa"), "t", " ", phonetics("/koʊt/")],
               }),
               // goat
               ...wordRowList({
-                audio: "/assets/audio/words/g/goat.mp3",
-                parts: ["g", mark("oa"), "t", " ", phonetics("/goʊt/")],
+                parts: [audio("/assets/audio/dictionary/g/goat.mp3"), "g", mark("oa"), "t", " ", phonetics("/goʊt/")],
               }),
               // road
               ...wordRowList({
-                audio: "/assets/audio/words/r/road.mp3",
-                parts: ["r", mark("oa"), "d", " ", phonetics("/roʊd/")],
+                parts: [audio("/assets/audio/dictionary/r/road.mp3"), "r", mark("oa"), "d", " ", phonetics("/roʊd/")],
               }),
               // soap
               ...wordRowList({
-                audio: "/assets/audio/words/s/soap.mp3",
-                parts: ["s", mark("oa"), "p", " ", phonetics("/soʊp/")],
+                parts: [audio("/assets/audio/dictionary/s/soap.mp3"), "s", mark("oa"), "p", " ", phonetics("/soʊp/")],
               }),
             ]}
           />
@@ -3767,19 +3258,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
-                parts: [phonetics("/ʌ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3"), phonetics("/ʌ/")],
               }),
               // blood
               ...wordRowList({
-                audio: "/assets/audio/words/b/blood.mp3",
-                parts: ["bl", mark("oo"), "d", " ", phonetics("/blʌd/")],
+                parts: [audio("/assets/audio/dictionary/b/blood.mp3"), "bl", mark("oo"), "d", " ", phonetics("/blʌd/")],
               }),
               // flood
               ...wordRowList({
-                audio: "/assets/audio/words/f/flood.mp3",
-                parts: ["fl", mark("oo"), "d", " ", phonetics("/flʌd/")],
+                parts: [audio("/assets/audio/dictionary/f/flood.mp3"), "fl", mark("oo"), "d", " ", phonetics("/flʌd/")],
               }),
             ]}
           />
@@ -3789,34 +3276,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
-                parts: [phonetics("/ʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3"), phonetics("/ʊ/")],
               }),
               // book
               ...wordRowList({
-                audio: "/assets/audio/words/b/book.mp3",
-                parts: ["b", mark("oo"), "k", " ", phonetics("/bʊk/")],
+                parts: [audio("/assets/audio/dictionary/b/book.mp3"), "b", mark("oo"), "k", " ", phonetics("/bʊk/")],
               }),
               // cook
               ...wordRowList({
-                audio: "/assets/audio/words/c/cook.mp3",
-                parts: ["c", mark("oo"), "k", " ", phonetics("/kʊk/")],
+                parts: [audio("/assets/audio/dictionary/c/cook.mp3"), "c", mark("oo"), "k", " ", phonetics("/kʊk/")],
               }),
               // foot
               ...wordRowList({
-                audio: "/assets/audio/words/f/foot.mp3",
-                parts: ["f", mark("oo"), "t", " ", phonetics("/fʊt/")],
+                parts: [audio("/assets/audio/dictionary/f/foot.mp3"), "f", mark("oo"), "t", " ", phonetics("/fʊt/")],
               }),
               // good
               ...wordRowList({
-                audio: "/assets/audio/words/g/good.mp3",
-                parts: ["g", mark("oo"), "d", " ", phonetics("/gʊd/")],
+                parts: [audio("/assets/audio/dictionary/g/good.mp3"), "g", mark("oo"), "d", " ", phonetics("/gʊd/")],
               }),
               // look
               ...wordRowList({
-                audio: "/assets/audio/words/l/look.mp3",
-                parts: ["l", mark("oo"), "k", " ", phonetics("/lʊk/")],
+                parts: [audio("/assets/audio/dictionary/l/look.mp3"), "l", mark("oo"), "k", " ", phonetics("/lʊk/")],
               }),
             ]}
           />
@@ -3826,34 +3306,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
-                parts: [phonetics("/uː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/u.mp3"), phonetics("/uː/")],
               }),
               // food
               ...wordRowList({
-                audio: "/assets/audio/words/f/food.mp3",
-                parts: ["f", mark("oo"), "d", " ", phonetics("/fuːd/")],
+                parts: [audio("/assets/audio/dictionary/f/food.mp3"), "f", mark("oo"), "d", " ", phonetics("/fuːd/")],
               }),
               // moon
               ...wordRowList({
-                audio: "/assets/audio/words/m/moon.mp3",
-                parts: ["m", mark("oo"), "n", " ", phonetics("/muːn/")],
+                parts: [audio("/assets/audio/dictionary/m/moon.mp3"), "m", mark("oo"), "n", " ", phonetics("/muːn/")],
               }),
               // school
               ...wordRowList({
-                audio: "/assets/audio/words/s/school.mp3",
-                parts: ["sch", mark("oo"), "l", " ", phonetics("/skuːl/")],
+                parts: [audio("/assets/audio/dictionary/s/school.mp3"), "sch", mark("oo"), "l", " ", phonetics("/skuːl/")],
               }),
               // room
               ...wordRowList({
-                audio: "/assets/audio/words/r/room.mp3",
-                parts: ["r", mark("oo"), "m", " ", phonetics("/ruːm/")],
+                parts: [audio("/assets/audio/dictionary/r/room.mp3"), "r", mark("oo"), "m", " ", phonetics("/ruːm/")],
               }),
               // too
               ...wordRowList({
-                audio: "/assets/audio/words/t/to.mp3",
-                parts: ["t", mark("oo"), " ", phonetics("/tuː/")],
+                parts: [audio("/assets/audio/dictionary/t/to.mp3"), "t", mark("oo"), " ", phonetics("/tuː/")],
               }),
             ]}
           />
@@ -3864,18 +3337,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/assets/audio/pronunciation/phonetics/əs.mp3",
-                parts: [phonetics("/əs/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/əs.mp3"), phonetics("/əs/")],
               }),
               // curious
               ...wordRowList({
-                audio: "/assets/audio/words/c/curious.mp3",
-                parts: ["curi", mark("ous"), " ", phonetics("/ˈkjʊr.i.əs/")],
+                parts: [audio("/assets/audio/dictionary/c/curious.mp3"), "curi", mark("ous"), " ", phonetics("/ˈkjʊr.i.əs/")],
               }),
               // dangerous
               ...wordRowList({
-                audio: "/assets/audio/words/d/dangerous.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/d/dangerous.mp3"),
                   "danger",
                   mark("ous"),
                   " ",
@@ -3884,23 +3354,19 @@ export default function PhoneticsLetters() {
               }),
               // famous
               ...wordRowList({
-                audio: "/assets/audio/words/f/famous.mp3",
-                parts: ["fam", mark("ous"), " ", phonetics("/ˈfeɪ.məs/")],
+                parts: [audio("/assets/audio/dictionary/f/famous.mp3"), "fam", mark("ous"), " ", phonetics("/ˈfeɪ.məs/")],
               }),
               // nervous
               ...wordRowList({
-                audio: "/assets/audio/words/n/nervous.mp3",
-                parts: ["nerv", mark("ous"), " ", phonetics("/ˈnɝː.vəs/")],
+                parts: [audio("/assets/audio/dictionary/n/nervous.mp3"), "nerv", mark("ous"), " ", phonetics("/ˈnɝː.vəs/")],
               }),
               // serious
               ...wordRowList({
-                audio: "/assets/audio/words/s/serious.mp3",
-                parts: ["seri", mark("ous"), " ", phonetics("/ˈsɪr.i.əs/")],
+                parts: [audio("/assets/audio/dictionary/s/serious.mp3"), "seri", mark("ous"), " ", phonetics("/ˈsɪr.i.əs/")],
               }),
               // various
               ...wordRowList({
-                audio: "/assets/audio/words/v/various.mp3",
-                parts: ["vari", mark("ous"), " ", phonetics("/ˈver.i.əs/")],
+                parts: [audio("/assets/audio/dictionary/v/various.mp3"), "vari", mark("ous"), " ", phonetics("/ˈver.i.əs/")],
               }),
             ]}
           />
@@ -3912,14 +3378,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aʊ.mp3",
-                parts: [phonetics("/aʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aʊ.mp3"), phonetics("/aʊ/")],
               }),
               // bow (verb)
               ...wordRowList({
-                audio: "/assets/audio/words/b/bow-verb.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/bow-verb.mp3"),
                   "b",
                   mark("ow"),
                   " ",
@@ -3930,33 +3393,27 @@ export default function PhoneticsLetters() {
               }),
               // brown
               ...wordRowList({
-                audio: "/assets/audio/words/b/brown.mp3",
-                parts: ["br", mark("ow"), "n", " ", phonetics("/braʊn/")],
+                parts: [audio("/assets/audio/dictionary/b/brown.mp3"), "br", mark("ow"), "n", " ", phonetics("/braʊn/")],
               }),
               // clown
               ...wordRowList({
-                audio: "/assets/audio/words/c/clown.mp3",
-                parts: ["cl", mark("ow"), "n", " ", phonetics("/klaʊn/")],
+                parts: [audio("/assets/audio/dictionary/c/clown.mp3"), "cl", mark("ow"), "n", " ", phonetics("/klaʊn/")],
               }),
               // cow
               ...wordRowList({
-                audio: "/assets/audio/words/c/cow.mp3",
-                parts: ["c", mark("ow"), " ", phonetics("/kaʊ/")],
+                parts: [audio("/assets/audio/dictionary/c/cow.mp3"), "c", mark("ow"), " ", phonetics("/kaʊ/")],
               }),
               // coward
               ...wordRowList({
-                audio: "/assets/audio/words/c/coward.mp3",
-                parts: ["c", mark("ow"), "ard", " ", phonetics("/ˈkaʊ.ɚd/")],
+                parts: [audio("/assets/audio/dictionary/c/coward.mp3"), "c", mark("ow"), "ard", " ", phonetics("/ˈkaʊ.ɚd/")],
               }),
               // frown
               ...wordRowList({
-                audio: "/assets/audio/words/f/frown.mp3",
-                parts: ["fr", mark("ow"), "n", " ", phonetics("/fraʊn/")],
+                parts: [audio("/assets/audio/dictionary/f/frown.mp3"), "fr", mark("ow"), "n", " ", phonetics("/fraʊn/")],
               }),
               // town
               ...wordRowList({
-                audio: "/assets/audio/words/t/town.mp3",
-                parts: ["t", mark("ow"), "n", " ", phonetics("/taʊn/")],
+                parts: [audio("/assets/audio/dictionary/t/town.mp3"), "t", mark("ow"), "n", " ", phonetics("/taʊn/")],
               }),
             ]}
           />
@@ -3965,14 +3422,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3",
-                parts: [phonetics("/oʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/oʊ.mp3"), phonetics("/oʊ/")],
               }),
               // bow
               ...wordRowList({
-                audio: "/assets/audio/words/b/bow-noun.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/bow-noun.mp3"),
                   "b",
                   mark("ow"),
                   " ",
@@ -3998,11 +3452,11 @@ export default function PhoneticsLetters() {
               // cow vs. call
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/c/cow.mp3",
+                  audio: "/assets/audio/dictionary/c/cow.mp3",
                   parts: ["c", mark("ow"), " ", phonetics("/kaʊ/")],
                 },
                 right: {
-                  audio: "/assets/audio/words/c/call.mp3",
+                  audio: "/assets/audio/dictionary/c/call.mp3",
                   parts: ["ca", mark("ll"), " ", phonetics("/kɔːl/")],
                 },
               }),
@@ -4014,11 +3468,11 @@ export default function PhoneticsLetters() {
               // bow vs. bowl
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/b/bow-noun.mp3",
+                  audio: "/assets/audio/dictionary/b/bow-noun.mp3",
                   parts: ["b", mark("ow"), " ", phonetics("/boʊ/")],
                 },
                 right: {
-                  audio: "/assets/audio/words/b/bowl.mp3",
+                  audio: "/assets/audio/dictionary/b/bowl.mp3",
                   parts: ["bow", mark("l"), " ", phonetics("/boʊl/")],
                 },
               }),
@@ -4043,44 +3497,35 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3",
-                parts: [phonetics("/ʌ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ə-ʌ.mp3"), phonetics("/ʌ/")],
               }),
               // but
               ...wordRowList({
-                audio: "/assets/audio/words/b/but.mp3",
-                parts: ["b", mark("u"), "t", " ", phonetics("/bʌt/")],
+                parts: [audio("/assets/audio/dictionary/b/but.mp3"), "b", mark("u"), "t", " ", phonetics("/bʌt/")],
               }),
               // cuff
               ...wordRowList({
-                audio: "/assets/audio/words/c/cuff.mp3",
-                parts: ["c", mark("u"), "ff", " ", phonetics("/kʌf/")],
+                parts: [audio("/assets/audio/dictionary/c/cuff.mp3"), "c", mark("u"), "ff", " ", phonetics("/kʌf/")],
               }),
               // cut
               ...wordRowList({
-                audio: "/assets/audio/words/c/cut.mp3",
-                parts: ["c", mark("u"), "t", " ", phonetics("/kʌt/")],
+                parts: [audio("/assets/audio/dictionary/c/cut.mp3"), "c", mark("u"), "t", " ", phonetics("/kʌt/")],
               }),
               // hulk
               ...wordRowList({
-                audio: "/assets/audio/words/h/hulk.mp3",
-                parts: ["h", mark("u"), "lk", " ", phonetics("/hʌlk/")],
+                parts: [audio("/assets/audio/dictionary/h/hulk.mp3"), "h", mark("u"), "lk", " ", phonetics("/hʌlk/")],
               }),
               // hut
               ...wordRowList({
-                audio: "/assets/audio/words/h/hut.mp3",
-                parts: ["h", mark("u"), "t", " ", phonetics("/hʌt/")],
+                parts: [audio("/assets/audio/dictionary/h/hut.mp3"), "h", mark("u"), "t", " ", phonetics("/hʌt/")],
               }),
               // success
               ...wordRowList({
-                audio: "/assets/audio/words/s/success.mp3",
-                parts: ["s", mark("u"), "ccess", " ", phonetics("/səkˈses/")],
+                parts: [audio("/assets/audio/dictionary/s/success.mp3"), "s", mark("u"), "ccess", " ", phonetics("/səkˈses/")],
               }),
               // support
               ...wordRowList({
-                audio: "/assets/audio/words/s/support.mp3",
-                parts: ["s", mark("u"), "pport", " ", phonetics("/səˈpɔːrt/")],
+                parts: [audio("/assets/audio/dictionary/s/support.mp3"), "s", mark("u"), "pport", " ", phonetics("/səˈpɔːrt/")],
               }),
             ]}
           />
@@ -4090,19 +3535,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
-                parts: [phonetics("/ɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3"), phonetics("/ɪ/")],
               }),
               // business
               ...wordRowList({
-                audio: "/assets/audio/words/b/business.mp3",
-                parts: ["b", mark("u"), "siness", " ", phonetics("/ˈbɪ.znəs/")],
+                parts: [audio("/assets/audio/dictionary/b/business.mp3"), "b", mark("u"), "siness", " ", phonetics("/ˈbɪ.znəs/")],
               }),
               // busy
               ...wordRowList({
-                audio: "/assets/audio/words/b/busy.mp3",
-                parts: ["b", mark("u"), "sy", " ", phonetics("/ˈbɪz.i/")],
+                parts: [audio("/assets/audio/dictionary/b/busy.mp3"), "b", mark("u"), "sy", " ", phonetics("/ˈbɪz.i/")],
               }),
             ]}
           />
@@ -4112,24 +3553,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3",
-                parts: [phonetics("/ʊ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ʊ.mp3"), phonetics("/ʊ/")],
               }),
               // full
               ...wordRowList({
-                audio: "/assets/audio/words/f/full.mp3",
-                parts: ["f", mark("u"), "ll", " ", phonetics("/fʊl/")],
+                parts: [audio("/assets/audio/dictionary/f/full.mp3"), "f", mark("u"), "ll", " ", phonetics("/fʊl/")],
               }),
               // pull
               ...wordRowList({
-                audio: "/assets/audio/words/p/pull.mp3",
-                parts: ["p", mark("u"), "ll", " ", phonetics("/pʊl/")],
+                parts: [audio("/assets/audio/dictionary/p/pull.mp3"), "p", mark("u"), "ll", " ", phonetics("/pʊl/")],
               }),
               // put
               ...wordRowList({
-                audio: "/assets/audio/words/p/put.mp3",
-                parts: ["p", mark("u"), "t", " ", phonetics("/pʊt/")],
+                parts: [audio("/assets/audio/dictionary/p/put.mp3"), "p", mark("u"), "t", " ", phonetics("/pʊt/")],
               }),
             ]}
           />
@@ -4139,14 +3575,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
-                parts: [phonetics("/uː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/u.mp3"), phonetics("/uː/")],
               }),
               // student
               ...wordRowList({
-                audio: "/assets/audio/words/s/student.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/s/student.mp3"),
                   "st",
                   mark("u"),
                   "dent",
@@ -4156,8 +3589,7 @@ export default function PhoneticsLetters() {
               }),
               // rule
               ...wordRowList({
-                audio: "/assets/audio/words/r/rule.mp3",
-                parts: ["r", mark("u"), "le", " ", phonetics("/ruːl/")],
+                parts: [audio("/assets/audio/dictionary/r/rule.mp3"), "r", mark("u"), "le", " ", phonetics("/ruːl/")],
               }),
             ]}
             word
@@ -4168,23 +3600,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/assets/audio/pronunciation/phonetics/ju.mp3",
-                parts: [phonetics("/juː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/ju.mp3"), phonetics("/juː/")],
               }),
               // curious
               ...wordRowList({
-                audio: "/assets/audio/words/c/curious.mp3",
-                parts: ["c", mark("u"), "rious ", phonetics("/ˈkjʊr.i.əs/")],
+                parts: [audio("/assets/audio/dictionary/c/curious.mp3"), "c", mark("u"), "rious ", phonetics("/ˈkjʊr.i.əs/")],
               }),
               // music
               ...wordRowList({
-                audio: "/assets/audio/words/m/music.mp3",
-                parts: ["m", mark("u"), "sic ", phonetics("/ˈmjuː.zɪk/")],
+                parts: [audio("/assets/audio/dictionary/m/music.mp3"), "m", mark("u"), "sic ", phonetics("/ˈmjuː.zɪk/")],
               }),
               // university
               ...wordRowList({
-                audio: "/assets/audio/words/u/university.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/u/university.mp3"),
                   mark("u"),
                   "niversity ",
                   phonetics("/ˌjuː.nəˈvɝː.sə.t̬i/"),
@@ -4192,8 +3620,7 @@ export default function PhoneticsLetters() {
               }),
               // use
               ...wordRowList({
-                audio: "/assets/audio/words/u/use-verb.mp3",
-                parts: [mark("u"), "se ", phonetics("/juːz/")],
+                parts: [audio("/assets/audio/dictionary/u/use-verb.mp3"), mark("u"), "se ", phonetics("/juːz/")],
               }),
             ]}
           />
@@ -4209,29 +3636,23 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3",
-                parts: [phonetics("/ɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/ɪ.mp3"), phonetics("/ɪ/")],
               }),
               // build
               ...wordRowList({
-                audio: "/assets/audio/words/b/build.mp3",
-                parts: ["b", mark("ui"), "ld ", phonetics("/bɪld/")],
+                parts: [audio("/assets/audio/dictionary/b/build.mp3"), "b", mark("ui"), "ld ", phonetics("/bɪld/")],
               }),
               // built
               ...wordRowList({
-                audio: "/assets/audio/words/b/built.mp3",
-                parts: ["b", mark("ui"), "lt ", phonetics("/bɪlt/")],
+                parts: [audio("/assets/audio/dictionary/b/built.mp3"), "b", mark("ui"), "lt ", phonetics("/bɪlt/")],
               }),
               // guild
               ...wordRowList({
-                audio: "/assets/audio/words/g/guild.mp3",
-                parts: ["g", mark("ui"), "ld ", phonetics("/ɡɪld/")],
+                parts: [audio("/assets/audio/dictionary/g/guild.mp3"), "g", mark("ui"), "ld ", phonetics("/ɡɪld/")],
               }),
               // guilt
               ...wordRowList({
-                audio: "/assets/audio/words/g/guilt.mp3",
-                parts: ["g", mark("ui"), "lt ", phonetics("/ɡɪlt/")],
+                parts: [audio("/assets/audio/dictionary/g/guilt.mp3"), "g", mark("ui"), "lt ", phonetics("/ɡɪlt/")],
               }),
             ]}
           />
@@ -4241,19 +3662,15 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3",
-                parts: [phonetics("/aɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3"), phonetics("/aɪ/")],
               }),
               // guide
               ...wordRowList({
-                audio: "/assets/audio/words/g/guide.mp3",
-                parts: ["g", mark("ui"), "de ", phonetics("/ɡaɪd/")],
+                parts: [audio("/assets/audio/dictionary/g/guide.mp3"), "g", mark("ui"), "de ", phonetics("/ɡaɪd/")],
               }),
               // guile
               ...wordRowList({
-                audio: "/assets/audio/words/g/guile.mp3",
-                parts: ["g", mark("ui"), "le ", phonetics("/ɡaɪl/")],
+                parts: [audio("/assets/audio/dictionary/g/guile.mp3"), "g", mark("ui"), "le ", phonetics("/ɡaɪl/")],
               }),
             ]}
           />
@@ -4263,29 +3680,23 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/u.mp3",
-                parts: [phonetics("/uː/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/u.mp3"), phonetics("/uː/")],
               }),
               // fruit
               ...wordRowList({
-                audio: "/assets/audio/words/f/fruit.mp3",
-                parts: ["fr", mark("ui"), "t ", phonetics("/fruːt/")],
+                parts: [audio("/assets/audio/dictionary/f/fruit.mp3"), "fr", mark("ui"), "t ", phonetics("/fruːt/")],
               }),
               // juice
               ...wordRowList({
-                audio: "/assets/audio/words/j/juice.mp3",
-                parts: ["j", mark("ui"), "ce ", phonetics("/dʒuːs/")],
+                parts: [audio("/assets/audio/dictionary/j/juice.mp3"), "j", mark("ui"), "ce ", phonetics("/dʒuːs/")],
               }),
               // nuisance
               ...wordRowList({
-                audio: "/assets/audio/words/n/nuisance.mp3",
-                parts: ["n", mark("ui"), "sance ", phonetics("/ˈnuː.səns/")],
+                parts: [audio("/assets/audio/dictionary/n/nuisance.mp3"), "n", mark("ui"), "sance ", phonetics("/ˈnuː.səns/")],
               }),
               // suit
               ...wordRowList({
-                audio: "/assets/audio/words/s/suit.mp3",
-                parts: ["s", mark("ui"), "t ", phonetics("/suːt/")],
+                parts: [audio("/assets/audio/dictionary/s/suit.mp3"), "s", mark("ui"), "t ", phonetics("/suːt/")],
               }),
             ]}
           />
@@ -4296,23 +3707,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio: "/assets/audio/pronunciation/phonetics/əs.mp3",
-                parts: [phonetics("/əs/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/əs.mp3"), phonetics("/əs/")],
               }),
               // bonus
               ...wordRowList({
-                audio: "/assets/audio/words/b/bonus.mp3",
-                parts: ["bon", mark("us"), " ", phonetics("/ˈboʊ.nəs/")],
+                parts: [audio("/assets/audio/dictionary/b/bonus.mp3"), "bon", mark("us"), " ", phonetics("/ˈboʊ.nəs/")],
               }),
               // campus
               ...wordRowList({
-                audio: "/assets/audio/words/c/campus.mp3",
-                parts: ["camp", mark("us"), " ", phonetics("/ˈkæm.pəs/")],
+                parts: [audio("/assets/audio/dictionary/c/campus.mp3"), "camp", mark("us"), " ", phonetics("/ˈkæm.pəs/")],
               }),
               // focus
               ...wordRowList({
-                audio: "/assets/audio/words/f/focus.mp3",
-                parts: ["foc", mark("us"), " ", phonetics("/ˈfoʊ.kəs/")],
+                parts: [audio("/assets/audio/dictionary/f/focus.mp3"), "foc", mark("us"), " ", phonetics("/ˈfoʊ.kəs/")],
               }),
             ]}
           />
@@ -4324,34 +3731,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3",
-                parts: [phonetics("/ʃ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3"), phonetics("/ʃ/")],
               }),
               // she
               ...wordRowList({
-                audio: "/assets/audio/words/s/she.mp3",
-                parts: [mark("sh"), "e ", phonetics("/ʃiː/")],
+                parts: [audio("/assets/audio/dictionary/s/she.mp3"), mark("sh"), "e ", phonetics("/ʃiː/")],
               }),
               // ship
               ...wordRowList({
-                audio: "/assets/audio/words/s/ship.mp3",
-                parts: [mark("sh"), "ip ", phonetics("/ʃɪp/")],
+                parts: [audio("/assets/audio/dictionary/s/ship.mp3"), mark("sh"), "ip ", phonetics("/ʃɪp/")],
               }),
               // shop
               ...wordRowList({
-                audio: "/assets/audio/words/s/shop.mp3",
-                parts: [mark("sh"), "op ", phonetics("/ʃɑːp/")],
+                parts: [audio("/assets/audio/dictionary/s/shop.mp3"), mark("sh"), "op ", phonetics("/ʃɑːp/")],
               }),
               // fish
               ...wordRowList({
-                audio: "/assets/audio/words/f/fish.mp3",
-                parts: ["fi", mark("sh"), " ", phonetics("/fɪʃ/")],
+                parts: [audio("/assets/audio/dictionary/f/fish.mp3"), "fi", mark("sh"), " ", phonetics("/fɪʃ/")],
               }),
               // wash
               ...wordRowList({
-                audio: "/assets/audio/words/w/wash.mp3",
-                parts: ["wa", mark("sh"), " ", phonetics("/wɑːʃ/")],
+                parts: [audio("/assets/audio/dictionary/w/wash.mp3"), "wa", mark("sh"), " ", phonetics("/wɑːʃ/")],
               }),
             ]}
           />
@@ -4367,34 +3767,27 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/tʃ.mp3",
-                parts: [phonetics("/tʃ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/tʃ.mp3"), phonetics("/tʃ/")],
               }),
               // arch
               ...wordRowList({
-                audio: "/assets/audio/words/a/arch.mp3",
-                parts: ["ar", mark("ch"), " ", phonetics("/ɑːrtʃ/")],
+                parts: [audio("/assets/audio/dictionary/a/arch.mp3"), "ar", mark("ch"), " ", phonetics("/ɑːrtʃ/")],
               }),
               // chair
               ...wordRowList({
-                audio: "/assets/audio/words/c/chair.mp3",
-                parts: [mark("ch"), "air ", phonetics("/tʃer/")],
+                parts: [audio("/assets/audio/dictionary/c/chair.mp3"), mark("ch"), "air ", phonetics("/tʃer/")],
               }),
               // kitchen
               ...wordRowList({
-                audio: "/assets/audio/words/k/kitchen.mp3",
-                parts: ["ki", mark("tch"), "en ", phonetics("/ˈkɪtʃ.ən/")],
+                parts: [audio("/assets/audio/dictionary/k/kitchen.mp3"), "ki", mark("tch"), "en ", phonetics("/ˈkɪtʃ.ən/")],
               }),
               // teach
               ...wordRowList({
-                audio: "/assets/audio/words/t/teach.mp3",
-                parts: ["tea", mark("ch"), " ", phonetics("/tiːtʃ/")],
+                parts: [audio("/assets/audio/dictionary/t/teach.mp3"), "tea", mark("ch"), " ", phonetics("/tiːtʃ/")],
               }),
               // watch
               ...wordRowList({
-                audio: "/assets/audio/words/w/watch.mp3",
-                parts: ["wa", mark("ch"), " ", phonetics("/wɑːtʃ/")],
+                parts: [audio("/assets/audio/dictionary/w/watch.mp3"), "wa", mark("ch"), " ", phonetics("/wɑːtʃ/")],
               }),
             ]}
           />
@@ -4404,27 +3797,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3",
-                phonetics: "/ʃ/",
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ʃ.mp3"), phonetics("/ʃ/")],
               }),
               // brochure
               ...wordRowList({
-                audio: "/assets/audio/words/b/brochure.mp3",
-                parts: ["bro", mark("ch"), "ure"],
-                phonetics: "/broʊˈʃʊr/",
+                parts: [audio("/assets/audio/dictionary/b/brochure.mp3"), "bro", mark("ch"), "ure", " ", phonetics("/broʊˈʃʊr/")],
               }),
               // chef
               ...wordRowList({
-                audio: "/assets/audio/words/c/chef.mp3",
-                parts: [mark("ch"), "ef"],
-                phonetics: "/ʃef/",
+                parts: [audio("/assets/audio/dictionary/c/chef.mp3"), mark("ch"), "ef", " ", phonetics("/ʃef/")],
               }),
               // machine
               ...wordRowList({
-                audio: "/assets/audio/words/m/machine.mp3",
-                parts: ["ma", mark("ch"), "ine"],
-                phonetics: "/məˈʃiːn/",
+                parts: [audio("/assets/audio/dictionary/m/machine.mp3"), "ma", mark("ch"), "ine", " ", phonetics("/məˈʃiːn/")],
               }),
             ]}
           />
@@ -4434,14 +3819,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/k.mp3",
-                parts: [phonetics("/k/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/k.mp3"), phonetics("/k/")],
               }),
               // architect
               ...wordRowList({
-                audio: "/assets/audio/words/a/architect.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/a/architect.mp3"),
                   "ar",
                   mark("ch"),
                   "itect ",
@@ -4450,18 +3832,15 @@ export default function PhoneticsLetters() {
               }),
               // chemistry
               ...wordRowList({
-                audio: "/assets/audio/words/c/chemistry.mp3",
-                parts: [mark("ch"), "emistry ", phonetics("/ˈkem.ə.stri/")],
+                parts: [audio("/assets/audio/dictionary/c/chemistry.mp3"), mark("ch"), "emistry ", phonetics("/ˈkem.ə.stri/")],
               }),
               // chorus
               ...wordRowList({
-                audio: "/assets/audio/words/c/chorus.mp3",
-                parts: [mark("ch"), "orus ", phonetics("/ˈkɔːr.əs/")],
+                parts: [audio("/assets/audio/dictionary/c/chorus.mp3"), mark("ch"), "orus ", phonetics("/ˈkɔːr.əs/")],
               }),
               // technology
               ...wordRowList({
-                audio: "/assets/audio/words/t/technology.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/t/technology.mp3"),
                   "te",
                   mark("ch"),
                   "nology ",
@@ -4491,11 +3870,11 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/words/c/center.mp3",
+                  audio: "/assets/audio/dictionary/c/center.mp3",
                   parts: ["center"],
                 },
                 right: {
-                  audio: "/assets/audio/words/c/cen(t)er.mp3",
+                  audio: "/assets/audio/dictionary/c/cen(t)er.mp3",
                   parts: ["cen(t)er"],
                 },
               }),
@@ -4506,11 +3885,11 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/words/d/dentist.mp3",
+                  audio: "/assets/audio/dictionary/d/dentist.mp3",
                   parts: ["dentist"],
                 },
                 right: {
-                  audio: "/assets/audio/words/d/den(t)ist.mp3",
+                  audio: "/assets/audio/dictionary/d/den(t)ist.mp3",
                   parts: ["den(t)ist"],
                 },
               }),
@@ -4521,11 +3900,11 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/words/i/identify.mp3",
+                  audio: "/assets/audio/dictionary/i/identify.mp3",
                   parts: ["identify"],
                 },
                 right: {
-                  audio: "/assets/audio/words/i/iden(t)ify.mp3",
+                  audio: "/assets/audio/dictionary/i/iden(t)ify.mp3",
                   parts: ["iden(t)ify"],
                 },
               }),
@@ -4536,11 +3915,11 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/words/i/identity.mp3",
+                  audio: "/assets/audio/dictionary/i/identity.mp3",
                   parts: ["identity"],
                 },
                 right: {
-                  audio: "/assets/audio/words/i/iden(t)ity.mp3",
+                  audio: "/assets/audio/dictionary/i/iden(t)ity.mp3",
                   parts: ["iden(t)ity"],
                 },
               }),
@@ -4551,11 +3930,11 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/words/i/international.mp3",
+                  audio: "/assets/audio/dictionary/i/international.mp3",
                   parts: ["international"],
                 },
                 right: {
-                  audio: "/assets/audio/words/i/in(t)ernational.mp3",
+                  audio: "/assets/audio/dictionary/i/in(t)ernational.mp3",
                   parts: ["in(t)ernational"],
                 },
               }),
@@ -4566,11 +3945,11 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/words/i/intervention.mp3",
+                  audio: "/assets/audio/dictionary/i/intervention.mp3",
                   parts: ["intervention"],
                 },
                 right: {
-                  audio: "/assets/audio/words/i/in(t)ervention.mp3",
+                  audio: "/assets/audio/dictionary/i/in(t)ervention.mp3",
                   parts: ["in(t)ervention"],
                 },
               }),
@@ -4581,11 +3960,11 @@ export default function PhoneticsLetters() {
             value={[
               ...wordVariant({
                 left: {
-                  audio: "/assets/audio/words/i/interrupt.mp3",
+                  audio: "/assets/audio/dictionary/i/interrupt.mp3",
                   parts: ["interrupt"],
                 },
                 right: {
-                  audio: "/assets/audio/words/i/in(t)errupt.mp3",
+                  audio: "/assets/audio/dictionary/i/in(t)errupt.mp3",
                   parts: ["in(t)errupt"],
                 },
               }),
@@ -4605,8 +3984,7 @@ export default function PhoneticsLetters() {
             value={[
               // bottom
               ...wordRowList({
-                audio: "/assets/audio/words/b/bottom-us.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/bottom-us.mp3"),
                   "bo",
                   mark("tt"),
                   "om ",
@@ -4617,8 +3995,7 @@ export default function PhoneticsLetters() {
               }),
               // butter
               ...wordRowList({
-                audio: "/assets/audio/words/b/butter-us.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/b/butter-us.mp3"),
                   "bu",
                   mark("tt"),
                   "er ",
@@ -4629,8 +4006,7 @@ export default function PhoneticsLetters() {
               }),
               // party
               ...wordRowList({
-                audio: "/assets/audio/words/p/party-us.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/p/party-us.mp3"),
                   "par",
                   mark("t"),
                   "y ",
@@ -4641,8 +4017,7 @@ export default function PhoneticsLetters() {
               }),
               // photo
               ...wordRowList({
-                audio: "/assets/audio/words/p/photo-us.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/p/photo-us.mp3"),
                   "pho",
                   mark("t"),
                   "o ",
@@ -4653,8 +4028,7 @@ export default function PhoneticsLetters() {
               }),
               // later
               ...wordRowList({
-                audio: "/assets/audio/words/l/later-us.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/l/later-us.mp3"),
                   "la",
                   mark("t"),
                   "er ",
@@ -4665,8 +4039,7 @@ export default function PhoneticsLetters() {
               }),
               // water
               ...wordRowList({
-                audio: "/assets/audio/words/w/water-us.mp3",
-                parts: [
+                parts: [audio("/assets/audio/dictionary/w/water-us.mp3"),
                   "wa",
                   mark("t"),
                   "er ",
@@ -4686,24 +4059,19 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3",
-                parts: [phonetics("/aɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3"), phonetics("/aɪ/")],
               }),
               // by
               ...wordRowList({
-                audio: "/assets/audio/words/b/by-bye.mp3",
-                parts: ["b", mark("y"), " ", phonetics("/baɪ/")],
+                parts: [audio("/assets/audio/dictionary/b/by-bye.mp3"), "b", mark("y"), " ", phonetics("/baɪ/")],
               }),
               // fly
               ...wordRowList({
-                audio: "/assets/audio/words/f/fly.mp3",
-                parts: ["fl", mark("y"), " ", phonetics("/flaɪ/")],
+                parts: [audio("/assets/audio/dictionary/f/fly.mp3"), "fl", mark("y"), " ", phonetics("/flaɪ/")],
               }),
               // type
               ...wordRowList({
-                audio: "/assets/audio/words/t/type.mp3",
-                parts: ["t", mark("y"), "pe ", phonetics("/taɪp/")],
+                parts: [audio("/assets/audio/dictionary/t/type.mp3"), "t", mark("y"), "pe ", phonetics("/taɪp/")],
               }),
             ]}
           />
@@ -4713,39 +4081,31 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/vowels/i.mp3",
-                parts: [phonetics("/i/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/vowels/i.mp3"), phonetics("/i/")],
               }),
               // angry
               ...wordRowList({
-                audio: "/assets/audio/words/a/angry.mp3",
-                parts: ["angr", mark("y"), " ", phonetics("/ˈæŋ.ɡri/")],
+                parts: [audio("/assets/audio/dictionary/a/angry.mp3"), "angr", mark("y"), " ", phonetics("/ˈæŋ.ɡri/")],
               }),
               // crazy
               ...wordRowList({
-                audio: "/assets/audio/words/c/crazy.mp3",
-                parts: ["craz", mark("y"), " ", phonetics("/ˈkreɪ.zi/")],
+                parts: [audio("/assets/audio/dictionary/c/crazy.mp3"), "craz", mark("y"), " ", phonetics("/ˈkreɪ.zi/")],
               }),
               // hungry
               ...wordRowList({
-                audio: "/assets/audio/words/h/hungry.mp3",
-                parts: ["hungr", mark("y"), " ", phonetics("/ˈhʌŋ.ɡri/")],
+                parts: [audio("/assets/audio/dictionary/h/hungry.mp3"), "hungr", mark("y"), " ", phonetics("/ˈhʌŋ.ɡri/")],
               }),
               // odyssey
               ...wordRowList({
-                audio: "/assets/audio/words/o/odyssey.mp3",
-                parts: ["odysse", mark("y"), " ", phonetics("/ˈɑː.dɪ.si/")],
+                parts: [audio("/assets/audio/dictionary/o/odyssey.mp3"), "odysse", mark("y"), " ", phonetics("/ˈɑː.dɪ.si/")],
               }),
               // salty
               ...wordRowList({
-                audio: "/assets/audio/words/s/salty.mp3",
-                parts: ["salt", mark("y"), " ", phonetics("/ˈsɑːl.t̬i/")],
+                parts: [audio("/assets/audio/dictionary/s/salty.mp3"), "salt", mark("y"), " ", phonetics("/ˈsɑːl.t̬i/")],
               }),
               // sleepy
               ...wordRowList({
-                audio: "/assets/audio/words/s/sleepy.mp3",
-                parts: ["sleep", mark("y"), " ", phonetics("/ˈsliː.pi/")],
+                parts: [audio("/assets/audio/dictionary/s/sleepy.mp3"), "sleep", mark("y"), " ", phonetics("/ˈsliː.pi/")],
               }),
             ]}
           />
@@ -4755,29 +4115,23 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/consonants/j.mp3",
-                parts: [phonetics("/j/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/consonants/j.mp3"), phonetics("/j/")],
               }),
               // yes
               ...wordRowList({
-                audio: "/assets/audio/words/y/yes.mp3",
-                parts: [mark("y"), "es ", phonetics("/jes/")],
+                parts: [audio("/assets/audio/dictionary/y/yes.mp3"), mark("y"), "es ", phonetics("/jes/")],
               }),
               // year
               ...wordRowList({
-                audio: "/assets/audio/words/y/year.mp3",
-                parts: [mark("y"), "ear ", phonetics("/jɪr/")],
+                parts: [audio("/assets/audio/dictionary/y/year.mp3"), mark("y"), "ear ", phonetics("/jɪr/")],
               }),
               // yellow
               ...wordRowList({
-                audio: "/assets/audio/words/y/yellow.mp3",
-                parts: [mark("y"), "ellow ", phonetics("/ˈjel.oʊ/")],
+                parts: [audio("/assets/audio/dictionary/y/yellow.mp3"), mark("y"), "ellow ", phonetics("/ˈjel.oʊ/")],
               }),
               // yesterday
               ...wordRowList({
-                audio: "/assets/audio/words/y/yesterday.mp3",
-                parts: [mark("y"), "esterday ", phonetics("/ˈjes.tɚ.deɪ/")],
+                parts: [audio("/assets/audio/dictionary/y/yesterday.mp3"), mark("y"), "esterday ", phonetics("/ˈjes.tɚ.deɪ/")],
               }),
             ]}
           />
@@ -4789,14 +4143,11 @@ export default function PhoneticsLetters() {
           <Phonetics
             value={[
               ...wordRowList({
-                audio:
-                  "/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3",
-                parts: [phonetics("/aɪ/")],
+                parts: [audio("/assets/audio/pronunciation/phonetics/diphthongs/aɪ.mp3"), phonetics("/aɪ/")],
               }),
               // bye
               ...wordRowList({
-                audio: "/assets/audio/words/b/by-bye.mp3",
-                parts: ["b", mark("ye"), " ", phonetics("/baɪ/")],
+                parts: [audio("/assets/audio/dictionary/b/by-bye.mp3"), "b", mark("ye"), " ", phonetics("/baɪ/")],
               }),
             ]}
           />
@@ -4831,7 +4182,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/a/and.mp3",
+                  audio: "/assets/audio/dictionary/a/and.mp3",
                   parts: [
                     "a",
                     mark("nd"),
@@ -4842,7 +4193,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/e/end.mp3",
+                  audio: "/assets/audio/dictionary/e/end.mp3",
                   parts: [
                     "e",
                     mark("nd"),
@@ -4859,11 +4210,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/b/bread-and-butter.mp3",
+                audio: "/assets/audio/dictionary/b/bread-and-butter.mp3",
                 parts: ["Bread and butter. ", portuguese("Pão e manteiga.")],
               }),
               content({
-                audio: "/assets/audio/words/t/this-is-the-end.mp3",
+                audio: "/assets/audio/dictionary/t/this-is-the-end.mp3",
                 parts: ["This is the end. ", portuguese("Isso é o fim.")],
               }),
             ]}
@@ -4875,7 +4226,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/b/bad.mp3",
+                  audio: "/assets/audio/dictionary/b/bad.mp3",
                   parts: [
                     "b",
                     mark("a"),
@@ -4886,7 +4237,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/b/bed.mp3",
+                  audio: "/assets/audio/dictionary/b/bed.mp3",
                   parts: [
                     "b",
                     mark("e"),
@@ -4903,14 +4254,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/i/i-had-a-bad-day.mp3",
+                audio: "/assets/audio/dictionary/i/i-had-a-bad-day.mp3",
                 parts: [
                   "I had a bad day. ",
                   portuguese("Eu tive um péssimo dia."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/s/she-went-to-bed-early.mp3",
+                audio: "/assets/audio/dictionary/s/she-went-to-bed-early.mp3",
                 parts: [
                   "She went to bed early. ",
                   portuguese("Ela foi para a cama cedo."),
@@ -4925,7 +4276,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/b/bat.mp3",
+                  audio: "/assets/audio/dictionary/b/bat.mp3",
                   parts: [
                     "b",
                     mark("a"),
@@ -4936,7 +4287,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/b/bet.mp3",
+                  audio: "/assets/audio/dictionary/b/bet.mp3",
                   parts: [
                     "b",
                     mark("e"),
@@ -4954,14 +4305,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/h/he-hit-the-ball-with-a-bat.mp3",
+                audio: "/assets/audio/dictionary/h/he-hit-the-ball-with-a-bat.mp3",
                 parts: [
                   "He hit the ball with a bat. ",
                   portuguese("Ele acertou a bola com um bastão."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/i/i-bet-you-were-right.mp3",
+                audio: "/assets/audio/dictionary/i/i-bet-you-were-right.mp3",
                 parts: [
                   "I bet you were right. ",
                   portuguese("Aposto que você estava certo."),
@@ -4976,7 +4327,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/d/dad.mp3",
+                  audio: "/assets/audio/dictionary/d/dad.mp3",
                   parts: [
                     "d",
                     mark("a"),
@@ -4987,7 +4338,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/d/dead.mp3",
+                  audio: "/assets/audio/dictionary/d/dead.mp3",
                   parts: [
                     "d",
                     mark("ea"),
@@ -5004,11 +4355,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/m/my-dad-is-cool.mp3",
+                audio: "/assets/audio/dictionary/m/my-dad-is-cool.mp3",
                 parts: ["My dad is cool. ", portuguese("Meu pai é legal.")],
               }),
               content({
-                audio: "/assets/audio/words/t/the-plant-is-dead.mp3",
+                audio: "/assets/audio/dictionary/t/the-plant-is-dead.mp3",
                 parts: [
                   "The plant is dead. ",
                   portuguese("A planta está morta."),
@@ -5023,7 +4374,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/h/had.mp3",
+                  audio: "/assets/audio/dictionary/h/had.mp3",
                   parts: [
                     "h",
                     mark("a"),
@@ -5034,7 +4385,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/h/head.mp3",
+                  audio: "/assets/audio/dictionary/h/head.mp3",
                   parts: [
                     "h",
                     mark("ea"),
@@ -5051,14 +4402,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/j/john-had-a-good-time.mp3",
+                audio: "/assets/audio/dictionary/j/john-had-a-good-time.mp3",
                 parts: [
                   "John had a good time. ",
                   portuguese("John se divertiu."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/h/he-hit-his-head.mp3",
+                audio: "/assets/audio/dictionary/h/he-hit-his-head.mp3",
                 parts: ["He hit his head. ", portuguese("Ele bateu a cabeça.")],
               }),
             ]}
@@ -5070,7 +4421,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/m/man.mp3",
+                  audio: "/assets/audio/dictionary/m/man.mp3",
                   parts: [
                     "m",
                     mark("a"),
@@ -5081,7 +4432,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/m/men.mp3",
+                  audio: "/assets/audio/dictionary/m/men.mp3",
                   parts: [
                     "m",
                     mark("e"),
@@ -5098,11 +4449,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/the-man-is-here.mp3",
+                audio: "/assets/audio/dictionary/t/the-man-is-here.mp3",
                 parts: ["The man is here. ", portuguese("O homem está aqui.")],
               }),
               content({
-                audio: "/assets/audio/words/t/the-men-are-here.mp3",
+                audio: "/assets/audio/dictionary/t/the-men-are-here.mp3",
                 parts: [
                   "The men are here. ",
                   portuguese("Os homens estão aqui."),
@@ -5117,7 +4468,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/p/pan.mp3",
+                  audio: "/assets/audio/dictionary/p/pan.mp3",
                   parts: [
                     "p",
                     mark("a"),
@@ -5128,7 +4479,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/p/pen.mp3",
+                  audio: "/assets/audio/dictionary/p/pen.mp3",
                   parts: [
                     "p",
                     mark("e"),
@@ -5145,14 +4496,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/p/put-the-eggs-in-the-pan.mp3",
+                audio: "/assets/audio/dictionary/p/put-the-eggs-in-the-pan.mp3",
                 parts: [
                   "Put the eggs in the pan. ",
                   portuguese("Coloque os ovos na panela."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/y/you-can-use-this-pen.mp3",
+                audio: "/assets/audio/dictionary/y/you-can-use-this-pen.mp3",
                 parts: [
                   "You can use this pen. ",
                   portuguese("Você pode usar esta caneta."),
@@ -5167,7 +4518,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/s/shad.mp3",
+                  audio: "/assets/audio/dictionary/s/shad.mp3",
                   parts: [
                     "sh",
                     mark("a"),
@@ -5178,7 +4529,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/s/shed.mp3",
+                  audio: "/assets/audio/dictionary/s/shed.mp3",
                   parts: [
                     "sh",
                     mark("e"),
@@ -5195,7 +4546,7 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/the-fisherman-caught-a-shad.mp3",
+                audio: "/assets/audio/dictionary/t/the-fisherman-caught-a-shad.mp3",
                 parts: [
                   "The fisherman caught a shad. ",
                   portuguese("O pescador pegou um peixe shad."),
@@ -5203,7 +4554,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/c/cats-shed-their-fur-every-day.mp3",
+                  "/assets/audio/dictionary/c/cats-shed-their-fur-every-day.mp3",
                 parts: [
                   "Cats shed their fur every day. ",
                   portuguese("Gatos soltam pelos todos os dias."),
@@ -5218,7 +4569,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/t/tan.mp3",
+                  audio: "/assets/audio/dictionary/t/tan.mp3",
                   parts: [
                     "t",
                     mark("a"),
@@ -5229,7 +4580,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/t/ten.mp3",
+                  audio: "/assets/audio/dictionary/t/ten.mp3",
                   parts: [
                     "t",
                     mark("e"),
@@ -5246,7 +4597,7 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/s/she-got-a-tan-at-the-beach.mp3",
+                audio: "/assets/audio/dictionary/s/she-got-a-tan-at-the-beach.mp3",
                 parts: [
                   "She got a tan at the beach. ",
                   portuguese("Ela ficou bronzeada na praia."),
@@ -5254,7 +4605,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/i/i-got-ten-out-of-ten-on-the-test.mp3",
+                  "/assets/audio/dictionary/i/i-got-ten-out-of-ten-on-the-test.mp3",
                 parts: [
                   "I got ten out of ten on the test. ",
                   portuguese("Eu tirei nota máxima na prova."),
@@ -5269,7 +4620,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/t/than.mp3",
+                  audio: "/assets/audio/dictionary/t/than.mp3",
                   parts: [
                     "th",
                     mark("a"),
@@ -5280,7 +4631,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/t/then.mp3",
+                  audio: "/assets/audio/dictionary/t/then.mp3",
                   parts: [
                     "th",
                     mark("e"),
@@ -5297,7 +4648,7 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/s/she-is-taller-than-me.mp3",
+                audio: "/assets/audio/dictionary/s/she-is-taller-than-me.mp3",
                 parts: [
                   "She is taller than me. ",
                   portuguese("Ela é mais alta do que eu."),
@@ -5305,7 +4656,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/f/finish-your-work-then-you-can-rest.mp3",
+                  "/assets/audio/dictionary/f/finish-your-work-then-you-can-rest.mp3",
                 parts: [
                   "Finish your work, then you can rest. ",
                   portuguese(
@@ -5346,7 +4697,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/e/eat.mp3",
+                  audio: "/assets/audio/dictionary/e/eat.mp3",
                   parts: [
                     mark("ea"),
                     "t ",
@@ -5356,7 +4707,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/i/it.mp3",
+                  audio: "/assets/audio/dictionary/i/it.mp3",
                   parts: [
                     mark("i"),
                     "t ",
@@ -5373,14 +4724,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/i/i-dont-usually-eat-breakfast.mp3",
+                audio: "/assets/audio/dictionary/i/i-dont-usually-eat-breakfast.mp3",
                 parts: [
                   "I don’t usually eat breakfast. ",
                   portuguese("Normalmente eu não tomo café da manhã."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/i/it-is-very-cold-today.mp3",
+                audio: "/assets/audio/dictionary/i/it-is-very-cold-today.mp3",
                 parts: [
                   "It is very cold today. ",
                   portuguese("Está muito frio hoje."),
@@ -5395,7 +4746,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/f/feel.mp3",
+                  audio: "/assets/audio/dictionary/f/feel.mp3",
                   parts: [
                     "f",
                     mark("ee"),
@@ -5406,7 +4757,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/f/fill.mp3",
+                  audio: "/assets/audio/dictionary/f/fill.mp3",
                   parts: [
                     "f",
                     mark("i"),
@@ -5424,11 +4775,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/i/i-feel-tired.mp3",
+                audio: "/assets/audio/dictionary/i/i-feel-tired.mp3",
                 parts: ["I feel tired. ", portuguese("Eu me sinto cansado.")],
               }),
               content({
-                audio: "/assets/audio/words/f/fill-the-glass-please.mp3",
+                audio: "/assets/audio/dictionary/f/fill-the-glass-please.mp3",
                 parts: [
                   "Fill the glass, please. ",
                   portuguese("Encha o copo, por favor."),
@@ -5443,7 +4794,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/l/leave.mp3",
+                  audio: "/assets/audio/dictionary/l/leave.mp3",
                   parts: [
                     "l",
                     mark("ea"),
@@ -5454,7 +4805,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/l/live1.mp3",
+                  audio: "/assets/audio/dictionary/l/live1.mp3",
                   parts: [
                     "l",
                     mark("i"),
@@ -5472,11 +4823,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/i/i-leave-at-six.mp3",
+                audio: "/assets/audio/dictionary/i/i-leave-at-six.mp3",
                 parts: ["I leave at six. ", portuguese("Eu saio às seis.")],
               }),
               content({
-                audio: "/assets/audio/words/i/i-live-here.mp3",
+                audio: "/assets/audio/dictionary/i/i-live-here.mp3",
                 parts: ["I live here. ", portuguese("Eu moro aqui.")],
               }),
             ]}
@@ -5488,7 +4839,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/s/sheep.mp3",
+                  audio: "/assets/audio/dictionary/s/sheep.mp3",
                   parts: [
                     "sh",
                     mark("ee"),
@@ -5499,7 +4850,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/s/ship.mp3",
+                  audio: "/assets/audio/dictionary/s/ship.mp3",
                   parts: [
                     "sh",
                     mark("i"),
@@ -5517,14 +4868,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/i/i-saw-a-sheep-on-the-farm.mp3",
+                audio: "/assets/audio/dictionary/i/i-saw-a-sheep-on-the-farm.mp3",
                 parts: [
                   "I saw a sheep on the farm. ",
                   portuguese("Eu vi uma ovelha na fazenda."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/t/this-ship-is-huge.mp3",
+                audio: "/assets/audio/dictionary/t/this-ship-is-huge.mp3",
                 parts: [
                   "This ship is huge. ",
                   portuguese("Este navio é enorme."),
@@ -5539,7 +4890,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/s/sleep.mp3",
+                  audio: "/assets/audio/dictionary/s/sleep.mp3",
                   parts: [
                     "sl",
                     mark("ee"),
@@ -5550,7 +4901,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/s/slip.mp3",
+                  audio: "/assets/audio/dictionary/s/slip.mp3",
                   parts: [
                     "sl",
                     mark("i"),
@@ -5567,11 +4918,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/i/i-need-to-sleep.mp3",
+                audio: "/assets/audio/dictionary/i/i-need-to-sleep.mp3",
                 parts: ["I need to sleep. ", portuguese("Eu preciso dormir.")],
               }),
               content({
-                audio: "/assets/audio/words/b/becareful-not-to-slip.mp3",
+                audio: "/assets/audio/dictionary/b/becareful-not-to-slip.mp3",
                 parts: [
                   "Be careful not to slip. ",
                   portuguese("Cuidado para não escorregar."),
@@ -5612,7 +4963,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/s/sin.mp3",
+                  audio: "/assets/audio/dictionary/s/sin.mp3",
                   parts: [
                     "si",
                     mark("n"),
@@ -5623,7 +4974,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/s/sing.mp3",
+                  audio: "/assets/audio/dictionary/s/sing.mp3",
                   parts: [
                     "si",
                     mark("ng"),
@@ -5641,7 +4992,7 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/h/he-confessed-his-sins.mp3",
+                audio: "/assets/audio/dictionary/h/he-confessed-his-sins.mp3",
                 parts: [
                   "He confessed his sins. ",
                   portuguese("Ele confessou seu pecado."),
@@ -5649,7 +5000,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/s/she-loves-to-sing-in-the-shower.mp3",
+                  "/assets/audio/dictionary/s/she-loves-to-sing-in-the-shower.mp3",
                 parts: [
                   "She loves to sing in the shower. ",
                   portuguese("Ela adora cantar no chuveiro."),
@@ -5664,7 +5015,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/t/thin.mp3",
+                  audio: "/assets/audio/dictionary/t/thin.mp3",
                   parts: [
                     "thi",
                     mark("n"),
@@ -5675,7 +5026,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/t/thing.mp3",
+                  audio: "/assets/audio/dictionary/t/thing.mp3",
                   parts: [
                     "thi",
                     mark("ng"),
@@ -5693,11 +5044,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/the-ice-is-thin.mp3",
+                audio: "/assets/audio/dictionary/t/the-ice-is-thin.mp3",
                 parts: ["The ice is thin. ", portuguese("O gelo está fino.")],
               }),
               content({
-                audio: "/assets/audio/words/t/this-thing-is-important.mp3",
+                audio: "/assets/audio/dictionary/t/this-thing-is-important.mp3",
                 parts: [
                   "This thing is important. ",
                   portuguese("Esta coisa é importante."),
@@ -5718,7 +5069,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/f/fool.mp3",
+                  audio: "/assets/audio/dictionary/f/fool.mp3",
                   parts: [
                     "f",
                     mark("oo"),
@@ -5730,7 +5081,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/f/full.mp3",
+                  audio: "/assets/audio/dictionary/f/full.mp3",
                   parts: [
                     "f",
                     mark("u"),
@@ -5749,11 +5100,11 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/d/dont-be-a-fool.mp3",
+                audio: "/assets/audio/dictionary/d/dont-be-a-fool.mp3",
                 parts: ["Don’t be a fool. ", portuguese("Não seja um tolo.")],
               }),
               content({
-                audio: "/assets/audio/words/t/the-glass-is-full.mp3",
+                audio: "/assets/audio/dictionary/t/the-glass-is-full.mp3",
                 parts: [
                   "The glass is full. ",
                   portuguese("O copo está cheio."),
@@ -5768,7 +5119,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/p/pool.mp3",
+                  audio: "/assets/audio/dictionary/p/pool.mp3",
                   parts: [
                     "p",
                     mark("oo"),
@@ -5780,7 +5131,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/p/pull.mp3",
+                  audio: "/assets/audio/dictionary/p/pull.mp3",
                   parts: [
                     "p",
                     mark("u"),
@@ -5800,14 +5151,14 @@ export default function PhoneticsLetters() {
             items={[
               content({
                 audio:
-                  "/assets/audio/words/t/they-are-swimming-in-the-pool.mp3",
+                  "/assets/audio/dictionary/t/they-are-swimming-in-the-pool.mp3",
                 parts: [
                   "They are swimming in the pool. ",
                   portuguese("Eles estão nadando na piscina."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/p/pull-the-door.mp3",
+                audio: "/assets/audio/dictionary/p/pull-the-door.mp3",
                 parts: ["Pull the door. ", portuguese("Puxe a porta.")],
               }),
             ]}
@@ -5819,7 +5170,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/s/suit.mp3",
+                  audio: "/assets/audio/dictionary/s/suit.mp3",
                   parts: [
                     "s",
                     mark("ui"),
@@ -5831,7 +5182,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/s/soot.mp3",
+                  audio: "/assets/audio/dictionary/s/soot.mp3",
                   parts: [
                     "s",
                     mark("oo"),
@@ -5850,7 +5201,7 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/h/he-is-wearing-a-suit.mp3",
+                audio: "/assets/audio/dictionary/h/he-is-wearing-a-suit.mp3",
                 parts: [
                   "He is wearing a suit. ",
                   portuguese("Ele está usando um terno."),
@@ -5858,7 +5209,7 @@ export default function PhoneticsLetters() {
               }),
               content({
                 audio:
-                  "/assets/audio/words/t/the-chimney-was-covered-in-soot.mp3",
+                  "/assets/audio/dictionary/t/the-chimney-was-covered-in-soot.mp3",
                 parts: [
                   "The chimney was covered in soot. ",
                   portuguese("A chaminé estava coberta de fuligem."),
@@ -5879,7 +5230,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/w/wash.mp3",
+                  audio: "/assets/audio/dictionary/w/wash.mp3",
                   parts: [
                     "wa",
                     mark("sh"),
@@ -5890,7 +5241,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/w/watch.mp3",
+                  audio: "/assets/audio/dictionary/w/watch.mp3",
                   parts: [
                     "wa",
                     mark("tch"),
@@ -5909,14 +5260,14 @@ export default function PhoneticsLetters() {
             items={[
               content({
                 audio:
-                  "/assets/audio/words/d/dont-forget-to-wash-your-hands.mp3",
+                  "/assets/audio/dictionary/d/dont-forget-to-wash-your-hands.mp3",
                 parts: [
                   "Don’t forget to wash your hands. ",
                   portuguese("Não se esqueça de lavar as suas mãos."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/i/i-usually-watch-tv-at-night.mp3",
+                audio: "/assets/audio/dictionary/i/i-usually-watch-tv-at-night.mp3",
                 parts: [
                   "I usually watch TV at night. ",
                   portuguese("Eu assisto TV à noite."),
@@ -5931,7 +5282,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/s/ship.mp3",
+                  audio: "/assets/audio/dictionary/s/ship.mp3",
                   parts: [
                     mark("sh"),
                     "ip",
@@ -5942,7 +5293,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/c/chip.mp3",
+                  audio: "/assets/audio/dictionary/c/chip.mp3",
                   parts: [
                     mark("ch"),
                     "ip",
@@ -5960,14 +5311,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/the-ship-is-really-big.mp3",
+                audio: "/assets/audio/dictionary/t/the-ship-is-really-big.mp3",
                 parts: [
                   "The ship is really big. ",
                   portuguese("O navio é grande."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/s/she-ate-a-chip.mp3",
+                audio: "/assets/audio/dictionary/s/she-ate-a-chip.mp3",
                 parts: [
                   "She ate a chip. ",
                   portuguese("Ela comeu uma batata frita."),
@@ -5982,7 +5333,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/s/sheep.mp3",
+                  audio: "/assets/audio/dictionary/s/sheep.mp3",
                   parts: [
                     mark("sh"),
                     "eep",
@@ -5993,7 +5344,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/c/cheap.mp3",
+                  audio: "/assets/audio/dictionary/c/cheap.mp3",
                   parts: [
                     mark("ch"),
                     "eap",
@@ -6011,14 +5362,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/the-sheep-are-in-the-field.mp3",
+                audio: "/assets/audio/dictionary/t/the-sheep-are-in-the-field.mp3",
                 parts: [
                   "The sheep are in the field. ",
                   portuguese("As ovelhas estão no campo."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/t/this-shirt-is-cheap.mp3",
+                audio: "/assets/audio/dictionary/t/this-shirt-is-cheap.mp3",
                 parts: [
                   "This shirt is cheap. ",
                   portuguese("Esta camisa é barata."),
@@ -6039,7 +5390,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/t/tick.mp3",
+                  audio: "/assets/audio/dictionary/t/tick.mp3",
                   parts: [
                     mark("t"),
                     "ick",
@@ -6050,7 +5401,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/c/chick.mp3",
+                  audio: "/assets/audio/dictionary/c/chick.mp3",
                   parts: [
                     mark("ch"),
                     "ick",
@@ -6068,14 +5419,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/the-clock-ticks-every-second.mp3",
+                audio: "/assets/audio/dictionary/t/the-clock-ticks-every-second.mp3",
                 parts: [
                   "The clock ticks every second. ",
                   portuguese("O relógio marca cada segundo."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/t/the-chick-is-small.mp3",
+                audio: "/assets/audio/dictionary/t/the-chick-is-small.mp3",
                 parts: [
                   "The chick is small. ",
                   portuguese("O pintinho é pequeno."),
@@ -6090,7 +5441,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/t/tin.mp3",
+                  audio: "/assets/audio/dictionary/t/tin.mp3",
                   parts: [
                     mark("t"),
                     "in",
@@ -6101,7 +5452,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/c/chin.mp3",
+                  audio: "/assets/audio/dictionary/c/chin.mp3",
                   parts: [
                     mark("ch"),
                     "in",
@@ -6119,14 +5470,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/t/the-box-is-made-of-tin.mp3",
+                audio: "/assets/audio/dictionary/t/the-box-is-made-of-tin.mp3",
                 parts: [
                   "The box is made of tin. ",
                   portuguese("A caixa é feita de estanho."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/h/he-touched-his-chin.mp3",
+                audio: "/assets/audio/dictionary/h/he-touched-his-chin.mp3",
                 parts: [
                   "He touched his chin. ",
                   portuguese("Ele tocou o queixo."),
@@ -6141,7 +5492,7 @@ export default function PhoneticsLetters() {
             value={[
               ...wordComparison({
                 left: {
-                  audio: "/assets/audio/words/t/to.mp3",
+                  audio: "/assets/audio/dictionary/t/to.mp3",
                   parts: [
                     mark("t"),
                     "o",
@@ -6152,7 +5503,7 @@ export default function PhoneticsLetters() {
                   ],
                 },
                 right: {
-                  audio: "/assets/audio/words/c/chew.mp3",
+                  audio: "/assets/audio/dictionary/c/chew.mp3",
                   parts: [
                     mark("ch"),
                     "ew",
@@ -6170,14 +5521,14 @@ export default function PhoneticsLetters() {
           <Examples
             items={[
               content({
-                audio: "/assets/audio/words/i/i-want-to-go-home.mp3",
+                audio: "/assets/audio/dictionary/i/i-want-to-go-home.mp3",
                 parts: [
                   "I want to go home. ",
                   portuguese("Eu quero ir para casa."),
                 ],
               }),
               content({
-                audio: "/assets/audio/words/c/chew-your-food-slowly.mp3",
+                audio: "/assets/audio/dictionary/c/chew-your-food-slowly.mp3",
                 parts: [
                   "Chew your food slowly. ",
                   portuguese("Mastigue sua comida devagar."),
