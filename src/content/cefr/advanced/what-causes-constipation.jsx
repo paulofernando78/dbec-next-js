@@ -241,7 +241,7 @@ export default function Constipation() {
               showWordBank={false}
               numbered={true}
               exercise={{
-                instruction: "Complete the notes with words from Guess Word.",
+                instruction: "Fill in the blank with words from Guess!.",
                 blocks: [
                   {
                     block: [
