@@ -113,7 +113,7 @@ export default function Constipation() {
                 ...content({
                   parts: [
                     bold(
-                      "What is the video mainly about? Watch it and answer que question below.",
+                      "What is the video mainly about? Watch it and answer the question below.",
                     ),
                   ],
                 }),
@@ -151,14 +151,14 @@ export default function Constipation() {
           </Section>
 
           <Section id="details" heading={3}>
-            <Paragraph
+            <Line
               value={[
                 ...content({
-                  parts: ["Watch again and listen for specific information."],
+                  parts: [bold("Watch again and listen for specific information.")],
                 }),
               ]}
             />
-
+            <LineBreak />
             <Radio
               exercise={{
                 instruction: "Choose the best response.",
@@ -241,7 +241,7 @@ export default function Constipation() {
               showWordBank={false}
               numbered={true}
               exercise={{
-                instructions: "Complete the notes with words from Guess Word.",
+                instruction: "Complete the notes with words from Guess Word.",
                 blocks: [
                   {
                     block: [
