@@ -8,7 +8,10 @@ import { BulletPoint } from "@/components/atoms/BulletPoint";
 import { Image } from "@/components/atoms/Image";
 import { Keyboard } from "@/lib/svg-imports";
 import { dictionary } from "@/helpers/content";
-
+import {
+  flattenDictionaryDefinitions,
+  loadDictionaryLetter,
+} from "@/utils/loadDictionaryWord";
 
 import { useState, useEffect } from "react";
 import { Search, Close } from "@/lib/svg-imports";
@@ -24,18 +27,12 @@ export const Dictionary = () => {
     Promise.all(
       letters.map(
         (letter) =>
-          fetch(`/data/dictionary/${letter}.json`)
-            .then((res) => res.json())
-            .catch(() => null) // se algum não existir, ignora
+          loadDictionaryLetter(letter).catch(() => null) // se algum não existir, ignora
       )
     ).then((results) => {
-      const allDefinitions = results.filter(Boolean).flatMap((file) => {
-        // some files may export an array or an object
-        if (Array.isArray(file)) {
-          return file.flatMap((entry) => entry.definitions || []);
-        }
-        return file.definitions || [];
-      });
+      const allDefinitions = results
+        .filter(Boolean)
+        .flatMap(flattenDictionaryDefinitions);
 
       setDefinitions(allDefinitions);
     });

@@ -9,6 +9,8 @@ import { Image } from "@/components/atoms/Image/";
 import { Redo } from "@/lib/svg-imports";
 
 import { dictionary } from "@/helpers/content";
+import { loadDictionaryWord } from "@/utils/loadDictionaryWord";
+import { speakText } from "@/utils/speakText";
 
 export const GuessWord = ({ img, words }) => {
   // STEP 1: Create alphabet letters for all keyboard buttons
@@ -20,16 +22,8 @@ export const GuessWord = ({ img, words }) => {
   const letterSound = useRef(null);
 
   const playLetterSound = (letter) => {
-    speechSynthesis.cancel();
-
     const cleanLetter = letter === "'" ? "apostrophe" : letter.toLowerCase();
-
-    const utterance = new SpeechSynthesisUtterance(cleanLetter);
-    utterance.lang = "en-US";
-    utterance.rate = 0.9;
-    utterance.pitch = 1;
-
-    speechSynthesis.speak(utterance);
+    speakText(cleanLetter);
   };
 
   // STEP 3: Future state for the selected secret word
@@ -48,15 +42,7 @@ export const GuessWord = ({ img, words }) => {
   const [completeWords, setCompleteWords] = useState([]);
 
   const loadWord = async (word) => {
-    const firstLetter = word[0].toLowerCase();
-
-    const response = await fetch(`/data/dictionary/${firstLetter}.json`);
-    const data = await response.json();
-
-    const foundWord = data[0].definitions.find(
-      (item) => item.word.toLowerCase() === word.toLowerCase(),
-    );
-
+    const foundWord = await loadDictionaryWord(word);
     setSelectedWord(foundWord);
   };
 

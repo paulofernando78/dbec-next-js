@@ -7,9 +7,12 @@
   align-items: start;
 }
 
-.left,
+.left {
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
 .right {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .top,

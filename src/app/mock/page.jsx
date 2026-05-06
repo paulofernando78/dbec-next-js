@@ -1,7 +1,8 @@
 "use client";
 
+import { GridLayout } from "@/components/molecules/GridLayout";
+
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { Dictionary } from "@/components/molecules/Dictionary";
 import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
@@ -10,10 +11,8 @@ import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
-import { GridLayout } from "@/components/molecules/GridLayout";
 import { CardLayout } from "@/components/molecules/CardLayout";
-import { FlipCard } from "@/components/molecules/FlipCard/";
-import { CardText } from "@/components/molecules/CardText";
+import { FlipCards } from "@/components/molecules/FlipCards/";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
@@ -191,7 +190,7 @@ export default function Mock() {
             <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
             <LineBreak />
             <CardLayout mediaPosition="top">
-              <Image src={dictionary("cat")} alt="" width={250} height={250} />
+              <Image src="/assets/img/ui/16-9.png" alt="" />
               <Image
                 src={dictionary("cat.avif")}
                 alt=""
@@ -533,48 +532,37 @@ export default function Mock() {
 
           {/* Flip Card */}
           <Section id="flip-card" heading={3}>
-            <GridLayout>
-              <FlipCard backImg={dictionary("cat")} backAlt="A cat photo" />
-              <FlipCard
-                frontImg={dictionary("cat")}
-                frontAlt="A cat photo"
-                backImg={dictionary("cat")}
-                backAlt="A cat photo"
-              />
-              <FlipCard
-                frontImg={dictionary("cat")}
-                frontAlt="A cat photo"
-                backContent={
-                  <Line
-                    value={[
-                      ...content({
-                        parts: ["It's a cat"],
-                      }),
-                    ]}
-                  />
-                }
-              />
-              <FlipCard
-                frontContent={
-                  <Line
-                    value={[
-                      ...content({
-                        parts: ["What's the past of ", mark("ask"), "?"],
-                      }),
-                    ]}
-                  />
-                }
-                backContent={
-                  <Line
-                    value={[
-                      ...content({
-                        parts: [mark("asked")],
-                      }),
-                    ]}
-                  />
-                }
-              />
-            </GridLayout>
+            <FlipCards
+              cards={[
+                {
+                  backImg: "cat",
+                },
+                {
+                  frontImg: "cat",
+                  backImg: "cat",
+                },
+                {
+                  frontContent: (
+                    <Line
+                      value={[
+                        ...content({
+                          parts: ["What’s the past of ask?"],
+                        }),
+                      ]}
+                    />
+                  ),
+                  backContent: (
+                    <Line
+                      value={[
+                        ...content({
+                          parts: [mark("asked")],
+                        }),
+                      ]}
+                    />
+                  ),
+                },
+              ]}
+            />
           </Section>
 
           {/* Dialogue */}

@@ -17,6 +17,7 @@
   border-radius: 50%;
   outline: 2px solid white;
   background-color: aliceblue;
+  z-index: 2;
 }
 
 .card {
