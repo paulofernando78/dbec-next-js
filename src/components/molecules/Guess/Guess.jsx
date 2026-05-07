@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./GuessWord.module.css";
+import styles from "./Guess.module.css";
 
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/atoms/Button/";
@@ -12,7 +12,7 @@ import { dictionary } from "@/helpers/content";
 import { loadDictionaryWord } from "@/utils/loadDictionaryWord";
 import { speakText } from "@/utils/speakText";
 
-export const GuessWord = ({ img, words }) => {
+export const Guess = ({ img, words }) => {
   // STEP 1: Create alphabet letters for all keyboard buttons
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ'".split("");
 

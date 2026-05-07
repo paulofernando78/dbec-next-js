@@ -11,7 +11,7 @@ export const MediaContainer = ({
   return (
     <div className="line-break">
       {groups.map((item, index) => (
-        <MediaLayout className="border"
+        <MediaLayout
           mediaPosition={item.mediaPosition}
           key={index}
         >

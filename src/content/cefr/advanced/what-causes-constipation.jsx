@@ -3,7 +3,7 @@ import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
-import { GuessWord } from "@/components/molecules/GuessWord";
+import { Guess } from "@/components/molecules/Guess";
 import { FlipCard } from "@/components/molecules/FlipCard/";
 import { Line } from "@/components/molecules/Line";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -224,7 +224,7 @@ export default function Constipation() {
           </Section>
 
           <Section id="practice" heading={3}>
-            <GuessWord
+            <Guess
               words={[
                 { word: "strain", img: 1 },
                 { word: "bowel movement", img: 0 },

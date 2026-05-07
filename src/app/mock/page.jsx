@@ -21,7 +21,7 @@ import { Comparison } from "@/components/molecules/Comparison";
 import { Column } from "@/components/molecules/Column/";
 import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Notes } from "@/components/molecules/Notes";
-import { GuessWord } from "@/components/molecules/GuessWord";
+import { Guess } from "@/components/molecules/Guess";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
@@ -60,82 +60,36 @@ export default function Mock() {
             <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
           </Section>
 
-          {/* Text only */}
-          <Section id="text-only" heading={3}>
-            <Paragraph
-              value={[
-                ...content({
-                  parts: ["..."],
-                }),
-              ]}
-            />
-          </Section>
-
           {/* Line */}
           <Section id="line" heading={3}>
             <Line
               value={[
                 ...content({
-                  icons: [
-                    "us",
-                    "uk",
-                    "attention",
-                    "correct",
-                    "incorrect",
-                    "compare",
-                    "arrow",
-                    "variation",
-                    "soundVariation",
-                    "square",
-                  ],
                   parts: [
-                    "normal ",
+                    icon("us"),
+                    icon("uk"),
+                    icon("attention"),
+                    icon("correct"),
+                    icon("incorrect"),
+                    icon("compare"),
+                    icon("arrow"),
+                    icon("variation"),
+                    icon("soundVariation"),
+                    icon("square"),
                     audio("/"),
+                    "normal",
+                    " ",
                     bold("bold"),
                     " ",
                     italic("italic"),
                     " ",
+                    underline("underline"),
+                    " ",
                     mark("mark"),
                     " ",
-                    boldMark("bold-mark"),
-                    " ",
-                    underline("underline"),
+                    boldMark("bold mark"),
                     " ",
                     stressed("stressed"),
-                    " ",
-                    phonetics("phonetics"),
-                    " ",
-                    portuguese("portuguese"),
-                  ],
-                }),
-              ]}
-            />
-            <Line
-              value={[
-                ...content({
-                  icons: [
-                    "us",
-                    "uk",
-                    "attention",
-                    "correct",
-                    "incorrect",
-                    "compare",
-                    "arrow",
-                    "variation",
-                    "soundVariation",
-                  ],
-                  parts: [
-                    "normal ",
-                    audio("/"),
-                    bold("bold"),
-                    " ",
-                    italic("italic"),
-                    " ",
-                    mark("mark"),
-                    " ",
-                    underline("underline"),
-                    " ",
-                    boldMark("bold-mark"),
                     " ",
                     phonetics("phonetics"),
                     " ",
@@ -151,26 +105,31 @@ export default function Mock() {
             <Paragraph
               value={[
                 ...content({
-                  icons: [
-                    "us",
-                    "uk",
-                    "attention",
-                    "correct",
-                    "incorrect",
-                    "compare",
-                  ],
                   parts: [
-                    "normal ",
+                    icon("us"),
+                    icon("uk"),
+                    icon("attention"),
+                    icon("correct"),
+                    icon("incorrect"),
+                    icon("compare"),
+                    icon("arrow"),
+                    icon("variation"),
+                    icon("soundVariation"),
+                    icon("square"),
                     audio("/"),
+                    "normal",
+                    " ",
                     bold("bold"),
                     " ",
                     italic("italic"),
                     " ",
-                    mark("mark"),
-                    " ",
                     underline("underline"),
                     " ",
-                    boldMark("bold-mark"),
+                    mark("mark"),
+                    " ",
+                    boldMark("bold mark"),
+                    " ",
+                    stressed("stressed"),
                     " ",
                     phonetics("phonetics"),
                     " ",
@@ -196,38 +155,12 @@ export default function Mock() {
                   img: "cat.avif",
                   line: [
                     ...content({
-                      parts: [
-                        icon("us"),
-                        icon("uk"),
-                        icon("attention"),
-                        icon("correct"),
-                        icon("incorrect"),
-                        icon("compare"),
-                        icon("arrow"),
-                        icon("variation"),
-                        icon("soundVariation"),
-                        icon("square"),
-                        bold("bold"),
-                        " ",
-                        boldMark("bold mark"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        stressed("stressed"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
+                      parts: ["... "],
                     }),
                   ],
                   paragraph: [
                     ...content({
-                      parts: [bold("...")],
+                      parts: ["... "],
                     }),
                   ],
                 },
@@ -236,12 +169,12 @@ export default function Mock() {
                   img: "cat.avif",
                   line: [
                     ...content({
-                      parts: [bold("...")],
+                      parts: ["... "],
                     }),
                   ],
                   paragraph: [
                     ...content({
-                      parts: [bold("...")],
+                      parts: ["... "],
                     }),
                   ],
                 },
@@ -250,12 +183,12 @@ export default function Mock() {
                   img: "cat.avif",
                   line: [
                     ...content({
-                      parts: [bold("...")],
+                      parts: ["... "],
                     }),
                   ],
                   paragraph: [
                     ...content({
-                      parts: [bold("...")],
+                      parts: ["... "],
                     }),
                   ],
                 },
@@ -264,12 +197,12 @@ export default function Mock() {
                   img: "cat.avif",
                   line: [
                     ...content({
-                      parts: [bold("...")],
+                      parts: ["... "],
                     }),
                   ],
                   paragraph: [
                     ...content({
-                      parts: [bold("...")],
+                      parts: ["... "],
                     }),
                   ],
                 },
@@ -284,32 +217,7 @@ export default function Mock() {
                 {
                   value: [
                     ...content({
-                      icons: [
-                        "us",
-                        "uk",
-                        "attention",
-                        "correct",
-                        "incorrect",
-                        "compare",
-                      ],
-
-                      parts: [
-                        "normal ",
-                        audio("/"),
-                        bold("bold"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        boldMark("bold-mark"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
+                      parts: ["... "],
                     }),
                   ],
                 },
@@ -323,64 +231,14 @@ export default function Mock() {
                 {
                   value: [
                     ...content({
-                      icons: [
-                        "us",
-                        "uk",
-                        "attention",
-                        "correct",
-                        "incorrect",
-                        "compare",
-                      ],
-
-                      parts: [
-                        "normal ",
-                        audio("/"),
-                        bold("bold"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        boldMark("bold-mark"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
+                      parts: ["... "],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      icons: [
-                        "us",
-                        "uk",
-                        "attention",
-                        "correct",
-                        "incorrect",
-                        "compare",
-                      ],
-
-                      parts: [
-                        "normal ",
-                        audio("/"),
-                        bold("bold"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        boldMark("bold-mark"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
+                      parts: ["... "],
                     }),
                   ],
                 },
@@ -394,32 +252,7 @@ export default function Mock() {
               <Line
                 value={[
                   ...content({
-                    icons: [
-                      "us",
-                      "uk",
-                      "attention",
-                      "correct",
-                      "incorrect",
-                      "compare",
-                    ],
-
-                    parts: [
-                      "normal ",
-                      audio("/"),
-                      bold("bold"),
-                      " ",
-                      italic("italic"),
-                      " ",
-                      mark("mark"),
-                      " ",
-                      underline("underline"),
-                      " ",
-                      boldMark("bold-mark"),
-                      " ",
-                      phonetics("phonetics"),
-                      " ",
-                      portuguese("portuguese"),
-                    ],
+                    parts: ["... "],
                   }),
                 ]}
               />
@@ -494,35 +327,9 @@ export default function Mock() {
               lines={[
                 {
                   speaker: "speaker:",
-                  audio: "/assets/audio/vocabulary/selaa/lesson-1.mp3",
                   text: [
                     ...content({
-                      icons: [
-                        "us",
-                        "uk",
-                        "attention",
-                        "correct",
-                        "incorrect",
-                        "compare",
-                      ],
-
-                      parts: [
-                        "normal ",
-                        audio("/"),
-                        bold("bold"),
-                        " ",
-                        italic("italic"),
-                        " ",
-                        mark("mark"),
-                        " ",
-                        underline("underline"),
-                        " ",
-                        boldMark("bold-mark"),
-                        " ",
-                        phonetics("phonetics"),
-                        " ",
-                        portuguese("portuguese"),
-                      ],
+                      parts: ["...", " ", audio("/")],
                     }),
                   ],
                 },
@@ -536,32 +343,7 @@ export default function Mock() {
               items={[
                 [
                   ...content({
-                    icons: [
-                      "us",
-                      "uk",
-                      "attention",
-                      "correct",
-                      "incorrect",
-                      "compare",
-                    ],
-
-                    parts: [
-                      "normal ",
-                      audio("/"),
-                      bold("bold"),
-                      " ",
-                      italic("italic"),
-                      " ",
-                      mark("mark"),
-                      " ",
-                      underline("underline"),
-                      " ",
-                      boldMark("bold-mark"),
-                      " ",
-                      phonetics("phonetics"),
-                      " ",
-                      portuguese("portuguese"),
-                    ],
+                    parts: ["..."],
                   }),
                 ],
               ]}
@@ -607,15 +389,9 @@ export default function Mock() {
                       block: [
                         {
                           text: [
-                            {
-                              usFlag: true,
-                              ukFlag: true,
-                              attention: true,
-                              correct: true,
-                              incorrect: true,
-                              audio: "/assets/audio/",
-                              part: "normal",
-                            },
+                            ...content({
+                              parts: [audio("/"), "..."],
+                            }),
                             " ",
                           ],
                         },
@@ -635,16 +411,9 @@ export default function Mock() {
                       block: [
                         {
                           text: [
-                            {
-                              usFlag: true,
-                              ukFlag: true,
-                              attention: true,
-                              correct: true,
-                              incorrect: true,
-                              audio: "/assets/audio/",
-                              part: "normal",
-                            },
-                            " ",
+                            ...content({
+                              parts: [audio("/"), "..."],
+                            }),
                           ],
                         },
                       ],
@@ -663,16 +432,9 @@ export default function Mock() {
                       block: [
                         {
                           text: [
-                            {
-                              usFlag: true,
-                              ukFlag: true,
-                              attention: true,
-                              correct: true,
-                              incorrect: true,
-                              audio: "/assets/audio/",
-                              part: "normal",
-                            },
-                            " ",
+                            ...content({
+                              parts: [audio("/"), "..."],
+                            }),
                           ],
                         },
                       ],
@@ -704,9 +466,9 @@ export default function Mock() {
             />
           </Section>
 
-          {/* Vocab Guess*/}
+          {/* Guess */}
           <Section id="guess" heading={3}>
-            <GuessWord
+            <Guess
               words={[
                 {
                   word: "cat",

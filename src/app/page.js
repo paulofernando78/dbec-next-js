@@ -6,6 +6,7 @@ import { Audio } from "@/components/atoms/Audio";
 import { Line } from "@/components/molecules/Line";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
+import { Contact } from "@/components/organisms/Contact";
 import { content, audio, bold, italic } from "@/helpers/content";
 
 import { useState, useEffect } from "react";
@@ -392,14 +393,6 @@ export default function Home() {
       <div className="line-break">
         <>
           <div className={styles.meComputerWrapper}>
-            <Line
-              value={[
-                ...content({
-                  icons: ["attention"],
-                  parts: ["This website is currently under construction."],
-                }),
-              ]}
-            />
             <Image
               src="/assets/img/home-me.png"
               alt="A pic of myself"
@@ -431,6 +424,7 @@ export default function Home() {
               }),
             ]}
           />
+          <Contact />
           <Line
             value={[
               ...content({

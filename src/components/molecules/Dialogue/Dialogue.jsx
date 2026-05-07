@@ -11,11 +11,7 @@ export const Dialogue = ({ title, audioPlayer, lines = [] }) => {
         <p key={index} className={styles.lines}>
           {line.speaker && <Bold>{line.speaker} </Bold>}
           <ContentToken
-            value={
-              line.audio
-                ? [{ audio: line.audio }, ...(line.text || [])]
-                : line.text
-            }
+            value={line.text}
             phonetics={line.phonetics}
             portuguese={line.portuguese}
           />
