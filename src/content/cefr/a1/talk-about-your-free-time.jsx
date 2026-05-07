@@ -3,7 +3,7 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
-import { CardLayout } from "@/components/molecules/CardLayout";
+import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -37,7 +37,7 @@ export default function TalkAboutYourFreeTime() {
 
         <PageSections>
           <Section id="introduction" heading={3}>
-            <CardLayout mediaPosition="left">
+            <MediaLayout mediaPosition="left">
               <Image
                 src="/assets/img/general/man-watch-tv-evening.png"
                 alt="A man watching TV in the evening."
@@ -83,7 +83,7 @@ export default function TalkAboutYourFreeTime() {
                   ]}
                 />
               </div>
-            </CardLayout>
+            </MediaLayout>
 
             <LineBreak />
 

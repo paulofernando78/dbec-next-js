@@ -4,7 +4,7 @@ import { Section } from "@/components/molecules/Section";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
-import { CardLayout } from "@/components/molecules/CardLayout";
+import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { Dialogue } from "@/components/molecules/Dialogue";
@@ -27,7 +27,7 @@ export default function Numbers() {
       <div className="line-break">
         <PageSections>
           <Section id="introduction" label="Introduction" heading={3}>
-            <CardLayout mediaPosition="left">
+            <MediaLayout mediaPosition="left">
               <Image
                 src="/assets/img/vocabulary/numbers/Lauras-birthday.png"
                 alt="Students celebrating a birthday in a classroom."
@@ -46,7 +46,7 @@ export default function Numbers() {
                   }),
                 ]}
               />
-            </CardLayout>
+            </MediaLayout>
             <Line
               value={[
                 ...content({

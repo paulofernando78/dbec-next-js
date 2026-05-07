@@ -6,12 +6,12 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
+import { MediaContainer } from "@/components/molecules/MediaContainer";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
-import { CardLayout } from "@/components/molecules/CardLayout";
 import { FlipCards } from "@/components/molecules/FlipCards/";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -19,6 +19,7 @@ import { Dialogue } from "@/components/molecules/Dialogue";
 import { Examples } from "@/components/molecules/Examples";
 import { Comparison } from "@/components/molecules/Comparison";
 import { Column } from "@/components/molecules/Column/";
+import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Notes } from "@/components/molecules/Notes";
 import { GuessWord } from "@/components/molecules/GuessWord";
 import { Radio } from "@/components/molecules/Exercises/Radio";
@@ -26,6 +27,7 @@ import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlank
 import { LineBreak } from "@/components/atoms/LineBreak";
 import {
   content,
+  icon,
   audio,
   bold,
   italic,
@@ -35,7 +37,6 @@ import {
   stressed,
   phonetics,
   portuguese,
-  dictionary,
 } from "@/helpers/content";
 
 export default function Mock() {
@@ -180,179 +181,100 @@ export default function Mock() {
             />
           </Section>
 
-          {/* Line / Paragraph + Media */}
+          {/* Media Container + Line / Paragraph */}
           <Section
             id="line-paragraph-media"
-            label="Line / Paragraph + Media"
+            label="Media Container + Line / Paragraph"
             heading={3}
           >
-            {/* Card Layout */}
-            <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
             <LineBreak />
-            <CardLayout mediaPosition="top">
-              <Image src="/assets/img/ui/16-9.png" alt="" />
-              <Image
-                src={dictionary("cat.avif")}
-                alt=""
-                width={250}
-                height={250}
-              />
-              <Paragraph
-                value={[
-                  ...content({
-                    icons: [
-                      "us",
-                      "uk",
-                      "attention",
-                      "correct",
-                      "incorrect",
-                      "compare",
-                    ],
 
-                    parts: [
-                      "normal ",
-                      audio("/"),
-                      bold("bold"),
-                      " ",
-                      italic("italic"),
-                      " ",
-                      mark("mark"),
-                      " ",
-                      underline("underline"),
-                      " ",
-                      boldMark("bold-mark"),
-                      " ",
-                      phonetics("phonetics"),
-                      " ",
-                      portuguese("portuguese"),
-                    ],
-                  }),
-                ]}
-              />
-            </CardLayout>
-            <LineBreak />
-            <CardLayout mediaPosition="right">
-              <Image
-                src={dictionary("cat.avif")}
-                alt=""
-                width={250}
-                height={250}
-              />
-              <Paragraph
-                value={[
-                  ...content({
-                    icons: [
-                      "us",
-                      "uk",
-                      "attention",
-                      "correct",
-                      "incorrect",
-                      "compare",
-                    ],
-
-                    parts: [
-                      "normal ",
-                      audio("/"),
-                      bold("bold"),
-                      " ",
-                      italic("italic"),
-                      " ",
-                      mark("mark"),
-                      " ",
-                      underline("underline"),
-                      " ",
-                      boldMark("bold-mark"),
-                      " ",
-                      phonetics("phonetics"),
-                      " ",
-                      portuguese("portuguese"),
-                    ],
-                  }),
-                ]}
-              />
-            </CardLayout>
-            <LineBreak />
-            <CardLayout mediaPosition="bottom">
-              <Image
-                src={dictionary("cat.avif")}
-                alt=""
-                width={250}
-                height={250}
-              />
-              <Paragraph
-                value={[
-                  ...content({
-                    icons: [
-                      "us",
-                      "uk",
-                      "attention",
-                      "correct",
-                      "incorrect",
-                      "compare",
-                    ],
-
-                    parts: [
-                      "normal ",
-                      audio("/"),
-                      bold("bold"),
-                      " ",
-                      italic("italic"),
-                      " ",
-                      mark("mark"),
-                      " ",
-                      underline("underline"),
-                      " ",
-                      boldMark("bold-mark"),
-                      " ",
-                      phonetics("phonetics"),
-                      " ",
-                      portuguese("portuguese"),
-                    ],
-                  }),
-                ]}
-              />
-            </CardLayout>
-            <LineBreak />
-            <CardLayout mediaPosition="left">
-              <Image
-                src={dictionary("cat.avif")}
-                alt=""
-                width={250}
-                height={250}
-              />
-              <Paragraph
-                value={[
-                  ...content({
-                    icons: [
-                      "us",
-                      "uk",
-                      "attention",
-                      "correct",
-                      "incorrect",
-                      "compare",
-                    ],
-
-                    parts: [
-                      "normal ",
-                      audio("/"),
-                      bold("bold"),
-                      " ",
-                      italic("italic"),
-                      " ",
-                      mark("mark"),
-                      " ",
-                      underline("underline"),
-                      " ",
-                      boldMark("bold-mark"),
-                      " ",
-                      phonetics("phonetics"),
-                      " ",
-                      portuguese("portuguese"),
-                    ],
-                  }),
-                ]}
-              />
-            </CardLayout>
+            <MediaContainer
+              groups={[
+                {
+                  mediaPosition: "top",
+                  img: "cat.avif",
+                  line: [
+                    ...content({
+                      parts: [
+                        icon("us"),
+                        icon("uk"),
+                        icon("attention"),
+                        icon("correct"),
+                        icon("incorrect"),
+                        icon("compare"),
+                        icon("arrow"),
+                        icon("variation"),
+                        icon("soundVariation"),
+                        icon("square"),
+                        bold("bold"),
+                        " ",
+                        boldMark("bold mark"),
+                        " ",
+                        mark("mark"),
+                        " ",
+                        stressed("stressed"),
+                        " ",
+                        italic("italic"),
+                        " ",
+                        underline("underline"),
+                        " ",
+                        phonetics("phonetics"),
+                        " ",
+                        portuguese("portuguese"),
+                      ],
+                    }),
+                  ],
+                  paragraph: [
+                    ...content({
+                      parts: [bold("...")],
+                    }),
+                  ],
+                },
+                {
+                  mediaPosition: "right",
+                  img: "cat.avif",
+                  line: [
+                    ...content({
+                      parts: [bold("...")],
+                    }),
+                  ],
+                  paragraph: [
+                    ...content({
+                      parts: [bold("...")],
+                    }),
+                  ],
+                },
+                {
+                  mediaPosition: "bottom",
+                  img: "cat.avif",
+                  line: [
+                    ...content({
+                      parts: [bold("...")],
+                    }),
+                  ],
+                  paragraph: [
+                    ...content({
+                      parts: [bold("...")],
+                    }),
+                  ],
+                },
+                {
+                  mediaPosition: "left",
+                  img: "cat.avif",
+                  line: [
+                    ...content({
+                      parts: [bold("...")],
+                    }),
+                  ],
+                  paragraph: [
+                    ...content({
+                      parts: [bold("...")],
+                    }),
+                  ],
+                },
+              ]}
+            />
           </Section>
 
           {/* List */}
@@ -507,26 +429,26 @@ export default function Mock() {
           <Section id="images" heading={3}>
             <GridLayout>
               {/* Last weekend, Laura went to the beach. */}
-              <CardLayout width="max-content" mediaPosition="top">
+              <MediaLayout width="max-content" mediaPosition="top">
                 <Image
                   src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
                   alt="Laura at the beach"
                 />
-              </CardLayout>
+              </MediaLayout>
               {/* Last night, Eric watched a movie. */}
-              <CardLayout mediaPosition="top">
+              <MediaLayout mediaPosition="top">
                 <Image
                   src="/assets/img/cefr/a2/describe-past-experiences/movie.png"
                   alt="Eric watching a movie at night"
                 />
-              </CardLayout>
+              </MediaLayout>
               {/* Yesterday, Laura met Eric in the cafeteria.  */}
-              <CardLayout mediaPosition="top">
+              <MediaLayout mediaPosition="top">
                 <Image
                   src="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
                   alt="Laura and Eric eating lunch in the cafeteria"
                 />
-              </CardLayout>
+              </MediaLayout>
             </GridLayout>
           </Section>
 

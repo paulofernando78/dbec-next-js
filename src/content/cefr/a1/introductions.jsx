@@ -8,7 +8,7 @@ import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Audio } from "@/components/atoms/Audio";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
-import { CardLayout } from "@/components/molecules/CardLayout";
+import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { Dialogue } from "@/components/molecules/Dialogue";
@@ -209,7 +209,7 @@ export default function Introductions() {
         <PageSections>
           {/* Introduction */}
           <Section id="introduction" heading={3}>
-            <CardLayout mediaPosition="left">
+            <MediaLayout mediaPosition="left">
               <Image
                 src="/assets/img/cefr/a1/introductions/two-people-talking-school.png"
                 alt="Two students talking at school."
@@ -282,7 +282,7 @@ export default function Introductions() {
                   ]}
                 />
               </div>
-            </CardLayout>
+            </MediaLayout>
 
             <LineBreak />
 

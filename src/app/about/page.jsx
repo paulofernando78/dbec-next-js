@@ -2,7 +2,7 @@ import styles from "./about.module.css";
 
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
-import { CardLayout } from "@/components/molecules/CardLayout";
+import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { LineBreak } from "@/components/atoms/LineBreak";
@@ -79,7 +79,7 @@ export default function About() {
           {/* Card Layout */}
           <LineBreak />
           <Card>
-            <CardLayout mediaPosition="left">
+            <MediaLayout mediaPosition="left">
               <Image
                 src="/assets/img/about.png"
                 alt="My picture"
@@ -96,7 +96,7 @@ export default function About() {
                   }),
                 ]}
               />
-            </CardLayout>
+            </MediaLayout>
           </Card>
         </Section>
         <Section id="background" label="Formação e Experiência" heading={2}>

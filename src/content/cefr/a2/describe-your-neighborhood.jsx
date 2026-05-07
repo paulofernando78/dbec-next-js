@@ -3,7 +3,7 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
-import { CardLayout } from "@/components/molecules/CardLayout";
+import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
 import { Paragraph } from "@/components/molecules/Paragraph";
@@ -37,7 +37,7 @@ export default function DescribeYourNeighborhood() {
 
         <PageSections>
           <Section id="introduction" heading={3}>
-            <CardLayout mediaPosition="left">
+            <MediaLayout mediaPosition="left">
               <Image
                 src="/assets/img/general/two-people-talking-school.png"
                 alt="Two people talking outside."
@@ -87,7 +87,7 @@ export default function DescribeYourNeighborhood() {
                   ]}
                 />
               </div>
-            </CardLayout>
+            </MediaLayout>
 
             <LineBreak />
 
