@@ -3,3 +3,8 @@
   display: flex;
   gap: 10px;
 }
+
+.whatsappIcon {
+  position: relative;
+  top: -1px;
+}
