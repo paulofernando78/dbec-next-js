@@ -1,6 +1,6 @@
 import styles from "../components/molecules/ContentToken/ContentToken.module.css";
 
-const color = "var(--slate-4)";
+const color = "var(--gray-5)";
 const button = "white";
 const iconSize = "1.5rem";
 
@@ -179,6 +179,30 @@ export const LinkIcon = ({ className }) => (
     className={className}
   >
     <path d="M440-280H280q-83 0-141.5-58.5T80-480q0-83 58.5-141.5T280-680h160v80H280q-50 0-85 35t-35 85q0 50 35 85t85 35h160v80ZM320-440v-80h320v80H320Zm200 160v-80h160q50 0 85-35t35-85q0-50-35-85t-85-35H520v-80h160q83 0 141.5 58.5T880-480q0 83-58.5 141.5T680-280H520Z" />
+  </svg>
+);
+
+export const LogIn = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
+    width="24px"
+    height="24px"
+    fill={button}
+  >
+    <path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+  </svg>
+);
+
+export const LogOut = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
+    width="24px"
+    height="24px"
+    fill={button}
+  >
+    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
   </svg>
 );
 

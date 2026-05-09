@@ -12,15 +12,11 @@ const links = [
   {
     links: [
       {
-        href: "/",
-        label: "Home",
+        href: "/content",
+        label: "Welcome",
       },
       {
-        href: "/about",
-        label: "About",
-      },
-      {
-        href: "/cefr",
+        href: "/content/cefr",
         label: "What's CEFR?",
       },
     ],
@@ -30,35 +26,35 @@ const links = [
     title: "A1 Beginner",
     links: [
       {
-        href: "/cefr/a1/introductions",
+        href: "/content/cefr/a1/introductions",
         label: "Introductions",
       },
       {
-        href: "/cefr/a1/talk-about-yourself",
+        href: "/content/cefr/a1/talk-about-yourself",
         label: "Talk about yourself",
       },
       {
-        href: "/cefr/a1/talk-about-your-free-time",
+        href: "/content/cefr/a1/talk-about-your-free-time",
         label: "Talk about your free time",
       },
       {
-        href: "/cefr/a1/places-and-objects",
+        href: "/content/cefr/a1/places-and-objects",
         label: "Places & Objects",
       },
       {
-        href: "/cefr/a1/numbers",
+        href: "/content/cefr/a1/numbers",
         label: "Numbers",
       },
       {
-        href: "/cefr/a1/telling-the-time",
+        href: "/content/cefr/a1/telling-the-time",
         label: "Telling the time",
       },
       {
-        href: "/cefr/a1/describe-people",
+        href: "/content/cefr/a1/describe-people",
         label: "Describe people",
       },
       {
-        href: "/cefr/a1/audiobooks",
+        href: "/content/cefr/a1/audiobooks",
         label: "Audiobooks",
       },
     ],
@@ -68,35 +64,35 @@ const links = [
     title: "A2 Elementary",
     links: [
       {
-        href: "/cefr/a2/talk-about-likes-and-dislikes",
+        href: "/content/cefr/a2/talk-about-likes-and-dislikes",
         label: "Talk about likes and dislikes",
       },
       {
-        href: "/cefr/a2/describe-past-experiences",
+        href: "/content/cefr/a2/describe-past-experiences",
         label: "Describe past experiences",
       },
       {
-        href: "/cefr/a2/talk-about-your-future-plans",
+        href: "/content/cefr/a2/talk-about-your-future-plans",
         label: "Talk about your future plans",
       },
       {
-        href: "/cefr/a2/talk-about-food",
+        href: "/content/cefr/a2/talk-about-food",
         label: "Talk about food",
       },
       {
-        href: "/cefr/a2/describe-your-home",
+        href: "/content/cefr/a2/describe-your-home",
         label: "Describe your home",
       },
       {
-        href: "/cefr/a2/give-advice",
+        href: "/content/cefr/a2/give-advice",
         label: "Give advice",
       },
       {
-        href: "/cefr/a2/shopping-and-money",
+        href: "/content/cefr/a2/shopping-and-money",
         label: "Shopping and money",
       },
       {
-        href: "/cefr/a2/describe-your-neighborhood",
+        href: "/content/cefr/a2/describe-your-neighborhood",
         label: "Describe your neighborhood",
       },
     ],
@@ -105,23 +101,23 @@ const links = [
   {
     title: "B1 Intermediate",
     links: [
-      { href: "/cefr/b1/tell-a-story", label: "Tell a story" },
-      { href: "/cefr/b1/express-opinions", label: "Express opinions" },
-      { href: "/cefr/b1/compare-things", label: "Compare things" },
+      { href: "/content/cefr/b1/tell-a-story", label: "Tell a story" },
+      { href: "/content/cefr/b1/express-opinions", label: "Express opinions" },
+      { href: "/content/cefr/b1/compare-things", label: "Compare things" },
       {
-        href: "/cefr/b1/hypothetical-situations",
+        href: "/content/cefr/b1/hypothetical-situations",
         label: "Hypothetical situations",
       },
       {
-        href: "/cefr/b1/describe-problems-and-solutions",
+        href: "/content/cefr/b1/describe-problems-and-solutions",
         label: "Describe problems and solutions",
       },
       {
-        href: "/cefr/b1/talk-about-health-and-lifestyle",
+        href: "/content/cefr/b1/talk-about-health-and-lifestyle",
         label: "Talk about health and lifestyle",
       },
       {
-        href: "/cefr/b1/discuss-work-and-study",
+        href: "/content/cefr/b1/discuss-work-and-study",
         label: "Discuss work and study",
       },
     ],
@@ -130,23 +126,23 @@ const links = [
   {
     title: "B2 Upper-Intermediate",
     links: [
-      { href: "/cefr/b2/debate-and-argue", label: "Debate and argue a point" },
+      { href: "/content/cefr/b2/debate-and-argue", label: "Debate and argue a point" },
       {
-        href: "/cefr/b2/formal-vs-informal",
+        href: "/content/cefr/b2/formal-vs-informal",
         label: "Formal vs informal register",
       },
-      { href: "/cefr/b2/current-events", label: "Discuss current events" },
-      { href: "/cefr/b2/complex-emotions", label: "Express complex emotions" },
+      { href: "/content/cefr/b2/current-events", label: "Discuss current events" },
+      { href: "/content/cefr/b2/complex-emotions", label: "Express complex emotions" },
       {
-        href: "/cefr/b2/idiomatic-language",
+        href: "/content/cefr/b2/idiomatic-language",
         label: "Idiomatic language in context",
       },
       {
-        href: "/cefr/b2/hypothetical-and-regret",
+        href: "/content/cefr/b2/hypothetical-and-regret",
         label: "Hypothetical and regret structures",
       },
       {
-        href: "/cefr/b2/media-and-technology",
+        href: "/content/cefr/b2/media-and-technology",
         label: "Discuss media and technology",
       },
     ],
@@ -156,11 +152,11 @@ const links = [
     title: "Advanced (Videos)",
     links: [
       {
-        href: "/cefr/advanced/general",
+        href: "/content/cefr/advanced/general",
         label: "General",
       },
       {
-        href: "/cefr/advanced/ted-ed",
+        href: "/content/cefr/advanced/ted-ed",
         label: "TED-Ed",
       },
     ],
@@ -172,23 +168,23 @@ const links = [
       // Phonetics + Letters
       {
         attention: true,
-        href: "/pronunciation/phonetics-letters",
+        href: "/content/pronunciation/phonetics-letters",
         label: "Phonetics + Letters",
       },
       // Linking Sounds
       {
         attention: true,
-        href: "/pronunciation/linking-sounds",
+        href: "/content/pronunciation/linking-sounds",
         label: "Linking Sounds",
       },
       // Accents
       {
-        href: "/pronunciation/accents",
+        href: "/content/pronunciation/accents",
         label: "Accents",
       },
       // Sites
       {
-        href: "/pronunciation/sites",
+        href: "/content/pronunciation/sites",
         label: "Sites",
       },
     ],
@@ -199,32 +195,32 @@ const links = [
     links: [
       // Dentistry
       {
-        href: "/vocabulary/dentistry",
+        href: "/content/vocabulary/dentistry",
         label: "Dentistry",
       },
       // Cooking
       {
-        href: "/vocabulary/cooking",
+        href: "/content/vocabulary/cooking",
         label: "Cooking",
       },
       // Law
       {
-        href: "/vocabulary/law",
+        href: "/content/vocabulary/law",
         label: "Law",
       },
       // Medicine
       {
-        href: "/vocabulary/medicine",
+        href: "/content/vocabulary/medicine",
         label: "Medicine",
       },
       // Programming
       {
-        href: "/vocabulary/programming",
+        href: "/content/vocabulary/programming",
         label: "Programming",
       },
       // Travel
       {
-        href: "/vocabulary/travel",
+        href: "/content/vocabulary/travel",
         label: "Travel",
       },
     ],
@@ -235,112 +231,112 @@ const links = [
     links: [
       // Numbers
       {
-        href: "/reference/numbers",
+        href: "/content/reference/numbers",
         label: "Numbers",
       },
       // Articles
       {
-        href: "/reference/articles",
+        href: "/content/reference/articles",
         label: "Articles",
       },
       // Pronouns
       {
-        href: "/reference/pronouns",
+        href: "/content/reference/pronouns",
         label: "Pronouns",
       },
       // Adjectives
       {
-        href: "/reference/adjectives",
+        href: "/content/reference/adjectives",
         label: "Adjectives",
       },
       // Nouns
       {
-        href: "/reference/nouns",
+        href: "/content/reference/nouns",
         label: "Nouns",
       },
       // Adverbs
       {
-        href: "/reference/adverbs",
+        href: "/content/reference/adverbs",
         label: "Adverbs",
       },
       // All Verb Tenses
       {
-        href: "/reference/all-verb-tenses",
+        href: "/content/reference/all-verb-tenses",
         label: "All Verb Tenses",
       },
       // False Cognates
       {
-        href: "/reference/false-cognates",
+        href: "/content/reference/false-cognates",
         label: "False Cognates",
       },
       // Infinitive vs. -ing
       {
-        href: "/reference/infinitive-ing",
+        href: "/content/reference/infinitive-ing",
         label: "Infinitive vs. -ing",
       },
       // Prepositions
       {
-        href: "/reference/prepositions",
+        href: "/content/reference/prepositions",
         label: "Prepositions",
       },
       // Phrasal Verbs
       {
-        href: "/reference/phrasal-verbs",
+        href: "/content/reference/phrasal-verbs",
         label: "Phrasal Verbs",
       },
       // Tag Questions
       {
-        href: "/reference/tag-questions",
+        href: "/content/reference/tag-questions",
         label: "Tag Questions",
       },
       // Passive Voice
       {
-        href: "/reference/passive-voice",
+        href: "/content/reference/passive-voice",
         label: "Passive Voice",
       },
       // Modal Verbs
       {
-        href: "/reference/modal-verbs",
+        href: "/content/reference/modal-verbs",
         label: "Modal Verbs",
       },
       // Conditonals
       {
-        href: "/reference/conditionals",
+        href: "/content/reference/conditionals",
         label: "Conditionals",
       },
       // Reported Speech
       {
-        href: "/reference/reported-speech",
+        href: "/content/reference/reported-speech",
         label: "Reported Speech",
       },
       // Collocations
       {
-        href: "/reference/collocations",
+        href: "/content/reference/collocations",
         label: "Collocations",
       },
       // To vs. For
       {
-        href: "/reference/to-for",
+        href: "/content/reference/to-for",
         label: "To vs. For",
       },
       // Homonyns
       {
-        href: "/reference/homonyns",
+        href: "/content/reference/homonyns",
         label: "Homonyns",
       },
       // Expressions
       {
-        href: "/reference/expressions",
+        href: "/content/reference/expressions",
         label: "Expressions",
       },
       // Which one?
       {
-        href: "/reference/which-one",
+        href: "/content/reference/which-one",
         label: "Which one?",
       },
       // Word Families
       {
-        href: "/reference/word-families",
+        href: "/content/reference/word-families",
         label: "Word Families",
       },
     ],
@@ -363,20 +359,20 @@ const links = [
     title: "Games",
     links: [
       {
-        href: "/games/minecraft",
+        href: "/content/games/minecraft",
         label: "Minecraft",
       },
     ],
   },
 ];
 
-export default function NavBar() {
+export default function NavBar({className}) {
   const { showNavBar, closeNavBar } = useContext(HeaderContext);
 
   return (
     <>
       <nav
-        className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""}`}
+        className={`line-break ${styles.nav} ${showNavBar ? styles.show : ""} ${className}`}
       >
         {links.map((group, groupIndex) => (
           <div key={groupIndex}>

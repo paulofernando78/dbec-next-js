@@ -88,7 +88,7 @@ export const ContentToken = ({ value, text = [] }) => {
   };
 
   return (
-    <span>
+    <>
       {contentArray.map((part, i) => {
         if (typeof part === "string") return part;
 
@@ -155,6 +155,6 @@ export const ContentToken = ({ value, text = [] }) => {
           </span>
         );
       })}
-    </span>
+    </>
   );
 };

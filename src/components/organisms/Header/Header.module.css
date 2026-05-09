@@ -1,3 +1,36 @@
-.logo-name {
-  font-family: "Avenir Next Condensed", "Gill Sans", "Trebuchet MS", sans-serif;
+.header {
+  width: 100%;
+  border-radius: var(--border-radius);
+  background: var(--background-container);
+  box-shadow: var(--box-shadow-container);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding);
+  /* padding-top: 5px; */
+  overflow: hidden;
+}
+
+#btn-menu {
+  transition: transform 0.5s ease;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+
+  font-family: var(--font-oswald);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logoName {
+  font-family: var(--font-anton);
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.darkLog {
+  display: flex;
+  gap: 5px;
 }

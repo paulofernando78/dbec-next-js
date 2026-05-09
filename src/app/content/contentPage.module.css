@@ -1,0 +1,15 @@
+.welcomeContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: var(--font-luckiestGuy);
+}
+
+.welcome, .feeling {
+  text-align: center;
+}
+
+.welcome {
+  font-size: 2rem;
+}

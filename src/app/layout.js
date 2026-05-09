@@ -1,7 +1,15 @@
-import { Luckiest_Guy, Montserrat, Oswald, Allura, Rampart_One } from "next/font/google";
+import styles from "./layout.module.css";
+
+import {
+  Luckiest_Guy,
+  Montserrat,
+  Oswald,
+  Allura,
+  Rampart_One,
+  Anton,
+} from "next/font/google";
 import Script from "next/script";
 
-import styles from "./layout.module.css";
 import "./globals.css";
 import { ThemeProvider } from "@/context/themeContext";
 import { HeaderProvider } from "../context/headerContext";
@@ -9,12 +17,17 @@ import Header from "@/components/organisms/Header";
 import NavBar from "@/components/organisms/Navbar";
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
 import Footer from "@/components/organisms/Footer";
-import { BuyMeACoffee } from "@/components/atoms/BuyMeACoffee";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+});
+
+const anton = Anton({
+  variable: "--font-anton",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const luckiestGuy = Luckiest_Guy({
@@ -86,26 +99,15 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body
-        className={`${montserrat.variable} ${oswald.variable} ${luckiestGuy.variable} ${allura.variable} ${rampartOne.variable}`}
+        className={`${montserrat.variable} ${anton.variable} ${oswald.variable} ${luckiestGuy.variable} ${allura.variable} ${rampartOne.variable}`}
       >
         <ThemeProvider>
-          <div className="layout">
+          <div className={styles.layout}>
             <HeaderProvider>
-              <Header></Header>
-
-              <div className="nav-main">
-                <NavBar></NavBar>
-                <main className={styles.main}>
-                  <BuyMeACoffee className="coffee" />
-
-                  {children}
-                  <div className={styles.scrollToTopWrapper}>
-                    <ScrollToTop />
-                  </div>
-                </main>
-              </div>
+              <Header />
+              <main className={styles.main}>{children}</main>
             </HeaderProvider>
-            <Footer></Footer>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

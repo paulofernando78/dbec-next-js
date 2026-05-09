@@ -71,37 +71,36 @@ const experience = [
   },
 ];
 
+const about = [
+  {
+
+  }
+];
+
 export default function About() {
   return (
     <>
-      <div className="line-break">
-        <Section id="paragraph-media" label="Sobre" heading={2}>
-          {/* Card Layout */}
-          <LineBreak />
-          <Card>
-            <MediaLayout mediaPosition="left">
-              <Image
-                src="/assets/img/about.png"
-                alt="My picture"
-                width={150}
-                height={150}
-                className={styles.aboutImg}
-              />
-              <Paragraph
-                value={[
-                  ...content({
-                    parts: [
-                      "Fundador do Daily Basis English Course, é apaixonado pelos estudos da língua inglesa desde 96. Começou a lecionar aulas de inglês particulares em meados de 2004. Já morou nos EUA - Califórnia. Estuda web development e programação desde 2022 com o objetivo de criar a sua própria plataforma de ensino.",
-                    ],
-                  }),
-                ]}
-              />
-            </MediaLayout>
-          </Card>
-        </Section>
-        <Section id="background" label="Formação e Experiência" heading={2}>
-          <h3 className={styles.subtionTitle}>Formação</h3>
-          <LineBreak />
+      <div className={`line-break ${styles.wrapperAbout}`}>
+        <LineBreak />
+        <MediaLayout mediaPosition="top" className={styles.textAboutMe}>
+          <Image
+            src="/assets/img/about.png"
+            alt="My picture"
+            width={150}
+            height={150}
+            className={styles.aboutImg}
+          />
+          <Paragraph
+            value={[
+              ...content({
+                parts: [
+                  "Fundador do Daily Basis English Course, é apaixonado pelos estudos da língua inglesa desde 96. Começou a lecionar aulas de inglês particulares em meados de 2004. Já morou nos EUA - Califórnia. Estuda web development e programação desde 2022 com o objetivo de criar a sua própria plataforma de ensino.",
+                ],
+              }),
+            ]}
+          />
+        </MediaLayout>
+        <Section id="background" label="Formação" heading={2}>
           <ul>
             {formation.map((item, index) => (
               <>
@@ -114,8 +113,8 @@ export default function About() {
               </>
             ))}
           </ul>
-          <h3 className={styles.subtionTitle}>Experiência</h3>
-          <LineBreak />
+        </Section>
+        <Section id="background" label="Experiência" heading={2}>
           <ul>
             {experience.map((item, index) => (
               <>

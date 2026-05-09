@@ -1,11 +1,11 @@
-.aboutImg {
-  
-  border-radius: 100%;
-  border: 5px solid var(--slate-3)
+.wrapperAbout {
+  margin-inline: min(200px,
+  max(0px, calc((100vw - 380px) * 0.135)));
 }
 
-.subtionTitle {
-  font-size: 1.6rem;
+.aboutImg {
+  border-radius: 100%;
+  border: 5px solid var(--slate-3);
 }
 
 .details {

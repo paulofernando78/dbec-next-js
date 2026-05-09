@@ -1,23 +1,24 @@
-.wrapper {
- display: grid;
-  grid-template-columns: repeat(auto-fit, 150px);
-  justify-content: center;
-  gap: 10px;
+.layout {
+  position: relative;
 }
 
-.innerWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: max-content;
-  padding: 10px;
-  gap: 8px;
-  /* border: 1px solid */
+.dbec {
+  line-height: 1;
+  text-align: center;
 }
 
-.imgEmoji {
-  border: none
+.db,
+.ec {
+  font-family: var(--font-anton);
+  text-shadow: 1px 1px 5px var(--gray-5);
+}
+
+.db {
+  font-size: 3.5rem;
+}
+
+.ec {
+  font-size: 2.66rem;
 }
 
 .meComputerWrapper {
@@ -27,7 +28,7 @@
 }
 
 .meComputer {
-  border: 0
+  border: 0;
 }
 
 .greetings {
@@ -35,11 +36,14 @@
   font-size: 1.5rem;
   margin: 20px;
   opacity: 1;
-  transition: opacity 0.5s ease
+  transition: opacity 0.5s ease;
 }
 
-.wordAudioWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.welcome {
+  margin-inline: min(100px, max(0px, calc((100vw - 360px) * 0.135)));
+}
+
+.contact {
+  width: max-content;
+  margin: 20px auto;
 }

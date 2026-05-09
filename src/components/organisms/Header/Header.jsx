@@ -1,35 +1,61 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { HeaderContext } from "@/context/headerContext"
-import { Button}  from "@/components/atoms/Button"
-import { useContext } from "react"
-import { ThemeContext } from "@/context/themeContext"
-import { DarkMode, LightMode } from "@/lib/svg-imports"
+import styles from "./Header.module.css";
 
-import styles from "./Header.module.css"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import { HeaderContext } from "@/context/headerContext";
+import { Button } from "@/components/atoms/Button";
+import { useState, useContext } from "react";
+import { ThemeContext } from "@/context/themeContext";
+import { DarkMode, LightMode, LogIn, LogOut } from "@/lib/svg-imports";
 
 export default function Header() {
-  const {showHam, handleClick} = useContext(HeaderContext)
   const { theme, toggleTheme } = useContext(ThemeContext);
   const isDarkMode = theme === "dark";
 
+  const { showHam, handleClick } = useContext(HeaderContext);
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn((prev) => !prev);
+  };
+
+  const pathname = usePathname();
+  const isPresentationPage =
+  pathname === "/" || pathname === "/about"
+
   return (
     <>
-      <header>
-        <Button icon="menu"
-        onToggle= {handleClick}
-        active={!showHam}
-        ></Button>
-        <Link href="/">
-        <span className={styles.logoName}><b>DAILY BASIS ENGLISH COURSE</b></span>
-        </Link>
-        <Button icon={isDarkMode ? <LightMode /> : <DarkMode />}
-        onToggle={toggleTheme}
-        active={isDarkMode}
-        ></Button>
+      <header className={styles.header}>
+        {!isPresentationPage && (
+          <Button icon="menu" onToggle={handleClick} active={!showHam}></Button>
+        )}
+        {!isPresentationPage && <Link href="/content">
+          <h1 className={styles.logoName}>
+            DAILY BASIS ENGLISH COURSE
+          </h1>
+        </Link>}
+        {isPresentationPage && <nav className={styles.nav}>
+          <Link href="/">HOME</Link>
+          <Link href="/about">ABOUT</Link>
+        </nav>}
+        <div className={styles.darkLog}>
+          <Button
+            icon={isDarkMode ? <LightMode /> : <DarkMode />}
+            onToggle={toggleTheme}
+            // active={isDarkMode}
+          ></Button>
+          <Link href={isLoggedIn ? "/" : "/content"}>
+            <Button
+              icon={isLoggedIn ? <LogOut /> : <LogIn />}
+              onToggle={handleLogin}
+            ></Button>
+          </Link>
+        </div>
       </header>
     </>
-    
-  )
+  );
 }

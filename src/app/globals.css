@@ -5,9 +5,12 @@
 
 :root {
   --font-montserrat: "Avenir Next", "Montserrat", "Segoe UI", Arial, sans-serif;
-  --font-oswald: "Arial Narrow", "Helvetica Neue Condensed", "Oswald", sans-serif;
+  --font-oswald:
+    "Arial Narrow", "Helvetica Neue Condensed", "Oswald", sans-serif;
   --font-luckiestGuy: "Cooper Black", "Arial Black", "Luckiest Guy", cursive;
-  --background-color: var(--slate-1);
+  --background: linear-gradient(110deg, var(--slate-4), var(--slate-0));
+  --background-container: var(--gray-8);
+  --box-shadow-container: 1px 1px 3px Black;
   --text-color: var(--slate-9);
   --icon-color: var(--gray-4);
   --dictionary-bg: var(--slate-1);
@@ -20,7 +23,6 @@
   --padding: 5px;
   --padding-block: 0.4rem;
   --gap: 0.3125rem;
-  --nav-width: 173px;
 
   /* Border */
   --border: 1px solid var(--gray-3);
@@ -44,12 +46,33 @@
 
 /* Dark Mode */
 html.dark {
-  --background-color: var(--slate-9);
+  --background: #0C0F12;
   --text-color: var(--slate-1);
   --icon-color: var(--slate-1);
   --dictionary-bg: var(--slate-9);
 
   --icon-invert: 1;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.coffee {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 10;
+}
+
+.dictionary-area {
+  position: absolute;
+  top: 5px;
+  z-index: 1;
+  align-self: flex-end;
 }
 
 .line-break {
@@ -66,74 +89,6 @@ html.dark {
 
 .line-break-item {
   margin-bottom: var(--line-break);
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.layout {
-  max-width: 1100px;
-  height: 100dvh;
-  margin: 0 auto;
-  padding: var(--padding);
-
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
-}
-
-header {
-  width: 100%;
-  border: var(--border);
-  border-radius: var(--border-radius);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding);
-  overflow: hidden;
-}
-
-#btn-menu {
-  transition: transform 0.5s ease;
-}
-
-.nav-main {
-  flex: 1;
-  min-height: 0;
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/* Nav */
-
-main {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  overflow-y: auto;
-
-  border: var(--border);
-  border-radius: var(--border-radius);
-  padding: 5px 5px 0px 5px;
-
-  transition: margin-left 0.5s ease;
-  will-change: margin-left;
-  scroll-behavior: smooth;
-  padding-bottom: 43px;
-}
-
-.dictionary-area {
-  position: absolute;
-  top: 5px;
-  z-index: 1;
-  align-self: flex-end;
 }
 
 .block {
@@ -219,14 +174,7 @@ mark {
 }
 
 .text-align-center {
-  text-align: center
-}
-
-.coffee {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  z-index: 10;
+  text-align: center;
 }
 
 .icon-position {
@@ -237,24 +185,4 @@ mark {
 .icon-position-link {
   transform: translate(-2px, -1px);
   display: inline-flex;
-}
-
-@media (max-width: 700px) {
-  .nav {
-    margin-left: var(--nav-width);
-  }
-
-  .nav.show {
-    margin-left: 0;
-  }
-
-  main {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 700px) {
-  main {
-    margin-left: 178px;
-  }
 }
