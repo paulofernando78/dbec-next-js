@@ -22,12 +22,12 @@
   font-family: var(--font-oswald);
   font-size: 1.5rem;
   font-weight: bold;
-
+  
   margin-left: 7px;
 }
 
 .navLink {
-  color: var(--gray-2);
+  color: var(--text-color);
 }
 
 .logoName {

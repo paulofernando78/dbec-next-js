@@ -20,9 +20,11 @@
     -5px 5px 0 #dfdfdf,
     -6px 6px 0 #dadada,
     -7px 7px 0 #d6d6d6,
-    -8px 8px 0 #d2d2d2;
+    -8px 8px 0 #d2d2d2,
+    -9px 9px 0 #cecece,
+    -10px 10px 0 #cacaca;
 
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
   position: relative;
