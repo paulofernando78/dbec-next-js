@@ -7,13 +7,13 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--padding);
-  /* padding-top: 5px; */
   overflow: hidden;
 }
 
 .menuBtnWrapper {
   transform: translateX(-40px);
   transition: transform 0.5s ease;
+  height: 30px;
 }
 
 @media (max-width: 700px) {

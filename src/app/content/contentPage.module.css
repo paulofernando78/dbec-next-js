@@ -8,9 +8,12 @@
 
 .welcome, .feeling {
   text-align: center;
-  color: var(--gray-2)
+  color: var(--text-color);
+  text-shadow:
+  1px 1px 2px white,
+  1px 1px 2px black;
 }
-p
+
 .welcome {
   font-size: 2.5rem;
 }

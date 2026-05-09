@@ -15,10 +15,42 @@
 
 .db {
   font-size: 3.5rem;
+  transform: translateX(100px);
+  animation-name: db;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes db {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .ec {
   font-size: 2.66rem;
+  transform: translateX(-100px);
+  animation-name: ec;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@keyframes ec {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 .meComputerWrapper {
