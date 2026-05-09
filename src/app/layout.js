@@ -4,9 +4,9 @@ import {
   Luckiest_Guy,
   Montserrat,
   Oswald,
-  Allura,
   Rampart_One,
   Anton,
+  Permanent_Marker,
 } from "next/font/google";
 import Script from "next/script";
 
@@ -42,14 +42,14 @@ const oswald = Oswald({
   weight: "400",
 });
 
-const allura = Allura({
-  variable: "--font-allura",
+const rampartOne = Rampart_One({
+  variable: "--font-rampart-one",
   subsets: ["latin"],
   weight: "400",
 });
 
-const rampartOne = Rampart_One({
-  variable: "--font-rampart-one",
+const permanentMarker = Permanent_Marker({
+  variable: "--font-permanent-marker",
   subsets: ["latin"],
   weight: "400",
 });
@@ -99,7 +99,7 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body
-        className={`${montserrat.variable} ${anton.variable} ${oswald.variable} ${luckiestGuy.variable} ${allura.variable} ${rampartOne.variable}`}
+        className={`${montserrat.variable} ${anton.variable} ${oswald.variable} ${luckiestGuy.variable} ${rampartOne.variable} ${permanentMarker.variable}`}
       >
         <ThemeProvider>
           <div className={styles.layout}>
