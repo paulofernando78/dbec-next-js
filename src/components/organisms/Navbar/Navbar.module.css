@@ -5,10 +5,13 @@
   padding: 5px 5px 5px 5px;
   font-family: var(--font-oswald);
   font-size: 1rem;
-  color: var(--gray-2);
-  border-radius: var(--border-radius);
-  background: var(--background-container);
-  box-shadow: var(--box-shadow-container);
+  color: var(--text-color);
+  /* border-radius: var(--border-radius); */
+  /* background: var(--background-container); */
+  /* box-shadow: var(--box-shadow-container); */
+  background: linear-gradient(140deg, var(--slate-4), var(--slate-0));
+  border-right: 1px solid var(--gray-4);
+  border-radius: 0 5px 0 0;
   overflow-y: auto;
   z-index: 1;
 

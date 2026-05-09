@@ -9,8 +9,8 @@
     "Arial Narrow", "Helvetica Neue Condensed", "Oswald", sans-serif;
   --font-luckiestGuy: "Cooper Black", "Arial Black", "Luckiest Guy", cursive;
   --background: linear-gradient(110deg, var(--slate-4), var(--slate-0));
-  --background-container: var(--gray-8);
-  --box-shadow-container: 1px 1px 3px Black;
+  /* --background-container: var(--gray-8); */
+  --box-shadow-container: 1px 1px 5px var(--gray-4);
   --text-color: var(--slate-9);
   --icon-color: var(--gray-4);
   --dictionary-bg: var(--slate-1);

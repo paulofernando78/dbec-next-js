@@ -1,12 +1,11 @@
 .header {
   width: 100%;
-  border-radius: var(--border-radius);
-  background: var(--background-container);
-  box-shadow: var(--box-shadow-container);
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: var(--padding);
+  border-bottom: 1px solid var(--gray-4);
   overflow: hidden;
 }
 
@@ -14,13 +13,6 @@
   transform: translateX(-40px);
   transition: transform 0.5s ease;
   height: 30px;
-}
-
-@media (max-width: 700px) {
-  .menuBtnWrapper {
-    transform: translateX(0);
-    transition: transform 0.5s ease;
-  }
 }
 
 .nav {
@@ -42,10 +34,17 @@
   font-family: var(--font-anton);
   font-size: 1.2rem;
   font-weight: 100;
-  color: var(--gray-2);
+  color: var(--text-color);
 }
 
 .darkLog {
   display: flex;
   gap: 5px;
+}
+
+@media (max-width: 700px) {
+  .menuBtnWrapper {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+  }
 }
