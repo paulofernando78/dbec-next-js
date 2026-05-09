@@ -39,8 +39,8 @@ export default function Header() {
           </h1>
         </Link>}
         {isPresentationPage && <nav className={styles.nav}>
-          <Link href="/">HOME</Link>
-          <Link href="/about">ABOUT</Link>
+          <Link href="/" className={styles.navLink}>HOME</Link>
+          <Link href="/about" className={styles.navLink}>ABOUT</Link>
         </nav>}
         <div className={styles.darkLog}>
           <Button

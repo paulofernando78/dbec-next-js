@@ -18,16 +18,23 @@
 .nav {
   display: flex;
   gap: 20px;
-
+  
   font-family: var(--font-oswald);
   font-size: 1.5rem;
   font-weight: bold;
+  
+  margin-left: 7px;
+}
+
+.navLink {
+  color: var(--gray-2);
 }
 
 .logoName {
   font-family: var(--font-anton);
   font-size: 1.2rem;
   font-weight: 100;
+  color: var(--gray-2);
 }
 
 .darkLog {
