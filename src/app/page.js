@@ -44,16 +44,16 @@ export default function Home() {
     <div className={styles.layout}>
       <div className={styles.meComputerWrapper}>
         <div className={styles.dbec}>
-          <h1 className={styles.db}>DAILY BAISIS</h1>
-          <h1 className={styles.ec}>ENGLISH COURSE</h1>
+          <h1 className={styles.db} data-text="DAILY BASIS">DAILY BAISIS</h1>
+          <h1 className={styles.ec} data-text="ENGLISH COURSE">ENGLISH COURSE</h1>
         </div>
-        <Image
+        {/* <Image
           src="/assets/img/home-me.png"
           alt="A pic of myself"
           width={200}
           className={styles.meComputer}
-        />
-        <ul>
+        /> */}
+        <ul className={styles.greetingsWrapper}>
           <li className={styles.greetings} style={{ opacity }}>
             {greetingsList[greetingIndex]}
           </li>
