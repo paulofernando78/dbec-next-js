@@ -4,11 +4,22 @@
 }
 
 .dbec {
-  line-height: 1.4;
+  line-height: 1.05;
   text-align: center;
 }
 
 .db,
+.ec {
+  font-family: var(--font-anton);
+  color: #222222;
+  -webkit-text-stroke: 12px var(--gray-2);
+  paint-order: stroke fill;
+  filter: drop-shadow(1px 1px 5px var(--gray-4));
+  text-shadow: 1px 1px 5px var(--gray-4);
+  
+}
+
+/* .db,
 .ec {
   font-family: var(--font-anton);
   letter-spacing: 2px;
@@ -28,9 +39,9 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease;
   position: relative;
-}
+} */
 
-.db::before,
+/* .db::before,
 .ec::before {
   content: attr(data-text);
   position: absolute;
@@ -40,15 +51,19 @@
   text-shadow: none;
   filter: blur(4px);
   z-index: -1;
-}
+} */
 
 .db {
+  font-size: 4rem;
+}
+
+/* .db {
   font-size: 3.5rem;
   transform: translateX(0px) translateY(0px) rotate(-28deg) skew(25deg);
   animation-name: db;
-}
+} */
 
-@keyframes db {
+/* @keyframes db {
   from {
     transform: translateX(120px) translateY(-120px) rotate(-28deg) skew(25deg);
 
@@ -60,15 +75,19 @@
 
     opacity: 1;
   }
-}
+} */
 
 .ec {
+  font-size: 3.06rem;
+}
+
+/* .ec {
   font-size: 2.66rem;
   transform: translateX(-0px) translateY(0px) rotate(-28deg) skew(25deg);
   animation-name: ec;
-}
+} */
 
-@keyframes ec {
+/* @keyframes ec {
   from {
     transform: translateX(-120px) translateY(120px) rotate(-28deg) skew(25deg);
 
@@ -80,7 +99,7 @@
 
     opacity: 1;
   }
-}
+} */
 
 .meComputerWrapper {
   margin-top: 30px;

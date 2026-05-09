@@ -5,14 +5,16 @@
   padding: 10px;
 }
 
-.whatsappIcon {
-  transform: translateY(-3px);
+.scaleAnimation img {
+  border: none;
+  width: 35px;
 }
 
-.scaleAnimation {
+.scaleAnimation a {
+  display: inline-flex;
   transition: transform 0.3s cubic-bezier(.54, 3, .57, .96);
 }
 
-.scaleAnimation:hover {
-  transform: translateY(-15px) scale(1.3) ;
+.scaleAnimation a:hover {
+  transform: translateY(-10px) scale(1.3);
 }
