@@ -24,24 +24,35 @@ export default function Header() {
   };
 
   const pathname = usePathname();
-  const isPresentationPage =
-  pathname === "/" || pathname === "/about"
+  const isPresentationPage = pathname === "/" || pathname === "/about";
 
   return (
     <>
       <header className={styles.header}>
         {!isPresentationPage && (
-          <Button icon="menu" onToggle={handleClick} active={!showHam}></Button>
+          <div className={styles.menuBtnWrapper}>
+            <Button
+              icon="menu"
+              onToggle={handleClick}
+              active={!showHam}
+            ></Button>
+          </div>
         )}
-        {!isPresentationPage && <Link href="/content">
-          <h1 className={styles.logoName}>
-            DAILY BASIS ENGLISH COURSE
-          </h1>
-        </Link>}
-        {isPresentationPage && <nav className={styles.nav}>
-          <Link href="/" className={styles.navLink}>HOME</Link>
-          <Link href="/about" className={styles.navLink}>ABOUT</Link>
-        </nav>}
+        {!isPresentationPage && (
+          <Link href="/content">
+            <h1 className={styles.logoName}>DAILY BASIS ENGLISH COURSE</h1>
+          </Link>
+        )}
+        {isPresentationPage && (
+          <nav className={styles.nav}>
+            <Link href="/" className={styles.navLink}>
+              HOME
+            </Link>
+            <Link href="/about" className={styles.navLink}>
+              ABOUT
+            </Link>
+          </nav>
+        )}
         <div className={styles.darkLog}>
           <Button
             icon={isDarkMode ? <LightMode /> : <DarkMode />}

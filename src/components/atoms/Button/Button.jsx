@@ -3,16 +3,20 @@
 import { useState } from "react";
 import styles from "./Button.module.css";
 
-export const Button = ({ icon, onClick, onToggle, active, ...props }) => {
+export const Button = ({ icon, onClick, onToggle, active, className, ...props }) => {
   const [pressed, setPressed] = useState(false);
   const handleClick = onClick || onToggle;
 
   if (icon === "menu") {
     return (
       <button
-        className={`${styles.pushable} ${active ? styles.active : ""}`}
+        className={`
+          ${className}
+          ${styles.pushable}
+          ${styles.btnMenu}
+          ${active ? styles.active : ""}`
+        }
         onClick={handleClick}
-        id={styles.btnMenu}
       >
         <span className={styles.shadow}></span>
         <span className={styles.edge}></span>

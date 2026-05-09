@@ -10,7 +10,11 @@
   text-align: center;
   color: var(--gray-2)
 }
-
+p
 .welcome {
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+
+.feeling {
+  font-size: 1.6rem;
 }
