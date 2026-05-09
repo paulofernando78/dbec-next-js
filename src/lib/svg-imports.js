@@ -1,7 +1,7 @@
 import styles from "../components/molecules/ContentToken/ContentToken.module.css";
 
 const color = "var(--gray-5)";
-const button = "white";
+const button = "var(--gray-2)";
 const iconSize = "1.5rem";
 
 export const Arrow = ({ className }) => (

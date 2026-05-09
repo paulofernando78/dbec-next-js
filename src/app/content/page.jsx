@@ -44,20 +44,25 @@ export default function Home() {
     <div className="line-break-double">
       <div className="line-break">
         <div className={styles.welcomeContainer}>
-          <Line as="h2"
+          <Line
+            as="h2"
             className={styles.welcome}
             value={[
               ...content({
-                parts: ["Welcome!"],
+                parts: [
+                  // audio("/assets/audio/home/welcome.mp3"),
+                  "Welcome!",
+                ],
               }),
             ]}
           />
-          <Line as="h1"
+          <Line
+            as="h1"
             className={styles.feeling}
             value={[
               ...content({
                 parts: [
-                  audio("/assets/audio/home/feeling.mp3"),
+                  // audio("/assets/audio/home/feeling.mp3"),
                   "How are you feeling today?",
                 ],
               }),
