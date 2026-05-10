@@ -18,6 +18,11 @@ const contacts = [
     link: "https://www.linkedin.com/in/paulo-fernando-70930725/",
     icon: "/assets/img/contacts/linkedin.png"
   },
+  // buy me a coffee
+  {
+    link: "",
+    icon: "/assets/img/contacts/coffee.gif"
+  },
   // whatsapp
   {
     link: "https://wa.me/5511981672145",
