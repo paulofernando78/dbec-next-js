@@ -4,7 +4,7 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
 import { Guess } from "@/components/molecules/Guess";
-import { FlipCard } from "@/components/molecules/FlipCard/";
+import { FlipCards } from "@/components/molecules/FlipCards/";
 import { Line } from "@/components/molecules/Line";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { List } from "@/components/molecules/List";
@@ -71,7 +71,7 @@ export default function IceAgeLesson() {
                   value: [
                     ...content({
                       parts: [
-                        "Why does Earth's climate naturally change over time?",
+                        "How do Earth's orbit and tilt affect climate over long periods of time?",
                       ],
                     }),
                   ],
@@ -100,16 +100,34 @@ export default function IceAgeLesson() {
 
             <LineBreak />
 
-            <GridLayout>
-              <FlipCard backImg={dictionary("glacier.avif")} />
-              <FlipCard backImg={dictionary("ice-age.avif")} />
-              <FlipCard backImg={dictionary("orbit.avif")} />
-              <FlipCard backImg={dictionary("climate-change.avif")} />
-              <FlipCard backImg={dictionary("earth-axis.avif")} />
-              <FlipCard backImg={dictionary("carbon-dioxide.avif")} />
-              <FlipCard backImg={dictionary("fossil.avif")} />
-              <FlipCard backImg={dictionary("temperature.avif")} />
-            </GridLayout>
+            <FlipCards
+  cards={[
+    {
+      backImg: dictionary("glacier.avif"),
+    },
+    {
+      backImg: dictionary("ice-age.avif"),
+    },
+    {
+      backImg: dictionary("orbit.avif"),
+    },
+    {
+      backImg: dictionary("climate-change.avif"),
+    },
+    {
+      backImg: dictionary("earth-axis.avif"),
+    },
+    {
+      backImg: dictionary("carbon-dioxide.avif"),
+    },
+    {
+      backImg: dictionary("fossil-ammonite.avif"),
+    },
+    {
+      backImg: dictionary("temperature.avif"),
+    },
+  ]}
+/>
           </Section>
 
           <Section id="gist" heading={3}>
@@ -128,7 +146,7 @@ export default function IceAgeLesson() {
             <LineBreak />
 
             <VideoPlayer
-              videoId="ztninkgZ0ws"
+              videoId="I4EZCy14te0"
               title="When will the next ice age happen?"
             />
 
@@ -140,18 +158,18 @@ export default function IceAgeLesson() {
                     options: [
                       {
                         option:
-                          "How dinosaurs disappeared from the planet.",
+                          "Why humans survived the Ice Age better than dinosaurs.",
                         isCorrect: false,
                       },
                       {
                         option:
-                          "Why weather forecasts are always inaccurate.",
-                        isCorrect: false,
-                      },
-                      {
-                        option:
-                          "How Earth's orbit and climate cycles influence ice ages.",
+                          "How Earth's orbit, tilt, and carbon dioxide levels affect ice ages.",
                         isCorrect: true,
+                      },
+                      {
+                        option:
+                          "Why the Moon controls all climate changes on Earth.",
+                        isCorrect: false,
                       },
                     ],
                   },
@@ -179,55 +197,55 @@ export default function IceAgeLesson() {
                 questions: [
                   {
                     question:
-                      "1. What natural factor strongly affects ice age cycles?",
+                      "1. What astronomical factor strongly influences ice age cycles?",
                     options: [
-                      {
-                        option: "Volcano colors",
-                        isCorrect: false,
-                      },
                       {
                         option: "Earth's orbit and tilt",
                         isCorrect: true,
                       },
                       {
-                        option: "Ocean animals",
+                        option: "The color of the oceans",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "Volcanic ash clouds",
                         isCorrect: false,
                       },
                     ],
                   },
                   {
                     question:
-                      "2. What gas mentioned in the video influences global temperature?",
+                      "2. What greenhouse gas mentioned in the video affects global temperature?",
                     options: [
                       {
                         option: "Carbon dioxide",
                         isCorrect: true,
                       },
                       {
-                        option: "Helium",
+                        option: "Oxygen",
                         isCorrect: false,
                       },
                       {
-                        option: "Hydrogen",
+                        option: "Nitrogen",
                         isCorrect: false,
                       },
                     ],
                   },
                   {
                     question:
-                      "3. Why might the next ice age be delayed?",
+                      "3. Why could the next ice age happen later than expected?",
                     options: [
                       {
-                        option: "Because mountains are disappearing",
+                        option: "Because Earth's orbit stopped changing",
                         isCorrect: false,
                       },
                       {
                         option:
-                          "Because human activity is warming the planet",
+                          "Because human-caused warming increased greenhouse gases",
                         isCorrect: true,
                       },
                       {
-                        option: "Because the Moon is moving away",
+                        option: "Because Antarctica completely melted already",
                         isCorrect: false,
                       },
                     ],
@@ -240,14 +258,14 @@ export default function IceAgeLesson() {
           <Section id="practice" heading={3}>
             <Guess
               words={[
-                { word: "glacier", img: 0 },
-                { word: "orbit", img: 0 },
-                { word: "climate", img: 0 },
-                { word: "temperature", img: 0 },
-                { word: "carbon dioxide", img: 1 },
-                { word: "axis", img: 0 },
-                { word: "ice age", img: 0 },
+                { word: "carbon dioxide", img: 0 },
+                { word: "earth axis", img: 0 },
                 { word: "fossil", img: 0 },
+                { word: "ice age", img: 0 },
+                { word: "temperature", img: 0 },
+                { word: "glacier", img: 0 },
+                { word: "climate change", img: 0 },
+                { word: "orbit", img: 0 },
               ]}
             />
 
@@ -387,7 +405,7 @@ export default function IceAgeLesson() {
                   value: [
                     ...content({
                       parts: [
-                        "Why is it difficult to predict Earth's climate far into the future?",
+                        "How can scientists learn about past climates from glaciers and fossils?",
                       ],
                     }),
                   ],

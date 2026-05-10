@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "earth axis",
+        "phonetics": "/ɝːθ ˈæk.sɪs/",
+        "partOfSpeech": "noun",
+        "enDefinition": "the imaginary line through Earth that runs from the North Pole to the South Pole and around which the planet rotates",
+        "ptDefinition": "eixo da Terra; a linha imaginária que atravessa a Terra do Polo Norte ao Polo Sul e em torno da qual o planeta gira",
+        "examples": [
+          {
+            "enExample": "Earth rotates around its axis once every 24 hours.",
+            "ptExample": "A Terra gira em torno de seu eixo uma vez a cada 24 horas."
+          },
+          {
+            "enExample": "The tilt of Earth's axis affects the seasons.",
+            "ptExample": "A inclinação do eixo da Terra afeta as estações do ano."
+          }
+        ],
+        "synonyms": ["rotational axis", "planetary axis"],
+        "antonyms": [""],
+        "seeAlso": ["orbit", "rotation", "North Pole", "South Pole"],
+        "notes": [
+          {
+            "enNote": "Earth's axis is tilted about 23.5 degrees, which is one reason why Earth has seasons.",
+            "ptNote": "O eixo da Terra é inclinado cerca de 23,5 graus, o que é uma das razões pelas quais a Terra possui estações do ano."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "earth-axis.avif",
+            "alt": "Planet Earth with a glowing tilted axis running through the poles"
+          }
+        ]
+      },
+      {
         "word": "earn one’s keep",
         "partOfSpeech": "idiom",
         "enDefinition": "to do work or provide a service in return for food, accommodation, or the benefits one receives; to justify one’s position or usefulness",

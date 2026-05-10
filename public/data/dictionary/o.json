@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "orbit",
+        "phonetics": "/ˈɔːr.bɪt/",
+        "partOfSpeech": "noun",
+        "enDefinition": "the curved path that an object in space follows around a planet, star, or moon because of gravity",
+        "ptDefinition": "órbita; o caminho curvo que um objeto no espaço segue ao redor de um planeta, estrela ou lua devido à gravidade",
+        "examples": [
+          {
+            "enExample": "The Moon stays in orbit around Earth.",
+            "ptExample": "A Lua permanece em órbita ao redor da Terra."
+          },
+          {
+            "enExample": "Satellites are placed into orbit to collect information.",
+            "ptExample": "Satélites são colocados em órbita para coletar informações."
+          }
+        ],
+        "synonyms": ["trajectory", "path", "rotation"],
+        "antonyms": ["collision", "crash"],
+        "seeAlso": ["planet", "gravity", "axis", "satellite"],
+        "notes": [
+          {
+            "enNote": "Objects remain in orbit because gravity pulls them toward another object while they continue moving forward.",
+            "ptNote": "Os objetos permanecem em órbita porque a gravidade os puxa em direção a outro objeto enquanto continuam se movendo para frente."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "orbit.avif",
+            "alt": "A planet moving around a bright star along a curved orbital path"
+          }
+        ]
+      },
+      {
         "word": "out of this world",
         "partOfSpeech": "idiom",
         "enDefinition": "extremely good, impressive, or enjoyable; much better than usual",

@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "ice age",
+        "phonetics": "/ˈaɪs ˌeɪdʒ/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a long period in Earth's history when large areas of the planet were covered with ice and glaciers",
+        "ptDefinition": "era do gelo; um longo período da história da Terra em que grandes áreas do planeta estavam cobertas por gelo e geleiras",
+        "examples": [
+          {
+            "enExample": "Mammoths lived during the last ice age.",
+            "ptExample": "Mamutes viveram durante a última era do gelo."
+          },
+          {
+            "enExample": "Scientists study fossils to learn more about the ice age.",
+            "ptExample": "Os cientistas estudam fósseis para aprender mais sobre a era do gelo."
+          }
+        ],
+        "synonyms": ["glacial period", "glaciation"],
+        "antonyms": ["warm period"],
+        "seeAlso": ["glacier", "climate change", "fossil", "temperature"],
+        "notes": [
+          {
+            "enNote": "Several ice ages have occurred throughout Earth's history, with the most recent one ending about 11,700 years ago.",
+            "ptNote": "Diversas eras do gelo ocorreram ao longo da história da Terra, sendo que a mais recente terminou há cerca de 11.700 anos."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "ice-age.avif",
+            "alt": "A frozen prehistoric landscape with massive glaciers and ancient animals"
+          }
+        ]
+      },
+      {
         "word": "intestine",
         "phonetics": "/ɪnˈtes.tɪn/",
         "partOfSpeech": "noun",

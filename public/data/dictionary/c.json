@@ -2,6 +2,70 @@
   {
     "definitions": [
       {
+        "word": "carbon dioxide",
+        "phonetics": "/ˌkɑːr.bən daɪˈɑːk.saɪd/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a gas made of carbon and oxygen that is naturally present in the air and produced by breathing, burning fuels, and other processes",
+        "ptDefinition": "dióxido de carbono; um gás formado por carbono e oxigênio presente naturalmente no ar e produzido pela respiração, queima de combustíveis e outros processos",
+        "examples": [
+          {
+            "enExample": "Plants absorb carbon dioxide during photosynthesis.",
+            "ptExample": "As plantas absorvem dióxido de carbono durante a fotossíntese."
+          },
+          {
+            "enExample": "Burning fossil fuels releases large amounts of carbon dioxide into the atmosphere.",
+            "ptExample": "A queima de combustíveis fósseis libera grandes quantidades de dióxido de carbono na atmosfera."
+          }
+        ],
+        "synonyms": ["CO2", "greenhouse gas"],
+        "antonyms": ["oxygen"],
+        "seeAlso": ["climate change", "greenhouse effect", "fossil fuel", "photosynthesis"],
+        "notes": [
+          {
+            "enNote": "Carbon dioxide is an important greenhouse gas that helps trap heat in Earth's atmosphere.",
+            "ptNote": "O dióxido de carbono é um importante gás de efeito estufa que ajuda a reter calor na atmosfera da Terra."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "carbon-dioxide.avif",
+            "alt": "A molecular model showing one carbon atom connected to two oxygen atoms"
+          }
+        ]
+      },
+      {
+        "word": "climate change",
+        "phonetics": "/ˈklaɪ.mət tʃeɪndʒ/",
+        "partOfSpeech": "noun",
+        "enDefinition": "long-term changes in Earth's temperatures and weather patterns, especially caused by human activities such as burning fossil fuels",
+        "ptDefinition": "mudança climática; alterações de longo prazo nas temperaturas e nos padrões climáticos da Terra, especialmente causadas por atividades humanas como a queima de combustíveis fósseis",
+        "examples": [
+          {
+            "enExample": "Climate change is causing glaciers to melt faster.",
+            "ptExample": "As mudanças climáticas estão fazendo as geleiras derreterem mais rápido."
+          },
+          {
+            "enExample": "Many scientists study climate change and its effects on the planet.",
+            "ptExample": "Muitos cientistas estudam as mudanças climáticas e seus efeitos no planeta."
+          }
+        ],
+        "synonyms": ["global warming", "climate crisis", "environmental change"],
+        "antonyms": ["climate stability"],
+        "seeAlso": ["carbon dioxide", "global warming", "greenhouse effect", "fossil fuel"],
+        "notes": [
+          {
+            "enNote": "Climate change can affect weather, sea levels, ecosystems, and temperatures around the world.",
+            "ptNote": "As mudanças climáticas podem afetar o clima, o nível do mar, os ecossistemas e as temperaturas ao redor do mundo."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "climate-change.avif",
+            "alt": "A split Earth showing one healthy side and one damaged by pollution and heat"
+          }
+        ]
+      },
+      {
         "word": "colon",
         "phonetics": "/ˈkoʊ.lən/ (US), /ˈkəʊ.lən/ (UK)",
         "partOfSpeech": "noun",

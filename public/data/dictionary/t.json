@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "temperature",
+        "phonetics": "/ˈtem.prə.tʃɚ/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a measure of how hot or cold something is",
+        "ptDefinition": "temperatura; medida de quão quente ou frio algo está",
+        "examples": [
+          {
+            "enExample": "The temperature dropped below zero during the night.",
+            "ptExample": "A temperatura caiu abaixo de zero durante a noite."
+          },
+          {
+            "enExample": "Scientists are studying changes in global temperature.",
+            "ptExample": "Os cientistas estão estudando mudanças na temperatura global."
+          }
+        ],
+        "synonyms": ["heat", "warmth", "climate"],
+        "antonyms": ["cold", "coolness"],
+        "seeAlso": ["climate", "weather", "thermometer", "heat"],
+        "notes": [
+          {
+            "enNote": "Temperature is usually measured in degrees Celsius or Fahrenheit.",
+            "ptNote": "A temperatura geralmente é medida em graus Celsius ou Fahrenheit."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "temperature.avif",
+            "alt": "Two thermometers showing hot and cold temperatures"
+          }
+        ]
+      },
+      {
         "word": "(that’s / those are) the breaks",
         "partOfSpeech": "idiom (informal)",
         "enDefinition": "used to say that something bad or disappointing has happened and must be accepted because it cannot be changed",

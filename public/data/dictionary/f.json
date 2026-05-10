@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "fossil",
+        "phonetics": "/ˈfɑː.səl/",
+        "partOfSpeech": "noun",
+        "enDefinition": "the preserved remains, impression, or trace of a plant or animal that lived a very long time ago",
+        "ptDefinition": "fóssil; restos, impressão ou vestígios preservados de uma planta ou animal que viveu há muito tempo",
+        "examples": [
+          {
+            "enExample": "Scientists discovered a dinosaur fossil in the desert.",
+            "ptExample": "Cientistas descobriram um fóssil de dinossauro no deserto."
+          },
+          {
+            "enExample": "The museum displayed a fossil that was millions of years old.",
+            "ptExample": "O museu exibiu um fóssil com milhões de anos."
+          }
+        ],
+        "synonyms": ["remains", "impression", "trace"],
+        "antonyms": ["living organism"],
+        "seeAlso": ["dinosaur", "skeleton", "extinct", "prehistoric"],
+        "notes": [
+          {
+            "enNote": "Fossils help scientists learn about prehistoric life and Earth's history.",
+            "ptNote": "Os fósseis ajudam os cientistas a aprender sobre a vida pré-histórica e a história da Terra."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "fossil-ammonite.avif",
+            "alt": "A ammonite fossil preserved inside a rock surface"
+          }
+        ]
+      },
+      {
         "word": "fiber",
         "phonetics": "/ˈfaɪ.bɚ/ (US), /ˈfaɪ.bə/ (UK)",
         "partOfSpeech": "noun",

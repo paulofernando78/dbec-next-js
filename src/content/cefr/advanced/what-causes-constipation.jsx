@@ -4,11 +4,10 @@ import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
 import { Guess } from "@/components/molecules/Guess";
-import { FlipCard } from "@/components/molecules/FlipCard/";
+import { FlipCards } from "@/components/molecules/FlipCards/";
 import { Line } from "@/components/molecules/Line";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { List } from "@/components/molecules/List";
-import { GridLayout } from "@/components/molecules/GridLayout";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
@@ -95,16 +94,34 @@ export default function Constipation() {
               ]}
             />
             <LineBreak />
-            <GridLayout>
-              <FlipCard backImg={dictionary("intestine.avif")} />
-              <FlipCard backImg={dictionary("symptom.avif")} />
-              <FlipCard backImg={dictionary("bowel-movement.avif")} />
-              <FlipCard backImg={dictionary("strain-constipation.avif")} />
-              <FlipCard backImg={dictionary("stool-feces.avif")} />
-              <FlipCard backImg={dictionary("dehydration.avif")} />
-              <FlipCard backImg={dictionary("colon.avif")} />
-              <FlipCard backImg={dictionary("fiber-food.avif")} />
-            </GridLayout>
+            <FlipCards
+              cards={[
+                {
+                  backImg: dictionary("intestine.avif"),
+                },
+                {
+                  backImg: dictionary("symptom.avif"),
+                },
+                {
+                  backImg: dictionary("bowel-movement.avif"),
+                },
+                {
+                  backImg: dictionary("strain-constipation.avif"),
+                },
+                {
+                  backImg: dictionary("stool-feces.avif"),
+                },
+                {
+                  backImg: dictionary("dehydration.avif"),
+                },
+                {
+                  backImg: dictionary("colon.avif"),
+                },
+                {
+                  backImg: dictionary("fiber-food.avif"),
+                },
+              ]}
+            />
           </Section>
 
           <Section id="gist" heading={3}>
@@ -154,7 +171,9 @@ export default function Constipation() {
             <Line
               value={[
                 ...content({
-                  parts: [bold("Watch again and listen for specific information.")],
+                  parts: [
+                    bold("Watch again and listen for specific information."),
+                  ],
                 }),
               ]}
             />

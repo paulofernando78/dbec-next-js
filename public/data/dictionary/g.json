@@ -2,6 +2,38 @@
   {
     "definitions": [
       {
+        "word": "glacier",
+        "phonetics": "/ˈɡleɪ.ʃər/",
+        "partOfSpeech": "noun",
+        "enDefinition": "a very large mass of ice that moves slowly over land, usually found in cold regions or high mountains",
+        "ptDefinition": "geleira; uma enorme massa de gelo que se move lentamente sobre a terra, geralmente encontrada em regiões frias ou montanhas altas",
+        "examples": [
+          {
+            "enExample": "The glacier has been melting rapidly because of climate change.",
+            "ptExample": "A geleira tem derretido rapidamente por causa das mudanças climáticas."
+          },
+          {
+            "enExample": "Tourists traveled across the glacier with a local guide.",
+            "ptExample": "Os turistas atravessaram a geleira com um guia local."
+          }
+        ],
+        "synonyms": ["ice field", "ice mass"],
+        "antonyms": ["desert", "dry land"],
+        "seeAlso": ["iceberg", "ice age", "climate change"],
+        "notes": [
+          {
+            "enNote": "Glaciers form over many years from compacted snow and are important indicators of climate change.",
+            "ptNote": "As geleiras se formam ao longo de muitos anos a partir da compactação da neve e são importantes indicadores das mudanças climáticas."
+          }
+        ],
+        "imgs": [
+          {
+            "src": "glacier.avif",
+            "alt": "A massive blue glacier surrounded by snowy mountains and icy water"
+          }
+        ]
+      },
+      {
         "word": "go nuts",
         "partOfSpeech": "idiom",
         "enDefinition": "to become very excited, angry, or crazy; to react with strong emotion or enthusiasm",
