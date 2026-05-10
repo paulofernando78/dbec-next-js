@@ -83,7 +83,6 @@ export default function Home() {
         </div>
         <Contact className={styles.contact} />
       </div>
-        {/* <BuyMeACoffee className="coffee" /> */}
     </>
   );
 }

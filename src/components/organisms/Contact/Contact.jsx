@@ -21,7 +21,8 @@ const contacts = [
   // buy me a coffee
   {
     link: "",
-    icon: "/assets/img/contacts/coffee.gif"
+    icon: "/assets/img/contacts/coffee.gif",
+    className: styles.coffeeIcon
   },
   // whatsapp
   {
@@ -36,7 +37,7 @@ export const Contact = ({className}) => {
       {contacts.map((contact, index) => (
         <li key={index} className={styles.scaleAnimation}>
           <a href={contact.link}>
-            <Image src={contact.icon} alt=""/>
+            <Image src={contact.icon} alt="" className={contact.className}/>
           </a>
         </li>
       ))}
