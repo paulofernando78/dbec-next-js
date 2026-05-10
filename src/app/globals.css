@@ -9,7 +9,7 @@
     "Arial Narrow", "Helvetica Neue Condensed", "Oswald", sans-serif;
   --font-luckiestGuy: "Cooper Black", "Arial Black", "Luckiest Guy", cursive;
   --background: linear-gradient(110deg, var(--slate-4), var(--slate-0));
-  /* --background-container: var(--gray-8); */
+  --background-nav: linear-gradient(140deg, var(--slate-4), var(--slate-0));
   --text-color: var(--slate-9);
   --icon-color: var(--gray-4);
   ;
@@ -47,6 +47,7 @@
 /* Dark Mode */
 html.dark {
   --background: #0C0F12;
+  --background-nav: #0C0F12;
   --text-color: var(--slate-1);
   --icon-color: var(--slate-1);
   --dictionary-bg: var(--slate-9);

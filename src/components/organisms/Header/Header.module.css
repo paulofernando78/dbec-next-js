@@ -9,11 +9,24 @@
   overflow: hidden;
 }
 
+.header img {
+  border: none;
+  width: 28px;
+}
+
+.header .light {
+  width: 25px;
+}
+
+.header .logInOut {
+  width: 25px;
+}
+
 .menuBtnWrapper {
   transform: translateX(-40px);
   transition: transform 0.5s ease;
   position: relative;
-  bottom: 5px;
+  bottom: 1px;
   height: 30px;
 }
 

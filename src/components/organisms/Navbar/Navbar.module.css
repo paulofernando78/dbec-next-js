@@ -6,7 +6,7 @@
   font-family: var(--font-oswald);
   font-size: 1rem;
   color: var(--text-color);
-  background: linear-gradient(140deg, var(--slate-4), var(--slate-0));
+  background: var(--background-nav);
   border-right: 1px solid var(--gray-4);
   border-radius: 0 5px 0 0;
   overflow-y: auto;

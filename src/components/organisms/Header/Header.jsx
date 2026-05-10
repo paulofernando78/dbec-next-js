@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 import { HeaderContext } from "@/context/headerContext";
 import { Button } from "@/components/atoms/Button";
+import { Image } from "@/components/atoms/Image";
 import { useState, useContext } from "react";
 import { ThemeContext } from "@/context/themeContext";
 import { DarkMode, LightMode, LogIn, LogOut } from "@/lib/svg-imports";
@@ -32,7 +33,7 @@ export default function Header() {
         {!isPresentationPage && (
           <div className={styles.menuBtnWrapper}>
             <Button
-              icon="menu"
+              icon={<Image src="/assets/img/icons/menu.png" alt="" />}
               onToggle={handleClick}
               active={!showHam}
             ></Button>
@@ -55,13 +56,33 @@ export default function Header() {
         )}
         <div className={styles.darkLog}>
           <Button
-            icon={isDarkMode ? <LightMode /> : <DarkMode />}
+            icon={
+              isDarkMode ? (
+                <Image
+                  src="/assets/img/icons/light.png"
+                  alt=""
+                  className={styles.light}
+                />
+              ) : (
+                <Image
+                  src="/assets/img/icons/dark.png"
+                  alt=""
+                />
+              )
+            }
             onToggle={toggleTheme}
             // active={isDarkMode}
           ></Button>
           <Link href={isLoggedIn ? "/" : "/content"}>
             <Button
-              icon={isLoggedIn ? <LogOut /> : <LogIn />}
+              icon={
+                <Image
+                  src="/assets/img/icons/login-out.png"
+                  alt=""
+                  className={styles.logInOut}
+
+                />
+              }
               onToggle={handleLogin}
             ></Button>
           </Link>
