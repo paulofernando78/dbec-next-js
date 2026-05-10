@@ -39,45 +39,37 @@ export default function TalkAboutHealthAndLifestyle() {
           <Section id="introduction" heading={3}>
             <MediaLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/man-watch-tv-evening.png"
+                src="/assets/img/cefr/b1/talk-about-health-and-lifestyle/introduction/laura-morning-walk.png"
                 alt="A man in an evening routine."
-                width={320}
-                height={220}
+                width={300}
+                height={300}
               />
               <div>
                 <Line
+                  as="p"
                   value={[
                     ...content({
                       parts: [
                         "",
-                        bold("Read the routine statements and think about which habits are healthy."),
+                        bold(
+                          "Read the routine statements and think about which habits are healthy.",
+                        ),
+                      ],
+                    }),
+                  ]}
+                />
+                <LineBreak />
+                <Paragraph
+                  value={[
+                    ...content({
+                      parts: [
+                        "Laura tries to walk every day and cook most of her meals at home. Eric often stays up too late, so he feels tired in the morning. They recently decided to reduce stress by taking short breaks during work.",
                       ],
                     }),
                   ]}
                 />
                 <LineBreak />
                 <Line
-                  value={[
-                    ...content({
-                      parts: ["She tries to walk every day and cook most of her meals at home."],
-                    }),
-                  ]}
-                />
-                <Line
-                  value={[
-                    ...content({
-                      parts: ["He often stays up too late, so he feels tired in the morning."],
-                    }),
-                  ]}
-                />
-                <Line
-                  value={[
-                    ...content({
-                      parts: ["They recently decided to reduce stress by taking short breaks during work."],
-                    }),
-                  ]}
-                />
-                <Paragraph
                   value={[
                     ...content({
                       parts: [
@@ -98,25 +90,40 @@ export default function TalkAboutHealthAndLifestyle() {
                   {
                     question: "1. What healthy habit does she have?",
                     options: [
+                      {
+                        option: "She misses breakfast on purpose.",
+                        isCorrect: false,
+                      },
                       { option: "She walks every day.", isCorrect: true },
-                      { option: "She misses breakfast on purpose.", isCorrect: false },
                       { option: "She never rests.", isCorrect: false },
                     ],
                   },
                   {
                     question: "2. Why does he feel tired in the morning?",
                     options: [
-                      { option: "Because he stays up too late.", isCorrect: true },
-                      { option: "Because he exercises too much at noon.", isCorrect: false },
-                      { option: "Because he travels by train.", isCorrect: false },
+                      {
+                        option: "Because he exercises too much at noon.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "Because he travels by train.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "Because he stays up too late.",
+                        isCorrect: true,
+                      },
                     ],
                   },
                   {
                     question: "3. How do they reduce stress?",
                     options: [
-                      { option: "By taking short breaks.", isCorrect: true },
                       { option: "By buying expensive food.", isCorrect: false },
-                      { option: "By changing cities every week.", isCorrect: false },
+                      {
+                        option: "By changing cities every week.",
+                        isCorrect: false,
+                      },
+                      { option: "By taking short breaks.", isCorrect: true },
                     ],
                   },
                 ],
@@ -132,7 +139,9 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["You seem more energetic these days. Have you changed your routine?"],
+                      parts: [
+                        "You seem more energetic these days. Have you changed your routine?",
+                      ],
                     }),
                   ],
                 },
@@ -140,7 +149,9 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Actually, yes. I have been trying to sleep earlier and exercise three times a week."],
+                      parts: [
+                        "Actually, yes. I have been trying to sleep earlier and exercise three times a week.",
+                      ],
                     }),
                   ],
                 },
@@ -156,7 +167,9 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["Definitely. I feel less stressed, and I can focus better at work."],
+                      parts: [
+                        "Definitely. I feel less stressed, and I can focus better at work.",
+                      ],
                     }),
                   ],
                 },
@@ -164,7 +177,9 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Laura:",
                   text: [
                     ...content({
-                      parts: ["I need to improve my routine too. I often skip lunch when I am busy."],
+                      parts: [
+                        "I need to improve my routine too. I often skip lunch when I am busy.",
+                      ],
                     }),
                   ],
                 },
@@ -172,7 +187,9 @@ export default function TalkAboutHealthAndLifestyle() {
                   speaker: "Eric:",
                   text: [
                     ...content({
-                      parts: ["That probably affects your energy. Even a small change could help."],
+                      parts: [
+                        "That probably affects your energy. Even a small change could help.",
+                      ],
                     }),
                   ],
                 },
@@ -217,28 +234,40 @@ export default function TalkAboutHealthAndLifestyle() {
                 {
                   value: [
                     ...content({
-                      parts: [bold("Habit: "), mark("I exercise three times a week.")],
+                      parts: [
+                        bold("Habit: "),
+                        mark("I exercise three times a week."),
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Problem habit: "), mark("I often stay up too late.")],
+                      parts: [
+                        bold("Problem habit: "),
+                        mark("I often stay up too late."),
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Result: "), mark("As a result, I feel more tired.")],
+                      parts: [
+                        bold("Result: "),
+                        mark("As a result, I feel more tired."),
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [bold("Improvement: "), mark("I am trying to sleep earlier.")],
+                      parts: [
+                        bold("Improvement: "),
+                        mark("I am trying to sleep earlier."),
+                      ],
                     }),
                   ],
                 },
@@ -246,7 +275,11 @@ export default function TalkAboutHealthAndLifestyle() {
             />
           </Section>
 
-          <Section id="pronunciation-form" label="Pronunciation + Form" heading={3}>
+          <Section
+            id="pronunciation-form"
+            label="Pronunciation + Form"
+            heading={3}
+          >
             <Paragraph
               value={[
                 ...content({
@@ -270,15 +303,25 @@ export default function TalkAboutHealthAndLifestyle() {
                   column: "Healthy Habits",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["sleep well"] })] }],
+                      block: [
+                        { text: [...content({ parts: ["sleep well"] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["exercise regularly"] })] }],
+                      block: [
+                        {
+                          text: [...content({ parts: ["exercise regularly"] })],
+                        },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["eat balanced meals"] })] }],
+                      block: [
+                        {
+                          text: [...content({ parts: ["eat balanced meals"] })],
+                        },
+                      ],
                     },
                   ],
                 },
@@ -288,15 +331,21 @@ export default function TalkAboutHealthAndLifestyle() {
                   column: "Lifestyle Problems",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["skip meals"] })] }],
+                      block: [
+                        { text: [...content({ parts: ["skip meals"] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["stay up late"] })] }],
+                      block: [
+                        { text: [...content({ parts: ["stay up late"] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["feel stressed"] })] }],
+                      block: [
+                        { text: [...content({ parts: ["feel stressed"] })] },
+                      ],
                     },
                   ],
                 },
@@ -306,15 +355,29 @@ export default function TalkAboutHealthAndLifestyle() {
                   column: "Improvement Language",
                   blocks: [
                     {
-                      block: [{ text: [...content({ parts: ["I am trying to..."] })] }],
+                      block: [
+                        {
+                          text: [...content({ parts: ["I am trying to..."] })],
+                        },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["This helps me..."] })] }],
+                      block: [
+                        { text: [...content({ parts: ["This helps me..."] })] },
+                      ],
                       lineBreak: true,
                     },
                     {
-                      block: [{ text: [...content({ parts: ["A small change could be..."] })] }],
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: ["A small change could be..."],
+                            }),
+                          ],
+                        },
+                      ],
                     },
                   ],
                 },
@@ -325,8 +388,7 @@ export default function TalkAboutHealthAndLifestyle() {
           <Section id="practice" heading={3}>
             <FillInTheBlanks
               exercise={{
-                instructions:
-                  "Complete the health and lifestyle sentences.",
+                instructions: "Complete the health and lifestyle sentences.",
                 blocks: [
                   {
                     block: [
@@ -380,15 +442,28 @@ export default function TalkAboutHealthAndLifestyle() {
                   {
                     question: "1. Which sentence describes a healthy routine?",
                     options: [
-                      { option: "I try to sleep well and cook most of my meals at home.", isCorrect: true },
-                      { option: "I never rest and always skip meals.", isCorrect: false },
-                      { option: "I buy a shirt every Tuesday.", isCorrect: false },
+                      {
+                        option:
+                          "I try to sleep well and cook most of my meals at home.",
+                        isCorrect: true,
+                      },
+                      {
+                        option: "I never rest and always skip meals.",
+                        isCorrect: false,
+                      },
+                      {
+                        option: "I buy a shirt every Tuesday.",
+                        isCorrect: false,
+                      },
                     ],
                   },
                   {
                     question: "2. Which sentence shows cause and effect?",
                     options: [
-                      { option: "I stay up late, so I feel tired the next day.", isCorrect: true },
+                      {
+                        option: "I stay up late, so I feel tired the next day.",
+                        isCorrect: true,
+                      },
                       { option: "I like tea and coffee.", isCorrect: false },
                       { option: "My city has a park.", isCorrect: false },
                     ],
@@ -396,7 +471,11 @@ export default function TalkAboutHealthAndLifestyle() {
                   {
                     question: "3. Which sentence suggests improvement?",
                     options: [
-                      { option: "A small change could be preparing lunch in advance.", isCorrect: true },
+                      {
+                        option:
+                          "A small change could be preparing lunch in advance.",
+                        isCorrect: true,
+                      },
                       { option: "Lunch is at one.", isCorrect: false },
                       { option: "Yesterday was sunny.", isCorrect: false },
                     ],
@@ -404,7 +483,11 @@ export default function TalkAboutHealthAndLifestyle() {
                   {
                     question: "4. Which answer is more developed?",
                     options: [
-                      { option: "I feel healthier because I sleep better and exercise more regularly.", isCorrect: true },
+                      {
+                        option:
+                          "I feel healthier because I sleep better and exercise more regularly.",
+                        isCorrect: true,
+                      },
                       { option: "Healthy.", isCorrect: false },
                       { option: "At night.", isCorrect: false },
                     ],

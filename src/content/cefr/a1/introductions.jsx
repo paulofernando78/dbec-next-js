@@ -209,7 +209,7 @@ export default function Introductions() {
         <PageSections>
           {/* Introduction */}
           <Section id="introduction" heading={3}>
-            <MediaLayout mediaPosition="left">
+            <MediaLayout mediaPosition="top">
               <Image
                 src="/assets/img/cefr/a1/introductions/two-people-talking-school.png"
                 alt="Two students talking at school."

@@ -10,7 +10,8 @@
   --font-luckiestGuy: "Cooper Black", "Arial Black", "Luckiest Guy", cursive;
   --background: linear-gradient(110deg, var(--slate-4), var(--slate-0));
   --background-nav: linear-gradient(140deg, var(--slate-4), var(--slate-0));
-  --text-color: var(--slate-9);
+  --text-color: var(--slate-8);
+  --text-color-fixed: var(--slate-8);
   --icon-color: var(--gray-4);
   ;
   --dictionary-bg: var(--slate-1);
