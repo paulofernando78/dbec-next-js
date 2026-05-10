@@ -18,49 +18,25 @@ export default function LikedSounds() {
       <Whiteboard title="Pronunciation" subtitle="Linked Sounds" />
       <div className="line-break">
         {/* Check out a couple of linked sounds. */}
-        <Line
+        <Line as="p"
           value={[
             ...content({
               parts: [bold("Listen to a couple of linking sounds.")],
             }),
           ]}
         />
-        {/* <Contents
-          items={[
-            {
-              href: "vowel-vowel",
-              label: "Vowel + Vowel",
-            },
-            {
-              href: "consonant-vowel",
-              label: "Consonant + Vowel",
-            },
-            {
-              href: "d-y",
-              label: "d + y",
-            },
-            {
-              href: "t-y",
-              label: "t + y",
-            },
-            {
-              href: "s-y",
-              label: "s + y",
-            },
-          ]}
-        /> */}
 
         <PageSections>
           <Section id="vowel-vowel" label="Vowel + Vowel" heading={3}>
             {/* /w/ */}
-            <Line
+            <Line as="p"
               value={[
                 audio("/assets/audio/pronunciation/phonetics/consonants/w.mp3"),
                 phonetics("/w/ "),
               ]}
             />
             {/* Go on. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -73,7 +49,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Do it again. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -87,7 +63,7 @@ export default function LikedSounds() {
             />
 
             {/* You have to ge(t) used to i(t). */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -102,7 +78,7 @@ export default function LikedSounds() {
             <LineBreak />
 
             {/* /j/ */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -112,7 +88,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* I a gree with you on this issue. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -124,7 +100,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* She asked me a question. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -140,7 +116,7 @@ export default function LikedSounds() {
 
           <Section id="consonant-vowel" label="Consonant + Vowel" heading={3}>
             {/* I like it. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -153,7 +129,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Take it. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -166,7 +142,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Use it. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -179,7 +155,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Have a seat, please. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -192,7 +168,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* I’ve always wanted it. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -210,7 +186,7 @@ export default function LikedSounds() {
             <LineBreak />
             <LineBreak />
             {/* I need to get a better job. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -223,7 +199,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* You have to ge(t) used to i(t). */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -233,7 +209,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Turn off the lights. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -247,7 +223,7 @@ export default function LikedSounds() {
             />
 
             {/* In the end, it doesnt eve matter. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -262,7 +238,7 @@ export default function LikedSounds() {
 
             <LineBreak />
             {/* Take a look at it. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -277,7 +253,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* You have an incredible memory. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -290,7 +266,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* I like it a lot. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -303,7 +279,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Pick it up. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -316,7 +292,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* It's an easy task. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -329,7 +305,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* I'm out of time. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -344,7 +320,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* I work in an office. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -357,7 +333,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* He works in an office. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -371,7 +347,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Embark on an extradionary journey. */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -387,7 +363,7 @@ export default function LikedSounds() {
 
           <Section id="d-y" label="d + y" heading={3}>
             {/* /dʒ/ */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -397,7 +373,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Did you like it? */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -410,7 +386,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Did you eat? */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -423,7 +399,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Do you know what I mean? */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -435,7 +411,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Would you like it? */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -451,7 +427,7 @@ export default function LikedSounds() {
 
           <Section id="t-y" label="t + y" heading={3}>
             {/* /tʃ/ */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -461,7 +437,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* What's your name? */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -475,7 +451,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Don't you like it? */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
@@ -489,7 +465,7 @@ export default function LikedSounds() {
               ]}
             />
             {/* Didn't you like it? */}
-            <Line
+            <Line as="p"
               value={[
                 {
                   audio:
