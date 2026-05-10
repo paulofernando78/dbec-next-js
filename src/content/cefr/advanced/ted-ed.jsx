@@ -23,7 +23,7 @@ export default function AdvancedYoutube() {
           {
             items: [
               {
-                href: "/cefr/advanced/what-causes-constipation",
+                href: "/content/cefr/advanced/what-causes-constipation",
                 label: "What causes constipation?",
                 description:
                   "Learn what causes constipation and how the digestive system moves food through the body.",
@@ -33,7 +33,17 @@ export default function AdvancedYoutube() {
           {
             items: [
               {
-                href: "/cefr/advanced/the-ancient-origins-of-beer",
+                href: "/content/cefr/advanced/when-will-the-next-ice-age-happen",
+                label: "When will the next ice age happen? ",
+                description:
+                  "Explore how Earth's orbit, climate cycles, and human activity may influence the next ice age.",
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                href: "/content/cefr/advanced/the-ancient-origins-of-beer",
                 label: "The ancient origins of beer",
                 description:
                   "Discover the ancient history of beer and how one of the world's oldest drinks began.",

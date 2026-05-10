@@ -211,12 +211,12 @@ export default function Introductions() {
           <Section id="introduction" heading={3}>
             <MediaLayout mediaPosition="top">
               <Image
-                src="/assets/img/cefr/a1/introductions/two-people-talking-school.png"
+                src="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
                 alt="Two students talking at school."
               />
               <div>
                 {/* Look at the picture and listen to the sentences. */}
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       parts: [
@@ -229,7 +229,7 @@ export default function Introductions() {
                 />
                 <LineBreak />
                 {/* This is an English school. */}
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       parts: [
@@ -242,7 +242,7 @@ export default function Introductions() {
                   ]}
                 />
                 {/* Laura and Eric are students. */}
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -252,7 +252,7 @@ export default function Introductions() {
                   ]}
                 />
                 {/* They're in the classroom. */}
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -262,7 +262,7 @@ export default function Introductions() {
                   ]}
                 />
                 {/* They are classmates. */}
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
