@@ -2,19 +2,20 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 .welcome, .feeling {
-  font-family: var(--font-permanent-marker);
+  font-family: var(--font-shadow-into-light);
   text-align: center;
   color: var(--text-color);
 }
 
 .welcome {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .feeling {
   font-size: 1.6rem;
+  margin-bottom: 10px;
 }

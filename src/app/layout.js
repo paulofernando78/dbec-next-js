@@ -6,7 +6,7 @@ import {
   Oswald,
   Rampart_One,
   Anton,
-  Permanent_Marker,
+  Shadows_Into_Light
 } from "next/font/google";
 import Script from "next/script";
 
@@ -48,11 +48,11 @@ const rampartOne = Rampart_One({
   weight: "400",
 });
 
-const permanentMarker = Permanent_Marker({
-  variable: "--font-permanent-marker",
+const shadowIntoLight = Shadows_Into_Light({
+  variable: "--font-shadow-into-light",
   subsets: ["latin"],
   weight: "400",
-});
+})
 
 export const metadata = {
   title: "Daily Basis English Course",
@@ -99,7 +99,13 @@ export default function RootLayout({ children }) {
         ></script>
       </head>
       <body
-        className={`${montserrat.variable} ${anton.variable} ${oswald.variable} ${luckiestGuy.variable} ${rampartOne.variable} ${permanentMarker.variable}`}
+        className={`${montserrat.variable}
+        ${anton.variable}
+        ${oswald.variable}
+        ${luckiestGuy.variable}
+        ${rampartOne.variable}
+        ${shadowIntoLight.variable}`
+      }
       >
         <ThemeProvider>
           <div className={styles.layout}>
