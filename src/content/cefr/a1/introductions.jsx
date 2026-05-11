@@ -441,7 +441,7 @@ export default function Introductions() {
             <LineBreak />
             <Ribbon label="Greetings" bgColor="var(--slate-7)" />
             <LineBreak />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/hi.mp3",
@@ -449,7 +449,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/hello.mp3",
@@ -457,7 +457,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/hey.mp3",
@@ -466,7 +466,7 @@ export default function Introductions() {
               ]}
             />
             <LineBreak />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   parts: [bold("Questions & Answers")],
@@ -475,7 +475,7 @@ export default function Introductions() {
             />
             <LineBreak />
 
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/how-are-you.mp3",
@@ -483,7 +483,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio:
@@ -492,7 +492,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio:
@@ -501,7 +501,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio:
@@ -511,7 +511,7 @@ export default function Introductions() {
               ]}
             />
             <LineBreak />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-well.mp3",
@@ -519,7 +519,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-great.mp3",
@@ -527,7 +527,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-good.mp3",
@@ -540,7 +540,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio:
@@ -555,7 +555,7 @@ export default function Introductions() {
               ]}
             />
             <LineBreak />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/whats-up.mp3",
@@ -567,7 +567,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/nothing-much.mp3",
@@ -575,7 +575,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/not-much-you.mp3",
@@ -586,7 +586,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio:
@@ -595,7 +595,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio:
@@ -604,7 +604,7 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/just-working.mp3",
@@ -617,7 +617,7 @@ export default function Introductions() {
               <b>THE ALPHABET</b>
             </span>
             <LineBreak />
-            <Line
+            <Line as="p"
               value={[
                 ...content({
                   audio:
@@ -642,7 +642,7 @@ export default function Introductions() {
             <LineBreak />
             <div className="line-break">
               <Card>
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -653,7 +653,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -662,7 +662,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -673,7 +673,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -682,7 +682,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -691,7 +691,7 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
