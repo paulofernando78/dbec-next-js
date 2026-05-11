@@ -6,28 +6,28 @@ const contacts = [
   // email
   {
     link: "mailto:paulofernando78@gmail.com",
-    icon: ("/assets/img/contacts/email.png"),
+    icon: ("/assets/img/icons/contacts/email.png"),
   },
   // youtube
   {
     link: "https://www.youtube.com/@dbec11",
-    icon: "/assets/img/contacts/youtube.png"
+    icon: "/assets/img/icons/contacts/youtube.png"
   },
   // linkedin
   {
     link: "https://www.linkedin.com/in/paulo-fernando-70930725/",
-    icon: "/assets/img/contacts/linkedin.png"
+    icon: "/assets/img/icons/contacts/linkedin.png"
   },
   // buy me a coffee
   {
-    link: "",
-    icon: "/assets/img/contacts/coffee.gif",
+    link: "https://www.buymeacoffee.com/paulofernando78",
+    icon: "/assets/img/icons/contacts/coffee.gif",
     className: styles.coffeeIcon
   },
   // whatsapp
   {
-    link: "https://wa.me/5511981672145",
-    icon: "/assets/img/contacts/whatsapp.png"
+    link: "https:/wa.me/5511981672145",
+    icon: "/assets/img/icons/contacts/whatsapp.png"
   },
 ];
 

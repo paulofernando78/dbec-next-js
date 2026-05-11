@@ -45,7 +45,7 @@ export default function TalkAboutYourself() {
                 height={220}
               />
               <div>
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       parts: [
@@ -56,7 +56,7 @@ export default function TalkAboutYourself() {
                   ]}
                 />
                 <LineBreak />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -65,7 +65,7 @@ export default function TalkAboutYourself() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -74,7 +74,7 @@ export default function TalkAboutYourself() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -83,7 +83,7 @@ export default function TalkAboutYourself() {
                     }),
                   ]}
                 />
-                <Line
+                <Line as="p"
                   value={[
                     ...content({
                       audio:
@@ -202,6 +202,7 @@ export default function TalkAboutYourself() {
 
           <Section id="language-focus" heading={3}>
             <Line
+              as="p"
               value={[
                 ...content({
                   parts: [
@@ -211,6 +212,7 @@ export default function TalkAboutYourself() {
               ]}
             />
             <Line
+              as="p"
               value={[
                 ...content({
                   parts: [
@@ -843,6 +845,7 @@ export default function TalkAboutYourself() {
             <LineBreak />
 
             <Line
+              as="p"
               value={[
                 ...content({
                   parts: [
