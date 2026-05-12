@@ -64,7 +64,7 @@ export default function Header() {
           ></Button>
           <Link href={isLoggedIn ? "/" : "/content"}>
             <Button
-              icon={isLoggedIn ? <LogIn /> : <LogOut />}
+              icon={isLoggedIn ? <LogOut /> : <LogIn />}
               onToggle={handleLogin}
             ></Button>
           </Link>
