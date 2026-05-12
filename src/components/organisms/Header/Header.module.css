@@ -14,10 +14,6 @@
   width: 28px;
 }
 
-.header .light {
-  width: 25px;
-}
-
 .menuBtnWrapper {
   transform: translateX(-40px);
   transition: transform 0.5s ease;

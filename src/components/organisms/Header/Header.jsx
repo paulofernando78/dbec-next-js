@@ -17,7 +17,6 @@ export default function Header() {
   const isDarkMode = theme === "dark";
 
   const { showHam, handleClick } = useContext(HeaderContext);
-
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
@@ -56,9 +55,7 @@ export default function Header() {
         )}
         <div className={styles.darkLog}>
           <Button
-            icon={
-              isDarkMode ? <LightMode className={styles.light} /> : <DarkMode />
-            }
+            icon={isDarkMode ? <LightMode /> : <DarkMode />}
             onToggle={toggleTheme}
             active={isDarkMode}
           ></Button>

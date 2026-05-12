@@ -3,7 +3,14 @@
 import { useState } from "react";
 import styles from "./Button.module.css";
 
-export const Button = ({ icon, onClick, onToggle, active, className, ...props }) => {
+export const Button = ({
+  icon,
+  onClick,
+  onToggle,
+  active,
+  className,
+  ...props
+}) => {
   const [pressed, setPressed] = useState(false);
   const handleClick = onClick || onToggle;
 
@@ -14,8 +21,10 @@ export const Button = ({ icon, onClick, onToggle, active, className, ...props })
           ${className}
           ${styles.pushable}
           ${styles.btnMenu}
-          ${active ? styles.active : ""}`
-        }
+          ${pressed ? styles.active : ""}
+        `}
+        onMouseDown={() => setPressed(true)}
+        onMouseUp={() => setPressed(false)}
         onClick={handleClick}
       >
         <span className={styles.shadow}></span>
@@ -33,7 +42,7 @@ export const Button = ({ icon, onClick, onToggle, active, className, ...props })
 
   return (
     <button
-      className={`${styles.pushable} ${active || pressed ? styles.active : ""}`}
+      className={`${styles.pushable} ${pressed ? styles.active : ""}`}
       onMouseDown={() => setPressed(true)}
       onMouseUp={() => setPressed(false)}
       onClick={handleClick}
