@@ -3,6 +3,8 @@ import styles from "../components/molecules/ContentToken/ContentToken.module.css
 const color = "var(--gray-5)";
 const button = "var(--gray-2)";
 const iconSize = "1.5rem";
+const strokeColor = "white";
+const strokeWidth = 30;
 
 export const Arrow = ({ className }) => (
   <svg
@@ -61,7 +63,11 @@ export const Check = () => (
     viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    fill={button}
+    fill="var(--green-6)"
+    stroke={strokeColor}
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
     <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
   </svg>
@@ -73,7 +79,11 @@ export const Close = () => (
     viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    fill={button}
+    fill="var(--red-4)"
+    stroke={strokeColor}
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
     <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
   </svg>
@@ -133,13 +143,21 @@ export const Correct = ({ className }) => (
 
 export const DarkMode = () => (
   <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 -960 960 960"
-    width="1.4rem"
-    height="1.4rem"
-    fill={button}
   >
-    <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+    <path
+      d="M12.075 22C10.675 22 9.3625 21.7333 8.1375 21.2C6.9125 20.6667 5.84583 19.9458 4.9375 19.0375C4.02917 18.1292 3.30833 17.0625 2.775 15.8375C2.24167 14.6125 1.975 13.3 1.975 11.9C1.975 9.46667 2.75 7.32083 4.3 5.4625C5.85 3.60417 7.825 2.45 10.225 2C9.925 3.65 10.0167 5.2625 10.5 6.8375C10.9833 8.4125 11.8167 9.79167 13 10.975C14.1833 12.1583 15.5625 12.9917 17.1375 13.475C18.7125 13.9583 20.325 14.05 21.975 13.75C21.5417 16.15 20.3917 18.125 18.525 19.675C16.6583 21.225 14.5083 22 12.075 22Z"
+      fill="var(--slate-5)"
+    />
+    <path
+      d="M13 4.42202L16 7.42202L19 4.42202L16 1.42202L13 4.42202Z"
+      fill="var(--yellow-4)"
+    />
+    <path d="M18 9L20 11L22 9L20 7L18 9Z" fill="var(--yellow-5)" />
   </svg>
 );
 
@@ -185,12 +203,14 @@ export const LinkIcon = ({ className }) => (
 export const LogIn = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 -960 960 960"
-    width="24px"
-    height="24px"
-    fill={button}
+    viewBox="0 0 24 24"
+    width="20"
+    height="20"
   >
-    <path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+    <path
+      d="M6 8H15V6C15 5.16667 14.7083 4.45833 14.125 3.875C13.5417 3.29167 12.8333 3 12 3C11.1667 3 10.4583 3.29167 9.875 3.875C9.29167 4.45833 9 5.16667 9 6C9 6 7 6.58678 7 5.50459C7 4.4224 7.4875 3.4375 8.4625 2.4625C9.4375 1.4875 10.6167 1 12 1C13.3833 1 14.5625 1.4875 15.5375 2.4625C16.5125 3.4375 17 4.61667 17 6V8H18C18.55 8 19.0208 8.19583 19.4125 8.5875C19.8042 8.97917 20 9.45 20 10V20C20 20.55 19.8042 21.0208 19.4125 21.4125C19.0208 21.8042 18.55 22 18 22H6C5.45 22 4.97917 21.8042 4.5875 21.4125C4.19583 21.0208 4 20.55 4 20V10C4 9.45 4.19583 8.97917 4.5875 8.5875C4.97917 8.19583 5.45 8 6 8ZM13.4125 16.4125C13.8042 16.0208 14 15.55 14 15C14 14.45 13.8042 13.9792 13.4125 13.5875C13.0208 13.1958 12.55 13 12 13C11.45 13 10.9792 13.1958 10.5875 13.5875C10.1958 13.9792 10 14.45 10 15C10 15.55 10.1958 16.0208 10.5875 16.4125C10.9792 16.8042 11.45 17 12 17C12.55 17 13.0208 16.8042 13.4125 16.4125Z"
+      fill={button}
+    />
   </svg>
 );
 
@@ -198,8 +218,8 @@ export const LogOut = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
-    width="24px"
-    height="24px"
+    width="22px"
+    height="22px"
     fill={button}
   >
     <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />

@@ -51,13 +51,40 @@ export default function Mock() {
         <DictionaryArea />
 
         <PageSections>
+          {/* AudioPlayer */}
+          <Section id="audio-player" heading={3}>
+            <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
+          </Section>
+          
           <Section id="video-player" label="Video Player" heading={3}>
             <VideoPlayer videoId="C8rU4dv2w8Q" />
           </Section>
 
-          {/* AudioPlayer */}
-          <Section id="audio-player" heading={3}>
-            <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
+          {/* Images */}
+          <Section id="images" heading={3}>
+            <GridLayout>
+              {/* Last weekend, Laura went to the beach. */}
+              <MediaLayout width="max-content" mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
+                  alt="Laura at the beach"
+                />
+              </MediaLayout>
+              {/* Last night, Eric watched a movie. */}
+              <MediaLayout mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/movie.png"
+                  alt="Eric watching a movie at night"
+                />
+              </MediaLayout>
+              {/* Yesterday, Laura met Eric in the cafeteria.  */}
+              <MediaLayout mediaPosition="top">
+                <Image
+                  src="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
+                  alt="Laura and Eric eating lunch in the cafeteria"
+                />
+              </MediaLayout>
+            </GridLayout>
           </Section>
 
           {/* Line */}
@@ -155,7 +182,7 @@ export default function Mock() {
                   img: "cat.avif",
                   line: [
                     ...content({
-                      parts: ["... "],
+                      parts: ["..."],
                     }),
                   ],
                   paragraph: [
@@ -257,32 +284,6 @@ export default function Mock() {
                 ]}
               />
             </Notes>
-          </Section>
-
-          <Section id="images" heading={3}>
-            <GridLayout>
-              {/* Last weekend, Laura went to the beach. */}
-              <MediaLayout width="max-content" mediaPosition="top">
-                <Image
-                  src="/assets/img/cefr/a2/describe-past-experiences/beach.jpg"
-                  alt="Laura at the beach"
-                />
-              </MediaLayout>
-              {/* Last night, Eric watched a movie. */}
-              <MediaLayout mediaPosition="top">
-                <Image
-                  src="/assets/img/cefr/a2/describe-past-experiences/movie.png"
-                  alt="Eric watching a movie at night"
-                />
-              </MediaLayout>
-              {/* Yesterday, Laura met Eric in the cafeteria.  */}
-              <MediaLayout mediaPosition="top">
-                <Image
-                  src="/assets/img/cefr/a2/describe-past-experiences/cafeteria.png"
-                  alt="Laura and Eric eating lunch in the cafeteria"
-                />
-              </MediaLayout>
-            </GridLayout>
           </Section>
 
           {/* Flip Card */}

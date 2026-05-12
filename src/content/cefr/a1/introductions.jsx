@@ -213,6 +213,7 @@ export default function Introductions() {
               <Image
                 src="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
                 alt="Two students talking at school."
+                ratio="16-9"
               />
               <div>
                 {/* Look at the picture and listen to the sentences. */}

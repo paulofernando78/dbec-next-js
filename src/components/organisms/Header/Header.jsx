@@ -33,7 +33,7 @@ export default function Header() {
         {!isPresentationPage && (
           <div className={styles.menuBtnWrapper}>
             <Button
-              icon={<Image src="/assets/img/icons/menu.png" alt="" />}
+              icon="menu"
               onToggle={handleClick}
               active={!showHam}
             ></Button>
@@ -57,32 +57,14 @@ export default function Header() {
         <div className={styles.darkLog}>
           <Button
             icon={
-              isDarkMode ? (
-                <Image
-                  src="/assets/img/icons/light.png"
-                  alt=""
-                  className={styles.light}
-                />
-              ) : (
-                <Image
-                  src="/assets/img/icons/dark.png"
-                  alt=""
-                />
-              )
+              isDarkMode ? <LightMode className={styles.light} /> : <DarkMode />
             }
             onToggle={toggleTheme}
-            // active={isDarkMode}
+            active={isDarkMode}
           ></Button>
           <Link href={isLoggedIn ? "/" : "/content"}>
             <Button
-              icon={
-                <Image
-                  src="/assets/img/icons/login-out.png"
-                  alt=""
-                  className={styles.logInOut}
-
-                />
-              }
+              icon={isLoggedIn ? <LogIn /> : <LogOut />}
               onToggle={handleLogin}
             ></Button>
           </Link>

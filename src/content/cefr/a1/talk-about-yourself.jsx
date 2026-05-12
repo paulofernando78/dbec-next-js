@@ -39,10 +39,9 @@ export default function TalkAboutYourself() {
           <Section id="introduction" heading={3}>
             <MediaLayout mediaPosition="left">
               <Image
-                src="/assets/img/general/woman-work-office.png"
-                alt="A woman working in an office."
-                width={320}
-                height={220}
+                src="/assets/img/cefr/a1/talk-about-yourself/laura-office.png"
+                alt="Laura working in an office."
+                width={300}
               />
               <div>
                 <Line as="p"
