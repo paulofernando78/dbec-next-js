@@ -57,6 +57,7 @@ export function baseToken({
   }
 
   if (square) {
+    blocks.push({ part: " " });
     blocks.push({ square: true });
     blocks.push({ part: " " });
   }

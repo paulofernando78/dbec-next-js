@@ -212,15 +212,23 @@ export const LinkIcon = ({ className }) => (
   </svg>
 );
 
-export const LogIn = () => (
+export const LogIn = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 -960 960 960"
-    width="22px"
-    height="22px"
+    width="17"
+    height="17"
+    viewBox="0 0 18 18"
     fill={button}
   >
-    <path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z" />
+    <path
+      d="M9 18V16H16V2H9V0H16C16.55 0 17.0208 0.195833 17.4125 0.5875C17.8042 0.979167 18 1.45 18 2V16C18 16.55 17.8042 17.0208 17.4125 17.4125C17.0208 17.8042 16.55 18 16 18H9Z"
+      fill={button}
+    />
+    <path
+      d="M5.625 12.55L7 14L12 9L7 4L5.625 5.45L8.175 8H0V10H8.175L5.625 12.55Z"
+      fill={button}
+      className={className}
+    />
   </svg>
 );
 

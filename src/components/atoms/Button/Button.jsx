@@ -42,7 +42,7 @@ export const Button = ({
 
   return (
     <button
-      className={`${styles.pushable} ${pressed ? styles.active : ""}`}
+      className={`${className} ${styles.pushable} ${pressed ? styles.active : ""}`}
       onMouseDown={() => setPressed(true)}
       onMouseUp={() => setPressed(false)}
       onClick={handleClick}

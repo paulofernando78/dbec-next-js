@@ -1269,6 +1269,10 @@ export default function PhoneticsLetters() {
               ...wordRowList({
                 parts: [audio("/assets/audio/pronunciation/phonetics/consonants/ʒ.mp3"), phonetics("/ʒ/")],
               }),
+              // version
+              ...wordRowList({
+                parts: [audio("/assets/audio/dictionary/v/version.mp3"), "ver", mark("s"), "ion", phonetics("/ˈvɝː.ʒən/")],
+              }),
               // vision
               ...wordRowList({
                 parts: [audio("/assets/audio/dictionary/v/vision.mp3"), "vi", mark("s"), "ion", " ", phonetics("/ˈvɪʒən/")],
@@ -1403,7 +1407,7 @@ export default function PhoneticsLetters() {
               }),
               // nation
               ...wordRowList({
-                parts: [audio("/assets/audio/dictionary/n/nation.mp3"), "na", mark("ti"), "on", " ", phonetics("/ˈneɪʃən/")],
+                parts: [audio("/assets/audio/dictionary/v/version.mp3"), "na", mark("ti"), "on", " ", phonetics("/ˈneɪʃən/")],
               }),
             ]}
           />

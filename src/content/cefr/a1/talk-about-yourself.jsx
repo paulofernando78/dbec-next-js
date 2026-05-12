@@ -589,7 +589,7 @@ export default function TalkAboutYourself() {
                   parts: [
                     bold("Use "),
                     boldMark("a"),
-                    bold(" before consonant sounds."),
+                    bold(" before consonant sounds:"),
                   ],
                 }),
               ]}
@@ -626,7 +626,7 @@ export default function TalkAboutYourself() {
               value={[
                 ...content({
                   parts: [bold("Use "), boldMark("an"),
-                    bold(" before vowel sounds (a, e, i, o, u)."),
+                    bold(" before vowel sounds (a, e, i, o, u):"),
                   ],
                 }),
               ]}
@@ -669,7 +669,7 @@ export default function TalkAboutYourself() {
               as="p"
               value={[
                 ...content({
-                  parts: [bold("Questions.")],
+                  parts: [bold("Questions:")],
                 }),
               ]}
             />
