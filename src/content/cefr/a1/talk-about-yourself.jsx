@@ -17,6 +17,7 @@ import {
   content,
   icon,
   bold,
+  boldMark,
   mark,
   underline,
   portuguese,
@@ -582,11 +583,12 @@ export default function TalkAboutYourself() {
             />
             <LineBreak />
             <Line
+              as="p"
               value={[
                 ...content({
                   parts: [
                     bold("Use "),
-                    mark("a"),
+                    boldMark("a"),
                     bold(" before consonant sounds."),
                   ],
                 }),
@@ -620,12 +622,11 @@ export default function TalkAboutYourself() {
             />
             <LineBreak />
             <Line
+              as="p"
               value={[
                 ...content({
-                  parts: [
-                    "Use ",
-                    mark("an"),
-                    " before vowel sounds (a, e, i, o, u).",
+                  parts: [bold("Use "), boldMark("an"),
+                    bold(" before vowel sounds (a, e, i, o, u)."),
                   ],
                 }),
               ]}
@@ -654,11 +655,27 @@ export default function TalkAboutYourself() {
                         icon("correct"),
                         "I’m ",
                         underline("an a"),
-                        "rchitect. ", icon("incorrect"), "I’m a architect.",
+                        "rchitect. ",
+                        icon("incorrect"),
+                        "I’m a architect.",
                       ],
                     }),
                   ],
                 },
+              ]}
+            />
+            <LineBreak />
+            <Line
+              as="p"
+              value={[
+                ...content({
+                  parts: [bold("Questions.")],
+                }),
+              ]}
+            />
+            <LineBreak />
+            <List
+              items={[
                 {
                   value: [
                     ...content({
