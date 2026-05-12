@@ -13,7 +13,14 @@ import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
-import { content, bold, mark, underline, portuguese } from "@/helpers/content";
+import {
+  content,
+  icon,
+  bold,
+  mark,
+  underline,
+  portuguese,
+} from "@/helpers/content";
 
 export const metadata = {
   title: "A1 Beginner | Talk About Yourself",
@@ -44,7 +51,8 @@ export default function TalkAboutYourself() {
                 width={300}
               />
               <div>
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       parts: [
@@ -55,7 +63,8 @@ export default function TalkAboutYourself() {
                   ]}
                 />
                 <LineBreak />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -64,7 +73,8 @@ export default function TalkAboutYourself() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -73,7 +83,8 @@ export default function TalkAboutYourself() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -82,7 +93,8 @@ export default function TalkAboutYourself() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -455,10 +467,14 @@ export default function TalkAboutYourself() {
                         {
                           text: [
                             ...content({
-                              icons: ["attention"],
                               audio:
                                 "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-2.mp3",
-                              parts: ["Wha", underline("t do"), " you do?"],
+                              parts: [
+                                icon("attention"),
+                                "Wha",
+                                underline("t do"),
+                                " you do?",
+                              ],
                             }),
                           ],
                         },
@@ -485,10 +501,10 @@ export default function TalkAboutYourself() {
                         {
                           text: [
                             ...content({
-                              icons: ["attention"],
                               audio:
                                 "/assets/audio/cefr/a1/talk-about-yourself/what-do-you-do-for-a-living-2.mp3",
                               parts: [
+                                icon("attention"),
                                 "Wha",
                                 underline("t do"),
                                 " you do for a living?",
@@ -620,36 +636,41 @@ export default function TalkAboutYourself() {
                 {
                   value: [
                     ...content({
-                      icons: ["correct"],
-                      parts: ["I’m ", underline("an a"), "ccountant."],
-                    }),
-                    ...content({
-                      icons: ["incorrect"],
-                      parts: ["I’m a accountant."],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      icons: ["correct"],
-                      parts: ["I’m ", underline("an a"), "rchitect."],
-                    }),
-                    ...content({
-                      icons: ["incorrect"],
-                      parts: ["I’m a architect."],
+                      parts: [
+                        icon("correct"),
+                        "I’m ",
+                        underline("an a"),
+                        "ccountant. ",
+                        icon("incorrect"),
+                        "I’m a accountant.",
+                      ],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      icons: ["incorrect"],
-                      parts: ["Where ", underline("you are"), " ", "from?"],
+                      parts: [
+                        icon("correct"),
+                        "I’m ",
+                        underline("an a"),
+                        "rchitect. ", icon("incorrect"), "I’m a architect.",
+                      ],
                     }),
+                  ],
+                },
+                {
+                  value: [
                     ...content({
-                      icons: ["correct"],
-                      parts: ["Where are you from?"],
+                      parts: [
+                        icon("correct"),
+                        "Where are you from? ",
+                        icon("incorrect"),
+                        "Where ",
+                        underline("you are"),
+                        " ",
+                        "from?",
+                      ],
                     }),
                   ],
                 },
