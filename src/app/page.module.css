@@ -4,7 +4,7 @@
 }
 
 .dbec {
-  line-height: 1.11;
+  line-height: 1.13;
   text-align: center;
 }
 
@@ -14,8 +14,8 @@
   color: #222222;
   -webkit-text-stroke: 12px var(--gray-2);
   paint-order: stroke fill;
-  filter: drop-shadow(1px 1px 5px var(--gray-4));
-  text-shadow: 1px 1px 5px var(--gray-4);
+  filter: drop-shadow(2px 2px 1px var(--gray-4));
+  text-shadow: 1px 1px 1px var(--gray-4);
   
 }
 
