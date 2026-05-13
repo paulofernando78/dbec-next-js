@@ -112,15 +112,15 @@
   }
 }
 
-.logInArrow {
+.logInOutArrow {
   transition: transform 20s;
 }
 
-.logInBtn:hover .logInArrow {
-  animation: move 1s ease infinite;
+.logInOutBtn:hover .logInArrow {
+  animation: logIn 1s ease infinite;
 }
 
-@keyframes move {
+@keyframes logIn {
   0% {
     transform: translateX(0px);
   }
@@ -129,6 +129,25 @@
   }
   66% {
     transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.logInOutBtn:hover .logOutArrow {
+  animation: logOut 1s ease infinite;
+}
+
+@keyframes logOut {
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(-5px);
+  }
+  66% {
+    transform: translateX(-1px);
   }
   100% {
     transform: translateX(0px);
