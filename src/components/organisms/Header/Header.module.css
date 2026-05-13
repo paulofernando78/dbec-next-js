@@ -54,9 +54,18 @@
   filter: drop-shadow(0 0 1px var(--yellow-4));
   transform-box: fill-box;
   transform-origin: center;
+}
+
+.darkModeBtn:hover .starOne  {
+  animation:
+    rotateStars 15s linear infinite,
+    blinkStars 3s ease infinite;
+}
+
+.darkModeBtn:hover .starTwo  {
   animation:
     rotateStars 5s linear infinite,
-    blinkStars 3s ease infinite;
+    blinkStars 1s ease infinite;
 }
 
 @keyframes rotateStars {
@@ -79,7 +88,7 @@
   }
 
   10% {
-    opacity: 0.8;
+    opacity: 0.4;
   }
 
   15% {
