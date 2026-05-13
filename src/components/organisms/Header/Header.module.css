@@ -49,13 +49,59 @@
   gap: 5px;
 }
 
+.darkModeBtn:hover .starOne,
+.darkModeBtn:hover .starTwo  {
+  filter: drop-shadow(0 0 1px var(--yellow-4));
+  transform-box: fill-box;
+  transform-origin: center;
+  animation:
+    rotateStars 5s linear infinite,
+    blinkStars 3s ease infinite;
+}
+
+@keyframes rotateStars {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blinkStars {
+  0% {
+    opacity: 0.8;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.8;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
+}
+
 .logInArrow {
   transition: transform 20s;
 }
-
-/* .logInArrow:hover {
-  animation: move 20s ease;
-} */
 
 .logInBtn:hover .logInArrow {
   animation: move 1s ease infinite;

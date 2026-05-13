@@ -141,7 +141,7 @@ export const Correct = ({ className }) => (
   </svg>
 );
 
-export const DarkMode = () => (
+export const DarkMode = ({ starOne, starTwo }) => (
   <svg
     width="21"
     height="21"
@@ -156,8 +156,13 @@ export const DarkMode = () => (
     <path
       d="M13 4.42202L16 7.42202L19 4.42202L16 1.42202L13 4.42202Z"
       fill="var(--yellow-4)"
+      className={starOne}
     />
-    <path d="M18 9L20 11L22 9L20 7L18 9Z" fill="var(--yellow-5)" />
+    <path
+      d="M18 9L20 11L22 9L20 7L18 9Z"
+      fill="var(--yellow-5)"
+      className={starTwo}
+    />
   </svg>
 );
 
@@ -232,7 +237,7 @@ export const LogIn = ({ className }) => (
   </svg>
 );
 
-export const LogOut = () => (
+export const LogOut = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
@@ -240,7 +245,10 @@ export const LogOut = () => (
     height="22px"
     fill={button}
   >
-    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
+    <path
+      d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"
+      className={className}
+    />
   </svg>
 );
 

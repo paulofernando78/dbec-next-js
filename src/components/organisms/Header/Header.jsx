@@ -55,7 +55,14 @@ export default function Header() {
         )}
         <div className={styles.darkLog}>
           <Button
-            icon={isDarkMode ? <LightMode /> : <DarkMode />}
+            className={styles.darkModeBtn}
+            icon={
+              isDarkMode ? (
+                <LightMode />
+              ) : (
+                <DarkMode starOne={styles.starOne} starTwo={styles.starTwo} />
+              )
+            }
             onToggle={toggleTheme}
             active={isDarkMode}
           ></Button>
@@ -63,7 +70,13 @@ export default function Header() {
             <Button
               onToggle={handleLogin}
               className={styles.logInBtn}
-              icon={isLoggedIn ? <LogOut /> : <LogIn className={styles.logInArrow}/>}
+              icon={
+                isLoggedIn ? (
+                  <LogOut />
+                ) : (
+                  <LogIn className={styles.logInArrow} />
+                )
+              }
             ></Button>
           </Link>
         </div>
