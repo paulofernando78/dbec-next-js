@@ -1,6 +1,7 @@
 .wrapper {
   position: relative;
   padding-inline: 1.6rem;
+  margin-inline: clamp(0px, calc(48.57vw - 194.28px), 340px);
 }
 
 .carousel {
@@ -18,7 +19,7 @@
 }
 
 .card {
-  flex: 0 0 20em;
+  flex: 0 0 100%;
   scroll-snap-align: start;
   aspect-ratio: 4/4;
 
@@ -112,10 +113,4 @@
   border: 1px solid var(--slate-4);
   background: var(--slate-3);
   cursor: pointer;
-}
-
-@media (max-width: 400px) {
-  .card {
-    flex: 0 0 100%;
-  }
 }
