@@ -16,7 +16,7 @@ const Arrow = ({ direction = "back", className }) => (
 );
 
 export const Carousel = ({ imgs = [] }) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
   const cardRef = useRef([]);
 
@@ -53,7 +53,13 @@ export const Carousel = ({ imgs = [] }) => {
               {/* <div className={styles.cardPagination}>
                 {index + 1}
               </div> */}
-              <Image src={img.src} alt={img.alt || `carousel-image-${index}`} />
+              {img.src && (
+                <Image
+                  src={img.src}
+                  alt={img.alt || `carousel-image-${index}`}
+                />
+              )}
+              {img.dictionary && <Image src={img.src} alt={img.alt} />}
             </div>
           ))}
         </div>
@@ -69,16 +75,13 @@ export const Carousel = ({ imgs = [] }) => {
           <button
             key={index}
             onClick={() => {
-              setCurrentIndex(index)
+              setCurrentIndex(index);
               cardRef.current[index]?.scrollIntoView({
                 behavior: "smooth",
                 inline: "start",
-              })
+              });
             }}
-            className={currentIndex === index
-              ? styles.active
-              : ""
-            }
+            className={currentIndex === index ? styles.active : ""}
           >
             {index + 1}
           </button>

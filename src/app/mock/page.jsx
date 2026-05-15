@@ -49,7 +49,7 @@ export default function Mock() {
         description="Description"
       />
       <div className="line-break">
-        <DictionaryArea />
+        {/* <DictionaryArea /> */}
 
         <PageSections>
           {/* AudioPlayer */}
@@ -93,24 +93,12 @@ export default function Mock() {
               imgs={[
                 {
                   src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
-                  alt: "...",
+                  alt: "",
                 },
                 {
                   src: "/assets/img/cefr/a2/describe-past-experiences/movie.png",
-                  alt: "Laura at the beach",
-                },
-                {
-                  src: "/assets/img/cefr/a2/describe-past-experiences/cafeteria.png",
-                  alt: "Laura at the beach",
-                },
-                {
-                  src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
-                  alt: "...",
-                },
-                {
-                  src: "/assets/img/cefr/a2/describe-past-experiences/movie.png",
-                  alt: "Laura at the beach",
-                },
+                  alt: "",
+                }
               ]}
             />
           </Section>

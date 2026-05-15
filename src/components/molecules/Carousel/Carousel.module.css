@@ -81,7 +81,7 @@
   transform: rotate(180deg) translateX(6px);
 }
 
-.cardPagination {
+/* .cardPagination {
   position: absolute;
   top: 5;
   left: 5;
@@ -96,7 +96,7 @@
   border-radius: 5px;
   border: 1px solid var(--slate-4);
   background: var(--slate-3);
-}
+} */
 
 .pagination {
   display: flex;
@@ -111,10 +111,10 @@
   aspect-ratio: 1;
   border-radius: 5px;
   border: 1px solid var(--slate-4);
-  background: var(--slate-3);
+  background: var(--slate-1);
   cursor: pointer;
 }
 
 .pagination button.active {
-  background-color: var(--gray-4);
+  background-color: var(--slate-3);
 }
