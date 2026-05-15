@@ -1,6 +1,6 @@
 import styles from "./Carousel.module.css";
 import { Image } from "@/components/atoms/Image";
-import { useRef } from "react";
+import { useState, useRef } from "react";
 
 const Arrow = ({ direction = "back", className }) => (
   <svg
@@ -16,6 +16,7 @@ const Arrow = ({ direction = "back", className }) => (
 );
 
 export const Carousel = ({ imgs = [] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0)
   const carouselRef = useRef(null);
   const cardRef = useRef([]);
 
@@ -49,15 +50,10 @@ export const Carousel = ({ imgs = [] }) => {
               ref={(el) => (cardRef.current[index] = el)}
               className={styles.card}
             >
-
-              <div className={styles.cardPagination}>
+              {/* <div className={styles.cardPagination}>
                 {index + 1}
-              </div>
-
-              <Image
-                src={img.src}
-                alt={img.alt || `carousel-image-${index}`}
-              />
+              </div> */}
+              <Image src={img.src} alt={img.alt || `carousel-image-${index}`} />
             </div>
           ))}
         </div>
@@ -72,11 +68,16 @@ export const Carousel = ({ imgs = [] }) => {
         {imgs.map((_, index) => (
           <button
             key={index}
-            onClick={() =>
+            onClick={() => {
+              setCurrentIndex(index)
               cardRef.current[index]?.scrollIntoView({
                 behavior: "smooth",
                 inline: "start",
               })
+            }}
+            className={currentIndex === index
+              ? styles.active
+              : ""
             }
           >
             {index + 1}

@@ -114,3 +114,7 @@
   background: var(--slate-3);
   cursor: pointer;
 }
+
+.pagination button.active {
+  background-color: var(--gray-4);
+}
