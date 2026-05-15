@@ -3,7 +3,7 @@ import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
-import { Guess } from "@/components/molecules/Guess";
+import { Guess } from "@/components/molecules/Exercises/Guess";
 import { FlipCards } from "@/components/molecules/FlipCards/";
 import { Line } from "@/components/molecules/Line";
 import { Paragraph } from "@/components/molecules/Paragraph";

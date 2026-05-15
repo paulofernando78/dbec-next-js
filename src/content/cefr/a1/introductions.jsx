@@ -11,10 +11,11 @@ import { List } from "@/components/molecules/List";
 import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Card } from "@/components/atoms/Card";
 import { Image } from "@/components/atoms/Image";
-import { Dialogue } from "@/components/molecules/Dialogue";
+import { DialogueLesson } from "@/components/molecules/DialogueLesson";
 import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
+import { Guess } from "@/components/molecules/Exercises/Guess";
 import { LineBreak } from "@/components/atoms/LineBreak";
 import {
   content,
@@ -217,7 +218,8 @@ export default function Introductions() {
               />
               <div>
                 {/* Look at the picture and listen to the sentences. */}
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       parts: [
@@ -230,7 +232,8 @@ export default function Introductions() {
                 />
                 <LineBreak />
                 {/* This is an English school. */}
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       parts: [
@@ -243,7 +246,8 @@ export default function Introductions() {
                   ]}
                 />
                 {/* Laura and Eric are students. */}
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -253,7 +257,8 @@ export default function Introductions() {
                   ]}
                 />
                 {/* They're in the classroom. */}
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -263,7 +268,8 @@ export default function Introductions() {
                   ]}
                 />
                 {/* They are classmates. */}
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -325,59 +331,60 @@ export default function Introductions() {
             <Line
               value={[
                 ...content({
-                  parts: [bold("Listen to Laura and Eric.")],
+                  parts: [bold("")],
                 }),
               ]}
             />
             <LineBreak />
-            <AudioPlayer src="/assets/audio/cefr/a1/introductions/presentation.mp3" />
-            <LineBreak />
-            <Dialogue
-              description=""
+            <DialogueLesson
+              imgSrc="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
+              imgAlt="Two students talking at school."
+              description="Laura and Eric are in the classroom."
+              audioPlayer="/assets/audio/cefr/a1/introductions/presentation.mp3"
               lines={[
                 {
-                  speaker: "Laura:",
-                  text: [
+                  speaker: "Laura",
+                  line: [
                     ...content({ parts: ["Hi there! How are you doing?"] }),
                   ],
                 },
                 {
-                  speaker: "Eric:",
-                  text: [
+                  speaker: "Eric",
+                  line: [
                     ...content({
                       parts: ["Hello, I'm pretty good. How about you?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Laura:",
-                  text: [
+                  speaker: "Laura",
+                  line: [
                     ...content({ parts: ["I'm great, thanks. I'm Laura."] }),
                   ],
                 },
                 {
-                  speaker: "Eric:",
-                  text: [...content({ parts: ["Hello, Laura. I'm Eric."] })],
+                  speaker: "Eric",
+                  line: [...content({ parts: ["Hello, Laura. I'm Eric."] })],
                 },
                 {
-                  speaker: "Laura:",
-                  text: [
+                  speaker: "Laura",
+                  line: [
                     ...content({
                       parts: ["Nice to meet you."],
                     }),
                   ],
                 },
                 {
-                  speaker: "Eric:",
-                  text: [
+                  speaker: "Eric",
+                  line: [
                     ...content({
                       parts: ["Nice to meet you too. What's your last name?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Laura:",
-                  text: [
+                  speaker: "Laura",
+                  line: [
                     ...content({
                       parts: ["It's Palmer. "],
                     }),
@@ -385,7 +392,7 @@ export default function Introductions() {
                 },
                 {
                   speaker: "Eric:",
-                  text: [
+                  line: [
                     ...content({
                       parts: ["How do you spell it?"],
                     }),
@@ -393,31 +400,31 @@ export default function Introductions() {
                 },
                 {
                   speaker: "Laura:",
-                  text: [
+                  line: [
                     ...content({
                       parts: ["P-A-L-M-E-R."],
                     }),
                   ],
                 },
                 {
-                  speaker: "Eric:",
-                  text: [
+                  speaker: "Eric",
+                  line: [
                     ...content({
                       parts: ["Are you a new student here?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Laura:",
-                  text: [
+                  speaker: "Laura",
+                  line: [
                     ...content({
                       parts: ["Yes, I am. How about you?"],
                     }),
                   ],
                 },
                 {
-                  speaker: "Eric:",
-                  text: [
+                  speaker: "Eric",
+                  line: [
                     ...content({
                       parts: [
                         "Me too. So, class starts in 5 minutes, right? Ready?",
@@ -426,8 +433,8 @@ export default function Introductions() {
                   ],
                 },
                 {
-                  speaker: "Laura:",
-                  text: [
+                  speaker: "Laura",
+                  line: [
                     ...content({
                       parts: ["Yes. I am. Let's go."],
                     }),
@@ -442,7 +449,8 @@ export default function Introductions() {
             <LineBreak />
             <Ribbon label="Greetings" bgColor="var(--slate-7)" />
             <LineBreak />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/hi.mp3",
@@ -450,7 +458,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/hello.mp3",
@@ -458,7 +467,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/hey.mp3",
@@ -467,7 +477,8 @@ export default function Introductions() {
               ]}
             />
             <LineBreak />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   parts: [bold("Questions & Answers")],
@@ -476,7 +487,8 @@ export default function Introductions() {
             />
             <LineBreak />
 
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/how-are-you.mp3",
@@ -484,7 +496,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio:
@@ -493,7 +506,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio:
@@ -502,7 +516,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio:
@@ -512,7 +527,8 @@ export default function Introductions() {
               ]}
             />
             <LineBreak />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-well.mp3",
@@ -520,7 +536,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-great.mp3",
@@ -528,7 +545,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/im-good.mp3",
@@ -541,7 +559,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio:
@@ -556,7 +575,8 @@ export default function Introductions() {
               ]}
             />
             <LineBreak />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/whats-up.mp3",
@@ -568,7 +588,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/nothing-much.mp3",
@@ -576,7 +597,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/not-much-you.mp3",
@@ -587,7 +609,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio:
@@ -596,7 +619,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio:
@@ -605,7 +629,8 @@ export default function Introductions() {
                 }),
               ]}
             />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio: "/assets/audio/cefr/a1/introductions/just-working.mp3",
@@ -618,7 +643,8 @@ export default function Introductions() {
               <b>THE ALPHABET</b>
             </span>
             <LineBreak />
-            <Line as="p"
+            <Line
+              as="p"
               value={[
                 ...content({
                   audio:
@@ -643,7 +669,8 @@ export default function Introductions() {
             <LineBreak />
             <div className="line-break">
               <Card>
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -654,7 +681,8 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -663,7 +691,8 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -674,7 +703,8 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -683,7 +713,8 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -692,7 +723,8 @@ export default function Introductions() {
                     }),
                   ]}
                 />
-                <Line as="p"
+                <Line
+                  as="p"
                   value={[
                     ...content({
                       audio:
@@ -973,8 +1005,100 @@ export default function Introductions() {
               ]}
             />
           </Section>
+
           {/* Practice */}
           <Section id="practice" heading={3}>
+            <Radio
+              exercise={{
+                instruction: "Choose the best response.",
+                questions: [
+                  {
+                    question: "1. Hello! I'm Sara.",
+                    options: [
+                      { option: "Nice to meet you.", isCorrect: true },
+                      { option: "My last name is Silva.", isCorrect: false },
+                      { option: "How old is your school?", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "2. What's your name?",
+                    options: [
+                      { option: "My last name is Costa.", isCorrect: false },
+                      { option: "My name's Diego.", isCorrect: true },
+                      { option: "Nice to meet you too.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "3. What's your last name?",
+                    options: [
+                      { option: "I'm Ana.", isCorrect: false },
+                      { option: "Nice to meet you too.", isCorrect: false },
+                      { option: "It's Gomez.", isCorrect: true },
+                    ],
+                  },
+                  {
+                    question: "4. How do you spell your name?",
+                    options: [
+                      { option: "I'm a student.", isCorrect: false },
+                      { option: "A-N-N-A.", isCorrect: true },
+                      { option: "My name's Anna.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "5. Nice to meet you.",
+                    options: [
+                      {
+                        option: "Nice to meet you too.",
+                        isCorrect: true,
+                      },
+                      { option: "I'm from Brazil.", isCorrect: false },
+                      { option: "See you yesterday.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "6. What's your first name?",
+                    options: [
+                      { option: "It's Pereira.", isCorrect: false },
+                      { option: "My first name's Lucas.", isCorrect: true },
+                      { option: "I'm fine, thanks.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "7. Are you a new student?",
+                    options: [
+                      { option: "Yes, I am.", isCorrect: true },
+                      { option: "My name is Clara.", isCorrect: false },
+                      { option: "P-A-U-L-A.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "8. How are you doing?",
+                    options: [
+                      { option: "I'm pretty good.", isCorrect: true },
+                      { option: "My last name is Costa.", isCorrect: false },
+                      { option: "Nice meeting you.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "9. How do you spell your last name?",
+                    options: [
+                      { option: "C-O-S-T-A.", isCorrect: true },
+                      { option: "I'm a teacher.", isCorrect: false },
+                      { option: "It's my first class.", isCorrect: false },
+                    ],
+                  },
+                  {
+                    question: "10. Hey! What's up?",
+                    options: [
+                      { option: "Not much, you?", isCorrect: true },
+                      { option: "My name's Kevin.", isCorrect: false },
+                      { option: "See you tomorrow.", isCorrect: false },
+                    ],
+                  },
+                ],
+              }}
+            />
+            <LineBreak />
             <FillInTheBlanks
               exercise={{
                 instruction: "Complete the dialogue with the correct words.",
@@ -1042,50 +1166,122 @@ export default function Introductions() {
                       { text: "." },
                     ],
                   },
+                  {
+                    block: [
+                      { text: "A: Are you a new " },
+                      { blank: "student" },
+                      { text: " here?" },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "B: Yes, I " },
+                      { blank: "am" },
+                      { text: "." },
+                    ],
+                  },
                 ],
               }}
             />
-
             <LineBreak />
-
-            <Radio
+            <FillInTheBlanks
               exercise={{
-                instruction: "Choose the best response.",
-                questions: [
+                instruction: "Unscramble the sentences.",
+                blocks: [
                   {
-                    question: "1. Hello! I'm Sara.",
-                    options: [
-                      { option: "Nice to meet you.", isCorrect: true },
-                      { option: "My last name is Silva.", isCorrect: false },
-                      { option: "How old is your school?", isCorrect: false },
+                    block: [
+                      { text: "Julia / I’m / Hi!" },
+                      { blank: "Hi! I’m Julia." },
+                      { text: "." },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "name / What’s / your" },
+                      { blank: "What’s your name" },
+                      { text: "?" },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "meet / Nice / you / to" },
+                      { blank: "Nice to meet you" },
+                      { text: "." },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "last / your / What’s / name" },
+                      { blank: "What’s your last name?" },
+                      { text: "?" },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "spell / do / it / How / you?" },
+                      { blank: "How do you spell it" },
+                      { text: "?" },
                     ],
                   },
                   {
-                    question: "2. What's your name?",
-                    options: [
-                      { option: "My last name is Costa.", isCorrect: false },
-                      { option: "My name's Diego.", isCorrect: true },
-                      { option: "Nice to meet you too.", isCorrect: false },
+                    block: [
+                      { text: "your / spell / How / do / name / you?" },
+                      { blank: "How do you spell your name" },
+                      { text: "?" },
                     ],
+                    lineBreak: true,
                   },
                   {
-                    question: "3. What's your last name?",
-                    options: [
-                      { option: "I'm Ana.", isCorrect: false },
-                      { option: "Nice to meet you too.", isCorrect: false },
-                      { option: "It's Gomez.", isCorrect: true },
+                    block: [
+                      { text: "am / I / student / a / new" },
+                      { blank: "I am a new student" },
+                      { text: "." },
                     ],
+                    lineBreak: true,
                   },
                   {
-                    question: "4. How do you spell your name?",
-                    options: [
-                      { option: "I'm a student.", isCorrect: false },
-                      { option: "A-N-N-A.", isCorrect: true },
-                      { option: "My name's Anna.", isCorrect: false },
+                    block: [
+                      { text: "doing / How / you / are?" },
+                      { blank: "How are you doing" },
+                      { text: "?" },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "good / pretty / I’m" },
+                      { blank: "I’m pretty good" },
+                      { text: "." },
+                    ],
+                    lineBreak: true,
+                  },
+                  {
+                    block: [
+                      { text: "meet / Nice / too / you, / to" },
+                      { blank: "Nice to meet you, too" },
+                      { text: "." },
                     ],
                   },
                 ],
               }}
+            />
+            <LineBreak />
+            <Guess
+              words={[
+                {
+                  word: "cat",
+                  img: 0,
+                },
+                {
+                  word: "dog",
+                  img: 0,
+                },
+              ]}
             />
           </Section>
 
@@ -1127,18 +1323,14 @@ export default function Introductions() {
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "Ask your partner to spell his/her first name.",
-                      ],
+                      parts: ["Ask your partner to spell his/her first name."],
                     }),
                   ],
                 },
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "Ask your partner to spell his/her last name.",
-                      ],
+                      parts: ["Ask your partner to spell his/her last name."],
                     }),
                   ],
                 },

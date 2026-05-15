@@ -4,6 +4,7 @@ import { Image } from "@/components/atoms/Image";
 import { Line } from "@/components/molecules/Line";
 import { Paragraph } from "@/components/molecules/Paragraph";
 import { dictionary } from "@/helpers/content";
+import { Carousel } from "@/components/molecules/Carousel/";
 
 export const MediaContainer = ({
   groups = [],
@@ -22,6 +23,10 @@ export const MediaContainer = ({
               width={250}
               height={250}
             />
+          )}
+
+          {item.carousel && (
+            <Carousel imgs={item.carousel} />
           )}
 
           <div>

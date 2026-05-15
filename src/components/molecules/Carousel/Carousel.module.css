@@ -1,0 +1,78 @@
+.wrapper {
+  position: relative;
+  padding-inline: 1.9rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 1em;
+
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 20em;
+  scroll-snap-align: start;
+  aspect-ratio: 5/3;
+}
+
+.leftArrow,
+.rightArrow {
+  position: absolute;
+
+  min-width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+
+  height: 100%;
+  background: var(--slate-4);
+  border: 1px solid var(--slate-4);
+}
+
+.leftArrow {
+  border-radius: 5px 0 0 5px;
+}
+
+.rightArrow {
+  border-radius: 0 5px 5px 0;
+}
+
+.leftArrow {
+  left: 0;
+}
+
+.rightArrow {
+  right: 0;
+}
+
+.arrow {
+  display: block;
+}
+
+.back {
+  transform: translateX(6);
+}
+
+.forward {
+  transform: rotate(180deg) translateX(6);
+}
+
+@media (max-width: 400px) {
+  .card {
+    flex: 0 0 100%;
+  }
+}

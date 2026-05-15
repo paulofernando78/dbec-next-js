@@ -14,14 +14,15 @@ import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
 import { FlipCards } from "@/components/molecules/FlipCards/";
 import { Image } from "@/components/atoms/Image";
+import { Carousel } from "../../components/molecules/Carousel/Carousel";
 import { Paragraph } from "@/components/molecules/Paragraph";
-import { Dialogue } from "@/components/molecules/Dialogue";
+import { DialogueLesson } from "@/components/molecules/DialogueLesson";
 import { Examples } from "@/components/molecules/Examples";
 import { Comparison } from "@/components/molecules/Comparison";
 import { Column } from "@/components/molecules/Column/";
 import { MediaLayout } from "@/components/molecules/MediaLayout";
 import { Notes } from "@/components/molecules/Notes";
-import { Guess } from "@/components/molecules/Guess";
+import { Guess } from "@/components/molecules/Exercises/Guess";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
 import { LineBreak } from "@/components/atoms/LineBreak";
@@ -55,7 +56,7 @@ export default function Mock() {
           <Section id="audio-player" heading={3}>
             <AudioPlayer src="/assets/audio/words/a/about-to.mp3" />
           </Section>
-          
+
           <Section id="video-player" label="Video Player" heading={3}>
             <VideoPlayer videoId="C8rU4dv2w8Q" />
           </Section>
@@ -85,6 +86,33 @@ export default function Mock() {
                 />
               </MediaLayout>
             </GridLayout>
+          </Section>
+
+          <Section id="carousel" heading={3}>
+            <Carousel
+              imgs={[
+                {
+                  src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
+                  alt: "Laura at the beach",
+                },
+                {
+                  src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
+                  alt: "Laura at the beach",
+                },
+                {
+                  src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
+                  alt: "Laura at the beach",
+                },
+                {
+                  src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
+                  alt: "Laura at the beach",
+                },
+                {
+                  src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
+                  alt: "Laura at the beach",
+                },
+              ]}
+            />
           </Section>
 
           {/* Line */}
@@ -321,16 +349,27 @@ export default function Mock() {
             />
           </Section>
 
-          {/* Dialogue */}
-          <Section id="dialogue" heading={3}>
-            <Dialogue
-              audioPlayer="/assets/audio/vocabulary/selaa/lesson-1.mp3"
+          {/* DialogueLesson */}
+          <Section id="dialogue-lesson" heading={3}>
+            <DialogueLesson
+              imgSrc="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
+              imgAlt="Two students talking at school."
+              description="Laura and Eric are in the classroom."
+              audioPlayer="/assets/audio/cefr/a1/introductions/presentation.mp3"
               lines={[
                 {
-                  speaker: "speaker:",
-                  text: [
+                  speaker: "Laura",
+                  line: [
                     ...content({
-                      parts: ["...", " ", audio("/")],
+                      parts: ["..."],
+                    }),
+                  ],
+                },
+                {
+                  speaker: "Eric",
+                  line: [
+                    ...content({
+                      parts: ["..."],
                     }),
                   ],
                 },

@@ -63,7 +63,7 @@ export const Check = () => (
     viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    fill="var(--green-6)"
+    fill={button}
     stroke={strokeColor}
     strokeWidth={strokeWidth}
     strokeLinecap="round"
@@ -79,7 +79,7 @@ export const Close = () => (
     viewBox="0 -960 960 960"
     width="24px"
     height="24px"
-    fill="var(--red-4)"
+    fill={button}
     stroke={strokeColor}
     strokeWidth={strokeWidth}
     strokeLinecap="round"
@@ -239,8 +239,8 @@ export const LogIn = ({ className }) => (
 
 export const LogOut = ({ className }) => (
   <svg
-    width="18"
-    height="18"
+    width="17"
+    height="17"
     viewBox="0 0 18 18"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

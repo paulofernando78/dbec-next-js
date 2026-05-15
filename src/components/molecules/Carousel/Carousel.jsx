@@ -1,0 +1,55 @@
+import styles from "./Carousel.module.css";
+import { Image } from "@/components/atoms/Image";
+import { useRef } from "react";
+
+const Arrow = ({
+  direction = "back",
+  className
+}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 -960 960 960"
+    width="1em"
+    height="1em"
+    fill="#e3e3e3"
+    className={className}
+  >
+    <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+  </svg>
+);
+
+export const Carousel = ({ imgs = [] }) => {
+  const carouselRef = useRef(null);
+
+  const scrollLeft = () => {
+    carouselRef.current.scrollBy({
+      left: -320,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    carouselRef.current.scrollBy({
+      left: 320,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <div className={styles.wrapper}>
+      <button className={styles.leftArrow} onClick={scrollLeft}>
+        <Arrow direction="back" className={`${styles.arrow} ${styles.back}`}/>
+      </button>
+      <div className={styles.carousel} ref={carouselRef}>
+        {imgs.map((img, index) => (
+          <div key={index} className={styles.card}>
+            <Image src={img.src} alt={img.alt || `carousel-image-${index}`} />
+          </div>
+        ))}
+      </div>
+      <button className={styles.rightArrow} onClick={scrollRight}>
+        <Arrow direction="forward" className={`${styles.arrow} ${styles.forward}`}/>
+      </button>
+    </div>
+  );
+};
