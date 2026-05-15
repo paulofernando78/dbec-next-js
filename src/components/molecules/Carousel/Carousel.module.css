@@ -23,6 +23,7 @@
   aspect-ratio: 4/4;
 
   overflow: hidden;
+  position: relative;
 }
 
 .card :global(img) {
@@ -53,19 +54,18 @@
 }
 
 .leftArrow {
+  left: 0;
   border-radius: 5px 0 0 5px;
 }
 
 .rightArrow {
+  right: 0;
   border-radius: 0 5px 5px 0;
 }
 
-.leftArrow {
-  left: 0;
-}
-
-.rightArrow {
-  right: 0;
+.rightArrow:hover,
+.leftArrow:hover {
+  background: var(--slate-5);
 }
 
 .arrow {
@@ -78,6 +78,40 @@
 
 .forward {
   transform: rotate(180deg) translateX(6px);
+}
+
+.cardPagination {
+  position: absolute;
+  top: 5;
+  left: 5;
+  z-index: 11;
+
+  display: grid;
+  place-items: center;
+
+  font-size: .9rem;
+  width: 1.6rem;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  border: 1px solid var(--slate-4);
+  background: var(--slate-3);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.pagination button {
+  font-size: .9rem;
+  width: 1.6rem;
+  aspect-ratio: 1;
+  border-radius: 5px;
+  border: 1px solid var(--slate-4);
+  background: var(--slate-3);
+  cursor: pointer;
 }
 
 @media (max-width: 400px) {

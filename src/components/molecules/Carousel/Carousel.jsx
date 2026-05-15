@@ -2,10 +2,7 @@ import styles from "./Carousel.module.css";
 import { Image } from "@/components/atoms/Image";
 import { useRef } from "react";
 
-const Arrow = ({
-  direction = "back",
-  className
-}) => (
+const Arrow = ({ direction = "back", className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 -960 960 960"
@@ -20,6 +17,7 @@ const Arrow = ({
 
 export const Carousel = ({ imgs = [] }) => {
   const carouselRef = useRef(null);
+  const cardRef = useRef([]);
 
   const scrollLeft = () => {
     carouselRef.current.scrollBy({
@@ -36,20 +34,55 @@ export const Carousel = ({ imgs = [] }) => {
   };
 
   return (
-    <div className={styles.wrapper}>
-      <button className={styles.leftArrow} onClick={scrollLeft}>
-        <Arrow direction="back" className={`${styles.arrow} ${styles.back}`}/>
-      </button>
-      <div className={styles.carousel} ref={carouselRef}>
-        {imgs.map((img, index) => (
-          <div key={index} className={styles.card}>
-            <Image src={img.src} alt={img.alt || `carousel-image-${index}`} />
-          </div>
+    <>
+      <div className={styles.wrapper}>
+        <button className={styles.leftArrow} onClick={scrollLeft}>
+          <Arrow
+            direction="back"
+            className={`${styles.arrow} ${styles.back}`}
+          />
+        </button>
+        <div className={styles.carousel} ref={carouselRef}>
+          {imgs.map((img, index) => (
+            <div
+              key={index}
+              ref={(el) => (cardRef.current[index] = el)}
+              className={styles.card}
+            >
+
+              <div className={styles.cardPagination}>
+                {index + 1}
+              </div>
+
+              <Image
+                src={img.src}
+                alt={img.alt || `carousel-image-${index}`}
+              />
+            </div>
+          ))}
+        </div>
+        <button className={styles.rightArrow} onClick={scrollRight}>
+          <Arrow
+            direction="forward"
+            className={`${styles.arrow} ${styles.forward}`}
+          />
+        </button>
+      </div>
+      <div className={styles.pagination}>
+        {imgs.map((_, index) => (
+          <button
+            key={index}
+            onClick={() =>
+              cardRef.current[index]?.scrollIntoView({
+                behavior: "smooth",
+                inline: "start",
+              })
+            }
+          >
+            {index + 1}
+          </button>
         ))}
       </div>
-      <button className={styles.rightArrow} onClick={scrollRight}>
-        <Arrow direction="forward" className={`${styles.arrow} ${styles.forward}`}/>
-      </button>
-    </div>
+    </>
   );
 };
