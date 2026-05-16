@@ -2,6 +2,7 @@ import styles from "./contentLayout.module.css";
 
 import { HeaderProvider } from "@/context/headerContext";
 
+import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import NavBar from "@/components/organisms/Navbar";
 
 import { ScrollToTop } from "@/components/molecules/ScrollToTop";
@@ -11,8 +12,10 @@ export default function ContentLayout({ children }) {
   return (
     <>
       <div className={styles.navMain}>
+        <DictionaryArea />
+
         <NavBar className={styles.nav} />
-        <div className={styles.content}>{children}</div>
+        <div className={styles.content} id="content-scroll">{children}</div>
         {/* <BuyMeACoffee className="coffee" /> */}
       </div>
     </>

@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
 import { Whiteboard } from "@/components/molecules/Whiteboard";
-import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Card } from "@/components/atoms/Card";
@@ -45,9 +44,6 @@ export default function IceAgeLesson() {
             ]}
           />
         </Card>
-
-        <DictionaryArea />
-
         <PageSections>
           <Section id="introduction" heading={3}>
             <Line

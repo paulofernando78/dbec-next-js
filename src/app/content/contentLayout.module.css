@@ -20,13 +20,6 @@
 
 }
 
-.dictionary-area {
-  position: absolute;
-  top: 5px;
-  z-index: 1;
-  align-self: flex-end;
-}
-
 @media (max-width: 700px) {
   .navMain {
     grid-template-columns: 1fr;
