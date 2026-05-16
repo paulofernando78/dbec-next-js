@@ -59,7 +59,7 @@
 }
 
 .placeholderImg {
-  width: 100px;
+  width: 150px !important;
   height: auto;
   border: none;
   margin: 0 auto;
