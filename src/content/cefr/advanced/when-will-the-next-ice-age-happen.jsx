@@ -1,3 +1,5 @@
+"use client"
+
 import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
@@ -12,6 +14,7 @@ import { GridLayout } from "@/components/molecules/GridLayout";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
+import { Carousel } from "@/components/molecules/Carousel/Carousel";
 import { LineBreak } from "@/components/atoms/LineBreak";
 import { content, bold, dictionary } from "@/helpers/content";
 
@@ -101,33 +104,33 @@ export default function IceAgeLesson() {
             <LineBreak />
 
             <FlipCards
-  cards={[
-    {
-      backImg: dictionary("glacier.avif"),
-    },
-    {
-      backImg: dictionary("ice-age.avif"),
-    },
-    {
-      backImg: dictionary("orbit.avif"),
-    },
-    {
-      backImg: dictionary("climate-change.avif"),
-    },
-    {
-      backImg: dictionary("earth-axis.avif"),
-    },
-    {
-      backImg: dictionary("carbon-dioxide.avif"),
-    },
-    {
-      backImg: dictionary("fossil-ammonite.avif"),
-    },
-    {
-      backImg: dictionary("temperature.avif"),
-    },
-  ]}
-/>
+              cards={[
+                {
+                  backImg: dictionary("glacier.avif"),
+                },
+                {
+                  backImg: dictionary("ice-age.avif"),
+                },
+                {
+                  backImg: dictionary("orbit.avif"),
+                },
+                {
+                  backImg: dictionary("climate-change.avif"),
+                },
+                {
+                  backImg: dictionary("earth-axis.avif"),
+                },
+                {
+                  backImg: dictionary("carbon-dioxide.avif"),
+                },
+                {
+                  backImg: dictionary("fossil-ammonite.avif"),
+                },
+                {
+                  backImg: dictionary("temperature.avif"),
+                },
+              ]}
+            />
           </Section>
 
           <Section id="gist" heading={3}>
@@ -372,6 +375,19 @@ export default function IceAgeLesson() {
                 ],
               }}
             />
+            <LineBreak />
+            <Carousel
+              imgs={[
+                { word: "carbon dioxide", img: 0 },
+                { word: "earth axis", img: 0 },
+                { word: "fossil", img: 0 },
+                { word: "ice age", img: 0 },
+                { word: "temperature", img: 0 },
+                { word: "glacier", img: 0 },
+                { word: "climate change", img: 0 },
+                { word: "orbit", img: 0 },
+              ]}
+            />
           </Section>
 
           <Section
@@ -395,9 +411,7 @@ export default function IceAgeLesson() {
                 {
                   value: [
                     ...content({
-                      parts: [
-                        "What surprised you most about the video?",
-                      ],
+                      parts: ["What surprised you most about the video?"],
                     }),
                   ],
                 },

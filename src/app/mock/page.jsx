@@ -95,10 +95,7 @@ export default function Mock() {
                   src: "/assets/img/cefr/a2/describe-past-experiences/beach.jpg",
                   alt: "",
                 },
-                {
-                  src: "/assets/img/cefr/a2/describe-past-experiences/movie.png",
-                  alt: "",
-                }
+                { word: "cat", img: 0 },
               ]}
             />
           </Section>

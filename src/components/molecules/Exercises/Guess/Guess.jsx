@@ -5,7 +5,6 @@ import styles from "./Guess.module.css";
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/atoms/Button/";
 import { Image } from "@/components/atoms/Image/";
-
 import { Redo } from "@/lib/svg-imports";
 
 import { dictionary } from "@/helpers/content";
@@ -151,7 +150,7 @@ export const Guess = ({ img, words }) => {
       <p>
         <b>Click the letters to reveal the hidden answer.</b>
       </p>
-      <span className={styles.title}>Guess!</span>
+      <span className={styles.title}>Guess?</span>
       <div className={styles.container}>
         <div className={styles.imgHint}>
           {/* Pics */}

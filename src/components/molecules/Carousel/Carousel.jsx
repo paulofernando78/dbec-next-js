@@ -1,6 +1,10 @@
 import styles from "./Carousel.module.css";
+
+import { dictionary } from "@/helpers/content";
+import { loadDictionaryWord } from "@/utils/loadDictionaryWord";
 import { Image } from "@/components/atoms/Image";
-import { useState, useRef } from "react";
+
+import { useState, useRef, useEffect } from "react";
 
 const Arrow = ({ direction = "back", className }) => (
   <svg
@@ -19,6 +23,27 @@ export const Carousel = ({ imgs = [] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
   const cardRef = useRef([]);
+  const [resolvedWords, setResolvedWords] = useState({});
+
+  useEffect(() => {
+    const loadWords = async () => {
+      const entries = await Promise.all(
+        imgs.map(async (img) => {
+          if (!img.word) return null;
+
+          const foundWord = await loadDictionaryWord(img.word);
+
+          return [img.word, foundWord];
+        })
+      );
+
+      setResolvedWords(
+        Object.fromEntries(entries.filter(Boolean))
+      );
+    };
+
+    loadWords();
+  }, [imgs]);
 
   const scrollLeft = () => {
     carouselRef.current.scrollBy({
@@ -36,6 +61,7 @@ export const Carousel = ({ imgs = [] }) => {
 
   return (
     <>
+    <span className={styles.title}>Remember?</span>
       <div className={styles.wrapper}>
         <button className={styles.leftArrow} onClick={scrollLeft}>
           <Arrow
@@ -59,7 +85,22 @@ export const Carousel = ({ imgs = [] }) => {
                   alt={img.alt || `carousel-image-${index}`}
                 />
               )}
-              {img.dictionary && <Image src={img.src} alt={img.alt} />}
+              {img.dictionary && (
+                <Image
+                  src={dictionary(img.dictionary)}
+                  alt={img.alt || `carousel-image-${index}`}
+                />
+              )}
+              {img.word && resolvedWords[img.word] && (
+                <Image
+                  src={dictionary(
+                    resolvedWords[img.word]?.imgs?.[
+                      img.img ?? 0
+                    ]?.src
+                  )}
+                  alt={img.alt || img.word}
+                />
+              )}
             </div>
           ))}
         </div>
