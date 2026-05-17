@@ -1,34 +1,36 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import styles from "./ScrollToTop.module.css";
+
+import { useEffect, useState } from "react";
 import { ArrowUp } from "@/lib/svg-imports.js";
 
-export const ScrollToTop = ({ containerSelector = "main" }) => {
+export const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const container = document.querySelector(containerSelector);
-    if (!container) return;
+    const content = document.getElementById("content-scroll");
 
-    const onScroll = () => {
-      setVisible(container.scrollTop > 300);
+    if (!content) return;
+
+    const handleScroll = () => {
+      setVisible(content.scrollTop > 300);
     };
-
-    container.addEventListener("scroll", onScroll);
 
     // run once in case the page is already scrolled
-    onScroll();
+    handleScroll();
+
+    content.addEventListener("scroll", handleScroll);
 
     return () => {
-      container.removeEventListener("scroll", onScroll);
+      content.removeEventListener("scroll", handleScroll);
     };
-  }, [containerSelector]);
+  }, []);
 
   const handleClick = () => {
-    const container = document.querySelector(containerSelector);
+    const content = document.getElementById("content-scroll");
 
-    container?.scrollTo({
+    content?.scrollTo({
       top: 0,
       behavior: "smooth",
     });

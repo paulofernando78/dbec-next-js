@@ -13,10 +13,10 @@ export default function ContentLayout({ children }) {
     <>
       <div className={styles.navMain}>
         <DictionaryArea />
-
         <NavBar className={styles.nav} />
         <div className={styles.content} id="content-scroll">{children}</div>
-        {/* <BuyMeACoffee className="coffee" /> */}
+        <ScrollToTop />
+        <BuyMeACoffee className="coffee" />
       </div>
     </>
   );

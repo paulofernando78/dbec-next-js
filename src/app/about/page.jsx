@@ -10,6 +10,11 @@ import { content } from "@/helpers/content";
 
 const formation = [
   {
+    institution: "ACBEU - Associação Cultural Brasil Estados Unidos, Salvador – BA",
+    period: "Março 2017 – Outubro 2017",
+    program: "Teacher Training Course TTC",
+  },
+  {
     institution: "Los Angeles Music Academy (LAMA), Pasadena – CA",
     period: "Setembro 2000 – Março 2001",
     program: "Majoring in Drums",
@@ -34,9 +39,9 @@ const formation = [
 const experience = [
   {
     institution: "Seven Idiomas",
-    period: "Julho 2019 - Jan 2024",
+    period: "Julho 2019 - Janneiro 2024",
     program:
-      "Aulas em escola de ingles para turmas de todas as idades e níveis.",
+      "Aulas em escola de inglês para turmas de todas as idades e níveis.",
   },
   {
     institution: "DAILY BASIS ENGLISH COURSE",
