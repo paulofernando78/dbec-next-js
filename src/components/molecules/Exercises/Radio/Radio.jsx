@@ -48,7 +48,7 @@ export const Radio = ({ exercise = {}, score = true }) => {
       </div>
       {questions.map((q, qIndex) => (
         <div key={qIndex}>
-          <p className={styles.question}>{q.question}</p>
+          <p className={styles.question}>{qIndex + 1}. {q.question}</p>
 
           {q.options.map((opt, optIndex) => {
             const isActive = selected[qIndex] === optIndex;
