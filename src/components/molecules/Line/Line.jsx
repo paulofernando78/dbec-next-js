@@ -1,11 +1,13 @@
 import { ContentToken } from "@/components/molecules/ContentToken";
 
-export const Line = ({as: Tag = "span", 
+export const Line = ({
   className,
-  ...props}) => {
+  as: Tag = "span",
+  ...props
+}) => {
   return (
-    <Tag className={className}>
-      <ContentToken {...props} />
-    </Tag>
+  <Tag>
+    <ContentToken {...props} />
+  </Tag>
   );
 };

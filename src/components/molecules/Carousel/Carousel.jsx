@@ -1,3 +1,5 @@
+"use client"
+
 import styles from "./Carousel.module.css";
 
 import { dictionary } from "@/helpers/content";

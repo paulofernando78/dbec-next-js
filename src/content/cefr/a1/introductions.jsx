@@ -6,9 +6,8 @@ import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { Audio } from "@/components/atoms/Audio";
 import { Line } from "@/components/molecules/Line";
 import { List } from "@/components/molecules/List";
-import { MediaLayout } from "@/components/molecules/MediaLayout";
+import { MediaWrapper } from "@/components/molecules/MediaWrapper";
 import { Card } from "@/components/atoms/Card";
-import { Image } from "@/components/atoms/Image";
 import { DialogueLesson } from "@/components/molecules/DialogueLesson";
 import { TheAlphabet } from "@/components/lessons/TheAlphabet";
 import { Column } from "@/components/molecules/Column/";
@@ -56,52 +55,20 @@ export default function Introductions() {
         </Card>
 
         <PageSections>
-          {/* Introduction */}
           <Section id="introduction" heading={3}>
-            <MediaLayout mediaPosition="top">
-              <Image
-                src="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
-                alt="Two students talking at school."
-                ratio="16-9"
-              />
-              <div>
-                {/* Look at the picture and listen to the sentences. */}
-                <Line
-                  as="p"
-                  value={[
-                    ...content({
-                      parts: [
-                        bold(
-                          "Look at the picture and listen to the sentences.",
-                        ),
-                      ],
-                    }),
-                  ]}
-                />
-                <LineBreak />
-                {introPhrases.map((item, index) => (
-                  <Line
-                    key={index}
-                    as="p"
-                    value={[
-                      ...content({
-                        audio: item.audio,
-                        parts: [item.part],
-                      }),
-                    ]}
-                  />
-                ))}
-              </div>
-            </MediaLayout>
-
-            <LineBreak />
-
-            <Radio
-              exercise={introQuestions}
+            <MediaWrapper
+              mediaPosition="top"
+              imgSrc="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
+              imgAlt="Two students talking at school."
+              ratio="16-9"
+              instruction="Look at the picture and listen to the sentences."
+              lines={introPhrases}
+              tagAs="p"
             />
+            <LineBreak />
+            <Radio exercise={introQuestions} />
           </Section>
 
-          {/* Presentation */}
           <Section id="presentation" heading={3}>
             <LineBreak />
             <DialogueLesson
@@ -120,7 +87,6 @@ export default function Introductions() {
             />
           </Section>
 
-          {/* Language Focus */}
           <Section id="language-focus" heading={3}>
             <LineBreak />
             <Ribbon label="Greetings" bgColor="var(--slate-7)" />
@@ -545,7 +511,6 @@ export default function Introductions() {
             />
           </Section>
 
-          {/* Practice */}
           <Section id="practice" heading={3}>
             <Radio
               exercise={{
@@ -740,7 +705,6 @@ export default function Introductions() {
             />
           </Section>
 
-          {/* Production */}
           <Section id="production" heading={3}>
             <Line
               value={[

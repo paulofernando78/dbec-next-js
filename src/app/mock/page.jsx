@@ -6,7 +6,7 @@ import { Whiteboard } from "@/components/molecules/Whiteboard";
 import { DictionaryArea } from "@/components/molecules/DictionaryArea";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
-import { MediaContainer } from "@/components/molecules/MediaContainer";
+import { MediaWrapper } from "@/components/molecules/MediaWrapper";
 import { Links } from "@/components/molecules/Links";
 import { AudioPlayer } from "@/components/atoms/AudioPlayer";
 import { VideoPlayer } from "@/components/atoms/VideoPlayer";
@@ -188,7 +188,7 @@ export default function Mock() {
           >
             <LineBreak />
 
-            <MediaContainer
+            <MediaWrapper
               groups={[
                 {
                   mediaPosition: "top",
