@@ -43,9 +43,9 @@
 }
 
 .radioGreen .radioInner {
-  background: var(--green-5);
+  background: var(--green-7);
 }
 
 .radioRed .radioInner {
-  background: var(--red-5);
+  background: var(--red-6);
 }

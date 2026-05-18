@@ -26,27 +26,27 @@ export const introQuestions = {
   instruction: "Now answer the questions.",
   questions: [
     {
-      question: "Where are Laura and Eric?",
+      question: "Laura and Eric are...",
       options: [
-        { option: "At a restaurant.", isCorrect: false },
-        { option: "At a hospital.", isCorrect: false },
-        { option: "At an English school.", isCorrect: true },
+        { option: "at a restaurant.", isCorrect: false },
+        { option: "at a hospital.", isCorrect: false },
+        { option: "in an English school.", isCorrect: true },
       ],
     },
     {
-      question: "Are Laura and Eric students?",
+      question: "Laura and Eric are",
       options: [
-        { option: "No, they aren't.", isCorrect: false },
-        { option: "Yes, they are.", isCorrect: true },
-        { option: "One is a doctor.", isCorrect: false },
+        { option: "teachers.", isCorrect: false },
+        { option: "classmates", isCorrect: true },
+        { option: "brother ad sister.", isCorrect: false },
       ],
     },
     {
-      question: "Who is Mr. Smith?",
+      question: "Mr. Smith is",
       options: [
-        { option: "A student.", isCorrect: false },
-        { option: "A classmate.", isCorrect: false },
-        { option: "The teacher.", isCorrect: true },
+        { option: "a student.", isCorrect: false },
+        { option: "a classmate.", isCorrect: false },
+        { option: "the teacher.", isCorrect: true },
       ],
     },
   ],
