@@ -27,7 +27,7 @@ import {
 
 import { phrases, questions } from "./introductions/introduction";
 import { dialogue } from "./introductions/presentation";
-import { languageFocusGreetings } from "./introductions/languageFocus";
+import { columnGreetings } from "./introductions/languageFocus";
 import { radioQuestions } from "./introductions/practice";
 import {} from "./introductions/production";
 
@@ -87,11 +87,11 @@ export default function Introductions() {
 
           <Section id="language-focus" heading={3}>
             <LineBreak />
-            <Ribbon label="Greetings" bgColor="var(--slate-7)" />
+            <Ribbon label="Common Greetings" bgColor="var(--slate-7)" />
             <LineBreak />
             <Column
               width="260"
-              cols={languageFocusGreetings.map((col) => ({
+              cols={columnGreetings.map((col) => ({
                 column: col.column,
                 bgColor: "var(--slate-5)",
                 blocks: col.items.map((item) => {
@@ -107,7 +107,11 @@ export default function Introductions() {
                         text: [
                           ...content({
                             audio: item.audio,
-                            parts: [item.text, italic(item.italic), portuguese(item.portuguese)],
+                            parts: [
+                              item.text,
+                              italic(item.italic),
+                              portuguese(item.portuguese),
+                            ],
                           }),
                         ],
                       },
@@ -118,6 +122,8 @@ export default function Introductions() {
             />
             <LineBreak />
             <TheAlphabet />
+            <LineBreak />
+            <Ribbon label="Common Questions" bgColor="var(--slate-7)" />
             <LineBreak />
             <Column
               width="260"

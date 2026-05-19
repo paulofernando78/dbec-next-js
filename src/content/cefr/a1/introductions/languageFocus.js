@@ -1,4 +1,4 @@
-export const languageFocusGreetings = [
+export const columnGreetings = [
   {
     column: "Saying hi!",
     items: [

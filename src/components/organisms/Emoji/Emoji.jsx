@@ -356,28 +356,29 @@ const emojis = [
 
 export const Emoji = () => {
   return (
-    <div className={styles.emojiWrapper}>
-      {emojis.map((emoji, emojiIndex) => (
-        <Card key={emojiIndex}>
-          <div className={`imgs ${styles.emojiInnerWrapper}`}>
-            <Image
-              src={emoji.img}
-              alt={emoji.alt}
-              width={60}
-              height={60}
-            />
-            {emoji.words &&
-              emoji.words.map((word, wordIndex) => (
-                <div key={wordIndex} className={styles.emojiWordAudioWrapper}>
-                  {word.audio && <Audio src={word.audio} />}
-                  <span key={wordIndex} className={styles.word}>
-                    {word.word}
-                  </span>
-                </div>
-              ))}
-          </div>
-        </Card>
-      ))}
-    </div>
+    <>
+      <div className={styles.welcomePhrases}>
+        <h2 className={styles.welcome}>Welcome</h2>
+        <h3 className={styles.feeling}>How are you feeling today?</h3>
+      </div>
+      <div className={styles.emojiWrapper}>
+        {emojis.map((emoji, emojiIndex) => (
+          <Card key={emojiIndex}>
+            <div className={`imgs ${styles.emojiInnerWrapper}`}>
+              <Image src={emoji.img} alt={emoji.alt} width={60} height={60} />
+              {emoji.words &&
+                emoji.words.map((word, wordIndex) => (
+                  <div key={wordIndex} className={styles.emojiWordAudioWrapper}>
+                    {word.audio && <Audio src={word.audio} />}
+                    <span key={wordIndex} className={styles.word}>
+                      {word.word}
+                    </span>
+                  </div>
+                ))}
+            </div>
+          </Card>
+        ))}
+      </div>
+    </>
   );
 };

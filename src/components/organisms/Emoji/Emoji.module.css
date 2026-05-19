@@ -1,3 +1,17 @@
+.welcomePhrases {
+  font-family: var(--font-shadow-into-light);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.welcome {
+  font-size: 3rem;
+}
+
+.feeling {
+  font-size: 2rem;
+}
+
 .emojiWrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 150px);

@@ -27,17 +27,22 @@ export default function Home() {
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
+    let timeout;
+
     const interval = setInterval(() => {
       setOpacity(0); // fade out
 
-      setTimeout(() => {
+      timeout = setTimeout(() => {
         // % faz voltar para o início.
         setGreetingIndex((prev) => (prev + 1) % greetingsList.length);
+
         setOpacity(1); // fade in
       }, 500);
     }, 2000);
 
-    return () => clearInterval(interval);
+    return () =>
+      clearInterval(interval);
+      clearTimeout(timeout)
   }, []);
 
   return (
