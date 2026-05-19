@@ -1,4 +1,3 @@
-
 export const dialogue = [
   {
     speaker: "Laura",

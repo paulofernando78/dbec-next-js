@@ -1,25 +1,49 @@
+import {
+  content,
+  audio,
+  mark,
+} from "@/helpers/content";
+
 export const phrases = [
-  {
-    audio: "/assets/audio/cefr/a1/introductions/this-is-an-english-school.mp3",
-    part: "This is an English school.",
-  },
-  {
-    audio:
-      "/assets/audio/cefr/a1/introductions/laura-and-eric-are-students.mp3",
-    part: "Laura and Eric are students.",
-  },
-  {
-    audio: "/assets/audio/cefr/a1/introductions/theyre-in-the-classroom.mp3",
-    part: "They're in the classroom.",
-  },
-  {
-    audio: "/assets/audio/cefr/a1/introductions/theyre-classmates.mp3",
-    part: "They are classmates.",
-  },
-  {
-    audio: "/assets/audio/cefr/a1/introductions/mr-smith-is-the-teacher.mp3",
-    part: "Mr. Smith is the teacher.",
-  },
+  content({
+    parts: [
+      audio(
+        "/assets/audio/cefr/a1/introductions/this-is-an-english-school.mp3",
+      ),
+      "This is an ",
+      mark("English school."),
+    ],
+  }),
+  content({
+    parts: [
+      audio(
+        "/assets/audio/cefr/a1/introductions/laura-and-eric-are-students.mp3",
+      ),
+      "Laura and Eric are ",
+      mark("students."),
+    ],
+  }),
+  content({
+    parts: [
+      audio("/assets/audio/cefr/a1/introductions/theyre-in-the-classroom.mp3"),
+      "They're in the ",
+      mark("classroom."),
+    ],
+  }),
+  content({
+    parts: [
+      audio("/assets/audio/cefr/a1/introductions/theyre-classmates.mp3"),
+      "They are ",
+      mark("classmates."),
+    ],
+  }),
+  content({
+    parts: [
+      audio("/assets/audio/cefr/a1/introductions/mr-smith-is-the-teacher.mp3"),
+      "Mr. Smith is the ",
+      mark("teacher."),
+    ],
+  }),
 ];
 
 export const questions = {

@@ -1,4 +1,5 @@
 import { Whiteboard } from "@/components/molecules/Whiteboard";
+import { LessonObjective } from "@/components/molecules/LessonObjective";
 import { PageSections } from "@/components/molecules/PageSections";
 import { Section } from "@/components/molecules/Section";
 import { Ribbon } from "@/components/atoms/Ribbon";
@@ -27,7 +28,10 @@ import {
 
 import { phrases, questions } from "./introductions/introduction";
 import { dialogue } from "./introductions/presentation";
-import { columnGreetings } from "./introductions/languageFocus";
+import {
+  columnCommonGreetings,
+  columnCommonQuestions,
+} from "./introductions/languageFocus";
 import { radioQuestions } from "./introductions/practice";
 import {} from "./introductions/production";
 
@@ -46,17 +50,15 @@ export default function Introductions() {
       />
 
       <div className="line-break">
-        <Card>
-          By the end of this class, students will be able to greet someone, say
-          their name, ask for basic personal information, and introduce
-          themselves clearly.
-        </Card>
+        <LessonObjective>
+By the end of this class, students will be able to greet someone, say their name, ask for basic personal information, and introduce themselves clearly.
+        </LessonObjective>
 
         <PageSections>
           <Section id="introduction" heading={3}>
             <MediaWrapper
               mediaPosition="top"
-              imgSrc="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
+              imgSrc="/assets/img/cefr/a1/introductions/introduction/laura-eric-mr-smith.png"
               imgAlt="Two students talking at school."
               ratio="16-9"
               instruction="Look at the picture and listen to the sentences."
@@ -70,9 +72,9 @@ export default function Introductions() {
           <Section id="presentation" heading={3}>
             <LineBreak />
             <DialogueLesson
-              imgSrc="/assets/img/cefr/a1/introductions/laura-eric-mr-smith.png"
+              imgSrc="/assets/img/cefr/a1/introductions/presentation/laura-eric-introduction.png"
               imgAlt="Two students talking at school."
-              description="Laura and Eric are in the classroom."
+              description="Laura and Eric are shaking hands."
               audioPlayer="/assets/audio/cefr/a1/introductions/presentation.mp3"
               lines={dialogue.map((dialogue) => ({
                 speaker: dialogue.speaker,
@@ -91,7 +93,401 @@ export default function Introductions() {
             <LineBreak />
             <Column
               width="260"
-              cols={columnGreetings.map((col) => ({
+              cols={[
+                // Saying hi!
+                {
+                  bgColor: "var(--gray-5)",
+                  textColor: "white",
+                  column: "Saying hi!",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/hi.mp3",
+                                ),
+                                "Hi!",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/hello.mp3",
+                                ),
+                                "Hello!",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/hey.mp3",
+                                ),
+                                "Hey!",
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                // Common Questions
+                {
+                  bgColor: "var(--gray-5)",
+                  textColor: "white",
+                  column: "Common Questions",
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/how-are-you.mp3",
+                                ),
+
+                                "How are you?",
+
+                                portuguese("Como você está?"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/how-are-you-doing.mp3",
+                                ),
+
+                                "How are you doing?",
+
+                                portuguese("Como vai você?"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/hows-it-going.mp3",
+                                ),
+
+                                "How’s it going?",
+
+                                portuguese("Como vai?"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/hows-everything.mp3",
+                                ),
+
+                                "How’s everything?",
+
+                                portuguese("Como andam as coisas?"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      lineBreak: true,
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [italic("Informal")],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/whats-up.mp3",
+                                ),
+
+                                "What’s up?",
+
+                                portuguese("E aí, beleza? (Informal)"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+                {
+                  bgColor: "var(--gray-5)",
+
+                  textColor: "white",
+
+                  column: "Possible Answers",
+
+                  blocks: [
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/im-well.mp3",
+                                ),
+
+                                "I’m well.",
+
+                                portuguese("Estou bem."),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/im-great.mp3",
+                                ),
+
+                                "I’m great.",
+
+                                portuguese("Estou ótimo(a)."),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/im-good.mp3",
+                                ),
+
+                                "I’m good.",
+
+                                portuguese("Estou bem. (Informal)"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/im-pretty-good.mp3",
+                                ),
+
+                                "I’m pretty good.",
+
+                                portuguese("Estou bem / Muito bem. (Informal)"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/same-as-usual.mp3",
+                                ),
+
+                                "Same as usual.",
+
+                                portuguese("O de sempre."),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      lineBreak: true,
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [italic("Informal")],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/nothing-much.mp3",
+                                ),
+
+                                "Nothing much.",
+
+                                portuguese("Nada demais."),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/not-much-you.mp3",
+                                ),
+
+                                "Not much, you?",
+
+                                portuguese("Nada demais, e você?"),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/just-chilling.mp3",
+                                ),
+
+                                "Just chilling.",
+
+                                portuguese("De boa / Relaxando."),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+
+                    {
+                      block: [
+                        {
+                          text: [
+                            ...content({
+                              parts: [
+                                audio(
+                                  "/assets/audio/cefr/a1/introductions/just-working.mp3",
+                                ),
+
+                                "Just working.",
+
+                                portuguese("Só trabalhando."),
+                              ],
+                            }),
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ]}
+            />
+            <LineBreak />
+            <TheAlphabet />
+            <LineBreak />
+            <Ribbon label="Common Questions" bgColor="var(--slate-7)" />
+            <LineBreak />
+            <Column
+              width="260"
+              cols={columnCommonQuestions.map((col) => ({
                 column: col.column,
                 bgColor: "var(--slate-5)",
                 blocks: col.items.map((item) => {
@@ -108,7 +504,8 @@ export default function Introductions() {
                           ...content({
                             audio: item.audio,
                             parts: [
-                              item.text,
+                              item.part,
+                              icon(item.icon),
                               italic(item.italic),
                               portuguese(item.portuguese),
                             ],
@@ -119,255 +516,6 @@ export default function Introductions() {
                   };
                 }),
               }))}
-            />
-            <LineBreak />
-            <TheAlphabet />
-            <LineBreak />
-            <Ribbon label="Common Questions" bgColor="var(--slate-7)" />
-            <LineBreak />
-            <Column
-              width="260"
-              cols={[
-                // Questions
-                {
-                  column: "Questions",
-                  bgColor: "var(--slate-5)",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/whats-your-name.mp3",
-                              parts: ["What's your name?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              icons: ["attention"],
-                              audio:
-                                "/assets/audio/pronunciation/linked-sounds/t-y/whats-your-name.mp3",
-                              parts: ["What’", underline("s y"), "our name?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/whats-your-first-name.mp3",
-                              parts: ["What's your first name?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-first-name.mp3",
-                              parts: ["How do you spell your first name?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-it.mp3",
-                              parts: ["How do you spell it?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/whats-your-last-name.mp3",
-                              parts: ["What's your last name?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/how-do-you-spell-your-last-name.mp3",
-                              parts: ["How do you spell your last name?"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-                // Answers
-                {
-                  column: "Answers",
-                  bgColor: "var(--slate-5)",
-                  blocks: [
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio: [
-                                "/assets/audio/cefr/a1/introductions/I-am.mp3",
-                              ],
-                              parts: ["I am..."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              icons: ["attention"],
-                              audio: [
-                                "/assets/audio/cefr/a1/introductions/Im.mp3",
-                              ],
-                              parts: ["I’m..."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/my-name-is.mp3",
-                              parts: ["My name is..."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              icons: ["attention"],
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/my-names.mp3",
-                              parts: ["My na", underline("me’s...")],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/my-first-names.mp3",
-                              parts: ["My first name’s..."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/my-last-names.mp3",
-                              parts: ["My last name’s..."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      lineBreak: true,
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-1.mp3",
-                              parts: ["Nice to meet you"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/nice-to-meet-you-2.mp3",
-                              parts: ["Nice to mee", underline("t y"), "ou"],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                    {
-                      block: [
-                        {
-                          text: [
-                            ...content({
-                              audio:
-                                "/assets/audio/cefr/a1/introductions/nice-meeting-you.mp3",
-                              parts: [icon("attention"), "Nice meeting you."],
-                            }),
-                          ],
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ]}
             />
 
             <LineBreak />
