@@ -25,13 +25,11 @@ import {
   portuguese,
 } from "@/helpers/content";
 
-import { introPhrases, introQuestions } from "./instroductions/introduction";
-import {
-  presentationDialogue,
-  langFocusGreetings,
-  langFocusQandA,
-  practiceRadioQuestions,
-} from "./instroductions/data";
+import { phrases, questions } from "./introductions/introduction";
+import { dialogue } from "./introductions/presentation";
+import { languageFocusGreetings } from "./introductions/languageFocus";
+import { radioQuestions } from "./introductions/practice";
+import {} from "./introductions/production";
 
 export const metadata = {
   title: "A1 Beginner | Introductions",
@@ -62,11 +60,11 @@ export default function Introductions() {
               imgAlt="Two students talking at school."
               ratio="16-9"
               instruction="Look at the picture and listen to the sentences."
-              lines={introPhrases}
+              lines={phrases}
               tagAs="p"
             />
             <LineBreak />
-            <Radio exercise={introQuestions} />
+            <Radio exercise={questions} />
           </Section>
 
           <Section id="presentation" heading={3}>
@@ -76,7 +74,7 @@ export default function Introductions() {
               imgAlt="Two students talking at school."
               description="Laura and Eric are in the classroom."
               audioPlayer="/assets/audio/cefr/a1/introductions/presentation.mp3"
-              lines={presentationDialogue.map((dialogue) => ({
+              lines={dialogue.map((dialogue) => ({
                 speaker: dialogue.speaker,
                 line: [
                   ...content({
@@ -91,152 +89,32 @@ export default function Introductions() {
             <LineBreak />
             <Ribbon label="Greetings" bgColor="var(--slate-7)" />
             <LineBreak />
-            {langFocusGreetings.map((phrase, index) => (
-              <Line
-                key={index}
-                as="p"
-                value={[
-                  ...content({
-                    audio: phrase.audio,
-                    parts: [phrase.text],
-                  }),
-                ]}
-              />
-            ))}
-            <LineBreak />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  parts: [bold("Questions & Answers")],
-                }),
-              ]}
-            />
-            <LineBreak />
+            <Column
+              width="260"
+              cols={languageFocusGreetings.map((col) => ({
+                column: col.column,
+                bgColor: "var(--slate-5)",
+                blocks: col.items.map((item) => {
+                  if (item.lineBreak) {
+                    return {
+                      lineBreak: true,
+                    };
+                  }
 
-            {langFocusQandA.map((question, index) => (
-              <Line
-                key={index}
-                as="p"
-                value={[
-                  ...content({
-                    audio: question.audio,
-                    parts: [question.text, portuguese(question.portugueseText)],
-                  }),
-                ]}
-              />
-            ))}
-            <LineBreak />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/im-well.mp3",
-                  parts: ["I’m well. ", portuguese("Estou bem.")],
+                  return {
+                    block: [
+                      {
+                        text: [
+                          ...content({
+                            audio: item.audio,
+                            parts: [item.text, italic(item.italic), portuguese(item.portuguese)],
+                          }),
+                        ],
+                      },
+                    ],
+                  };
                 }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/im-great.mp3",
-                  parts: ["I’m great. ", portuguese("Estou ótimo(a).")],
-                }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/im-good.mp3",
-                  parts: [
-                    "I’m good. ",
-                    portuguese("Estou bem."),
-                    " ",
-                    italic("informal"),
-                  ],
-                }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio:
-                    "/assets/audio/cefr/a1/introductions/im-pretty-good.mp3",
-                  parts: [
-                    "I’m pretty good. ",
-                    portuguese("Estou bem / Muito bem."),
-                    " ",
-                    italic("informal"),
-                  ],
-                }),
-              ]}
-            />
-            <LineBreak />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/whats-up.mp3",
-                  parts: [
-                    "What’s up? ",
-                    italic("informal "),
-                    portuguese("E aí, beleza?"),
-                  ],
-                }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/nothing-much.mp3",
-                  parts: ["Nothing much. ", portuguese("Nada demais.")],
-                }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/not-much-you.mp3",
-                  parts: [
-                    "Not much, you? ",
-                    portuguese("Nada demais, e você?"),
-                  ],
-                }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio:
-                    "/assets/audio/cefr/a1/introductions/just-chilling.mp3",
-                  parts: ["Just chilling. ", portuguese("De boa / Relaxando")],
-                }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio:
-                    "/assets/audio/cefr/a1/introductions/same-as-usual.mp3",
-                  parts: ["Same as usual. ", portuguese("O de sempre")],
-                }),
-              ]}
-            />
-            <Line
-              as="p"
-              value={[
-                ...content({
-                  audio: "/assets/audio/cefr/a1/introductions/just-working.mp3",
-                  parts: ["Just working. ", portuguese("Só trabalhando")],
-                }),
-              ]}
+              }))}
             />
             <LineBreak />
             <TheAlphabet />
@@ -515,7 +393,7 @@ export default function Introductions() {
             <Radio
               exercise={{
                 instruction: "Choose the best response.",
-                questions: practiceRadioQuestions,
+                questions: radioQuestions,
               }}
             />
             <LineBreak />

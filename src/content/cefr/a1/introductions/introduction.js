@@ -1,4 +1,4 @@
-export const introPhrases = [
+export const phrases = [
   {
     audio: "/assets/audio/cefr/a1/introductions/this-is-an-english-school.mp3",
     part: "This is an English school.",
@@ -22,7 +22,7 @@ export const introPhrases = [
   },
 ];
 
-export const introQuestions = {
+export const questions = {
   instruction: "Now answer the questions.",
   questions: [
     {
@@ -34,7 +34,7 @@ export const introQuestions = {
       ],
     },
     {
-      question: "Laura and Eric are",
+      question: "Laura and Eric are...",
       options: [
         { option: "teachers.", isCorrect: false },
         { option: "classmates", isCorrect: true },
@@ -42,7 +42,7 @@ export const introQuestions = {
       ],
     },
     {
-      question: "Mr. Smith is",
+      question: "Mr. Smith is...",
       options: [
         { option: "a student.", isCorrect: false },
         { option: "a classmate.", isCorrect: false },
