@@ -79,7 +79,7 @@ export const introduction = {
           },
 
           {
-            option: "in an English school.",
+            option: "at school.",
             isCorrect: true,
           },
         ],

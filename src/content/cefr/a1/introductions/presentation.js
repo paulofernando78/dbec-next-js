@@ -4,7 +4,7 @@ export const dialogue = {
   imgSrc:
     "/assets/img/cefr/a1/introductions/presentation/laura-eric-introduction.png",
   imgAlt: "Two students talking at school.",
-  description: "Laura and Eric are shaking hands.",
+  description: "Laura and Eric shake hands.",
   audioPlayer: "/assets/audio/cefr/a1/introductions/presentation.mp3",
   lines: [
     {
