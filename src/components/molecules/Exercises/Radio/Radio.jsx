@@ -42,7 +42,7 @@ export const Radio = ({ exercise = {}, score = true }) => {
     <div className="line-break">
       <div>
         <Bold>
-          <ContentToken value={exercise.instruction} />
+          <p>Choose the correct answer.</p>
         </Bold>
         {exercise.description && <Italic className="display-block">{exercise.description}</Italic>}
       </div>

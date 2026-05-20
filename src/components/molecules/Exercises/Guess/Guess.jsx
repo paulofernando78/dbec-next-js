@@ -148,7 +148,7 @@ export const Guess = ({ img, words }) => {
   return (
     <>
       <p>
-        <b>Click the letters to reveal the hidden answer.</b>
+        <b>Click the letters to reveal the answer.</b>
       </p>
       <span className={styles.title}>Guess?</span>
       <div className={styles.container}>

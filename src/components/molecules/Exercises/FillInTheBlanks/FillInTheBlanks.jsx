@@ -129,7 +129,7 @@ export const FillInTheBlanks = ({
     <div className="line-break">
       <div>
         <Bold>
-          <ContentToken value={exercise.instruction} />
+          <p>Fill in blanks with the correct answer.</p>
         </Bold>
         {exercise.description && <Italic className="display-block">{exercise.description}</Italic>}
       </div>

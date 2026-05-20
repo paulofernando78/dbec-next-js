@@ -14,6 +14,7 @@ import { TheAlphabet } from "@/components/lessons/TheAlphabet";
 import { Column } from "@/components/molecules/Column/";
 import { Radio } from "@/components/molecules/Exercises/Radio";
 import { FillInTheBlanks } from "@/components/molecules/Exercises/FillInTheBlanks";
+import { Guess } from "@/components/molecules/Exercises/Guess";
 import { LineBreak } from "@/components/atoms/LineBreak";
 import {
   content,
@@ -25,11 +26,11 @@ import {
   portuguese,
 } from "@/helpers/content";
 
-import { introduction } from "./introductions/introduction";
-import { dialogue } from "./introductions/presentation";
-import { languageFocus } from "./introductions/languageFocus";
-import { practice } from "./introductions/practice";
-import { production } from "./introductions/production";
+import { introduction } from "./lesson/introduction";
+import { dialogue } from "./lesson/presentation";
+import { languageFocus } from "./lesson/languageFocus";
+import { practice } from "./lesson/practice";
+import { production } from "./lesson/production";
 
 export const metadata = {
   title: "A1 Beginner | Introductions",
@@ -40,16 +41,14 @@ export default function Introductions() {
   return (
     <>
       <Whiteboard
-        title="A1 Beginner"
-        subtitle="Introductions"
-        description="What's your name? I’m Laura. Nice to meet you."
+        title="Lesson"
+        subtitle="..."
+        description="..."
       />
 
       <div className="line-break">
         <LessonObjective>
-          By the end of this class, students will be able to greet someone, say
-          their name, ask for basic personal information, and introduce
-          themselves clearly.
+          By the end of this class, students will be able to...
         </LessonObjective>
 
         <PageSections>
@@ -83,39 +82,7 @@ export default function Introductions() {
 
           <Section id="language-focus" heading={3}>
             <LineBreak />
-            <Ribbon label="Common Greetings" bgColor="var(--slate-7)" />
-            <LineBreak />
-            <Column width="260" cols={languageFocus.columnCommonGreetings} />
-            <LineBreak />
-            <TheAlphabet />
-            <LineBreak />
-            <Ribbon label="Common Questions" bgColor="var(--slate-7)" />
-            <LineBreak />
-            <Column width="260" cols={languageFocus.columnCommonQuestions} />
-
-            <LineBreak />
-            <List
-              items={[
-                {
-                  value: [
-                    ...content({
-                      audio:
-                        "/assets/audio/cefr/a1/introductions/first-name-given-name.mp3",
-                      parts: [bold("first name"), " = given name"],
-                    }),
-                  ],
-                },
-                {
-                  value: [
-                    ...content({
-                      audio:
-                        "/assets/audio/cefr/a1/introductions/last-name-surname-family-name.mp3",
-                      parts: [bold("last name / surname"), " = family name"],
-                    }),
-                  ],
-                },
-              ]}
-            />
+            <Ribbon label="..." bgColor="var(--slate-7)" />
           </Section>
 
           <Section id="practice" heading={3}>
@@ -131,6 +98,10 @@ export default function Introductions() {
             <LineBreak />
             <FillInTheBlanks
               exercise={practice.unscrambleSentences}
+            />
+            <LineBreak />
+            <Guess
+              words={practice.guess}
             />
           </Section>
 

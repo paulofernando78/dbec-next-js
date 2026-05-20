@@ -1,5 +1,6 @@
 import styles from "./TheAlphabet.module.css";
 
+import { Ribbon } from "@/components/atoms/Ribbon";
 import { Line } from "@/components/molecules/Line";
 import { Card } from "@/components/atoms/Card";
 import { Audio } from "@/components/atoms/Audio";
@@ -176,9 +177,7 @@ const alphabet = [
 export const TheAlphabet = () => {
   return (
     <>
-      <span>
-        <b>THE ALPHABET</b>
-      </span>
+      <Ribbon label="The Alphabet" bgColor="var(--slate-6)" />
       <LineBreak />
       <Line
         as="p"

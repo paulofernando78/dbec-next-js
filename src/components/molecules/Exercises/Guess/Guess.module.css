@@ -3,7 +3,7 @@
   text-align: center;
   font-family: var(--font-rampart-one);
   font-size: 3.5rem;
-  margin-bottom: 1rem;
+  margin-block: 1rem;
 }
 
 .container {
